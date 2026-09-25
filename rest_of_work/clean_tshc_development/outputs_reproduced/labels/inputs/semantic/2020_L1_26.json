@@ -1,0 +1,202 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "clai_00135",
+      "type": "claim",
+      "surface_form": "Adding a latent master node that connects to every atom provides a global scratch space, allowing larger hidden dimensions with minimal performance penalty."
+    },
+    {
+      "id": "clai_00231",
+      "type": "claim",
+      "surface_form": "The Gaussian process regression framework underlying GAP provides an uncertainty quantification that qualitatively estimates the potential’s accuracy for any given atomic configuration."
+    },
+    {
+      "id": "clai_00481",
+      "type": "claim",
+      "surface_form": "Starting the training loop with PFF-MD configurations leads to faster convergence than starting with short FPMD trajectories because larger simulation cells can be used."
+    },
+    {
+      "id": "clai_00676",
+      "type": "claim",
+      "surface_form": "The Gaussian approximation potential (GAP) enables atomistic simulations with close-to-DFT accuracy at computational costs many orders of magnitude lower than quantum-mechanical methods."
+    },
+    {
+      "id": "comp_00022",
+      "type": "component",
+      "surface_form": "Atom-wise dense layers"
+    },
+    {
+      "id": "comp_00219",
+      "type": "component",
+      "surface_form": "Sparse set of representative atoms"
+    },
+    {
+      "id": "comp_00239",
+      "type": "component",
+      "surface_form": "Atomic‑energy decomposition"
+    },
+    {
+      "id": "comp_00302",
+      "type": "component",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "comp_00362",
+      "type": "component",
+      "surface_form": "Li2O reaction enumeration engine"
+    },
+    {
+      "id": "comp_00824",
+      "type": "component",
+      "surface_form": "Melt-quench trajectory generator"
+    },
+    {
+      "id": "futu_00061",
+      "type": "future_topic",
+      "surface_form": "Completion of Quantum ESPRESSO software integration"
+    },
+    {
+      "id": "meth_00084",
+      "type": "method",
+      "surface_form": "Vienna Ab Initio simulation Package"
+    },
+    {
+      "id": "meth_00255",
+      "type": "method",
+      "surface_form": "Vienna Ab‑initio simulation package"
+    },
+    {
+      "id": "meth_00256",
+      "type": "method",
+      "surface_form": "Large‑scale Atomic/Molecular Massively Parallel Simulator"
+    },
+    {
+      "id": "meth_00309",
+      "type": "method",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "metr_00087",
+      "type": "metric",
+      "surface_form": "sp3 concentration"
+    },
+    {
+      "id": "prob_00169",
+      "type": "problem",
+      "surface_form": "Noise reduction in atomistic data"
+    },
+    {
+      "id": "prob_00588",
+      "type": "problem",
+      "surface_form": "Accuracy-efficiency gap in atomistic simulations"
+    },
+    {
+      "id": "prob_00590",
+      "type": "problem",
+      "surface_form": "Underestimated sp3 concentration in ta-C"
+    },
+    {
+      "id": "prob_00609",
+      "type": "problem",
+      "surface_form": "accuracy-cost tradeoff in atomistic modeling"
+    },
+    {
+      "id": "task_00004",
+      "type": "task",
+      "surface_form": "chemistry"
+    },
+    {
+      "id": "task_00010",
+      "type": "task",
+      "surface_form": "computational chemistry"
+    },
+    {
+      "id": "task_00027",
+      "type": "task",
+      "surface_form": "quantum chemistry"
+    },
+    {
+      "id": "task_00044",
+      "type": "task",
+      "surface_form": "atomistic simulation"
+    },
+    {
+      "id": "task_00176",
+      "type": "task",
+      "surface_form": "MD simulation of organic molecules"
+    },
+    {
+      "id": "task_00187",
+      "type": "task",
+      "surface_form": "Per‑atom energy extraction"
+    },
+    {
+      "id": "task_00263",
+      "type": "task",
+      "surface_form": "atomistic simulations"
+    },
+    {
+      "id": "task_00615",
+      "type": "task",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "tech_00312",
+      "type": "technique",
+      "surface_form": "Image‑based encoding of atomistic data"
+    },
+    {
+      "id": "tech_00695",
+      "type": "technique",
+      "surface_form": "FPMD simulations"
+    },
+    {
+      "id": "tech_00696",
+      "type": "technique",
+      "surface_form": "PFF-MD simulations"
+    },
+    {
+      "id": "tech_00904",
+      "type": "technique",
+      "surface_form": "Melt-quench protocol"
+    },
+    {
+      "id": "tech_00911",
+      "type": "technique",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "tech_00914",
+      "type": "technique",
+      "surface_form": "sp3 atom counting"
+    },
+    {
+      "id": "tech_00915",
+      "type": "technique",
+      "surface_form": "Large-scale atomistic simulation"
+    },
+    {
+      "id": "tech_00916",
+      "type": "technique",
+      "surface_form": "melt-quench trajectory generation"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 4,
+    "component": 6,
+    "future_topic": 1,
+    "method": 4,
+    "metric": 1,
+    "problem": 4,
+    "task": 8,
+    "technique": 8
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "atomistic",
+  "representative_ids": [
+    "task_00044",
+    "task_00263"
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "prob_00322",
+      "type": "problem",
+      "surface_form": "Computational cost of ab initio molecular dynamics"
+    },
+    {
+      "id": "prob_00323",
+      "type": "problem",
+      "surface_form": "Accuracy limitations of classical force fields"
+    },
+    {
+      "id": "prob_00326",
+      "type": "problem",
+      "surface_form": "Descriptor non-smoothness"
+    },
+    {
+      "id": "prob_00328",
+      "type": "problem",
+      "surface_form": "Short and mid-range non-bonded interaction correction"
+    },
+    {
+      "id": "prob_00330",
+      "type": "problem",
+      "surface_form": "Tensorial property prediction"
+    },
+    {
+      "id": "prob_00333",
+      "type": "problem",
+      "surface_form": "Padding zero computation waste"
+    },
+    {
+      "id": "prob_00336",
+      "type": "problem",
+      "surface_form": "Power wall bottleneck"
+    },
+    {
+      "id": "prob_00338",
+      "type": "problem",
+      "surface_form": "Installation complexity"
+    },
+    {
+      "id": "prob_00340",
+      "type": "problem",
+      "surface_form": "accurate potential energy surface representation"
+    },
+    {
+      "id": "prob_00341",
+      "type": "problem",
+      "surface_form": "computational efficiency in MD simulations"
+    },
+    {
+      "id": "prob_00344",
+      "type": "problem",
+      "surface_form": "model portability"
+    },
+    {
+      "id": "prob_00346",
+      "type": "problem",
+      "surface_form": "accurate interatomic potential generation"
+    },
+    {
+      "id": "prob_00347",
+      "type": "problem",
+      "surface_form": "computational efficiency in MD"
+    },
+    {
+      "id": "prob_00348",
+      "type": "problem",
+      "surface_form": "property prediction for complex systems"
+    },
+    {
+      "id": "prob_00349",
+      "type": "problem",
+      "surface_form": "computational cost of MD simulations with ML potentials"
+    },
+    {
+      "id": "prob_00351",
+      "type": "problem",
+      "surface_form": "hardware performance variability"
+    },
+    {
+      "id": "prob_00588",
+      "type": "problem",
+      "surface_form": "Accuracy-efficiency gap in atomistic simulations"
+    },
+    {
+      "id": "prob_00589",
+      "type": "problem",
+      "surface_form": "Poor extrapolation in high-dimensional ML potentials"
+    },
+    {
+      "id": "prob_00590",
+      "type": "problem",
+      "surface_form": "Underestimated sp3 concentration in ta-C"
+    },
+    {
+      "id": "prob_00592",
+      "type": "problem",
+      "surface_form": "System size limitations of DFT"
+    },
+    {
+      "id": "prob_00593",
+      "type": "problem",
+      "surface_form": "Nonlinear parameter optimization"
+    },
+    {
+      "id": "prob_00594",
+      "type": "problem",
+      "surface_form": "Unphysical extrapolation at small distances"
+    },
+    {
+      "id": "prob_00595",
+      "type": "problem",
+      "surface_form": "Incomplete configuration space sampling"
+    },
+    {
+      "id": "prob_00596",
+      "type": "problem",
+      "surface_form": "Long-range behavior modeling"
+    },
+    {
+      "id": "prob_00597",
+      "type": "problem",
+      "surface_form": "Force locality quantification"
+    },
+    {
+      "id": "prob_00598",
+      "type": "problem",
+      "surface_form": "Nonlocality in carbon allotropes"
+    },
+    {
+      "id": "prob_00599",
+      "type": "problem",
+      "surface_form": "Accuracy limit determination"
+    },
+    {
+      "id": "prob_00600",
+      "type": "problem",
+      "surface_form": "Heterogeneous training database fitting"
+    },
+    {
+      "id": "prob_00601",
+      "type": "problem",
+      "surface_form": "Interlayer spacing in graphite"
+    },
+    {
+      "id": "prob_00602",
+      "type": "problem",
+      "surface_form": "Fourfold ring prediction in amorphous carbon"
+    },
+    {
+      "id": "prob_00603",
+      "type": "problem",
+      "surface_form": "Linear sp-bonded chain detection"
+    },
+    {
+      "id": "prob_00606",
+      "type": "problem",
+      "surface_form": "accurate interatomic potential for amorphous carbon"
+    },
+    {
+      "id": "prob_00608",
+      "type": "problem",
+      "surface_form": "capturing tetrahedral motifs"
+    },
+    {
+      "id": "prob_00609",
+      "type": "problem",
+      "surface_form": "accuracy-cost tradeoff in atomistic modeling"
+    },
+    {
+      "id": "prob_00611",
+      "type": "problem",
+      "surface_form": "surface reconstruction modeling"
+    },
+    {
+      "id": "prob_00612",
+      "type": "problem",
+      "surface_form": "ML potential extrapolation"
+    },
+    {
+      "id": "prob_00613",
+      "type": "problem",
+      "surface_form": "Spurious energy barriers"
+    },
+    {
+      "id": "prob_00614",
+      "type": "problem",
+      "surface_form": "Training data completeness"
+    },
+    {
+      "id": "prob_00615",
+      "type": "problem",
+      "surface_form": "Near-surface structure sampling"
+    },
+    {
+      "id": "task_00698",
+      "type": "task",
+      "surface_form": "Locality testing"
+    },
+    {
+      "id": "tech_00906",
+      "type": "technique",
+      "surface_form": "Force locality test"
+    }
+  ],
+  "generation_type_counts": {
+    "problem": 39,
+    "task": 1,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "locality",
+  "representative_ids": [
+    "prob_00609",
+    "prob_00588"
+  ]
+}

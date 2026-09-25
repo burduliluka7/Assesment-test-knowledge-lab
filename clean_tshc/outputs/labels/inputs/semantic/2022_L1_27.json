@@ -1,0 +1,332 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00132",
+      "type": "claim",
+      "surface_form": "The multiple‑tower architecture reduces the computational complexity of a propagation step from O(n²d²) to O(n²d²/k) and yields a 2× speedup for n=9, d=200, k=8."
+    },
+    {
+      "id": "clai_00663",
+      "type": "claim",
+      "surface_form": "AFLOW provides a standardized definition of Brillouin‑zone integration paths for all 14 Bravais lattices, filling a gap in the literature."
+    },
+    {
+      "id": "clai_00665",
+      "type": "claim",
+      "surface_form": "AFLOW’s cage‑finding algorithm identifies interstitial sites via a topological method, finding 14 cages (6 octahedral, 8 tetrahedral) that reduce to 5 symmetrically inequivalent positions, with radii of 2.2225 Å (octahedral) and 1.9248 Å (tetrahedral)."
+    },
+    {
+      "id": "comp_00017",
+      "type": "component",
+      "surface_form": "Multiple towers"
+    },
+    {
+      "id": "comp_00031",
+      "type": "component",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "comp_00202",
+      "type": "component",
+      "surface_form": "Bond distance expansion"
+    },
+    {
+      "id": "comp_00351",
+      "type": "component",
+      "surface_form": "JARVIS‑Heterostructure app"
+    },
+    {
+      "id": "comp_00386",
+      "type": "component",
+      "surface_form": "Standardized Brillouin‑zone path generator"
+    },
+    {
+      "id": "comp_00393",
+      "type": "component",
+      "surface_form": "Interstitial‑site topological search"
+    },
+    {
+      "id": "comp_00395",
+      "type": "component",
+      "surface_form": "Apennsy interstitial cage search"
+    },
+    {
+      "id": "comp_00449",
+      "type": "component",
+      "surface_form": "NCV fold structure"
+    },
+    {
+      "id": "comp_00569",
+      "type": "component",
+      "surface_form": "Prototype-based structure sampler"
+    },
+    {
+      "id": "comp_00584",
+      "type": "component",
+      "surface_form": "Dual grid technique"
+    },
+    {
+      "id": "comp_00634",
+      "type": "component",
+      "surface_form": "Maximum bond variation criterion"
+    },
+    {
+      "id": "futu_00095",
+      "type": "future_topic",
+      "surface_form": "Disordered materials"
+    },
+    {
+      "id": "futu_00096",
+      "type": "future_topic",
+      "surface_form": "Interfaces and heterostructures"
+    },
+    {
+      "id": "futu_00097",
+      "type": "future_topic",
+      "surface_form": "Quasi‑crystals"
+    },
+    {
+      "id": "futu_00136",
+      "type": "future_topic",
+      "surface_form": "Screening for superconducting materials"
+    },
+    {
+      "id": "futu_00154",
+      "type": "future_topic",
+      "surface_form": "Accelerating meso‑level material design through AI‑driven defect‑property translation"
+    },
+    {
+      "id": "futu_00155",
+      "type": "future_topic",
+      "surface_form": "Integration of multiscale modeling data (DFT, MD, FEM) to train GNNs for broader defect‑property relationships"
+    },
+    {
+      "id": "meth_00285",
+      "type": "method",
+      "surface_form": "Findsym symmetry analysis"
+    },
+    {
+      "id": "meth_00350",
+      "type": "method",
+      "surface_form": "pymatgen structure matcher"
+    },
+    {
+      "id": "metr_00069",
+      "type": "metric",
+      "surface_form": "Lattice Energy MAE"
+    },
+    {
+      "id": "prob_00018",
+      "type": "problem",
+      "surface_form": "Learning from graph topology without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00130",
+      "type": "problem",
+      "surface_form": "Symmetry preservation without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00134",
+      "type": "problem",
+      "surface_form": "Accurate reproduction of AIMD structural properties"
+    },
+    {
+      "id": "prob_00159",
+      "type": "problem",
+      "surface_form": "Inability to model state‑dependent properties"
+    },
+    {
+      "id": "prob_00177",
+      "type": "problem",
+      "surface_form": "Inverse design of low‑stress structures"
+    },
+    {
+      "id": "prob_00181",
+      "type": "problem",
+      "surface_form": "Exploration of huge defect‑structure spaces"
+    },
+    {
+      "id": "prob_00183",
+      "type": "problem",
+      "surface_form": "Nonlinear structure‑property mapping"
+    },
+    {
+      "id": "prob_00201",
+      "type": "problem",
+      "surface_form": "Rapid heterostructure design"
+    },
+    {
+      "id": "prob_00217",
+      "type": "problem",
+      "surface_form": "Standardized structure representation"
+    },
+    {
+      "id": "prob_00220",
+      "type": "problem",
+      "surface_form": "Identification of interstitial sites"
+    },
+    {
+      "id": "prob_00361",
+      "type": "problem",
+      "surface_form": "High-Tc superconductor identification"
+    },
+    {
+      "id": "prob_00596",
+      "type": "problem",
+      "surface_form": "Long-range behavior modeling"
+    },
+    {
+      "id": "prob_00603",
+      "type": "problem",
+      "surface_form": "Linear sp-bonded chain detection"
+    },
+    {
+      "id": "prob_00608",
+      "type": "problem",
+      "surface_form": "capturing tetrahedral motifs"
+    },
+    {
+      "id": "task_00059",
+      "type": "task",
+      "surface_form": "Topological invariant analysis"
+    },
+    {
+      "id": "task_00060",
+      "type": "task",
+      "surface_form": "High‑throughput Hamiltonian generation"
+    },
+    {
+      "id": "task_00235",
+      "type": "task",
+      "surface_form": "Heterostructure design"
+    },
+    {
+      "id": "task_00238",
+      "type": "task",
+      "surface_form": "Tight‑binding model generation"
+    },
+    {
+      "id": "task_00244",
+      "type": "task",
+      "surface_form": "2D heterostructure band‑alignment analysis"
+    },
+    {
+      "id": "task_00440",
+      "type": "task",
+      "surface_form": "superconductor candidate identification"
+    },
+    {
+      "id": "task_00451",
+      "type": "task",
+      "surface_form": "Superconducting Tc calculation"
+    },
+    {
+      "id": "task_00458",
+      "type": "task",
+      "surface_form": "Superconductivity prediction"
+    },
+    {
+      "id": "task_00477",
+      "type": "task",
+      "surface_form": "point defect analysis"
+    },
+    {
+      "id": "task_00703",
+      "type": "task",
+      "surface_form": "Lattice parameter reproduction"
+    },
+    {
+      "id": "tech_00070",
+      "type": "technique",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "tech_00087",
+      "type": "technique",
+      "surface_form": "Multiple‑tower decomposition"
+    },
+    {
+      "id": "tech_00096",
+      "type": "technique",
+      "surface_form": "Polynomial mutation"
+    },
+    {
+      "id": "tech_00302",
+      "type": "technique",
+      "surface_form": "Global state conditioning"
+    },
+    {
+      "id": "tech_00399",
+      "type": "technique",
+      "surface_form": "Gamma‑centered k‑mesh for hexagonal, fcc, rhombohedral lattices"
+    },
+    {
+      "id": "tech_00404",
+      "type": "technique",
+      "surface_form": "symmetry reduction of cages"
+    },
+    {
+      "id": "tech_00600",
+      "type": "technique",
+      "surface_form": "Double grid technique"
+    },
+    {
+      "id": "tech_00604",
+      "type": "technique",
+      "surface_form": "Γ-centered k-point grids"
+    },
+    {
+      "id": "tech_00613",
+      "type": "technique",
+      "surface_form": "q-grid and k-grid convergence"
+    },
+    {
+      "id": "tech_00647",
+      "type": "technique",
+      "surface_form": "DOS energy window selection"
+    },
+    {
+      "id": "tech_00648",
+      "type": "technique",
+      "surface_form": "Band structure energy window selection"
+    },
+    {
+      "id": "tech_00654",
+      "type": "technique",
+      "surface_form": "Reciprocal lattice grid spacing"
+    },
+    {
+      "id": "tech_00692",
+      "type": "technique",
+      "surface_form": "Maximum bond variation check"
+    },
+    {
+      "id": "tech_00902",
+      "type": "technique",
+      "surface_form": "Uniform grid sparsification"
+    },
+    {
+      "id": "tech_00926",
+      "type": "technique",
+      "surface_form": "Lattice parameter scaling"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 3,
+    "component": 11,
+    "future_topic": 6,
+    "method": 2,
+    "metric": 1,
+    "problem": 14,
+    "task": 10,
+    "technique": 15
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "grid",
+  "representative_ids": [
+    "prob_00134",
+    "prob_00181"
+  ]
+}

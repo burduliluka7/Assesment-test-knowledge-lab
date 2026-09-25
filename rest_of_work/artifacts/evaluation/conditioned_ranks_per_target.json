@@ -1,0 +1,2508 @@
+[
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "ACE",
+    "node_ids": [
+      "cite_00209"
+    ],
+    "R3_rank": 269,
+    "ranks": {
+      "H2": 154,
+      "CR0-100": 154,
+      "CR1-100": 154,
+      "CR3-100": 154,
+      "CR6-100": 154,
+      "CR7-100": 154,
+      "CR6-200": 36,
+      "pool_only": 154,
+      "without_qualifiers": 154
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "R3_rank": 119,
+    "ranks": {
+      "H2": 88,
+      "CR0-100": 100,
+      "CR1-100": 97,
+      "CR3-100": 95,
+      "CR6-100": 97,
+      "CR7-100": 95,
+      "CR6-200": 169,
+      "pool_only": 97,
+      "without_qualifiers": 97
+    },
+    "failures": {
+      "CR6-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR7-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "R3_rank": 23,
+    "ranks": {
+      "H2": 42,
+      "CR0-100": 75,
+      "CR1-100": 23,
+      "CR3-100": 24,
+      "CR6-100": 24,
+      "CR7-100": 26,
+      "CR6-200": 35,
+      "pool_only": 24,
+      "without_qualifiers": 24
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "GAP",
+    "node_ids": [
+      "cite_00191"
+    ],
+    "R3_rank": 206,
+    "ranks": {
+      "H2": 47,
+      "CR0-100": 93,
+      "CR1-100": 11,
+      "CR3-100": 15,
+      "CR6-100": 16,
+      "CR7-100": 21,
+      "CR6-200": 21,
+      "pool_only": 16,
+      "without_qualifiers": 16
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "R3_rank": 101,
+    "ranks": {
+      "H2": 26,
+      "CR0-100": 22,
+      "CR1-100": 14,
+      "CR3-100": 11,
+      "CR6-100": 14,
+      "CR7-100": 11,
+      "CR6-200": 17,
+      "pool_only": 14,
+      "without_qualifiers": 14
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "R3_rank": 333,
+    "ranks": {
+      "H2": 114,
+      "CR0-100": 114,
+      "CR1-100": 114,
+      "CR3-100": 114,
+      "CR6-100": 114,
+      "CR7-100": 114,
+      "CR6-200": 38,
+      "pool_only": 114,
+      "without_qualifiers": 114
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "R3_rank": 188,
+    "ranks": {
+      "H2": 91,
+      "CR0-100": 37,
+      "CR1-100": 17,
+      "CR3-100": 53,
+      "CR6-100": 17,
+      "CR7-100": 51,
+      "CR6-200": 22,
+      "pool_only": 17,
+      "without_qualifiers": 17
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q2",
+    "label": "D4FT",
+    "node_ids": [
+      "comp_00273",
+      "meth_00222"
+    ],
+    "R3_rank": 10,
+    "ranks": {
+      "H2": 12,
+      "CR0-100": 2,
+      "CR1-100": 11,
+      "CR3-100": 4,
+      "CR6-100": 7,
+      "CR7-100": 3,
+      "CR6-200": 10,
+      "pool_only": 7,
+      "without_qualifiers": 7
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q2",
+    "label": "DeepH",
+    "node_ids": [
+      "cite_00254"
+    ],
+    "R3_rank": 260,
+    "ranks": {
+      "H2": 42,
+      "CR0-100": 74,
+      "CR1-100": 1,
+      "CR3-100": 7,
+      "CR6-100": 1,
+      "CR7-100": 6,
+      "CR6-200": 1,
+      "pool_only": 1,
+      "without_qualifiers": 1
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q2",
+    "label": "HamGNN",
+    "node_ids": [
+      "meth_00221"
+    ],
+    "R3_rank": 90,
+    "ranks": {
+      "H2": 24,
+      "CR0-100": 91,
+      "CR1-100": 55,
+      "CR3-100": 44,
+      "CR6-100": 51,
+      "CR7-100": 40,
+      "CR6-200": 87,
+      "pool_only": 51,
+      "without_qualifiers": 51
+    },
+    "failures": {
+      "CR6-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR7-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q3",
+    "label": "DeepH-E3",
+    "node_ids": [
+      "cite_00255",
+      "meth_00118"
+    ],
+    "R3_rank": 1,
+    "ranks": {
+      "H2": 1,
+      "CR0-100": 1,
+      "CR1-100": 1,
+      "CR3-100": 1,
+      "CR6-100": 1,
+      "CR7-100": 1,
+      "CR6-200": 1,
+      "pool_only": 1,
+      "without_qualifiers": 1
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q4",
+    "label": "VGNN",
+    "node_ids": [
+      "cite_00409"
+    ],
+    "R3_rank": 2292,
+    "ranks": {
+      "H2": 65,
+      "CR0-100": 39,
+      "CR1-100": 1,
+      "CR3-100": 17,
+      "CR6-100": 1,
+      "CR7-100": 16,
+      "CR6-200": 1,
+      "pool_only": 1,
+      "without_qualifiers": 1
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q6",
+    "label": "LiFlow",
+    "node_ids": [
+      "meth_00239"
+    ],
+    "R3_rank": 8,
+    "ranks": {
+      "H2": 2,
+      "CR0-100": 1,
+      "CR1-100": 2,
+      "CR3-100": 1,
+      "CR6-100": 2,
+      "CR7-100": 1,
+      "CR6-200": 2,
+      "pool_only": 2,
+      "without_qualifiers": 2
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q7",
+    "label": "symbolic regression",
+    "node_ids": [
+      "cite_00016",
+      "meth_00068"
+    ],
+    "R3_rank": 159,
+    "ranks": {
+      "H2": 186,
+      "CR0-100": 186,
+      "CR1-100": 186,
+      "CR3-100": 186,
+      "CR6-100": 186,
+      "CR7-100": 186,
+      "CR6-200": 27,
+      "pool_only": 186,
+      "without_qualifiers": 186
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q8",
+    "label": "ConvLSTM",
+    "node_ids": [
+      "cite_00001"
+    ],
+    "R3_rank": 138,
+    "ranks": {
+      "H2": 25,
+      "CR0-100": 28,
+      "CR1-100": 1,
+      "CR3-100": 1,
+      "CR6-100": 1,
+      "CR7-100": 1,
+      "CR6-200": 1,
+      "pool_only": 1,
+      "without_qualifiers": 1
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q9",
+    "label": "E(3)-equivariant GNNs",
+    "node_ids": [
+      "cite_00120"
+    ],
+    "R3_rank": 2266,
+    "ranks": {
+      "H2": 119,
+      "CR0-100": 119,
+      "CR1-100": 119,
+      "CR3-100": 119,
+      "CR6-100": 119,
+      "CR7-100": 119,
+      "CR6-200": 145,
+      "pool_only": 119,
+      "without_qualifiers": 119
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q9",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "R3_rank": 196,
+    "ranks": {
+      "H2": 111,
+      "CR0-100": 111,
+      "CR1-100": 111,
+      "CR3-100": 111,
+      "CR6-100": 111,
+      "CR7-100": 111,
+      "CR6-200": 32,
+      "pool_only": 111,
+      "without_qualifiers": 111
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q10",
+    "label": "SchNet",
+    "node_ids": [
+      "cite_00005",
+      "meth_00050"
+    ],
+    "R3_rank": 28,
+    "ranks": {
+      "H2": 23,
+      "CR0-100": 16,
+      "CR1-100": 29,
+      "CR3-100": 20,
+      "CR6-100": 24,
+      "CR7-100": 15,
+      "CR6-200": 32,
+      "pool_only": 24,
+      "without_qualifiers": 24
+    },
+    "failures": {
+      "CR6-100": "PARTIAL_REQUIREMENT_SUPPORT",
+      "CR7-100": "PARTIAL_REQUIREMENT_SUPPORT",
+      "CR6-200": "PARTIAL_REQUIREMENT_SUPPORT"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "R3_rank": 107,
+    "ranks": {
+      "H2": 73,
+      "CR0-100": 97,
+      "CR1-100": 92,
+      "CR3-100": 89,
+      "CR6-100": 92,
+      "CR7-100": 87,
+      "CR6-200": 160,
+      "pool_only": 92,
+      "without_qualifiers": 92
+    },
+    "failures": {
+      "CR6-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR7-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "DeePMD",
+    "node_ids": [
+      "cite_00214"
+    ],
+    "R3_rank": 229,
+    "ranks": {
+      "H2": 111,
+      "CR0-100": 111,
+      "CR1-100": 111,
+      "CR3-100": 111,
+      "CR6-100": 111,
+      "CR7-100": 111,
+      "CR6-200": 14,
+      "pool_only": 111,
+      "without_qualifiers": 111
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "R3_rank": 24,
+    "ranks": {
+      "H2": 32,
+      "CR0-100": 82,
+      "CR1-100": 22,
+      "CR3-100": 16,
+      "CR6-100": 21,
+      "CR7-100": 12,
+      "CR6-200": 32,
+      "pool_only": 24,
+      "without_qualifiers": 24
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "GAP",
+    "node_ids": [
+      "cite_00191"
+    ],
+    "R3_rank": 215,
+    "ranks": {
+      "H2": 50,
+      "CR0-100": 89,
+      "CR1-100": 23,
+      "CR3-100": 33,
+      "CR6-100": 16,
+      "CR7-100": 23,
+      "CR6-200": 21,
+      "pool_only": 10,
+      "without_qualifiers": 10
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "R3_rank": 97,
+    "ranks": {
+      "H2": 29,
+      "CR0-100": 8,
+      "CR1-100": 7,
+      "CR3-100": 7,
+      "CR6-100": 7,
+      "CR7-100": 8,
+      "CR6-200": 8,
+      "pool_only": 7,
+      "without_qualifiers": 7
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "R3_rank": 334,
+    "ranks": {
+      "H2": 104,
+      "CR0-100": 104,
+      "CR1-100": 104,
+      "CR3-100": 104,
+      "CR6-100": 104,
+      "CR7-100": 104,
+      "CR6-200": 45,
+      "pool_only": 104,
+      "without_qualifiers": 104
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "MatterSim",
+    "node_ids": [
+      "cite_00060",
+      "meth_00091"
+    ],
+    "R3_rank": 130,
+    "ranks": {
+      "H2": 35,
+      "CR0-100": 68,
+      "CR1-100": 2,
+      "CR3-100": 4,
+      "CR6-100": 1,
+      "CR7-100": 4,
+      "CR6-200": 1,
+      "pool_only": 2,
+      "without_qualifiers": 2
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "R3_rank": 216,
+    "ranks": {
+      "H2": 87,
+      "CR0-100": 45,
+      "CR1-100": 3,
+      "CR3-100": 18,
+      "CR6-100": 5,
+      "CR7-100": 24,
+      "CR6-200": 6,
+      "pool_only": 3,
+      "without_qualifiers": 3
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "Orb",
+    "node_ids": [
+      "cite_00011"
+    ],
+    "R3_rank": 398,
+    "ranks": {
+      "H2": 130,
+      "CR0-100": 130,
+      "CR1-100": 130,
+      "CR3-100": 130,
+      "CR6-100": 130,
+      "CR7-100": 130,
+      "CR6-200": 187,
+      "pool_only": 130,
+      "without_qualifiers": 130
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "SevenNet",
+    "node_ids": [
+      "cite_00054"
+    ],
+    "R3_rank": 175,
+    "ranks": {
+      "H2": 41,
+      "CR0-100": 51,
+      "CR1-100": 5,
+      "CR3-100": 9,
+      "CR6-100": 2,
+      "CR7-100": 9,
+      "CR6-200": 2,
+      "pool_only": 5,
+      "without_qualifiers": 5
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "eSEN",
+    "node_ids": [
+      "cite_00053"
+    ],
+    "R3_rank": 2320,
+    "ranks": {
+      "H2": 283,
+      "CR0-100": 283,
+      "CR1-100": 283,
+      "CR3-100": 283,
+      "CR6-100": 283,
+      "CR7-100": 283,
+      "CR6-200": 283,
+      "pool_only": 283,
+      "without_qualifiers": 283
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NOT_IN_H2_200"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "CGCNN",
+    "node_ids": [
+      "cite_00354",
+      "meth_00054"
+    ],
+    "R3_rank": 160,
+    "ranks": {
+      "H2": 107,
+      "CR0-100": 107,
+      "CR1-100": 107,
+      "CR3-100": 107,
+      "CR6-100": 107,
+      "CR7-100": 107,
+      "CR6-200": 20,
+      "pool_only": 107,
+      "without_qualifiers": 107
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "R3_rank": 136,
+    "ranks": {
+      "H2": 100,
+      "CR0-100": 99,
+      "CR1-100": 94,
+      "CR3-100": 100,
+      "CR6-100": 94,
+      "CR7-100": 100,
+      "CR6-200": 151,
+      "pool_only": 94,
+      "without_qualifiers": 94
+    },
+    "failures": {
+      "CR6-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR7-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "R3_rank": 24,
+    "ranks": {
+      "H2": 57,
+      "CR0-100": 79,
+      "CR1-100": 29,
+      "CR3-100": 53,
+      "CR6-100": 20,
+      "CR7-100": 46,
+      "CR6-200": 31,
+      "pool_only": 29,
+      "without_qualifiers": 29
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "R3_rank": 111,
+    "ranks": {
+      "H2": 55,
+      "CR0-100": 23,
+      "CR1-100": 1,
+      "CR3-100": 5,
+      "CR6-100": 3,
+      "CR7-100": 7,
+      "CR6-200": 3,
+      "pool_only": 1,
+      "without_qualifiers": 1
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "R3_rank": 253,
+    "ranks": {
+      "H2": 106,
+      "CR0-100": 106,
+      "CR1-100": 106,
+      "CR3-100": 106,
+      "CR6-100": 106,
+      "CR7-100": 106,
+      "CR6-200": 44,
+      "pool_only": 106,
+      "without_qualifiers": 106
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "MEGNet",
+    "node_ids": [
+      "cite_00334",
+      "meth_00036"
+    ],
+    "R3_rank": 185,
+    "ranks": {
+      "H2": 185,
+      "CR0-100": 185,
+      "CR1-100": 185,
+      "CR3-100": 185,
+      "CR6-100": 185,
+      "CR7-100": 185,
+      "CR6-200": 180,
+      "pool_only": 185,
+      "without_qualifiers": 185
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "R3_rank": 186,
+    "ranks": {
+      "H2": 72,
+      "CR0-100": 53,
+      "CR1-100": 11,
+      "CR3-100": 40,
+      "CR6-100": 12,
+      "CR7-100": 40,
+      "CR6-200": 18,
+      "pool_only": 11,
+      "without_qualifiers": 11
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "SchNet",
+    "node_ids": [
+      "cite_00005",
+      "meth_00050"
+    ],
+    "R3_rank": 34,
+    "ranks": {
+      "H2": 36,
+      "CR0-100": 8,
+      "CR1-100": 67,
+      "CR3-100": 63,
+      "CR6-100": 17,
+      "CR7-100": 19,
+      "CR6-200": 27,
+      "pool_only": 16,
+      "without_qualifiers": 16
+    },
+    "failures": {
+      "CR6-100": "ANSWER_QUALIFIER_FAILURE",
+      "CR7-100": "ANSWER_QUALIFIER_FAILURE",
+      "CR6-200": "ANSWER_QUALIFIER_FAILURE"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "AFLOW",
+    "node_ids": [
+      "cite_00274"
+    ],
+    "R3_rank": 260,
+    "ranks": {
+      "H2": 66,
+      "CR0-100": 94,
+      "CR1-100": 5,
+      "CR3-100": 17,
+      "CR6-100": 5,
+      "CR7-100": 18,
+      "CR6-200": 7,
+      "pool_only": 5,
+      "without_qualifiers": 5
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "Alexandria",
+    "node_ids": [
+      "cite_00369"
+    ],
+    "R3_rank": 3381,
+    "ranks": {
+      "H2": 353,
+      "CR0-100": 353,
+      "CR1-100": 353,
+      "CR3-100": 353,
+      "CR6-100": 353,
+      "CR7-100": 353,
+      "CR6-200": 353,
+      "pool_only": 353,
+      "without_qualifiers": 353
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NOT_IN_H2_200"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "GNoME",
+    "node_ids": [
+      "cite_00330",
+      "comp_00589",
+      "data_00144",
+      "meth_00169"
+    ],
+    "R3_rank": 126,
+    "ranks": {
+      "H2": 41,
+      "CR0-100": 30,
+      "CR1-100": 24,
+      "CR3-100": 28,
+      "CR6-100": 12,
+      "CR7-100": 14,
+      "CR6-200": 22,
+      "pool_only": 12,
+      "without_qualifiers": 12
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "JARVIS-DFT",
+    "node_ids": [
+      "comp_00335"
+    ],
+    "R3_rank": 547,
+    "ranks": {
+      "H2": 541,
+      "CR0-100": 541,
+      "CR1-100": 541,
+      "CR3-100": 541,
+      "CR6-100": 541,
+      "CR7-100": 541,
+      "CR6-200": 541,
+      "pool_only": 541,
+      "without_qualifiers": 541
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NOT_IN_H2_200"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "Matbench",
+    "node_ids": [
+      "cite_00362",
+      "comp_00448",
+      "data_00114",
+      "meth_00348"
+    ],
+    "R3_rank": 97,
+    "ranks": {
+      "H2": 53,
+      "CR0-100": 88,
+      "CR1-100": 67,
+      "CR3-100": 73,
+      "CR6-100": 68,
+      "CR7-100": 75,
+      "CR6-200": 101,
+      "pool_only": 68,
+      "without_qualifiers": 68
+    },
+    "failures": {
+      "CR6-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR7-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "Matbench Discovery",
+    "node_ids": [
+      "cite_00302",
+      "data_00013",
+      "meth_00159"
+    ],
+    "R3_rank": 2,
+    "ranks": {
+      "H2": 8,
+      "CR0-100": 1,
+      "CR1-100": 28,
+      "CR3-100": 8,
+      "CR6-100": 29,
+      "CR7-100": 8,
+      "CR6-200": 48,
+      "pool_only": 29,
+      "without_qualifiers": 29
+    },
+    "failures": {
+      "CR6-100": "REQUIREMENT_EVIDENCE_NOT_FOUND",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "REQUIREMENT_EVIDENCE_NOT_FOUND"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "Materials Project",
+    "node_ids": [
+      "cite_00018",
+      "data_00061",
+      "meth_00143"
+    ],
+    "R3_rank": 106,
+    "ranks": {
+      "H2": 35,
+      "CR0-100": 51,
+      "CR1-100": 15,
+      "CR3-100": 15,
+      "CR6-100": 17,
+      "CR7-100": 17,
+      "CR6-200": 27,
+      "pool_only": 17,
+      "without_qualifiers": 17
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "OMat24",
+    "node_ids": [
+      "cite_00311"
+    ],
+    "R3_rank": 475,
+    "ranks": {
+      "H2": 71,
+      "CR0-100": 90,
+      "CR1-100": 82,
+      "CR3-100": 83,
+      "CR6-100": 28,
+      "CR7-100": 58,
+      "CR6-200": 47,
+      "pool_only": 28,
+      "without_qualifiers": 28
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "OQMD",
+    "node_ids": [
+      "cite_00370",
+      "data_00095"
+    ],
+    "R3_rank": 118,
+    "ranks": {
+      "H2": 101,
+      "CR0-100": 101,
+      "CR1-100": 101,
+      "CR3-100": 101,
+      "CR6-100": 101,
+      "CR7-100": 101,
+      "CR6-200": 32,
+      "pool_only": 101,
+      "without_qualifiers": 101
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "WBM",
+    "node_ids": [
+      "data_00175"
+    ],
+    "R3_rank": 674,
+    "ranks": {
+      "H2": 726,
+      "CR0-100": 726,
+      "CR1-100": 726,
+      "CR3-100": 726,
+      "CR6-100": 726,
+      "CR7-100": 726,
+      "CR6-200": 726,
+      "pool_only": 726,
+      "without_qualifiers": 726
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NOT_IN_H2_200"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "ACE",
+    "node_ids": [
+      "cite_00209"
+    ],
+    "R3_rank": 320,
+    "ranks": {
+      "H2": 170,
+      "CR0-100": 170,
+      "CR1-100": 170,
+      "CR3-100": 170,
+      "CR6-100": 170,
+      "CR7-100": 170,
+      "CR6-200": 37,
+      "pool_only": 170,
+      "without_qualifiers": 170
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "R3_rank": 135,
+    "ranks": {
+      "H2": 96,
+      "CR0-100": 99,
+      "CR1-100": 99,
+      "CR3-100": 99,
+      "CR6-100": 99,
+      "CR7-100": 99,
+      "CR6-200": 174,
+      "pool_only": 99,
+      "without_qualifiers": 99
+    },
+    "failures": {
+      "CR6-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR7-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "R3_rank": 27,
+    "ranks": {
+      "H2": 32,
+      "CR0-100": 90,
+      "CR1-100": 25,
+      "CR3-100": 19,
+      "CR6-100": 25,
+      "CR7-100": 20,
+      "CR6-200": 36,
+      "pool_only": 25,
+      "without_qualifiers": 25
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "GAP",
+    "node_ids": [
+      "cite_00191"
+    ],
+    "R3_rank": 241,
+    "ranks": {
+      "H2": 57,
+      "CR0-100": 55,
+      "CR1-100": 15,
+      "CR3-100": 25,
+      "CR6-100": 20,
+      "CR7-100": 32,
+      "CR6-200": 24,
+      "pool_only": 20,
+      "without_qualifiers": 20
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "R3_rank": 114,
+    "ranks": {
+      "H2": 29,
+      "CR0-100": 19,
+      "CR1-100": 17,
+      "CR3-100": 13,
+      "CR6-100": 17,
+      "CR7-100": 13,
+      "CR6-200": 19,
+      "pool_only": 17,
+      "without_qualifiers": 17
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "R3_rank": 439,
+    "ranks": {
+      "H2": 128,
+      "CR0-100": 128,
+      "CR1-100": 128,
+      "CR3-100": 128,
+      "CR6-100": 128,
+      "CR7-100": 128,
+      "CR6-200": 39,
+      "pool_only": 128,
+      "without_qualifiers": 128
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "R3_rank": 219,
+    "ranks": {
+      "H2": 103,
+      "CR0-100": 103,
+      "CR1-100": 103,
+      "CR3-100": 103,
+      "CR6-100": 103,
+      "CR7-100": 103,
+      "CR6-200": 22,
+      "pool_only": 103,
+      "without_qualifiers": 103
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q2",
+    "label": "D4FT",
+    "node_ids": [
+      "comp_00273",
+      "meth_00222"
+    ],
+    "R3_rank": 12,
+    "ranks": {
+      "H2": 14,
+      "CR0-100": 3,
+      "CR1-100": 11,
+      "CR3-100": 4,
+      "CR6-100": 9,
+      "CR7-100": 3,
+      "CR6-200": 12,
+      "pool_only": 9,
+      "without_qualifiers": 9
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q2",
+    "label": "DeepH",
+    "node_ids": [
+      "cite_00254"
+    ],
+    "R3_rank": 309,
+    "ranks": {
+      "H2": 73,
+      "CR0-100": 96,
+      "CR1-100": 1,
+      "CR3-100": 18,
+      "CR6-100": 1,
+      "CR7-100": 18,
+      "CR6-200": 1,
+      "pool_only": 1,
+      "without_qualifiers": 1
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q2",
+    "label": "HamGNN",
+    "node_ids": [
+      "meth_00221"
+    ],
+    "R3_rank": 102,
+    "ranks": {
+      "H2": 64,
+      "CR0-100": 91,
+      "CR1-100": 58,
+      "CR3-100": 71,
+      "CR6-100": 54,
+      "CR7-100": 68,
+      "CR6-200": 90,
+      "pool_only": 54,
+      "without_qualifiers": 54
+    },
+    "failures": {
+      "CR6-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR7-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q3",
+    "label": "DeepH-E3",
+    "node_ids": [
+      "cite_00255",
+      "meth_00118"
+    ],
+    "R3_rank": 1,
+    "ranks": {
+      "H2": 1,
+      "CR0-100": 1,
+      "CR1-100": 1,
+      "CR3-100": 1,
+      "CR6-100": 1,
+      "CR7-100": 1,
+      "CR6-200": 1,
+      "pool_only": 1,
+      "without_qualifiers": 1
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q4",
+    "label": "VGNN",
+    "node_ids": [
+      "cite_00409"
+    ],
+    "R3_rank": 2567,
+    "ranks": {
+      "H2": 59,
+      "CR0-100": 44,
+      "CR1-100": 1,
+      "CR3-100": 16,
+      "CR6-100": 1,
+      "CR7-100": 17,
+      "CR6-200": 1,
+      "pool_only": 1,
+      "without_qualifiers": 1
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q6",
+    "label": "LiFlow",
+    "node_ids": [
+      "meth_00239"
+    ],
+    "R3_rank": 9,
+    "ranks": {
+      "H2": 2,
+      "CR0-100": 1,
+      "CR1-100": 2,
+      "CR3-100": 1,
+      "CR6-100": 2,
+      "CR7-100": 1,
+      "CR6-200": 2,
+      "pool_only": 2,
+      "without_qualifiers": 2
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q7",
+    "label": "symbolic regression",
+    "node_ids": [
+      "cite_00016",
+      "meth_00068"
+    ],
+    "R3_rank": 184,
+    "ranks": {
+      "H2": 225,
+      "CR0-100": 225,
+      "CR1-100": 225,
+      "CR3-100": 225,
+      "CR6-100": 225,
+      "CR7-100": 225,
+      "CR6-200": 225,
+      "pool_only": 225,
+      "without_qualifiers": 225
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NOT_IN_H2_200"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q8",
+    "label": "ConvLSTM",
+    "node_ids": [
+      "cite_00001"
+    ],
+    "R3_rank": 158,
+    "ranks": {
+      "H2": 29,
+      "CR0-100": 30,
+      "CR1-100": 1,
+      "CR3-100": 1,
+      "CR6-100": 1,
+      "CR7-100": 1,
+      "CR6-200": 1,
+      "pool_only": 1,
+      "without_qualifiers": 1
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q9",
+    "label": "E(3)-equivariant GNNs",
+    "node_ids": [
+      "cite_00120"
+    ],
+    "R3_rank": 2391,
+    "ranks": {
+      "H2": 139,
+      "CR0-100": 139,
+      "CR1-100": 139,
+      "CR3-100": 139,
+      "CR6-100": 139,
+      "CR7-100": 139,
+      "CR6-200": 149,
+      "pool_only": 139,
+      "without_qualifiers": 139
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q9",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "R3_rank": 232,
+    "ranks": {
+      "H2": 111,
+      "CR0-100": 111,
+      "CR1-100": 111,
+      "CR3-100": 111,
+      "CR6-100": 111,
+      "CR7-100": 111,
+      "CR6-200": 34,
+      "pool_only": 111,
+      "without_qualifiers": 111
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q10",
+    "label": "SchNet",
+    "node_ids": [
+      "cite_00005",
+      "meth_00050"
+    ],
+    "R3_rank": 32,
+    "ranks": {
+      "H2": 25,
+      "CR0-100": 18,
+      "CR1-100": 26,
+      "CR3-100": 21,
+      "CR6-100": 23,
+      "CR7-100": 19,
+      "CR6-200": 30,
+      "pool_only": 23,
+      "without_qualifiers": 23
+    },
+    "failures": {
+      "CR6-100": "PARTIAL_REQUIREMENT_SUPPORT",
+      "CR7-100": "PARTIAL_REQUIREMENT_SUPPORT",
+      "CR6-200": "PARTIAL_REQUIREMENT_SUPPORT"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "R3_rank": 121,
+    "ranks": {
+      "H2": 73,
+      "CR0-100": 98,
+      "CR1-100": 95,
+      "CR3-100": 90,
+      "CR6-100": 96,
+      "CR7-100": 90,
+      "CR6-200": 170,
+      "pool_only": 96,
+      "without_qualifiers": 96
+    },
+    "failures": {
+      "CR6-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR7-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "DeePMD",
+    "node_ids": [
+      "cite_00214"
+    ],
+    "R3_rank": 265,
+    "ranks": {
+      "H2": 56,
+      "CR0-100": 34,
+      "CR1-100": 17,
+      "CR3-100": 28,
+      "CR6-100": 14,
+      "CR7-100": 24,
+      "CR6-200": 16,
+      "pool_only": 16,
+      "without_qualifiers": 16
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "R3_rank": 28,
+    "ranks": {
+      "H2": 32,
+      "CR0-100": 93,
+      "CR1-100": 24,
+      "CR3-100": 20,
+      "CR6-100": 23,
+      "CR7-100": 14,
+      "CR6-200": 30,
+      "pool_only": 25,
+      "without_qualifiers": 25
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "GAP",
+    "node_ids": [
+      "cite_00191"
+    ],
+    "R3_rank": 250,
+    "ranks": {
+      "H2": 50,
+      "CR0-100": 68,
+      "CR1-100": 25,
+      "CR3-100": 41,
+      "CR6-100": 21,
+      "CR7-100": 31,
+      "CR6-200": 26,
+      "pool_only": 21,
+      "without_qualifiers": 21
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "R3_rank": 109,
+    "ranks": {
+      "H2": 31,
+      "CR0-100": 11,
+      "CR1-100": 10,
+      "CR3-100": 8,
+      "CR6-100": 10,
+      "CR7-100": 9,
+      "CR6-200": 10,
+      "pool_only": 9,
+      "without_qualifiers": 9
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "R3_rank": 448,
+    "ranks": {
+      "H2": 110,
+      "CR0-100": 110,
+      "CR1-100": 110,
+      "CR3-100": 110,
+      "CR6-100": 110,
+      "CR7-100": 110,
+      "CR6-200": 44,
+      "pool_only": 110,
+      "without_qualifiers": 110
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "MatterSim",
+    "node_ids": [
+      "cite_00060",
+      "meth_00091"
+    ],
+    "R3_rank": 148,
+    "ranks": {
+      "H2": 37,
+      "CR0-100": 74,
+      "CR1-100": 2,
+      "CR3-100": 4,
+      "CR6-100": 1,
+      "CR7-100": 3,
+      "CR6-200": 1,
+      "pool_only": 2,
+      "without_qualifiers": 2
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "R3_rank": 251,
+    "ranks": {
+      "H2": 92,
+      "CR0-100": 50,
+      "CR1-100": 6,
+      "CR3-100": 25,
+      "CR6-100": 8,
+      "CR7-100": 33,
+      "CR6-200": 8,
+      "pool_only": 5,
+      "without_qualifiers": 5
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "Orb",
+    "node_ids": [
+      "cite_00011"
+    ],
+    "R3_rank": 446,
+    "ranks": {
+      "H2": 112,
+      "CR0-100": 112,
+      "CR1-100": 112,
+      "CR3-100": 112,
+      "CR6-100": 112,
+      "CR7-100": 112,
+      "CR6-200": 191,
+      "pool_only": 112,
+      "without_qualifiers": 112
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "PET",
+    "node_ids": [
+      "cite_00044"
+    ],
+    "R3_rank": 404,
+    "ranks": {
+      "H2": 233,
+      "CR0-100": 233,
+      "CR1-100": 233,
+      "CR3-100": 233,
+      "CR6-100": 233,
+      "CR7-100": 233,
+      "CR6-200": 233,
+      "pool_only": 233,
+      "without_qualifiers": 233
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NOT_IN_H2_200"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "SevenNet",
+    "node_ids": [
+      "cite_00054"
+    ],
+    "R3_rank": 200,
+    "ranks": {
+      "H2": 42,
+      "CR0-100": 55,
+      "CR1-100": 8,
+      "CR3-100": 12,
+      "CR6-100": 4,
+      "CR7-100": 8,
+      "CR6-200": 4,
+      "pool_only": 7,
+      "without_qualifiers": 7
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "UMA",
+    "node_ids": [
+      "cite_00046"
+    ],
+    "R3_rank": 2564,
+    "ranks": {
+      "H2": 402,
+      "CR0-100": 402,
+      "CR1-100": 402,
+      "CR3-100": 402,
+      "CR6-100": 402,
+      "CR7-100": 402,
+      "CR6-200": 402,
+      "pool_only": 402,
+      "without_qualifiers": 402
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NOT_IN_H2_200"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "eSEN",
+    "node_ids": [
+      "cite_00053",
+      "meth_00293"
+    ],
+    "R3_rank": 266,
+    "ranks": {
+      "H2": 116,
+      "CR0-100": 116,
+      "CR1-100": 116,
+      "CR3-100": 116,
+      "CR6-100": 116,
+      "CR7-100": 116,
+      "CR6-200": 42,
+      "pool_only": 116,
+      "without_qualifiers": 116
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "CGCNN",
+    "node_ids": [
+      "cite_00354",
+      "meth_00054"
+    ],
+    "R3_rank": 179,
+    "ranks": {
+      "H2": 130,
+      "CR0-100": 130,
+      "CR1-100": 130,
+      "CR3-100": 130,
+      "CR6-100": 130,
+      "CR7-100": 130,
+      "CR6-200": 20,
+      "pool_only": 130,
+      "without_qualifiers": 130
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "R3_rank": 150,
+    "ranks": {
+      "H2": 86,
+      "CR0-100": 99,
+      "CR1-100": 96,
+      "CR3-100": 96,
+      "CR6-100": 96,
+      "CR7-100": 95,
+      "CR6-200": 161,
+      "pool_only": 96,
+      "without_qualifiers": 96
+    },
+    "failures": {
+      "CR6-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR7-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "R3_rank": 25,
+    "ranks": {
+      "H2": 49,
+      "CR0-100": 80,
+      "CR1-100": 29,
+      "CR3-100": 48,
+      "CR6-100": 21,
+      "CR7-100": 39,
+      "CR6-200": 30,
+      "pool_only": 30,
+      "without_qualifiers": 30
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "R3_rank": 124,
+    "ranks": {
+      "H2": 87,
+      "CR0-100": 26,
+      "CR1-100": 1,
+      "CR3-100": 14,
+      "CR6-100": 3,
+      "CR7-100": 23,
+      "CR6-200": 3,
+      "pool_only": 1,
+      "without_qualifiers": 1
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "R3_rank": 386,
+    "ranks": {
+      "H2": 105,
+      "CR0-100": 105,
+      "CR1-100": 105,
+      "CR3-100": 105,
+      "CR6-100": 105,
+      "CR7-100": 105,
+      "CR6-200": 42,
+      "pool_only": 105,
+      "without_qualifiers": 105
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "MEGNet",
+    "node_ids": [
+      "cite_00334",
+      "meth_00036"
+    ],
+    "R3_rank": 206,
+    "ranks": {
+      "H2": 205,
+      "CR0-100": 205,
+      "CR1-100": 205,
+      "CR3-100": 205,
+      "CR6-100": 205,
+      "CR7-100": 205,
+      "CR6-200": 205,
+      "pool_only": 205,
+      "without_qualifiers": 205
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NOT_IN_H2_200"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "R3_rank": 207,
+    "ranks": {
+      "H2": 79,
+      "CR0-100": 54,
+      "CR1-100": 12,
+      "CR3-100": 42,
+      "CR6-100": 13,
+      "CR7-100": 44,
+      "CR6-200": 18,
+      "pool_only": 12,
+      "without_qualifiers": 12
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "SchNet",
+    "node_ids": [
+      "cite_00005",
+      "meth_00050"
+    ],
+    "R3_rank": 38,
+    "ranks": {
+      "H2": 25,
+      "CR0-100": 5,
+      "CR1-100": 69,
+      "CR3-100": 53,
+      "CR6-100": 18,
+      "CR7-100": 8,
+      "CR6-200": 26,
+      "pool_only": 17,
+      "without_qualifiers": 17
+    },
+    "failures": {
+      "CR6-100": "ANSWER_QUALIFIER_FAILURE",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "ANSWER_QUALIFIER_FAILURE"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "AFLOW",
+    "node_ids": [
+      "cite_00274"
+    ],
+    "R3_rank": 301,
+    "ranks": {
+      "H2": 56,
+      "CR0-100": 95,
+      "CR1-100": 7,
+      "CR3-100": 14,
+      "CR6-100": 8,
+      "CR7-100": 17,
+      "CR6-200": 10,
+      "pool_only": 8,
+      "without_qualifiers": 8
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "Alexandria",
+    "node_ids": [
+      "cite_00369",
+      "meth_00295"
+    ],
+    "R3_rank": 467,
+    "ranks": {
+      "H2": 147,
+      "CR0-100": 147,
+      "CR1-100": 147,
+      "CR3-100": 147,
+      "CR6-100": 147,
+      "CR7-100": 147,
+      "CR6-200": 186,
+      "pool_only": 147,
+      "without_qualifiers": 147
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "GNoME",
+    "node_ids": [
+      "cite_00330",
+      "comp_00589",
+      "data_00144",
+      "meth_00169"
+    ],
+    "R3_rank": 143,
+    "ranks": {
+      "H2": 43,
+      "CR0-100": 32,
+      "CR1-100": 28,
+      "CR3-100": 34,
+      "CR6-100": 15,
+      "CR7-100": 21,
+      "CR6-200": 23,
+      "pool_only": 15,
+      "without_qualifiers": 15
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "JARVIS-DFT",
+    "node_ids": [
+      "comp_00335"
+    ],
+    "R3_rank": 611,
+    "ranks": {
+      "H2": 620,
+      "CR0-100": 620,
+      "CR1-100": 620,
+      "CR3-100": 620,
+      "CR6-100": 620,
+      "CR7-100": 620,
+      "CR6-200": 620,
+      "pool_only": 620,
+      "without_qualifiers": 620
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NOT_IN_H2_200"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "MPtrj",
+    "node_ids": [
+      "cite_00372",
+      "data_00102"
+    ],
+    "R3_rank": 154,
+    "ranks": {
+      "H2": 157,
+      "CR0-100": 157,
+      "CR1-100": 157,
+      "CR3-100": 157,
+      "CR6-100": 157,
+      "CR7-100": 157,
+      "CR6-200": 154,
+      "pool_only": 157,
+      "without_qualifiers": 157
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "Matbench",
+    "node_ids": [
+      "cite_00362",
+      "comp_00448",
+      "data_00114",
+      "meth_00348"
+    ],
+    "R3_rank": 110,
+    "ranks": {
+      "H2": 58,
+      "CR0-100": 90,
+      "CR1-100": 74,
+      "CR3-100": 82,
+      "CR6-100": 74,
+      "CR7-100": 82,
+      "CR6-200": 109,
+      "pool_only": 74,
+      "without_qualifiers": 74
+    },
+    "failures": {
+      "CR6-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR7-100": "NO_ATTRIBUTABLE_EVIDENCE",
+      "CR6-200": "NO_ATTRIBUTABLE_EVIDENCE"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "Matbench Discovery",
+    "node_ids": [
+      "cite_00302",
+      "data_00013",
+      "meth_00159"
+    ],
+    "R3_rank": 2,
+    "ranks": {
+      "H2": 4,
+      "CR0-100": 3,
+      "CR1-100": 25,
+      "CR3-100": 1,
+      "CR6-100": 27,
+      "CR7-100": 1,
+      "CR6-200": 42,
+      "pool_only": 27,
+      "without_qualifiers": 27
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "Materials Project",
+    "node_ids": [
+      "cite_00018",
+      "data_00061",
+      "meth_00143"
+    ],
+    "R3_rank": 117,
+    "ranks": {
+      "H2": 34,
+      "CR0-100": 55,
+      "CR1-100": 17,
+      "CR3-100": 13,
+      "CR6-100": 19,
+      "CR7-100": 18,
+      "CR6-200": 27,
+      "pool_only": 19,
+      "without_qualifiers": 19
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "OMat24",
+    "node_ids": [
+      "cite_00311",
+      "data_00101"
+    ],
+    "R3_rank": 124,
+    "ranks": {
+      "H2": 41,
+      "CR0-100": 53,
+      "CR1-100": 24,
+      "CR3-100": 27,
+      "CR6-100": 7,
+      "CR7-100": 9,
+      "CR6-200": 9,
+      "pool_only": 7,
+      "without_qualifiers": 7
+    },
+    "failures": {
+      "CR6-100": "RETRIEVED_TOP10",
+      "CR7-100": "RETRIEVED_TOP10",
+      "CR6-200": "RETRIEVED_TOP10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "OQMD",
+    "node_ids": [
+      "cite_00370",
+      "data_00095"
+    ],
+    "R3_rank": 131,
+    "ranks": {
+      "H2": 96,
+      "CR0-100": 73,
+      "CR1-100": 20,
+      "CR3-100": 61,
+      "CR6-100": 23,
+      "CR7-100": 63,
+      "CR6-200": 35,
+      "pool_only": 23,
+      "without_qualifiers": 23
+    },
+    "failures": {
+      "CR6-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR7-100": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "WBM",
+    "node_ids": [
+      "cite_00376",
+      "data_00175"
+    ],
+    "R3_rank": 185,
+    "ranks": {
+      "H2": 183,
+      "CR0-100": 183,
+      "CR1-100": 183,
+      "CR3-100": 183,
+      "CR6-100": 183,
+      "CR7-100": 183,
+      "CR6-200": 32,
+      "pool_only": 183,
+      "without_qualifiers": 183
+    },
+    "failures": {
+      "CR6-100": "NOT_IN_H2_100",
+      "CR7-100": "NOT_IN_H2_100",
+      "CR6-200": "SUPPORTED_BUT_RANKED_BELOW_10"
+    }
+  }
+]

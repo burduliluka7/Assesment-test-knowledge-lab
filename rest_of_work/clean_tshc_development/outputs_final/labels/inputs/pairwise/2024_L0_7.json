@@ -1,0 +1,55 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00253",
+      "type": "claim",
+      "surface_form": "MLIPs use highly flexible functional forms (e.g., neural networks) while PBPs use highly constrained forms guided by physical intuition (e.g., Lennard-Jones)."
+    },
+    {
+      "id": "clai_00266",
+      "type": "claim",
+      "surface_form": "MLIP accuracy is typically on the scale of a few to tens of meV/atom, which is often an order of magnitude better than typical PBPs."
+    },
+    {
+      "id": "clai_00280",
+      "type": "claim",
+      "surface_form": "There exists a continuum of approaches between pure PBPs (physics-derived with almost no fitting parameters) and pure MLIPs (purely numerical fit with almost no intuitive guidance)."
+    },
+    {
+      "id": "clai_00281",
+      "type": "claim",
+      "surface_form": "MLIPs require substantial training data to learn the physics of the system, though this is becoming easier to meet as ab initio data becomes more plentiful and standardized."
+    },
+    {
+      "id": "clai_00282",
+      "type": "claim",
+      "surface_form": "MLIPs are straightforward to iteratively improve by adding more training data, whereas improving PBPs often requires fundamental changes to underlying functional forms."
+    },
+    {
+      "id": "clai_00293",
+      "type": "claim",
+      "surface_form": "U-MLIPs generally have low energy and force errors compared to their ab initio training data."
+    },
+    {
+      "id": "clai_00302",
+      "type": "claim",
+      "surface_form": "MLIPs are not fundamentally limited to specific system types (metallic, ionic, reactive vs. nonreactive), unlike distinctions that were essential for PBPs."
+    },
+    {
+      "id": "clai_00310",
+      "type": "claim",
+      "surface_form": "Some of the best-performing MLIPs are trained separately on energies and forces and are non-conservative, with forces not directly calculated by differentiating the PES."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 8
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mlips",
+  "representative_ids": [
+    "clai_00282",
+    "clai_00253"
+  ]
+}

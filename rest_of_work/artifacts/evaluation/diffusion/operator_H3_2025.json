@@ -1,0 +1,11 @@
+{
+  "nodes": 4995,
+  "edges": 1239,
+  "incidence_nnz": 7586,
+  "isolated_nodes": 294,
+  "theta_implementation": "x - existing spectral.laplacian(graph) @ x",
+  "singleton_policy": "Existing spectral incidence omits singleton/internal edges",
+  "pairwise_policy": "Existing weight-conserving clique projection, then the same arity-2 Zhou normalization (lazy symmetric graph diffusion)",
+  "build_seconds": 0.007148700067773461,
+  "graph_hash": "9ba52091d36b96e86e8c2ddcb5d53a016370821e0b91911d598440abd82c3fe0"
+}

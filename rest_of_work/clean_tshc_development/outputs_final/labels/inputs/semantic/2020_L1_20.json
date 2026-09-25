@@ -1,0 +1,151 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "clai_00031",
+      "type": "claim",
+      "surface_form": "The meta‑GGA TBmBJ potential predicts band gaps with accuracy comparable to the hybrid HSE06 functional while requiring up to ten times less computational effort."
+    },
+    {
+      "id": "clai_00216",
+      "type": "claim",
+      "surface_form": "The PBE functional combined with PAW potentials is the default exchange-correlation functional and potential combination for ICSD, Binary Alloy, and Heusler databases."
+    },
+    {
+      "id": "clai_00217",
+      "type": "claim",
+      "surface_form": "The applied plane-wave kinetic energy cut-off (Ecut) is the largest recommended value among all species in the calculation, increased by a factor of 1.4."
+    },
+    {
+      "id": "clai_00218",
+      "type": "claim",
+      "surface_form": "DFT+U corrections are applied to the entire ICSD database and certain Heusler database entries containing O, S, Se, and F elements, but not to the Binary Alloy database."
+    },
+    {
+      "id": "clai_00663",
+      "type": "claim",
+      "surface_form": "AFLOW provides a standardized definition of Brillouin‑zone integration paths for all 14 Bravais lattices, filling a gap in the literature."
+    },
+    {
+      "id": "clai_00670",
+      "type": "claim",
+      "surface_form": "A hybrid HSE06 calculation for ZnO yields a band gap of 2.48 eV, substantially larger than the LDA/GGA gap of 0.7 eV and the PBE+U gap of 1.82 eV."
+    },
+    {
+      "id": "clai_00671",
+      "type": "claim",
+      "surface_form": "Tuning the exact‑exchange fraction α to 0.375 in HSE06 brings the calculated ZnO band gap into agreement with experiment."
+    },
+    {
+      "id": "clai_00674",
+      "type": "claim",
+      "surface_form": "A bulk ZnO HSE06 calculation (8×8×6 k‑point mesh, 400 eV cutoff) takes approximately 5 hours on 8 CPUs, while the equivalent GGA/PBE+U calculation finishes in less than a minute."
+    },
+    {
+      "id": "comp_00351",
+      "type": "component",
+      "surface_form": "JARVIS‑Heterostructure app"
+    },
+    {
+      "id": "comp_00386",
+      "type": "component",
+      "surface_form": "Standardized Brillouin‑zone path generator"
+    },
+    {
+      "id": "comp_00585",
+      "type": "component",
+      "surface_form": "Plane-wave kinetic energy cut-off"
+    },
+    {
+      "id": "data_00064",
+      "type": "dataset",
+      "surface_form": "Band gap"
+    },
+    {
+      "id": "metr_00081",
+      "type": "metric",
+      "surface_form": "band gap (eV)"
+    },
+    {
+      "id": "prob_00222",
+      "type": "problem",
+      "surface_form": "defect energetics and band‑gap underestimation"
+    },
+    {
+      "id": "prob_00377",
+      "type": "problem",
+      "surface_form": "band structure prediction"
+    },
+    {
+      "id": "prob_00382",
+      "type": "problem",
+      "surface_form": "Fermi edge handling"
+    },
+    {
+      "id": "prob_00613",
+      "type": "problem",
+      "surface_form": "Spurious energy barriers"
+    },
+    {
+      "id": "task_00235",
+      "type": "task",
+      "surface_form": "Heterostructure design"
+    },
+    {
+      "id": "task_00244",
+      "type": "task",
+      "surface_form": "2D heterostructure band‑alignment analysis"
+    },
+    {
+      "id": "task_00273",
+      "type": "task",
+      "surface_form": "hybrid functional band‑structure calculation"
+    },
+    {
+      "id": "task_00331",
+      "type": "task",
+      "surface_form": "Band gap prediction"
+    },
+    {
+      "id": "task_00340",
+      "type": "task",
+      "surface_form": "Band gap regression"
+    },
+    {
+      "id": "task_00470",
+      "type": "task",
+      "surface_form": "Electronic band structure calculation"
+    },
+    {
+      "id": "tech_00399",
+      "type": "technique",
+      "surface_form": "Gamma‑centered k‑mesh for hexagonal, fcc, rhombohedral lattices"
+    },
+    {
+      "id": "tech_00647",
+      "type": "technique",
+      "surface_form": "DOS energy window selection"
+    },
+    {
+      "id": "tech_00648",
+      "type": "technique",
+      "surface_form": "Band structure energy window selection"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 8,
+    "component": 3,
+    "dataset": 1,
+    "metric": 1,
+    "problem": 4,
+    "task": 6,
+    "technique": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "band",
+  "representative_ids": [
+    "task_00273",
+    "task_00331"
+  ]
+}

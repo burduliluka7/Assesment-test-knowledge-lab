@@ -1,0 +1,227 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00820",
+      "type": "component",
+      "surface_form": "surface slab models"
+    },
+    {
+      "id": "prob_00343",
+      "type": "problem",
+      "surface_form": "free energy calculation"
+    },
+    {
+      "id": "task_00118",
+      "type": "task",
+      "surface_form": "Data Extraction, Interpretation and Q&A"
+    },
+    {
+      "id": "task_00120",
+      "type": "task",
+      "surface_form": "Process Planning, Discovery & Optimization"
+    },
+    {
+      "id": "task_00124",
+      "type": "task",
+      "surface_form": "Descriptive Language Generation"
+    },
+    {
+      "id": "task_00126",
+      "type": "task",
+      "surface_form": "Experimental Plan Generation"
+    },
+    {
+      "id": "task_00127",
+      "type": "task",
+      "surface_form": "Simulation Tool Orchestration"
+    },
+    {
+      "id": "task_00129",
+      "type": "task",
+      "surface_form": "Hypothesis Generation"
+    },
+    {
+      "id": "task_00130",
+      "type": "task",
+      "surface_form": "Experimental Data Analysis"
+    },
+    {
+      "id": "task_00131",
+      "type": "task",
+      "surface_form": "Alloy and Polymer Discovery"
+    },
+    {
+      "id": "task_00132",
+      "type": "task",
+      "surface_form": "Data‑Driven Experimentation"
+    },
+    {
+      "id": "task_00133",
+      "type": "task",
+      "surface_form": "Literature Review Automation"
+    },
+    {
+      "id": "task_00134",
+      "type": "task",
+      "surface_form": "Literature Search & Knowledge Retrieval"
+    },
+    {
+      "id": "task_00138",
+      "type": "task",
+      "surface_form": "Drug Discovery Assistance"
+    },
+    {
+      "id": "task_00139",
+      "type": "task",
+      "surface_form": "Materials Design"
+    },
+    {
+      "id": "task_00211",
+      "type": "task",
+      "surface_form": "Atomic von Mises stress prediction"
+    },
+    {
+      "id": "task_00212",
+      "type": "task",
+      "surface_form": "Atomic tensile stress prediction"
+    },
+    {
+      "id": "task_00213",
+      "type": "task",
+      "surface_form": "Atomic potential energy prediction"
+    },
+    {
+      "id": "task_00216",
+      "type": "task",
+      "surface_form": "Per‑atom stress field prediction"
+    },
+    {
+      "id": "task_00217",
+      "type": "task",
+      "surface_form": "Global mechanical property estimation"
+    },
+    {
+      "id": "task_00218",
+      "type": "task",
+      "surface_form": "Design optimization of porous/holey graphene membranes"
+    },
+    {
+      "id": "task_00219",
+      "type": "task",
+      "surface_form": "Validation against MD simulations"
+    },
+    {
+      "id": "task_00220",
+      "type": "task",
+      "surface_form": "Atomic stress field prediction"
+    },
+    {
+      "id": "task_00221",
+      "type": "task",
+      "surface_form": "Holey graphene design optimization"
+    },
+    {
+      "id": "task_00222",
+      "type": "task",
+      "surface_form": "Benchmarking GNN architectures"
+    },
+    {
+      "id": "task_00223",
+      "type": "task",
+      "surface_form": "mechanical design"
+    },
+    {
+      "id": "task_00389",
+      "type": "task",
+      "surface_form": "Crystal structure property prediction"
+    },
+    {
+      "id": "task_00393",
+      "type": "task",
+      "surface_form": "Crystal stability assessment"
+    },
+    {
+      "id": "task_00416",
+      "type": "task",
+      "surface_form": "QM/MM energy correction"
+    },
+    {
+      "id": "task_00420",
+      "type": "task",
+      "surface_form": "Energy fitting"
+    },
+    {
+      "id": "task_00428",
+      "type": "task",
+      "surface_form": "free energy calculation"
+    },
+    {
+      "id": "task_00495",
+      "type": "task",
+      "surface_form": "Stable crystal discovery"
+    },
+    {
+      "id": "task_00503",
+      "type": "task",
+      "surface_form": "Crystal structure discovery"
+    },
+    {
+      "id": "task_00511",
+      "type": "task",
+      "surface_form": "Crystal structure prediction and discovery"
+    },
+    {
+      "id": "task_00678",
+      "type": "task",
+      "surface_form": "Molecular crystal prediction"
+    },
+    {
+      "id": "task_00682",
+      "type": "task",
+      "surface_form": "Molecular crystal structure prediction"
+    },
+    {
+      "id": "task_00684",
+      "type": "task",
+      "surface_form": "crystallography"
+    },
+    {
+      "id": "task_00692",
+      "type": "task",
+      "surface_form": "Carbon dimer potential energy curve computation"
+    },
+    {
+      "id": "task_00695",
+      "type": "task",
+      "surface_form": "Crystalline allotrope modeling"
+    },
+    {
+      "id": "task_00709",
+      "type": "task",
+      "surface_form": "surface reconstruction simulation"
+    },
+    {
+      "id": "task_00713",
+      "type": "task",
+      "surface_form": "Bulk crystal structure modeling"
+    },
+    {
+      "id": "task_00716",
+      "type": "task",
+      "surface_form": "computational materials modeling"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "problem": 1,
+    "task": 40
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "crystal",
+  "representative_ids": [
+    "task_00511",
+    "task_00389"
+  ]
+}

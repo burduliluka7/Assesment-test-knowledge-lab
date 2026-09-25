@@ -1,0 +1,55 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00053",
+      "type": "claim",
+      "surface_form": "The best one-step gradient-boosted tree regression model achieves 165±4 K MAE and 0.89 R² on the test set for melting temperature prediction."
+    },
+    {
+      "id": "clai_00054",
+      "type": "claim",
+      "surface_form": "A two-step approach combining unsupervised clustering with supervised regression achieves 156±4 K MAE and 0.92 R², outperforming direct one-step supervised learning."
+    },
+    {
+      "id": "clai_00055",
+      "type": "claim",
+      "surface_form": "Cluster 1 (198 compounds, mostly ionic halides and oxides) achieves 136±5 K MAE and 0.92 R², while Cluster 2 (222 compounds, mostly covalent carbides and nitrides) achieves 189±7 K MAE and 0.90 R²."
+    },
+    {
+      "id": "clai_00057",
+      "type": "claim",
+      "surface_form": "Models trained without elastic moduli features yield errors greater than 400 K, demonstrating that elastic features are necessary for accurate melting temperature predictions."
+    },
+    {
+      "id": "clai_00058",
+      "type": "claim",
+      "surface_form": "Very-high melting temperatures (>3150 K) appear only in Cluster 2, predominantly in metal carbides, reflecting the covalent bonding character of these materials."
+    },
+    {
+      "id": "clai_00059",
+      "type": "claim",
+      "surface_form": "Tree ensemble methods (gradient-boosted trees and random forest regression) substantially outperform linear models, which achieve MAE >240 K and RMSE >340 K, at least 100 K worse than non-linear approaches."
+    },
+    {
+      "id": "clai_00060",
+      "type": "claim",
+      "surface_form": "The two-step clustering approach provides interpretability by revealing different melting physics dominated by bonding types, with Cluster 1 governed by ionic bonding features and Cluster 2 by covalent bonding features."
+    },
+    {
+      "id": "clai_00062",
+      "type": "claim",
+      "surface_form": "Cluster 2 melting temperatures can be accurately represented with symbolic models depending on only two features: squared cohesive energy and inverse square root of periodic groups or electronegativities."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 8
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "cluster",
+  "representative_ids": [
+    "clai_00062",
+    "clai_00060"
+  ]
+}

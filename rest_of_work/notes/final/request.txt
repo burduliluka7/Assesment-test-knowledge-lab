@@ -1,0 +1,1829 @@
+Continue from the CURRENT repository and all completed hierarchy, retrieval, constraint-reranking, and requirement-conditioned evidence work.
+
+This is the FINAL integration pass.
+
+Do not introduce a new retrieval architecture.
+
+Do not start another large tuning cycle.
+
+The goals are:
+
+1. establish the simplest best fine-level retriever as the fixed reference;
+2. evaluate the existing hierarchy as a coarse-to-fine approximation of that reference;
+3. evaluate entity recovery robustly and supporting claims/provenance honestly;
+4. consolidate all T1–T7 results;
+5. produce the final assessment artifacts/report so that every requested requirement is explicitly answered.
+
+---
+
+# 0. READ THE ASSIGNMENT AS THE CONTRACT
+
+The final submission must explicitly answer:
+
+```text
+P1 laminar refinement
+P2 hard size budgets
+P3 semantic coherence + structure/semantic reconciliation
+P4 native hyperedge fidelity
+P5 temporal stability / persistent identity
+P6 interpretable faithful temporally honest labels
+
+T1 evolving graph description
+T2 formal method
+T3 temporal coupling
+T4 implemented hyperedge collapse
+T5 automatic labeling + measured faithfulness
+T6 trustworthy evaluation
+T7 verified vs assumed write-up
+```
+
+T6 must include:
+
+```text
+independent coherence
+null model
+10% edge-removal perturbation with five seeds
+confidence intervals/significance
+real cross-snapshot stability
+label over-claim / faithfulness metric
+extrinsic downstream benchmark
+hierarchy-vs-flat comparison
+```
+
+The final report must not leave any of these implicit.
+
+---
+
+# 1. FREEZE ALL PREVIOUSLY VALIDATED CORE HIERARCHY WORK
+
+Do not alter:
+
+```text
+hierarchy construction
+12 / 40 / 120 budgets
+native hypergraph objective
+semantic / spectral / temporal objective terms
+temporal VI
+hyperedge collapse
+persistent-ID matching
+event tracking
+label generation
+label faithfulness protocol
+coherence protocol
+null model
+perturbation protocol
+```
+
+These are already completed and tested.
+
+Do not change their historical metrics merely to improve the final story.
+
+Existing hierarchy variants remain:
+
+```text
+semantic
+structural
+static hybrid
+temporal hybrid
+pairwise hybrid
+```
+
+The final primary hierarchy remains:
+
+```text
+temporal hybrid
+```
+
+unless a correctness bug is discovered.
+
+---
+
+# 2. ESTABLISH THE FINAL FINE-LEVEL REFERENCE
+
+The latest requirement-conditioned report shows:
+
+```text
+2025:
+CR1                 11/47
+CR6                 12/47
+pool_only            13/47
+without_qualifiers   13/47
+
+2026:
+CR1                 11/50
+CR6                 13/50
+pool_only            13/50
+without_qualifiers   13/50
+```
+
+Use the structurally cleaner:
+
+```text
+without_qualifiers
+```
+
+configuration as the fixed fine-level reference.
+
+It retains:
+
+```text
+generic question decomposition
+generic attribution fixes
+larger query-independent candidate evidence pools
+requirement-conditioned evidence selection
+CR1 aggregation
+```
+
+but does NOT include answer-head qualifiers in the production score.
+
+Answer qualifiers may remain exported as diagnostics.
+
+Give the fixed reference a clear stable name, e.g.:
+
+```text
+FINAL_FINE
+```
+
+or:
+
+```text
+conditioned_no_qualifiers
+```
+
+Do not rename historical CR stages.
+
+---
+
+# 3. EXACT FINAL_FINE DEFINITION
+
+FINAL_FINE must be:
+
+```text
+question
+    ↓
+existing generic CR1 decomposition
+    ↓
+frozen H2 top-100 candidate generation
+    ↓
+query-independent larger candidate evidence pools
+    ↓
+requirement-conditioned evidence selection
+    ↓
+existing attribution-aware cosine support
+    ↓
+existing CR1 aggregation
+    ↓
+top-10
+```
+
+Explicitly:
+
+```text
+NO NLI
+NO qualifier components in score
+NO H2 fusion
+NO K200 in primary system
+NO new aliases
+NO new mapping rules
+NO benchmark-specific conditions
+```
+
+Primary K:
+
+```text
+100
+```
+
+K200 remains diagnostic only.
+
+---
+
+# 4. VERIFY THE FINAL_FINE METRICS
+
+Before doing hierarchy work, reproduce exactly:
+
+```text
+2025:
+13 / 47 canonical target instances at top10
+
+2026:
+13 / 50 canonical target instances at top10
+```
+
+Also report:
+
+```text
+macro Recall@10
+micro Recall@10
+unique Recall@10
+raw /63
+MRR
+R-Precision
+Recall@R
+median gold rank
+mean gold rank
+```
+
+Archive the exact final ranking output.
+
+Add a regression test so future hierarchy work cannot silently alter FINAL_FINE.
+
+---
+
+# 5. ARCHIVE NEGATIVE / SECONDARY ABLATIONS
+
+Do not remove historical experiments.
+
+Keep, but clearly label as ablations:
+
+```text
+CR2  requirement + local NLI
+CR4  H2 + NLI fusion
+CR7  H2 + CR6 fusion
+```
+
+Conclusions:
+
+```text
+CR2/CR4:
+local NLI configuration was not useful as the default scorer.
+
+CR7:
+better retention of some H2 hits,
+but lower top10 recovery than standalone conditioned scoring.
+```
+
+Do not execute NLI again unless required for historical regression.
+
+Do not advertise these as candidate final systems.
+
+---
+
+# 6. THE REMAINING CORE EXPERIMENT: HIERARCHY-BASED RETRIEVAL
+
+The assignment requires:
+
+```text
+a retrieval/agent that starts at a coarse level
+and drills down through the hierarchy
+```
+
+versus a flat/fine baseline.
+
+The previous hierarchical retrieval experiments are historical diagnostics only because the leaf ranking was weak.
+
+Now rerun the hierarchy experiment using:
+
+```text
+FINAL_FINE
+```
+
+as the frozen fine-level reference.
+
+The research question is now:
+
+```text
+Can the temporal hierarchy restrict fine-level search
+while preserving the quality of FINAL_FINE?
+```
+
+NOT:
+
+```text
+Can hierarchy magically create relevance
+that the fine scorer does not have?
+```
+
+---
+
+# 7. HIERARCHICAL SEARCH ARCHITECTURE
+
+Use the EXISTING temporal hybrid hierarchy.
+
+Do not rebuild a new hierarchy for retrieval.
+
+Search should conceptually be:
+
+```text
+question
+    ↓
+L0: score coarse supernodes
+    ↓
+expand most relevant L0 regions
+    ↓
+L1: score their children
+    ↓
+expand most relevant L1 regions
+    ↓
+L2: score their children
+    ↓
+collect eligible leaves / atomic candidates
+    ↓
+run frozen FINAL_FINE scoring
+ONLY on candidates reached through the hierarchy
+    ↓
+top10
+```
+
+The hierarchy is therefore a:
+
+```text
+search-space restriction / approximation
+```
+
+of the fixed fine retriever.
+
+---
+
+# 8. DO NOT USE GOLD TO GUIDE THE SEARCH
+
+Hierarchy traversal must receive only:
+
+```text
+question
+snapshot
+hierarchy
+cluster representations
+graph data
+```
+
+It must NOT receive:
+
+```text
+expected_methods
+gold target IDs
+gold clusters
+oracle target paths
+method_claims
+```
+
+Gold remains evaluation-only.
+
+Ground-truth perturbation must leave hierarchy search rankings unchanged.
+
+---
+
+# 9. COARSE NODE SCORING
+
+Reuse the existing hierarchy retrieval representations where possible.
+
+Existing infrastructure already supports:
+
+```text
+cluster centroid
+farthest-point member prototypes
+semantic representations
+hierarchy parent/child structure
+```
+
+Do not invent a new complex supernode reranker.
+
+Use a fixed, documented cluster relevance score.
+
+Prefer the existing cluster score:
+
+```text
+0.5 × centroid cosine
++
+0.5 × mean(best two prototype cosines)
+```
+
+if that remains the validated implementation.
+
+Do NOT retune these weights against the benchmark.
+
+If another already-frozen hierarchy score is the actual repo default, preserve it and document it.
+
+---
+
+# 10. QUERY REPRESENTATION FOR COARSE SEARCH
+
+Use a generic semantic representation of the incoming question.
+
+Do not inject:
+
+```text
+gold target names
+expected claims
+benchmark-specific synonyms
+```
+
+The coarse stage is for identifying relevant semantic regions.
+
+The requirement-conditioned evidence scorer only runs after the leaf/candidate region is reached.
+
+---
+
+# 11. TRAVERSAL POLICY
+
+Reuse existing deterministic best-first traversal where possible.
+
+The traversal must:
+
+```text
+start from all L0 roots
+score them
+expand highest-relevance clusters
+continue downward
+stop at a fixed work budget
+```
+
+Do not use the old fixed beam if best-first already replaced it.
+
+Preserve deterministic tie-breaking.
+
+---
+
+# 12. WORK BUDGETS
+
+Use a small predeclared budget grid.
+
+Prefer the existing historical budgets:
+
+```text
+25
+50
+100
+200
+500
+```
+
+if compatible with the new evaluation.
+
+Also include an unrestricted / sufficiently high-budget hierarchy run if needed to estimate hierarchy-search ceiling.
+
+Do not tune a special budget after viewing results.
+
+Important:
+
+if budget 25 or 50 cannot score the full root layer, explicitly label:
+
+```text
+INSUFFICIENT_ROOT_BUDGET
+```
+
+rather than interpreting poor results as hierarchy failure.
+
+---
+
+# 13. DEFINE SEARCH COST CLEARLY
+
+Report at least:
+
+```text
+coarse supernode comparisons
+leaf / candidate comparisons
+FINAL_FINE candidate scorings
+total charged comparisons
+number of expanded clusters
+number of reached atomic candidates
+```
+
+Be explicit about what is excluded:
+
+```text
+offline embeddings
+hierarchy construction
+cached evidence-pool construction
+model loading
+```
+
+Do not claim production latency/speedup from uncontrolled wall-clock timing.
+
+---
+
+# 14. PRIMARY FLAT / FINE BASELINES
+
+At minimum compare hierarchical traversal against:
+
+```text
+A. FINAL_FINE full H2 top100
+B. flat exhaustive entity search
+C. query-independent flat equal-work scan
+```
+
+Historical R3/H2/CR1 may remain in a supplementary table.
+
+The main comparison must be understandable:
+
+```text
+Fine reference:
+FINAL_FINE over its normal H2 candidate set
+
+Hierarchy:
+same final scorer,
+but candidates are reached through coarse-to-fine traversal
+
+Flat equal-work:
+same approximate comparison budget,
+without hierarchy
+```
+
+---
+
+# 15. MOST IMPORTANT EXTRINSIC METRIC
+
+Do NOT only report absolute hierarchy Recall@10.
+
+Report:
+
+```text
+hierarchy Recall@10
+
+FINAL_FINE Recall@10
+
+retained fine hits
+=
+# FINAL_FINE top10 gold targets still recovered by hierarchy
+
+fine-hit retention
+=
+retained / FINAL_FINE recovered targets
+```
+
+Example interpretation:
+
+```text
+FINAL_FINE = 13/47
+hierarchy = 11/47
+
+if all 11 are among FINAL_FINE's 13:
+retention = 11/13
+```
+
+This directly measures whether hierarchy approximates the working fine retriever.
+
+---
+
+# 16. ALSO REPORT RECOVERY OUTSIDE FINAL_FINE
+
+If hierarchy retrieves a gold target that FINAL_FINE misses, report it separately:
+
+```text
+hierarchy-only recovery
+```
+
+Do not merge it silently with retention.
+
+This distinguishes:
+
+```text
+approximation
+```
+
+from accidental rank changes.
+
+---
+
+# 17. QUALITY–COST CURVE
+
+Produce a primary figure/table:
+
+```text
+x-axis:
+charged comparisons / fine candidates scored
+
+y-axis:
+micro Recall@10
+```
+
+Curves:
+
+```text
+hierarchical coarse-to-fine
+FINAL_FINE reference
+flat equal-work
+```
+
+Optional secondary y-axis/table:
+
+```text
+fine-hit retention
+```
+
+This should become the primary answer to the assignment's:
+
+```text
+"does abstraction help downstream retrieval?"
+```
+
+question.
+
+---
+
+# 18. DO NOT REQUIRE THE HIERARCHY TO WIN RECALL
+
+A valid result may be:
+
+```text
+same or slightly lower Recall@10
+with much less fine search
+```
+
+This is useful.
+
+A valid negative result may be:
+
+```text
+large recall loss
+without meaningful work reduction
+```
+
+Then conclude:
+
+```text
+the hierarchy is useful as a browsing abstraction
+but is not yet justified as a retrieval accelerator.
+```
+
+Do not manipulate the experiment until hierarchy wins.
+
+---
+
+# 19. TEST ALL HIERARCHY VARIANTS ONLY IF CHEAP
+
+Primary hierarchy:
+
+```text
+temporal hybrid
+```
+
+For comparison, if infrastructure already supports it with no major implementation work, evaluate:
+
+```text
+semantic
+structural
+static hybrid
+temporal hybrid
+pairwise hybrid
+```
+
+at one representative valid search budget.
+
+Do NOT tune each variant separately.
+
+This gives a direct answer to:
+
+```text
+compare method variants
+and say which you would ship and why
+```
+
+---
+
+# 20. SUPPORTING CLAIMS: HONEST SECONDARY EVALUATION
+
+The shipped benchmark includes:
+
+```text
+expected_methods
+method_claims
+```
+
+Entity recovery is now the robust primary extrinsic metric.
+
+Supporting claims must also be addressed, but previous strict automated alignment was too sparse to support a trustworthy global claim-recall number.
+
+Do NOT fabricate claim recall.
+
+Instead implement/report three separate layers:
+
+```text
+1. entity recovery
+2. evidence/source provenance recovery
+3. strict claim alignment where evaluable
+```
+
+---
+
+# 21. CLAIM / EVIDENCE PIPELINE
+
+For every returned entity:
+
+reuse existing candidate-specific evidence:
+
+```text
+direct claims
+safe explicit mentions
+tasks/problems
+technical context
+dataset/metric evidence
+article provenance
+```
+
+For each returned target, export:
+
+```text
+candidate/entity
+retrieved evidence node IDs
+claim texts
+article/source IDs
+graph relation/path
+question similarity
+attribution category
+```
+
+Do not use expected claims to select evidence.
+
+---
+
+# 22. CLAIM EVALUATION OUTPUT
+
+For each benchmark question report:
+
+```text
+expected claims count
+
+automatically alignable expected claims count
+
+retrieved aligned claims count
+
+source/provenance overlap
+
+claim evaluation status
+```
+
+Possible status:
+
+```text
+EVALUABLE
+PARTIALLY_EVALUABLE
+NOT_EVALUABLE_ALIGNMENT
+```
+
+If strict alignment still resolves almost none of the expected claims:
+
+say so explicitly.
+
+Do not replace expected claims with semantically convenient evidence just to produce a recall value.
+
+---
+
+# 23. SOURCE / PROVENANCE METRIC
+
+Where strict claim alignment is unavailable, preserve a separate weaker diagnostic:
+
+```text
+does retrieved candidate evidence come from
+the source paper(s) associated with the expected answer?
+```
+
+Call this something explicit like:
+
+```text
+source_hit
+provenance_overlap
+```
+
+Never call it:
+
+```text
+claim recall
+```
+
+unless actual claim alignment succeeded.
+
+---
+
+# 24. FINAL EXTRINSIC TABLE
+
+Create one compact final table containing:
+
+```text
+System
+Recall@10
+Unique Recall@10
+MRR
+Fine-hit retention
+Mean fine candidates scored
+Mean total comparisons
+Cluster expansions
+Source hit / provenance metric
+Strict claim recall (if evaluable)
+```
+
+Systems:
+
+```text
+flat exhaustive
+flat equal-work
+FINAL_FINE
+hierarchical temporal
+```
+
+Optionally include:
+
+```text
+hierarchical semantic
+hierarchical structural
+hierarchical static
+hierarchical pairwise
+```
+
+in secondary rows.
+
+---
+
+# 25. FINAL T1 CHECK
+
+Ensure the final report explicitly states:
+
+```text
+5798 nodes
+1429 hyperedges
+12 node types
+11 relation types
+~80% hyperedges arity > 2
+```
+
+and snapshot results:
+
+```text
+2020 1505 nodes / 374 consistently visible edges
+2022 2164 / 526
+2024 4164 / 983
+2026 5798 / 1429
+```
+
+Also explicitly mention data-quality findings:
+
+```text
+edges preceding member visibility
+edges preceding asserting article
+origin_year / first_seen_year inconsistencies
+```
+
+Reference `descriptive.json`.
+
+---
+
+# 26. FINAL T2 / DELIVERABLE 0 CHECK
+
+The final report must explicitly state the objective:
+
+```text
+J(P_t)
+=
+λ_h J_hyper
++
+λ_s J_spec
++
+λ_m J_sem
++
+λ_t J_temp
+```
+
+with fixed weights:
+
+```text
+0.30
+0.20
+0.35
+0.15
+```
+
+and budgets:
+
+```text
+12 / 40 / 120 / leaves
+```
+
+Explain:
+
+```text
+J_hyper:
+native hyperedge fragmentation
+
+J_spec:
+global native-hypergraph spectral geometry
+
+J_sem:
+semantic within-cluster dispersion
+
+J_temp:
+VI against predecessor partition
+```
+
+Clearly state:
+
+```text
+P1 guaranteed by construction
+P2 guaranteed by construction
+P4 procedurally guaranteed by native collapse
+
+P3 empirically evaluated
+P5 empirically evaluated
+P6 empirically evaluated
+```
+
+Do not claim global optimization.
+
+State greedy restricted-candidate optimization explicitly.
+
+---
+
+# 27. FINAL ALTERNATIVE / PAIRWISE CHECK
+
+Explicitly include pairwise projection analysis:
+
+```text
+1429 native hyperedges
+→ 72,701 pair instances
+→ 70,022 unique pairs
+≈ 50.88× edge expansion
+```
+
+Explain information loss:
+
+```text
+different higher-order configurations
+can induce identical weighted pairwise adjacency.
+```
+
+Also report honestly:
+
+```text
+pairwise perturbation ARI can exceed the native temporal variant.
+```
+
+Conclusion must be:
+
+```text
+native representation is chosen for TKH fidelity,
+not because it wins every measured metric.
+```
+
+---
+
+# 28. FINAL T3 CHECK
+
+Explicitly state the temporal mechanism:
+
+```text
+construction-time VI regularisation
+```
+
+plus:
+
+```text
+post-construction Hungarian overlap matching
+```
+
+for persistent IDs.
+
+Clarify:
+
+```text
+matching is identity tracking;
+VI is the actual construction-time stability mechanism.
+```
+
+Include event tracking:
+
+```text
+birth
+growth
+continuation
+merge
+split
+death
+```
+
+and reference `temporal_events.json`.
+
+Report real temporal ARI:
+
+```text
+temporal hybrid ≈ .636
+static hybrid ≈ .351
+```
+
+and describe the coherence tradeoff:
+
+```text
+static ≈ .777
+temporal ≈ .775
+```
+
+---
+
+# 29. FINAL T4 CHECK
+
+Explicitly answer all three collapse cases.
+
+Case:
+
+```text
+m = n
+```
+
+Answer:
+
+```text
+hyperedge becomes fully internal to one supernode;
+retain it as provenance/evidence;
+remove it from inter-supernode spectral incidence.
+```
+
+Case:
+
+```text
+1 < m < n
+```
+
+Answer:
+
+```text
+collapse repeated endpoints into the supernode
+and retain multiplicity m_eC.
+```
+
+Example:
+
+```text
+{a,b,c,d}
+→
+{S1:3, S2:1}
+```
+
+Case:
+
+```text
+endpoints land in >=3 supernodes
+```
+
+Answer:
+
+```text
+retain one coarse hyperedge over all distinct supernodes
+with endpoint multiplicities.
+```
+
+Explicitly state loss:
+
+```text
+fine endpoint distinctions disappear from working coarse geometry,
+but original member/provenance information remains traceable.
+```
+
+Confirm this implemented collapse output is actually the input to the next hierarchy level.
+
+---
+
+# 30. FINAL T5 CHECK
+
+Describe label generation exactly.
+
+Current approach:
+
+```text
+extractive noun/keyphrase label
++
+short non-comparative one-sentence gloss
+```
+
+Input includes only snapshot-valid generation members and contained relations.
+
+State actual packet fields:
+
+```text
+cutoff
+generation_members
+generation_type_counts
+generation_only_relation_counts
+```
+
+Explain temporal honesty:
+
+```text
+no member/evidence after snapshot cutoff is included.
+```
+
+---
+
+# 31. FINAL LABEL FAITHFULNESS CHECK
+
+Use the repaired held-out evaluation.
+
+Explicitly state:
+
+```text
+generation and evaluation members are separated
+where feasible.
+```
+
+Report L0/L1 held-out proxy results.
+
+Current values include approximately:
+
+```text
+L0:
+entailment .458
+neutral .479
+contradiction .062
+unsupported/non-entailment ≈ .542
+
+L1:
+entailment .521
+neutral .354
+contradiction .125
+unsupported/non-entailment ≈ .479
+```
+
+Do not call NLI ground truth.
+
+State:
+
+```text
+NLI is a proxy;
+blind expert audit remains absent;
+label faithfulness is not fully validated.
+```
+
+This is a limitation, not something to hide.
+
+---
+
+# 32. FINAL COHERENCE CIRCULARITY CHECK
+
+The report MUST explicitly explain:
+
+```text
+MiniLM drives semantic clustering.
+
+BGE evaluates coherence.
+```
+
+Therefore the clustering model is not grading itself.
+
+Include null comparison.
+
+Current temporal L0:
+
+```text
+observed ≈ .775
+null ≈ .760
+difference ≈ .015
+permutation p ≈ .020
+```
+
+Do not imply a large effect.
+
+---
+
+# 33. FINAL STABILITY CHECK
+
+Include:
+
+```text
+remove 10% of hyperedges
+five fixed seeds
+rebuild hierarchy
+ARI / VI
+95% confidence intervals
+```
+
+Current temporal L0:
+
+```text
+ARI ≈ .550
+95% CI [.497, .603]
+```
+
+Also show real cross-snapshot ARI separately.
+
+Do not confuse perturbation stability with temporal stability.
+
+---
+
+# 34. FINAL LITERATURE SECTION
+
+Use the existing four-paper synthesis:
+
+```text
+Zhou, Huang & Schölkopf (2006)
+→ normalized native hypergraph spectral geometry
+
+Chen, Saad & Zhang (2022)
+→ recursive multilevel coarsening
+
+Schaub, Li & Peel (2023)
+→ distinction between producing a hierarchy
+  and demonstrating meaningful hierarchy
+
+Chi et al. (2007)
+→ current-fit vs temporal-smoothness tradeoff
+```
+
+Explain exactly what is borrowed and what differs.
+
+Do not add many more references merely to appear broader.
+
+Optionally mention HyperEF as related native hypergraph-coarsening context if already properly cited, but do not restructure the literature section around it unless useful.
+
+---
+
+# 35. FINAL METHOD-VARIANT CONCLUSION
+
+Do not produce a scalar "winner" without qualification.
+
+Recommended conclusion structure:
+
+```text
+semantic:
+highest coherence but ignores graph structure
+
+structural:
+strong temporal stability but weaker semantics
+
+static hybrid:
+good semantic quality, poor temporal continuity
+
+temporal hybrid:
+small semantic-coherence cost
+for substantially better real temporal stability
+
+pairwise hybrid:
+strong perturbation stability
+but loses higher-order hyperedge identity
+```
+
+Therefore:
+
+```text
+ship temporal hybrid as the scientific browsing hierarchy
+```
+
+because it best matches the task's required combination of:
+
+```text
+semantics
+native hypergraph fidelity
+temporal persistence
+```
+
+not because it dominates every metric.
+
+---
+
+# 36. FINAL EXTRINSIC CONCLUSION
+
+After running the new hierarchy retrieval experiment, write one of the following depending on results.
+
+If hierarchy retains most fine results at much lower work:
+
+```text
+The hierarchy is useful both as an interpretable abstraction
+and as a retrieval accelerator.
+```
+
+If hierarchy loses substantial recall:
+
+```text
+The hierarchy is validated as an interpretable temporal abstraction,
+but not as a retrieval accelerator under the current search policy.
+```
+
+Do not force a positive downstream conclusion.
+
+This assignment rewards honest negative results.
+
+---
+
+# 37. UPDATE `metrics.json`
+
+The final `metrics.json` must contain clear top-level sections such as:
+
+```json
+{
+  "descriptive": {},
+  "hierarchy": {},
+  "coherence": {},
+  "coherence_null": {},
+  "perturbation_stability": {},
+  "temporal_stability": {},
+  "temporal_events": {},
+  "label_faithfulness": {},
+  "fine_retrieval": {},
+  "hierarchical_retrieval": {},
+  "claim_evidence": {},
+  "variant_comparison": {}
+}
+```
+
+Do not delete historical detailed metric files.
+
+This is the final submission-facing consolidated metrics file.
+
+---
+
+# 38. FINAL `hierarchy.json` / SNAPSHOT EXPORT CHECK
+
+Verify per snapshot that every supernode includes:
+
+```text
+id
+persistent identity if applicable
+level
+parent_id
+member_ids
+label
+gloss
+```
+
+At least:
+
+```text
+2020
+2022
+2024
+2026
+```
+
+Verify laminarity automatically.
+
+Verify budgets automatically.
+
+Verify no member appears in two clusters at one level.
+
+---
+
+# 39. FINAL `temporal_events.json` CHECK
+
+Ensure events include:
+
+```text
+from_snapshot
+to_snapshot
+level
+event_type
+source_ids
+target_ids
+overlap statistics
+```
+
+Event types:
+
+```text
+birth
+growth
+continuation
+merge
+split
+death
+```
+
+Do not fabricate events missing from the current implementation.
+
+---
+
+# 40. README / REPRODUCIBILITY
+
+Create one clean final reproduction path.
+
+Something like:
+
+```powershell
+python -m pytest -q
+python -m tkh_abstraction.cli build --config ...
+python -m tkh_abstraction.cli evaluate ...
+python -m tkh_abstraction.cli evaluate-conditioned ...
+python -m tkh_abstraction.cli evaluate-hierarchy-retrieval ...
+python scripts/build_final_report.py
+python scripts/package_submission.py
+```
+
+Use actual repo commands.
+
+Do not invent commands that do not exist.
+
+Pinned dependency file must be referenced.
+
+Document offline model requirements.
+
+---
+
+# 41. TESTS FOR THE FINAL HIERARCHY RETRIEVAL
+
+Add tests for:
+
+```text
+1. FINAL_FINE exact historical reproduction
+
+2. qualifier components excluded from FINAL_FINE score
+
+3. CR2/CR4/CR7 not called by FINAL_FINE
+
+4. hierarchy itself remains byte/hash identical
+
+5. hierarchy traversal starts at L0
+
+6. traversal only reaches descendants of expanded clusters
+
+7. leaf candidate set is deterministic
+
+8. no gold inputs in traversal
+
+9. ground-truth perturbation leaves retrieval unchanged
+
+10. snapshot temporal safety
+
+11. unreachable leaves are not scored by fine reranker
+
+12. charged work counts are correct
+
+13. equal-work flat baseline is deterministic
+
+14. hierarchy top10 evaluation uses same resolver as FINAL_FINE
+
+15. claim evidence selection does not read expected claims
+
+16. provenance and strict claim metrics remain separate
+
+17. no unevaluable claim is converted to zero recall silently
+
+18. hierarchy budgets remain 12/40/120
+
+19. hierarchy remains laminar
+
+20. all historical tests pass
+```
+
+---
+
+# 42. FINAL REPORT LENGTH / ORGANIZATION
+
+Produce a compact:
+
+```text
+report.md
+```
+
+suitable for conversion to a 3–5 page report.
+
+Do not dump every development experiment into the main prose.
+
+Suggested structure:
+
+```text
+1. Problem & formal statement
+2. Related work
+3. Method
+   - native hypergraph objective
+   - temporal coupling
+   - hyperedge collapse
+   - labels
+4. Evaluation validity
+   - independent coherence + null
+   - perturbation + temporal stability
+   - label faithfulness
+   - extrinsic retrieval
+5. Results
+6. Limitations / verified vs assumed / four-more-weeks
+```
+
+Development-stage details belong in appendices/artifacts.
+
+---
+
+# 43. MAIN RESULTS TABLE
+
+Create one submission-facing table containing roughly:
+
+```text
+Variant
+Independent coherence
+Null coherence
+Perturbation ARI [CI]
+Real temporal ARI
+Label overclaim proxy
+Extrinsic Recall@10
+Retrieval work
+```
+
+Make sure retrieval numbers correspond to the new final evaluation.
+
+Do not mix historical obsolete retrieval numbers with FINAL_FINE/hierarchy results without labeling them historical.
+
+---
+
+# 44. VERIFIED VS ASSUMED
+
+Add an explicit subsection.
+
+VERIFIED examples:
+
+```text
+snapshot counts
+hyperedge arities
+laminarity
+budget satisfaction
+event exports
+measured coherence
+null comparisons
+ARI values
+retrieval ranks
+test results
+artifact hashes
+```
+
+ASSUMED / proxy examples:
+
+```text
+date semantics correctly represent publication visibility
+MiniLM/BGE capture scientific semantics
+NLI approximates gloss support
+lexical target resolution approximates entity identity
+fixed objective weights are reasonable
+benchmark labels are incomplete but useful
+source overlap is not claim entailment
+```
+
+Do not mix these categories.
+
+---
+
+# 45. FOUR-MORE-WEEKS SECTION
+
+Keep it short and concrete.
+
+Possible items:
+
+```text
+human/expert adjudication of labels and claims
+versioned source text for stronger temporal honesty
+better scientific entailment model
+independent query set
+better claim alignment
+split-aware temporal refinement
+larger-corpus scaling study
+```
+
+Do not propose another giant architecture rewrite.
+
+---
+
+# 46. `AI_USAGE.md`
+
+Ensure it lists major AI-assisted stages:
+
+```text
+initial architecture planning
+hierarchy implementation/review
+retrieval diagnosis
+native diffusion
+evidence reranking
+constraint reranking
+conditioned evidence
+final hierarchy integration
+```
+
+For each include:
+
+```text
+tool/model
+task
+major prompt summary
+what was accepted
+what was modified/rejected
+how it was verified
+```
+
+Explicitly record examples of advice rejected after tests, e.g.:
+
+```text
+local NLI as default reranker
+```
+
+This demonstrates judgment rather than blind AI use.
+
+---
+
+# 47. FINAL ARTIFACTS
+
+Ensure submission contains at minimum:
+
+```text
+README.md
+requirements.txt / pinned equivalent
+AI_USAGE.md
+
+report.md
+metrics.json
+
+hierarchy_2020.json
+hierarchy_2022.json
+hierarchy_2024.json
+hierarchy_2026.json
+
+temporal_events.json
+
+figures/
+    growth_arity.*
+    coherence_stability.*
+    hierarchy_retrieval_tradeoff.*
+
+artifacts/
+    detailed evaluation exports
+```
+
+Names may follow existing repo conventions, but map them clearly in README.
+
+---
+
+# 48. FINAL DECISION CHECKLIST
+
+At the end of the generated report explicitly answer:
+
+```text
+T1:
+What does the evolving TKH look like?
+
+T2:
+What exact objective is optimized?
+How are semantics and structure reconciled?
+Why native hypergraph rather than pairwise?
+What is guaranteed vs empirical?
+
+T3:
+What enforces temporal stability?
+How are identities/events tracked?
+What measured benefit does temporal coupling provide?
+
+T4:
+What happens to a hyperedge when:
+- all endpoints merge?
+- some endpoints merge?
+- endpoints span >=3 supernodes?
+What information is lost?
+
+T5:
+How are labels/glosses generated?
+What information can the labeller see?
+How is temporal honesty enforced?
+What is the measured faithfulness/overclaim proxy?
+
+T6:
+Is coherence measured independently?
+What is the null?
+What happens under 10% edge removal?
+What are the confidence intervals?
+What is real temporal stability?
+How well does FINAL_FINE retrieve targets?
+How much FINAL_FINE quality does hierarchy retain?
+How much search does hierarchy save?
+What supporting-claim evidence is actually evaluable?
+
+T7:
+What is verified?
+What is assumed?
+What are the major limitations?
+What would be done with four more weeks?
+```
+
+If any answer cannot be supported by current artifacts:
+
+```text
+mark it explicitly as incomplete/unsupported
+```
+
+rather than inventing an answer.
+
+---
+
+# 49. FINAL PASS/FAIL AUDIT
+
+Create:
+
+```text
+artifacts/evaluation/final_requirement_audit.json
+```
+
+with one record per assignment item:
+
+```json
+{
+  "requirement": "T6.extrinsic_hierarchy",
+  "status": "PASS",
+  "artifact": "...",
+  "metric_or_evidence": "...",
+  "limitation": "..."
+}
+```
+
+Statuses:
+
+```text
+PASS
+PARTIAL
+NOT_EVALUABLE
+```
+
+Include:
+
+```text
+P1-P6
+T1-T7
+all six deliverables
+```
+
+The report writer should fail if a required section is completely missing.
+
+Do NOT fail merely because a result is negative.
+
+---
+
+# 50. FINAL CODEX RESPONSE
+
+When complete, return a concise engineering summary containing:
+
+```text
+files changed
+
+FINAL_FINE exact definition
+
+FINAL_FINE reproduced metrics
+
+hierarchy search implementation
+
+hierarchy-vs-FINAL_FINE result
+
+hierarchy-vs-flat equal-work result
+
+fine-hit retention
+
+comparison-count reduction
+
+supporting-claim/source results
+
+which claims remain unevaluable
+
+T1-T7 audit status
+
+P1-P6 audit status
+
+deliverable checklist
+
+tests passed
+
+exact reproduction commands
+
+final recommendation:
+- hierarchy browser
+- retrieval accelerator yes/no
+- remaining limitations
+```
+
+---
+
+# 51. CENTRAL HYPOTHESIS OF THIS FINAL PASS
+
+Do not test another new semantic model.
+
+Test this:
+
+```text
+The fine-level relevance problem is now sufficiently improved
+to serve as a reference retrieval process.
+
+The existing multi-resolution temporal hierarchy should now be
+evaluated as an approximation/search-space reduction mechanism:
+
+how much of FINAL_FINE's target recovery can it retain
+while inspecting fewer fine-level candidates?
+```
+
+That is the final missing scientific question.
+
+---
+
+# 52. STOP RULE
+
+After this pass:
+
+DO NOT add another reranker.
+
+DO NOT tune another threshold.
+
+DO NOT create new benchmark questions.
+
+DO NOT change H2.
+
+DO NOT redesign the hierarchy.
+
+DO NOT add another model just because the hierarchy does not win.
+
+If hierarchy fails to retain enough retrieval quality:
+
+report that negative result clearly.
+
+The assignment explicitly values trustworthy evaluation over forced positive results.
+
+The project is finished when:
+
+```text
+every assignment requirement has an explicit evidence-backed answer,
+every requested artifact exists,
+and the hierarchy's downstream utility has been tested against
+the now-frozen fine-level reference.
+```

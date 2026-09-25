@@ -1,0 +1,3018 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00002",
+      "type": "article",
+      "surface_form": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions"
+    },
+    {
+      "id": "arti_00010",
+      "type": "article",
+      "surface_form": "Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+    },
+    {
+      "id": "arti_00011",
+      "type": "article",
+      "surface_form": "Matbench Discovery: A framework to evaluate machine learning crystal stability predictions"
+    },
+    {
+      "id": "arti_00016",
+      "type": "article",
+      "surface_form": "Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+    },
+    {
+      "id": "arti_00018",
+      "type": "article",
+      "surface_form": "Deep-learning electronic-structure calculation of magnetic superstructures"
+    },
+    {
+      "id": "arti_00026",
+      "type": "article",
+      "surface_form": "Materials Design and Discovery with High-Throughput Density Functional Theory: The Open Quantum Materials Database (OQMD)"
+    },
+    {
+      "id": "arti_00031",
+      "type": "article",
+      "surface_form": "Flow Matching for Accelerated Simulation of Atomic Transport in Crystalline Materials"
+    },
+    {
+      "id": "arti_00033",
+      "type": "article",
+      "surface_form": "Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+    },
+    {
+      "id": "arti_00038",
+      "type": "article",
+      "surface_form": "Orb-v3: atomistic simulation at scale"
+    },
+    {
+      "id": "arti_00040",
+      "type": "article",
+      "surface_form": "UMA: A Family of Universal Models for Atoms"
+    },
+    {
+      "id": "arti_00051",
+      "type": "article",
+      "surface_form": "Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+    },
+    {
+      "id": "cite_00158",
+      "type": "cited_work",
+      "surface_form": "thermodynamic integration"
+    },
+    {
+      "id": "cite_00235",
+      "type": "cited_work",
+      "surface_form": "Lithium Phosphorus Oxynitride electrolyte"
+    },
+    {
+      "id": "cite_00236",
+      "type": "cited_work",
+      "surface_form": "Plasma synthesis of electrolyte nanopowders"
+    },
+    {
+      "id": "cite_00238",
+      "type": "cited_work",
+      "surface_form": "Ab initio thermodynamics of water"
+    },
+    {
+      "id": "cite_00249",
+      "type": "cited_work",
+      "surface_form": "Topological properties and dynamics of magnetic skyrmions"
+    },
+    {
+      "id": "cite_00269",
+      "type": "cited_work",
+      "surface_form": "Magnetic Skyrmion Prediction"
+    },
+    {
+      "id": "cite_00308",
+      "type": "cited_work",
+      "surface_form": "Density Functional Theory"
+    },
+    {
+      "id": "cite_00380",
+      "type": "cited_work",
+      "surface_form": "Density Functional Theory (DFT)"
+    },
+    {
+      "id": "cite_00451",
+      "type": "cited_work",
+      "surface_form": "Nosé-Hoover thermostat"
+    },
+    {
+      "id": "cite_00548",
+      "type": "cited_work",
+      "surface_form": "density-functional perturbation theory"
+    },
+    {
+      "id": "clai_00012",
+      "type": "claim",
+      "surface_form": "Automated validation checks compare calculated oxidation states, cell volumes, and bond lengths against experimental data and flag outliers for user review."
+    },
+    {
+      "id": "clai_00013",
+      "type": "claim",
+      "surface_form": "Using Materials Project tools, researchers designed a new class of sodium‑based carbonophosphate compounds, predicted them to be thermodynamically stable, synthesized them hydrothermally, and experimentally confirmed their Li‑ion battery performance after ion exchange."
+    },
+    {
+      "id": "clai_00018",
+      "type": "claim",
+      "surface_form": "Class‑specific computational methodologies and reference reactions are applied for solid‑gas, d‑block oxide, and dissolved‑ion systems to improve agreement with experimental data."
+    },
+    {
+      "id": "clai_00020",
+      "type": "claim",
+      "surface_form": "Future development plans include adding calculations of surface energies, elastic constants, point defects, finite‑temperature properties, and implementing a two‑way ‘calculations‑on‑demand’ feature for user‑submitted compounds."
+    },
+    {
+      "id": "clai_00028",
+      "type": "claim",
+      "surface_form": "The integrated JARVIS workflow (DFT → FF → ML) enables rapid screening of materials for high solar‑cell efficiency (SLME) with predictions validated against experimental data."
+    },
+    {
+      "id": "clai_00030",
+      "type": "claim",
+      "surface_form": "Using the vdW‑DF‑OptB88 functional for all dimensionalities yields accurate lattice parameters and formation energies for both van‑der‑Waals and non‑vdW bonded materials."
+    },
+    {
+      "id": "clai_00032",
+      "type": "claim",
+      "surface_form": "Comparisons of JARVIS‑DFT computed formation energies, band gaps, and elastic constants with experimental measurements show acceptable error margins, confirming the database’s predictive reliability."
+    },
+    {
+      "id": "clai_00042",
+      "type": "claim",
+      "surface_form": "The computational cost of LiFlow scales linearly with the number of atoms (O(n)), in contrast to the cubic scaling (O(n³)) of ab initio molecular dynamics."
+    },
+    {
+      "id": "clai_00046",
+      "type": "claim",
+      "surface_form": "Within the training temperature range, LiFlow’s predicted diffusivity D* closely matches reference values from Winter and Gómez‑Bombarelli."
+    },
+    {
+      "id": "clai_00048",
+      "type": "claim",
+      "surface_form": "When extrapolating to temperatures lower than the training range, LiFlow’s predicted diffusivity D* decreases more slowly than reference data, indicating fictitious diffusive behavior at high 1000/T."
+    },
+    {
+      "id": "clai_00052",
+      "type": "claim",
+      "surface_form": "A curated dataset of 476 binary ionic compound melting temperatures spanning 0-4,000°C was compiled for machine learning model development."
+    },
+    {
+      "id": "clai_00053",
+      "type": "claim",
+      "surface_form": "The best one-step gradient-boosted tree regression model achieves 165±4 K MAE and 0.89 R² on the test set for melting temperature prediction."
+    },
+    {
+      "id": "clai_00055",
+      "type": "claim",
+      "surface_form": "Cluster 1 (198 compounds, mostly ionic halides and oxides) achieves 136±5 K MAE and 0.92 R², while Cluster 2 (222 compounds, mostly covalent carbides and nitrides) achieves 189±7 K MAE and 0.90 R²."
+    },
+    {
+      "id": "clai_00056",
+      "type": "claim",
+      "surface_form": "Cohesive energy and elastic moduli (shear and bulk modulus) are the most important features for melting temperature prediction, as identified by both ensemble feature importance and SHAP analysis."
+    },
+    {
+      "id": "clai_00057",
+      "type": "claim",
+      "surface_form": "Models trained without elastic moduli features yield errors greater than 400 K, demonstrating that elastic features are necessary for accurate melting temperature predictions."
+    },
+    {
+      "id": "clai_00058",
+      "type": "claim",
+      "surface_form": "Very-high melting temperatures (>3150 K) appear only in Cluster 2, predominantly in metal carbides, reflecting the covalent bonding character of these materials."
+    },
+    {
+      "id": "clai_00059",
+      "type": "claim",
+      "surface_form": "Tree ensemble methods (gradient-boosted trees and random forest regression) substantially outperform linear models, which achieve MAE >240 K and RMSE >340 K, at least 100 K worse than non-linear approaches."
+    },
+    {
+      "id": "clai_00060",
+      "type": "claim",
+      "surface_form": "The two-step clustering approach provides interpretability by revealing different melting physics dominated by bonding types, with Cluster 1 governed by ionic bonding features and Cluster 2 by covalent bonding features."
+    },
+    {
+      "id": "clai_00062",
+      "type": "claim",
+      "surface_form": "Cluster 2 melting temperatures can be accurately represented with symbolic models depending on only two features: squared cohesive energy and inverse square root of periodic groups or electronegativities."
+    },
+    {
+      "id": "clai_00067",
+      "type": "claim",
+      "surface_form": "CHGNet molecular dynamics simulations of Li superionic conductors reproduce room‑temperature ionic conductivities and activation energies within the error bars of AIMD, correctly distinguishing faster from slower conductors."
+    },
+    {
+      "id": "clai_00085",
+      "type": "claim",
+      "surface_form": "The ISO17 benchmark, comprising 645,000 conformations of 129 C7O2H10 isomers, is introduced to evaluate models on combined chemical and conformational variation."
+    },
+    {
+      "id": "clai_00103",
+      "type": "claim",
+      "surface_form": "Universal MLIPs trained on massive datasets can generalize across diverse chemical systems and can be successfully applied to structural optimization and lattice dynamics workflows."
+    },
+    {
+      "id": "clai_00109",
+      "type": "claim",
+      "surface_form": "TensorNet‑MatPES predicts ionic conductivities of Li/Na solid electrolytes with high fidelity (positive R²), whereas TensorNet‑MPF severely overestimates conductivities and yields a negative R²."
+    },
+    {
+      "id": "clai_00161",
+      "type": "claim",
+      "surface_form": "The fitting network can fit potential energy, force, virial, and tensorial properties such as dipole and polarizability."
+    },
+    {
+      "id": "clai_00190",
+      "type": "claim",
+      "surface_form": "NequIP reproduces structural and kinetic properties from ab‑initio molecular dynamics simulations with high fidelity."
+    },
+    {
+      "id": "clai_00193",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model accurately predicts the energy band structures and charge densities of complex multi‑element crystals (e.g., Hf2Zr9Ta6Ti5Nb5B54, HfTaTiB4MoC4, K3Ba3Li2Al4B6O20F), matching DFT results."
+    },
+    {
+      "id": "clai_00196",
+      "type": "claim",
+      "surface_form": "High‑throughput screening of 188,722 GeNOME crystals with the universal model identifies 21,973 insulators (3,940 direct‑gap) and 5,109 flat‑band materials, nearly doubling the entries in the Materials Flatband Database."
+    },
+    {
+      "id": "clai_00197",
+      "type": "claim",
+      "surface_form": "Using the universal HamGNN model reduces computational cost by several orders of magnitude compared with DFT (e.g., 0.33 core·hours versus 181 core·hours for a large MOF) while preserving accuracy of band gaps and charge‑density differences."
+    },
+    {
+      "id": "clai_00199",
+      "type": "claim",
+      "surface_form": "Incorporating orbital‑energy loss in a second fine‑tuning round markedly improves band‑structure predictions, yielding energy bands and Fermi surfaces that closely match DFT calculations for the test set."
+    },
+    {
+      "id": "clai_00200",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model generalizes to crystals containing more than five distinct elements and to any element supported by the OpenMX PBE pseudopotential library, effectively covering the entire periodic table."
+    },
+    {
+      "id": "clai_00202",
+      "type": "claim",
+      "surface_form": "xDeepH accurately reproduces DFT band structures of (16,16) CrI3 nanotubes for both non‑collinear surface‑normal magnetization and collinear ferromagnetism."
+    },
+    {
+      "id": "clai_00210",
+      "type": "claim",
+      "surface_form": "The ENN architecture of xDeepH preserves equivariance under the Euclidean and time‑reversal symmetry group E(3)×{I,T}, which is essential for the method's performance."
+    },
+    {
+      "id": "clai_00211",
+      "type": "claim",
+      "surface_form": "The presence of a magnetic skyrmion in Moiré‑twisted CrI3 removes an extremely flat valence band that appears in the ferromagnetic configuration, indicating strong coupling between the flat band and the skyrmion."
+    },
+    {
+      "id": "clai_00226",
+      "type": "claim",
+      "surface_form": "For bulk elastic constants (B, C11, C12, C44) the GAP model achieves fractional errors of less than 10% relative to DFT, outperforming all other evaluated interatomic potentials."
+    },
+    {
+      "id": "clai_00227",
+      "type": "claim",
+      "surface_form": "Surface energies of the (111), (110) and (100) silicon cleavage planes are predicted by GAP with errors of around 2% relative to DFT, which is comparable or better than other potentials."
+    },
+    {
+      "id": "clai_00228",
+      "type": "claim",
+      "surface_form": "Formation energies of vacancy and interstitial point defects (hexagonal, tetrahedral, dumbbell) are predicted by GAP within 10% of DFT values, providing uniform accuracy across these defects."
+    },
+    {
+      "id": "clai_00229",
+      "type": "claim",
+      "surface_form": "For extrapolative planar defects not included in the training set—specifically the (112) Σ3 grain boundary and unstable stacking fault energies on the (111) shuffle and glide planes—GAP errors remain within 20% of DFT, outperforming other models."
+    },
+    {
+      "id": "clai_00230",
+      "type": "claim",
+      "surface_form": "Combining a simple repulsive pair potential with a many‑body SOAP‑kernel term in the GAP framework yields meV‑per‑atom accuracy for silicon energetics."
+    },
+    {
+      "id": "clai_00232",
+      "type": "claim",
+      "surface_form": "Using the GAP model enables simulations that would be prohibitively expensive with DFT, such as finite‑temperature phase‑boundary calculations, liquid self‑diffusivity, amorphous silicon formation by slow quench, and dynamic brittle fracture."
+    },
+    {
+      "id": "clai_00233",
+      "type": "claim",
+      "surface_form": "A training database of manageable size, constructed from DFT configurations covering relevant phases and defects, is sufficient to achieve high transferability of the GAP model across diverse silicon configurations."
+    },
+    {
+      "id": "clai_00234",
+      "type": "claim",
+      "surface_form": "Benchmark comparisons show that the new GAP model yields lower errors than previous GAP models for silicon."
+    },
+    {
+      "id": "clai_00238",
+      "type": "claim",
+      "surface_form": "Orb-v3 and SevenNet classify materials as good versus bad ionic conductors with accuracy greater than 82% using a 500 meV migration barrier threshold."
+    },
+    {
+      "id": "clai_00250",
+      "type": "claim",
+      "surface_form": "Orb-v3 and SevenNet are suitable for high-throughput screening of candidate battery materials based on their >82% classification accuracy for ionic conductors."
+    },
+    {
+      "id": "clai_00265",
+      "type": "claim",
+      "surface_form": "ColabFit Exchange provides open-access datasets for data-driven interatomic potentials."
+    },
+    {
+      "id": "clai_00294",
+      "type": "claim",
+      "surface_form": "Pre-relaxing hypothetical structures with U-MLIP before ab initio calculations resulted in approximately 3× time savings compared to running ab initio on un-relaxed structures."
+    },
+    {
+      "id": "clai_00295",
+      "type": "claim",
+      "surface_form": "An MLIP trained on pristine crystalline phases may not be appropriate for studying amorphous phases of the same material."
+    },
+    {
+      "id": "clai_00312",
+      "type": "claim",
+      "surface_form": "Matbench contains data from 10 density functional theory-derived and experimental sources including Materials Project, Zhuo et al., Landolt-Bornstein Handbook, Castelli et al., JARVIS DFT 2D, and Citrine Informatics."
+    },
+    {
+      "id": "clai_00324",
+      "type": "claim",
+      "surface_form": "The frozen-framework PES descriptor screening ranks lithium-containing Materials Project compounds such that eight of the ten highest‑ranked materials are confirmed to be room‑temperature superionic conductors by first‑principles calculations."
+    },
+    {
+      "id": "clai_00325",
+      "type": "claim",
+      "surface_form": "The proposed screening method is approximately 50 × faster than molecular dynamics driven by a machine‑learning interatomic potential and at least 3 000 × faster than first‑principles molecular dynamics."
+    },
+    {
+      "id": "clai_00329",
+      "type": "claim",
+      "surface_form": "AIMD simulations of the five top‑Ξ candidates confirm high ionic conductivities (e.g., Li(BH)6 shows σ ≈ 0.9 S cm⁻¹ at 1000 K with activation energy 219 ± 86 meV), validating the screening predictions."
+    },
+    {
+      "id": "clai_00333",
+      "type": "claim",
+      "surface_form": "Finite‑size tests using a larger supercell and an ML‑IAP (SevenNet) show that diffusion coefficients converge within statistical uncertainties, confirming that the AIMD results are not significantly affected by supercell size."
+    },
+    {
+      "id": "clai_00344",
+      "type": "claim",
+      "surface_form": "Selecting structures by the Ξ ranking descriptor markedly enriches the sample with high ionic conductivity at 1000 K, 500 K, and extrapolated room temperature compared with a random selection."
+    },
+    {
+      "id": "clai_00353",
+      "type": "claim",
+      "surface_form": "Neural‑network‑based electronic‑structure prediction tools achieve significant speedups over conventional density‑functional theory while maintaining comparable accuracy, accelerating electronic‑structure calculations."
+    },
+    {
+      "id": "clai_00373",
+      "type": "claim",
+      "surface_form": "DeepH predicts DFT Hamiltonian matrix elements for graphene with an average mean absolute error of 2.1 meV and a coefficient of determination r² = 0.9994 across all orbital combinations."
+    },
+    {
+      "id": "clai_00375",
+      "type": "claim",
+      "surface_form": "For monolayer MoS₂, DeepH predicts DFT Hamiltonian matrix elements with average mean absolute errors of 1.3 meV (Mo–Mo), 1.0 meV (Mo–S), 0.7 meV (S–Mo), and 0.8 meV (S–S)."
+    },
+    {
+      "id": "clai_00376",
+      "type": "claim",
+      "surface_form": "Band structures and electric susceptibility computed from DeepH for MoS₂ match DFT results closely."
+    },
+    {
+      "id": "clai_00377",
+      "type": "claim",
+      "surface_form": "DeepH generalizes to carbon nanotubes, achieving Hamiltonian prediction MAE below 3.5 meV for diameters larger than 2 nm and accurately reproducing their band structures."
+    },
+    {
+      "id": "clai_00378",
+      "type": "claim",
+      "surface_form": "DeepH scales linearly with system size and provides a three‑order‑of‑magnitude speed‑up over conventional DFT for a MoS₂ 35 × 35 supercell."
+    },
+    {
+      "id": "clai_00379",
+      "type": "claim",
+      "surface_form": "A DeepH model trained only on non‑twisted bilayer graphene structures predicts Hamiltonians for twisted bilayer graphene supercells up to ~1000 atoms with sub‑meV mean absolute error and correctly reproduces the flat‑band feature near the Fermi level at the magic angle (~1.08°)."
+    },
+    {
+      "id": "clai_00381",
+      "type": "claim",
+      "surface_form": "Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency."
+    },
+    {
+      "id": "clai_00382",
+      "type": "claim",
+      "surface_form": "DeepH resolves the accuracy‑efficiency dilemma of DFT, enabling efficient ab‑initio electronic‑structure calculations for large‑scale material systems."
+    },
+    {
+      "id": "clai_00384",
+      "type": "claim",
+      "surface_form": "DeepH can be applied to both periodic and non‑periodic systems, including three‑dimensional bulk carbon allotropes and quasi‑zero‑dimensional molecules, achieving sub‑meV mean absolute error for Hamiltonian predictions."
+    },
+    {
+      "id": "clai_00386",
+      "type": "claim",
+      "surface_form": "A cluster expansion fitted to 333 DFT‑computed LiCoO₂ configurations using a genetic‑algorithm‑guided sparse regression achieves a root‑mean‑square error of 2.49 meV per primitive cell under 10‑fold cross‑validation and accurately reproduces formation energies, especially for configurations on or near the convex hull."
+    },
+    {
+      "id": "clai_00387",
+      "type": "claim",
+      "surface_form": "Large‑scale DFT calculations estimate the coherent anti‑phase boundary energy between the η₁ = ½ and η₃ = ½ ordered LiCoO₂ rotational variants to be 30.9 mJ m⁻²."
+    },
+    {
+      "id": "clai_00388",
+      "type": "claim",
+      "surface_form": "Integrable Deep Neural Networks trained on derivative (chemical‑potential) data accurately learn the high‑dimensional free‑energy density and chemical‑potential functions for LiₓCoO₂, achieving mean‑squared errors comparable to the reported minima and reproducing DFT formation energies with a mean absolute error below 5 meV atom⁻¹."
+    },
+    {
+      "id": "clai_00390",
+      "type": "claim",
+      "surface_form": "Phase‑field simulations using the IDNN‑derived free‑energy density predict nucleation rates of the ordered phase at 260 K that are an order of magnitude higher than at 300 K, consistent with a larger free‑energy decrease (1 meV vs 0.5 meV per unit cell)."
+    },
+    {
+      "id": "clai_00391",
+      "type": "claim",
+      "surface_form": "The presented scale‑bridging framework, linking DFT‑informed statistical mechanics to continuum phase‑field models via IDNN‑learned free‑energy functions, constitutes the first systematic implementation of this kind for LiCoO₂ cathodes."
+    },
+    {
+      "id": "clai_00394",
+      "type": "claim",
+      "surface_form": "Inclusion of van der Waals interactions together with DFT+U improves the accuracy of predicted order‑disorder transition temperatures for LiCoO₂ relative to earlier first‑principles studies."
+    },
+    {
+      "id": "clai_00395",
+      "type": "claim",
+      "surface_form": "Assuming the order‑disorder interface energy is half the anti‑phase boundary energy, the interface energy employed in phase‑field simulations is approximately 15.45 mJ m⁻²."
+    },
+    {
+      "id": "clai_00397",
+      "type": "claim",
+      "surface_form": "Phase‑field simulations reproduce the lever‑rule mass fractions of ordered and disordered phases predicted by the Monte Carlo phase diagram after accounting for a slight shift in the order‑disorder boundaries from the IDNN free‑energy surface."
+    },
+    {
+      "id": "clai_00420",
+      "type": "claim",
+      "surface_form": "The Phonax framework works for both periodic crystals and isolated molecules and can be extended to higher‑order derivatives such as field‑dependent properties."
+    },
+    {
+      "id": "clai_00464",
+      "type": "claim",
+      "surface_form": "SevenNet-0 successfully generated amorphous Si3N4 structure with 112,000 atoms through melt-quench MD simulation, reproducing key structural features matching DFT reference data."
+    },
+    {
+      "id": "clai_00470",
+      "type": "claim",
+      "surface_form": "SevenNet-0, trained solely on crystal structures, reproduced key structural features of amorphous Si3N4 including fourfold coordination for Si and threefold coordination for N atoms."
+    },
+    {
+      "id": "clai_00475",
+      "type": "claim",
+      "surface_form": "The DeePMD model successfully reproduces the superionic behavior of solid-state electrolytes with linear Lithium/Sodium mean squared displacement over time and diffusion coefficient uncertainty of about 20% or smaller, which is precise enough for battery applications."
+    },
+    {
+      "id": "clai_00483",
+      "type": "claim",
+      "surface_form": "The proposed training protocol based on augmenting the training set via intermediate molecular dynamics simulations can assess the quality of approximate trajectories and computed physical properties."
+    },
+    {
+      "id": "clai_00485",
+      "type": "claim",
+      "surface_form": "The DeePMD model is a promising candidate for developing a universal potential for solid-state electrolytes, though care must be taken when selecting training configurations."
+    },
+    {
+      "id": "clai_00499",
+      "type": "claim",
+      "surface_form": "The ML-assisted high-throughput search spanned approximately 1 billion compounds across 2500 binary and ternary structure prototypes."
+    },
+    {
+      "id": "clai_00502",
+      "type": "claim",
+      "surface_form": "CGAT-2 shows unprecedented generalization accuracy with strongly reduced chemical and structural bias compared to previous models trained on under-represented data."
+    },
+    {
+      "id": "clai_00510",
+      "type": "claim",
+      "surface_form": "Screening of approximately 50 000 inorganic crystals with the machine‑learning model identified over 2 000 temperature‑induced solid‑solid polymorphic transitions between 300 K and 600 K, including 130 stable transitions within the technologically relevant 300 K–350 K interval."
+    },
+    {
+      "id": "clai_00511",
+      "type": "claim",
+      "surface_form": "Twenty‑one stable polar‑nonpolar transitions are predicted to exhibit relative lattice‑thermal‑conductivity changes of at least 20 % (0.20), ranging up to a 73 % increase for ZrSeO with a conductivity ratio of 1.73."
+    },
+    {
+      "id": "clai_00513",
+      "type": "claim",
+      "surface_form": "The presented workflow enables high‑throughput prediction of temperature‑induced solid‑solid phase transitions without performing explicit phonon calculations for each material, dramatically reducing computational cost."
+    },
+    {
+      "id": "clai_00517",
+      "type": "claim",
+      "surface_form": "Metastable phase transitions outnumber stable transitions across all symmetry categories in the screened dataset."
+    },
+    {
+      "id": "clai_00518",
+      "type": "claim",
+      "surface_form": "Across the screened temperature range, a larger number of predicted stable phase transitions is generally associated with smaller phase‑transition entropy changes."
+    },
+    {
+      "id": "clai_00519",
+      "type": "claim",
+      "surface_form": "The current screening neglects thermal‑expansion effects, which may cause discrepancies with experimental transition temperatures, especially when expansion strongly influences phase stability."
+    },
+    {
+      "id": "clai_00552",
+      "type": "claim",
+      "surface_form": "GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD."
+    },
+    {
+      "id": "clai_00576",
+      "type": "claim",
+      "surface_form": "Discontinuities in forces caused by the sharp cutoff radius and neighbor‑list sorting are much smaller than thermal fluctuations and do not impair canonical sampling."
+    },
+    {
+      "id": "clai_00579",
+      "type": "claim",
+      "surface_form": "DeepH-E3 predicts DFT Hamiltonian matrix elements with sub‑meV mean absolute error, reducing the error by roughly a factor of two compared with the original DeepH method across diverse material systems."
+    },
+    {
+      "id": "clai_00580",
+      "type": "claim",
+      "surface_form": "DeepH-E3 enables accurate electronic‑structure calculations for supercells larger than 10⁴ atoms, reducing computational cost by several orders of magnitude and allowing calculations in minutes on a single GPU versus months on thousands of CPU cores."
+    },
+    {
+      "id": "clai_00581",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+    },
+    {
+      "id": "clai_00582",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 predicts a spin‑orbit‑coupling‑induced topological quantum phase transition in twisted bilayer Bi₂Te₃, evidenced by band‑gap closing and reopening and a change of the Z₂ invariant from 0 to 1 as SOC strength increases."
+    },
+    {
+      "id": "clai_00583",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 attains sub‑meV accuracy after training on only a few hundred DFT calculations of small, non‑twisted structures, demonstrating high data efficiency."
+    },
+    {
+      "id": "clai_00584",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors."
+    },
+    {
+      "id": "clai_00585",
+      "type": "claim",
+      "surface_form": "The model generalizes to arbitrarily twisted bilayer structures; the mean absolute error of Hamiltonian predictions decreases as the Moiré supercell size grows (or twist angle decreases)."
+    },
+    {
+      "id": "clai_00646",
+      "type": "claim",
+      "surface_form": "M3GNet molecular‑dynamics simulations of Li₃YCl₆ reproduce ionic conductivity (14.3 mS cm⁻¹) and activation energy (0.22 eV) consistent with ab‑initio MD, and short‑time MD correctly identifies known lithium superionic conductors by their high mean‑squared displacements at elevated temperatures."
+    },
+    {
+      "id": "clai_00651",
+      "type": "claim",
+      "surface_form": "The Open Quantum Materials Database (OQMD) contains over 200,000 DFT‑calculated crystal structures, including experimental ICSD entries and theoretical prototype structures, and is freely accessible to the scientific community without usage restrictions."
+    },
+    {
+      "id": "clai_00654",
+      "type": "claim",
+      "surface_form": "High‑throughput screening identified TiP, LiSiNi₂, and CoSi₂ as the most promising Li‑ion battery anode conversion reactions, offering high capacity, moderate voltage, and low volume expansion."
+    },
+    {
+      "id": "clai_00657",
+      "type": "claim",
+      "surface_form": "DFT screening predicts forty‑one previously unreported rare‑earth‑containing Mg‑XL‑XS ternary systems to be thermodynamically stable LPSO phases, providing new experimental targets."
+    },
+    {
+      "id": "clai_00660",
+      "type": "claim",
+      "surface_form": "Applying the heuristic‑ML model to 1.6 million hypothetical ternary compositions identified nine top candidates, of which eight were confirmed by DFT to be new stable compounds (e.g., SiYb₃F₅, Pa₂O(SiO₆))."
+    },
+    {
+      "id": "clai_00663",
+      "type": "claim",
+      "surface_form": "AFLOW provides a standardized definition of Brillouin‑zone integration paths for all 14 Bravais lattices, filling a gap in the literature."
+    },
+    {
+      "id": "clai_00668",
+      "type": "claim",
+      "surface_form": "AFLOW can automatically construct convex hulls for binary alloy systems at zero temperature using formation enthalpies from DFT calculations."
+    },
+    {
+      "id": "clai_00675",
+      "type": "claim",
+      "surface_form": "AFLOW can predict alloy miscibility using Miedema and Hume‑Rothery mixing rules."
+    },
+    {
+      "id": "clai_00677",
+      "type": "claim",
+      "surface_form": "Combined two-body, three-body, and SOAP many-body descriptors are necessary for GAP to achieve the accuracy limit imposed by force locality and make physically meaningful predictions; models using only subsets of descriptors produce unphysical structures during molecular dynamics simulations."
+    },
+    {
+      "id": "clai_00678",
+      "type": "claim",
+      "surface_form": "GAP predicts diamond lattice parameter (3.539 Å) very close to DFT-LDA reference (3.532 Å), outperforming screened Tersoff potential (3.566 Å), with bulk modulus and elastic constants reasonably close to DFT reference values."
+    },
+    {
+      "id": "clai_00679",
+      "type": "claim",
+      "surface_form": "GAP radial and angular distribution functions for liquid and amorphous carbon closely match DFT reference results, including peak locations, extents, and overall curve shapes."
+    },
+    {
+      "id": "clai_00680",
+      "type": "claim",
+      "surface_form": "GAP recovers three- and four-membered rings that are key features of liquid and low-density amorphous carbon structures, which empirical potentials (Tersoff/Brenner) fail to predict."
+    },
+    {
+      "id": "clai_00684",
+      "type": "claim",
+      "surface_form": "Empirical potentials (Tersoff/Brenner) cannot describe interlayer spacing in graphite due to short-range cutoff being less than c/2, provide poor description of carbon surfaces, and yield much lower surface energies than GAP and DFT for ta-C surfaces."
+    },
+    {
+      "id": "clai_00685",
+      "type": "claim",
+      "surface_form": "Diamond exhibits strong force locality with force deviations vanishing practically at rfix = 5.5 Å, while graphite is highly nonlocal with larger force deviations that do not decay as rapidly."
+    },
+    {
+      "id": "clai_00686",
+      "type": "claim",
+      "surface_form": "For amorphous carbon with 3.7 Å cutoff radius, the lowest achievable standard deviation of force components is approximately 1 eV/Å due to fundamental nonlocality limits, representing a maximum accuracy bound for any finite-range interatomic potential."
+    },
+    {
+      "id": "comp_00111",
+      "type": "component",
+      "surface_form": "Coupling of IDNN free‑energy with phase‑field equations"
+    },
+    {
+      "id": "comp_00262",
+      "type": "component",
+      "surface_form": "Crystal graph representation"
+    },
+    {
+      "id": "comp_00351",
+      "type": "component",
+      "surface_form": "JARVIS‑Heterostructure app"
+    },
+    {
+      "id": "comp_00363",
+      "type": "component",
+      "surface_form": "HF‑scavenging coating screen"
+    },
+    {
+      "id": "comp_00364",
+      "type": "component",
+      "surface_form": "LPSO precipitate stability evaluator"
+    },
+    {
+      "id": "comp_00372",
+      "type": "component",
+      "surface_form": "NpT molecular dynamics at 300 K"
+    },
+    {
+      "id": "comp_00384",
+      "type": "component",
+      "surface_form": "Ionic conductivity pipeline"
+    },
+    {
+      "id": "comp_00386",
+      "type": "component",
+      "surface_form": "Standardized Brillouin‑zone path generator"
+    },
+    {
+      "id": "comp_00412",
+      "type": "component",
+      "surface_form": "Ab-initio molecular dynamics (AIMD) sampling"
+    },
+    {
+      "id": "comp_00600",
+      "type": "component",
+      "surface_form": "Relaxed oxidation-state balancing constraint"
+    },
+    {
+      "id": "comp_00626",
+      "type": "component",
+      "surface_form": "Temperature ramping scheme"
+    },
+    {
+      "id": "comp_00628",
+      "type": "component",
+      "surface_form": "Diffusion coefficient convergence criterion"
+    },
+    {
+      "id": "comp_00666",
+      "type": "component",
+      "surface_form": "Global Molecular Bias"
+    },
+    {
+      "id": "comp_00750",
+      "type": "component",
+      "surface_form": "diffusion pretraining scheme"
+    },
+    {
+      "id": "data_00004",
+      "type": "dataset",
+      "surface_form": "Small Molecules"
+    },
+    {
+      "id": "data_00008",
+      "type": "dataset",
+      "surface_form": "acetylacetone"
+    },
+    {
+      "id": "data_00027",
+      "type": "dataset",
+      "surface_form": "CCSD(T) Molecular Set – Aspirin"
+    },
+    {
+      "id": "data_00029",
+      "type": "dataset",
+      "surface_form": "CCSD(T) Molecular Set – Ethanol"
+    },
+    {
+      "id": "data_00031",
+      "type": "dataset",
+      "surface_form": "CCSD(T) Molecular Set – Toluene"
+    },
+    {
+      "id": "data_00048",
+      "type": "dataset",
+      "surface_form": "NiBr2 spin‑spiral"
+    },
+    {
+      "id": "data_00049",
+      "type": "dataset",
+      "surface_form": "Moiré‑twisted bilayer CrI3"
+    },
+    {
+      "id": "data_00131",
+      "type": "dataset",
+      "surface_form": "Dipeptides"
+    },
+    {
+      "id": "data_00159",
+      "type": "dataset",
+      "surface_form": "amorphous Si3N4"
+    },
+    {
+      "id": "data_00174",
+      "type": "dataset",
+      "surface_form": "Thermal conductivity benchmark"
+    },
+    {
+      "id": "data_00178",
+      "type": "dataset",
+      "surface_form": "Catalysis"
+    },
+    {
+      "id": "data_00179",
+      "type": "dataset",
+      "surface_form": "Molecules"
+    },
+    {
+      "id": "data_00180",
+      "type": "dataset",
+      "surface_form": "Molecular Crystals"
+    },
+    {
+      "id": "data_00199",
+      "type": "dataset",
+      "surface_form": "amorphous carbon structures"
+    },
+    {
+      "id": "data_00208",
+      "type": "dataset",
+      "surface_form": "Amorphous carbon"
+    },
+    {
+      "id": "data_00212",
+      "type": "dataset",
+      "surface_form": "amorphous carbon Young's modulus"
+    },
+    {
+      "id": "data_00216",
+      "type": "dataset",
+      "surface_form": "Binary Ionic Compounds Melting Temperature Dataset"
+    },
+    {
+      "id": "data_00217",
+      "type": "dataset",
+      "surface_form": "Inorganic non-metallic compounds melting temperature dataset"
+    },
+    {
+      "id": "data_00219",
+      "type": "dataset",
+      "surface_form": "Binary inorganic solid materials melting temperature dataset"
+    },
+    {
+      "id": "data_00220",
+      "type": "dataset",
+      "surface_form": "Binary compounds melting temperature dataset"
+    },
+    {
+      "id": "data_00247",
+      "type": "dataset",
+      "surface_form": "twisted bilayer bismuthene (TBB)"
+    },
+    {
+      "id": "data_00254",
+      "type": "dataset",
+      "surface_form": "Small Molecules (G2)"
+    },
+    {
+      "id": "futu_00012",
+      "type": "future_topic",
+      "surface_form": "Application of LiFlow to non‑crystalline (amorphous) materials"
+    },
+    {
+      "id": "futu_00013",
+      "type": "future_topic",
+      "surface_form": "Integration of LiFlow with universal MLIPs such as MACE‑MP‑0 and CHGNet"
+    },
+    {
+      "id": "futu_00015",
+      "type": "future_topic",
+      "surface_form": "Scaling LiFlow to multi‑ion systems beyond lithium"
+    },
+    {
+      "id": "futu_00018",
+      "type": "future_topic",
+      "surface_form": "ion migrations"
+    },
+    {
+      "id": "futu_00022",
+      "type": "future_topic",
+      "surface_form": "more challenging benchmark with chemical and structural variations"
+    },
+    {
+      "id": "futu_00025",
+      "type": "future_topic",
+      "surface_form": "learning a representation for molecules using equilibrium and non‑equilibrium conformations"
+    },
+    {
+      "id": "futu_00036",
+      "type": "future_topic",
+      "surface_form": "Large-scale atomistic simulations"
+    },
+    {
+      "id": "futu_00040",
+      "type": "future_topic",
+      "surface_form": "automate challenging chemical search problems in drug discovery"
+    },
+    {
+      "id": "futu_00041",
+      "type": "future_topic",
+      "surface_form": "automate challenging chemical search problems in materials science"
+    },
+    {
+      "id": "futu_00044",
+      "type": "future_topic",
+      "surface_form": "Use of the framework for high‑dimensional integrals in quantum physics (multi‑particle Schrödinger equation)"
+    },
+    {
+      "id": "futu_00051",
+      "type": "future_topic",
+      "surface_form": "high-fidelity molecular dynamics simulations over long time scales"
+    },
+    {
+      "id": "futu_00053",
+      "type": "future_topic",
+      "surface_form": "Large electronic‑structure datasets"
+    },
+    {
+      "id": "futu_00059",
+      "type": "future_topic",
+      "surface_form": "Development of deep‑learning ab initio methods for magnetic systems"
+    },
+    {
+      "id": "futu_00061",
+      "type": "future_topic",
+      "surface_form": "Completion of Quantum ESPRESSO software integration"
+    },
+    {
+      "id": "futu_00064",
+      "type": "future_topic",
+      "surface_form": "Extension of Gaussian Approximation Potentials to other materials"
+    },
+    {
+      "id": "futu_00068",
+      "type": "future_topic",
+      "surface_form": "Integration of ML potentials with finite‑temperature phase‑boundary calculations for complex alloys"
+    },
+    {
+      "id": "futu_00077",
+      "type": "future_topic",
+      "surface_form": "Development of more generalizable universal interatomic potentials for diverse crystal chemistries"
+    },
+    {
+      "id": "futu_00084",
+      "type": "future_topic",
+      "surface_form": "AI-accelerated electronic structure prediction"
+    },
+    {
+      "id": "futu_00089",
+      "type": "future_topic",
+      "surface_form": "Direct CO2 capture from air"
+    },
+    {
+      "id": "futu_00090",
+      "type": "future_topic",
+      "surface_form": "Thermal conductivity prediction"
+    },
+    {
+      "id": "futu_00092",
+      "type": "future_topic",
+      "surface_form": "Twisted van der Waals materials"
+    },
+    {
+      "id": "futu_00106",
+      "type": "future_topic",
+      "surface_form": "Application of equivariant GNN phonon predictions to drug‑discovery related molecular systems"
+    },
+    {
+      "id": "futu_00113",
+      "type": "future_topic",
+      "surface_form": "High-throughput computational chemistry"
+    },
+    {
+      "id": "futu_00114",
+      "type": "future_topic",
+      "surface_form": "Mesoscale all-atom simulations"
+    },
+    {
+      "id": "futu_00115",
+      "type": "future_topic",
+      "surface_form": "Bio-materials and enzymatic process simulation"
+    },
+    {
+      "id": "futu_00128",
+      "type": "future_topic",
+      "surface_form": "Framework to identify novel solid-state electrolytes"
+    },
+    {
+      "id": "futu_00129",
+      "type": "future_topic",
+      "surface_form": "Screening of material databases for solid-state electrolytes"
+    },
+    {
+      "id": "futu_00147",
+      "type": "future_topic",
+      "surface_form": "Integrating uncertainty quantification in ML pre‑filters for crystal stability"
+    },
+    {
+      "id": "futu_00151",
+      "type": "future_topic",
+      "surface_form": "Condensed-phase molecular-dynamics simulations"
+    },
+    {
+      "id": "futu_00152",
+      "type": "future_topic",
+      "surface_form": "Zero-shot prediction of ionic conductivity"
+    },
+    {
+      "id": "futu_00156",
+      "type": "future_topic",
+      "surface_form": "Construction of a Moiré‑twisted material database using DeepH‑E3"
+    },
+    {
+      "id": "futu_00166",
+      "type": "future_topic",
+      "surface_form": "Scaling limits of atomic models"
+    },
+    {
+      "id": "futu_00175",
+      "type": "future_topic",
+      "surface_form": "Training a machine‑learning model to predict new stable ternary compounds"
+    },
+    {
+      "id": "futu_00176",
+      "type": "future_topic",
+      "surface_form": "Realistic and accurate simulations of nanoscale amorphous carbon structures"
+    },
+    {
+      "id": "futu_00177",
+      "type": "future_topic",
+      "surface_form": "High-temperature surface reconstructions of amorphous carbon"
+    },
+    {
+      "id": "meth_00074",
+      "type": "method",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "meth_00082",
+      "type": "method",
+      "surface_form": "Universal Models for Atoms"
+    },
+    {
+      "id": "meth_00089",
+      "type": "method",
+      "surface_form": "Molecular dynamics"
+    },
+    {
+      "id": "meth_00098",
+      "type": "method",
+      "surface_form": "density functional perturbation theory"
+    },
+    {
+      "id": "meth_00101",
+      "type": "method",
+      "surface_form": "ab initio molecular dynamics"
+    },
+    {
+      "id": "meth_00130",
+      "type": "method",
+      "surface_form": "Diffusive Molecular Dynamics"
+    },
+    {
+      "id": "meth_00152",
+      "type": "method",
+      "surface_form": "classical nucleation theory"
+    },
+    {
+      "id": "meth_00153",
+      "type": "method",
+      "surface_form": "van der Waals density functional"
+    },
+    {
+      "id": "meth_00206",
+      "type": "method",
+      "surface_form": "Deep Potential Molecular Dynamics"
+    },
+    {
+      "id": "meth_00207",
+      "type": "method",
+      "surface_form": "Car-Parrinello molecular dynamics"
+    },
+    {
+      "id": "meth_00225",
+      "type": "method",
+      "surface_form": "Kohn-Sham density-functional theory"
+    },
+    {
+      "id": "meth_00233",
+      "type": "method",
+      "surface_form": "Non‑equilibrium molecular dynamics"
+    },
+    {
+      "id": "meth_00236",
+      "type": "method",
+      "surface_form": "Non-equilibrium Molecular Dynamics"
+    },
+    {
+      "id": "meth_00248",
+      "type": "method",
+      "surface_form": "van der Waals functional OptB88"
+    },
+    {
+      "id": "meth_00263",
+      "type": "method",
+      "surface_form": "Phase-Field Hub"
+    },
+    {
+      "id": "meth_00268",
+      "type": "method",
+      "surface_form": "Open Quantum Materials Database"
+    },
+    {
+      "id": "meth_00377",
+      "type": "method",
+      "surface_form": "Open Quantum Mechanical Database"
+    },
+    {
+      "id": "meth_00378",
+      "type": "method",
+      "surface_form": "Inorganic Crystal Structures Database"
+    },
+    {
+      "id": "meth_00383",
+      "type": "method",
+      "surface_form": "DeePMD training protocol for diffusion coefficient computation"
+    },
+    {
+      "id": "meth_00387",
+      "type": "method",
+      "surface_form": "Classical Force Field Molecular Dynamics"
+    },
+    {
+      "id": "meth_00392",
+      "type": "method",
+      "surface_form": "Deep Molecular Dynamics"
+    },
+    {
+      "id": "meth_00437",
+      "type": "method",
+      "surface_form": "two-step supervised-unsupervised melting temperature prediction with symbolic regression"
+    },
+    {
+      "id": "meth_00448",
+      "type": "method",
+      "surface_form": "Neural network model for melting temperature prediction"
+    },
+    {
+      "id": "metr_00043",
+      "type": "metric",
+      "surface_form": "diffusion coefficient uncertainty"
+    },
+    {
+      "id": "prob_00016",
+      "type": "problem",
+      "surface_form": "Accurate prediction of quantum‑chemical properties"
+    },
+    {
+      "id": "prob_00020",
+      "type": "problem",
+      "surface_form": "computational scalability of quantum mechanical methods"
+    },
+    {
+      "id": "prob_00022",
+      "type": "problem",
+      "surface_form": "accurate prediction of phase transitions and defect dynamics"
+    },
+    {
+      "id": "prob_00031",
+      "type": "problem",
+      "surface_form": "Accurate band‑structure prediction for twisted moiré materials"
+    },
+    {
+      "id": "prob_00034",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure prediction for moiré systems"
+    },
+    {
+      "id": "prob_00042",
+      "type": "problem",
+      "surface_form": "Missing link between microscopic energy models and macroscopic observables"
+    },
+    {
+      "id": "prob_00051",
+      "type": "problem",
+      "surface_form": "Fast screening of solid‑state ionic conductors"
+    },
+    {
+      "id": "prob_00054",
+      "type": "problem",
+      "surface_form": "Rapid identification of solid‑state electrolyte candidates"
+    },
+    {
+      "id": "prob_00056",
+      "type": "problem",
+      "surface_form": "Accelerated validation of ionic conductivity predictions"
+    },
+    {
+      "id": "prob_00060",
+      "type": "problem",
+      "surface_form": "Large‑scale prediction of temperature‑induced solid‑solid phase transitions"
+    },
+    {
+      "id": "prob_00061",
+      "type": "problem",
+      "surface_form": "Identification of functional phase‑change materials"
+    },
+    {
+      "id": "prob_00062",
+      "type": "problem",
+      "surface_form": "Scale bridging across atomistic and continuum levels"
+    },
+    {
+      "id": "prob_00066",
+      "type": "problem",
+      "surface_form": "Multiscale bridging from atomic to continuum"
+    },
+    {
+      "id": "prob_00071",
+      "type": "problem",
+      "surface_form": "Capturing chemical‑potential behavior near phase‑boundary regions"
+    },
+    {
+      "id": "prob_00073",
+      "type": "problem",
+      "surface_form": "Coupling ordering and composition in phase‑field simulations"
+    },
+    {
+      "id": "prob_00089",
+      "type": "problem",
+      "surface_form": "Scalable crystal representation"
+    },
+    {
+      "id": "prob_00108",
+      "type": "problem",
+      "surface_form": "Oxidation‑state discrimination in battery cathodes"
+    },
+    {
+      "id": "prob_00116",
+      "type": "problem",
+      "surface_form": "large‑scale ionic conductivity screening"
+    },
+    {
+      "id": "prob_00118",
+      "type": "problem",
+      "surface_form": "force‑field generation for small molecules"
+    },
+    {
+      "id": "prob_00119",
+      "type": "problem",
+      "surface_form": "Accurate, transferable interatomic potential for silicon"
+    },
+    {
+      "id": "prob_00140",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure calculation for large‑scale materials"
+    },
+    {
+      "id": "prob_00142",
+      "type": "problem",
+      "surface_form": "Modeling twisted moiré materials"
+    },
+    {
+      "id": "prob_00145",
+      "type": "problem",
+      "surface_form": "Variable‑size crystal representation"
+    },
+    {
+      "id": "prob_00157",
+      "type": "problem",
+      "surface_form": "Scalability to larger molecules"
+    },
+    {
+      "id": "prob_00158",
+      "type": "problem",
+      "surface_form": "Lack of a unified framework for molecules and crystals"
+    },
+    {
+      "id": "prob_00161",
+      "type": "problem",
+      "surface_form": "Interpretability of learned chemical trends"
+    },
+    {
+      "id": "prob_00167",
+      "type": "problem",
+      "surface_form": "Generalization to unseen crystal orientations and bicrystal interfaces"
+    },
+    {
+      "id": "prob_00169",
+      "type": "problem",
+      "surface_form": "Noise reduction in atomistic data"
+    },
+    {
+      "id": "prob_00178",
+      "type": "problem",
+      "surface_form": "Accelerated atomic‑property prediction"
+    },
+    {
+      "id": "prob_00188",
+      "type": "problem",
+      "surface_form": "Accelerating molecular dynamics for solid‑state electrolytes"
+    },
+    {
+      "id": "prob_00190",
+      "type": "problem",
+      "surface_form": "Capturing temperature‑dependent diffusion without re‑running AIMD"
+    },
+    {
+      "id": "prob_00201",
+      "type": "problem",
+      "surface_form": "Rapid heterostructure design"
+    },
+    {
+      "id": "prob_00202",
+      "type": "problem",
+      "surface_form": "High‑capacity battery anode identification"
+    },
+    {
+      "id": "prob_00203",
+      "type": "problem",
+      "surface_form": "HF‑induced cathode degradation mitigation"
+    },
+    {
+      "id": "prob_00204",
+      "type": "problem",
+      "surface_form": "Affordable LPSO precipitate discovery"
+    },
+    {
+      "id": "prob_00205",
+      "type": "problem",
+      "surface_form": "Novel ternary compound discovery"
+    },
+    {
+      "id": "prob_00206",
+      "type": "problem",
+      "surface_form": "Rapid prediction of ternary formation energies without crystal structures"
+    },
+    {
+      "id": "prob_00207",
+      "type": "problem",
+      "surface_form": "Efficient identification of likely stable ternary compounds"
+    },
+    {
+      "id": "prob_00221",
+      "type": "problem",
+      "surface_form": "phase stability determination"
+    },
+    {
+      "id": "prob_00248",
+      "type": "problem",
+      "surface_form": "Modeling complex atomic structures"
+    },
+    {
+      "id": "prob_00295",
+      "type": "problem",
+      "surface_form": "Ionic conductor classification"
+    },
+    {
+      "id": "prob_00297",
+      "type": "problem",
+      "surface_form": "ion migration barrier estimation"
+    },
+    {
+      "id": "prob_00299",
+      "type": "problem",
+      "surface_form": "High-throughput ionic conductor screening"
+    },
+    {
+      "id": "prob_00322",
+      "type": "problem",
+      "surface_form": "Computational cost of ab initio molecular dynamics"
+    },
+    {
+      "id": "prob_00376",
+      "type": "problem",
+      "surface_form": "electronic structure of correlated systems"
+    },
+    {
+      "id": "prob_00389",
+      "type": "problem",
+      "surface_form": "Discovery in unseen chemical spaces"
+    },
+    {
+      "id": "prob_00405",
+      "type": "problem",
+      "surface_form": "Limited crystal discovery through previous ML methods"
+    },
+    {
+      "id": "prob_00409",
+      "type": "problem",
+      "surface_form": "Electrolyte discovery for ionic conductivity"
+    },
+    {
+      "id": "prob_00412",
+      "type": "problem",
+      "surface_form": "Time-scale limitation in first-principles molecular dynamics"
+    },
+    {
+      "id": "prob_00418",
+      "type": "problem",
+      "surface_form": "Neural network potential convergence for solid-state electrolytes"
+    },
+    {
+      "id": "prob_00422",
+      "type": "problem",
+      "surface_form": "Accuracy-scale disconnect in atomistic simulations"
+    },
+    {
+      "id": "prob_00433",
+      "type": "problem",
+      "surface_form": "Stable molecular dynamics"
+    },
+    {
+      "id": "prob_00435",
+      "type": "problem",
+      "surface_form": "Condensed phase modeling"
+    },
+    {
+      "id": "prob_00437",
+      "type": "problem",
+      "surface_form": "Computational cost reduction in ab initio calculations"
+    },
+    {
+      "id": "prob_00444",
+      "type": "problem",
+      "surface_form": "Structural phase transformations"
+    },
+    {
+      "id": "prob_00445",
+      "type": "problem",
+      "surface_form": "NPT ensemble molecular dynamics"
+    },
+    {
+      "id": "prob_00452",
+      "type": "problem",
+      "surface_form": "Atomic force prediction"
+    },
+    {
+      "id": "prob_00453",
+      "type": "problem",
+      "surface_form": "Molecular energy prediction"
+    },
+    {
+      "id": "prob_00460",
+      "type": "problem",
+      "surface_form": "Performance scaling for molecular force fields"
+    },
+    {
+      "id": "prob_00463",
+      "type": "problem",
+      "surface_form": "Chemical space generalization"
+    },
+    {
+      "id": "prob_00483",
+      "type": "problem",
+      "surface_form": "Computational cost of large-scale amorphous structure generation"
+    },
+    {
+      "id": "prob_00494",
+      "type": "problem",
+      "surface_form": "scalable parallel computation for molecular dynamics"
+    },
+    {
+      "id": "prob_00505",
+      "type": "problem",
+      "surface_form": "computational efficiency in atomistic simulations"
+    },
+    {
+      "id": "prob_00518",
+      "type": "problem",
+      "surface_form": "Efficient training with varying molecule sizes"
+    },
+    {
+      "id": "prob_00559",
+      "type": "problem",
+      "surface_form": "Scaling molecular dynamics to large system sizes"
+    },
+    {
+      "id": "prob_00572",
+      "type": "problem",
+      "surface_form": "Data scarcity in molecular crystals"
+    },
+    {
+      "id": "prob_00585",
+      "type": "problem",
+      "surface_form": "Inter-molecular force estimation"
+    },
+    {
+      "id": "prob_00588",
+      "type": "problem",
+      "surface_form": "Accuracy-efficiency gap in atomistic simulations"
+    },
+    {
+      "id": "prob_00601",
+      "type": "problem",
+      "surface_form": "Interlayer spacing in graphite"
+    },
+    {
+      "id": "prob_00606",
+      "type": "problem",
+      "surface_form": "accurate interatomic potential for amorphous carbon"
+    },
+    {
+      "id": "prob_00608",
+      "type": "problem",
+      "surface_form": "capturing tetrahedral motifs"
+    },
+    {
+      "id": "prob_00609",
+      "type": "problem",
+      "surface_form": "accuracy-cost tradeoff in atomistic modeling"
+    },
+    {
+      "id": "prob_00617",
+      "type": "problem",
+      "surface_form": "limited scope of existing melting temperature prediction methods"
+    },
+    {
+      "id": "prob_00618",
+      "type": "problem",
+      "surface_form": "lack of experimental melting temperature data for binary ionic solids"
+    },
+    {
+      "id": "prob_00620",
+      "type": "problem",
+      "surface_form": "Melting temperature prediction"
+    },
+    {
+      "id": "prob_00624",
+      "type": "problem",
+      "surface_form": "melting temperature prediction accuracy"
+    },
+    {
+      "id": "prob_00625",
+      "type": "problem",
+      "surface_form": "capturing cluster-specific melting behavior"
+    },
+    {
+      "id": "prob_00626",
+      "type": "problem",
+      "surface_form": "melting temperature prediction for inorganic compounds"
+    },
+    {
+      "id": "task_00002",
+      "type": "task",
+      "surface_form": "physics"
+    },
+    {
+      "id": "task_00004",
+      "type": "task",
+      "surface_form": "chemistry"
+    },
+    {
+      "id": "task_00006",
+      "type": "task",
+      "surface_form": "drug discovery"
+    },
+    {
+      "id": "task_00007",
+      "type": "task",
+      "surface_form": "Molecular property prediction"
+    },
+    {
+      "id": "task_00008",
+      "type": "task",
+      "surface_form": "Computational mechanics"
+    },
+    {
+      "id": "task_00010",
+      "type": "task",
+      "surface_form": "computational chemistry"
+    },
+    {
+      "id": "task_00016",
+      "type": "task",
+      "surface_form": "Crystal property prediction"
+    },
+    {
+      "id": "task_00019",
+      "type": "task",
+      "surface_form": "Phase diagram construction"
+    },
+    {
+      "id": "task_00020",
+      "type": "task",
+      "surface_form": "catalysis"
+    },
+    {
+      "id": "task_00023",
+      "type": "task",
+      "surface_form": "condensed matter physics"
+    },
+    {
+      "id": "task_00024",
+      "type": "task",
+      "surface_form": "Molecular total energy prediction"
+    },
+    {
+      "id": "task_00026",
+      "type": "task",
+      "surface_form": "Molecular dynamics trajectory modeling"
+    },
+    {
+      "id": "task_00027",
+      "type": "task",
+      "surface_form": "quantum chemistry"
+    },
+    {
+      "id": "task_00028",
+      "type": "task",
+      "surface_form": "Molecular energy prediction"
+    },
+    {
+      "id": "task_00034",
+      "type": "task",
+      "surface_form": "molecular dynamics"
+    },
+    {
+      "id": "task_00035",
+      "type": "task",
+      "surface_form": "molecular simulation"
+    },
+    {
+      "id": "task_00037",
+      "type": "task",
+      "surface_form": "Molecule‑level property regression"
+    },
+    {
+      "id": "task_00041",
+      "type": "task",
+      "surface_form": "molecular simulations"
+    },
+    {
+      "id": "task_00042",
+      "type": "task",
+      "surface_form": "molecular modeling"
+    },
+    {
+      "id": "task_00044",
+      "type": "task",
+      "surface_form": "atomistic simulation"
+    },
+    {
+      "id": "task_00045",
+      "type": "task",
+      "surface_form": "electronic structure"
+    },
+    {
+      "id": "task_00046",
+      "type": "task",
+      "surface_form": "Electronic structure calculation"
+    },
+    {
+      "id": "task_00073",
+      "type": "task",
+      "surface_form": "Martensitic phase‑transition free‑energy calculation in iron"
+    },
+    {
+      "id": "task_00074",
+      "type": "task",
+      "surface_form": "Grain‑boundary energy evaluation in aluminum and iron"
+    },
+    {
+      "id": "task_00076",
+      "type": "task",
+      "surface_form": "Ranking lithium‑containing crystals for ionic conductivity"
+    },
+    {
+      "id": "task_00077",
+      "type": "task",
+      "surface_form": "Validation of top candidates with ab initio molecular dynamics"
+    },
+    {
+      "id": "task_00078",
+      "type": "task",
+      "surface_form": "Screening of solid‑state electrolyte materials"
+    },
+    {
+      "id": "task_00080",
+      "type": "task",
+      "surface_form": "Ionic conductivity prediction"
+    },
+    {
+      "id": "task_00082",
+      "type": "task",
+      "surface_form": "solid-state ionics"
+    },
+    {
+      "id": "task_00083",
+      "type": "task",
+      "surface_form": "High‑throughput prediction of temperature‑induced solid‑solid phase transitions"
+    },
+    {
+      "id": "task_00089",
+      "type": "task",
+      "surface_form": "Generation of phase diagrams and voltage profiles"
+    },
+    {
+      "id": "task_00090",
+      "type": "task",
+      "surface_form": "Voltage‑composition curve prediction"
+    },
+    {
+      "id": "task_00091",
+      "type": "task",
+      "surface_form": "Microstructure evolution simulation"
+    },
+    {
+      "id": "task_00092",
+      "type": "task",
+      "surface_form": "Nucleation rate and probability analysis"
+    },
+    {
+      "id": "task_00094",
+      "type": "task",
+      "surface_form": "Free‑energy surrogate modeling for LiCoO₂"
+    },
+    {
+      "id": "task_00095",
+      "type": "task",
+      "surface_form": "Phase‑field microstructure evolution"
+    },
+    {
+      "id": "task_00096",
+      "type": "task",
+      "surface_form": "Nucleation rate estimation"
+    },
+    {
+      "id": "task_00097",
+      "type": "task",
+      "surface_form": "Formation‑energy computation for LixCoO2 configurations"
+    },
+    {
+      "id": "task_00102",
+      "type": "task",
+      "surface_form": "Phase‑field model preparation"
+    },
+    {
+      "id": "task_00103",
+      "type": "task",
+      "surface_form": "battery materials"
+    },
+    {
+      "id": "task_00106",
+      "type": "task",
+      "surface_form": "Accelerated discovery of stable inorganic crystals"
+    },
+    {
+      "id": "task_00138",
+      "type": "task",
+      "surface_form": "Drug Discovery Assistance"
+    },
+    {
+      "id": "task_00142",
+      "type": "task",
+      "surface_form": "Li‑diffusivity prediction in garnet electrolytes"
+    },
+    {
+      "id": "task_00146",
+      "type": "task",
+      "surface_form": "Phase‑diagram calculation via cluster expansion"
+    },
+    {
+      "id": "task_00154",
+      "type": "task",
+      "surface_form": "Energy, force, and stress prediction for arbitrary crystals"
+    },
+    {
+      "id": "task_00159",
+      "type": "task",
+      "surface_form": "materials screening for lithium superionic conductors"
+    },
+    {
+      "id": "task_00162",
+      "type": "task",
+      "surface_form": "Interatomic potential development for silicon"
+    },
+    {
+      "id": "task_00165",
+      "type": "task",
+      "surface_form": "Interatomic potential fitting for silicon"
+    },
+    {
+      "id": "task_00166",
+      "type": "task",
+      "surface_form": "Bulk crystal equation‑of‑state calculations"
+    },
+    {
+      "id": "task_00167",
+      "type": "task",
+      "surface_form": "Liquid silicon structural analysis"
+    },
+    {
+      "id": "task_00168",
+      "type": "task",
+      "surface_form": "Amorphous silicon generation and characterization"
+    },
+    {
+      "id": "task_00170",
+      "type": "task",
+      "surface_form": "Efficient electronic‑structure calculation of magnetic materials"
+    },
+    {
+      "id": "task_00171",
+      "type": "task",
+      "surface_form": "Band‑structure and density‑of‑states prediction for large magnetic superstructures"
+    },
+    {
+      "id": "task_00172",
+      "type": "task",
+      "surface_form": "Exploration of magnetic skyrmion effects on electronic properties"
+    },
+    {
+      "id": "task_00175",
+      "type": "task",
+      "surface_form": "Molecular dynamics simulation of liquid water and ice"
+    },
+    {
+      "id": "task_00176",
+      "type": "task",
+      "surface_form": "MD simulation of organic molecules"
+    },
+    {
+      "id": "task_00179",
+      "type": "task",
+      "surface_form": "Electronic‑structure property calculation"
+    },
+    {
+      "id": "task_00180",
+      "type": "task",
+      "surface_form": "Study of twisted van der Waals heterostructures"
+    },
+    {
+      "id": "task_00182",
+      "type": "task",
+      "surface_form": "Band structure and density‑of‑states calculation"
+    },
+    {
+      "id": "task_00187",
+      "type": "task",
+      "surface_form": "Per‑atom energy extraction"
+    },
+    {
+      "id": "task_00199",
+      "type": "task",
+      "surface_form": "Prediction of Energies, Forces and Torques for Multi‑Component Materials"
+    },
+    {
+      "id": "task_00207",
+      "type": "task",
+      "surface_form": "Phase diagram construction and stability assessment"
+    },
+    {
+      "id": "task_00211",
+      "type": "task",
+      "surface_form": "Atomic von Mises stress prediction"
+    },
+    {
+      "id": "task_00212",
+      "type": "task",
+      "surface_form": "Atomic tensile stress prediction"
+    },
+    {
+      "id": "task_00213",
+      "type": "task",
+      "surface_form": "Atomic potential energy prediction"
+    },
+    {
+      "id": "task_00216",
+      "type": "task",
+      "surface_form": "Per‑atom stress field prediction"
+    },
+    {
+      "id": "task_00220",
+      "type": "task",
+      "surface_form": "Atomic stress field prediction"
+    },
+    {
+      "id": "task_00224",
+      "type": "task",
+      "surface_form": "Accelerated molecular dynamics simulation of lithium transport in solid‑state electrolytes"
+    },
+    {
+      "id": "task_00225",
+      "type": "task",
+      "surface_form": "Prediction of mean squared displacement and self‑diffusivity"
+    },
+    {
+      "id": "task_00226",
+      "type": "task",
+      "surface_form": "High‑throughput screening of ionic conductivity"
+    },
+    {
+      "id": "task_00227",
+      "type": "task",
+      "surface_form": "Atomistic trajectory generation for lithium solid‑state electrolytes"
+    },
+    {
+      "id": "task_00231",
+      "type": "task",
+      "surface_form": "Solar‑cell efficiency screening"
+    },
+    {
+      "id": "task_00235",
+      "type": "task",
+      "surface_form": "Heterostructure design"
+    },
+    {
+      "id": "task_00244",
+      "type": "task",
+      "surface_form": "2D heterostructure band‑alignment analysis"
+    },
+    {
+      "id": "task_00246",
+      "type": "task",
+      "surface_form": "High‑throughput screening of Li‑ion battery anodes"
+    },
+    {
+      "id": "task_00247",
+      "type": "task",
+      "surface_form": "Li2O‑based reaction search for Li‑air batteries"
+    },
+    {
+      "id": "task_00248",
+      "type": "task",
+      "surface_form": "Screening of metal‑oxide cathode coatings for HF scavenging"
+    },
+    {
+      "id": "task_00249",
+      "type": "task",
+      "surface_form": "Stability assessment of Mg‑based LPSO precipitates"
+    },
+    {
+      "id": "task_00251",
+      "type": "task",
+      "surface_form": "Formation‑energy prediction for ternary compounds"
+    },
+    {
+      "id": "task_00253",
+      "type": "task",
+      "surface_form": "Guided DFT crystal‑structure prediction"
+    },
+    {
+      "id": "task_00260",
+      "type": "task",
+      "surface_form": "Constant‑volume heat‑capacity calculation"
+    },
+    {
+      "id": "task_00261",
+      "type": "task",
+      "surface_form": "Molecular dynamics stability testing"
+    },
+    {
+      "id": "task_00262",
+      "type": "task",
+      "surface_form": "Ionic conductivity estimation"
+    },
+    {
+      "id": "task_00263",
+      "type": "task",
+      "surface_form": "atomistic simulations"
+    },
+    {
+      "id": "task_00264",
+      "type": "task",
+      "surface_form": "High‑throughput calculation of crystal‑structure properties"
+    },
+    {
+      "id": "task_00273",
+      "type": "task",
+      "surface_form": "hybrid functional band‑structure calculation"
+    },
+    {
+      "id": "task_00278",
+      "type": "task",
+      "surface_form": "thermal conductivity prediction"
+    },
+    {
+      "id": "task_00286",
+      "type": "task",
+      "surface_form": "Crystal structure stability classification"
+    },
+    {
+      "id": "task_00293",
+      "type": "task",
+      "surface_form": "atomic energy prediction"
+    },
+    {
+      "id": "task_00295",
+      "type": "task",
+      "surface_form": "molecular property prediction on QM9"
+    },
+    {
+      "id": "task_00299",
+      "type": "task",
+      "surface_form": "QM9 molecular property prediction"
+    },
+    {
+      "id": "task_00302",
+      "type": "task",
+      "surface_form": "Atomic interaction modeling"
+    },
+    {
+      "id": "task_00318",
+      "type": "task",
+      "surface_form": "Heat capacity (Cν) prediction"
+    },
+    {
+      "id": "task_00325",
+      "type": "task",
+      "surface_form": "atomistic machine learning"
+    },
+    {
+      "id": "task_00327",
+      "type": "task",
+      "surface_form": "molecular machine learning"
+    },
+    {
+      "id": "task_00328",
+      "type": "task",
+      "surface_form": "machine learning for molecules"
+    },
+    {
+      "id": "task_00345",
+      "type": "task",
+      "surface_form": "Materials property prediction from crystal structure"
+    },
+    {
+      "id": "task_00368",
+      "type": "task",
+      "surface_form": "High-throughput screening of battery materials"
+    },
+    {
+      "id": "task_00381",
+      "type": "task",
+      "surface_form": "Heat capacity prediction"
+    },
+    {
+      "id": "task_00389",
+      "type": "task",
+      "surface_form": "Crystal structure property prediction"
+    },
+    {
+      "id": "task_00393",
+      "type": "task",
+      "surface_form": "Crystal stability assessment"
+    },
+    {
+      "id": "task_00402",
+      "type": "task",
+      "surface_form": "Metallic material simulation"
+    },
+    {
+      "id": "task_00404",
+      "type": "task",
+      "surface_form": "Organic molecule simulation"
+    },
+    {
+      "id": "task_00408",
+      "type": "task",
+      "surface_form": "Ion solution simulation"
+    },
+    {
+      "id": "task_00410",
+      "type": "task",
+      "surface_form": "Macromolecular system simulation"
+    },
+    {
+      "id": "task_00412",
+      "type": "task",
+      "surface_form": "Atomic force calculation"
+    },
+    {
+      "id": "task_00429",
+      "type": "task",
+      "surface_form": "phase diagram determination"
+    },
+    {
+      "id": "task_00435",
+      "type": "task",
+      "surface_form": "reaction dynamics"
+    },
+    {
+      "id": "task_00436",
+      "type": "task",
+      "surface_form": "copper system simulation"
+    },
+    {
+      "id": "task_00437",
+      "type": "task",
+      "surface_form": "high-entropy alloy simulation"
+    },
+    {
+      "id": "task_00470",
+      "type": "task",
+      "surface_form": "Electronic band structure calculation"
+    },
+    {
+      "id": "task_00474",
+      "type": "task",
+      "surface_form": "thermoelectric property assessment"
+    },
+    {
+      "id": "task_00488",
+      "type": "task",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "task_00494",
+      "type": "task",
+      "surface_form": "Solid-electrolyte candidate screening"
+    },
+    {
+      "id": "task_00495",
+      "type": "task",
+      "surface_form": "Stable crystal discovery"
+    },
+    {
+      "id": "task_00499",
+      "type": "task",
+      "surface_form": "Phase-separation energy prediction"
+    },
+    {
+      "id": "task_00500",
+      "type": "task",
+      "surface_form": "Solid-state ionic conductor screening"
+    },
+    {
+      "id": "task_00503",
+      "type": "task",
+      "surface_form": "Crystal structure discovery"
+    },
+    {
+      "id": "task_00506",
+      "type": "task",
+      "surface_form": "Li-ion conductor identification"
+    },
+    {
+      "id": "task_00509",
+      "type": "task",
+      "surface_form": "Bandgap calculation"
+    },
+    {
+      "id": "task_00518",
+      "type": "task",
+      "surface_form": "Machine learning molecular dynamics"
+    },
+    {
+      "id": "task_00519",
+      "type": "task",
+      "surface_form": "Ionic diffusivity computation"
+    },
+    {
+      "id": "task_00521",
+      "type": "task",
+      "surface_form": "Phase diagram analysis"
+    },
+    {
+      "id": "task_00524",
+      "type": "task",
+      "surface_form": "Li10GeP2S12 diffusion modeling"
+    },
+    {
+      "id": "task_00525",
+      "type": "task",
+      "surface_form": "Li7La3Zr2O12 diffusion modeling"
+    },
+    {
+      "id": "task_00526",
+      "type": "task",
+      "surface_form": "Na3Zr2Si2PO12 diffusion modeling"
+    },
+    {
+      "id": "task_00527",
+      "type": "task",
+      "surface_form": "LGPS solid electrolyte simulation"
+    },
+    {
+      "id": "task_00529",
+      "type": "task",
+      "surface_form": "NASICON solid electrolyte simulation"
+    },
+    {
+      "id": "task_00531",
+      "type": "task",
+      "surface_form": "Li diffusion simulation in LLZO"
+    },
+    {
+      "id": "task_00532",
+      "type": "task",
+      "surface_form": "Na diffusion simulation in NASICON"
+    },
+    {
+      "id": "task_00534",
+      "type": "task",
+      "surface_form": "solid-state electrolytes"
+    },
+    {
+      "id": "task_00539",
+      "type": "task",
+      "surface_form": "Atomic energy and force prediction"
+    },
+    {
+      "id": "task_00543",
+      "type": "task",
+      "surface_form": "Heusler alloy simulation"
+    },
+    {
+      "id": "task_00544",
+      "type": "task",
+      "surface_form": "Statics and dynamics of chemically complex systems"
+    },
+    {
+      "id": "task_00550",
+      "type": "task",
+      "surface_form": "Aqueous systems dynamics"
+    },
+    {
+      "id": "task_00554",
+      "type": "task",
+      "surface_form": "Melting temperature prediction"
+    },
+    {
+      "id": "task_00565",
+      "type": "task",
+      "surface_form": "Ion migration barrier prediction"
+    },
+    {
+      "id": "task_00569",
+      "type": "task",
+      "surface_form": "Energy per atom prediction"
+    },
+    {
+      "id": "task_00581",
+      "type": "task",
+      "surface_form": "machine learning for molecular systems"
+    },
+    {
+      "id": "task_00591",
+      "type": "task",
+      "surface_form": "Energy prediction for molecules"
+    },
+    {
+      "id": "task_00592",
+      "type": "task",
+      "surface_form": "Force prediction for molecules"
+    },
+    {
+      "id": "task_00596",
+      "type": "task",
+      "surface_form": "Small-to-large molecule generalization"
+    },
+    {
+      "id": "task_00605",
+      "type": "task",
+      "surface_form": "machine learning for atomistic systems"
+    },
+    {
+      "id": "task_00609",
+      "type": "task",
+      "surface_form": "Large-scale amorphous Si3N4 melt-quench simulation"
+    },
+    {
+      "id": "task_00612",
+      "type": "task",
+      "surface_form": "Multi-GPU molecular dynamics benchmarking"
+    },
+    {
+      "id": "task_00620",
+      "type": "task",
+      "surface_form": "amorphous materials"
+    },
+    {
+      "id": "task_00630",
+      "type": "task",
+      "surface_form": "Per-atom energy prediction"
+    },
+    {
+      "id": "task_00647",
+      "type": "task",
+      "surface_form": "crystal nucleation and growth prediction"
+    },
+    {
+      "id": "task_00649",
+      "type": "task",
+      "surface_form": "enzyme simulation"
+    },
+    {
+      "id": "task_00658",
+      "type": "task",
+      "surface_form": "Ligand-strain energy calculations"
+    },
+    {
+      "id": "task_00667",
+      "type": "task",
+      "surface_form": "Ligand strain prediction"
+    },
+    {
+      "id": "task_00668",
+      "type": "task",
+      "surface_form": "Pocket-ligand interaction energy prediction"
+    },
+    {
+      "id": "task_00671",
+      "type": "task",
+      "surface_form": "NVE molecular dynamics simulation"
+    },
+    {
+      "id": "task_00675",
+      "type": "task",
+      "surface_form": "Surface catalysis modeling"
+    },
+    {
+      "id": "task_00677",
+      "type": "task",
+      "surface_form": "Catalysis prediction"
+    },
+    {
+      "id": "task_00678",
+      "type": "task",
+      "surface_form": "Molecular crystal prediction"
+    },
+    {
+      "id": "task_00680",
+      "type": "task",
+      "surface_form": "Single atom prediction"
+    },
+    {
+      "id": "task_00682",
+      "type": "task",
+      "surface_form": "Molecular crystal structure prediction"
+    },
+    {
+      "id": "task_00684",
+      "type": "task",
+      "surface_form": "crystallography"
+    },
+    {
+      "id": "task_00686",
+      "type": "task",
+      "surface_form": "Atomistic simulations of liquid carbon"
+    },
+    {
+      "id": "task_00690",
+      "type": "task",
+      "surface_form": "Nanoscale amorphous carbon structure simulations"
+    },
+    {
+      "id": "task_00693",
+      "type": "task",
+      "surface_form": "High-density amorphous phase modeling"
+    },
+    {
+      "id": "task_00694",
+      "type": "task",
+      "surface_form": "Amorphous carbon surface (ta-C) modeling"
+    },
+    {
+      "id": "task_00700",
+      "type": "task",
+      "surface_form": "Amorphous carbon (a-C) structure generation"
+    },
+    {
+      "id": "task_00701",
+      "type": "task",
+      "surface_form": "Tetrahedral amorphous carbon (ta-C) modeling"
+    },
+    {
+      "id": "task_00704",
+      "type": "task",
+      "surface_form": "amorphous carbon structure generation"
+    },
+    {
+      "id": "task_00705",
+      "type": "task",
+      "surface_form": "liquid carbon simulation"
+    },
+    {
+      "id": "task_00711",
+      "type": "task",
+      "surface_form": "Amorphous carbon bulk structure generation"
+    },
+    {
+      "id": "task_00713",
+      "type": "task",
+      "surface_form": "Bulk crystal structure modeling"
+    },
+    {
+      "id": "task_00717",
+      "type": "task",
+      "surface_form": "melting temperature prediction for binary ionic solids"
+    },
+    {
+      "id": "task_00729",
+      "type": "task",
+      "surface_form": "Melting temperature prediction for inorganic solids"
+    },
+    {
+      "id": "tech_00090",
+      "type": "technique",
+      "surface_form": "Langevin dynamics"
+    },
+    {
+      "id": "tech_00101",
+      "type": "technique",
+      "surface_form": "ab initio molecular dynamics"
+    },
+    {
+      "id": "tech_00106",
+      "type": "technique",
+      "surface_form": "AI-accelerated electronic structure prediction"
+    },
+    {
+      "id": "tech_00107",
+      "type": "technique",
+      "surface_form": "coarse-graining using autoencoders"
+    },
+    {
+      "id": "tech_00158",
+      "type": "technique",
+      "surface_form": "ML‑driven molecular dynamics"
+    },
+    {
+      "id": "tech_00162",
+      "type": "technique",
+      "surface_form": "Graph representation of crystal structures"
+    },
+    {
+      "id": "tech_00165",
+      "type": "technique",
+      "surface_form": "Polynomial fitting of free‑energy vs temperature"
+    },
+    {
+      "id": "tech_00167",
+      "type": "technique",
+      "surface_form": "DFT+U with van der Waals functionals"
+    },
+    {
+      "id": "tech_00255",
+      "type": "technique",
+      "surface_form": "filter‑and‑screen workflow for lithium superionic conductors"
+    },
+    {
+      "id": "tech_00312",
+      "type": "technique",
+      "surface_form": "Image‑based encoding of atomistic data"
+    },
+    {
+      "id": "tech_00388",
+      "type": "technique",
+      "surface_form": "NpT molecular dynamics"
+    },
+    {
+      "id": "tech_00402",
+      "type": "technique",
+      "surface_form": "formation enthalpy calculation"
+    },
+    {
+      "id": "tech_00530",
+      "type": "technique",
+      "surface_form": "Crystallographic symmetry augmentation"
+    },
+    {
+      "id": "tech_00539",
+      "type": "technique",
+      "surface_form": "Phase factor weighting"
+    },
+    {
+      "id": "tech_00586",
+      "type": "technique",
+      "surface_form": "thermodynamic integration"
+    },
+    {
+      "id": "tech_00594",
+      "type": "technique",
+      "surface_form": "deep potential molecular dynamics"
+    },
+    {
+      "id": "tech_00608",
+      "type": "technique",
+      "surface_form": "Debye temperature estimation"
+    },
+    {
+      "id": "tech_00622",
+      "type": "technique",
+      "surface_form": "Density-functional perturbation theory"
+    },
+    {
+      "id": "tech_00630",
+      "type": "technique",
+      "surface_form": "Two-step relaxation annealing"
+    },
+    {
+      "id": "tech_00689",
+      "type": "technique",
+      "surface_form": "Nosé-Hoover thermostat"
+    },
+    {
+      "id": "tech_00691",
+      "type": "technique",
+      "surface_form": "Minimum ion-ion distance cutoff"
+    },
+    {
+      "id": "tech_00702",
+      "type": "technique",
+      "surface_form": "Temperature ramp simulation"
+    },
+    {
+      "id": "tech_00751",
+      "type": "technique",
+      "surface_form": "Lowest-energy conformer selection"
+    },
+    {
+      "id": "tech_00752",
+      "type": "technique",
+      "surface_form": "Chemical space generalization benchmarking"
+    },
+    {
+      "id": "tech_00771",
+      "type": "technique",
+      "surface_form": "Frequency-based phase shifts"
+    },
+    {
+      "id": "tech_00820",
+      "type": "technique",
+      "surface_form": "combination with conservative models for finite-temperature applications"
+    },
+    {
+      "id": "tech_00915",
+      "type": "technique",
+      "surface_form": "Large-scale atomistic simulation"
+    },
+    {
+      "id": "tech_00922",
+      "type": "technique",
+      "surface_form": "high-temperature annealing protocol"
+    },
+    {
+      "id": "tech_00932",
+      "type": "technique",
+      "surface_form": "supervised melting point regression"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 11,
+    "cited_work": 10,
+    "claim": 108,
+    "component": 14,
+    "dataset": 22,
+    "future_topic": 35,
+    "method": 23,
+    "metric": 1,
+    "problem": 78,
+    "task": 171,
+    "technique": 29
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00295",
+      "relation_type": "presents",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      }
+    },
+    {
+      "id": "h_00324",
+      "relation_type": "presents",
+      "members": [
+        "arti_00033",
+        "meth_00383"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      }
+    },
+    {
+      "id": "h_00332",
+      "relation_type": "presents",
+      "members": [
+        "arti_00016",
+        "meth_00206"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      }
+    },
+    {
+      "id": "h_00337",
+      "relation_type": "presents",
+      "members": [
+        "arti_00040",
+        "meth_00082"
+      ],
+      "year": 2026,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5443,
+        "article_year": 2026
+      }
+    },
+    {
+      "id": "h_00339",
+      "relation_type": "presents",
+      "members": [
+        "arti_00026",
+        "meth_00268"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      }
+    },
+    {
+      "id": "h_00658",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00052"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "survey_data",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00659",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00053"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00661",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00055"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00662",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00056"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "ablation_study",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00663",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00057"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "ablation_study",
+        "evidence_strength": "strong",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_00664",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00058"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "observational_study",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00665",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00059"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00666",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00060"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00668",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00062"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "existential",
+        "evidence_type": "formal_proof",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00808",
+      "relation_type": "claims",
+      "members": [
+        "arti_00018",
+        "clai_00202"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5394,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00816",
+      "relation_type": "claims",
+      "members": [
+        "arti_00018",
+        "clai_00210"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5394,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "theoretical",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_00817",
+      "relation_type": "claims",
+      "members": [
+        "arti_00018",
+        "clai_00211"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5394,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "causal",
+        "evidence_type": "simulation",
+        "evidence_strength": "weak",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01081",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00475"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01089",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00483"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01091",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00485"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "predictive",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01182",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00576"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01257",
+      "relation_type": "claims",
+      "members": [
+        "arti_00026",
+        "clai_00651"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.99
+      }
+    },
+    {
+      "id": "h_01260",
+      "relation_type": "claims",
+      "members": [
+        "arti_00026",
+        "clai_00654"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_01263",
+      "relation_type": "claims",
+      "members": [
+        "arti_00026",
+        "clai_00657"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "predictive",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01266",
+      "relation_type": "claims",
+      "members": [
+        "arti_00026",
+        "clai_00660"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "molecular",
+  "representative_ids": [
+    "task_00678",
+    "task_00682"
+  ]
+}

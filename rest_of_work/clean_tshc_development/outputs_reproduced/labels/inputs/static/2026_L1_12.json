@@ -1,0 +1,356 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00004",
+      "type": "component",
+      "surface_form": "Task-specific output heads"
+    },
+    {
+      "id": "comp_00041",
+      "type": "component",
+      "surface_form": "Wigner‑Eckart layer"
+    },
+    {
+      "id": "comp_00042",
+      "type": "component",
+      "surface_form": "E3Linear layer"
+    },
+    {
+      "id": "comp_00043",
+      "type": "component",
+      "surface_form": "E3LayerNorm"
+    },
+    {
+      "id": "comp_00045",
+      "type": "component",
+      "surface_form": "Tensor product layer"
+    },
+    {
+      "id": "comp_00046",
+      "type": "component",
+      "surface_form": "EquiConv block"
+    },
+    {
+      "id": "comp_00047",
+      "type": "component",
+      "surface_form": "Vertex update block"
+    },
+    {
+      "id": "comp_00048",
+      "type": "component",
+      "surface_form": "Edge update block"
+    },
+    {
+      "id": "comp_00049",
+      "type": "component",
+      "surface_form": "Elemental embedding"
+    },
+    {
+      "id": "comp_00051",
+      "type": "component",
+      "surface_form": "Spherical harmonics encoding"
+    },
+    {
+      "id": "comp_00052",
+      "type": "component",
+      "surface_form": "Complex‑vector handling via time‑reversal basis"
+    },
+    {
+      "id": "comp_00055",
+      "type": "component",
+      "surface_form": "Vertex and edge update blocks"
+    },
+    {
+      "id": "comp_00058",
+      "type": "component",
+      "surface_form": "Atomic‑like localized basis representation"
+    },
+    {
+      "id": "comp_00227",
+      "type": "component",
+      "surface_form": "Magnetic moment layer"
+    },
+    {
+      "id": "comp_00229",
+      "type": "component",
+      "surface_form": "Edge layer"
+    },
+    {
+      "id": "comp_00230",
+      "type": "component",
+      "surface_form": "Tensor‑product layer with Clebsch‑Gordan coefficients"
+    },
+    {
+      "id": "comp_00231",
+      "type": "component",
+      "surface_form": "Time‑reversal parity index"
+    },
+    {
+      "id": "comp_00234",
+      "type": "component",
+      "surface_form": "Hamiltonian construction block"
+    },
+    {
+      "id": "comp_00247",
+      "type": "component",
+      "surface_form": "Local atomic-like orbital basis"
+    },
+    {
+      "id": "comp_00249",
+      "type": "component",
+      "surface_form": "Local coordinate system for each edge"
+    },
+    {
+      "id": "comp_00250",
+      "type": "component",
+      "surface_form": "Edge embedding with Gaussian distance expansion"
+    },
+    {
+      "id": "comp_00251",
+      "type": "component",
+      "surface_form": "Vertex embedding of atomic numbers"
+    },
+    {
+      "id": "comp_00252",
+      "type": "component",
+      "surface_form": "Message Passing layers"
+    },
+    {
+      "id": "comp_00253",
+      "type": "component",
+      "surface_form": "Local Coordinate Message Passing (LCMP) layer"
+    },
+    {
+      "id": "comp_00254",
+      "type": "component",
+      "surface_form": "Spherical harmonic orientation encoding"
+    },
+    {
+      "id": "comp_00255",
+      "type": "component",
+      "surface_form": "Rotation transformation to global frame"
+    },
+    {
+      "id": "comp_00256",
+      "type": "component",
+      "surface_form": "Vertex update network"
+    },
+    {
+      "id": "comp_00260",
+      "type": "component",
+      "surface_form": "Multiple MPNN models for orbital‑pair blocks"
+    },
+    {
+      "id": "comp_00261",
+      "type": "component",
+      "surface_form": "Single MPNN with multi‑dimensional output"
+    },
+    {
+      "id": "comp_00416",
+      "type": "component",
+      "surface_form": "attention re-normalization"
+    },
+    {
+      "id": "comp_00417",
+      "type": "component",
+      "surface_form": "separable S2 activation"
+    },
+    {
+      "id": "comp_00418",
+      "type": "component",
+      "surface_form": "separable layer normalization"
+    },
+    {
+      "id": "comp_00420",
+      "type": "component",
+      "surface_form": "Rotation matrix Dij"
+    },
+    {
+      "id": "comp_00421",
+      "type": "component",
+      "surface_form": "eSCN convolution"
+    },
+    {
+      "id": "comp_00422",
+      "type": "component",
+      "surface_form": "SO(3) irreps features"
+    },
+    {
+      "id": "comp_00423",
+      "type": "component",
+      "surface_form": "Spherical harmonic projections"
+    },
+    {
+      "id": "comp_00424",
+      "type": "component",
+      "surface_form": "SO(2) linear operations"
+    },
+    {
+      "id": "comp_00425",
+      "type": "component",
+      "surface_form": "Equivariant graph attention"
+    },
+    {
+      "id": "comp_00428",
+      "type": "component",
+      "surface_form": "Attention re-normalization with layer normalization"
+    },
+    {
+      "id": "comp_00430",
+      "type": "component",
+      "surface_form": "Separated S2 attention"
+    },
+    {
+      "id": "comp_00431",
+      "type": "component",
+      "surface_form": "Scalar Layer Normalization"
+    },
+    {
+      "id": "comp_00432",
+      "type": "component",
+      "surface_form": "Radial basis functions"
+    },
+    {
+      "id": "comp_00434",
+      "type": "component",
+      "surface_form": "Maximum degree Lmax"
+    },
+    {
+      "id": "comp_00435",
+      "type": "component",
+      "surface_form": "Maximum order Mmax"
+    },
+    {
+      "id": "comp_00437",
+      "type": "component",
+      "surface_form": "Equivariant graph attention block"
+    },
+    {
+      "id": "comp_00438",
+      "type": "component",
+      "surface_form": "Gaussian radial basis functions"
+    },
+    {
+      "id": "comp_00769",
+      "type": "component",
+      "surface_form": "Charge, spin, and DFT task embeddings"
+    },
+    {
+      "id": "comp_00770",
+      "type": "component",
+      "surface_form": "Spherical harmonic node embeddings"
+    },
+    {
+      "id": "comp_00771",
+      "type": "component",
+      "surface_form": "Edge-wise block with MoLE"
+    },
+    {
+      "id": "comp_00774",
+      "type": "component",
+      "surface_form": "MoLE router"
+    },
+    {
+      "id": "comp_00775",
+      "type": "component",
+      "surface_form": "Global embedding for routing"
+    },
+    {
+      "id": "comp_00776",
+      "type": "component",
+      "surface_form": "Precomputed weight mechanism"
+    },
+    {
+      "id": "comp_00777",
+      "type": "component",
+      "surface_form": "MoLE architecture with configurable experts"
+    },
+    {
+      "id": "comp_00781",
+      "type": "component",
+      "surface_form": "Message passing architecture"
+    },
+    {
+      "id": "comp_00783",
+      "type": "component",
+      "surface_form": "MoLE"
+    },
+    {
+      "id": "comp_00784",
+      "type": "component",
+      "surface_form": "Global information embedding layers"
+    },
+    {
+      "id": "comp_00785",
+      "type": "component",
+      "surface_form": "Layer blocks with spherical harmonics"
+    },
+    {
+      "id": "comp_00786",
+      "type": "component",
+      "surface_form": "Charge balancing in L0 channels"
+    },
+    {
+      "id": "comp_00788",
+      "type": "component",
+      "surface_form": "Edge-based GNN architecture"
+    },
+    {
+      "id": "comp_00790",
+      "type": "component",
+      "surface_form": "UMA-S"
+    },
+    {
+      "id": "comp_00791",
+      "type": "component",
+      "surface_form": "UMA-M"
+    },
+    {
+      "id": "comp_00792",
+      "type": "component",
+      "surface_form": "UMA-L"
+    },
+    {
+      "id": "comp_00793",
+      "type": "component",
+      "surface_form": "Size extensivity fix"
+    },
+    {
+      "id": "comp_00794",
+      "type": "component",
+      "surface_form": "MoLE layers"
+    },
+    {
+      "id": "comp_00795",
+      "type": "component",
+      "surface_form": "Element-expert pairs"
+    },
+    {
+      "id": "comp_00796",
+      "type": "component",
+      "surface_form": "Envelope function"
+    },
+    {
+      "id": "comp_00797",
+      "type": "component",
+      "surface_form": "Global charge/spin embedding"
+    },
+    {
+      "id": "prob_00578",
+      "type": "problem",
+      "surface_form": "Size extensivity bug"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 67,
+    "problem": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "layer",
+  "representative_ids": [
+    "comp_00049",
+    "comp_00795"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "hierarchy_counts": {
+    "semantic/2020": [
+      12,
+      40,
+      120,
+      1505
+    ],
+    "semantic/2022": [
+      12,
+      40,
+      120,
+      2164
+    ],
+    "semantic/2024": [
+      12,
+      40,
+      120,
+      4164
+    ],
+    "semantic/2026": [
+      12,
+      40,
+      120,
+      5798
+    ],
+    "pairwise/2020": [
+      12,
+      40,
+      120,
+      1505
+    ],
+    "pairwise/2022": [
+      12,
+      40,
+      120,
+      2164
+    ],
+    "pairwise/2024": [
+      12,
+      40,
+      120,
+      4164
+    ],
+    "pairwise/2026": [
+      12,
+      40,
+      120,
+      5798
+    ],
+    "static/2020": [
+      12,
+      40,
+      120,
+      1505
+    ],
+    "static/2022": [
+      12,
+      40,
+      120,
+      2164
+    ],
+    "static/2024": [
+      12,
+      40,
+      120,
+      4164
+    ],
+    "static/2026": [
+      12,
+      40,
+      120,
+      5798
+    ],
+    "temporal/2020": [
+      12,
+      40,
+      120,
+      1505
+    ],
+    "temporal/2022": [
+      12,
+      40,
+      120,
+      2164
+    ],
+    "temporal/2024": [
+      12,
+      40,
+      120,
+      4164
+    ],
+    "temporal/2026": [
+      12,
+      40,
+      120,
+      5798
+    ]
+  },
+  "label_records": 832,
+  "event_counts": {
+    "birth": 1082,
+    "merge": 391,
+    "growth": 899,
+    "split": 383,
+    "continuation": 593
+  },
+  "predictions": 90,
+  "metrics_sha256": "9c04ba5bcae38e8fb1062601811b0b11b553366d32d2ded7de9596de7e3c0eeb",
+  "report_words": 2741,
+  "tests": "See notes/tests.xml; this audit checks complete actual outputs independently."
+}

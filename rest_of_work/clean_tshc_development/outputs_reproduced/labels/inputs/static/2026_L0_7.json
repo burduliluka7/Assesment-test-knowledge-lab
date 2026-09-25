@@ -1,0 +1,446 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00007",
+      "type": "component",
+      "surface_form": "Hyperparameters"
+    },
+    {
+      "id": "comp_00081",
+      "type": "component",
+      "surface_form": "Frozen framework approximation"
+    },
+    {
+      "id": "comp_00083",
+      "type": "component",
+      "surface_form": "Level map"
+    },
+    {
+      "id": "comp_00085",
+      "type": "component",
+      "surface_form": "Free‑volume descriptors"
+    },
+    {
+      "id": "comp_00086",
+      "type": "component",
+      "surface_form": "Combined ranking descriptor Ξ"
+    },
+    {
+      "id": "comp_00087",
+      "type": "component",
+      "surface_form": "Aggregation over multiple mobile ions"
+    },
+    {
+      "id": "comp_00092",
+      "type": "component",
+      "surface_form": "MSD analysis procedure"
+    },
+    {
+      "id": "comp_00096",
+      "type": "component",
+      "surface_form": "SevenNet ML‑IAP"
+    },
+    {
+      "id": "comp_00098",
+      "type": "component",
+      "surface_form": "MSD fitting module"
+    },
+    {
+      "id": "comp_00100",
+      "type": "component",
+      "surface_form": "Classification models"
+    },
+    {
+      "id": "comp_00101",
+      "type": "component",
+      "surface_form": "Descriptor fusion"
+    },
+    {
+      "id": "comp_00217",
+      "type": "component",
+      "surface_form": "Repulsive pair potential"
+    },
+    {
+      "id": "comp_00218",
+      "type": "component",
+      "surface_form": "Many‑body kernel term"
+    },
+    {
+      "id": "comp_00219",
+      "type": "component",
+      "surface_form": "Sparse set of representative atoms"
+    },
+    {
+      "id": "comp_00221",
+      "type": "component",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "comp_00222",
+      "type": "component",
+      "surface_form": "Kernel normalization and exponentiation"
+    },
+    {
+      "id": "comp_00223",
+      "type": "component",
+      "surface_form": "Representative environment selection"
+    },
+    {
+      "id": "comp_00224",
+      "type": "component",
+      "surface_form": "Regularized least‑squares solution for expansion coefficients"
+    },
+    {
+      "id": "comp_00516",
+      "type": "component",
+      "surface_form": "Local frame descriptor"
+    },
+    {
+      "id": "comp_00517",
+      "type": "component",
+      "surface_form": "DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00518",
+      "type": "component",
+      "surface_form": "Attention-based descriptor"
+    },
+    {
+      "id": "comp_00519",
+      "type": "component",
+      "surface_form": "Hybrid descriptor"
+    },
+    {
+      "id": "comp_00520",
+      "type": "component",
+      "surface_form": "Fitting network"
+    },
+    {
+      "id": "comp_00521",
+      "type": "component",
+      "surface_form": "Type embedding"
+    },
+    {
+      "id": "comp_00522",
+      "type": "component",
+      "surface_form": "Model deviation module"
+    },
+    {
+      "id": "comp_00523",
+      "type": "component",
+      "surface_form": "Deep Potential - Range Correction"
+    },
+    {
+      "id": "comp_00524",
+      "type": "component",
+      "surface_form": "Deep Potential Long Range"
+    },
+    {
+      "id": "comp_00525",
+      "type": "component",
+      "surface_form": "Model compression module"
+    },
+    {
+      "id": "comp_00526",
+      "type": "component",
+      "surface_form": "NVNMD engine"
+    },
+    {
+      "id": "comp_00527",
+      "type": "component",
+      "surface_form": "Two-body embedding DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00528",
+      "type": "component",
+      "surface_form": "Three-body embedding DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00530",
+      "type": "component",
+      "surface_form": "Fitting network F0"
+    },
+    {
+      "id": "comp_00531",
+      "type": "component",
+      "surface_form": "Fitting network F1"
+    },
+    {
+      "id": "comp_00533",
+      "type": "component",
+      "surface_form": "DP-empirical potential interpolation module"
+    },
+    {
+      "id": "comp_00535",
+      "type": "component",
+      "surface_form": "Operator merging module"
+    },
+    {
+      "id": "comp_00537",
+      "type": "component",
+      "surface_form": "Ensemble model deviation estimator"
+    },
+    {
+      "id": "comp_00538",
+      "type": "component",
+      "surface_form": "Core C++ library"
+    },
+    {
+      "id": "comp_00539",
+      "type": "component",
+      "surface_form": "GPU library"
+    },
+    {
+      "id": "comp_00541",
+      "type": "component",
+      "surface_form": "Model definitions module"
+    },
+    {
+      "id": "comp_00542",
+      "type": "component",
+      "surface_form": "Environment matrix operator"
+    },
+    {
+      "id": "comp_00543",
+      "type": "component",
+      "surface_form": "Ewald summation operator"
+    },
+    {
+      "id": "comp_00544",
+      "type": "component",
+      "surface_form": "Compressed operator"
+    },
+    {
+      "id": "comp_00546",
+      "type": "component",
+      "surface_form": "two-body embedding full-information descriptor"
+    },
+    {
+      "id": "comp_00547",
+      "type": "component",
+      "surface_form": "two-body embedding radial descriptor"
+    },
+    {
+      "id": "comp_00549",
+      "type": "component",
+      "surface_form": "hybrid descriptors"
+    },
+    {
+      "id": "comp_00550",
+      "type": "component",
+      "surface_form": "plugin system"
+    },
+    {
+      "id": "comp_00551",
+      "type": "component",
+      "surface_form": "model compression"
+    },
+    {
+      "id": "comp_00552",
+      "type": "component",
+      "surface_form": "NVNMD accelerator"
+    },
+    {
+      "id": "comp_00554",
+      "type": "component",
+      "surface_form": "se e2 a descriptor"
+    },
+    {
+      "id": "comp_00798",
+      "type": "component",
+      "surface_form": "Two-body descriptor"
+    },
+    {
+      "id": "comp_00799",
+      "type": "component",
+      "surface_form": "Three-body descriptor"
+    },
+    {
+      "id": "comp_00800",
+      "type": "component",
+      "surface_form": "Many-body descriptor"
+    },
+    {
+      "id": "comp_00801",
+      "type": "component",
+      "surface_form": "Hierarchical descriptor set"
+    },
+    {
+      "id": "comp_00802",
+      "type": "component",
+      "surface_form": "Squared exponential kernel"
+    },
+    {
+      "id": "comp_00807",
+      "type": "component",
+      "surface_form": "Power spectrum kernel"
+    },
+    {
+      "id": "comp_00809",
+      "type": "component",
+      "surface_form": "3b descriptor"
+    },
+    {
+      "id": "comp_00810",
+      "type": "component",
+      "surface_form": "MB descriptor"
+    },
+    {
+      "id": "comp_00813",
+      "type": "component",
+      "surface_form": "Two-body plus three-body descriptors"
+    },
+    {
+      "id": "comp_00815",
+      "type": "component",
+      "surface_form": "angle descriptor"
+    },
+    {
+      "id": "comp_00816",
+      "type": "component",
+      "surface_form": "SOAP descriptor with sparse points"
+    },
+    {
+      "id": "comp_00817",
+      "type": "component",
+      "surface_form": "extended xyz format database"
+    },
+    {
+      "id": "comp_00818",
+      "type": "component",
+      "surface_form": "6×6 elastic constants matrix"
+    },
+    {
+      "id": "comp_00819",
+      "type": "component",
+      "surface_form": "compliance matrix"
+    },
+    {
+      "id": "comp_00822",
+      "type": "component",
+      "surface_form": "SOAP sparse points"
+    },
+    {
+      "id": "comp_00823",
+      "type": "component",
+      "surface_form": "Iterative training workflow"
+    },
+    {
+      "id": "comp_00826",
+      "type": "component",
+      "surface_form": "materials embeddings from elemental properties"
+    },
+    {
+      "id": "comp_00827",
+      "type": "component",
+      "surface_form": "DFT-derived features"
+    },
+    {
+      "id": "comp_00828",
+      "type": "component",
+      "surface_form": "two-step classification-regression model"
+    },
+    {
+      "id": "comp_00829",
+      "type": "component",
+      "surface_form": "symbolic regression models"
+    },
+    {
+      "id": "comp_00831",
+      "type": "component",
+      "surface_form": "Elemental features"
+    },
+    {
+      "id": "comp_00832",
+      "type": "component",
+      "surface_form": "Statistical moment features"
+    },
+    {
+      "id": "comp_00833",
+      "type": "component",
+      "surface_form": "86-feature materials fingerprint"
+    },
+    {
+      "id": "comp_00835",
+      "type": "component",
+      "surface_form": "elastic moduli features"
+    },
+    {
+      "id": "comp_00838",
+      "type": "component",
+      "surface_form": "bond ionicity features"
+    },
+    {
+      "id": "comp_00840",
+      "type": "component",
+      "surface_form": "VS-SISSO symbolic models"
+    },
+    {
+      "id": "comp_00841",
+      "type": "component",
+      "surface_form": "cohesive energy descriptor"
+    },
+    {
+      "id": "comp_00842",
+      "type": "component",
+      "surface_form": "shear modulus descriptor"
+    },
+    {
+      "id": "comp_00843",
+      "type": "component",
+      "surface_form": "statistical elemental property combinations"
+    },
+    {
+      "id": "comp_00844",
+      "type": "component",
+      "surface_form": "Two-step model architecture"
+    },
+    {
+      "id": "comp_00845",
+      "type": "component",
+      "surface_form": "Tree ensemble model"
+    },
+    {
+      "id": "comp_00846",
+      "type": "component",
+      "surface_form": "Material fingerprints"
+    },
+    {
+      "id": "comp_00847",
+      "type": "component",
+      "surface_form": "SHAP analysis module"
+    },
+    {
+      "id": "comp_00849",
+      "type": "component",
+      "surface_form": "Two-cluster separation scheme"
+    },
+    {
+      "id": "comp_00852",
+      "type": "component",
+      "surface_form": "Two-step clustering approach"
+    },
+    {
+      "id": "comp_00853",
+      "type": "component",
+      "surface_form": "Composition-based elemental property weighting"
+    },
+    {
+      "id": "tech_00589",
+      "type": "technique",
+      "surface_form": "type embedding"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 85,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "descriptor",
+  "representative_ids": [
+    "comp_00519",
+    "comp_00549"
+  ]
+}

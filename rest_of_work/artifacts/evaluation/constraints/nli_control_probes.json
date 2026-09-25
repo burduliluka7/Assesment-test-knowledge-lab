@@ -1,0 +1,603 @@
+{
+  "model": {
+    "model": "cross-encoder/nli-deberta-v3-small",
+    "revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+    "threshold_unchanged": 0.5,
+    "max_length": 512
+  },
+  "source_hash": "2c50847ccd0d680217b2863b29dc10a394be0f66f682fd78785da42829b6ece1",
+  "cost": {
+    "nli_pair_requests": 39,
+    "nli_forward_pairs": 24,
+    "nli_cache_hits": 15,
+    "nli_seconds": 1.423676900099963
+  },
+  "records": [
+    {
+      "kind": "actual_comparison_baseline",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "M3GNet outperforms the other model.",
+      "node_id": "clai_00343",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.997340738773346,
+        "entailment": 0.0018460140563547611,
+        "neutral": 0.0008132821531035006,
+        "prediction": "contradiction",
+        "truncated": false,
+        "input_tokens": 36
+      }
+    },
+    {
+      "kind": "paired_actual_comparison_subject",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "SevenNet outperforms the other model.",
+      "node_id": "clai_00343",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.000832658086437732,
+        "entailment": 0.993474543094635,
+        "neutral": 0.005692761391401291,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 34
+      }
+    },
+    {
+      "kind": "paired_actual_comparison_subject",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "M3GNet outperforms the other model.",
+      "node_id": "clai_00343",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.997340738773346,
+        "entailment": 0.0018460140563547611,
+        "neutral": 0.0008132821531035006,
+        "prediction": "contradiction",
+        "truncated": false,
+        "input_tokens": 36
+      }
+    },
+    {
+      "kind": "technical_scale_control",
+      "premise": "D4FT successfully converges on unstable fullerene fragments (C₁₂₀, C₁₄₀) where PySCF fails to converge within the default iteration limit.",
+      "hypothesis": "D4FT converges on carbon fragments containing 120 and 140 atoms.",
+      "node_id": "clai_00430",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.009473711252212524,
+        "entailment": 0.9807022213935852,
+        "neutral": 0.009824138134717941,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 48
+      }
+    },
+    {
+      "kind": "technical_scale_control",
+      "premise": "D4FT successfully converges on unstable fullerene fragments (C₁₂₀, C₁₄₀) where PySCF fails to converge within the default iteration limit.",
+      "hypothesis": "D4FT converges on carbon fragments containing more than one million atoms.",
+      "node_id": "clai_00430",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.002730075502768159,
+        "entailment": 6.390760245267302e-05,
+        "neutral": 0.9972060322761536,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 49
+      }
+    },
+    {
+      "kind": "technical_identity_control",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "node_id": "clai_00343",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.0015319176018238068,
+        "entailment": 0.983796238899231,
+        "neutral": 0.014671890065073967,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 51
+      }
+    },
+    {
+      "kind": "technical_negation_control",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "It is not true that the SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "node_id": "clai_00343",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.9980822801589966,
+        "entailment": 0.0002774743770714849,
+        "neutral": 0.0016402549808844924,
+        "prediction": "contradiction",
+        "truncated": false,
+        "input_tokens": 56
+      }
+    },
+    {
+      "kind": "technical_identity_control",
+      "premise": "D4FT successfully converges on unstable fullerene fragments (C₁₂₀, C₁₄₀) where PySCF fails to converge within the default iteration limit.",
+      "hypothesis": "D4FT successfully converges on unstable fullerene fragments (C₁₂₀, C₁₄₀) where PySCF fails to converge within the default iteration limit.",
+      "node_id": "clai_00430",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.0026759037282317877,
+        "entailment": 0.9825698733329773,
+        "neutral": 0.014754214324057102,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 65
+      }
+    },
+    {
+      "kind": "technical_negation_control",
+      "premise": "D4FT successfully converges on unstable fullerene fragments (C₁₂₀, C₁₄₀) where PySCF fails to converge within the default iteration limit.",
+      "hypothesis": "It is not true that d4FT successfully converges on unstable fullerene fragments (C₁₂₀, C₁₄₀) where PySCF fails to converge within the default iteration limit.",
+      "node_id": "clai_00430",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.9975581169128418,
+        "entailment": 0.000286508264252916,
+        "neutral": 0.002155399415642023,
+        "prediction": "contradiction",
+        "truncated": false,
+        "input_tokens": 70
+      }
+    },
+    {
+      "kind": "technical_identity_control",
+      "premise": "M3GNet molecular‑dynamics simulations of Li₃YCl₆ reproduce ionic conductivity (14.3 mS cm⁻¹) and activation energy (0.22 eV) consistent with ab‑initio MD, and short‑time MD correctly identifies known lithium superionic conductors by their high mean‑squared displacements at elevated temperatures.",
+      "hypothesis": "M3GNet molecular‑dynamics simulations of Li₃YCl₆ reproduce ionic conductivity (14.3 mS cm⁻¹) and activation energy (0.22 eV) consistent with ab‑initio MD, and short‑time MD correctly identifies known lithium superionic conductors by their high mean‑squared displacements at elevated temperatures.",
+      "node_id": "clai_00646",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.008073399774730206,
+        "entailment": 0.9604375958442688,
+        "neutral": 0.03148901090025902,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 137
+      }
+    },
+    {
+      "kind": "technical_negation_control",
+      "premise": "M3GNet molecular‑dynamics simulations of Li₃YCl₆ reproduce ionic conductivity (14.3 mS cm⁻¹) and activation energy (0.22 eV) consistent with ab‑initio MD, and short‑time MD correctly identifies known lithium superionic conductors by their high mean‑squared displacements at elevated temperatures.",
+      "hypothesis": "It is not true that m3GNet molecular‑dynamics simulations of Li₃YCl₆ reproduce ionic conductivity (14.3 mS cm⁻¹) and activation energy (0.22 eV) consistent with ab‑initio MD, and short‑time MD correctly identifies known lithium superionic conductors by their high mean‑squared displacements at elevated temperatures.",
+      "node_id": "clai_00646",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.9812033772468567,
+        "entailment": 0.0028716681990772486,
+        "neutral": 0.015924975275993347,
+        "prediction": "contradiction",
+        "truncated": false,
+        "input_tokens": 142
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q1",
+      "premise": "MatterSim, a zero‑shot machine‑learned interatomic potential trained on >17 million DFT‑labeled structures, supports universal simulation across all elements, temperatures and pressures, achieving energy prediction errors below 50 meV/atom even in high‑temperature, non‑equilibrium regimes.",
+      "hypothesis": "MatterSim is suitable for predicting interatomic potentials.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.0005217117141000926,
+        "entailment": 0.9952139854431152,
+        "neutral": 0.004264405928552151,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 69
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q1",
+      "premise": "The computational cost of LiFlow scales linearly with the number of atoms (O(n)), in contrast to the cubic scaling (O(n³)) of ab initio molecular dynamics.",
+      "hypothesis": "MatterSim is suitable for predicting interatomic potentials.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.06093078479170799,
+        "entailment": 0.029378877952694893,
+        "neutral": 0.909690260887146,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 55
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q2",
+      "premise": "DeepH-E3 enables accurate electronic‑structure calculations for supercells larger than 10⁴ atoms, reducing computational cost by several orders of magnitude and allowing calculations in minutes on a single GPU versus months on thousands of CPU cores.",
+      "hypothesis": "DeepH-E3 is suitable for accelerating electronic structure calculations.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.0004472649598028511,
+        "entailment": 0.9946367144584656,
+        "neutral": 0.004915998317301273,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 60
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q2",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "DeepH-E3 is suitable for accelerating electronic structure calculations.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.03698110580444336,
+        "entailment": 0.014225347898900509,
+        "neutral": 0.9487935304641724,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 40
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q3",
+      "premise": "DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling.",
+      "hypothesis": "DeepH-E3 is suitable for learning DFT Hamiltonians.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.000490534002892673,
+        "entailment": 0.9905965328216553,
+        "neutral": 0.008912983350455761,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 51
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q3",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "DeepH-E3 is suitable for learning DFT Hamiltonians.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.37351611256599426,
+        "entailment": 0.02372080832719803,
+        "neutral": 0.6027630567550659,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 40
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q4",
+      "premise": "VGNN achieves direct prediction of Γ-phonon spectra and full phonon dispersion using only atomic coordinates as input without prior knowledge of interatomic forces.",
+      "hypothesis": "VGNN is suitable for phonon property prediction.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.0003455308615230024,
+        "entailment": 0.9940239787101746,
+        "neutral": 0.00563047593459487,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 41
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q4",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "VGNN is suitable for phonon property prediction.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.21070201694965363,
+        "entailment": 0.01069428026676178,
+        "neutral": 0.778603732585907,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 36
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q5",
+      "premise": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+      "hypothesis": "ConvLSTM is suitable for coarse-graining molecular dynamics.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.014071125537157059,
+        "entailment": 0.9400600790977478,
+        "neutral": 0.045868925750255585,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 78
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q5",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "ConvLSTM is suitable for coarse-graining molecular dynamics.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.9873758554458618,
+        "entailment": 0.0023587485775351524,
+        "neutral": 0.01026540994644165,
+        "prediction": "contradiction",
+        "truncated": false,
+        "input_tokens": 40
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q6",
+      "premise": "CHGNet molecular dynamics simulations of Li superionic conductors reproduce room‑temperature ionic conductivities and activation energies within the error bars of AIMD, correctly distinguishing faster from slower conductors.",
+      "hypothesis": "Molecular dynamics is suitable for predicting ionic conductivity.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.0007082177908159792,
+        "entailment": 0.989205002784729,
+        "neutral": 0.010086758062243462,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 48
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q6",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "Molecular dynamics is suitable for predicting ionic conductivity.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.1756620556116104,
+        "entailment": 0.015986887738108635,
+        "neutral": 0.8083510398864746,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 36
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q7",
+      "premise": "Validation against experimental reports and independent first‑principles calculations confirms the robustness and predictive power of the ML‑guided framework, with reasonable agreement for transition temperatures of KNO₃, KNO₂ and CaCO₃, DFT‑calculated free‑energy differences matching ML predictions for a ten‑material subset, and thermal‑conductivity ratios for Li₄TiS₄ and NaNO₃ closely reproduced by DFT.",
+      "hypothesis": "first-principles calculations is suitable for predicting phase transitions.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.0024044751189649105,
+        "entailment": 0.9677585959434509,
+        "neutral": 0.029836948961019516,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 96
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q7",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "first-principles calculations is suitable for predicting phase transitions.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.6998517513275146,
+        "entailment": 0.019688816741108894,
+        "neutral": 0.280459463596344,
+        "prediction": "contradiction",
+        "truncated": false,
+        "input_tokens": 39
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q8",
+      "premise": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+      "hypothesis": "ConvLSTM is suitable for predicting fracture patterns.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.0002063376596197486,
+        "entailment": 0.9966977834701538,
+        "neutral": 0.003095874097198248,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 75
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q8",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "ConvLSTM is suitable for predicting fracture patterns.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.02113516256213188,
+        "entailment": 0.016518674790859222,
+        "neutral": 0.9623461961746216,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 37
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q9",
+      "premise": "The M3GNet architecture preserves continuity of energies, forces, and stresses with respect to changes in bond count, satisfying a necessary physical constraint for interatomic potentials.",
+      "hypothesis": "M3GNet is suitable for ensuring physical consistency.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.0003211467119399458,
+        "entailment": 0.9940420985221863,
+        "neutral": 0.005636768415570259,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 48
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q9",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "M3GNet is suitable for ensuring physical consistency.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.07847478985786438,
+        "entailment": 0.12957055866718292,
+        "neutral": 0.7919545769691467,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 38
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q10",
+      "premise": "MatterSim, a zero‑shot machine‑learned interatomic potential trained on >17 million DFT‑labeled structures, supports universal simulation across all elements, temperatures and pressures, achieving energy prediction errors below 50 meV/atom even in high‑temperature, non‑equilibrium regimes.",
+      "hypothesis": "MatterSim is suitable for representing atomic environments.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.003081604605540633,
+        "entailment": 0.9869946837425232,
+        "neutral": 0.009923668578267097,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 67
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q10",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "MatterSim is suitable for representing atomic environments.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.05951477214694023,
+        "entailment": 0.07024885714054108,
+        "neutral": 0.8702363967895508,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 36
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q11",
+      "premise": "Combined two-body, three-body, and SOAP many-body descriptors are necessary for GAP to achieve the accuracy limit imposed by force locality and make physically meaningful predictions; models using only subsets of descriptors produce unphysical structures during molecular dynamics simulations.",
+      "hypothesis": "GAP is suitable for integrating features from three or more distinct scales simultaneously within a unified framework.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.004806524608284235,
+        "entailment": 0.9615938067436218,
+        "neutral": 0.03359967842698097,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 70
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q11",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "GAP is suitable for integrating features from three or more distinct scales simultaneously within a unified framework.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.018920373171567917,
+        "entailment": 0.03257391229271889,
+        "neutral": 0.948505699634552,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 45
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q12",
+      "premise": "MatterSim, a zero‑shot machine‑learned interatomic potential trained on >17 million DFT‑labeled structures, supports universal simulation across all elements, temperatures and pressures, achieving energy prediction errors below 50 meV/atom even in high‑temperature, non‑equilibrium regimes.",
+      "hypothesis": "MatterSim is suitable for large-scale atomistic simulation.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.00564635219052434,
+        "entailment": 0.9550986886024475,
+        "neutral": 0.039254967123270035,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 70
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q12",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "MatterSim is suitable for large-scale atomistic simulation.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.013961682096123695,
+        "entailment": 0.026954419910907745,
+        "neutral": 0.9590838551521301,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 39
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q13",
+      "premise": "In polycrystalline aluminum, the GNN predicts atomic potential energy with a mean normalized relative error of 11.0% (maximum ≈13%) and achieves R² = 0.99 for mean potential energy versus grain number.",
+      "hypothesis": "normalized relative error is suitable for predicting properties of solid-state crystalline materials.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.023970698937773705,
+        "entailment": 0.7228994369506836,
+        "neutral": 0.25312983989715576,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 62
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q13",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "normalized relative error is suitable for predicting properties of solid-state crystalline materials.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.005145205184817314,
+        "entailment": 0.001879571471363306,
+        "neutral": 0.9929752349853516,
+        "prediction": "neutral",
+        "truncated": false,
+        "input_tokens": 42
+      }
+    },
+    {
+      "kind": "actual_high_entailment",
+      "question_id": "Q14",
+      "premise": "Predicting ionic conductivity in solids from the machine-learned potential energy landscape",
+      "hypothesis": "Frozen-framework potential energy surface (PES) descriptor screening is suitable for evaluate MLIPs and property prediction models for materials discovery.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.03522580862045288,
+        "entailment": 0.8724285364151001,
+        "neutral": 0.09234556555747986,
+        "prediction": "entailment",
+        "truncated": false,
+        "input_tokens": 42
+      }
+    },
+    {
+      "kind": "mismatched_premise_control",
+      "question_id": "Q14",
+      "premise": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+      "hypothesis": "Frozen-framework potential energy surface (PES) descriptor screening is suitable for evaluate MLIPs and property prediction models for materials discovery.",
+      "nli": {
+        "status": "computed",
+        "contradiction": 0.5607004761695862,
+        "entailment": 0.04436508193612099,
+        "neutral": 0.3949345052242279,
+        "prediction": "contradiction",
+        "truncated": false,
+        "input_tokens": 53
+      }
+    }
+  ],
+  "interpretation": "These post-hoc controls do not enter any ranking. Exact identity/negation and paired comparison subjects test logical consistency; numerical extrapolation is not entailed merely by a smaller-system result. Mismatched graph premises are an imperfect negative control, not independently annotated false statements. The probabilities and any counterexamples are retained even when they undermine the NLI model."
+}

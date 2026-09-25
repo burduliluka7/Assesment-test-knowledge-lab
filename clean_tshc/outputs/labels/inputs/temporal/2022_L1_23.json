@@ -1,0 +1,32 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "comp_00821",
+      "type": "component",
+      "surface_form": "ring statistics analysis"
+    },
+    {
+      "id": "task_00707",
+      "type": "task",
+      "surface_form": "Young's modulus prediction"
+    },
+    {
+      "id": "tech_00925",
+      "type": "technique",
+      "surface_form": "Young's modulus averaging"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "task": 1,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "young",
+  "representative_ids": [
+    "task_00707",
+    "tech_00925"
+  ]
+}

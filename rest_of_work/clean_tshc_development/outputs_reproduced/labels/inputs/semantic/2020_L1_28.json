@@ -1,0 +1,190 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "clai_00483",
+      "type": "claim",
+      "surface_form": "The proposed training protocol based on augmenting the training set via intermediate molecular dynamics simulations can assess the quality of approximate trajectories and computed physical properties."
+    },
+    {
+      "id": "clai_00487",
+      "type": "claim",
+      "surface_form": "The number of force components in the initial training set is more important than total configurations for obtaining generalizable models."
+    },
+    {
+      "id": "clai_00575",
+      "type": "claim",
+      "surface_form": "Using a loss function with adaptive prefactors that emphasize forces early and energies/virial later reduces the total training time to a few core‑hours for all test cases."
+    },
+    {
+      "id": "comp_00295",
+      "type": "component",
+      "surface_form": "Mode‑I and Mode‑II training pipelines"
+    },
+    {
+      "id": "comp_00297",
+      "type": "component",
+      "surface_form": "Image‑based data‑processing pipeline"
+    },
+    {
+      "id": "comp_00346",
+      "type": "component",
+      "surface_form": "STM‑image database and analysis pipeline"
+    },
+    {
+      "id": "comp_00369",
+      "type": "component",
+      "surface_form": "Combined heuristic‑ML pipeline"
+    },
+    {
+      "id": "comp_00458",
+      "type": "component",
+      "surface_form": "AutoML model search space"
+    },
+    {
+      "id": "comp_00625",
+      "type": "component",
+      "surface_form": "Iterative self-consistent training protocol"
+    },
+    {
+      "id": "comp_00630",
+      "type": "component",
+      "surface_form": "active learning workflow"
+    },
+    {
+      "id": "comp_00632",
+      "type": "component",
+      "surface_form": "Iterative training loop workflow"
+    },
+    {
+      "id": "comp_00823",
+      "type": "component",
+      "surface_form": "Iterative training workflow"
+    },
+    {
+      "id": "futu_00067",
+      "type": "future_topic",
+      "surface_form": "Development of transferable machine‑learning interatomic potentials with broader configurational coverage"
+    },
+    {
+      "id": "prob_00124",
+      "type": "problem",
+      "surface_form": "Efficient representation of large training sets"
+    },
+    {
+      "id": "prob_00159",
+      "type": "problem",
+      "surface_form": "Inability to model state‑dependent properties"
+    },
+    {
+      "id": "prob_00272",
+      "type": "problem",
+      "surface_form": "Automated ML pipeline for materials"
+    },
+    {
+      "id": "prob_00273",
+      "type": "problem",
+      "surface_form": "Manual ML pipeline construction"
+    },
+    {
+      "id": "prob_00284",
+      "type": "problem",
+      "surface_form": "AutoML runtime optimization"
+    },
+    {
+      "id": "prob_00415",
+      "type": "problem",
+      "surface_form": "Achieving Boltzmann-distributed training without expensive pre-simulations"
+    },
+    {
+      "id": "prob_00416",
+      "type": "problem",
+      "surface_form": "efficient training set construction"
+    },
+    {
+      "id": "prob_00596",
+      "type": "problem",
+      "surface_form": "Long-range behavior modeling"
+    },
+    {
+      "id": "prob_00600",
+      "type": "problem",
+      "surface_form": "Heterogeneous training database fitting"
+    },
+    {
+      "id": "prob_00614",
+      "type": "problem",
+      "surface_form": "Training data completeness"
+    },
+    {
+      "id": "task_00233",
+      "type": "task",
+      "surface_form": "STM image analysis"
+    },
+    {
+      "id": "task_00243",
+      "type": "task",
+      "surface_form": "STM image classification"
+    },
+    {
+      "id": "tech_00053",
+      "type": "technique",
+      "surface_form": "iterative training"
+    },
+    {
+      "id": "tech_00058",
+      "type": "technique",
+      "surface_form": "Exponential learning‑rate decay"
+    },
+    {
+      "id": "tech_00065",
+      "type": "technique",
+      "surface_form": "Exponential moving average of weights"
+    },
+    {
+      "id": "tech_00275",
+      "type": "technique",
+      "surface_form": "Progressive weighting of loss terms"
+    },
+    {
+      "id": "tech_00278",
+      "type": "technique",
+      "surface_form": "Linear evolution of loss prefactors"
+    },
+    {
+      "id": "tech_00320",
+      "type": "technique",
+      "surface_form": "Iterative queue‑based prediction"
+    },
+    {
+      "id": "tech_00374",
+      "type": "technique",
+      "surface_form": "Tersoff‑Hamann STM image simulation"
+    },
+    {
+      "id": "tech_00694",
+      "type": "technique",
+      "surface_form": "Self-consistent training"
+    },
+    {
+      "id": "tech_00704",
+      "type": "technique",
+      "surface_form": "Outlier detection in training loops"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 3,
+    "component": 9,
+    "future_topic": 1,
+    "problem": 10,
+    "task": 2,
+    "technique": 9
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "training",
+  "representative_ids": [
+    "comp_00823",
+    "comp_00632"
+  ]
+}

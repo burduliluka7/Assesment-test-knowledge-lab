@@ -1,0 +1,212 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00028",
+      "type": "article",
+      "surface_form": "Machine learning a general purpose interatomic potential for silicon"
+    },
+    {
+      "id": "arti_00034",
+      "type": "article",
+      "surface_form": "LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+    },
+    {
+      "id": "arti_00035",
+      "type": "article",
+      "surface_form": "Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+    },
+    {
+      "id": "arti_00050",
+      "type": "article",
+      "surface_form": "Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+    },
+    {
+      "id": "clai_00089",
+      "type": "claim",
+      "surface_form": "Unconstrained machine-learned interatomic potentials (MLIPs) trained on large datasets achieve accuracies on par with state-of-the-art equivariant architectures while maintaining orders-of-magnitude lower computational cost than quantum-mechanical methods."
+    },
+    {
+      "id": "clai_00116",
+      "type": "claim",
+      "surface_form": "A generic unconstrained Transformer can serve as an effective backbone for machine-learned interatomic potentials without explicit equivariance constraints."
+    },
+    {
+      "id": "futu_00067",
+      "type": "future_topic",
+      "surface_form": "Development of transferable machine‑learning interatomic potentials with broader configurational coverage"
+    },
+    {
+      "id": "futu_00143",
+      "type": "future_topic",
+      "surface_form": "Exploration of universal interatomic potential (UIP) limitations in traditional benchmarks"
+    },
+    {
+      "id": "futu_00150",
+      "type": "future_topic",
+      "surface_form": "Learned interatomic potentials"
+    },
+    {
+      "id": "meth_00073",
+      "type": "method",
+      "surface_form": "Machine Learning Interatomic Potentials"
+    },
+    {
+      "id": "meth_00088",
+      "type": "method",
+      "surface_form": "Machine-learned interatomic potentials"
+    },
+    {
+      "id": "meth_00171",
+      "type": "method",
+      "surface_form": "Neural Equivariant Interatomic Potentials"
+    },
+    {
+      "id": "meth_00275",
+      "type": "method",
+      "surface_form": "Universal machine learning interatomic potentials"
+    },
+    {
+      "id": "meth_00375",
+      "type": "method",
+      "surface_form": "Equivariant interatomic potentials"
+    },
+    {
+      "id": "meth_00416",
+      "type": "method",
+      "surface_form": "E(3)-Equivariant Atom-Centered Interatomic Potentials"
+    },
+    {
+      "id": "prob_00037",
+      "type": "problem",
+      "surface_form": "Improving interatomic potentials with higher‑order data"
+    },
+    {
+      "id": "prob_00090",
+      "type": "problem",
+      "surface_form": "Data inefficiency of neural interatomic potentials"
+    },
+    {
+      "id": "prob_00122",
+      "type": "problem",
+      "surface_form": "Accurate data‑driven interatomic potentials"
+    },
+    {
+      "id": "prob_00212",
+      "type": "problem",
+      "surface_form": "Universal interatomic potential across the periodic table"
+    },
+    {
+      "id": "prob_00230",
+      "type": "problem",
+      "surface_form": "Dataset diversity for ML interatomic potentials"
+    },
+    {
+      "id": "prob_00346",
+      "type": "problem",
+      "surface_form": "accurate interatomic potential generation"
+    },
+    {
+      "id": "prob_00492",
+      "type": "problem",
+      "surface_form": "General-purpose interatomic potential deployment"
+    },
+    {
+      "id": "task_00032",
+      "type": "task",
+      "surface_form": "Interatomic potential prediction"
+    },
+    {
+      "id": "task_00052",
+      "type": "task",
+      "surface_form": "Interatomic potential learning"
+    },
+    {
+      "id": "task_00110",
+      "type": "task",
+      "surface_form": "Benchmarking of interatomic potentials"
+    },
+    {
+      "id": "task_00198",
+      "type": "task",
+      "surface_form": "Construction of Interatomic Potentials with Magnetic and Charge Degrees of Freedom"
+    },
+    {
+      "id": "task_00292",
+      "type": "task",
+      "surface_form": "machine learning interatomic potentials"
+    },
+    {
+      "id": "task_00504",
+      "type": "task",
+      "surface_form": "Interatomic potential development"
+    },
+    {
+      "id": "task_00566",
+      "type": "task",
+      "surface_form": "Inter-atomic potential learning"
+    },
+    {
+      "id": "task_00578",
+      "type": "task",
+      "surface_form": "ML interatomic potentials"
+    },
+    {
+      "id": "task_00579",
+      "type": "task",
+      "surface_form": "Interatomic potential modeling"
+    },
+    {
+      "id": "task_00619",
+      "type": "task",
+      "surface_form": "interatomic potentials"
+    },
+    {
+      "id": "task_00696",
+      "type": "task",
+      "surface_form": "Interatomic potential development for carbon"
+    },
+    {
+      "id": "tech_00521",
+      "type": "technique",
+      "surface_form": "universal machine learning interatomic potentials"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 4,
+    "claim": 2,
+    "future_topic": 3,
+    "method": 6,
+    "problem": 7,
+    "task": 11,
+    "technique": 1
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00722",
+      "relation_type": "claims",
+      "members": [
+        "arti_00034",
+        "clai_00116"
+      ],
+      "year": 2026,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5437,
+        "article_year": 2026
+      },
+      "attributes": {
+        "claim_type": "existential",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "interatomic",
+  "representative_ids": [
+    "meth_00088",
+    "task_00292"
+  ]
+}

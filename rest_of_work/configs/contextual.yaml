@@ -1,0 +1,22 @@
+# Frozen defaults for incremental context experiments; no answer-key fitting.
+data_dir: data/data
+output: artifacts/full
+v2_output: artifacts/evaluation
+context_output: artifacts/evaluation/contextual
+context_cutoffs: [2025, 2026]
+context_stages: [R0, R1, R2, R3, R4, R5, R1_direct]
+context_article_expansion: true
+context_verify_reuse: true # Disable for a different graph; unrelated hierarchy archives are then not required.
+context_top_ks: [1, 5, 10, 20, 50, 100]
+context_candidate_k: 100
+context_resolver: generic
+context_pooling: max
+context_top_m: 2
+context_fusion: mean
+context_field_weights: {name: 0.15, claim: 0.20, claim_article: 0.10, task: 0.15, problem: 0.10, technical: 0.10, dataset: 0.10, article: 0.10}
+context_field_caps: {claim: 6, claim_article: 4, task: 4, problem: 4, technical: 4, dataset: 4, article: 3}
+context_max_direct_arity: 16
+context_type_weight: 0.05
+context_rerank_weight: 0.10
+context_hierarchy_budgets: [500, 2000, 5000, 10000]
+context_hierarchy_reference: R3

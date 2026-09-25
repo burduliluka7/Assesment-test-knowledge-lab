@@ -1,0 +1,125 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00001",
+      "type": "component",
+      "surface_form": "Execution Module"
+    },
+    {
+      "id": "comp_00008",
+      "type": "component",
+      "surface_form": "Bridge Model"
+    },
+    {
+      "id": "comp_00010",
+      "type": "component",
+      "surface_form": "Retriever"
+    },
+    {
+      "id": "comp_00170",
+      "type": "component",
+      "surface_form": "Task‑driven taxonomy"
+    },
+    {
+      "id": "comp_00171",
+      "type": "component",
+      "surface_form": "Multimodal fusion pipeline"
+    },
+    {
+      "id": "comp_00172",
+      "type": "component",
+      "surface_form": "LLM‑agent framework"
+    },
+    {
+      "id": "comp_00173",
+      "type": "component",
+      "surface_form": "Material Processing Branch"
+    },
+    {
+      "id": "comp_00174",
+      "type": "component",
+      "surface_form": "Language Processing Branch"
+    },
+    {
+      "id": "comp_00175",
+      "type": "component",
+      "surface_form": "Cross‑modal Encoder‑Decoder"
+    },
+    {
+      "id": "comp_00176",
+      "type": "component",
+      "surface_form": "MatSciKB"
+    },
+    {
+      "id": "comp_00179",
+      "type": "component",
+      "surface_form": "Agent‑Toolkit‑Evaluator Trio"
+    },
+    {
+      "id": "comp_00180",
+      "type": "component",
+      "surface_form": "Human‑in‑the‑Loop (HITL) Workflow"
+    },
+    {
+      "id": "comp_00181",
+      "type": "component",
+      "surface_form": "Cognition Module"
+    },
+    {
+      "id": "comp_00385",
+      "type": "component",
+      "surface_form": "AFLOW workflow engine"
+    },
+    {
+      "id": "comp_00386",
+      "type": "component",
+      "surface_form": "Standardized Brillouin‑zone path generator"
+    },
+    {
+      "id": "comp_00388",
+      "type": "component",
+      "surface_form": "Aconvasp command‑line tool"
+    },
+    {
+      "id": "comp_00390",
+      "type": "component",
+      "surface_form": "APL phonon library"
+    },
+    {
+      "id": "comp_00393",
+      "type": "component",
+      "surface_form": "Interstitial‑site topological search"
+    },
+    {
+      "id": "comp_00394",
+      "type": "component",
+      "surface_form": "Alien‑mode task executor"
+    },
+    {
+      "id": "comp_00395",
+      "type": "component",
+      "surface_form": "Apennsy interstitial cage search"
+    },
+    {
+      "id": "comp_00397",
+      "type": "component",
+      "surface_form": "AFLOW.IN / VASP POSCAR output generator"
+    },
+    {
+      "id": "comp_00399",
+      "type": "component",
+      "surface_form": "Hybrid functional workflow"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 22
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "matscikb",
+  "representative_ids": [
+    "comp_00399",
+    "comp_00385"
+  ]
+}

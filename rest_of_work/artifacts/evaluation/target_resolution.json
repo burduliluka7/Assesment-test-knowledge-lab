@@ -1,0 +1,3729 @@
+{
+  "2025": {
+    "targets": [
+      {
+        "label": "ACE",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00209"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00520",
+          "clai_00521",
+          "clai_00522",
+          "clai_00524",
+          "clai_00525",
+          "clai_00526",
+          "clai_00527",
+          "clai_00528"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00209",
+            "surface_form": "ACE",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "AFLOW",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00274"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00027",
+          "arti_00049",
+          "clai_00212",
+          "clai_00214",
+          "clai_00222",
+          "clai_00661",
+          "clai_00662",
+          "clai_00663"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00274",
+            "surface_form": "AFLOW",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Alexandria",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00369"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00342"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00369",
+            "surface_form": "Alexandria",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Bead-mapping",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "CE→MC→NN→PF",
+        "resolution_type": "COMPOSITE",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [
+          {
+            "label": "CE",
+            "resolution_type": "UNRESOLVED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "unresolved",
+            "signals": [],
+            "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": []
+          },
+          {
+            "label": "MC",
+            "resolution_type": "UNRESOLVED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "unresolved",
+            "signals": [],
+            "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": []
+          },
+          {
+            "label": "NN",
+            "resolution_type": "EVIDENCE_BACKED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "repeated_literal_evidence_not_entity_identity",
+            "signals": [
+              "repeated_whole_phrase_in_graph"
+            ],
+            "reason": "Represented by multiple literal evidence texts; no canonical entity identity asserted",
+            "canonical": false,
+            "representable": true,
+            "evidence_node_ids": [
+              "cite_00237",
+              "cite_00363"
+            ],
+            "candidates": []
+          },
+          {
+            "label": "PF",
+            "resolution_type": "UNRESOLVED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "unresolved",
+            "signals": [],
+            "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": []
+          }
+        ],
+        "confidence": "incomplete_or_unverified_combination",
+        "signals": [
+          "syntactic_composition"
+        ],
+        "reason": "Components resolved independently; representable only when all canonical components share article provenance; no synthetic graph node created",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": [],
+        "component_article_overlap": []
+      },
+      {
+        "label": "CGCNN",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00354",
+          "meth_00054"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00002",
+          "clai_00004",
+          "clai_00005",
+          "clai_00006",
+          "clai_00317",
+          "clai_00321",
+          "clai_00490"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00054",
+            "surface_form": "CGCNN",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00354",
+            "surface_form": "CGCNN",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "CHGNet",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00063",
+          "comp_00481",
+          "meth_00038"
+        ],
+        "node_types": [
+          "cited_work",
+          "component",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00015",
+          "clai_00065",
+          "clai_00066",
+          "clai_00067",
+          "clai_00068",
+          "clai_00069",
+          "clai_00070",
+          "clai_00071"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00038",
+            "surface_form": "CHGNet",
+            "node_type": "method"
+          },
+          {
+            "node_id": "comp_00481",
+            "surface_form": "CHGNet",
+            "node_type": "component"
+          },
+          {
+            "node_id": "cite_00063",
+            "surface_form": "CHGNet",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "ConvLSTM",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00001"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00021",
+          "clai_00024"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00001",
+            "surface_form": "ConvLSTM",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "D4FT",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "comp_00273",
+          "meth_00222"
+        ],
+        "node_types": [
+          "component",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00019",
+          "clai_00421",
+          "clai_00422",
+          "clai_00423",
+          "clai_00424",
+          "clai_00425",
+          "clai_00426",
+          "clai_00428"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00222",
+            "surface_form": "D4FT",
+            "node_type": "method"
+          },
+          {
+            "node_id": "comp_00273",
+            "surface_form": "D4FT",
+            "node_type": "component"
+          }
+        ]
+      },
+      {
+        "label": "DeePMD",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00214"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00185",
+          "clai_00283",
+          "clai_00475",
+          "clai_00476",
+          "clai_00485",
+          "clai_00569",
+          "clai_00570",
+          "clai_00571"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00214",
+            "surface_form": "DeepMD",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "DeePMD+AL",
+        "resolution_type": "COMPOSITE",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [
+          {
+            "label": "DeePMD",
+            "resolution_type": "EXACT_NODE",
+            "resolved_node_ids": [
+              "cite_00214"
+            ],
+            "node_types": [
+              "cited_work"
+            ],
+            "component_resolutions": [],
+            "confidence": "lexical_identity_proxy",
+            "signals": [
+              "Identical normalized scientific name; all node mentions retained"
+            ],
+            "reason": "Identical normalized scientific name; all node mentions retained",
+            "canonical": true,
+            "representable": true,
+            "evidence_node_ids": [
+              "clai_00185",
+              "clai_00283",
+              "clai_00475",
+              "clai_00476",
+              "clai_00485",
+              "clai_00569",
+              "clai_00570",
+              "clai_00571"
+            ],
+            "candidates": [
+              {
+                "node_id": "cite_00214",
+                "surface_form": "DeepMD",
+                "node_type": "cited_work"
+              }
+            ]
+          },
+          {
+            "label": "AL",
+            "resolution_type": "EXACT_NODE",
+            "resolved_node_ids": [
+              "data_00007"
+            ],
+            "node_types": [
+              "dataset"
+            ],
+            "component_resolutions": [],
+            "confidence": "lexical_identity_proxy",
+            "signals": [
+              "Identical normalized scientific name; all node mentions retained"
+            ],
+            "reason": "Identical normalized scientific name; all node mentions retained",
+            "canonical": true,
+            "representable": true,
+            "evidence_node_ids": [
+              "clai_00312"
+            ],
+            "candidates": [
+              {
+                "node_id": "data_00007",
+                "surface_form": "Al",
+                "node_type": "dataset"
+              }
+            ]
+          }
+        ],
+        "confidence": "incomplete_or_unverified_combination",
+        "signals": [
+          "syntactic_composition"
+        ],
+        "reason": "Components resolved independently; representable only when all canonical components share article provenance; no synthetic graph node created",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": [],
+        "component_article_overlap": []
+      },
+      {
+        "label": "DeepH",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00254"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00373",
+          "clai_00374",
+          "clai_00375",
+          "clai_00376",
+          "clai_00377",
+          "clai_00378",
+          "clai_00379",
+          "clai_00380"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00254",
+            "surface_form": "DeepH",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "DeepH-E3",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00255",
+          "meth_00118"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00578",
+          "clai_00579",
+          "clai_00580",
+          "clai_00581",
+          "clai_00582",
+          "clai_00583",
+          "clai_00584"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00118",
+            "surface_form": "DeepH-E3",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00255",
+            "surface_form": "DeepH‑E3",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "E(3)-equivariant GNNs",
+        "resolution_type": "ALIAS_NODE",
+        "resolved_node_ids": [
+          "cite_00120"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Only a conservative final-token singular/plural difference"
+        ],
+        "reason": "Only a conservative final-token singular/plural difference",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [],
+        "candidates": [
+          {
+            "node_id": "cite_00120",
+            "surface_form": "E(3)-equivariant GNN",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "EquiformerV2",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00050",
+          "meth_00081"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00041",
+          "clai_00541",
+          "clai_00588",
+          "clai_00589",
+          "clai_00590",
+          "clai_00591",
+          "clai_00592",
+          "clai_00593"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00081",
+            "surface_form": "EquiformerV2",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00050",
+            "surface_form": "Equiformerv2",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "GAP",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00191"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00070",
+          "clai_00194",
+          "clai_00225",
+          "clai_00226",
+          "clai_00227",
+          "clai_00228",
+          "clai_00230",
+          "clai_00231"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00191",
+            "surface_form": "GAP",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "GNN free energies",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "GNN stress fields",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "GNN+GPP",
+        "resolution_type": "COMPOSITE",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [
+          {
+            "label": "GNN",
+            "resolution_type": "AMBIGUOUS",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "multiple_identity_candidates",
+            "signals": [],
+            "reason": "Multiple distinct names share the identifier; none forced",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": [
+              {
+                "node_id": "comp_00062",
+                "surface_form": "Symmetry‑aware E(3)‑equivariant GNN energy model",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00070",
+                "surface_form": "E(3)-equivariant GNN architecture",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00072",
+                "surface_form": "Supervised training of the GNN on phase‑averaged quantities",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00311",
+                "surface_form": "End‑to‑end GNN predictor",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00314",
+                "surface_form": "GNN predictor",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00319",
+                "surface_form": "PNA-based GNN predictor",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00320",
+                "surface_form": "Alternative GNN backbones",
+                "node_type": "component"
+              },
+              {
+                "node_id": "tech_00327",
+                "surface_form": "Supervised GNN training",
+                "node_type": "technique"
+              },
+              {
+                "node_id": "comp_00375",
+                "surface_form": "Feature encoding from GNN readout",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00621",
+                "surface_form": "Static GNN",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00622",
+                "surface_form": "GNN interatomic potentials",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00651",
+                "surface_form": "Transformer blocks in GNN",
+                "node_type": "component"
+              }
+            ]
+          },
+          {
+            "label": "GPP",
+            "resolution_type": "UNRESOLVED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "unresolved",
+            "signals": [],
+            "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": []
+          }
+        ],
+        "confidence": "incomplete_or_unverified_combination",
+        "signals": [
+          "syntactic_composition"
+        ],
+        "reason": "Components resolved independently; representable only when all canonical components share article provenance; no synthetic graph node created",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": [],
+        "component_article_overlap": []
+      },
+      {
+        "label": "GNNs + ACE descriptors",
+        "resolution_type": "COMPOSITE",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [
+          {
+            "label": "GNNs",
+            "resolution_type": "EVIDENCE_BACKED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "repeated_literal_evidence_not_entity_identity",
+            "signals": [
+              "repeated_whole_phrase_in_graph"
+            ],
+            "reason": "Represented by multiple literal evidence texts; no canonical entity identity asserted",
+            "canonical": false,
+            "representable": true,
+            "evidence_node_ids": [
+              "clai_00546",
+              "futu_00153",
+              "futu_00155"
+            ],
+            "candidates": []
+          },
+          {
+            "label": "ACE descriptors",
+            "resolution_type": "UNRESOLVED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "unresolved",
+            "signals": [],
+            "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": []
+          }
+        ],
+        "confidence": "incomplete_or_unverified_combination",
+        "signals": [
+          "syntactic_composition"
+        ],
+        "reason": "Components resolved independently; representable only when all canonical components share article provenance; no synthetic graph node created",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": [],
+        "component_article_overlap": []
+      },
+      {
+        "label": "GNoME",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00330",
+          "comp_00589",
+          "data_00144",
+          "meth_00169"
+        ],
+        "node_types": [
+          "cited_work",
+          "component",
+          "dataset",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00274",
+          "clai_00449",
+          "clai_00467",
+          "clai_00542",
+          "clai_00544",
+          "clai_00545",
+          "clai_00547",
+          "clai_00548"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00169",
+            "surface_form": "GNoME",
+            "node_type": "method"
+          },
+          {
+            "node_id": "comp_00589",
+            "surface_form": "GNoME",
+            "node_type": "component"
+          },
+          {
+            "node_id": "data_00144",
+            "surface_form": "GNoME",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "cite_00330",
+            "surface_form": "GNoME",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "HamGNN",
+        "resolution_type": "ALIAS_NODE",
+        "resolved_node_ids": [
+          "meth_00221"
+        ],
+        "node_types": [
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Unique whole-identifier containment in entity name"
+        ],
+        "reason": "Unique whole-identifier containment in entity name",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00191",
+          "clai_00193",
+          "clai_00195",
+          "clai_00197",
+          "clai_00200"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00221",
+            "surface_form": "Universal HamGNN Hamiltonian model",
+            "node_type": "method"
+          }
+        ]
+      },
+      {
+        "label": "Hessian training",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "JARVIS-DFT",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "comp_00335"
+        ],
+        "node_types": [
+          "component"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00027",
+          "clai_00032"
+        ],
+        "candidates": [
+          {
+            "node_id": "comp_00335",
+            "surface_form": "JARVIS‑DFT",
+            "node_type": "component"
+          }
+        ]
+      },
+      {
+        "label": "LiFlow",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "meth_00239"
+        ],
+        "node_types": [
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00040",
+          "clai_00041",
+          "clai_00042",
+          "clai_00045",
+          "clai_00046",
+          "clai_00047",
+          "clai_00048",
+          "clai_00050"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00239",
+            "surface_form": "LiFlow",
+            "node_type": "method"
+          }
+        ]
+      },
+      {
+        "label": "M3GNet",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00062",
+          "comp_00482",
+          "meth_00037"
+        ],
+        "node_types": [
+          "cited_work",
+          "component",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00244",
+          "clai_00246",
+          "clai_00259",
+          "clai_00262",
+          "clai_00273",
+          "clai_00278",
+          "clai_00289",
+          "clai_00300"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00037",
+            "surface_form": "M3GNet",
+            "node_type": "method"
+          },
+          {
+            "node_id": "comp_00482",
+            "surface_form": "M3GNet",
+            "node_type": "component"
+          },
+          {
+            "node_id": "cite_00062",
+            "surface_form": "M3GNet",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "MACE",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00048"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00004",
+          "clai_00267",
+          "clai_00271",
+          "clai_00285",
+          "clai_00304",
+          "clai_00306",
+          "clai_00473",
+          "clai_00540"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00048",
+            "surface_form": "MACE",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "MACE-F",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "MEGNet",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00334",
+          "meth_00036"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00273",
+          "clai_00317",
+          "clai_00321",
+          "clai_00488",
+          "clai_00489",
+          "clai_00490",
+          "clai_00491",
+          "clai_00492"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00036",
+            "surface_form": "MEGNet",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00334",
+            "surface_form": "MEGNet",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "MLIP descriptors",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "MPtrj",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [
+          "clai_00540"
+        ],
+        "candidates": []
+      },
+      {
+        "label": "Matbench",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00362",
+          "comp_00448",
+          "data_00114",
+          "meth_00348"
+        ],
+        "node_types": [
+          "cited_work",
+          "component",
+          "dataset",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00011",
+          "arti_00042",
+          "clai_00065",
+          "clai_00255",
+          "clai_00306",
+          "clai_00311",
+          "clai_00312",
+          "clai_00313"
+        ],
+        "candidates": [
+          {
+            "node_id": "comp_00448",
+            "surface_form": "Matbench",
+            "node_type": "component"
+          },
+          {
+            "node_id": "data_00114",
+            "surface_form": "Matbench",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "meth_00348",
+            "surface_form": "Matbench",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00362",
+            "surface_form": "Matbench",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Matbench Discovery",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00302",
+          "data_00013",
+          "meth_00159"
+        ],
+        "node_types": [
+          "cited_work",
+          "dataset",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00011",
+          "clai_00065",
+          "clai_00343",
+          "clai_00536"
+        ],
+        "candidates": [
+          {
+            "node_id": "data_00013",
+            "surface_form": "Matbench Discovery",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "meth_00159",
+            "surface_form": "Matbench Discovery",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00302",
+            "surface_form": "Matbench discovery",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Materials Project",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00018",
+          "data_00061",
+          "meth_00143"
+        ],
+        "node_types": [
+          "cited_work",
+          "dataset",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00032",
+          "clai_00008",
+          "clai_00009",
+          "clai_00011",
+          "clai_00013",
+          "clai_00014",
+          "clai_00015",
+          "clai_00017"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00143",
+            "surface_form": "Materials Project",
+            "node_type": "method"
+          },
+          {
+            "node_id": "data_00061",
+            "surface_form": "Materials Project",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "cite_00018",
+            "surface_form": "Materials Project",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "MatterSim",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00060",
+          "meth_00091"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00459"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00091",
+            "surface_form": "MatterSim",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00060",
+            "surface_form": "MatterSim",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "NequIP",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00049",
+          "meth_00058"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00182",
+          "clai_00183",
+          "clai_00184",
+          "clai_00185",
+          "clai_00189",
+          "clai_00190",
+          "clai_00304",
+          "clai_00473"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00058",
+            "surface_form": "NequIP",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00049",
+            "surface_form": "NequIP",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "OMat24",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00311"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00104",
+          "clai_00105",
+          "clai_00106",
+          "clai_00107",
+          "clai_00113",
+          "clai_00114",
+          "clai_00446"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00311",
+            "surface_form": "OMat24",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "OQMD",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00370",
+          "data_00095"
+        ],
+        "node_types": [
+          "cited_work",
+          "dataset"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00026",
+          "clai_00651",
+          "clai_00652",
+          "clai_00653",
+          "clai_00656",
+          "clai_00659"
+        ],
+        "candidates": [
+          {
+            "node_id": "data_00095",
+            "surface_form": "OQMD",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "cite_00370",
+            "surface_form": "OQMD",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Orb",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00011"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00271",
+          "clai_00541"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00011",
+            "surface_form": "Orb",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "PET",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "SchNet",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00005",
+          "meth_00050"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00002",
+          "clai_00079",
+          "clai_00080",
+          "clai_00081",
+          "clai_00082",
+          "clai_00083",
+          "clai_00084",
+          "clai_00088"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00050",
+            "surface_form": "SchNet",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00005",
+            "surface_form": "SchNet",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "SevenNet",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00054"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00238",
+          "clai_00241",
+          "clai_00242",
+          "clai_00250",
+          "clai_00333",
+          "clai_00343",
+          "clai_00346",
+          "clai_00437"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00054",
+            "surface_form": "SevenNet",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "UMA",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "VGNN",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00409"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00609",
+          "clai_00611"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00409",
+            "surface_form": "VGNN",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "WBM",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "data_00175"
+        ],
+        "node_types": [
+          "dataset"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00533",
+          "clai_00541"
+        ],
+        "candidates": [
+          {
+            "node_id": "data_00175",
+            "surface_form": "WBM",
+            "node_type": "dataset"
+          }
+        ]
+      },
+      {
+        "label": "eSEN",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00053"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [],
+        "candidates": [
+          {
+            "node_id": "cite_00053",
+            "surface_form": "eSEN",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "hybrid frameworks",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "physics-informed",
+        "resolution_type": "EVIDENCE_BACKED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "repeated_literal_evidence_not_entity_identity",
+        "signals": [
+          "repeated_whole_phrase_in_graph"
+        ],
+        "reason": "Represented by multiple literal evidence texts; no canonical entity identity asserted",
+        "canonical": false,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00407",
+          "clai_00456"
+        ],
+        "candidates": []
+      },
+      {
+        "label": "symbolic regression",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00016",
+          "meth_00068"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00061",
+          "clai_00063"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00068",
+            "surface_form": "symbolic regression",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00016",
+            "surface_form": "Symbolic Regression",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "xDeepH",
+        "resolution_type": "EVIDENCE_BACKED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "repeated_literal_evidence_not_entity_identity",
+        "signals": [
+          "repeated_whole_phrase_in_graph"
+        ],
+        "reason": "Represented by multiple literal evidence texts; no canonical entity identity asserted",
+        "canonical": false,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00201",
+          "clai_00202",
+          "clai_00203",
+          "clai_00204",
+          "clai_00205",
+          "clai_00210",
+          "futu_00060"
+        ],
+        "candidates": []
+      }
+    ],
+    "unique": {
+      "total": 50,
+      "by_state": {
+        "EXACT_NODE": 32,
+        "UNRESOLVED": 10,
+        "COMPOSITE": 4,
+        "ALIAS_NODE": 2,
+        "EVIDENCE_BACKED": 2
+      },
+      "canonical": 34,
+      "representable": 36
+    },
+    "instances": {
+      "total": 63,
+      "by_state": {
+        "EXACT_NODE": 45,
+        "ALIAS_NODE": 2,
+        "EVIDENCE_BACKED": 2,
+        "UNRESOLVED": 10,
+        "COMPOSITE": 4
+      },
+      "canonical": 47,
+      "representable": 49
+    }
+  },
+  "2026": {
+    "targets": [
+      {
+        "label": "ACE",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00209"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00520",
+          "clai_00521",
+          "clai_00522",
+          "clai_00524",
+          "clai_00525",
+          "clai_00526",
+          "clai_00527",
+          "clai_00528"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00209",
+            "surface_form": "ACE",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "AFLOW",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00274"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00027",
+          "arti_00049",
+          "clai_00212",
+          "clai_00214",
+          "clai_00222",
+          "clai_00661",
+          "clai_00662",
+          "clai_00663"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00274",
+            "surface_form": "AFLOW",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Alexandria",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00369",
+          "meth_00295"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00342",
+          "clai_00360"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00295",
+            "surface_form": "Alexandria",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00369",
+            "surface_form": "Alexandria",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Bead-mapping",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "CE→MC→NN→PF",
+        "resolution_type": "COMPOSITE",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [
+          {
+            "label": "CE",
+            "resolution_type": "UNRESOLVED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "unresolved",
+            "signals": [],
+            "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": []
+          },
+          {
+            "label": "MC",
+            "resolution_type": "UNRESOLVED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "unresolved",
+            "signals": [],
+            "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": []
+          },
+          {
+            "label": "NN",
+            "resolution_type": "EVIDENCE_BACKED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "repeated_literal_evidence_not_entity_identity",
+            "signals": [
+              "repeated_whole_phrase_in_graph"
+            ],
+            "reason": "Represented by multiple literal evidence texts; no canonical entity identity asserted",
+            "canonical": false,
+            "representable": true,
+            "evidence_node_ids": [
+              "cite_00121",
+              "cite_00237",
+              "cite_00363"
+            ],
+            "candidates": []
+          },
+          {
+            "label": "PF",
+            "resolution_type": "UNRESOLVED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "unresolved",
+            "signals": [],
+            "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": []
+          }
+        ],
+        "confidence": "incomplete_or_unverified_combination",
+        "signals": [
+          "syntactic_composition"
+        ],
+        "reason": "Components resolved independently; representable only when all canonical components share article provenance; no synthetic graph node created",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": [],
+        "component_article_overlap": []
+      },
+      {
+        "label": "CGCNN",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00354",
+          "meth_00054"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00002",
+          "clai_00004",
+          "clai_00005",
+          "clai_00006",
+          "clai_00317",
+          "clai_00321",
+          "clai_00490"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00054",
+            "surface_form": "CGCNN",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00354",
+            "surface_form": "CGCNN",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "CHGNet",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00063",
+          "comp_00481",
+          "meth_00038"
+        ],
+        "node_types": [
+          "cited_work",
+          "component",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00015",
+          "clai_00065",
+          "clai_00066",
+          "clai_00067",
+          "clai_00068",
+          "clai_00069",
+          "clai_00070",
+          "clai_00071"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00038",
+            "surface_form": "CHGNet",
+            "node_type": "method"
+          },
+          {
+            "node_id": "comp_00481",
+            "surface_form": "CHGNet",
+            "node_type": "component"
+          },
+          {
+            "node_id": "cite_00063",
+            "surface_form": "CHGNet",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "ConvLSTM",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00001"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00021",
+          "clai_00024"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00001",
+            "surface_form": "ConvLSTM",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "D4FT",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "comp_00273",
+          "meth_00222"
+        ],
+        "node_types": [
+          "component",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00019",
+          "clai_00421",
+          "clai_00422",
+          "clai_00423",
+          "clai_00424",
+          "clai_00425",
+          "clai_00426",
+          "clai_00428"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00222",
+            "surface_form": "D4FT",
+            "node_type": "method"
+          },
+          {
+            "node_id": "comp_00273",
+            "surface_form": "D4FT",
+            "node_type": "component"
+          }
+        ]
+      },
+      {
+        "label": "DeePMD",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00214"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00185",
+          "clai_00283",
+          "clai_00352",
+          "clai_00475",
+          "clai_00476",
+          "clai_00485",
+          "clai_00569",
+          "clai_00570"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00214",
+            "surface_form": "DeepMD",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "DeePMD+AL",
+        "resolution_type": "COMPOSITE",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [
+          {
+            "label": "DeePMD",
+            "resolution_type": "EXACT_NODE",
+            "resolved_node_ids": [
+              "cite_00214"
+            ],
+            "node_types": [
+              "cited_work"
+            ],
+            "component_resolutions": [],
+            "confidence": "lexical_identity_proxy",
+            "signals": [
+              "Identical normalized scientific name; all node mentions retained"
+            ],
+            "reason": "Identical normalized scientific name; all node mentions retained",
+            "canonical": true,
+            "representable": true,
+            "evidence_node_ids": [
+              "clai_00185",
+              "clai_00283",
+              "clai_00352",
+              "clai_00475",
+              "clai_00476",
+              "clai_00485",
+              "clai_00569",
+              "clai_00570"
+            ],
+            "candidates": [
+              {
+                "node_id": "cite_00214",
+                "surface_form": "DeepMD",
+                "node_type": "cited_work"
+              }
+            ]
+          },
+          {
+            "label": "AL",
+            "resolution_type": "EXACT_NODE",
+            "resolved_node_ids": [
+              "data_00007"
+            ],
+            "node_types": [
+              "dataset"
+            ],
+            "component_resolutions": [],
+            "confidence": "lexical_identity_proxy",
+            "signals": [
+              "Identical normalized scientific name; all node mentions retained"
+            ],
+            "reason": "Identical normalized scientific name; all node mentions retained",
+            "canonical": true,
+            "representable": true,
+            "evidence_node_ids": [
+              "clai_00312",
+              "clai_00355"
+            ],
+            "candidates": [
+              {
+                "node_id": "data_00007",
+                "surface_form": "Al",
+                "node_type": "dataset"
+              }
+            ]
+          }
+        ],
+        "confidence": "incomplete_or_unverified_combination",
+        "signals": [
+          "syntactic_composition"
+        ],
+        "reason": "Components resolved independently; representable only when all canonical components share article provenance; no synthetic graph node created",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": [],
+        "component_article_overlap": []
+      },
+      {
+        "label": "DeepH",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00254"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00373",
+          "clai_00374",
+          "clai_00375",
+          "clai_00376",
+          "clai_00377",
+          "clai_00378",
+          "clai_00379",
+          "clai_00380"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00254",
+            "surface_form": "DeepH",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "DeepH-E3",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00255",
+          "meth_00118"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00578",
+          "clai_00579",
+          "clai_00580",
+          "clai_00581",
+          "clai_00582",
+          "clai_00583",
+          "clai_00584"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00118",
+            "surface_form": "DeepH-E3",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00255",
+            "surface_form": "DeepH‑E3",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "E(3)-equivariant GNNs",
+        "resolution_type": "ALIAS_NODE",
+        "resolved_node_ids": [
+          "cite_00120"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Only a conservative final-token singular/plural difference"
+        ],
+        "reason": "Only a conservative final-token singular/plural difference",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [],
+        "candidates": [
+          {
+            "node_id": "cite_00120",
+            "surface_form": "E(3)-equivariant GNN",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "EquiformerV2",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00050",
+          "meth_00081"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00041",
+          "clai_00363",
+          "clai_00541",
+          "clai_00588",
+          "clai_00589",
+          "clai_00590",
+          "clai_00591",
+          "clai_00592"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00081",
+            "surface_form": "EquiformerV2",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00050",
+            "surface_form": "Equiformerv2",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "GAP",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00191"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00070",
+          "clai_00194",
+          "clai_00225",
+          "clai_00226",
+          "clai_00227",
+          "clai_00228",
+          "clai_00230",
+          "clai_00231"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00191",
+            "surface_form": "GAP",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "GNN free energies",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "GNN stress fields",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "GNN+GPP",
+        "resolution_type": "COMPOSITE",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [
+          {
+            "label": "GNN",
+            "resolution_type": "AMBIGUOUS",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "multiple_identity_candidates",
+            "signals": [],
+            "reason": "Multiple distinct names share the identifier; none forced",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": [
+              {
+                "node_id": "comp_00062",
+                "surface_form": "Symmetry‑aware E(3)‑equivariant GNN energy model",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00070",
+                "surface_form": "E(3)-equivariant GNN architecture",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00072",
+                "surface_form": "Supervised training of the GNN on phase‑averaged quantities",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00311",
+                "surface_form": "End‑to‑end GNN predictor",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00314",
+                "surface_form": "GNN predictor",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00319",
+                "surface_form": "PNA-based GNN predictor",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00320",
+                "surface_form": "Alternative GNN backbones",
+                "node_type": "component"
+              },
+              {
+                "node_id": "tech_00327",
+                "surface_form": "Supervised GNN training",
+                "node_type": "technique"
+              },
+              {
+                "node_id": "comp_00375",
+                "surface_form": "Feature encoding from GNN readout",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00621",
+                "surface_form": "Static GNN",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00622",
+                "surface_form": "GNN interatomic potentials",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00651",
+                "surface_form": "Transformer blocks in GNN",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00736",
+                "surface_form": "GNN layers",
+                "node_type": "component"
+              },
+              {
+                "node_id": "comp_00788",
+                "surface_form": "Edge-based GNN architecture",
+                "node_type": "component"
+              }
+            ]
+          },
+          {
+            "label": "GPP",
+            "resolution_type": "UNRESOLVED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "unresolved",
+            "signals": [],
+            "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": []
+          }
+        ],
+        "confidence": "incomplete_or_unverified_combination",
+        "signals": [
+          "syntactic_composition"
+        ],
+        "reason": "Components resolved independently; representable only when all canonical components share article provenance; no synthetic graph node created",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": [],
+        "component_article_overlap": []
+      },
+      {
+        "label": "GNNs + ACE descriptors",
+        "resolution_type": "COMPOSITE",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [
+          {
+            "label": "GNNs",
+            "resolution_type": "EVIDENCE_BACKED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "repeated_literal_evidence_not_entity_identity",
+            "signals": [
+              "repeated_whole_phrase_in_graph"
+            ],
+            "reason": "Represented by multiple literal evidence texts; no canonical entity identity asserted",
+            "canonical": false,
+            "representable": true,
+            "evidence_node_ids": [
+              "clai_00546",
+              "futu_00153",
+              "futu_00155"
+            ],
+            "candidates": []
+          },
+          {
+            "label": "ACE descriptors",
+            "resolution_type": "UNRESOLVED",
+            "resolved_node_ids": [],
+            "node_types": [],
+            "component_resolutions": [],
+            "confidence": "unresolved",
+            "signals": [],
+            "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+            "canonical": false,
+            "representable": false,
+            "evidence_node_ids": [],
+            "candidates": []
+          }
+        ],
+        "confidence": "incomplete_or_unverified_combination",
+        "signals": [
+          "syntactic_composition"
+        ],
+        "reason": "Components resolved independently; representable only when all canonical components share article provenance; no synthetic graph node created",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": [],
+        "component_article_overlap": []
+      },
+      {
+        "label": "GNoME",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00330",
+          "comp_00589",
+          "data_00144",
+          "meth_00169"
+        ],
+        "node_types": [
+          "cited_work",
+          "component",
+          "dataset",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00274",
+          "clai_00449",
+          "clai_00467",
+          "clai_00542",
+          "clai_00544",
+          "clai_00545",
+          "clai_00547",
+          "clai_00548"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00169",
+            "surface_form": "GNoME",
+            "node_type": "method"
+          },
+          {
+            "node_id": "comp_00589",
+            "surface_form": "GNoME",
+            "node_type": "component"
+          },
+          {
+            "node_id": "data_00144",
+            "surface_form": "GNoME",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "cite_00330",
+            "surface_form": "GNoME",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "HamGNN",
+        "resolution_type": "ALIAS_NODE",
+        "resolved_node_ids": [
+          "meth_00221"
+        ],
+        "node_types": [
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Unique whole-identifier containment in entity name"
+        ],
+        "reason": "Unique whole-identifier containment in entity name",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00191",
+          "clai_00193",
+          "clai_00195",
+          "clai_00197",
+          "clai_00200"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00221",
+            "surface_form": "Universal HamGNN Hamiltonian model",
+            "node_type": "method"
+          }
+        ]
+      },
+      {
+        "label": "Hessian training",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "JARVIS-DFT",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "comp_00335"
+        ],
+        "node_types": [
+          "component"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00027",
+          "clai_00032"
+        ],
+        "candidates": [
+          {
+            "node_id": "comp_00335",
+            "surface_form": "JARVIS‑DFT",
+            "node_type": "component"
+          }
+        ]
+      },
+      {
+        "label": "LiFlow",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "meth_00239"
+        ],
+        "node_types": [
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00040",
+          "clai_00041",
+          "clai_00042",
+          "clai_00045",
+          "clai_00046",
+          "clai_00047",
+          "clai_00048",
+          "clai_00050"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00239",
+            "surface_form": "LiFlow",
+            "node_type": "method"
+          }
+        ]
+      },
+      {
+        "label": "M3GNet",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00062",
+          "comp_00482",
+          "meth_00037"
+        ],
+        "node_types": [
+          "cited_work",
+          "component",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00244",
+          "clai_00246",
+          "clai_00259",
+          "clai_00262",
+          "clai_00273",
+          "clai_00278",
+          "clai_00289",
+          "clai_00300"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00037",
+            "surface_form": "M3GNet",
+            "node_type": "method"
+          },
+          {
+            "node_id": "comp_00482",
+            "surface_form": "M3GNet",
+            "node_type": "component"
+          },
+          {
+            "node_id": "cite_00062",
+            "surface_form": "M3GNet",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "MACE",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00048"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00004",
+          "clai_00170",
+          "clai_00173",
+          "clai_00267",
+          "clai_00271",
+          "clai_00285",
+          "clai_00304",
+          "clai_00306"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00048",
+            "surface_form": "MACE",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "MACE-F",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "MEGNet",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00334",
+          "meth_00036"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00273",
+          "clai_00317",
+          "clai_00321",
+          "clai_00354",
+          "clai_00488",
+          "clai_00489",
+          "clai_00490",
+          "clai_00491"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00036",
+            "surface_form": "MEGNet",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00334",
+            "surface_form": "MEGNet",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "MLIP descriptors",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "MPtrj",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00372",
+          "data_00102"
+        ],
+        "node_types": [
+          "cited_work",
+          "dataset"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00360",
+          "clai_00540"
+        ],
+        "candidates": [
+          {
+            "node_id": "data_00102",
+            "surface_form": "MPtrj",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "cite_00372",
+            "surface_form": "MPTrj",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Matbench",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00362",
+          "comp_00448",
+          "data_00114",
+          "meth_00348"
+        ],
+        "node_types": [
+          "cited_work",
+          "component",
+          "dataset",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00011",
+          "arti_00042",
+          "clai_00065",
+          "clai_00255",
+          "clai_00306",
+          "clai_00311",
+          "clai_00312",
+          "clai_00313"
+        ],
+        "candidates": [
+          {
+            "node_id": "comp_00448",
+            "surface_form": "Matbench",
+            "node_type": "component"
+          },
+          {
+            "node_id": "data_00114",
+            "surface_form": "Matbench",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "meth_00348",
+            "surface_form": "Matbench",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00362",
+            "surface_form": "Matbench",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Matbench Discovery",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00302",
+          "data_00013",
+          "meth_00159"
+        ],
+        "node_types": [
+          "cited_work",
+          "dataset",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00011",
+          "clai_00065",
+          "clai_00343",
+          "clai_00362",
+          "clai_00363",
+          "clai_00536",
+          "clai_00626"
+        ],
+        "candidates": [
+          {
+            "node_id": "data_00013",
+            "surface_form": "Matbench Discovery",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "meth_00159",
+            "surface_form": "Matbench Discovery",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00302",
+            "surface_form": "Matbench discovery",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Materials Project",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00018",
+          "data_00061",
+          "meth_00143"
+        ],
+        "node_types": [
+          "cited_work",
+          "dataset",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00032",
+          "clai_00008",
+          "clai_00009",
+          "clai_00011",
+          "clai_00013",
+          "clai_00014",
+          "clai_00015",
+          "clai_00017"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00143",
+            "surface_form": "Materials Project",
+            "node_type": "method"
+          },
+          {
+            "node_id": "data_00061",
+            "surface_form": "Materials Project",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "cite_00018",
+            "surface_form": "Materials Project",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "MatterSim",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00060",
+          "meth_00091"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00459"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00091",
+            "surface_form": "MatterSim",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00060",
+            "surface_form": "MatterSim",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "NequIP",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00049",
+          "meth_00058"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00182",
+          "clai_00183",
+          "clai_00184",
+          "clai_00185",
+          "clai_00189",
+          "clai_00190",
+          "clai_00304",
+          "clai_00473"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00058",
+            "surface_form": "NequIP",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00049",
+            "surface_form": "NequIP",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "OMat24",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00311",
+          "data_00101"
+        ],
+        "node_types": [
+          "cited_work",
+          "dataset"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00039",
+          "clai_00092",
+          "clai_00104",
+          "clai_00105",
+          "clai_00106",
+          "clai_00107",
+          "clai_00113",
+          "clai_00114"
+        ],
+        "candidates": [
+          {
+            "node_id": "data_00101",
+            "surface_form": "OMat24",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "cite_00311",
+            "surface_form": "OMat24",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "OQMD",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00370",
+          "data_00095"
+        ],
+        "node_types": [
+          "cited_work",
+          "dataset"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00026",
+          "clai_00651",
+          "clai_00652",
+          "clai_00653",
+          "clai_00656",
+          "clai_00659"
+        ],
+        "candidates": [
+          {
+            "node_id": "data_00095",
+            "surface_form": "OQMD",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "cite_00370",
+            "surface_form": "OQMD",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "Orb",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00011"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00271",
+          "clai_00541"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00011",
+            "surface_form": "Orb",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "PET",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00044"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00090",
+          "clai_00094"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00044",
+            "surface_form": "PET",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "SchNet",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00005",
+          "meth_00050"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00002",
+          "clai_00079",
+          "clai_00080",
+          "clai_00081",
+          "clai_00082",
+          "clai_00083",
+          "clai_00084",
+          "clai_00088"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00050",
+            "surface_form": "SchNet",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00005",
+            "surface_form": "SchNet",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "SevenNet",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00054"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00238",
+          "clai_00241",
+          "clai_00242",
+          "clai_00250",
+          "clai_00333",
+          "clai_00343",
+          "clai_00346",
+          "clai_00437"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00054",
+            "surface_form": "SevenNet",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "UMA",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00046"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "arti_00040",
+          "clai_00624",
+          "clai_00626",
+          "clai_00628",
+          "clai_00630",
+          "clai_00632",
+          "clai_00633",
+          "clai_00634"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00046",
+            "surface_form": "UMA",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "VGNN",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00409"
+        ],
+        "node_types": [
+          "cited_work"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00609",
+          "clai_00611"
+        ],
+        "candidates": [
+          {
+            "node_id": "cite_00409",
+            "surface_form": "VGNN",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "WBM",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00376",
+          "data_00175"
+        ],
+        "node_types": [
+          "cited_work",
+          "dataset"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00372",
+          "clai_00533",
+          "clai_00541"
+        ],
+        "candidates": [
+          {
+            "node_id": "data_00175",
+            "surface_form": "WBM",
+            "node_type": "dataset"
+          },
+          {
+            "node_id": "cite_00376",
+            "surface_form": "WBM",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "eSEN",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00053",
+          "meth_00293"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00120",
+          "clai_00363",
+          "clai_00369",
+          "clai_00371"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00293",
+            "surface_form": "eSEN",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00053",
+            "surface_form": "eSEN",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "hybrid frameworks",
+        "resolution_type": "UNRESOLVED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "unresolved",
+        "signals": [],
+        "reason": "No canonical name; insufficient repeated evidence (semantic relatedness alone cannot certify identity)",
+        "canonical": false,
+        "representable": false,
+        "evidence_node_ids": [],
+        "candidates": []
+      },
+      {
+        "label": "physics-informed",
+        "resolution_type": "EVIDENCE_BACKED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "repeated_literal_evidence_not_entity_identity",
+        "signals": [
+          "repeated_whole_phrase_in_graph"
+        ],
+        "reason": "Represented by multiple literal evidence texts; no canonical entity identity asserted",
+        "canonical": false,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00407",
+          "clai_00456"
+        ],
+        "candidates": []
+      },
+      {
+        "label": "symbolic regression",
+        "resolution_type": "EXACT_NODE",
+        "resolved_node_ids": [
+          "cite_00016",
+          "meth_00068"
+        ],
+        "node_types": [
+          "cited_work",
+          "method"
+        ],
+        "component_resolutions": [],
+        "confidence": "lexical_identity_proxy",
+        "signals": [
+          "Identical normalized scientific name; all node mentions retained"
+        ],
+        "reason": "Identical normalized scientific name; all node mentions retained",
+        "canonical": true,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00061",
+          "clai_00063"
+        ],
+        "candidates": [
+          {
+            "node_id": "meth_00068",
+            "surface_form": "symbolic regression",
+            "node_type": "method"
+          },
+          {
+            "node_id": "cite_00016",
+            "surface_form": "Symbolic Regression",
+            "node_type": "cited_work"
+          }
+        ]
+      },
+      {
+        "label": "xDeepH",
+        "resolution_type": "EVIDENCE_BACKED",
+        "resolved_node_ids": [],
+        "node_types": [],
+        "component_resolutions": [],
+        "confidence": "repeated_literal_evidence_not_entity_identity",
+        "signals": [
+          "repeated_whole_phrase_in_graph"
+        ],
+        "reason": "Represented by multiple literal evidence texts; no canonical entity identity asserted",
+        "canonical": false,
+        "representable": true,
+        "evidence_node_ids": [
+          "clai_00201",
+          "clai_00202",
+          "clai_00203",
+          "clai_00204",
+          "clai_00205",
+          "clai_00210",
+          "futu_00060"
+        ],
+        "candidates": []
+      }
+    ],
+    "unique": {
+      "total": 50,
+      "by_state": {
+        "EXACT_NODE": 35,
+        "UNRESOLVED": 7,
+        "COMPOSITE": 4,
+        "ALIAS_NODE": 2,
+        "EVIDENCE_BACKED": 2
+      },
+      "canonical": 37,
+      "representable": 39
+    },
+    "instances": {
+      "total": 63,
+      "by_state": {
+        "EXACT_NODE": 48,
+        "ALIAS_NODE": 2,
+        "EVIDENCE_BACKED": 2,
+        "UNRESOLVED": 7,
+        "COMPOSITE": 4
+      },
+      "canonical": 50,
+      "representable": 52
+    }
+  }
+}

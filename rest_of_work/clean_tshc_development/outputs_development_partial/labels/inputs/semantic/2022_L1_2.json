@@ -1,0 +1,390 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00014",
+      "type": "article",
+      "surface_form": "A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+    },
+    {
+      "id": "arti_00021",
+      "type": "article",
+      "surface_form": "Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals"
+    },
+    {
+      "id": "arti_00023",
+      "type": "article",
+      "surface_form": "Linking atomic structural defects to mesoscale properties in crystalline solids using graph neural networks"
+    },
+    {
+      "id": "arti_00030",
+      "type": "article",
+      "surface_form": "Using Deep Learning to Predict Fracture Patterns in Crystalline Solids"
+    },
+    {
+      "id": "cite_00125",
+      "type": "cited_work",
+      "surface_form": "Molecular Graph Convolution"
+    },
+    {
+      "id": "cite_00129",
+      "type": "cited_work",
+      "surface_form": "Spectral Graph Convolution"
+    },
+    {
+      "id": "cite_00140",
+      "type": "cited_work",
+      "surface_form": "Molecular Graph Convolutions (GC)"
+    },
+    {
+      "id": "cite_00500",
+      "type": "cited_work",
+      "surface_form": "Crystal Graph Convolutional Neural Network"
+    },
+    {
+      "id": "clai_00002",
+      "type": "claim",
+      "surface_form": "CGCNN classifies metals versus semiconductors with an area under the ROC curve of 0.95 and an overall accuracy of 0.90."
+    },
+    {
+      "id": "clai_00004",
+      "type": "claim",
+      "surface_form": "When applied to a set of 1,585 crystals with elastic properties, CGCNN predicts bulk modulus with a mean absolute error of 0.077 log(GPa) and shear modulus with a mean absolute error of 0.114 log(GPa), demonstrating good generalization."
+    },
+    {
+      "id": "clai_00138",
+      "type": "claim",
+      "surface_form": "Learning directly from molecular graphs without handcrafted descriptors enables the MPNN to achieve lower prediction errors than descriptor‑based methods."
+    },
+    {
+      "id": "clai_00140",
+      "type": "claim",
+      "surface_form": "For internal energy at 0 K (U0), enthalpy (H), Gibbs free energy (G), heat capacity at constant volume (Cv), and highest vibrational frequency (Ω), the MPNN records lower mean absolute errors than SchNet and DTNN (U0 MAE 0.45 vs 0.55/0.72; H 0.39 vs 0.59/0.80; G 0.44 vs 0.55/0.74; Cv 0.80 vs 0.99/1.71; Ω 0.19 vs 0.41/0.78)."
+    },
+    {
+      "id": "clai_00495",
+      "type": "claim",
+      "surface_form": "Graph networks constitute a universal machine‑learning framework that can accurately predict properties for both molecules and crystals."
+    },
+    {
+      "id": "clai_00559",
+      "type": "claim",
+      "surface_form": "The GNN reproduces the linear decrease of Young’s modulus with vacancy concentration in porous graphene, matching MD results and yielding the fitted relation E = 823.7 − 5635.6·Cv (GPa)."
+    },
+    {
+      "id": "clai_00560",
+      "type": "claim",
+      "surface_form": "In polycrystalline aluminum, the GNN predicts atomic potential energy with a mean normalized relative error of 11.0% (maximum ≈13%) and achieves R² = 0.99 for mean potential energy versus grain number."
+    },
+    {
+      "id": "clai_00561",
+      "type": "claim",
+      "surface_form": "Including tensile strain as an input node feature enables the GNN to accurately predict stress evolution during loading, reproducing nonlinear strain‑stress curves for porous graphene."
+    },
+    {
+      "id": "clai_00562",
+      "type": "claim",
+      "surface_form": "The GNN’s stress predictions are substantially more accurate than on‑the‑fly stress calculations from the force field, which exhibit higher errors."
+    },
+    {
+      "id": "clai_00564",
+      "type": "claim",
+      "surface_form": "Coupling the GNN with a genetic algorithm efficiently discovers optimal holey graphene designs (e.g., arrow‑shaped hole patterns) that achieve significantly lower stress concentration than suboptimal designs, using only ~800 stress evaluations—an order of magnitude fewer than brute‑force search—and reliably locates the global minimum in most of 1,000 random initializations."
+    },
+    {
+      "id": "clai_00565",
+      "type": "claim",
+      "surface_form": "The GNN respects physical constraints, accurately capturing derivative properties such as stress fields that obey underlying physical laws, and predicts global properties (Young’s modulus, total potential energy) that follow known physical relationships and match MD results across different crystalline systems."
+    },
+    {
+      "id": "clai_00684",
+      "type": "claim",
+      "surface_form": "Empirical potentials (Tersoff/Brenner) cannot describe interlayer spacing in graphite due to short-range cutoff being less than c/2, provide poor description of carbon surfaces, and yield much lower surface energies than GAP and DFT for ta-C surfaces."
+    },
+    {
+      "id": "clai_00685",
+      "type": "claim",
+      "surface_form": "Diamond exhibits strong force locality with force deviations vanishing practically at rfix = 5.5 Å, while graphite is highly nonlocal with larger force deviations that do not decay as rapidly."
+    },
+    {
+      "id": "comp_00205",
+      "type": "component",
+      "surface_form": "Graph convolution block"
+    },
+    {
+      "id": "comp_00265",
+      "type": "component",
+      "surface_form": "Graph convolution layer"
+    },
+    {
+      "id": "comp_00561",
+      "type": "component",
+      "surface_form": "CGCNN model for elastic properties"
+    },
+    {
+      "id": "data_00009",
+      "type": "dataset",
+      "surface_form": "graphene"
+    },
+    {
+      "id": "data_00056",
+      "type": "dataset",
+      "surface_form": "Graphene 6×6 supercell"
+    },
+    {
+      "id": "data_00059",
+      "type": "dataset",
+      "surface_form": "twisted bilayer graphene"
+    },
+    {
+      "id": "data_00090",
+      "type": "dataset",
+      "surface_form": "Polycrystalline graphene"
+    },
+    {
+      "id": "data_00091",
+      "type": "dataset",
+      "surface_form": "Porous graphene membranes"
+    },
+    {
+      "id": "futu_00001",
+      "type": "future_topic",
+      "surface_form": "Application of CGCNN to additional material classes beyond perovskites"
+    },
+    {
+      "id": "futu_00002",
+      "type": "future_topic",
+      "surface_form": "Integration of CGCNN predictions with experimental validation pipelines"
+    },
+    {
+      "id": "futu_00173",
+      "type": "future_topic",
+      "surface_form": "Developing linear‑scaling IAPs based on graph deep learning for large‑scale molecular dynamics simulations of complex materials"
+    },
+    {
+      "id": "meth_00005",
+      "type": "method",
+      "surface_form": "Graph Convolutional Network"
+    },
+    {
+      "id": "meth_00049",
+      "type": "method",
+      "surface_form": "Spectral graph convolution"
+    },
+    {
+      "id": "meth_00056",
+      "type": "method",
+      "surface_form": "Crystal Graph Convolutional Neural Network"
+    },
+    {
+      "id": "meth_00232",
+      "type": "method",
+      "surface_form": "Graph Neural Network for atomic property prediction in defective crystalline solids"
+    },
+    {
+      "id": "prob_00182",
+      "type": "problem",
+      "surface_form": "Design optimization of holey graphene"
+    },
+    {
+      "id": "prob_00601",
+      "type": "problem",
+      "surface_form": "Interlayer spacing in graphite"
+    },
+    {
+      "id": "task_00218",
+      "type": "task",
+      "surface_form": "Design optimization of porous/holey graphene membranes"
+    },
+    {
+      "id": "task_00221",
+      "type": "task",
+      "surface_form": "Holey graphene design optimization"
+    },
+    {
+      "id": "tech_00052",
+      "type": "technique",
+      "surface_form": "Graph convolution"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 4,
+    "cited_work": 4,
+    "claim": 13,
+    "component": 3,
+    "dataset": 5,
+    "future_topic": 3,
+    "method": 4,
+    "problem": 2,
+    "task": 2,
+    "technique": 1
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00331",
+      "relation_type": "presents",
+      "members": [
+        "arti_00023",
+        "meth_00232"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      }
+    },
+    {
+      "id": "h_01101",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00495"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01165",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00559"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01166",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00560"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01167",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00561"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01168",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00562"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01170",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00564"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_01171",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00565"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "theoretical",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "graphene",
+  "representative_ids": [
+    "data_00009",
+    "meth_00056"
+  ]
+}

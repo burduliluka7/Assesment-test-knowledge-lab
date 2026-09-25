@@ -1,0 +1,43 @@
+{
+  "description": "Prescribed event cases, not an empirical clustering result",
+  "split": {
+    "previous": [
+      [
+        "n0",
+        "n2",
+        "n4",
+        "n6"
+      ]
+    ],
+    "current": [
+      [
+        "n0",
+        "n2"
+      ],
+      [
+        "n4",
+        "n6"
+      ]
+    ]
+  },
+  "merge": {
+    "previous": [
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n5",
+        "n7"
+      ]
+    ],
+    "current": [
+      [
+        "n1",
+        "n3",
+        "n5",
+        "n7"
+      ]
+    ]
+  }
+}

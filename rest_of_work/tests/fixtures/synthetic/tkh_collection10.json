@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "synthetic": true,
+    "date_semantics": {
+      "node_first_seen_year": "earliest corpus mention",
+      "edge_year": "fact year",
+      "provenance_article_year": "asserting paper year"
+    }
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "type": "method",
+      "surface_form": "graph neural learning topic 0",
+      "year": 2020,
+      "origin_year": null,
+      "first_seen_year": 2020,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n1",
+      "type": "method",
+      "surface_form": "quantum atomic potentials topic 1",
+      "year": 2020,
+      "origin_year": null,
+      "first_seen_year": 2020,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n2",
+      "type": "method",
+      "surface_form": "graph neural learning topic 2",
+      "year": 2020,
+      "origin_year": null,
+      "first_seen_year": 2020,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n3",
+      "type": "method",
+      "surface_form": "quantum atomic potentials topic 3",
+      "year": 2020,
+      "origin_year": null,
+      "first_seen_year": 2020,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n4",
+      "type": "method",
+      "surface_form": "graph neural learning topic 4",
+      "year": 2020,
+      "origin_year": null,
+      "first_seen_year": 2020,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n5",
+      "type": "method",
+      "surface_form": "quantum atomic potentials topic 5",
+      "year": 2020,
+      "origin_year": null,
+      "first_seen_year": 2020,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n6",
+      "type": "method",
+      "surface_form": "graph neural learning topic 6",
+      "year": 2020,
+      "origin_year": null,
+      "first_seen_year": 2020,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n7",
+      "type": "method",
+      "surface_form": "quantum atomic potentials topic 7",
+      "year": 2020,
+      "origin_year": null,
+      "first_seen_year": 2020,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n8",
+      "type": "method",
+      "surface_form": "graph neural learning topic 8",
+      "year": 2022,
+      "origin_year": null,
+      "first_seen_year": 2022,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n9",
+      "type": "method",
+      "surface_form": "quantum atomic potentials topic 9",
+      "year": 2022,
+      "origin_year": null,
+      "first_seen_year": 2022,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n10",
+      "type": "method",
+      "surface_form": "graph neural learning topic 10",
+      "year": 1990,
+      "origin_year": 1990,
+      "first_seen_year": 2022,
+      "last_seen_year": 2022,
+      "provenance": {}
+    },
+    {
+      "id": "n11",
+      "type": "method",
+      "surface_form": "quantum atomic potentials topic 11",
+      "year": 2022,
+      "origin_year": null,
+      "first_seen_year": 2022,
+      "last_seen_year": 2022,
+      "provenance": {}
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "e0",
+      "relation_type": "uses_technique",
+      "members": [
+        "n0",
+        "n2",
+        "n4",
+        "n6"
+      ],
+      "year": 2020,
+      "provenance": {
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "e1",
+      "relation_type": "uses_technique",
+      "members": [
+        "n1",
+        "n3",
+        "n5",
+        "n7"
+      ],
+      "year": 2020,
+      "provenance": {
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "e2",
+      "relation_type": "uses_technique",
+      "members": [
+        "n6",
+        "n7"
+      ],
+      "year": 2020,
+      "provenance": {
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "e3",
+      "relation_type": "uses_technique",
+      "members": [
+        "n0",
+        "n8",
+        "n10"
+      ],
+      "year": 2022,
+      "provenance": {
+        "article_year": 2022
+      }
+    },
+    {
+      "id": "e4",
+      "relation_type": "uses_technique",
+      "members": [
+        "n1",
+        "n8",
+        "n9",
+        "n11"
+      ],
+      "year": 2022,
+      "provenance": {
+        "article_year": 2022
+      }
+    },
+    {
+      "id": "future_assertion",
+      "relation_type": "claims",
+      "members": [
+        "n0",
+        "n10"
+      ],
+      "year": 1999,
+      "provenance": {
+        "article_year": 2022
+      }
+    }
+  ]
+}

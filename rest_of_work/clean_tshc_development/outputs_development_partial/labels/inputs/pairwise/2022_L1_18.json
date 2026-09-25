@@ -1,0 +1,35 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00644",
+      "type": "claim",
+      "surface_form": "A single universal M3GNet model trained simultaneously on six elements attains error metrics comparable to element‑specific M3GNet models."
+    },
+    {
+      "id": "clai_00647",
+      "type": "claim",
+      "surface_form": "On the MD17 and MD17‑CCSD(T) molecular force‑field benchmarks, M3GNet achieves lower energy and force errors than the Embedded Atom Neural Network and comparable accuracy to state‑of‑the‑art message‑passing and equivariant neural networks; when benchmarked against quantum‑accurate CCSD/CCSD(T) data, it attains state‑of‑the‑art accuracy for several molecules."
+    },
+    {
+      "id": "clai_00648",
+      "type": "claim",
+      "surface_form": "Across nine MatBench structural property datasets, M3GNet yields lower mean absolute errors than MODNet, AtomSets‑V1, MEGNet, and AutoMatminer, with improvements of 20.5 %–41.3 % on large datasets such as perovskite formation energy and MP band gap, and demonstrates excellent prediction accuracy on the broader MatBench suite."
+    },
+    {
+      "id": "clai_00649",
+      "type": "claim",
+      "surface_form": "For a MgO test set, M3GNet outperforms Moment Tensor Potentials in extrapolating equation‑of‑state behavior beyond the training regime and exhibits long‑range interaction characteristics similar to a Buckingham + Coulomb model."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "m3gnet",
+  "representative_ids": [
+    "clai_00648",
+    "clai_00644"
+  ]
+}

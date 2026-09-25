@@ -1,0 +1,118 @@
+{
+  "status": "RECOVERED",
+  "ordinary_full_run": false,
+  "reason": "Null DOI caused evaluation-only source alignment failure after all experiments and predictions completed.",
+  "replayed_artifacts": [
+    {
+      "path": "outputs_verified\\perturbations\\semantic_11.json",
+      "sha256": "16156cb43b429b5db5476429d90e485986d61486b53f0f0fd4d5586eebf25f60"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\semantic_23.json",
+      "sha256": "eba28b3db63aeb5d6b28414f265444b7079e07f651b85a8fa0a1fdc510484b87"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\semantic_37.json",
+      "sha256": "4b764a78ebb3586456743cdeb9d6eb588b6bb75c3db07053062e8c012fadf190"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\semantic_53.json",
+      "sha256": "c29e30cd11143868fc807c296a8755a6dfabfada639e49d3319e09aed9dba2c7"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\semantic_71.json",
+      "sha256": "b902687348447f50faa4a5921067b24ea74cddeeeeafea0d1976d65d18ab4c01"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\pairwise_11.json",
+      "sha256": "2a4dcc22e6aef15ee31be635aad5b4483438a6ceb490595af337c362188824be"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\pairwise_23.json",
+      "sha256": "06ade239f5dac0cee09b6b14e44c3a846ed65a7b2c8c05851cdb4a8563d2814d"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\pairwise_37.json",
+      "sha256": "2e72560fdb86c1dc2dad18f76dee75c3a5849ce6ec637a47f5e1fa00ff0f17f9"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\pairwise_53.json",
+      "sha256": "7cf2db41cf043a7ee9e94a857bc67fd818806da28106d261711571d0710628a5"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\pairwise_71.json",
+      "sha256": "184c26701701ae9b4c54568d4f74d4cb4865f55d0fc07b47caa83d641872e05e"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\static_11.json",
+      "sha256": "d1032652eac5e885a9b3d96d23e522042d54fc79b063d33511e38ebd48132c42"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\static_23.json",
+      "sha256": "532f503b9024d2981f9810bafe126d9969d68f6147904a801467b73ae075b52d"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\static_37.json",
+      "sha256": "a96713b2b62591be1967239598aff9662200378d41806aa1d4cbb4f255cbd06a"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\static_53.json",
+      "sha256": "54bebe2c199a73db640599b430f523441d25ef55b8296a5ada2e497c5f04d520"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\static_71.json",
+      "sha256": "468fac2792611881c7b9dbad93d675929ffa7decc5cbd46f09c9c096fa33e387"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\temporal_11.json",
+      "sha256": "3c5f1d20ea38fb71bdc11d909ff4417b3711664c52da8674cb921d35a1f59199"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\temporal_23.json",
+      "sha256": "c713f30a3f03467170dc2a1ceb0c8edfb17829a24e318cb327bdbe7e8993ce28"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\temporal_37.json",
+      "sha256": "7beaea625384a0be96bbba3aa01a5eda6967249c6f4ff3bb249b84250501e3dc"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\temporal_53.json",
+      "sha256": "a583ecf8616c4dfc1e5fffcc29aaa8352f435d5daf2f4530edc2a21c545b142f"
+    },
+    {
+      "path": "outputs_verified\\perturbations\\temporal_71.json",
+      "sha256": "d578c5563e6272d7ac2c33a6f31cab581d66b9ff1725ec35911935ca427cf68e"
+    },
+    {
+      "path": "outputs_verified\\sensitivity\\alpha_0.25.json",
+      "sha256": "87a5e37561497f97aaa394431c04651999a4898e6c998bda1bd12ff48934511d"
+    },
+    {
+      "path": "outputs_verified\\sensitivity\\alpha_0.75.json",
+      "sha256": "17be51ed9d32777feaa20b3fe3b7dbcd9bc4da220f3e1b76ffb919b781398932"
+    },
+    {
+      "path": "outputs_verified\\sensitivity\\lambda_0.json",
+      "sha256": "c1e8a9f48c500ad1d2c538220b3d030c7805d164c0f7ee75bd8f446bfe8b467b"
+    },
+    {
+      "path": "outputs_verified\\sensitivity\\lambda_0.1.json",
+      "sha256": "b5fbf3794d416d2881af1d215fa24ca0b948c692715eab6b22974bbc10c4f951"
+    },
+    {
+      "path": "outputs_verified\\sensitivity\\lambda_0.4.json",
+      "sha256": "ed94a5fb1919d8ac02834579dc25ca66d145d84061f84e3eb95e338b731b6eeb"
+    },
+    {
+      "path": "outputs_verified\\sensitivity\\knn_k_5.json",
+      "sha256": "8269f00cbe670a0d22b1926b389536ff6e22a5f9bf4974698784562960735b07"
+    },
+    {
+      "path": "outputs_verified\\sensitivity\\knn_k_20.json",
+      "sha256": "dd80ca9a4b671af705c5498f9197a842d8bdcf811bfe567670a57fdbab797cb2"
+    }
+  ],
+  "label_probabilities_unchanged": true,
+  "predictions_unchanged": true,
+  "recovery_seconds": 372.98097439995036
+}

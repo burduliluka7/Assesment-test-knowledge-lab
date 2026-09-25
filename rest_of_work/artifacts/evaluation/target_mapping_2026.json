@@ -1,0 +1,3362 @@
+[
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "MACE",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00048"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00048",
+        "node_type": "cited_work",
+        "surface_form": "MACE"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "M3GNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00037",
+      "comp_00482",
+      "cite_00062"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00037",
+        "node_type": "method",
+        "surface_form": "M3GNet"
+      },
+      {
+        "node_id": "comp_00482",
+        "node_type": "component",
+        "surface_form": "M3GNet"
+      },
+      {
+        "node_id": "cite_00062",
+        "node_type": "cited_work",
+        "surface_form": "M3GNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "CHGNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00038",
+      "comp_00481",
+      "cite_00063"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00038",
+        "node_type": "method",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "comp_00481",
+        "node_type": "component",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "cite_00063",
+        "node_type": "cited_work",
+        "surface_form": "CHGNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "GAP",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00191"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00191",
+        "node_type": "cited_work",
+        "surface_form": "GAP"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "NequIP",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00058",
+      "cite_00049"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00058",
+        "node_type": "method",
+        "surface_form": "NequIP"
+      },
+      {
+        "node_id": "cite_00049",
+        "node_type": "cited_work",
+        "surface_form": "NequIP"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "ACE",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00209"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00209",
+        "node_type": "cited_work",
+        "surface_form": "ACE"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "EquiformerV2",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00081",
+      "cite_00050"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00081",
+        "node_type": "method",
+        "surface_form": "EquiformerV2"
+      },
+      {
+        "node_id": "cite_00050",
+        "node_type": "cited_work",
+        "surface_form": "Equiformerv2"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "DeepH",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00254"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00254",
+        "node_type": "cited_work",
+        "surface_form": "DeepH"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "D4FT",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00222",
+      "comp_00273"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00222",
+        "node_type": "method",
+        "surface_form": "D4FT"
+      },
+      {
+        "node_id": "comp_00273",
+        "node_type": "component",
+        "surface_form": "D4FT"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "HamGNN",
+    "status": "safe_alias",
+    "mapping_rule": "whole_identifier_containment",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00221"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00221",
+        "node_type": "method",
+        "surface_form": "Universal HamGNN Hamiltonian model"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "SOAP-GAP",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "Allegro",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00115",
+      "cite_00112"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00115",
+        "node_type": "method",
+        "surface_form": "Allegro"
+      },
+      {
+        "node_id": "cite_00112",
+        "node_type": "cited_work",
+        "surface_form": "Allegro"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "tabGAP",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "DeepH",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00254"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00254",
+        "node_type": "cited_work",
+        "surface_form": "DeepH"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "D4FT",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00222",
+      "comp_00273"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00222",
+        "node_type": "method",
+        "surface_form": "D4FT"
+      },
+      {
+        "node_id": "comp_00273",
+        "node_type": "component",
+        "surface_form": "D4FT"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "HamGNN",
+    "status": "safe_alias",
+    "mapping_rule": "whole_identifier_containment",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00221"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00221",
+        "node_type": "method",
+        "surface_form": "Universal HamGNN Hamiltonian model"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "MACE",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00048"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00048",
+        "node_type": "cited_work",
+        "surface_form": "MACE"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "NequIP",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00058",
+      "cite_00049"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00058",
+        "node_type": "method",
+        "surface_form": "NequIP"
+      },
+      {
+        "node_id": "cite_00049",
+        "node_type": "cited_work",
+        "surface_form": "NequIP"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "CHGNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00038",
+      "comp_00481",
+      "cite_00063"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00038",
+        "node_type": "method",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "comp_00481",
+        "node_type": "component",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "cite_00063",
+        "node_type": "cited_work",
+        "surface_form": "CHGNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "DeepH-E3",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00118",
+      "cite_00255"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00118",
+        "node_type": "method",
+        "surface_form": "DeepH-E3"
+      },
+      {
+        "node_id": "cite_00255",
+        "node_type": "cited_work",
+        "surface_form": "DeepH‑E3"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "xDeepH",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "DeepH-2",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "DeepH-r",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q3",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "xDeepH",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q3",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "DeepH-E3",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00118",
+      "cite_00255"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00118",
+        "node_type": "method",
+        "surface_form": "DeepH-E3"
+      },
+      {
+        "node_id": "cite_00255",
+        "node_type": "cited_work",
+        "surface_form": "DeepH‑E3"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q3",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "MACE",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00048"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00048",
+        "node_type": "cited_work",
+        "surface_form": "MACE"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q3",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "D4FT",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00222",
+      "comp_00273"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00222",
+        "node_type": "method",
+        "surface_form": "D4FT"
+      },
+      {
+        "node_id": "comp_00273",
+        "node_type": "component",
+        "surface_form": "D4FT"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q3",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "HamGNN",
+    "status": "safe_alias",
+    "mapping_rule": "whole_identifier_containment",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00221"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00221",
+        "node_type": "method",
+        "surface_form": "Universal HamGNN Hamiltonian model"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q3",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "DeepH (original, non-equivariant)",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q3",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "DeepH-2",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q3",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "DeepH-r",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q4",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "Hessian training",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q4",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "VGNN",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00409"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00409",
+        "node_type": "cited_work",
+        "surface_form": "VGNN"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q4",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "MACE-F",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q4",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "DeePMD",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00214"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00214",
+        "node_type": "cited_work",
+        "surface_form": "DeepMD"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q4",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "CHGNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00038",
+      "comp_00481",
+      "cite_00063"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00038",
+        "node_type": "method",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "comp_00481",
+        "node_type": "component",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "cite_00063",
+        "node_type": "cited_work",
+        "surface_form": "CHGNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q4",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "M3GNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00037",
+      "comp_00482",
+      "cite_00062"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00037",
+        "node_type": "method",
+        "surface_form": "M3GNet"
+      },
+      {
+        "node_id": "comp_00482",
+        "node_type": "component",
+        "surface_form": "M3GNet"
+      },
+      {
+        "node_id": "cite_00062",
+        "node_type": "cited_work",
+        "surface_form": "M3GNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q4",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "PhonNN",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q4",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "force-constant MLIPs",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q5",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "Bead-mapping",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q5",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "GNN+GPP",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q5",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "DeepH",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00254"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00254",
+        "node_type": "cited_work",
+        "surface_form": "DeepH"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q5",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "MACE",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00048"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00048",
+        "node_type": "cited_work",
+        "surface_form": "MACE"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q5",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "CHGNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00038",
+      "comp_00481",
+      "cite_00063"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00038",
+        "node_type": "method",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "comp_00481",
+        "node_type": "component",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "cite_00063",
+        "node_type": "cited_work",
+        "surface_form": "CHGNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q5",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "CGSchNet",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q5",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "DimeNet-CG",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q5",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "force-matching CG",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q6",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "DeePMD+AL",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q6",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "LiFlow",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00239"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00239",
+        "node_type": "method",
+        "surface_form": "LiFlow"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q6",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "MLIP descriptors",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q6",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "MACE (general)",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q6",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "CHGNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00038",
+      "comp_00481",
+      "cite_00063"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00038",
+        "node_type": "method",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "comp_00481",
+        "node_type": "component",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "cite_00063",
+        "node_type": "cited_work",
+        "surface_form": "CHGNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q6",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "xDeepH",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q6",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "CGMD for SSE",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q6",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "AIMD+ML",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q6",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "GNoME screening",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q7",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "GNN free energies",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q7",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "symbolic regression",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00068",
+      "cite_00016"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00068",
+        "node_type": "method",
+        "surface_form": "symbolic regression"
+      },
+      {
+        "node_id": "cite_00016",
+        "node_type": "cited_work",
+        "surface_form": "Symbolic Regression"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q7",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "DeepH",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00254"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00254",
+        "node_type": "cited_work",
+        "surface_form": "DeepH"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q7",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "MACE (for MLIPs)",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q7",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "LiFlow",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00239"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00239",
+        "node_type": "method",
+        "surface_form": "LiFlow"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q7",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "random forest + DFT screening",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q7",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "GNoME + active learning",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q7",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "Bayesian optimization for phase screening",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q8",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "ConvLSTM",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00001"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00001",
+        "node_type": "cited_work",
+        "surface_form": "ConvLSTM"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q8",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "GNN stress fields",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q8",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "DeepH",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00254"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00254",
+        "node_type": "cited_work",
+        "surface_form": "DeepH"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q8",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "CHGNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00038",
+      "comp_00481",
+      "cite_00063"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00038",
+        "node_type": "method",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "comp_00481",
+        "node_type": "component",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "cite_00063",
+        "node_type": "cited_work",
+        "surface_form": "CHGNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q8",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "LiFlow",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00239"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00239",
+        "node_type": "method",
+        "surface_form": "LiFlow"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q8",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "FEM-only fracture simulation",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q8",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "CGCNN for fracture",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q8",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "PINNs for crack propagation",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "E(3)-equivariant GNNs",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "physics-informed",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "NequIP",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00058",
+      "cite_00049"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00058",
+        "node_type": "method",
+        "surface_form": "NequIP"
+      },
+      {
+        "node_id": "cite_00049",
+        "node_type": "cited_work",
+        "surface_form": "NequIP"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "LiFlow",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00239"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00239",
+        "node_type": "method",
+        "surface_form": "LiFlow"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "ConvLSTM",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00001"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00001",
+        "node_type": "cited_work",
+        "surface_form": "ConvLSTM"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "symbolic regression",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00068",
+      "cite_00016"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00068",
+        "node_type": "method",
+        "surface_form": "symbolic regression"
+      },
+      {
+        "node_id": "cite_00016",
+        "node_type": "cited_work",
+        "surface_form": "Symbolic Regression"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "invariant GNNs (scalar-only)",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "HDNNP without equivariance",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "Allegro",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00115",
+      "cite_00112"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00115",
+        "node_type": "method",
+        "surface_form": "Allegro"
+      },
+      {
+        "node_id": "cite_00112",
+        "node_type": "cited_work",
+        "surface_form": "Allegro"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "PaiNN",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00078",
+      "cite_00210"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00078",
+        "node_type": "method",
+        "surface_form": "PaiNN"
+      },
+      {
+        "node_id": "cite_00210",
+        "node_type": "cited_work",
+        "surface_form": "PaiNN"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "GNNs + ACE descriptors",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "SchNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00050",
+      "cite_00005"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00050",
+        "node_type": "method",
+        "surface_form": "SchNet"
+      },
+      {
+        "node_id": "cite_00005",
+        "node_type": "cited_work",
+        "surface_form": "SchNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "DeepH",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00254"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00254",
+        "node_type": "cited_work",
+        "surface_form": "DeepH"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "LiFlow",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00239"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00239",
+        "node_type": "method",
+        "surface_form": "LiFlow"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "ConvLSTM",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00001"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00001",
+        "node_type": "cited_work",
+        "surface_form": "ConvLSTM"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "Coulomb matrix",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00133"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00133",
+        "node_type": "cited_work",
+        "surface_form": "Coulomb Matrix"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "SOAP alone without GNN",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "MEGNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00036",
+      "cite_00334"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00036",
+        "node_type": "method",
+        "surface_form": "MEGNet"
+      },
+      {
+        "node_id": "cite_00334",
+        "node_type": "cited_work",
+        "surface_form": "MEGNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "DimeNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00108",
+      "cite_00114"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00108",
+        "node_type": "method",
+        "surface_form": "DimeNet"
+      },
+      {
+        "node_id": "cite_00114",
+        "node_type": "cited_work",
+        "surface_form": "DimeNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "PaiNN",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00078",
+      "cite_00210"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00078",
+        "node_type": "method",
+        "surface_form": "PaiNN"
+      },
+      {
+        "node_id": "cite_00210",
+        "node_type": "cited_work",
+        "surface_form": "PaiNN"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q11",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "CE→MC→NN→PF",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q11",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "hybrid frameworks",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q11",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "LiFlow",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00239"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00239",
+        "node_type": "method",
+        "surface_form": "LiFlow"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q11",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "VGNN",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00409"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00409",
+        "node_type": "cited_work",
+        "surface_form": "VGNN"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q11",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "ConvLSTM",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00001"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00001",
+        "node_type": "cited_work",
+        "surface_form": "ConvLSTM"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q11",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "FNO multiscale",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q11",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "DeePMD+Phase Field",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q11",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "concurrent MD-FEM",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "MACE",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00048"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00048",
+        "node_type": "cited_work",
+        "surface_form": "MACE"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "NequIP",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00058",
+      "cite_00049"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00058",
+        "node_type": "method",
+        "surface_form": "NequIP"
+      },
+      {
+        "node_id": "cite_00049",
+        "node_type": "cited_work",
+        "surface_form": "NequIP"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "CHGNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00038",
+      "comp_00481",
+      "cite_00063"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00038",
+        "node_type": "method",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "comp_00481",
+        "node_type": "component",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "cite_00063",
+        "node_type": "cited_work",
+        "surface_form": "CHGNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "M3GNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00037",
+      "comp_00482",
+      "cite_00062"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00037",
+        "node_type": "method",
+        "surface_form": "M3GNet"
+      },
+      {
+        "node_id": "comp_00482",
+        "node_type": "component",
+        "surface_form": "M3GNet"
+      },
+      {
+        "node_id": "cite_00062",
+        "node_type": "cited_work",
+        "surface_form": "M3GNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "SevenNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00054"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00054",
+        "node_type": "cited_work",
+        "surface_form": "SevenNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "GAP",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00191"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00191",
+        "node_type": "cited_work",
+        "surface_form": "GAP"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "DeePMD",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00214"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00214",
+        "node_type": "cited_work",
+        "surface_form": "DeepMD"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "MatterSim",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00091",
+      "cite_00060"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00091",
+        "node_type": "method",
+        "surface_form": "MatterSim"
+      },
+      {
+        "node_id": "cite_00060",
+        "node_type": "cited_work",
+        "surface_form": "MatterSim"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "Orb",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00011"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00011",
+        "node_type": "cited_work",
+        "surface_form": "Orb"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "eSEN",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00293",
+      "cite_00053"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00293",
+        "node_type": "method",
+        "surface_form": "eSEN"
+      },
+      {
+        "node_id": "cite_00053",
+        "node_type": "cited_work",
+        "surface_form": "eSEN"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "PET",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00044"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00044",
+        "node_type": "cited_work",
+        "surface_form": "PET"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "UMA",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00046"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00046",
+        "node_type": "cited_work",
+        "surface_form": "UMA"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "EquiformerV2",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00081",
+      "cite_00050"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00081",
+        "node_type": "method",
+        "surface_form": "EquiformerV2"
+      },
+      {
+        "node_id": "cite_00050",
+        "node_type": "cited_work",
+        "surface_form": "Equiformerv2"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "DeepH",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00254"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00254",
+        "node_type": "cited_work",
+        "surface_form": "DeepH"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "HamGNN",
+    "status": "safe_alias",
+    "mapping_rule": "whole_identifier_containment",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00221"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00221",
+        "node_type": "method",
+        "surface_form": "Universal HamGNN Hamiltonian model"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "wrong_domain",
+    "cutoff": 2026,
+    "supplied_target": "D4FT",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00222",
+      "comp_00273"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00222",
+        "node_type": "method",
+        "surface_form": "D4FT"
+      },
+      {
+        "node_id": "comp_00273",
+        "node_type": "component",
+        "surface_form": "D4FT"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "Behler-Parrinello HDNNP",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "EAM potentials",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "outdated_as_main",
+    "cutoff": 2026,
+    "supplied_target": "Lennard-Jones",
+    "status": "safe_alias",
+    "mapping_rule": "whole_identifier_containment",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00070"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00070",
+        "node_type": "method",
+        "surface_form": "Lennard-Jones potential"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "Allegro",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00115",
+      "cite_00112"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00115",
+        "node_type": "method",
+        "surface_form": "Allegro"
+      },
+      {
+        "node_id": "cite_00112",
+        "node_type": "cited_work",
+        "surface_form": "Allegro"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "ACE",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00209"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00209",
+        "node_type": "cited_work",
+        "surface_form": "ACE"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "tabGAP",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "PET-MAD",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00421",
+      "cite_00045"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00421",
+        "node_type": "method",
+        "surface_form": "PET-MAD"
+      },
+      {
+        "node_id": "cite_00045",
+        "node_type": "cited_work",
+        "surface_form": "PET-MAD"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "GRACE",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00061"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00061",
+        "node_type": "cited_work",
+        "surface_form": "GRACE"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "MatRIS",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00055"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00055",
+        "node_type": "cited_work",
+        "surface_form": "MatRIS"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "TACE",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "EquFlash",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "AlphaNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00368"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00368",
+        "node_type": "cited_work",
+        "surface_form": "AlphaNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "Nequix",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "HIENet",
+    "status": "unmapped",
+    "mapping_rule": "no_lexical_match",
+    "confidence": "unresolved",
+    "ambiguity_flag": false,
+    "node_ids": [],
+    "candidates": [],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "DPA-3",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00057"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00057",
+        "node_type": "cited_work",
+        "surface_form": "DPA-3"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "GNoME",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00169",
+      "comp_00589",
+      "data_00144",
+      "cite_00330"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00169",
+        "node_type": "method",
+        "surface_form": "GNoME"
+      },
+      {
+        "node_id": "comp_00589",
+        "node_type": "component",
+        "surface_form": "GNoME"
+      },
+      {
+        "node_id": "data_00144",
+        "node_type": "dataset",
+        "surface_form": "GNoME"
+      },
+      {
+        "node_id": "cite_00330",
+        "node_type": "cited_work",
+        "surface_form": "GNoME"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "category": "valid_but_unlisted",
+    "cutoff": 2026,
+    "supplied_target": "Orb-v2",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "meth_00092"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00092",
+        "node_type": "method",
+        "surface_form": "Orb-v2"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q13",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "CGCNN",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00054",
+      "cite_00354"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00054",
+        "node_type": "method",
+        "surface_form": "CGCNN"
+      },
+      {
+        "node_id": "cite_00354",
+        "node_type": "cited_work",
+        "surface_form": "CGCNN"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q13",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "SchNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00050",
+      "cite_00005"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00050",
+        "node_type": "method",
+        "surface_form": "SchNet"
+      },
+      {
+        "node_id": "cite_00005",
+        "node_type": "cited_work",
+        "surface_form": "SchNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q13",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "MEGNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00036",
+      "cite_00334"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00036",
+        "node_type": "method",
+        "surface_form": "MEGNet"
+      },
+      {
+        "node_id": "cite_00334",
+        "node_type": "cited_work",
+        "surface_form": "MEGNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q13",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "M3GNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00037",
+      "comp_00482",
+      "cite_00062"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00037",
+        "node_type": "method",
+        "surface_form": "M3GNet"
+      },
+      {
+        "node_id": "comp_00482",
+        "node_type": "component",
+        "surface_form": "M3GNet"
+      },
+      {
+        "node_id": "cite_00062",
+        "node_type": "cited_work",
+        "surface_form": "M3GNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q13",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "NequIP",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00058",
+      "cite_00049"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00058",
+        "node_type": "method",
+        "surface_form": "NequIP"
+      },
+      {
+        "node_id": "cite_00049",
+        "node_type": "cited_work",
+        "surface_form": "NequIP"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q13",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "MACE",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00048"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00048",
+        "node_type": "cited_work",
+        "surface_form": "MACE"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q13",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "CHGNet",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00038",
+      "comp_00481",
+      "cite_00063"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00038",
+        "node_type": "method",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "comp_00481",
+        "node_type": "component",
+        "surface_form": "CHGNet"
+      },
+      {
+        "node_id": "cite_00063",
+        "node_type": "cited_work",
+        "surface_form": "CHGNet"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q13",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "EquiformerV2",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00081",
+      "cite_00050"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00081",
+        "node_type": "method",
+        "surface_form": "EquiformerV2"
+      },
+      {
+        "node_id": "cite_00050",
+        "node_type": "cited_work",
+        "surface_form": "Equiformerv2"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "Matbench Discovery",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "data_00013",
+      "meth_00159",
+      "cite_00302"
+    ],
+    "candidates": [
+      {
+        "node_id": "data_00013",
+        "node_type": "dataset",
+        "surface_form": "Matbench Discovery"
+      },
+      {
+        "node_id": "meth_00159",
+        "node_type": "method",
+        "surface_form": "Matbench Discovery"
+      },
+      {
+        "node_id": "cite_00302",
+        "node_type": "cited_work",
+        "surface_form": "Matbench discovery"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "Matbench",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "comp_00448",
+      "data_00114",
+      "meth_00348",
+      "cite_00362"
+    ],
+    "candidates": [
+      {
+        "node_id": "comp_00448",
+        "node_type": "component",
+        "surface_form": "Matbench"
+      },
+      {
+        "node_id": "data_00114",
+        "node_type": "dataset",
+        "surface_form": "Matbench"
+      },
+      {
+        "node_id": "meth_00348",
+        "node_type": "method",
+        "surface_form": "Matbench"
+      },
+      {
+        "node_id": "cite_00362",
+        "node_type": "cited_work",
+        "surface_form": "Matbench"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "JARVIS-DFT",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "comp_00335"
+    ],
+    "candidates": [
+      {
+        "node_id": "comp_00335",
+        "node_type": "component",
+        "surface_form": "JARVIS‑DFT"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "Materials Project",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00143",
+      "data_00061",
+      "cite_00018"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00143",
+        "node_type": "method",
+        "surface_form": "Materials Project"
+      },
+      {
+        "node_id": "data_00061",
+        "node_type": "dataset",
+        "surface_form": "Materials Project"
+      },
+      {
+        "node_id": "cite_00018",
+        "node_type": "cited_work",
+        "surface_form": "Materials Project"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "MPtrj",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "data_00102",
+      "cite_00372"
+    ],
+    "candidates": [
+      {
+        "node_id": "data_00102",
+        "node_type": "dataset",
+        "surface_form": "MPtrj"
+      },
+      {
+        "node_id": "cite_00372",
+        "node_type": "cited_work",
+        "surface_form": "MPTrj"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "OQMD",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "data_00095",
+      "cite_00370"
+    ],
+    "candidates": [
+      {
+        "node_id": "data_00095",
+        "node_type": "dataset",
+        "surface_form": "OQMD"
+      },
+      {
+        "node_id": "cite_00370",
+        "node_type": "cited_work",
+        "surface_form": "OQMD"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "AFLOW",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": false,
+    "node_ids": [
+      "cite_00274"
+    ],
+    "candidates": [
+      {
+        "node_id": "cite_00274",
+        "node_type": "cited_work",
+        "surface_form": "AFLOW"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "Alexandria",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00295",
+      "cite_00369"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00295",
+        "node_type": "method",
+        "surface_form": "Alexandria"
+      },
+      {
+        "node_id": "cite_00369",
+        "node_type": "cited_work",
+        "surface_form": "Alexandria"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "GNoME",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "meth_00169",
+      "comp_00589",
+      "data_00144",
+      "cite_00330"
+    ],
+    "candidates": [
+      {
+        "node_id": "meth_00169",
+        "node_type": "method",
+        "surface_form": "GNoME"
+      },
+      {
+        "node_id": "comp_00589",
+        "node_type": "component",
+        "surface_form": "GNoME"
+      },
+      {
+        "node_id": "data_00144",
+        "node_type": "dataset",
+        "surface_form": "GNoME"
+      },
+      {
+        "node_id": "cite_00330",
+        "node_type": "cited_work",
+        "surface_form": "GNoME"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "WBM",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "data_00175",
+      "cite_00376"
+    ],
+    "candidates": [
+      {
+        "node_id": "data_00175",
+        "node_type": "dataset",
+        "surface_form": "WBM"
+      },
+      {
+        "node_id": "cite_00376",
+        "node_type": "cited_work",
+        "surface_form": "WBM"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "category": "expected_targets",
+    "cutoff": 2026,
+    "supplied_target": "OMat24",
+    "status": "exact",
+    "mapping_rule": "exact_normalized",
+    "confidence": "lexical_proxy_not_human_verified",
+    "ambiguity_flag": true,
+    "node_ids": [
+      "data_00101",
+      "cite_00311"
+    ],
+    "candidates": [
+      {
+        "node_id": "data_00101",
+        "node_type": "dataset",
+        "surface_form": "OMat24"
+      },
+      {
+        "node_id": "cite_00311",
+        "node_type": "cited_work",
+        "surface_form": "OMat24"
+      }
+    ],
+    "assumption": "Identical normalized surface mentions count as one named target; distinct containing forms remain ambiguous"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "metr_00026",
+      "type": "metric",
+      "surface_form": "F1"
+    },
+    {
+      "id": "metr_00057",
+      "type": "metric",
+      "surface_form": "success rate"
+    },
+    {
+      "id": "metr_00058",
+      "type": "metric",
+      "surface_form": "AFbT"
+    }
+  ],
+  "generation_type_counts": {
+    "metric": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "afbt",
+  "representative_ids": [
+    "metr_00058",
+    "metr_00026"
+  ]
+}

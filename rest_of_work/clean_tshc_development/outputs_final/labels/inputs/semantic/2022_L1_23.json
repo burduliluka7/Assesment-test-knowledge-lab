@@ -1,0 +1,106 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00021",
+      "type": "claim",
+      "surface_form": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear."
+    },
+    {
+      "id": "clai_00022",
+      "type": "claim",
+      "surface_form": "The model predicts fracture toughness values that are comparable to those obtained from atomistic molecular dynamics simulations."
+    },
+    {
+      "id": "clai_00024",
+      "type": "claim",
+      "surface_form": "The ConvLSTM approach reduces computational cost dramatically compared with full molecular dynamics simulations, enabling rapid fracture predictions."
+    },
+    {
+      "id": "clai_00025",
+      "type": "claim",
+      "surface_form": "Representing molecular dynamics results as image‑based geometric matrices preserves crystal orientation information and allows the neural network to learn spatiotemporal fracture behavior."
+    },
+    {
+      "id": "comp_00294",
+      "type": "component",
+      "surface_form": "Fracture‑toughness regression head"
+    },
+    {
+      "id": "futu_00066",
+      "type": "future_topic",
+      "surface_form": "Application of machine‑learning interatomic potentials to dynamic brittle fracture simulations"
+    },
+    {
+      "id": "meth_00230",
+      "type": "method",
+      "surface_form": "ConvLSTM-based fracture prediction model"
+    },
+    {
+      "id": "prob_00165",
+      "type": "problem",
+      "surface_form": "Efficient prediction of dynamic brittle fracture paths"
+    },
+    {
+      "id": "prob_00166",
+      "type": "problem",
+      "surface_form": "Fracture‑toughness estimation from atomistic data"
+    },
+    {
+      "id": "prob_00170",
+      "type": "problem",
+      "surface_form": "Modeling spatiotemporal dependencies in fracture"
+    },
+    {
+      "id": "task_00200",
+      "type": "task",
+      "surface_form": "Crack‑pattern prediction"
+    },
+    {
+      "id": "task_00201",
+      "type": "task",
+      "surface_form": "Fracture‑toughness prediction"
+    },
+    {
+      "id": "task_00202",
+      "type": "task",
+      "surface_form": "Bicrystal fracture prediction"
+    },
+    {
+      "id": "task_00204",
+      "type": "task",
+      "surface_form": "Crack path prediction in crystalline solids"
+    },
+    {
+      "id": "task_00205",
+      "type": "task",
+      "surface_form": "Spatiotemporal fracture behavior forecasting"
+    },
+    {
+      "id": "task_00336",
+      "type": "task",
+      "surface_form": "Steel yield strength prediction"
+    },
+    {
+      "id": "tech_00316",
+      "type": "technique",
+      "surface_form": "One‑hot crack labeling"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 4,
+    "component": 1,
+    "future_topic": 1,
+    "method": 1,
+    "problem": 3,
+    "task": 6,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "fracture",
+  "representative_ids": [
+    "task_00201",
+    "meth_00230"
+  ]
+}

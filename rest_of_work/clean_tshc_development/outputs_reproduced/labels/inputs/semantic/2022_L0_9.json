@@ -1,0 +1,308 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00021",
+      "type": "claim",
+      "surface_form": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear."
+    },
+    {
+      "id": "clai_00022",
+      "type": "claim",
+      "surface_form": "The model predicts fracture toughness values that are comparable to those obtained from atomistic molecular dynamics simulations."
+    },
+    {
+      "id": "clai_00024",
+      "type": "claim",
+      "surface_form": "The ConvLSTM approach reduces computational cost dramatically compared with full molecular dynamics simulations, enabling rapid fracture predictions."
+    },
+    {
+      "id": "clai_00025",
+      "type": "claim",
+      "surface_form": "Representing molecular dynamics results as image‑based geometric matrices preserves crystal orientation information and allows the neural network to learn spatiotemporal fracture behavior."
+    },
+    {
+      "id": "clai_00029",
+      "type": "claim",
+      "surface_form": "Machine‑learning models trained on Classical Force‑field Inspired Descriptors (CFID) achieve high predictive accuracy for formation energies, exfoliation energies, band gaps, magnetic moments, refractive indices, dielectric constants, thermoelectric performance, and piezoelectric/infrared modes."
+    },
+    {
+      "id": "clai_00187",
+      "type": "claim",
+      "surface_form": "Predicting forces as the negative gradient of the learned total energy guarantees energy conservation and rotation‑equivariant forces."
+    },
+    {
+      "id": "clai_00487",
+      "type": "claim",
+      "surface_form": "The number of force components in the initial training set is more important than total configurations for obtaining generalizable models."
+    },
+    {
+      "id": "clai_00521",
+      "type": "claim",
+      "surface_form": "The derived ACE formulas enable efficient evaluation of forces and magnetic torques."
+    },
+    {
+      "id": "comp_00169",
+      "type": "component",
+      "surface_form": "Energy‑conserving force computation"
+    },
+    {
+      "id": "comp_00291",
+      "type": "component",
+      "surface_form": "Force and Torque Gradient Formulas"
+    },
+    {
+      "id": "comp_00316",
+      "type": "component",
+      "surface_form": "Stress‑concentration objective"
+    },
+    {
+      "id": "comp_00323",
+      "type": "component",
+      "surface_form": "Stress‑field surrogate objective"
+    },
+    {
+      "id": "data_00067",
+      "type": "dataset",
+      "surface_form": "Shear moduli"
+    },
+    {
+      "id": "futu_00138",
+      "type": "future_topic",
+      "surface_form": "Investigation of gap deformation potentials"
+    },
+    {
+      "id": "meth_00191",
+      "type": "method",
+      "surface_form": "AMBER force field"
+    },
+    {
+      "id": "meth_00192",
+      "type": "method",
+      "surface_form": "Universal Force Field"
+    },
+    {
+      "id": "meth_00230",
+      "type": "method",
+      "surface_form": "ConvLSTM-based fracture prediction model"
+    },
+    {
+      "id": "metr_00088",
+      "type": "metric",
+      "surface_form": "Young's modulus"
+    },
+    {
+      "id": "prob_00092",
+      "type": "problem",
+      "surface_form": "Energy‑non‑conserving force predictions"
+    },
+    {
+      "id": "prob_00112",
+      "type": "problem",
+      "surface_form": "Accurate, fast energy/force/stress prediction"
+    },
+    {
+      "id": "prob_00118",
+      "type": "problem",
+      "surface_form": "force‑field generation for small molecules"
+    },
+    {
+      "id": "prob_00131",
+      "type": "problem",
+      "surface_form": "Efficient force and virial prediction"
+    },
+    {
+      "id": "prob_00132",
+      "type": "problem",
+      "surface_form": "Efficient training of interatomic potentials with forces and virial regularization"
+    },
+    {
+      "id": "prob_00165",
+      "type": "problem",
+      "surface_form": "Efficient prediction of dynamic brittle fracture paths"
+    },
+    {
+      "id": "prob_00166",
+      "type": "problem",
+      "surface_form": "Fracture‑toughness estimation from atomistic data"
+    },
+    {
+      "id": "prob_00168",
+      "type": "problem",
+      "surface_form": "Fracture pattern prediction from MD simulations"
+    },
+    {
+      "id": "prob_00170",
+      "type": "problem",
+      "surface_form": "Modeling spatiotemporal dependencies in fracture"
+    },
+    {
+      "id": "prob_00198",
+      "type": "problem",
+      "surface_form": "Force‑field quality assessment"
+    },
+    {
+      "id": "prob_00362",
+      "type": "problem",
+      "surface_form": "Extreme deformation potential detection"
+    },
+    {
+      "id": "prob_00383",
+      "type": "problem",
+      "surface_form": "Force accuracy in geometry optimization"
+    },
+    {
+      "id": "prob_00417",
+      "type": "problem",
+      "surface_form": "accurate force field generation"
+    },
+    {
+      "id": "task_00025",
+      "type": "task",
+      "surface_form": "Interatomic force prediction"
+    },
+    {
+      "id": "task_00113",
+      "type": "task",
+      "surface_form": "Force prediction"
+    },
+    {
+      "id": "task_00154",
+      "type": "task",
+      "surface_form": "Energy, force, and stress prediction for arbitrary crystals"
+    },
+    {
+      "id": "task_00157",
+      "type": "task",
+      "surface_form": "Elastic modulus prediction"
+    },
+    {
+      "id": "task_00177",
+      "type": "task",
+      "surface_form": "Prediction of potential energy, atomic forces, and virial tensor"
+    },
+    {
+      "id": "task_00199",
+      "type": "task",
+      "surface_form": "Prediction of Energies, Forces and Torques for Multi‑Component Materials"
+    },
+    {
+      "id": "task_00200",
+      "type": "task",
+      "surface_form": "Crack‑pattern prediction"
+    },
+    {
+      "id": "task_00201",
+      "type": "task",
+      "surface_form": "Fracture‑toughness prediction"
+    },
+    {
+      "id": "task_00202",
+      "type": "task",
+      "surface_form": "Bicrystal fracture prediction"
+    },
+    {
+      "id": "task_00204",
+      "type": "task",
+      "surface_form": "Crack path prediction in crystalline solids"
+    },
+    {
+      "id": "task_00205",
+      "type": "task",
+      "surface_form": "Spatiotemporal fracture behavior forecasting"
+    },
+    {
+      "id": "task_00213",
+      "type": "task",
+      "surface_form": "Atomic potential energy prediction"
+    },
+    {
+      "id": "task_00217",
+      "type": "task",
+      "surface_form": "Global mechanical property estimation"
+    },
+    {
+      "id": "task_00223",
+      "type": "task",
+      "surface_form": "mechanical design"
+    },
+    {
+      "id": "task_00234",
+      "type": "task",
+      "surface_form": "Force‑field benchmarking"
+    },
+    {
+      "id": "task_00241",
+      "type": "task",
+      "surface_form": "Classical force‑field property benchmarking"
+    },
+    {
+      "id": "task_00329",
+      "type": "task",
+      "surface_form": "Bulk modulus prediction"
+    },
+    {
+      "id": "task_00330",
+      "type": "task",
+      "surface_form": "Shear modulus prediction"
+    },
+    {
+      "id": "task_00442",
+      "type": "task",
+      "surface_form": "gap deformation potential screening"
+    },
+    {
+      "id": "task_00453",
+      "type": "task",
+      "surface_form": "Fixed shape deformation potential prediction"
+    },
+    {
+      "id": "task_00707",
+      "type": "task",
+      "surface_form": "Young's modulus prediction"
+    },
+    {
+      "id": "tech_00223",
+      "type": "technique",
+      "surface_form": "Energy‑gradient force derivation"
+    },
+    {
+      "id": "tech_00246",
+      "type": "technique",
+      "surface_form": "Auto‑differentiation for forces and stresses"
+    },
+    {
+      "id": "tech_00277",
+      "type": "technique",
+      "surface_form": "Backpropagation for force and virial computation"
+    },
+    {
+      "id": "tech_00316",
+      "type": "technique",
+      "surface_form": "One‑hot crack labeling"
+    },
+    {
+      "id": "tech_00925",
+      "type": "technique",
+      "surface_form": "Young's modulus averaging"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 8,
+    "component": 4,
+    "dataset": 1,
+    "future_topic": 1,
+    "method": 3,
+    "metric": 1,
+    "problem": 13,
+    "task": 21,
+    "technique": 5
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "force",
+  "representative_ids": [
+    "prob_00131",
+    "prob_00112"
+  ]
+}

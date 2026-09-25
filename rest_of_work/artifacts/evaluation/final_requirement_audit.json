@@ -1,0 +1,222 @@
+{
+  "status_counts": {
+    "PASS": 24,
+    "PARTIAL": 5,
+    "NOT_EVALUABLE": 1
+  },
+  "records": [
+    {
+      "requirement": "P1",
+      "status": "PASS",
+      "artifact": "report.md",
+      "metric_or_evidence": "Frozen hierarchy construction, all snapshot invariants, explicit formal/collapse/temporal mechanisms; see tests and hierarchy exports.",
+      "limitation": "No global optimum or naturally occurring hierarchy claim."
+    },
+    {
+      "requirement": "P2",
+      "status": "PASS",
+      "artifact": "report.md",
+      "metric_or_evidence": "Frozen hierarchy construction, all snapshot invariants, explicit formal/collapse/temporal mechanisms; see tests and hierarchy exports.",
+      "limitation": "No global optimum or naturally occurring hierarchy claim."
+    },
+    {
+      "requirement": "P4",
+      "status": "PASS",
+      "artifact": "report.md",
+      "metric_or_evidence": "Frozen hierarchy construction, all snapshot invariants, explicit formal/collapse/temporal mechanisms; see tests and hierarchy exports.",
+      "limitation": "No global optimum or naturally occurring hierarchy claim."
+    },
+    {
+      "requirement": "T2",
+      "status": "PASS",
+      "artifact": "report.md",
+      "metric_or_evidence": "Frozen hierarchy construction, all snapshot invariants, explicit formal/collapse/temporal mechanisms; see tests and hierarchy exports.",
+      "limitation": "No global optimum or naturally occurring hierarchy claim."
+    },
+    {
+      "requirement": "T3",
+      "status": "PASS",
+      "artifact": "report.md",
+      "metric_or_evidence": "Frozen hierarchy construction, all snapshot invariants, explicit formal/collapse/temporal mechanisms; see tests and hierarchy exports.",
+      "limitation": "No global optimum or naturally occurring hierarchy claim."
+    },
+    {
+      "requirement": "T4",
+      "status": "PASS",
+      "artifact": "report.md",
+      "metric_or_evidence": "Frozen hierarchy construction, all snapshot invariants, explicit formal/collapse/temporal mechanisms; see tests and hierarchy exports.",
+      "limitation": "No global optimum or naturally occurring hierarchy claim."
+    },
+    {
+      "requirement": "P3",
+      "status": "PARTIAL",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "Independent BGE coherence .7748 vs null .7602; small positive effect.",
+      "limitation": "Embedding proxy, no expert semantic adjudication."
+    },
+    {
+      "requirement": "P5",
+      "status": "PASS",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "Real temporal L0 ARI .636 vs static .351; persistent IDs and all six event types exported.",
+      "limitation": "Empirical continuity, not guaranteed locality of every change."
+    },
+    {
+      "requirement": "P6",
+      "status": "PARTIAL",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "Held-out L0/L1 non-entailment .542/.479 and temporally filtered packets.",
+      "limitation": "NLI proxy; no blind expert audit or versioned historical text."
+    },
+    {
+      "requirement": "T5",
+      "status": "PARTIAL",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "Held-out L0/L1 non-entailment .542/.479 and temporally filtered packets.",
+      "limitation": "NLI proxy; no blind expert audit or versioned historical text."
+    },
+    {
+      "requirement": "T1",
+      "status": "PASS",
+      "artifact": "artifacts/full/descriptive.json",
+      "metric_or_evidence": "5798 nodes,1429 hyperedges; four snapshots; type/arity distributions and growth.",
+      "limitation": ""
+    },
+    {
+      "requirement": "T6",
+      "status": "PARTIAL",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "Intrinsic controls and final hierarchy-vs-fine/flat study executed.",
+      "limitation": "Required claims unalignable; proxy label/evidence validity incomplete."
+    },
+    {
+      "requirement": "T7",
+      "status": "PASS",
+      "artifact": "report.md",
+      "metric_or_evidence": "Explicit verified/assumed limitations and four-more-weeks section.",
+      "limitation": ""
+    },
+    {
+      "requirement": "T6.independent_coherence",
+      "status": "PASS",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "coherence",
+      "limitation": "Negative downstream results do not fail experiment completeness; repeated benchmark is not held out."
+    },
+    {
+      "requirement": "T6.null_model",
+      "status": "PASS",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "coherence_null",
+      "limitation": "Negative downstream results do not fail experiment completeness; repeated benchmark is not held out."
+    },
+    {
+      "requirement": "T6.perturbation_five_seeds",
+      "status": "PASS",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "perturbation_stability",
+      "limitation": "Negative downstream results do not fail experiment completeness; repeated benchmark is not held out."
+    },
+    {
+      "requirement": "T6.confidence_intervals",
+      "status": "PASS",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "perturbation_stability",
+      "limitation": "Negative downstream results do not fail experiment completeness; repeated benchmark is not held out."
+    },
+    {
+      "requirement": "T6.real_temporal_stability",
+      "status": "PASS",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "temporal_stability",
+      "limitation": "Negative downstream results do not fail experiment completeness; repeated benchmark is not held out."
+    },
+    {
+      "requirement": "T6.extrinsic_hierarchy",
+      "status": "PASS",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "hierarchical_retrieval",
+      "limitation": "Negative downstream results do not fail experiment completeness; repeated benchmark is not held out."
+    },
+    {
+      "requirement": "T6.hierarchy_vs_flat",
+      "status": "PASS",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "final_retrieval",
+      "limitation": "Negative downstream results do not fail experiment completeness; repeated benchmark is not held out."
+    },
+    {
+      "requirement": "T6.label_overclaim",
+      "status": "PARTIAL",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "label_faithfulness",
+      "limitation": "Measured NLI non-entailment, not true overclaim ground truth."
+    },
+    {
+      "requirement": "T6.strict_supporting_claims",
+      "status": "NOT_EVALUABLE",
+      "artifact": "artifacts\\evaluation\\final\\results.json",
+      "metric_or_evidence": "0/188 required Type A claims align; null strict recall.",
+      "limitation": "No convenient evidence substituted for claims."
+    },
+    {
+      "requirement": "T6.source_provenance",
+      "status": "PASS",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "Per-question source_hit/provenance_overlap and candidate-associated diagnostics.",
+      "limitation": "Weaker than claim entailment."
+    },
+    {
+      "requirement": "Deliverable0",
+      "status": "PASS",
+      "artifact": "report.md",
+      "metric_or_evidence": "Runnable pinned code; four snapshot exports/events; consolidated metrics; compact report; AI disclosure; static hierarchy figure as applicable.",
+      "limitation": ""
+    },
+    {
+      "requirement": "Deliverable1",
+      "status": "PASS",
+      "artifact": "README.md",
+      "metric_or_evidence": "Runnable pinned code; four snapshot exports/events; consolidated metrics; compact report; AI disclosure; static hierarchy figure as applicable.",
+      "limitation": ""
+    },
+    {
+      "requirement": "Deliverable2",
+      "status": "PASS",
+      "artifact": "artifacts\\evaluation\\final\\hierarchy_2026.json",
+      "metric_or_evidence": "Runnable pinned code; four snapshot exports/events; consolidated metrics; compact report; AI disclosure; static hierarchy figure as applicable.",
+      "limitation": ""
+    },
+    {
+      "requirement": "Deliverable3",
+      "status": "PASS",
+      "artifact": "metrics.json",
+      "metric_or_evidence": "Runnable pinned code; four snapshot exports/events; consolidated metrics; compact report; AI disclosure; static hierarchy figure as applicable.",
+      "limitation": ""
+    },
+    {
+      "requirement": "Deliverable4",
+      "status": "PASS",
+      "artifact": "report.md",
+      "metric_or_evidence": "Runnable pinned code; four snapshot exports/events; consolidated metrics; compact report; AI disclosure; static hierarchy figure as applicable.",
+      "limitation": "Markdown supplied; rendered page count depends on conversion settings."
+    },
+    {
+      "requirement": "Deliverable5",
+      "status": "PASS",
+      "artifact": "AI_USAGE.md",
+      "metric_or_evidence": "Runnable pinned code; four snapshot exports/events; consolidated metrics; compact report; AI disclosure; static hierarchy figure as applicable.",
+      "limitation": ""
+    },
+    {
+      "requirement": "Deliverable6_optional",
+      "status": "PASS",
+      "artifact": "report/figures/hierarchy_levels.png",
+      "metric_or_evidence": "Runnable pinned code; four snapshot exports/events; consolidated metrics; compact report; AI disclosure; static hierarchy figure as applicable.",
+      "limitation": ""
+    }
+  ],
+  "preserved_files": 655,
+  "tests": 245,
+  "report_words": 2443
+}

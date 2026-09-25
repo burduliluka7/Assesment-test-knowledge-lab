@@ -1,0 +1,294 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00022",
+      "type": "article",
+      "surface_form": "Atomic cluster expansion of scalar, vectorial and tensorial properties and including magnetism and charge transfer"
+    },
+    {
+      "id": "cite_00230",
+      "type": "cited_work",
+      "surface_form": "Atomic Cluster Expansion"
+    },
+    {
+      "id": "clai_00520",
+      "type": "claim",
+      "surface_form": "The atomic cluster expansion (ACE) is generalized to model scalar, vectorial and tensorial atomic properties and to include additional atomic degrees of freedom—species, magnetic moments, and charges—on equal footing with atomic positions."
+    },
+    {
+      "id": "clai_00522",
+      "type": "claim",
+      "surface_form": "At the lowest order, the magnetic ACE reproduces a distance‑dependent Heisenberg interaction."
+    },
+    {
+      "id": "clai_00524",
+      "type": "claim",
+      "surface_form": "Moments Tensor Potentials (MTP) and the Spectral Neighbor Analysis Potential (SNAP) can be expressed exactly as special cases of the ACE."
+    },
+    {
+      "id": "clai_00526",
+      "type": "claim",
+      "surface_form": "The ACE formulation is invariant under translation, rotation, inversion and permutation of identical atoms."
+    },
+    {
+      "id": "clai_00527",
+      "type": "claim",
+      "surface_form": "Although the full magnetic and charge‑transfer ACE contains many parameters, hierarchical ordering of interactions allows robust and systematic fitting to reference data."
+    },
+    {
+      "id": "clai_00529",
+      "type": "claim",
+      "surface_form": "Because the ACE basis is complete and hierarchical, it can in principle achieve arbitrary accuracy for any scalar, vectorial or tensorial property."
+    },
+    {
+      "id": "comp_00022",
+      "type": "component",
+      "surface_form": "Atom-wise dense layers"
+    },
+    {
+      "id": "comp_00219",
+      "type": "component",
+      "surface_form": "Sparse set of representative atoms"
+    },
+    {
+      "id": "comp_00239",
+      "type": "component",
+      "surface_form": "Atomic‑energy decomposition"
+    },
+    {
+      "id": "comp_00243",
+      "type": "component",
+      "surface_form": "Linear output mapping for atomic energy"
+    },
+    {
+      "id": "comp_00288",
+      "type": "component",
+      "surface_form": "Combined Atomic Density ρ_i"
+    },
+    {
+      "id": "meth_00099",
+      "type": "method",
+      "surface_form": "embedded-atom-method"
+    },
+    {
+      "id": "meth_00194",
+      "type": "method",
+      "surface_form": "AtomSets"
+    },
+    {
+      "id": "meth_00229",
+      "type": "method",
+      "surface_form": "Atomic Cluster Expansion extended to scalar, vectorial, tensorial properties with magnetic moments and charge transfer"
+    },
+    {
+      "id": "meth_00286",
+      "type": "method",
+      "surface_form": "cluster expansions"
+    },
+    {
+      "id": "metr_00087",
+      "type": "metric",
+      "surface_form": "sp3 concentration"
+    },
+    {
+      "id": "prob_00169",
+      "type": "problem",
+      "surface_form": "Noise reduction in atomistic data"
+    },
+    {
+      "id": "task_00187",
+      "type": "task",
+      "surface_form": "Per‑atom energy extraction"
+    },
+    {
+      "id": "task_00267",
+      "type": "task",
+      "surface_form": "Nanoparticle structure generation"
+    },
+    {
+      "id": "task_00710",
+      "type": "task",
+      "surface_form": "sp2/sp3 concentration monitoring"
+    },
+    {
+      "id": "tech_00312",
+      "type": "technique",
+      "surface_form": "Image‑based encoding of atomistic data"
+    },
+    {
+      "id": "tech_00333",
+      "type": "technique",
+      "surface_form": "Graph representation of atomic structures"
+    },
+    {
+      "id": "tech_00914",
+      "type": "technique",
+      "surface_form": "sp3 atom counting"
+    },
+    {
+      "id": "tech_00923",
+      "type": "technique",
+      "surface_form": "sp2/sp3 atom counting"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 1,
+    "claim": 6,
+    "component": 5,
+    "method": 4,
+    "metric": 1,
+    "problem": 1,
+    "task": 3,
+    "technique": 4
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00328",
+      "relation_type": "presents",
+      "members": [
+        "arti_00022",
+        "meth_00229"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_01126",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00520"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_01128",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00522"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01130",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00524"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "taxonomic",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01132",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00526"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "theoretical",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.98
+      }
+    },
+    {
+      "id": "h_01133",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00527"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_01135",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00529"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "atomic",
+  "representative_ids": [
+    "clai_00520",
+    "comp_00219"
+  ]
+}

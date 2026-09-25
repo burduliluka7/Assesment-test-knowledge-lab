@@ -1,0 +1,172 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00011",
+      "type": "article",
+      "surface_form": "Matbench Discovery: A framework to evaluate machine learning crystal stability predictions"
+    },
+    {
+      "id": "clai_00420",
+      "type": "claim",
+      "surface_form": "The Phonax framework works for both periodic crystals and isolated molecules and can be extended to higher‑order derivatives such as field‑dependent properties."
+    },
+    {
+      "id": "comp_00262",
+      "type": "component",
+      "surface_form": "Crystal graph representation"
+    },
+    {
+      "id": "futu_00147",
+      "type": "future_topic",
+      "surface_form": "Integrating uncertainty quantification in ML pre‑filters for crystal stability"
+    },
+    {
+      "id": "meth_00378",
+      "type": "method",
+      "surface_form": "Inorganic Crystal Structures Database"
+    },
+    {
+      "id": "prob_00089",
+      "type": "problem",
+      "surface_form": "Scalable crystal representation"
+    },
+    {
+      "id": "prob_00145",
+      "type": "problem",
+      "surface_form": "Variable‑size crystal representation"
+    },
+    {
+      "id": "prob_00158",
+      "type": "problem",
+      "surface_form": "Lack of a unified framework for molecules and crystals"
+    },
+    {
+      "id": "prob_00167",
+      "type": "problem",
+      "surface_form": "Generalization to unseen crystal orientations and bicrystal interfaces"
+    },
+    {
+      "id": "prob_00405",
+      "type": "problem",
+      "surface_form": "Limited crystal discovery through previous ML methods"
+    },
+    {
+      "id": "prob_00608",
+      "type": "problem",
+      "surface_form": "capturing tetrahedral motifs"
+    },
+    {
+      "id": "task_00016",
+      "type": "task",
+      "surface_form": "Crystal property prediction"
+    },
+    {
+      "id": "task_00106",
+      "type": "task",
+      "surface_form": "Accelerated discovery of stable inorganic crystals"
+    },
+    {
+      "id": "task_00154",
+      "type": "task",
+      "surface_form": "Energy, force, and stress prediction for arbitrary crystals"
+    },
+    {
+      "id": "task_00166",
+      "type": "task",
+      "surface_form": "Bulk crystal equation‑of‑state calculations"
+    },
+    {
+      "id": "task_00199",
+      "type": "task",
+      "surface_form": "Prediction of Energies, Forces and Torques for Multi‑Component Materials"
+    },
+    {
+      "id": "task_00253",
+      "type": "task",
+      "surface_form": "Guided DFT crystal‑structure prediction"
+    },
+    {
+      "id": "task_00264",
+      "type": "task",
+      "surface_form": "High‑throughput calculation of crystal‑structure properties"
+    },
+    {
+      "id": "task_00286",
+      "type": "task",
+      "surface_form": "Crystal structure stability classification"
+    },
+    {
+      "id": "task_00345",
+      "type": "task",
+      "surface_form": "Materials property prediction from crystal structure"
+    },
+    {
+      "id": "task_00389",
+      "type": "task",
+      "surface_form": "Crystal structure property prediction"
+    },
+    {
+      "id": "task_00393",
+      "type": "task",
+      "surface_form": "Crystal stability assessment"
+    },
+    {
+      "id": "task_00495",
+      "type": "task",
+      "surface_form": "Stable crystal discovery"
+    },
+    {
+      "id": "task_00503",
+      "type": "task",
+      "surface_form": "Crystal structure discovery"
+    },
+    {
+      "id": "task_00647",
+      "type": "task",
+      "surface_form": "crystal nucleation and growth prediction"
+    },
+    {
+      "id": "task_00678",
+      "type": "task",
+      "surface_form": "Molecular crystal prediction"
+    },
+    {
+      "id": "task_00682",
+      "type": "task",
+      "surface_form": "Molecular crystal structure prediction"
+    },
+    {
+      "id": "task_00684",
+      "type": "task",
+      "surface_form": "crystallography"
+    },
+    {
+      "id": "task_00713",
+      "type": "task",
+      "surface_form": "Bulk crystal structure modeling"
+    },
+    {
+      "id": "tech_00162",
+      "type": "technique",
+      "surface_form": "Graph representation of crystal structures"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 1,
+    "component": 1,
+    "future_topic": 1,
+    "method": 1,
+    "problem": 6,
+    "task": 18,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "crystal",
+  "representative_ids": [
+    "task_00389",
+    "task_00503"
+  ]
+}

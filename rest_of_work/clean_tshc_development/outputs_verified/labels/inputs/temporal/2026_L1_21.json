@@ -1,0 +1,176 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00446",
+      "type": "component",
+      "surface_form": "TPOT evolutionary optimizer"
+    },
+    {
+      "id": "tech_00038",
+      "type": "technique",
+      "surface_form": "Active learning"
+    },
+    {
+      "id": "tech_00062",
+      "type": "technique",
+      "surface_form": "Linear interpolation"
+    },
+    {
+      "id": "tech_00101",
+      "type": "technique",
+      "surface_form": "ab initio molecular dynamics"
+    },
+    {
+      "id": "tech_00377",
+      "type": "technique",
+      "surface_form": "ROC‑AUC and MAE evaluation metrics"
+    },
+    {
+      "id": "tech_00492",
+      "type": "technique",
+      "surface_form": "TPOT genetic algorithm"
+    },
+    {
+      "id": "tech_00505",
+      "type": "technique",
+      "surface_form": "Geometry similarity metric"
+    },
+    {
+      "id": "tech_00507",
+      "type": "technique",
+      "surface_form": "High-throughput screening workflow"
+    },
+    {
+      "id": "tech_00508",
+      "type": "technique",
+      "surface_form": "IDPP interpolation"
+    },
+    {
+      "id": "tech_00510",
+      "type": "technique",
+      "surface_form": "Averaged geometric similarity score g"
+    },
+    {
+      "id": "tech_00512",
+      "type": "technique",
+      "surface_form": "Solid angle error calculation"
+    },
+    {
+      "id": "tech_00513",
+      "type": "technique",
+      "surface_form": "δ metric calculation"
+    },
+    {
+      "id": "tech_00514",
+      "type": "technique",
+      "surface_form": "Multifidelity learning"
+    },
+    {
+      "id": "tech_00515",
+      "type": "technique",
+      "surface_form": "LI interpolation"
+    },
+    {
+      "id": "tech_00517",
+      "type": "technique",
+      "surface_form": "Threshold-based classification"
+    },
+    {
+      "id": "tech_00519",
+      "type": "technique",
+      "surface_form": "minimum energy path calculation"
+    },
+    {
+      "id": "tech_00520",
+      "type": "technique",
+      "surface_form": "exchange-correlation functional selection"
+    },
+    {
+      "id": "tech_00523",
+      "type": "technique",
+      "surface_form": "Confusion matrix analysis"
+    },
+    {
+      "id": "tech_00524",
+      "type": "technique",
+      "surface_form": "Em range binning"
+    },
+    {
+      "id": "tech_00525",
+      "type": "technique",
+      "surface_form": "NEB with spring constant"
+    },
+    {
+      "id": "tech_00526",
+      "type": "technique",
+      "surface_form": "Geometry-barrier correlation analysis"
+    },
+    {
+      "id": "tech_00689",
+      "type": "technique",
+      "surface_form": "Nosé-Hoover thermostat"
+    },
+    {
+      "id": "tech_00691",
+      "type": "technique",
+      "surface_form": "Minimum ion-ion distance cutoff"
+    },
+    {
+      "id": "tech_00692",
+      "type": "technique",
+      "surface_form": "Maximum bond variation check"
+    },
+    {
+      "id": "tech_00694",
+      "type": "technique",
+      "surface_form": "Self-consistent training"
+    },
+    {
+      "id": "tech_00695",
+      "type": "technique",
+      "surface_form": "FPMD simulations"
+    },
+    {
+      "id": "tech_00696",
+      "type": "technique",
+      "surface_form": "PFF-MD simulations"
+    },
+    {
+      "id": "tech_00697",
+      "type": "technique",
+      "surface_form": "NVE ensemble sampling"
+    },
+    {
+      "id": "tech_00699",
+      "type": "technique",
+      "surface_form": "iterative configuration addition"
+    },
+    {
+      "id": "tech_00702",
+      "type": "technique",
+      "surface_form": "Temperature ramp simulation"
+    },
+    {
+      "id": "tech_00703",
+      "type": "technique",
+      "surface_form": "Training set augmentation via intermediate MD"
+    },
+    {
+      "id": "tech_00704",
+      "type": "technique",
+      "surface_form": "Outlier detection in training loops"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "technique": 31
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "interpolation",
+  "representative_ids": [
+    "tech_00508",
+    "tech_00515"
+  ]
+}

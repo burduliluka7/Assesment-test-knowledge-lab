@@ -1,0 +1,99 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "clai_00521",
+      "type": "claim",
+      "surface_form": "The derived ACE formulas enable efficient evaluation of forces and magnetic torques."
+    },
+    {
+      "id": "comp_00291",
+      "type": "component",
+      "surface_form": "Force and Torque Gradient Formulas"
+    },
+    {
+      "id": "prob_00012",
+      "type": "problem",
+      "surface_form": "Energy‑conserving force field learning"
+    },
+    {
+      "id": "prob_00131",
+      "type": "problem",
+      "surface_form": "Efficient force and virial prediction"
+    },
+    {
+      "id": "prob_00132",
+      "type": "problem",
+      "surface_form": "Efficient training of interatomic potentials with forces and virial regularization"
+    },
+    {
+      "id": "prob_00198",
+      "type": "problem",
+      "surface_form": "Force‑field quality assessment"
+    },
+    {
+      "id": "prob_00383",
+      "type": "problem",
+      "surface_form": "Force accuracy in geometry optimization"
+    },
+    {
+      "id": "prob_00417",
+      "type": "problem",
+      "surface_form": "accurate force field generation"
+    },
+    {
+      "id": "task_00025",
+      "type": "task",
+      "surface_form": "Interatomic force prediction"
+    },
+    {
+      "id": "task_00113",
+      "type": "task",
+      "surface_form": "Force prediction"
+    },
+    {
+      "id": "task_00177",
+      "type": "task",
+      "surface_form": "Prediction of potential energy, atomic forces, and virial tensor"
+    },
+    {
+      "id": "task_00199",
+      "type": "task",
+      "surface_form": "Prediction of Energies, Forces and Torques for Multi‑Component Materials"
+    },
+    {
+      "id": "task_00234",
+      "type": "task",
+      "surface_form": "Force‑field benchmarking"
+    },
+    {
+      "id": "task_00241",
+      "type": "task",
+      "surface_form": "Classical force‑field property benchmarking"
+    },
+    {
+      "id": "tech_00277",
+      "type": "technique",
+      "surface_form": "Backpropagation for force and virial computation"
+    },
+    {
+      "id": "tech_00380",
+      "type": "technique",
+      "surface_form": "Thermodynamic descriptor screening"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 1,
+    "problem": 6,
+    "task": 6,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "force",
+  "representative_ids": [
+    "prob_00131",
+    "task_00241"
+  ]
+}

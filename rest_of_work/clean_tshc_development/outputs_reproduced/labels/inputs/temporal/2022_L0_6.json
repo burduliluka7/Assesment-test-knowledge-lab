@@ -1,0 +1,227 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00645",
+      "type": "claim",
+      "surface_form": "M3GNet predicts phonon band structures and densities of states for SiO₂ polymorphs that quantitatively agree with DFT calculations, and the predicted phonon density‑of‑states center follows the expected ω ∝ 1/√m trend across materials."
+    },
+    {
+      "id": "task_00112",
+      "type": "task",
+      "surface_form": "Formation energy regression"
+    },
+    {
+      "id": "task_00113",
+      "type": "task",
+      "surface_form": "Force prediction"
+    },
+    {
+      "id": "task_00279",
+      "type": "task",
+      "surface_form": "Phonon frequency prediction"
+    },
+    {
+      "id": "task_00284",
+      "type": "task",
+      "surface_form": "Energy prediction"
+    },
+    {
+      "id": "task_00329",
+      "type": "task",
+      "surface_form": "Bulk modulus prediction"
+    },
+    {
+      "id": "task_00330",
+      "type": "task",
+      "surface_form": "Shear modulus prediction"
+    },
+    {
+      "id": "task_00331",
+      "type": "task",
+      "surface_form": "Band gap prediction"
+    },
+    {
+      "id": "task_00332",
+      "type": "task",
+      "surface_form": "Metallicity classification"
+    },
+    {
+      "id": "task_00333",
+      "type": "task",
+      "surface_form": "Bulk metallic glass formation prediction"
+    },
+    {
+      "id": "task_00335",
+      "type": "task",
+      "surface_form": "Exfoliation energy prediction"
+    },
+    {
+      "id": "task_00336",
+      "type": "task",
+      "surface_form": "Steel yield strength prediction"
+    },
+    {
+      "id": "task_00338",
+      "type": "task",
+      "surface_form": "ML method benchmarking"
+    },
+    {
+      "id": "task_00340",
+      "type": "task",
+      "surface_form": "Band gap regression"
+    },
+    {
+      "id": "task_00341",
+      "type": "task",
+      "surface_form": "Exfoliation energy regression"
+    },
+    {
+      "id": "task_00342",
+      "type": "task",
+      "surface_form": "Bulk metallic glass classification"
+    },
+    {
+      "id": "task_00345",
+      "type": "task",
+      "surface_form": "Materials property prediction from crystal structure"
+    },
+    {
+      "id": "task_00346",
+      "type": "task",
+      "surface_form": "Materials property prediction from electronic bandstructure"
+    },
+    {
+      "id": "task_00347",
+      "type": "task",
+      "surface_form": "Phonon density of states prediction"
+    },
+    {
+      "id": "task_00349",
+      "type": "task",
+      "surface_form": "Structure-based regression"
+    },
+    {
+      "id": "task_00350",
+      "type": "task",
+      "surface_form": "Composition-only regression"
+    },
+    {
+      "id": "task_00351",
+      "type": "task",
+      "surface_form": "Matbench regression tasks"
+    },
+    {
+      "id": "task_00352",
+      "type": "task",
+      "surface_form": "Matbench classification tasks"
+    },
+    {
+      "id": "task_00353",
+      "type": "task",
+      "surface_form": "Composition-only property prediction"
+    },
+    {
+      "id": "task_00354",
+      "type": "task",
+      "surface_form": "Structure-based property prediction"
+    },
+    {
+      "id": "task_00355",
+      "type": "task",
+      "surface_form": "Automatminer preset comparison"
+    },
+    {
+      "id": "task_00356",
+      "type": "task",
+      "surface_form": "machine learning for materials"
+    },
+    {
+      "id": "task_00357",
+      "type": "task",
+      "surface_form": "machine learning benchmarking"
+    },
+    {
+      "id": "task_00440",
+      "type": "task",
+      "surface_form": "superconductor candidate identification"
+    },
+    {
+      "id": "task_00442",
+      "type": "task",
+      "surface_form": "gap deformation potential screening"
+    },
+    {
+      "id": "task_00448",
+      "type": "task",
+      "surface_form": "Elastic constant calculation"
+    },
+    {
+      "id": "task_00450",
+      "type": "task",
+      "surface_form": "Vicker's hardness estimation"
+    },
+    {
+      "id": "task_00451",
+      "type": "task",
+      "surface_form": "Superconducting Tc calculation"
+    },
+    {
+      "id": "task_00453",
+      "type": "task",
+      "surface_form": "Fixed shape deformation potential prediction"
+    },
+    {
+      "id": "task_00454",
+      "type": "task",
+      "surface_form": "Phonon dispersion calculation"
+    },
+    {
+      "id": "task_00456",
+      "type": "task",
+      "surface_form": "Unit cell volume prediction"
+    },
+    {
+      "id": "task_00457",
+      "type": "task",
+      "surface_form": "Vicker's hardness prediction"
+    },
+    {
+      "id": "task_00458",
+      "type": "task",
+      "surface_form": "Superconductivity prediction"
+    },
+    {
+      "id": "task_00459",
+      "type": "task",
+      "surface_form": "Gap deformation potential prediction"
+    },
+    {
+      "id": "task_00697",
+      "type": "task",
+      "surface_form": "Structural property prediction"
+    },
+    {
+      "id": "task_00706",
+      "type": "task",
+      "surface_form": "machine learning potential training"
+    },
+    {
+      "id": "tech_00620",
+      "type": "technique",
+      "surface_form": "Vicker's hardness estimation"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "task": 40,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "prediction",
+  "representative_ids": [
+    "task_00697",
+    "task_00356"
+  ]
+}

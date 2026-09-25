@@ -1,0 +1,409 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00046",
+      "type": "article",
+      "surface_form": "Large-scale machine-learning-assisted exploration of the whole materials space"
+    },
+    {
+      "id": "arti_00052",
+      "type": "article",
+      "surface_form": "Scaling deep learning for materials discovery"
+    },
+    {
+      "id": "cite_00250",
+      "type": "cited_work",
+      "surface_form": "Machine learning and the physical sciences"
+    },
+    {
+      "id": "clai_00035",
+      "type": "claim",
+      "surface_form": "JARVIS‑ML provides around 25 machine‑learning models for predicting material properties."
+    },
+    {
+      "id": "clai_00039",
+      "type": "claim",
+      "surface_form": "Interpretability analyses of JARVIS‑ML models reveal physical insights that go beyond conventional materials‑science intuition."
+    },
+    {
+      "id": "clai_00053",
+      "type": "claim",
+      "surface_form": "The best one-step gradient-boosted tree regression model achieves 165±4 K MAE and 0.89 R² on the test set for melting temperature prediction."
+    },
+    {
+      "id": "clai_00056",
+      "type": "claim",
+      "surface_form": "Cohesive energy and elastic moduli (shear and bulk modulus) are the most important features for melting temperature prediction, as identified by both ensemble feature importance and SHAP analysis."
+    },
+    {
+      "id": "clai_00057",
+      "type": "claim",
+      "surface_form": "Models trained without elastic moduli features yield errors greater than 400 K, demonstrating that elastic features are necessary for accurate melting temperature predictions."
+    },
+    {
+      "id": "clai_00059",
+      "type": "claim",
+      "surface_form": "Tree ensemble methods (gradient-boosted trees and random forest regression) substantially outperform linear models, which achieve MAE >240 K and RMSE >340 K, at least 100 K worse than non-linear approaches."
+    },
+    {
+      "id": "clai_00155",
+      "type": "claim",
+      "surface_form": "None of the tested descriptors outperforms the others in terms of accuracy across all datasets."
+    },
+    {
+      "id": "clai_00157",
+      "type": "claim",
+      "surface_form": "Compressed models are 1x-10x faster than the original models for both training and inference."
+    },
+    {
+      "id": "clai_00159",
+      "type": "claim",
+      "surface_form": "FP32 precision is 0.5x to 2x faster than FP64 precision in nearly all tested systems while demonstrating similar validation errors."
+    },
+    {
+      "id": "clai_00252",
+      "type": "claim",
+      "surface_form": "MLIPs map atomic configurations to total energy and provide forces and stresses as analytical derivatives of the potential energy surface."
+    },
+    {
+      "id": "clai_00262",
+      "type": "claim",
+      "surface_form": "MACE-MP0 performed best for discovering new stable materials with classification F1 score of 0.67, followed by CHGNet (0.61) and M3GNet (0.57)."
+    },
+    {
+      "id": "clai_00263",
+      "type": "claim",
+      "surface_form": "DScribe provides a library of descriptors for machine learning in materials science."
+    },
+    {
+      "id": "clai_00266",
+      "type": "claim",
+      "surface_form": "MLIP accuracy is typically on the scale of a few to tens of meV/atom, which is often an order of magnitude better than typical PBPs."
+    },
+    {
+      "id": "clai_00267",
+      "type": "claim",
+      "surface_form": "MACE and grACE packages provide excellent scaling with number of elements while achieving high accuracy."
+    },
+    {
+      "id": "clai_00280",
+      "type": "claim",
+      "surface_form": "There exists a continuum of approaches between pure PBPs (physics-derived with almost no fitting parameters) and pure MLIPs (purely numerical fit with almost no intuitive guidance)."
+    },
+    {
+      "id": "clai_00281",
+      "type": "claim",
+      "surface_form": "MLIPs require substantial training data to learn the physics of the system, though this is becoming easier to meet as ab initio data becomes more plentiful and standardized."
+    },
+    {
+      "id": "clai_00282",
+      "type": "claim",
+      "surface_form": "MLIPs are straightforward to iteratively improve by adding more training data, whereas improving PBPs often requires fundamental changes to underlying functional forms."
+    },
+    {
+      "id": "clai_00288",
+      "type": "claim",
+      "surface_form": "U-MLIPs typically cover over 50 elements and may accurately model solids, liquids, and molecular structures."
+    },
+    {
+      "id": "clai_00292",
+      "type": "claim",
+      "surface_form": "First published U-MLIPs with broad periodic table applicability came nearly simultaneously in early 2022."
+    },
+    {
+      "id": "clai_00293",
+      "type": "claim",
+      "surface_form": "U-MLIPs generally have low energy and force errors compared to their ab initio training data."
+    },
+    {
+      "id": "clai_00294",
+      "type": "claim",
+      "surface_form": "Pre-relaxing hypothetical structures with U-MLIP before ab initio calculations resulted in approximately 3× time savings compared to running ab initio on un-relaxed structures."
+    },
+    {
+      "id": "clai_00296",
+      "type": "claim",
+      "surface_form": "Good agreement on target properties provides greater confidence in U-MLIP than just similar energies and forces on select structures."
+    },
+    {
+      "id": "clai_00302",
+      "type": "claim",
+      "surface_form": "MLIPs are not fundamentally limited to specific system types (metallic, ionic, reactive vs. nonreactive), unlike distinctions that were essential for PBPs."
+    },
+    {
+      "id": "clai_00305",
+      "type": "claim",
+      "surface_form": "Universal MLIPs attempt to cover 10-100 elements under varying levels of constraints."
+    },
+    {
+      "id": "clai_00307",
+      "type": "claim",
+      "surface_form": "Random cross-validation or k-fold CV are reasonable for test data if the data is not highly correlated."
+    },
+    {
+      "id": "clai_00309",
+      "type": "claim",
+      "surface_form": "U-MLIPs systematically underpredict energies and forces due to softening of the potential energy surface, attributed to biased sampling in training datasets from DFT ionic relaxations near local PES minima."
+    },
+    {
+      "id": "clai_00310",
+      "type": "claim",
+      "surface_form": "Some of the best-performing MLIPs are trained separately on energies and forces and are non-conservative, with forces not directly calculated by differentiating the PES."
+    },
+    {
+      "id": "clai_00319",
+      "type": "claim",
+      "surface_form": "All algorithms exhibit a universal trend of decreasing relative errors as dataset size increases."
+    },
+    {
+      "id": "clai_00322",
+      "type": "claim",
+      "surface_form": "Matbench provides a consistent evaluation framework using five-fold nested cross-validation on identical folds across all algorithms to minimize comparison bias, with datasets pre-cleaned to remove unphysical computed data and task-irrelevant experimental data."
+    },
+    {
+      "id": "clai_00406",
+      "type": "claim",
+      "surface_form": "Neural operators can make predictions that are not affected by discretization settings while maintaining prediction accuracy."
+    },
+    {
+      "id": "clai_00407",
+      "type": "claim",
+      "surface_form": "Physics-informed machine learning and transfer learning can reduce the need for large datasets while maintaining prediction accuracy and performance of ML models."
+    },
+    {
+      "id": "clai_00408",
+      "type": "claim",
+      "surface_form": "Physics-naïve ML architectures often fail to capture underlying physical laws despite having relatively high prediction performance."
+    },
+    {
+      "id": "clai_00530",
+      "type": "claim",
+      "surface_form": "EquiformerV2+DeNS (a universal interatomic potential) achieves the highest classification performance among all evaluated models, with F1 scores up to 0.983, ROC AUC 0.96, and discovery acceleration factors up to 6.33, establishing state‑of‑the‑art for ML‑guided materials discovery."
+    },
+    {
+      "id": "clai_00534",
+      "type": "claim",
+      "surface_form": "Prospective benchmarking that introduces covariate shift between training and test distributions provides a more realistic indicator of real‑world discovery performance than retrospective split strategies, and requires training and test sets larger than the training set to evaluate model scalability."
+    },
+    {
+      "id": "clai_00535",
+      "type": "claim",
+      "surface_form": "Random‑forest models excel on small datasets but are outperformed by neural‑network models on large datasets due to the benefits of representation learning."
+    },
+    {
+      "id": "clai_00597",
+      "type": "claim",
+      "surface_form": "Attention re-normalization improves energy MAE by 2.4% while force MAE remains approximately the same."
+    },
+    {
+      "id": "clai_00600",
+      "type": "claim",
+      "surface_form": "MACE uses four-body (higher-order) messages, allowing only two message‑passing layers to achieve converged accuracy, whereas prior equivariant MPNNs required five or six layers."
+    },
+    {
+      "id": "clai_00603",
+      "type": "claim",
+      "surface_form": "MACE shows superior extrapolation ability, reducing energy RMSE by about 30 % at 1200 K and 40 % on dihedral‑slice energies for the 3BPA benchmark, and achieving lower errors on geometries far from the training distribution."
+    },
+    {
+      "id": "clai_00608",
+      "type": "claim",
+      "surface_form": "Increasing the correlation order of messages (ν) steepens the learning‑curve power law, yielding higher data efficiency."
+    },
+    {
+      "id": "comp_00147",
+      "type": "component",
+      "surface_form": "Rolling MAE evaluation"
+    },
+    {
+      "id": "data_00160",
+      "type": "dataset",
+      "surface_form": "parallel efficiency benchmark"
+    },
+    {
+      "id": "futu_00010",
+      "type": "future_topic",
+      "surface_form": "Continuous expansion of JARVIS datasets and tools"
+    },
+    {
+      "id": "futu_00011",
+      "type": "future_topic",
+      "surface_form": "Development of new machine‑learning models for material‑property predictions"
+    },
+    {
+      "id": "futu_00017",
+      "type": "future_topic",
+      "surface_form": "reactions"
+    },
+    {
+      "id": "futu_00019",
+      "type": "future_topic",
+      "surface_form": "phase transformations"
+    },
+    {
+      "id": "futu_00020",
+      "type": "future_topic",
+      "surface_form": "degradation"
+    },
+    {
+      "id": "futu_00021",
+      "type": "future_topic",
+      "surface_form": "interfacial reactions"
+    },
+    {
+      "id": "futu_00023",
+      "type": "future_topic",
+      "surface_form": "modeling objects with arbitrary positions such as astronomical observations"
+    },
+    {
+      "id": "futu_00067",
+      "type": "future_topic",
+      "surface_form": "Development of transferable machine‑learning interatomic potentials with broader configurational coverage"
+    },
+    {
+      "id": "futu_00099",
+      "type": "future_topic",
+      "surface_form": "Addressing data and discretization dependence in ML for multiscale modeling"
+    },
+    {
+      "id": "futu_00100",
+      "type": "future_topic",
+      "surface_form": "Improving interpretability of ML models in multiscale computational modeling"
+    },
+    {
+      "id": "futu_00102",
+      "type": "future_topic",
+      "surface_form": "Representation learning for precomputed QoIs in hierarchical modeling"
+    },
+    {
+      "id": "futu_00103",
+      "type": "future_topic",
+      "surface_form": "Deep learning models replacing traditional numerical solvers for on-the-fly computation"
+    },
+    {
+      "id": "futu_00110",
+      "type": "future_topic",
+      "surface_form": "Addressing convergence issues of the SCF method with learned models"
+    },
+    {
+      "id": "futu_00112",
+      "type": "future_topic",
+      "surface_form": "Integrating automatic differentiation techniques into broader DFT workflows"
+    },
+    {
+      "id": "futu_00133",
+      "type": "future_topic",
+      "surface_form": "Strategies to mitigate data limitations in materials‑science machine learning"
+    },
+    {
+      "id": "futu_00142",
+      "type": "future_topic",
+      "surface_form": "Task‑based evaluation frameworks for ML materials discovery"
+    },
+    {
+      "id": "futu_00145",
+      "type": "future_topic",
+      "surface_form": "Improving alignment between regression metrics and classification metrics for stability prediction"
+    },
+    {
+      "id": "futu_00154",
+      "type": "future_topic",
+      "surface_form": "Accelerating meso‑level material design through AI‑driven defect‑property translation"
+    },
+    {
+      "id": "futu_00155",
+      "type": "future_topic",
+      "surface_form": "Integration of multiscale modeling data (DFT, MD, FEM) to train GNNs for broader defect‑property relationships"
+    },
+    {
+      "id": "futu_00160",
+      "type": "future_topic",
+      "surface_form": "Learning curve power‑law behavior"
+    },
+    {
+      "id": "futu_00161",
+      "type": "future_topic",
+      "surface_form": "Extrapolation benchmark generalization"
+    },
+    {
+      "id": "futu_00178",
+      "type": "future_topic",
+      "surface_form": "Machine-learning based atomistic simulations bridging empirical and DFT realms"
+    },
+    {
+      "id": "metr_00021",
+      "type": "metric",
+      "surface_form": "MAE/ROC-AUC"
+    },
+    {
+      "id": "prob_00144",
+      "type": "problem",
+      "surface_form": "Interpretability of deep models for materials"
+    },
+    {
+      "id": "prob_00627",
+      "type": "problem",
+      "surface_form": "model interpretability in materials ML"
+    },
+    {
+      "id": "task_00053",
+      "type": "task",
+      "surface_form": "Benchmark evaluation on rMD17"
+    },
+    {
+      "id": "task_00054",
+      "type": "task",
+      "surface_form": "Benchmark evaluation on 3BPA"
+    },
+    {
+      "id": "task_00055",
+      "type": "task",
+      "surface_form": "Benchmark evaluation on AcAc"
+    },
+    {
+      "id": "task_00160",
+      "type": "task",
+      "surface_form": "force‑field benchmarking on MD17 datasets"
+    },
+    {
+      "id": "task_00338",
+      "type": "task",
+      "surface_form": "ML method benchmarking"
+    },
+    {
+      "id": "tech_00203",
+      "type": "technique",
+      "surface_form": "Rolling MAE computation"
+    },
+    {
+      "id": "tech_00377",
+      "type": "technique",
+      "surface_form": "ROC‑AUC and MAE evaluation metrics"
+    },
+    {
+      "id": "tech_00483",
+      "type": "technique",
+      "surface_form": "MAE evaluation"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 2,
+    "cited_work": 1,
+    "claim": 39,
+    "component": 1,
+    "dataset": 1,
+    "future_topic": 22,
+    "metric": 1,
+    "problem": 2,
+    "task": 5,
+    "technique": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "evaluation",
+  "representative_ids": [
+    "futu_00133",
+    "clai_00407"
+  ]
+}

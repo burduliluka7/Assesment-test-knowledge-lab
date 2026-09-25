@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "fresh_directory": "outputs",
+  "reference_directory": "outputs_verified",
+  "all_scientific_fields_equal": true,
+  "input_manifests_equal": true,
+  "changed_sources": [
+    "notes\\claim_annotations.json",
+    "scripts\\run_all.py",
+    "src\\tkh_abstraction\\benchmark.py",
+    "src\\tkh_abstraction\\evaluation.py",
+    "src\\tkh_abstraction\\plotting.py"
+  ],
+  "reference_evaluation_recovered": true,
+  "separate_embedding_cache": false,
+  "memberships_equal": true,
+  "labels_and_probabilities_equal": true,
+  "predictions_equal": true,
+  "reference_metrics_sha256": "9c04ba5bcae38e8fb1062601811b0b11b553366d32d2ded7de9596de7e3c0eeb",
+  "fresh_metrics_sha256": "1a1288f1b32a78291273df53900bf1c4da6506a51faf5afe56c965c1d036473c",
+  "scope": "Ordinary complete fresh-output workflow with fixed final source and exact original inputs, compared against independently executed hierarchy/NLI/perturbation/sensitivity/prediction artifacts whose evaluation was recovered after a null-DOI bug and completed with one inspected claim annotation. Changed source is restricted to evaluation/reporting and its manifest; construction, scoring, labels, parameters and representations are unchanged. Runtime/cache path excluded from scientific equality. Model and content-addressed embedding caches may be reused. Earlier separate-cache vector regeneration is additional evidence. No historical project results used."
+}

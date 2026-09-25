@@ -1,0 +1,168 @@
+{
+  "A": "PASS",
+  "B": "PASS",
+  "schema_assertions": true,
+  "inspected_anomaly_examples": [
+    {
+      "edge_id": "h_00344",
+      "edge_year": 2017,
+      "latest_member_year": 2018,
+      "article_year": 2018,
+      "visible_from": 2018,
+      "flags": [
+        "before_member_visibility",
+        "before_asserting_article"
+      ],
+      "members": [
+        "meth_00218",
+        "data_00063",
+        "metr_00002"
+      ]
+    },
+    {
+      "edge_id": "h_00346",
+      "edge_year": 2017,
+      "latest_member_year": 2018,
+      "article_year": 2018,
+      "visible_from": 2018,
+      "flags": [
+        "before_member_visibility",
+        "before_asserting_article"
+      ],
+      "members": [
+        "meth_00218",
+        "data_00065",
+        "metr_00002"
+      ]
+    },
+    {
+      "edge_id": "h_00347",
+      "edge_year": 2017,
+      "latest_member_year": 2018,
+      "article_year": 2018,
+      "visible_from": 2018,
+      "flags": [
+        "before_member_visibility",
+        "before_asserting_article"
+      ],
+      "members": [
+        "meth_00218",
+        "data_00066",
+        "metr_00002"
+      ]
+    },
+    {
+      "edge_id": "h_00348",
+      "edge_year": 2017,
+      "latest_member_year": 2018,
+      "article_year": 2018,
+      "visible_from": 2018,
+      "flags": [
+        "before_member_visibility",
+        "before_asserting_article"
+      ],
+      "members": [
+        "meth_00218",
+        "data_00067",
+        "metr_00002"
+      ]
+    },
+    {
+      "edge_id": "h_00349",
+      "edge_year": 2017,
+      "latest_member_year": 2018,
+      "article_year": 2018,
+      "visible_from": 2018,
+      "flags": [
+        "before_member_visibility",
+        "before_asserting_article"
+      ],
+      "members": [
+        "meth_00218",
+        "data_00068",
+        "metr_00002"
+      ]
+    },
+    {
+      "edge_id": "h_00351",
+      "edge_year": 2021,
+      "latest_member_year": 2024,
+      "article_year": 2024,
+      "visible_from": 2024,
+      "flags": [
+        "before_member_visibility",
+        "before_asserting_article"
+      ],
+      "members": [
+        "meth_00437",
+        "data_00216",
+        "metr_00002"
+      ]
+    },
+    {
+      "edge_id": "h_00352",
+      "edge_year": 2021,
+      "latest_member_year": 2024,
+      "article_year": 2024,
+      "visible_from": 2024,
+      "flags": [
+        "before_member_visibility",
+        "before_asserting_article"
+      ],
+      "members": [
+        "meth_00437",
+        "data_00217",
+        "metr_00002"
+      ]
+    },
+    {
+      "edge_id": "h_00353",
+      "edge_year": 2021,
+      "latest_member_year": 2024,
+      "article_year": 2024,
+      "visible_from": 2024,
+      "flags": [
+        "before_member_visibility",
+        "before_asserting_article"
+      ],
+      "members": [
+        "meth_00437",
+        "data_00218",
+        "metr_00004"
+      ]
+    },
+    {
+      "edge_id": "h_00354",
+      "edge_year": 2021,
+      "latest_member_year": 2024,
+      "article_year": 2024,
+      "visible_from": 2024,
+      "flags": [
+        "before_member_visibility",
+        "before_asserting_article"
+      ],
+      "members": [
+        "meth_00437",
+        "data_00219",
+        "metr_00004"
+      ]
+    },
+    {
+      "edge_id": "h_00355",
+      "edge_year": 2021,
+      "latest_member_year": 2024,
+      "article_year": 2024,
+      "visible_from": 2024,
+      "flags": [
+        "before_member_visibility",
+        "before_asserting_article"
+      ],
+      "members": [
+        "meth_00437",
+        "data_00220",
+        "metr_00002"
+      ]
+    }
+  ],
+  "interpretation": "Strict slicing defers whole edges until endpoints and asserting paper are visible. README edge-year-only illustrations are not strict counts. Annual 2026 cannot enforce February."
+}

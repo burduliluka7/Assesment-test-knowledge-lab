@@ -1,0 +1,5880 @@
+{
+  "protocol": "Existing v2 BGE cosine of type-prefixed surface text, exhaustive rank, no context. Gold used only for diagnostics.",
+  "records": [
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2025,
+      "gold_label": "MACE",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00048"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00048",
+          "node_type": "cited_work",
+          "surface_form": "MACE",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5246429443359375,
+          "surface_rank": 2003,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5246429443359375,
+      "best_surface_rank": 2003,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2025,
+      "gold_label": "M3GNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00037",
+        "comp_00482",
+        "cite_00062"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00062",
+          "node_type": "cited_work",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5532411932945251,
+          "surface_rank": 1518,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00482",
+          "node_type": "component",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5387529730796814,
+          "surface_rank": 1779,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00037",
+          "node_type": "method",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6021106839179993,
+          "surface_rank": 728,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6021106839179993,
+      "best_surface_rank": 728,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2025,
+      "gold_label": "CHGNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00038",
+        "comp_00481",
+        "cite_00063"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00063",
+          "node_type": "cited_work",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5364619493484497,
+          "surface_rank": 1820,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00481",
+          "node_type": "component",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5106037259101868,
+          "surface_rank": 2205,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00038",
+          "node_type": "method",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5847188234329224,
+          "surface_rank": 979,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5847188234329224,
+      "best_surface_rank": 979,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2025,
+      "gold_label": "GAP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00191"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00191",
+          "node_type": "cited_work",
+          "surface_form": "GAP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5213491916656494,
+          "surface_rank": 2060,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5213491916656494,
+      "best_surface_rank": 2060,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2025,
+      "gold_label": "NequIP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00058",
+        "cite_00049"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00049",
+          "node_type": "cited_work",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5374155044555664,
+          "surface_rank": 1800,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00058",
+          "node_type": "method",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.52032870054245,
+          "surface_rank": 2070,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5374155044555664,
+      "best_surface_rank": 1800,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2025,
+      "gold_label": "ACE",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00209"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00209",
+          "node_type": "cited_work",
+          "surface_form": "ACE",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5241066813468933,
+          "surface_rank": 2016,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5241066813468933,
+      "best_surface_rank": 2016,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2025,
+      "gold_label": "EquiformerV2",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00081",
+        "cite_00050"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00050",
+          "node_type": "cited_work",
+          "surface_form": "Equiformerv2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5054299831390381,
+          "surface_rank": 2256,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00081",
+          "node_type": "method",
+          "surface_form": "EquiformerV2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5218358635902405,
+          "surface_rank": 2054,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5218358635902405,
+      "best_surface_rank": 2054,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q2",
+      "question": "Which methods (by Feb 2026) are best suited for accelerating electronic structure calculations when self-consistent field iterations become prohibitively expensive for large systems (>10³ atoms)?",
+      "cutoff": 2025,
+      "gold_label": "DeepH",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00254"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00254",
+          "node_type": "cited_work",
+          "surface_form": "DeepH",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5480687022209167,
+          "surface_rank": 1783,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5480687022209167,
+      "best_surface_rank": 1783,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q2",
+      "question": "Which methods (by Feb 2026) are best suited for accelerating electronic structure calculations when self-consistent field iterations become prohibitively expensive for large systems (>10³ atoms)?",
+      "cutoff": 2025,
+      "gold_label": "D4FT",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00222",
+        "comp_00273"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "comp_00273",
+          "node_type": "component",
+          "surface_form": "D4FT",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5897622108459473,
+          "surface_rank": 1015,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00222",
+          "node_type": "method",
+          "surface_form": "D4FT",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6204295754432678,
+          "surface_rank": 613,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6204295754432678,
+      "best_surface_rank": 613,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q2",
+      "question": "Which methods (by Feb 2026) are best suited for accelerating electronic structure calculations when self-consistent field iterations become prohibitively expensive for large systems (>10³ atoms)?",
+      "cutoff": 2025,
+      "gold_label": "HamGNN",
+      "resolution_status": "safe_alias",
+      "resolved_node_ids": [
+        "meth_00221"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "meth_00221",
+          "node_type": "method",
+          "surface_form": "Universal HamGNN Hamiltonian model",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6402394771575928,
+          "surface_rank": 457,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6402394771575928,
+      "best_surface_rank": 457,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q3",
+      "question": "Which methods (by Feb 2026) are best suited for learning DFT Hamiltonians when dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms?",
+      "cutoff": 2025,
+      "gold_label": "xDeepH",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q3",
+      "question": "Which methods (by Feb 2026) are best suited for learning DFT Hamiltonians when dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms?",
+      "cutoff": 2025,
+      "gold_label": "DeepH-E3",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00118",
+        "cite_00255"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00255",
+          "node_type": "cited_work",
+          "surface_form": "DeepH‑E3",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5305932760238647,
+          "surface_rank": 1745,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00118",
+          "node_type": "method",
+          "surface_form": "DeepH-E3",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5626484751701355,
+          "surface_rank": 1138,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5626484751701355,
+      "best_surface_rank": 1138,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q4",
+      "question": "Which methods (by Feb 2026) are best suited for phonon property prediction when universal MLIPs show inaccuracies despite good energy/force performance?",
+      "cutoff": 2025,
+      "gold_label": "Hessian training",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q4",
+      "question": "Which methods (by Feb 2026) are best suited for phonon property prediction when universal MLIPs show inaccuracies despite good energy/force performance?",
+      "cutoff": 2025,
+      "gold_label": "VGNN",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00409"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00409",
+          "node_type": "cited_work",
+          "surface_form": "VGNN",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5506342649459839,
+          "surface_rank": 1984,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5506342649459839,
+      "best_surface_rank": 1984,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q4",
+      "question": "Which methods (by Feb 2026) are best suited for phonon property prediction when universal MLIPs show inaccuracies despite good energy/force performance?",
+      "cutoff": 2025,
+      "gold_label": "MACE-F",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q5",
+      "question": "Which methods (by Feb 2026) are best suited for coarse-graining molecular dynamics when crystalline symmetries and long-range elastic interactions must be preserved?",
+      "cutoff": 2025,
+      "gold_label": "Bead-mapping",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q5",
+      "question": "Which methods (by Feb 2026) are best suited for coarse-graining molecular dynamics when crystalline symmetries and long-range elastic interactions must be preserved?",
+      "cutoff": 2025,
+      "gold_label": "GNN+GPP",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q6",
+      "question": "Which methods (by Feb 2026) are best suited for predicting ionic conductivity when full ab initio MD is too expensive but accuracy must be maintained?",
+      "cutoff": 2025,
+      "gold_label": "DeePMD+AL",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q6",
+      "question": "Which methods (by Feb 2026) are best suited for predicting ionic conductivity when full ab initio MD is too expensive but accuracy must be maintained?",
+      "cutoff": 2025,
+      "gold_label": "LiFlow",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00239"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "meth_00239",
+          "node_type": "method",
+          "surface_form": "LiFlow",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6034549474716187,
+          "surface_rank": 518,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6034549474716187,
+      "best_surface_rank": 518,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q6",
+      "question": "Which methods (by Feb 2026) are best suited for predicting ionic conductivity when full ab initio MD is too expensive but accuracy must be maintained?",
+      "cutoff": 2025,
+      "gold_label": "MLIP descriptors",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q7",
+      "question": "Which methods (by Feb 2026) are best suited for predicting phase transitions when screening ~50,000 inorganic compounds at high throughput?",
+      "cutoff": 2025,
+      "gold_label": "GNN free energies",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q7",
+      "question": "Which methods (by Feb 2026) are best suited for predicting phase transitions when screening ~50,000 inorganic compounds at high throughput?",
+      "cutoff": 2025,
+      "gold_label": "symbolic regression",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00068",
+        "cite_00016"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00016",
+          "node_type": "cited_work",
+          "surface_form": "Symbolic Regression",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6101943850517273,
+          "surface_rank": 686,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00068",
+          "node_type": "method",
+          "surface_form": "symbolic regression",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6357377171516418,
+          "surface_rank": 360,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6357377171516418,
+      "best_surface_rank": 360,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q8",
+      "question": "Which methods (by Feb 2026) are best suited for predicting fracture patterns when generalizing from atomistic MD data to unseen bicrystalline structures?",
+      "cutoff": 2025,
+      "gold_label": "ConvLSTM",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00001"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00001",
+          "node_type": "cited_work",
+          "surface_form": "ConvLSTM",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5626452565193176,
+          "surface_rank": 1800,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5626452565193176,
+      "best_surface_rank": 1800,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q8",
+      "question": "Which methods (by Feb 2026) are best suited for predicting fracture patterns when generalizing from atomistic MD data to unseen bicrystalline structures?",
+      "cutoff": 2025,
+      "gold_label": "GNN stress fields",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q9",
+      "question": "Which methods (by Feb 2026) are best suited for ensuring physical consistency when transferring information between scales without violating thermodynamic principles?",
+      "cutoff": 2025,
+      "gold_label": "E(3)-equivariant GNNs",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q9",
+      "question": "Which methods (by Feb 2026) are best suited for ensuring physical consistency when transferring information between scales without violating thermodynamic principles?",
+      "cutoff": 2025,
+      "gold_label": "physics-informed",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q9",
+      "question": "Which methods (by Feb 2026) are best suited for ensuring physical consistency when transferring information between scales without violating thermodynamic principles?",
+      "cutoff": 2025,
+      "gold_label": "NequIP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00058",
+        "cite_00049"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00049",
+          "node_type": "cited_work",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5656187534332275,
+          "surface_rank": 1652,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00058",
+          "node_type": "method",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5378718376159668,
+          "surface_rank": 2139,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5656187534332275,
+      "best_surface_rank": 1652,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q10",
+      "question": "Which methods (by Feb 2026) are best suited for representing atomic environments when the system exhibits significant compositional diversity, defects, and disorder?",
+      "cutoff": 2025,
+      "gold_label": "GNNs + ACE descriptors",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q10",
+      "question": "Which methods (by Feb 2026) are best suited for representing atomic environments when the system exhibits significant compositional diversity, defects, and disorder?",
+      "cutoff": 2025,
+      "gold_label": "SchNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00050",
+        "cite_00005"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00005",
+          "node_type": "cited_work",
+          "surface_form": "SchNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5574171543121338,
+          "surface_rank": 1933,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00050",
+          "node_type": "method",
+          "surface_form": "SchNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5551214218139648,
+          "surface_rank": 1976,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5574171543121338,
+      "best_surface_rank": 1933,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q11",
+      "question": "Which methods (by Feb 2026) are best suited for integrating features from three or more distinct scales simultaneously within a unified framework?",
+      "cutoff": 2025,
+      "gold_label": "CE→MC→NN→PF",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q11",
+      "question": "Which methods (by Feb 2026) are best suited for integrating features from three or more distinct scales simultaneously within a unified framework?",
+      "cutoff": 2025,
+      "gold_label": "hybrid frameworks",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "MACE",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00048"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00048",
+          "node_type": "cited_work",
+          "surface_form": "MACE",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5621775984764099,
+          "surface_rank": 1388,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5621775984764099,
+      "best_surface_rank": 1388,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "NequIP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00058",
+        "cite_00049"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00049",
+          "node_type": "cited_work",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5473353266716003,
+          "surface_rank": 1713,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00058",
+          "node_type": "method",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5216784477233887,
+          "surface_rank": 2167,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5473353266716003,
+      "best_surface_rank": 1713,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "CHGNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00038",
+        "comp_00481",
+        "cite_00063"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00063",
+          "node_type": "cited_work",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5648208856582642,
+          "surface_rank": 1328,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00481",
+          "node_type": "component",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.545229434967041,
+          "surface_rank": 1756,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00038",
+          "node_type": "method",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6000202894210815,
+          "surface_rank": 736,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6000202894210815,
+      "best_surface_rank": 736,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "M3GNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00037",
+        "comp_00482",
+        "cite_00062"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00062",
+          "node_type": "cited_work",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6072066426277161,
+          "surface_rank": 661,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00482",
+          "node_type": "component",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5999009609222412,
+          "surface_rank": 739,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00037",
+          "node_type": "method",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6439534425735474,
+          "surface_rank": 371,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6439534425735474,
+      "best_surface_rank": 371,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "SevenNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00054"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00054",
+          "node_type": "cited_work",
+          "surface_form": "SevenNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5255540013313293,
+          "surface_rank": 2107,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5255540013313293,
+      "best_surface_rank": 2107,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "GAP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00191"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00191",
+          "node_type": "cited_work",
+          "surface_form": "GAP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5410248637199402,
+          "surface_rank": 1843,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5410248637199402,
+      "best_surface_rank": 1843,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "DeePMD",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00214"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00214",
+          "node_type": "cited_work",
+          "surface_form": "DeepMD",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.59136962890625,
+          "surface_rank": 849,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.59136962890625,
+      "best_surface_rank": 849,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "MatterSim",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00091",
+        "cite_00060"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00060",
+          "node_type": "cited_work",
+          "surface_form": "MatterSim",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5443971157073975,
+          "surface_rank": 1774,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00091",
+          "node_type": "method",
+          "surface_form": "MatterSim",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.559861421585083,
+          "surface_rank": 1430,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.559861421585083,
+      "best_surface_rank": 1430,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "Orb",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00011"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00011",
+          "node_type": "cited_work",
+          "surface_form": "Orb",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5705205202102661,
+          "surface_rank": 1217,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5705205202102661,
+      "best_surface_rank": 1217,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "eSEN",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00053"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00053",
+          "node_type": "cited_work",
+          "surface_form": "eSEN",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.547660768032074,
+          "surface_rank": 1706,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00293",
+          "node_type": "method",
+          "surface_form": "eSEN",
+          "resolved_at_cutoff": false,
+          "present_in_snapshot": false,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "not_visible_at_cutoff"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.547660768032074,
+      "best_surface_rank": 1706,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "PET",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00044",
+          "node_type": "cited_work",
+          "surface_form": "PET",
+          "resolved_at_cutoff": false,
+          "present_in_snapshot": false,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "not_visible_at_cutoff"
+        }
+      ],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "UMA",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00046",
+          "node_type": "cited_work",
+          "surface_form": "UMA",
+          "resolved_at_cutoff": false,
+          "present_in_snapshot": false,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "not_visible_at_cutoff"
+        }
+      ],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2025,
+      "gold_label": "EquiformerV2",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00081",
+        "cite_00050"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00050",
+          "node_type": "cited_work",
+          "surface_form": "Equiformerv2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5224848985671997,
+          "surface_rank": 2152,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00081",
+          "node_type": "method",
+          "surface_form": "EquiformerV2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5275947451591492,
+          "surface_rank": 2083,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5275947451591492,
+      "best_surface_rank": 2083,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2025,
+      "gold_label": "CGCNN",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00054",
+        "cite_00354"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00354",
+          "node_type": "cited_work",
+          "surface_form": "CGCNN",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6224370002746582,
+          "surface_rank": 925,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00054",
+          "node_type": "method",
+          "surface_form": "CGCNN",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6792980432510376,
+          "surface_rank": 217,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6792980432510376,
+      "best_surface_rank": 217,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2025,
+      "gold_label": "SchNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00050",
+        "cite_00005"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00005",
+          "node_type": "cited_work",
+          "surface_form": "SchNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5207124948501587,
+          "surface_rank": 2230,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00050",
+          "node_type": "method",
+          "surface_form": "SchNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5331019759178162,
+          "surface_rank": 2133,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5331019759178162,
+      "best_surface_rank": 2133,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2025,
+      "gold_label": "MEGNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00036",
+        "cite_00334"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00334",
+          "node_type": "cited_work",
+          "surface_form": "MEGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5440888404846191,
+          "surface_rank": 2023,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00036",
+          "node_type": "method",
+          "surface_form": "MEGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5755586624145508,
+          "surface_rank": 1710,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5755586624145508,
+      "best_surface_rank": 1710,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2025,
+      "gold_label": "M3GNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00037",
+        "comp_00482",
+        "cite_00062"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00062",
+          "node_type": "cited_work",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5195873379707336,
+          "surface_rank": 2236,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00482",
+          "node_type": "component",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5642691850662231,
+          "surface_rank": 1831,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00037",
+          "node_type": "method",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5508604645729065,
+          "surface_rank": 1956,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5642691850662231,
+      "best_surface_rank": 1831,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2025,
+      "gold_label": "NequIP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00058",
+        "cite_00049"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00049",
+          "node_type": "cited_work",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5099112391471863,
+          "surface_rank": 2301,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00058",
+          "node_type": "method",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.47954344749450684,
+          "surface_rank": 2424,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5099112391471863,
+      "best_surface_rank": 2301,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2025,
+      "gold_label": "MACE",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00048"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00048",
+          "node_type": "cited_work",
+          "surface_form": "MACE",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5189818739891052,
+          "surface_rank": 2243,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5189818739891052,
+      "best_surface_rank": 2243,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2025,
+      "gold_label": "CHGNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00038",
+        "comp_00481",
+        "cite_00063"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00063",
+          "node_type": "cited_work",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5092933177947998,
+          "surface_rank": 2304,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00481",
+          "node_type": "component",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5453177690505981,
+          "surface_rank": 2009,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00038",
+          "node_type": "method",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.535295844078064,
+          "surface_rank": 2111,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5453177690505981,
+      "best_surface_rank": 2009,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2025,
+      "gold_label": "EquiformerV2",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00081",
+        "cite_00050"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00050",
+          "node_type": "cited_work",
+          "surface_form": "Equiformerv2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.4700857698917389,
+          "surface_rank": 2442,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00081",
+          "node_type": "method",
+          "surface_form": "EquiformerV2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.49324947595596313,
+          "surface_rank": 2387,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.49324947595596313,
+      "best_surface_rank": 2387,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "Matbench Discovery",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "data_00013",
+        "meth_00159",
+        "cite_00302"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00302",
+          "node_type": "cited_work",
+          "surface_form": "Matbench discovery",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6638925671577454,
+          "surface_rank": 420,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "data_00013",
+          "node_type": "dataset",
+          "surface_form": "Matbench Discovery",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.7072080373764038,
+          "surface_rank": 180,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00159",
+          "node_type": "method",
+          "surface_form": "Matbench Discovery",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.7072080373764038,
+      "best_surface_rank": 180,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "Matbench",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "comp_00448",
+        "data_00114",
+        "meth_00348",
+        "cite_00362"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00362",
+          "node_type": "cited_work",
+          "surface_form": "Matbench",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5747092366218567,
+          "surface_rank": 1151,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00448",
+          "node_type": "component",
+          "surface_form": "Matbench",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        },
+        {
+          "node_id": "data_00114",
+          "node_type": "dataset",
+          "surface_form": "Matbench",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6311260461807251,
+          "surface_rank": 725,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00348",
+          "node_type": "method",
+          "surface_form": "Matbench",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6311260461807251,
+      "best_surface_rank": 725,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "JARVIS-DFT",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "comp_00335"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "comp_00335",
+          "node_type": "component",
+          "surface_form": "JARVIS‑DFT",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "all_resolved_nodes_excluded_by_route"
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "Materials Project",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00143",
+        "data_00061",
+        "cite_00018"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00018",
+          "node_type": "cited_work",
+          "surface_form": "Materials Project",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.656213641166687,
+          "surface_rank": 477,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "data_00061",
+          "node_type": "dataset",
+          "surface_form": "Materials Project",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.760998010635376,
+          "surface_rank": 29,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00143",
+          "node_type": "method",
+          "surface_form": "Materials Project",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.760998010635376,
+      "best_surface_rank": 29,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "MPtrj",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00372",
+          "node_type": "cited_work",
+          "surface_form": "MPTrj",
+          "resolved_at_cutoff": false,
+          "present_in_snapshot": false,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "not_visible_at_cutoff"
+        },
+        {
+          "node_id": "data_00102",
+          "node_type": "dataset",
+          "surface_form": "MPtrj",
+          "resolved_at_cutoff": false,
+          "present_in_snapshot": false,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "not_visible_at_cutoff"
+        }
+      ],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "OQMD",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "data_00095",
+        "cite_00370"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00370",
+          "node_type": "cited_work",
+          "surface_form": "OQMD",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.560674250125885,
+          "surface_rank": 1260,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "data_00095",
+          "node_type": "dataset",
+          "surface_form": "OQMD",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6224163174629211,
+          "surface_rank": 807,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6224163174629211,
+      "best_surface_rank": 807,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "AFLOW",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00274"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00274",
+          "node_type": "cited_work",
+          "surface_form": "AFLOW",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5406131148338318,
+          "surface_rank": 1377,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5406131148338318,
+      "best_surface_rank": 1377,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "Alexandria",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00369"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00369",
+          "node_type": "cited_work",
+          "surface_form": "Alexandria",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5095410943031311,
+          "surface_rank": 1463,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00295",
+          "node_type": "method",
+          "surface_form": "Alexandria",
+          "resolved_at_cutoff": false,
+          "present_in_snapshot": false,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "not_visible_at_cutoff"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5095410943031311,
+      "best_surface_rank": 1463,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "GNoME",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00169",
+        "comp_00589",
+        "data_00144",
+        "cite_00330"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00330",
+          "node_type": "cited_work",
+          "surface_form": "GNoME",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5243407487869263,
+          "surface_rank": 1435,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00589",
+          "node_type": "component",
+          "surface_form": "GNoME",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        },
+        {
+          "node_id": "data_00144",
+          "node_type": "dataset",
+          "surface_form": "GNoME",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5981609225273132,
+          "surface_rank": 1002,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00169",
+          "node_type": "method",
+          "surface_form": "GNoME",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5981609225273132,
+      "best_surface_rank": 1002,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "WBM",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "data_00175"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00376",
+          "node_type": "cited_work",
+          "surface_form": "WBM",
+          "resolved_at_cutoff": false,
+          "present_in_snapshot": false,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "not_visible_at_cutoff"
+        },
+        {
+          "node_id": "data_00175",
+          "node_type": "dataset",
+          "surface_form": "WBM",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6489281058311462,
+          "surface_rank": 550,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6489281058311462,
+      "best_surface_rank": 550,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2025,
+      "gold_label": "OMat24",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00311"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00311",
+          "node_type": "cited_work",
+          "surface_form": "OMat24",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5380350351333618,
+          "surface_rank": 1393,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "data_00101",
+          "node_type": "dataset",
+          "surface_form": "OMat24",
+          "resolved_at_cutoff": false,
+          "present_in_snapshot": false,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "not_visible_at_cutoff"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5380350351333618,
+      "best_surface_rank": 1393,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2026,
+      "gold_label": "MACE",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00048"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00048",
+          "node_type": "cited_work",
+          "surface_form": "MACE",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5246429443359375,
+          "surface_rank": 2306,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5246429443359375,
+      "best_surface_rank": 2306,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2026,
+      "gold_label": "M3GNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00037",
+        "comp_00482",
+        "cite_00062"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00062",
+          "node_type": "cited_work",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5532411932945251,
+          "surface_rank": 1742,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00482",
+          "node_type": "component",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5387529730796814,
+          "surface_rank": 2043,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00037",
+          "node_type": "method",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6021106839179993,
+          "surface_rank": 813,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6021106839179993,
+      "best_surface_rank": 813,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2026,
+      "gold_label": "CHGNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00038",
+        "comp_00481",
+        "cite_00063"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00063",
+          "node_type": "cited_work",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5364619493484497,
+          "surface_rank": 2088,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00481",
+          "node_type": "component",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5106037259101868,
+          "surface_rank": 2542,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00038",
+          "node_type": "method",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5847188234329224,
+          "surface_rank": 1109,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5847188234329224,
+      "best_surface_rank": 1109,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2026,
+      "gold_label": "GAP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00191"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00191",
+          "node_type": "cited_work",
+          "surface_form": "GAP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5213491916656494,
+          "surface_rank": 2367,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5213491916656494,
+      "best_surface_rank": 2367,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2026,
+      "gold_label": "NequIP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00058",
+        "cite_00049"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00049",
+          "node_type": "cited_work",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5374155044555664,
+          "surface_rank": 2067,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00058",
+          "node_type": "method",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.52032870054245,
+          "surface_rank": 2377,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5374155044555664,
+      "best_surface_rank": 2067,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2026,
+      "gold_label": "ACE",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00209"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00209",
+          "node_type": "cited_work",
+          "surface_form": "ACE",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5241066813468933,
+          "surface_rank": 2319,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5241066813468933,
+      "best_surface_rank": 2319,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+      "cutoff": 2026,
+      "gold_label": "EquiformerV2",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00081",
+        "cite_00050"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00050",
+          "node_type": "cited_work",
+          "surface_form": "Equiformerv2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5054299831390381,
+          "surface_rank": 2605,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00081",
+          "node_type": "method",
+          "surface_form": "EquiformerV2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5218358635902405,
+          "surface_rank": 2360,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5218358635902405,
+      "best_surface_rank": 2360,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q2",
+      "question": "Which methods (by Feb 2026) are best suited for accelerating electronic structure calculations when self-consistent field iterations become prohibitively expensive for large systems (>10³ atoms)?",
+      "cutoff": 2026,
+      "gold_label": "DeepH",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00254"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00254",
+          "node_type": "cited_work",
+          "surface_form": "DeepH",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5480687022209167,
+          "surface_rank": 2056,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5480687022209167,
+      "best_surface_rank": 2056,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q2",
+      "question": "Which methods (by Feb 2026) are best suited for accelerating electronic structure calculations when self-consistent field iterations become prohibitively expensive for large systems (>10³ atoms)?",
+      "cutoff": 2026,
+      "gold_label": "D4FT",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00222",
+        "comp_00273"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "comp_00273",
+          "node_type": "component",
+          "surface_form": "D4FT",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5897622108459473,
+          "surface_rank": 1155,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00222",
+          "node_type": "method",
+          "surface_form": "D4FT",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6204295754432678,
+          "surface_rank": 693,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6204295754432678,
+      "best_surface_rank": 693,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q2",
+      "question": "Which methods (by Feb 2026) are best suited for accelerating electronic structure calculations when self-consistent field iterations become prohibitively expensive for large systems (>10³ atoms)?",
+      "cutoff": 2026,
+      "gold_label": "HamGNN",
+      "resolution_status": "safe_alias",
+      "resolved_node_ids": [
+        "meth_00221"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "meth_00221",
+          "node_type": "method",
+          "surface_form": "Universal HamGNN Hamiltonian model",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6402394771575928,
+          "surface_rank": 506,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6402394771575928,
+      "best_surface_rank": 506,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q3",
+      "question": "Which methods (by Feb 2026) are best suited for learning DFT Hamiltonians when dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms?",
+      "cutoff": 2026,
+      "gold_label": "xDeepH",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q3",
+      "question": "Which methods (by Feb 2026) are best suited for learning DFT Hamiltonians when dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms?",
+      "cutoff": 2026,
+      "gold_label": "DeepH-E3",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00118",
+        "cite_00255"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00255",
+          "node_type": "cited_work",
+          "surface_form": "DeepH‑E3",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5305932760238647,
+          "surface_rank": 1990,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00118",
+          "node_type": "method",
+          "surface_form": "DeepH-E3",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5626484751701355,
+          "surface_rank": 1274,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5626484751701355,
+      "best_surface_rank": 1274,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q4",
+      "question": "Which methods (by Feb 2026) are best suited for phonon property prediction when universal MLIPs show inaccuracies despite good energy/force performance?",
+      "cutoff": 2026,
+      "gold_label": "Hessian training",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q4",
+      "question": "Which methods (by Feb 2026) are best suited for phonon property prediction when universal MLIPs show inaccuracies despite good energy/force performance?",
+      "cutoff": 2026,
+      "gold_label": "VGNN",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00409"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00409",
+          "node_type": "cited_work",
+          "surface_form": "VGNN",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5506342649459839,
+          "surface_rank": 2272,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5506342649459839,
+      "best_surface_rank": 2272,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q4",
+      "question": "Which methods (by Feb 2026) are best suited for phonon property prediction when universal MLIPs show inaccuracies despite good energy/force performance?",
+      "cutoff": 2026,
+      "gold_label": "MACE-F",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q5",
+      "question": "Which methods (by Feb 2026) are best suited for coarse-graining molecular dynamics when crystalline symmetries and long-range elastic interactions must be preserved?",
+      "cutoff": 2026,
+      "gold_label": "Bead-mapping",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q5",
+      "question": "Which methods (by Feb 2026) are best suited for coarse-graining molecular dynamics when crystalline symmetries and long-range elastic interactions must be preserved?",
+      "cutoff": 2026,
+      "gold_label": "GNN+GPP",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q6",
+      "question": "Which methods (by Feb 2026) are best suited for predicting ionic conductivity when full ab initio MD is too expensive but accuracy must be maintained?",
+      "cutoff": 2026,
+      "gold_label": "DeePMD+AL",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q6",
+      "question": "Which methods (by Feb 2026) are best suited for predicting ionic conductivity when full ab initio MD is too expensive but accuracy must be maintained?",
+      "cutoff": 2026,
+      "gold_label": "LiFlow",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00239"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "meth_00239",
+          "node_type": "method",
+          "surface_form": "LiFlow",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6034549474716187,
+          "surface_rank": 585,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6034549474716187,
+      "best_surface_rank": 585,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q6",
+      "question": "Which methods (by Feb 2026) are best suited for predicting ionic conductivity when full ab initio MD is too expensive but accuracy must be maintained?",
+      "cutoff": 2026,
+      "gold_label": "MLIP descriptors",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q7",
+      "question": "Which methods (by Feb 2026) are best suited for predicting phase transitions when screening ~50,000 inorganic compounds at high throughput?",
+      "cutoff": 2026,
+      "gold_label": "GNN free energies",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q7",
+      "question": "Which methods (by Feb 2026) are best suited for predicting phase transitions when screening ~50,000 inorganic compounds at high throughput?",
+      "cutoff": 2026,
+      "gold_label": "symbolic regression",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00068",
+        "cite_00016"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00016",
+          "node_type": "cited_work",
+          "surface_form": "Symbolic Regression",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6101943850517273,
+          "surface_rank": 768,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00068",
+          "node_type": "method",
+          "surface_form": "symbolic regression",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6357377171516418,
+          "surface_rank": 405,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6357377171516418,
+      "best_surface_rank": 405,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q8",
+      "question": "Which methods (by Feb 2026) are best suited for predicting fracture patterns when generalizing from atomistic MD data to unseen bicrystalline structures?",
+      "cutoff": 2026,
+      "gold_label": "ConvLSTM",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00001"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00001",
+          "node_type": "cited_work",
+          "surface_form": "ConvLSTM",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5626452565193176,
+          "surface_rank": 2052,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5626452565193176,
+      "best_surface_rank": 2052,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q8",
+      "question": "Which methods (by Feb 2026) are best suited for predicting fracture patterns when generalizing from atomistic MD data to unseen bicrystalline structures?",
+      "cutoff": 2026,
+      "gold_label": "GNN stress fields",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q9",
+      "question": "Which methods (by Feb 2026) are best suited for ensuring physical consistency when transferring information between scales without violating thermodynamic principles?",
+      "cutoff": 2026,
+      "gold_label": "E(3)-equivariant GNNs",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q9",
+      "question": "Which methods (by Feb 2026) are best suited for ensuring physical consistency when transferring information between scales without violating thermodynamic principles?",
+      "cutoff": 2026,
+      "gold_label": "physics-informed",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q9",
+      "question": "Which methods (by Feb 2026) are best suited for ensuring physical consistency when transferring information between scales without violating thermodynamic principles?",
+      "cutoff": 2026,
+      "gold_label": "NequIP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00058",
+        "cite_00049"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00049",
+          "node_type": "cited_work",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5656187534332275,
+          "surface_rank": 1905,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00058",
+          "node_type": "method",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5378718376159668,
+          "surface_rank": 2468,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5656187534332275,
+      "best_surface_rank": 1905,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q10",
+      "question": "Which methods (by Feb 2026) are best suited for representing atomic environments when the system exhibits significant compositional diversity, defects, and disorder?",
+      "cutoff": 2026,
+      "gold_label": "GNNs + ACE descriptors",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q10",
+      "question": "Which methods (by Feb 2026) are best suited for representing atomic environments when the system exhibits significant compositional diversity, defects, and disorder?",
+      "cutoff": 2026,
+      "gold_label": "SchNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00050",
+        "cite_00005"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00005",
+          "node_type": "cited_work",
+          "surface_form": "SchNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.557417094707489,
+          "surface_rank": 2213,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00050",
+          "node_type": "method",
+          "surface_form": "SchNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5551214218139648,
+          "surface_rank": 2262,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.557417094707489,
+      "best_surface_rank": 2213,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q11",
+      "question": "Which methods (by Feb 2026) are best suited for integrating features from three or more distinct scales simultaneously within a unified framework?",
+      "cutoff": 2026,
+      "gold_label": "CE→MC→NN→PF",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q11",
+      "question": "Which methods (by Feb 2026) are best suited for integrating features from three or more distinct scales simultaneously within a unified framework?",
+      "cutoff": 2026,
+      "gold_label": "hybrid frameworks",
+      "resolution_status": "unmapped",
+      "resolved_node_ids": [],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [],
+      "present_in_snapshot": false,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "no_accepted_target_mapping"
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "MACE",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00048"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00048",
+          "node_type": "cited_work",
+          "surface_form": "MACE",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5621775984764099,
+          "surface_rank": 1569,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5621775984764099,
+      "best_surface_rank": 1569,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "NequIP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00058",
+        "cite_00049"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00049",
+          "node_type": "cited_work",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5473353266716003,
+          "surface_rank": 1957,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00058",
+          "node_type": "method",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5216784477233887,
+          "surface_rank": 2496,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5473353266716003,
+      "best_surface_rank": 1957,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "CHGNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00038",
+        "comp_00481",
+        "cite_00063"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00063",
+          "node_type": "cited_work",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5648209452629089,
+          "surface_rank": 1502,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00481",
+          "node_type": "component",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.545229434967041,
+          "surface_rank": 2003,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00038",
+          "node_type": "method",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6000202894210815,
+          "surface_rank": 821,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6000202894210815,
+      "best_surface_rank": 821,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "M3GNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00037",
+        "comp_00482",
+        "cite_00062"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00062",
+          "node_type": "cited_work",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6072066426277161,
+          "surface_rank": 728,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00482",
+          "node_type": "component",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5999009609222412,
+          "surface_rank": 825,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00037",
+          "node_type": "method",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6439534425735474,
+          "surface_rank": 403,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6439534425735474,
+      "best_surface_rank": 403,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "SevenNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00054"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00054",
+          "node_type": "cited_work",
+          "surface_form": "SevenNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5255540013313293,
+          "surface_rank": 2427,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5255540013313293,
+      "best_surface_rank": 2427,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "GAP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00191"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00191",
+          "node_type": "cited_work",
+          "surface_form": "GAP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5410248637199402,
+          "surface_rank": 2103,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5410248637199402,
+      "best_surface_rank": 2103,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "DeePMD",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00214"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00214",
+          "node_type": "cited_work",
+          "surface_form": "DeepMD",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.59136962890625,
+          "surface_rank": 950,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.59136962890625,
+      "best_surface_rank": 950,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "MatterSim",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00091",
+        "cite_00060"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00060",
+          "node_type": "cited_work",
+          "surface_form": "MatterSim",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5443971157073975,
+          "surface_rank": 2022,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00091",
+          "node_type": "method",
+          "surface_form": "MatterSim",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.559861421585083,
+          "surface_rank": 1621,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.559861421585083,
+      "best_surface_rank": 1621,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "Orb",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00011"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00011",
+          "node_type": "cited_work",
+          "surface_form": "Orb",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5705205202102661,
+          "surface_rank": 1371,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5705205202102661,
+      "best_surface_rank": 1371,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "eSEN",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00293",
+        "cite_00053"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00053",
+          "node_type": "cited_work",
+          "surface_form": "eSEN",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.547660768032074,
+          "surface_rank": 1948,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00293",
+          "node_type": "method",
+          "surface_form": "eSEN",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.566990852355957,
+          "surface_rank": 1446,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.566990852355957,
+      "best_surface_rank": 1446,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "PET",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00044"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00044",
+          "node_type": "cited_work",
+          "surface_form": "PET",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5266014933586121,
+          "surface_rank": 2413,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5266014933586121,
+      "best_surface_rank": 2413,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "UMA",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00046"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00046",
+          "node_type": "cited_work",
+          "surface_form": "UMA",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5268158316612244,
+          "surface_rank": 2408,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5268158316612244,
+      "best_surface_rank": 2408,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q12",
+      "question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+      "cutoff": 2026,
+      "gold_label": "EquiformerV2",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00081",
+        "cite_00050"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00050",
+          "node_type": "cited_work",
+          "surface_form": "Equiformerv2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5224848985671997,
+          "surface_rank": 2479,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00081",
+          "node_type": "method",
+          "surface_form": "EquiformerV2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5275947451591492,
+          "surface_rank": 2398,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5275947451591492,
+      "best_surface_rank": 2398,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2026,
+      "gold_label": "CGCNN",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00054",
+        "cite_00354"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00354",
+          "node_type": "cited_work",
+          "surface_form": "CGCNN",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6224370002746582,
+          "surface_rank": 1038,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00054",
+          "node_type": "method",
+          "surface_form": "CGCNN",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6792980432510376,
+          "surface_rank": 237,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6792980432510376,
+      "best_surface_rank": 237,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2026,
+      "gold_label": "SchNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00050",
+        "cite_00005"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00005",
+          "node_type": "cited_work",
+          "surface_form": "SchNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5207124948501587,
+          "surface_rank": 2554,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00050",
+          "node_type": "method",
+          "surface_form": "SchNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5331019759178162,
+          "surface_rank": 2438,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5331019759178162,
+      "best_surface_rank": 2438,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2026,
+      "gold_label": "MEGNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00036",
+        "cite_00334"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00334",
+          "node_type": "cited_work",
+          "surface_form": "MEGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5440888404846191,
+          "surface_rank": 2312,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00036",
+          "node_type": "method",
+          "surface_form": "MEGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5755586624145508,
+          "surface_rank": 1953,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5755586624145508,
+      "best_surface_rank": 1953,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2026,
+      "gold_label": "M3GNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00037",
+        "comp_00482",
+        "cite_00062"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00062",
+          "node_type": "cited_work",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5195873379707336,
+          "surface_rank": 2561,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00482",
+          "node_type": "component",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5642691850662231,
+          "surface_rank": 2093,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00037",
+          "node_type": "method",
+          "surface_form": "M3GNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5508604645729065,
+          "surface_rank": 2238,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5642691850662231,
+      "best_surface_rank": 2093,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2026,
+      "gold_label": "NequIP",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00058",
+        "cite_00049"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00049",
+          "node_type": "cited_work",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5099112391471863,
+          "surface_rank": 2643,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00058",
+          "node_type": "method",
+          "surface_form": "NequIP",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.47954344749450684,
+          "surface_rank": 2796,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5099112391471863,
+      "best_surface_rank": 2643,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2026,
+      "gold_label": "MACE",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00048"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00048",
+          "node_type": "cited_work",
+          "surface_form": "MACE",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5189818739891052,
+          "surface_rank": 2570,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5189818739891052,
+      "best_surface_rank": 2570,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2026,
+      "gold_label": "CHGNet",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00038",
+        "comp_00481",
+        "cite_00063"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00063",
+          "node_type": "cited_work",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.509293258190155,
+          "surface_rank": 2646,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00481",
+          "node_type": "component",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5453177690505981,
+          "surface_rank": 2297,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00038",
+          "node_type": "method",
+          "surface_form": "CHGNet",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.535295844078064,
+          "surface_rank": 2412,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5453177690505981,
+      "best_surface_rank": 2297,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q13",
+      "question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+      "cutoff": 2026,
+      "gold_label": "EquiformerV2",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00081",
+        "cite_00050"
+      ],
+      "route": {
+        "profile": "methods",
+        "types": [
+          "cited_work",
+          "component",
+          "method",
+          "technique"
+        ],
+        "rule": "interrogative names methods, architectures or models",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00050",
+          "node_type": "cited_work",
+          "surface_form": "Equiformerv2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.4700857698917389,
+          "surface_rank": 2819,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00081",
+          "node_type": "method",
+          "surface_form": "EquiformerV2",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.49324947595596313,
+          "surface_rank": 2748,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.49324947595596313,
+      "best_surface_rank": 2748,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "Matbench Discovery",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "data_00013",
+        "meth_00159",
+        "cite_00302"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00302",
+          "node_type": "cited_work",
+          "surface_form": "Matbench discovery",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6638925671577454,
+          "surface_rank": 490,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "data_00013",
+          "node_type": "dataset",
+          "surface_form": "Matbench Discovery",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.7072080373764038,
+          "surface_rank": 208,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00159",
+          "node_type": "method",
+          "surface_form": "Matbench Discovery",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.7072080373764038,
+      "best_surface_rank": 208,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "Matbench",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "comp_00448",
+        "data_00114",
+        "meth_00348",
+        "cite_00362"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00362",
+          "node_type": "cited_work",
+          "surface_form": "Matbench",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5747092366218567,
+          "surface_rank": 1326,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00448",
+          "node_type": "component",
+          "surface_form": "Matbench",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        },
+        {
+          "node_id": "data_00114",
+          "node_type": "dataset",
+          "surface_form": "Matbench",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6311260461807251,
+          "surface_rank": 841,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00348",
+          "node_type": "method",
+          "surface_form": "Matbench",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6311260461807251,
+      "best_surface_rank": 841,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "JARVIS-DFT",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "comp_00335"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "comp_00335",
+          "node_type": "component",
+          "surface_form": "JARVIS‑DFT",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": false,
+      "present_in_flat_candidates": false,
+      "best_surface_score": null,
+      "best_surface_rank": null,
+      "exclusion_reason": "all_resolved_nodes_excluded_by_route"
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "Materials Project",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00143",
+        "data_00061",
+        "cite_00018"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00018",
+          "node_type": "cited_work",
+          "surface_form": "Materials Project",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.656213641166687,
+          "surface_rank": 564,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "data_00061",
+          "node_type": "dataset",
+          "surface_form": "Materials Project",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.760998010635376,
+          "surface_rank": 33,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00143",
+          "node_type": "method",
+          "surface_form": "Materials Project",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.760998010635376,
+      "best_surface_rank": 33,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "MPtrj",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "data_00102",
+        "cite_00372"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00372",
+          "node_type": "cited_work",
+          "surface_form": "MPTrj",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5455702543258667,
+          "surface_rank": 1560,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "data_00102",
+          "node_type": "dataset",
+          "surface_form": "MPtrj",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6141059398651123,
+          "surface_rank": 1027,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6141059398651123,
+      "best_surface_rank": 1027,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "OQMD",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "data_00095",
+        "cite_00370"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00370",
+          "node_type": "cited_work",
+          "surface_form": "OQMD",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.560674250125885,
+          "surface_rank": 1450,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "data_00095",
+          "node_type": "dataset",
+          "surface_form": "OQMD",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6224163174629211,
+          "surface_rank": 939,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6224163174629211,
+      "best_surface_rank": 939,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "AFLOW",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "cite_00274"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00274",
+          "node_type": "cited_work",
+          "surface_form": "AFLOW",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5406131148338318,
+          "surface_rank": 1592,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5406131148338318,
+      "best_surface_rank": 1592,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "Alexandria",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00295",
+        "cite_00369"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00369",
+          "node_type": "cited_work",
+          "surface_form": "Alexandria",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5095410943031311,
+          "surface_rank": 1693,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00295",
+          "node_type": "method",
+          "surface_form": "Alexandria",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5095410943031311,
+      "best_surface_rank": 1693,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "GNoME",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "meth_00169",
+        "comp_00589",
+        "data_00144",
+        "cite_00330"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00330",
+          "node_type": "cited_work",
+          "surface_form": "GNoME",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5243407487869263,
+          "surface_rank": 1664,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "comp_00589",
+          "node_type": "component",
+          "surface_form": "GNoME",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        },
+        {
+          "node_id": "data_00144",
+          "node_type": "dataset",
+          "surface_form": "GNoME",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5981609225273132,
+          "surface_rank": 1157,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "meth_00169",
+          "node_type": "method",
+          "surface_form": "GNoME",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": false,
+          "present_in_flat_candidates": false,
+          "surface_score": null,
+          "surface_rank": null,
+          "exclusion_reason": "node_type_excluded_by_route"
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5981609225273132,
+      "best_surface_rank": 1157,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "WBM",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "data_00175",
+        "cite_00376"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00376",
+          "node_type": "cited_work",
+          "surface_form": "WBM",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5822421908378601,
+          "surface_rank": 1258,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "data_00175",
+          "node_type": "dataset",
+          "surface_form": "WBM",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.6489281058311462,
+          "surface_rank": 645,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.6489281058311462,
+      "best_surface_rank": 645,
+      "exclusion_reason": null
+    },
+    {
+      "question_id": "Q14",
+      "question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+      "cutoff": 2026,
+      "gold_label": "OMat24",
+      "resolution_status": "exact",
+      "resolved_node_ids": [
+        "data_00101",
+        "cite_00311"
+      ],
+      "route": {
+        "profile": "data",
+        "types": [
+          "article",
+          "cited_work",
+          "dataset",
+          "metric",
+          "task"
+        ],
+        "rule": "interrogative asks for datasets or benchmarks",
+        "confidence": "rule_based"
+      },
+      "node_diagnostics": [
+        {
+          "node_id": "cite_00311",
+          "node_type": "cited_work",
+          "surface_form": "OMat24",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5380350351333618,
+          "surface_rank": 1613,
+          "exclusion_reason": null
+        },
+        {
+          "node_id": "data_00101",
+          "node_type": "dataset",
+          "surface_form": "OMat24",
+          "resolved_at_cutoff": true,
+          "present_in_snapshot": true,
+          "eligible_after_type_routing": true,
+          "present_in_flat_candidates": true,
+          "surface_score": 0.5997762084007263,
+          "surface_rank": 1140,
+          "exclusion_reason": null
+        }
+      ],
+      "present_in_snapshot": true,
+      "eligible_after_type_routing": true,
+      "present_in_flat_candidates": true,
+      "best_surface_score": 0.5997762084007263,
+      "best_surface_rank": 1140,
+      "exclusion_reason": null
+    }
+  ]
+}

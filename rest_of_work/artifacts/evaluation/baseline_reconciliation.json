@@ -1,0 +1,723 @@
+{
+  "question_counts": {
+    "A": 14,
+    "B": 4
+  },
+  "unique_targets": 50,
+  "target_instances": 63,
+  "recomputed_v2_records_identical": true,
+  "full_export_basic_exact": 34,
+  "full_export_v2_normalized_exact": 35,
+  "duplicate_handling": "Mapping retains every matching node ID but counts one named target; old retrieval ranks nodes without entity deduplication.",
+  "normalization": {
+    "basic": "NFKC, casefold, whitespace only",
+    "v1": "NFKC, casefold, Unicode dashes; punctuation except plus/hyphen becomes whitespace",
+    "v2": "v1 plus preservation of parentheses; no singularization or composite decomposition"
+  },
+  "cutoffs": {
+    "2025": {
+      "v1_method_only": 21,
+      "v2_typed": {
+        "unique": {
+          "total": 50,
+          "mapped": 33,
+          "exact": 32,
+          "safe_alias": 1,
+          "ambiguous": 0,
+          "unmapped": 17
+        },
+        "question_target_instances": {
+          "total": 63,
+          "mapped": 46,
+          "exact": 45,
+          "safe_alias": 1,
+          "ambiguous": 0,
+          "unmapped": 17
+        },
+        "mapped_instances_by_node_type": {
+          "cited_work": 41,
+          "component": 10,
+          "method": 27,
+          "dataset": 6
+        }
+      },
+      "basic_exact_all_types": 31,
+      "v2_exact_all_types": 32,
+      "resolver_types": [
+        "article",
+        "cited_work",
+        "claim",
+        "component",
+        "dataset",
+        "future_topic",
+        "method",
+        "metric",
+        "problem",
+        "task",
+        "technique"
+      ],
+      "retrieval_types": "Question-dependent route; recorded per question",
+      "question_evaluability": [
+        {
+          "question_id": "Q1",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 7,
+            "mapped_expected_targets": 7,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q2",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 3,
+            "mapped_expected_targets": 3,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q3",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "xDeepH",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q4",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 3,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "Hessian training",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "MACE-F",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q5",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "not_evaluable",
+            "reason": "No expected target has an accepted node mapping; mapped-target recall has a zero denominator and is null.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 0,
+            "excluded_targets": [
+              {
+                "target": "Bead-mapping",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "GNN+GPP",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q6",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 3,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "DeePMD+AL",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "MLIP descriptors",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q7",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "GNN free energies",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q8",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "GNN stress fields",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q9",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 3,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "E(3)-equivariant GNNs",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "physics-informed",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q10",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "GNNs + ACE descriptors",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q11",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "not_evaluable",
+            "reason": "No expected target has an accepted node mapping; mapped-target recall has a zero denominator and is null.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 0,
+            "excluded_targets": [
+              {
+                "target": "CE→MC→NN→PF",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "hybrid frameworks",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q12",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 13,
+            "mapped_expected_targets": 11,
+            "excluded_targets": [
+              {
+                "target": "PET",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "UMA",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q13",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 8,
+            "mapped_expected_targets": 8,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q14",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 11,
+            "mapped_expected_targets": 10,
+            "excluded_targets": [
+              {
+                "target": "MPtrj",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q15",
+          "question_type": "B",
+          "expected_recall_evaluability": {
+            "status": "not_applicable",
+            "reason": "No expected entity targets are supplied; entity recall is not applicable.",
+            "total_expected_targets": 0,
+            "mapped_expected_targets": 0,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q16",
+          "question_type": "B",
+          "expected_recall_evaluability": {
+            "status": "not_applicable",
+            "reason": "No expected entity targets are supplied; entity recall is not applicable.",
+            "total_expected_targets": 0,
+            "mapped_expected_targets": 0,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q17",
+          "question_type": "B",
+          "expected_recall_evaluability": {
+            "status": "not_applicable",
+            "reason": "No expected entity targets are supplied; entity recall is not applicable.",
+            "total_expected_targets": 0,
+            "mapped_expected_targets": 0,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q18",
+          "question_type": "B",
+          "expected_recall_evaluability": {
+            "status": "not_applicable",
+            "reason": "No expected entity targets are supplied; entity recall is not applicable.",
+            "total_expected_targets": 0,
+            "mapped_expected_targets": 0,
+            "excluded_targets": []
+          }
+        }
+      ],
+      "candidate_audit": {
+        "target_instances": 63,
+        "resolved_instances": 46,
+        "candidate_instances": 45,
+        "route_excluded_instances": 1,
+        "eligible_gold_nodes": 77,
+        "excluded_gold_nodes": 7,
+        "best_rank_quantiles": {
+          "min": 29.0,
+          "q25": 736.0,
+          "median": 1463.0,
+          "q75": 1984.0,
+          "max": 2387.0
+        },
+        "at_10": 0,
+        "at_50": 1,
+        "at_100": 1
+      }
+    },
+    "2026": {
+      "v1_method_only": 26,
+      "v2_typed": {
+        "unique": {
+          "total": 50,
+          "mapped": 36,
+          "exact": 35,
+          "safe_alias": 1,
+          "ambiguous": 0,
+          "unmapped": 14
+        },
+        "question_target_instances": {
+          "total": 63,
+          "mapped": 49,
+          "exact": 48,
+          "safe_alias": 1,
+          "ambiguous": 0,
+          "unmapped": 14
+        },
+        "mapped_instances_by_node_type": {
+          "cited_work": 45,
+          "component": 10,
+          "method": 29,
+          "dataset": 8
+        }
+      },
+      "basic_exact_all_types": 34,
+      "v2_exact_all_types": 35,
+      "resolver_types": [
+        "article",
+        "cited_work",
+        "claim",
+        "component",
+        "dataset",
+        "future_topic",
+        "method",
+        "metric",
+        "problem",
+        "task",
+        "technique"
+      ],
+      "retrieval_types": "Question-dependent route; recorded per question",
+      "question_evaluability": [
+        {
+          "question_id": "Q1",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 7,
+            "mapped_expected_targets": 7,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q2",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 3,
+            "mapped_expected_targets": 3,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q3",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "xDeepH",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q4",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 3,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "Hessian training",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "MACE-F",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q5",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "not_evaluable",
+            "reason": "No expected target has an accepted node mapping; mapped-target recall has a zero denominator and is null.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 0,
+            "excluded_targets": [
+              {
+                "target": "Bead-mapping",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "GNN+GPP",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q6",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 3,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "DeePMD+AL",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "MLIP descriptors",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q7",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "GNN free energies",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q8",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "GNN stress fields",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q9",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 3,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "E(3)-equivariant GNNs",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "physics-informed",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q10",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 1,
+            "excluded_targets": [
+              {
+                "target": "GNNs + ACE descriptors",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q11",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "not_evaluable",
+            "reason": "No expected target has an accepted node mapping; mapped-target recall has a zero denominator and is null.",
+            "total_expected_targets": 2,
+            "mapped_expected_targets": 0,
+            "excluded_targets": [
+              {
+                "target": "CE→MC→NN→PF",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              },
+              {
+                "target": "hybrid frameworks",
+                "mapping_status": "unmapped",
+                "mapping_rule": "no_lexical_match"
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "Q12",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 13,
+            "mapped_expected_targets": 13,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q13",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 8,
+            "mapped_expected_targets": 8,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q14",
+          "question_type": "A",
+          "expected_recall_evaluability": {
+            "status": "evaluable",
+            "reason": "At least one expected target has an accepted node mapping; recall uses only mapped targets.",
+            "total_expected_targets": 11,
+            "mapped_expected_targets": 11,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q15",
+          "question_type": "B",
+          "expected_recall_evaluability": {
+            "status": "not_applicable",
+            "reason": "No expected entity targets are supplied; entity recall is not applicable.",
+            "total_expected_targets": 0,
+            "mapped_expected_targets": 0,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q16",
+          "question_type": "B",
+          "expected_recall_evaluability": {
+            "status": "not_applicable",
+            "reason": "No expected entity targets are supplied; entity recall is not applicable.",
+            "total_expected_targets": 0,
+            "mapped_expected_targets": 0,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q17",
+          "question_type": "B",
+          "expected_recall_evaluability": {
+            "status": "not_applicable",
+            "reason": "No expected entity targets are supplied; entity recall is not applicable.",
+            "total_expected_targets": 0,
+            "mapped_expected_targets": 0,
+            "excluded_targets": []
+          }
+        },
+        {
+          "question_id": "Q18",
+          "question_type": "B",
+          "expected_recall_evaluability": {
+            "status": "not_applicable",
+            "reason": "No expected entity targets are supplied; entity recall is not applicable.",
+            "total_expected_targets": 0,
+            "mapped_expected_targets": 0,
+            "excluded_targets": []
+          }
+        }
+      ],
+      "candidate_audit": {
+        "target_instances": 63,
+        "resolved_instances": 49,
+        "candidate_instances": 48,
+        "route_excluded_instances": 1,
+        "eligible_gold_nodes": 84,
+        "excluded_gold_nodes": 8,
+        "best_rank_quantiles": {
+          "min": 33.0,
+          "q25": 914.5,
+          "median": 1657.0,
+          "q75": 2299.25,
+          "max": 2748.0
+        },
+        "at_10": 0,
+        "at_50": 1,
+        "at_100": 1
+      }
+    }
+  },
+  "historical_numbers": {
+    "v1_21": "Method-only resolver at 2025; historical 21/50 is reproducible.",
+    "v2_33": "Typed resolver at conservative 2025 after unsafe future-topic containment was removed.",
+    "preliminary_37": "Earlier annual-2026 result before removal of one unsafe future-topic containment; retained in notes/improvement/initial_v2_run.log and consultation history, not final current coverage.",
+    "literal_34": "Compare full_export_basic_exact with the stricter temporal and normalization-specific counts; this audit recomputes rather than assumes 34.",
+    "twelve_vs_fourteen": "14 Type A questions; Q5/Q11 have no accepted v2 mappings and null conditional recall. All remain in records and raw denominators."
+  }
+}

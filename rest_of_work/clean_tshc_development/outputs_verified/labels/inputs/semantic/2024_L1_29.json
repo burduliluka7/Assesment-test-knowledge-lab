@@ -1,0 +1,628 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00064",
+      "type": "claim",
+      "surface_form": "The featurization methods are transferable to more complex compositions, enabling new ML models to be fitted without revising the materials embedding method given extended datasets."
+    },
+    {
+      "id": "clai_00404",
+      "type": "claim",
+      "surface_form": "Trained ML models are typically only effective for interpolating data points and may not be reliable when extrapolating beyond the known data range."
+    },
+    {
+      "id": "clai_00410",
+      "type": "claim",
+      "surface_form": "ML can accelerate the solution of inverse problems by providing direct design solutions without requiring traditional iterative optimization processes."
+    },
+    {
+      "id": "clai_00486",
+      "type": "claim",
+      "surface_form": "For LLZO, results are quite insensitive to the choice of cell volume (NPT equilibrated vs experimental cif-file values) for producing the initial training set."
+    },
+    {
+      "id": "clai_00537",
+      "type": "claim",
+      "surface_form": "Models trained on Materials Project data systematically underpredict convex‑hull distances because the training set is biased toward low‑formation‑energy (stable) structures."
+    },
+    {
+      "id": "clai_00554",
+      "type": "claim",
+      "surface_form": "Previous machine-learning techniques have been ineffective in estimating material stability (decomposition energy) with respect to the convex hull."
+    },
+    {
+      "id": "comp_00129",
+      "type": "component",
+      "surface_form": "Gradient‑parameter inference via grid search"
+    },
+    {
+      "id": "comp_00142",
+      "type": "component",
+      "surface_form": "Discovery Acceleration Factor"
+    },
+    {
+      "id": "comp_00267",
+      "type": "component",
+      "surface_form": "Linear pooling for interpretability"
+    },
+    {
+      "id": "comp_00301",
+      "type": "component",
+      "surface_form": "Iterative column‑wise prediction scheme"
+    },
+    {
+      "id": "comp_00367",
+      "type": "component",
+      "surface_form": "Linear correction of heuristic"
+    },
+    {
+      "id": "comp_00534",
+      "type": "component",
+      "surface_form": "Tabulated inference engine"
+    },
+    {
+      "id": "comp_00563",
+      "type": "component",
+      "surface_form": "Vicker's hardness estimation model"
+    },
+    {
+      "id": "comp_00567",
+      "type": "component",
+      "surface_form": "Volume prediction network"
+    },
+    {
+      "id": "comp_00593",
+      "type": "component",
+      "surface_form": "Shallow MLPs with swish nonlinearities"
+    },
+    {
+      "id": "data_00135",
+      "type": "dataset",
+      "surface_form": "Volume prediction dataset"
+    },
+    {
+      "id": "futu_00146",
+      "type": "future_topic",
+      "surface_form": "Optimizing computational budget allocation strategies using UIPs"
+    },
+    {
+      "id": "meth_00008",
+      "type": "method",
+      "surface_form": "Bayesian Optimization"
+    },
+    {
+      "id": "meth_00040",
+      "type": "method",
+      "surface_form": "sparse coding based network"
+    },
+    {
+      "id": "meth_00041",
+      "type": "method",
+      "surface_form": "Support Vector Regression"
+    },
+    {
+      "id": "meth_00068",
+      "type": "method",
+      "surface_form": "symbolic regression"
+    },
+    {
+      "id": "meth_00072",
+      "type": "method",
+      "surface_form": "Linear Regression"
+    },
+    {
+      "id": "meth_00269",
+      "type": "method",
+      "surface_form": "grand canonical linear programming"
+    },
+    {
+      "id": "meth_00374",
+      "type": "method",
+      "surface_form": "ab initio random structure searching"
+    },
+    {
+      "id": "meth_00440",
+      "type": "method",
+      "surface_form": "variable-selection assisted sure independence screening and sparsifying operator"
+    },
+    {
+      "id": "metr_00052",
+      "type": "metric",
+      "surface_form": "discovery rate"
+    },
+    {
+      "id": "prob_00001",
+      "type": "problem",
+      "surface_form": "model interpretability"
+    },
+    {
+      "id": "prob_00007",
+      "type": "problem",
+      "surface_form": "Uncertainty quantification"
+    },
+    {
+      "id": "prob_00010",
+      "type": "problem",
+      "surface_form": "Computational cost reduction"
+    },
+    {
+      "id": "prob_00026",
+      "type": "problem",
+      "surface_form": "Data‑efficiency / steep learning curves"
+    },
+    {
+      "id": "prob_00038",
+      "type": "problem",
+      "surface_form": "Connecting ML potentials to experimental observables"
+    },
+    {
+      "id": "prob_00063",
+      "type": "problem",
+      "surface_form": "Accurate high‑dimensional free‑energy representation"
+    },
+    {
+      "id": "prob_00064",
+      "type": "problem",
+      "surface_form": "Efficient sampling of non‑convex free‑energy regions"
+    },
+    {
+      "id": "prob_00070",
+      "type": "problem",
+      "surface_form": "Efficient high‑dimensional free‑energy surrogate construction"
+    },
+    {
+      "id": "prob_00079",
+      "type": "problem",
+      "surface_form": "Misalignment between regression error metrics and discovery relevance"
+    },
+    {
+      "id": "prob_00081",
+      "type": "problem",
+      "surface_form": "High false‑positive rates for stable‑material prediction"
+    },
+    {
+      "id": "prob_00082",
+      "type": "problem",
+      "surface_form": "Thermodynamic stability prediction"
+    },
+    {
+      "id": "prob_00083",
+      "type": "problem",
+      "surface_form": "Out‑of‑distribution extrapolation assessment"
+    },
+    {
+      "id": "prob_00085",
+      "type": "problem",
+      "surface_form": "Accurate stability classification for high‑throughput materials discovery"
+    },
+    {
+      "id": "prob_00087",
+      "type": "problem",
+      "surface_form": "Discovery acceleration"
+    },
+    {
+      "id": "prob_00120",
+      "type": "problem",
+      "surface_form": "Uncertainty estimation for ML potentials"
+    },
+    {
+      "id": "prob_00124",
+      "type": "problem",
+      "surface_form": "Efficient representation of large training sets"
+    },
+    {
+      "id": "prob_00159",
+      "type": "problem",
+      "surface_form": "Inability to model state‑dependent properties"
+    },
+    {
+      "id": "prob_00184",
+      "type": "problem",
+      "surface_form": "Reduction of computational cost for exhaustive search"
+    },
+    {
+      "id": "prob_00194",
+      "type": "problem",
+      "surface_form": "Uncertainty quantification for ML predictions"
+    },
+    {
+      "id": "prob_00263",
+      "type": "problem",
+      "surface_form": "Performance degradation when increasing model expressiveness"
+    },
+    {
+      "id": "prob_00265",
+      "type": "problem",
+      "surface_form": "Model selection bias"
+    },
+    {
+      "id": "prob_00266",
+      "type": "problem",
+      "surface_form": "Sample selection bias"
+    },
+    {
+      "id": "prob_00268",
+      "type": "problem",
+      "surface_form": "Need for expert domain knowledge"
+    },
+    {
+      "id": "prob_00274",
+      "type": "problem",
+      "surface_form": "Researcher intervention requirement"
+    },
+    {
+      "id": "prob_00276",
+      "type": "problem",
+      "surface_form": "Computational cost vs accuracy tradeoff"
+    },
+    {
+      "id": "prob_00277",
+      "type": "problem",
+      "surface_form": "Automated model selection for materials science"
+    },
+    {
+      "id": "prob_00280",
+      "type": "problem",
+      "surface_form": "Generalization error estimation"
+    },
+    {
+      "id": "prob_00281",
+      "type": "problem",
+      "surface_form": "Model selection automation"
+    },
+    {
+      "id": "prob_00283",
+      "type": "problem",
+      "surface_form": "Computational efficiency vs. performance trade-off"
+    },
+    {
+      "id": "prob_00302",
+      "type": "problem",
+      "surface_form": "Variable-length output prediction"
+    },
+    {
+      "id": "prob_00344",
+      "type": "problem",
+      "surface_form": "model portability"
+    },
+    {
+      "id": "prob_00354",
+      "type": "problem",
+      "surface_form": "poor generalization error in high-throughput searches"
+    },
+    {
+      "id": "prob_00356",
+      "type": "problem",
+      "surface_form": "Training data bias"
+    },
+    {
+      "id": "prob_00357",
+      "type": "problem",
+      "surface_form": "Inconsistent prediction error"
+    },
+    {
+      "id": "prob_00358",
+      "type": "problem",
+      "surface_form": "False negative rate"
+    },
+    {
+      "id": "prob_00366",
+      "type": "problem",
+      "surface_form": "Generalization error"
+    },
+    {
+      "id": "prob_00367",
+      "type": "problem",
+      "surface_form": "High dimensionality of solution space"
+    },
+    {
+      "id": "prob_00386",
+      "type": "problem",
+      "surface_form": "Ineffective ML estimation of material stability"
+    },
+    {
+      "id": "prob_00398",
+      "type": "problem",
+      "surface_form": "Inefficient enumeration of reduced formulas"
+    },
+    {
+      "id": "prob_00401",
+      "type": "problem",
+      "surface_form": "Domain shift between training and evaluation"
+    },
+    {
+      "id": "prob_00416",
+      "type": "problem",
+      "surface_form": "efficient training set construction"
+    },
+    {
+      "id": "prob_00421",
+      "type": "problem",
+      "surface_form": "Activation energy prediction accuracy"
+    },
+    {
+      "id": "prob_00589",
+      "type": "problem",
+      "surface_form": "Poor extrapolation in high-dimensional ML potentials"
+    },
+    {
+      "id": "prob_00594",
+      "type": "problem",
+      "surface_form": "Unphysical extrapolation at small distances"
+    },
+    {
+      "id": "prob_00596",
+      "type": "problem",
+      "surface_form": "Long-range behavior modeling"
+    },
+    {
+      "id": "prob_00600",
+      "type": "problem",
+      "surface_form": "Heterogeneous training database fitting"
+    },
+    {
+      "id": "prob_00612",
+      "type": "problem",
+      "surface_form": "ML potential extrapolation"
+    },
+    {
+      "id": "prob_00614",
+      "type": "problem",
+      "surface_form": "Training data completeness"
+    },
+    {
+      "id": "prob_00629",
+      "type": "problem",
+      "surface_form": "feature selection for symbolic regression"
+    },
+    {
+      "id": "prob_00634",
+      "type": "problem",
+      "surface_form": "Model interpretability vs performance trade-off"
+    },
+    {
+      "id": "task_00001",
+      "type": "task",
+      "surface_form": "machine learning"
+    },
+    {
+      "id": "task_00109",
+      "type": "task",
+      "surface_form": "Stability classification"
+    },
+    {
+      "id": "task_00111",
+      "type": "task",
+      "surface_form": "Thermodynamic stability classification"
+    },
+    {
+      "id": "task_00186",
+      "type": "task",
+      "surface_form": "Continuous property regression"
+    },
+    {
+      "id": "task_00252",
+      "type": "task",
+      "surface_form": "Stability ranking of large compositional spaces"
+    },
+    {
+      "id": "task_00313",
+      "type": "task",
+      "surface_form": "Polarizability (α) prediction"
+    },
+    {
+      "id": "task_00349",
+      "type": "task",
+      "surface_form": "Structure-based regression"
+    },
+    {
+      "id": "task_00350",
+      "type": "task",
+      "surface_form": "Composition-only regression"
+    },
+    {
+      "id": "task_00380",
+      "type": "task",
+      "surface_form": "Group velocity prediction"
+    },
+    {
+      "id": "task_00415",
+      "type": "task",
+      "surface_form": "Polarizability prediction"
+    },
+    {
+      "id": "task_00450",
+      "type": "task",
+      "surface_form": "Vicker's hardness estimation"
+    },
+    {
+      "id": "task_00456",
+      "type": "task",
+      "surface_form": "Unit cell volume prediction"
+    },
+    {
+      "id": "task_00457",
+      "type": "task",
+      "surface_form": "Vicker's hardness prediction"
+    },
+    {
+      "id": "task_00475",
+      "type": "task",
+      "surface_form": "surface stability prediction"
+    },
+    {
+      "id": "task_00516",
+      "type": "task",
+      "surface_form": "Materials stability prediction"
+    },
+    {
+      "id": "task_00706",
+      "type": "task",
+      "surface_form": "machine learning potential training"
+    },
+    {
+      "id": "task_00724",
+      "type": "task",
+      "surface_form": "cluster 1 prediction"
+    },
+    {
+      "id": "task_00725",
+      "type": "task",
+      "surface_form": "cluster 2 prediction"
+    },
+    {
+      "id": "tech_00048",
+      "type": "technique",
+      "surface_form": "Gaussian process regression"
+    },
+    {
+      "id": "tech_00129",
+      "type": "technique",
+      "surface_form": "Sub‑meV regression target"
+    },
+    {
+      "id": "tech_00186",
+      "type": "technique",
+      "surface_form": "Grid search for gradient parameters"
+    },
+    {
+      "id": "tech_00198",
+      "type": "technique",
+      "surface_form": "Discovery Acceleration Factor (DAF) calculation"
+    },
+    {
+      "id": "tech_00206",
+      "type": "technique",
+      "surface_form": "Model‑committee error screening"
+    },
+    {
+      "id": "tech_00257",
+      "type": "technique",
+      "surface_form": "Sparse Gaussian process"
+    },
+    {
+      "id": "tech_00258",
+      "type": "technique",
+      "surface_form": "Uncertainty quantification via GP variance"
+    },
+    {
+      "id": "tech_00262",
+      "type": "technique",
+      "surface_form": "Regularized Gaussian‑process regression"
+    },
+    {
+      "id": "tech_00263",
+      "type": "technique",
+      "surface_form": "Bayesian variance prediction"
+    },
+    {
+      "id": "tech_00302",
+      "type": "technique",
+      "surface_form": "Global state conditioning"
+    },
+    {
+      "id": "tech_00320",
+      "type": "technique",
+      "surface_form": "Iterative queue‑based prediction"
+    },
+    {
+      "id": "tech_00334",
+      "type": "technique",
+      "surface_form": "Node‑wise regression"
+    },
+    {
+      "id": "tech_00379",
+      "type": "technique",
+      "surface_form": "Grand canonical linear programming"
+    },
+    {
+      "id": "tech_00385",
+      "type": "technique",
+      "surface_form": "Decision‑tree regression"
+    },
+    {
+      "id": "tech_00386",
+      "type": "technique",
+      "surface_form": "Stability ranking"
+    },
+    {
+      "id": "tech_00478",
+      "type": "technique",
+      "surface_form": "Mean imputation"
+    },
+    {
+      "id": "tech_00487",
+      "type": "technique",
+      "surface_form": "Unknown value imputation"
+    },
+    {
+      "id": "tech_00579",
+      "type": "technique",
+      "surface_form": "Tabulated inference"
+    },
+    {
+      "id": "tech_00657",
+      "type": "technique",
+      "surface_form": "Uncertainty quantification through deep ensembles"
+    },
+    {
+      "id": "tech_00676",
+      "type": "technique",
+      "surface_form": "Deep ensemble uncertainty quantification"
+    },
+    {
+      "id": "tech_00895",
+      "type": "technique",
+      "surface_form": "Sparse representation"
+    },
+    {
+      "id": "tech_00933",
+      "type": "technique",
+      "surface_form": "feature selection with domain knowledge"
+    },
+    {
+      "id": "tech_00938",
+      "type": "technique",
+      "surface_form": "Random search"
+    },
+    {
+      "id": "tech_00940",
+      "type": "technique",
+      "surface_form": "Iterative variable selection"
+    },
+    {
+      "id": "tech_00949",
+      "type": "technique",
+      "surface_form": "symbolic regression with feature complexity f=2,3"
+    },
+    {
+      "id": "tech_00954",
+      "type": "technique",
+      "surface_form": "Supervised regression"
+    },
+    {
+      "id": "tech_00960",
+      "type": "technique",
+      "surface_form": "Random search hyper-parameter optimization"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 6,
+    "component": 9,
+    "dataset": 1,
+    "future_topic": 1,
+    "method": 8,
+    "metric": 1,
+    "problem": 50,
+    "task": 18,
+    "technique": 27
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "regression",
+  "representative_ids": [
+    "task_00001",
+    "prob_00280"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00543",
+      "type": "component",
+      "surface_form": "Ewald summation operator"
+    },
+    {
+      "id": "comp_00679",
+      "type": "component",
+      "surface_form": "Charge Equilibration Layer for Long-range Interactions"
+    },
+    {
+      "id": "comp_00681",
+      "type": "component",
+      "surface_form": "Short-range/long-range energy decomposition"
+    },
+    {
+      "id": "comp_00683",
+      "type": "component",
+      "surface_form": "EFA block"
+    },
+    {
+      "id": "comp_00686",
+      "type": "component",
+      "surface_form": "Ewald reciprocal-space term"
+    },
+    {
+      "id": "comp_00687",
+      "type": "component",
+      "surface_form": "Screened direct Coulomb sum"
+    },
+    {
+      "id": "comp_00688",
+      "type": "component",
+      "surface_form": "Biased split methods"
+    },
+    {
+      "id": "comp_00689",
+      "type": "component",
+      "surface_form": "Total charge embedding"
+    },
+    {
+      "id": "comp_00691",
+      "type": "component",
+      "surface_form": "EFA module"
+    },
+    {
+      "id": "comp_00692",
+      "type": "component",
+      "surface_form": "CELLI"
+    },
+    {
+      "id": "comp_00693",
+      "type": "component",
+      "surface_form": "EFA"
+    },
+    {
+      "id": "comp_00694",
+      "type": "component",
+      "surface_form": "Cluster split method"
+    },
+    {
+      "id": "comp_00695",
+      "type": "component",
+      "surface_form": "Maximal separation split method"
+    },
+    {
+      "id": "task_00510",
+      "type": "task",
+      "surface_form": "Decomposition energy computation"
+    },
+    {
+      "id": "tech_00678",
+      "type": "technique",
+      "surface_form": "Composition-based train/test splitting"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 13,
+    "task": 1,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "efa",
+  "representative_ids": [
+    "comp_00688",
+    "comp_00693"
+  ]
+}

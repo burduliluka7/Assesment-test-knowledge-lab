@@ -1,0 +1,1471 @@
+Update the existing TKH retrieval implementation to address the remaining Type-A retrieval failure using **query-seeded relevance propagation over the native hypergraph**, based primarily on:
+
+Dengyong Zhou, Jiayuan Huang, Bernhard Schölkopf,  
+**“Learning with Hypergraphs: Clustering, Classification, and Embedding,” NIPS 2006.**
+
+Do not create a disconnected implementation. Inspect the repository, current contextual retrieval code, current hypergraph operator, evaluator, artifacts, and configuration first. Reuse existing graph/snapshot/filtering infrastructure wherever possible.
+
+The paper is especially relevant because the project already uses essentially the same normalized hypergraph operator for spectral geometry:
+
+```text
+Theta = D_v^(-1/2) H W D_e^(-1) H^T D_v^(-1/2)
+```
+
+Zhou et al. additionally derive transductive inference:
+
+```text
+f = (I - xi Theta)^(-1) y
+```
+
+where `y` is the initial signal and `f` is the signal propagated through the hypergraph.
+
+The key experiment here is to replace supervised labels `y` with **query-dependent semantic relevance seeds**.
+
+Do not merely cite the paper. Implement and test this mechanism.
+
+---
+
+# 0. CURRENT FAILURE THAT THIS CHANGE MUST ADDRESS
+
+Do not restart the retrieval redesign from scratch.
+
+The latest evaluation has established:
+
+```text
+14 Type-A questions
+63 raw target instances
+50 unique Type-A labels
+```
+
+At the conservative 2025 cutoff:
+
+```text
+46 legacy/canonical mapped instances were audited
+45/46 were already present in the old exhaustive flat candidate pool
+only 1 was completely excluded
+```
+
+Therefore the previous zero recall was overwhelmingly a **ranking failure**, not a missing-candidate/hierarchy-pruning failure.
+
+The old surface baseline had approximately:
+
+```text
+median relevant rank ≈ 1463 in the legacy routed audit
+and ≈4231 in the newer all-type R0 comparison
+Recall@10 = 0
+```
+
+Contextual retrieval improved this substantially:
+
+```text
+R1 contextual:
+Macro Recall@10 ≈ 0.2028
+Micro Recall@10 = 4/47 ≈ 0.0851
+raw recovery = 4/63 ≈ 0.0635
+median gold rank ≈233
+```
+
+Soft type priors further moved the median relevant rank to roughly:
+
+```text
+160
+```
+
+but did not improve top-10 recall beyond the same four recovered canonical instances.
+
+Most importantly, the current failure analysis found that roughly:
+
+```text
+38 / 47 canonical target instances
+```
+
+have a maximum score under the current fixed-field representation below the actual tenth-result threshold for their question.
+
+This means the main remaining problem is:
+
+```text
+query-relevant information exists elsewhere in the graph,
+but many correct answer entities have too little directly attached
+task-specific textual evidence to score highly themselves.
+```
+
+Example pattern:
+
+```text
+question
+   ↓ strong semantic match
+claim describing a method capability
+   ↓ claims relation
+article
+   ↓ presents relation
+correct method
+```
+
+The current contextual system attempts to solve this by copying article/claim information into entity representations.
+
+That helped, but it also creates:
+
+```text
+too little context -> sparse entity remains invisible
+too much broad article context -> entity receives irrelevant semantic pollution
+```
+
+The proposed solution is different:
+
+```text
+DO NOT copy all evidence into every target entity.
+
+Instead:
+
+question
+   ↓
+semantic relevance seeds on graph nodes
+   ↓
+native hypergraph propagation
+   ↓
+relevance reaches structurally connected answer entities
+```
+
+---
+
+# 1. PRIMARY RESEARCH QUESTION
+
+Test:
+
+```text
+Can query-seeded diffusion over the native TKH move
+graph-resolvable expected answer entities substantially higher
+than the current contextual flat retriever?
+```
+
+The immediate target is **candidate generation**, not reranking and not hierarchy acceleration.
+
+Primary diagnostics:
+
+```text
+Candidate Recall@50
+Candidate Recall@100
+Candidate Recall@200
+
+median canonical gold rank
+mean reciprocal rank
+
+Recall@5
+Recall@10
+Recall@20
+Recall@R
+```
+
+Do not judge the experiment only by Recall@10.
+
+The current contextual system already demonstrated that large rank improvements can occur before targets enter the top ten.
+
+---
+
+# 2. DO NOT MODIFY THESE COMPONENTS YET
+
+Do NOT:
+
+```text
+rebuild the TKH
+change graph construction
+change hierarchy memberships
+change 12/40/120 clustering
+add another hierarchy search
+add a cross-encoder
+add an LLM reranker
+add free-form generative query expansion
+hard-code benchmark aliases
+train weights on ground_truth.json
+rewrite the target resolver simply to raise coverage
+```
+
+Preserve:
+
+```text
+R0 surface baseline
+R1 contextual baseline
+R1_direct
+R2 grouping
+R3 type-prior contextual baseline
+R4/R5 historical results
+legacy hierarchy retrieval
+prototype retrieval
+```
+
+R3 should be the principal existing comparison.
+
+The hierarchy remains deferred until flat retrieval works substantially better.
+
+---
+
+# 3. FIRST: VERIFY THE PAPER OPERATOR AGAINST CURRENT CODE
+
+Inspect the existing implementation of the hypergraph spectral operator.
+
+The Zhou operator is:
+
+```python
+Theta = Dv^(-1/2) @ H @ W @ De^(-1) @ H.T @ Dv^(-1/2)
+```
+
+where:
+
+```text
+H  = incidence matrix
+W  = diagonal hyperedge-weight matrix
+De = hyperedge-degree / cardinality matrix
+Dv = vertex-degree matrix
+```
+
+The current project already uses this or an equivalent sparse operation for spectral coordinates.
+
+Do not duplicate it if a correct reusable implementation exists.
+
+Add a reusable operation such as:
+
+```python
+apply_theta(x, snapshot_graph, relation_weights=None) -> vector
+```
+
+It should calculate `Theta @ x` using sparse incidence operations.
+
+DO NOT construct a dense `n x n` Theta matrix during normal retrieval.
+
+The graph has only thousands of nodes now, but the implementation should preserve the correct sparse formulation.
+
+---
+
+# 4. UNIT TEST THE MATHEMATICS BEFORE RETRIEVAL
+
+Construct a tiny synthetic hypergraph where the dense operator can safely be formed.
+
+Example conceptually:
+
+```text
+vertices:
+A B C D
+
+hyperedges:
+e1 = {A,B,C}
+e2 = {C,D}
+```
+
+For this graph:
+
+1. construct dense `Theta` directly;
+2. construct sparse incidence implementation;
+3. verify:
+
+```python
+dense_theta @ x
+```
+
+equals:
+
+```python
+apply_theta(x)
+```
+
+within numerical tolerance.
+
+Also test:
+
+```text
+isolated vertex
+arity-2 edge
+arity-3+ edge
+weighted edge
+multiple incident edges
+```
+
+This test is required.
+
+Do not trust the propagation implementation merely because it runs.
+
+---
+
+# 5. IMPLEMENT ZHOU-STYLE QUERY-SEEDED PROPAGATION
+
+For a question `q`, create an initial query relevance vector:
+
+```text
+y ∈ R^{|V|}
+```
+
+over graph nodes in the correct temporal snapshot.
+
+Unlike the paper's classification setup, `y` is not a class-label vector.
+
+Here:
+
+```text
+y_v = semantic relevance of node v to the question
+```
+
+This adaptation must be documented explicitly as our retrieval formulation, not something directly evaluated in Zhou et al.
+
+---
+
+# 6. SEMANTIC SEEDS SHOULD USE ATOMIC GRAPH TEXT
+
+This is important.
+
+For the first propagation experiment, do NOT seed using giant contextual entity documents.
+
+Embed the question against individual graph-node texts such as:
+
+```text
+claim.surface_form
+task.surface_form
+problem.surface_form
+method.surface_form
+technique.surface_form
+dataset.surface_form
+component.surface_form
+article.surface_form
+cited_work.surface_form
+metric.surface_form
+future_topic.surface_form
+```
+
+Authors should normally not be semantic query seeds for scientific method retrieval.
+
+They may remain in graph structure for an unmodified-graph control, but do not give author-name embeddings meaningful initial query mass unless explicitly justified.
+
+The reason for atomic seeding is:
+
+```text
+A question may match a claim extremely well
+even when it matches the method name poorly.
+```
+
+That is the signal diffusion is intended to exploit.
+
+Reuse the current normalized BGE embeddings where valid rather than recomputing equivalent vectors.
+
+All vectors must be explicitly L2-normalized.
+
+---
+
+# 7. CONSTRUCT THE SEED VECTOR CONSERVATIVELY
+
+Compute:
+
+```python
+s_v = cosine(query_embedding, node_embedding)
+```
+
+For initial experiments:
+
+1. consider only the top `M` semantic nodes;
+2. set negative similarities to zero;
+3. normalize remaining positive scores so that:
+
+```text
+sum(y) = 1
+```
+
+Use a fixed default:
+
+```text
+M = 100
+```
+
+and report sensitivity at:
+
+```text
+M = 50
+M = 100
+M = 200
+```
+
+Do NOT choose `M` retrospectively based on which value gives the best benchmark recall.
+
+Treat `M=100` as the declared default and the others as sensitivity analysis.
+
+If all selected similarities are non-positive, implement a deterministic fallback and document it.
+
+Record the top semantic seeds for every query.
+
+Example diagnostic:
+
+```json
+{
+  "question_id": "Q2",
+  "top_seeds": [
+    {
+      "node_id": "...",
+      "type": "claim",
+      "surface_form": "...",
+      "semantic_score": 0.83,
+      "y": 0.07
+    }
+  ]
+}
+```
+
+---
+
+# 8. DO NOT COMPUTE THE MATRIX INVERSE
+
+Zhou et al. write the transductive solution in closed form:
+
+```text
+f = (I - xi Theta)^(-1) y
+```
+
+Do not explicitly invert this matrix.
+
+Implement the equivalent restarted iterative propagation:
+
+```python
+f_0 = y
+
+f_{t+1} = (1 - alpha) * y + alpha * Theta @ f_t
+```
+
+For ranking purposes the constant scaling relative to the closed-form expression is irrelevant.
+
+Use:
+
+```text
+0 < alpha < 1
+```
+
+Declare:
+
+```text
+alpha = 0.85
+```
+
+as the default retrieval diffusion parameter.
+
+Also report non-tuned sensitivity for:
+
+```text
+0.50
+0.70
+0.85
+0.95
+```
+
+Do not select the final value based solely on this development benchmark.
+
+Stop iterations when:
+
+```python
+||f_next - f||_1 < tolerance
+```
+
+or a safe maximum iteration count is reached.
+
+Suggested defaults:
+
+```text
+tolerance = 1e-8
+max_iterations = 100
+```
+
+Document actual iterations-to-convergence.
+
+---
+
+# 9. VERIFY ITERATIVE PROPAGATION AGAINST THE PAPER FORMULA
+
+On the tiny synthetic test graph, explicitly calculate:
+
+```python
+f_dense = np.linalg.solve(I - alpha * Theta, y)
+```
+
+and compare its ranking/direction with the iterative solution.
+
+Because the restarted iterative form includes `(1-alpha)y`, compare after accounting for the expected constant scaling.
+
+The sparse iterative result must agree numerically with the dense small-graph solution.
+
+This is a required correctness test.
+
+---
+
+# 10. USE THE TEMPORALLY CORRECT HYPERGRAPH
+
+Propagation must happen only over the graph visible at the requested cutoff.
+
+Preserve the current temporal logic:
+
+```text
+2025 conservative primary
+2026 annual sensitivity
+```
+
+For a question requesting information by February 2026:
+
+```text
+primary:
+use evidence safely visible by end-2025 unless exact dates prove <= Feb 2026
+
+sensitivity:
+annual 2026 graph, clearly marked as possibly containing post-February material
+```
+
+Do not let a 2026-only claim seed or propagate into the 2025 primary evaluation.
+
+Add temporal propagation tests.
+
+---
+
+# 11. H0 — PURE HYPERGRAPH DIFFUSION
+
+Implement the first new baseline:
+
+```text
+H0_semantic_hypergraph_diffusion
+```
+
+Pipeline:
+
+```text
+question
+→ atomic graph-node semantic similarities
+→ top-M seed vector y
+→ Zhou-style hypergraph diffusion
+→ propagated node scores f
+→ answer-entity ranking
+```
+
+Use the native graph with:
+
+```text
+existing edge weights
+all relation weights = 1
+```
+
+for this first experiment.
+
+This is the cleanest test of the paper-derived mechanism.
+
+Do not inject the current contextual R3 score yet.
+
+---
+
+# 12. MAP PROPAGATED NODE SCORES TO ANSWER ENTITIES
+
+Diffusion produces scores for every graph node type.
+
+The Type-A result list should still contain answer-like scientific entities rather than arbitrary claims.
+
+Reuse the existing safe `EntityGroup`/normalized-name grouping layer.
+
+For an entity group containing multiple graph nodes, use a deterministic aggregation such as:
+
+```python
+entity_diffusion_score = max(f[node_id] for node_id in group.member_node_ids)
+```
+
+Use `max` initially because summation can reward an entity merely for having many duplicate representations.
+
+Do not tune this against expected answers.
+
+Keep claim/task/article nodes available as propagation intermediates even when they are not eligible final answers.
+
+Apply soft answer-type priors only after propagation, not as graph traversal blockers.
+
+The graph must be allowed to propagate:
+
+```text
+claim → article → method
+```
+
+even if claims/articles would not themselves be final method answers.
+
+---
+
+# 13. H1 — FUSE PROPAGATION WITH CURRENT DIRECT RETRIEVAL
+
+Implement:
+
+```text
+H1_R3_plus_diffusion
+```
+
+Do NOT immediately combine raw numerical scores with arbitrary weights because R3 scores and diffusion scores are not calibrated.
+
+Instead use **Reciprocal Rank Fusion** initially.
+
+Construct:
+
+```text
+ranking A = current R3 entity ranking
+ranking B = H0 diffusion entity ranking
+```
+
+Fuse using RRF:
+
+```python
+rrf_score(entity) =
+    1 / (k_rrf + rank_R3(entity))
+    +
+    1 / (k_rrf + rank_diffusion(entity))
+```
+
+Use one fixed standard/configured `k_rrf`.
+
+Do not tune `k_rrf` against this benchmark.
+
+Expose it in configuration.
+
+This experiment asks:
+
+```text
+Does graph propagation add information complementary
+to current direct semantic retrieval?
+```
+
+---
+
+# 14. H2 — GENERIC EXPLICIT-MENTION SUPPORT
+
+One observed failure is that some sparse method/cited-work nodes contain almost no task-specific context even though their names are explicitly mentioned elsewhere in claims/articles.
+
+Build a benchmark-independent retrieval-only mention index.
+
+For every safely identifiable entity name:
+
+```text
+normalized scientific entity name
+```
+
+find graph text nodes that explicitly mention it using conservative lexical identity rules.
+
+Examples of text sources:
+
+```text
+claims
+tasks
+problems
+articles
+techniques
+components
+```
+
+Do NOT use `ground_truth.json`.
+
+Do NOT create benchmark-specific aliases.
+
+Do NOT fuzzy-link generic short strings.
+
+Require safe whole-token/name evidence.
+
+Create something conceptually like:
+
+```python
+mentions[entity_group_id] = [
+    evidence_node_id,
+    ...
+]
+```
+
+Do not modify the canonical TKH export.
+
+This is a retrieval-side index only.
+
+For H2, allow strong semantic evidence on an explicitly mentioning node to seed the mentioned entity conservatively.
+
+Use a simple non-tuned rule such as:
+
+```python
+entity_seed =
+    max(
+        entity_own_seed,
+        max(seed_of_safe_explicit_mentions)
+    )
+```
+
+before diffusion.
+
+Do not add arbitrary learned weights.
+
+Call this:
+
+```text
+H2_mention_assisted_diffusion
+```
+
+The purpose is to help cases like:
+
+```text
+sparse cited_work/method node
++
+highly relevant claim explicitly naming that method
+```
+
+without copying every claim from an entire article into the entity representation.
+
+---
+
+# 15. H3 — RELATION-AWARE HYPERGRAPH DIFFUSION
+
+Only after H0–H2 have been measured, add a relation-aware variant.
+
+The paper permits weighted hyperedges through `W`.
+
+Use:
+
+```text
+W[e,e] =
+    native_edge_weight(e)
+    *
+    retrieval_relation_weight[relation_type(e)]
+```
+
+Do not change the incidence matrix or collapse the hypergraph to pairs.
+
+Important:
+
+```text
+D_e^(-1)
+```
+
+already downweights large hyperedges according to their cardinality in the Zhou operator.
+
+Do not accidentally remove that normalization.
+
+Start with the uniform H0 result as the primary paper-faithful baseline.
+
+For H3, define a small, documented semantic prior over relation families before running the benchmark.
+
+A reasonable initial design to evaluate, not optimize, is:
+
+```text
+claims                 strong
+presents               strong
+solves                 strong
+addresses              strong
+evaluated_on           moderately strong
+uses_technique         moderately strong
+uses_component         moderately strong
+extends                weaker
+cites                  weaker
+proposes_future_work   weak
+authored_by            zero or very weak for scientific-answer retrieval
+```
+
+Choose explicit numeric defaults once, document them in configuration, and do not sweep them against the answer key.
+
+The report must make clear:
+
+```text
+these are retrieval design priors,
+not weights learned from the current 14 Type-A questions.
+```
+
+Call this:
+
+```text
+H3_relation_aware_diffusion
+```
+
+---
+
+# 16. DIAGNOSE HUB / SEMANTIC-DRIFT FAILURE
+
+Diffusion can fail by spreading relevance into broad, high-degree or generic nodes.
+
+Add diagnostics for:
+
+```text
+score mass by node type after each iteration
+top propagated nodes
+node degree vs propagated score
+hyperedges carrying the most propagated mass
+high-arity edge contribution
+```
+
+For each query record whether propagation becomes dominated by:
+
+```text
+generic article nodes
+future topics
+authors
+large citation edges
+high-degree hubs
+```
+
+Export:
+
+```text
+artifacts/evaluation/hypergraph_diffusion_diagnostics.json
+```
+
+This is important because if H0 fails through graph drift, the correct response is not blindly increasing `alpha`.
+
+---
+
+# 17. PROPAGATION EXPLANATIONS
+
+For each recovered gold entity, produce a useful approximate explanation.
+
+Example:
+
+```text
+Question
+  → claim clai_00123 (high semantic seed)
+  → claims hyperedge
+  → article arti_00017
+  → presents hyperedge
+  → DeepH
+```
+
+It is not necessary to exactly decompose the full inverse into one unique path.
+
+But provide at least:
+
+```text
+largest semantic seed nodes relevant to the entity
+strong connecting hyperedges
+short graph path(s)
+entity score before diffusion
+entity score after diffusion
+rank before diffusion
+rank after diffusion
+```
+
+Produce:
+
+```text
+artifacts/evaluation/propagation_traces.json
+```
+
+This will tell us whether gains are scientifically interpretable or merely caused by hubs.
+
+---
+
+# 18. REQUIRED CONTROL: SHUFFLED PROPAGATION
+
+We need evidence that any improvement comes from meaningful TKH structure rather than generic score smoothing.
+
+Add at least one structural null/control.
+
+For example:
+
+```text
+preserve:
+node count
+edge arities
+relation-type counts where feasible
+
+randomize:
+edge memberships
+```
+
+Then run the same query seeds and propagation.
+
+Call it:
+
+```text
+H0_shuffled_hypergraph
+```
+
+Compare candidate recall/ranks against real H0.
+
+This follows the assessment's emphasis on trustworthy evaluation.
+
+If real and shuffled propagation perform similarly, do not claim that meaningful hypergraph structure is helping.
+
+---
+
+# 19. REQUIRED CONTROL: PAIRWISE PROJECTION
+
+Because the project claims hypergraph-native value, compare the propagation against the existing pairwise projection baseline.
+
+Use the already defined weight-conserving pairwise projection if available.
+
+Run equivalent graph diffusion/PPR on that pairwise structure.
+
+Compare:
+
+```text
+native hypergraph diffusion
+vs
+pairwise projected diffusion
+```
+
+with the same semantic seeds.
+
+Do not claim native higher-order structure is useful unless the experiment supports it.
+
+Even if pairwise diffusion performs similarly or better, report that honestly.
+
+---
+
+# 20. NO HIERARCHY SEARCH YET
+
+Do not implement diffusion on the coarse hierarchy in this pass.
+
+The correct sequence is:
+
+```text
+fine-level native hypergraph diffusion
+        ↓
+does candidate recall improve?
+        ↓
+if yes:
+later investigate coarse-to-fine approximation
+```
+
+Only once fine-graph propagation is demonstrably useful should a later pass test:
+
+```text
+query seeds
+→ coarse-level diffusion
+→ high-relevance supernodes
+→ descend
+→ fine-level refinement
+```
+
+Do not optimize the 12/40/120 hierarchy before proving that the underlying relevance-propagation target is useful.
+
+---
+
+# 21. TYPE-A AND TYPE-B MUST REMAIN SEPARATE
+
+The previous contextual Type-A changes degraded Type-B source retrieval.
+
+Do not silently replace the existing Type-B evidence retriever with this new diffusion system.
+
+Primary experiment:
+
+```text
+Type A scientific entity retrieval
+```
+
+For Type B:
+
+```text
+keep current source/evidence pipeline as default
+```
+
+Optionally report diffusion as a clearly separate experimental Type-B row.
+
+Do not select one universal configuration based on mixed Type-A/Type-B metrics.
+
+---
+
+# 22. ABLATIONS TO RUN
+
+Run exactly this sequence first:
+
+```text
+R0
+surface-only all-type baseline
+
+R1
+current contextual original-query baseline
+
+R3
+current contextual + soft type-prior baseline
+
+H0
+atomic semantic seeds
++ native Zhou hypergraph diffusion
+
+H0_shuffled
+same seeds
++ shuffled-hypergraph propagation
+
+H0_pairwise
+same seeds
++ pairwise-projected diffusion
+
+H1
+R3 ranking
++ native H0 ranking
++ reciprocal-rank fusion
+
+H2
+safe explicit-mention-assisted seeds
++ native hypergraph diffusion
++ R3 fusion
+
+H3
+H2
++ relation-aware hyperedge weights
+```
+
+Do not add another six variants unless these results establish a clear reason.
+
+---
+
+# 23. METRICS
+
+For each Type-A variant report at least:
+
+```text
+Candidate Recall@20
+Candidate Recall@50
+Candidate Recall@100
+Candidate Recall@200
+
+Hit@1
+Hit@5
+Hit@10
+Hit@20
+
+Recall@5
+Recall@10
+Recall@20
+Recall@50
+Recall@100
+
+Precision@5
+Precision@10
+
+MRR
+R-Precision
+Recall@R
+
+median gold rank
+mean gold rank, if useful
+
+unique-target recall
+micro target-instance recall
+macro per-question recall
+raw /63 recovery
+```
+
+Also report:
+
+```text
+number of diffusion iterations
+sparse Theta applications/query
+runtime/query
+semantic seed comparisons/query
+```
+
+Keep dot-product cost and propagation cost separately identifiable.
+
+Do not pretend a sparse matrix-vector multiply is free simply because it is not an embedding comparison.
+
+---
+
+# 24. PER-TARGET BEFORE/AFTER DIAGNOSTICS
+
+This is required.
+
+For every canonically resolved gold target record:
+
+```json
+{
+  "question_id": "...",
+  "gold_label": "...",
+  "entity_group_id": "...",
+
+  "R3_rank": 160,
+  "H0_rank": 42,
+  "H1_rank": 17,
+  "H2_rank": 8,
+  "H3_rank": 6,
+
+  "R3_score": 0.0,
+  "diffusion_score": 0.0,
+
+  "seed_support": [],
+  "propagation_support": [],
+  "top_connecting_relations": []
+}
+```
+
+We need to see:
+
+```text
+which gold targets improved
+which got worse
+why
+```
+
+Do not report only aggregate recall.
+
+---
+
+# 25. IMPORTANT FAILURE CASES TO INSPECT
+
+Inspect at least:
+
+```text
+targets that R3 already retrieves
+targets ranked 11-100 under R3
+targets ranked >100 under R3
+sparse cited_work targets
+targets with strong claim/article evidence
+targets with no relevant neighboring evidence
+```
+
+Do not special-case their names in production.
+
+They are diagnostic categories.
+
+For each category explain whether propagation:
+
+```text
+helped
+did nothing
+or caused semantic drift.
+```
+
+---
+
+# 26. SUCCESS CRITERION
+
+Do NOT hard-code a benchmark target like:
+
+```text
+must achieve 70% recall
+```
+
+and tune until it happens.
+
+The experiment is successful scientifically if it determines whether native graph propagation solves the diagnosed ranking problem.
+
+Evidence that the mechanism is useful would look like:
+
+```text
+Candidate Recall@50/@100 improves materially over R3
+
+median gold rank decreases substantially
+
+gains are larger on the real TKH than the shuffled null
+
+improvements can be traced through scientifically plausible graph relations
+
+top-10 recall improves without benchmark-specific aliases or tuned weights
+```
+
+If Candidate Recall@100 remains around the current ~0.37 and gold ranks do not materially improve, say clearly:
+
+```text
+hypergraph diffusion did not solve the remaining candidate-generation problem.
+```
+
+Do not hide the negative result.
+
+---
+
+# 27. IMPORTANT INTERPRETATION RULE
+
+Do not claim:
+
+```text
+Zhou et al. proposed semantic-query retrieval.
+```
+
+They did not.
+
+They proposed spectral hypergraph methods and transductive inference from an initial label vector.
+
+Our adaptation is:
+
+```text
+paper:
+initial label signal y
+→ hypergraph propagation
+→ inferred vertex scores
+
+our retrieval adaptation:
+query-semantic relevance y
+→ hypergraph propagation
+→ query-conditioned vertex relevance
+```
+
+State this distinction explicitly in the report.
+
+HippoRAG/PPR-style graph retrieval can be mentioned as secondary contemporary motivation for treating semantic relevance as restart/seeding information, but the native hypergraph propagation experiment should remain mathematically grounded in Zhou et al.
+
+---
+
+# 28. IMPLEMENTATION QUALITY
+
+Prefer adding focused modules such as:
+
+```text
+retrieval/hypergraph_diffusion.py
+retrieval/query_seeds.py
+retrieval/mention_index.py
+```
+
+only if they fit the repository structure.
+
+Do not create unnecessary parallel architecture.
+
+Reuse:
+
+```text
+snapshot construction
+incidence representation
+node embeddings
+entity groups
+question analyzer
+target resolver
+metrics
+artifact writers
+```
+
+where correct.
+
+Configuration should expose something equivalent to:
+
+```yaml
+hypergraph_diffusion:
+  enabled: true
+  alpha: 0.85
+  seed_top_m: 100
+  tolerance: 1.0e-8
+  max_iterations: 100
+
+  seed_types:
+    - article
+    - cited_work
+    - claim
+    - component
+    - dataset
+    - future_topic
+    - method
+    - metric
+    - problem
+    - task
+    - technique
+
+  relation_weights:
+    mode: uniform
+```
+
+The exact schema may adapt to existing configuration conventions.
+
+---
+
+# 29. TESTS REQUIRED
+
+Add tests for:
+
+```text
+1. dense vs sparse Theta multiplication
+
+2. correct De arity normalization
+
+3. correct Dv normalization
+
+4. weighted hyperedge handling
+
+5. isolated vertices
+
+6. iterative diffusion equals small dense closed-form solution
+   up to expected scaling
+
+7. convergence
+
+8. deterministic top-M seeds
+
+9. L1-normalized seed vector
+
+10. negative semantic-score handling
+
+11. temporal snapshot isolation
+
+12. entity-group score aggregation
+
+13. propagation intermediates may include claims/articles
+    even when final answer types exclude them
+
+14. mention index uses only safe lexical identity
+
+15. mention index does not use ground truth
+
+16. no answer-specific aliases
+
+17. RRF fusion deterministic
+
+18. relation-weighted W preserves De normalization
+
+19. shuffled-hypergraph control reproducible by seed
+
+20. no dense n-by-n Theta allocation in normal production path
+```
+
+Run the entire existing test suite afterward.
+
+---
+
+# 30. REQUIRED OUTPUT ARTIFACTS
+
+Generate at least:
+
+```text
+artifacts/evaluation/hypergraph_diffusion_results.json
+
+artifacts/evaluation/hypergraph_diffusion_diagnostics.json
+
+artifacts/evaluation/propagation_traces.json
+
+artifacts/evaluation/diffusion_per_target.json
+
+artifacts/evaluation/diffusion_sensitivity.json
+```
+
+Update the contextual retrieval report with a new section:
+
+```text
+Query-seeded native hypergraph diffusion
+```
+
+Do not overwrite historical R0–R5 numbers.
+
+---
+
+# 31. FINAL REPORT MUST ANSWER THESE QUESTIONS
+
+After implementation, answer explicitly:
+
+```text
+1. Does atomic-node semantic seeding plus native hypergraph
+   diffusion improve candidate recall over R3?
+
+2. Does it improve median gold rank?
+
+3. Which node types are the most useful semantic seeds?
+
+4. Do relevant claims/tasks/problems successfully transfer
+   relevance to correct answer entities?
+
+5. Is real TKH propagation better than shuffled propagation?
+
+6. Is native hypergraph propagation different from or better
+   than pairwise-projection propagation?
+
+7. Does explicit safe mention support help sparse entity nodes?
+
+8. Does relation-aware weighting help or merely introduce
+   benchmark-sensitive design choices?
+
+9. Which relations carry useful relevance most often?
+
+10. Are failures caused by missing graph paths, weak semantic
+    seeds, or diffusion drift through hubs?
+
+11. Does Type-A Recall@10 improve beyond the current 4/47?
+
+12. More importantly, does Candidate Recall@100 improve
+    substantially beyond the current ~0.37?
+
+13. Is the improvement strong enough that hierarchical
+    acceleration is now worth investigating?
+```
+
+---
+
+# 32. STOP RULE
+
+At the end of this pass:
+
+If native diffusion still cannot generate a substantially better candidate pool:
+
+```text
+DO NOT implement hierarchical diffusion.
+DO NOT add an LLM reranker.
+DO NOT tune arbitrary relation weights against ground truth.
+```
+
+Instead diagnose:
+
+```text
+missing evidence-to-entity connectivity
+poor semantic seed retrieval
+incorrect relation semantics
+hub/degree bias
+or incomplete TKH extraction
+```
+
+If native diffusion DOES produce substantially better candidate recall and gold ranks:
+
+the next research step, not part of this pass, is:
+
+```text
+use the existing multi-resolution hierarchy to approximate
+query-conditioned diffusion more cheaply:
+
+query seeds
+→ coarse hypergraph relevance
+→ select relevant supernodes
+→ descend
+→ local fine-level propagation
+```
+
+That would finally give the hierarchy a retrieval role justified by a working fine-level relevance mechanism.
+
+---
+
+# 33. FINAL DELIVERABLE FROM CODEX
+
+When finished, provide:
+
+```text
+files changed
+
+new functions/classes
+
+tests added
+
+exact commands run
+
+full test result
+
+R0/R1/R3/H0/H0-shuffled/H0-pairwise/H1/H2/H3 table
+
+per-target rank changes
+
+Candidate Recall@50/@100 before and after
+
+Recall@10 before and after
+
+real-vs-shuffled comparison
+
+native-vs-pairwise comparison
+
+alpha and seed-count sensitivity
+
+examples of successful propagation paths
+
+examples of diffusion failures
+
+whether the evidence supports continuing to hierarchical diffusion
+```
+
+Do not summarize the result as simply:
+
+```text
+"recall improved"
+```
+
+or:
+
+```text
+"recall did not improve."
+```
+
+Explain mechanistically what happened.
+
+The main hypothesis being tested is:
+
+```text
+The TKH already contains query-relevant evidence,
+but relevant evidence and target entities are distributed across
+different nodes.
+
+Query-seeded hypergraph propagation should allow relevance
+attached to claims/tasks/articles/etc. to reach the scientific
+entities structurally supported by that evidence, without
+copying large amounts of potentially irrelevant article context
+into every entity representation.
+```
+
+Test that hypothesis directly and rigorously.

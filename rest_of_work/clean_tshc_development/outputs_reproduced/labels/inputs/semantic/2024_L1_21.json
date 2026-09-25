@@ -1,0 +1,588 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "cite_00478",
+      "type": "cited_work",
+      "surface_form": "Voigt-Reuss-Hill averaging"
+    },
+    {
+      "id": "cite_00538",
+      "type": "cited_work",
+      "surface_form": "Denoising Pre-training"
+    },
+    {
+      "id": "clai_00132",
+      "type": "claim",
+      "surface_form": "The multiple‑tower architecture reduces the computational complexity of a propagation step from O(n²d²) to O(n²d²/k) and yields a 2× speedup for n=9, d=200, k=8."
+    },
+    {
+      "id": "clai_00402",
+      "type": "claim",
+      "surface_form": "Hierarchical multiscale modeling approaches require large amounts of memory and storage space to store precomputed quantities of interest."
+    },
+    {
+      "id": "comp_00017",
+      "type": "component",
+      "surface_form": "Multiple towers"
+    },
+    {
+      "id": "comp_00080",
+      "type": "component",
+      "surface_form": "Gaussian noise augmentation of training configurations"
+    },
+    {
+      "id": "comp_00127",
+      "type": "component",
+      "surface_form": "Adaptive meshing and time stepping"
+    },
+    {
+      "id": "comp_00140",
+      "type": "component",
+      "surface_form": "Convex‑hull distance target"
+    },
+    {
+      "id": "comp_00149",
+      "type": "component",
+      "surface_form": "Convex‑hull distance classification analysis"
+    },
+    {
+      "id": "comp_00163",
+      "type": "component",
+      "surface_form": "Voronoi tessellation features"
+    },
+    {
+      "id": "comp_00297",
+      "type": "component",
+      "surface_form": "Image‑based data‑processing pipeline"
+    },
+    {
+      "id": "comp_00321",
+      "type": "component",
+      "surface_form": "Dropout regularization layers"
+    },
+    {
+      "id": "comp_00342",
+      "type": "component",
+      "surface_form": "Automatic k‑point convergence protocol"
+    },
+    {
+      "id": "comp_00346",
+      "type": "component",
+      "surface_form": "STM‑image database and analysis pipeline"
+    },
+    {
+      "id": "comp_00366",
+      "type": "component",
+      "surface_form": "Composition‑weighted binary averaging heuristic"
+    },
+    {
+      "id": "comp_00370",
+      "type": "component",
+      "surface_form": "Stability‑ranking and heat‑map visualization"
+    },
+    {
+      "id": "comp_00591",
+      "type": "component",
+      "surface_form": "Volume-based test-time augmentation"
+    },
+    {
+      "id": "data_00245",
+      "type": "dataset",
+      "surface_form": "MoS₂ 35×35 supercell (efficiency test)"
+    },
+    {
+      "id": "futu_00062",
+      "type": "future_topic",
+      "surface_form": "Standard parameter values for k-point grid density"
+    },
+    {
+      "id": "meth_00097",
+      "type": "method",
+      "surface_form": "Monkhorst-Pack k-point sampling"
+    },
+    {
+      "id": "meth_00131",
+      "type": "method",
+      "surface_form": "Maximum Entropy (max‑ent) method"
+    },
+    {
+      "id": "meth_00135",
+      "type": "method",
+      "surface_form": "ML‑IAP"
+    },
+    {
+      "id": "meth_00164",
+      "type": "method",
+      "surface_form": "Voronoi RF"
+    },
+    {
+      "id": "meth_00187",
+      "type": "method",
+      "surface_form": "SmoothRBF"
+    },
+    {
+      "id": "meth_00234",
+      "type": "method",
+      "surface_form": "Voronoi tessellation"
+    },
+    {
+      "id": "meth_00270",
+      "type": "method",
+      "surface_form": "Convex hull stability analysis"
+    },
+    {
+      "id": "meth_00304",
+      "type": "method",
+      "surface_form": "Harmonic Networks"
+    },
+    {
+      "id": "meth_00351",
+      "type": "method",
+      "surface_form": "ml_multiscale_modeling_perspective"
+    },
+    {
+      "id": "meth_00352",
+      "type": "method",
+      "surface_form": "Hierarchical multiscale modeling"
+    },
+    {
+      "id": "meth_00353",
+      "type": "method",
+      "surface_form": "Concurrent multiscale modeling"
+    },
+    {
+      "id": "meth_00445",
+      "type": "method",
+      "surface_form": "Voigt-Reuss-Hill averaging"
+    },
+    {
+      "id": "prob_00303",
+      "type": "problem",
+      "surface_form": "Complex unit cell input handling"
+    },
+    {
+      "id": "prob_00310",
+      "type": "problem",
+      "surface_form": "Variable-sized unit cell handling"
+    },
+    {
+      "id": "prob_00333",
+      "type": "problem",
+      "surface_form": "Padding zero computation waste"
+    },
+    {
+      "id": "prob_00374",
+      "type": "problem",
+      "surface_form": "Local minima trapping in geometry optimization"
+    },
+    {
+      "id": "prob_00383",
+      "type": "problem",
+      "surface_form": "Force accuracy in geometry optimization"
+    },
+    {
+      "id": "prob_00407",
+      "type": "problem",
+      "surface_form": "Label leakage prevention"
+    },
+    {
+      "id": "prob_00489",
+      "type": "problem",
+      "surface_form": "communication overhead in spatial decomposition"
+    },
+    {
+      "id": "prob_00593",
+      "type": "problem",
+      "surface_form": "Nonlinear parameter optimization"
+    },
+    {
+      "id": "task_00107",
+      "type": "task",
+      "surface_form": "Convex‑hull distance regression"
+    },
+    {
+      "id": "task_00121",
+      "type": "task",
+      "surface_form": "multiscale modeling"
+    },
+    {
+      "id": "task_00233",
+      "type": "task",
+      "surface_form": "STM image analysis"
+    },
+    {
+      "id": "task_00243",
+      "type": "task",
+      "surface_form": "STM image classification"
+    },
+    {
+      "id": "task_00443",
+      "type": "task",
+      "surface_form": "Convex hull distance prediction"
+    },
+    {
+      "id": "task_00455",
+      "type": "task",
+      "surface_form": "Convex hull stability analysis"
+    },
+    {
+      "id": "task_00461",
+      "type": "task",
+      "surface_form": "Multiscale computational modeling"
+    },
+    {
+      "id": "task_00508",
+      "type": "task",
+      "surface_form": "Prototype analysis"
+    },
+    {
+      "id": "tech_00018",
+      "type": "technique",
+      "surface_form": "Weight tying"
+    },
+    {
+      "id": "tech_00028",
+      "type": "technique",
+      "surface_form": "Dropout regularization"
+    },
+    {
+      "id": "tech_00037",
+      "type": "technique",
+      "surface_form": "Model EMA"
+    },
+    {
+      "id": "tech_00065",
+      "type": "technique",
+      "surface_form": "Exponential moving average of weights"
+    },
+    {
+      "id": "tech_00067",
+      "type": "technique",
+      "surface_form": "Gaussian noise augmentation"
+    },
+    {
+      "id": "tech_00070",
+      "type": "technique",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "tech_00081",
+      "type": "technique",
+      "surface_form": "Logarithmic transformation"
+    },
+    {
+      "id": "tech_00083",
+      "type": "technique",
+      "surface_form": "Edge‑dependent linear transformation"
+    },
+    {
+      "id": "tech_00087",
+      "type": "technique",
+      "surface_form": "Multiple‑tower decomposition"
+    },
+    {
+      "id": "tech_00093",
+      "type": "technique",
+      "surface_form": "Arrhenius fitting"
+    },
+    {
+      "id": "tech_00192",
+      "type": "technique",
+      "surface_form": "Weighted linear regression with convex‑hull bias"
+    },
+    {
+      "id": "tech_00217",
+      "type": "technique",
+      "surface_form": "Voronoi tessellation feature extraction"
+    },
+    {
+      "id": "tech_00236",
+      "type": "technique",
+      "surface_form": "SmoothRBF distance expansion"
+    },
+    {
+      "id": "tech_00244",
+      "type": "technique",
+      "surface_form": "Smooth cutoff function"
+    },
+    {
+      "id": "tech_00252",
+      "type": "technique",
+      "surface_form": "mean‑squared displacement (MSD) analysis"
+    },
+    {
+      "id": "tech_00256",
+      "type": "technique",
+      "surface_form": "Cubic spline fitting"
+    },
+    {
+      "id": "tech_00275",
+      "type": "technique",
+      "surface_form": "Progressive weighting of loss terms"
+    },
+    {
+      "id": "tech_00295",
+      "type": "technique",
+      "surface_form": "Whitening transformations"
+    },
+    {
+      "id": "tech_00316",
+      "type": "technique",
+      "surface_form": "One‑hot crack labeling"
+    },
+    {
+      "id": "tech_00330",
+      "type": "technique",
+      "surface_form": "Non‑equilibrium MD tensile testing"
+    },
+    {
+      "id": "tech_00354",
+      "type": "technique",
+      "surface_form": "Automatic k‑point convergence"
+    },
+    {
+      "id": "tech_00355",
+      "type": "technique",
+      "surface_form": "Geometry optimization with energy, force, and stress relaxation"
+    },
+    {
+      "id": "tech_00368",
+      "type": "technique",
+      "surface_form": "Automated k‑point and plane‑wave cutoff convergence"
+    },
+    {
+      "id": "tech_00387",
+      "type": "technique",
+      "surface_form": "Heat‑map visualization of element‑pair stability likelihoods"
+    },
+    {
+      "id": "tech_00397",
+      "type": "technique",
+      "surface_form": "Weighted averaging of pure‑element volumes"
+    },
+    {
+      "id": "tech_00409",
+      "type": "technique",
+      "surface_form": "dynamic band‑count adjustment"
+    },
+    {
+      "id": "tech_00460",
+      "type": "technique",
+      "surface_form": "Weight parameterization"
+    },
+    {
+      "id": "tech_00469",
+      "type": "technique",
+      "surface_form": "Linearly decayed loss weighting"
+    },
+    {
+      "id": "tech_00482",
+      "type": "technique",
+      "surface_form": "Data curation filtering"
+    },
+    {
+      "id": "tech_00494",
+      "type": "technique",
+      "surface_form": "Nonlinear transformations"
+    },
+    {
+      "id": "tech_00540",
+      "type": "technique",
+      "surface_form": "Unit cell displacement enumeration"
+    },
+    {
+      "id": "tech_00550",
+      "type": "technique",
+      "surface_form": "Supercell approach"
+    },
+    {
+      "id": "tech_00555",
+      "type": "technique",
+      "surface_form": "Tertile-based uncertainty visualization"
+    },
+    {
+      "id": "tech_00557",
+      "type": "technique",
+      "surface_form": "Neighbor padding"
+    },
+    {
+      "id": "tech_00561",
+      "type": "technique",
+      "surface_form": "Smooth switching function"
+    },
+    {
+      "id": "tech_00568",
+      "type": "technique",
+      "surface_form": "Species-based block padding"
+    },
+    {
+      "id": "tech_00569",
+      "type": "technique",
+      "surface_form": "Softmin distance calculation"
+    },
+    {
+      "id": "tech_00575",
+      "type": "technique",
+      "surface_form": "Relative model deviation"
+    },
+    {
+      "id": "tech_00590",
+      "type": "technique",
+      "surface_form": "cutoff radius selection"
+    },
+    {
+      "id": "tech_00593",
+      "type": "technique",
+      "surface_form": "TensorBoard visualization"
+    },
+    {
+      "id": "tech_00596",
+      "type": "technique",
+      "surface_form": "convex hull distance prediction"
+    },
+    {
+      "id": "tech_00600",
+      "type": "technique",
+      "surface_form": "Double grid technique"
+    },
+    {
+      "id": "tech_00603",
+      "type": "technique",
+      "surface_form": "First-order polynomial fitting"
+    },
+    {
+      "id": "tech_00604",
+      "type": "technique",
+      "surface_form": "Γ-centered k-point grids"
+    },
+    {
+      "id": "tech_00609",
+      "type": "technique",
+      "surface_form": "DOS filtering"
+    },
+    {
+      "id": "tech_00610",
+      "type": "technique",
+      "surface_form": "Space group filtering"
+    },
+    {
+      "id": "tech_00611",
+      "type": "technique",
+      "surface_form": "Unit cell size filtering"
+    },
+    {
+      "id": "tech_00613",
+      "type": "technique",
+      "surface_form": "q-grid and k-grid convergence"
+    },
+    {
+      "id": "tech_00618",
+      "type": "technique",
+      "surface_form": "Convex hull distance filtering"
+    },
+    {
+      "id": "tech_00619",
+      "type": "technique",
+      "surface_form": "Voigt-Reuss-Hill averaging"
+    },
+    {
+      "id": "tech_00627",
+      "type": "technique",
+      "surface_form": "Neural network visualization"
+    },
+    {
+      "id": "tech_00631",
+      "type": "technique",
+      "surface_form": "NKPPRA-based k-point sampling"
+    },
+    {
+      "id": "tech_00647",
+      "type": "technique",
+      "surface_form": "DOS energy window selection"
+    },
+    {
+      "id": "tech_00648",
+      "type": "technique",
+      "surface_form": "Band structure energy window selection"
+    },
+    {
+      "id": "tech_00664",
+      "type": "technique",
+      "surface_form": "Prototype analysis"
+    },
+    {
+      "id": "tech_00674",
+      "type": "technique",
+      "surface_form": "Swish nonlinearities"
+    },
+    {
+      "id": "tech_00680",
+      "type": "technique",
+      "surface_form": "Gamma-centred kpoint generation"
+    },
+    {
+      "id": "tech_00701",
+      "type": "technique",
+      "surface_form": "Species-resolved mean squared displacement"
+    },
+    {
+      "id": "tech_00703",
+      "type": "technique",
+      "surface_form": "Training set augmentation via intermediate MD"
+    },
+    {
+      "id": "tech_00785",
+      "type": "technique",
+      "surface_form": "Supercell replication"
+    },
+    {
+      "id": "tech_00902",
+      "type": "technique",
+      "surface_form": "Uniform grid sparsification"
+    },
+    {
+      "id": "tech_00907",
+      "type": "technique",
+      "surface_form": "Random displacement test"
+    },
+    {
+      "id": "tech_00927",
+      "type": "technique",
+      "surface_form": "Random atomic displacement"
+    },
+    {
+      "id": "tech_00928",
+      "type": "technique",
+      "surface_form": "Random angle perturbation"
+    },
+    {
+      "id": "tech_00951",
+      "type": "technique",
+      "surface_form": "weighted RMSE averaging"
+    },
+    {
+      "id": "tech_00961",
+      "type": "technique",
+      "surface_form": "L1/L2 regularization"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 2,
+    "claim": 2,
+    "component": 13,
+    "dataset": 1,
+    "future_topic": 1,
+    "method": 12,
+    "problem": 8,
+    "task": 8,
+    "technique": 66
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "distance",
+  "representative_ids": [
+    "tech_00460",
+    "tech_00354"
+  ]
+}

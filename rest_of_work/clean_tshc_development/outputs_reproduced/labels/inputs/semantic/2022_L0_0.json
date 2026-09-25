@@ -1,0 +1,1207 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00002",
+      "type": "article",
+      "surface_form": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions"
+    },
+    {
+      "id": "arti_00028",
+      "type": "article",
+      "surface_form": "Machine learning a general purpose interatomic potential for silicon"
+    },
+    {
+      "id": "arti_00033",
+      "type": "article",
+      "surface_form": "Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+    },
+    {
+      "id": "arti_00048",
+      "type": "article",
+      "surface_form": "Machine-learning based interatomic potential for amorphous carbon"
+    },
+    {
+      "id": "cite_00224",
+      "type": "cited_work",
+      "surface_form": "Atomic Simulation Environment (ASE)"
+    },
+    {
+      "id": "cite_00232",
+      "type": "cited_work",
+      "surface_form": "Symmetry-Preserving Inter-Atomic Potential"
+    },
+    {
+      "id": "cite_00235",
+      "type": "cited_work",
+      "surface_form": "Lithium Phosphorus Oxynitride electrolyte"
+    },
+    {
+      "id": "cite_00236",
+      "type": "cited_work",
+      "surface_form": "Plasma synthesis of electrolyte nanopowders"
+    },
+    {
+      "id": "cite_00238",
+      "type": "cited_work",
+      "surface_form": "Ab initio thermodynamics of water"
+    },
+    {
+      "id": "cite_00380",
+      "type": "cited_work",
+      "surface_form": "Density Functional Theory (DFT)"
+    },
+    {
+      "id": "cite_00480",
+      "type": "cited_work",
+      "surface_form": "Bayesian optimization with symmetry relaxation"
+    },
+    {
+      "id": "cite_00504",
+      "type": "cited_work",
+      "surface_form": "Order‑N electronic structure theory"
+    },
+    {
+      "id": "clai_00013",
+      "type": "claim",
+      "surface_form": "Using Materials Project tools, researchers designed a new class of sodium‑based carbonophosphate compounds, predicted them to be thermodynamically stable, synthesized them hydrothermally, and experimentally confirmed their Li‑ion battery performance after ion exchange."
+    },
+    {
+      "id": "clai_00028",
+      "type": "claim",
+      "surface_form": "The integrated JARVIS workflow (DFT → FF → ML) enables rapid screening of materials for high solar‑cell efficiency (SLME) with predictions validated against experimental data."
+    },
+    {
+      "id": "clai_00086",
+      "type": "claim",
+      "surface_form": "Using a shifted softplus activation guarantees an infinitely differentiable (smooth) potential energy surface, facilitating geometry optimization."
+    },
+    {
+      "id": "clai_00190",
+      "type": "claim",
+      "surface_form": "NequIP reproduces structural and kinetic properties from ab‑initio molecular dynamics simulations with high fidelity."
+    },
+    {
+      "id": "clai_00220",
+      "type": "claim",
+      "surface_form": "The first RELAX calculation is performed in collinear spin-polarized fashion with initial magnetic moments set to 1.0 µB per atom, and spin polarization is turned off in subsequent calculations if magnetization is below 0.025 µB/atom."
+    },
+    {
+      "id": "clai_00221",
+      "type": "claim",
+      "surface_form": "Electronic convergence criteria are δEelec = 10⁻⁵ eV and ionic convergence criteria are δEion = 10⁻⁴ eV for Elements database entries, while all other databases use δEelec = 10⁻³ eV and δEion = 10⁻² eV."
+    },
+    {
+      "id": "clai_00312",
+      "type": "claim",
+      "surface_form": "Matbench contains data from 10 density functional theory-derived and experimental sources including Materials Project, Zhuo et al., Landolt-Bornstein Handbook, Castelli et al., JARVIS DFT 2D, and Citrine Informatics."
+    },
+    {
+      "id": "clai_00475",
+      "type": "claim",
+      "surface_form": "The DeePMD model successfully reproduces the superionic behavior of solid-state electrolytes with linear Lithium/Sodium mean squared displacement over time and diffusion coefficient uncertainty of about 20% or smaller, which is precise enough for battery applications."
+    },
+    {
+      "id": "clai_00485",
+      "type": "claim",
+      "surface_form": "The DeePMD model is a promising candidate for developing a universal potential for solid-state electrolytes, though care must be taken when selecting training configurations."
+    },
+    {
+      "id": "clai_00645",
+      "type": "claim",
+      "surface_form": "M3GNet predicts phonon band structures and densities of states for SiO₂ polymorphs that quantitatively agree with DFT calculations, and the predicted phonon density‑of‑states center follows the expected ω ∝ 1/√m trend across materials."
+    },
+    {
+      "id": "clai_00654",
+      "type": "claim",
+      "surface_form": "High‑throughput screening identified TiP, LiSiNi₂, and CoSi₂ as the most promising Li‑ion battery anode conversion reactions, offering high capacity, moderate voltage, and low volume expansion."
+    },
+    {
+      "id": "clai_00679",
+      "type": "claim",
+      "surface_form": "GAP radial and angular distribution functions for liquid and amorphous carbon closely match DFT reference results, including peak locations, extents, and overall curve shapes."
+    },
+    {
+      "id": "clai_00680",
+      "type": "claim",
+      "surface_form": "GAP recovers three- and four-membered rings that are key features of liquid and low-density amorphous carbon structures, which empirical potentials (Tersoff/Brenner) fail to predict."
+    },
+    {
+      "id": "comp_00023",
+      "type": "component",
+      "surface_form": "Shifted softplus activation"
+    },
+    {
+      "id": "comp_00167",
+      "type": "component",
+      "surface_form": "Equivariant SiLU‑based gate"
+    },
+    {
+      "id": "comp_00214",
+      "type": "component",
+      "surface_form": "Short‑time MD simulation workflow"
+    },
+    {
+      "id": "comp_00215",
+      "type": "component",
+      "surface_form": "Phonon and elastic property predictor"
+    },
+    {
+      "id": "comp_00217",
+      "type": "component",
+      "surface_form": "Repulsive pair potential"
+    },
+    {
+      "id": "comp_00246",
+      "type": "component",
+      "surface_form": "Integration with i‑PI for NPT simulations"
+    },
+    {
+      "id": "comp_00284",
+      "type": "component",
+      "surface_form": "Modified softplus activation"
+    },
+    {
+      "id": "comp_00363",
+      "type": "component",
+      "surface_form": "HF‑scavenging coating screen"
+    },
+    {
+      "id": "comp_00365",
+      "type": "component",
+      "surface_form": "Heuristic + machine‑learning formation‑energy predictor"
+    },
+    {
+      "id": "comp_00370",
+      "type": "component",
+      "surface_form": "Stability‑ranking and heat‑map visualization"
+    },
+    {
+      "id": "comp_00390",
+      "type": "component",
+      "surface_form": "APL phonon library"
+    },
+    {
+      "id": "comp_00588",
+      "type": "component",
+      "surface_form": "Collinear spin-polarized calculation setup"
+    },
+    {
+      "id": "comp_00624",
+      "type": "component",
+      "surface_form": "Deep neural network potential energy surface"
+    },
+    {
+      "id": "comp_00626",
+      "type": "component",
+      "surface_form": "Temperature ramping scheme"
+    },
+    {
+      "id": "comp_00635",
+      "type": "component",
+      "surface_form": "NVE simulation cell"
+    },
+    {
+      "id": "comp_00820",
+      "type": "component",
+      "surface_form": "surface slab models"
+    },
+    {
+      "id": "comp_00824",
+      "type": "component",
+      "surface_form": "Melt-quench trajectory generator"
+    },
+    {
+      "id": "comp_00825",
+      "type": "component",
+      "surface_form": "Surface cleavage module"
+    },
+    {
+      "id": "data_00041",
+      "type": "dataset",
+      "surface_form": "Phonon DOS benchmark"
+    },
+    {
+      "id": "data_00058",
+      "type": "dataset",
+      "surface_form": "MoS₂ 35×35 supercell"
+    },
+    {
+      "id": "data_00064",
+      "type": "dataset",
+      "surface_form": "Band gap"
+    },
+    {
+      "id": "data_00089",
+      "type": "dataset",
+      "surface_form": "Materials Project formation energy"
+    },
+    {
+      "id": "data_00208",
+      "type": "dataset",
+      "surface_form": "Amorphous carbon"
+    },
+    {
+      "id": "data_00212",
+      "type": "dataset",
+      "surface_form": "amorphous carbon Young's modulus"
+    },
+    {
+      "id": "data_00245",
+      "type": "dataset",
+      "surface_form": "MoS₂ 35×35 supercell (efficiency test)"
+    },
+    {
+      "id": "futu_00061",
+      "type": "future_topic",
+      "surface_form": "Completion of Quantum ESPRESSO software integration"
+    },
+    {
+      "id": "futu_00068",
+      "type": "future_topic",
+      "surface_form": "Integration of ML potentials with finite‑temperature phase‑boundary calculations for complex alloys"
+    },
+    {
+      "id": "futu_00128",
+      "type": "future_topic",
+      "surface_form": "Framework to identify novel solid-state electrolytes"
+    },
+    {
+      "id": "futu_00129",
+      "type": "future_topic",
+      "surface_form": "Screening of material databases for solid-state electrolytes"
+    },
+    {
+      "id": "futu_00176",
+      "type": "future_topic",
+      "surface_form": "Realistic and accurate simulations of nanoscale amorphous carbon structures"
+    },
+    {
+      "id": "futu_00177",
+      "type": "future_topic",
+      "surface_form": "High-temperature surface reconstructions of amorphous carbon"
+    },
+    {
+      "id": "meth_00074",
+      "type": "method",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "meth_00084",
+      "type": "method",
+      "surface_form": "Vienna Ab Initio simulation Package"
+    },
+    {
+      "id": "meth_00089",
+      "type": "method",
+      "surface_form": "Molecular dynamics"
+    },
+    {
+      "id": "meth_00101",
+      "type": "method",
+      "surface_form": "ab initio molecular dynamics"
+    },
+    {
+      "id": "meth_00189",
+      "type": "method",
+      "surface_form": "Tersoff bond order potential"
+    },
+    {
+      "id": "meth_00207",
+      "type": "method",
+      "surface_form": "Car-Parrinello molecular dynamics"
+    },
+    {
+      "id": "meth_00225",
+      "type": "method",
+      "surface_form": "Kohn-Sham density-functional theory"
+    },
+    {
+      "id": "meth_00233",
+      "type": "method",
+      "surface_form": "Non‑equilibrium molecular dynamics"
+    },
+    {
+      "id": "meth_00236",
+      "type": "method",
+      "surface_form": "Non-equilibrium Molecular Dynamics"
+    },
+    {
+      "id": "meth_00250",
+      "type": "method",
+      "surface_form": "Hybrid functional HSE06"
+    },
+    {
+      "id": "meth_00251",
+      "type": "method",
+      "surface_form": "Hybrid functional PBE0"
+    },
+    {
+      "id": "meth_00255",
+      "type": "method",
+      "surface_form": "Vienna Ab‑initio simulation package"
+    },
+    {
+      "id": "meth_00263",
+      "type": "method",
+      "surface_form": "Phase-Field Hub"
+    },
+    {
+      "id": "meth_00283",
+      "type": "method",
+      "surface_form": "projector-augmented wave"
+    },
+    {
+      "id": "meth_00291",
+      "type": "method",
+      "surface_form": "hybrid functional"
+    },
+    {
+      "id": "meth_00366",
+      "type": "method",
+      "surface_form": "Ultra-soft pseudopotentials"
+    },
+    {
+      "id": "meth_00368",
+      "type": "method",
+      "surface_form": "PW91 functional"
+    },
+    {
+      "id": "meth_00383",
+      "type": "method",
+      "surface_form": "DeePMD training protocol for diffusion coefficient computation"
+    },
+    {
+      "id": "meth_00387",
+      "type": "method",
+      "surface_form": "Classical Force Field Molecular Dynamics"
+    },
+    {
+      "id": "meth_00431",
+      "type": "method",
+      "surface_form": "Brenner potential"
+    },
+    {
+      "id": "meth_00432",
+      "type": "method",
+      "surface_form": "Screened Tersoff potential"
+    },
+    {
+      "id": "meth_00435",
+      "type": "method",
+      "surface_form": "REBO potential"
+    },
+    {
+      "id": "meth_00436",
+      "type": "method",
+      "surface_form": "environment-dependent interaction potential"
+    },
+    {
+      "id": "metr_00031",
+      "type": "metric",
+      "surface_form": "band structure"
+    },
+    {
+      "id": "metr_00081",
+      "type": "metric",
+      "surface_form": "band gap (eV)"
+    },
+    {
+      "id": "prob_00015",
+      "type": "problem",
+      "surface_form": "Smooth potential energy surface"
+    },
+    {
+      "id": "prob_00082",
+      "type": "problem",
+      "surface_form": "Thermodynamic stability prediction"
+    },
+    {
+      "id": "prob_00090",
+      "type": "problem",
+      "surface_form": "Data inefficiency of neural interatomic potentials"
+    },
+    {
+      "id": "prob_00116",
+      "type": "problem",
+      "surface_form": "large‑scale ionic conductivity screening"
+    },
+    {
+      "id": "prob_00119",
+      "type": "problem",
+      "surface_form": "Accurate, transferable interatomic potential for silicon"
+    },
+    {
+      "id": "prob_00122",
+      "type": "problem",
+      "surface_form": "Accurate data‑driven interatomic potentials"
+    },
+    {
+      "id": "prob_00202",
+      "type": "problem",
+      "surface_form": "High‑capacity battery anode identification"
+    },
+    {
+      "id": "prob_00203",
+      "type": "problem",
+      "surface_form": "HF‑induced cathode degradation mitigation"
+    },
+    {
+      "id": "prob_00218",
+      "type": "problem",
+      "surface_form": "Automated phonon and vibrational property extraction"
+    },
+    {
+      "id": "prob_00219",
+      "type": "problem",
+      "surface_form": "Construction of complex surface slabs and nanoparticles"
+    },
+    {
+      "id": "prob_00221",
+      "type": "problem",
+      "surface_form": "phase stability determination"
+    },
+    {
+      "id": "prob_00376",
+      "type": "problem",
+      "surface_form": "electronic structure of correlated systems"
+    },
+    {
+      "id": "prob_00377",
+      "type": "problem",
+      "surface_form": "band structure prediction"
+    },
+    {
+      "id": "prob_00380",
+      "type": "problem",
+      "surface_form": "Electronic convergence stability"
+    },
+    {
+      "id": "prob_00382",
+      "type": "problem",
+      "surface_form": "Fermi edge handling"
+    },
+    {
+      "id": "prob_00412",
+      "type": "problem",
+      "surface_form": "Time-scale limitation in first-principles molecular dynamics"
+    },
+    {
+      "id": "prob_00418",
+      "type": "problem",
+      "surface_form": "Neural network potential convergence for solid-state electrolytes"
+    },
+    {
+      "id": "prob_00421",
+      "type": "problem",
+      "surface_form": "Activation energy prediction accuracy"
+    },
+    {
+      "id": "prob_00602",
+      "type": "problem",
+      "surface_form": "Fourfold ring prediction in amorphous carbon"
+    },
+    {
+      "id": "prob_00606",
+      "type": "problem",
+      "surface_form": "accurate interatomic potential for amorphous carbon"
+    },
+    {
+      "id": "prob_00611",
+      "type": "problem",
+      "surface_form": "surface reconstruction modeling"
+    },
+    {
+      "id": "task_00004",
+      "type": "task",
+      "surface_form": "chemistry"
+    },
+    {
+      "id": "task_00010",
+      "type": "task",
+      "surface_form": "computational chemistry"
+    },
+    {
+      "id": "task_00023",
+      "type": "task",
+      "surface_form": "condensed matter physics"
+    },
+    {
+      "id": "task_00026",
+      "type": "task",
+      "surface_form": "Molecular dynamics trajectory modeling"
+    },
+    {
+      "id": "task_00027",
+      "type": "task",
+      "surface_form": "quantum chemistry"
+    },
+    {
+      "id": "task_00034",
+      "type": "task",
+      "surface_form": "molecular dynamics"
+    },
+    {
+      "id": "task_00044",
+      "type": "task",
+      "surface_form": "atomistic simulation"
+    },
+    {
+      "id": "task_00045",
+      "type": "task",
+      "surface_form": "electronic structure"
+    },
+    {
+      "id": "task_00046",
+      "type": "task",
+      "surface_form": "Electronic structure calculation"
+    },
+    {
+      "id": "task_00058",
+      "type": "task",
+      "surface_form": "Electronic band‑structure prediction"
+    },
+    {
+      "id": "task_00080",
+      "type": "task",
+      "surface_form": "Ionic conductivity prediction"
+    },
+    {
+      "id": "task_00103",
+      "type": "task",
+      "surface_form": "battery materials"
+    },
+    {
+      "id": "task_00112",
+      "type": "task",
+      "surface_form": "Formation energy regression"
+    },
+    {
+      "id": "task_00152",
+      "type": "task",
+      "surface_form": "Phonon and elasticity calculations"
+    },
+    {
+      "id": "task_00156",
+      "type": "task",
+      "surface_form": "phonon band structure calculation"
+    },
+    {
+      "id": "task_00159",
+      "type": "task",
+      "surface_form": "materials screening for lithium superionic conductors"
+    },
+    {
+      "id": "task_00162",
+      "type": "task",
+      "surface_form": "Interatomic potential development for silicon"
+    },
+    {
+      "id": "task_00165",
+      "type": "task",
+      "surface_form": "Interatomic potential fitting for silicon"
+    },
+    {
+      "id": "task_00167",
+      "type": "task",
+      "surface_form": "Liquid silicon structural analysis"
+    },
+    {
+      "id": "task_00168",
+      "type": "task",
+      "surface_form": "Amorphous silicon generation and characterization"
+    },
+    {
+      "id": "task_00175",
+      "type": "task",
+      "surface_form": "Molecular dynamics simulation of liquid water and ice"
+    },
+    {
+      "id": "task_00176",
+      "type": "task",
+      "surface_form": "MD simulation of organic molecules"
+    },
+    {
+      "id": "task_00179",
+      "type": "task",
+      "surface_form": "Electronic‑structure property calculation"
+    },
+    {
+      "id": "task_00182",
+      "type": "task",
+      "surface_form": "Band structure and density‑of‑states calculation"
+    },
+    {
+      "id": "task_00183",
+      "type": "task",
+      "surface_form": "Optical response computation"
+    },
+    {
+      "id": "task_00196",
+      "type": "task",
+      "surface_form": "Unified free‑energy prediction"
+    },
+    {
+      "id": "task_00198",
+      "type": "task",
+      "surface_form": "Construction of Interatomic Potentials with Magnetic and Charge Degrees of Freedom"
+    },
+    {
+      "id": "task_00207",
+      "type": "task",
+      "surface_form": "Phase diagram construction and stability assessment"
+    },
+    {
+      "id": "task_00208",
+      "type": "task",
+      "surface_form": "Reaction energy calculation and screening"
+    },
+    {
+      "id": "task_00219",
+      "type": "task",
+      "surface_form": "Validation against MD simulations"
+    },
+    {
+      "id": "task_00230",
+      "type": "task",
+      "surface_form": "Materials property calculation"
+    },
+    {
+      "id": "task_00231",
+      "type": "task",
+      "surface_form": "Solar‑cell efficiency screening"
+    },
+    {
+      "id": "task_00236",
+      "type": "task",
+      "surface_form": "Phonon and vibrational property prediction"
+    },
+    {
+      "id": "task_00246",
+      "type": "task",
+      "surface_form": "High‑throughput screening of Li‑ion battery anodes"
+    },
+    {
+      "id": "task_00247",
+      "type": "task",
+      "surface_form": "Li2O‑based reaction search for Li‑air batteries"
+    },
+    {
+      "id": "task_00248",
+      "type": "task",
+      "surface_form": "Screening of metal‑oxide cathode coatings for HF scavenging"
+    },
+    {
+      "id": "task_00252",
+      "type": "task",
+      "surface_form": "Stability ranking of large compositional spaces"
+    },
+    {
+      "id": "task_00263",
+      "type": "task",
+      "surface_form": "atomistic simulations"
+    },
+    {
+      "id": "task_00265",
+      "type": "task",
+      "surface_form": "Phonon dispersion and vibrational thermodynamics"
+    },
+    {
+      "id": "task_00266",
+      "type": "task",
+      "surface_form": "Surface‑slab generation for catalysis and corrosion studies"
+    },
+    {
+      "id": "task_00270",
+      "type": "task",
+      "surface_form": "convex‑hull phase diagram construction"
+    },
+    {
+      "id": "task_00273",
+      "type": "task",
+      "surface_form": "hybrid functional band‑structure calculation"
+    },
+    {
+      "id": "task_00279",
+      "type": "task",
+      "surface_form": "Phonon frequency prediction"
+    },
+    {
+      "id": "task_00284",
+      "type": "task",
+      "surface_form": "Energy prediction"
+    },
+    {
+      "id": "task_00331",
+      "type": "task",
+      "surface_form": "Band gap prediction"
+    },
+    {
+      "id": "task_00340",
+      "type": "task",
+      "surface_form": "Band gap regression"
+    },
+    {
+      "id": "task_00341",
+      "type": "task",
+      "surface_form": "Exfoliation energy regression"
+    },
+    {
+      "id": "task_00347",
+      "type": "task",
+      "surface_form": "Phonon density of states prediction"
+    },
+    {
+      "id": "task_00448",
+      "type": "task",
+      "surface_form": "Elastic constant calculation"
+    },
+    {
+      "id": "task_00454",
+      "type": "task",
+      "surface_form": "Phonon dispersion calculation"
+    },
+    {
+      "id": "task_00469",
+      "type": "task",
+      "surface_form": "Single-point energy calculation"
+    },
+    {
+      "id": "task_00470",
+      "type": "task",
+      "surface_form": "Electronic band structure calculation"
+    },
+    {
+      "id": "task_00472",
+      "type": "task",
+      "surface_form": "Mechanical properties calculation"
+    },
+    {
+      "id": "task_00474",
+      "type": "task",
+      "surface_form": "thermoelectric property assessment"
+    },
+    {
+      "id": "task_00475",
+      "type": "task",
+      "surface_form": "surface stability prediction"
+    },
+    {
+      "id": "task_00476",
+      "type": "task",
+      "surface_form": "oxidation energy calculation"
+    },
+    {
+      "id": "task_00478",
+      "type": "task",
+      "surface_form": "magneto-optical property calculation"
+    },
+    {
+      "id": "task_00479",
+      "type": "task",
+      "surface_form": "Static energy calculation"
+    },
+    {
+      "id": "task_00484",
+      "type": "task",
+      "surface_form": "Static energy calculations"
+    },
+    {
+      "id": "task_00488",
+      "type": "task",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "task_00523",
+      "type": "task",
+      "surface_form": "Activation energy computation"
+    },
+    {
+      "id": "task_00524",
+      "type": "task",
+      "surface_form": "Li10GeP2S12 diffusion modeling"
+    },
+    {
+      "id": "task_00525",
+      "type": "task",
+      "surface_form": "Li7La3Zr2O12 diffusion modeling"
+    },
+    {
+      "id": "task_00526",
+      "type": "task",
+      "surface_form": "Na3Zr2Si2PO12 diffusion modeling"
+    },
+    {
+      "id": "task_00527",
+      "type": "task",
+      "surface_form": "LGPS solid electrolyte simulation"
+    },
+    {
+      "id": "task_00529",
+      "type": "task",
+      "surface_form": "NASICON solid electrolyte simulation"
+    },
+    {
+      "id": "task_00530",
+      "type": "task",
+      "surface_form": "Li diffusion simulation in LGPS"
+    },
+    {
+      "id": "task_00531",
+      "type": "task",
+      "surface_form": "Li diffusion simulation in LLZO"
+    },
+    {
+      "id": "task_00532",
+      "type": "task",
+      "surface_form": "Na diffusion simulation in NASICON"
+    },
+    {
+      "id": "task_00533",
+      "type": "task",
+      "surface_form": "Activation energy estimation"
+    },
+    {
+      "id": "task_00534",
+      "type": "task",
+      "surface_form": "solid-state electrolytes"
+    },
+    {
+      "id": "task_00615",
+      "type": "task",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "task_00686",
+      "type": "task",
+      "surface_form": "Atomistic simulations of liquid carbon"
+    },
+    {
+      "id": "task_00690",
+      "type": "task",
+      "surface_form": "Nanoscale amorphous carbon structure simulations"
+    },
+    {
+      "id": "task_00692",
+      "type": "task",
+      "surface_form": "Carbon dimer potential energy curve computation"
+    },
+    {
+      "id": "task_00693",
+      "type": "task",
+      "surface_form": "High-density amorphous phase modeling"
+    },
+    {
+      "id": "task_00694",
+      "type": "task",
+      "surface_form": "Amorphous carbon surface (ta-C) modeling"
+    },
+    {
+      "id": "task_00696",
+      "type": "task",
+      "surface_form": "Interatomic potential development for carbon"
+    },
+    {
+      "id": "task_00700",
+      "type": "task",
+      "surface_form": "Amorphous carbon (a-C) structure generation"
+    },
+    {
+      "id": "task_00701",
+      "type": "task",
+      "surface_form": "Tetrahedral amorphous carbon (ta-C) modeling"
+    },
+    {
+      "id": "task_00704",
+      "type": "task",
+      "surface_form": "amorphous carbon structure generation"
+    },
+    {
+      "id": "task_00705",
+      "type": "task",
+      "surface_form": "liquid carbon simulation"
+    },
+    {
+      "id": "task_00711",
+      "type": "task",
+      "surface_form": "Amorphous carbon bulk structure generation"
+    },
+    {
+      "id": "tech_00033",
+      "type": "technique",
+      "surface_form": "SiLU activation"
+    },
+    {
+      "id": "tech_00122",
+      "type": "technique",
+      "surface_form": "Gate‑based equivariant nonlinearity"
+    },
+    {
+      "id": "tech_00221",
+      "type": "technique",
+      "surface_form": "Gate nonlinearity"
+    },
+    {
+      "id": "tech_00250",
+      "type": "technique",
+      "surface_form": "pre‑relaxation using a learned interatomic potential"
+    },
+    {
+      "id": "tech_00253",
+      "type": "technique",
+      "surface_form": "phonon band structure and DOS calculation"
+    },
+    {
+      "id": "tech_00255",
+      "type": "technique",
+      "surface_form": "filter‑and‑screen workflow for lithium superionic conductors"
+    },
+    {
+      "id": "tech_00287",
+      "type": "technique",
+      "surface_form": "Sigmoid + softplus activation combo"
+    },
+    {
+      "id": "tech_00314",
+      "type": "technique",
+      "surface_form": "Physics‑based surface‑energy calculation"
+    },
+    {
+      "id": "tech_00369",
+      "type": "technique",
+      "surface_form": "Finite‑difference elastic constant calculation"
+    },
+    {
+      "id": "tech_00380",
+      "type": "technique",
+      "surface_form": "Thermodynamic descriptor screening"
+    },
+    {
+      "id": "tech_00382",
+      "type": "technique",
+      "surface_form": "Machine‑learning regression on formation energies"
+    },
+    {
+      "id": "tech_00386",
+      "type": "technique",
+      "surface_form": "Stability ranking"
+    },
+    {
+      "id": "tech_00387",
+      "type": "technique",
+      "surface_form": "Heat‑map visualization of element‑pair stability likelihoods"
+    },
+    {
+      "id": "tech_00402",
+      "type": "technique",
+      "surface_form": "formation enthalpy calculation"
+    },
+    {
+      "id": "tech_00608",
+      "type": "technique",
+      "surface_form": "Debye temperature estimation"
+    },
+    {
+      "id": "tech_00622",
+      "type": "technique",
+      "surface_form": "Density-functional perturbation theory"
+    },
+    {
+      "id": "tech_00630",
+      "type": "technique",
+      "surface_form": "Two-step relaxation annealing"
+    },
+    {
+      "id": "tech_00645",
+      "type": "technique",
+      "surface_form": "δEelec convergence criterion"
+    },
+    {
+      "id": "tech_00646",
+      "type": "technique",
+      "surface_form": "δEion convergence criterion"
+    },
+    {
+      "id": "tech_00650",
+      "type": "technique",
+      "surface_form": "Automatic spin polarization economization"
+    },
+    {
+      "id": "tech_00652",
+      "type": "technique",
+      "surface_form": "Energy-based convergence criteria"
+    },
+    {
+      "id": "tech_00689",
+      "type": "technique",
+      "surface_form": "Nosé-Hoover thermostat"
+    },
+    {
+      "id": "tech_00695",
+      "type": "technique",
+      "surface_form": "FPMD simulations"
+    },
+    {
+      "id": "tech_00696",
+      "type": "technique",
+      "surface_form": "PFF-MD simulations"
+    },
+    {
+      "id": "tech_00702",
+      "type": "technique",
+      "surface_form": "Temperature ramp simulation"
+    },
+    {
+      "id": "tech_00893",
+      "type": "technique",
+      "surface_form": "Machine-learning interpolation of DFT potential-energy surface"
+    },
+    {
+      "id": "tech_00904",
+      "type": "technique",
+      "surface_form": "Melt-quench protocol"
+    },
+    {
+      "id": "tech_00911",
+      "type": "technique",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "tech_00915",
+      "type": "technique",
+      "surface_form": "Large-scale atomistic simulation"
+    },
+    {
+      "id": "tech_00916",
+      "type": "technique",
+      "surface_form": "melt-quench trajectory generation"
+    },
+    {
+      "id": "tech_00922",
+      "type": "technique",
+      "surface_form": "high-temperature annealing protocol"
+    },
+    {
+      "id": "tech_00924",
+      "type": "technique",
+      "surface_form": "surface cleavage"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 4,
+    "cited_work": 8,
+    "claim": 13,
+    "component": 18,
+    "dataset": 7,
+    "future_topic": 6,
+    "method": 23,
+    "metric": 2,
+    "problem": 21,
+    "task": 83,
+    "technique": 32
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00324",
+      "relation_type": "presents",
+      "members": [
+        "arti_00033",
+        "meth_00383"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      }
+    },
+    {
+      "id": "h_01081",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00475"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01091",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00485"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "predictive",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01285",
+      "relation_type": "claims",
+      "members": [
+        "arti_00048",
+        "clai_00679"
+      ],
+      "year": 2016,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5451,
+        "article_year": 2016
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01286",
+      "relation_type": "claims",
+      "members": [
+        "arti_00048",
+        "clai_00680"
+      ],
+      "year": 2016,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5451,
+        "article_year": 2016
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "calculation",
+  "representative_ids": [
+    "task_00046",
+    "task_00010"
+  ]
+}

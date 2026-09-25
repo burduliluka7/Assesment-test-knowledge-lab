@@ -1,0 +1,302 @@
+[
+  {
+    "id": "2022:L0:0000",
+    "snapshot": 2022,
+    "level": 0,
+    "label": "graph / learning / neural",
+    "gloss": "This cluster groups corpus entries concerning graph, learning, neural.",
+    "generator": "tfidf-keyphrase-template-v1",
+    "input": [
+      {
+        "id": "n0",
+        "type": "method",
+        "surface_form": "graph neural learning topic 0",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n10",
+        "type": "method",
+        "surface_form": "graph neural learning topic 10",
+        "first_seen_year": 2022
+      },
+      {
+        "id": "n2",
+        "type": "method",
+        "surface_form": "graph neural learning topic 2",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n4",
+        "type": "method",
+        "surface_form": "graph neural learning topic 4",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n8",
+        "type": "method",
+        "surface_form": "graph neural learning topic 8",
+        "first_seen_year": 2022
+      }
+    ],
+    "shared_tfidf_context": {
+      "snapshot_corpus_file": "label_corpus_2022.json",
+      "ordered_surface_forms_sha256": "a66c8aede7e1272fd73685c56bb1dfd2a86dd7441dd9dbd8af7ac1f5d1debb7c",
+      "document_count": 12,
+      "stop_words": "english",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 20000
+    },
+    "representatives": [
+      "n0",
+      "n8",
+      "n10",
+      "n2",
+      "n4"
+    ],
+    "keywords": [
+      "graph",
+      "learning",
+      "neural"
+    ]
+  },
+  {
+    "id": "2022:L0:0001",
+    "snapshot": 2022,
+    "level": 0,
+    "label": "atomic / potentials / quantum",
+    "gloss": "This cluster groups corpus entries concerning atomic, potentials, quantum.",
+    "generator": "tfidf-keyphrase-template-v1",
+    "input": [
+      {
+        "id": "n1",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 1",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n11",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 11",
+        "first_seen_year": 2022
+      },
+      {
+        "id": "n3",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 3",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n5",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 5",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n6",
+        "type": "method",
+        "surface_form": "graph neural learning topic 6",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n7",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 7",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n9",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 9",
+        "first_seen_year": 2022
+      }
+    ],
+    "shared_tfidf_context": {
+      "snapshot_corpus_file": "label_corpus_2022.json",
+      "ordered_surface_forms_sha256": "a66c8aede7e1272fd73685c56bb1dfd2a86dd7441dd9dbd8af7ac1f5d1debb7c",
+      "document_count": 12,
+      "stop_words": "english",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 20000
+    },
+    "representatives": [
+      "n11",
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9"
+    ],
+    "keywords": [
+      "atomic",
+      "potentials",
+      "quantum"
+    ]
+  },
+  {
+    "id": "2022:L1:0001",
+    "snapshot": 2022,
+    "level": 1,
+    "label": "topic / atomic / graph",
+    "gloss": "This cluster groups corpus entries concerning topic, atomic, graph.",
+    "generator": "tfidf-keyphrase-template-v1",
+    "input": [
+      {
+        "id": "n6",
+        "type": "method",
+        "surface_form": "graph neural learning topic 6",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n7",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 7",
+        "first_seen_year": 2020
+      }
+    ],
+    "shared_tfidf_context": {
+      "snapshot_corpus_file": "label_corpus_2022.json",
+      "ordered_surface_forms_sha256": "a66c8aede7e1272fd73685c56bb1dfd2a86dd7441dd9dbd8af7ac1f5d1debb7c",
+      "document_count": 12,
+      "stop_words": "english",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 20000
+    },
+    "representatives": [
+      "n6",
+      "n7"
+    ],
+    "keywords": [
+      "topic",
+      "atomic",
+      "graph"
+    ]
+  },
+  {
+    "id": "2022:L1:0002",
+    "snapshot": 2022,
+    "level": 1,
+    "label": "graph / learning / neural",
+    "gloss": "This cluster groups corpus entries concerning graph, learning, neural.",
+    "generator": "tfidf-keyphrase-template-v1",
+    "input": [
+      {
+        "id": "n0",
+        "type": "method",
+        "surface_form": "graph neural learning topic 0",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n10",
+        "type": "method",
+        "surface_form": "graph neural learning topic 10",
+        "first_seen_year": 2022
+      },
+      {
+        "id": "n2",
+        "type": "method",
+        "surface_form": "graph neural learning topic 2",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n4",
+        "type": "method",
+        "surface_form": "graph neural learning topic 4",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n8",
+        "type": "method",
+        "surface_form": "graph neural learning topic 8",
+        "first_seen_year": 2022
+      }
+    ],
+    "shared_tfidf_context": {
+      "snapshot_corpus_file": "label_corpus_2022.json",
+      "ordered_surface_forms_sha256": "a66c8aede7e1272fd73685c56bb1dfd2a86dd7441dd9dbd8af7ac1f5d1debb7c",
+      "document_count": 12,
+      "stop_words": "english",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 20000
+    },
+    "representatives": [
+      "n0",
+      "n8",
+      "n10",
+      "n2",
+      "n4"
+    ],
+    "keywords": [
+      "graph",
+      "learning",
+      "neural"
+    ]
+  },
+  {
+    "id": "2022:L1:0003",
+    "snapshot": 2022,
+    "level": 1,
+    "label": "atomic / potentials / quantum",
+    "gloss": "This cluster groups corpus entries concerning atomic, potentials, quantum.",
+    "generator": "tfidf-keyphrase-template-v1",
+    "input": [
+      {
+        "id": "n1",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 1",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n11",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 11",
+        "first_seen_year": 2022
+      },
+      {
+        "id": "n3",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 3",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n9",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 9",
+        "first_seen_year": 2022
+      }
+    ],
+    "shared_tfidf_context": {
+      "snapshot_corpus_file": "label_corpus_2022.json",
+      "ordered_surface_forms_sha256": "a66c8aede7e1272fd73685c56bb1dfd2a86dd7441dd9dbd8af7ac1f5d1debb7c",
+      "document_count": 12,
+      "stop_words": "english",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 20000
+    },
+    "representatives": [
+      "n11",
+      "n1",
+      "n9",
+      "n3"
+    ],
+    "keywords": [
+      "atomic",
+      "potentials",
+      "quantum"
+    ]
+  }
+]

@@ -1,0 +1,707 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "prob_00573",
+      "type": "problem",
+      "surface_form": "Single adsorbate limitation"
+    },
+    {
+      "id": "prob_00577",
+      "type": "problem",
+      "surface_form": "Multi-adsorbate coverage effects"
+    },
+    {
+      "id": "prob_00580",
+      "type": "problem",
+      "surface_form": "Ground-state thermodynamic stability prediction"
+    },
+    {
+      "id": "prob_00587",
+      "type": "problem",
+      "surface_form": "Adsorption energy estimation"
+    },
+    {
+      "id": "task_00007",
+      "type": "task",
+      "surface_form": "Molecular property prediction"
+    },
+    {
+      "id": "task_00013",
+      "type": "task",
+      "surface_form": "geometric deep learning"
+    },
+    {
+      "id": "task_00018",
+      "type": "task",
+      "surface_form": "property prediction"
+    },
+    {
+      "id": "task_00020",
+      "type": "task",
+      "surface_form": "catalysis"
+    },
+    {
+      "id": "task_00028",
+      "type": "task",
+      "surface_form": "Molecular energy prediction"
+    },
+    {
+      "id": "task_00041",
+      "type": "task",
+      "surface_form": "molecular simulations"
+    },
+    {
+      "id": "task_00105",
+      "type": "task",
+      "surface_form": "Stable vs. unstable classification for high‑throughput screening"
+    },
+    {
+      "id": "task_00106",
+      "type": "task",
+      "surface_form": "Accelerated discovery of stable inorganic crystals"
+    },
+    {
+      "id": "task_00107",
+      "type": "task",
+      "surface_form": "Convex‑hull distance regression"
+    },
+    {
+      "id": "task_00109",
+      "type": "task",
+      "surface_form": "Stability classification"
+    },
+    {
+      "id": "task_00110",
+      "type": "task",
+      "surface_form": "Benchmarking of interatomic potentials"
+    },
+    {
+      "id": "task_00111",
+      "type": "task",
+      "surface_form": "Thermodynamic stability classification"
+    },
+    {
+      "id": "task_00112",
+      "type": "task",
+      "surface_form": "Formation energy regression"
+    },
+    {
+      "id": "task_00114",
+      "type": "task",
+      "surface_form": "Magnetic moment prediction"
+    },
+    {
+      "id": "task_00115",
+      "type": "task",
+      "surface_form": "Materials discovery screening"
+    },
+    {
+      "id": "task_00122",
+      "type": "task",
+      "surface_form": "Material property prediction"
+    },
+    {
+      "id": "task_00125",
+      "type": "task",
+      "surface_form": "Material Failure Prediction"
+    },
+    {
+      "id": "task_00293",
+      "type": "task",
+      "surface_form": "atomic energy prediction"
+    },
+    {
+      "id": "task_00294",
+      "type": "task",
+      "surface_form": "adsorption energy calculation"
+    },
+    {
+      "id": "task_00295",
+      "type": "task",
+      "surface_form": "molecular property prediction on QM9"
+    },
+    {
+      "id": "task_00296",
+      "type": "task",
+      "surface_form": "relaxation on OC20 dataset"
+    },
+    {
+      "id": "task_00298",
+      "type": "task",
+      "surface_form": "AdsorbML integration"
+    },
+    {
+      "id": "task_00299",
+      "type": "task",
+      "surface_form": "QM9 molecular property prediction"
+    },
+    {
+      "id": "task_00300",
+      "type": "task",
+      "surface_form": "AdsorbML structural relaxation"
+    },
+    {
+      "id": "task_00301",
+      "type": "task",
+      "surface_form": "AdsorbML adsorption energy calculation"
+    },
+    {
+      "id": "task_00304",
+      "type": "task",
+      "surface_form": "Initial Structure to Relaxed Structure"
+    },
+    {
+      "id": "task_00305",
+      "type": "task",
+      "surface_form": "Initial Structure to Relaxed Energy"
+    },
+    {
+      "id": "task_00312",
+      "type": "task",
+      "surface_form": "OOD generalization evaluation"
+    },
+    {
+      "id": "task_00314",
+      "type": "task",
+      "surface_form": "Energy gap (∆ε) prediction"
+    },
+    {
+      "id": "task_00318",
+      "type": "task",
+      "surface_form": "Heat capacity (Cν) prediction"
+    },
+    {
+      "id": "task_00319",
+      "type": "task",
+      "surface_form": "Gibbs free energy (G) prediction"
+    },
+    {
+      "id": "task_00321",
+      "type": "task",
+      "surface_form": "Radius of gyration (R2) prediction"
+    },
+    {
+      "id": "task_00322",
+      "type": "task",
+      "surface_form": "Internal energy (U) prediction"
+    },
+    {
+      "id": "task_00323",
+      "type": "task",
+      "surface_form": "Internal energy at 0K (U0) prediction"
+    },
+    {
+      "id": "task_00324",
+      "type": "task",
+      "surface_form": "Zero-point vibrational energy (ZPVE) prediction"
+    },
+    {
+      "id": "task_00325",
+      "type": "task",
+      "surface_form": "atomistic machine learning"
+    },
+    {
+      "id": "task_00326",
+      "type": "task",
+      "surface_form": "equivariant deep learning"
+    },
+    {
+      "id": "task_00327",
+      "type": "task",
+      "surface_form": "molecular machine learning"
+    },
+    {
+      "id": "task_00328",
+      "type": "task",
+      "surface_form": "machine learning for molecules"
+    },
+    {
+      "id": "task_00329",
+      "type": "task",
+      "surface_form": "Bulk modulus prediction"
+    },
+    {
+      "id": "task_00330",
+      "type": "task",
+      "surface_form": "Shear modulus prediction"
+    },
+    {
+      "id": "task_00331",
+      "type": "task",
+      "surface_form": "Band gap prediction"
+    },
+    {
+      "id": "task_00332",
+      "type": "task",
+      "surface_form": "Metallicity classification"
+    },
+    {
+      "id": "task_00333",
+      "type": "task",
+      "surface_form": "Bulk metallic glass formation prediction"
+    },
+    {
+      "id": "task_00336",
+      "type": "task",
+      "surface_form": "Steel yield strength prediction"
+    },
+    {
+      "id": "task_00338",
+      "type": "task",
+      "surface_form": "ML method benchmarking"
+    },
+    {
+      "id": "task_00340",
+      "type": "task",
+      "surface_form": "Band gap regression"
+    },
+    {
+      "id": "task_00341",
+      "type": "task",
+      "surface_form": "Exfoliation energy regression"
+    },
+    {
+      "id": "task_00342",
+      "type": "task",
+      "surface_form": "Bulk metallic glass classification"
+    },
+    {
+      "id": "task_00345",
+      "type": "task",
+      "surface_form": "Materials property prediction from crystal structure"
+    },
+    {
+      "id": "task_00346",
+      "type": "task",
+      "surface_form": "Materials property prediction from electronic bandstructure"
+    },
+    {
+      "id": "task_00349",
+      "type": "task",
+      "surface_form": "Structure-based regression"
+    },
+    {
+      "id": "task_00350",
+      "type": "task",
+      "surface_form": "Composition-only regression"
+    },
+    {
+      "id": "task_00351",
+      "type": "task",
+      "surface_form": "Matbench regression tasks"
+    },
+    {
+      "id": "task_00352",
+      "type": "task",
+      "surface_form": "Matbench classification tasks"
+    },
+    {
+      "id": "task_00353",
+      "type": "task",
+      "surface_form": "Composition-only property prediction"
+    },
+    {
+      "id": "task_00354",
+      "type": "task",
+      "surface_form": "Structure-based property prediction"
+    },
+    {
+      "id": "task_00355",
+      "type": "task",
+      "surface_form": "Automatminer preset comparison"
+    },
+    {
+      "id": "task_00356",
+      "type": "task",
+      "surface_form": "machine learning for materials"
+    },
+    {
+      "id": "task_00357",
+      "type": "task",
+      "surface_form": "machine learning benchmarking"
+    },
+    {
+      "id": "task_00381",
+      "type": "task",
+      "surface_form": "Heat capacity prediction"
+    },
+    {
+      "id": "task_00413",
+      "type": "task",
+      "surface_form": "Virial tensor calculation"
+    },
+    {
+      "id": "task_00414",
+      "type": "task",
+      "surface_form": "Dipole moment prediction"
+    },
+    {
+      "id": "task_00415",
+      "type": "task",
+      "surface_form": "Polarizability prediction"
+    },
+    {
+      "id": "task_00421",
+      "type": "task",
+      "surface_form": "Virial tensor prediction"
+    },
+    {
+      "id": "task_00423",
+      "type": "task",
+      "surface_form": "Multi-task molecular dynamics training"
+    },
+    {
+      "id": "task_00424",
+      "type": "task",
+      "surface_form": "Deep potential model training"
+    },
+    {
+      "id": "task_00440",
+      "type": "task",
+      "surface_form": "superconductor candidate identification"
+    },
+    {
+      "id": "task_00442",
+      "type": "task",
+      "surface_form": "gap deformation potential screening"
+    },
+    {
+      "id": "task_00448",
+      "type": "task",
+      "surface_form": "Elastic constant calculation"
+    },
+    {
+      "id": "task_00450",
+      "type": "task",
+      "surface_form": "Vicker's hardness estimation"
+    },
+    {
+      "id": "task_00451",
+      "type": "task",
+      "surface_form": "Superconducting Tc calculation"
+    },
+    {
+      "id": "task_00453",
+      "type": "task",
+      "surface_form": "Fixed shape deformation potential prediction"
+    },
+    {
+      "id": "task_00456",
+      "type": "task",
+      "surface_form": "Unit cell volume prediction"
+    },
+    {
+      "id": "task_00457",
+      "type": "task",
+      "surface_form": "Vicker's hardness prediction"
+    },
+    {
+      "id": "task_00458",
+      "type": "task",
+      "surface_form": "Superconductivity prediction"
+    },
+    {
+      "id": "task_00459",
+      "type": "task",
+      "surface_form": "Gap deformation potential prediction"
+    },
+    {
+      "id": "task_00497",
+      "type": "task",
+      "surface_form": "Kinetic property prediction"
+    },
+    {
+      "id": "task_00499",
+      "type": "task",
+      "surface_form": "Phase-separation energy prediction"
+    },
+    {
+      "id": "task_00510",
+      "type": "task",
+      "surface_form": "Decomposition energy computation"
+    },
+    {
+      "id": "task_00516",
+      "type": "task",
+      "surface_form": "Materials stability prediction"
+    },
+    {
+      "id": "task_00518",
+      "type": "task",
+      "surface_form": "Machine learning molecular dynamics"
+    },
+    {
+      "id": "task_00539",
+      "type": "task",
+      "surface_form": "Atomic energy and force prediction"
+    },
+    {
+      "id": "task_00545",
+      "type": "task",
+      "surface_form": "Structure optimization"
+    },
+    {
+      "id": "task_00547",
+      "type": "task",
+      "surface_form": "Thermodynamic stability calculation"
+    },
+    {
+      "id": "task_00553",
+      "type": "task",
+      "surface_form": "Vacancy formation energy prediction"
+    },
+    {
+      "id": "task_00554",
+      "type": "task",
+      "surface_form": "Melting temperature prediction"
+    },
+    {
+      "id": "task_00561",
+      "type": "task",
+      "surface_form": "Bulk total energy prediction"
+    },
+    {
+      "id": "task_00562",
+      "type": "task",
+      "surface_form": "Surface energy prediction"
+    },
+    {
+      "id": "task_00563",
+      "type": "task",
+      "surface_form": "Defect energy prediction"
+    },
+    {
+      "id": "task_00564",
+      "type": "task",
+      "surface_form": "Mixing energy prediction"
+    },
+    {
+      "id": "task_00569",
+      "type": "task",
+      "surface_form": "Energy per atom prediction"
+    },
+    {
+      "id": "task_00585",
+      "type": "task",
+      "surface_form": "Energy prediction on QMOF dataset"
+    },
+    {
+      "id": "task_00587",
+      "type": "task",
+      "surface_form": "Modeling charged molecules"
+    },
+    {
+      "id": "task_00589",
+      "type": "task",
+      "surface_form": "Energy prediction for MOFs"
+    },
+    {
+      "id": "task_00590",
+      "type": "task",
+      "surface_form": "Force prediction for MOFs"
+    },
+    {
+      "id": "task_00591",
+      "type": "task",
+      "surface_form": "Energy prediction for molecules"
+    },
+    {
+      "id": "task_00592",
+      "type": "task",
+      "surface_form": "Force prediction for molecules"
+    },
+    {
+      "id": "task_00593",
+      "type": "task",
+      "surface_form": "Partial charge prediction"
+    },
+    {
+      "id": "task_00594",
+      "type": "task",
+      "surface_form": "Born effective charge prediction"
+    },
+    {
+      "id": "task_00596",
+      "type": "task",
+      "surface_form": "Small-to-large molecule generalization"
+    },
+    {
+      "id": "task_00599",
+      "type": "task",
+      "surface_form": "MOF property prediction"
+    },
+    {
+      "id": "task_00603",
+      "type": "task",
+      "surface_form": "Electrostatic property prediction"
+    },
+    {
+      "id": "task_00605",
+      "type": "task",
+      "surface_form": "machine learning for atomistic systems"
+    },
+    {
+      "id": "task_00630",
+      "type": "task",
+      "surface_form": "Per-atom energy prediction"
+    },
+    {
+      "id": "task_00656",
+      "type": "task",
+      "surface_form": "Vibrational analysis"
+    },
+    {
+      "id": "task_00657",
+      "type": "task",
+      "surface_form": "Adsorption energy calculations"
+    },
+    {
+      "id": "task_00658",
+      "type": "task",
+      "surface_form": "Ligand-strain energy calculations"
+    },
+    {
+      "id": "task_00660",
+      "type": "task",
+      "surface_form": "Potential energy surface estimation"
+    },
+    {
+      "id": "task_00663",
+      "type": "task",
+      "surface_form": "Materials thermodynamic stability prediction"
+    },
+    {
+      "id": "task_00665",
+      "type": "task",
+      "surface_form": "Elasticity prediction"
+    },
+    {
+      "id": "task_00666",
+      "type": "task",
+      "surface_form": "Adsorption energy prediction"
+    },
+    {
+      "id": "task_00667",
+      "type": "task",
+      "surface_form": "Ligand strain prediction"
+    },
+    {
+      "id": "task_00668",
+      "type": "task",
+      "surface_form": "Pocket-ligand interaction energy prediction"
+    },
+    {
+      "id": "task_00670",
+      "type": "task",
+      "surface_form": "CO2 adsorption for MOFs"
+    },
+    {
+      "id": "task_00671",
+      "type": "task",
+      "surface_form": "NVE molecular dynamics simulation"
+    },
+    {
+      "id": "task_00672",
+      "type": "task",
+      "surface_form": "AdsorbML benchmark"
+    },
+    {
+      "id": "task_00675",
+      "type": "task",
+      "surface_form": "Surface catalysis modeling"
+    },
+    {
+      "id": "task_00676",
+      "type": "task",
+      "surface_form": "Multi-task materials property prediction"
+    },
+    {
+      "id": "task_00677",
+      "type": "task",
+      "surface_form": "Catalysis prediction"
+    },
+    {
+      "id": "task_00680",
+      "type": "task",
+      "surface_form": "Single atom prediction"
+    },
+    {
+      "id": "task_00681",
+      "type": "task",
+      "surface_form": "Multi-adsorbate interaction modeling"
+    },
+    {
+      "id": "task_00697",
+      "type": "task",
+      "surface_form": "Structural property prediction"
+    },
+    {
+      "id": "task_00706",
+      "type": "task",
+      "surface_form": "machine learning potential training"
+    },
+    {
+      "id": "task_00717",
+      "type": "task",
+      "surface_form": "melting temperature prediction for binary ionic solids"
+    },
+    {
+      "id": "task_00720",
+      "type": "task",
+      "surface_form": "Materials clustering"
+    },
+    {
+      "id": "task_00724",
+      "type": "task",
+      "surface_form": "cluster 1 prediction"
+    },
+    {
+      "id": "task_00725",
+      "type": "task",
+      "surface_form": "cluster 2 prediction"
+    },
+    {
+      "id": "task_00727",
+      "type": "task",
+      "surface_form": "Bonding-based material classification"
+    },
+    {
+      "id": "task_00729",
+      "type": "task",
+      "surface_form": "Melting temperature prediction for inorganic solids"
+    },
+    {
+      "id": "task_00730",
+      "type": "task",
+      "surface_form": "Materials clustering by bond-ionicity"
+    },
+    {
+      "id": "task_00732",
+      "type": "task",
+      "surface_form": "Cluster-based regression"
+    },
+    {
+      "id": "tech_00594",
+      "type": "technique",
+      "surface_form": "deep potential molecular dynamics"
+    },
+    {
+      "id": "tech_00620",
+      "type": "technique",
+      "surface_form": "Vicker's hardness estimation"
+    }
+  ],
+  "generation_type_counts": {
+    "problem": 4,
+    "task": 132,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "prediction",
+  "representative_ids": [
+    "task_00665",
+    "task_00591"
+  ]
+}

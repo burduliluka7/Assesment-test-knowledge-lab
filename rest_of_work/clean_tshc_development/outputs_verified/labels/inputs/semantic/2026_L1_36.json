@@ -1,0 +1,675 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "clai_00338",
+      "type": "claim",
+      "surface_form": "Hydroborate structures appear at the top of the Ξ‑ordered list despite not being present in the training datasets, demonstrating the method’s generalization capability."
+    },
+    {
+      "id": "comp_00360",
+      "type": "component",
+      "surface_form": "OQMD database"
+    },
+    {
+      "id": "comp_00400",
+      "type": "component",
+      "surface_form": "OMat24 dataset"
+    },
+    {
+      "id": "comp_00728",
+      "type": "component",
+      "surface_form": "PET-OAM"
+    },
+    {
+      "id": "comp_00743",
+      "type": "component",
+      "surface_form": "MAD dataset fine-tuning"
+    },
+    {
+      "id": "comp_00744",
+      "type": "component",
+      "surface_form": "OAM dataset"
+    },
+    {
+      "id": "comp_00817",
+      "type": "component",
+      "surface_form": "extended xyz format database"
+    },
+    {
+      "id": "data_00003",
+      "type": "dataset",
+      "surface_form": "Benzene"
+    },
+    {
+      "id": "data_00005",
+      "type": "dataset",
+      "surface_form": "C"
+    },
+    {
+      "id": "data_00010",
+      "type": "dataset",
+      "surface_form": "MoS2"
+    },
+    {
+      "id": "data_00011",
+      "type": "dataset",
+      "surface_form": "Cu"
+    },
+    {
+      "id": "data_00014",
+      "type": "dataset",
+      "surface_form": "Kahle2020"
+    },
+    {
+      "id": "data_00015",
+      "type": "dataset",
+      "surface_form": "Laskowski2023"
+    },
+    {
+      "id": "data_00016",
+      "type": "dataset",
+      "surface_form": "WBM test set"
+    },
+    {
+      "id": "data_00017",
+      "type": "dataset",
+      "surface_form": "MD-17 Aspirin"
+    },
+    {
+      "id": "data_00018",
+      "type": "dataset",
+      "surface_form": "MD-17 Azobenzene"
+    },
+    {
+      "id": "data_00019",
+      "type": "dataset",
+      "surface_form": "MD-17 Benzene"
+    },
+    {
+      "id": "data_00020",
+      "type": "dataset",
+      "surface_form": "MD-17 Ethanol"
+    },
+    {
+      "id": "data_00021",
+      "type": "dataset",
+      "surface_form": "MD-17 Malonaldehyde"
+    },
+    {
+      "id": "data_00022",
+      "type": "dataset",
+      "surface_form": "MD-17 Naphthalene"
+    },
+    {
+      "id": "data_00023",
+      "type": "dataset",
+      "surface_form": "MD-17 Paracetamol"
+    },
+    {
+      "id": "data_00025",
+      "type": "dataset",
+      "surface_form": "MD-17 Toluene"
+    },
+    {
+      "id": "data_00032",
+      "type": "dataset",
+      "surface_form": "Li4P2O7"
+    },
+    {
+      "id": "data_00034",
+      "type": "dataset",
+      "surface_form": "Aspirin"
+    },
+    {
+      "id": "data_00035",
+      "type": "dataset",
+      "surface_form": "Liquid water"
+    },
+    {
+      "id": "data_00036",
+      "type": "dataset",
+      "surface_form": "Ice Ih"
+    },
+    {
+      "id": "data_00038",
+      "type": "dataset",
+      "surface_form": "LiPS"
+    },
+    {
+      "id": "data_00039",
+      "type": "dataset",
+      "surface_form": "Single-element dataset"
+    },
+    {
+      "id": "data_00051",
+      "type": "dataset",
+      "surface_form": "Naphthalene"
+    },
+    {
+      "id": "data_00052",
+      "type": "dataset",
+      "surface_form": "Salicylic acid"
+    },
+    {
+      "id": "data_00054",
+      "type": "dataset",
+      "surface_form": "Ethanol"
+    },
+    {
+      "id": "data_00055",
+      "type": "dataset",
+      "surface_form": "Toluene"
+    },
+    {
+      "id": "data_00066",
+      "type": "dataset",
+      "surface_form": "Bulk moduli"
+    },
+    {
+      "id": "data_00069",
+      "type": "dataset",
+      "surface_form": "Hydrogen"
+    },
+    {
+      "id": "data_00070",
+      "type": "dataset",
+      "surface_form": "Methane"
+    },
+    {
+      "id": "data_00071",
+      "type": "dataset",
+      "surface_form": "Oxygen"
+    },
+    {
+      "id": "data_00072",
+      "type": "dataset",
+      "surface_form": "He"
+    },
+    {
+      "id": "data_00075",
+      "type": "dataset",
+      "surface_form": "N"
+    },
+    {
+      "id": "data_00076",
+      "type": "dataset",
+      "surface_form": "O"
+    },
+    {
+      "id": "data_00078",
+      "type": "dataset",
+      "surface_form": "F"
+    },
+    {
+      "id": "data_00079",
+      "type": "dataset",
+      "surface_form": "Ne"
+    },
+    {
+      "id": "data_00081",
+      "type": "dataset",
+      "surface_form": "Mg"
+    },
+    {
+      "id": "data_00082",
+      "type": "dataset",
+      "surface_form": "P"
+    },
+    {
+      "id": "data_00083",
+      "type": "dataset",
+      "surface_form": "S"
+    },
+    {
+      "id": "data_00085",
+      "type": "dataset",
+      "surface_form": "C60"
+    },
+    {
+      "id": "data_00086",
+      "type": "dataset",
+      "surface_form": "C80"
+    },
+    {
+      "id": "data_00087",
+      "type": "dataset",
+      "surface_form": "C100"
+    },
+    {
+      "id": "data_00095",
+      "type": "dataset",
+      "surface_form": "OQMD"
+    },
+    {
+      "id": "data_00098",
+      "type": "dataset",
+      "surface_form": "ZnO"
+    },
+    {
+      "id": "data_00101",
+      "type": "dataset",
+      "surface_form": "OMat24"
+    },
+    {
+      "id": "data_00104",
+      "type": "dataset",
+      "surface_form": "OC22"
+    },
+    {
+      "id": "data_00107",
+      "type": "dataset",
+      "surface_form": "OC20 S2EF-All"
+    },
+    {
+      "id": "data_00109",
+      "type": "dataset",
+      "surface_form": "OC20 IS2RS"
+    },
+    {
+      "id": "data_00110",
+      "type": "dataset",
+      "surface_form": "OC20 IS2RE"
+    },
+    {
+      "id": "data_00111",
+      "type": "dataset",
+      "surface_form": "OC22 S2EF-Total"
+    },
+    {
+      "id": "data_00112",
+      "type": "dataset",
+      "surface_form": "OC22 IS2RE-Total"
+    },
+    {
+      "id": "data_00116",
+      "type": "dataset",
+      "surface_form": "Matbench v0.1"
+    },
+    {
+      "id": "data_00118",
+      "type": "dataset",
+      "surface_form": "Dataset-1"
+    },
+    {
+      "id": "data_00119",
+      "type": "dataset",
+      "surface_form": "Dataset-2"
+    },
+    {
+      "id": "data_00120",
+      "type": "dataset",
+      "surface_form": "DFPT calculations dataset"
+    },
+    {
+      "id": "data_00122",
+      "type": "dataset",
+      "surface_form": "Main Database"
+    },
+    {
+      "id": "data_00123",
+      "type": "dataset",
+      "surface_form": "Togo Database"
+    },
+    {
+      "id": "data_00124",
+      "type": "dataset",
+      "surface_form": "high-quality DFPT database"
+    },
+    {
+      "id": "data_00129",
+      "type": "dataset",
+      "surface_form": "HEA"
+    },
+    {
+      "id": "data_00130",
+      "type": "dataset",
+      "surface_form": "OC2M"
+    },
+    {
+      "id": "data_00132",
+      "type": "dataset",
+      "surface_form": "SPICE"
+    },
+    {
+      "id": "data_00133",
+      "type": "dataset",
+      "surface_form": "DCGAT-2"
+    },
+    {
+      "id": "data_00137",
+      "type": "dataset",
+      "surface_form": "K24Li16P24Sn8"
+    },
+    {
+      "id": "data_00140",
+      "type": "dataset",
+      "surface_form": "ICSD"
+    },
+    {
+      "id": "data_00144",
+      "type": "dataset",
+      "surface_form": "GNoME"
+    },
+    {
+      "id": "data_00145",
+      "type": "dataset",
+      "surface_form": "Li10GeP2S12"
+    },
+    {
+      "id": "data_00147",
+      "type": "dataset",
+      "surface_form": "Na3Zr2Si2PO12"
+    },
+    {
+      "id": "data_00148",
+      "type": "dataset",
+      "surface_form": "LGPS"
+    },
+    {
+      "id": "data_00150",
+      "type": "dataset",
+      "surface_form": "NASICON"
+    },
+    {
+      "id": "data_00153",
+      "type": "dataset",
+      "surface_form": "OMol25 Val-Comp SPICE"
+    },
+    {
+      "id": "data_00154",
+      "type": "dataset",
+      "surface_form": "OMol25 Val-Comp Reactivity"
+    },
+    {
+      "id": "data_00155",
+      "type": "dataset",
+      "surface_form": "OMol 2M Val-Comp"
+    },
+    {
+      "id": "data_00156",
+      "type": "dataset",
+      "surface_form": "QMOF"
+    },
+    {
+      "id": "data_00158",
+      "type": "dataset",
+      "surface_form": "SiO2"
+    },
+    {
+      "id": "data_00162",
+      "type": "dataset",
+      "surface_form": "M3GNet dataset"
+    },
+    {
+      "id": "data_00163",
+      "type": "dataset",
+      "surface_form": "MAD"
+    },
+    {
+      "id": "data_00165",
+      "type": "dataset",
+      "surface_form": "OMol-1"
+    },
+    {
+      "id": "data_00167",
+      "type": "dataset",
+      "surface_form": "OC20-NEB"
+    },
+    {
+      "id": "data_00168",
+      "type": "dataset",
+      "surface_form": "Wiggle150"
+    },
+    {
+      "id": "data_00169",
+      "type": "dataset",
+      "surface_form": "MADBench"
+    },
+    {
+      "id": "data_00170",
+      "type": "dataset",
+      "surface_form": "MP Traj"
+    },
+    {
+      "id": "data_00181",
+      "type": "dataset",
+      "surface_form": "MOFs"
+    },
+    {
+      "id": "data_00184",
+      "type": "dataset",
+      "surface_form": "CSP Blind Test"
+    },
+    {
+      "id": "data_00185",
+      "type": "dataset",
+      "surface_form": "OC20 S2EF"
+    },
+    {
+      "id": "data_00187",
+      "type": "dataset",
+      "surface_form": "OOD Composition"
+    },
+    {
+      "id": "data_00188",
+      "type": "dataset",
+      "surface_form": "OOD Element"
+    },
+    {
+      "id": "data_00191",
+      "type": "dataset",
+      "surface_form": "PDB-TM"
+    },
+    {
+      "id": "data_00195",
+      "type": "dataset",
+      "surface_form": "CCDC 7th CSP Blind Test"
+    },
+    {
+      "id": "data_00196",
+      "type": "dataset",
+      "surface_form": "OpenDAC"
+    },
+    {
+      "id": "data_00200",
+      "type": "dataset",
+      "surface_form": "ta-C surfaces"
+    },
+    {
+      "id": "data_00201",
+      "type": "dataset",
+      "surface_form": "Diamond"
+    },
+    {
+      "id": "data_00202",
+      "type": "dataset",
+      "surface_form": "Graphite"
+    },
+    {
+      "id": "data_00203",
+      "type": "dataset",
+      "surface_form": "a-C"
+    },
+    {
+      "id": "data_00205",
+      "type": "dataset",
+      "surface_form": "Liquid carbon 9000K"
+    },
+    {
+      "id": "data_00213",
+      "type": "dataset",
+      "surface_form": "ta-C surface energies"
+    },
+    {
+      "id": "data_00214",
+      "type": "dataset",
+      "surface_form": "Custom test set"
+    },
+    {
+      "id": "data_00215",
+      "type": "dataset",
+      "surface_form": "Trimer configurations"
+    },
+    {
+      "id": "data_00221",
+      "type": "dataset",
+      "surface_form": "MD-17 Aspirin (original)"
+    },
+    {
+      "id": "data_00223",
+      "type": "dataset",
+      "surface_form": "MD-17 Benzene (original)"
+    },
+    {
+      "id": "data_00224",
+      "type": "dataset",
+      "surface_form": "MD-17 Ethanol (original)"
+    },
+    {
+      "id": "data_00225",
+      "type": "dataset",
+      "surface_form": "MD-17 Malonaldehyde (original)"
+    },
+    {
+      "id": "data_00226",
+      "type": "dataset",
+      "surface_form": "MD-17 Naphthalene (original)"
+    },
+    {
+      "id": "data_00228",
+      "type": "dataset",
+      "surface_form": "MD-17 Salicylic acid (original)"
+    },
+    {
+      "id": "data_00229",
+      "type": "dataset",
+      "surface_form": "MD-17 Toluene (original)"
+    },
+    {
+      "id": "data_00230",
+      "type": "dataset",
+      "surface_form": "MD-17 Uracil (original)"
+    },
+    {
+      "id": "data_00231",
+      "type": "dataset",
+      "surface_form": "MD-17 Aspirin (revised)"
+    },
+    {
+      "id": "data_00233",
+      "type": "dataset",
+      "surface_form": "MD-17 Ethanol (revised)"
+    },
+    {
+      "id": "data_00234",
+      "type": "dataset",
+      "surface_form": "MD-17 Malonaldehyde (revised)"
+    },
+    {
+      "id": "data_00235",
+      "type": "dataset",
+      "surface_form": "MD-17 Toluene (revised)"
+    },
+    {
+      "id": "data_00237",
+      "type": "dataset",
+      "surface_form": "Ice Ih (b)"
+    },
+    {
+      "id": "data_00238",
+      "type": "dataset",
+      "surface_form": "Ice Ih (c)"
+    },
+    {
+      "id": "data_00239",
+      "type": "dataset",
+      "surface_form": "Ice Ih (d)"
+    },
+    {
+      "id": "data_00240",
+      "type": "dataset",
+      "surface_form": "Formate on Cu(110)"
+    },
+    {
+      "id": "data_00241",
+      "type": "dataset",
+      "surface_form": "Li4P2O7 (molten)"
+    },
+    {
+      "id": "data_00242",
+      "type": "dataset",
+      "surface_form": "Li4P2O7 (quenched glass)"
+    },
+    {
+      "id": "data_00255",
+      "type": "dataset",
+      "surface_form": "Li10GeP2S12 (LGPS)"
+    },
+    {
+      "id": "data_00257",
+      "type": "dataset",
+      "surface_form": "Na3Zr2Si2PO12 (NASICON)"
+    },
+    {
+      "id": "meth_00274",
+      "type": "method",
+      "surface_form": "MatPES dataset generation workflow"
+    },
+    {
+      "id": "meth_00299",
+      "type": "method",
+      "surface_form": "MPtrj dataset"
+    },
+    {
+      "id": "task_00296",
+      "type": "task",
+      "surface_form": "relaxation on OC20 dataset"
+    },
+    {
+      "id": "task_00312",
+      "type": "task",
+      "surface_form": "OOD generalization evaluation"
+    },
+    {
+      "id": "task_00432",
+      "type": "task",
+      "surface_form": "data format conversion"
+    },
+    {
+      "id": "task_00576",
+      "type": "task",
+      "surface_form": "SPICE dataset property prediction"
+    },
+    {
+      "id": "task_00639",
+      "type": "task",
+      "surface_form": "Wiggle150 task"
+    },
+    {
+      "id": "task_00641",
+      "type": "task",
+      "surface_form": "SPICE evaluation"
+    },
+    {
+      "id": "tech_00930",
+      "type": "technique",
+      "surface_form": "Dimer/trimer data inclusion"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 6,
+    "dataset": 115,
+    "method": 2,
+    "task": 6,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "md 17",
+  "representative_ids": [
+    "data_00104",
+    "data_00072"
+  ]
+}

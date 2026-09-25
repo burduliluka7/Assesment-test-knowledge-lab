@@ -1,0 +1,615 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "clai_00064",
+      "type": "claim",
+      "surface_form": "The featurization methods are transferable to more complex compositions, enabling new ML models to be fitted without revising the materials embedding method given extended datasets."
+    },
+    {
+      "id": "clai_00135",
+      "type": "claim",
+      "surface_form": "Adding a latent master node that connects to every atom provides a global scratch space, allowing larger hidden dimensions with minimal performance penalty."
+    },
+    {
+      "id": "comp_00012",
+      "type": "component",
+      "surface_form": "embedding layer"
+    },
+    {
+      "id": "comp_00015",
+      "type": "component",
+      "surface_form": "Virtual edge type"
+    },
+    {
+      "id": "comp_00016",
+      "type": "component",
+      "surface_form": "Master (global) node"
+    },
+    {
+      "id": "comp_00024",
+      "type": "component",
+      "surface_form": "Atom type embedding"
+    },
+    {
+      "id": "comp_00026",
+      "type": "component",
+      "surface_form": "Hypernetwork"
+    },
+    {
+      "id": "comp_00031",
+      "type": "component",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "comp_00036",
+      "type": "component",
+      "surface_form": "Continuous species embedding"
+    },
+    {
+      "id": "comp_00040",
+      "type": "component",
+      "surface_form": "Residual update connection"
+    },
+    {
+      "id": "comp_00047",
+      "type": "component",
+      "surface_form": "Vertex update block"
+    },
+    {
+      "id": "comp_00048",
+      "type": "component",
+      "surface_form": "Edge update block"
+    },
+    {
+      "id": "comp_00049",
+      "type": "component",
+      "surface_form": "Elemental embedding"
+    },
+    {
+      "id": "comp_00052",
+      "type": "component",
+      "surface_form": "Complex‑vector handling via time‑reversal basis"
+    },
+    {
+      "id": "comp_00055",
+      "type": "component",
+      "surface_form": "Vertex and edge update blocks"
+    },
+    {
+      "id": "comp_00058",
+      "type": "component",
+      "surface_form": "Atomic‑like localized basis representation"
+    },
+    {
+      "id": "comp_00083",
+      "type": "component",
+      "surface_form": "Level map"
+    },
+    {
+      "id": "comp_00085",
+      "type": "component",
+      "surface_form": "Free‑volume descriptors"
+    },
+    {
+      "id": "comp_00096",
+      "type": "component",
+      "surface_form": "SevenNet ML‑IAP"
+    },
+    {
+      "id": "comp_00155",
+      "type": "component",
+      "surface_form": "Linear self‑connection layer"
+    },
+    {
+      "id": "comp_00217",
+      "type": "component",
+      "surface_form": "Repulsive pair potential"
+    },
+    {
+      "id": "comp_00219",
+      "type": "component",
+      "surface_form": "Sparse set of representative atoms"
+    },
+    {
+      "id": "comp_00229",
+      "type": "component",
+      "surface_form": "Edge layer"
+    },
+    {
+      "id": "comp_00236",
+      "type": "component",
+      "surface_form": "Sorted neighbor list"
+    },
+    {
+      "id": "comp_00247",
+      "type": "component",
+      "surface_form": "Local atomic-like orbital basis"
+    },
+    {
+      "id": "comp_00249",
+      "type": "component",
+      "surface_form": "Local coordinate system for each edge"
+    },
+    {
+      "id": "comp_00250",
+      "type": "component",
+      "surface_form": "Edge embedding with Gaussian distance expansion"
+    },
+    {
+      "id": "comp_00251",
+      "type": "component",
+      "surface_form": "Vertex embedding of atomic numbers"
+    },
+    {
+      "id": "comp_00256",
+      "type": "component",
+      "surface_form": "Vertex update network"
+    },
+    {
+      "id": "comp_00258",
+      "type": "component",
+      "surface_form": "Gaussian radial basis edge features"
+    },
+    {
+      "id": "comp_00259",
+      "type": "component",
+      "surface_form": "Elemental embeddings"
+    },
+    {
+      "id": "comp_00263",
+      "type": "component",
+      "surface_form": "Node feature vectors"
+    },
+    {
+      "id": "comp_00266",
+      "type": "component",
+      "surface_form": "Fully‑connected hidden layers"
+    },
+    {
+      "id": "comp_00288",
+      "type": "component",
+      "surface_form": "Combined Atomic Density ρ_i"
+    },
+    {
+      "id": "comp_00290",
+      "type": "component",
+      "surface_form": "Irreducible Basis Set B"
+    },
+    {
+      "id": "comp_00293",
+      "type": "component",
+      "surface_form": "ConvLSTM network architecture"
+    },
+    {
+      "id": "comp_00312",
+      "type": "component",
+      "surface_form": "Boundary‑condition encoding"
+    },
+    {
+      "id": "comp_00401",
+      "type": "component",
+      "surface_form": "OMat24-1M"
+    },
+    {
+      "id": "comp_00461",
+      "type": "component",
+      "surface_form": "AtomicOrbitals featurizer"
+    },
+    {
+      "id": "comp_00474",
+      "type": "component",
+      "surface_form": "Skip connection Add layers"
+    },
+    {
+      "id": "comp_00479",
+      "type": "component",
+      "surface_form": "SevenNet-MF-ompa"
+    },
+    {
+      "id": "comp_00484",
+      "type": "component",
+      "surface_form": "Geometric similarity metric"
+    },
+    {
+      "id": "comp_00490",
+      "type": "component",
+      "surface_form": "Matrix Virtual Node"
+    },
+    {
+      "id": "comp_00491",
+      "type": "component",
+      "surface_form": "Momentum-dependent Matrix Virtual Node"
+    },
+    {
+      "id": "comp_00492",
+      "type": "component",
+      "surface_form": "Virtual-dynamical matrices"
+    },
+    {
+      "id": "comp_00494",
+      "type": "component",
+      "surface_form": "Bi-directed real-real edges"
+    },
+    {
+      "id": "comp_00498",
+      "type": "component",
+      "surface_form": "Atomic number node embedding"
+    },
+    {
+      "id": "comp_00499",
+      "type": "component",
+      "surface_form": "Atomic mass input features"
+    },
+    {
+      "id": "comp_00502",
+      "type": "component",
+      "surface_form": "Vector Virtual Nodes"
+    },
+    {
+      "id": "comp_00503",
+      "type": "component",
+      "surface_form": "Matrix Virtual Nodes"
+    },
+    {
+      "id": "comp_00505",
+      "type": "component",
+      "surface_form": "Directed real-to-virtual edges"
+    },
+    {
+      "id": "comp_00507",
+      "type": "component",
+      "surface_form": "Screening virtual node layer"
+    },
+    {
+      "id": "comp_00513",
+      "type": "component",
+      "surface_form": "k-dependent matrix virtual nodes"
+    },
+    {
+      "id": "comp_00514",
+      "type": "component",
+      "surface_form": "Composition-weighted atomic mass encoding"
+    },
+    {
+      "id": "comp_00515",
+      "type": "component",
+      "surface_form": "Two-hot encoding for alloy elements"
+    },
+    {
+      "id": "comp_00520",
+      "type": "component",
+      "surface_form": "Fitting network"
+    },
+    {
+      "id": "comp_00521",
+      "type": "component",
+      "surface_form": "Type embedding"
+    },
+    {
+      "id": "comp_00526",
+      "type": "component",
+      "surface_form": "NVNMD engine"
+    },
+    {
+      "id": "comp_00530",
+      "type": "component",
+      "surface_form": "Fitting network F0"
+    },
+    {
+      "id": "comp_00531",
+      "type": "component",
+      "surface_form": "Fitting network F1"
+    },
+    {
+      "id": "comp_00536",
+      "type": "component",
+      "surface_form": "Precise neighbor indexing"
+    },
+    {
+      "id": "comp_00552",
+      "type": "component",
+      "surface_form": "NVNMD accelerator"
+    },
+    {
+      "id": "comp_00560",
+      "type": "component",
+      "surface_form": "Edge update mechanism"
+    },
+    {
+      "id": "comp_00581",
+      "type": "component",
+      "surface_form": "Pulay charge mixer"
+    },
+    {
+      "id": "comp_00603",
+      "type": "component",
+      "surface_form": "Gaussian featurizer for edge embedding"
+    },
+    {
+      "id": "comp_00618",
+      "type": "component",
+      "surface_form": "One-hot chemical species encoding"
+    },
+    {
+      "id": "comp_00639",
+      "type": "component",
+      "surface_form": "Explicit atomic position featurization"
+    },
+    {
+      "id": "comp_00642",
+      "type": "component",
+      "surface_form": "Node and edge embeddings"
+    },
+    {
+      "id": "comp_00655",
+      "type": "component",
+      "surface_form": "Atomwise predictions"
+    },
+    {
+      "id": "comp_00663",
+      "type": "component",
+      "surface_form": "Transformation Network Tτ"
+    },
+    {
+      "id": "comp_00665",
+      "type": "component",
+      "surface_form": "Atom Embedding MLPs"
+    },
+    {
+      "id": "comp_00669",
+      "type": "component",
+      "surface_form": "Coordinate embedding MLP"
+    },
+    {
+      "id": "comp_00670",
+      "type": "component",
+      "surface_form": "Gaussian RBF features at node level"
+    },
+    {
+      "id": "comp_00681",
+      "type": "component",
+      "surface_form": "Short-range/long-range energy decomposition"
+    },
+    {
+      "id": "comp_00687",
+      "type": "component",
+      "surface_form": "Screened direct Coulomb sum"
+    },
+    {
+      "id": "comp_00689",
+      "type": "component",
+      "surface_form": "Total charge embedding"
+    },
+    {
+      "id": "comp_00697",
+      "type": "component",
+      "surface_form": "SevenNet package"
+    },
+    {
+      "id": "comp_00700",
+      "type": "component",
+      "surface_form": "SevenNet-0"
+    },
+    {
+      "id": "comp_00705",
+      "type": "component",
+      "surface_form": "ghost atoms"
+    },
+    {
+      "id": "comp_00706",
+      "type": "component",
+      "surface_form": "Linear self-connection layer"
+    },
+    {
+      "id": "comp_00723",
+      "type": "component",
+      "surface_form": "Processed representations"
+    },
+    {
+      "id": "comp_00737",
+      "type": "component",
+      "surface_form": "System-conditioning embedding"
+    },
+    {
+      "id": "comp_00749",
+      "type": "component",
+      "surface_form": "graph sparsity via neighbor limits"
+    },
+    {
+      "id": "comp_00751",
+      "type": "component",
+      "surface_form": "GNS backbone with widened MLPs"
+    },
+    {
+      "id": "comp_00754",
+      "type": "component",
+      "surface_form": "ZBL pair repulsion term"
+    },
+    {
+      "id": "comp_00762",
+      "type": "component",
+      "surface_form": "finite neighbor graph"
+    },
+    {
+      "id": "comp_00763",
+      "type": "component",
+      "surface_form": "infinite neighbor graph"
+    },
+    {
+      "id": "comp_00769",
+      "type": "component",
+      "surface_form": "Charge, spin, and DFT task embeddings"
+    },
+    {
+      "id": "comp_00775",
+      "type": "component",
+      "surface_form": "Global embedding for routing"
+    },
+    {
+      "id": "comp_00782",
+      "type": "component",
+      "surface_form": "Charge and spin embeddings"
+    },
+    {
+      "id": "comp_00784",
+      "type": "component",
+      "surface_form": "Global information embedding layers"
+    },
+    {
+      "id": "comp_00786",
+      "type": "component",
+      "surface_form": "Charge balancing in L0 channels"
+    },
+    {
+      "id": "comp_00797",
+      "type": "component",
+      "surface_form": "Global charge/spin embedding"
+    },
+    {
+      "id": "comp_00826",
+      "type": "component",
+      "surface_form": "materials embeddings from elemental properties"
+    },
+    {
+      "id": "futu_00163",
+      "type": "future_topic",
+      "surface_form": "Designing other functional properties with virtual node augmentation"
+    },
+    {
+      "id": "meth_00126",
+      "type": "method",
+      "surface_form": "virtual node method"
+    },
+    {
+      "id": "meth_00303",
+      "type": "method",
+      "surface_form": "Noisy Nodes"
+    },
+    {
+      "id": "meth_00326",
+      "type": "method",
+      "surface_form": "matrix virtual nodes"
+    },
+    {
+      "id": "meth_00361",
+      "type": "method",
+      "surface_form": "Pulay charge mixing"
+    },
+    {
+      "id": "prob_00367",
+      "type": "problem",
+      "surface_form": "High dimensionality of solution space"
+    },
+    {
+      "id": "tech_00034",
+      "type": "technique",
+      "surface_form": "One-hot encoding"
+    },
+    {
+      "id": "tech_00047",
+      "type": "technique",
+      "surface_form": "Residual connections"
+    },
+    {
+      "id": "tech_00112",
+      "type": "technique",
+      "surface_form": "Continuous element embedding"
+    },
+    {
+      "id": "tech_00150",
+      "type": "technique",
+      "surface_form": "Level‑map construction"
+    },
+    {
+      "id": "tech_00209",
+      "type": "technique",
+      "surface_form": "Linear self‑connection"
+    },
+    {
+      "id": "tech_00222",
+      "type": "technique",
+      "surface_form": "ResNet‑style skip connections"
+    },
+    {
+      "id": "tech_00248",
+      "type": "technique",
+      "surface_form": "Elemental embedding"
+    },
+    {
+      "id": "tech_00303",
+      "type": "technique",
+      "surface_form": "Transfer learning of elemental embeddings"
+    },
+    {
+      "id": "tech_00304",
+      "type": "technique",
+      "surface_form": "Residual skip connections"
+    },
+    {
+      "id": "tech_00466",
+      "type": "technique",
+      "surface_form": "Atomic number embedding"
+    },
+    {
+      "id": "tech_00503",
+      "type": "technique",
+      "surface_form": "Element embedding"
+    },
+    {
+      "id": "tech_00535",
+      "type": "technique",
+      "surface_form": "Equal-spacing virtual node placement"
+    },
+    {
+      "id": "tech_00565",
+      "type": "technique",
+      "surface_form": "One-hot encoding for atomic types"
+    },
+    {
+      "id": "tech_00589",
+      "type": "technique",
+      "surface_form": "type embedding"
+    },
+    {
+      "id": "tech_00712",
+      "type": "technique",
+      "surface_form": "Linear embedding of elements"
+    },
+    {
+      "id": "tech_00749",
+      "type": "technique",
+      "surface_form": "Gaussian RBF encoding"
+    },
+    {
+      "id": "tech_00757",
+      "type": "technique",
+      "surface_form": "Global charge embedding broadcast"
+    },
+    {
+      "id": "tech_00788",
+      "type": "technique",
+      "surface_form": "ghost atom creation"
+    },
+    {
+      "id": "tech_00846",
+      "type": "technique",
+      "surface_form": "Outer-product edge embeddings"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 2,
+    "component": 92,
+    "future_topic": 1,
+    "method": 4,
+    "problem": 1,
+    "technique": 19
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "embedding",
+  "representative_ids": [
+    "comp_00259",
+    "comp_00049"
+  ]
+}

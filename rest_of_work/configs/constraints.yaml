@@ -1,0 +1,24 @@
+# Predeclared before constraint experiment; no benchmark-selected parameters.
+data_dir: data/data
+output: artifacts/full
+v2_output: artifacts/evaluation
+constraint_output: artifacts/evaluation/constraints
+reranking_config: configs/reranking.yaml
+constraint_cutoffs: [2025, 2026]
+constraint_primary_k: 100
+constraint_diagnostic_k: 200
+constraint_nli_top_evidence: 1
+constraint_nli_batch_size: 12
+constraint_nli_enabled: true
+constraint_nli_cache: .cache/nli_constraints
+constraint_diagnostic_support_threshold: 0.5
+constraint_type_mismatch_factor: 0.95
+constraint_verify_history: true
+constraint_attribution_weights:
+  DIRECT_SUBJECT_SUPPORT: 1.0
+  EXPLICIT_NAME_SUPPORT: 0.8
+  COMPARISON_WINNER: 1.0
+  COMPARISON_BASELINE: 0.0
+  MENTION_ONLY: 0.15
+  INDIRECT_GRAPH_NEIGHBOR: 0.0
+  UNCERTAIN: 0.25

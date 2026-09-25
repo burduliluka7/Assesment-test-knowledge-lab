@@ -1,0 +1,25 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00053",
+      "type": "claim",
+      "surface_form": "The best one-step gradient-boosted tree regression model achieves 165±4 K MAE and 0.89 R² on the test set for melting temperature prediction."
+    },
+    {
+      "id": "clai_00059",
+      "type": "claim",
+      "surface_form": "Tree ensemble methods (gradient-boosted trees and random forest regression) substantially outperform linear models, which achieve MAE >240 K and RMSE >340 K, at least 100 K worse than non-linear approaches."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "boosted",
+  "representative_ids": [
+    "clai_00053",
+    "clai_00059"
+  ]
+}

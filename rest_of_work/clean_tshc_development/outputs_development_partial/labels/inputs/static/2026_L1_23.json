@@ -1,0 +1,41 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00824",
+      "type": "component",
+      "surface_form": "Melt-quench trajectory generator"
+    },
+    {
+      "id": "tech_00781",
+      "type": "technique",
+      "surface_form": "Melt-quench MD simulation"
+    },
+    {
+      "id": "tech_00904",
+      "type": "technique",
+      "surface_form": "Melt-quench protocol"
+    },
+    {
+      "id": "tech_00911",
+      "type": "technique",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "tech_00916",
+      "type": "technique",
+      "surface_form": "melt-quench trajectory generation"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "technique": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "melt",
+  "representative_ids": [
+    "tech_00911",
+    "tech_00916"
+  ]
+}

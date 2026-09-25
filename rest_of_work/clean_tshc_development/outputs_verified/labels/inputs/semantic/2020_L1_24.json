@@ -1,0 +1,74 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "clai_00131",
+      "type": "claim",
+      "surface_form": "Inference with the MPNN takes roughly 10⁻² seconds per molecule, about 300,000 times faster than the DFT reference calculation (~10³ seconds)."
+    },
+    {
+      "id": "meth_00355",
+      "type": "method",
+      "surface_form": "AFLOW high-throughput DFT calculation protocol"
+    },
+    {
+      "id": "prob_00017",
+      "type": "problem",
+      "surface_form": "Efficient inference compared to DFT"
+    },
+    {
+      "id": "prob_00129",
+      "type": "problem",
+      "surface_form": "DFT‑level accuracy with linear scaling"
+    },
+    {
+      "id": "prob_00378",
+      "type": "problem",
+      "surface_form": "Reproducibility in high-throughput DFT"
+    },
+    {
+      "id": "prob_00381",
+      "type": "problem",
+      "surface_form": "Self-interaction error in DFT"
+    },
+    {
+      "id": "prob_00384",
+      "type": "problem",
+      "surface_form": "Aliasing errors in Fourier transforms"
+    },
+    {
+      "id": "prob_00385",
+      "type": "problem",
+      "surface_form": "Computational cost in high-throughput DFT"
+    },
+    {
+      "id": "prob_00592",
+      "type": "problem",
+      "surface_form": "System size limitations of DFT"
+    },
+    {
+      "id": "task_00483",
+      "type": "task",
+      "surface_form": "High-throughput DFT calculations"
+    },
+    {
+      "id": "tech_00321",
+      "type": "technique",
+      "surface_form": "High‑throughput DFT"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "method": 1,
+    "problem": 7,
+    "task": 1,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "dft",
+  "representative_ids": [
+    "task_00483",
+    "prob_00378"
+  ]
+}

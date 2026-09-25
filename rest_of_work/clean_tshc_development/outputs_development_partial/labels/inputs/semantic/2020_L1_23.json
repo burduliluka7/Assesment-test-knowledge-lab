@@ -1,0 +1,145 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "clai_00224",
+      "type": "claim",
+      "surface_form": "The AFLOWLIB data is accessible through a REST-API for standardized data exchange."
+    },
+    {
+      "id": "futu_00174",
+      "type": "future_topic",
+      "surface_form": "Web accessibility of the OQMD (public release via http://oqmd.org)"
+    },
+    {
+      "id": "meth_00257",
+      "type": "method",
+      "surface_form": "Automated Interactive Infrastructure and Database"
+    },
+    {
+      "id": "prob_00173",
+      "type": "problem",
+      "surface_form": "Manual management of large calculation campaigns"
+    },
+    {
+      "id": "prob_00196",
+      "type": "problem",
+      "surface_form": "Bridging computational and experimental data"
+    },
+    {
+      "id": "prob_00268",
+      "type": "problem",
+      "surface_form": "Need for expert domain knowledge"
+    },
+    {
+      "id": "prob_00274",
+      "type": "problem",
+      "surface_form": "Researcher intervention requirement"
+    },
+    {
+      "id": "prob_00276",
+      "type": "problem",
+      "surface_form": "Computational cost vs accuracy tradeoff"
+    },
+    {
+      "id": "prob_00283",
+      "type": "problem",
+      "surface_form": "Computational efficiency vs. performance trade-off"
+    },
+    {
+      "id": "prob_00375",
+      "type": "problem",
+      "surface_form": "Calculation failure handling"
+    },
+    {
+      "id": "prob_00597",
+      "type": "problem",
+      "surface_form": "Force locality quantification"
+    },
+    {
+      "id": "task_00338",
+      "type": "task",
+      "surface_form": "ML method benchmarking"
+    },
+    {
+      "id": "task_00357",
+      "type": "task",
+      "surface_form": "machine learning benchmarking"
+    },
+    {
+      "id": "task_00698",
+      "type": "task",
+      "surface_form": "Locality testing"
+    },
+    {
+      "id": "tech_00325",
+      "type": "technique",
+      "surface_form": "RESTful JSON API"
+    },
+    {
+      "id": "tech_00358",
+      "type": "technique",
+      "surface_form": "Error‑handler auto‑resubmit"
+    },
+    {
+      "id": "tech_00359",
+      "type": "technique",
+      "surface_form": "Cloud‑based continuous integration"
+    },
+    {
+      "id": "tech_00360",
+      "type": "technique",
+      "surface_form": "REST‑API data exchange"
+    },
+    {
+      "id": "tech_00366",
+      "type": "technique",
+      "surface_form": "Automated workflow orchestration"
+    },
+    {
+      "id": "tech_00367",
+      "type": "technique",
+      "surface_form": "Web‑based interactive interfaces"
+    },
+    {
+      "id": "tech_00396",
+      "type": "technique",
+      "surface_form": "Automatic error detection and correction"
+    },
+    {
+      "id": "tech_00400",
+      "type": "technique",
+      "surface_form": "Multi‑threaded parallel execution"
+    },
+    {
+      "id": "tech_00478",
+      "type": "technique",
+      "surface_form": "Mean imputation"
+    },
+    {
+      "id": "tech_00486",
+      "type": "technique",
+      "surface_form": "Error-tolerant featurizer application"
+    },
+    {
+      "id": "tech_00487",
+      "type": "technique",
+      "surface_form": "Unknown value imputation"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "future_topic": 1,
+    "method": 1,
+    "problem": 8,
+    "task": 3,
+    "technique": 11
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "imputation",
+  "representative_ids": [
+    "meth_00257",
+    "task_00338"
+  ]
+}

@@ -1,0 +1,527 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "cite_00264",
+      "type": "cited_work",
+      "surface_form": "Variationally Optimized Atomic Orbitals"
+    },
+    {
+      "id": "cite_00265",
+      "type": "cited_work",
+      "surface_form": "Numerical Atomic Basis Orbitals"
+    },
+    {
+      "id": "clai_00168",
+      "type": "claim",
+      "surface_form": "Latent Ewald Summation cannot infer correct partial charges without reference charge labels and frequently predicts charges near zero or opposite in sign to reference values in challenging chemical environments such as MOFs."
+    },
+    {
+      "id": "clai_00235",
+      "type": "claim",
+      "surface_form": "The Smooth Overlap of Atomic Positions (SOAP) kernel captures the regularity of the silicon potential energy surface, leading to accurate interpolation within the sampled configuration space."
+    },
+    {
+      "id": "clai_00284",
+      "type": "claim",
+      "surface_form": "Element-specific weights allow constant-size AEF vectors irrespective of the number of chemical elements."
+    },
+    {
+      "id": "clai_00288",
+      "type": "claim",
+      "surface_form": "U-MLIPs typically cover over 50 elements and may accurately model solids, liquids, and molecular structures."
+    },
+    {
+      "id": "clai_00330",
+      "type": "claim",
+      "surface_form": "The screening pipeline, when applied to 5 997 lithium‑containing Materials Project structures that satisfy basic stability and band‑gap criteria, yields 1302 structures after removing transition‑metal containing compounds, of which 113 have Ξ > 0.25."
+    },
+    {
+      "id": "clai_00503",
+      "type": "claim",
+      "surface_form": "Compositional models cannot differentiate between polymorphs with the same chemical composition."
+    },
+    {
+      "id": "clai_00551",
+      "type": "claim",
+      "surface_form": "More than 10⁹ candidate structures were generated over the course of active learning using symmetry-aware partial substitutions and random structure search, with 232,477 out of 381,000 stable structures (approximately 61%) attributed to the SAPS candidate generation procedure."
+    },
+    {
+      "id": "clai_00616",
+      "type": "claim",
+      "surface_form": "The approach generalizes to materials with varying atom counts, tested on systems with 2–40 atoms (training) and over 40 atoms (testing)."
+    },
+    {
+      "id": "clai_00625",
+      "type": "claim",
+      "surface_form": "The Mixture of Linear Experts (MoLE) architecture enables increasing model capacity without sacrificing inference speed, with a compute-optimal MoLE model achieving equivalent validation loss to dense models using approximately 2.5× fewer active parameters."
+    },
+    {
+      "id": "clai_00637",
+      "type": "claim",
+      "surface_form": "Moving from 1 to 8 experts yields significant loss improvement in MoLE models, while gains from 32 to 128 experts are negligible."
+    },
+    {
+      "id": "clai_00665",
+      "type": "claim",
+      "surface_form": "AFLOW’s cage‑finding algorithm identifies interstitial sites via a topological method, finding 14 cages (6 octahedral, 8 tetrahedral) that reduce to 5 symmetrically inequivalent positions, with radii of 2.2225 Å (octahedral) and 1.9248 Å (tetrahedral)."
+    },
+    {
+      "id": "comp_00034",
+      "type": "component",
+      "surface_form": "Higher‑order many‑body message construction"
+    },
+    {
+      "id": "comp_00153",
+      "type": "component",
+      "surface_form": "De‑noising non‑equilibrium structures (DeNS) auxiliary task"
+    },
+    {
+      "id": "comp_00156",
+      "type": "component",
+      "surface_form": "Atomic Cluster Expansion (ACE) high‑body‑order features"
+    },
+    {
+      "id": "comp_00158",
+      "type": "component",
+      "surface_form": "Pseudo‑relaxation emulation"
+    },
+    {
+      "id": "comp_00159",
+      "type": "component",
+      "surface_form": "Structure perturbation augmentation"
+    },
+    {
+      "id": "comp_00202",
+      "type": "component",
+      "surface_form": "Bond distance expansion"
+    },
+    {
+      "id": "comp_00213",
+      "type": "component",
+      "surface_form": "Pre‑relaxation pipeline"
+    },
+    {
+      "id": "comp_00218",
+      "type": "component",
+      "surface_form": "Many‑body kernel term"
+    },
+    {
+      "id": "comp_00362",
+      "type": "component",
+      "surface_form": "Li2O reaction enumeration engine"
+    },
+    {
+      "id": "comp_00395",
+      "type": "component",
+      "surface_form": "Apennsy interstitial cage search"
+    },
+    {
+      "id": "comp_00411",
+      "type": "component",
+      "surface_form": "Rattled Boltzmann sampling"
+    },
+    {
+      "id": "comp_00569",
+      "type": "component",
+      "surface_form": "Prototype-based structure sampler"
+    },
+    {
+      "id": "comp_00607",
+      "type": "component",
+      "surface_form": "Isotropic lattice scaling augmentation"
+    },
+    {
+      "id": "comp_00634",
+      "type": "component",
+      "surface_form": "Maximum bond variation criterion"
+    },
+    {
+      "id": "comp_00645",
+      "type": "component",
+      "surface_form": "High body order local features"
+    },
+    {
+      "id": "comp_00679",
+      "type": "component",
+      "surface_form": "Charge Equilibration Layer for Long-range Interactions"
+    },
+    {
+      "id": "comp_00686",
+      "type": "component",
+      "surface_form": "Ewald reciprocal-space term"
+    },
+    {
+      "id": "comp_00771",
+      "type": "component",
+      "surface_form": "Edge-wise block with MoLE"
+    },
+    {
+      "id": "comp_00774",
+      "type": "component",
+      "surface_form": "MoLE router"
+    },
+    {
+      "id": "comp_00777",
+      "type": "component",
+      "surface_form": "MoLE architecture with configurable experts"
+    },
+    {
+      "id": "comp_00783",
+      "type": "component",
+      "surface_form": "MoLE"
+    },
+    {
+      "id": "comp_00838",
+      "type": "component",
+      "surface_form": "bond ionicity features"
+    },
+    {
+      "id": "futu_00159",
+      "type": "future_topic",
+      "surface_form": "Higher body order messages"
+    },
+    {
+      "id": "meth_00071",
+      "type": "method",
+      "surface_form": "electronegativity equalization method"
+    },
+    {
+      "id": "meth_00099",
+      "type": "method",
+      "surface_form": "embedded-atom-method"
+    },
+    {
+      "id": "meth_00194",
+      "type": "method",
+      "surface_form": "AtomSets"
+    },
+    {
+      "id": "meth_00224",
+      "type": "method",
+      "surface_form": "Linear Combination of Atomic Orbitals"
+    },
+    {
+      "id": "meth_00252",
+      "type": "method",
+      "surface_form": "G0W0 many‑body perturbation theory"
+    },
+    {
+      "id": "meth_00396",
+      "type": "method",
+      "surface_form": "Atoms-In-Molecules Network 2"
+    },
+    {
+      "id": "meth_00408",
+      "type": "method",
+      "surface_form": "Charge Equilibration Layer for Long-range Interactions"
+    },
+    {
+      "id": "meth_00410",
+      "type": "method",
+      "surface_form": "Latent Ewald Summation"
+    },
+    {
+      "id": "prob_00025",
+      "type": "problem",
+      "surface_form": "Limited expressivity of two‑body messages"
+    },
+    {
+      "id": "prob_00088",
+      "type": "problem",
+      "surface_form": "Handling unrelaxed input structures"
+    },
+    {
+      "id": "prob_00104",
+      "type": "problem",
+      "surface_form": "Valence‑dependent bonding representation"
+    },
+    {
+      "id": "prob_00134",
+      "type": "problem",
+      "surface_form": "Accurate reproduction of AIMD structural properties"
+    },
+    {
+      "id": "prob_00150",
+      "type": "problem",
+      "surface_form": "Limited expressiveness of fixed LCAO basis"
+    },
+    {
+      "id": "prob_00153",
+      "type": "problem",
+      "surface_form": "Limited expressivity of fixed Gaussian basis sets"
+    },
+    {
+      "id": "prob_00177",
+      "type": "problem",
+      "surface_form": "Inverse design of low‑stress structures"
+    },
+    {
+      "id": "prob_00183",
+      "type": "problem",
+      "surface_form": "Nonlinear structure‑property mapping"
+    },
+    {
+      "id": "prob_00217",
+      "type": "problem",
+      "surface_form": "Standardized structure representation"
+    },
+    {
+      "id": "prob_00235",
+      "type": "problem",
+      "surface_form": "Limited non-equilibrium structure coverage"
+    },
+    {
+      "id": "prob_00252",
+      "type": "problem",
+      "surface_form": "Structure relaxation efficiency"
+    },
+    {
+      "id": "prob_00261",
+      "type": "problem",
+      "surface_form": "Efficient structural relaxation"
+    },
+    {
+      "id": "prob_00328",
+      "type": "problem",
+      "surface_form": "Short and mid-range non-bonded interaction correction"
+    },
+    {
+      "id": "prob_00352",
+      "type": "problem",
+      "surface_form": "chemical element bias"
+    },
+    {
+      "id": "prob_00359",
+      "type": "problem",
+      "surface_form": "Limited convex hull coverage"
+    },
+    {
+      "id": "prob_00365",
+      "type": "problem",
+      "surface_form": "Structural diversity deficiency"
+    },
+    {
+      "id": "prob_00404",
+      "type": "problem",
+      "surface_form": "Scalable polymorph discovery"
+    },
+    {
+      "id": "prob_00427",
+      "type": "problem",
+      "surface_form": "Long-range interaction capture"
+    },
+    {
+      "id": "prob_00431",
+      "type": "problem",
+      "surface_form": "Universal element coverage"
+    },
+    {
+      "id": "prob_00441",
+      "type": "problem",
+      "surface_form": "Valence state discrimination"
+    },
+    {
+      "id": "prob_00575",
+      "type": "problem",
+      "surface_form": "Pseudopotential inconsistency"
+    },
+    {
+      "id": "prob_00596",
+      "type": "problem",
+      "surface_form": "Long-range behavior modeling"
+    },
+    {
+      "id": "prob_00603",
+      "type": "problem",
+      "surface_form": "Linear sp-bonded chain detection"
+    },
+    {
+      "id": "task_00147",
+      "type": "task",
+      "surface_form": "Structure relaxation of crystalline materials"
+    },
+    {
+      "id": "task_00150",
+      "type": "task",
+      "surface_form": "Crystal structural relaxation"
+    },
+    {
+      "id": "task_00300",
+      "type": "task",
+      "surface_form": "AdsorbML structural relaxation"
+    },
+    {
+      "id": "task_00401",
+      "type": "task",
+      "surface_form": "lattice dynamics"
+    },
+    {
+      "id": "task_00621",
+      "type": "task",
+      "surface_form": "Lattice dynamics calculations"
+    },
+    {
+      "id": "task_00629",
+      "type": "task",
+      "surface_form": "Static lattice calculations"
+    },
+    {
+      "id": "task_00703",
+      "type": "task",
+      "surface_form": "Lattice parameter reproduction"
+    },
+    {
+      "id": "tech_00074",
+      "type": "technique",
+      "surface_form": "Weight sharing across atoms"
+    },
+    {
+      "id": "tech_00109",
+      "type": "technique",
+      "surface_form": "Hierarchical Body‑Order Expansion"
+    },
+    {
+      "id": "tech_00202",
+      "type": "technique",
+      "surface_form": "ISCD‑based elemental substitution"
+    },
+    {
+      "id": "tech_00207",
+      "type": "technique",
+      "surface_form": "De‑noising non‑equilibrium structures"
+    },
+    {
+      "id": "tech_00212",
+      "type": "technique",
+      "surface_form": "Pseudo‑relaxation emulation"
+    },
+    {
+      "id": "tech_00213",
+      "type": "technique",
+      "surface_form": "Structure perturbation augmentation"
+    },
+    {
+      "id": "tech_00250",
+      "type": "technique",
+      "surface_form": "pre‑relaxation using a learned interatomic potential"
+    },
+    {
+      "id": "tech_00404",
+      "type": "technique",
+      "surface_form": "symmetry reduction of cages"
+    },
+    {
+      "id": "tech_00424",
+      "type": "technique",
+      "surface_form": "Gaussian atomic position rattling"
+    },
+    {
+      "id": "tech_00471",
+      "type": "technique",
+      "surface_form": "LBFGS structural relaxation"
+    },
+    {
+      "id": "tech_00566",
+      "type": "technique",
+      "surface_form": "Particle mesh Ewald method"
+    },
+    {
+      "id": "tech_00617",
+      "type": "technique",
+      "surface_form": "Chemical element permutation"
+    },
+    {
+      "id": "tech_00639",
+      "type": "technique",
+      "surface_form": "local-orbital basis"
+    },
+    {
+      "id": "tech_00675",
+      "type": "technique",
+      "surface_form": "Test-time isotropic lattice scaling"
+    },
+    {
+      "id": "tech_00692",
+      "type": "technique",
+      "surface_form": "Maximum bond variation check"
+    },
+    {
+      "id": "tech_00720",
+      "type": "technique",
+      "surface_form": "Many-body interactions incorporation"
+    },
+    {
+      "id": "tech_00723",
+      "type": "technique",
+      "surface_form": "Pre-relaxation with U-MLIP"
+    },
+    {
+      "id": "tech_00755",
+      "type": "technique",
+      "surface_form": "Ewald formulation"
+    },
+    {
+      "id": "tech_00778",
+      "type": "technique",
+      "surface_form": "Tensor products for many-body interactions"
+    },
+    {
+      "id": "tech_00786",
+      "type": "technique",
+      "surface_form": "Atomic coordinate optimization at 0 K"
+    },
+    {
+      "id": "tech_00823",
+      "type": "technique",
+      "surface_form": "Chemical-composition linear correction"
+    },
+    {
+      "id": "tech_00828",
+      "type": "technique",
+      "surface_form": "Constrained relaxation"
+    },
+    {
+      "id": "tech_00864",
+      "type": "technique",
+      "surface_form": "Fixed cell atomic position optimization"
+    },
+    {
+      "id": "tech_00891",
+      "type": "technique",
+      "surface_form": "Pre-merged MoLE experts"
+    },
+    {
+      "id": "tech_00914",
+      "type": "technique",
+      "surface_form": "sp3 atom counting"
+    },
+    {
+      "id": "tech_00923",
+      "type": "technique",
+      "surface_form": "sp2/sp3 atom counting"
+    },
+    {
+      "id": "tech_00926",
+      "type": "technique",
+      "surface_form": "Lattice parameter scaling"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 2,
+    "claim": 11,
+    "component": 22,
+    "future_topic": 1,
+    "method": 8,
+    "problem": 23,
+    "task": 7,
+    "technique": 27
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "relaxation",
+  "representative_ids": [
+    "prob_00261",
+    "tech_00786"
+  ]
+}

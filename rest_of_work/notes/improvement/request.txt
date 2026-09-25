@@ -1,0 +1,1130 @@
+You are working inside an EXISTING repository for the Constructor Knowledge Labs internship assessment:
+
+“Multi-Resolution Semantic Abstraction over an Evolving Knowledge Hypergraph.”
+
+The repository already contains a working implementation and has already produced a report, hierarchies, temporal events, metrics and figures.
+
+DO NOT rebuild the project from scratch.
+
+DO NOT replace the existing temporal spectral-semantic native hypergraph method unless you find an actual correctness bug.
+
+All required Python packages, embedding models and local dependencies are already installed on this laptop.
+
+Use the existing local environment.
+
+I am running you with Orchestration / Ultralight Local Adaptation. Work autonomously, but keep the changes focused, coordinated and scientifically defensible.
+
+The purpose of this pass is to IMPROVE THE CURRENT IMPLEMENTATION based on weaknesses revealed by the first full experimental run.
+
+The current core method is:
+
+J(P_t)
+=
+lambda_h J_hyper
++
+lambda_s J_spec
++
+lambda_m J_sem
++
+lambda_t J_temp
+
+with:
+
+- multiplicity-aware native hyperedge fragmentation;
+- normalized hypergraph Laplacian spectral coordinates;
+- semantic embeddings;
+- temporal VI regularization;
+- recursive hyperedge collapse;
+- budgets approximately 12 -> 40 -> 120 -> singleton leaves;
+- temporal ID/event tracking.
+
+KEEP THAT CORE.
+
+The primary work now is:
+
+1. audit the existing repository/results;
+2. repair and strengthen the EXTRINSIC RETRIEVAL evaluation;
+3. support typed entity targets rather than method-only retrieval;
+4. implement real claim/evidence retrieval and evaluation where supportable;
+5. correctly use `valid_but_unlisted`, `wrong_domain`, and related benchmark annotations;
+6. improve hierarchy search efficiency/recall without using benchmark answers for tuning;
+7. improve label generation/faithfulness evaluation without gaming the NLI metric;
+8. preserve all existing scientific-validity safeguards;
+9. rerun experiments;
+10. regenerate metrics/report from actual outputs.
+
+Do not optimize for making the numbers look good.
+
+Optimize for making the experiment correct.
+
+---
+
+# 1. FIRST: AUDIT THE CURRENT REPOSITORY
+
+Before changing code:
+
+Inspect:
+
+- README
+- report/report.md
+- metrics.json
+- configs
+- hierarchy JSONs
+- temporal_events.json
+- retrieval implementation
+- ground-truth mapping implementation
+- labeling implementation
+- evaluation modules
+- tests
+- existing caches/artifacts.
+
+Run the existing test suite.
+
+Run the smallest existing integration command.
+
+Record the current state before modifying it.
+
+Find the code responsible for the currently reported facts such as:
+
+- 18 benchmark questions discovered;
+- only partial ground-truth target mapping;
+- method-only primary retrieval;
+- low recall;
+- claim paraphrases lacking verified TKH claim alignment;
+- very high NLI non-entailment rates;
+- hierarchical scoring requiring substantially fewer inspections than flat retrieval.
+
+Do not assume the report is correct merely because it exists.
+
+Trace the numbers back to code/artifacts.
+
+If you find a discrepancy between report and generated artifacts, fix the source of truth first.
+
+---
+
+# 2. ORCHESTRATION STRATEGY
+
+Use parallel sub-tasks where they do not edit the same critical code simultaneously.
+
+Suggested decomposition:
+
+Agent/task A:
+benchmark-schema and entity-mapping audit.
+
+Agent/task B:
+hierarchical retrieval/search audit.
+
+Agent/task C:
+claim/evidence retrieval and evaluation design.
+
+Agent/task D:
+label generation and faithfulness audit.
+
+Agent/task E:
+tests, metrics consistency and report regeneration.
+
+Have one coordinating implementation pass integrate changes and rerun all tests.
+
+Do not let independent agents invent incompatible evaluation definitions.
+
+The repository must have one coherent set of definitions.
+
+---
+
+# 3. DO NOT CHANGE THE CORE HIERARCHY UNLESS NECESSARY
+
+The existing method already addresses the core assessment:
+
+- P1 laminarity;
+- P2 hard budgets;
+- P3 semantic/structural tradeoff;
+- P4 native hypergraph operation;
+- P5 temporal regularization and event tracking;
+- P6 labels and temporal honesty.
+
+Preserve:
+
+- hyperedge multiplicities;
+- collapse semantics;
+- sparse Laplacian construction;
+- spectral recomputation after completed resolution;
+- MiniLM clustering embeddings unless a correctness bug exists;
+- independent BGE coherence evaluation;
+- VI temporal regularization;
+- perturbation evaluation;
+- null-model coherence evaluation;
+- temporal event tracking;
+- existing ablation variants.
+
+Do not spend this pass trying to improve clustering weights based on benchmark questions.
+
+The benchmark must remain an EXTRINSIC test, not a tuning objective.
+
+---
+
+# 4. FIX THE CONCEPTUAL ERROR IN `expected_methods`
+
+Inspect the actual `ground_truth.json`.
+
+Do not assume the field name `expected_methods` means every target is a `method` node.
+
+For example, some benchmark questions ask for:
+
+- methods;
+- architectures;
+- datasets;
+- benchmarks;
+- scientific challenges;
+- mechanisms;
+- evidence/claims.
+
+Internally rename the evaluation abstraction from:
+
+expected_methods
+
+to something conceptually like:
+
+expected_targets
+
+while preserving compatibility with the supplied JSON schema.
+
+The parser may still read the `expected_methods` field, but evaluation code must not automatically restrict those strings to nodes with:
+
+type == "method".
+
+Map targets against appropriate TKH node types.
+
+Do not alter the supplied ground-truth file.
+
+---
+
+# 5. BUILD A GENERAL TARGET-MAPPING LAYER
+
+Create a clean benchmark-target resolver.
+
+For every expected target string:
+
+1. normalize Unicode;
+2. normalize case;
+3. normalize whitespace;
+4. handle ordinary punctuation carefully;
+5. PRESERVE semantically important characters such as:
+   - hyphens;
+   - plus signs;
+   - E(3);
+   - version suffixes;
+   - numeric model names.
+
+Do not repeat the earlier DeepH / DeepH-E3 conflation.
+
+Mapping priority should be:
+
+exact normalized surface form
+
+then:
+
+safe whole-token containment / explicit alias mapping
+
+then, only if needed:
+
+high-confidence semantic candidate mapping that is independently audited.
+
+Do NOT silently map based only on nearest embedding similarity.
+
+For every ground-truth target produce a mapping artifact containing:
+
+- question id;
+- supplied target string;
+- mapped TKH node id(s);
+- node type;
+- surface form;
+- mapping rule;
+- confidence/status;
+- ambiguity flag.
+
+Statuses should include:
+
+exact
+safe_alias
+ambiguous
+unmapped.
+
+Never hide unresolved items.
+
+---
+
+# 6. TARGET TYPES
+
+Build a generic target-type routing layer based ONLY on the question text and declared benchmark question type, not on the answer key.
+
+The router should identify broad candidate target classes.
+
+Examples:
+
+Questions asking “which methods”, “architectures”, “models”:
+prefer method / technique / component nodes.
+
+Questions asking “datasets and benchmarks”:
+include dataset and appropriate article/task/metric-like benchmark entities rather than method-only filtering.
+
+Questions asking about “open challenges”:
+include problem, future_topic and claim nodes.
+
+Questions asking “how”, “what mechanisms”, “give evidence”:
+allow method/technique plus claim/evidence retrieval.
+
+Make the rules generic and auditable.
+
+Do not write rules such as:
+
+“if Q14 then use dataset.”
+
+Rules must inspect the language of any question.
+
+Implement an all-type fallback when routing confidence is weak.
+
+Use the SAME target routing for hierarchical and flat retrieval.
+
+---
+
+# 7. PRESERVE FAIRNESS BETWEEN HIERARCHICAL AND FLAT RETRIEVAL
+
+Whatever query scorer is used for hierarchical retrieval must also be available to the flat baseline.
+
+Do not give the hierarchy a better language model.
+
+Use the same frozen local retrieval embedding model for both.
+
+Do not use `ground_truth.json` to score/rank candidates.
+
+Ground truth is evaluation-only.
+
+Keep output K and inspection-accounting definitions explicit.
+
+---
+
+# 8. REPLACE CENTROID-ONLY SUPERNODE SEARCH WITH MULTI-PROTOTYPE SEARCH
+
+The current hierarchy search appears vulnerable to centroid dilution:
+
+a large heterogeneous supernode can have a centroid that is not close to a query even though it contains highly relevant descendants.
+
+Improve this without changing the hierarchy.
+
+For every non-singleton supernode, precompute a SMALL number of representative semantic prototypes from its descendant nodes.
+
+For example 3–8 prototypes.
+
+Use a deterministic method such as:
+
+- medoids;
+- farthest-point representatives;
+- small deterministic k-medoids;
+- or another transparent method.
+
+Store prototypes by useful target-type family where feasible.
+
+A supernode query score should combine:
+
+- similarity to semantic centroid;
+- maximum or top-k-mean similarity to prototypes.
+
+For example:
+
+score(C,q)
+=
+alpha * cos(q, centroid_C)
++
+(1-alpha) * mean_top_r cos(q, prototype_i).
+
+Use a prespecified reasonable alpha.
+
+Do not tune alpha on the 18 benchmark questions.
+
+If useful, perform a small generic sensitivity check and report it as sensitivity rather than selecting the best benchmark result.
+
+Use the SAME underlying query embedding model for flat and hierarchical search.
+
+---
+
+# 9. USE BEST-FIRST HIERARCHICAL SEARCH
+
+Replace or augment rigid fixed-beam traversal with a priority-queue best-first traversal.
+
+Conceptually:
+
+start with L0 nodes.
+
+Score them.
+
+Push promising supernodes onto a priority queue.
+
+Repeatedly:
+
+- pop highest-scoring unexpanded supernode;
+- expand its children;
+- score those children;
+- charge every score operation to the inspection budget;
+- retain eligible leaf/entity results;
+- continue until budget exhausted or enough outputs obtained.
+
+This should allow one strong branch to be explored deeply without forcing equal expansion of weak branches.
+
+Maintain deterministic tie breaking.
+
+Keep the existing fixed-beam approach available as a baseline or sensitivity comparison if inexpensive.
+
+---
+
+# 10. EVALUATE RETRIEVAL AS A QUALITY-vs-COST CURVE
+
+Do not reduce hierarchical utility to one recall@10 value.
+
+Compute metrics at several scoring/inspection budgets, for example:
+
+25
+50
+100
+200
+500
+
+or another sensible set based on corpus size.
+
+At each budget report:
+
+- expected-target recall;
+- hit rate;
+- output precision variants;
+- known-wrong rate;
+- number of expected targets found;
+- score inspections;
+- returned rank if applicable.
+
+Compare against flat retrieval under the SAME scoring-budget accounting where meaningful.
+
+Flat exhaustive ranking may require scoring every candidate; state that clearly.
+
+Add an efficiency summary such as:
+
+recall versus inspections
+
+and optionally:
+
+area under the recall-vs-log-cost curve
+
+provided the metric is explicitly defined.
+
+Do not claim better retrieval simply because the hierarchy evaluates fewer objects if recall collapses.
+
+---
+
+# 11. CORRECTLY USE `fp_categories`
+
+Inspect `ground_truth.json`.
+
+For questions where available, it contains categories such as:
+
+wrong_domain
+
+outdated_as_main
+
+valid_but_unlisted.
+
+Use them explicitly.
+
+Do NOT treat every returned item outside `expected_targets` as equally wrong.
+
+Report at least separate metrics for:
+
+STRICT EXPECTED RECALL
+
+fraction of mapped expected targets retrieved.
+
+STRICT PRECISION
+
+retrieved expected targets / returned targets.
+
+This is a deliberately incomplete-label metric.
+
+EXTENDED ACCEPTED PRECISION
+
+count both:
+
+expected targets
+
+and:
+
+valid_but_unlisted
+
+as accepted.
+
+KNOWN-WRONG RATE
+
+fraction of returned outputs belonging to `wrong_domain`.
+
+OUTDATED-MAIN RATE
+
+report separately rather than automatically merging with known wrong.
+
+Do not inflate expected recall using valid-but-unlisted items.
+
+They are useful for precision interpretation, not a replacement for expected targets.
+
+Make the metric definitions explicit in metrics.json and the report.
+
+---
+
+# 12. MAP GROUND-TRUTH CLAIMS TO TKH CLAIM NODES FOR EVALUATION
+
+The task explicitly asks for expected methods AND supporting claims.
+
+The previous implementation could retrieve article-linked claims but could not calculate trustworthy claim recall because benchmark claim paraphrases were not aligned to TKH claim nodes.
+
+Fix this carefully.
+
+IMPORTANT:
+
+This alignment is an EVALUATION artifact.
+
+It must NOT be used to guide the retrieval system.
+
+For every ground-truth claim/evidence item:
+
+1. identify likely supporting corpus article(s) using supplied:
+   - source;
+   - required_citations;
+   - year;
+   - method;
+   - existing TKH article/author/provenance information;
+
+2. restrict candidate TKH claim nodes preferentially to claims originating from those article(s);
+
+3. compare ground-truth claim text/evidence with candidate claim surface forms using:
+   - lexical overlap;
+   - independent semantic embedding similarity;
+   - optionally NLI/entailment;
+
+4. require a conservative confidence threshold;
+
+5. if several candidates remain plausible:
+   mark ambiguous;
+
+6. if none are credible:
+   mark unmapped.
+
+Export:
+
+artifacts/evaluation/claim_alignment.json
+
+containing:
+
+- question id;
+- target method/entity;
+- ground-truth claim;
+- ground-truth source;
+- candidate TKH claim id;
+- claim surface form;
+- provenance;
+- similarity;
+- NLI result if used;
+- alignment status.
+
+Do not make low-confidence semantic nearest-neighbor matches look like verified truth.
+
+---
+
+# 13. IMPLEMENT ACTUAL CLAIM/EVIDENCE RETRIEVAL
+
+Retrieval itself must NOT access the ground-truth alignment.
+
+Given only:
+
+question text
+
+and the TKH/hierarchy:
+
+first retrieve relevant entities through the hierarchy.
+
+Then collect claim candidates through graph relations and provenance.
+
+Possible claim candidate paths include:
+
+retrieved method/entity
+-> article presenting/using/evaluating it
+-> claim nodes associated with that article
+
+and/or direct neighboring claim relations if the TKH contains them.
+
+Rank candidate claims using the same frozen retrieval embedding family against the QUESTION.
+
+Optionally combine:
+
+question-to-claim similarity
+
+with:
+
+entity-to-claim graph proximity/relation relevance.
+
+Keep this simple and transparent.
+
+Charge claim scoring operations separately.
+
+Return:
+
+entity results
+
+plus:
+
+supporting claims/evidence.
+
+---
+
+# 14. TYPE B QUESTIONS MUST NO LONGER BE IGNORED
+
+Inspect benchmark question types.
+
+Questions whose purpose is conceptual explanation/evidence rather than entity listing must be evaluated primarily using claim retrieval.
+
+Examples include questions asking:
+
+- what challenges exist;
+- how equivariance improves performance;
+- what evidence supports a scientific claim;
+- what mechanisms enforce physical constraints.
+
+For these questions, implement metrics such as:
+
+ground-truth claim coverage
+
+source/evidence hit rate
+
+claim retrieval recall on confidently aligned claims.
+
+If claim alignment coverage is incomplete, report:
+
+recall over mapped claims
+
+AND
+
+mapping coverage.
+
+Do NOT pretend unmatched ground truth was successfully evaluated.
+
+---
+
+# 15. TEMPORAL BENCHMARK CUTOFF
+
+The questions say “by Feb 2026”.
+
+The TKH has primarily annual temporal resolution.
+
+Preserve the scientifically conservative approach:
+
+PRIMARY benchmark:
+use information definitely visible by end of 2025.
+
+SENSITIVITY:
+run against the annual 2026 snapshot.
+
+Do NOT simply treat every 2026 item as pre-February 2026.
+
+If exact month-level dates are actually available in local metadata for particular articles, you may implement an OPTIONAL precise-cutoff sensitivity.
+
+Do not infer reliable publication month from a field unless its semantics justify doing so.
+
+If you use arXiv identifiers to infer submission month, label this explicitly as a sensitivity assumption and do not silently mix it with publication dates.
+
+Keep the report's distinction between:
+
+2025 conservative
+
+and:
+
+2026 possibly post-cutoff.
+
+---
+
+# 16. IMPROVE LABEL GENERATION, BUT DO NOT GAME NLI
+
+Current labels have very high NLI non-entailment flag rates.
+
+Audit whether this is caused by:
+
+- genuinely unsupported glosses;
+- bad evidence selection;
+- NLI premise truncation;
+- TF-IDF fragments producing unnatural hypotheses;
+- overly broad gloss templates;
+- cluster heterogeneity.
+
+Do not simply lower the NLI threshold to improve the metric.
+
+Do not change the evaluator just because it gives bad results.
+
+Improve GENERATION and evidence construction.
+
+For L0 and L1 clusters:
+
+construct an evidence packet containing only snapshot-visible data:
+
+- representative member surface forms;
+- dominant node types;
+- representative relation types;
+- representative claim nodes;
+- representative method/dataset/task names.
+
+Use a local generation backend if one is already configured and reliable.
+
+If not, improve the deterministic extractive labeler.
+
+Generated label requirements:
+
+- short noun phrase;
+- preferably based on terms actually present in members;
+- no evaluative claims.
+
+Generated gloss requirements:
+
+- one sentence;
+- descriptive, not comparative;
+- no words like:
+  best,
+  leading,
+  superior,
+  state-of-the-art,
+  outperforming,
+  first,
+  universal,
+  unless explicitly supported.
+
+Prefer statements like:
+
+“Cluster containing methods and studies centered on E(3)-equivariant atomistic models.”
+
+rather than:
+
+“These are state-of-the-art models that outperform conventional methods.”
+
+---
+
+# 17. REDUCE LABEL-EVALUATION CIRCULARITY WITH HELD-OUT CLUSTER EVIDENCE
+
+For sufficiently large L0/L1 clusters, split available cluster evidence deterministically into:
+
+generation evidence
+
+and:
+
+held-out verification evidence.
+
+For example:
+
+70% generation
+30% verification
+
+or a representative/member split that preserves important node types.
+
+The label generator only sees generation evidence.
+
+The NLI/evaluation step should preferentially use held-out verification evidence.
+
+For small clusters where such a split is impossible:
+
+mark that no independent within-cluster holdout is available.
+
+Do not pretend independence.
+
+This improves the validity of P6 evaluation.
+
+---
+
+# 18. IMPROVE LABEL FAITHFULNESS METRICS
+
+Keep NLI, but separate:
+
+LABEL faithfulness
+
+from:
+
+GLOSS faithfulness.
+
+A short noun label may not form a valid NLI hypothesis.
+
+For labels, use conservative lexical/support checks.
+
+For glosses, use NLI.
+
+Report:
+
+- entailment rate;
+- neutral rate;
+- contradiction rate;
+- conservative unsupported rate;
+- generation/verification evidence split coverage.
+
+Keep the blind human audit CSV.
+
+Do not fabricate human judgments.
+
+---
+
+# 19. DO NOT USE GROUND TRUTH TO MODIFY THE HIERARCHY
+
+This is critical.
+
+The 18 questions and ground truth are evaluation data.
+
+Do NOT:
+
+- change lambda weights based on retrieval scores;
+- change cluster memberships based on expected targets;
+- label clusters using benchmark target names;
+- select hierarchy budgets because they score best on these questions;
+- train embeddings on question-answer pairs.
+
+You may improve the RETRIEVAL ALGORITHM and benchmark mapping because those were demonstrably incomplete, but clearly distinguish this from hierarchy optimization.
+
+Any retrieval hyperparameter sensitivity should be labeled exploratory.
+
+Do not present a post-hoc benchmark-tuned setting as an unbiased final result.
+
+---
+
+# 20. RETAIN THE ORIGINAL RETRIEVAL RESULT AS A BASELINE
+
+Do not overwrite history.
+
+Store the old centroid/fixed-beam method as something like:
+
+legacy_hierarchical_retrieval
+
+and the improved approach as:
+
+prototype_best_first_retrieval.
+
+Compare them.
+
+This makes it clear that improvements come from retrieval design rather than a secretly modified hierarchy.
+
+---
+
+# 21. ADD TESTS BEFORE TRUSTING NEW RESULTS
+
+Add tests for at least:
+
+target mapping:
+DeepH != DeepH-E3.
+
+target mapping:
+significant plus/hyphen/version tokens preserved.
+
+typed retrieval:
+a dataset question can return dataset nodes.
+
+typed retrieval:
+a method question does not accidentally suppress all methods.
+
+fp categories:
+valid_but_unlisted is accepted for extended precision but does not increase expected recall.
+
+fp categories:
+wrong_domain increases known-wrong rate.
+
+claim alignment:
+claims are restricted by plausible source/provenance where possible.
+
+claim alignment:
+ambiguous claims remain ambiguous.
+
+claim retrieval:
+question -> entity -> article/claim path works on synthetic fixture.
+
+temporal cutoff:
+2026-only evidence excluded from conservative 2025 benchmark.
+
+label holdout:
+generation input never contains held-out verification evidence.
+
+fairness:
+flat and hierarchical retrieval use the same query embedding/scorer.
+
+inspection accounting:
+every scored hierarchy object is charged exactly once according to the documented definition.
+
+Run all previous tests too.
+
+---
+
+# 22. METRICS.JSON CHANGES
+
+Preserve existing metrics.
+
+Add a new clearly versioned extrinsic section containing approximately:
+
+benchmark_schema
+mapping_coverage
+entity_retrieval
+claim_retrieval
+fp_category_metrics
+cost_curves
+legacy_vs_improved
+cutoff_sensitivity
+claim_alignment_coverage.
+
+For every result include:
+
+variant
+cutoff
+retrieval method
+budget
+question subset
+number evaluable
+mapping coverage.
+
+Never average incompatible question types without also showing stratified results.
+
+Report separately:
+
+Type A entity-oriented questions
+
+Type B claim-oriented questions
+
+and an aggregate only if its definition is defensible.
+
+---
+
+# 23. REPORT CHANGES
+
+Regenerate the report from actual metrics.
+
+Keep the main report concise: approximately 3–5 academic pages.
+
+Do not turn it into a giant benchmark paper.
+
+The revised report should explain:
+
+the original hierarchy method remains unchanged;
+
+the original extrinsic evaluation exposed a benchmark alignment problem;
+
+`expected_methods` contains heterogeneous target types;
+
+the improved evaluator therefore performs typed target mapping;
+
+known valid-but-unlisted outputs are distinguished from known wrong-domain outputs;
+
+claim/evidence retrieval is now evaluated when ground-truth claims can be conservatively aligned to TKH claim nodes;
+
+unmapped/ambiguous claims remain explicit;
+
+hierarchical search uses semantic prototypes and best-first traversal to reduce centroid dilution;
+
+all improvement claims come from rerun metrics, not expectation.
+
+Update conclusions based on results.
+
+DO NOT prewrite that recall improved.
+
+If it does not improve, say so.
+
+---
+
+# 24. PRESERVE THE STRONG PARTS OF THE CURRENT REPORT
+
+Do not weaken or remove these good scientific points:
+
+- semantic-only perturbation ARI=1 is not evidence of structural robustness because semantic-only ignores edges;
+- native hypergraph does not need to win every metric;
+- temporal regularization should be judged as stability-vs-coherence tradeoff;
+- exact higher-order edge identity is preserved even though the fragmentation statistic has a pair-agreement interpretation;
+- annual date resolution limits Feb-2026 interpretation;
+- frozen language models may contain later knowledge;
+- NLI/BGE are proxies, not domain experts;
+- the benchmark has incomplete relevance labels;
+- unsupported claims should be flagged rather than hidden.
+
+---
+
+# 25. SUCCESS CRITERIA
+
+This improvement pass is successful if, after the rerun:
+
+A. all original hierarchy invariants still pass;
+
+B. native T4 collapse is unchanged/correct;
+
+C. temporal hierarchy/event tracking still passes;
+
+D. substantially more benchmark targets are correctly mapped OR remaining unmapped targets are convincingly explained;
+
+E. Q14-like dataset/benchmark targets are no longer lost merely because retrieval was method-only;
+
+F. Type B questions receive a real claim/evidence evaluation where possible;
+
+G. `valid_but_unlisted` and `wrong_domain` are treated differently;
+
+H. claim mapping coverage is explicitly reported;
+
+I. the improved hierarchy retrieval is compared with the original retrieval at matched quality/cost definitions;
+
+J. label faithfulness evaluation is more meaningful and no threshold is manipulated solely to improve numbers;
+
+K. the report still distinguishes verified facts from assumptions;
+
+L. no ground-truth information leaks into hierarchy construction or retrieval ranking.
+
+Success does NOT require every numerical metric to improve.
+
+Scientific validity is the primary goal.
+
+---
+
+# 26. RUNNING THE EXPERIMENT
+
+After implementation:
+
+run the complete test suite.
+
+Run target-mapping audit.
+
+Run real benchmark evaluation.
+
+Run both conservative 2025 and annual-2026 sensitivity.
+
+Run legacy retrieval and improved retrieval.
+
+Run claim/evidence alignment.
+
+Run label generation and faithfulness evaluation.
+
+Do not rerun computationally unrelated hierarchy experiments unless required by changed code or artifact consistency.
+
+If hierarchy code is unchanged, reuse VALIDATED hierarchy artifacts only when cache hashes/config/data hashes prove they correspond to the current source/config.
+
+Otherwise rebuild.
+
+---
+
+# 27. INSPECT RESULTS, DO NOT JUST GENERATE THEM
+
+After metrics are generated, inspect:
+
+the worst benchmark questions;
+
+failed target mappings;
+
+known-wrong retrieved results;
+
+valid-but-unlisted results;
+
+failed claim alignments;
+
+high-NLI labels;
+
+clusters with poor coherence;
+
+retrieval branches responsible for misses.
+
+Use this inspection to identify implementation bugs.
+
+Do not use manual inspection to secretly tune individual benchmark questions.
+
+Any generic bug fix must be justifiable independently of one question.
+
+---
+
+# 28. FINAL DELIVERABLES
+
+Update/generate:
+
+README.md
+
+AI_USAGE.md
+
+report/report.md
+
+metrics.json
+
+hierarchy JSONs only if hierarchy changed/rebuilt
+
+temporal_events.json only if needed
+
+benchmark mapping audit
+
+claim alignment audit
+
+label-generation inputs
+
+label faithfulness outputs
+
+updated figures.
+
+Useful new figures:
+
+1. retrieval recall vs inspections:
+   flat vs legacy hierarchy vs improved hierarchy;
+
+2. benchmark mapping coverage by target type;
+
+3. entity recall and claim recall separately;
+
+4. label faithfulness status if the updated metric is interpretable.
+
+Do not add unnecessary decorative figures.
+
+---
+
+# 29. AI_USAGE
+
+Append this improvement work to AI_USAGE.md.
+
+State that Codex was used to:
+
+- audit the initial implementation;
+- improve benchmark target typing/mapping;
+- improve hierarchical retrieval;
+- implement claim alignment/retrieval;
+- improve label evidence handling;
+- rerun evaluation.
+
+Record automated verification.
+
+Do not claim manual human verification that has not happened.
+
+---
+
+# 30. FINAL RESPONSE TO ME
+
+When finished, give me a concise but complete summary containing:
+
+1. what you changed;
+
+2. what you deliberately did NOT change;
+
+3. tests run and pass/fail counts;
+
+4. target-mapping coverage before and after;
+
+5. legacy vs improved retrieval results;
+
+6. hierarchical vs flat quality/cost results;
+
+7. Type A entity-retrieval results;
+
+8. Type B claim/evidence results;
+
+9. claim-alignment coverage;
+
+10. label faithfulness results before and after;
+
+11. any metrics that got worse;
+
+12. unresolved benchmark/data ambiguities;
+
+13. files changed;
+
+14. exact command to reproduce the final evaluation.
+
+DO NOT stop after making a plan.
+
+Inspect the repository and implement the improvements now.

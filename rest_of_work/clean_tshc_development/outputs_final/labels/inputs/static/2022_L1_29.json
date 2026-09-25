@@ -1,0 +1,45 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "metr_00006",
+      "type": "metric",
+      "surface_form": "DAF"
+    },
+    {
+      "id": "metr_00015",
+      "type": "metric",
+      "surface_form": "E RMSE"
+    },
+    {
+      "id": "metr_00024",
+      "type": "metric",
+      "surface_form": "performance"
+    },
+    {
+      "id": "metr_00057",
+      "type": "metric",
+      "surface_form": "success rate"
+    },
+    {
+      "id": "metr_00058",
+      "type": "metric",
+      "surface_form": "AFbT"
+    },
+    {
+      "id": "metr_00061",
+      "type": "metric",
+      "surface_form": "MSE loss"
+    }
+  ],
+  "generation_type_counts": {
+    "metric": 6
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "performance",
+  "representative_ids": [
+    "metr_00024",
+    "metr_00015"
+  ]
+}

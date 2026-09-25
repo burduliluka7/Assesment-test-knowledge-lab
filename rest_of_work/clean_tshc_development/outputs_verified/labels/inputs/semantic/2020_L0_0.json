@@ -1,0 +1,478 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "arti_00001",
+      "type": "article",
+      "surface_form": "Neural Message Passing for Quantum Chemistry"
+    },
+    {
+      "id": "arti_00002",
+      "type": "article",
+      "surface_form": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions"
+    },
+    {
+      "id": "arti_00021",
+      "type": "article",
+      "surface_form": "Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals"
+    },
+    {
+      "id": "cite_00127",
+      "type": "cited_work",
+      "surface_form": "Graph Convolutional Network"
+    },
+    {
+      "id": "cite_00129",
+      "type": "cited_work",
+      "surface_form": "Spectral Graph Convolution"
+    },
+    {
+      "id": "cite_00134",
+      "type": "cited_work",
+      "surface_form": "Behler‑Parrinello Neural Network"
+    },
+    {
+      "id": "cite_00140",
+      "type": "cited_work",
+      "surface_form": "Molecular Graph Convolutions (GC)"
+    },
+    {
+      "id": "cite_00143",
+      "type": "cited_work",
+      "surface_form": "Kipf & Welling Graph Convolutional Networks"
+    },
+    {
+      "id": "cite_00144",
+      "type": "cited_work",
+      "surface_form": "Duvenaud et al. Graph Convolutional Networks"
+    },
+    {
+      "id": "cite_00494",
+      "type": "cited_work",
+      "surface_form": "Behler-Parrinello neural network"
+    },
+    {
+      "id": "clai_00004",
+      "type": "claim",
+      "surface_form": "When applied to a set of 1,585 crystals with elastic properties, CGCNN predicts bulk modulus with a mean absolute error of 0.077 log(GPa) and shear modulus with a mean absolute error of 0.114 log(GPa), demonstrating good generalization."
+    },
+    {
+      "id": "clai_00078",
+      "type": "claim",
+      "surface_form": "Continuous-filter convolutional (cfconv) layers enable convolution on arbitrarily positioned inputs, overcoming the limitations of discrete filters that require grid-aligned data."
+    },
+    {
+      "id": "clai_00130",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network (MPNN) achieves state‑of‑the‑art performance on all QM9 regression targets, reaching chemical accuracy on 11 of the 13 targets and outperforming prior models such as SchNet and DTNN."
+    },
+    {
+      "id": "clai_00133",
+      "type": "claim",
+      "surface_form": "A general training method allows MPNNs to use larger node representation dimensions without increasing computation time or memory, providing substantial savings over previous high‑dimensional MPNNs."
+    },
+    {
+      "id": "clai_00137",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network framework unifies eight previously proposed graph‑based neural models under a single formalism."
+    },
+    {
+      "id": "clai_00138",
+      "type": "claim",
+      "surface_form": "Learning directly from molecular graphs without handcrafted descriptors enables the MPNN to achieve lower prediction errors than descriptor‑based methods."
+    },
+    {
+      "id": "clai_00139",
+      "type": "claim",
+      "surface_form": "Across all QM9 properties, the MPNN reduces the mean absolute error by 30–70 % relative to the best previously reported graph‑neural‑network baseline."
+    },
+    {
+      "id": "clai_00140",
+      "type": "claim",
+      "surface_form": "For internal energy at 0 K (U0), enthalpy (H), Gibbs free energy (G), heat capacity at constant volume (Cv), and highest vibrational frequency (Ω), the MPNN records lower mean absolute errors than SchNet and DTNN (U0 MAE 0.45 vs 0.55/0.72; H 0.39 vs 0.59/0.80; G 0.44 vs 0.55/0.74; Cv 0.80 vs 0.99/1.71; Ω 0.19 vs 0.41/0.78)."
+    },
+    {
+      "id": "clai_00317",
+      "type": "claim",
+      "surface_form": "Graph network models (CGCNN and MEGNet) have high errors on small datasets (<10^4 samples) but leverage large datasets more efficiently, outperforming traditional ML and AutoML approaches on tasks with approximately 10^4 data points or more."
+    },
+    {
+      "id": "clai_00321",
+      "type": "claim",
+      "surface_form": "Graph networks (CGCNN and MEGNet) far outperform traditional ML algorithms on formation energy prediction tasks, with MEGNet decisively outperforming Automatminer for the PhDOS task; among nine structure-based tasks, Automatminer and MEGNet each achieve best scores on 4 tasks."
+    },
+    {
+      "id": "clai_00492",
+      "type": "claim",
+      "surface_form": "Elemental embedding vectors learned by the crystal formation‑energy MEGNet model reproduce known periodic‑table trends and, when transferred to band‑gap and elastic‑moduli models, reduce their mean absolute errors, improving upon prior machine‑learning approaches."
+    },
+    {
+      "id": "comp_00238",
+      "type": "component",
+      "surface_form": "Feed‑forward deep neural network"
+    },
+    {
+      "id": "comp_00242",
+      "type": "component",
+      "surface_form": "Shared-parameter atomic neural network"
+    },
+    {
+      "id": "comp_00470",
+      "type": "component",
+      "surface_form": "CGCNN convolution layers"
+    },
+    {
+      "id": "comp_00624",
+      "type": "component",
+      "surface_form": "Deep neural network potential energy surface"
+    },
+    {
+      "id": "futu_00001",
+      "type": "future_topic",
+      "surface_form": "Application of CGCNN to additional material classes beyond perovskites"
+    },
+    {
+      "id": "futu_00002",
+      "type": "future_topic",
+      "surface_form": "Integration of CGCNN predictions with experimental validation pipelines"
+    },
+    {
+      "id": "futu_00010",
+      "type": "future_topic",
+      "surface_form": "Continuous expansion of JARVIS datasets and tools"
+    },
+    {
+      "id": "futu_00023",
+      "type": "future_topic",
+      "surface_form": "modeling objects with arbitrary positions such as astronomical observations"
+    },
+    {
+      "id": "futu_00039",
+      "type": "future_topic",
+      "surface_form": "apply the general MPNN approach to practically important graph problems"
+    },
+    {
+      "id": "futu_00131",
+      "type": "future_topic",
+      "surface_form": "Transfer learning of element embeddings from large‑scale formation‑energy models to improve predictions of band gaps and elastic moduli"
+    },
+    {
+      "id": "futu_00132",
+      "type": "future_topic",
+      "surface_form": "Extension of graph‑network models to additional state‑dependent material properties"
+    },
+    {
+      "id": "meth_00005",
+      "type": "method",
+      "surface_form": "Graph Convolutional Network"
+    },
+    {
+      "id": "meth_00026",
+      "type": "method",
+      "surface_form": "Interaction Networks"
+    },
+    {
+      "id": "meth_00030",
+      "type": "method",
+      "surface_form": "Message Passing Neural Network"
+    },
+    {
+      "id": "meth_00045",
+      "type": "method",
+      "surface_form": "Neural fingerprint"
+    },
+    {
+      "id": "meth_00046",
+      "type": "method",
+      "surface_form": "Gated Graph Neural Networks"
+    },
+    {
+      "id": "meth_00052",
+      "type": "method",
+      "surface_form": "Edge-conditioned neural network"
+    },
+    {
+      "id": "meth_00057",
+      "type": "method",
+      "surface_form": "Materials Graph Network"
+    },
+    {
+      "id": "meth_00208",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network"
+    },
+    {
+      "id": "meth_00219",
+      "type": "method",
+      "surface_form": "CNN for NLP"
+    },
+    {
+      "id": "meth_00220",
+      "type": "method",
+      "surface_form": "Neural Message Passing"
+    },
+    {
+      "id": "meth_00228",
+      "type": "method",
+      "surface_form": "Graph Networks"
+    },
+    {
+      "id": "meth_00260",
+      "type": "method",
+      "surface_form": "Keras"
+    },
+    {
+      "id": "meth_00403",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network potential"
+    },
+    {
+      "id": "prob_00018",
+      "type": "problem",
+      "surface_form": "Learning from graph topology without handcrafted descriptors"
+    },
+    {
+      "id": "task_00197",
+      "type": "task",
+      "surface_form": "Transfer‑learning for small‑data properties"
+    },
+    {
+      "id": "tech_00034",
+      "type": "technique",
+      "surface_form": "One-hot encoding"
+    },
+    {
+      "id": "tech_00052",
+      "type": "technique",
+      "surface_form": "Graph convolution"
+    },
+    {
+      "id": "tech_00303",
+      "type": "technique",
+      "surface_form": "Transfer learning of elemental embeddings"
+    },
+    {
+      "id": "tech_00311",
+      "type": "technique",
+      "surface_form": "Spatiotemporal learning with ConvLSTM"
+    },
+    {
+      "id": "tech_00315",
+      "type": "technique",
+      "surface_form": "Orientation‑angle encoding"
+    },
+    {
+      "id": "tech_00318",
+      "type": "technique",
+      "surface_form": "LSTM sequential modeling"
+    },
+    {
+      "id": "tech_00319",
+      "type": "technique",
+      "surface_form": "Binary cross‑entropy loss with sigmoid output"
+    },
+    {
+      "id": "tech_00364",
+      "type": "technique",
+      "surface_form": "Deep transfer learning"
+    },
+    {
+      "id": "tech_00488",
+      "type": "technique",
+      "surface_form": "Categorical feature encoding"
+    },
+    {
+      "id": "tech_00503",
+      "type": "technique",
+      "surface_form": "Element embedding"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 3,
+    "cited_work": 7,
+    "claim": 11,
+    "component": 4,
+    "future_topic": 7,
+    "method": 13,
+    "problem": 1,
+    "task": 1,
+    "technique": 10
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00301",
+      "relation_type": "presents",
+      "members": [
+        "arti_00001",
+        "meth_00030"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4166,
+        "article_year": 2017
+      }
+    },
+    {
+      "id": "h_00325",
+      "relation_type": "presents",
+      "members": [
+        "arti_00021",
+        "meth_00057"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      }
+    },
+    {
+      "id": "h_00736",
+      "relation_type": "claims",
+      "members": [
+        "arti_00001",
+        "clai_00130"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4166,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "observational_study",
+        "evidence_strength": "strong",
+        "confidence": 0.98
+      }
+    },
+    {
+      "id": "h_00739",
+      "relation_type": "claims",
+      "members": [
+        "arti_00001",
+        "clai_00133"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4166,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_00743",
+      "relation_type": "claims",
+      "members": [
+        "arti_00001",
+        "clai_00137"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4166,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "taxonomic",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00744",
+      "relation_type": "claims",
+      "members": [
+        "arti_00001",
+        "clai_00138"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4166,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "observational_study",
+        "evidence_strength": "strong",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_00745",
+      "relation_type": "claims",
+      "members": [
+        "arti_00001",
+        "clai_00139"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4166,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "observational_study",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_00746",
+      "relation_type": "claims",
+      "members": [
+        "arti_00001",
+        "clai_00140"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4166,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "observational_study",
+        "evidence_strength": "strong",
+        "confidence": 0.95,
+        "verdict": "contested"
+      }
+    },
+    {
+      "id": "h_01098",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00492"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "graph",
+  "representative_ids": [
+    "meth_00046",
+    "meth_00005"
+  ]
+}

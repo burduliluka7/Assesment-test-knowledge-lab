@@ -1,0 +1,67 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "clai_00136",
+      "type": "claim",
+      "surface_form": "Using a pair‑message function that depends on both source and destination node states improves message‑passing efficiency compared with the standard matrix‑multiplication message function."
+    },
+    {
+      "id": "comp_00014",
+      "type": "component",
+      "surface_form": "Edge Network message function"
+    },
+    {
+      "id": "comp_00016",
+      "type": "component",
+      "surface_form": "Master (global) node"
+    },
+    {
+      "id": "comp_00029",
+      "type": "component",
+      "surface_form": "Directed message channels"
+    },
+    {
+      "id": "comp_00265",
+      "type": "component",
+      "surface_form": "Graph convolution layer"
+    },
+    {
+      "id": "comp_00266",
+      "type": "component",
+      "surface_form": "Fully‑connected hidden layers"
+    },
+    {
+      "id": "comp_00293",
+      "type": "component",
+      "surface_form": "ConvLSTM network architecture"
+    },
+    {
+      "id": "comp_00474",
+      "type": "component",
+      "surface_form": "Skip connection Add layers"
+    },
+    {
+      "id": "tech_00085",
+      "type": "technique",
+      "surface_form": "Virtual edges for long‑range communication"
+    },
+    {
+      "id": "tech_00088",
+      "type": "technique",
+      "surface_form": "Directed message channels"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 7,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "message",
+  "representative_ids": [
+    "comp_00029",
+    "comp_00293"
+  ]
+}

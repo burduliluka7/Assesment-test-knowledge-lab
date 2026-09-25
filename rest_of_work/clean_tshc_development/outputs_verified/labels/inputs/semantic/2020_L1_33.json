@@ -1,0 +1,84 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00365",
+      "type": "component",
+      "surface_form": "Heuristic + machine‑learning formation‑energy predictor"
+    },
+    {
+      "id": "data_00089",
+      "type": "dataset",
+      "surface_form": "Materials Project formation energy"
+    },
+    {
+      "id": "prob_00421",
+      "type": "problem",
+      "surface_form": "Activation energy prediction accuracy"
+    },
+    {
+      "id": "task_00112",
+      "type": "task",
+      "surface_form": "Formation energy regression"
+    },
+    {
+      "id": "task_00196",
+      "type": "task",
+      "surface_form": "Unified free‑energy prediction"
+    },
+    {
+      "id": "task_00208",
+      "type": "task",
+      "surface_form": "Reaction energy calculation and screening"
+    },
+    {
+      "id": "task_00341",
+      "type": "task",
+      "surface_form": "Exfoliation energy regression"
+    },
+    {
+      "id": "task_00469",
+      "type": "task",
+      "surface_form": "Single-point energy calculation"
+    },
+    {
+      "id": "task_00476",
+      "type": "task",
+      "surface_form": "oxidation energy calculation"
+    },
+    {
+      "id": "task_00479",
+      "type": "task",
+      "surface_form": "Static energy calculation"
+    },
+    {
+      "id": "task_00484",
+      "type": "task",
+      "surface_form": "Static energy calculations"
+    },
+    {
+      "id": "task_00533",
+      "type": "task",
+      "surface_form": "Activation energy estimation"
+    },
+    {
+      "id": "tech_00382",
+      "type": "technique",
+      "surface_form": "Machine‑learning regression on formation energies"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "dataset": 1,
+    "problem": 1,
+    "task": 9,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "energy",
+  "representative_ids": [
+    "task_00112",
+    "task_00533"
+  ]
+}

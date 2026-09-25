@@ -1,0 +1,30 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00184",
+      "type": "claim",
+      "surface_form": "NequIP requires up to three orders of magnitude fewer training configurations than existing neural interatomic potentials to reach comparable accuracy."
+    },
+    {
+      "id": "clai_00185",
+      "type": "claim",
+      "surface_form": "When trained on only 133 structures (~1 k frames), NequIP outperforms DeepMD trained on 133,500 structures for liquid water and ice simulations."
+    },
+    {
+      "id": "clai_00190",
+      "type": "claim",
+      "surface_form": "NequIP reproduces structural and kinetic properties from ab‑initio molecular dynamics simulations with high fidelity."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "nequip",
+  "representative_ids": [
+    "clai_00184",
+    "clai_00185"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00052",
+      "type": "claim",
+      "surface_form": "A curated dataset of 476 binary ionic compound melting temperatures spanning 0-4,000°C was compiled for machine learning model development."
+    },
+    {
+      "id": "clai_00053",
+      "type": "claim",
+      "surface_form": "The best one-step gradient-boosted tree regression model achieves 165±4 K MAE and 0.89 R² on the test set for melting temperature prediction."
+    },
+    {
+      "id": "clai_00057",
+      "type": "claim",
+      "surface_form": "Models trained without elastic moduli features yield errors greater than 400 K, demonstrating that elastic features are necessary for accurate melting temperature predictions."
+    },
+    {
+      "id": "clai_00059",
+      "type": "claim",
+      "surface_form": "Tree ensemble methods (gradient-boosted trees and random forest regression) substantially outperform linear models, which achieve MAE >240 K and RMSE >340 K, at least 100 K worse than non-linear approaches."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "melting",
+  "representative_ids": [
+    "clai_00053",
+    "clai_00057"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "comp_00007",
+      "type": "component",
+      "surface_form": "Hyperparameters"
+    },
+    {
+      "id": "comp_00217",
+      "type": "component",
+      "surface_form": "Repulsive pair potential"
+    },
+    {
+      "id": "comp_00218",
+      "type": "component",
+      "surface_form": "Many‑body kernel term"
+    },
+    {
+      "id": "comp_00219",
+      "type": "component",
+      "surface_form": "Sparse set of representative atoms"
+    },
+    {
+      "id": "comp_00221",
+      "type": "component",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "comp_00222",
+      "type": "component",
+      "surface_form": "Kernel normalization and exponentiation"
+    },
+    {
+      "id": "comp_00223",
+      "type": "component",
+      "surface_form": "Representative environment selection"
+    },
+    {
+      "id": "comp_00224",
+      "type": "component",
+      "surface_form": "Regularized least‑squares solution for expansion coefficients"
+    },
+    {
+      "id": "comp_00798",
+      "type": "component",
+      "surface_form": "Two-body descriptor"
+    },
+    {
+      "id": "comp_00799",
+      "type": "component",
+      "surface_form": "Three-body descriptor"
+    },
+    {
+      "id": "comp_00800",
+      "type": "component",
+      "surface_form": "Many-body descriptor"
+    },
+    {
+      "id": "comp_00801",
+      "type": "component",
+      "surface_form": "Hierarchical descriptor set"
+    },
+    {
+      "id": "comp_00802",
+      "type": "component",
+      "surface_form": "Squared exponential kernel"
+    },
+    {
+      "id": "comp_00806",
+      "type": "component",
+      "surface_form": "Cutoff function"
+    },
+    {
+      "id": "comp_00807",
+      "type": "component",
+      "surface_form": "Power spectrum kernel"
+    },
+    {
+      "id": "comp_00809",
+      "type": "component",
+      "surface_form": "3b descriptor"
+    },
+    {
+      "id": "comp_00810",
+      "type": "component",
+      "surface_form": "MB descriptor"
+    },
+    {
+      "id": "comp_00813",
+      "type": "component",
+      "surface_form": "Two-body plus three-body descriptors"
+    },
+    {
+      "id": "comp_00815",
+      "type": "component",
+      "surface_form": "angle descriptor"
+    },
+    {
+      "id": "comp_00816",
+      "type": "component",
+      "surface_form": "SOAP descriptor with sparse points"
+    },
+    {
+      "id": "comp_00817",
+      "type": "component",
+      "surface_form": "extended xyz format database"
+    },
+    {
+      "id": "comp_00818",
+      "type": "component",
+      "surface_form": "6×6 elastic constants matrix"
+    },
+    {
+      "id": "comp_00819",
+      "type": "component",
+      "surface_form": "compliance matrix"
+    },
+    {
+      "id": "comp_00822",
+      "type": "component",
+      "surface_form": "SOAP sparse points"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 24
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "descriptor",
+  "representative_ids": [
+    "comp_00800",
+    "comp_00799"
+  ]
+}

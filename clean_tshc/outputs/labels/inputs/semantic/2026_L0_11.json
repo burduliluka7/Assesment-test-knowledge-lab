@@ -1,0 +1,271 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "metr_00001",
+      "type": "metric",
+      "surface_form": "MAE (formation energy per atom)"
+    },
+    {
+      "id": "metr_00002",
+      "type": "metric",
+      "surface_form": "MAE"
+    },
+    {
+      "id": "metr_00003",
+      "type": "metric",
+      "surface_form": "log MSD Li MAE"
+    },
+    {
+      "id": "metr_00005",
+      "type": "metric",
+      "surface_form": "force MAE"
+    },
+    {
+      "id": "metr_00007",
+      "type": "metric",
+      "surface_form": "Energy MAE"
+    },
+    {
+      "id": "metr_00008",
+      "type": "metric",
+      "surface_form": "domain-specific score"
+    },
+    {
+      "id": "metr_00009",
+      "type": "metric",
+      "surface_form": "MAE ∆E"
+    },
+    {
+      "id": "metr_00010",
+      "type": "metric",
+      "surface_form": "MAE E"
+    },
+    {
+      "id": "metr_00011",
+      "type": "metric",
+      "surface_form": "energy MAE (meV/atom)"
+    },
+    {
+      "id": "metr_00012",
+      "type": "metric",
+      "surface_form": "E/atom MAE"
+    },
+    {
+      "id": "metr_00013",
+      "type": "metric",
+      "surface_form": "error ratio"
+    },
+    {
+      "id": "metr_00014",
+      "type": "metric",
+      "surface_form": "MAE_energy_meV"
+    },
+    {
+      "id": "metr_00015",
+      "type": "metric",
+      "surface_form": "E RMSE"
+    },
+    {
+      "id": "metr_00017",
+      "type": "metric",
+      "surface_form": "energy MAE (meV)"
+    },
+    {
+      "id": "metr_00018",
+      "type": "metric",
+      "surface_form": "RMSE Energy"
+    },
+    {
+      "id": "metr_00022",
+      "type": "metric",
+      "surface_form": "relative error (MAE/MAD)"
+    },
+    {
+      "id": "metr_00024",
+      "type": "metric",
+      "surface_form": "performance"
+    },
+    {
+      "id": "metr_00029",
+      "type": "metric",
+      "surface_form": "MAE (meV)"
+    },
+    {
+      "id": "metr_00030",
+      "type": "metric",
+      "surface_form": "speedup (×)"
+    },
+    {
+      "id": "metr_00032",
+      "type": "metric",
+      "surface_form": "ground state energy (Ha)"
+    },
+    {
+      "id": "metr_00033",
+      "type": "metric",
+      "surface_form": "LSDA (Ha)"
+    },
+    {
+      "id": "metr_00035",
+      "type": "metric",
+      "surface_form": "Wall‑clock time (s)"
+    },
+    {
+      "id": "metr_00037",
+      "type": "metric",
+      "surface_form": "MAE_Kbulk"
+    },
+    {
+      "id": "metr_00038",
+      "type": "metric",
+      "surface_form": "κSRME"
+    },
+    {
+      "id": "metr_00040",
+      "type": "metric",
+      "surface_form": "parallel efficiency"
+    },
+    {
+      "id": "metr_00042",
+      "type": "metric",
+      "surface_form": "MAE (energy)"
+    },
+    {
+      "id": "metr_00044",
+      "type": "metric",
+      "surface_form": "activation_energy"
+    },
+    {
+      "id": "metr_00046",
+      "type": "metric",
+      "surface_form": "classification error"
+    },
+    {
+      "id": "metr_00047",
+      "type": "metric",
+      "surface_form": "force RMSE"
+    },
+    {
+      "id": "metr_00049",
+      "type": "metric",
+      "surface_form": "stable percentage"
+    },
+    {
+      "id": "metr_00050",
+      "type": "metric",
+      "surface_form": "accuracy"
+    },
+    {
+      "id": "metr_00055",
+      "type": "metric",
+      "surface_form": "forces MAE"
+    },
+    {
+      "id": "metr_00056",
+      "type": "metric",
+      "surface_form": "energies MAE"
+    },
+    {
+      "id": "metr_00058",
+      "type": "metric",
+      "surface_form": "AFbT"
+    },
+    {
+      "id": "metr_00064",
+      "type": "metric",
+      "surface_form": "MAE Energy/Atom"
+    },
+    {
+      "id": "metr_00067",
+      "type": "metric",
+      "surface_form": "Gvrh MAE"
+    },
+    {
+      "id": "metr_00069",
+      "type": "metric",
+      "surface_form": "Lattice Energy MAE"
+    },
+    {
+      "id": "metr_00070",
+      "type": "metric",
+      "surface_form": "error reduction"
+    },
+    {
+      "id": "metr_00073",
+      "type": "metric",
+      "surface_form": "Strain Energy MAE"
+    },
+    {
+      "id": "metr_00074",
+      "type": "metric",
+      "surface_form": "energy RMSE (10^-3 eV/atom)"
+    },
+    {
+      "id": "metr_00075",
+      "type": "metric",
+      "surface_form": "energy MAE (eV/atom)"
+    },
+    {
+      "id": "metr_00076",
+      "type": "metric",
+      "surface_form": "MAE (cm⁻¹)"
+    },
+    {
+      "id": "metr_00077",
+      "type": "metric",
+      "surface_form": "speedup factor"
+    },
+    {
+      "id": "metr_00078",
+      "type": "metric",
+      "surface_form": "runtime speedup"
+    },
+    {
+      "id": "metr_00079",
+      "type": "metric",
+      "surface_form": "ME"
+    },
+    {
+      "id": "metr_00080",
+      "type": "metric",
+      "surface_form": "MAE (eV/atom)"
+    },
+    {
+      "id": "metr_00082",
+      "type": "metric",
+      "surface_form": "energetic and structural properties"
+    },
+    {
+      "id": "metr_00083",
+      "type": "metric",
+      "surface_form": "surface energy"
+    },
+    {
+      "id": "metr_00085",
+      "type": "metric",
+      "surface_form": "energy_RMS_eV"
+    },
+    {
+      "id": "metr_00090",
+      "type": "metric",
+      "surface_form": "interaction energy"
+    },
+    {
+      "id": "tech_00513",
+      "type": "technique",
+      "surface_form": "δ metric calculation"
+    }
+  ],
+  "generation_type_counts": {
+    "metric": 50,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mae",
+  "representative_ids": [
+    "metr_00042",
+    "metr_00007"
+  ]
+}

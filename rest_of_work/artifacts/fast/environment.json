@@ -1,0 +1,87 @@
+{
+  "python": "3.11.2",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "sentence-transformers": "5.1.0",
+    "transformers": "4.57.6",
+    "torch": "2.4.1",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.10.7"
+  },
+  "config": {
+    "data_dir": "data/data",
+    "output": "artifacts/fast",
+    "snapshots": [
+      2020,
+      2026
+    ],
+    "budgets": [
+      12,
+      40,
+      120
+    ],
+    "seed": 42,
+    "spectral_dim": 8,
+    "neighbors": 12,
+    "weights": {
+      "hyper": 0.3,
+      "spectral": 0.2,
+      "semantic": 0.35,
+      "temporal": 0.15
+    },
+    "relation_weights": {},
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "evaluation_model": "BAAI/bge-small-en-v1.5",
+    "evaluation_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "nli_model": "cross-encoder/nli-deberta-v3-small",
+    "nli_revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+    "include_type": true,
+    "variants": [
+      "temporal"
+    ],
+    "perturbation_seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "null_permutations": 10,
+    "retrieval_budgets": [
+      50,
+      100,
+      250,
+      500
+    ],
+    "retrieval_beam": 3,
+    "match_threshold": 0.2,
+    "event_threshold": 0.1,
+    "nli_threshold": 0.5,
+    "faithfulness_sample_per_level": 12,
+    "sensitivity": false
+  },
+  "config_hash": "7406eba6690b999637e7b197e5fe6610fe9439264dfbeada071b07d90dedac46",
+  "data_hash": "36ae00351b01f5a39e09e8c15c6703004ee97a55ed437c261f227dd849ff4cc3",
+  "seeds": {
+    "construction": 42,
+    "perturbation": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ]
+  },
+  "evidence_scope": "retrospective corpus publication years; frozen model priors, not historically trained models",
+  "source_hash": "b4e81b566822c8aeb32b4bddbf364ed8339c7e8d2019ffcb36dcab19aebb2772",
+  "input_hashes": {
+    "tkh_collection10.json": "36ae00351b01f5a39e09e8c15c6703004ee97a55ed437c261f227dd849ff4cc3",
+    "questions.csv": "83f5bdd15b5a288a5167fe872ed1743a309db54f09407611395b8b0c2596ac52",
+    "ground_truth.json": "02609fa7af0cc4b25b1bf26aec7b2d35fadcdbc7e68c8340e82941d09224a21e",
+    "collection10_articles.csv": "e9119e32590669fb27bc317ad9d8cf2a4a87eeabfa9c645d30aa843bae7d8e6f"
+  }
+}

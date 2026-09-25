@@ -1,0 +1,437 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00047",
+      "type": "article",
+      "surface_form": "Challenges and opportunities for machine learning in multiscale computational modeling"
+    },
+    {
+      "id": "auth_00265",
+      "type": "author",
+      "surface_form": "Phong C.H. Nguyen"
+    },
+    {
+      "id": "auth_00267",
+      "type": "author",
+      "surface_form": "H.S. Udaykumar"
+    },
+    {
+      "id": "auth_00268",
+      "type": "author",
+      "surface_form": "Stephen Baek"
+    },
+    {
+      "id": "clai_00401",
+      "type": "claim",
+      "surface_form": "ML-based simulation can achieve comparable fidelity to direct numerical simulation while being considerably faster in computation time, with convolutional neural networks producing high-fidelity estimation of materials microstructure response with multiple orders of magnitude faster computation."
+    },
+    {
+      "id": "clai_00402",
+      "type": "claim",
+      "surface_form": "Hierarchical multiscale modeling approaches require large amounts of memory and storage space to store precomputed quantities of interest."
+    },
+    {
+      "id": "clai_00404",
+      "type": "claim",
+      "surface_form": "Trained ML models are typically only effective for interpolating data points and may not be reliable when extrapolating beyond the known data range."
+    },
+    {
+      "id": "clai_00406",
+      "type": "claim",
+      "surface_form": "Neural operators can make predictions that are not affected by discretization settings while maintaining prediction accuracy."
+    },
+    {
+      "id": "clai_00407",
+      "type": "claim",
+      "surface_form": "Physics-informed machine learning and transfer learning can reduce the need for large datasets while maintaining prediction accuracy and performance of ML models."
+    },
+    {
+      "id": "clai_00408",
+      "type": "claim",
+      "surface_form": "Physics-naïve ML architectures often fail to capture underlying physical laws despite having relatively high prediction performance."
+    },
+    {
+      "id": "clai_00409",
+      "type": "claim",
+      "surface_form": "Meta-learning allows ML algorithms to quickly learn and adapt to new tasks by leveraging experience from solving similar tasks with relatively small datasets."
+    },
+    {
+      "id": "clai_00410",
+      "type": "claim",
+      "surface_form": "ML can accelerate the solution of inverse problems by providing direct design solutions without requiring traditional iterative optimization processes."
+    },
+    {
+      "id": "clai_00411",
+      "type": "claim",
+      "surface_form": "Koopman operator theory allows highly nonlinear dynamical systems to be represented in terms of an infinite-dimensional linear operator."
+    },
+    {
+      "id": "comp_00570",
+      "type": "component",
+      "surface_form": "Representation learning module"
+    },
+    {
+      "id": "comp_00571",
+      "type": "component",
+      "surface_form": "Neural operators"
+    },
+    {
+      "id": "futu_00099",
+      "type": "future_topic",
+      "surface_form": "Addressing data and discretization dependence in ML for multiscale modeling"
+    },
+    {
+      "id": "futu_00100",
+      "type": "future_topic",
+      "surface_form": "Improving interpretability of ML models in multiscale computational modeling"
+    },
+    {
+      "id": "futu_00102",
+      "type": "future_topic",
+      "surface_form": "Representation learning for precomputed QoIs in hierarchical modeling"
+    },
+    {
+      "id": "futu_00103",
+      "type": "future_topic",
+      "surface_form": "Deep learning models replacing traditional numerical solvers for on-the-fly computation"
+    },
+    {
+      "id": "meth_00001",
+      "type": "method",
+      "surface_form": "Generative Adversarial Networks"
+    },
+    {
+      "id": "meth_00017",
+      "type": "method",
+      "surface_form": "transfer learning"
+    },
+    {
+      "id": "meth_00021",
+      "type": "method",
+      "surface_form": "Recurrent Neural Networks"
+    },
+    {
+      "id": "meth_00351",
+      "type": "method",
+      "surface_form": "ml_multiscale_modeling_perspective"
+    },
+    {
+      "id": "meth_00352",
+      "type": "method",
+      "surface_form": "Hierarchical multiscale modeling"
+    },
+    {
+      "id": "meth_00353",
+      "type": "method",
+      "surface_form": "Concurrent multiscale modeling"
+    },
+    {
+      "id": "prob_00001",
+      "type": "problem",
+      "surface_form": "model interpretability"
+    },
+    {
+      "id": "prob_00008",
+      "type": "problem",
+      "surface_form": "Data scarcity"
+    },
+    {
+      "id": "prob_00367",
+      "type": "problem",
+      "surface_form": "High dimensionality of solution space"
+    },
+    {
+      "id": "prob_00368",
+      "type": "problem",
+      "surface_form": "Memory and storage requirements"
+    },
+    {
+      "id": "prob_00369",
+      "type": "problem",
+      "surface_form": "Computational costs"
+    },
+    {
+      "id": "task_00008",
+      "type": "task",
+      "surface_form": "Computational mechanics"
+    },
+    {
+      "id": "task_00121",
+      "type": "task",
+      "surface_form": "multiscale modeling"
+    },
+    {
+      "id": "task_00461",
+      "type": "task",
+      "surface_form": "Multiscale computational modeling"
+    },
+    {
+      "id": "task_00462",
+      "type": "task",
+      "surface_form": "Fluid mechanics modeling"
+    },
+    {
+      "id": "task_00464",
+      "type": "task",
+      "surface_form": "Design optimization"
+    },
+    {
+      "id": "task_00466",
+      "type": "task",
+      "surface_form": "computational modeling"
+    },
+    {
+      "id": "task_00467",
+      "type": "task",
+      "surface_form": "fluid mechanics"
+    },
+    {
+      "id": "tech_00035",
+      "type": "technique",
+      "surface_form": "Transfer learning"
+    },
+    {
+      "id": "tech_00625",
+      "type": "technique",
+      "surface_form": "Representation learning"
+    },
+    {
+      "id": "tech_00626",
+      "type": "technique",
+      "surface_form": "Meta learning"
+    },
+    {
+      "id": "tech_00627",
+      "type": "technique",
+      "surface_form": "Neural network visualization"
+    },
+    {
+      "id": "tech_00628",
+      "type": "technique",
+      "surface_form": "Continuous convolution"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "author": 3,
+    "claim": 9,
+    "component": 2,
+    "future_topic": 4,
+    "method": 6,
+    "problem": 5,
+    "task": 7,
+    "technique": 5
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00318",
+      "relation_type": "presents",
+      "members": [
+        "arti_00047",
+        "meth_00351"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      }
+    },
+    {
+      "id": "h_01007",
+      "relation_type": "claims",
+      "members": [
+        "arti_00047",
+        "meth_00351",
+        "clai_00401"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01008",
+      "relation_type": "claims",
+      "members": [
+        "arti_00047",
+        "meth_00351",
+        "clai_00402"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01010",
+      "relation_type": "claims",
+      "members": [
+        "arti_00047",
+        "meth_00351",
+        "clai_00404"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01012",
+      "relation_type": "claims",
+      "members": [
+        "arti_00047",
+        "meth_00351",
+        "clai_00406"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01013",
+      "relation_type": "claims",
+      "members": [
+        "arti_00047",
+        "meth_00351",
+        "clai_00407"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01014",
+      "relation_type": "claims",
+      "members": [
+        "arti_00047",
+        "meth_00351",
+        "clai_00408"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01015",
+      "relation_type": "claims",
+      "members": [
+        "arti_00047",
+        "meth_00351",
+        "clai_00409"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01016",
+      "relation_type": "claims",
+      "members": [
+        "arti_00047",
+        "meth_00351",
+        "clai_00410"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01017",
+      "relation_type": "claims",
+      "members": [
+        "arti_00047",
+        "meth_00351",
+        "clai_00411"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "theoretical",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "modeling",
+  "representative_ids": [
+    "task_00461",
+    "task_00121"
+  ]
+}

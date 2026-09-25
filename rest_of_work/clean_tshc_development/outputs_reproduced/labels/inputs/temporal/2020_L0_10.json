@@ -1,0 +1,55 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "metr_00005",
+      "type": "metric",
+      "surface_form": "force MAE"
+    },
+    {
+      "id": "metr_00015",
+      "type": "metric",
+      "surface_form": "E RMSE"
+    },
+    {
+      "id": "metr_00017",
+      "type": "metric",
+      "surface_form": "energy MAE (meV)"
+    },
+    {
+      "id": "metr_00058",
+      "type": "metric",
+      "surface_form": "AFbT"
+    },
+    {
+      "id": "metr_00061",
+      "type": "metric",
+      "surface_form": "MSE loss"
+    },
+    {
+      "id": "metr_00067",
+      "type": "metric",
+      "surface_form": "Gvrh MAE"
+    },
+    {
+      "id": "metr_00069",
+      "type": "metric",
+      "surface_form": "Lattice Energy MAE"
+    },
+    {
+      "id": "metr_00074",
+      "type": "metric",
+      "surface_form": "energy RMSE (10^-3 eV/atom)"
+    }
+  ],
+  "generation_type_counts": {
+    "metric": 8
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mae",
+  "representative_ids": [
+    "metr_00017",
+    "metr_00005"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00251",
+      "type": "claim",
+      "surface_form": "FastCHGNet trains in 1.5 hours using 32 GPUs compared to 8.3 days on a single A100 GPU for the original CHGNet model."
+    },
+    {
+      "id": "clai_00258",
+      "type": "claim",
+      "surface_form": "CHGNet achieves test mean absolute errors of 29 meV/atom for energy, 70 meV/Angstrom for force, and 0.308 GPa for stress."
+    },
+    {
+      "id": "clai_00260",
+      "type": "claim",
+      "surface_form": "CHGNet uniquely includes electronic effects of valences by explicitly embedding magnetic moments on the vector representation of each atom, enabling charge-informed atomistic simulations."
+    },
+    {
+      "id": "clai_00261",
+      "type": "claim",
+      "surface_form": "CHGNet achieved the lowest formation energy MAE at 81 meV/atom, while all other models had MAEs of 129 meV/atom or higher."
+    },
+    {
+      "id": "clai_00273",
+      "type": "claim",
+      "surface_form": "M3GNet is an extension of MEGNet model to include 3-body interactions, explicit atomic coordinates, and 3×3 crystal lattice matrix."
+    },
+    {
+      "id": "clai_00299",
+      "type": "claim",
+      "surface_form": "Including magnetic moments in CHGNet training led to error reductions of 1-10% for energy, force, and stress compared to not including magnetic moments."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 6
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "chgnet",
+  "representative_ids": [
+    "clai_00258",
+    "clai_00299"
+  ]
+}

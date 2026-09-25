@@ -1,0 +1,132 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "clai_00001",
+      "type": "claim",
+      "surface_form": "The modified convolution function reduces the mean absolute error for formation‑energy prediction from 0.112 eV/atom to 0.039 eV/atom, achieving DFT‑level accuracy comparable to the experimental DFT‑experiment error of 0.081–0.136 eV/atom."
+    },
+    {
+      "id": "clai_00081",
+      "type": "claim",
+      "surface_form": "Training SchNet with forces on only 1,000 examples yields better accuracy than training on 50,000 examples using energies alone, demonstrating that force information improves data efficiency."
+    },
+    {
+      "id": "clai_00082",
+      "type": "claim",
+      "surface_form": "On the ISO17 benchmark, SchNet reaches chemical‑accuracy (≈0.5 kcal/mol MAE) for energy predictions on molecules seen during training and further improves predictions on unseen isomers when forces are included in training."
+    },
+    {
+      "id": "clai_00083",
+      "type": "claim",
+      "surface_form": "Including force information in the training loss causally improves SchNet’s generalization to previously unseen chemical structures in ISO17."
+    },
+    {
+      "id": "clai_00084",
+      "type": "claim",
+      "surface_form": "GDML cannot be trained on 50,000 MD17 examples due to its quadratic scaling with the number of atoms and samples, whereas SchNet scales to that dataset size."
+    },
+    {
+      "id": "clai_00088",
+      "type": "claim",
+      "surface_form": "On the QM9 benchmark, SchNet attains a mean absolute error of 0.31 kcal/mol for total‑energy prediction with 110 k training examples, outperforming DTNN (0.84) and enn‑s2s (0.45)."
+    },
+    {
+      "id": "clai_00477",
+      "type": "claim",
+      "surface_form": "For LLZO, the computed activation energies range from 0.2 to 0.22 eV, in very good agreement with experimental values of 0.20-0.21 eV for cubic LLZO."
+    },
+    {
+      "id": "clai_00480",
+      "type": "claim",
+      "surface_form": "For NASICON, training starting from FPMD configurations with 80 atoms fails to converge even after three training loops with activation energies spanning 0.2-0.4 eV."
+    },
+    {
+      "id": "clai_00486",
+      "type": "claim",
+      "surface_form": "For LLZO, results are quite insensitive to the choice of cell volume (NPT equilibrated vs experimental cif-file values) for producing the initial training set."
+    },
+    {
+      "id": "clai_00489",
+      "type": "claim",
+      "surface_form": "Simple MEGNet models that use only atomic number and spatial distance as input achieve chemical accuracy, perform comparably to full‑feature models, and outperform prior state‑of‑the‑art models on 8 of the 13 QM9 properties."
+    },
+    {
+      "id": "clai_00490",
+      "type": "claim",
+      "surface_form": "MEGNet models trained on approximately 60,000 crystals outperform prior models (SchNet and CGCNN) for formation energy, band gap, bulk modulus, and shear modulus, achieving errors comparable to or better than density‑functional‑theory uncertainties."
+    },
+    {
+      "id": "clai_00491",
+      "type": "claim",
+      "surface_form": "A unified free‑energy MEGNet model that incorporates temperature, pressure, and entropy as global state inputs predicts U₀, U, H, and G with a combined mean absolute error of 0.010 eV, comparable to separate single‑property models."
+    },
+    {
+      "id": "clai_00493",
+      "type": "claim",
+      "surface_form": "Ensembling two independently trained three‑block MEGNet models lowers the formation‑energy mean absolute error from 0.028 eV/atom to 0.024 eV/atom."
+    },
+    {
+      "id": "clai_00496",
+      "type": "claim",
+      "surface_form": "Increasing the crystal graph radius cut‑off from 4 Å to 6 Å slightly worsens the formation‑energy mean absolute error (to 0.03 eV/atom), confirming the 4 Å cut‑off as near‑optimal."
+    },
+    {
+      "id": "clai_00569",
+      "type": "claim",
+      "surface_form": "DeePMD reproduces AIMD energies, forces, and virial tensors for water and ice with root‑mean‑square errors of approximately 1 meV per molecule for energy, 40 meV Å⁻¹ for forces, and 1–2 meV for the virial."
+    },
+    {
+      "id": "clai_00570",
+      "type": "claim",
+      "surface_form": "DeePMD accurately reproduces radial distribution functions and three‑body angular distribution functions of liquid water and ice, matching AIMD results."
+    },
+    {
+      "id": "clai_00571",
+      "type": "claim",
+      "surface_form": "For a diverse set of organic molecules, DeePMD achieves lower mean absolute errors in both energy and forces than the GDML benchmark."
+    },
+    {
+      "id": "clai_00572",
+      "type": "claim",
+      "surface_form": "The computational cost of DeePMD scales linearly with the number of atoms and is several orders of magnitude lower than equivalent AIMD simulations, comparable to empirical force fields."
+    },
+    {
+      "id": "clai_00577",
+      "type": "claim",
+      "surface_form": "In principle, DeePMD could be trained on chemically accurate data from high‑level quantum chemistry or quantum Monte Carlo, extending its applicability beyond density‑functional theory."
+    },
+    {
+      "id": "clai_00659",
+      "type": "claim",
+      "surface_form": "A combined heuristic‑plus‑machine‑learning model trained on OQMD ternary formation energies predicts formation energies with a mean absolute error of ~0.11 eV/atom, roughly half the typical DFT‑experiment error."
+    },
+    {
+      "id": "comp_00281",
+      "type": "component",
+      "surface_form": "MEGNet block"
+    },
+    {
+      "id": "comp_00471",
+      "type": "component",
+      "surface_form": "MEGNET blocks"
+    },
+    {
+      "id": "futu_00134",
+      "type": "future_topic",
+      "surface_form": "Application of MEGNet models to a broader range of crystal properties beyond formation energy, band gap, and elastic moduli"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 20,
+    "component": 2,
+    "future_topic": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "megnet",
+  "representative_ids": [
+    "clai_00493",
+    "clai_00490"
+  ]
+}

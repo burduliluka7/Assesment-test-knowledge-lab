@@ -1,0 +1,225 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "clai_00521",
+      "type": "claim",
+      "surface_form": "The derived ACE formulas enable efficient evaluation of forces and magnetic torques."
+    },
+    {
+      "id": "comp_00291",
+      "type": "component",
+      "surface_form": "Force and Torque Gradient Formulas"
+    },
+    {
+      "id": "comp_00365",
+      "type": "component",
+      "surface_form": "Heuristic + machine‑learning formation‑energy predictor"
+    },
+    {
+      "id": "comp_00820",
+      "type": "component",
+      "surface_form": "surface slab models"
+    },
+    {
+      "id": "comp_00825",
+      "type": "component",
+      "surface_form": "Surface cleavage module"
+    },
+    {
+      "id": "data_00089",
+      "type": "dataset",
+      "surface_form": "Materials Project formation energy"
+    },
+    {
+      "id": "prob_00012",
+      "type": "problem",
+      "surface_form": "Energy‑conserving force field learning"
+    },
+    {
+      "id": "prob_00131",
+      "type": "problem",
+      "surface_form": "Efficient force and virial prediction"
+    },
+    {
+      "id": "prob_00132",
+      "type": "problem",
+      "surface_form": "Efficient training of interatomic potentials with forces and virial regularization"
+    },
+    {
+      "id": "prob_00198",
+      "type": "problem",
+      "surface_form": "Force‑field quality assessment"
+    },
+    {
+      "id": "prob_00219",
+      "type": "problem",
+      "surface_form": "Construction of complex surface slabs and nanoparticles"
+    },
+    {
+      "id": "prob_00383",
+      "type": "problem",
+      "surface_form": "Force accuracy in geometry optimization"
+    },
+    {
+      "id": "prob_00417",
+      "type": "problem",
+      "surface_form": "accurate force field generation"
+    },
+    {
+      "id": "prob_00421",
+      "type": "problem",
+      "surface_form": "Activation energy prediction accuracy"
+    },
+    {
+      "id": "prob_00611",
+      "type": "problem",
+      "surface_form": "surface reconstruction modeling"
+    },
+    {
+      "id": "task_00025",
+      "type": "task",
+      "surface_form": "Interatomic force prediction"
+    },
+    {
+      "id": "task_00112",
+      "type": "task",
+      "surface_form": "Formation energy regression"
+    },
+    {
+      "id": "task_00113",
+      "type": "task",
+      "surface_form": "Force prediction"
+    },
+    {
+      "id": "task_00173",
+      "type": "task",
+      "surface_form": "Energy, force, and virial prediction"
+    },
+    {
+      "id": "task_00177",
+      "type": "task",
+      "surface_form": "Prediction of potential energy, atomic forces, and virial tensor"
+    },
+    {
+      "id": "task_00196",
+      "type": "task",
+      "surface_form": "Unified free‑energy prediction"
+    },
+    {
+      "id": "task_00199",
+      "type": "task",
+      "surface_form": "Prediction of Energies, Forces and Torques for Multi‑Component Materials"
+    },
+    {
+      "id": "task_00208",
+      "type": "task",
+      "surface_form": "Reaction energy calculation and screening"
+    },
+    {
+      "id": "task_00234",
+      "type": "task",
+      "surface_form": "Force‑field benchmarking"
+    },
+    {
+      "id": "task_00241",
+      "type": "task",
+      "surface_form": "Classical force‑field property benchmarking"
+    },
+    {
+      "id": "task_00266",
+      "type": "task",
+      "surface_form": "Surface‑slab generation for catalysis and corrosion studies"
+    },
+    {
+      "id": "task_00284",
+      "type": "task",
+      "surface_form": "Energy prediction"
+    },
+    {
+      "id": "task_00341",
+      "type": "task",
+      "surface_form": "Exfoliation energy regression"
+    },
+    {
+      "id": "task_00469",
+      "type": "task",
+      "surface_form": "Single-point energy calculation"
+    },
+    {
+      "id": "task_00476",
+      "type": "task",
+      "surface_form": "oxidation energy calculation"
+    },
+    {
+      "id": "task_00479",
+      "type": "task",
+      "surface_form": "Static energy calculation"
+    },
+    {
+      "id": "task_00484",
+      "type": "task",
+      "surface_form": "Static energy calculations"
+    },
+    {
+      "id": "task_00523",
+      "type": "task",
+      "surface_form": "Activation energy computation"
+    },
+    {
+      "id": "task_00533",
+      "type": "task",
+      "surface_form": "Activation energy estimation"
+    },
+    {
+      "id": "task_00692",
+      "type": "task",
+      "surface_form": "Carbon dimer potential energy curve computation"
+    },
+    {
+      "id": "task_00709",
+      "type": "task",
+      "surface_form": "surface reconstruction simulation"
+    },
+    {
+      "id": "tech_00277",
+      "type": "technique",
+      "surface_form": "Backpropagation for force and virial computation"
+    },
+    {
+      "id": "tech_00314",
+      "type": "technique",
+      "surface_form": "Physics‑based surface‑energy calculation"
+    },
+    {
+      "id": "tech_00380",
+      "type": "technique",
+      "surface_form": "Thermodynamic descriptor screening"
+    },
+    {
+      "id": "tech_00382",
+      "type": "technique",
+      "surface_form": "Machine‑learning regression on formation energies"
+    },
+    {
+      "id": "tech_00924",
+      "type": "technique",
+      "surface_form": "surface cleavage"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 4,
+    "dataset": 1,
+    "problem": 9,
+    "task": 21,
+    "technique": 5
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "energy",
+  "representative_ids": [
+    "task_00173",
+    "prob_00131"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "comp_00624",
+      "type": "component",
+      "surface_form": "Deep neural network potential energy surface"
+    },
+    {
+      "id": "comp_00625",
+      "type": "component",
+      "surface_form": "Iterative self-consistent training protocol"
+    },
+    {
+      "id": "comp_00626",
+      "type": "component",
+      "surface_form": "Temperature ramping scheme"
+    },
+    {
+      "id": "comp_00627",
+      "type": "component",
+      "surface_form": "Training set cleaning pipeline"
+    },
+    {
+      "id": "comp_00629",
+      "type": "component",
+      "surface_form": "virial in loss function"
+    },
+    {
+      "id": "comp_00630",
+      "type": "component",
+      "surface_form": "active learning workflow"
+    },
+    {
+      "id": "comp_00631",
+      "type": "component",
+      "surface_form": "uncorrelated snapshots selection"
+    },
+    {
+      "id": "comp_00632",
+      "type": "component",
+      "surface_form": "Iterative training loop workflow"
+    },
+    {
+      "id": "comp_00634",
+      "type": "component",
+      "surface_form": "Maximum bond variation criterion"
+    },
+    {
+      "id": "comp_00823",
+      "type": "component",
+      "surface_form": "Iterative training workflow"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 10
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "workflow",
+  "representative_ids": [
+    "comp_00823",
+    "comp_00632"
+  ]
+}

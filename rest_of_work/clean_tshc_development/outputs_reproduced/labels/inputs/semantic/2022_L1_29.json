@@ -1,0 +1,79 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00190",
+      "type": "claim",
+      "surface_form": "NequIP reproduces structural and kinetic properties from ab‑initio molecular dynamics simulations with high fidelity."
+    },
+    {
+      "id": "meth_00089",
+      "type": "method",
+      "surface_form": "Molecular dynamics"
+    },
+    {
+      "id": "meth_00207",
+      "type": "method",
+      "surface_form": "Car-Parrinello molecular dynamics"
+    },
+    {
+      "id": "meth_00233",
+      "type": "method",
+      "surface_form": "Non‑equilibrium molecular dynamics"
+    },
+    {
+      "id": "meth_00236",
+      "type": "method",
+      "surface_form": "Non-equilibrium Molecular Dynamics"
+    },
+    {
+      "id": "meth_00387",
+      "type": "method",
+      "surface_form": "Classical Force Field Molecular Dynamics"
+    },
+    {
+      "id": "prob_00412",
+      "type": "problem",
+      "surface_form": "Time-scale limitation in first-principles molecular dynamics"
+    },
+    {
+      "id": "task_00026",
+      "type": "task",
+      "surface_form": "Molecular dynamics trajectory modeling"
+    },
+    {
+      "id": "task_00034",
+      "type": "task",
+      "surface_form": "molecular dynamics"
+    },
+    {
+      "id": "task_00151",
+      "type": "task",
+      "surface_form": "Molecular dynamics simulations"
+    },
+    {
+      "id": "task_00175",
+      "type": "task",
+      "surface_form": "Molecular dynamics simulation of liquid water and ice"
+    },
+    {
+      "id": "tech_00362",
+      "type": "technique",
+      "surface_form": "Classical molecular dynamics simulations"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "method": 5,
+    "problem": 1,
+    "task": 4,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "dynamics",
+  "representative_ids": [
+    "task_00151",
+    "meth_00089"
+  ]
+}

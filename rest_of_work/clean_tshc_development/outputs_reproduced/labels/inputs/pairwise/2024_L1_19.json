@@ -1,0 +1,26 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00270",
+      "type": "claim",
+      "surface_form": "MACE-OFF3 uses only short-range interactions yet achieves improved performance on benchmark molecular simulation properties compared to ANI."
+    },
+    {
+      "id": "comp_00620",
+      "type": "component",
+      "surface_form": "GNoME-driven molecular dynamics"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "driven molecular",
+  "representative_ids": [
+    "clai_00270",
+    "comp_00620"
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "comp_00516",
+      "type": "component",
+      "surface_form": "Local frame descriptor"
+    },
+    {
+      "id": "comp_00517",
+      "type": "component",
+      "surface_form": "DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00518",
+      "type": "component",
+      "surface_form": "Attention-based descriptor"
+    },
+    {
+      "id": "comp_00520",
+      "type": "component",
+      "surface_form": "Fitting network"
+    },
+    {
+      "id": "comp_00521",
+      "type": "component",
+      "surface_form": "Type embedding"
+    },
+    {
+      "id": "comp_00522",
+      "type": "component",
+      "surface_form": "Model deviation module"
+    },
+    {
+      "id": "comp_00523",
+      "type": "component",
+      "surface_form": "Deep Potential - Range Correction"
+    },
+    {
+      "id": "comp_00524",
+      "type": "component",
+      "surface_form": "Deep Potential Long Range"
+    },
+    {
+      "id": "comp_00525",
+      "type": "component",
+      "surface_form": "Model compression module"
+    },
+    {
+      "id": "comp_00526",
+      "type": "component",
+      "surface_form": "NVNMD engine"
+    },
+    {
+      "id": "comp_00527",
+      "type": "component",
+      "surface_form": "Two-body embedding DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00528",
+      "type": "component",
+      "surface_form": "Three-body embedding DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00530",
+      "type": "component",
+      "surface_form": "Fitting network F0"
+    },
+    {
+      "id": "comp_00533",
+      "type": "component",
+      "surface_form": "DP-empirical potential interpolation module"
+    },
+    {
+      "id": "comp_00535",
+      "type": "component",
+      "surface_form": "Operator merging module"
+    },
+    {
+      "id": "comp_00537",
+      "type": "component",
+      "surface_form": "Ensemble model deviation estimator"
+    },
+    {
+      "id": "comp_00538",
+      "type": "component",
+      "surface_form": "Core C++ library"
+    },
+    {
+      "id": "comp_00539",
+      "type": "component",
+      "surface_form": "GPU library"
+    },
+    {
+      "id": "comp_00541",
+      "type": "component",
+      "surface_form": "Model definitions module"
+    },
+    {
+      "id": "comp_00542",
+      "type": "component",
+      "surface_form": "Environment matrix operator"
+    },
+    {
+      "id": "comp_00544",
+      "type": "component",
+      "surface_form": "Compressed operator"
+    },
+    {
+      "id": "comp_00546",
+      "type": "component",
+      "surface_form": "two-body embedding full-information descriptor"
+    },
+    {
+      "id": "comp_00547",
+      "type": "component",
+      "surface_form": "two-body embedding radial descriptor"
+    },
+    {
+      "id": "comp_00549",
+      "type": "component",
+      "surface_form": "hybrid descriptors"
+    },
+    {
+      "id": "comp_00550",
+      "type": "component",
+      "surface_form": "plugin system"
+    },
+    {
+      "id": "comp_00552",
+      "type": "component",
+      "surface_form": "NVNMD accelerator"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 26
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "descriptor",
+  "representative_ids": [
+    "comp_00517",
+    "comp_00527"
+  ]
+}

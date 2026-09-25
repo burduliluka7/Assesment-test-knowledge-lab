@@ -1,0 +1,184 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00523",
+      "type": "claim",
+      "surface_form": "Representing tensors with spherical harmonics yields a dramatically sparser basis, where a rank‑N Cartesian tensor with 3^N components can be represented by (N+1)^2 spherical harmonics (e.g., a 10th‑order tensor requires 121 harmonics instead of 59 049 Cartesian components)."
+    },
+    {
+      "id": "comp_00051",
+      "type": "component",
+      "surface_form": "Spherical harmonics encoding"
+    },
+    {
+      "id": "comp_00053",
+      "type": "component",
+      "surface_form": "Gaussian radial basis expansion"
+    },
+    {
+      "id": "comp_00056",
+      "type": "component",
+      "surface_form": "Spherical harmonics up to l=5"
+    },
+    {
+      "id": "comp_00194",
+      "type": "component",
+      "surface_form": "Smooth radial Bessel function"
+    },
+    {
+      "id": "comp_00195",
+      "type": "component",
+      "surface_form": "Fourier‑basis angular expansion"
+    },
+    {
+      "id": "comp_00254",
+      "type": "component",
+      "surface_form": "Spherical harmonic orientation encoding"
+    },
+    {
+      "id": "comp_00423",
+      "type": "component",
+      "surface_form": "Spherical harmonic projections"
+    },
+    {
+      "id": "comp_00432",
+      "type": "component",
+      "surface_form": "Radial basis functions"
+    },
+    {
+      "id": "comp_00438",
+      "type": "component",
+      "surface_form": "Gaussian radial basis functions"
+    },
+    {
+      "id": "comp_00497",
+      "type": "component",
+      "surface_form": "Spherical harmonics edge attributes"
+    },
+    {
+      "id": "comp_00509",
+      "type": "component",
+      "surface_form": "Radial function h"
+    },
+    {
+      "id": "comp_00510",
+      "type": "component",
+      "surface_form": "Spherical harmonics Y"
+    },
+    {
+      "id": "comp_00614",
+      "type": "component",
+      "surface_form": "Bessel function basis"
+    },
+    {
+      "id": "prob_00262",
+      "type": "problem",
+      "surface_form": "Overfitting with higher spherical harmonic degrees"
+    },
+    {
+      "id": "task_00611",
+      "type": "task",
+      "surface_form": "Angular distribution function calculation"
+    },
+    {
+      "id": "tech_00071",
+      "type": "technique",
+      "surface_form": "Radial basis function expansion of distances"
+    },
+    {
+      "id": "tech_00075",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis functions"
+    },
+    {
+      "id": "tech_00098",
+      "type": "technique",
+      "surface_form": "Radial distribution function analysis"
+    },
+    {
+      "id": "tech_00111",
+      "type": "technique",
+      "surface_form": "Radial basis functions using Bessel kernels"
+    },
+    {
+      "id": "tech_00118",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis expansion"
+    },
+    {
+      "id": "tech_00219",
+      "type": "technique",
+      "surface_form": "Radial basis functions"
+    },
+    {
+      "id": "tech_00230",
+      "type": "technique",
+      "surface_form": "Smooth radial basis functions"
+    },
+    {
+      "id": "tech_00237",
+      "type": "technique",
+      "surface_form": "Fourier angular basis"
+    },
+    {
+      "id": "tech_00243",
+      "type": "technique",
+      "surface_form": "Spherical Bessel and spherical harmonics expansion"
+    },
+    {
+      "id": "tech_00267",
+      "type": "technique",
+      "surface_form": "Spherical‑harmonic embedding of geometric inputs"
+    },
+    {
+      "id": "tech_00282",
+      "type": "technique",
+      "surface_form": "Spherical harmonic encoding"
+    },
+    {
+      "id": "tech_00285",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis functions for distance encoding"
+    },
+    {
+      "id": "tech_00305",
+      "type": "technique",
+      "surface_form": "Gaussian basis expansion of distances"
+    },
+    {
+      "id": "tech_00309",
+      "type": "technique",
+      "surface_form": "Spherical‑Harmonic Expansion of Cartesian Tensors"
+    },
+    {
+      "id": "tech_00462",
+      "type": "technique",
+      "surface_form": "Inner product with spherical harmonics"
+    },
+    {
+      "id": "tech_00531",
+      "type": "technique",
+      "surface_form": "Radial basis function encoding"
+    },
+    {
+      "id": "tech_00898",
+      "type": "technique",
+      "surface_form": "Spherical harmonics expansion"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 13,
+    "problem": 1,
+    "task": 1,
+    "technique": 17
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "spherical",
+  "representative_ids": [
+    "tech_00219",
+    "comp_00432"
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "clai_00136",
+      "type": "claim",
+      "surface_form": "Using a pair‑message function that depends on both source and destination node states improves message‑passing efficiency compared with the standard matrix‑multiplication message function."
+    },
+    {
+      "id": "clai_00137",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network framework unifies eight previously proposed graph‑based neural models under a single formalism."
+    },
+    {
+      "id": "clai_00383",
+      "type": "claim",
+      "surface_form": "The use of a local‑coordinate message‑passing (LCMP) layer is critical for achieving high prediction accuracy of rotation‑covariant Hamiltonian blocks."
+    },
+    {
+      "id": "clai_00598",
+      "type": "claim",
+      "surface_form": "Separable S2 activation prevents large gradients by separating activation for degree 0 and degree > 0 vectors, whereas directly replacing gate activation with S2 activation causes training instability and non-convergence."
+    },
+    {
+      "id": "comp_00023",
+      "type": "component",
+      "surface_form": "Shifted softplus activation"
+    },
+    {
+      "id": "comp_00029",
+      "type": "component",
+      "surface_form": "Directed message channels"
+    },
+    {
+      "id": "comp_00187",
+      "type": "component",
+      "surface_form": "Weighted message‑passing convolution"
+    },
+    {
+      "id": "comp_00252",
+      "type": "component",
+      "surface_form": "Message Passing layers"
+    },
+    {
+      "id": "comp_00253",
+      "type": "component",
+      "surface_form": "Local Coordinate Message Passing (LCMP) layer"
+    },
+    {
+      "id": "comp_00284",
+      "type": "component",
+      "surface_form": "Modified softplus activation"
+    },
+    {
+      "id": "comp_00416",
+      "type": "component",
+      "surface_form": "attention re-normalization"
+    },
+    {
+      "id": "comp_00417",
+      "type": "component",
+      "surface_form": "separable S2 activation"
+    },
+    {
+      "id": "comp_00428",
+      "type": "component",
+      "surface_form": "Attention re-normalization with layer normalization"
+    },
+    {
+      "id": "comp_00430",
+      "type": "component",
+      "surface_form": "Separated S2 attention"
+    },
+    {
+      "id": "comp_00437",
+      "type": "component",
+      "surface_form": "Equivariant graph attention block"
+    },
+    {
+      "id": "comp_00500",
+      "type": "component",
+      "surface_form": "Gated activation layers"
+    },
+    {
+      "id": "comp_00518",
+      "type": "component",
+      "surface_form": "Attention-based descriptor"
+    },
+    {
+      "id": "comp_00644",
+      "type": "component",
+      "surface_form": "Message passing structure"
+    },
+    {
+      "id": "comp_00650",
+      "type": "component",
+      "surface_form": "MACE message-passing framework"
+    },
+    {
+      "id": "comp_00671",
+      "type": "component",
+      "surface_form": "RBF attention biases"
+    },
+    {
+      "id": "comp_00677",
+      "type": "component",
+      "surface_form": "RBF attention bias"
+    },
+    {
+      "id": "comp_00699",
+      "type": "component",
+      "surface_form": "Forward and reverse communication modules"
+    },
+    {
+      "id": "comp_00704",
+      "type": "component",
+      "surface_form": "reverse communication routines"
+    },
+    {
+      "id": "comp_00708",
+      "type": "component",
+      "surface_form": "message-passing layers"
+    },
+    {
+      "id": "comp_00714",
+      "type": "component",
+      "surface_form": "SwiGLU activation function"
+    },
+    {
+      "id": "comp_00724",
+      "type": "component",
+      "surface_form": "MLP message combiner"
+    },
+    {
+      "id": "comp_00781",
+      "type": "component",
+      "surface_form": "Message passing architecture"
+    },
+    {
+      "id": "meth_00028",
+      "type": "method",
+      "surface_form": "Graph Attention"
+    },
+    {
+      "id": "meth_00030",
+      "type": "method",
+      "surface_form": "Message Passing Neural Network"
+    },
+    {
+      "id": "meth_00204",
+      "type": "method",
+      "surface_form": "Directional message passing neural network"
+    },
+    {
+      "id": "meth_00220",
+      "type": "method",
+      "surface_form": "Neural Message Passing"
+    },
+    {
+      "id": "meth_00237",
+      "type": "method",
+      "surface_form": "equivariant message passing neural networks"
+    },
+    {
+      "id": "meth_00301",
+      "type": "method",
+      "surface_form": "S2 activation"
+    },
+    {
+      "id": "meth_00341",
+      "type": "method",
+      "surface_form": "coarse-grained message passing networks"
+    },
+    {
+      "id": "meth_00343",
+      "type": "method",
+      "surface_form": "Transformer attention mechanism"
+    },
+    {
+      "id": "meth_00349",
+      "type": "method",
+      "surface_form": "Crystal Graph Attention Network"
+    },
+    {
+      "id": "meth_00393",
+      "type": "method",
+      "surface_form": "ACE with message passing"
+    },
+    {
+      "id": "prob_00242",
+      "type": "problem",
+      "surface_form": "Training instability with S2 activation"
+    },
+    {
+      "id": "task_00030",
+      "type": "task",
+      "surface_form": "IS2RS"
+    },
+    {
+      "id": "task_00031",
+      "type": "task",
+      "surface_form": "IS2RE"
+    },
+    {
+      "id": "task_00297",
+      "type": "task",
+      "surface_form": "OC20 S2EF task"
+    },
+    {
+      "id": "task_00307",
+      "type": "task",
+      "surface_form": "OC20 S2EF"
+    },
+    {
+      "id": "task_00311",
+      "type": "task",
+      "surface_form": "OC22 IS2RE"
+    },
+    {
+      "id": "task_00637",
+      "type": "task",
+      "surface_form": "OC20-NEB task"
+    },
+    {
+      "id": "tech_00033",
+      "type": "technique",
+      "surface_form": "SiLU activation"
+    },
+    {
+      "id": "tech_00076",
+      "type": "technique",
+      "surface_form": "Message passing"
+    },
+    {
+      "id": "tech_00085",
+      "type": "technique",
+      "surface_form": "Virtual edges for long‑range communication"
+    },
+    {
+      "id": "tech_00088",
+      "type": "technique",
+      "surface_form": "Directed message channels"
+    },
+    {
+      "id": "tech_00120",
+      "type": "technique",
+      "surface_form": "Equivariant message passing"
+    },
+    {
+      "id": "tech_00163",
+      "type": "technique",
+      "surface_form": "Message passing in GCNN"
+    },
+    {
+      "id": "tech_00215",
+      "type": "technique",
+      "surface_form": "Self‑attention (QKV) blocks"
+    },
+    {
+      "id": "tech_00221",
+      "type": "technique",
+      "surface_form": "Gate nonlinearity"
+    },
+    {
+      "id": "tech_00238",
+      "type": "technique",
+      "surface_form": "GatedMLP activation"
+    },
+    {
+      "id": "tech_00287",
+      "type": "technique",
+      "surface_form": "Sigmoid + softplus activation combo"
+    },
+    {
+      "id": "tech_00336",
+      "type": "technique",
+      "surface_form": "GRU‑based message passing"
+    },
+    {
+      "id": "tech_00439",
+      "type": "technique",
+      "surface_form": "equivariant graph attention"
+    },
+    {
+      "id": "tech_00445",
+      "type": "technique",
+      "surface_form": "Attention re-normalization"
+    },
+    {
+      "id": "tech_00449",
+      "type": "technique",
+      "surface_form": "Parallel equivariant graph attention"
+    },
+    {
+      "id": "tech_00452",
+      "type": "technique",
+      "surface_form": "Separable S2 activation"
+    },
+    {
+      "id": "tech_00464",
+      "type": "technique",
+      "surface_form": "SiLU activation on grid features"
+    },
+    {
+      "id": "tech_00465",
+      "type": "technique",
+      "surface_form": "Dropout on attention weights"
+    },
+    {
+      "id": "tech_00468",
+      "type": "technique",
+      "surface_form": "IS2RS auxiliary task"
+    },
+    {
+      "id": "tech_00737",
+      "type": "technique",
+      "surface_form": "Masked self-attention"
+    },
+    {
+      "id": "tech_00776",
+      "type": "technique",
+      "surface_form": "Message-passing process"
+    },
+    {
+      "id": "tech_00779",
+      "type": "technique",
+      "surface_form": "Restricted communication range"
+    },
+    {
+      "id": "tech_00780",
+      "type": "technique",
+      "surface_form": "Node feature and gradient exchange"
+    },
+    {
+      "id": "tech_00790",
+      "type": "technique",
+      "surface_form": "reverse communication of energy gradients"
+    },
+    {
+      "id": "tech_00791",
+      "type": "technique",
+      "surface_form": "reverse communication of partial forces"
+    },
+    {
+      "id": "tech_00817",
+      "type": "technique",
+      "surface_form": "Scaled attention weights"
+    },
+    {
+      "id": "tech_00866",
+      "type": "technique",
+      "surface_form": "Message passing within cutoff distance"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 4,
+    "component": 23,
+    "method": 10,
+    "problem": 1,
+    "task": 6,
+    "technique": 26
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "message",
+  "representative_ids": [
+    "meth_00220",
+    "meth_00030"
+  ]
+}

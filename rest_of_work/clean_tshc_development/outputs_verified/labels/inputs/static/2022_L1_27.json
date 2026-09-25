@@ -1,0 +1,55 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "meth_00076",
+      "type": "method",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "meth_00225",
+      "type": "method",
+      "surface_form": "Kohn-Sham density-functional theory"
+    },
+    {
+      "id": "meth_00403",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network potential"
+    },
+    {
+      "id": "meth_00431",
+      "type": "method",
+      "surface_form": "Brenner potential"
+    },
+    {
+      "id": "meth_00433",
+      "type": "method",
+      "surface_form": "SOAP descriptors"
+    },
+    {
+      "id": "meth_00434",
+      "type": "method",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "meth_00435",
+      "type": "method",
+      "surface_form": "REBO potential"
+    },
+    {
+      "id": "meth_00436",
+      "type": "method",
+      "surface_form": "environment-dependent interaction potential"
+    }
+  ],
+  "generation_type_counts": {
+    "method": 8
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "potential",
+  "representative_ids": [
+    "meth_00431",
+    "meth_00403"
+  ]
+}

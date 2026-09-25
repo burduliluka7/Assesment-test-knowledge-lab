@@ -1,0 +1,283 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00007",
+      "type": "article",
+      "surface_form": "GNN-Assisted Phase Space Integration with Application to Atomistics"
+    },
+    {
+      "id": "cite_00403",
+      "type": "cited_work",
+      "surface_form": "Integrable deep neural networks"
+    },
+    {
+      "id": "clai_00078",
+      "type": "claim",
+      "surface_form": "Continuous-filter convolutional (cfconv) layers enable convolution on arbitrarily positioned inputs, overcoming the limitations of discrete filters that require grid-aligned data."
+    },
+    {
+      "id": "clai_00130",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network (MPNN) achieves state‑of‑the‑art performance on all QM9 regression targets, reaching chemical accuracy on 11 of the 13 targets and outperforming prior models such as SchNet and DTNN."
+    },
+    {
+      "id": "clai_00133",
+      "type": "claim",
+      "surface_form": "A general training method allows MPNNs to use larger node representation dimensions without increasing computation time or memory, providing substantial savings over previous high‑dimensional MPNNs."
+    },
+    {
+      "id": "clai_00139",
+      "type": "claim",
+      "surface_form": "Across all QM9 properties, the MPNN reduces the mean absolute error by 30–70 % relative to the best previously reported graph‑neural‑network baseline."
+    },
+    {
+      "id": "clai_00150",
+      "type": "claim",
+      "surface_form": "The GNN‑assisted integration framework can be applied to high‑dimensional integration problems beyond atomistics."
+    },
+    {
+      "id": "clai_00317",
+      "type": "claim",
+      "surface_form": "Graph network models (CGCNN and MEGNet) have high errors on small datasets (<10^4 samples) but leverage large datasets more efficiently, outperforming traditional ML and AutoML approaches on tasks with approximately 10^4 data points or more."
+    },
+    {
+      "id": "clai_00321",
+      "type": "claim",
+      "surface_form": "Graph networks (CGCNN and MEGNet) far outperform traditional ML algorithms on formation energy prediction tasks, with MEGNet decisively outperforming Automatminer for the PhDOS task; among nine structure-based tasks, Automatminer and MEGNet each achieve best scores on 4 tasks."
+    },
+    {
+      "id": "clai_00356",
+      "type": "claim",
+      "surface_form": "Integrating renormalization‑group concepts with machine‑learning architectures has been used to predict transitions to canted antiferromagnetic phases in 3D Ising and Fermi‑Hubbard models, to classify quantum phases, and to recognize complex many‑body phases from raw simulation data."
+    },
+    {
+      "id": "clai_00358",
+      "type": "claim",
+      "surface_form": "Future integration of formal renormalization‑group concepts with machine‑learning architectures is a promising direction for modeling systems near criticality or with strong electron correlations."
+    },
+    {
+      "id": "clai_00399",
+      "type": "claim",
+      "surface_form": "The IDNN framework is generalizable and can be applied to other intercalation compounds without modification of the network architecture."
+    },
+    {
+      "id": "clai_00406",
+      "type": "claim",
+      "surface_form": "Neural operators can make predictions that are not affected by discretization settings while maintaining prediction accuracy."
+    },
+    {
+      "id": "clai_00473",
+      "type": "claim",
+      "surface_form": "The parallelization algorithm is applicable to GNN-IP models using two-body message-passing functions including SchNet, PhysNet, PaiNN, NequIP, and MACE."
+    },
+    {
+      "id": "comp_00072",
+      "type": "component",
+      "surface_form": "Supervised training of the GNN on phase‑averaged quantities"
+    },
+    {
+      "id": "comp_00073",
+      "type": "component",
+      "surface_form": "GNN‑based phase‑space evaluator"
+    },
+    {
+      "id": "comp_00117",
+      "type": "component",
+      "surface_form": "Integrable Deep Neural Network (IDNN) free‑energy representation"
+    },
+    {
+      "id": "comp_00124",
+      "type": "component",
+      "surface_form": "IDNN surrogate model"
+    },
+    {
+      "id": "comp_00135",
+      "type": "component",
+      "surface_form": "Integrable Deep Neural Network (IDNN) free‑energy model"
+    },
+    {
+      "id": "comp_00151",
+      "type": "component",
+      "surface_form": "eSCN convolutions"
+    },
+    {
+      "id": "comp_00196",
+      "type": "component",
+      "surface_form": "Gated multilayer perceptron"
+    },
+    {
+      "id": "comp_00238",
+      "type": "component",
+      "surface_form": "Feed‑forward deep neural network"
+    },
+    {
+      "id": "comp_00242",
+      "type": "component",
+      "surface_form": "Shared-parameter atomic neural network"
+    },
+    {
+      "id": "comp_00260",
+      "type": "component",
+      "surface_form": "Multiple MPNN models for orbital‑pair blocks"
+    },
+    {
+      "id": "comp_00261",
+      "type": "component",
+      "surface_form": "Single MPNN with multi‑dimensional output"
+    },
+    {
+      "id": "comp_00311",
+      "type": "component",
+      "surface_form": "End‑to‑end GNN predictor"
+    },
+    {
+      "id": "comp_00319",
+      "type": "component",
+      "surface_form": "PNA-based GNN predictor"
+    },
+    {
+      "id": "comp_00320",
+      "type": "component",
+      "surface_form": "Alternative GNN backbones"
+    },
+    {
+      "id": "comp_00375",
+      "type": "component",
+      "surface_form": "Feature encoding from GNN readout"
+    },
+    {
+      "id": "comp_00421",
+      "type": "component",
+      "surface_form": "eSCN convolution"
+    },
+    {
+      "id": "comp_00470",
+      "type": "component",
+      "surface_form": "CGCNN convolution layers"
+    },
+    {
+      "id": "comp_00559",
+      "type": "component",
+      "surface_form": "Residual neural network"
+    },
+    {
+      "id": "comp_00622",
+      "type": "component",
+      "surface_form": "GNN interatomic potentials"
+    },
+    {
+      "id": "comp_00696",
+      "type": "component",
+      "surface_form": "Efficient spatial decomposition algorithm for GNN-IPs"
+    },
+    {
+      "id": "comp_00710",
+      "type": "component",
+      "surface_form": "Unconstrained neural network architecture"
+    },
+    {
+      "id": "comp_00788",
+      "type": "component",
+      "surface_form": "Edge-based GNN architecture"
+    },
+    {
+      "id": "futu_00042",
+      "type": "future_topic",
+      "surface_form": "Application of GNN‑assisted phase‑space integration to financial mathematics (e.g., pricing of derivatives)"
+    },
+    {
+      "id": "meth_00148",
+      "type": "method",
+      "surface_form": "Integrable deep neural networks"
+    },
+    {
+      "id": "meth_00168",
+      "type": "method",
+      "surface_form": "eSCN convolution"
+    },
+    {
+      "id": "prob_00023",
+      "type": "problem",
+      "surface_form": "High computational cost of equivariant MPNNs"
+    },
+    {
+      "id": "prob_00408",
+      "type": "problem",
+      "surface_form": "Computational efficiency for GNN potentials"
+    },
+    {
+      "id": "prob_00414",
+      "type": "problem",
+      "surface_form": "Overfitting in neural network potentials"
+    },
+    {
+      "id": "prob_00479",
+      "type": "problem",
+      "surface_form": "Parallelization challenges of GNN-IPs"
+    },
+    {
+      "id": "prob_00488",
+      "type": "problem",
+      "surface_form": "atomic force computation in parallel GNN-IP"
+    },
+    {
+      "id": "prob_00490",
+      "type": "problem",
+      "surface_form": "Overfitting in GNN interatomic potentials"
+    },
+    {
+      "id": "task_00222",
+      "type": "task",
+      "surface_form": "Benchmarking GNN architectures"
+    },
+    {
+      "id": "tech_00108",
+      "type": "technique",
+      "surface_form": "renormalization-group inspired representations"
+    },
+    {
+      "id": "tech_00171",
+      "type": "technique",
+      "surface_form": "Training of IDNN on chemical‑potential derivative data"
+    },
+    {
+      "id": "tech_00181",
+      "type": "technique",
+      "surface_form": "Analytic integration of IDNN"
+    },
+    {
+      "id": "tech_00195",
+      "type": "technique",
+      "surface_form": "Gradient‑based training of IDNN"
+    },
+    {
+      "id": "tech_00245",
+      "type": "technique",
+      "surface_form": "Gated multi‑layer perceptron"
+    },
+    {
+      "id": "tech_00444",
+      "type": "technique",
+      "surface_form": "eSCN convolution"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 1,
+    "claim": 12,
+    "component": 22,
+    "future_topic": 1,
+    "method": 2,
+    "problem": 6,
+    "task": 1,
+    "technique": 6
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "gnn",
+  "representative_ids": [
+    "comp_00311",
+    "comp_00788"
+  ]
+}

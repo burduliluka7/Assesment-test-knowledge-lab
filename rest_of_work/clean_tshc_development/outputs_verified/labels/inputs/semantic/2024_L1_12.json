@@ -1,0 +1,262 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00042",
+      "type": "article",
+      "surface_form": "Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+    },
+    {
+      "id": "clai_00264",
+      "type": "claim",
+      "surface_form": "Matminer is an open source toolkit for materials data mining."
+    },
+    {
+      "id": "clai_00311",
+      "type": "claim",
+      "surface_form": "Matbench v0.1 is a benchmark suite containing 13 supervised machine learning tasks (10 regression, 3 classification) for materials property prediction, with dataset sizes ranging from 312 to 132,752 samples."
+    },
+    {
+      "id": "clai_00314",
+      "type": "claim",
+      "surface_form": "Automatminer is a fully-automated machine learning pipeline consisting of four stages (autofeaturization, cleaning, dimensionality reduction, and AutoML search) that requires no user intervention or hyperparameter tuning."
+    },
+    {
+      "id": "clai_00318",
+      "type": "claim",
+      "surface_form": "Descriptor-based Automatminer and RF models have lower errors on small datasets but their improvement rates are shallower, with AutoML's advantage over conventional techniques narrowing as sample count increases and essentially lost near 10^5 samples."
+    },
+    {
+      "id": "clai_00320",
+      "type": "claim",
+      "surface_form": "For small datasets (<10^4 samples), inexpensive Automatminer presets (~1-5 minute training) retain the bulk of performance compared to expensive presets (24h+ training), with Express retaining 95% or more of the accuracy of more expensive presets at less than 50% of the computational cost on data-scarce tasks."
+    },
+    {
+      "id": "clai_00323",
+      "type": "claim",
+      "surface_form": "Automatminer source code and pre-processed Matbench tasks are open source and available online."
+    },
+    {
+      "id": "comp_00138",
+      "type": "component",
+      "surface_form": "Matbench Discovery Python package"
+    },
+    {
+      "id": "comp_00439",
+      "type": "component",
+      "surface_form": "Automatminer pipeline"
+    },
+    {
+      "id": "comp_00440",
+      "type": "component",
+      "surface_form": "Matbench test suite"
+    },
+    {
+      "id": "comp_00447",
+      "type": "component",
+      "surface_form": "Automatminer"
+    },
+    {
+      "id": "comp_00448",
+      "type": "component",
+      "surface_form": "Matbench"
+    },
+    {
+      "id": "comp_00455",
+      "type": "component",
+      "surface_form": "Automatminer Debug preset"
+    },
+    {
+      "id": "comp_00456",
+      "type": "component",
+      "surface_form": "Automatminer Debug_single preset"
+    },
+    {
+      "id": "data_00115",
+      "type": "dataset",
+      "surface_form": "Matbench test suite v0.1"
+    },
+    {
+      "id": "data_00116",
+      "type": "dataset",
+      "surface_form": "Matbench v0.1"
+    },
+    {
+      "id": "futu_00076",
+      "type": "future_topic",
+      "surface_form": "Comparing algorithms against the latest version of Automatminer"
+    },
+    {
+      "id": "meth_00159",
+      "type": "method",
+      "surface_form": "Matbench Discovery"
+    },
+    {
+      "id": "meth_00265",
+      "type": "method",
+      "surface_form": "Matminer"
+    },
+    {
+      "id": "meth_00307",
+      "type": "method",
+      "surface_form": "Automatminer"
+    },
+    {
+      "id": "task_00161",
+      "type": "task",
+      "surface_form": "property prediction on MatBench benchmarks"
+    },
+    {
+      "id": "task_00351",
+      "type": "task",
+      "surface_form": "Matbench regression tasks"
+    },
+    {
+      "id": "task_00352",
+      "type": "task",
+      "surface_form": "Matbench classification tasks"
+    },
+    {
+      "id": "tech_00365",
+      "type": "technique",
+      "surface_form": "Data mining with Matminer"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 6,
+    "component": 7,
+    "dataset": 2,
+    "future_topic": 1,
+    "method": 3,
+    "task": 3,
+    "technique": 1
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00312",
+      "relation_type": "presents",
+      "members": [
+        "arti_00042",
+        "meth_00307"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_00917",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00311"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00920",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00314"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00924",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00318"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00926",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00320"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00929",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00323"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "existential",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "matbench",
+  "representative_ids": [
+    "clai_00323",
+    "meth_00159"
+  ]
+}

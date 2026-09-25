@@ -1,0 +1,6703 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00002",
+      "type": "article",
+      "surface_form": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions"
+    },
+    {
+      "id": "arti_00014",
+      "type": "article",
+      "surface_form": "A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+    },
+    {
+      "id": "arti_00016",
+      "type": "article",
+      "surface_form": "Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+    },
+    {
+      "id": "arti_00021",
+      "type": "article",
+      "surface_form": "Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals"
+    },
+    {
+      "id": "arti_00022",
+      "type": "article",
+      "surface_form": "Atomic cluster expansion of scalar, vectorial and tensorial properties and including magnetism and charge transfer"
+    },
+    {
+      "id": "arti_00023",
+      "type": "article",
+      "surface_form": "Linking atomic structural defects to mesoscale properties in crystalline solids using graph neural networks"
+    },
+    {
+      "id": "arti_00024",
+      "type": "article",
+      "surface_form": "The Joint Automated Repository for Various Integrated Simulations (JARVIS) for data-driven materials design"
+    },
+    {
+      "id": "arti_00027",
+      "type": "article",
+      "surface_form": "AFLOW: an automatic framework for high-throughput materials discovery"
+    },
+    {
+      "id": "arti_00030",
+      "type": "article",
+      "surface_form": "Using Deep Learning to Predict Fracture Patterns in Crystalline Solids"
+    },
+    {
+      "id": "arti_00032",
+      "type": "article",
+      "surface_form": "Commentary: The Materials Project: A materials genome approach to accelerating materials innovation"
+    },
+    {
+      "id": "arti_00033",
+      "type": "article",
+      "surface_form": "Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+    },
+    {
+      "id": "arti_00042",
+      "type": "article",
+      "surface_form": "Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+    },
+    {
+      "id": "arti_00046",
+      "type": "article",
+      "surface_form": "Large-scale machine-learning-assisted exploration of the whole materials space"
+    },
+    {
+      "id": "auth_00002",
+      "type": "author",
+      "surface_form": "Linfeng Zhang"
+    },
+    {
+      "id": "auth_00003",
+      "type": "author",
+      "surface_form": "Weinan E"
+    },
+    {
+      "id": "auth_00009",
+      "type": "author",
+      "surface_form": "Qi Wang"
+    },
+    {
+      "id": "auth_00013",
+      "type": "author",
+      "surface_form": "Wei Chen"
+    },
+    {
+      "id": "auth_00014",
+      "type": "author",
+      "surface_form": "Oriol Vinyals"
+    },
+    {
+      "id": "auth_00023",
+      "type": "author",
+      "surface_form": "Justin Gilmer"
+    },
+    {
+      "id": "auth_00028",
+      "type": "author",
+      "surface_form": "Zun Wang"
+    },
+    {
+      "id": "auth_00030",
+      "type": "author",
+      "surface_form": "Samuel S. Schoenholz"
+    },
+    {
+      "id": "auth_00031",
+      "type": "author",
+      "surface_form": "Patrick F. Riley"
+    },
+    {
+      "id": "auth_00032",
+      "type": "author",
+      "surface_form": "George E. Dahl"
+    },
+    {
+      "id": "auth_00034",
+      "type": "author",
+      "surface_form": "K. T. Schütt"
+    },
+    {
+      "id": "auth_00035",
+      "type": "author",
+      "surface_form": "P.-J. Kindermans"
+    },
+    {
+      "id": "auth_00036",
+      "type": "author",
+      "surface_form": "H. E. Sauceda"
+    },
+    {
+      "id": "auth_00037",
+      "type": "author",
+      "surface_form": "S. Chmiela"
+    },
+    {
+      "id": "auth_00038",
+      "type": "author",
+      "surface_form": "A. Tkatchenko"
+    },
+    {
+      "id": "auth_00039",
+      "type": "author",
+      "surface_form": "K.-R. Müller"
+    },
+    {
+      "id": "auth_00051",
+      "type": "author",
+      "surface_form": "He Li"
+    },
+    {
+      "id": "auth_00061",
+      "type": "author",
+      "surface_form": "Nianlong Zou"
+    },
+    {
+      "id": "auth_00094",
+      "type": "author",
+      "surface_form": "Gerbrand Ceder"
+    },
+    {
+      "id": "auth_00097",
+      "type": "author",
+      "surface_form": "Anubhav Jain"
+    },
+    {
+      "id": "auth_00114",
+      "type": "author",
+      "surface_form": "Chi Chen"
+    },
+    {
+      "id": "auth_00115",
+      "type": "author",
+      "surface_form": "Shyue Ping Ong"
+    },
+    {
+      "id": "auth_00119",
+      "type": "author",
+      "surface_form": "Jiequn Han"
+    },
+    {
+      "id": "auth_00120",
+      "type": "author",
+      "surface_form": "Roberto Car"
+    },
+    {
+      "id": "auth_00122",
+      "type": "author",
+      "surface_form": "Tian Xie"
+    },
+    {
+      "id": "auth_00123",
+      "type": "author",
+      "surface_form": "Jeffrey C. Grossman"
+    },
+    {
+      "id": "auth_00136",
+      "type": "author",
+      "surface_form": "Weike Ye"
+    },
+    {
+      "id": "auth_00137",
+      "type": "author",
+      "surface_form": "Yunxing Zuo"
+    },
+    {
+      "id": "auth_00138",
+      "type": "author",
+      "surface_form": "Chen Zheng"
+    },
+    {
+      "id": "auth_00141",
+      "type": "author",
+      "surface_form": "Chi-Hua Yu"
+    },
+    {
+      "id": "auth_00145",
+      "type": "author",
+      "surface_form": "Stephen Dacek"
+    },
+    {
+      "id": "auth_00146",
+      "type": "author",
+      "surface_form": "Shreyas Cholia"
+    },
+    {
+      "id": "auth_00148",
+      "type": "author",
+      "surface_form": "David Skinner"
+    },
+    {
+      "id": "auth_00179",
+      "type": "author",
+      "surface_form": "James E. Saal"
+    },
+    {
+      "id": "auth_00182",
+      "type": "author",
+      "surface_form": "Bryce Meredig"
+    },
+    {
+      "id": "auth_00183",
+      "type": "author",
+      "surface_form": "C. Wolverton"
+    },
+    {
+      "id": "auth_00209",
+      "type": "author",
+      "surface_form": "Alexander Dunn"
+    },
+    {
+      "id": "auth_00210",
+      "type": "author",
+      "surface_form": "Alex Ganose"
+    },
+    {
+      "id": "auth_00211",
+      "type": "author",
+      "surface_form": "Daniel Dopp"
+    },
+    {
+      "id": "auth_00280",
+      "type": "author",
+      "surface_form": "Tobias Binninger"
+    },
+    {
+      "id": "auth_00281",
+      "type": "author",
+      "surface_form": "Federico Zipoli"
+    },
+    {
+      "id": "cite_00002",
+      "type": "cited_work",
+      "surface_form": "PredRNN"
+    },
+    {
+      "id": "cite_00003",
+      "type": "cited_work",
+      "surface_form": "WaveNet"
+    },
+    {
+      "id": "cite_00075",
+      "type": "cited_work",
+      "surface_form": "Adam"
+    },
+    {
+      "id": "cite_00119",
+      "type": "cited_work",
+      "surface_form": "Cormorant"
+    },
+    {
+      "id": "cite_00252",
+      "type": "cited_work",
+      "surface_form": "Message Passing Neural Network (MPNN)"
+    },
+    {
+      "id": "cite_00380",
+      "type": "cited_work",
+      "surface_form": "Density Functional Theory (DFT)"
+    },
+    {
+      "id": "cite_00381",
+      "type": "cited_work",
+      "surface_form": "Tensor‑field networks"
+    },
+    {
+      "id": "cite_00383",
+      "type": "cited_work",
+      "surface_form": "statistical learning method (Hegde & Bowen)"
+    },
+    {
+      "id": "cite_00494",
+      "type": "cited_work",
+      "surface_form": "Behler-Parrinello neural network"
+    },
+    {
+      "id": "cite_00495",
+      "type": "cited_work",
+      "surface_form": "GDML"
+    },
+    {
+      "id": "clai_00001",
+      "type": "claim",
+      "surface_form": "The modified convolution function reduces the mean absolute error for formation‑energy prediction from 0.112 eV/atom to 0.039 eV/atom, achieving DFT‑level accuracy comparable to the experimental DFT‑experiment error of 0.081–0.136 eV/atom."
+    },
+    {
+      "id": "clai_00004",
+      "type": "claim",
+      "surface_form": "When applied to a set of 1,585 crystals with elastic properties, CGCNN predicts bulk modulus with a mean absolute error of 0.077 log(GPa) and shear modulus with a mean absolute error of 0.114 log(GPa), demonstrating good generalization."
+    },
+    {
+      "id": "clai_00009",
+      "type": "claim",
+      "surface_form": "The Materials Project provides an open RESTful API and a high‑level Python library (pymatgen) that enable programmatic querying and analysis of the full dataset."
+    },
+    {
+      "id": "clai_00010",
+      "type": "claim",
+      "surface_form": "The workflow software FireWorks together with the custodian job‑management tool automatically manages high‑throughput DFT calculations, self‑heals failed runs, and applies material‑type‑specific workflows."
+    },
+    {
+      "id": "clai_00012",
+      "type": "claim",
+      "surface_form": "Automated validation checks compare calculated oxidation states, cell volumes, and bond lengths against experimental data and flag outliers for user review."
+    },
+    {
+      "id": "clai_00013",
+      "type": "claim",
+      "surface_form": "Using Materials Project tools, researchers designed a new class of sodium‑based carbonophosphate compounds, predicted them to be thermodynamically stable, synthesized them hydrothermally, and experimentally confirmed their Li‑ion battery performance after ion exchange."
+    },
+    {
+      "id": "clai_00015",
+      "type": "claim",
+      "surface_form": "The Materials Project aims to reduce the typical 10–20 year timeline for advanced material development by providing large‑scale accurate information, thereby accelerating discovery for clean energy, electronics, and other sectors."
+    },
+    {
+      "id": "clai_00018",
+      "type": "claim",
+      "surface_form": "Class‑specific computational methodologies and reference reactions are applied for solid‑gas, d‑block oxide, and dissolved‑ion systems to improve agreement with experimental data."
+    },
+    {
+      "id": "clai_00019",
+      "type": "claim",
+      "surface_form": "The open‑source software infrastructure of the Materials Project, including pymatgen, has attracted more than 100 active collaborators worldwide and incorporates community contributions such as FEFF and ABINIT support."
+    },
+    {
+      "id": "clai_00020",
+      "type": "claim",
+      "surface_form": "Future development plans include adding calculations of surface energies, elastic constants, point defects, finite‑temperature properties, and implementing a two‑way ‘calculations‑on‑demand’ feature for user‑submitted compounds."
+    },
+    {
+      "id": "clai_00021",
+      "type": "claim",
+      "surface_form": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear."
+    },
+    {
+      "id": "clai_00022",
+      "type": "claim",
+      "surface_form": "The model predicts fracture toughness values that are comparable to those obtained from atomistic molecular dynamics simulations."
+    },
+    {
+      "id": "clai_00023",
+      "type": "claim",
+      "surface_form": "A model trained exclusively on single‑crystal data generalizes to bicrystal and gradient‑orientation crystals, reproducing MD fracture patterns for small orientation differences, capturing overall crack paths for large orientation differences, and handling arbitrary geometry gradients."
+    },
+    {
+      "id": "clai_00024",
+      "type": "claim",
+      "surface_form": "The ConvLSTM approach reduces computational cost dramatically compared with full molecular dynamics simulations, enabling rapid fracture predictions."
+    },
+    {
+      "id": "clai_00025",
+      "type": "claim",
+      "surface_form": "Representing molecular dynamics results as image‑based geometric matrices preserves crystal orientation information and allows the neural network to learn spatiotemporal fracture behavior."
+    },
+    {
+      "id": "clai_00028",
+      "type": "claim",
+      "surface_form": "The integrated JARVIS workflow (DFT → FF → ML) enables rapid screening of materials for high solar‑cell efficiency (SLME) with predictions validated against experimental data."
+    },
+    {
+      "id": "clai_00029",
+      "type": "claim",
+      "surface_form": "Machine‑learning models trained on Classical Force‑field Inspired Descriptors (CFID) achieve high predictive accuracy for formation energies, exfoliation energies, band gaps, magnetic moments, refractive indices, dielectric constants, thermoelectric performance, and piezoelectric/infrared modes."
+    },
+    {
+      "id": "clai_00031",
+      "type": "claim",
+      "surface_form": "The meta‑GGA TBmBJ potential predicts band gaps with accuracy comparable to the hybrid HSE06 functional while requiring up to ten times less computational effort."
+    },
+    {
+      "id": "clai_00032",
+      "type": "claim",
+      "surface_form": "Comparisons of JARVIS‑DFT computed formation energies, band gaps, and elastic constants with experimental measurements show acceptable error margins, confirming the database’s predictive reliability."
+    },
+    {
+      "id": "clai_00033",
+      "type": "claim",
+      "surface_form": "Beyond‑DFT methods (HSE06, PBE0, G0W0, DMFT) are generated for a subset of materials to provide higher‑level reference data and enable uncertainty quantification."
+    },
+    {
+      "id": "clai_00034",
+      "type": "claim",
+      "surface_form": "JARVIS‑FF includes data for roughly 1,500 materials and about 110 classical force‑fields."
+    },
+    {
+      "id": "clai_00036",
+      "type": "claim",
+      "surface_form": "JARVIS‑Tools implements automatic k‑point convergence protocols that improve the precision of DFT calculations."
+    },
+    {
+      "id": "clai_00037",
+      "type": "claim",
+      "surface_form": "JARVIS‑FF automatically computes bulk modulus, defect formation energies, and phonon spectra for each force‑field and compares them with DFT results to assess force‑field quality."
+    },
+    {
+      "id": "clai_00039",
+      "type": "claim",
+      "surface_form": "Interpretability analyses of JARVIS‑ML models reveal physical insights that go beyond conventional materials‑science intuition."
+    },
+    {
+      "id": "clai_00064",
+      "type": "claim",
+      "surface_form": "The featurization methods are transferable to more complex compositions, enabling new ML models to be fitted without revising the materials embedding method given extended datasets."
+    },
+    {
+      "id": "clai_00078",
+      "type": "claim",
+      "surface_form": "Continuous-filter convolutional (cfconv) layers enable convolution on arbitrarily positioned inputs, overcoming the limitations of discrete filters that require grid-aligned data."
+    },
+    {
+      "id": "clai_00083",
+      "type": "claim",
+      "surface_form": "Including force information in the training loss causally improves SchNet’s generalization to previously unseen chemical structures in ISO17."
+    },
+    {
+      "id": "clai_00084",
+      "type": "claim",
+      "surface_form": "GDML cannot be trained on 50,000 MD17 examples due to its quadratic scaling with the number of atoms and samples, whereas SchNet scales to that dataset size."
+    },
+    {
+      "id": "clai_00085",
+      "type": "claim",
+      "surface_form": "The ISO17 benchmark, comprising 645,000 conformations of 129 C7O2H10 isomers, is introduced to evaluate models on combined chemical and conformational variation."
+    },
+    {
+      "id": "clai_00086",
+      "type": "claim",
+      "surface_form": "Using a shifted softplus activation guarantees an infinitely differentiable (smooth) potential energy surface, facilitating geometry optimization."
+    },
+    {
+      "id": "clai_00088",
+      "type": "claim",
+      "surface_form": "On the QM9 benchmark, SchNet attains a mean absolute error of 0.31 kcal/mol for total‑energy prediction with 110 k training examples, outperforming DTNN (0.84) and enn‑s2s (0.45)."
+    },
+    {
+      "id": "clai_00130",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network (MPNN) achieves state‑of‑the‑art performance on all QM9 regression targets, reaching chemical accuracy on 11 of the 13 targets and outperforming prior models such as SchNet and DTNN."
+    },
+    {
+      "id": "clai_00132",
+      "type": "claim",
+      "surface_form": "The multiple‑tower architecture reduces the computational complexity of a propagation step from O(n²d²) to O(n²d²/k) and yields a 2× speedup for n=9, d=200, k=8."
+    },
+    {
+      "id": "clai_00133",
+      "type": "claim",
+      "surface_form": "A general training method allows MPNNs to use larger node representation dimensions without increasing computation time or memory, providing substantial savings over previous high‑dimensional MPNNs."
+    },
+    {
+      "id": "clai_00135",
+      "type": "claim",
+      "surface_form": "Adding a latent master node that connects to every atom provides a global scratch space, allowing larger hidden dimensions with minimal performance penalty."
+    },
+    {
+      "id": "clai_00136",
+      "type": "claim",
+      "surface_form": "Using a pair‑message function that depends on both source and destination node states improves message‑passing efficiency compared with the standard matrix‑multiplication message function."
+    },
+    {
+      "id": "clai_00137",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network framework unifies eight previously proposed graph‑based neural models under a single formalism."
+    },
+    {
+      "id": "clai_00138",
+      "type": "claim",
+      "surface_form": "Learning directly from molecular graphs without handcrafted descriptors enables the MPNN to achieve lower prediction errors than descriptor‑based methods."
+    },
+    {
+      "id": "clai_00139",
+      "type": "claim",
+      "surface_form": "Across all QM9 properties, the MPNN reduces the mean absolute error by 30–70 % relative to the best previously reported graph‑neural‑network baseline."
+    },
+    {
+      "id": "clai_00140",
+      "type": "claim",
+      "surface_form": "For internal energy at 0 K (U0), enthalpy (H), Gibbs free energy (G), heat capacity at constant volume (Cv), and highest vibrational frequency (Ω), the MPNN records lower mean absolute errors than SchNet and DTNN (U0 MAE 0.45 vs 0.55/0.72; H 0.39 vs 0.59/0.80; G 0.44 vs 0.55/0.74; Cv 0.80 vs 0.99/1.71; Ω 0.19 vs 0.41/0.78)."
+    },
+    {
+      "id": "clai_00187",
+      "type": "claim",
+      "surface_form": "Predicting forces as the negative gradient of the learned total energy guarantees energy conservation and rotation‑equivariant forces."
+    },
+    {
+      "id": "clai_00311",
+      "type": "claim",
+      "surface_form": "Matbench v0.1 is a benchmark suite containing 13 supervised machine learning tasks (10 regression, 3 classification) for materials property prediction, with dataset sizes ranging from 312 to 132,752 samples."
+    },
+    {
+      "id": "clai_00312",
+      "type": "claim",
+      "surface_form": "Matbench contains data from 10 density functional theory-derived and experimental sources including Materials Project, Zhuo et al., Landolt-Bornstein Handbook, Castelli et al., JARVIS DFT 2D, and Citrine Informatics."
+    },
+    {
+      "id": "clai_00314",
+      "type": "claim",
+      "surface_form": "Automatminer is a fully-automated machine learning pipeline consisting of four stages (autofeaturization, cleaning, dimensionality reduction, and AutoML search) that requires no user intervention or hyperparameter tuning."
+    },
+    {
+      "id": "clai_00317",
+      "type": "claim",
+      "surface_form": "Graph network models (CGCNN and MEGNet) have high errors on small datasets (<10^4 samples) but leverage large datasets more efficiently, outperforming traditional ML and AutoML approaches on tasks with approximately 10^4 data points or more."
+    },
+    {
+      "id": "clai_00318",
+      "type": "claim",
+      "surface_form": "Descriptor-based Automatminer and RF models have lower errors on small datasets but their improvement rates are shallower, with AutoML's advantage over conventional techniques narrowing as sample count increases and essentially lost near 10^5 samples."
+    },
+    {
+      "id": "clai_00319",
+      "type": "claim",
+      "surface_form": "All algorithms exhibit a universal trend of decreasing relative errors as dataset size increases."
+    },
+    {
+      "id": "clai_00320",
+      "type": "claim",
+      "surface_form": "For small datasets (<10^4 samples), inexpensive Automatminer presets (~1-5 minute training) retain the bulk of performance compared to expensive presets (24h+ training), with Express retaining 95% or more of the accuracy of more expensive presets at less than 50% of the computational cost on data-scarce tasks."
+    },
+    {
+      "id": "clai_00321",
+      "type": "claim",
+      "surface_form": "Graph networks (CGCNN and MEGNet) far outperform traditional ML algorithms on formation energy prediction tasks, with MEGNet decisively outperforming Automatminer for the PhDOS task; among nine structure-based tasks, Automatminer and MEGNet each achieve best scores on 4 tasks."
+    },
+    {
+      "id": "clai_00322",
+      "type": "claim",
+      "surface_form": "Matbench provides a consistent evaluation framework using five-fold nested cross-validation on identical folds across all algorithms to minimize comparison bias, with datasets pre-cleaned to remove unphysical computed data and task-irrelevant experimental data."
+    },
+    {
+      "id": "clai_00323",
+      "type": "claim",
+      "surface_form": "Automatminer source code and pre-processed Matbench tasks are open source and available online."
+    },
+    {
+      "id": "clai_00373",
+      "type": "claim",
+      "surface_form": "DeepH predicts DFT Hamiltonian matrix elements for graphene with an average mean absolute error of 2.1 meV and a coefficient of determination r² = 0.9994 across all orbital combinations."
+    },
+    {
+      "id": "clai_00375",
+      "type": "claim",
+      "surface_form": "For monolayer MoS₂, DeepH predicts DFT Hamiltonian matrix elements with average mean absolute errors of 1.3 meV (Mo–Mo), 1.0 meV (Mo–S), 0.7 meV (S–Mo), and 0.8 meV (S–S)."
+    },
+    {
+      "id": "clai_00376",
+      "type": "claim",
+      "surface_form": "Band structures and electric susceptibility computed from DeepH for MoS₂ match DFT results closely."
+    },
+    {
+      "id": "clai_00377",
+      "type": "claim",
+      "surface_form": "DeepH generalizes to carbon nanotubes, achieving Hamiltonian prediction MAE below 3.5 meV for diameters larger than 2 nm and accurately reproducing their band structures."
+    },
+    {
+      "id": "clai_00378",
+      "type": "claim",
+      "surface_form": "DeepH scales linearly with system size and provides a three‑order‑of‑magnitude speed‑up over conventional DFT for a MoS₂ 35 × 35 supercell."
+    },
+    {
+      "id": "clai_00379",
+      "type": "claim",
+      "surface_form": "A DeepH model trained only on non‑twisted bilayer graphene structures predicts Hamiltonians for twisted bilayer graphene supercells up to ~1000 atoms with sub‑meV mean absolute error and correctly reproduces the flat‑band feature near the Fermi level at the magic angle (~1.08°)."
+    },
+    {
+      "id": "clai_00381",
+      "type": "claim",
+      "surface_form": "Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency."
+    },
+    {
+      "id": "clai_00382",
+      "type": "claim",
+      "surface_form": "DeepH resolves the accuracy‑efficiency dilemma of DFT, enabling efficient ab‑initio electronic‑structure calculations for large‑scale material systems."
+    },
+    {
+      "id": "clai_00383",
+      "type": "claim",
+      "surface_form": "The use of a local‑coordinate message‑passing (LCMP) layer is critical for achieving high prediction accuracy of rotation‑covariant Hamiltonian blocks."
+    },
+    {
+      "id": "clai_00384",
+      "type": "claim",
+      "surface_form": "DeepH can be applied to both periodic and non‑periodic systems, including three‑dimensional bulk carbon allotropes and quasi‑zero‑dimensional molecules, achieving sub‑meV mean absolute error for Hamiltonian predictions."
+    },
+    {
+      "id": "clai_00475",
+      "type": "claim",
+      "surface_form": "The DeePMD model successfully reproduces the superionic behavior of solid-state electrolytes with linear Lithium/Sodium mean squared displacement over time and diffusion coefficient uncertainty of about 20% or smaller, which is precise enough for battery applications."
+    },
+    {
+      "id": "clai_00477",
+      "type": "claim",
+      "surface_form": "For LLZO, the computed activation energies range from 0.2 to 0.22 eV, in very good agreement with experimental values of 0.20-0.21 eV for cubic LLZO."
+    },
+    {
+      "id": "clai_00480",
+      "type": "claim",
+      "surface_form": "For NASICON, training starting from FPMD configurations with 80 atoms fails to converge even after three training loops with activation energies spanning 0.2-0.4 eV."
+    },
+    {
+      "id": "clai_00482",
+      "type": "claim",
+      "surface_form": "Training set cleaning procedures including minimum ion-ion distance cutoff, energy/force outlier removal, and loss condition monitoring are necessary to help the algorithm converge to a physical model."
+    },
+    {
+      "id": "clai_00483",
+      "type": "claim",
+      "surface_form": "The proposed training protocol based on augmenting the training set via intermediate molecular dynamics simulations can assess the quality of approximate trajectories and computed physical properties."
+    },
+    {
+      "id": "clai_00485",
+      "type": "claim",
+      "surface_form": "The DeePMD model is a promising candidate for developing a universal potential for solid-state electrolytes, though care must be taken when selecting training configurations."
+    },
+    {
+      "id": "clai_00486",
+      "type": "claim",
+      "surface_form": "For LLZO, results are quite insensitive to the choice of cell volume (NPT equilibrated vs experimental cif-file values) for producing the initial training set."
+    },
+    {
+      "id": "clai_00487",
+      "type": "claim",
+      "surface_form": "The number of force components in the initial training set is more important than total configurations for obtaining generalizable models."
+    },
+    {
+      "id": "clai_00489",
+      "type": "claim",
+      "surface_form": "Simple MEGNet models that use only atomic number and spatial distance as input achieve chemical accuracy, perform comparably to full‑feature models, and outperform prior state‑of‑the‑art models on 8 of the 13 QM9 properties."
+    },
+    {
+      "id": "clai_00490",
+      "type": "claim",
+      "surface_form": "MEGNet models trained on approximately 60,000 crystals outperform prior models (SchNet and CGCNN) for formation energy, band gap, bulk modulus, and shear modulus, achieving errors comparable to or better than density‑functional‑theory uncertainties."
+    },
+    {
+      "id": "clai_00491",
+      "type": "claim",
+      "surface_form": "A unified free‑energy MEGNet model that incorporates temperature, pressure, and entropy as global state inputs predicts U₀, U, H, and G with a combined mean absolute error of 0.010 eV, comparable to separate single‑property models."
+    },
+    {
+      "id": "clai_00492",
+      "type": "claim",
+      "surface_form": "Elemental embedding vectors learned by the crystal formation‑energy MEGNet model reproduce known periodic‑table trends and, when transferred to band‑gap and elastic‑moduli models, reduce their mean absolute errors, improving upon prior machine‑learning approaches."
+    },
+    {
+      "id": "clai_00493",
+      "type": "claim",
+      "surface_form": "Ensembling two independently trained three‑block MEGNet models lowers the formation‑energy mean absolute error from 0.028 eV/atom to 0.024 eV/atom."
+    },
+    {
+      "id": "clai_00495",
+      "type": "claim",
+      "surface_form": "Graph networks constitute a universal machine‑learning framework that can accurately predict properties for both molecules and crystals."
+    },
+    {
+      "id": "clai_00496",
+      "type": "claim",
+      "surface_form": "Increasing the crystal graph radius cut‑off from 4 Å to 6 Å slightly worsens the formation‑energy mean absolute error (to 0.03 eV/atom), confirming the 4 Å cut‑off as near‑optimal."
+    },
+    {
+      "id": "clai_00497",
+      "type": "claim",
+      "surface_form": "CGAT-2 network achieves a mean absolute test error of 21 meV/atom for distance to the convex hull, enabling prediction of thermodynamic stability from unrelaxed crystal structures."
+    },
+    {
+      "id": "clai_00498",
+      "type": "claim",
+      "surface_form": "The ML-assisted high-throughput search uncovered 19,512 additional materials on the convex hull of thermodynamic stability after DFT validation."
+    },
+    {
+      "id": "clai_00499",
+      "type": "claim",
+      "surface_form": "The ML-assisted high-throughput search spanned approximately 1 billion compounds across 2500 binary and ternary structure prototypes."
+    },
+    {
+      "id": "clai_00500",
+      "type": "claim",
+      "surface_form": "Approximately 150,000 compounds were found with energy distance less than 50 meV/atom from the convex hull."
+    },
+    {
+      "id": "clai_00502",
+      "type": "claim",
+      "surface_form": "CGAT-2 shows unprecedented generalization accuracy with strongly reduced chemical and structural bias compared to previous models trained on under-represented data."
+    },
+    {
+      "id": "clai_00503",
+      "type": "claim",
+      "surface_form": "Compositional models cannot differentiate between polymorphs with the same chemical composition."
+    },
+    {
+      "id": "clai_00504",
+      "type": "claim",
+      "surface_form": "The transfer learning approach iterates until model MAE is below 30 meV/atom."
+    },
+    {
+      "id": "clai_00505",
+      "type": "claim",
+      "surface_form": "Out of 50 materials screened for electron-phonon calculations, 19 systems were found with Tc above 1 K, with ScMoC2 having the highest transition temperature at 15.97 K."
+    },
+    {
+      "id": "clai_00506",
+      "type": "claim",
+      "surface_form": "The ternary compound TiVB3 is predicted to have a superhard hardness of 42 GPa."
+    },
+    {
+      "id": "clai_00508",
+      "type": "claim",
+      "surface_form": "Materials within 50 meV/atom from convex hull were selected for subsequent DFT stiffness tensor calculations."
+    },
+    {
+      "id": "clai_00520",
+      "type": "claim",
+      "surface_form": "The atomic cluster expansion (ACE) is generalized to model scalar, vectorial and tensorial atomic properties and to include additional atomic degrees of freedom—species, magnetic moments, and charges—on equal footing with atomic positions."
+    },
+    {
+      "id": "clai_00521",
+      "type": "claim",
+      "surface_form": "The derived ACE formulas enable efficient evaluation of forces and magnetic torques."
+    },
+    {
+      "id": "clai_00522",
+      "type": "claim",
+      "surface_form": "At the lowest order, the magnetic ACE reproduces a distance‑dependent Heisenberg interaction."
+    },
+    {
+      "id": "clai_00523",
+      "type": "claim",
+      "surface_form": "Representing tensors with spherical harmonics yields a dramatically sparser basis, where a rank‑N Cartesian tensor with 3^N components can be represented by (N+1)^2 spherical harmonics (e.g., a 10th‑order tensor requires 121 harmonics instead of 59 049 Cartesian components)."
+    },
+    {
+      "id": "clai_00524",
+      "type": "claim",
+      "surface_form": "Moments Tensor Potentials (MTP) and the Spectral Neighbor Analysis Potential (SNAP) can be expressed exactly as special cases of the ACE."
+    },
+    {
+      "id": "clai_00529",
+      "type": "claim",
+      "surface_form": "Because the ACE basis is complete and hierarchical, it can in principle achieve arbitrary accuracy for any scalar, vectorial or tensorial property."
+    },
+    {
+      "id": "clai_00560",
+      "type": "claim",
+      "surface_form": "In polycrystalline aluminum, the GNN predicts atomic potential energy with a mean normalized relative error of 11.0% (maximum ≈13%) and achieves R² = 0.99 for mean potential energy versus grain number."
+    },
+    {
+      "id": "clai_00561",
+      "type": "claim",
+      "surface_form": "Including tensile strain as an input node feature enables the GNN to accurately predict stress evolution during loading, reproducing nonlinear strain‑stress curves for porous graphene."
+    },
+    {
+      "id": "clai_00562",
+      "type": "claim",
+      "surface_form": "The GNN’s stress predictions are substantially more accurate than on‑the‑fly stress calculations from the force field, which exhibit higher errors."
+    },
+    {
+      "id": "clai_00564",
+      "type": "claim",
+      "surface_form": "Coupling the GNN with a genetic algorithm efficiently discovers optimal holey graphene designs (e.g., arrow‑shaped hole patterns) that achieve significantly lower stress concentration than suboptimal designs, using only ~800 stress evaluations—an order of magnitude fewer than brute‑force search—and reliably locates the global minimum in most of 1,000 random initializations."
+    },
+    {
+      "id": "clai_00565",
+      "type": "claim",
+      "surface_form": "The GNN respects physical constraints, accurately capturing derivative properties such as stress fields that obey underlying physical laws, and predicts global properties (Young’s modulus, total potential energy) that follow known physical relationships and match MD results across different crystalline systems."
+    },
+    {
+      "id": "clai_00567",
+      "type": "claim",
+      "surface_form": "The GNN accelerates atomic property prediction by hundreds to thousands of times compared with conventional MD simulations, requiring seconds on a single CPU versus thousands of seconds on 24 CPUs."
+    },
+    {
+      "id": "clai_00568",
+      "type": "claim",
+      "surface_form": "Linear fitting of atomic properties yields substantially higher prediction errors than the GNN approach, demonstrating the superiority of the nonlinear GNN model for mapping initial structures to final property distributions."
+    },
+    {
+      "id": "clai_00569",
+      "type": "claim",
+      "surface_form": "DeePMD reproduces AIMD energies, forces, and virial tensors for water and ice with root‑mean‑square errors of approximately 1 meV per molecule for energy, 40 meV Å⁻¹ for forces, and 1–2 meV for the virial."
+    },
+    {
+      "id": "clai_00570",
+      "type": "claim",
+      "surface_form": "DeePMD accurately reproduces radial distribution functions and three‑body angular distribution functions of liquid water and ice, matching AIMD results."
+    },
+    {
+      "id": "clai_00572",
+      "type": "claim",
+      "surface_form": "The computational cost of DeePMD scales linearly with the number of atoms and is several orders of magnitude lower than equivalent AIMD simulations, comparable to empirical force fields."
+    },
+    {
+      "id": "clai_00574",
+      "type": "claim",
+      "surface_form": "DeePMD preserves translational, rotational, and permutational symmetries by constructing a local reference frame for each atom and sorting neighbor lists by species and inverse distance."
+    },
+    {
+      "id": "clai_00575",
+      "type": "claim",
+      "surface_form": "Using a loss function with adaptive prefactors that emphasize forces early and energies/virial later reduces the total training time to a few core‑hours for all test cases."
+    },
+    {
+      "id": "clai_00576",
+      "type": "claim",
+      "surface_form": "Discontinuities in forces caused by the sharp cutoff radius and neighbor‑list sorting are much smaller than thermal fluctuations and do not impair canonical sampling."
+    },
+    {
+      "id": "clai_00578",
+      "type": "claim",
+      "surface_form": "DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling."
+    },
+    {
+      "id": "clai_00579",
+      "type": "claim",
+      "surface_form": "DeepH-E3 predicts DFT Hamiltonian matrix elements with sub‑meV mean absolute error, reducing the error by roughly a factor of two compared with the original DeepH method across diverse material systems."
+    },
+    {
+      "id": "clai_00580",
+      "type": "claim",
+      "surface_form": "DeepH-E3 enables accurate electronic‑structure calculations for supercells larger than 10⁴ atoms, reducing computational cost by several orders of magnitude and allowing calculations in minutes on a single GPU versus months on thousands of CPU cores."
+    },
+    {
+      "id": "clai_00581",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+    },
+    {
+      "id": "clai_00582",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 predicts a spin‑orbit‑coupling‑induced topological quantum phase transition in twisted bilayer Bi₂Te₃, evidenced by band‑gap closing and reopening and a change of the Z₂ invariant from 0 to 1 as SOC strength increases."
+    },
+    {
+      "id": "clai_00583",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 attains sub‑meV accuracy after training on only a few hundred DFT calculations of small, non‑twisted structures, demonstrating high data efficiency."
+    },
+    {
+      "id": "clai_00584",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors."
+    },
+    {
+      "id": "clai_00585",
+      "type": "claim",
+      "surface_form": "The model generalizes to arbitrarily twisted bilayer structures; the mean absolute error of Hamiltonian predictions decreases as the Moiré supercell size grows (or twist angle decreases)."
+    },
+    {
+      "id": "clai_00586",
+      "type": "claim",
+      "surface_form": "The equivariant architecture handles spin‑orbital Hamiltonians by separating real and imaginary components and applying a change‑of‑basis for half‑integer representations, thereby preserving equivariance without requiring complex‑valued network layers."
+    },
+    {
+      "id": "clai_00645",
+      "type": "claim",
+      "surface_form": "M3GNet predicts phonon band structures and densities of states for SiO₂ polymorphs that quantitatively agree with DFT calculations, and the predicted phonon density‑of‑states center follows the expected ω ∝ 1/√m trend across materials."
+    },
+    {
+      "id": "clai_00651",
+      "type": "claim",
+      "surface_form": "The Open Quantum Materials Database (OQMD) contains over 200,000 DFT‑calculated crystal structures, including experimental ICSD entries and theoretical prototype structures, and is freely accessible to the scientific community without usage restrictions."
+    },
+    {
+      "id": "clai_00652",
+      "type": "claim",
+      "surface_form": "At 0 K and zero pressure, 23 % of the 32,489 ICSD structures in the OQMD are thermodynamically stable according to grand canonical linear programming analysis."
+    },
+    {
+      "id": "clai_00654",
+      "type": "claim",
+      "surface_form": "High‑throughput screening identified TiP, LiSiNi₂, and CoSi₂ as the most promising Li‑ion battery anode conversion reactions, offering high capacity, moderate voltage, and low volume expansion."
+    },
+    {
+      "id": "clai_00657",
+      "type": "claim",
+      "surface_form": "DFT screening predicts forty‑one previously unreported rare‑earth‑containing Mg‑XL‑XS ternary systems to be thermodynamically stable LPSO phases, providing new experimental targets."
+    },
+    {
+      "id": "clai_00659",
+      "type": "claim",
+      "surface_form": "A combined heuristic‑plus‑machine‑learning model trained on OQMD ternary formation energies predicts formation energies with a mean absolute error of ~0.11 eV/atom, roughly half the typical DFT‑experiment error."
+    },
+    {
+      "id": "clai_00660",
+      "type": "claim",
+      "surface_form": "Applying the heuristic‑ML model to 1.6 million hypothetical ternary compositions identified nine top candidates, of which eight were confirmed by DFT to be new stable compounds (e.g., SiYb₃F₅, Pa₂O(SiO₆))."
+    },
+    {
+      "id": "clai_00661",
+      "type": "claim",
+      "surface_form": "AFLOW can automatically calculate a wide suite of physical observables across a large database of structures with minimal human intervention."
+    },
+    {
+      "id": "clai_00662",
+      "type": "claim",
+      "surface_form": "AFLOW detects most calculation failures, automatically corrects input parameters, restarts calculations, and can run as a Unix daemon to generate, run, correct, and converge many DFT jobs per day, yielding higher throughput than manual management."
+    },
+    {
+      "id": "clai_00663",
+      "type": "claim",
+      "surface_form": "AFLOW provides a standardized definition of Brillouin‑zone integration paths for all 14 Bravais lattices, filling a gap in the literature."
+    },
+    {
+      "id": "clai_00665",
+      "type": "claim",
+      "surface_form": "AFLOW’s cage‑finding algorithm identifies interstitial sites via a topological method, finding 14 cages (6 octahedral, 8 tetrahedral) that reduce to 5 symmetrically inequivalent positions, with radii of 2.2225 Å (octahedral) and 1.9248 Å (tetrahedral)."
+    },
+    {
+      "id": "clai_00668",
+      "type": "claim",
+      "surface_form": "AFLOW can automatically construct convex hulls for binary alloy systems at zero temperature using formation enthalpies from DFT calculations."
+    },
+    {
+      "id": "clai_00669",
+      "type": "claim",
+      "surface_form": "The AFLOW database currently contains approximately 400 experimental prototype structures and several million bcc/fcc/hcp‑derived superstructures."
+    },
+    {
+      "id": "clai_00670",
+      "type": "claim",
+      "surface_form": "A hybrid HSE06 calculation for ZnO yields a band gap of 2.48 eV, substantially larger than the LDA/GGA gap of 0.7 eV and the PBE+U gap of 1.82 eV."
+    },
+    {
+      "id": "clai_00671",
+      "type": "claim",
+      "surface_form": "Tuning the exact‑exchange fraction α to 0.375 in HSE06 brings the calculated ZnO band gap into agreement with experiment."
+    },
+    {
+      "id": "clai_00673",
+      "type": "claim",
+      "surface_form": "AFLOW implements DFT+U using the Dudarev formalism with default Ueff values for a wide range of elements."
+    },
+    {
+      "id": "clai_00674",
+      "type": "claim",
+      "surface_form": "A bulk ZnO HSE06 calculation (8×8×6 k‑point mesh, 400 eV cutoff) takes approximately 5 hours on 8 CPUs, while the equivalent GGA/PBE+U calculation finishes in less than a minute."
+    },
+    {
+      "id": "clai_00675",
+      "type": "claim",
+      "surface_form": "AFLOW can predict alloy miscibility using Miedema and Hume‑Rothery mixing rules."
+    },
+    {
+      "id": "comp_00005",
+      "type": "component",
+      "surface_form": "Output layer"
+    },
+    {
+      "id": "comp_00013",
+      "type": "component",
+      "surface_form": "Pooling layer"
+    },
+    {
+      "id": "comp_00015",
+      "type": "component",
+      "surface_form": "Virtual edge type"
+    },
+    {
+      "id": "comp_00016",
+      "type": "component",
+      "surface_form": "Master (global) node"
+    },
+    {
+      "id": "comp_00017",
+      "type": "component",
+      "surface_form": "Multiple towers"
+    },
+    {
+      "id": "comp_00018",
+      "type": "component",
+      "surface_form": "Set2Set readout"
+    },
+    {
+      "id": "comp_00023",
+      "type": "component",
+      "surface_form": "Shifted softplus activation"
+    },
+    {
+      "id": "comp_00024",
+      "type": "component",
+      "surface_form": "Atom type embedding"
+    },
+    {
+      "id": "comp_00029",
+      "type": "component",
+      "surface_form": "Directed message channels"
+    },
+    {
+      "id": "comp_00030",
+      "type": "component",
+      "surface_form": "GRU vertex update"
+    },
+    {
+      "id": "comp_00031",
+      "type": "component",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "comp_00164",
+      "type": "component",
+      "surface_form": "E(3)-equivariant convolution"
+    },
+    {
+      "id": "comp_00166",
+      "type": "component",
+      "surface_form": "Tensor‑product module"
+    },
+    {
+      "id": "comp_00167",
+      "type": "component",
+      "surface_form": "Equivariant SiLU‑based gate"
+    },
+    {
+      "id": "comp_00168",
+      "type": "component",
+      "surface_form": "output block"
+    },
+    {
+      "id": "comp_00169",
+      "type": "component",
+      "surface_form": "Energy‑conserving force computation"
+    },
+    {
+      "id": "comp_00259",
+      "type": "component",
+      "surface_form": "Elemental embeddings"
+    },
+    {
+      "id": "comp_00263",
+      "type": "component",
+      "surface_form": "Node feature vectors"
+    },
+    {
+      "id": "comp_00265",
+      "type": "component",
+      "surface_form": "Graph convolution layer"
+    },
+    {
+      "id": "comp_00267",
+      "type": "component",
+      "surface_form": "Linear pooling for interpretability"
+    },
+    {
+      "id": "comp_00281",
+      "type": "component",
+      "surface_form": "MEGNet block"
+    },
+    {
+      "id": "comp_00283",
+      "type": "component",
+      "surface_form": "Global state vector"
+    },
+    {
+      "id": "comp_00284",
+      "type": "component",
+      "surface_form": "Modified softplus activation"
+    },
+    {
+      "id": "comp_00288",
+      "type": "component",
+      "surface_form": "Combined Atomic Density ρ_i"
+    },
+    {
+      "id": "comp_00289",
+      "type": "component",
+      "surface_form": "Orthogonal Single‑Atom Basis Functions φ_v"
+    },
+    {
+      "id": "comp_00290",
+      "type": "component",
+      "surface_form": "Irreducible Basis Set B"
+    },
+    {
+      "id": "comp_00291",
+      "type": "component",
+      "surface_form": "Force and Torque Gradient Formulas"
+    },
+    {
+      "id": "comp_00292",
+      "type": "component",
+      "surface_form": "Image‑based geometric matrix"
+    },
+    {
+      "id": "comp_00293",
+      "type": "component",
+      "surface_form": "ConvLSTM network architecture"
+    },
+    {
+      "id": "comp_00295",
+      "type": "component",
+      "surface_form": "Mode‑I and Mode‑II training pipelines"
+    },
+    {
+      "id": "comp_00297",
+      "type": "component",
+      "surface_form": "Image‑based data‑processing pipeline"
+    },
+    {
+      "id": "comp_00298",
+      "type": "component",
+      "surface_form": "Geometric matrix X"
+    },
+    {
+      "id": "comp_00299",
+      "type": "component",
+      "surface_form": "Crack matrix y"
+    },
+    {
+      "id": "comp_00300",
+      "type": "component",
+      "surface_form": "Predictive model architecture"
+    },
+    {
+      "id": "comp_00301",
+      "type": "component",
+      "surface_form": "Iterative column‑wise prediction scheme"
+    },
+    {
+      "id": "comp_00302",
+      "type": "component",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "comp_00303",
+      "type": "component",
+      "surface_form": "custodian"
+    },
+    {
+      "id": "comp_00304",
+      "type": "component",
+      "surface_form": "Materials Project database"
+    },
+    {
+      "id": "comp_00308",
+      "type": "component",
+      "surface_form": "Visual warning system"
+    },
+    {
+      "id": "comp_00360",
+      "type": "component",
+      "surface_form": "OQMD database"
+    },
+    {
+      "id": "comp_00362",
+      "type": "component",
+      "surface_form": "Li2O reaction enumeration engine"
+    },
+    {
+      "id": "comp_00363",
+      "type": "component",
+      "surface_form": "HF‑scavenging coating screen"
+    },
+    {
+      "id": "comp_00364",
+      "type": "component",
+      "surface_form": "LPSO precipitate stability evaluator"
+    },
+    {
+      "id": "comp_00365",
+      "type": "component",
+      "surface_form": "Heuristic + machine‑learning formation‑energy predictor"
+    },
+    {
+      "id": "comp_00366",
+      "type": "component",
+      "surface_form": "Composition‑weighted binary averaging heuristic"
+    },
+    {
+      "id": "comp_00367",
+      "type": "component",
+      "surface_form": "Linear correction of heuristic"
+    },
+    {
+      "id": "comp_00368",
+      "type": "component",
+      "surface_form": "Decision‑tree based ML model"
+    },
+    {
+      "id": "comp_00369",
+      "type": "component",
+      "surface_form": "Combined heuristic‑ML pipeline"
+    },
+    {
+      "id": "comp_00370",
+      "type": "component",
+      "surface_form": "Stability‑ranking and heat‑map visualization"
+    },
+    {
+      "id": "data_00003",
+      "type": "dataset",
+      "surface_form": "Benzene"
+    },
+    {
+      "id": "data_00009",
+      "type": "dataset",
+      "surface_form": "graphene"
+    },
+    {
+      "id": "data_00010",
+      "type": "dataset",
+      "surface_form": "MoS2"
+    },
+    {
+      "id": "data_00027",
+      "type": "dataset",
+      "surface_form": "CCSD(T) Molecular Set – Aspirin"
+    },
+    {
+      "id": "data_00029",
+      "type": "dataset",
+      "surface_form": "CCSD(T) Molecular Set – Ethanol"
+    },
+    {
+      "id": "data_00031",
+      "type": "dataset",
+      "surface_form": "CCSD(T) Molecular Set – Toluene"
+    },
+    {
+      "id": "data_00032",
+      "type": "dataset",
+      "surface_form": "Li4P2O7"
+    },
+    {
+      "id": "data_00034",
+      "type": "dataset",
+      "surface_form": "Aspirin"
+    },
+    {
+      "id": "data_00035",
+      "type": "dataset",
+      "surface_form": "Liquid water"
+    },
+    {
+      "id": "data_00036",
+      "type": "dataset",
+      "surface_form": "Ice Ih"
+    },
+    {
+      "id": "data_00039",
+      "type": "dataset",
+      "surface_form": "Single-element dataset"
+    },
+    {
+      "id": "data_00041",
+      "type": "dataset",
+      "surface_form": "Phonon DOS benchmark"
+    },
+    {
+      "id": "data_00042",
+      "type": "dataset",
+      "surface_form": "Top 1000 materials"
+    },
+    {
+      "id": "data_00043",
+      "type": "dataset",
+      "surface_form": "Top 1000 oxide materials"
+    },
+    {
+      "id": "data_00044",
+      "type": "dataset",
+      "surface_form": "Discovery rate on 1000 sampled structures"
+    },
+    {
+      "id": "data_00045",
+      "type": "dataset",
+      "surface_form": "DFT relaxation time with M3GNet pre‑relaxation"
+    },
+    {
+      "id": "data_00051",
+      "type": "dataset",
+      "surface_form": "Naphthalene"
+    },
+    {
+      "id": "data_00052",
+      "type": "dataset",
+      "surface_form": "Salicylic acid"
+    },
+    {
+      "id": "data_00054",
+      "type": "dataset",
+      "surface_form": "Ethanol"
+    },
+    {
+      "id": "data_00055",
+      "type": "dataset",
+      "surface_form": "Toluene"
+    },
+    {
+      "id": "data_00056",
+      "type": "dataset",
+      "surface_form": "Graphene 6×6 supercell"
+    },
+    {
+      "id": "data_00058",
+      "type": "dataset",
+      "surface_form": "MoS₂ 35×35 supercell"
+    },
+    {
+      "id": "data_00059",
+      "type": "dataset",
+      "surface_form": "twisted bilayer graphene"
+    },
+    {
+      "id": "data_00061",
+      "type": "dataset",
+      "surface_form": "Materials Project"
+    },
+    {
+      "id": "data_00063",
+      "type": "dataset",
+      "surface_form": "Absolute energy"
+    },
+    {
+      "id": "data_00064",
+      "type": "dataset",
+      "surface_form": "Band gap"
+    },
+    {
+      "id": "data_00065",
+      "type": "dataset",
+      "surface_form": "Fermi energy"
+    },
+    {
+      "id": "data_00066",
+      "type": "dataset",
+      "surface_form": "Bulk moduli"
+    },
+    {
+      "id": "data_00068",
+      "type": "dataset",
+      "surface_form": "Poisson ratio"
+    },
+    {
+      "id": "data_00089",
+      "type": "dataset",
+      "surface_form": "Materials Project formation energy"
+    },
+    {
+      "id": "data_00090",
+      "type": "dataset",
+      "surface_form": "Polycrystalline graphene"
+    },
+    {
+      "id": "data_00091",
+      "type": "dataset",
+      "surface_form": "Porous graphene membranes"
+    },
+    {
+      "id": "data_00092",
+      "type": "dataset",
+      "surface_form": "Polycrystalline aluminum bulk"
+    },
+    {
+      "id": "data_00094",
+      "type": "dataset",
+      "surface_form": "SSUB thermodynamic database"
+    },
+    {
+      "id": "data_00095",
+      "type": "dataset",
+      "surface_form": "OQMD"
+    },
+    {
+      "id": "data_00098",
+      "type": "dataset",
+      "surface_form": "ZnO"
+    },
+    {
+      "id": "data_00116",
+      "type": "dataset",
+      "surface_form": "Matbench v0.1"
+    },
+    {
+      "id": "data_00117",
+      "type": "dataset",
+      "surface_form": "Matbench experimental metallicity classification"
+    },
+    {
+      "id": "data_00133",
+      "type": "dataset",
+      "surface_form": "DCGAT-2"
+    },
+    {
+      "id": "data_00135",
+      "type": "dataset",
+      "surface_form": "Volume prediction dataset"
+    },
+    {
+      "id": "data_00145",
+      "type": "dataset",
+      "surface_form": "Li10GeP2S12"
+    },
+    {
+      "id": "data_00147",
+      "type": "dataset",
+      "surface_form": "Na3Zr2Si2PO12"
+    },
+    {
+      "id": "data_00148",
+      "type": "dataset",
+      "surface_form": "LGPS"
+    },
+    {
+      "id": "data_00150",
+      "type": "dataset",
+      "surface_form": "NASICON"
+    },
+    {
+      "id": "data_00221",
+      "type": "dataset",
+      "surface_form": "MD-17 Aspirin (original)"
+    },
+    {
+      "id": "data_00223",
+      "type": "dataset",
+      "surface_form": "MD-17 Benzene (original)"
+    },
+    {
+      "id": "data_00224",
+      "type": "dataset",
+      "surface_form": "MD-17 Ethanol (original)"
+    },
+    {
+      "id": "data_00225",
+      "type": "dataset",
+      "surface_form": "MD-17 Malonaldehyde (original)"
+    },
+    {
+      "id": "data_00226",
+      "type": "dataset",
+      "surface_form": "MD-17 Naphthalene (original)"
+    },
+    {
+      "id": "data_00228",
+      "type": "dataset",
+      "surface_form": "MD-17 Salicylic acid (original)"
+    },
+    {
+      "id": "data_00229",
+      "type": "dataset",
+      "surface_form": "MD-17 Toluene (original)"
+    },
+    {
+      "id": "data_00230",
+      "type": "dataset",
+      "surface_form": "MD-17 Uracil (original)"
+    },
+    {
+      "id": "data_00231",
+      "type": "dataset",
+      "surface_form": "MD-17 Aspirin (revised)"
+    },
+    {
+      "id": "data_00233",
+      "type": "dataset",
+      "surface_form": "MD-17 Ethanol (revised)"
+    },
+    {
+      "id": "data_00234",
+      "type": "dataset",
+      "surface_form": "MD-17 Malonaldehyde (revised)"
+    },
+    {
+      "id": "data_00235",
+      "type": "dataset",
+      "surface_form": "MD-17 Toluene (revised)"
+    },
+    {
+      "id": "data_00237",
+      "type": "dataset",
+      "surface_form": "Ice Ih (b)"
+    },
+    {
+      "id": "data_00238",
+      "type": "dataset",
+      "surface_form": "Ice Ih (c)"
+    },
+    {
+      "id": "data_00239",
+      "type": "dataset",
+      "surface_form": "Ice Ih (d)"
+    },
+    {
+      "id": "data_00245",
+      "type": "dataset",
+      "surface_form": "MoS₂ 35×35 supercell (efficiency test)"
+    },
+    {
+      "id": "data_00247",
+      "type": "dataset",
+      "surface_form": "twisted bilayer bismuthene (TBB)"
+    },
+    {
+      "id": "data_00255",
+      "type": "dataset",
+      "surface_form": "Li10GeP2S12 (LGPS)"
+    },
+    {
+      "id": "data_00257",
+      "type": "dataset",
+      "surface_form": "Na3Zr2Si2PO12 (NASICON)"
+    },
+    {
+      "id": "futu_00001",
+      "type": "future_topic",
+      "surface_form": "Application of CGCNN to additional material classes beyond perovskites"
+    },
+    {
+      "id": "futu_00002",
+      "type": "future_topic",
+      "surface_form": "Integration of CGCNN predictions with experimental validation pipelines"
+    },
+    {
+      "id": "futu_00003",
+      "type": "future_topic",
+      "surface_form": "Extension of CGCNN to predict dynamic or temperature‑dependent properties"
+    },
+    {
+      "id": "futu_00006",
+      "type": "future_topic",
+      "surface_form": "Cost-effective, data-driven materials design"
+    },
+    {
+      "id": "futu_00007",
+      "type": "future_topic",
+      "surface_form": "Open-source platforms for robust, sophisticated materials analyses"
+    },
+    {
+      "id": "futu_00008",
+      "type": "future_topic",
+      "surface_form": "materials-by-design applications"
+    },
+    {
+      "id": "futu_00009",
+      "type": "future_topic",
+      "surface_form": "Support for a wide variety of other technologically important applications within the data‑driven materials design paradigm"
+    },
+    {
+      "id": "futu_00010",
+      "type": "future_topic",
+      "surface_form": "Continuous expansion of JARVIS datasets and tools"
+    },
+    {
+      "id": "futu_00011",
+      "type": "future_topic",
+      "surface_form": "Development of new machine‑learning models for material‑property predictions"
+    },
+    {
+      "id": "futu_00022",
+      "type": "future_topic",
+      "surface_form": "more challenging benchmark with chemical and structural variations"
+    },
+    {
+      "id": "futu_00023",
+      "type": "future_topic",
+      "surface_form": "modeling objects with arbitrary positions such as astronomical observations"
+    },
+    {
+      "id": "futu_00025",
+      "type": "future_topic",
+      "surface_form": "learning a representation for molecules using equilibrium and non‑equilibrium conformations"
+    },
+    {
+      "id": "futu_00039",
+      "type": "future_topic",
+      "surface_form": "apply the general MPNN approach to practically important graph problems"
+    },
+    {
+      "id": "futu_00040",
+      "type": "future_topic",
+      "surface_form": "automate challenging chemical search problems in drug discovery"
+    },
+    {
+      "id": "futu_00041",
+      "type": "future_topic",
+      "surface_form": "automate challenging chemical search problems in materials science"
+    },
+    {
+      "id": "futu_00051",
+      "type": "future_topic",
+      "surface_form": "high-fidelity molecular dynamics simulations over long time scales"
+    },
+    {
+      "id": "futu_00092",
+      "type": "future_topic",
+      "surface_form": "Twisted van der Waals materials"
+    },
+    {
+      "id": "futu_00093",
+      "type": "future_topic",
+      "surface_form": "Large‑scale material systems"
+    },
+    {
+      "id": "futu_00095",
+      "type": "future_topic",
+      "surface_form": "Disordered materials"
+    },
+    {
+      "id": "futu_00096",
+      "type": "future_topic",
+      "surface_form": "Interfaces and heterostructures"
+    },
+    {
+      "id": "futu_00098",
+      "type": "future_topic",
+      "surface_form": "Gauge‑covariant neural network architectures"
+    },
+    {
+      "id": "futu_00131",
+      "type": "future_topic",
+      "surface_form": "Transfer learning of element embeddings from large‑scale formation‑energy models to improve predictions of band gaps and elastic moduli"
+    },
+    {
+      "id": "futu_00132",
+      "type": "future_topic",
+      "surface_form": "Extension of graph‑network models to additional state‑dependent material properties"
+    },
+    {
+      "id": "futu_00133",
+      "type": "future_topic",
+      "surface_form": "Strategies to mitigate data limitations in materials‑science machine learning"
+    },
+    {
+      "id": "futu_00134",
+      "type": "future_topic",
+      "surface_form": "Application of MEGNet models to a broader range of crystal properties beyond formation energy, band gap, and elastic moduli"
+    },
+    {
+      "id": "futu_00135",
+      "type": "future_topic",
+      "surface_form": "Experimental synthesis of proposed compounds"
+    },
+    {
+      "id": "futu_00136",
+      "type": "future_topic",
+      "surface_form": "Screening for superconducting materials"
+    },
+    {
+      "id": "futu_00137",
+      "type": "future_topic",
+      "surface_form": "Screening for superhard materials"
+    },
+    {
+      "id": "futu_00138",
+      "type": "future_topic",
+      "surface_form": "Investigation of gap deformation potentials"
+    },
+    {
+      "id": "futu_00153",
+      "type": "future_topic",
+      "surface_form": "Design of de novo atomic structures using GNNs combined with genetic algorithms"
+    },
+    {
+      "id": "futu_00154",
+      "type": "future_topic",
+      "surface_form": "Accelerating meso‑level material design through AI‑driven defect‑property translation"
+    },
+    {
+      "id": "futu_00155",
+      "type": "future_topic",
+      "surface_form": "Integration of multiscale modeling data (DFT, MD, FEM) to train GNNs for broader defect‑property relationships"
+    },
+    {
+      "id": "futu_00156",
+      "type": "future_topic",
+      "surface_form": "Construction of a Moiré‑twisted material database using DeepH‑E3"
+    },
+    {
+      "id": "futu_00157",
+      "type": "future_topic",
+      "surface_form": "Extension of E(3)‑equivariant neural networks to capture DeepH’s small‑to‑large scale learning capability"
+    },
+    {
+      "id": "futu_00169",
+      "type": "future_topic",
+      "surface_form": "Exploiting intermediate PES data (energies, forces, stresses) from high‑throughput relaxations to further improve IAP accuracy"
+    },
+    {
+      "id": "futu_00171",
+      "type": "future_topic",
+      "surface_form": "Integrating M3GNet predictions with experimental synthesis validation workflows"
+    },
+    {
+      "id": "futu_00172",
+      "type": "future_topic",
+      "surface_form": "Applying M3GNet to discover materials with targeted exceptional properties such as superconductivity or high‑energy‑density battery electrodes"
+    },
+    {
+      "id": "futu_00173",
+      "type": "future_topic",
+      "surface_form": "Developing linear‑scaling IAPs based on graph deep learning for large‑scale molecular dynamics simulations of complex materials"
+    },
+    {
+      "id": "futu_00175",
+      "type": "future_topic",
+      "surface_form": "Training a machine‑learning model to predict new stable ternary compounds"
+    },
+    {
+      "id": "meth_00005",
+      "type": "method",
+      "surface_form": "Graph Convolutional Network"
+    },
+    {
+      "id": "meth_00007",
+      "type": "method",
+      "surface_form": "Genetic Algorithms"
+    },
+    {
+      "id": "meth_00013",
+      "type": "method",
+      "surface_form": "Random Forest"
+    },
+    {
+      "id": "meth_00014",
+      "type": "method",
+      "surface_form": "Batch Normalization"
+    },
+    {
+      "id": "meth_00015",
+      "type": "method",
+      "surface_form": "Adaptive Moment Estimation"
+    },
+    {
+      "id": "meth_00026",
+      "type": "method",
+      "surface_form": "Interaction Networks"
+    },
+    {
+      "id": "meth_00028",
+      "type": "method",
+      "surface_form": "Graph Attention"
+    },
+    {
+      "id": "meth_00030",
+      "type": "method",
+      "surface_form": "Message Passing Neural Network"
+    },
+    {
+      "id": "meth_00031",
+      "type": "method",
+      "surface_form": "graph neural network"
+    },
+    {
+      "id": "meth_00035",
+      "type": "method",
+      "surface_form": "Magpie"
+    },
+    {
+      "id": "meth_00036",
+      "type": "method",
+      "surface_form": "MEGNet"
+    },
+    {
+      "id": "meth_00043",
+      "type": "method",
+      "surface_form": "Global Convolution Networks"
+    },
+    {
+      "id": "meth_00044",
+      "type": "method",
+      "surface_form": "ResNets"
+    },
+    {
+      "id": "meth_00045",
+      "type": "method",
+      "surface_form": "Neural fingerprint"
+    },
+    {
+      "id": "meth_00046",
+      "type": "method",
+      "surface_form": "Gated Graph Neural Networks"
+    },
+    {
+      "id": "meth_00050",
+      "type": "method",
+      "surface_form": "SchNet"
+    },
+    {
+      "id": "meth_00051",
+      "type": "method",
+      "surface_form": "Gradient-domain machine learning"
+    },
+    {
+      "id": "meth_00052",
+      "type": "method",
+      "surface_form": "Edge-conditioned neural network"
+    },
+    {
+      "id": "meth_00053",
+      "type": "method",
+      "surface_form": "Behler‑Parrinello Neural Network Potential"
+    },
+    {
+      "id": "meth_00057",
+      "type": "method",
+      "surface_form": "Materials Graph Network"
+    },
+    {
+      "id": "meth_00063",
+      "type": "method",
+      "surface_form": "Random Forests"
+    },
+    {
+      "id": "meth_00066",
+      "type": "method",
+      "surface_form": "Set2Set"
+    },
+    {
+      "id": "meth_00074",
+      "type": "method",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "meth_00078",
+      "type": "method",
+      "surface_form": "PaiNN"
+    },
+    {
+      "id": "meth_00084",
+      "type": "method",
+      "surface_form": "Vienna Ab Initio simulation Package"
+    },
+    {
+      "id": "meth_00089",
+      "type": "method",
+      "surface_form": "Molecular dynamics"
+    },
+    {
+      "id": "meth_00094",
+      "type": "method",
+      "surface_form": "i-PI"
+    },
+    {
+      "id": "meth_00095",
+      "type": "method",
+      "surface_form": "FCHL19"
+    },
+    {
+      "id": "meth_00096",
+      "type": "method",
+      "surface_form": "generalized gradient approximation"
+    },
+    {
+      "id": "meth_00097",
+      "type": "method",
+      "surface_form": "Monkhorst-Pack k-point sampling"
+    },
+    {
+      "id": "meth_00099",
+      "type": "method",
+      "surface_form": "embedded-atom-method"
+    },
+    {
+      "id": "meth_00100",
+      "type": "method",
+      "surface_form": "DFT+U"
+    },
+    {
+      "id": "meth_00101",
+      "type": "method",
+      "surface_form": "ab initio molecular dynamics"
+    },
+    {
+      "id": "meth_00102",
+      "type": "method",
+      "surface_form": "deep-learning DFT Hamiltonian"
+    },
+    {
+      "id": "meth_00109",
+      "type": "method",
+      "surface_form": "GemNet"
+    },
+    {
+      "id": "meth_00122",
+      "type": "method",
+      "surface_form": "Equivariant message passing"
+    },
+    {
+      "id": "meth_00124",
+      "type": "method",
+      "surface_form": "e3nn"
+    },
+    {
+      "id": "meth_00139",
+      "type": "method",
+      "surface_form": "Scikit-learn"
+    },
+    {
+      "id": "meth_00172",
+      "type": "method",
+      "surface_form": "Tensor-Field Networks"
+    },
+    {
+      "id": "meth_00173",
+      "type": "method",
+      "surface_form": "Cormorant"
+    },
+    {
+      "id": "meth_00174",
+      "type": "method",
+      "surface_form": "NewtonNet"
+    },
+    {
+      "id": "meth_00175",
+      "type": "method",
+      "surface_form": "SpookyNet"
+    },
+    {
+      "id": "meth_00176",
+      "type": "method",
+      "surface_form": "ANAKIN-ME"
+    },
+    {
+      "id": "meth_00178",
+      "type": "method",
+      "surface_form": "Deep Potential MD"
+    },
+    {
+      "id": "meth_00186",
+      "type": "method",
+      "surface_form": "GGA+U"
+    },
+    {
+      "id": "meth_00189",
+      "type": "method",
+      "surface_form": "Tersoff bond order potential"
+    },
+    {
+      "id": "meth_00191",
+      "type": "method",
+      "surface_form": "AMBER force field"
+    },
+    {
+      "id": "meth_00192",
+      "type": "method",
+      "surface_form": "Universal Force Field"
+    },
+    {
+      "id": "meth_00193",
+      "type": "method",
+      "surface_form": "MODNet"
+    },
+    {
+      "id": "meth_00194",
+      "type": "method",
+      "surface_form": "AtomSets"
+    },
+    {
+      "id": "meth_00195",
+      "type": "method",
+      "surface_form": "EANN"
+    },
+    {
+      "id": "meth_00206",
+      "type": "method",
+      "surface_form": "Deep Potential Molecular Dynamics"
+    },
+    {
+      "id": "meth_00207",
+      "type": "method",
+      "surface_form": "Car-Parrinello molecular dynamics"
+    },
+    {
+      "id": "meth_00208",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network"
+    },
+    {
+      "id": "meth_00209",
+      "type": "method",
+      "surface_form": "Deep Potential method"
+    },
+    {
+      "id": "meth_00210",
+      "type": "method",
+      "surface_form": "Deep Potential"
+    },
+    {
+      "id": "meth_00213",
+      "type": "method",
+      "surface_form": "deep neural network approach to represent DFT Hamiltonian"
+    },
+    {
+      "id": "meth_00215",
+      "type": "method",
+      "surface_form": "Symmetry-adapted Graph Neural Network"
+    },
+    {
+      "id": "meth_00216",
+      "type": "method",
+      "surface_form": "SE(3)-Transformer"
+    },
+    {
+      "id": "meth_00219",
+      "type": "method",
+      "surface_form": "CNN for NLP"
+    },
+    {
+      "id": "meth_00220",
+      "type": "method",
+      "surface_form": "Neural Message Passing"
+    },
+    {
+      "id": "meth_00228",
+      "type": "method",
+      "surface_form": "Graph Networks"
+    },
+    {
+      "id": "meth_00229",
+      "type": "method",
+      "surface_form": "Atomic Cluster Expansion extended to scalar, vectorial, tensorial properties with magnetic moments and charge transfer"
+    },
+    {
+      "id": "meth_00230",
+      "type": "method",
+      "surface_form": "ConvLSTM-based fracture prediction model"
+    },
+    {
+      "id": "meth_00232",
+      "type": "method",
+      "surface_form": "Graph Neural Network for atomic property prediction in defective crystalline solids"
+    },
+    {
+      "id": "meth_00233",
+      "type": "method",
+      "surface_form": "Non‑equilibrium molecular dynamics"
+    },
+    {
+      "id": "meth_00234",
+      "type": "method",
+      "surface_form": "Voronoi tessellation"
+    },
+    {
+      "id": "meth_00235",
+      "type": "method",
+      "surface_form": "Principal Neighborhood Aggregation"
+    },
+    {
+      "id": "meth_00236",
+      "type": "method",
+      "surface_form": "Non-equilibrium Molecular Dynamics"
+    },
+    {
+      "id": "meth_00237",
+      "type": "method",
+      "surface_form": "equivariant message passing neural networks"
+    },
+    {
+      "id": "meth_00238",
+      "type": "method",
+      "surface_form": "Partial Node Assignment"
+    },
+    {
+      "id": "meth_00247",
+      "type": "method",
+      "surface_form": "JARVIS integrated materials design infrastructure"
+    },
+    {
+      "id": "meth_00248",
+      "type": "method",
+      "surface_form": "van der Waals functional OptB88"
+    },
+    {
+      "id": "meth_00250",
+      "type": "method",
+      "surface_form": "Hybrid functional HSE06"
+    },
+    {
+      "id": "meth_00251",
+      "type": "method",
+      "surface_form": "Hybrid functional PBE0"
+    },
+    {
+      "id": "meth_00252",
+      "type": "method",
+      "surface_form": "G0W0 many‑body perturbation theory"
+    },
+    {
+      "id": "meth_00253",
+      "type": "method",
+      "surface_form": "Dynamical Mean Field Theory"
+    },
+    {
+      "id": "meth_00255",
+      "type": "method",
+      "surface_form": "Vienna Ab‑initio simulation package"
+    },
+    {
+      "id": "meth_00257",
+      "type": "method",
+      "surface_form": "Automated Interactive Infrastructure and Database"
+    },
+    {
+      "id": "meth_00259",
+      "type": "method",
+      "surface_form": "Gradient Boosting Decision Tree"
+    },
+    {
+      "id": "meth_00260",
+      "type": "method",
+      "surface_form": "Keras"
+    },
+    {
+      "id": "meth_00261",
+      "type": "method",
+      "surface_form": "Scikit‑learn"
+    },
+    {
+      "id": "meth_00262",
+      "type": "method",
+      "surface_form": "Python Materials Genomics"
+    },
+    {
+      "id": "meth_00263",
+      "type": "method",
+      "surface_form": "Phase-Field Hub"
+    },
+    {
+      "id": "meth_00264",
+      "type": "method",
+      "surface_form": "WannierTools"
+    },
+    {
+      "id": "meth_00265",
+      "type": "method",
+      "surface_form": "Matminer"
+    },
+    {
+      "id": "meth_00267",
+      "type": "method",
+      "surface_form": "LAMMPS"
+    },
+    {
+      "id": "meth_00268",
+      "type": "method",
+      "surface_form": "Open Quantum Materials Database"
+    },
+    {
+      "id": "meth_00269",
+      "type": "method",
+      "surface_form": "grand canonical linear programming"
+    },
+    {
+      "id": "meth_00270",
+      "type": "method",
+      "surface_form": "Convex hull stability analysis"
+    },
+    {
+      "id": "meth_00271",
+      "type": "method",
+      "surface_form": "Muggianu model"
+    },
+    {
+      "id": "meth_00272",
+      "type": "method",
+      "surface_form": "Hillert model"
+    },
+    {
+      "id": "meth_00282",
+      "type": "method",
+      "surface_form": "AFLOW high-throughput materials discovery framework"
+    },
+    {
+      "id": "meth_00285",
+      "type": "method",
+      "surface_form": "Findsym symmetry analysis"
+    },
+    {
+      "id": "meth_00291",
+      "type": "method",
+      "surface_form": "hybrid functional"
+    },
+    {
+      "id": "meth_00307",
+      "type": "method",
+      "surface_form": "Automatminer"
+    },
+    {
+      "id": "meth_00308",
+      "type": "method",
+      "surface_form": "TPOT"
+    },
+    {
+      "id": "meth_00309",
+      "type": "method",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "meth_00311",
+      "type": "method",
+      "surface_form": "Magpie featurizer"
+    },
+    {
+      "id": "meth_00341",
+      "type": "method",
+      "surface_form": "coarse-grained message passing networks"
+    },
+    {
+      "id": "meth_00342",
+      "type": "method",
+      "surface_form": "Roost"
+    },
+    {
+      "id": "meth_00343",
+      "type": "method",
+      "surface_form": "Transformer attention mechanism"
+    },
+    {
+      "id": "meth_00344",
+      "type": "method",
+      "surface_form": "PBEsol"
+    },
+    {
+      "id": "meth_00345",
+      "type": "method",
+      "surface_form": "PseudoDojo"
+    },
+    {
+      "id": "meth_00347",
+      "type": "method",
+      "surface_form": "McMillan's formula"
+    },
+    {
+      "id": "meth_00348",
+      "type": "method",
+      "surface_form": "Matbench"
+    },
+    {
+      "id": "meth_00349",
+      "type": "method",
+      "surface_form": "Crystal Graph Attention Network"
+    },
+    {
+      "id": "meth_00350",
+      "type": "method",
+      "surface_form": "pymatgen structure matcher"
+    },
+    {
+      "id": "meth_00356",
+      "type": "method",
+      "surface_form": "LDA+U"
+    },
+    {
+      "id": "meth_00360",
+      "type": "method",
+      "surface_form": "Davidson Block Subspace"
+    },
+    {
+      "id": "meth_00361",
+      "type": "method",
+      "surface_form": "Pulay charge mixing"
+    },
+    {
+      "id": "meth_00363",
+      "type": "method",
+      "surface_form": "Harris-Foulkes corrections"
+    },
+    {
+      "id": "meth_00366",
+      "type": "method",
+      "surface_form": "Ultra-soft pseudopotentials"
+    },
+    {
+      "id": "meth_00367",
+      "type": "method",
+      "surface_form": "Local Density Approximation"
+    },
+    {
+      "id": "meth_00368",
+      "type": "method",
+      "surface_form": "PW91 functional"
+    },
+    {
+      "id": "meth_00370",
+      "type": "method",
+      "surface_form": "GW approximation"
+    },
+    {
+      "id": "meth_00383",
+      "type": "method",
+      "surface_form": "DeePMD training protocol for diffusion coefficient computation"
+    },
+    {
+      "id": "meth_00385",
+      "type": "method",
+      "surface_form": "Active learning for neural network potentials"
+    },
+    {
+      "id": "meth_00386",
+      "type": "method",
+      "surface_form": "Grimme-D2"
+    },
+    {
+      "id": "meth_00387",
+      "type": "method",
+      "surface_form": "Classical Force Field Molecular Dynamics"
+    },
+    {
+      "id": "metr_00001",
+      "type": "metric",
+      "surface_form": "MAE (formation energy per atom)"
+    },
+    {
+      "id": "metr_00002",
+      "type": "metric",
+      "surface_form": "MAE"
+    },
+    {
+      "id": "metr_00005",
+      "type": "metric",
+      "surface_form": "force MAE"
+    },
+    {
+      "id": "metr_00013",
+      "type": "metric",
+      "surface_form": "error ratio"
+    },
+    {
+      "id": "metr_00018",
+      "type": "metric",
+      "surface_form": "RMSE Energy"
+    },
+    {
+      "id": "metr_00021",
+      "type": "metric",
+      "surface_form": "MAE/ROC-AUC"
+    },
+    {
+      "id": "metr_00022",
+      "type": "metric",
+      "surface_form": "relative error (MAE/MAD)"
+    },
+    {
+      "id": "metr_00023",
+      "type": "metric",
+      "surface_form": "ROC-AUC"
+    },
+    {
+      "id": "metr_00029",
+      "type": "metric",
+      "surface_form": "MAE (meV)"
+    },
+    {
+      "id": "metr_00030",
+      "type": "metric",
+      "surface_form": "speedup (×)"
+    },
+    {
+      "id": "metr_00031",
+      "type": "metric",
+      "surface_form": "band structure"
+    },
+    {
+      "id": "metr_00043",
+      "type": "metric",
+      "surface_form": "diffusion coefficient uncertainty"
+    },
+    {
+      "id": "metr_00052",
+      "type": "metric",
+      "surface_form": "discovery rate"
+    },
+    {
+      "id": "metr_00053",
+      "type": "metric",
+      "surface_form": "normalized relative error"
+    },
+    {
+      "id": "metr_00074",
+      "type": "metric",
+      "surface_form": "energy RMSE (10^-3 eV/atom)"
+    },
+    {
+      "id": "metr_00075",
+      "type": "metric",
+      "surface_form": "energy MAE (eV/atom)"
+    },
+    {
+      "id": "metr_00079",
+      "type": "metric",
+      "surface_form": "ME"
+    },
+    {
+      "id": "metr_00080",
+      "type": "metric",
+      "surface_form": "MAE (eV/atom)"
+    },
+    {
+      "id": "metr_00081",
+      "type": "metric",
+      "surface_form": "band gap (eV)"
+    },
+    {
+      "id": "prob_00010",
+      "type": "problem",
+      "surface_form": "Computational cost reduction"
+    },
+    {
+      "id": "prob_00016",
+      "type": "problem",
+      "surface_form": "Accurate prediction of quantum‑chemical properties"
+    },
+    {
+      "id": "prob_00017",
+      "type": "problem",
+      "surface_form": "Efficient inference compared to DFT"
+    },
+    {
+      "id": "prob_00018",
+      "type": "problem",
+      "surface_form": "Learning from graph topology without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00019",
+      "type": "problem",
+      "surface_form": "Scalable high‑dimensional node representations"
+    },
+    {
+      "id": "prob_00028",
+      "type": "problem",
+      "surface_form": "E(3) equivariance with spin‑orbit coupling"
+    },
+    {
+      "id": "prob_00031",
+      "type": "problem",
+      "surface_form": "Accurate band‑structure prediction for twisted moiré materials"
+    },
+    {
+      "id": "prob_00034",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure prediction for moiré systems"
+    },
+    {
+      "id": "prob_00082",
+      "type": "problem",
+      "surface_form": "Thermodynamic stability prediction"
+    },
+    {
+      "id": "prob_00090",
+      "type": "problem",
+      "surface_form": "Data inefficiency of neural interatomic potentials"
+    },
+    {
+      "id": "prob_00091",
+      "type": "problem",
+      "surface_form": "Lack of rotational equivariance in existing GNN‑IPs"
+    },
+    {
+      "id": "prob_00092",
+      "type": "problem",
+      "surface_form": "Energy‑non‑conserving force predictions"
+    },
+    {
+      "id": "prob_00112",
+      "type": "problem",
+      "surface_form": "Accurate, fast energy/force/stress prediction"
+    },
+    {
+      "id": "prob_00113",
+      "type": "problem",
+      "surface_form": "Scalable materials discovery"
+    },
+    {
+      "id": "prob_00115",
+      "type": "problem",
+      "surface_form": "high‑cost DFT geometry optimization"
+    },
+    {
+      "id": "prob_00116",
+      "type": "problem",
+      "surface_form": "large‑scale ionic conductivity screening"
+    },
+    {
+      "id": "prob_00118",
+      "type": "problem",
+      "surface_form": "force‑field generation for small molecules"
+    },
+    {
+      "id": "prob_00129",
+      "type": "problem",
+      "surface_form": "DFT‑level accuracy with linear scaling"
+    },
+    {
+      "id": "prob_00130",
+      "type": "problem",
+      "surface_form": "Symmetry preservation without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00131",
+      "type": "problem",
+      "surface_form": "Efficient force and virial prediction"
+    },
+    {
+      "id": "prob_00132",
+      "type": "problem",
+      "surface_form": "Efficient training of interatomic potentials with forces and virial regularization"
+    },
+    {
+      "id": "prob_00134",
+      "type": "problem",
+      "surface_form": "Accurate reproduction of AIMD structural properties"
+    },
+    {
+      "id": "prob_00135",
+      "type": "problem",
+      "surface_form": "Accuracy‑efficiency dilemma of DFT"
+    },
+    {
+      "id": "prob_00136",
+      "type": "problem",
+      "surface_form": "Scalability to large‑scale material systems"
+    },
+    {
+      "id": "prob_00137",
+      "type": "problem",
+      "surface_form": "Rotation/gauge covariance of Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00139",
+      "type": "problem",
+      "surface_form": "Efficient prediction of DFT Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00140",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure calculation for large‑scale materials"
+    },
+    {
+      "id": "prob_00141",
+      "type": "problem",
+      "surface_form": "Handling rotation covariance in electronic properties"
+    },
+    {
+      "id": "prob_00142",
+      "type": "problem",
+      "surface_form": "Modeling twisted moiré materials"
+    },
+    {
+      "id": "prob_00143",
+      "type": "problem",
+      "surface_form": "Accurate prediction of material properties"
+    },
+    {
+      "id": "prob_00144",
+      "type": "problem",
+      "surface_form": "Interpretability of deep models for materials"
+    },
+    {
+      "id": "prob_00145",
+      "type": "problem",
+      "surface_form": "Variable‑size crystal representation"
+    },
+    {
+      "id": "prob_00158",
+      "type": "problem",
+      "surface_form": "Lack of a unified framework for molecules and crystals"
+    },
+    {
+      "id": "prob_00159",
+      "type": "problem",
+      "surface_form": "Inability to model state‑dependent properties"
+    },
+    {
+      "id": "prob_00161",
+      "type": "problem",
+      "surface_form": "Interpretability of learned chemical trends"
+    },
+    {
+      "id": "prob_00163",
+      "type": "problem",
+      "surface_form": "Rotationally Invariant Tensorial Property Representation"
+    },
+    {
+      "id": "prob_00165",
+      "type": "problem",
+      "surface_form": "Efficient prediction of dynamic brittle fracture paths"
+    },
+    {
+      "id": "prob_00166",
+      "type": "problem",
+      "surface_form": "Fracture‑toughness estimation from atomistic data"
+    },
+    {
+      "id": "prob_00167",
+      "type": "problem",
+      "surface_form": "Generalization to unseen crystal orientations and bicrystal interfaces"
+    },
+    {
+      "id": "prob_00168",
+      "type": "problem",
+      "surface_form": "Fracture pattern prediction from MD simulations"
+    },
+    {
+      "id": "prob_00169",
+      "type": "problem",
+      "surface_form": "Noise reduction in atomistic data"
+    },
+    {
+      "id": "prob_00170",
+      "type": "problem",
+      "surface_form": "Modeling spatiotemporal dependencies in fracture"
+    },
+    {
+      "id": "prob_00171",
+      "type": "problem",
+      "surface_form": "Slow, trial‑and‑error materials discovery"
+    },
+    {
+      "id": "prob_00172",
+      "type": "problem",
+      "surface_form": "Lack of accessible high‑quality materials data"
+    },
+    {
+      "id": "prob_00173",
+      "type": "problem",
+      "surface_form": "Manual management of large calculation campaigns"
+    },
+    {
+      "id": "prob_00176",
+      "type": "problem",
+      "surface_form": "Accelerated property evaluation"
+    },
+    {
+      "id": "prob_00177",
+      "type": "problem",
+      "surface_form": "Inverse design of low‑stress structures"
+    },
+    {
+      "id": "prob_00178",
+      "type": "problem",
+      "surface_form": "Accelerated atomic‑property prediction"
+    },
+    {
+      "id": "prob_00181",
+      "type": "problem",
+      "surface_form": "Exploration of huge defect‑structure spaces"
+    },
+    {
+      "id": "prob_00182",
+      "type": "problem",
+      "surface_form": "Design optimization of holey graphene"
+    },
+    {
+      "id": "prob_00183",
+      "type": "problem",
+      "surface_form": "Nonlinear structure‑property mapping"
+    },
+    {
+      "id": "prob_00184",
+      "type": "problem",
+      "surface_form": "Reduction of computational cost for exhaustive search"
+    },
+    {
+      "id": "prob_00194",
+      "type": "problem",
+      "surface_form": "Uncertainty quantification for ML predictions"
+    },
+    {
+      "id": "prob_00195",
+      "type": "problem",
+      "surface_form": "Efficient property screening"
+    },
+    {
+      "id": "prob_00198",
+      "type": "problem",
+      "surface_form": "Force‑field quality assessment"
+    },
+    {
+      "id": "prob_00199",
+      "type": "problem",
+      "surface_form": "Accelerated property prediction"
+    },
+    {
+      "id": "prob_00201",
+      "type": "problem",
+      "surface_form": "Rapid heterostructure design"
+    },
+    {
+      "id": "prob_00202",
+      "type": "problem",
+      "surface_form": "High‑capacity battery anode identification"
+    },
+    {
+      "id": "prob_00203",
+      "type": "problem",
+      "surface_form": "HF‑induced cathode degradation mitigation"
+    },
+    {
+      "id": "prob_00204",
+      "type": "problem",
+      "surface_form": "Affordable LPSO precipitate discovery"
+    },
+    {
+      "id": "prob_00205",
+      "type": "problem",
+      "surface_form": "Novel ternary compound discovery"
+    },
+    {
+      "id": "prob_00206",
+      "type": "problem",
+      "surface_form": "Rapid prediction of ternary formation energies without crystal structures"
+    },
+    {
+      "id": "prob_00207",
+      "type": "problem",
+      "surface_form": "Efficient identification of likely stable ternary compounds"
+    },
+    {
+      "id": "prob_00217",
+      "type": "problem",
+      "surface_form": "Standardized structure representation"
+    },
+    {
+      "id": "prob_00218",
+      "type": "problem",
+      "surface_form": "Automated phonon and vibrational property extraction"
+    },
+    {
+      "id": "prob_00219",
+      "type": "problem",
+      "surface_form": "Construction of complex surface slabs and nanoparticles"
+    },
+    {
+      "id": "prob_00220",
+      "type": "problem",
+      "surface_form": "Identification of interstitial sites"
+    },
+    {
+      "id": "prob_00221",
+      "type": "problem",
+      "surface_form": "phase stability determination"
+    },
+    {
+      "id": "prob_00222",
+      "type": "problem",
+      "surface_form": "defect energetics and band‑gap underestimation"
+    },
+    {
+      "id": "prob_00352",
+      "type": "problem",
+      "surface_form": "chemical element bias"
+    },
+    {
+      "id": "prob_00353",
+      "type": "problem",
+      "surface_form": "structural prototype bias"
+    },
+    {
+      "id": "prob_00354",
+      "type": "problem",
+      "surface_form": "poor generalization error in high-throughput searches"
+    },
+    {
+      "id": "prob_00356",
+      "type": "problem",
+      "surface_form": "Training data bias"
+    },
+    {
+      "id": "prob_00357",
+      "type": "problem",
+      "surface_form": "Inconsistent prediction error"
+    },
+    {
+      "id": "prob_00358",
+      "type": "problem",
+      "surface_form": "False negative rate"
+    },
+    {
+      "id": "prob_00359",
+      "type": "problem",
+      "surface_form": "Limited convex hull coverage"
+    },
+    {
+      "id": "prob_00360",
+      "type": "problem",
+      "surface_form": "Efficient hard material discovery"
+    },
+    {
+      "id": "prob_00361",
+      "type": "problem",
+      "surface_form": "High-Tc superconductor identification"
+    },
+    {
+      "id": "prob_00362",
+      "type": "problem",
+      "surface_form": "Extreme deformation potential detection"
+    },
+    {
+      "id": "prob_00365",
+      "type": "problem",
+      "surface_form": "Structural diversity deficiency"
+    },
+    {
+      "id": "prob_00366",
+      "type": "problem",
+      "surface_form": "Generalization error"
+    },
+    {
+      "id": "prob_00412",
+      "type": "problem",
+      "surface_form": "Time-scale limitation in first-principles molecular dynamics"
+    },
+    {
+      "id": "prob_00414",
+      "type": "problem",
+      "surface_form": "Overfitting in neural network potentials"
+    },
+    {
+      "id": "prob_00415",
+      "type": "problem",
+      "surface_form": "Achieving Boltzmann-distributed training without expensive pre-simulations"
+    },
+    {
+      "id": "prob_00416",
+      "type": "problem",
+      "surface_form": "efficient training set construction"
+    },
+    {
+      "id": "prob_00417",
+      "type": "problem",
+      "surface_form": "accurate force field generation"
+    },
+    {
+      "id": "prob_00418",
+      "type": "problem",
+      "surface_form": "Neural network potential convergence for solid-state electrolytes"
+    },
+    {
+      "id": "prob_00421",
+      "type": "problem",
+      "surface_form": "Activation energy prediction accuracy"
+    },
+    {
+      "id": "task_00001",
+      "type": "task",
+      "surface_form": "machine learning"
+    },
+    {
+      "id": "task_00003",
+      "type": "task",
+      "surface_form": "materials science"
+    },
+    {
+      "id": "task_00004",
+      "type": "task",
+      "surface_form": "chemistry"
+    },
+    {
+      "id": "task_00010",
+      "type": "task",
+      "surface_form": "computational chemistry"
+    },
+    {
+      "id": "task_00016",
+      "type": "task",
+      "surface_form": "Crystal property prediction"
+    },
+    {
+      "id": "task_00023",
+      "type": "task",
+      "surface_form": "condensed matter physics"
+    },
+    {
+      "id": "task_00024",
+      "type": "task",
+      "surface_form": "Molecular total energy prediction"
+    },
+    {
+      "id": "task_00025",
+      "type": "task",
+      "surface_form": "Interatomic force prediction"
+    },
+    {
+      "id": "task_00026",
+      "type": "task",
+      "surface_form": "Molecular dynamics trajectory modeling"
+    },
+    {
+      "id": "task_00027",
+      "type": "task",
+      "surface_form": "quantum chemistry"
+    },
+    {
+      "id": "task_00034",
+      "type": "task",
+      "surface_form": "molecular dynamics"
+    },
+    {
+      "id": "task_00037",
+      "type": "task",
+      "surface_form": "Molecule‑level property regression"
+    },
+    {
+      "id": "task_00044",
+      "type": "task",
+      "surface_form": "atomistic simulation"
+    },
+    {
+      "id": "task_00045",
+      "type": "task",
+      "surface_form": "electronic structure"
+    },
+    {
+      "id": "task_00046",
+      "type": "task",
+      "surface_form": "Electronic structure calculation"
+    },
+    {
+      "id": "task_00056",
+      "type": "task",
+      "surface_form": "DFT Hamiltonian prediction"
+    },
+    {
+      "id": "task_00058",
+      "type": "task",
+      "surface_form": "Electronic band‑structure prediction"
+    },
+    {
+      "id": "task_00059",
+      "type": "task",
+      "surface_form": "Topological invariant analysis"
+    },
+    {
+      "id": "task_00060",
+      "type": "task",
+      "surface_form": "High‑throughput Hamiltonian generation"
+    },
+    {
+      "id": "task_00080",
+      "type": "task",
+      "surface_form": "Ionic conductivity prediction"
+    },
+    {
+      "id": "task_00103",
+      "type": "task",
+      "surface_form": "battery materials"
+    },
+    {
+      "id": "task_00112",
+      "type": "task",
+      "surface_form": "Formation energy regression"
+    },
+    {
+      "id": "task_00150",
+      "type": "task",
+      "surface_form": "Crystal structural relaxation"
+    },
+    {
+      "id": "task_00152",
+      "type": "task",
+      "surface_form": "Phonon and elasticity calculations"
+    },
+    {
+      "id": "task_00153",
+      "type": "task",
+      "surface_form": "High‑throughput materials screening"
+    },
+    {
+      "id": "task_00154",
+      "type": "task",
+      "surface_form": "Energy, force, and stress prediction for arbitrary crystals"
+    },
+    {
+      "id": "task_00156",
+      "type": "task",
+      "surface_form": "phonon band structure calculation"
+    },
+    {
+      "id": "task_00157",
+      "type": "task",
+      "surface_form": "Elastic modulus prediction"
+    },
+    {
+      "id": "task_00159",
+      "type": "task",
+      "surface_form": "materials screening for lithium superionic conductors"
+    },
+    {
+      "id": "task_00160",
+      "type": "task",
+      "surface_form": "force‑field benchmarking on MD17 datasets"
+    },
+    {
+      "id": "task_00161",
+      "type": "task",
+      "surface_form": "property prediction on MatBench benchmarks"
+    },
+    {
+      "id": "task_00162",
+      "type": "task",
+      "surface_form": "Interatomic potential development for silicon"
+    },
+    {
+      "id": "task_00165",
+      "type": "task",
+      "surface_form": "Interatomic potential fitting for silicon"
+    },
+    {
+      "id": "task_00166",
+      "type": "task",
+      "surface_form": "Bulk crystal equation‑of‑state calculations"
+    },
+    {
+      "id": "task_00167",
+      "type": "task",
+      "surface_form": "Liquid silicon structural analysis"
+    },
+    {
+      "id": "task_00168",
+      "type": "task",
+      "surface_form": "Amorphous silicon generation and characterization"
+    },
+    {
+      "id": "task_00173",
+      "type": "task",
+      "surface_form": "Energy, force, and virial prediction"
+    },
+    {
+      "id": "task_00175",
+      "type": "task",
+      "surface_form": "Molecular dynamics simulation of liquid water and ice"
+    },
+    {
+      "id": "task_00176",
+      "type": "task",
+      "surface_form": "MD simulation of organic molecules"
+    },
+    {
+      "id": "task_00177",
+      "type": "task",
+      "surface_form": "Prediction of potential energy, atomic forces, and virial tensor"
+    },
+    {
+      "id": "task_00179",
+      "type": "task",
+      "surface_form": "Electronic‑structure property calculation"
+    },
+    {
+      "id": "task_00180",
+      "type": "task",
+      "surface_form": "Study of twisted van der Waals heterostructures"
+    },
+    {
+      "id": "task_00181",
+      "type": "task",
+      "surface_form": "DFT Hamiltonian matrix prediction"
+    },
+    {
+      "id": "task_00182",
+      "type": "task",
+      "surface_form": "Band structure and density‑of‑states calculation"
+    },
+    {
+      "id": "task_00183",
+      "type": "task",
+      "surface_form": "Optical response computation"
+    },
+    {
+      "id": "task_00186",
+      "type": "task",
+      "surface_form": "Continuous property regression"
+    },
+    {
+      "id": "task_00187",
+      "type": "task",
+      "surface_form": "Per‑atom energy extraction"
+    },
+    {
+      "id": "task_00188",
+      "type": "task",
+      "surface_form": "Materials design rule discovery"
+    },
+    {
+      "id": "task_00196",
+      "type": "task",
+      "surface_form": "Unified free‑energy prediction"
+    },
+    {
+      "id": "task_00197",
+      "type": "task",
+      "surface_form": "Transfer‑learning for small‑data properties"
+    },
+    {
+      "id": "task_00198",
+      "type": "task",
+      "surface_form": "Construction of Interatomic Potentials with Magnetic and Charge Degrees of Freedom"
+    },
+    {
+      "id": "task_00199",
+      "type": "task",
+      "surface_form": "Prediction of Energies, Forces and Torques for Multi‑Component Materials"
+    },
+    {
+      "id": "task_00200",
+      "type": "task",
+      "surface_form": "Crack‑pattern prediction"
+    },
+    {
+      "id": "task_00201",
+      "type": "task",
+      "surface_form": "Fracture‑toughness prediction"
+    },
+    {
+      "id": "task_00202",
+      "type": "task",
+      "surface_form": "Bicrystal fracture prediction"
+    },
+    {
+      "id": "task_00203",
+      "type": "task",
+      "surface_form": "Gradient‑orientation fracture prediction"
+    },
+    {
+      "id": "task_00204",
+      "type": "task",
+      "surface_form": "Crack path prediction in crystalline solids"
+    },
+    {
+      "id": "task_00205",
+      "type": "task",
+      "surface_form": "Spatiotemporal fracture behavior forecasting"
+    },
+    {
+      "id": "task_00206",
+      "type": "task",
+      "surface_form": "High‑throughput computation of inorganic material properties"
+    },
+    {
+      "id": "task_00207",
+      "type": "task",
+      "surface_form": "Phase diagram construction and stability assessment"
+    },
+    {
+      "id": "task_00208",
+      "type": "task",
+      "surface_form": "Reaction energy calculation and screening"
+    },
+    {
+      "id": "task_00211",
+      "type": "task",
+      "surface_form": "Atomic von Mises stress prediction"
+    },
+    {
+      "id": "task_00212",
+      "type": "task",
+      "surface_form": "Atomic tensile stress prediction"
+    },
+    {
+      "id": "task_00213",
+      "type": "task",
+      "surface_form": "Atomic potential energy prediction"
+    },
+    {
+      "id": "task_00216",
+      "type": "task",
+      "surface_form": "Per‑atom stress field prediction"
+    },
+    {
+      "id": "task_00217",
+      "type": "task",
+      "surface_form": "Global mechanical property estimation"
+    },
+    {
+      "id": "task_00218",
+      "type": "task",
+      "surface_form": "Design optimization of porous/holey graphene membranes"
+    },
+    {
+      "id": "task_00219",
+      "type": "task",
+      "surface_form": "Validation against MD simulations"
+    },
+    {
+      "id": "task_00220",
+      "type": "task",
+      "surface_form": "Atomic stress field prediction"
+    },
+    {
+      "id": "task_00221",
+      "type": "task",
+      "surface_form": "Holey graphene design optimization"
+    },
+    {
+      "id": "task_00222",
+      "type": "task",
+      "surface_form": "Benchmarking GNN architectures"
+    },
+    {
+      "id": "task_00223",
+      "type": "task",
+      "surface_form": "mechanical design"
+    },
+    {
+      "id": "task_00230",
+      "type": "task",
+      "surface_form": "Materials property calculation"
+    },
+    {
+      "id": "task_00231",
+      "type": "task",
+      "surface_form": "Solar‑cell efficiency screening"
+    },
+    {
+      "id": "task_00233",
+      "type": "task",
+      "surface_form": "STM image analysis"
+    },
+    {
+      "id": "task_00234",
+      "type": "task",
+      "surface_form": "Force‑field benchmarking"
+    },
+    {
+      "id": "task_00235",
+      "type": "task",
+      "surface_form": "Heterostructure design"
+    },
+    {
+      "id": "task_00236",
+      "type": "task",
+      "surface_form": "Phonon and vibrational property prediction"
+    },
+    {
+      "id": "task_00238",
+      "type": "task",
+      "surface_form": "Tight‑binding model generation"
+    },
+    {
+      "id": "task_00239",
+      "type": "task",
+      "surface_form": "Materials property prediction via ML"
+    },
+    {
+      "id": "task_00241",
+      "type": "task",
+      "surface_form": "Classical force‑field property benchmarking"
+    },
+    {
+      "id": "task_00242",
+      "type": "task",
+      "surface_form": "Machine‑learning property prediction"
+    },
+    {
+      "id": "task_00243",
+      "type": "task",
+      "surface_form": "STM image classification"
+    },
+    {
+      "id": "task_00244",
+      "type": "task",
+      "surface_form": "2D heterostructure band‑alignment analysis"
+    },
+    {
+      "id": "task_00246",
+      "type": "task",
+      "surface_form": "High‑throughput screening of Li‑ion battery anodes"
+    },
+    {
+      "id": "task_00247",
+      "type": "task",
+      "surface_form": "Li2O‑based reaction search for Li‑air batteries"
+    },
+    {
+      "id": "task_00248",
+      "type": "task",
+      "surface_form": "Screening of metal‑oxide cathode coatings for HF scavenging"
+    },
+    {
+      "id": "task_00249",
+      "type": "task",
+      "surface_form": "Stability assessment of Mg‑based LPSO precipitates"
+    },
+    {
+      "id": "task_00251",
+      "type": "task",
+      "surface_form": "Formation‑energy prediction for ternary compounds"
+    },
+    {
+      "id": "task_00252",
+      "type": "task",
+      "surface_form": "Stability ranking of large compositional spaces"
+    },
+    {
+      "id": "task_00253",
+      "type": "task",
+      "surface_form": "Guided DFT crystal‑structure prediction"
+    },
+    {
+      "id": "task_00254",
+      "type": "task",
+      "surface_form": "computational materials design"
+    },
+    {
+      "id": "task_00264",
+      "type": "task",
+      "surface_form": "High‑throughput calculation of crystal‑structure properties"
+    },
+    {
+      "id": "task_00265",
+      "type": "task",
+      "surface_form": "Phonon dispersion and vibrational thermodynamics"
+    },
+    {
+      "id": "task_00266",
+      "type": "task",
+      "surface_form": "Surface‑slab generation for catalysis and corrosion studies"
+    },
+    {
+      "id": "task_00267",
+      "type": "task",
+      "surface_form": "Nanoparticle structure generation"
+    },
+    {
+      "id": "task_00270",
+      "type": "task",
+      "surface_form": "convex‑hull phase diagram construction"
+    },
+    {
+      "id": "task_00273",
+      "type": "task",
+      "surface_form": "hybrid functional band‑structure calculation"
+    },
+    {
+      "id": "task_00279",
+      "type": "task",
+      "surface_form": "Phonon frequency prediction"
+    },
+    {
+      "id": "task_00329",
+      "type": "task",
+      "surface_form": "Bulk modulus prediction"
+    },
+    {
+      "id": "task_00330",
+      "type": "task",
+      "surface_form": "Shear modulus prediction"
+    },
+    {
+      "id": "task_00341",
+      "type": "task",
+      "surface_form": "Exfoliation energy regression"
+    },
+    {
+      "id": "task_00347",
+      "type": "task",
+      "surface_form": "Phonon density of states prediction"
+    },
+    {
+      "id": "task_00356",
+      "type": "task",
+      "surface_form": "machine learning for materials"
+    },
+    {
+      "id": "task_00374",
+      "type": "task",
+      "surface_form": "High-throughput materials screening"
+    },
+    {
+      "id": "task_00439",
+      "type": "task",
+      "surface_form": "high-throughput materials discovery"
+    },
+    {
+      "id": "task_00440",
+      "type": "task",
+      "surface_form": "superconductor candidate identification"
+    },
+    {
+      "id": "task_00441",
+      "type": "task",
+      "surface_form": "superhard materials discovery"
+    },
+    {
+      "id": "task_00442",
+      "type": "task",
+      "surface_form": "gap deformation potential screening"
+    },
+    {
+      "id": "task_00448",
+      "type": "task",
+      "surface_form": "Elastic constant calculation"
+    },
+    {
+      "id": "task_00451",
+      "type": "task",
+      "surface_form": "Superconducting Tc calculation"
+    },
+    {
+      "id": "task_00453",
+      "type": "task",
+      "surface_form": "Fixed shape deformation potential prediction"
+    },
+    {
+      "id": "task_00454",
+      "type": "task",
+      "surface_form": "Phonon dispersion calculation"
+    },
+    {
+      "id": "task_00456",
+      "type": "task",
+      "surface_form": "Unit cell volume prediction"
+    },
+    {
+      "id": "task_00458",
+      "type": "task",
+      "surface_form": "Superconductivity prediction"
+    },
+    {
+      "id": "task_00459",
+      "type": "task",
+      "surface_form": "Gap deformation potential prediction"
+    },
+    {
+      "id": "task_00468",
+      "type": "task",
+      "surface_form": "Geometry optimization"
+    },
+    {
+      "id": "task_00469",
+      "type": "task",
+      "surface_form": "Single-point energy calculation"
+    },
+    {
+      "id": "task_00470",
+      "type": "task",
+      "surface_form": "Electronic band structure calculation"
+    },
+    {
+      "id": "task_00472",
+      "type": "task",
+      "surface_form": "Mechanical properties calculation"
+    },
+    {
+      "id": "task_00474",
+      "type": "task",
+      "surface_form": "thermoelectric property assessment"
+    },
+    {
+      "id": "task_00475",
+      "type": "task",
+      "surface_form": "surface stability prediction"
+    },
+    {
+      "id": "task_00476",
+      "type": "task",
+      "surface_form": "oxidation energy calculation"
+    },
+    {
+      "id": "task_00477",
+      "type": "task",
+      "surface_form": "point defect analysis"
+    },
+    {
+      "id": "task_00478",
+      "type": "task",
+      "surface_form": "magneto-optical property calculation"
+    },
+    {
+      "id": "task_00479",
+      "type": "task",
+      "surface_form": "Static energy calculation"
+    },
+    {
+      "id": "task_00482",
+      "type": "task",
+      "surface_form": "High-throughput materials database creation"
+    },
+    {
+      "id": "task_00483",
+      "type": "task",
+      "surface_form": "High-throughput DFT calculations"
+    },
+    {
+      "id": "task_00484",
+      "type": "task",
+      "surface_form": "Static energy calculations"
+    },
+    {
+      "id": "task_00488",
+      "type": "task",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "task_00523",
+      "type": "task",
+      "surface_form": "Activation energy computation"
+    },
+    {
+      "id": "task_00524",
+      "type": "task",
+      "surface_form": "Li10GeP2S12 diffusion modeling"
+    },
+    {
+      "id": "task_00525",
+      "type": "task",
+      "surface_form": "Li7La3Zr2O12 diffusion modeling"
+    },
+    {
+      "id": "task_00526",
+      "type": "task",
+      "surface_form": "Na3Zr2Si2PO12 diffusion modeling"
+    },
+    {
+      "id": "task_00527",
+      "type": "task",
+      "surface_form": "LGPS solid electrolyte simulation"
+    },
+    {
+      "id": "task_00529",
+      "type": "task",
+      "surface_form": "NASICON solid electrolyte simulation"
+    },
+    {
+      "id": "task_00531",
+      "type": "task",
+      "surface_form": "Li diffusion simulation in LLZO"
+    },
+    {
+      "id": "task_00532",
+      "type": "task",
+      "surface_form": "Na diffusion simulation in NASICON"
+    },
+    {
+      "id": "task_00533",
+      "type": "task",
+      "surface_form": "Activation energy estimation"
+    },
+    {
+      "id": "task_00534",
+      "type": "task",
+      "surface_form": "solid-state electrolytes"
+    },
+    {
+      "id": "tech_00018",
+      "type": "technique",
+      "surface_form": "Weight tying"
+    },
+    {
+      "id": "tech_00023",
+      "type": "technique",
+      "surface_form": "Ensemble learning"
+    },
+    {
+      "id": "tech_00033",
+      "type": "technique",
+      "surface_form": "SiLU activation"
+    },
+    {
+      "id": "tech_00047",
+      "type": "technique",
+      "surface_form": "Residual connections"
+    },
+    {
+      "id": "tech_00049",
+      "type": "technique",
+      "surface_form": "Stochastic gradient descent"
+    },
+    {
+      "id": "tech_00050",
+      "type": "technique",
+      "surface_form": "Softmax classification"
+    },
+    {
+      "id": "tech_00052",
+      "type": "technique",
+      "surface_form": "Graph convolution"
+    },
+    {
+      "id": "tech_00058",
+      "type": "technique",
+      "surface_form": "Exponential learning‑rate decay"
+    },
+    {
+      "id": "tech_00065",
+      "type": "technique",
+      "surface_form": "Exponential moving average of weights"
+    },
+    {
+      "id": "tech_00070",
+      "type": "technique",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "tech_00071",
+      "type": "technique",
+      "surface_form": "Radial basis function expansion of distances"
+    },
+    {
+      "id": "tech_00074",
+      "type": "technique",
+      "surface_form": "Weight sharing across atoms"
+    },
+    {
+      "id": "tech_00080",
+      "type": "technique",
+      "surface_form": "10‑fold cross‑validation"
+    },
+    {
+      "id": "tech_00083",
+      "type": "technique",
+      "surface_form": "Edge‑dependent linear transformation"
+    },
+    {
+      "id": "tech_00084",
+      "type": "technique",
+      "surface_form": "Set2Set pooling"
+    },
+    {
+      "id": "tech_00087",
+      "type": "technique",
+      "surface_form": "Multiple‑tower decomposition"
+    },
+    {
+      "id": "tech_00088",
+      "type": "technique",
+      "surface_form": "Directed message channels"
+    },
+    {
+      "id": "tech_00093",
+      "type": "technique",
+      "surface_form": "Arrhenius fitting"
+    },
+    {
+      "id": "tech_00103",
+      "type": "technique",
+      "surface_form": "High‑throughput screening"
+    },
+    {
+      "id": "tech_00109",
+      "type": "technique",
+      "surface_form": "Hierarchical Body‑Order Expansion"
+    },
+    {
+      "id": "tech_00219",
+      "type": "technique",
+      "surface_form": "Radial basis functions"
+    },
+    {
+      "id": "tech_00220",
+      "type": "technique",
+      "surface_form": "Clebsch‑Gordan tensor product"
+    },
+    {
+      "id": "tech_00221",
+      "type": "technique",
+      "surface_form": "Gate nonlinearity"
+    },
+    {
+      "id": "tech_00222",
+      "type": "technique",
+      "surface_form": "ResNet‑style skip connections"
+    },
+    {
+      "id": "tech_00223",
+      "type": "technique",
+      "surface_form": "Energy‑gradient force derivation"
+    },
+    {
+      "id": "tech_00243",
+      "type": "technique",
+      "surface_form": "Spherical Bessel and spherical harmonics expansion"
+    },
+    {
+      "id": "tech_00244",
+      "type": "technique",
+      "surface_form": "Smooth cutoff function"
+    },
+    {
+      "id": "tech_00245",
+      "type": "technique",
+      "surface_form": "Gated multi‑layer perceptron"
+    },
+    {
+      "id": "tech_00246",
+      "type": "technique",
+      "surface_form": "Auto‑differentiation for forces and stresses"
+    },
+    {
+      "id": "tech_00247",
+      "type": "technique",
+      "surface_form": "Joint training on energy, force, and stress targets"
+    },
+    {
+      "id": "tech_00248",
+      "type": "technique",
+      "surface_form": "Elemental embedding"
+    },
+    {
+      "id": "tech_00249",
+      "type": "technique",
+      "surface_form": "Multi‑step n‑body to bond to graph convolution pipeline"
+    },
+    {
+      "id": "tech_00250",
+      "type": "technique",
+      "surface_form": "pre‑relaxation using a learned interatomic potential"
+    },
+    {
+      "id": "tech_00252",
+      "type": "technique",
+      "surface_form": "mean‑squared displacement (MSD) analysis"
+    },
+    {
+      "id": "tech_00253",
+      "type": "technique",
+      "surface_form": "phonon band structure and DOS calculation"
+    },
+    {
+      "id": "tech_00254",
+      "type": "technique",
+      "surface_form": "elastic tensor extraction"
+    },
+    {
+      "id": "tech_00255",
+      "type": "technique",
+      "surface_form": "filter‑and‑screen workflow for lithium superionic conductors"
+    },
+    {
+      "id": "tech_00271",
+      "type": "technique",
+      "surface_form": "Neighbor sorting by species and inverse distance"
+    },
+    {
+      "id": "tech_00274",
+      "type": "technique",
+      "surface_form": "Energy‑force‑virial joint loss"
+    },
+    {
+      "id": "tech_00275",
+      "type": "technique",
+      "surface_form": "Progressive weighting of loss terms"
+    },
+    {
+      "id": "tech_00277",
+      "type": "technique",
+      "surface_form": "Backpropagation for force and virial computation"
+    },
+    {
+      "id": "tech_00278",
+      "type": "technique",
+      "surface_form": "Linear evolution of loss prefactors"
+    },
+    {
+      "id": "tech_00281",
+      "type": "technique",
+      "surface_form": "Local coordinate transformation"
+    },
+    {
+      "id": "tech_00282",
+      "type": "technique",
+      "surface_form": "Spherical harmonic encoding"
+    },
+    {
+      "id": "tech_00284",
+      "type": "technique",
+      "surface_form": "Rotation‑invariant local coordinate representation"
+    },
+    {
+      "id": "tech_00285",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis functions for distance encoding"
+    },
+    {
+      "id": "tech_00287",
+      "type": "technique",
+      "surface_form": "Sigmoid + softplus activation combo"
+    },
+    {
+      "id": "tech_00288",
+      "type": "technique",
+      "surface_form": "Adam optimizer with staged learning‑rate decay"
+    },
+    {
+      "id": "tech_00289",
+      "type": "technique",
+      "surface_form": "ARPACK eigenvalue solver"
+    },
+    {
+      "id": "tech_00291",
+      "type": "technique",
+      "surface_form": "Sigmoid‑gated neighbor aggregation"
+    },
+    {
+      "id": "tech_00292",
+      "type": "technique",
+      "surface_form": "Normalized summation pooling"
+    },
+    {
+      "id": "tech_00293",
+      "type": "technique",
+      "surface_form": "Linear pooling for site‑energy extraction"
+    },
+    {
+      "id": "tech_00302",
+      "type": "technique",
+      "surface_form": "Global state conditioning"
+    },
+    {
+      "id": "tech_00303",
+      "type": "technique",
+      "surface_form": "Transfer learning of elemental embeddings"
+    },
+    {
+      "id": "tech_00304",
+      "type": "technique",
+      "surface_form": "Residual skip connections"
+    },
+    {
+      "id": "tech_00305",
+      "type": "technique",
+      "surface_form": "Gaussian basis expansion of distances"
+    },
+    {
+      "id": "tech_00306",
+      "type": "technique",
+      "surface_form": "Orthogonalization of Non‑Orthogonal Basis"
+    },
+    {
+      "id": "tech_00307",
+      "type": "technique",
+      "surface_form": "Clebsch‑Gordan Coupling"
+    },
+    {
+      "id": "tech_00308",
+      "type": "technique",
+      "surface_form": "Wigner Symbol Recoupling"
+    },
+    {
+      "id": "tech_00309",
+      "type": "technique",
+      "surface_form": "Spherical‑Harmonic Expansion of Cartesian Tensors"
+    },
+    {
+      "id": "tech_00310",
+      "type": "technique",
+      "surface_form": "Analytic Gradient Evaluation"
+    },
+    {
+      "id": "tech_00311",
+      "type": "technique",
+      "surface_form": "Spatiotemporal learning with ConvLSTM"
+    },
+    {
+      "id": "tech_00312",
+      "type": "technique",
+      "surface_form": "Image‑based encoding of atomistic data"
+    },
+    {
+      "id": "tech_00314",
+      "type": "technique",
+      "surface_form": "Physics‑based surface‑energy calculation"
+    },
+    {
+      "id": "tech_00315",
+      "type": "technique",
+      "surface_form": "Orientation‑angle encoding"
+    },
+    {
+      "id": "tech_00316",
+      "type": "technique",
+      "surface_form": "One‑hot crack labeling"
+    },
+    {
+      "id": "tech_00318",
+      "type": "technique",
+      "surface_form": "LSTM sequential modeling"
+    },
+    {
+      "id": "tech_00319",
+      "type": "technique",
+      "surface_form": "Binary cross‑entropy loss with sigmoid output"
+    },
+    {
+      "id": "tech_00320",
+      "type": "technique",
+      "surface_form": "Iterative queue‑based prediction"
+    },
+    {
+      "id": "tech_00321",
+      "type": "technique",
+      "surface_form": "High‑throughput DFT"
+    },
+    {
+      "id": "tech_00322",
+      "type": "technique",
+      "surface_form": "Rule‑based self‑healing"
+    },
+    {
+      "id": "tech_00325",
+      "type": "technique",
+      "surface_form": "RESTful JSON API"
+    },
+    {
+      "id": "tech_00369",
+      "type": "technique",
+      "surface_form": "Finite‑difference elastic constant calculation"
+    },
+    {
+      "id": "tech_00379",
+      "type": "technique",
+      "surface_form": "Grand canonical linear programming"
+    },
+    {
+      "id": "tech_00380",
+      "type": "technique",
+      "surface_form": "Thermodynamic descriptor screening"
+    },
+    {
+      "id": "tech_00382",
+      "type": "technique",
+      "surface_form": "Machine‑learning regression on formation energies"
+    },
+    {
+      "id": "tech_00383",
+      "type": "technique",
+      "surface_form": "Composition‑weighted averaging"
+    },
+    {
+      "id": "tech_00384",
+      "type": "technique",
+      "surface_form": "Linear scaling correction"
+    },
+    {
+      "id": "tech_00385",
+      "type": "technique",
+      "surface_form": "Decision‑tree regression"
+    },
+    {
+      "id": "tech_00386",
+      "type": "technique",
+      "surface_form": "Stability ranking"
+    },
+    {
+      "id": "tech_00387",
+      "type": "technique",
+      "surface_form": "Heat‑map visualization of element‑pair stability likelihoods"
+    },
+    {
+      "id": "tech_00397",
+      "type": "technique",
+      "surface_form": "Weighted averaging of pure‑element volumes"
+    },
+    {
+      "id": "tech_00399",
+      "type": "technique",
+      "surface_form": "Gamma‑centered k‑mesh for hexagonal, fcc, rhombohedral lattices"
+    },
+    {
+      "id": "tech_00400",
+      "type": "technique",
+      "surface_form": "Multi‑threaded parallel execution"
+    },
+    {
+      "id": "tech_00402",
+      "type": "technique",
+      "surface_form": "formation enthalpy calculation"
+    },
+    {
+      "id": "tech_00404",
+      "type": "technique",
+      "surface_form": "symmetry reduction of cages"
+    },
+    {
+      "id": "tech_00406",
+      "type": "technique",
+      "surface_form": "Dudarev U‑parameter implementation"
+    },
+    {
+      "id": "tech_00409",
+      "type": "technique",
+      "surface_form": "dynamic band‑count adjustment"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 13,
+    "author": 41,
+    "cited_work": 10,
+    "claim": 132,
+    "component": 49,
+    "dataset": 63,
+    "future_topic": 39,
+    "method": 120,
+    "metric": 19,
+    "problem": 88,
+    "task": 140,
+    "technique": 88
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00001",
+      "relation_type": "addresses",
+      "members": [
+        "meth_00030",
+        "task_00037",
+        "task_00004",
+        "task_00003",
+        "task_00001"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4166,
+        "article_year": 2017
+      },
+      "attributes": {
+        "n_targets": 4
+      }
+    },
+    {
+      "id": "h_00004",
+      "relation_type": "solves",
+      "members": [
+        "meth_00030",
+        "prob_00016",
+        "prob_00017",
+        "prob_00018",
+        "prob_00019"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4166,
+        "article_year": 2017
+      },
+      "attributes": {
+        "n_targets": 4
+      }
+    },
+    {
+      "id": "h_00007",
+      "relation_type": "addresses",
+      "members": [
+        "meth_00050",
+        "task_00024",
+        "task_00025",
+        "task_00026",
+        "task_00027",
+        "task_00003"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4167,
+        "article_year": 2017
+      },
+      "attributes": {
+        "n_targets": 5
+      }
+    },
+    {
+      "id": "h_00113",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00057",
+        "data_00089"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "n_targets": 1
+      }
+    },
+    {
+      "id": "h_00122",
+      "relation_type": "uses_technique",
+      "members": [
+        "meth_00229",
+        "tech_00306",
+        "tech_00307",
+        "tech_00308",
+        "tech_00309",
+        "tech_00109",
+        "tech_00310"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "n_targets": 6
+      }
+    },
+    {
+      "id": "h_00124",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00232",
+        "data_00090",
+        "data_00091",
+        "data_00092"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "n_targets": 3
+      }
+    },
+    {
+      "id": "h_00125",
+      "relation_type": "extends",
+      "members": [
+        "meth_00232",
+        "meth_00031",
+        "meth_00089",
+        "meth_00233",
+        "meth_00007",
+        "meth_00234",
+        "meth_00235",
+        "meth_00236",
+        "meth_00043",
+        "meth_00028",
+        "meth_00237",
+        "meth_00238"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "n_targets": 11
+      }
+    },
+    {
+      "id": "h_00141",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00268",
+        "data_00094",
+        "data_00095"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "n_targets": 2
+      }
+    },
+    {
+      "id": "h_00147",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00282",
+        "data_00098"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "n_targets": 1
+      }
+    },
+    {
+      "id": "h_00159",
+      "relation_type": "solves",
+      "members": [
+        "meth_00230",
+        "prob_00165",
+        "prob_00166",
+        "prob_00167",
+        "prob_00168",
+        "prob_00169",
+        "prob_00170"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "n_targets": 6
+      }
+    },
+    {
+      "id": "h_00292",
+      "relation_type": "presents",
+      "members": [
+        "arti_00030",
+        "meth_00230"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_00293",
+      "relation_type": "presents",
+      "members": [
+        "arti_00024",
+        "meth_00247"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_00297",
+      "relation_type": "presents",
+      "members": [
+        "arti_00002",
+        "meth_00050"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4167,
+        "article_year": 2017
+      }
+    },
+    {
+      "id": "h_00312",
+      "relation_type": "presents",
+      "members": [
+        "arti_00042",
+        "meth_00307"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_00324",
+      "relation_type": "presents",
+      "members": [
+        "arti_00033",
+        "meth_00383"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      }
+    },
+    {
+      "id": "h_00325",
+      "relation_type": "presents",
+      "members": [
+        "arti_00021",
+        "meth_00057"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      }
+    },
+    {
+      "id": "h_00328",
+      "relation_type": "presents",
+      "members": [
+        "arti_00022",
+        "meth_00229"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_00331",
+      "relation_type": "presents",
+      "members": [
+        "arti_00023",
+        "meth_00232"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      }
+    },
+    {
+      "id": "h_00332",
+      "relation_type": "presents",
+      "members": [
+        "arti_00016",
+        "meth_00206"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      }
+    },
+    {
+      "id": "h_00340",
+      "relation_type": "presents",
+      "members": [
+        "arti_00027",
+        "meth_00282"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      }
+    },
+    {
+      "id": "h_00424",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00307",
+        "data_00116",
+        "metr_00022"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "task": "Regression, Classification",
+        "domain": "Materials Science, Machine Learning",
+        "metric": "relative error (MAE/MAD)",
+        "value": 0.919,
+        "split": "nested CV test folds"
+      }
+    },
+    {
+      "id": "h_00425",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00307",
+        "data_00117",
+        "metr_00023"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "task": "Classification",
+        "domain": "Materials Science",
+        "metric": "ROC-AUC"
+      }
+    },
+    {
+      "id": "h_00434",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00213",
+        "data_00056",
+        "metr_00029"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5393,
+        "article_year": 2022
+      },
+      "attributes": {
+        "task": "DFT Hamiltonian prediction",
+        "domain": "materials science, computational physics, electronic structure",
+        "metric": "MAE (meV)",
+        "value": 2.1,
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00436",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00213",
+        "data_00245",
+        "metr_00030"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5393,
+        "article_year": 2022
+      },
+      "attributes": {
+        "task": "DFT Hamiltonian prediction",
+        "domain": "materials science, computational physics, electronic structure",
+        "metric": "speedup (×)",
+        "value": 1000.0,
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00437",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00213",
+        "data_00009",
+        "metr_00002"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5393,
+        "article_year": 2022
+      },
+      "attributes": {
+        "metric": "MAE",
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00438",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00213",
+        "data_00010",
+        "metr_00002"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5393,
+        "article_year": 2022
+      },
+      "attributes": {
+        "metric": "MAE",
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00440",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00213",
+        "data_00247",
+        "metr_00031"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5393,
+        "article_year": 2022
+      },
+      "attributes": {
+        "task": "electronic structure prediction",
+        "domain": "materials science",
+        "metric": "band structure",
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00487",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00383",
+        "data_00255",
+        "metr_00043"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "task": "molecular dynamics",
+        "domain": "computational materials science",
+        "metric": "diffusion coefficient uncertainty",
+        "value": 20.0,
+        "split": "MD simulation"
+      }
+    },
+    {
+      "id": "h_00489",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00383",
+        "data_00257",
+        "metr_00043"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "task": "molecular dynamics",
+        "domain": "computational materials science",
+        "metric": "diffusion coefficient uncertainty",
+        "value": 20.0,
+        "split": "MD simulation"
+      }
+    },
+    {
+      "id": "h_00493",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00057",
+        "data_00089",
+        "metr_00002"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "task": "Regression",
+        "domain": "Materials Science",
+        "metric": "MAE",
+        "value": 0.024
+      }
+    },
+    {
+      "id": "h_00509",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00232",
+        "data_00090",
+        "metr_00053"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "domain": "materials science",
+        "metric": "normalized relative error",
+        "value": 5.5,
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00510",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00232",
+        "data_00091",
+        "metr_00053"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "domain": "materials science",
+        "metric": "normalized relative error",
+        "value": 4.9,
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00511",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00232",
+        "data_00092",
+        "metr_00053"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "domain": "materials science",
+        "metric": "normalized relative error",
+        "value": 11.0,
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00587",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00268",
+        "data_00094",
+        "metr_00079"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "task": "thermodynamic property prediction",
+        "domain": "materials science",
+        "metric": "ME",
+        "value": 24.0
+      }
+    },
+    {
+      "id": "h_00588",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00268",
+        "data_00095",
+        "metr_00080"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "metric": "MAE (eV/atom)",
+        "value": 0.11,
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00589",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00282",
+        "data_00098",
+        "metr_00081"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "metric": "band gap (eV)",
+        "value": 2.48,
+        "delta_vs_baseline": 1.78
+      }
+    },
+    {
+      "id": "h_00615",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00009"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_00616",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00010"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00618",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00012"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_00619",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00013"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "causal",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_00621",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00015"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "prescriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00624",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00018"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_00625",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00019"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00626",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00020"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "prescriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "weak",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_00627",
+      "relation_type": "claims",
+      "members": [
+        "arti_00030",
+        "meth_00230",
+        "clai_00021"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00628",
+      "relation_type": "claims",
+      "members": [
+        "arti_00030",
+        "meth_00230",
+        "clai_00022"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00629",
+      "relation_type": "claims",
+      "members": [
+        "arti_00030",
+        "meth_00230",
+        "clai_00023"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_00630",
+      "relation_type": "claims",
+      "members": [
+        "arti_00030",
+        "meth_00230",
+        "clai_00024"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "weak",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00631",
+      "relation_type": "claims",
+      "members": [
+        "arti_00030",
+        "meth_00230",
+        "clai_00025"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "weak",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00634",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00028"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "predictive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_00635",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00029"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_00637",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00031"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_00638",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00032"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_00639",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00033"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00640",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00034"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00642",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00036"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "benchmark",
+        "evidence_strength": "weak",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00643",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00037"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_00645",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00039"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "weak",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00684",
+      "relation_type": "claims",
+      "members": [
+        "arti_00002",
+        "meth_00050",
+        "clai_00078"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4167,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_00689",
+      "relation_type": "claims",
+      "members": [
+        "arti_00002",
+        "meth_00050",
+        "clai_00083"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4167,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "causal",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00690",
+      "relation_type": "claims",
+      "members": [
+        "arti_00002",
+        "meth_00050",
+        "clai_00084"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4167,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_00691",
+      "relation_type": "claims",
+      "members": [
+        "arti_00002",
+        "meth_00050",
+        "clai_00085"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4167,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.99
+      }
+    },
+    {
+      "id": "h_00692",
+      "relation_type": "claims",
+      "members": [
+        "arti_00002",
+        "meth_00050",
+        "clai_00086"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4167,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_00694",
+      "relation_type": "claims",
+      "members": [
+        "arti_00002",
+        "meth_00050",
+        "clai_00088"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4167,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.98,
+        "verdict": "contested"
+      }
+    },
+    {
+      "id": "h_00917",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00311"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00918",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00312"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00920",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00314"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00923",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00317"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00924",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00318"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00925",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00319"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00926",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00320"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00927",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00321"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00928",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00322"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00929",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00323"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "existential",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01081",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00475"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01083",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00477"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01086",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00480"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01088",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00482"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01089",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00483"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01091",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00485"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "predictive",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01092",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00486"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01093",
+      "relation_type": "claims",
+      "members": [
+        "arti_00033",
+        "meth_00383",
+        "clai_00487"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5435,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01095",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00489"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01096",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00490"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01097",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00491"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01098",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00492"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01099",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00493"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_01101",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00495"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01102",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00496"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_01103",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00497"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01104",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00498"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "existential",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01105",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00499"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01106",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00500"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "existential",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01108",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00502"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01109",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00503"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01110",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00504"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01111",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00505"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01112",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00506"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "predictive",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.8
+      }
+    },
+    {
+      "id": "h_01114",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00508"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01126",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00520"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_01127",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00521"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01128",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00522"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01129",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00523"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.98
+      }
+    },
+    {
+      "id": "h_01130",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00524"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "taxonomic",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01135",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00529"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_01166",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00560"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01167",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00561"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01168",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00562"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01170",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00564"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_01171",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00565"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "theoretical",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01173",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00567"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01174",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00568"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_01175",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00569"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_01176",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00570"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01178",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00572"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01180",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00574"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01181",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00575"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01182",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00576"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01267",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00661"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01268",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00662"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01269",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00663"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01271",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00665"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.98
+      }
+    },
+    {
+      "id": "h_01274",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00668"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01275",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00669"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "observational_study",
+        "evidence_strength": "strong",
+        "confidence": 0.99
+      }
+    },
+    {
+      "id": "h_01276",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00670"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.99
+      }
+    },
+    {
+      "id": "h_01277",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00671"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "prescriptive",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01279",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00673"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_01280",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00674"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_01281",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00675"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01404",
+      "relation_type": "proposes_future_work",
+      "members": [
+        "arti_00023",
+        "futu_00153",
+        "futu_00154",
+        "futu_00155"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "n_targets": 3
+      }
+    },
+    {
+      "id": "h_01405",
+      "relation_type": "proposes_future_work",
+      "members": [
+        "arti_00024",
+        "futu_00009",
+        "futu_00010",
+        "futu_00011"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "n_targets": 3
+      }
+    },
+    {
+      "id": "h_01410",
+      "relation_type": "proposes_future_work",
+      "members": [
+        "arti_00030",
+        "futu_00008"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "n_targets": 1
+      }
+    },
+    {
+      "id": "h_01424",
+      "relation_type": "proposes_future_work",
+      "members": [
+        "arti_00046",
+        "futu_00135",
+        "futu_00136",
+        "futu_00137",
+        "futu_00138"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "n_targets": 4
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "prediction",
+  "representative_ids": [
+    "data_00061",
+    "task_00220"
+  ]
+}

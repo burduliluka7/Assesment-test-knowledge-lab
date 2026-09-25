@@ -1,0 +1,356 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00019",
+      "type": "article",
+      "surface_form": "D4FT: A DEEP LEARNING APPROACH TO KOHN-SHAM DENSITY FUNCTIONAL THEORY"
+    },
+    {
+      "id": "clai_00010",
+      "type": "claim",
+      "surface_form": "The workflow software FireWorks together with the custodian job‑management tool automatically manages high‑throughput DFT calculations, self‑heals failed runs, and applies material‑type‑specific workflows."
+    },
+    {
+      "id": "clai_00033",
+      "type": "claim",
+      "surface_form": "Beyond‑DFT methods (HSE06, PBE0, G0W0, DMFT) are generated for a subset of materials to provide higher‑level reference data and enable uncertainty quantification."
+    },
+    {
+      "id": "clai_00036",
+      "type": "claim",
+      "surface_form": "JARVIS‑Tools implements automatic k‑point convergence protocols that improve the precision of DFT calculations."
+    },
+    {
+      "id": "clai_00197",
+      "type": "claim",
+      "surface_form": "Using the universal HamGNN model reduces computational cost by several orders of magnitude compared with DFT (e.g., 0.33 core·hours versus 181 core·hours for a large MOF) while preserving accuracy of band gaps and charge‑density differences."
+    },
+    {
+      "id": "clai_00254",
+      "type": "claim",
+      "surface_form": "Approximately 40% of the UK's academic HPC was spent on DFT calculations in a recent year, most of which was AIMD."
+    },
+    {
+      "id": "clai_00256",
+      "type": "claim",
+      "surface_form": "Each cataloged DFT structure provides one energy and 3N forces (N = number of atoms) for training universal MLIPs."
+    },
+    {
+      "id": "clai_00389",
+      "type": "claim",
+      "surface_form": "Using the IDNN reduces the computational cost of generating free‑energy data for continuum models by approximately two orders of magnitude compared with direct DFT sampling."
+    },
+    {
+      "id": "clai_00422",
+      "type": "claim",
+      "surface_form": "Direct minimization of the total KS‑DFT energy with stochastic gradient descent reduces the asymptotic computational complexity from O(N⁴) to O(N³), and the full‑batch D4FT algorithm has complexity O(nN²)+O(n²N²), which is lower than the O(n²N²) complexity of conventional SCF; minibatch training further lowers the cost."
+    },
+    {
+      "id": "clai_00424",
+      "type": "claim",
+      "surface_form": "Across a benchmark set ranging from He to benzene, D4FT reproduces ground‑state energies of the reference PySCF implementation with deviations ≤0.02 Ha (LSDA/6‑31g and LSDA/STO‑3g)."
+    },
+    {
+      "id": "clai_00425",
+      "type": "claim",
+      "surface_form": "D4FT correctly predicts the paramagnetic ground state of O₂ and the diamagnetic ground state of CO₂ by comparing spin‑restricted and spin‑unrestricted calculations."
+    },
+    {
+      "id": "clai_00430",
+      "type": "claim",
+      "surface_form": "D4FT successfully converges on unstable fullerene fragments (C₁₂₀, C₁₄₀) where PySCF fails to converge within the default iteration limit."
+    },
+    {
+      "id": "clai_00538",
+      "type": "claim",
+      "surface_form": "High disagreement among model predictions (large standard deviation) can be used to flag potential DFT relaxation failures in high‑throughput screenings."
+    },
+    {
+      "id": "clai_00544",
+      "type": "claim",
+      "surface_form": "GNoME achieves hit rates above 80% for structural predictions and 33% for composition-only predictions, compared to 1% in previous work, with active learning improving from less than 6% and 3% respectively over six rounds."
+    },
+    {
+      "id": "clai_00661",
+      "type": "claim",
+      "surface_form": "AFLOW can automatically calculate a wide suite of physical observables across a large database of structures with minimal human intervention."
+    },
+    {
+      "id": "clai_00662",
+      "type": "claim",
+      "surface_form": "AFLOW detects most calculation failures, automatically corrects input parameters, restarts calculations, and can run as a Unix daemon to generate, run, correct, and converge many DFT jobs per day, yielding higher throughput than manual management."
+    },
+    {
+      "id": "clai_00673",
+      "type": "claim",
+      "surface_form": "AFLOW implements DFT+U using the Dudarev formalism with default Ueff values for a wide range of elements."
+    },
+    {
+      "id": "clai_00687",
+      "type": "claim",
+      "surface_form": "DFT-based methods are practically limited to systems of a few hundred atoms, making generation of 8,000-atom amorphous carbon structures impossible with DFT-MD even on state-of-the-art supercomputers."
+    },
+    {
+      "id": "comp_00827",
+      "type": "component",
+      "surface_form": "DFT-derived features"
+    },
+    {
+      "id": "futu_00109",
+      "type": "future_topic",
+      "surface_form": "Improving scalability of KS‑DFT for large molecules and solid cells using deep learning"
+    },
+    {
+      "id": "meth_00100",
+      "type": "method",
+      "surface_form": "DFT+U"
+    },
+    {
+      "id": "meth_00205",
+      "type": "method",
+      "surface_form": "Constrained DFT"
+    },
+    {
+      "id": "meth_00222",
+      "type": "method",
+      "surface_form": "D4FT"
+    },
+    {
+      "id": "meth_00355",
+      "type": "method",
+      "surface_form": "AFLOW high-throughput DFT calculation protocol"
+    },
+    {
+      "id": "prob_00017",
+      "type": "problem",
+      "surface_form": "Efficient inference compared to DFT"
+    },
+    {
+      "id": "prob_00029",
+      "type": "problem",
+      "surface_form": "Computational cost of large‑scale DFT"
+    },
+    {
+      "id": "prob_00032",
+      "type": "problem",
+      "surface_form": "Accuracy‑efficiency trade‑off in large‑scale DFT"
+    },
+    {
+      "id": "prob_00115",
+      "type": "problem",
+      "surface_form": "high‑cost DFT geometry optimization"
+    },
+    {
+      "id": "prob_00126",
+      "type": "problem",
+      "surface_form": "Computational bottleneck of DFT for magnetic superstructures"
+    },
+    {
+      "id": "prob_00127",
+      "type": "problem",
+      "surface_form": "Inability of prior deep‑learning DFT methods to handle magnetic degrees of freedom"
+    },
+    {
+      "id": "prob_00129",
+      "type": "problem",
+      "surface_form": "DFT‑level accuracy with linear scaling"
+    },
+    {
+      "id": "prob_00135",
+      "type": "problem",
+      "surface_form": "Accuracy‑efficiency dilemma of DFT"
+    },
+    {
+      "id": "prob_00154",
+      "type": "problem",
+      "surface_form": "Scalability of KS‑DFT to larger systems"
+    },
+    {
+      "id": "prob_00378",
+      "type": "problem",
+      "surface_form": "Reproducibility in high-throughput DFT"
+    },
+    {
+      "id": "prob_00381",
+      "type": "problem",
+      "surface_form": "Self-interaction error in DFT"
+    },
+    {
+      "id": "prob_00385",
+      "type": "problem",
+      "surface_form": "Computational cost in high-throughput DFT"
+    },
+    {
+      "id": "prob_00393",
+      "type": "problem",
+      "surface_form": "DFT computational scaling"
+    },
+    {
+      "id": "prob_00481",
+      "type": "problem",
+      "surface_form": "Computational scaling limitations of DFT"
+    },
+    {
+      "id": "prob_00592",
+      "type": "problem",
+      "surface_form": "System size limitations of DFT"
+    },
+    {
+      "id": "task_00240",
+      "type": "task",
+      "surface_form": "High‑throughput DFT property calculation"
+    },
+    {
+      "id": "task_00483",
+      "type": "task",
+      "surface_form": "High-throughput DFT calculations"
+    },
+    {
+      "id": "tech_00190",
+      "type": "technique",
+      "surface_form": "Finite‑element discretization for DFT"
+    },
+    {
+      "id": "tech_00259",
+      "type": "technique",
+      "surface_form": "Diverse DFT training database construction"
+    },
+    {
+      "id": "tech_00321",
+      "type": "technique",
+      "surface_form": "High‑throughput DFT"
+    },
+    {
+      "id": "tech_00597",
+      "type": "technique",
+      "surface_form": "high-throughput DFT validation"
+    },
+    {
+      "id": "tech_00616",
+      "type": "technique",
+      "surface_form": "High-throughput DFT calculations"
+    },
+    {
+      "id": "tech_00934",
+      "type": "technique",
+      "surface_form": "training/test split with DFT-calculated features"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 17,
+    "component": 1,
+    "future_topic": 1,
+    "method": 4,
+    "problem": 15,
+    "task": 2,
+    "technique": 6
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00320",
+      "relation_type": "presents",
+      "members": [
+        "arti_00019",
+        "meth_00222"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5395,
+        "article_year": 2023
+      }
+    },
+    {
+      "id": "h_01028",
+      "relation_type": "claims",
+      "members": [
+        "arti_00019",
+        "meth_00222",
+        "clai_00422"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5395,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "theoretical",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01030",
+      "relation_type": "claims",
+      "members": [
+        "arti_00019",
+        "meth_00222",
+        "clai_00424"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5395,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_01031",
+      "relation_type": "claims",
+      "members": [
+        "arti_00019",
+        "meth_00222",
+        "clai_00425"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5395,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01036",
+      "relation_type": "claims",
+      "members": [
+        "arti_00019",
+        "meth_00222",
+        "clai_00430"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5395,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "dft",
+  "representative_ids": [
+    "task_00483",
+    "tech_00616"
+  ]
+}

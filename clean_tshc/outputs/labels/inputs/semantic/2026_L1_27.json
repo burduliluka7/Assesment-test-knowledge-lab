@@ -1,0 +1,644 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "cite_00410",
+      "type": "cited_work",
+      "surface_form": "JAX-MD"
+    },
+    {
+      "id": "cite_00492",
+      "type": "cited_work",
+      "surface_form": "e3nn-jax"
+    },
+    {
+      "id": "clai_00038",
+      "type": "claim",
+      "surface_form": "A REST‑API is provided for programmatic download and upload of JARVIS data, supporting community contributions and interoperability."
+    },
+    {
+      "id": "clai_00039",
+      "type": "claim",
+      "surface_form": "Interpretability analyses of JARVIS‑ML models reveal physical insights that go beyond conventional materials‑science intuition."
+    },
+    {
+      "id": "clai_00224",
+      "type": "claim",
+      "surface_form": "The AFLOWLIB data is accessible through a REST-API for standardized data exchange."
+    },
+    {
+      "id": "clai_00314",
+      "type": "claim",
+      "surface_form": "Automatminer is a fully-automated machine learning pipeline consisting of four stages (autofeaturization, cleaning, dimensionality reduction, and AutoML search) that requires no user intervention or hyperparameter tuning."
+    },
+    {
+      "id": "clai_00318",
+      "type": "claim",
+      "surface_form": "Descriptor-based Automatminer and RF models have lower errors on small datasets but their improvement rates are shallower, with AutoML's advantage over conventional techniques narrowing as sample count increases and essentially lost near 10^5 samples."
+    },
+    {
+      "id": "clai_00320",
+      "type": "claim",
+      "surface_form": "For small datasets (<10^4 samples), inexpensive Automatminer presets (~1-5 minute training) retain the bulk of performance compared to expensive presets (24h+ training), with Express retaining 95% or more of the accuracy of more expensive presets at less than 50% of the computational cost on data-scarce tasks."
+    },
+    {
+      "id": "clai_00323",
+      "type": "claim",
+      "surface_form": "Automatminer source code and pre-processed Matbench tasks are open source and available online."
+    },
+    {
+      "id": "clai_00626",
+      "type": "claim",
+      "surface_form": "UMA sets new state-of-the-art performance on Matbench Discovery and AdsorbML benchmarks, with UMA-M achieving the highest F1 score to date (0.929) on Matbench Discovery."
+    },
+    {
+      "id": "comp_00033",
+      "type": "component",
+      "surface_form": "Automatic differentiation via JAX"
+    },
+    {
+      "id": "comp_00138",
+      "type": "component",
+      "surface_form": "Matbench Discovery Python package"
+    },
+    {
+      "id": "comp_00139",
+      "type": "component",
+      "surface_form": "Online leaderboard"
+    },
+    {
+      "id": "comp_00142",
+      "type": "component",
+      "surface_form": "Discovery Acceleration Factor"
+    },
+    {
+      "id": "comp_00221",
+      "type": "component",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "comp_00279",
+      "type": "component",
+      "surface_form": "JaxSCF module"
+    },
+    {
+      "id": "comp_00439",
+      "type": "component",
+      "surface_form": "Automatminer pipeline"
+    },
+    {
+      "id": "comp_00440",
+      "type": "component",
+      "surface_form": "Matbench test suite"
+    },
+    {
+      "id": "comp_00447",
+      "type": "component",
+      "surface_form": "Automatminer"
+    },
+    {
+      "id": "comp_00455",
+      "type": "component",
+      "surface_form": "Automatminer Debug preset"
+    },
+    {
+      "id": "comp_00456",
+      "type": "component",
+      "surface_form": "Automatminer Debug_single preset"
+    },
+    {
+      "id": "comp_00534",
+      "type": "component",
+      "surface_form": "Tabulated inference engine"
+    },
+    {
+      "id": "comp_00816",
+      "type": "component",
+      "surface_form": "SOAP descriptor with sparse points"
+    },
+    {
+      "id": "comp_00822",
+      "type": "component",
+      "surface_form": "SOAP sparse points"
+    },
+    {
+      "id": "comp_00837",
+      "type": "component",
+      "surface_form": "composition-agnostic elemental property averages"
+    },
+    {
+      "id": "comp_00843",
+      "type": "component",
+      "surface_form": "statistical elemental property combinations"
+    },
+    {
+      "id": "comp_00853",
+      "type": "component",
+      "surface_form": "Composition-based elemental property weighting"
+    },
+    {
+      "id": "data_00013",
+      "type": "dataset",
+      "surface_form": "Matbench Discovery"
+    },
+    {
+      "id": "data_00044",
+      "type": "dataset",
+      "surface_form": "Discovery rate on 1000 sampled structures"
+    },
+    {
+      "id": "data_00164",
+      "type": "dataset",
+      "surface_form": "Matbench-Discovery"
+    },
+    {
+      "id": "futu_00076",
+      "type": "future_topic",
+      "surface_form": "Comparing algorithms against the latest version of Automatminer"
+    },
+    {
+      "id": "futu_00101",
+      "type": "future_topic",
+      "surface_form": "Data sharing and collaborative platform development"
+    },
+    {
+      "id": "futu_00174",
+      "type": "future_topic",
+      "surface_form": "Web accessibility of the OQMD (public release via http://oqmd.org)"
+    },
+    {
+      "id": "meth_00039",
+      "type": "method",
+      "surface_form": "BERT-BASE-CASED fine‑tuned model"
+    },
+    {
+      "id": "meth_00087",
+      "type": "method",
+      "surface_form": "JAX"
+    },
+    {
+      "id": "meth_00197",
+      "type": "method",
+      "surface_form": "SOAP kernel"
+    },
+    {
+      "id": "meth_00257",
+      "type": "method",
+      "surface_form": "Automated Interactive Infrastructure and Database"
+    },
+    {
+      "id": "meth_00307",
+      "type": "method",
+      "surface_form": "Automatminer"
+    },
+    {
+      "id": "meth_00381",
+      "type": "method",
+      "surface_form": "JAX MD"
+    },
+    {
+      "id": "meth_00433",
+      "type": "method",
+      "surface_form": "SOAP descriptors"
+    },
+    {
+      "id": "meth_00434",
+      "type": "method",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "metr_00052",
+      "type": "metric",
+      "surface_form": "discovery rate"
+    },
+    {
+      "id": "prob_00001",
+      "type": "problem",
+      "surface_form": "model interpretability"
+    },
+    {
+      "id": "prob_00009",
+      "type": "problem",
+      "surface_form": "inference efficiency"
+    },
+    {
+      "id": "prob_00079",
+      "type": "problem",
+      "surface_form": "Misalignment between regression error metrics and discovery relevance"
+    },
+    {
+      "id": "prob_00087",
+      "type": "problem",
+      "surface_form": "Discovery acceleration"
+    },
+    {
+      "id": "prob_00093",
+      "type": "problem",
+      "surface_form": "scalable property prediction"
+    },
+    {
+      "id": "prob_00100",
+      "type": "problem",
+      "surface_form": "MOF Generation and Prediction"
+    },
+    {
+      "id": "prob_00101",
+      "type": "problem",
+      "surface_form": "Hypothesis Generation & Literature Review Automation"
+    },
+    {
+      "id": "prob_00102",
+      "type": "problem",
+      "surface_form": "Embodied Autonomous Experimentation"
+    },
+    {
+      "id": "prob_00159",
+      "type": "problem",
+      "surface_form": "Inability to model state‑dependent properties"
+    },
+    {
+      "id": "prob_00176",
+      "type": "problem",
+      "surface_form": "Accelerated property evaluation"
+    },
+    {
+      "id": "prob_00195",
+      "type": "problem",
+      "surface_form": "Efficient property screening"
+    },
+    {
+      "id": "prob_00199",
+      "type": "problem",
+      "surface_form": "Accelerated property prediction"
+    },
+    {
+      "id": "prob_00263",
+      "type": "problem",
+      "surface_form": "Performance degradation when increasing model expressiveness"
+    },
+    {
+      "id": "prob_00268",
+      "type": "problem",
+      "surface_form": "Need for expert domain knowledge"
+    },
+    {
+      "id": "prob_00298",
+      "type": "problem",
+      "surface_form": "diffusional property prediction"
+    },
+    {
+      "id": "prob_00344",
+      "type": "problem",
+      "surface_form": "model portability"
+    },
+    {
+      "id": "prob_00348",
+      "type": "problem",
+      "surface_form": "property prediction for complex systems"
+    },
+    {
+      "id": "prob_00403",
+      "type": "problem",
+      "surface_form": "Composition generalization"
+    },
+    {
+      "id": "prob_00436",
+      "type": "problem",
+      "surface_form": "Multi-scale system modeling"
+    },
+    {
+      "id": "prob_00520",
+      "type": "problem",
+      "surface_form": "Combining system conditioning with pretrained models"
+    },
+    {
+      "id": "prob_00555",
+      "type": "problem",
+      "surface_form": "Sequential inference efficiency"
+    },
+    {
+      "id": "prob_00634",
+      "type": "problem",
+      "surface_form": "Model interpretability vs performance trade-off"
+    },
+    {
+      "id": "task_00001",
+      "type": "task",
+      "surface_form": "machine learning"
+    },
+    {
+      "id": "task_00050",
+      "type": "task",
+      "surface_form": "bulk property prediction"
+    },
+    {
+      "id": "task_00118",
+      "type": "task",
+      "surface_form": "Data Extraction, Interpretation and Q&A"
+    },
+    {
+      "id": "task_00124",
+      "type": "task",
+      "surface_form": "Descriptive Language Generation"
+    },
+    {
+      "id": "task_00126",
+      "type": "task",
+      "surface_form": "Experimental Plan Generation"
+    },
+    {
+      "id": "task_00127",
+      "type": "task",
+      "surface_form": "Simulation Tool Orchestration"
+    },
+    {
+      "id": "task_00129",
+      "type": "task",
+      "surface_form": "Hypothesis Generation"
+    },
+    {
+      "id": "task_00130",
+      "type": "task",
+      "surface_form": "Experimental Data Analysis"
+    },
+    {
+      "id": "task_00132",
+      "type": "task",
+      "surface_form": "Data‑Driven Experimentation"
+    },
+    {
+      "id": "task_00133",
+      "type": "task",
+      "surface_form": "Literature Review Automation"
+    },
+    {
+      "id": "task_00161",
+      "type": "task",
+      "surface_form": "property prediction on MatBench benchmarks"
+    },
+    {
+      "id": "task_00186",
+      "type": "task",
+      "surface_form": "Continuous property regression"
+    },
+    {
+      "id": "task_00229",
+      "type": "task",
+      "surface_form": "Reproduction of structural features"
+    },
+    {
+      "id": "task_00238",
+      "type": "task",
+      "surface_form": "Tight‑binding model generation"
+    },
+    {
+      "id": "task_00242",
+      "type": "task",
+      "surface_form": "Machine‑learning property prediction"
+    },
+    {
+      "id": "task_00257",
+      "type": "task",
+      "surface_form": "Structure relaxation"
+    },
+    {
+      "id": "task_00289",
+      "type": "task",
+      "surface_form": "Matbench Discovery leaderboard evaluation"
+    },
+    {
+      "id": "task_00304",
+      "type": "task",
+      "surface_form": "Initial Structure to Relaxed Structure"
+    },
+    {
+      "id": "task_00305",
+      "type": "task",
+      "surface_form": "Initial Structure to Relaxed Energy"
+    },
+    {
+      "id": "task_00349",
+      "type": "task",
+      "surface_form": "Structure-based regression"
+    },
+    {
+      "id": "task_00350",
+      "type": "task",
+      "surface_form": "Composition-only regression"
+    },
+    {
+      "id": "task_00351",
+      "type": "task",
+      "surface_form": "Matbench regression tasks"
+    },
+    {
+      "id": "task_00352",
+      "type": "task",
+      "surface_form": "Matbench classification tasks"
+    },
+    {
+      "id": "task_00353",
+      "type": "task",
+      "surface_form": "Composition-only property prediction"
+    },
+    {
+      "id": "task_00354",
+      "type": "task",
+      "surface_form": "Structure-based property prediction"
+    },
+    {
+      "id": "task_00403",
+      "type": "task",
+      "surface_form": "Water system simulation"
+    },
+    {
+      "id": "task_00405",
+      "type": "task",
+      "surface_form": "Interface simulation"
+    },
+    {
+      "id": "task_00406",
+      "type": "task",
+      "surface_form": "Transition state modeling"
+    },
+    {
+      "id": "task_00407",
+      "type": "task",
+      "surface_form": "Excited state simulation"
+    },
+    {
+      "id": "task_00409",
+      "type": "task",
+      "surface_form": "Gas-phase system simulation"
+    },
+    {
+      "id": "task_00462",
+      "type": "task",
+      "surface_form": "Fluid mechanics modeling"
+    },
+    {
+      "id": "task_00466",
+      "type": "task",
+      "surface_form": "computational modeling"
+    },
+    {
+      "id": "task_00467",
+      "type": "task",
+      "surface_form": "fluid mechanics"
+    },
+    {
+      "id": "task_00497",
+      "type": "task",
+      "surface_form": "Kinetic property prediction"
+    },
+    {
+      "id": "task_00505",
+      "type": "task",
+      "surface_form": "Composition space exploration"
+    },
+    {
+      "id": "task_00571",
+      "type": "task",
+      "surface_form": "Metal complex property prediction"
+    },
+    {
+      "id": "task_00574",
+      "type": "task",
+      "surface_form": "Neutral organic property prediction"
+    },
+    {
+      "id": "task_00575",
+      "type": "task",
+      "surface_form": "Reactivity property prediction"
+    },
+    {
+      "id": "task_00580",
+      "type": "task",
+      "surface_form": "machine learning for science"
+    },
+    {
+      "id": "task_00589",
+      "type": "task",
+      "surface_form": "Energy prediction for MOFs"
+    },
+    {
+      "id": "task_00590",
+      "type": "task",
+      "surface_form": "Force prediction for MOFs"
+    },
+    {
+      "id": "task_00599",
+      "type": "task",
+      "surface_form": "MOF property prediction"
+    },
+    {
+      "id": "task_00640",
+      "type": "task",
+      "surface_form": "MADBench evaluation"
+    },
+    {
+      "id": "task_00644",
+      "type": "task",
+      "surface_form": "Transition state search"
+    },
+    {
+      "id": "task_00653",
+      "type": "task",
+      "surface_form": "Matbench Discovery evaluation"
+    },
+    {
+      "id": "task_00697",
+      "type": "task",
+      "surface_form": "Structural property prediction"
+    },
+    {
+      "id": "task_00706",
+      "type": "task",
+      "surface_form": "machine learning potential training"
+    },
+    {
+      "id": "tech_00198",
+      "type": "technique",
+      "surface_form": "Discovery Acceleration Factor (DAF) calculation"
+    },
+    {
+      "id": "tech_00302",
+      "type": "technique",
+      "surface_form": "Global state conditioning"
+    },
+    {
+      "id": "tech_00325",
+      "type": "technique",
+      "surface_form": "RESTful JSON API"
+    },
+    {
+      "id": "tech_00359",
+      "type": "technique",
+      "surface_form": "Cloud‑based continuous integration"
+    },
+    {
+      "id": "tech_00360",
+      "type": "technique",
+      "surface_form": "REST‑API data exchange"
+    },
+    {
+      "id": "tech_00366",
+      "type": "technique",
+      "surface_form": "Automated workflow orchestration"
+    },
+    {
+      "id": "tech_00367",
+      "type": "technique",
+      "surface_form": "Web‑based interactive interfaces"
+    },
+    {
+      "id": "tech_00579",
+      "type": "technique",
+      "surface_form": "Tabulated inference"
+    },
+    {
+      "id": "tech_00607",
+      "type": "technique",
+      "surface_form": "Top-N property screening"
+    },
+    {
+      "id": "tech_00725",
+      "type": "technique",
+      "surface_form": "Property prediction benchmarking"
+    },
+    {
+      "id": "tech_00764",
+      "type": "technique",
+      "surface_form": "SOAP descriptor averaging"
+    },
+    {
+      "id": "tech_00869",
+      "type": "technique",
+      "surface_form": "Dense expert usage"
+    },
+    {
+      "id": "tech_00950",
+      "type": "technique",
+      "surface_form": "statistical combinations of elemental properties"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 2,
+    "claim": 8,
+    "component": 17,
+    "dataset": 3,
+    "future_topic": 3,
+    "method": 8,
+    "metric": 1,
+    "problem": 22,
+    "task": 47,
+    "technique": 13
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "property",
+  "representative_ids": [
+    "task_00697",
+    "task_00599"
+  ]
+}

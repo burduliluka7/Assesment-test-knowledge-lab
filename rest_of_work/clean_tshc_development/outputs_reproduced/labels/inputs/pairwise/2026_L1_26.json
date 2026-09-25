@@ -1,0 +1,40 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00517",
+      "type": "component",
+      "surface_form": "DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00527",
+      "type": "component",
+      "surface_form": "Two-body embedding DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00528",
+      "type": "component",
+      "surface_form": "Three-body embedding DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00546",
+      "type": "component",
+      "surface_form": "two-body embedding full-information descriptor"
+    },
+    {
+      "id": "comp_00547",
+      "type": "component",
+      "surface_form": "two-body embedding radial descriptor"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 5
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "body embedding",
+  "representative_ids": [
+    "comp_00527",
+    "comp_00528"
+  ]
+}

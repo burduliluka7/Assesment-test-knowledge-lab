@@ -1,0 +1,391 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00044",
+      "type": "article",
+      "surface_form": "Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+    },
+    {
+      "id": "clai_00093",
+      "type": "claim",
+      "surface_form": "Non-conservative (unconstrained) MLIP models consistently show 2-3× theoretical speed-up over their conservative counterparts, with direct force prediction providing additional 2-3× speedup compared to forces computed via automatic differentiation."
+    },
+    {
+      "id": "clai_00097",
+      "type": "claim",
+      "surface_form": "Elastic moduli predictions are very sensitive to the lack of energy conservation in MLIP models, and non-conservative models consistently perform worse on matbench-discovery downstream tasks despite achieving better training and validation accuracies."
+    },
+    {
+      "id": "clai_00175",
+      "type": "claim",
+      "surface_form": "Metal-organic frameworks present an ideal application for MLIPs because classical force fields lack required accuracy while DFT is too computationally expensive for large unit cells and long timescales."
+    },
+    {
+      "id": "clai_00181",
+      "type": "claim",
+      "surface_form": "Foundational MLIP models often fail to outperform simple classical force fields for MOF systems without long-range corrections."
+    },
+    {
+      "id": "clai_00236",
+      "type": "claim",
+      "surface_form": "MACE-MP-0 achieves the lowest mean absolute error (0.310 eV) in migration barrier predictions across the entire Dataset-2 of 574 migration paths."
+    },
+    {
+      "id": "clai_00239",
+      "type": "claim",
+      "surface_form": "All MLIPs struggle with high migration barrier predictions, with only 3.7-20.7% achieving acceptable accuracy (<0.1 eV error) in the 1.31-2.50 eV range."
+    },
+    {
+      "id": "clai_00245",
+      "type": "claim",
+      "surface_form": "For high migration barrier systems, MLIPs achieve their best geometry predictions but worst barrier predictions, indicating an inverse relationship."
+    },
+    {
+      "id": "clai_00248",
+      "type": "claim",
+      "surface_form": "In the low-barrier range of 0.0025-0.25 eV, more than 50% of predictions achieve acceptable accuracy across all MLIPs tested."
+    },
+    {
+      "id": "clai_00249",
+      "type": "claim",
+      "surface_form": "IDPP interpolation does not make a significant difference in enhancing the initial guess for the minimum energy path compared to linear interpolation across all MLIPs."
+    },
+    {
+      "id": "clai_00252",
+      "type": "claim",
+      "surface_form": "MLIPs map atomic configurations to total energy and provide forces and stresses as analytical derivatives of the potential energy surface."
+    },
+    {
+      "id": "clai_00280",
+      "type": "claim",
+      "surface_form": "There exists a continuum of approaches between pure PBPs (physics-derived with almost no fitting parameters) and pure MLIPs (purely numerical fit with almost no intuitive guidance)."
+    },
+    {
+      "id": "clai_00281",
+      "type": "claim",
+      "surface_form": "MLIPs require substantial training data to learn the physics of the system, though this is becoming easier to meet as ab initio data becomes more plentiful and standardized."
+    },
+    {
+      "id": "clai_00282",
+      "type": "claim",
+      "surface_form": "MLIPs are straightforward to iteratively improve by adding more training data, whereas improving PBPs often requires fundamental changes to underlying functional forms."
+    },
+    {
+      "id": "clai_00286",
+      "type": "claim",
+      "surface_form": "Most MLIPs are trained on limited domains (1-10 elements) and cannot extrapolate to new elements or local structures not in training data."
+    },
+    {
+      "id": "clai_00292",
+      "type": "claim",
+      "surface_form": "First published U-MLIPs with broad periodic table applicability came nearly simultaneously in early 2022."
+    },
+    {
+      "id": "clai_00293",
+      "type": "claim",
+      "surface_form": "U-MLIPs generally have low energy and force errors compared to their ab initio training data."
+    },
+    {
+      "id": "clai_00296",
+      "type": "claim",
+      "surface_form": "Good agreement on target properties provides greater confidence in U-MLIP than just similar energies and forces on select structures."
+    },
+    {
+      "id": "clai_00302",
+      "type": "claim",
+      "surface_form": "MLIPs are not fundamentally limited to specific system types (metallic, ionic, reactive vs. nonreactive), unlike distinctions that were essential for PBPs."
+    },
+    {
+      "id": "clai_00309",
+      "type": "claim",
+      "surface_form": "U-MLIPs systematically underpredict energies and forces due to softening of the potential energy surface, attributed to biased sampling in training datasets from DFT ionic relaxations near local PES minima."
+    },
+    {
+      "id": "clai_00310",
+      "type": "claim",
+      "surface_form": "Some of the best-performing MLIPs are trained separately on energies and forces and are non-conservative, with forces not directly calculated by differentiating the PES."
+    },
+    {
+      "id": "clai_00404",
+      "type": "claim",
+      "surface_form": "Trained ML models are typically only effective for interpolating data points and may not be reliable when extrapolating beyond the known data range."
+    },
+    {
+      "id": "clai_00492",
+      "type": "claim",
+      "surface_form": "Elemental embedding vectors learned by the crystal formation‑energy MEGNet model reproduce known periodic‑table trends and, when transferred to band‑gap and elastic‑moduli models, reduce their mean absolute errors, improving upon prior machine‑learning approaches."
+    },
+    {
+      "id": "data_00093",
+      "type": "dataset",
+      "surface_form": "Universal MLIP dataset"
+    },
+    {
+      "id": "futu_00026",
+      "type": "future_topic",
+      "surface_form": "Scaling unconstrained MLIPs to larger numbers of parameters and training samples"
+    },
+    {
+      "id": "futu_00047",
+      "type": "future_topic",
+      "surface_form": "Design of more robust and transferable MLIPs in other systems"
+    },
+    {
+      "id": "futu_00048",
+      "type": "future_topic",
+      "surface_form": "Development of universal or foundational MLIPs"
+    },
+    {
+      "id": "futu_00073",
+      "type": "future_topic",
+      "surface_form": "MLIP execution speed estimation"
+    },
+    {
+      "id": "futu_00074",
+      "type": "future_topic",
+      "surface_form": "MLIP adoption guidelines for non-experts"
+    },
+    {
+      "id": "futu_00131",
+      "type": "future_topic",
+      "surface_form": "Transfer learning of element embeddings from large‑scale formation‑energy models to improve predictions of band gaps and elastic moduli"
+    },
+    {
+      "id": "meth_00312",
+      "type": "method",
+      "surface_form": "MLIP-NEB benchmarking workflow"
+    },
+    {
+      "id": "meth_00388",
+      "type": "method",
+      "surface_form": "MLIP_framework_analysis"
+    },
+    {
+      "id": "meth_00407",
+      "type": "method",
+      "surface_form": "long-range MLIP generalization framework with biased train-test splitting"
+    },
+    {
+      "id": "meth_00418",
+      "type": "method",
+      "surface_form": "Universal MLIPs"
+    },
+    {
+      "id": "prob_00234",
+      "type": "problem",
+      "surface_form": "Systematic softening in MLIPs"
+    },
+    {
+      "id": "prob_00290",
+      "type": "problem",
+      "surface_form": "Migration barrier prediction accuracy"
+    },
+    {
+      "id": "prob_00293",
+      "type": "problem",
+      "surface_form": "Migration energy barrier prediction"
+    },
+    {
+      "id": "prob_00300",
+      "type": "problem",
+      "surface_form": "Understanding MLIP performance trade-offs"
+    },
+    {
+      "id": "prob_00391",
+      "type": "problem",
+      "surface_form": "Limited transferability of MLIPs"
+    },
+    {
+      "id": "prob_00440",
+      "type": "problem",
+      "surface_form": "Uncertainty in U-MLIP applicability"
+    },
+    {
+      "id": "prob_00448",
+      "type": "problem",
+      "surface_form": "Computational efficiency of MLIPs"
+    },
+    {
+      "id": "prob_00457",
+      "type": "problem",
+      "surface_form": "scalability of Transformer models for MLIPs"
+    },
+    {
+      "id": "prob_00496",
+      "type": "problem",
+      "surface_form": "Scalability of unconstrained MLIPs"
+    },
+    {
+      "id": "prob_00536",
+      "type": "problem",
+      "surface_form": "performance-speed-memory tradeoff in MLIPs"
+    },
+    {
+      "id": "task_00358",
+      "type": "task",
+      "surface_form": "Migration barrier prediction"
+    },
+    {
+      "id": "task_00363",
+      "type": "task",
+      "surface_form": "Migration barrier (Em) prediction"
+    },
+    {
+      "id": "task_00370",
+      "type": "task",
+      "surface_form": "migration barrier calculation"
+    },
+    {
+      "id": "task_00372",
+      "type": "task",
+      "surface_form": "Migration energy barrier prediction"
+    },
+    {
+      "id": "task_00584",
+      "type": "task",
+      "surface_form": "Generalization benchmarking for MLIPs"
+    },
+    {
+      "id": "task_00595",
+      "type": "task",
+      "surface_form": "MLIP out-of-distribution generalization evaluation"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 22,
+    "dataset": 1,
+    "future_topic": 6,
+    "method": 4,
+    "problem": 10,
+    "task": 6
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00310",
+      "relation_type": "presents",
+      "members": [
+        "arti_00044",
+        "meth_00312"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5447,
+        "article_year": 2025
+      }
+    },
+    {
+      "id": "h_00842",
+      "relation_type": "claims",
+      "members": [
+        "arti_00044",
+        "meth_00312",
+        "clai_00236"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5447,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00845",
+      "relation_type": "claims",
+      "members": [
+        "arti_00044",
+        "meth_00312",
+        "clai_00239"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5447,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00851",
+      "relation_type": "claims",
+      "members": [
+        "arti_00044",
+        "meth_00312",
+        "clai_00245"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5447,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "observational_study",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00854",
+      "relation_type": "claims",
+      "members": [
+        "arti_00044",
+        "meth_00312",
+        "clai_00248"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5447,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00855",
+      "relation_type": "claims",
+      "members": [
+        "arti_00044",
+        "meth_00312",
+        "clai_00249"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5447,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mlips",
+  "representative_ids": [
+    "prob_00448",
+    "clai_00239"
+  ]
+}

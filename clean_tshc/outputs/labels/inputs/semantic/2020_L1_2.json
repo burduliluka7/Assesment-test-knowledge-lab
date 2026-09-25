@@ -1,0 +1,362 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "arti_00022",
+      "type": "article",
+      "surface_form": "Atomic cluster expansion of scalar, vectorial and tensorial properties and including magnetism and charge transfer"
+    },
+    {
+      "id": "cite_00246",
+      "type": "cited_work",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "clai_00030",
+      "type": "claim",
+      "surface_form": "Using the vdW‑DF‑OptB88 functional for all dimensionalities yields accurate lattice parameters and formation energies for both van‑der‑Waals and non‑vdW bonded materials."
+    },
+    {
+      "id": "clai_00220",
+      "type": "claim",
+      "surface_form": "The first RELAX calculation is performed in collinear spin-polarized fashion with initial magnetic moments set to 1.0 µB per atom, and spin polarization is turned off in subsequent calculations if magnetization is below 0.025 µB/atom."
+    },
+    {
+      "id": "clai_00520",
+      "type": "claim",
+      "surface_form": "The atomic cluster expansion (ACE) is generalized to model scalar, vectorial and tensorial atomic properties and to include additional atomic degrees of freedom—species, magnetic moments, and charges—on equal footing with atomic positions."
+    },
+    {
+      "id": "clai_00522",
+      "type": "claim",
+      "surface_form": "At the lowest order, the magnetic ACE reproduces a distance‑dependent Heisenberg interaction."
+    },
+    {
+      "id": "clai_00523",
+      "type": "claim",
+      "surface_form": "Representing tensors with spherical harmonics yields a dramatically sparser basis, where a rank‑N Cartesian tensor with 3^N components can be represented by (N+1)^2 spherical harmonics (e.g., a 10th‑order tensor requires 121 harmonics instead of 59 049 Cartesian components)."
+    },
+    {
+      "id": "clai_00524",
+      "type": "claim",
+      "surface_form": "Moments Tensor Potentials (MTP) and the Spectral Neighbor Analysis Potential (SNAP) can be expressed exactly as special cases of the ACE."
+    },
+    {
+      "id": "clai_00529",
+      "type": "claim",
+      "surface_form": "Because the ACE basis is complete and hierarchical, it can in principle achieve arbitrary accuracy for any scalar, vectorial or tensorial property."
+    },
+    {
+      "id": "clai_00574",
+      "type": "claim",
+      "surface_form": "DeePMD preserves translational, rotational, and permutational symmetries by constructing a local reference frame for each atom and sorting neighbor lists by species and inverse distance."
+    },
+    {
+      "id": "comp_00235",
+      "type": "component",
+      "surface_form": "Local atomic reference frame"
+    },
+    {
+      "id": "comp_00288",
+      "type": "component",
+      "surface_form": "Combined Atomic Density ρ_i"
+    },
+    {
+      "id": "comp_00289",
+      "type": "component",
+      "surface_form": "Orthogonal Single‑Atom Basis Functions φ_v"
+    },
+    {
+      "id": "comp_00290",
+      "type": "component",
+      "surface_form": "Irreducible Basis Set B"
+    },
+    {
+      "id": "comp_00588",
+      "type": "component",
+      "surface_form": "Collinear spin-polarized calculation setup"
+    },
+    {
+      "id": "comp_00634",
+      "type": "component",
+      "surface_form": "Maximum bond variation criterion"
+    },
+    {
+      "id": "meth_00076",
+      "type": "method",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "meth_00229",
+      "type": "method",
+      "surface_form": "Atomic Cluster Expansion extended to scalar, vectorial, tensorial properties with magnetic moments and charge transfer"
+    },
+    {
+      "id": "meth_00248",
+      "type": "method",
+      "surface_form": "van der Waals functional OptB88"
+    },
+    {
+      "id": "meth_00252",
+      "type": "method",
+      "surface_form": "G0W0 many‑body perturbation theory"
+    },
+    {
+      "id": "meth_00253",
+      "type": "method",
+      "surface_form": "Dynamical Mean Field Theory"
+    },
+    {
+      "id": "meth_00285",
+      "type": "method",
+      "surface_form": "Findsym symmetry analysis"
+    },
+    {
+      "id": "prob_00123",
+      "type": "problem",
+      "surface_form": "Permutation and rotation invariance"
+    },
+    {
+      "id": "prob_00130",
+      "type": "problem",
+      "surface_form": "Symmetry preservation without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00134",
+      "type": "problem",
+      "surface_form": "Accurate reproduction of AIMD structural properties"
+    },
+    {
+      "id": "prob_00163",
+      "type": "problem",
+      "surface_form": "Rotationally Invariant Tensorial Property Representation"
+    },
+    {
+      "id": "prob_00217",
+      "type": "problem",
+      "surface_form": "Standardized structure representation"
+    },
+    {
+      "id": "prob_00376",
+      "type": "problem",
+      "surface_form": "electronic structure of correlated systems"
+    },
+    {
+      "id": "prob_00603",
+      "type": "problem",
+      "surface_form": "Linear sp-bonded chain detection"
+    },
+    {
+      "id": "prob_00608",
+      "type": "problem",
+      "surface_form": "capturing tetrahedral motifs"
+    },
+    {
+      "id": "task_00046",
+      "type": "task",
+      "surface_form": "Electronic structure calculation"
+    },
+    {
+      "id": "task_00481",
+      "type": "task",
+      "surface_form": "Density of states calculation"
+    },
+    {
+      "id": "task_00489",
+      "type": "task",
+      "surface_form": "electronic structure calculations"
+    },
+    {
+      "id": "task_00702",
+      "type": "task",
+      "surface_form": "Ring statistics analysis"
+    },
+    {
+      "id": "tech_00109",
+      "type": "technique",
+      "surface_form": "Hierarchical Body‑Order Expansion"
+    },
+    {
+      "id": "tech_00305",
+      "type": "technique",
+      "surface_form": "Gaussian basis expansion of distances"
+    },
+    {
+      "id": "tech_00306",
+      "type": "technique",
+      "surface_form": "Orthogonalization of Non‑Orthogonal Basis"
+    },
+    {
+      "id": "tech_00307",
+      "type": "technique",
+      "surface_form": "Clebsch‑Gordan Coupling"
+    },
+    {
+      "id": "tech_00309",
+      "type": "technique",
+      "surface_form": "Spherical‑Harmonic Expansion of Cartesian Tensors"
+    },
+    {
+      "id": "tech_00371",
+      "type": "technique",
+      "surface_form": "Linear‑optics calculations with OptB88‑vdW and TB‑mBJ"
+    },
+    {
+      "id": "tech_00639",
+      "type": "technique",
+      "surface_form": "local-orbital basis"
+    },
+    {
+      "id": "tech_00650",
+      "type": "technique",
+      "surface_form": "Automatic spin polarization economization"
+    },
+    {
+      "id": "tech_00692",
+      "type": "technique",
+      "surface_form": "Maximum bond variation check"
+    },
+    {
+      "id": "tech_00898",
+      "type": "technique",
+      "surface_form": "Spherical harmonics expansion"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 1,
+    "claim": 8,
+    "component": 6,
+    "method": 6,
+    "problem": 8,
+    "task": 4,
+    "technique": 10
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00328",
+      "relation_type": "presents",
+      "members": [
+        "arti_00022",
+        "meth_00229"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_01126",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00520"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_01128",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00522"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01129",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00523"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.98
+      }
+    },
+    {
+      "id": "h_01130",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00524"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "taxonomic",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01135",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00529"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "basis",
+  "representative_ids": [
+    "meth_00229",
+    "task_00489"
+  ]
+}

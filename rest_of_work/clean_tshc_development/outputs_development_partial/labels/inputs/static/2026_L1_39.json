@@ -1,0 +1,160 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "tech_00397",
+      "type": "technique",
+      "surface_form": "Weighted averaging of pure‑element volumes"
+    },
+    {
+      "id": "tech_00399",
+      "type": "technique",
+      "surface_form": "Gamma‑centered k‑mesh for hexagonal, fcc, rhombohedral lattices"
+    },
+    {
+      "id": "tech_00400",
+      "type": "technique",
+      "surface_form": "Multi‑threaded parallel execution"
+    },
+    {
+      "id": "tech_00401",
+      "type": "technique",
+      "surface_form": "Topological cage identification"
+    },
+    {
+      "id": "tech_00402",
+      "type": "technique",
+      "surface_form": "formation enthalpy calculation"
+    },
+    {
+      "id": "tech_00404",
+      "type": "technique",
+      "surface_form": "symmetry reduction of cages"
+    },
+    {
+      "id": "tech_00406",
+      "type": "technique",
+      "surface_form": "Dudarev U‑parameter implementation"
+    },
+    {
+      "id": "tech_00407",
+      "type": "technique",
+      "surface_form": "screened exchange"
+    },
+    {
+      "id": "tech_00409",
+      "type": "technique",
+      "surface_form": "dynamic band‑count adjustment"
+    },
+    {
+      "id": "tech_00410",
+      "type": "technique",
+      "surface_form": "zero‑weight extra k‑path for band structures"
+    },
+    {
+      "id": "tech_00630",
+      "type": "technique",
+      "surface_form": "Two-step relaxation annealing"
+    },
+    {
+      "id": "tech_00631",
+      "type": "technique",
+      "surface_form": "NKPPRA-based k-point sampling"
+    },
+    {
+      "id": "tech_00632",
+      "type": "technique",
+      "surface_form": "High-symmetry path sampling"
+    },
+    {
+      "id": "tech_00635",
+      "type": "technique",
+      "surface_form": "first-principles calculations"
+    },
+    {
+      "id": "tech_00637",
+      "type": "technique",
+      "surface_form": "high-throughput calculations"
+    },
+    {
+      "id": "tech_00639",
+      "type": "technique",
+      "surface_form": "local-orbital basis"
+    },
+    {
+      "id": "tech_00641",
+      "type": "technique",
+      "surface_form": "matrix eigenvector methods"
+    },
+    {
+      "id": "tech_00642",
+      "type": "technique",
+      "surface_form": "DBS-to-RMM-DIIS switching"
+    },
+    {
+      "id": "tech_00645",
+      "type": "technique",
+      "surface_form": "δEelec convergence criterion"
+    },
+    {
+      "id": "tech_00646",
+      "type": "technique",
+      "surface_form": "δEion convergence criterion"
+    },
+    {
+      "id": "tech_00647",
+      "type": "technique",
+      "surface_form": "DOS energy window selection"
+    },
+    {
+      "id": "tech_00648",
+      "type": "technique",
+      "surface_form": "Band structure energy window selection"
+    },
+    {
+      "id": "tech_00649",
+      "type": "technique",
+      "surface_form": "Ecut scaling factor"
+    },
+    {
+      "id": "tech_00650",
+      "type": "technique",
+      "surface_form": "Automatic spin polarization economization"
+    },
+    {
+      "id": "tech_00651",
+      "type": "technique",
+      "surface_form": "Nested loop optimization"
+    },
+    {
+      "id": "tech_00652",
+      "type": "technique",
+      "surface_form": "Energy-based convergence criteria"
+    },
+    {
+      "id": "tech_00653",
+      "type": "technique",
+      "surface_form": "KS Hamiltonian diagonalization"
+    },
+    {
+      "id": "tech_00654",
+      "type": "technique",
+      "surface_form": "Reciprocal lattice grid spacing"
+    },
+    {
+      "id": "tech_00922",
+      "type": "technique",
+      "surface_form": "high-temperature annealing protocol"
+    }
+  ],
+  "generation_type_counts": {
+    "technique": 29
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "convergence",
+  "representative_ids": [
+    "tech_00637",
+    "tech_00652"
+  ]
+}

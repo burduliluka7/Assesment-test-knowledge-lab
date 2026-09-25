@@ -1,0 +1,363 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00010",
+      "type": "article",
+      "surface_form": "Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+    },
+    {
+      "id": "clai_00386",
+      "type": "claim",
+      "surface_form": "A cluster expansion fitted to 333 DFT‑computed LiCoO₂ configurations using a genetic‑algorithm‑guided sparse regression achieves a root‑mean‑square error of 2.49 meV per primitive cell under 10‑fold cross‑validation and accurately reproduces formation energies, especially for configurations on or near the convex hull."
+    },
+    {
+      "id": "clai_00387",
+      "type": "claim",
+      "surface_form": "Large‑scale DFT calculations estimate the coherent anti‑phase boundary energy between the η₁ = ½ and η₃ = ½ ordered LiCoO₂ rotational variants to be 30.9 mJ m⁻²."
+    },
+    {
+      "id": "clai_00388",
+      "type": "claim",
+      "surface_form": "Integrable Deep Neural Networks trained on derivative (chemical‑potential) data accurately learn the high‑dimensional free‑energy density and chemical‑potential functions for LiₓCoO₂, achieving mean‑squared errors comparable to the reported minima and reproducing DFT formation energies with a mean absolute error below 5 meV atom⁻¹."
+    },
+    {
+      "id": "clai_00389",
+      "type": "claim",
+      "surface_form": "Using the IDNN reduces the computational cost of generating free‑energy data for continuum models by approximately two orders of magnitude compared with direct DFT sampling."
+    },
+    {
+      "id": "clai_00391",
+      "type": "claim",
+      "surface_form": "The presented scale‑bridging framework, linking DFT‑informed statistical mechanics to continuum phase‑field models via IDNN‑learned free‑energy functions, constitutes the first systematic implementation of this kind for LiCoO₂ cathodes."
+    },
+    {
+      "id": "clai_00394",
+      "type": "claim",
+      "surface_form": "Inclusion of van der Waals interactions together with DFT+U improves the accuracy of predicted order‑disorder transition temperatures for LiCoO₂ relative to earlier first‑principles studies."
+    },
+    {
+      "id": "clai_00395",
+      "type": "claim",
+      "surface_form": "Assuming the order‑disorder interface energy is half the anti‑phase boundary energy, the interface energy employed in phase‑field simulations is approximately 15.45 mJ m⁻²."
+    },
+    {
+      "id": "clai_00397",
+      "type": "claim",
+      "surface_form": "Phase‑field simulations reproduce the lever‑rule mass fractions of ordered and disordered phases predicted by the Monte Carlo phase diagram after accounting for a slight shift in the order‑disorder boundaries from the IDNN free‑energy surface."
+    },
+    {
+      "id": "clai_00398",
+      "type": "claim",
+      "surface_form": "Symmetry‑invariant polynomial features up to sixth order, constructed via the Reynolds operator, are used as inputs to the IDNN to respect the 384‑element symmetry group of the zig‑zag ordering."
+    },
+    {
+      "id": "clai_00399",
+      "type": "claim",
+      "surface_form": "The IDNN framework is generalizable and can be applied to other intercalation compounds without modification of the network architecture."
+    },
+    {
+      "id": "meth_00144",
+      "type": "method",
+      "surface_form": "Integrable Deep Neural Network (IDNN) for learning high‑dimensional free‑energy density and chemical potential functions"
+    },
+    {
+      "id": "prob_00062",
+      "type": "problem",
+      "surface_form": "Scale bridging across atomistic and continuum levels"
+    },
+    {
+      "id": "prob_00063",
+      "type": "problem",
+      "surface_form": "Accurate high‑dimensional free‑energy representation"
+    },
+    {
+      "id": "prob_00064",
+      "type": "problem",
+      "surface_form": "Efficient sampling of non‑convex free‑energy regions"
+    },
+    {
+      "id": "prob_00066",
+      "type": "problem",
+      "surface_form": "Multiscale bridging from atomic to continuum"
+    },
+    {
+      "id": "prob_00067",
+      "type": "problem",
+      "surface_form": "Efficient sampling of high‑dimensional order‑parameter space"
+    },
+    {
+      "id": "prob_00070",
+      "type": "problem",
+      "surface_form": "Efficient high‑dimensional free‑energy surrogate construction"
+    },
+    {
+      "id": "prob_00071",
+      "type": "problem",
+      "surface_form": "Capturing chemical‑potential behavior near phase‑boundary regions"
+    },
+    {
+      "id": "prob_00072",
+      "type": "problem",
+      "surface_form": "Incorporating crystal symmetry into neural‑network potentials"
+    },
+    {
+      "id": "prob_00073",
+      "type": "problem",
+      "surface_form": "Coupling ordering and composition in phase‑field simulations"
+    },
+    {
+      "id": "prob_00076",
+      "type": "problem",
+      "surface_form": "Efficient sampling of high‑dimensional chemical‑potential space"
+    },
+    {
+      "id": "prob_00077",
+      "type": "problem",
+      "surface_form": "Quantitative interface‑energy calculation for coherent anti‑phase boundaries"
+    },
+    {
+      "id": "prob_00078",
+      "type": "problem",
+      "surface_form": "Capture of charge‑ordering phenomena"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 10,
+    "method": 1,
+    "problem": 12
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00317",
+      "relation_type": "presents",
+      "members": [
+        "arti_00010",
+        "meth_00144"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      }
+    },
+    {
+      "id": "h_00992",
+      "relation_type": "claims",
+      "members": [
+        "arti_00010",
+        "meth_00144",
+        "clai_00386"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00993",
+      "relation_type": "claims",
+      "members": [
+        "arti_00010",
+        "meth_00144",
+        "clai_00387"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_00994",
+      "relation_type": "claims",
+      "members": [
+        "arti_00010",
+        "meth_00144",
+        "clai_00388"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00995",
+      "relation_type": "claims",
+      "members": [
+        "arti_00010",
+        "meth_00144",
+        "clai_00389"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.77
+      }
+    },
+    {
+      "id": "h_00997",
+      "relation_type": "claims",
+      "members": [
+        "arti_00010",
+        "meth_00144",
+        "clai_00391"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "existential",
+        "evidence_type": "theorem",
+        "evidence_strength": "weak",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01000",
+      "relation_type": "claims",
+      "members": [
+        "arti_00010",
+        "meth_00144",
+        "clai_00394"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01001",
+      "relation_type": "claims",
+      "members": [
+        "arti_00010",
+        "meth_00144",
+        "clai_00395"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "theorem",
+        "evidence_strength": "weak",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01003",
+      "relation_type": "claims",
+      "members": [
+        "arti_00010",
+        "meth_00144",
+        "clai_00397"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_01004",
+      "relation_type": "claims",
+      "members": [
+        "arti_00010",
+        "meth_00144",
+        "clai_00398"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01005",
+      "relation_type": "claims",
+      "members": [
+        "arti_00010",
+        "meth_00144",
+        "clai_00399"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5386,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "theorem",
+        "evidence_strength": "weak",
+        "confidence": 0.7
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "high dimensional",
+  "representative_ids": [
+    "arti_00010",
+    "clai_00391"
+  ]
+}

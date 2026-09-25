@@ -1,0 +1,30 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00052",
+      "type": "claim",
+      "surface_form": "A curated dataset of 476 binary ionic compound melting temperatures spanning 0-4,000°C was compiled for machine learning model development."
+    },
+    {
+      "id": "clai_00056",
+      "type": "claim",
+      "surface_form": "Cohesive energy and elastic moduli (shear and bulk modulus) are the most important features for melting temperature prediction, as identified by both ensemble feature importance and SHAP analysis."
+    },
+    {
+      "id": "clai_00057",
+      "type": "claim",
+      "surface_form": "Models trained without elastic moduli features yield errors greater than 400 K, demonstrating that elastic features are necessary for accurate melting temperature predictions."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "melting",
+  "representative_ids": [
+    "clai_00057",
+    "clai_00056"
+  ]
+}

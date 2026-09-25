@@ -1,0 +1,102 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00268",
+      "type": "claim",
+      "surface_form": "Elemental-SDNNFF produces accurate forces for Heusler alloys constituting 55 different elements and accurate predictions of phonon properties."
+    },
+    {
+      "id": "task_00279",
+      "type": "task",
+      "surface_form": "Phonon frequency prediction"
+    },
+    {
+      "id": "task_00347",
+      "type": "task",
+      "surface_form": "Phonon density of states prediction"
+    },
+    {
+      "id": "task_00377",
+      "type": "task",
+      "surface_form": "Γ-phonon spectra prediction"
+    },
+    {
+      "id": "task_00378",
+      "type": "task",
+      "surface_form": "Full phonon bandstructure prediction"
+    },
+    {
+      "id": "task_00379",
+      "type": "task",
+      "surface_form": "Phonon density-of-states prediction"
+    },
+    {
+      "id": "task_00382",
+      "type": "task",
+      "surface_form": "Alloy system phonon validation"
+    },
+    {
+      "id": "task_00383",
+      "type": "task",
+      "surface_form": "Phonon dispersion prediction"
+    },
+    {
+      "id": "task_00384",
+      "type": "task",
+      "surface_form": "Γ-phonon prediction"
+    },
+    {
+      "id": "task_00387",
+      "type": "task",
+      "surface_form": "Phonon prediction in alloy systems"
+    },
+    {
+      "id": "task_00390",
+      "type": "task",
+      "surface_form": "Element-wise phonon energy prediction"
+    },
+    {
+      "id": "task_00395",
+      "type": "task",
+      "surface_form": "Binary alloy phonon prediction"
+    },
+    {
+      "id": "task_00396",
+      "type": "task",
+      "surface_form": "Ternary alloy phonon prediction"
+    },
+    {
+      "id": "task_00397",
+      "type": "task",
+      "surface_form": "High entropy alloy phonon prediction"
+    },
+    {
+      "id": "task_00398",
+      "type": "task",
+      "surface_form": "Topological Weyl semimetal phonon prediction"
+    },
+    {
+      "id": "task_00399",
+      "type": "task",
+      "surface_form": "phonon physics"
+    },
+    {
+      "id": "tech_00553",
+      "type": "technique",
+      "surface_form": "Direct phonon band prediction"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "task": 15,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "phonon",
+  "representative_ids": [
+    "task_00395",
+    "task_00390"
+  ]
+}

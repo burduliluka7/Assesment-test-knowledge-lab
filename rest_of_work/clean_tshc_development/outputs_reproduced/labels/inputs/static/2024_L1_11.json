@@ -1,0 +1,187 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00255",
+      "type": "claim",
+      "surface_form": "EquiformerV2-OMAT24 achieves the best performance on the MatBench leaderboard as of this writing."
+    },
+    {
+      "id": "comp_00138",
+      "type": "component",
+      "surface_form": "Matbench Discovery Python package"
+    },
+    {
+      "id": "comp_00139",
+      "type": "component",
+      "surface_form": "Online leaderboard"
+    },
+    {
+      "id": "comp_00140",
+      "type": "component",
+      "surface_form": "Convex‑hull distance target"
+    },
+    {
+      "id": "comp_00142",
+      "type": "component",
+      "surface_form": "Discovery Acceleration Factor"
+    },
+    {
+      "id": "comp_00143",
+      "type": "component",
+      "surface_form": "Multi‑modal training data support"
+    },
+    {
+      "id": "comp_00145",
+      "type": "component",
+      "surface_form": "Protostructure‑based cleaning procedure"
+    },
+    {
+      "id": "comp_00146",
+      "type": "component",
+      "surface_form": "WBM test‑set generation pipeline"
+    },
+    {
+      "id": "comp_00147",
+      "type": "component",
+      "surface_form": "Rolling MAE evaluation"
+    },
+    {
+      "id": "comp_00149",
+      "type": "component",
+      "surface_form": "Convex‑hull distance classification analysis"
+    },
+    {
+      "id": "comp_00152",
+      "type": "component",
+      "surface_form": "Direct force prediction"
+    },
+    {
+      "id": "comp_00153",
+      "type": "component",
+      "surface_form": "De‑noising non‑equilibrium structures (DeNS) auxiliary task"
+    },
+    {
+      "id": "comp_00155",
+      "type": "component",
+      "surface_form": "Linear self‑connection layer"
+    },
+    {
+      "id": "comp_00156",
+      "type": "component",
+      "surface_form": "Atomic Cluster Expansion (ACE) high‑body‑order features"
+    },
+    {
+      "id": "comp_00158",
+      "type": "component",
+      "surface_form": "Pseudo‑relaxation emulation"
+    },
+    {
+      "id": "comp_00159",
+      "type": "component",
+      "surface_form": "Structure perturbation augmentation"
+    },
+    {
+      "id": "comp_00160",
+      "type": "component",
+      "surface_form": "Coordinate‑free Wyckoff position encoding"
+    },
+    {
+      "id": "comp_00163",
+      "type": "component",
+      "surface_form": "Voronoi tessellation features"
+    },
+    {
+      "id": "comp_00451",
+      "type": "component",
+      "surface_form": "Cleaning stage"
+    },
+    {
+      "id": "tech_00197",
+      "type": "technique",
+      "surface_form": "F1‑score classification evaluation"
+    },
+    {
+      "id": "tech_00198",
+      "type": "technique",
+      "surface_form": "Discovery Acceleration Factor (DAF) calculation"
+    },
+    {
+      "id": "tech_00199",
+      "type": "technique",
+      "surface_form": "Multi‑task learning with auxiliary DFT properties"
+    },
+    {
+      "id": "tech_00202",
+      "type": "technique",
+      "surface_form": "ISCD‑based elemental substitution"
+    },
+    {
+      "id": "tech_00204",
+      "type": "technique",
+      "surface_form": "ROC‑curve analysis"
+    },
+    {
+      "id": "tech_00206",
+      "type": "technique",
+      "surface_form": "Model‑committee error screening"
+    },
+    {
+      "id": "tech_00207",
+      "type": "technique",
+      "surface_form": "De‑noising non‑equilibrium structures"
+    },
+    {
+      "id": "tech_00208",
+      "type": "technique",
+      "surface_form": "Data augmentation for equivariance"
+    },
+    {
+      "id": "tech_00209",
+      "type": "technique",
+      "surface_form": "Linear self‑connection"
+    },
+    {
+      "id": "tech_00210",
+      "type": "technique",
+      "surface_form": "Atomic Cluster Expansion"
+    },
+    {
+      "id": "tech_00211",
+      "type": "technique",
+      "surface_form": "Charge‑informed modeling"
+    },
+    {
+      "id": "tech_00212",
+      "type": "technique",
+      "surface_form": "Pseudo‑relaxation emulation"
+    },
+    {
+      "id": "tech_00213",
+      "type": "technique",
+      "surface_form": "Structure perturbation augmentation"
+    },
+    {
+      "id": "tech_00214",
+      "type": "technique",
+      "surface_form": "Coordinate‑free Wyckoff encoding"
+    },
+    {
+      "id": "tech_00217",
+      "type": "technique",
+      "surface_form": "Voronoi tessellation feature extraction"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 18,
+    "technique": 15
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "augmentation",
+  "representative_ids": [
+    "comp_00142",
+    "comp_00159"
+  ]
+}

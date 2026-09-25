@@ -1,0 +1,2080 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00022",
+      "type": "article",
+      "surface_form": "Atomic cluster expansion of scalar, vectorial and tensorial properties and including magnetism and charge transfer"
+    },
+    {
+      "id": "cite_00012",
+      "type": "cited_work",
+      "surface_form": "Lindemann melting criterion"
+    },
+    {
+      "id": "cite_00032",
+      "type": "cited_work",
+      "surface_form": "Lindemann melting law"
+    },
+    {
+      "id": "cite_00037",
+      "type": "cited_work",
+      "surface_form": "Projector Augmented-Wave Method"
+    },
+    {
+      "id": "cite_00158",
+      "type": "cited_work",
+      "surface_form": "thermodynamic integration"
+    },
+    {
+      "id": "cite_00230",
+      "type": "cited_work",
+      "surface_form": "Atomic Cluster Expansion"
+    },
+    {
+      "id": "cite_00238",
+      "type": "cited_work",
+      "surface_form": "Ab initio thermodynamics of water"
+    },
+    {
+      "id": "cite_00246",
+      "type": "cited_work",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "cite_00264",
+      "type": "cited_work",
+      "surface_form": "Variationally Optimized Atomic Orbitals"
+    },
+    {
+      "id": "cite_00265",
+      "type": "cited_work",
+      "surface_form": "Numerical Atomic Basis Orbitals"
+    },
+    {
+      "id": "cite_00270",
+      "type": "cited_work",
+      "surface_form": "Magnetic Moment Tensor Potentials"
+    },
+    {
+      "id": "cite_00298",
+      "type": "cited_work",
+      "surface_form": "Davidson blocked scheme"
+    },
+    {
+      "id": "cite_00380",
+      "type": "cited_work",
+      "surface_form": "Density Functional Theory (DFT)"
+    },
+    {
+      "id": "cite_00384",
+      "type": "cited_work",
+      "surface_form": "Billiard Walk"
+    },
+    {
+      "id": "cite_00470",
+      "type": "cited_work",
+      "surface_form": "McMillan formula"
+    },
+    {
+      "id": "cite_00471",
+      "type": "cited_work",
+      "surface_form": "Allen-Dynes formula"
+    },
+    {
+      "id": "cite_00548",
+      "type": "cited_work",
+      "surface_form": "density-functional perturbation theory"
+    },
+    {
+      "id": "clai_00021",
+      "type": "claim",
+      "surface_form": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear."
+    },
+    {
+      "id": "clai_00022",
+      "type": "claim",
+      "surface_form": "The model predicts fracture toughness values that are comparable to those obtained from atomistic molecular dynamics simulations."
+    },
+    {
+      "id": "clai_00023",
+      "type": "claim",
+      "surface_form": "A model trained exclusively on single‑crystal data generalizes to bicrystal and gradient‑orientation crystals, reproducing MD fracture patterns for small orientation differences, capturing overall crack paths for large orientation differences, and handling arbitrary geometry gradients."
+    },
+    {
+      "id": "clai_00024",
+      "type": "claim",
+      "surface_form": "The ConvLSTM approach reduces computational cost dramatically compared with full molecular dynamics simulations, enabling rapid fracture predictions."
+    },
+    {
+      "id": "clai_00025",
+      "type": "claim",
+      "surface_form": "Representing molecular dynamics results as image‑based geometric matrices preserves crystal orientation information and allows the neural network to learn spatiotemporal fracture behavior."
+    },
+    {
+      "id": "clai_00029",
+      "type": "claim",
+      "surface_form": "Machine‑learning models trained on Classical Force‑field Inspired Descriptors (CFID) achieve high predictive accuracy for formation energies, exfoliation energies, band gaps, magnetic moments, refractive indices, dielectric constants, thermoelectric performance, and piezoelectric/infrared modes."
+    },
+    {
+      "id": "clai_00086",
+      "type": "claim",
+      "surface_form": "Using a shifted softplus activation guarantees an infinitely differentiable (smooth) potential energy surface, facilitating geometry optimization."
+    },
+    {
+      "id": "clai_00141",
+      "type": "claim",
+      "surface_form": "Standard Gaussian quadrature rules produce frame‑dependent (non‑objective) phase‑averaged internal energies for rotated crystal lattices."
+    },
+    {
+      "id": "clai_00142",
+      "type": "claim",
+      "surface_form": "Gaussian quadrature leads to abrupt energy jumps and fictitious minima when neighbor cut‑off radii change during large deformations."
+    },
+    {
+      "id": "clai_00144",
+      "type": "claim",
+      "surface_form": "Fifth‑order Gaussian quadrature yields internal energies and free‑energy curves that remain in good agreement with molecular dynamics results across the full temperature range studied."
+    },
+    {
+      "id": "clai_00146",
+      "type": "claim",
+      "surface_form": "The E(3)‑equivariant GNN surrogate provides superior accuracy compared with third‑ and fifth‑order Gaussian quadrature for thermal expansion of copper, martensitic phase transition of iron, and grain‑boundary energy calculations, matching molecular dynamics reference data."
+    },
+    {
+      "id": "clai_00148",
+      "type": "claim",
+      "surface_form": "Inference with the trained GNN is significantly faster than evaluating fifth‑order Gaussian quadrature, enabling frequent high‑dimensional integral evaluations and quasistatic finite‑temperature atomistic simulations without costly MD averaging."
+    },
+    {
+      "id": "clai_00160",
+      "type": "claim",
+      "surface_form": "The DPLR model adds electrostatic energy to the total energy, with electrostatic energy calculated in Fourier space for modeling long-range interactions."
+    },
+    {
+      "id": "clai_00187",
+      "type": "claim",
+      "surface_form": "Predicting forces as the negative gradient of the learned total energy guarantees energy conservation and rotation‑equivariant forces."
+    },
+    {
+      "id": "clai_00217",
+      "type": "claim",
+      "surface_form": "The applied plane-wave kinetic energy cut-off (Ecut) is the largest recommended value among all species in the calculation, increased by a factor of 1.4."
+    },
+    {
+      "id": "clai_00220",
+      "type": "claim",
+      "surface_form": "The first RELAX calculation is performed in collinear spin-polarized fashion with initial magnetic moments set to 1.0 µB per atom, and spin polarization is turned off in subsequent calculations if magnetization is below 0.025 µB/atom."
+    },
+    {
+      "id": "clai_00235",
+      "type": "claim",
+      "surface_form": "The Smooth Overlap of Atomic Positions (SOAP) kernel captures the regularity of the silicon potential energy surface, leading to accurate interpolation within the sampled configuration space."
+    },
+    {
+      "id": "clai_00395",
+      "type": "claim",
+      "surface_form": "Assuming the order‑disorder interface energy is half the anti‑phase boundary energy, the interface energy employed in phase‑field simulations is approximately 15.45 mJ m⁻²."
+    },
+    {
+      "id": "clai_00397",
+      "type": "claim",
+      "surface_form": "Phase‑field simulations reproduce the lever‑rule mass fractions of ordered and disordered phases predicted by the Monte Carlo phase diagram after accounting for a slight shift in the order‑disorder boundaries from the IDNN free‑energy surface."
+    },
+    {
+      "id": "clai_00419",
+      "type": "claim",
+      "surface_form": "A generalized energy model that includes external electric‑field dependence can predict polarization, Born effective charges, and polarizability, and improves energy and force MAE."
+    },
+    {
+      "id": "clai_00520",
+      "type": "claim",
+      "surface_form": "The atomic cluster expansion (ACE) is generalized to model scalar, vectorial and tensorial atomic properties and to include additional atomic degrees of freedom—species, magnetic moments, and charges—on equal footing with atomic positions."
+    },
+    {
+      "id": "clai_00521",
+      "type": "claim",
+      "surface_form": "The derived ACE formulas enable efficient evaluation of forces and magnetic torques."
+    },
+    {
+      "id": "clai_00522",
+      "type": "claim",
+      "surface_form": "At the lowest order, the magnetic ACE reproduces a distance‑dependent Heisenberg interaction."
+    },
+    {
+      "id": "clai_00524",
+      "type": "claim",
+      "surface_form": "Moments Tensor Potentials (MTP) and the Spectral Neighbor Analysis Potential (SNAP) can be expressed exactly as special cases of the ACE."
+    },
+    {
+      "id": "clai_00529",
+      "type": "claim",
+      "surface_form": "Because the ACE basis is complete and hierarchical, it can in principle achieve arbitrary accuracy for any scalar, vectorial or tensorial property."
+    },
+    {
+      "id": "clai_00593",
+      "type": "claim",
+      "surface_form": "EquiformerV2 achieves the highest success rate in the AdsorbML algorithm and enables a 2x reduction in DFT calculations needed for computing adsorption energies."
+    },
+    {
+      "id": "clai_00595",
+      "type": "claim",
+      "surface_form": "Higher degree representations (larger Lmax) better capture angular resolution and directional information critical for accurate force prediction and correlate with model expressivity."
+    },
+    {
+      "id": "clai_00616",
+      "type": "claim",
+      "surface_form": "The approach generalizes to materials with varying atom counts, tested on systems with 2–40 atoms (training) and over 40 atoms (testing)."
+    },
+    {
+      "id": "clai_00663",
+      "type": "claim",
+      "surface_form": "AFLOW provides a standardized definition of Brillouin‑zone integration paths for all 14 Bravais lattices, filling a gap in the literature."
+    },
+    {
+      "id": "clai_00668",
+      "type": "claim",
+      "surface_form": "AFLOW can automatically construct convex hulls for binary alloy systems at zero temperature using formation enthalpies from DFT calculations."
+    },
+    {
+      "id": "clai_00675",
+      "type": "claim",
+      "surface_form": "AFLOW can predict alloy miscibility using Miedema and Hume‑Rothery mixing rules."
+    },
+    {
+      "id": "comp_00065",
+      "type": "component",
+      "surface_form": "Generalized energy model with electric‑field coupling"
+    },
+    {
+      "id": "comp_00078",
+      "type": "component",
+      "surface_form": "Combined MSE loss over energy, physical forces, and thermal forces"
+    },
+    {
+      "id": "comp_00111",
+      "type": "component",
+      "surface_form": "Coupling of IDNN free‑energy with phase‑field equations"
+    },
+    {
+      "id": "comp_00112",
+      "type": "component",
+      "surface_form": "Large‑scale DFT calculation of anti‑phase‑boundary energy"
+    },
+    {
+      "id": "comp_00113",
+      "type": "component",
+      "surface_form": "DFT calculations with optB88 vdW functional"
+    },
+    {
+      "id": "comp_00123",
+      "type": "component",
+      "surface_form": "Billiard Walk sampler"
+    },
+    {
+      "id": "comp_00131",
+      "type": "component",
+      "surface_form": "Large‑scale interface‑energy DFT calculations"
+    },
+    {
+      "id": "comp_00152",
+      "type": "component",
+      "surface_form": "Direct force prediction"
+    },
+    {
+      "id": "comp_00153",
+      "type": "component",
+      "surface_form": "De‑noising non‑equilibrium structures (DeNS) auxiliary task"
+    },
+    {
+      "id": "comp_00157",
+      "type": "component",
+      "surface_form": "Magnetic moment prediction"
+    },
+    {
+      "id": "comp_00159",
+      "type": "component",
+      "surface_form": "Structure perturbation augmentation"
+    },
+    {
+      "id": "comp_00169",
+      "type": "component",
+      "surface_form": "Energy‑conserving force computation"
+    },
+    {
+      "id": "comp_00191",
+      "type": "component",
+      "surface_form": "Magnetic‑moment prediction head"
+    },
+    {
+      "id": "comp_00192",
+      "type": "component",
+      "surface_form": "Charge‑informed regularization"
+    },
+    {
+      "id": "comp_00198",
+      "type": "component",
+      "surface_form": "Force and stress autograd"
+    },
+    {
+      "id": "comp_00217",
+      "type": "component",
+      "surface_form": "Repulsive pair potential"
+    },
+    {
+      "id": "comp_00227",
+      "type": "component",
+      "surface_form": "Magnetic moment layer"
+    },
+    {
+      "id": "comp_00288",
+      "type": "component",
+      "surface_form": "Combined Atomic Density ρ_i"
+    },
+    {
+      "id": "comp_00291",
+      "type": "component",
+      "surface_form": "Force and Torque Gradient Formulas"
+    },
+    {
+      "id": "comp_00302",
+      "type": "component",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "comp_00323",
+      "type": "component",
+      "surface_form": "Stress‑field surrogate objective"
+    },
+    {
+      "id": "comp_00362",
+      "type": "component",
+      "surface_form": "Li2O reaction enumeration engine"
+    },
+    {
+      "id": "comp_00365",
+      "type": "component",
+      "surface_form": "Heuristic + machine‑learning formation‑energy predictor"
+    },
+    {
+      "id": "comp_00581",
+      "type": "component",
+      "surface_form": "Pulay charge mixer"
+    },
+    {
+      "id": "comp_00585",
+      "type": "component",
+      "surface_form": "Plane-wave kinetic energy cut-off"
+    },
+    {
+      "id": "comp_00588",
+      "type": "component",
+      "surface_form": "Collinear spin-polarized calculation setup"
+    },
+    {
+      "id": "comp_00607",
+      "type": "component",
+      "surface_form": "Isotropic lattice scaling augmentation"
+    },
+    {
+      "id": "comp_00705",
+      "type": "component",
+      "surface_form": "ghost atoms"
+    },
+    {
+      "id": "comp_00820",
+      "type": "component",
+      "surface_form": "surface slab models"
+    },
+    {
+      "id": "comp_00824",
+      "type": "component",
+      "surface_form": "Melt-quench trajectory generator"
+    },
+    {
+      "id": "comp_00825",
+      "type": "component",
+      "surface_form": "Surface cleavage module"
+    },
+    {
+      "id": "comp_00842",
+      "type": "component",
+      "surface_form": "shear modulus descriptor"
+    },
+    {
+      "id": "data_00064",
+      "type": "dataset",
+      "surface_form": "Band gap"
+    },
+    {
+      "id": "data_00089",
+      "type": "dataset",
+      "surface_form": "Materials Project formation energy"
+    },
+    {
+      "id": "data_00113",
+      "type": "dataset",
+      "surface_form": "AdsorbML"
+    },
+    {
+      "id": "data_00117",
+      "type": "dataset",
+      "surface_form": "Matbench experimental metallicity classification"
+    },
+    {
+      "id": "futu_00046",
+      "type": "future_topic",
+      "surface_form": "Investigation of GNN‑based quadrature for polymeric fluid Fokker‑Planck equations"
+    },
+    {
+      "id": "futu_00064",
+      "type": "future_topic",
+      "surface_form": "Extension of Gaussian Approximation Potentials to other materials"
+    },
+    {
+      "id": "futu_00068",
+      "type": "future_topic",
+      "surface_form": "Integration of ML potentials with finite‑temperature phase‑boundary calculations for complex alloys"
+    },
+    {
+      "id": "futu_00136",
+      "type": "future_topic",
+      "surface_form": "Screening for superconducting materials"
+    },
+    {
+      "id": "futu_00138",
+      "type": "future_topic",
+      "surface_form": "Investigation of gap deformation potentials"
+    },
+    {
+      "id": "meth_00071",
+      "type": "method",
+      "surface_form": "electronegativity equalization method"
+    },
+    {
+      "id": "meth_00074",
+      "type": "method",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "meth_00076",
+      "type": "method",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "meth_00098",
+      "type": "method",
+      "surface_form": "density functional perturbation theory"
+    },
+    {
+      "id": "meth_00099",
+      "type": "method",
+      "surface_form": "embedded-atom-method"
+    },
+    {
+      "id": "meth_00129",
+      "type": "method",
+      "surface_form": "Gaussian quadrature"
+    },
+    {
+      "id": "meth_00132",
+      "type": "method",
+      "surface_form": "Gaussian Phase Packets"
+    },
+    {
+      "id": "meth_00147",
+      "type": "method",
+      "surface_form": "Cahn-Hilliard equation"
+    },
+    {
+      "id": "meth_00150",
+      "type": "method",
+      "surface_form": "mixed finite element method"
+    },
+    {
+      "id": "meth_00152",
+      "type": "method",
+      "surface_form": "classical nucleation theory"
+    },
+    {
+      "id": "meth_00183",
+      "type": "method",
+      "surface_form": "chemical potential equalization"
+    },
+    {
+      "id": "meth_00184",
+      "type": "method",
+      "surface_form": "charge equilibration"
+    },
+    {
+      "id": "meth_00189",
+      "type": "method",
+      "surface_form": "Tersoff bond order potential"
+    },
+    {
+      "id": "meth_00191",
+      "type": "method",
+      "surface_form": "AMBER force field"
+    },
+    {
+      "id": "meth_00192",
+      "type": "method",
+      "surface_form": "Universal Force Field"
+    },
+    {
+      "id": "meth_00194",
+      "type": "method",
+      "surface_form": "AtomSets"
+    },
+    {
+      "id": "meth_00224",
+      "type": "method",
+      "surface_form": "Linear Combination of Atomic Orbitals"
+    },
+    {
+      "id": "meth_00225",
+      "type": "method",
+      "surface_form": "Kohn-Sham density-functional theory"
+    },
+    {
+      "id": "meth_00227",
+      "type": "method",
+      "surface_form": "Psi4"
+    },
+    {
+      "id": "meth_00229",
+      "type": "method",
+      "surface_form": "Atomic Cluster Expansion extended to scalar, vectorial, tensorial properties with magnetic moments and charge transfer"
+    },
+    {
+      "id": "meth_00230",
+      "type": "method",
+      "surface_form": "ConvLSTM-based fracture prediction model"
+    },
+    {
+      "id": "meth_00250",
+      "type": "method",
+      "surface_form": "Hybrid functional HSE06"
+    },
+    {
+      "id": "meth_00251",
+      "type": "method",
+      "surface_form": "Hybrid functional PBE0"
+    },
+    {
+      "id": "meth_00253",
+      "type": "method",
+      "surface_form": "Dynamical Mean Field Theory"
+    },
+    {
+      "id": "meth_00263",
+      "type": "method",
+      "surface_form": "Phase-Field Hub"
+    },
+    {
+      "id": "meth_00291",
+      "type": "method",
+      "surface_form": "hybrid functional"
+    },
+    {
+      "id": "meth_00309",
+      "type": "method",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "meth_00327",
+      "type": "method",
+      "surface_form": "Virtual-Crystal Approximation"
+    },
+    {
+      "id": "meth_00334",
+      "type": "method",
+      "surface_form": "Ziegler-Biersack-Littmark (ZBL) potential"
+    },
+    {
+      "id": "meth_00336",
+      "type": "method",
+      "surface_form": "AMBER"
+    },
+    {
+      "id": "meth_00344",
+      "type": "method",
+      "surface_form": "PBEsol"
+    },
+    {
+      "id": "meth_00347",
+      "type": "method",
+      "surface_form": "McMillan's formula"
+    },
+    {
+      "id": "meth_00361",
+      "type": "method",
+      "surface_form": "Pulay charge mixing"
+    },
+    {
+      "id": "meth_00363",
+      "type": "method",
+      "surface_form": "Harris-Foulkes corrections"
+    },
+    {
+      "id": "meth_00366",
+      "type": "method",
+      "surface_form": "Ultra-soft pseudopotentials"
+    },
+    {
+      "id": "meth_00367",
+      "type": "method",
+      "surface_form": "Local Density Approximation"
+    },
+    {
+      "id": "meth_00368",
+      "type": "method",
+      "surface_form": "PW91 functional"
+    },
+    {
+      "id": "meth_00370",
+      "type": "method",
+      "surface_form": "GW approximation"
+    },
+    {
+      "id": "meth_00431",
+      "type": "method",
+      "surface_form": "Brenner potential"
+    },
+    {
+      "id": "meth_00432",
+      "type": "method",
+      "surface_form": "Screened Tersoff potential"
+    },
+    {
+      "id": "meth_00435",
+      "type": "method",
+      "surface_form": "REBO potential"
+    },
+    {
+      "id": "meth_00436",
+      "type": "method",
+      "surface_form": "environment-dependent interaction potential"
+    },
+    {
+      "id": "meth_00438",
+      "type": "method",
+      "surface_form": "Lindemann melting criterion"
+    },
+    {
+      "id": "meth_00439",
+      "type": "method",
+      "surface_form": "CALculation of PHAse Diagram"
+    },
+    {
+      "id": "metr_00031",
+      "type": "metric",
+      "surface_form": "band structure"
+    },
+    {
+      "id": "metr_00088",
+      "type": "metric",
+      "surface_form": "Young's modulus"
+    },
+    {
+      "id": "prob_00034",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure prediction for moiré systems"
+    },
+    {
+      "id": "prob_00042",
+      "type": "problem",
+      "surface_form": "Missing link between microscopic energy models and macroscopic observables"
+    },
+    {
+      "id": "prob_00043",
+      "type": "problem",
+      "surface_form": "Frame dependence of quadrature‑based energy averages"
+    },
+    {
+      "id": "prob_00044",
+      "type": "problem",
+      "surface_form": "Energy discontinuities due to neighbor‑cutoff changes"
+    },
+    {
+      "id": "prob_00045",
+      "type": "problem",
+      "surface_form": "Insufficient accuracy of low‑order Gaussian quadrature"
+    },
+    {
+      "id": "prob_00046",
+      "type": "problem",
+      "surface_form": "Curse of dimensionality in phase‑space integration"
+    },
+    {
+      "id": "prob_00048",
+      "type": "problem",
+      "surface_form": "Discontinuities in free‑energy landscapes caused by quadrature cut‑off artifacts"
+    },
+    {
+      "id": "prob_00050",
+      "type": "problem",
+      "surface_form": "Accurate prediction of temperature‑dependent material properties without long MD runs"
+    },
+    {
+      "id": "prob_00062",
+      "type": "problem",
+      "surface_form": "Scale bridging across atomistic and continuum levels"
+    },
+    {
+      "id": "prob_00066",
+      "type": "problem",
+      "surface_form": "Multiscale bridging from atomic to continuum"
+    },
+    {
+      "id": "prob_00071",
+      "type": "problem",
+      "surface_form": "Capturing chemical‑potential behavior near phase‑boundary regions"
+    },
+    {
+      "id": "prob_00073",
+      "type": "problem",
+      "surface_form": "Coupling ordering and composition in phase‑field simulations"
+    },
+    {
+      "id": "prob_00077",
+      "type": "problem",
+      "surface_form": "Quantitative interface‑energy calculation for coherent anti‑phase boundaries"
+    },
+    {
+      "id": "prob_00078",
+      "type": "problem",
+      "surface_form": "Capture of charge‑ordering phenomena"
+    },
+    {
+      "id": "prob_00092",
+      "type": "problem",
+      "surface_form": "Energy‑non‑conserving force predictions"
+    },
+    {
+      "id": "prob_00103",
+      "type": "problem",
+      "surface_form": "Coupled charge‑ion dynamics"
+    },
+    {
+      "id": "prob_00109",
+      "type": "problem",
+      "surface_form": "Charge‑disproportionation driven phase transformation insight"
+    },
+    {
+      "id": "prob_00112",
+      "type": "problem",
+      "surface_form": "Accurate, fast energy/force/stress prediction"
+    },
+    {
+      "id": "prob_00131",
+      "type": "problem",
+      "surface_form": "Efficient force and virial prediction"
+    },
+    {
+      "id": "prob_00132",
+      "type": "problem",
+      "surface_form": "Efficient training of interatomic potentials with forces and virial regularization"
+    },
+    {
+      "id": "prob_00134",
+      "type": "problem",
+      "surface_form": "Accurate reproduction of AIMD structural properties"
+    },
+    {
+      "id": "prob_00140",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure calculation for large‑scale materials"
+    },
+    {
+      "id": "prob_00165",
+      "type": "problem",
+      "surface_form": "Efficient prediction of dynamic brittle fracture paths"
+    },
+    {
+      "id": "prob_00166",
+      "type": "problem",
+      "surface_form": "Fracture‑toughness estimation from atomistic data"
+    },
+    {
+      "id": "prob_00168",
+      "type": "problem",
+      "surface_form": "Fracture pattern prediction from MD simulations"
+    },
+    {
+      "id": "prob_00169",
+      "type": "problem",
+      "surface_form": "Noise reduction in atomistic data"
+    },
+    {
+      "id": "prob_00170",
+      "type": "problem",
+      "surface_form": "Modeling spatiotemporal dependencies in fracture"
+    },
+    {
+      "id": "prob_00177",
+      "type": "problem",
+      "surface_form": "Inverse design of low‑stress structures"
+    },
+    {
+      "id": "prob_00198",
+      "type": "problem",
+      "surface_form": "Force‑field quality assessment"
+    },
+    {
+      "id": "prob_00219",
+      "type": "problem",
+      "surface_form": "Construction of complex surface slabs and nanoparticles"
+    },
+    {
+      "id": "prob_00221",
+      "type": "problem",
+      "surface_form": "phase stability determination"
+    },
+    {
+      "id": "prob_00222",
+      "type": "problem",
+      "surface_form": "defect energetics and band‑gap underestimation"
+    },
+    {
+      "id": "prob_00244",
+      "type": "problem",
+      "surface_form": "Loss of relative magnitude information"
+    },
+    {
+      "id": "prob_00248",
+      "type": "problem",
+      "surface_form": "Modeling complex atomic structures"
+    },
+    {
+      "id": "prob_00249",
+      "type": "problem",
+      "surface_form": "Force prediction accuracy"
+    },
+    {
+      "id": "prob_00252",
+      "type": "problem",
+      "surface_form": "Structure relaxation efficiency"
+    },
+    {
+      "id": "prob_00260",
+      "type": "problem",
+      "surface_form": "Accurate energy and force prediction for adsorbate-catalyst systems"
+    },
+    {
+      "id": "prob_00261",
+      "type": "problem",
+      "surface_form": "Efficient structural relaxation"
+    },
+    {
+      "id": "prob_00323",
+      "type": "problem",
+      "surface_form": "Accuracy limitations of classical force fields"
+    },
+    {
+      "id": "prob_00340",
+      "type": "problem",
+      "surface_form": "accurate potential energy surface representation"
+    },
+    {
+      "id": "prob_00343",
+      "type": "problem",
+      "surface_form": "free energy calculation"
+    },
+    {
+      "id": "prob_00352",
+      "type": "problem",
+      "surface_form": "chemical element bias"
+    },
+    {
+      "id": "prob_00361",
+      "type": "problem",
+      "surface_form": "High-Tc superconductor identification"
+    },
+    {
+      "id": "prob_00362",
+      "type": "problem",
+      "surface_form": "Extreme deformation potential detection"
+    },
+    {
+      "id": "prob_00376",
+      "type": "problem",
+      "surface_form": "electronic structure of correlated systems"
+    },
+    {
+      "id": "prob_00380",
+      "type": "problem",
+      "surface_form": "Electronic convergence stability"
+    },
+    {
+      "id": "prob_00382",
+      "type": "problem",
+      "surface_form": "Fermi edge handling"
+    },
+    {
+      "id": "prob_00417",
+      "type": "problem",
+      "surface_form": "accurate force field generation"
+    },
+    {
+      "id": "prob_00611",
+      "type": "problem",
+      "surface_form": "surface reconstruction modeling"
+    },
+    {
+      "id": "prob_00613",
+      "type": "problem",
+      "surface_form": "Spurious energy barriers"
+    },
+    {
+      "id": "task_00002",
+      "type": "task",
+      "surface_form": "physics"
+    },
+    {
+      "id": "task_00004",
+      "type": "task",
+      "surface_form": "chemistry"
+    },
+    {
+      "id": "task_00008",
+      "type": "task",
+      "surface_form": "Computational mechanics"
+    },
+    {
+      "id": "task_00010",
+      "type": "task",
+      "surface_form": "computational chemistry"
+    },
+    {
+      "id": "task_00017",
+      "type": "task",
+      "surface_form": "Stress prediction"
+    },
+    {
+      "id": "task_00019",
+      "type": "task",
+      "surface_form": "Phase diagram construction"
+    },
+    {
+      "id": "task_00020",
+      "type": "task",
+      "surface_form": "catalysis"
+    },
+    {
+      "id": "task_00023",
+      "type": "task",
+      "surface_form": "condensed matter physics"
+    },
+    {
+      "id": "task_00025",
+      "type": "task",
+      "surface_form": "Interatomic force prediction"
+    },
+    {
+      "id": "task_00027",
+      "type": "task",
+      "surface_form": "quantum chemistry"
+    },
+    {
+      "id": "task_00044",
+      "type": "task",
+      "surface_form": "atomistic simulation"
+    },
+    {
+      "id": "task_00045",
+      "type": "task",
+      "surface_form": "electronic structure"
+    },
+    {
+      "id": "task_00046",
+      "type": "task",
+      "surface_form": "Electronic structure calculation"
+    },
+    {
+      "id": "task_00065",
+      "type": "task",
+      "surface_form": "Energy and force prediction under external electric fields"
+    },
+    {
+      "id": "task_00066",
+      "type": "task",
+      "surface_form": "Born effective charge and dielectric constant prediction"
+    },
+    {
+      "id": "task_00068",
+      "type": "task",
+      "surface_form": "Phase‑space integration of atomistic ensembles"
+    },
+    {
+      "id": "task_00073",
+      "type": "task",
+      "surface_form": "Martensitic phase‑transition free‑energy calculation in iron"
+    },
+    {
+      "id": "task_00074",
+      "type": "task",
+      "surface_form": "Grain‑boundary energy evaluation in aluminum and iron"
+    },
+    {
+      "id": "task_00089",
+      "type": "task",
+      "surface_form": "Generation of phase diagrams and voltage profiles"
+    },
+    {
+      "id": "task_00090",
+      "type": "task",
+      "surface_form": "Voltage‑composition curve prediction"
+    },
+    {
+      "id": "task_00091",
+      "type": "task",
+      "surface_form": "Microstructure evolution simulation"
+    },
+    {
+      "id": "task_00092",
+      "type": "task",
+      "surface_form": "Nucleation rate and probability analysis"
+    },
+    {
+      "id": "task_00093",
+      "type": "task",
+      "surface_form": "Free‑energy surface reconstruction"
+    },
+    {
+      "id": "task_00095",
+      "type": "task",
+      "surface_form": "Phase‑field microstructure evolution"
+    },
+    {
+      "id": "task_00096",
+      "type": "task",
+      "surface_form": "Nucleation rate estimation"
+    },
+    {
+      "id": "task_00098",
+      "type": "task",
+      "surface_form": "Coherent interface‑energy determination"
+    },
+    {
+      "id": "task_00102",
+      "type": "task",
+      "surface_form": "Phase‑field model preparation"
+    },
+    {
+      "id": "task_00112",
+      "type": "task",
+      "surface_form": "Formation energy regression"
+    },
+    {
+      "id": "task_00113",
+      "type": "task",
+      "surface_form": "Force prediction"
+    },
+    {
+      "id": "task_00114",
+      "type": "task",
+      "surface_form": "Magnetic moment prediction"
+    },
+    {
+      "id": "task_00143",
+      "type": "task",
+      "surface_form": "Charge‑disproportionation analysis in LiMnO2"
+    },
+    {
+      "id": "task_00146",
+      "type": "task",
+      "surface_form": "Phase‑diagram calculation via cluster expansion"
+    },
+    {
+      "id": "task_00147",
+      "type": "task",
+      "surface_form": "Structure relaxation of crystalline materials"
+    },
+    {
+      "id": "task_00148",
+      "type": "task",
+      "surface_form": "Magnetic‑moment and charge inference"
+    },
+    {
+      "id": "task_00150",
+      "type": "task",
+      "surface_form": "Crystal structural relaxation"
+    },
+    {
+      "id": "task_00157",
+      "type": "task",
+      "surface_form": "Elastic modulus prediction"
+    },
+    {
+      "id": "task_00170",
+      "type": "task",
+      "surface_form": "Efficient electronic‑structure calculation of magnetic materials"
+    },
+    {
+      "id": "task_00173",
+      "type": "task",
+      "surface_form": "Energy, force, and virial prediction"
+    },
+    {
+      "id": "task_00177",
+      "type": "task",
+      "surface_form": "Prediction of potential energy, atomic forces, and virial tensor"
+    },
+    {
+      "id": "task_00179",
+      "type": "task",
+      "surface_form": "Electronic‑structure property calculation"
+    },
+    {
+      "id": "task_00182",
+      "type": "task",
+      "surface_form": "Band structure and density‑of‑states calculation"
+    },
+    {
+      "id": "task_00183",
+      "type": "task",
+      "surface_form": "Optical response computation"
+    },
+    {
+      "id": "task_00187",
+      "type": "task",
+      "surface_form": "Per‑atom energy extraction"
+    },
+    {
+      "id": "task_00189",
+      "type": "task",
+      "surface_form": "Ground‑state energy calculation"
+    },
+    {
+      "id": "task_00194",
+      "type": "task",
+      "surface_form": "Self‑consistent field convergence"
+    },
+    {
+      "id": "task_00196",
+      "type": "task",
+      "surface_form": "Unified free‑energy prediction"
+    },
+    {
+      "id": "task_00200",
+      "type": "task",
+      "surface_form": "Crack‑pattern prediction"
+    },
+    {
+      "id": "task_00201",
+      "type": "task",
+      "surface_form": "Fracture‑toughness prediction"
+    },
+    {
+      "id": "task_00202",
+      "type": "task",
+      "surface_form": "Bicrystal fracture prediction"
+    },
+    {
+      "id": "task_00203",
+      "type": "task",
+      "surface_form": "Gradient‑orientation fracture prediction"
+    },
+    {
+      "id": "task_00204",
+      "type": "task",
+      "surface_form": "Crack path prediction in crystalline solids"
+    },
+    {
+      "id": "task_00205",
+      "type": "task",
+      "surface_form": "Spatiotemporal fracture behavior forecasting"
+    },
+    {
+      "id": "task_00207",
+      "type": "task",
+      "surface_form": "Phase diagram construction and stability assessment"
+    },
+    {
+      "id": "task_00208",
+      "type": "task",
+      "surface_form": "Reaction energy calculation and screening"
+    },
+    {
+      "id": "task_00211",
+      "type": "task",
+      "surface_form": "Atomic von Mises stress prediction"
+    },
+    {
+      "id": "task_00212",
+      "type": "task",
+      "surface_form": "Atomic tensile stress prediction"
+    },
+    {
+      "id": "task_00213",
+      "type": "task",
+      "surface_form": "Atomic potential energy prediction"
+    },
+    {
+      "id": "task_00216",
+      "type": "task",
+      "surface_form": "Per‑atom stress field prediction"
+    },
+    {
+      "id": "task_00217",
+      "type": "task",
+      "surface_form": "Global mechanical property estimation"
+    },
+    {
+      "id": "task_00220",
+      "type": "task",
+      "surface_form": "Atomic stress field prediction"
+    },
+    {
+      "id": "task_00223",
+      "type": "task",
+      "surface_form": "mechanical design"
+    },
+    {
+      "id": "task_00230",
+      "type": "task",
+      "surface_form": "Materials property calculation"
+    },
+    {
+      "id": "task_00234",
+      "type": "task",
+      "surface_form": "Force‑field benchmarking"
+    },
+    {
+      "id": "task_00241",
+      "type": "task",
+      "surface_form": "Classical force‑field property benchmarking"
+    },
+    {
+      "id": "task_00257",
+      "type": "task",
+      "surface_form": "Structure relaxation"
+    },
+    {
+      "id": "task_00263",
+      "type": "task",
+      "surface_form": "atomistic simulations"
+    },
+    {
+      "id": "task_00266",
+      "type": "task",
+      "surface_form": "Surface‑slab generation for catalysis and corrosion studies"
+    },
+    {
+      "id": "task_00270",
+      "type": "task",
+      "surface_form": "convex‑hull phase diagram construction"
+    },
+    {
+      "id": "task_00273",
+      "type": "task",
+      "surface_form": "hybrid functional band‑structure calculation"
+    },
+    {
+      "id": "task_00284",
+      "type": "task",
+      "surface_form": "Energy prediction"
+    },
+    {
+      "id": "task_00293",
+      "type": "task",
+      "surface_form": "atomic energy prediction"
+    },
+    {
+      "id": "task_00294",
+      "type": "task",
+      "surface_form": "adsorption energy calculation"
+    },
+    {
+      "id": "task_00298",
+      "type": "task",
+      "surface_form": "AdsorbML integration"
+    },
+    {
+      "id": "task_00300",
+      "type": "task",
+      "surface_form": "AdsorbML structural relaxation"
+    },
+    {
+      "id": "task_00301",
+      "type": "task",
+      "surface_form": "AdsorbML adsorption energy calculation"
+    },
+    {
+      "id": "task_00302",
+      "type": "task",
+      "surface_form": "Atomic interaction modeling"
+    },
+    {
+      "id": "task_00304",
+      "type": "task",
+      "surface_form": "Initial Structure to Relaxed Structure"
+    },
+    {
+      "id": "task_00305",
+      "type": "task",
+      "surface_form": "Initial Structure to Relaxed Energy"
+    },
+    {
+      "id": "task_00314",
+      "type": "task",
+      "surface_form": "Energy gap (∆ε) prediction"
+    },
+    {
+      "id": "task_00318",
+      "type": "task",
+      "surface_form": "Heat capacity (Cν) prediction"
+    },
+    {
+      "id": "task_00319",
+      "type": "task",
+      "surface_form": "Gibbs free energy (G) prediction"
+    },
+    {
+      "id": "task_00322",
+      "type": "task",
+      "surface_form": "Internal energy (U) prediction"
+    },
+    {
+      "id": "task_00323",
+      "type": "task",
+      "surface_form": "Internal energy at 0K (U0) prediction"
+    },
+    {
+      "id": "task_00325",
+      "type": "task",
+      "surface_form": "atomistic machine learning"
+    },
+    {
+      "id": "task_00329",
+      "type": "task",
+      "surface_form": "Bulk modulus prediction"
+    },
+    {
+      "id": "task_00330",
+      "type": "task",
+      "surface_form": "Shear modulus prediction"
+    },
+    {
+      "id": "task_00331",
+      "type": "task",
+      "surface_form": "Band gap prediction"
+    },
+    {
+      "id": "task_00332",
+      "type": "task",
+      "surface_form": "Metallicity classification"
+    },
+    {
+      "id": "task_00333",
+      "type": "task",
+      "surface_form": "Bulk metallic glass formation prediction"
+    },
+    {
+      "id": "task_00336",
+      "type": "task",
+      "surface_form": "Steel yield strength prediction"
+    },
+    {
+      "id": "task_00340",
+      "type": "task",
+      "surface_form": "Band gap regression"
+    },
+    {
+      "id": "task_00341",
+      "type": "task",
+      "surface_form": "Exfoliation energy regression"
+    },
+    {
+      "id": "task_00342",
+      "type": "task",
+      "surface_form": "Bulk metallic glass classification"
+    },
+    {
+      "id": "task_00381",
+      "type": "task",
+      "surface_form": "Heat capacity prediction"
+    },
+    {
+      "id": "task_00401",
+      "type": "task",
+      "surface_form": "lattice dynamics"
+    },
+    {
+      "id": "task_00402",
+      "type": "task",
+      "surface_form": "Metallic material simulation"
+    },
+    {
+      "id": "task_00403",
+      "type": "task",
+      "surface_form": "Water system simulation"
+    },
+    {
+      "id": "task_00405",
+      "type": "task",
+      "surface_form": "Interface simulation"
+    },
+    {
+      "id": "task_00406",
+      "type": "task",
+      "surface_form": "Transition state modeling"
+    },
+    {
+      "id": "task_00407",
+      "type": "task",
+      "surface_form": "Excited state simulation"
+    },
+    {
+      "id": "task_00409",
+      "type": "task",
+      "surface_form": "Gas-phase system simulation"
+    },
+    {
+      "id": "task_00411",
+      "type": "task",
+      "surface_form": "potential energy prediction"
+    },
+    {
+      "id": "task_00412",
+      "type": "task",
+      "surface_form": "Atomic force calculation"
+    },
+    {
+      "id": "task_00416",
+      "type": "task",
+      "surface_form": "QM/MM energy correction"
+    },
+    {
+      "id": "task_00417",
+      "type": "task",
+      "surface_form": "IR spectrum calculation"
+    },
+    {
+      "id": "task_00420",
+      "type": "task",
+      "surface_form": "Energy fitting"
+    },
+    {
+      "id": "task_00428",
+      "type": "task",
+      "surface_form": "free energy calculation"
+    },
+    {
+      "id": "task_00429",
+      "type": "task",
+      "surface_form": "phase diagram determination"
+    },
+    {
+      "id": "task_00435",
+      "type": "task",
+      "surface_form": "reaction dynamics"
+    },
+    {
+      "id": "task_00436",
+      "type": "task",
+      "surface_form": "copper system simulation"
+    },
+    {
+      "id": "task_00437",
+      "type": "task",
+      "surface_form": "high-entropy alloy simulation"
+    },
+    {
+      "id": "task_00440",
+      "type": "task",
+      "surface_form": "superconductor candidate identification"
+    },
+    {
+      "id": "task_00442",
+      "type": "task",
+      "surface_form": "gap deformation potential screening"
+    },
+    {
+      "id": "task_00448",
+      "type": "task",
+      "surface_form": "Elastic constant calculation"
+    },
+    {
+      "id": "task_00451",
+      "type": "task",
+      "surface_form": "Superconducting Tc calculation"
+    },
+    {
+      "id": "task_00453",
+      "type": "task",
+      "surface_form": "Fixed shape deformation potential prediction"
+    },
+    {
+      "id": "task_00458",
+      "type": "task",
+      "surface_form": "Superconductivity prediction"
+    },
+    {
+      "id": "task_00459",
+      "type": "task",
+      "surface_form": "Gap deformation potential prediction"
+    },
+    {
+      "id": "task_00462",
+      "type": "task",
+      "surface_form": "Fluid mechanics modeling"
+    },
+    {
+      "id": "task_00464",
+      "type": "task",
+      "surface_form": "Design optimization"
+    },
+    {
+      "id": "task_00466",
+      "type": "task",
+      "surface_form": "computational modeling"
+    },
+    {
+      "id": "task_00467",
+      "type": "task",
+      "surface_form": "fluid mechanics"
+    },
+    {
+      "id": "task_00469",
+      "type": "task",
+      "surface_form": "Single-point energy calculation"
+    },
+    {
+      "id": "task_00470",
+      "type": "task",
+      "surface_form": "Electronic band structure calculation"
+    },
+    {
+      "id": "task_00472",
+      "type": "task",
+      "surface_form": "Mechanical properties calculation"
+    },
+    {
+      "id": "task_00474",
+      "type": "task",
+      "surface_form": "thermoelectric property assessment"
+    },
+    {
+      "id": "task_00476",
+      "type": "task",
+      "surface_form": "oxidation energy calculation"
+    },
+    {
+      "id": "task_00478",
+      "type": "task",
+      "surface_form": "magneto-optical property calculation"
+    },
+    {
+      "id": "task_00479",
+      "type": "task",
+      "surface_form": "Static energy calculation"
+    },
+    {
+      "id": "task_00484",
+      "type": "task",
+      "surface_form": "Static energy calculations"
+    },
+    {
+      "id": "task_00488",
+      "type": "task",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "task_00499",
+      "type": "task",
+      "surface_form": "Phase-separation energy prediction"
+    },
+    {
+      "id": "task_00509",
+      "type": "task",
+      "surface_form": "Bandgap calculation"
+    },
+    {
+      "id": "task_00510",
+      "type": "task",
+      "surface_form": "Decomposition energy computation"
+    },
+    {
+      "id": "task_00517",
+      "type": "task",
+      "surface_form": "AIMD simulations"
+    },
+    {
+      "id": "task_00521",
+      "type": "task",
+      "surface_form": "Phase diagram analysis"
+    },
+    {
+      "id": "task_00533",
+      "type": "task",
+      "surface_form": "Activation energy estimation"
+    },
+    {
+      "id": "task_00613",
+      "type": "task",
+      "surface_form": "stress computation"
+    },
+    {
+      "id": "task_00615",
+      "type": "task",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "task_00703",
+      "type": "task",
+      "surface_form": "Lattice parameter reproduction"
+    },
+    {
+      "id": "task_00707",
+      "type": "task",
+      "surface_form": "Young's modulus prediction"
+    },
+    {
+      "id": "tech_00074",
+      "type": "technique",
+      "surface_form": "Weight sharing across atoms"
+    },
+    {
+      "id": "tech_00135",
+      "type": "technique",
+      "surface_form": "Auto‑differentiation of energy model"
+    },
+    {
+      "id": "tech_00136",
+      "type": "technique",
+      "surface_form": "Perturbative expansion in external electric field"
+    },
+    {
+      "id": "tech_00141",
+      "type": "technique",
+      "surface_form": "Supervised regression of energy and forces"
+    },
+    {
+      "id": "tech_00142",
+      "type": "technique",
+      "surface_form": "Replacement of Gaussian quadrature"
+    },
+    {
+      "id": "tech_00178",
+      "type": "technique",
+      "surface_form": "Billiard Walk random sampling"
+    },
+    {
+      "id": "tech_00180",
+      "type": "technique",
+      "surface_form": "Mixed finite‑element method"
+    },
+    {
+      "id": "tech_00202",
+      "type": "technique",
+      "surface_form": "ISCD‑based elemental substitution"
+    },
+    {
+      "id": "tech_00207",
+      "type": "technique",
+      "surface_form": "De‑noising non‑equilibrium structures"
+    },
+    {
+      "id": "tech_00210",
+      "type": "technique",
+      "surface_form": "Atomic Cluster Expansion"
+    },
+    {
+      "id": "tech_00211",
+      "type": "technique",
+      "surface_form": "Charge‑informed modeling"
+    },
+    {
+      "id": "tech_00213",
+      "type": "technique",
+      "surface_form": "Structure perturbation augmentation"
+    },
+    {
+      "id": "tech_00223",
+      "type": "technique",
+      "surface_form": "Energy‑gradient force derivation"
+    },
+    {
+      "id": "tech_00241",
+      "type": "technique",
+      "surface_form": "FIRE optimizer for structure relaxation"
+    },
+    {
+      "id": "tech_00246",
+      "type": "technique",
+      "surface_form": "Auto‑differentiation for forces and stresses"
+    },
+    {
+      "id": "tech_00250",
+      "type": "technique",
+      "surface_form": "pre‑relaxation using a learned interatomic potential"
+    },
+    {
+      "id": "tech_00274",
+      "type": "technique",
+      "surface_form": "Energy‑force‑virial joint loss"
+    },
+    {
+      "id": "tech_00277",
+      "type": "technique",
+      "surface_form": "Backpropagation for force and virial computation"
+    },
+    {
+      "id": "tech_00293",
+      "type": "technique",
+      "surface_form": "Linear pooling for site‑energy extraction"
+    },
+    {
+      "id": "tech_00312",
+      "type": "technique",
+      "surface_form": "Image‑based encoding of atomistic data"
+    },
+    {
+      "id": "tech_00314",
+      "type": "technique",
+      "surface_form": "Physics‑based surface‑energy calculation"
+    },
+    {
+      "id": "tech_00369",
+      "type": "technique",
+      "surface_form": "Finite‑difference elastic constant calculation"
+    },
+    {
+      "id": "tech_00371",
+      "type": "technique",
+      "surface_form": "Linear‑optics calculations with OptB88‑vdW and TB‑mBJ"
+    },
+    {
+      "id": "tech_00380",
+      "type": "technique",
+      "surface_form": "Thermodynamic descriptor screening"
+    },
+    {
+      "id": "tech_00382",
+      "type": "technique",
+      "surface_form": "Machine‑learning regression on formation energies"
+    },
+    {
+      "id": "tech_00399",
+      "type": "technique",
+      "surface_form": "Gamma‑centered k‑mesh for hexagonal, fcc, rhombohedral lattices"
+    },
+    {
+      "id": "tech_00402",
+      "type": "technique",
+      "surface_form": "formation enthalpy calculation"
+    },
+    {
+      "id": "tech_00410",
+      "type": "technique",
+      "surface_form": "zero‑weight extra k‑path for band structures"
+    },
+    {
+      "id": "tech_00471",
+      "type": "technique",
+      "surface_form": "LBFGS structural relaxation"
+    },
+    {
+      "id": "tech_00539",
+      "type": "technique",
+      "surface_form": "Phase factor weighting"
+    },
+    {
+      "id": "tech_00548",
+      "type": "technique",
+      "surface_form": "Phase factor multiplication"
+    },
+    {
+      "id": "tech_00566",
+      "type": "technique",
+      "surface_form": "Particle mesh Ewald method"
+    },
+    {
+      "id": "tech_00573",
+      "type": "technique",
+      "surface_form": "Relative force loss normalization"
+    },
+    {
+      "id": "tech_00586",
+      "type": "technique",
+      "surface_form": "thermodynamic integration"
+    },
+    {
+      "id": "tech_00602",
+      "type": "technique",
+      "surface_form": "Allen-Dynes modification to McMillan formula"
+    },
+    {
+      "id": "tech_00608",
+      "type": "technique",
+      "surface_form": "Debye temperature estimation"
+    },
+    {
+      "id": "tech_00615",
+      "type": "technique",
+      "surface_form": "Alpha2F spectral function calculation"
+    },
+    {
+      "id": "tech_00617",
+      "type": "technique",
+      "surface_form": "Chemical element permutation"
+    },
+    {
+      "id": "tech_00622",
+      "type": "technique",
+      "surface_form": "Density-functional perturbation theory"
+    },
+    {
+      "id": "tech_00630",
+      "type": "technique",
+      "surface_form": "Two-step relaxation annealing"
+    },
+    {
+      "id": "tech_00639",
+      "type": "technique",
+      "surface_form": "local-orbital basis"
+    },
+    {
+      "id": "tech_00650",
+      "type": "technique",
+      "surface_form": "Automatic spin polarization economization"
+    },
+    {
+      "id": "tech_00654",
+      "type": "technique",
+      "surface_form": "Reciprocal lattice grid spacing"
+    },
+    {
+      "id": "tech_00670",
+      "type": "technique",
+      "surface_form": "Soft-sphere potential relaxation"
+    },
+    {
+      "id": "tech_00675",
+      "type": "technique",
+      "surface_form": "Test-time isotropic lattice scaling"
+    },
+    {
+      "id": "tech_00683",
+      "type": "technique",
+      "surface_form": "Model-based filtration with energy threshold"
+    },
+    {
+      "id": "tech_00702",
+      "type": "technique",
+      "surface_form": "Temperature ramp simulation"
+    },
+    {
+      "id": "tech_00781",
+      "type": "technique",
+      "surface_form": "Melt-quench MD simulation"
+    },
+    {
+      "id": "tech_00786",
+      "type": "technique",
+      "surface_form": "Atomic coordinate optimization at 0 K"
+    },
+    {
+      "id": "tech_00788",
+      "type": "technique",
+      "surface_form": "ghost atom creation"
+    },
+    {
+      "id": "tech_00893",
+      "type": "technique",
+      "surface_form": "Machine-learning interpolation of DFT potential-energy surface"
+    },
+    {
+      "id": "tech_00904",
+      "type": "technique",
+      "surface_form": "Melt-quench protocol"
+    },
+    {
+      "id": "tech_00911",
+      "type": "technique",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "tech_00914",
+      "type": "technique",
+      "surface_form": "sp3 atom counting"
+    },
+    {
+      "id": "tech_00916",
+      "type": "technique",
+      "surface_form": "melt-quench trajectory generation"
+    },
+    {
+      "id": "tech_00922",
+      "type": "technique",
+      "surface_form": "high-temperature annealing protocol"
+    },
+    {
+      "id": "tech_00923",
+      "type": "technique",
+      "surface_form": "sp2/sp3 atom counting"
+    },
+    {
+      "id": "tech_00924",
+      "type": "technique",
+      "surface_form": "surface cleavage"
+    },
+    {
+      "id": "tech_00925",
+      "type": "technique",
+      "surface_form": "Young's modulus averaging"
+    },
+    {
+      "id": "tech_00926",
+      "type": "technique",
+      "surface_form": "Lattice parameter scaling"
+    },
+    {
+      "id": "tech_00947",
+      "type": "technique",
+      "surface_form": "DFT elastic moduli calculation"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 16,
+    "claim": 31,
+    "component": 32,
+    "dataset": 4,
+    "future_topic": 5,
+    "method": 44,
+    "metric": 2,
+    "problem": 50,
+    "task": 141,
+    "technique": 61
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00328",
+      "relation_type": "presents",
+      "members": [
+        "arti_00022",
+        "meth_00229"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_01126",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00520"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_01127",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00521"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01128",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00522"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01130",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00524"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "taxonomic",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01135",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00529"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "energy",
+  "representative_ids": [
+    "task_00220",
+    "task_00213"
+  ]
+}

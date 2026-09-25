@@ -1,0 +1,47 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00053",
+      "type": "claim",
+      "surface_form": "The best one-step gradient-boosted tree regression model achieves 165±4 K MAE and 0.89 R² on the test set for melting temperature prediction."
+    },
+    {
+      "id": "clai_00054",
+      "type": "claim",
+      "surface_form": "A two-step approach combining unsupervised clustering with supervised regression achieves 156±4 K MAE and 0.92 R², outperforming direct one-step supervised learning."
+    },
+    {
+      "id": "clai_00059",
+      "type": "claim",
+      "surface_form": "Tree ensemble methods (gradient-boosted trees and random forest regression) substantially outperform linear models, which achieve MAE >240 K and RMSE >340 K, at least 100 K worse than non-linear approaches."
+    },
+    {
+      "id": "comp_00445",
+      "type": "component",
+      "surface_form": "Ensemble-based decision tree feature selector"
+    },
+    {
+      "id": "tech_00377",
+      "type": "technique",
+      "surface_form": "ROC‑AUC and MAE evaluation metrics"
+    },
+    {
+      "id": "tech_00483",
+      "type": "technique",
+      "surface_form": "MAE evaluation"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 3,
+    "component": 1,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mae",
+  "representative_ids": [
+    "clai_00059",
+    "clai_00053"
+  ]
+}

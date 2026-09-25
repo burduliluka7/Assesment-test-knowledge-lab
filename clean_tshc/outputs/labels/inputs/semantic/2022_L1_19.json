@@ -1,0 +1,172 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "cite_00245",
+      "type": "cited_work",
+      "surface_form": "Gaussian Approximation Potentials"
+    },
+    {
+      "id": "cite_00246",
+      "type": "cited_work",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "clai_00587",
+      "type": "claim",
+      "surface_form": "The model can fit 2.8 × 10⁹ non‑zero complex‑valued Hamiltonian matrix elements with only ~10⁵ real trainable parameters, indicating high capacity efficiency."
+    },
+    {
+      "id": "comp_00057",
+      "type": "component",
+      "surface_form": "Virtual Hamiltonian construction"
+    },
+    {
+      "id": "futu_00064",
+      "type": "future_topic",
+      "surface_form": "Extension of Gaussian Approximation Potentials to other materials"
+    },
+    {
+      "id": "meth_00051",
+      "type": "method",
+      "surface_form": "Gradient-domain machine learning"
+    },
+    {
+      "id": "meth_00061",
+      "type": "method",
+      "surface_form": "Gaussian process regression"
+    },
+    {
+      "id": "meth_00076",
+      "type": "method",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "meth_00096",
+      "type": "method",
+      "surface_form": "generalized gradient approximation"
+    },
+    {
+      "id": "meth_00178",
+      "type": "method",
+      "surface_form": "Deep Potential MD"
+    },
+    {
+      "id": "meth_00209",
+      "type": "method",
+      "surface_form": "Deep Potential method"
+    },
+    {
+      "id": "meth_00210",
+      "type": "method",
+      "surface_form": "Deep Potential"
+    },
+    {
+      "id": "meth_00213",
+      "type": "method",
+      "surface_form": "deep neural network approach to represent DFT Hamiltonian"
+    },
+    {
+      "id": "meth_00252",
+      "type": "method",
+      "surface_form": "G0W0 many‑body perturbation theory"
+    },
+    {
+      "id": "meth_00253",
+      "type": "method",
+      "surface_form": "Dynamical Mean Field Theory"
+    },
+    {
+      "id": "prob_00120",
+      "type": "problem",
+      "surface_form": "Uncertainty estimation for ML potentials"
+    },
+    {
+      "id": "prob_00139",
+      "type": "problem",
+      "surface_form": "Efficient prediction of DFT Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00589",
+      "type": "problem",
+      "surface_form": "Poor extrapolation in high-dimensional ML potentials"
+    },
+    {
+      "id": "prob_00594",
+      "type": "problem",
+      "surface_form": "Unphysical extrapolation at small distances"
+    },
+    {
+      "id": "prob_00612",
+      "type": "problem",
+      "surface_form": "ML potential extrapolation"
+    },
+    {
+      "id": "task_00056",
+      "type": "task",
+      "surface_form": "DFT Hamiltonian prediction"
+    },
+    {
+      "id": "tech_00048",
+      "type": "technique",
+      "surface_form": "Gaussian process regression"
+    },
+    {
+      "id": "tech_00049",
+      "type": "technique",
+      "surface_form": "Stochastic gradient descent"
+    },
+    {
+      "id": "tech_00058",
+      "type": "technique",
+      "surface_form": "Exponential learning‑rate decay"
+    },
+    {
+      "id": "tech_00065",
+      "type": "technique",
+      "surface_form": "Exponential moving average of weights"
+    },
+    {
+      "id": "tech_00109",
+      "type": "technique",
+      "surface_form": "Hierarchical Body‑Order Expansion"
+    },
+    {
+      "id": "tech_00257",
+      "type": "technique",
+      "surface_form": "Sparse Gaussian process"
+    },
+    {
+      "id": "tech_00263",
+      "type": "technique",
+      "surface_form": "Bayesian variance prediction"
+    },
+    {
+      "id": "tech_00310",
+      "type": "technique",
+      "surface_form": "Analytic Gradient Evaluation"
+    },
+    {
+      "id": "tech_00921",
+      "type": "technique",
+      "surface_form": "conjugate-gradient relaxation"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 2,
+    "claim": 1,
+    "component": 1,
+    "future_topic": 1,
+    "method": 10,
+    "problem": 5,
+    "task": 1,
+    "technique": 9
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "gaussian",
+  "representative_ids": [
+    "meth_00096",
+    "meth_00209"
+  ]
+}

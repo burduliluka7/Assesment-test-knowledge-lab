@@ -1,0 +1,528 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00045",
+      "type": "article",
+      "surface_form": "DeePMD-kit v2: A software package for Deep Potential models"
+    },
+    {
+      "id": "cite_00037",
+      "type": "cited_work",
+      "surface_form": "Projector Augmented-Wave Method"
+    },
+    {
+      "id": "cite_00121",
+      "type": "cited_work",
+      "surface_form": "Behler-Parrinello NN"
+    },
+    {
+      "id": "cite_00134",
+      "type": "cited_work",
+      "surface_form": "Behler‑Parrinello Neural Network"
+    },
+    {
+      "id": "cite_00190",
+      "type": "cited_work",
+      "surface_form": "Behler-Parrinello NNP"
+    },
+    {
+      "id": "cite_00246",
+      "type": "cited_work",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "cite_00270",
+      "type": "cited_work",
+      "surface_form": "Magnetic Moment Tensor Potentials"
+    },
+    {
+      "id": "cite_00314",
+      "type": "cited_work",
+      "surface_form": "Born-Meyer potential"
+    },
+    {
+      "id": "cite_00363",
+      "type": "cited_work",
+      "surface_form": "Behler‑Parrinello NN"
+    },
+    {
+      "id": "cite_00482",
+      "type": "cited_work",
+      "surface_form": "Behler‑Parrinello"
+    },
+    {
+      "id": "cite_00487",
+      "type": "cited_work",
+      "surface_form": "Behler-Parrinello neural network potentials"
+    },
+    {
+      "id": "cite_00494",
+      "type": "cited_work",
+      "surface_form": "Behler-Parrinello neural network"
+    },
+    {
+      "id": "clai_00220",
+      "type": "claim",
+      "surface_form": "The first RELAX calculation is performed in collinear spin-polarized fashion with initial magnetic moments set to 1.0 µB per atom, and spin polarization is turned off in subsequent calculations if magnetization is below 0.025 µB/atom."
+    },
+    {
+      "id": "clai_00522",
+      "type": "claim",
+      "surface_form": "At the lowest order, the magnetic ACE reproduces a distance‑dependent Heisenberg interaction."
+    },
+    {
+      "id": "clai_00524",
+      "type": "claim",
+      "surface_form": "Moments Tensor Potentials (MTP) and the Spectral Neighbor Analysis Potential (SNAP) can be expressed exactly as special cases of the ACE."
+    },
+    {
+      "id": "clai_00526",
+      "type": "claim",
+      "surface_form": "The ACE formulation is invariant under translation, rotation, inversion and permutation of identical atoms."
+    },
+    {
+      "id": "clai_00527",
+      "type": "claim",
+      "surface_form": "Although the full magnetic and charge‑transfer ACE contains many parameters, hierarchical ordering of interactions allows robust and systematic fitting to reference data."
+    },
+    {
+      "id": "clai_00529",
+      "type": "claim",
+      "surface_form": "Because the ACE basis is complete and hierarchical, it can in principle achieve arbitrary accuracy for any scalar, vectorial or tensorial property."
+    },
+    {
+      "id": "comp_00112",
+      "type": "component",
+      "surface_form": "Large‑scale DFT calculation of anti‑phase‑boundary energy"
+    },
+    {
+      "id": "comp_00113",
+      "type": "component",
+      "surface_form": "DFT calculations with optB88 vdW functional"
+    },
+    {
+      "id": "comp_00131",
+      "type": "component",
+      "surface_form": "Large‑scale interface‑energy DFT calculations"
+    },
+    {
+      "id": "comp_00157",
+      "type": "component",
+      "surface_form": "Magnetic moment prediction"
+    },
+    {
+      "id": "comp_00191",
+      "type": "component",
+      "surface_form": "Magnetic‑moment prediction head"
+    },
+    {
+      "id": "comp_00192",
+      "type": "component",
+      "surface_form": "Charge‑informed regularization"
+    },
+    {
+      "id": "comp_00227",
+      "type": "component",
+      "surface_form": "Magnetic moment layer"
+    },
+    {
+      "id": "comp_00523",
+      "type": "component",
+      "surface_form": "Deep Potential - Range Correction"
+    },
+    {
+      "id": "comp_00588",
+      "type": "component",
+      "surface_form": "Collinear spin-polarized calculation setup"
+    },
+    {
+      "id": "comp_00653",
+      "type": "component",
+      "surface_form": "Long-range electrostatic correction"
+    },
+    {
+      "id": "futu_00136",
+      "type": "future_topic",
+      "surface_form": "Screening for superconducting materials"
+    },
+    {
+      "id": "meth_00053",
+      "type": "method",
+      "surface_form": "Behler‑Parrinello Neural Network Potential"
+    },
+    {
+      "id": "meth_00076",
+      "type": "method",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "meth_00137",
+      "type": "method",
+      "surface_form": "bond‑valence technique"
+    },
+    {
+      "id": "meth_00178",
+      "type": "method",
+      "surface_form": "Deep Potential MD"
+    },
+    {
+      "id": "meth_00184",
+      "type": "method",
+      "surface_form": "charge equilibration"
+    },
+    {
+      "id": "meth_00209",
+      "type": "method",
+      "surface_form": "Deep Potential method"
+    },
+    {
+      "id": "meth_00210",
+      "type": "method",
+      "surface_form": "Deep Potential"
+    },
+    {
+      "id": "meth_00227",
+      "type": "method",
+      "surface_form": "Psi4"
+    },
+    {
+      "id": "meth_00250",
+      "type": "method",
+      "surface_form": "Hybrid functional HSE06"
+    },
+    {
+      "id": "meth_00251",
+      "type": "method",
+      "surface_form": "Hybrid functional PBE0"
+    },
+    {
+      "id": "meth_00314",
+      "type": "method",
+      "surface_form": "image dependent pair potential"
+    },
+    {
+      "id": "meth_00317",
+      "type": "method",
+      "surface_form": "Climbing Image NEB"
+    },
+    {
+      "id": "meth_00332",
+      "type": "method",
+      "surface_form": "Deep Potential - Range Correction"
+    },
+    {
+      "id": "meth_00333",
+      "type": "method",
+      "surface_form": "Deep Potential Long Range"
+    },
+    {
+      "id": "meth_00334",
+      "type": "method",
+      "surface_form": "Ziegler-Biersack-Littmark (ZBL) potential"
+    },
+    {
+      "id": "meth_00338",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network potentials"
+    },
+    {
+      "id": "meth_00344",
+      "type": "method",
+      "surface_form": "PBEsol"
+    },
+    {
+      "id": "meth_00368",
+      "type": "method",
+      "surface_form": "PW91 functional"
+    },
+    {
+      "id": "meth_00390",
+      "type": "method",
+      "surface_form": "Born-Meyer potential"
+    },
+    {
+      "id": "meth_00391",
+      "type": "method",
+      "surface_form": "Ziegler-Biersack-Littmark potential"
+    },
+    {
+      "id": "meth_00399",
+      "type": "method",
+      "surface_form": "PreFerred Potential"
+    },
+    {
+      "id": "meth_00403",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network potential"
+    },
+    {
+      "id": "meth_00431",
+      "type": "method",
+      "surface_form": "Brenner potential"
+    },
+    {
+      "id": "meth_00435",
+      "type": "method",
+      "surface_form": "REBO potential"
+    },
+    {
+      "id": "meth_00436",
+      "type": "method",
+      "surface_form": "environment-dependent interaction potential"
+    },
+    {
+      "id": "prob_00077",
+      "type": "problem",
+      "surface_form": "Quantitative interface‑energy calculation for coherent anti‑phase boundaries"
+    },
+    {
+      "id": "prob_00078",
+      "type": "problem",
+      "surface_form": "Capture of charge‑ordering phenomena"
+    },
+    {
+      "id": "prob_00103",
+      "type": "problem",
+      "surface_form": "Coupled charge‑ion dynamics"
+    },
+    {
+      "id": "prob_00109",
+      "type": "problem",
+      "surface_form": "Charge‑disproportionation driven phase transformation insight"
+    },
+    {
+      "id": "prob_00289",
+      "type": "problem",
+      "surface_form": "Initial guess generation for NEB calculations"
+    },
+    {
+      "id": "prob_00358",
+      "type": "problem",
+      "surface_form": "False negative rate"
+    },
+    {
+      "id": "prob_00361",
+      "type": "problem",
+      "surface_form": "High-Tc superconductor identification"
+    },
+    {
+      "id": "prob_00442",
+      "type": "problem",
+      "surface_form": "Charge transfer dynamics"
+    },
+    {
+      "id": "prob_00466",
+      "type": "problem",
+      "surface_form": "Charge state degeneracy"
+    },
+    {
+      "id": "prob_00470",
+      "type": "problem",
+      "surface_form": "Charge prediction without reference data"
+    },
+    {
+      "id": "prob_00475",
+      "type": "problem",
+      "surface_form": "Electrostatic double-counting"
+    },
+    {
+      "id": "prob_00476",
+      "type": "problem",
+      "surface_form": "Charge inference in complex electrostatic environments"
+    },
+    {
+      "id": "prob_00478",
+      "type": "problem",
+      "surface_form": "Charge-transfer prediction"
+    },
+    {
+      "id": "prob_00517",
+      "type": "problem",
+      "surface_form": "Handling varying charge states and spin multiplicities"
+    },
+    {
+      "id": "task_00066",
+      "type": "task",
+      "surface_form": "Born effective charge and dielectric constant prediction"
+    },
+    {
+      "id": "task_00088",
+      "type": "task",
+      "surface_form": "Investigation of temperature, particle size, and charge‑cycling effects"
+    },
+    {
+      "id": "task_00098",
+      "type": "task",
+      "surface_form": "Coherent interface‑energy determination"
+    },
+    {
+      "id": "task_00114",
+      "type": "task",
+      "surface_form": "Magnetic moment prediction"
+    },
+    {
+      "id": "task_00140",
+      "type": "task",
+      "surface_form": "Charge‑informed molecular dynamics"
+    },
+    {
+      "id": "task_00143",
+      "type": "task",
+      "surface_form": "Charge‑disproportionation analysis in LiMnO2"
+    },
+    {
+      "id": "task_00148",
+      "type": "task",
+      "surface_form": "Magnetic‑moment and charge inference"
+    },
+    {
+      "id": "task_00183",
+      "type": "task",
+      "surface_form": "Optical response computation"
+    },
+    {
+      "id": "task_00361",
+      "type": "task",
+      "surface_form": "Initial MEP guess generation"
+    },
+    {
+      "id": "task_00367",
+      "type": "task",
+      "surface_form": "NEB image geometry relaxation"
+    },
+    {
+      "id": "task_00369",
+      "type": "task",
+      "surface_form": "Initial guess generation for DFT-NEB"
+    },
+    {
+      "id": "task_00417",
+      "type": "task",
+      "surface_form": "IR spectrum calculation"
+    },
+    {
+      "id": "task_00440",
+      "type": "task",
+      "surface_form": "superconductor candidate identification"
+    },
+    {
+      "id": "task_00451",
+      "type": "task",
+      "surface_form": "Superconducting Tc calculation"
+    },
+    {
+      "id": "task_00458",
+      "type": "task",
+      "surface_form": "Superconductivity prediction"
+    },
+    {
+      "id": "task_00478",
+      "type": "task",
+      "surface_form": "magneto-optical property calculation"
+    },
+    {
+      "id": "task_00587",
+      "type": "task",
+      "surface_form": "Modeling charged molecules"
+    },
+    {
+      "id": "task_00593",
+      "type": "task",
+      "surface_form": "Partial charge prediction"
+    },
+    {
+      "id": "task_00594",
+      "type": "task",
+      "surface_form": "Born effective charge prediction"
+    },
+    {
+      "id": "tech_00136",
+      "type": "technique",
+      "surface_form": "Perturbative expansion in external electric field"
+    },
+    {
+      "id": "tech_00155",
+      "type": "technique",
+      "surface_form": "Nernst‑Einstein conversion"
+    },
+    {
+      "id": "tech_00174",
+      "type": "technique",
+      "surface_form": "DFT+U with optB88 vdW functional"
+    },
+    {
+      "id": "tech_00189",
+      "type": "technique",
+      "surface_form": "optB88 vdW‑DF functional"
+    },
+    {
+      "id": "tech_00211",
+      "type": "technique",
+      "surface_form": "Charge‑informed modeling"
+    },
+    {
+      "id": "tech_00371",
+      "type": "technique",
+      "surface_form": "Linear‑optics calculations with OptB88‑vdW and TB‑mBJ"
+    },
+    {
+      "id": "tech_00522",
+      "type": "technique",
+      "surface_form": "DFT-NEB reference calculations"
+    },
+    {
+      "id": "tech_00525",
+      "type": "technique",
+      "surface_form": "NEB with spring constant"
+    },
+    {
+      "id": "tech_00567",
+      "type": "technique",
+      "surface_form": "Fourier space electrostatic calculation"
+    },
+    {
+      "id": "tech_00615",
+      "type": "technique",
+      "surface_form": "Alpha2F spectral function calculation"
+    },
+    {
+      "id": "tech_00650",
+      "type": "technique",
+      "surface_form": "Automatic spin polarization economization"
+    },
+    {
+      "id": "tech_00753",
+      "type": "technique",
+      "surface_form": "Charge-based long-range modeling"
+    },
+    {
+      "id": "tech_00761",
+      "type": "technique",
+      "surface_form": "Charge equilibration"
+    },
+    {
+      "id": "tech_00763",
+      "type": "technique",
+      "surface_form": "Long-range electrostatic corrections"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 11,
+    "claim": 6,
+    "component": 10,
+    "future_topic": 1,
+    "method": 25,
+    "problem": 14,
+    "task": 19,
+    "technique": 14
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "charge",
+  "representative_ids": [
+    "task_00148",
+    "task_00594"
+  ]
+}

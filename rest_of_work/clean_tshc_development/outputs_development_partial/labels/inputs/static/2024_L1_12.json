@@ -1,0 +1,45 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00267",
+      "type": "claim",
+      "surface_form": "MACE and grACE packages provide excellent scaling with number of elements while achieving high accuracy."
+    },
+    {
+      "id": "clai_00270",
+      "type": "claim",
+      "surface_form": "MACE-OFF3 uses only short-range interactions yet achieves improved performance on benchmark molecular simulation properties compared to ANI."
+    },
+    {
+      "id": "clai_00271",
+      "type": "claim",
+      "surface_form": "Orb performed 3-6 times faster than the pytorch version of MACE for large system sizes with dispersion corrections."
+    },
+    {
+      "id": "clai_00287",
+      "type": "claim",
+      "surface_form": "AIMNet2 targets molecular and macromolecular structures applicable to species containing up to 14 chemical elements in neutral and charged states."
+    },
+    {
+      "id": "clai_00290",
+      "type": "claim",
+      "surface_form": "ANI potential was expanded in 2020 to include S, Cl, and F elements, covering approximately 90% of drug-like molecules."
+    },
+    {
+      "id": "clai_00291",
+      "type": "claim",
+      "surface_form": "AIMNet2 extends ANI to include up to 14 elemental species with additional vdW and electrostatic correction terms."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 6
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "ani",
+  "representative_ids": [
+    "clai_00291",
+    "clai_00270"
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00026",
+      "type": "article",
+      "surface_form": "Materials Design and Discovery with High-Throughput Density Functional Theory: The Open Quantum Materials Database (OQMD)"
+    },
+    {
+      "id": "arti_00049",
+      "type": "article",
+      "surface_form": "The AFLOW Standard for High-Throughput Materials Science Calculations"
+    },
+    {
+      "id": "clai_00010",
+      "type": "claim",
+      "surface_form": "The workflow software FireWorks together with the custodian job‑management tool automatically manages high‑throughput DFT calculations, self‑heals failed runs, and applies material‑type‑specific workflows."
+    },
+    {
+      "id": "clai_00032",
+      "type": "claim",
+      "surface_form": "Comparisons of JARVIS‑DFT computed formation energies, band gaps, and elastic constants with experimental measurements show acceptable error margins, confirming the database’s predictive reliability."
+    },
+    {
+      "id": "clai_00033",
+      "type": "claim",
+      "surface_form": "Beyond‑DFT methods (HSE06, PBE0, G0W0, DMFT) are generated for a subset of materials to provide higher‑level reference data and enable uncertainty quantification."
+    },
+    {
+      "id": "clai_00034",
+      "type": "claim",
+      "surface_form": "JARVIS‑FF includes data for roughly 1,500 materials and about 110 classical force‑fields."
+    },
+    {
+      "id": "clai_00037",
+      "type": "claim",
+      "surface_form": "JARVIS‑FF automatically computes bulk modulus, defect formation energies, and phonon spectra for each force‑field and compares them with DFT results to assess force‑field quality."
+    },
+    {
+      "id": "clai_00222",
+      "type": "claim",
+      "surface_form": "Following the AFLOW standard enables materials science researchers to reproduce AFLOWLIB consortium results and make direct comparisons of properties between different materials for identifying trends and formulating design rules."
+    },
+    {
+      "id": "clai_00373",
+      "type": "claim",
+      "surface_form": "DeepH predicts DFT Hamiltonian matrix elements for graphene with an average mean absolute error of 2.1 meV and a coefficient of determination r² = 0.9994 across all orbital combinations."
+    },
+    {
+      "id": "clai_00375",
+      "type": "claim",
+      "surface_form": "For monolayer MoS₂, DeepH predicts DFT Hamiltonian matrix elements with average mean absolute errors of 1.3 meV (Mo–Mo), 1.0 meV (Mo–S), 0.7 meV (S–Mo), and 0.8 meV (S–S)."
+    },
+    {
+      "id": "clai_00376",
+      "type": "claim",
+      "surface_form": "Band structures and electric susceptibility computed from DeepH for MoS₂ match DFT results closely."
+    },
+    {
+      "id": "clai_00379",
+      "type": "claim",
+      "surface_form": "A DeepH model trained only on non‑twisted bilayer graphene structures predicts Hamiltonians for twisted bilayer graphene supercells up to ~1000 atoms with sub‑meV mean absolute error and correctly reproduces the flat‑band feature near the Fermi level at the magic angle (~1.08°)."
+    },
+    {
+      "id": "clai_00381",
+      "type": "claim",
+      "surface_form": "Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency."
+    },
+    {
+      "id": "clai_00382",
+      "type": "claim",
+      "surface_form": "DeepH resolves the accuracy‑efficiency dilemma of DFT, enabling efficient ab‑initio electronic‑structure calculations for large‑scale material systems."
+    },
+    {
+      "id": "clai_00384",
+      "type": "claim",
+      "surface_form": "DeepH can be applied to both periodic and non‑periodic systems, including three‑dimensional bulk carbon allotropes and quasi‑zero‑dimensional molecules, achieving sub‑meV mean absolute error for Hamiltonian predictions."
+    },
+    {
+      "id": "clai_00579",
+      "type": "claim",
+      "surface_form": "DeepH-E3 predicts DFT Hamiltonian matrix elements with sub‑meV mean absolute error, reducing the error by roughly a factor of two compared with the original DeepH method across diverse material systems."
+    },
+    {
+      "id": "clai_00580",
+      "type": "claim",
+      "surface_form": "DeepH-E3 enables accurate electronic‑structure calculations for supercells larger than 10⁴ atoms, reducing computational cost by several orders of magnitude and allowing calculations in minutes on a single GPU versus months on thousands of CPU cores."
+    },
+    {
+      "id": "clai_00581",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+    },
+    {
+      "id": "clai_00582",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 predicts a spin‑orbit‑coupling‑induced topological quantum phase transition in twisted bilayer Bi₂Te₃, evidenced by band‑gap closing and reopening and a change of the Z₂ invariant from 0 to 1 as SOC strength increases."
+    },
+    {
+      "id": "clai_00583",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 attains sub‑meV accuracy after training on only a few hundred DFT calculations of small, non‑twisted structures, demonstrating high data efficiency."
+    },
+    {
+      "id": "clai_00584",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors."
+    },
+    {
+      "id": "clai_00585",
+      "type": "claim",
+      "surface_form": "The model generalizes to arbitrarily twisted bilayer structures; the mean absolute error of Hamiltonian predictions decreases as the Moiré supercell size grows (or twist angle decreases)."
+    },
+    {
+      "id": "clai_00651",
+      "type": "claim",
+      "surface_form": "The Open Quantum Materials Database (OQMD) contains over 200,000 DFT‑calculated crystal structures, including experimental ICSD entries and theoretical prototype structures, and is freely accessible to the scientific community without usage restrictions."
+    },
+    {
+      "id": "clai_00661",
+      "type": "claim",
+      "surface_form": "AFLOW can automatically calculate a wide suite of physical observables across a large database of structures with minimal human intervention."
+    },
+    {
+      "id": "clai_00662",
+      "type": "claim",
+      "surface_form": "AFLOW detects most calculation failures, automatically corrects input parameters, restarts calculations, and can run as a Unix daemon to generate, run, correct, and converge many DFT jobs per day, yielding higher throughput than manual management."
+    },
+    {
+      "id": "clai_00668",
+      "type": "claim",
+      "surface_form": "AFLOW can automatically construct convex hulls for binary alloy systems at zero temperature using formation enthalpies from DFT calculations."
+    },
+    {
+      "id": "clai_00669",
+      "type": "claim",
+      "surface_form": "The AFLOW database currently contains approximately 400 experimental prototype structures and several million bcc/fcc/hcp‑derived superstructures."
+    },
+    {
+      "id": "clai_00673",
+      "type": "claim",
+      "surface_form": "AFLOW implements DFT+U using the Dudarev formalism with default Ueff values for a wide range of elements."
+    },
+    {
+      "id": "clai_00687",
+      "type": "claim",
+      "surface_form": "DFT-based methods are practically limited to systems of a few hundred atoms, making generation of 8,000-atom amorphous carbon structures impossible with DFT-MD even on state-of-the-art supercomputers."
+    },
+    {
+      "id": "comp_00262",
+      "type": "component",
+      "surface_form": "Crystal graph representation"
+    },
+    {
+      "id": "data_00247",
+      "type": "dataset",
+      "surface_form": "twisted bilayer bismuthene (TBB)"
+    },
+    {
+      "id": "futu_00156",
+      "type": "future_topic",
+      "surface_form": "Construction of a Moiré‑twisted material database using DeepH‑E3"
+    },
+    {
+      "id": "meth_00248",
+      "type": "method",
+      "surface_form": "van der Waals functional OptB88"
+    },
+    {
+      "id": "meth_00268",
+      "type": "method",
+      "surface_form": "Open Quantum Materials Database"
+    },
+    {
+      "id": "prob_00031",
+      "type": "problem",
+      "surface_form": "Accurate band‑structure prediction for twisted moiré materials"
+    },
+    {
+      "id": "prob_00140",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure calculation for large‑scale materials"
+    },
+    {
+      "id": "prob_00142",
+      "type": "problem",
+      "surface_form": "Modeling twisted moiré materials"
+    },
+    {
+      "id": "prob_00145",
+      "type": "problem",
+      "surface_form": "Variable‑size crystal representation"
+    },
+    {
+      "id": "prob_00158",
+      "type": "problem",
+      "surface_form": "Lack of a unified framework for molecules and crystals"
+    },
+    {
+      "id": "prob_00167",
+      "type": "problem",
+      "surface_form": "Generalization to unseen crystal orientations and bicrystal interfaces"
+    },
+    {
+      "id": "prob_00598",
+      "type": "problem",
+      "surface_form": "Nonlocality in carbon allotropes"
+    },
+    {
+      "id": "task_00016",
+      "type": "task",
+      "surface_form": "Crystal property prediction"
+    },
+    {
+      "id": "task_00150",
+      "type": "task",
+      "surface_form": "Crystal structural relaxation"
+    },
+    {
+      "id": "task_00166",
+      "type": "task",
+      "surface_form": "Bulk crystal equation‑of‑state calculations"
+    },
+    {
+      "id": "task_00180",
+      "type": "task",
+      "surface_form": "Study of twisted van der Waals heterostructures"
+    },
+    {
+      "id": "task_00184",
+      "type": "task",
+      "surface_form": "Moiré‑twisted bilayer material analysis"
+    },
+    {
+      "id": "task_00253",
+      "type": "task",
+      "surface_form": "Guided DFT crystal‑structure prediction"
+    },
+    {
+      "id": "task_00264",
+      "type": "task",
+      "surface_form": "High‑throughput calculation of crystal‑structure properties"
+    },
+    {
+      "id": "task_00345",
+      "type": "task",
+      "surface_form": "Materials property prediction from crystal structure"
+    },
+    {
+      "id": "task_00695",
+      "type": "task",
+      "surface_form": "Crystalline allotrope modeling"
+    },
+    {
+      "id": "task_00713",
+      "type": "task",
+      "surface_form": "Bulk crystal structure modeling"
+    },
+    {
+      "id": "tech_00371",
+      "type": "technique",
+      "surface_form": "Linear‑optics calculations with OptB88‑vdW and TB‑mBJ"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 2,
+    "claim": 27,
+    "component": 1,
+    "dataset": 1,
+    "future_topic": 1,
+    "method": 2,
+    "problem": 7,
+    "task": 10,
+    "technique": 1
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00339",
+      "relation_type": "presents",
+      "members": [
+        "arti_00026",
+        "meth_00268"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      }
+    },
+    {
+      "id": "h_01257",
+      "relation_type": "claims",
+      "members": [
+        "arti_00026",
+        "clai_00651"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.99
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "crystal",
+  "representative_ids": [
+    "clai_00382",
+    "task_00253"
+  ]
+}

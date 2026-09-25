@@ -1,0 +1,29 @@
+# Local environments and caches, at any depth.
+.venv/
+.repro-venv/
+.cache*/
+.format_tools/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.pyc
+
+# Regenerable embedding caches and local distribution bundles.
+**/embeddings/
+*.zip
+
+# Local process state and LaTeX build intermediates.
+*.pid
+*.aux
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Credentials and local environment settings.
+.env
+.env.*
+!.env.example
+*.pem
+*.key

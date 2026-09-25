@@ -1,0 +1,65 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00696",
+      "type": "component",
+      "surface_form": "Efficient spatial decomposition algorithm for GNN-IPs"
+    },
+    {
+      "id": "comp_00697",
+      "type": "component",
+      "surface_form": "SevenNet package"
+    },
+    {
+      "id": "comp_00699",
+      "type": "component",
+      "surface_form": "Forward and reverse communication modules"
+    },
+    {
+      "id": "comp_00700",
+      "type": "component",
+      "surface_form": "SevenNet-0"
+    },
+    {
+      "id": "comp_00701",
+      "type": "component",
+      "surface_form": "interaction blocks"
+    },
+    {
+      "id": "comp_00703",
+      "type": "component",
+      "surface_form": "forward communication routines"
+    },
+    {
+      "id": "comp_00704",
+      "type": "component",
+      "surface_form": "reverse communication routines"
+    },
+    {
+      "id": "comp_00705",
+      "type": "component",
+      "surface_form": "ghost atoms"
+    },
+    {
+      "id": "comp_00706",
+      "type": "component",
+      "surface_form": "Linear self-connection layer"
+    },
+    {
+      "id": "comp_00708",
+      "type": "component",
+      "surface_form": "message-passing layers"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 10
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "sevennet",
+  "representative_ids": [
+    "comp_00703",
+    "comp_00699"
+  ]
+}

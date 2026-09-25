@@ -1,0 +1,25 @@
+{
+  "status": "passed_with_research_limitations",
+  "tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "126",
+    "time": "4.498",
+    "timestamp": "2026-09-24T18:49:02.646073+02:00",
+    "hostname": "DESKTOP-NHKRUP0"
+  },
+  "question_records": 252,
+  "canonical_target_records": 97,
+  "historical_metrics_unchanged": true,
+  "historical_artifacts_unchanged": true,
+  "source_hashes_verified": true,
+  "baseline_R0_R1_R3_exact_metric_parity": true,
+  "all_canonical_targets_ranked": true,
+  "type_b_unchanged": true,
+  "hierarchy_unchanged": true,
+  "sensitivity_runs": 24,
+  "main_unconverged": 0,
+  "final_conclusion": "Candidate generation improves with mention-assisted fusion; top-ten answer retrieval remains weak; no native superiority over pairwise at C100 established"
+}

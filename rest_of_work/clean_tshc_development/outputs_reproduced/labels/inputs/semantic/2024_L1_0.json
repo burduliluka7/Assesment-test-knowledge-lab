@@ -1,0 +1,1206 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00001",
+      "type": "article",
+      "surface_form": "Neural Message Passing for Quantum Chemistry"
+    },
+    {
+      "id": "arti_00002",
+      "type": "article",
+      "surface_form": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions"
+    },
+    {
+      "id": "arti_00015",
+      "type": "article",
+      "surface_form": "CHGNet: Pretrained universal neural network potential for charge-informed atomistic modeling"
+    },
+    {
+      "id": "arti_00026",
+      "type": "article",
+      "surface_form": "Materials Design and Discovery with High-Throughput Density Functional Theory: The Open Quantum Materials Database (OQMD)"
+    },
+    {
+      "id": "cite_00155",
+      "type": "cited_work",
+      "surface_form": "bond‑order potential"
+    },
+    {
+      "id": "cite_00162",
+      "type": "cited_work",
+      "surface_form": "molecular mechanics"
+    },
+    {
+      "id": "cite_00232",
+      "type": "cited_work",
+      "surface_form": "Symmetry-Preserving Inter-Atomic Potential"
+    },
+    {
+      "id": "cite_00249",
+      "type": "cited_work",
+      "surface_form": "Topological properties and dynamics of magnetic skyrmions"
+    },
+    {
+      "id": "cite_00263",
+      "type": "cited_work",
+      "surface_form": "Nearsightedness of electronic matter"
+    },
+    {
+      "id": "cite_00267",
+      "type": "cited_work",
+      "surface_form": "Curved Magnetism"
+    },
+    {
+      "id": "cite_00269",
+      "type": "cited_work",
+      "surface_form": "Magnetic Skyrmion Prediction"
+    },
+    {
+      "id": "cite_00565",
+      "type": "cited_work",
+      "surface_form": "Embedded Atom Neural Network Potentials"
+    },
+    {
+      "id": "cite_00566",
+      "type": "cited_work",
+      "surface_form": "Atomistic Line Graph Neural Network"
+    },
+    {
+      "id": "clai_00001",
+      "type": "claim",
+      "surface_form": "The modified convolution function reduces the mean absolute error for formation‑energy prediction from 0.112 eV/atom to 0.039 eV/atom, achieving DFT‑level accuracy comparable to the experimental DFT‑experiment error of 0.081–0.136 eV/atom."
+    },
+    {
+      "id": "clai_00012",
+      "type": "claim",
+      "surface_form": "Automated validation checks compare calculated oxidation states, cell volumes, and bond lengths against experimental data and flag outliers for user review."
+    },
+    {
+      "id": "clai_00018",
+      "type": "claim",
+      "surface_form": "Class‑specific computational methodologies and reference reactions are applied for solid‑gas, d‑block oxide, and dissolved‑ion systems to improve agreement with experimental data."
+    },
+    {
+      "id": "clai_00020",
+      "type": "claim",
+      "surface_form": "Future development plans include adding calculations of surface energies, elastic constants, point defects, finite‑temperature properties, and implementing a two‑way ‘calculations‑on‑demand’ feature for user‑submitted compounds."
+    },
+    {
+      "id": "clai_00030",
+      "type": "claim",
+      "surface_form": "Using the vdW‑DF‑OptB88 functional for all dimensionalities yields accurate lattice parameters and formation energies for both van‑der‑Waals and non‑vdW bonded materials."
+    },
+    {
+      "id": "clai_00031",
+      "type": "claim",
+      "surface_form": "The meta‑GGA TBmBJ potential predicts band gaps with accuracy comparable to the hybrid HSE06 functional while requiring up to ten times less computational effort."
+    },
+    {
+      "id": "clai_00032",
+      "type": "claim",
+      "surface_form": "Comparisons of JARVIS‑DFT computed formation energies, band gaps, and elastic constants with experimental measurements show acceptable error margins, confirming the database’s predictive reliability."
+    },
+    {
+      "id": "clai_00065",
+      "type": "claim",
+      "surface_form": "CHGNet achieves state-of-the-art performance on the Matbench Discovery benchmark, outperforming eight other submitted models."
+    },
+    {
+      "id": "clai_00066",
+      "type": "claim",
+      "surface_form": "On the Materials Project Trajectory test set, CHGNet trained with magnetic moment labels attains mean absolute errors of 30 meV/atom for energy, 77 meV/Å for forces, 0.348 GPa for stress, and 0.032 µB for magnetic moments."
+    },
+    {
+      "id": "clai_00068",
+      "type": "claim",
+      "surface_form": "CHGNet integrates magnetic moment labels as a proxy for atomic charge, enabling inference of atomic charges and accurate differentiation of oxidation states such as V³⁺/V⁴⁺ and Fe²⁺/Fe³⁺."
+    },
+    {
+      "id": "clai_00072",
+      "type": "claim",
+      "surface_form": "Fine‑tuning the pretrained CHGNet on the Li‑Fe‑P‑O chemical space reduces the test error from 23 meV/atom to 15 meV/atom."
+    },
+    {
+      "id": "clai_00073",
+      "type": "claim",
+      "surface_form": "CHGNet captures long‑range interactions up to 20 Å with only four atom‑convolution layers while maintaining low computational cost."
+    },
+    {
+      "id": "clai_00075",
+      "type": "claim",
+      "surface_form": "Using magnetic moments as a charge proxy does not strictly ensure global charge neutrality in CHGNet predictions."
+    },
+    {
+      "id": "clai_00076",
+      "type": "claim",
+      "surface_form": "The Materials Project Trajectory dataset used to pre‑train CHGNet contains approximately 1.58 million atomic configurations spanning 94 elements, with magnetic moment labels for 76 elements, providing comprehensive chemical coverage."
+    },
+    {
+      "id": "clai_00082",
+      "type": "claim",
+      "surface_form": "On the ISO17 benchmark, SchNet reaches chemical‑accuracy (≈0.5 kcal/mol MAE) for energy predictions on molecules seen during training and further improves predictions on unseen isomers when forces are included in training."
+    },
+    {
+      "id": "clai_00083",
+      "type": "claim",
+      "surface_form": "Including force information in the training loss causally improves SchNet’s generalization to previously unseen chemical structures in ISO17."
+    },
+    {
+      "id": "clai_00084",
+      "type": "claim",
+      "surface_form": "GDML cannot be trained on 50,000 MD17 examples due to its quadratic scaling with the number of atoms and samples, whereas SchNet scales to that dataset size."
+    },
+    {
+      "id": "clai_00085",
+      "type": "claim",
+      "surface_form": "The ISO17 benchmark, comprising 645,000 conformations of 129 C7O2H10 isomers, is introduced to evaluate models on combined chemical and conformational variation."
+    },
+    {
+      "id": "clai_00088",
+      "type": "claim",
+      "surface_form": "On the QM9 benchmark, SchNet attains a mean absolute error of 0.31 kcal/mol for total‑energy prediction with 110 k training examples, outperforming DTNN (0.84) and enn‑s2s (0.45)."
+    },
+    {
+      "id": "clai_00140",
+      "type": "claim",
+      "surface_form": "For internal energy at 0 K (U0), enthalpy (H), Gibbs free energy (G), heat capacity at constant volume (Cv), and highest vibrational frequency (Ω), the MPNN records lower mean absolute errors than SchNet and DTNN (U0 MAE 0.45 vs 0.55/0.72; H 0.39 vs 0.59/0.80; G 0.44 vs 0.55/0.74; Cv 0.80 vs 0.99/1.71; Ω 0.19 vs 0.41/0.78)."
+    },
+    {
+      "id": "clai_00147",
+      "type": "claim",
+      "surface_form": "The GNN surrogate achieves mean absolute errors of ≤0.313 meV for energy, ≤0.189 meV/Å for forces, and ≤0.0734 meV/Å² for thermal forces on validation sets."
+    },
+    {
+      "id": "clai_00153",
+      "type": "claim",
+      "surface_form": "DeePMD-kit supports multiple atomic descriptor types including local frame, DeepPot-SE, attention-based, and hybrid descriptors."
+    },
+    {
+      "id": "clai_00161",
+      "type": "claim",
+      "surface_form": "The fitting network can fit potential energy, force, virial, and tensorial properties such as dipole and polarizability."
+    },
+    {
+      "id": "clai_00164",
+      "type": "claim",
+      "surface_form": "DeePMD-kit supports interpolation between Deep Potential models and empirical pairwise potentials for cases where DFT calculations fail at close interatomic distances."
+    },
+    {
+      "id": "clai_00166",
+      "type": "claim",
+      "surface_form": "DeePMD-kit can simulate systems containing almost all periodic table elements including drug-like molecules, ions, transition states, and excited states."
+    },
+    {
+      "id": "clai_00183",
+      "type": "claim",
+      "surface_form": "NequIP outperforms kernel‑based approaches such as sGDML and FCHL19/GPR across benchmarks, including small-data regimes and the MD-17 dataset."
+    },
+    {
+      "id": "clai_00184",
+      "type": "claim",
+      "surface_form": "NequIP requires up to three orders of magnitude fewer training configurations than existing neural interatomic potentials to reach comparable accuracy."
+    },
+    {
+      "id": "clai_00185",
+      "type": "claim",
+      "surface_form": "When trained on only 133 structures (~1 k frames), NequIP outperforms DeepMD trained on 133,500 structures for liquid water and ice simulations."
+    },
+    {
+      "id": "clai_00190",
+      "type": "claim",
+      "surface_form": "NequIP reproduces structural and kinetic properties from ab‑initio molecular dynamics simulations with high fidelity."
+    },
+    {
+      "id": "clai_00193",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model accurately predicts the energy band structures and charge densities of complex multi‑element crystals (e.g., Hf2Zr9Ta6Ti5Nb5B54, HfTaTiB4MoC4, K3Ba3Li2Al4B6O20F), matching DFT results."
+    },
+    {
+      "id": "clai_00199",
+      "type": "claim",
+      "surface_form": "Incorporating orbital‑energy loss in a second fine‑tuning round markedly improves band‑structure predictions, yielding energy bands and Fermi surfaces that closely match DFT calculations for the test set."
+    },
+    {
+      "id": "clai_00200",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model generalizes to crystals containing more than five distinct elements and to any element supported by the OpenMX PBE pseudopotential library, effectively covering the entire periodic table."
+    },
+    {
+      "id": "clai_00202",
+      "type": "claim",
+      "surface_form": "xDeepH accurately reproduces DFT band structures of (16,16) CrI3 nanotubes for both non‑collinear surface‑normal magnetization and collinear ferromagnetism."
+    },
+    {
+      "id": "clai_00207",
+      "type": "claim",
+      "surface_form": "Introducing magnetic moments via a strictly localized magnetic‑moment layer yields more efficient and accurate training than treating atomic and magnetic structures on equal footing."
+    },
+    {
+      "id": "clai_00210",
+      "type": "claim",
+      "surface_form": "The ENN architecture of xDeepH preserves equivariance under the Euclidean and time‑reversal symmetry group E(3)×{I,T}, which is essential for the method's performance."
+    },
+    {
+      "id": "clai_00211",
+      "type": "claim",
+      "surface_form": "The presence of a magnetic skyrmion in Moiré‑twisted CrI3 removes an extremely flat valence band that appears in the ferromagnetic configuration, indicating strong coupling between the flat band and the skyrmion."
+    },
+    {
+      "id": "clai_00216",
+      "type": "claim",
+      "surface_form": "The PBE functional combined with PAW potentials is the default exchange-correlation functional and potential combination for ICSD, Binary Alloy, and Heusler databases."
+    },
+    {
+      "id": "clai_00218",
+      "type": "claim",
+      "surface_form": "DFT+U corrections are applied to the entire ICSD database and certain Heusler database entries containing O, S, Se, and F elements, but not to the Binary Alloy database."
+    },
+    {
+      "id": "clai_00226",
+      "type": "claim",
+      "surface_form": "For bulk elastic constants (B, C11, C12, C44) the GAP model achieves fractional errors of less than 10% relative to DFT, outperforming all other evaluated interatomic potentials."
+    },
+    {
+      "id": "clai_00227",
+      "type": "claim",
+      "surface_form": "Surface energies of the (111), (110) and (100) silicon cleavage planes are predicted by GAP with errors of around 2% relative to DFT, which is comparable or better than other potentials."
+    },
+    {
+      "id": "clai_00228",
+      "type": "claim",
+      "surface_form": "Formation energies of vacancy and interstitial point defects (hexagonal, tetrahedral, dumbbell) are predicted by GAP within 10% of DFT values, providing uniform accuracy across these defects."
+    },
+    {
+      "id": "clai_00229",
+      "type": "claim",
+      "surface_form": "For extrapolative planar defects not included in the training set—specifically the (112) Σ3 grain boundary and unstable stacking fault energies on the (111) shuffle and glide planes—GAP errors remain within 20% of DFT, outperforming other models."
+    },
+    {
+      "id": "clai_00230",
+      "type": "claim",
+      "surface_form": "Combining a simple repulsive pair potential with a many‑body SOAP‑kernel term in the GAP framework yields meV‑per‑atom accuracy for silicon energetics."
+    },
+    {
+      "id": "clai_00232",
+      "type": "claim",
+      "surface_form": "Using the GAP model enables simulations that would be prohibitively expensive with DFT, such as finite‑temperature phase‑boundary calculations, liquid self‑diffusivity, amorphous silicon formation by slow quench, and dynamic brittle fracture."
+    },
+    {
+      "id": "clai_00233",
+      "type": "claim",
+      "surface_form": "A training database of manageable size, constructed from DFT configurations covering relevant phases and defects, is sufficient to achieve high transferability of the GAP model across diverse silicon configurations."
+    },
+    {
+      "id": "clai_00234",
+      "type": "claim",
+      "surface_form": "Benchmark comparisons show that the new GAP model yields lower errors than previous GAP models for silicon."
+    },
+    {
+      "id": "clai_00251",
+      "type": "claim",
+      "surface_form": "FastCHGNet trains in 1.5 hours using 32 GPUs compared to 8.3 days on a single A100 GPU for the original CHGNet model."
+    },
+    {
+      "id": "clai_00258",
+      "type": "claim",
+      "surface_form": "CHGNet achieves test mean absolute errors of 29 meV/atom for energy, 70 meV/Angstrom for force, and 0.308 GPa for stress."
+    },
+    {
+      "id": "clai_00259",
+      "type": "claim",
+      "surface_form": "M3GNet achieves test mean absolute errors of 35 meV/atom for energy, 72 meV/Angstrom for force, and 0.41 GPa for stress."
+    },
+    {
+      "id": "clai_00260",
+      "type": "claim",
+      "surface_form": "CHGNet uniquely includes electronic effects of valences by explicitly embedding magnetic moments on the vector representation of each atom, enabling charge-informed atomistic simulations."
+    },
+    {
+      "id": "clai_00261",
+      "type": "claim",
+      "surface_form": "CHGNet achieved the lowest formation energy MAE at 81 meV/atom, while all other models had MAEs of 129 meV/atom or higher."
+    },
+    {
+      "id": "clai_00273",
+      "type": "claim",
+      "surface_form": "M3GNet is an extension of MEGNet model to include 3-body interactions, explicit atomic coordinates, and 3×3 crystal lattice matrix."
+    },
+    {
+      "id": "clai_00278",
+      "type": "claim",
+      "surface_form": "None of the three U-MLIPs (M3GNet, CHGNet, MACE-MP0) could accurately reproduce mixing energies of metallic binary alloys in adequate agreement with DFT results."
+    },
+    {
+      "id": "clai_00283",
+      "type": "claim",
+      "surface_form": "DeepMD represents local atomic environment as embedding vectors constructed by neural networks based on atom distances, angles, and types."
+    },
+    {
+      "id": "clai_00284",
+      "type": "claim",
+      "surface_form": "Element-specific weights allow constant-size AEF vectors irrespective of the number of chemical elements."
+    },
+    {
+      "id": "clai_00290",
+      "type": "claim",
+      "surface_form": "ANI potential was expanded in 2020 to include S, Cl, and F elements, covering approximately 90% of drug-like molecules."
+    },
+    {
+      "id": "clai_00291",
+      "type": "claim",
+      "surface_form": "AIMNet2 extends ANI to include up to 14 elemental species with additional vdW and electrostatic correction terms."
+    },
+    {
+      "id": "clai_00299",
+      "type": "claim",
+      "surface_form": "Including magnetic moments in CHGNet training led to error reductions of 1-10% for energy, force, and stress compared to not including magnetic moments."
+    },
+    {
+      "id": "clai_00312",
+      "type": "claim",
+      "surface_form": "Matbench contains data from 10 density functional theory-derived and experimental sources including Materials Project, Zhuo et al., Landolt-Bornstein Handbook, Castelli et al., JARVIS DFT 2D, and Citrine Informatics."
+    },
+    {
+      "id": "clai_00373",
+      "type": "claim",
+      "surface_form": "DeepH predicts DFT Hamiltonian matrix elements for graphene with an average mean absolute error of 2.1 meV and a coefficient of determination r² = 0.9994 across all orbital combinations."
+    },
+    {
+      "id": "clai_00375",
+      "type": "claim",
+      "surface_form": "For monolayer MoS₂, DeepH predicts DFT Hamiltonian matrix elements with average mean absolute errors of 1.3 meV (Mo–Mo), 1.0 meV (Mo–S), 0.7 meV (S–Mo), and 0.8 meV (S–S)."
+    },
+    {
+      "id": "clai_00376",
+      "type": "claim",
+      "surface_form": "Band structures and electric susceptibility computed from DeepH for MoS₂ match DFT results closely."
+    },
+    {
+      "id": "clai_00377",
+      "type": "claim",
+      "surface_form": "DeepH generalizes to carbon nanotubes, achieving Hamiltonian prediction MAE below 3.5 meV for diameters larger than 2 nm and accurately reproducing their band structures."
+    },
+    {
+      "id": "clai_00378",
+      "type": "claim",
+      "surface_form": "DeepH scales linearly with system size and provides a three‑order‑of‑magnitude speed‑up over conventional DFT for a MoS₂ 35 × 35 supercell."
+    },
+    {
+      "id": "clai_00379",
+      "type": "claim",
+      "surface_form": "A DeepH model trained only on non‑twisted bilayer graphene structures predicts Hamiltonians for twisted bilayer graphene supercells up to ~1000 atoms with sub‑meV mean absolute error and correctly reproduces the flat‑band feature near the Fermi level at the magic angle (~1.08°)."
+    },
+    {
+      "id": "clai_00381",
+      "type": "claim",
+      "surface_form": "Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency."
+    },
+    {
+      "id": "clai_00382",
+      "type": "claim",
+      "surface_form": "DeepH resolves the accuracy‑efficiency dilemma of DFT, enabling efficient ab‑initio electronic‑structure calculations for large‑scale material systems."
+    },
+    {
+      "id": "clai_00384",
+      "type": "claim",
+      "surface_form": "DeepH can be applied to both periodic and non‑periodic systems, including three‑dimensional bulk carbon allotropes and quasi‑zero‑dimensional molecules, achieving sub‑meV mean absolute error for Hamiltonian predictions."
+    },
+    {
+      "id": "clai_00418",
+      "type": "claim",
+      "surface_form": "Fine‑tuning an energy model on a benzene vibrational spectrum improves spectrum predictions for unseen molecules such as toluene and phenol."
+    },
+    {
+      "id": "clai_00420",
+      "type": "claim",
+      "surface_form": "The Phonax framework works for both periodic crystals and isolated molecules and can be extended to higher‑order derivatives such as field‑dependent properties."
+    },
+    {
+      "id": "clai_00461",
+      "type": "claim",
+      "surface_form": "SevenNet-0 achieves mean absolute errors of 24 meV/atom for energy, 0.067 eV/Å for force, and 0.65 GPa for stress on the test set."
+    },
+    {
+      "id": "clai_00466",
+      "type": "claim",
+      "surface_form": "SevenNet-0 shows improvements in energy and force accuracies compared to M3GNet (35 meV/atom, 0.072 eV/Å)."
+    },
+    {
+      "id": "clai_00477",
+      "type": "claim",
+      "surface_form": "For LLZO, the computed activation energies range from 0.2 to 0.22 eV, in very good agreement with experimental values of 0.20-0.21 eV for cubic LLZO."
+    },
+    {
+      "id": "clai_00489",
+      "type": "claim",
+      "surface_form": "Simple MEGNet models that use only atomic number and spatial distance as input achieve chemical accuracy, perform comparably to full‑feature models, and outperform prior state‑of‑the‑art models on 8 of the 13 QM9 properties."
+    },
+    {
+      "id": "clai_00490",
+      "type": "claim",
+      "surface_form": "MEGNet models trained on approximately 60,000 crystals outperform prior models (SchNet and CGCNN) for formation energy, band gap, bulk modulus, and shear modulus, achieving errors comparable to or better than density‑functional‑theory uncertainties."
+    },
+    {
+      "id": "clai_00491",
+      "type": "claim",
+      "surface_form": "A unified free‑energy MEGNet model that incorporates temperature, pressure, and entropy as global state inputs predicts U₀, U, H, and G with a combined mean absolute error of 0.010 eV, comparable to separate single‑property models."
+    },
+    {
+      "id": "clai_00493",
+      "type": "claim",
+      "surface_form": "Ensembling two independently trained three‑block MEGNet models lowers the formation‑energy mean absolute error from 0.028 eV/atom to 0.024 eV/atom."
+    },
+    {
+      "id": "clai_00496",
+      "type": "claim",
+      "surface_form": "Increasing the crystal graph radius cut‑off from 4 Å to 6 Å slightly worsens the formation‑energy mean absolute error (to 0.03 eV/atom), confirming the 4 Å cut‑off as near‑optimal."
+    },
+    {
+      "id": "clai_00497",
+      "type": "claim",
+      "surface_form": "CGAT-2 network achieves a mean absolute test error of 21 meV/atom for distance to the convex hull, enabling prediction of thermodynamic stability from unrelaxed crystal structures."
+    },
+    {
+      "id": "clai_00498",
+      "type": "claim",
+      "surface_form": "The ML-assisted high-throughput search uncovered 19,512 additional materials on the convex hull of thermodynamic stability after DFT validation."
+    },
+    {
+      "id": "clai_00499",
+      "type": "claim",
+      "surface_form": "The ML-assisted high-throughput search spanned approximately 1 billion compounds across 2500 binary and ternary structure prototypes."
+    },
+    {
+      "id": "clai_00500",
+      "type": "claim",
+      "surface_form": "Approximately 150,000 compounds were found with energy distance less than 50 meV/atom from the convex hull."
+    },
+    {
+      "id": "clai_00502",
+      "type": "claim",
+      "surface_form": "CGAT-2 shows unprecedented generalization accuracy with strongly reduced chemical and structural bias compared to previous models trained on under-represented data."
+    },
+    {
+      "id": "clai_00506",
+      "type": "claim",
+      "surface_form": "The ternary compound TiVB3 is predicted to have a superhard hardness of 42 GPa."
+    },
+    {
+      "id": "clai_00508",
+      "type": "claim",
+      "surface_form": "Materials within 50 meV/atom from convex hull were selected for subsequent DFT stiffness tensor calculations."
+    },
+    {
+      "id": "clai_00539",
+      "type": "claim",
+      "surface_form": "Accurate regression models can still produce high false‑positive rates near the 0 eV/atom convex‑hull decision boundary."
+    },
+    {
+      "id": "clai_00540",
+      "type": "claim",
+      "surface_form": "Using the MACE checkpoint trained on the M3GNet dataset caused volume implosion failures for several hundred of the 250 k test crystals, whereas the checkpoint trained on the MPtrj dataset reduced failures to only 44 crystals."
+    },
+    {
+      "id": "clai_00545",
+      "type": "claim",
+      "surface_form": "Final GNoME models predict energies with a mean absolute error of 11 meV per atom on relaxed structures, improved from 21 meV per atom in the initial model trained on Materials Project data."
+    },
+    {
+      "id": "clai_00560",
+      "type": "claim",
+      "surface_form": "In polycrystalline aluminum, the GNN predicts atomic potential energy with a mean normalized relative error of 11.0% (maximum ≈13%) and achieves R² = 0.99 for mean potential energy versus grain number."
+    },
+    {
+      "id": "clai_00562",
+      "type": "claim",
+      "surface_form": "The GNN’s stress predictions are substantially more accurate than on‑the‑fly stress calculations from the force field, which exhibit higher errors."
+    },
+    {
+      "id": "clai_00569",
+      "type": "claim",
+      "surface_form": "DeePMD reproduces AIMD energies, forces, and virial tensors for water and ice with root‑mean‑square errors of approximately 1 meV per molecule for energy, 40 meV Å⁻¹ for forces, and 1–2 meV for the virial."
+    },
+    {
+      "id": "clai_00570",
+      "type": "claim",
+      "surface_form": "DeePMD accurately reproduces radial distribution functions and three‑body angular distribution functions of liquid water and ice, matching AIMD results."
+    },
+    {
+      "id": "clai_00572",
+      "type": "claim",
+      "surface_form": "The computational cost of DeePMD scales linearly with the number of atoms and is several orders of magnitude lower than equivalent AIMD simulations, comparable to empirical force fields."
+    },
+    {
+      "id": "clai_00574",
+      "type": "claim",
+      "surface_form": "DeePMD preserves translational, rotational, and permutational symmetries by constructing a local reference frame for each atom and sorting neighbor lists by species and inverse distance."
+    },
+    {
+      "id": "clai_00576",
+      "type": "claim",
+      "surface_form": "Discontinuities in forces caused by the sharp cutoff radius and neighbor‑list sorting are much smaller than thermal fluctuations and do not impair canonical sampling."
+    },
+    {
+      "id": "clai_00579",
+      "type": "claim",
+      "surface_form": "DeepH-E3 predicts DFT Hamiltonian matrix elements with sub‑meV mean absolute error, reducing the error by roughly a factor of two compared with the original DeepH method across diverse material systems."
+    },
+    {
+      "id": "clai_00580",
+      "type": "claim",
+      "surface_form": "DeepH-E3 enables accurate electronic‑structure calculations for supercells larger than 10⁴ atoms, reducing computational cost by several orders of magnitude and allowing calculations in minutes on a single GPU versus months on thousands of CPU cores."
+    },
+    {
+      "id": "clai_00581",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+    },
+    {
+      "id": "clai_00582",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 predicts a spin‑orbit‑coupling‑induced topological quantum phase transition in twisted bilayer Bi₂Te₃, evidenced by band‑gap closing and reopening and a change of the Z₂ invariant from 0 to 1 as SOC strength increases."
+    },
+    {
+      "id": "clai_00583",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 attains sub‑meV accuracy after training on only a few hundred DFT calculations of small, non‑twisted structures, demonstrating high data efficiency."
+    },
+    {
+      "id": "clai_00584",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors."
+    },
+    {
+      "id": "clai_00585",
+      "type": "claim",
+      "surface_form": "The model generalizes to arbitrarily twisted bilayer structures; the mean absolute error of Hamiltonian predictions decreases as the Moiré supercell size grows (or twist angle decreases)."
+    },
+    {
+      "id": "clai_00640",
+      "type": "claim",
+      "surface_form": "Relaxing test crystals with M3GNet reduces median volume error from 2.4 % to 0.6 % and energy mean absolute error from 0.169 eV/atom to 0.035 eV/atom relative to DFT‑relaxed references."
+    },
+    {
+      "id": "clai_00641",
+      "type": "claim",
+      "surface_form": "A single‑CPU M3GNet relaxation completes in about 22 seconds, compared with 15 hours on 32 cores for DFT; pre‑relaxation with M3GNet shortens subsequent DFT relaxation time by roughly a factor of three and reduces total CPU time by an average factor of 2.97."
+    },
+    {
+      "id": "clai_00642",
+      "type": "claim",
+      "surface_form": "Screening 31.7 million hypothetical crystals with M3GNet identifies approximately 1.8 million candidates with predicted hull distances below 0.001 eV/atom, and among the 2,000 lowest‑energy candidates, 1,578 are confirmed stable (Ehull < 0.001 eV/atom) by DFT."
+    },
+    {
+      "id": "clai_00647",
+      "type": "claim",
+      "surface_form": "On the MD17 and MD17‑CCSD(T) molecular force‑field benchmarks, M3GNet achieves lower energy and force errors than the Embedded Atom Neural Network and comparable accuracy to state‑of‑the‑art message‑passing and equivariant neural networks; when benchmarked against quantum‑accurate CCSD/CCSD(T) data, it attains state‑of‑the‑art accuracy for several molecules."
+    },
+    {
+      "id": "clai_00649",
+      "type": "claim",
+      "surface_form": "For a MgO test set, M3GNet outperforms Moment Tensor Potentials in extrapolating equation‑of‑state behavior beyond the training regime and exhibits long‑range interaction characteristics similar to a Buckingham + Coulomb model."
+    },
+    {
+      "id": "clai_00650",
+      "type": "claim",
+      "surface_form": "The M3GNet architecture preserves continuity of energies, forces, and stresses with respect to changes in bond count, satisfying a necessary physical constraint for interatomic potentials."
+    },
+    {
+      "id": "clai_00651",
+      "type": "claim",
+      "surface_form": "The Open Quantum Materials Database (OQMD) contains over 200,000 DFT‑calculated crystal structures, including experimental ICSD entries and theoretical prototype structures, and is freely accessible to the scientific community without usage restrictions."
+    },
+    {
+      "id": "clai_00652",
+      "type": "claim",
+      "surface_form": "At 0 K and zero pressure, 23 % of the 32,489 ICSD structures in the OQMD are thermodynamically stable according to grand canonical linear programming analysis."
+    },
+    {
+      "id": "clai_00659",
+      "type": "claim",
+      "surface_form": "A combined heuristic‑plus‑machine‑learning model trained on OQMD ternary formation energies predicts formation energies with a mean absolute error of ~0.11 eV/atom, roughly half the typical DFT‑experiment error."
+    },
+    {
+      "id": "clai_00660",
+      "type": "claim",
+      "surface_form": "Applying the heuristic‑ML model to 1.6 million hypothetical ternary compositions identified nine top candidates, of which eight were confirmed by DFT to be new stable compounds (e.g., SiYb₃F₅, Pa₂O(SiO₆))."
+    },
+    {
+      "id": "clai_00670",
+      "type": "claim",
+      "surface_form": "A hybrid HSE06 calculation for ZnO yields a band gap of 2.48 eV, substantially larger than the LDA/GGA gap of 0.7 eV and the PBE+U gap of 1.82 eV."
+    },
+    {
+      "id": "clai_00671",
+      "type": "claim",
+      "surface_form": "Tuning the exact‑exchange fraction α to 0.375 in HSE06 brings the calculated ZnO band gap into agreement with experiment."
+    },
+    {
+      "id": "clai_00674",
+      "type": "claim",
+      "surface_form": "A bulk ZnO HSE06 calculation (8×8×6 k‑point mesh, 400 eV cutoff) takes approximately 5 hours on 8 CPUs, while the equivalent GGA/PBE+U calculation finishes in less than a minute."
+    },
+    {
+      "id": "clai_00676",
+      "type": "claim",
+      "surface_form": "The Gaussian approximation potential (GAP) enables atomistic simulations with close-to-DFT accuracy at computational costs many orders of magnitude lower than quantum-mechanical methods."
+    },
+    {
+      "id": "clai_00678",
+      "type": "claim",
+      "surface_form": "GAP predicts diamond lattice parameter (3.539 Å) very close to DFT-LDA reference (3.532 Å), outperforming screened Tersoff potential (3.566 Å), with bulk modulus and elastic constants reasonably close to DFT reference values."
+    },
+    {
+      "id": "clai_00679",
+      "type": "claim",
+      "surface_form": "GAP radial and angular distribution functions for liquid and amorphous carbon closely match DFT reference results, including peak locations, extents, and overall curve shapes."
+    },
+    {
+      "id": "clai_00680",
+      "type": "claim",
+      "surface_form": "GAP recovers three- and four-membered rings that are key features of liquid and low-density amorphous carbon structures, which empirical potentials (Tersoff/Brenner) fail to predict."
+    },
+    {
+      "id": "clai_00684",
+      "type": "claim",
+      "surface_form": "Empirical potentials (Tersoff/Brenner) cannot describe interlayer spacing in graphite due to short-range cutoff being less than c/2, provide poor description of carbon surfaces, and yield much lower surface energies than GAP and DFT for ta-C surfaces."
+    },
+    {
+      "id": "clai_00685",
+      "type": "claim",
+      "surface_form": "Diamond exhibits strong force locality with force deviations vanishing practically at rfix = 5.5 Å, while graphite is highly nonlocal with larger force deviations that do not decay as rapidly."
+    },
+    {
+      "id": "clai_00686",
+      "type": "claim",
+      "surface_form": "For amorphous carbon with 3.7 Å cutoff radius, the lowest achievable standard deviation of force components is approximately 1 eV/Å due to fundamental nonlocality limits, representing a maximum accuracy bound for any finite-range interatomic potential."
+    },
+    {
+      "id": "comp_00059",
+      "type": "component",
+      "surface_form": "Phonax framework"
+    },
+    {
+      "id": "comp_00063",
+      "type": "component",
+      "surface_form": "Irreducible‑representation analysis for IR/Raman activity"
+    },
+    {
+      "id": "comp_00069",
+      "type": "component",
+      "surface_form": "Fine‑tuning procedure using molecular vibrational spectra"
+    },
+    {
+      "id": "comp_00345",
+      "type": "component",
+      "surface_form": "Heterostructure design app"
+    },
+    {
+      "id": "comp_00351",
+      "type": "component",
+      "surface_form": "JARVIS‑Heterostructure app"
+    },
+    {
+      "id": "comp_00390",
+      "type": "component",
+      "surface_form": "APL phonon library"
+    },
+    {
+      "id": "data_00045",
+      "type": "dataset",
+      "surface_form": "DFT relaxation time with M3GNet pre‑relaxation"
+    },
+    {
+      "id": "data_00048",
+      "type": "dataset",
+      "surface_form": "NiBr2 spin‑spiral"
+    },
+    {
+      "id": "data_00049",
+      "type": "dataset",
+      "surface_form": "Moiré‑twisted bilayer CrI3"
+    },
+    {
+      "id": "data_00247",
+      "type": "dataset",
+      "surface_form": "twisted bilayer bismuthene (TBB)"
+    },
+    {
+      "id": "futu_00022",
+      "type": "future_topic",
+      "surface_form": "more challenging benchmark with chemical and structural variations"
+    },
+    {
+      "id": "futu_00040",
+      "type": "future_topic",
+      "surface_form": "automate challenging chemical search problems in drug discovery"
+    },
+    {
+      "id": "futu_00041",
+      "type": "future_topic",
+      "surface_form": "automate challenging chemical search problems in materials science"
+    },
+    {
+      "id": "futu_00044",
+      "type": "future_topic",
+      "surface_form": "Use of the framework for high‑dimensional integrals in quantum physics (multi‑particle Schrödinger equation)"
+    },
+    {
+      "id": "futu_00057",
+      "type": "future_topic",
+      "surface_form": "Metal‑organic frameworks (MOFs)"
+    },
+    {
+      "id": "futu_00061",
+      "type": "future_topic",
+      "surface_form": "Completion of Quantum ESPRESSO software integration"
+    },
+    {
+      "id": "futu_00092",
+      "type": "future_topic",
+      "surface_form": "Twisted van der Waals materials"
+    },
+    {
+      "id": "futu_00130",
+      "type": "future_topic",
+      "surface_form": "Unified free‑energy MEGNet model incorporating temperature, pressure, and entropy as global state inputs"
+    },
+    {
+      "id": "futu_00134",
+      "type": "future_topic",
+      "surface_form": "Application of MEGNet models to a broader range of crystal properties beyond formation energy, band gap, and elastic moduli"
+    },
+    {
+      "id": "futu_00135",
+      "type": "future_topic",
+      "surface_form": "Experimental synthesis of proposed compounds"
+    },
+    {
+      "id": "futu_00156",
+      "type": "future_topic",
+      "surface_form": "Construction of a Moiré‑twisted material database using DeepH‑E3"
+    },
+    {
+      "id": "futu_00171",
+      "type": "future_topic",
+      "surface_form": "Integrating M3GNet predictions with experimental synthesis validation workflows"
+    },
+    {
+      "id": "futu_00172",
+      "type": "future_topic",
+      "surface_form": "Applying M3GNet to discover materials with targeted exceptional properties such as superconductivity or high‑energy‑density battery electrodes"
+    },
+    {
+      "id": "futu_00175",
+      "type": "future_topic",
+      "surface_form": "Training a machine‑learning model to predict new stable ternary compounds"
+    },
+    {
+      "id": "meth_00153",
+      "type": "method",
+      "surface_form": "van der Waals density functional"
+    },
+    {
+      "id": "meth_00248",
+      "type": "method",
+      "surface_form": "van der Waals functional OptB88"
+    },
+    {
+      "id": "meth_00350",
+      "type": "method",
+      "surface_form": "pymatgen structure matcher"
+    },
+    {
+      "id": "meth_00377",
+      "type": "method",
+      "surface_form": "Open Quantum Mechanical Database"
+    },
+    {
+      "id": "prob_00016",
+      "type": "problem",
+      "surface_form": "Accurate prediction of quantum‑chemical properties"
+    },
+    {
+      "id": "prob_00031",
+      "type": "problem",
+      "surface_form": "Accurate band‑structure prediction for twisted moiré materials"
+    },
+    {
+      "id": "prob_00142",
+      "type": "problem",
+      "surface_form": "Modeling twisted moiré materials"
+    },
+    {
+      "id": "prob_00158",
+      "type": "problem",
+      "surface_form": "Lack of a unified framework for molecules and crystals"
+    },
+    {
+      "id": "prob_00178",
+      "type": "problem",
+      "surface_form": "Accelerated atomic‑property prediction"
+    },
+    {
+      "id": "prob_00201",
+      "type": "problem",
+      "surface_form": "Rapid heterostructure design"
+    },
+    {
+      "id": "prob_00205",
+      "type": "problem",
+      "surface_form": "Novel ternary compound discovery"
+    },
+    {
+      "id": "prob_00206",
+      "type": "problem",
+      "surface_form": "Rapid prediction of ternary formation energies without crystal structures"
+    },
+    {
+      "id": "prob_00207",
+      "type": "problem",
+      "surface_form": "Efficient identification of likely stable ternary compounds"
+    },
+    {
+      "id": "prob_00389",
+      "type": "problem",
+      "surface_form": "Discovery in unseen chemical spaces"
+    },
+    {
+      "id": "prob_00588",
+      "type": "problem",
+      "surface_form": "Accuracy-efficiency gap in atomistic simulations"
+    },
+    {
+      "id": "prob_00598",
+      "type": "problem",
+      "surface_form": "Nonlocality in carbon allotropes"
+    },
+    {
+      "id": "prob_00601",
+      "type": "problem",
+      "surface_form": "Interlayer spacing in graphite"
+    },
+    {
+      "id": "prob_00609",
+      "type": "problem",
+      "surface_form": "accuracy-cost tradeoff in atomistic modeling"
+    },
+    {
+      "id": "task_00006",
+      "type": "task",
+      "surface_form": "drug discovery"
+    },
+    {
+      "id": "task_00067",
+      "type": "task",
+      "surface_form": "Fine‑tuning of interatomic potentials using vibrational spectra"
+    },
+    {
+      "id": "task_00172",
+      "type": "task",
+      "surface_form": "Exploration of magnetic skyrmion effects on electronic properties"
+    },
+    {
+      "id": "task_00180",
+      "type": "task",
+      "surface_form": "Study of twisted van der Waals heterostructures"
+    },
+    {
+      "id": "task_00184",
+      "type": "task",
+      "surface_form": "Moiré‑twisted bilayer material analysis"
+    },
+    {
+      "id": "task_00235",
+      "type": "task",
+      "surface_form": "Heterostructure design"
+    },
+    {
+      "id": "task_00244",
+      "type": "task",
+      "surface_form": "2D heterostructure band‑alignment analysis"
+    },
+    {
+      "id": "task_00251",
+      "type": "task",
+      "surface_form": "Formation‑energy prediction for ternary compounds"
+    },
+    {
+      "id": "task_00695",
+      "type": "task",
+      "surface_form": "Crystalline allotrope modeling"
+    },
+    {
+      "id": "tech_00137",
+      "type": "technique",
+      "surface_form": "Fine‑tuning with experimental‑like spectra"
+    },
+    {
+      "id": "tech_00167",
+      "type": "technique",
+      "surface_form": "DFT+U with van der Waals functionals"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 4,
+    "cited_work": 9,
+    "claim": 122,
+    "component": 6,
+    "dataset": 4,
+    "future_topic": 14,
+    "method": 4,
+    "problem": 14,
+    "task": 9,
+    "technique": 2
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00671",
+      "relation_type": "claims",
+      "members": [
+        "arti_00015",
+        "clai_00065"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5391,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00672",
+      "relation_type": "claims",
+      "members": [
+        "arti_00015",
+        "clai_00066"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5391,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_00674",
+      "relation_type": "claims",
+      "members": [
+        "arti_00015",
+        "clai_00068"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5391,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00678",
+      "relation_type": "claims",
+      "members": [
+        "arti_00015",
+        "clai_00072"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5391,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00679",
+      "relation_type": "claims",
+      "members": [
+        "arti_00015",
+        "clai_00073"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5391,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00681",
+      "relation_type": "claims",
+      "members": [
+        "arti_00015",
+        "clai_00075"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5391,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_00682",
+      "relation_type": "claims",
+      "members": [
+        "arti_00015",
+        "clai_00076"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5391,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.98
+      }
+    },
+    {
+      "id": "h_00746",
+      "relation_type": "claims",
+      "members": [
+        "arti_00001",
+        "clai_00140"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 4166,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "observational_study",
+        "evidence_strength": "strong",
+        "confidence": 0.95,
+        "verdict": "contested"
+      }
+    },
+    {
+      "id": "h_01257",
+      "relation_type": "claims",
+      "members": [
+        "arti_00026",
+        "clai_00651"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.99
+      }
+    },
+    {
+      "id": "h_01258",
+      "relation_type": "claims",
+      "members": [
+        "arti_00026",
+        "clai_00652"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01265",
+      "relation_type": "claims",
+      "members": [
+        "arti_00026",
+        "clai_00659"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01266",
+      "relation_type": "claims",
+      "members": [
+        "arti_00026",
+        "clai_00660"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mev",
+  "representative_ids": [
+    "clai_00545",
+    "clai_00382"
+  ]
+}

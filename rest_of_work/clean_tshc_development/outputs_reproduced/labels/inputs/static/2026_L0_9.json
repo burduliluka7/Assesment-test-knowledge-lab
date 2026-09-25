@@ -1,0 +1,943 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00600",
+      "type": "component",
+      "surface_form": "Relaxed oxidation-state balancing constraint"
+    },
+    {
+      "id": "prob_00002",
+      "type": "problem",
+      "surface_form": "Out-of-distribution generalization"
+    },
+    {
+      "id": "prob_00003",
+      "type": "problem",
+      "surface_form": "Out-of-distribution detection"
+    },
+    {
+      "id": "prob_00005",
+      "type": "problem",
+      "surface_form": "Computational efficiency"
+    },
+    {
+      "id": "prob_00009",
+      "type": "problem",
+      "surface_form": "inference efficiency"
+    },
+    {
+      "id": "prob_00011",
+      "type": "problem",
+      "surface_form": "Computational efficiency at scale"
+    },
+    {
+      "id": "prob_00238",
+      "type": "problem",
+      "surface_form": "computational complexity bottleneck in equivariant GNNs"
+    },
+    {
+      "id": "prob_00239",
+      "type": "problem",
+      "surface_form": "scaling equivariant Transformers to higher-degree representations"
+    },
+    {
+      "id": "prob_00241",
+      "type": "problem",
+      "surface_form": "Computational complexity of SO(3) tensor products"
+    },
+    {
+      "id": "prob_00242",
+      "type": "problem",
+      "surface_form": "Training instability with S2 activation"
+    },
+    {
+      "id": "prob_00244",
+      "type": "problem",
+      "surface_form": "Loss of relative magnitude information"
+    },
+    {
+      "id": "prob_00248",
+      "type": "problem",
+      "surface_form": "Modeling complex atomic structures"
+    },
+    {
+      "id": "prob_00249",
+      "type": "problem",
+      "surface_form": "Force prediction accuracy"
+    },
+    {
+      "id": "prob_00252",
+      "type": "problem",
+      "surface_form": "Structure relaxation efficiency"
+    },
+    {
+      "id": "prob_00253",
+      "type": "problem",
+      "surface_form": "High computational complexity of SO(3) tensor products"
+    },
+    {
+      "id": "prob_00255",
+      "type": "problem",
+      "surface_form": "Computational intensity of SO(3) tensor products"
+    },
+    {
+      "id": "prob_00256",
+      "type": "problem",
+      "surface_form": "Limited degree information in gate activation"
+    },
+    {
+      "id": "prob_00258",
+      "type": "problem",
+      "surface_form": "Overfitting in high-degree equivariant models"
+    },
+    {
+      "id": "prob_00260",
+      "type": "problem",
+      "surface_form": "Accurate energy and force prediction for adsorbate-catalyst systems"
+    },
+    {
+      "id": "prob_00261",
+      "type": "problem",
+      "surface_form": "Efficient structural relaxation"
+    },
+    {
+      "id": "prob_00262",
+      "type": "problem",
+      "surface_form": "Overfitting with higher spherical harmonic degrees"
+    },
+    {
+      "id": "prob_00263",
+      "type": "problem",
+      "surface_form": "Performance degradation when increasing model expressiveness"
+    },
+    {
+      "id": "prob_00323",
+      "type": "problem",
+      "surface_form": "Accuracy limitations of classical force fields"
+    },
+    {
+      "id": "prob_00328",
+      "type": "problem",
+      "surface_form": "Short and mid-range non-bonded interaction correction"
+    },
+    {
+      "id": "prob_00330",
+      "type": "problem",
+      "surface_form": "Tensorial property prediction"
+    },
+    {
+      "id": "prob_00333",
+      "type": "problem",
+      "surface_form": "Padding zero computation waste"
+    },
+    {
+      "id": "prob_00336",
+      "type": "problem",
+      "surface_form": "Power wall bottleneck"
+    },
+    {
+      "id": "prob_00337",
+      "type": "problem",
+      "surface_form": "Multi-device scalability"
+    },
+    {
+      "id": "prob_00338",
+      "type": "problem",
+      "surface_form": "Installation complexity"
+    },
+    {
+      "id": "prob_00340",
+      "type": "problem",
+      "surface_form": "accurate potential energy surface representation"
+    },
+    {
+      "id": "prob_00344",
+      "type": "problem",
+      "surface_form": "model portability"
+    },
+    {
+      "id": "prob_00346",
+      "type": "problem",
+      "surface_form": "accurate interatomic potential generation"
+    },
+    {
+      "id": "prob_00347",
+      "type": "problem",
+      "surface_form": "computational efficiency in MD"
+    },
+    {
+      "id": "prob_00348",
+      "type": "problem",
+      "surface_form": "property prediction for complex systems"
+    },
+    {
+      "id": "prob_00349",
+      "type": "problem",
+      "surface_form": "computational cost of MD simulations with ML potentials"
+    },
+    {
+      "id": "prob_00386",
+      "type": "problem",
+      "surface_form": "Ineffective ML estimation of material stability"
+    },
+    {
+      "id": "prob_00388",
+      "type": "problem",
+      "surface_form": "Scaling materials discovery efficiency"
+    },
+    {
+      "id": "prob_00389",
+      "type": "problem",
+      "surface_form": "Discovery in unseen chemical spaces"
+    },
+    {
+      "id": "prob_00390",
+      "type": "problem",
+      "surface_form": "Transfer to new downstream tasks"
+    },
+    {
+      "id": "prob_00391",
+      "type": "problem",
+      "surface_form": "Limited transferability of MLIPs"
+    },
+    {
+      "id": "prob_00392",
+      "type": "problem",
+      "surface_form": "Discovery of multi-element materials"
+    },
+    {
+      "id": "prob_00393",
+      "type": "problem",
+      "surface_form": "DFT computational scaling"
+    },
+    {
+      "id": "prob_00398",
+      "type": "problem",
+      "surface_form": "Inefficient enumeration of reduced formulas"
+    },
+    {
+      "id": "prob_00399",
+      "type": "problem",
+      "surface_form": "Discovery of partial substitution structures"
+    },
+    {
+      "id": "prob_00401",
+      "type": "problem",
+      "surface_form": "Domain shift between training and evaluation"
+    },
+    {
+      "id": "prob_00402",
+      "type": "problem",
+      "surface_form": "Graph network prediction instability"
+    },
+    {
+      "id": "prob_00403",
+      "type": "problem",
+      "surface_form": "Composition generalization"
+    },
+    {
+      "id": "prob_00404",
+      "type": "problem",
+      "surface_form": "Scalable polymorph discovery"
+    },
+    {
+      "id": "prob_00405",
+      "type": "problem",
+      "surface_form": "Limited crystal discovery through previous ML methods"
+    },
+    {
+      "id": "prob_00406",
+      "type": "problem",
+      "surface_form": "Out-of-distribution robustness"
+    },
+    {
+      "id": "prob_00407",
+      "type": "problem",
+      "surface_form": "Label leakage prevention"
+    },
+    {
+      "id": "prob_00408",
+      "type": "problem",
+      "surface_form": "Computational efficiency for GNN potentials"
+    },
+    {
+      "id": "prob_00409",
+      "type": "problem",
+      "surface_form": "Electrolyte discovery for ionic conductivity"
+    },
+    {
+      "id": "prob_00422",
+      "type": "problem",
+      "surface_form": "Accuracy-scale disconnect in atomistic simulations"
+    },
+    {
+      "id": "prob_00423",
+      "type": "problem",
+      "surface_form": "Insufficient functional form complexity"
+    },
+    {
+      "id": "prob_00425",
+      "type": "problem",
+      "surface_form": "Limited accessible length and time scales"
+    },
+    {
+      "id": "prob_00427",
+      "type": "problem",
+      "surface_form": "Long-range interaction capture"
+    },
+    {
+      "id": "prob_00429",
+      "type": "problem",
+      "surface_form": "Limited transferability"
+    },
+    {
+      "id": "prob_00433",
+      "type": "problem",
+      "surface_form": "Stable molecular dynamics"
+    },
+    {
+      "id": "prob_00434",
+      "type": "problem",
+      "surface_form": "Material stability prediction"
+    },
+    {
+      "id": "prob_00435",
+      "type": "problem",
+      "surface_form": "Condensed phase modeling"
+    },
+    {
+      "id": "prob_00436",
+      "type": "problem",
+      "surface_form": "Multi-scale system modeling"
+    },
+    {
+      "id": "prob_00437",
+      "type": "problem",
+      "surface_form": "Computational cost reduction in ab initio calculations"
+    },
+    {
+      "id": "prob_00438",
+      "type": "problem",
+      "surface_form": "High-throughput materials screening"
+    },
+    {
+      "id": "prob_00439",
+      "type": "problem",
+      "surface_form": "Training data generation acceleration"
+    },
+    {
+      "id": "prob_00440",
+      "type": "problem",
+      "surface_form": "Uncertainty in U-MLIP applicability"
+    },
+    {
+      "id": "prob_00441",
+      "type": "problem",
+      "surface_form": "Valence state discrimination"
+    },
+    {
+      "id": "prob_00442",
+      "type": "problem",
+      "surface_form": "Charge transfer dynamics"
+    },
+    {
+      "id": "prob_00444",
+      "type": "problem",
+      "surface_form": "Structural phase transformations"
+    },
+    {
+      "id": "prob_00445",
+      "type": "problem",
+      "surface_form": "NPT ensemble molecular dynamics"
+    },
+    {
+      "id": "prob_00446",
+      "type": "problem",
+      "surface_form": "Stable materials discovery"
+    },
+    {
+      "id": "prob_00448",
+      "type": "problem",
+      "surface_form": "Computational efficiency of MLIPs"
+    },
+    {
+      "id": "prob_00450",
+      "type": "problem",
+      "surface_form": "Data augmentation inefficiency"
+    },
+    {
+      "id": "prob_00452",
+      "type": "problem",
+      "surface_form": "Atomic force prediction"
+    },
+    {
+      "id": "prob_00453",
+      "type": "problem",
+      "surface_form": "Molecular energy prediction"
+    },
+    {
+      "id": "prob_00454",
+      "type": "problem",
+      "surface_form": "SE(3) equivariant property prediction"
+    },
+    {
+      "id": "prob_00455",
+      "type": "problem",
+      "surface_form": "learning equivariant features without explicit constraints"
+    },
+    {
+      "id": "prob_00457",
+      "type": "problem",
+      "surface_form": "scalability of Transformer models for MLIPs"
+    },
+    {
+      "id": "prob_00458",
+      "type": "problem",
+      "surface_form": "Learning geometric equivariance without explicit architectural constraints"
+    },
+    {
+      "id": "prob_00459",
+      "type": "problem",
+      "surface_form": "Scalability of equivariant molecular models"
+    },
+    {
+      "id": "prob_00460",
+      "type": "problem",
+      "surface_form": "Performance scaling for molecular force fields"
+    },
+    {
+      "id": "prob_00461",
+      "type": "problem",
+      "surface_form": "Poor transferability to out-of-distribution samples"
+    },
+    {
+      "id": "prob_00462",
+      "type": "problem",
+      "surface_form": "Overfitting from compensatory short-range adjustments"
+    },
+    {
+      "id": "prob_00463",
+      "type": "problem",
+      "surface_form": "Chemical space generalization"
+    },
+    {
+      "id": "prob_00465",
+      "type": "problem",
+      "surface_form": "Generalization to out-of-distribution samples"
+    },
+    {
+      "id": "prob_00466",
+      "type": "problem",
+      "surface_form": "Charge state degeneracy"
+    },
+    {
+      "id": "prob_00467",
+      "type": "problem",
+      "surface_form": "Overfitting from increased message passing"
+    },
+    {
+      "id": "prob_00468",
+      "type": "problem",
+      "surface_form": "Biased dataset generalization"
+    },
+    {
+      "id": "prob_00469",
+      "type": "problem",
+      "surface_form": "Long-range electrostatic modeling in MLIPs"
+    },
+    {
+      "id": "prob_00470",
+      "type": "problem",
+      "surface_form": "Charge prediction without reference data"
+    },
+    {
+      "id": "prob_00471",
+      "type": "problem",
+      "surface_form": "Performance on charged vs neutral systems"
+    },
+    {
+      "id": "prob_00473",
+      "type": "problem",
+      "surface_form": "Out-of-distribution generalization evaluation"
+    },
+    {
+      "id": "prob_00474",
+      "type": "problem",
+      "surface_form": "Chemical space under-sampling bias"
+    },
+    {
+      "id": "prob_00475",
+      "type": "problem",
+      "surface_form": "Electrostatic double-counting"
+    },
+    {
+      "id": "prob_00476",
+      "type": "problem",
+      "surface_form": "Charge inference in complex electrostatic environments"
+    },
+    {
+      "id": "prob_00477",
+      "type": "problem",
+      "surface_form": "Long-range physics modeling in MOFs"
+    },
+    {
+      "id": "prob_00478",
+      "type": "problem",
+      "surface_form": "Charge-transfer prediction"
+    },
+    {
+      "id": "prob_00479",
+      "type": "problem",
+      "surface_form": "Parallelization challenges of GNN-IPs"
+    },
+    {
+      "id": "prob_00481",
+      "type": "problem",
+      "surface_form": "Computational scaling limitations of DFT"
+    },
+    {
+      "id": "prob_00482",
+      "type": "problem",
+      "surface_form": "Gap between ML models and large-scale MD"
+    },
+    {
+      "id": "prob_00483",
+      "type": "problem",
+      "surface_form": "Computational cost of large-scale amorphous structure generation"
+    },
+    {
+      "id": "prob_00487",
+      "type": "problem",
+      "surface_form": "parallelization of GNN-based interatomic potentials"
+    },
+    {
+      "id": "prob_00488",
+      "type": "problem",
+      "surface_form": "atomic force computation in parallel GNN-IP"
+    },
+    {
+      "id": "prob_00489",
+      "type": "problem",
+      "surface_form": "communication overhead in spatial decomposition"
+    },
+    {
+      "id": "prob_00490",
+      "type": "problem",
+      "surface_form": "Overfitting in GNN interatomic potentials"
+    },
+    {
+      "id": "prob_00491",
+      "type": "problem",
+      "surface_form": "Large-scale MD simulation scalability"
+    },
+    {
+      "id": "prob_00492",
+      "type": "problem",
+      "surface_form": "General-purpose interatomic potential deployment"
+    },
+    {
+      "id": "prob_00494",
+      "type": "problem",
+      "surface_form": "scalable parallel computation for molecular dynamics"
+    },
+    {
+      "id": "prob_00496",
+      "type": "problem",
+      "surface_form": "Scalability of unconstrained MLIPs"
+    },
+    {
+      "id": "prob_00497",
+      "type": "problem",
+      "surface_form": "Physical constraint enforcement overhead"
+    },
+    {
+      "id": "prob_00498",
+      "type": "problem",
+      "surface_form": "Symmetry breaking in MLIPs"
+    },
+    {
+      "id": "prob_00499",
+      "type": "problem",
+      "surface_form": "Learning rotational symmetry without hard constraints"
+    },
+    {
+      "id": "prob_00500",
+      "type": "problem",
+      "surface_form": "Energy conservation in non-equivariant models"
+    },
+    {
+      "id": "prob_00502",
+      "type": "problem",
+      "surface_form": "Computational cost of enforcing physical symmetries"
+    },
+    {
+      "id": "prob_00503",
+      "type": "problem",
+      "surface_form": "Symmetry artifacts in automated workflows"
+    },
+    {
+      "id": "prob_00505",
+      "type": "problem",
+      "surface_form": "computational efficiency in atomistic simulations"
+    },
+    {
+      "id": "prob_00507",
+      "type": "problem",
+      "surface_form": "Non-uniform computational budget"
+    },
+    {
+      "id": "prob_00511",
+      "type": "problem",
+      "surface_form": "Accuracy-speed tradeoff"
+    },
+    {
+      "id": "prob_00512",
+      "type": "problem",
+      "surface_form": "Scaling to large parameter counts"
+    },
+    {
+      "id": "prob_00513",
+      "type": "problem",
+      "surface_form": "Efficient fine-tuning on smaller datasets"
+    },
+    {
+      "id": "prob_00514",
+      "type": "problem",
+      "surface_form": "Memory usage limitations in heterogeneous datasets"
+    },
+    {
+      "id": "prob_00516",
+      "type": "problem",
+      "surface_form": "Transfer learning for high-level theory targets"
+    },
+    {
+      "id": "prob_00517",
+      "type": "problem",
+      "surface_form": "Handling varying charge states and spin multiplicities"
+    },
+    {
+      "id": "prob_00518",
+      "type": "problem",
+      "surface_form": "Efficient training with varying molecule sizes"
+    },
+    {
+      "id": "prob_00520",
+      "type": "problem",
+      "surface_form": "Combining system conditioning with pretrained models"
+    },
+    {
+      "id": "prob_00523",
+      "type": "problem",
+      "surface_form": "Energy conservation in MLIPs"
+    },
+    {
+      "id": "prob_00524",
+      "type": "problem",
+      "surface_form": "Cross-domain transferability"
+    },
+    {
+      "id": "prob_00526",
+      "type": "problem",
+      "surface_form": "computational cost bottleneck in DFT"
+    },
+    {
+      "id": "prob_00527",
+      "type": "problem",
+      "surface_form": "overfitting of direct models to forces"
+    },
+    {
+      "id": "prob_00528",
+      "type": "problem",
+      "surface_form": "accurate modeling of higher-order PES derivatives in non-conservative models"
+    },
+    {
+      "id": "prob_00529",
+      "type": "problem",
+      "surface_form": "memory and latency constraints for large-scale simulations"
+    },
+    {
+      "id": "prob_00530",
+      "type": "problem",
+      "surface_form": "graph construction runtime bottleneck"
+    },
+    {
+      "id": "prob_00531",
+      "type": "problem",
+      "surface_form": "Energy conservation in NVE MD"
+    },
+    {
+      "id": "prob_00532",
+      "type": "problem",
+      "surface_form": "PES smoothness for higher-order derivatives"
+    },
+    {
+      "id": "prob_00533",
+      "type": "problem",
+      "surface_form": "Computational speed"
+    },
+    {
+      "id": "prob_00534",
+      "type": "problem",
+      "surface_form": "Strong repulsive force modeling"
+    },
+    {
+      "id": "prob_00535",
+      "type": "problem",
+      "surface_form": "Prediction confidence estimation"
+    },
+    {
+      "id": "prob_00536",
+      "type": "problem",
+      "surface_form": "performance-speed-memory tradeoff in MLIPs"
+    },
+    {
+      "id": "prob_00537",
+      "type": "problem",
+      "surface_form": "equivariance requirement paradigm"
+    },
+    {
+      "id": "prob_00539",
+      "type": "problem",
+      "surface_form": "GPU memory scalability"
+    },
+    {
+      "id": "prob_00540",
+      "type": "problem",
+      "surface_form": "inference speed bottleneck"
+    },
+    {
+      "id": "prob_00541",
+      "type": "problem",
+      "surface_form": "rotational invariance enforcement"
+    },
+    {
+      "id": "prob_00544",
+      "type": "problem",
+      "surface_form": "Energy conservation in NVE dynamics"
+    },
+    {
+      "id": "prob_00545",
+      "type": "problem",
+      "surface_form": "Force-derivative accuracy degradation in direct models"
+    },
+    {
+      "id": "prob_00548",
+      "type": "problem",
+      "surface_form": "Energy surface discontinuities"
+    },
+    {
+      "id": "prob_00551",
+      "type": "problem",
+      "surface_form": "Generalization across chemical domains"
+    },
+    {
+      "id": "prob_00552",
+      "type": "problem",
+      "surface_form": "Computational expense of DFT calculations"
+    },
+    {
+      "id": "prob_00553",
+      "type": "problem",
+      "surface_form": "Computational cost vs model size tradeoff"
+    },
+    {
+      "id": "prob_00555",
+      "type": "problem",
+      "surface_form": "Sequential inference efficiency"
+    },
+    {
+      "id": "prob_00559",
+      "type": "problem",
+      "surface_form": "Scaling molecular dynamics to large system sizes"
+    },
+    {
+      "id": "prob_00560",
+      "type": "problem",
+      "surface_form": "Energy conservation in ML-based MD"
+    },
+    {
+      "id": "prob_00561",
+      "type": "problem",
+      "surface_form": "Cross-domain generalization"
+    },
+    {
+      "id": "prob_00563",
+      "type": "problem",
+      "surface_form": "Inference efficiency for long simulations"
+    },
+    {
+      "id": "prob_00567",
+      "type": "problem",
+      "surface_form": "High inference cost for force/stress prediction"
+    },
+    {
+      "id": "prob_00569",
+      "type": "problem",
+      "surface_form": "Memory constraints for large MoLE models"
+    },
+    {
+      "id": "prob_00572",
+      "type": "problem",
+      "surface_form": "Data scarcity in molecular crystals"
+    },
+    {
+      "id": "prob_00573",
+      "type": "problem",
+      "surface_form": "Single adsorbate limitation"
+    },
+    {
+      "id": "prob_00575",
+      "type": "problem",
+      "surface_form": "Pseudopotential inconsistency"
+    },
+    {
+      "id": "prob_00576",
+      "type": "problem",
+      "surface_form": "Compute-optimal model scaling"
+    },
+    {
+      "id": "prob_00579",
+      "type": "problem",
+      "surface_form": "DFT-free benchmarking"
+    },
+    {
+      "id": "prob_00583",
+      "type": "problem",
+      "surface_form": "Unphysical diatomic curve behavior"
+    },
+    {
+      "id": "prob_00584",
+      "type": "problem",
+      "surface_form": "Smooth potential energy curves for diatomics"
+    },
+    {
+      "id": "prob_00585",
+      "type": "problem",
+      "surface_form": "Inter-molecular force estimation"
+    },
+    {
+      "id": "prob_00588",
+      "type": "problem",
+      "surface_form": "Accuracy-efficiency gap in atomistic simulations"
+    },
+    {
+      "id": "prob_00589",
+      "type": "problem",
+      "surface_form": "Poor extrapolation in high-dimensional ML potentials"
+    },
+    {
+      "id": "prob_00590",
+      "type": "problem",
+      "surface_form": "Underestimated sp3 concentration in ta-C"
+    },
+    {
+      "id": "prob_00593",
+      "type": "problem",
+      "surface_form": "Nonlinear parameter optimization"
+    },
+    {
+      "id": "prob_00594",
+      "type": "problem",
+      "surface_form": "Unphysical extrapolation at small distances"
+    },
+    {
+      "id": "prob_00595",
+      "type": "problem",
+      "surface_form": "Incomplete configuration space sampling"
+    },
+    {
+      "id": "prob_00596",
+      "type": "problem",
+      "surface_form": "Long-range behavior modeling"
+    },
+    {
+      "id": "prob_00598",
+      "type": "problem",
+      "surface_form": "Nonlocality in carbon allotropes"
+    },
+    {
+      "id": "prob_00599",
+      "type": "problem",
+      "surface_form": "Accuracy limit determination"
+    },
+    {
+      "id": "prob_00600",
+      "type": "problem",
+      "surface_form": "Heterogeneous training database fitting"
+    },
+    {
+      "id": "prob_00601",
+      "type": "problem",
+      "surface_form": "Interlayer spacing in graphite"
+    },
+    {
+      "id": "prob_00603",
+      "type": "problem",
+      "surface_form": "Linear sp-bonded chain detection"
+    },
+    {
+      "id": "prob_00606",
+      "type": "problem",
+      "surface_form": "accurate interatomic potential for amorphous carbon"
+    },
+    {
+      "id": "prob_00608",
+      "type": "problem",
+      "surface_form": "capturing tetrahedral motifs"
+    },
+    {
+      "id": "prob_00609",
+      "type": "problem",
+      "surface_form": "accuracy-cost tradeoff in atomistic modeling"
+    },
+    {
+      "id": "prob_00611",
+      "type": "problem",
+      "surface_form": "surface reconstruction modeling"
+    },
+    {
+      "id": "prob_00612",
+      "type": "problem",
+      "surface_form": "ML potential extrapolation"
+    },
+    {
+      "id": "prob_00613",
+      "type": "problem",
+      "surface_form": "Spurious energy barriers"
+    },
+    {
+      "id": "prob_00614",
+      "type": "problem",
+      "surface_form": "Training data completeness"
+    },
+    {
+      "id": "prob_00615",
+      "type": "problem",
+      "surface_form": "Near-surface structure sampling"
+    },
+    {
+      "id": "task_00427",
+      "type": "task",
+      "surface_form": "Multi-device MD simulations"
+    },
+    {
+      "id": "tech_00915",
+      "type": "technique",
+      "surface_form": "Large-scale atomistic simulation"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "problem": 182,
+    "task": 1,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "computational",
+  "representative_ids": [
+    "prob_00576",
+    "prob_00609"
+  ]
+}

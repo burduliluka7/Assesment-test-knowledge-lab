@@ -1,0 +1,424 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00042",
+      "type": "article",
+      "surface_form": "Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+    },
+    {
+      "id": "clai_00053",
+      "type": "claim",
+      "surface_form": "The best one-step gradient-boosted tree regression model achieves 165±4 K MAE and 0.89 R² on the test set for melting temperature prediction."
+    },
+    {
+      "id": "clai_00054",
+      "type": "claim",
+      "surface_form": "A two-step approach combining unsupervised clustering with supervised regression achieves 156±4 K MAE and 0.92 R², outperforming direct one-step supervised learning."
+    },
+    {
+      "id": "clai_00059",
+      "type": "claim",
+      "surface_form": "Tree ensemble methods (gradient-boosted trees and random forest regression) substantially outperform linear models, which achieve MAE >240 K and RMSE >340 K, at least 100 K worse than non-linear approaches."
+    },
+    {
+      "id": "clai_00311",
+      "type": "claim",
+      "surface_form": "Matbench v0.1 is a benchmark suite containing 13 supervised machine learning tasks (10 regression, 3 classification) for materials property prediction, with dataset sizes ranging from 312 to 132,752 samples."
+    },
+    {
+      "id": "clai_00504",
+      "type": "claim",
+      "surface_form": "The transfer learning approach iterates until model MAE is below 30 meV/atom."
+    },
+    {
+      "id": "clai_00575",
+      "type": "claim",
+      "surface_form": "Using a loss function with adaptive prefactors that emphasize forces early and energies/virial later reduces the total training time to a few core‑hours for all test cases."
+    },
+    {
+      "id": "comp_00223",
+      "type": "component",
+      "surface_form": "Representative environment selection"
+    },
+    {
+      "id": "comp_00240",
+      "type": "component",
+      "surface_form": "Multi‑term loss function"
+    },
+    {
+      "id": "comp_00267",
+      "type": "component",
+      "surface_form": "Linear pooling for interpretability"
+    },
+    {
+      "id": "comp_00300",
+      "type": "component",
+      "surface_form": "Predictive model architecture"
+    },
+    {
+      "id": "comp_00301",
+      "type": "component",
+      "surface_form": "Iterative column‑wise prediction scheme"
+    },
+    {
+      "id": "comp_00368",
+      "type": "component",
+      "surface_form": "Decision‑tree based ML model"
+    },
+    {
+      "id": "comp_00369",
+      "type": "component",
+      "surface_form": "Combined heuristic‑ML pipeline"
+    },
+    {
+      "id": "comp_00440",
+      "type": "component",
+      "surface_form": "Matbench test suite"
+    },
+    {
+      "id": "comp_00445",
+      "type": "component",
+      "surface_form": "Ensemble-based decision tree feature selector"
+    },
+    {
+      "id": "comp_00458",
+      "type": "component",
+      "surface_form": "AutoML model search space"
+    },
+    {
+      "id": "comp_00563",
+      "type": "component",
+      "surface_form": "Vicker's hardness estimation model"
+    },
+    {
+      "id": "comp_00567",
+      "type": "component",
+      "surface_form": "Volume prediction network"
+    },
+    {
+      "id": "comp_00625",
+      "type": "component",
+      "surface_form": "Iterative self-consistent training protocol"
+    },
+    {
+      "id": "comp_00629",
+      "type": "component",
+      "surface_form": "virial in loss function"
+    },
+    {
+      "id": "comp_00631",
+      "type": "component",
+      "surface_form": "uncorrelated snapshots selection"
+    },
+    {
+      "id": "data_00115",
+      "type": "dataset",
+      "surface_form": "Matbench test suite v0.1"
+    },
+    {
+      "id": "data_00116",
+      "type": "dataset",
+      "surface_form": "Matbench v0.1"
+    },
+    {
+      "id": "data_00135",
+      "type": "dataset",
+      "surface_form": "Volume prediction dataset"
+    },
+    {
+      "id": "futu_00075",
+      "type": "future_topic",
+      "surface_form": "Evaluating new materials ML algorithms on the Matbench benchmark"
+    },
+    {
+      "id": "meth_00013",
+      "type": "method",
+      "surface_form": "Random Forest"
+    },
+    {
+      "id": "meth_00063",
+      "type": "method",
+      "surface_form": "Random Forests"
+    },
+    {
+      "id": "meth_00385",
+      "type": "method",
+      "surface_form": "Active learning for neural network potentials"
+    },
+    {
+      "id": "metr_00021",
+      "type": "metric",
+      "surface_form": "MAE/ROC-AUC"
+    },
+    {
+      "id": "prob_00124",
+      "type": "problem",
+      "surface_form": "Efficient representation of large training sets"
+    },
+    {
+      "id": "prob_00176",
+      "type": "problem",
+      "surface_form": "Accelerated property evaluation"
+    },
+    {
+      "id": "prob_00195",
+      "type": "problem",
+      "surface_form": "Efficient property screening"
+    },
+    {
+      "id": "prob_00199",
+      "type": "problem",
+      "surface_form": "Accelerated property prediction"
+    },
+    {
+      "id": "prob_00273",
+      "type": "problem",
+      "surface_form": "Manual ML pipeline construction"
+    },
+    {
+      "id": "prob_00416",
+      "type": "problem",
+      "surface_form": "efficient training set construction"
+    },
+    {
+      "id": "prob_00597",
+      "type": "problem",
+      "surface_form": "Force locality quantification"
+    },
+    {
+      "id": "prob_00600",
+      "type": "problem",
+      "surface_form": "Heterogeneous training database fitting"
+    },
+    {
+      "id": "prob_00614",
+      "type": "problem",
+      "surface_form": "Training data completeness"
+    },
+    {
+      "id": "task_00001",
+      "type": "task",
+      "surface_form": "machine learning"
+    },
+    {
+      "id": "task_00161",
+      "type": "task",
+      "surface_form": "property prediction on MatBench benchmarks"
+    },
+    {
+      "id": "task_00186",
+      "type": "task",
+      "surface_form": "Continuous property regression"
+    },
+    {
+      "id": "task_00197",
+      "type": "task",
+      "surface_form": "Transfer‑learning for small‑data properties"
+    },
+    {
+      "id": "task_00242",
+      "type": "task",
+      "surface_form": "Machine‑learning property prediction"
+    },
+    {
+      "id": "task_00338",
+      "type": "task",
+      "surface_form": "ML method benchmarking"
+    },
+    {
+      "id": "task_00349",
+      "type": "task",
+      "surface_form": "Structure-based regression"
+    },
+    {
+      "id": "task_00350",
+      "type": "task",
+      "surface_form": "Composition-only regression"
+    },
+    {
+      "id": "task_00351",
+      "type": "task",
+      "surface_form": "Matbench regression tasks"
+    },
+    {
+      "id": "task_00353",
+      "type": "task",
+      "surface_form": "Composition-only property prediction"
+    },
+    {
+      "id": "task_00357",
+      "type": "task",
+      "surface_form": "machine learning benchmarking"
+    },
+    {
+      "id": "task_00450",
+      "type": "task",
+      "surface_form": "Vicker's hardness estimation"
+    },
+    {
+      "id": "task_00457",
+      "type": "task",
+      "surface_form": "Vicker's hardness prediction"
+    },
+    {
+      "id": "task_00697",
+      "type": "task",
+      "surface_form": "Structural property prediction"
+    },
+    {
+      "id": "task_00698",
+      "type": "task",
+      "surface_form": "Locality testing"
+    },
+    {
+      "id": "task_00706",
+      "type": "task",
+      "surface_form": "machine learning potential training"
+    },
+    {
+      "id": "tech_00038",
+      "type": "technique",
+      "surface_form": "Active learning"
+    },
+    {
+      "id": "tech_00050",
+      "type": "technique",
+      "surface_form": "Softmax classification"
+    },
+    {
+      "id": "tech_00053",
+      "type": "technique",
+      "surface_form": "iterative training"
+    },
+    {
+      "id": "tech_00068",
+      "type": "technique",
+      "surface_form": "k‑fold cross‑validation"
+    },
+    {
+      "id": "tech_00080",
+      "type": "technique",
+      "surface_form": "10‑fold cross‑validation"
+    },
+    {
+      "id": "tech_00275",
+      "type": "technique",
+      "surface_form": "Progressive weighting of loss terms"
+    },
+    {
+      "id": "tech_00278",
+      "type": "technique",
+      "surface_form": "Linear evolution of loss prefactors"
+    },
+    {
+      "id": "tech_00320",
+      "type": "technique",
+      "surface_form": "Iterative queue‑based prediction"
+    },
+    {
+      "id": "tech_00332",
+      "type": "technique",
+      "surface_form": "Transfer learning for new loading conditions"
+    },
+    {
+      "id": "tech_00334",
+      "type": "technique",
+      "surface_form": "Node‑wise regression"
+    },
+    {
+      "id": "tech_00364",
+      "type": "technique",
+      "surface_form": "Deep transfer learning"
+    },
+    {
+      "id": "tech_00377",
+      "type": "technique",
+      "surface_form": "ROC‑AUC and MAE evaluation metrics"
+    },
+    {
+      "id": "tech_00385",
+      "type": "technique",
+      "surface_form": "Decision‑tree regression"
+    },
+    {
+      "id": "tech_00472",
+      "type": "technique",
+      "surface_form": "Nested cross-validation"
+    },
+    {
+      "id": "tech_00476",
+      "type": "technique",
+      "surface_form": "Five-fold nested cross validation"
+    },
+    {
+      "id": "tech_00477",
+      "type": "technique",
+      "surface_form": "Stratified cross validation"
+    },
+    {
+      "id": "tech_00491",
+      "type": "technique",
+      "surface_form": "Nested Cross Validation"
+    },
+    {
+      "id": "tech_00499",
+      "type": "technique",
+      "surface_form": "Grouped cross-validation"
+    },
+    {
+      "id": "tech_00500",
+      "type": "technique",
+      "surface_form": "Leave-one-cluster-out CV"
+    },
+    {
+      "id": "tech_00595",
+      "type": "technique",
+      "surface_form": "iterative retraining cycle"
+    },
+    {
+      "id": "tech_00598",
+      "type": "technique",
+      "surface_form": "Cyclical learning rate schedule"
+    },
+    {
+      "id": "tech_00607",
+      "type": "technique",
+      "surface_form": "Top-N property screening"
+    },
+    {
+      "id": "tech_00621",
+      "type": "technique",
+      "surface_form": "Machine-learning assisted data mining"
+    },
+    {
+      "id": "tech_00694",
+      "type": "technique",
+      "surface_form": "Self-consistent training"
+    },
+    {
+      "id": "tech_00919",
+      "type": "technique",
+      "surface_form": "snapshot extraction at multiple time points"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 6,
+    "component": 15,
+    "dataset": 3,
+    "future_topic": 1,
+    "method": 3,
+    "metric": 1,
+    "problem": 9,
+    "task": 16,
+    "technique": 25
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "learning",
+  "representative_ids": [
+    "task_00001",
+    "task_00161"
+  ]
+}

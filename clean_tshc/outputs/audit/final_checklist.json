@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "checks": {
+    "input_and_temporal_audit": {
+      "status": "PASS",
+      "evidence": [
+        "audit/input_manifest.json",
+        "audit/data_audit.json",
+        "audit/temporal_anomalies.json"
+      ]
+    },
+    "four_snapshots": {
+      "status": "PASS",
+      "evidence": [
+        "snapshots/snapshot_2020.json",
+        "snapshots/snapshot_2022.json",
+        "snapshots/snapshot_2024.json",
+        "snapshots/snapshot_2026.json"
+      ]
+    },
+    "four_primary_hierarchies": {
+      "status": "PASS",
+      "evidence": [
+        "hierarchies/hierarchy_2020.json",
+        "hierarchies/hierarchy_2022.json",
+        "hierarchies/hierarchy_2024.json",
+        "hierarchies/hierarchy_2026.json"
+      ]
+    },
+    "laminarity_budgets_collapse_identities": {
+      "status": "PASS",
+      "evidence": [
+        "audit/acceptance.json"
+      ]
+    },
+    "construction_time_temporal_mechanism": {
+      "status": "PASS",
+      "evidence": [
+        "audit/gates_EFI.json",
+        "tables/temporal_stability.csv"
+      ]
+    },
+    "labels_inputs_heldout_overclaim": {
+      "status": "PASS",
+      "evidence": [
+        "labels/faithfulness.json",
+        "tables/label_faithfulness.csv"
+      ]
+    },
+    "independent_coherence_null_statistics": {
+      "status": "PASS",
+      "evidence": [
+        "audit/evaluation_independence.json",
+        "tables/coherence.csv"
+      ]
+    },
+    "five_seed_perturbation_intervals": {
+      "status": "PASS",
+      "evidence": [
+        "tables/perturbation.csv"
+      ]
+    },
+    "projection_loss_and_sensitivity": {
+      "status": "PASS",
+      "evidence": [
+        "metrics.json",
+        "tables/sensitivity.csv"
+      ]
+    },
+    "benchmark_support_composites_claims": {
+      "status": "PASS",
+      "evidence": [
+        "audit/benchmark_support_audit.json",
+        "audit/claim_alignment.json"
+      ]
+    },
+    "flat_and_hierarchy_raw_conditional_work": {
+      "status": "PASS",
+      "evidence": [
+        "tables/retrieval_summary.csv",
+        "retrieval/per_question.json"
+      ]
+    },
+    "frozen_predictions": {
+      "status": "PASS",
+      "evidence": [
+        "audit/gate_J.json",
+        "retrieval/predictions.json"
+      ]
+    },
+    "clean_reproduction": {
+      "status": "PASS",
+      "evidence": [
+        "audit/execution_complete.json",
+        "audit/gate_K.json"
+      ]
+    },
+    "report_figures": {
+      "status": "PASS",
+      "evidence": [
+        "report.md",
+        "figures/retrieval_work_tradeoff.png"
+      ]
+    }
+  },
+  "tests": {
+    "passed": 24,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "source": "notes/tests.xml"
+  },
+  "notes": "PASS means implemented, executed and audited; it does not mean scientific superiority. No expert validation or external held-out generalization is claimed. See notes/rubric_map.md for T1-T7 and P1-P6 mapping.",
+  "presentation_amendment": "audit/presentation_amendment.json"
+}

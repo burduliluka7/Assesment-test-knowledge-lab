@@ -1,0 +1,1473 @@
+Continue from the CURRENT repository and the completed requirement-aware reranking experiment.
+
+Do not create a parallel retrieval stack.
+
+Inspect and reuse the existing:
+
+- `FrozenH2Candidates`;
+- H2 diffusion candidate generator;
+- `QuestionDecomposition`;
+- `decompose_question`;
+- `candidate_hypothesis`;
+- `CandidateEvidenceIndex`;
+- evidence attribution logic;
+- `RequirementCosineReranker`;
+- CR0/CR1/CR3 implementations;
+- entity groups;
+- resolver;
+- BGE embedding/cache infrastructure;
+- temporal snapshots;
+- oracle evaluator;
+- metric/report infrastructure;
+- existing artifacts and regression tests.
+
+The purpose of this pass is very specific:
+
+```text
+CR1 already shows that requirement-aware scoring works.
+
+The next suspected bottleneck is that each requirement
+is still being scored against evidence selected earlier
+using the whole question.
+
+Instead:
+
+for each candidate × requirement,
+search that candidate's full eligible graph-attached evidence
+specifically for evidence relevant to that requirement.
+```
+
+Do NOT alter H2.
+
+Do NOT add another neural reranker.
+
+Do NOT add hierarchy.
+
+Do NOT tune benchmark-specific rules.
+
+---
+
+# 0. CURRENT VERIFIED STATE
+
+At conservative 2025:
+
+```text
+R3:
+Micro Recall@10 = 4/47
+
+H2:
+Micro Recall@10 = 3/47
+Candidate Recall@100 ≈ .7146
+median gold rank ≈ 66
+
+CR0:
+Micro Recall@10 = 6/47
+median gold rank ≈ 89
+
+CR1:
+Micro Recall@10 = 11/47
+median gold rank ≈ 29
+MRR ≈ .5283
+
+CR3:
+Micro Recall@10 = 10/47
+median gold rank ≈ 53
+```
+
+CR1 is the strongest observed final Type-A ranking result so far.
+
+At 2026 the same direction persists:
+
+```text
+CR0 Micro Recall@10 ≈ .10
+CR1 Micro Recall@10 ≈ .22
+CR1 median rank ≈ 28.5
+```
+
+Therefore:
+
+```text
+KEEP the requirement-decomposition + cosine-scoring idea.
+```
+
+The local NLI experiment is a negative ablation:
+
+```text
+CR2:
+6/47 at 2025
+
+CR4:
+5/47 at 2025
+```
+
+and it creates many zero-score ties / technical contradictions.
+
+Do not spend this pass trying to rescue CR2.
+
+Keep CR2/CR4 only as archived experimental results.
+
+---
+
+# 1. FREEZE H2 COMPLETELY
+
+Do not change:
+
+```text
+Theta
+alpha
+M
+mention propagation
+entity grouping
+target resolver
+aliases
+candidate eligibility
+relation weights
+temporal filtering
+graph construction
+candidate pool ordering
+```
+
+H2 top100/top200 must remain exactly identical to the previous experiment.
+
+Add regression checks against archived H2 artifacts.
+
+If H2 changes, stop and diagnose.
+
+---
+
+# 2. KEEP CR1 LOGIC AS THE REFERENCE
+
+Do not rewrite the current CR1 in place.
+
+Preserve:
+
+```text
+CR1_current
+```
+
+as an exact historical reference.
+
+Add the new method as a new stage.
+
+Suggested name:
+
+```text
+CR6_requirement_conditioned_evidence
+```
+
+or another clearly distinct name.
+
+Historical CR0/CR1/CR3 metrics must remain reproducible.
+
+---
+
+# 3. CURRENT PROBLEM TO FIX
+
+The current CR1 does:
+
+```text
+question
+    ↓
+old whole-question evidence selection
+    ↓
+small capped candidate evidence bundle
+    ↓
+question decomposition
+    ↓
+score each requirement against that already-selected bundle
+```
+
+This means evidence relevant to one requirement may have been discarded before requirement scoring even begins.
+
+Example conceptual failure:
+
+```text
+Candidate = MACE
+
+full graph evidence contains:
+
+claim A:
+accuracy close to DFT
+
+claim B:
+computational efficiency
+
+claim C:
+very-large-system scalability
+```
+
+but whole-question evidence selection keeps only:
+
+```text
+claim A
+```
+
+Then CR1 asks:
+
+```text
+accuracy?
+efficiency?
+scale?
+```
+
+against the same claim A.
+
+That prevents requirement-aware scoring from realizing its full potential.
+
+The new architecture should be:
+
+```text
+question
+    ↓
+generic question decomposition
+    ↓
+H2 top100 candidates
+    ↓
+for each candidate:
+    for each task/requirement:
+        search candidate's full eligible evidence pool
+        specifically for that component
+    ↓
+attribute evidence
+    ↓
+aggregate per-requirement support
+    ↓
+rank candidates
+```
+
+---
+
+# 4. BUILD A FULL CANDIDATE EVIDENCE POOL
+
+Introduce a distinction between:
+
+```text
+candidate evidence POOL
+```
+
+and:
+
+```text
+selected evidence for a requirement
+```
+
+The candidate evidence pool should be built graph-only and should contain all reasonable local evidence before semantic requirement filtering.
+
+Implement something conceptually like:
+
+```python
+build_candidate_evidence_pool(
+    candidate_group,
+    graph,
+    snapshot,
+) -> CandidateEvidencePool
+```
+
+The pool may include:
+
+```text
+direct claims
+safe explicit-name claims
+direct tasks
+direct problems
+direct techniques
+direct components
+direct datasets
+direct metrics
+presenting article titles
+relevant provenance titles
+short graph-supported claim/task/problem evidence
+```
+
+Do NOT include arbitrary whole-article claim expansion.
+
+Do NOT include all graph neighbors without restriction.
+
+Preserve provenance and attribution metadata.
+
+---
+
+# 5. EVIDENCE POOL MUST BE QUERY-INDEPENDENT
+
+The candidate evidence pool itself should NOT depend on:
+
+```text
+current question
+current requirements
+gold answers
+benchmark labels
+```
+
+Build/cache it per:
+
+```text
+candidate × snapshot
+```
+
+Then perform query/requirement-specific selection afterward.
+
+This separates:
+
+```text
+what evidence exists for candidate C?
+```
+
+from:
+
+```text
+which evidence is relevant to requirement R?
+```
+
+This is important architecturally.
+
+---
+
+# 6. POOL SIZE / SAFETY
+
+Do not cap the candidate pool as aggressively as the previous selected bundle.
+
+However, do not allow pathological graph explosions.
+
+Use generic structural limits.
+
+Possible fixed pool caps:
+
+```text
+direct claims: up to 20
+explicit-name claims: up to 20
+tasks/problems: up to 15 each combined
+technical relations: up to 15
+datasets/metrics: up to 10
+titles: up to 10
+short attributed paths: up to 10
+```
+
+These are suggested defaults only.
+
+Use conservative fixed values before evaluating.
+
+Do NOT tune caps against Q1-Q14.
+
+Deduplicate normalized identical texts.
+
+---
+
+# 7. PRESERVE ATTRIBUTION METADATA IN THE POOL
+
+Every evidence item must retain something like:
+
+```python
+EvidenceItem(
+    node_id=...,
+    text=...,
+    node_type=...,
+    source_relation=...,
+    attribution=...,
+    provenance=...,
+    article_ids=...,
+    path=...,
+    directness=...,
+)
+```
+
+Reuse the existing attribution categories where possible:
+
+```text
+DIRECT_SUBJECT_SUPPORT
+EXPLICIT_NAME_SUPPORT
+COMPARISON_WINNER
+COMPARISON_BASELINE
+MENTION_ONLY
+INDIRECT_GRAPH_NEIGHBOR
+UNCERTAIN
+```
+
+Do not throw this metadata away before requirement scoring.
+
+---
+
+# 8. REQUIREMENT-CONDITIONED EVIDENCE SELECTION
+
+For every:
+
+```text
+candidate c
+component r
+```
+
+where `r` is:
+
+```text
+core_task
+requirement
+exclusion
+```
+
+retrieve the best evidence from the FULL candidate evidence pool.
+
+Implement conceptually:
+
+```python
+select_evidence_for_component(
+    component_text,
+    candidate,
+    evidence_pool,
+    top_k,
+) -> list[EvidenceItem]
+```
+
+Use normalized BGE cosine as the semantic selector.
+
+Important:
+
+```text
+different requirements are allowed
+and expected
+to select different evidence.
+```
+
+This is the core new experiment.
+
+---
+
+# 9. REQUIREMENT QUERY TEXT
+
+Use the component itself as the primary evidence query.
+
+Examples:
+
+```text
+core_task:
+"predicting interatomic potentials"
+```
+
+search candidate evidence for that task.
+
+Requirement:
+
+```text
+"computational efficiency"
+```
+
+search candidate evidence for that phrase.
+
+Requirement:
+
+```text
+"systems of millions of atoms"
+```
+
+search candidate evidence for that condition.
+
+Do not always embed the full original question.
+
+Optionally construct a generic contextual query such as:
+
+```text
+"<core task> ; <requirement>"
+```
+
+for requirement selection.
+
+But if you compare alternatives:
+
+```text
+requirement only
+vs
+core + requirement
+```
+
+this must be a declared structural ablation, not tuned post hoc.
+
+Prefer one fixed rule for the main experiment.
+
+---
+
+# 10. TOP-K EVIDENCE PER REQUIREMENT
+
+Select a small number of evidence items per component.
+
+Suggested fixed default:
+
+```text
+top 3 evidence items per positive component
+```
+
+For exclusions:
+
+```text
+top 3 possible violation items
+```
+
+Do not average every evidence item in the pool.
+
+Export:
+
+```text
+best evidence
+second-best
+third-best
+```
+
+for diagnostics.
+
+---
+
+# 11. ATTRIBUTION MUST AFFECT SELECTION
+
+Do not simply choose:
+
+```text
+highest cosine
+```
+
+regardless of attribution.
+
+Use:
+
+```text
+effective_selection_score
+=
+cosine
+× attribution_weight
+```
+
+Reuse the current fixed attribution policy where possible.
+
+For example:
+
+```text
+DIRECT_SUBJECT_SUPPORT      1.0
+COMPARISON_WINNER           1.0
+EXPLICIT_NAME_SUPPORT       0.8
+MENTION_ONLY                0.15
+UNCERTAIN                   0.25
+COMPARISON_BASELINE         0.0
+INDIRECT_GRAPH_NEIGHBOR     0.0
+```
+
+Do not retune these weights in this pass.
+
+The key experiment is new evidence retrieval, not new attribution weights.
+
+---
+
+# 12. PATH EVIDENCE POLICY
+
+Unnamed path-source evidence remains:
+
+```text
+diagnostic / evidence discovery only
+```
+
+unless the candidate can be explicitly attributed in the text.
+
+A high-similarity neighboring claim must not become direct candidate support merely because the graph path ends at the candidate.
+
+Preserve existing path diagnostics.
+
+---
+
+# 13. IMPROVE QUESTION DECOMPOSITION ONLY FOR GENERIC STRUCTURAL BUGS
+
+Do not replace the parser wholesale.
+
+The current parser is already useful.
+
+Fix only generic structural issues revealed by the report.
+
+Two important ones:
+
+```text
+A. answer-head qualifiers can be lost
+
+B. conjunctions can fragment incorrectly
+```
+
+---
+
+# 14. ADD ANSWER-HEAD QUALIFIERS
+
+Extend `QuestionDecomposition` to include:
+
+```python
+answer_qualifiers: list[str]
+```
+
+These are modifiers describing the requested answer class.
+
+Example:
+
+```text
+"What are the leading ML-based interatomic potential methods
+for large-scale atomistic simulation?"
+```
+
+Current:
+
+```text
+answer_type:
+method
+
+core_task:
+large-scale atomistic simulation
+```
+
+Desired generic structure:
+
+```text
+answer_type:
+method
+
+answer_qualifiers:
+- ML-based
+- interatomic potential
+
+core_task:
+large-scale atomistic simulation
+```
+
+Do not hard-code these words.
+
+Extract modifiers generically from the noun phrase describing the requested answer.
+
+---
+
+# 15. ANSWER QUALIFIERS PARTICIPATE IN SCORING
+
+Treat answer qualifiers as positive components.
+
+Conceptually:
+
+```text
+candidate must:
+- belong to requested semantic class
+- match answer qualifiers
+- satisfy task
+- satisfy explicit requirements
+```
+
+Do not use answer qualifiers as hard filters.
+
+Score them similarly to requirements.
+
+---
+
+# 16. FIX GENERIC CONJUNCTION PRESERVATION
+
+The current parser can split:
+
+```text
+crystalline symmetries
+and long-range elastic interactions must be preserved
+```
+
+into malformed pieces.
+
+Improve generic handling so shared predicates can apply to coordinated noun phrases.
+
+Conceptually:
+
+```text
+"X and Y must be preserved"
+```
+
+should become either:
+
+```text
+requirement:
+"X must be preserved"
+
+requirement:
+"Y must be preserved"
+```
+
+or:
+
+```text
+requirement:
+"X and Y must be preserved"
+```
+
+depending on whichever generic representation is simpler and safer.
+
+Do not add domain-specific terms.
+
+Add unrelated synthetic grammar tests.
+
+---
+
+# 17. DO NOT ADD A LARGE NLP SYSTEM
+
+Keep decomposition conservative.
+
+Do not add:
+
+```text
+LLM dependency
+remote parser
+domain ontology
+materials-science taxonomy
+answer-specific templates
+```
+
+The goal is a small generic structural improvement.
+
+---
+
+# 18. NEW SCORER
+
+Implement:
+
+```text
+CR6_requirement_conditioned_evidence
+```
+
+For each candidate:
+
+1. obtain frozen H2 rank;
+2. obtain generic decomposition;
+3. obtain cached full candidate evidence pool;
+4. for each:
+   - answer qualifier;
+   - core task;
+   - requirement;
+   - exclusion;
+   independently select candidate evidence;
+5. apply attribution;
+6. calculate component support;
+7. aggregate exactly using the current CR1 aggregation unless there is a correctness bug.
+
+Do NOT change both evidence selection and aggregation simultaneously unless required.
+
+The main experiment is:
+
+```text
+same CR1 scorer
++
+better requirement-specific evidence access
+```
+
+---
+
+# 19. KEEP CR1 AGGREGATION FROZEN
+
+Keep:
+
+```text
+core gate
+geometric mean
+exclusion penalty
+soft answer-type prior
+```
+
+as currently implemented.
+
+Do not retune thresholds/weights.
+
+This lets us answer a clean question:
+
+```text
+Did requirement-conditioned evidence selection
+improve over current CR1?
+```
+
+---
+
+# 20. OPTIONAL CR7 FUSION
+
+If CR6 is run successfully, add:
+
+```text
+CR7 = H2 + CR6 via existing RRF60
+```
+
+This is analogous to CR3.
+
+Do not change RRF parameters.
+
+Purpose:
+
+```text
+measure whether H2 fusion preserves prior good hits
+while retaining CR6 gains.
+```
+
+---
+
+# 21. DO NOT USE NLI IN THE NEW MAIN PATH
+
+CR2/CR4 remain archived ablations.
+
+Do not:
+
+```text
+call NLI during CR6
+change NLI templates
+swap NLI model
+fine-tune NLI
+```
+
+in this pass.
+
+The previous experiment already established that this pinned model/template configuration is not useful as the default.
+
+---
+
+# 22. REQUIRED ABLATIONS
+
+Primary 2025:
+
+```text
+H2
+CR0
+CR1
+CR3
+CR6
+CR7
+```
+
+Diagnostic:
+
+```text
+CR6-200
+```
+
+Keep existing CR2/CR4 table rows in historical comparison if convenient, but do not rerun them unless required for reproducibility.
+
+Primary candidate K:
+
+```text
+100
+```
+
+Diagnostic:
+
+```text
+200
+```
+
+---
+
+# 23. MEASURE EVIDENCE-SELECTION DIFFERENCES
+
+For every gold target in the H2 pool, compare:
+
+```text
+old CR1 selected evidence
+vs
+new CR6 selected evidence
+```
+
+per requirement.
+
+Export whether the selected evidence:
+
+```text
+same
+changed
+new evidence has higher component similarity
+new evidence has stronger attribution
+new evidence comes from previously unselected candidate evidence
+```
+
+This is critical.
+
+We need to prove CR6 is actually using previously hidden requirement-specific evidence.
+
+---
+
+# 24. MEASURE COMPONENT-LEVEL CHANGES
+
+For every candidate/requirement pair record:
+
+```text
+old CR1 support
+new CR6 support
+support delta
+
+old evidence node
+new evidence node
+
+old attribution
+new attribution
+```
+
+For gold candidates summarize:
+
+```text
+number of requirements improved
+number unchanged
+number worsened
+```
+
+Do the same for non-gold candidates evaluation-only.
+
+---
+
+# 25. IMPORTANT DIAGNOSTIC: MACE Q1
+
+Do NOT special-case MACE.
+
+Post hoc, inspect Q1/MACE.
+
+Previously:
+
+```text
+accuracy
+efficiency
+million-atom scale
+```
+
+were largely scored against the same accuracy-focused evidence.
+
+Check whether CR6 now independently finds:
+
+```text
+accuracy-specific evidence
+efficiency-specific evidence
+scale-specific evidence
+```
+
+if such evidence exists in the candidate's graph-attached pool.
+
+If it does not exist, report that honestly.
+
+Do not manufacture evidence.
+
+---
+
+# 26. IMPORTANT DIAGNOSTIC: Q12
+
+Check whether the new:
+
+```text
+answer_qualifiers
+```
+
+representation improves semantic discrimination between:
+
+```text
+general large-scale atomistic simulation entities
+```
+
+and:
+
+```text
+ML-based interatomic potential methods
+```
+
+Do not hard-code MLIP terminology.
+
+The parser should derive the qualifiers generically.
+
+---
+
+# 27. RECHECK SCHNET ATTRIBUTION BUG GENERICALLY
+
+The report identified a generic attribution error where:
+
+```text
+"Including force information..."
+```
+
+could be misinterpreted because of the word:
+
+```text
+including
+```
+
+Do not patch that exact sentence.
+
+Inspect whether the attribution code incorrectly interprets:
+
+```text
+participial "including"
+```
+
+as list/comparison structure in general.
+
+If this is a generic bug, fix it and add generic unrelated tests.
+
+Log the change separately.
+
+If not clearly generic, leave it unchanged and report the limitation.
+
+---
+
+# 28. ORACLE REMAINS UNCHANGED
+
+Do not alter oracle semantics.
+
+At 2025 K100:
+
+```text
+oracle = 31/47
+```
+
+The main quality comparison becomes:
+
+```text
+CR1  = 11/47
+CR6  = ?
+CR7  = ?
+oracle = 31/47
+```
+
+Report the remaining gap.
+
+---
+
+# 29. RANK-MOVEMENT ANALYSIS
+
+For every canonical target export:
+
+```text
+R3
+H2
+CR0
+CR1
+CR3
+CR6
+CR7
+```
+
+Report:
+
+```text
+entered top10
+left top10
+improved
+unchanged
+worsened
+```
+
+Split by original H2 bins:
+
+```text
+1-10
+11-50
+51-100
+>100
+```
+
+---
+
+# 30. PROTECT EXISTING GOOD RESULTS
+
+Current CR1 loses some previous good H2/CR0 results.
+
+Measure whether CR7 improves retention.
+
+Report:
+
+```text
+H2 top10 preserved / lost
+CR0 top10 preserved / lost
+CR1 top10 preserved / lost
+```
+
+Do not judge only by aggregate Recall@10.
+
+---
+
+# 31. FAILURE CATEGORIES
+
+Update failure diagnostics to distinguish:
+
+```text
+NOT_IN_H2_100
+
+NO_CANDIDATE_EVIDENCE_POOL
+
+NO_ATTRIBUTABLE_EVIDENCE
+
+REQUIREMENT_EVIDENCE_NOT_FOUND
+
+PARTIAL_REQUIREMENT_SUPPORT
+
+ANSWER_QUALIFIER_FAILURE
+
+DECOMPOSITION_FAILURE
+
+ATTRIBUTION_FAILURE
+
+SUPPORTED_BUT_RANKED_BELOW_10
+
+RETRIEVED_TOP10
+```
+
+Do not automatically call a candidate wrong merely because it is absent from the answer key.
+
+---
+
+# 32. TEST WHETHER FULLER EVIDENCE HELPS GOLD MORE THAN NON-GOLD
+
+Evaluation-only diagnostic:
+
+Compare CR1 → CR6 component-support change for:
+
+```text
+gold candidates
+non-gold candidates
+```
+
+Report:
+
+```text
+mean support delta
+median support delta
+requirements newly supported
+requirements losing support
+```
+
+This helps detect whether broader candidate pools merely introduce more generic noise.
+
+---
+
+# 33. GENERIC NOISE CONTROL
+
+Requirement-conditioned retrieval may accidentally reward every candidate because larger evidence pools provide more opportunities for accidental cosine matches.
+
+Therefore add diagnostics for:
+
+```text
+candidate evidence pool size
+maximum component cosine vs pool size
+degree vs CR6 score
+number of candidate evidence items vs CR6 score
+```
+
+Report Spearman correlations.
+
+If very large evidence pools systematically dominate, say so.
+
+Do not silently add a penalty after seeing results.
+
+---
+
+# 34. OPTIONAL SIMPLE NULL CONTROL
+
+If inexpensive, add:
+
+```text
+CR6_shuffled_requirement
+```
+
+where requirement-to-evidence scores are shuffled within a candidate pool or evidence texts are randomly permuted across components while preserving pool size.
+
+This is diagnostic only.
+
+Do not spend significant implementation effort if it complicates the pass.
+
+The goal would be to confirm that gains come from component/evidence alignment rather than simply having a larger evidence pool.
+
+---
+
+# 35. PERFORMANCE
+
+Cache:
+
+```text
+candidate evidence pools
+candidate evidence embeddings
+component embeddings
+```
+
+Do not re-encode identical evidence for every requirement.
+
+Report:
+
+```text
+offline pool construction
+new component dot products
+cached reuse
+per-query reranking time
+```
+
+Do not compare local wall time as a precise serving benchmark.
+
+---
+
+# 36. TESTS
+
+Add tests for at least:
+
+```text
+1. H2 rankings unchanged
+
+2. CR1 unchanged
+
+3. candidate evidence pool is query-independent
+
+4. evidence pool contains more items than prior capped bundle where available
+
+5. duplicate evidence removed
+
+6. temporal cutoff enforced in evidence pools
+
+7. ground truth never used in pool construction
+
+8. requirement A and requirement B can select different evidence
+
+9. answer qualifiers extracted generically
+
+10. answer qualifiers enter support scoring
+
+11. generic conjunction preservation
+
+12. no benchmark-specific Q IDs in production code
+
+13. no benchmark answer names in production rules
+
+14. comparison baseline remains zero support
+
+15. mention/path-only evidence remains discounted
+
+16. CR6 uses same aggregation as CR1
+
+17. CR7 deterministic RRF
+
+18. candidate K100 preserved
+
+19. K200 diagnostic preserved
+
+20. oracle unchanged
+
+21. Type B unchanged
+
+22. historical reports/artifacts unchanged
+
+23. ground-truth perturbation does not change production scores
+
+24. full previous test suite still passes
+```
+
+Use unrelated synthetic text for grammar/evidence-selection tests where possible.
+
+---
+
+# 37. REQUIRED ARTIFACTS
+
+Generate:
+
+```text
+artifacts/evaluation/conditioned_evidence_results.json
+
+artifacts/evaluation/candidate_evidence_pools.json
+
+artifacts/evaluation/requirement_evidence_selection.json
+
+artifacts/evaluation/evidence_selection_delta.json
+
+artifacts/evaluation/conditioned_ranks_per_target.json
+
+artifacts/evaluation/conditioned_failure_analysis.json
+
+artifacts/evaluation/conditioned_evidence_tests.xml
+```
+
+Add report:
+
+```text
+artifacts/evaluation/conditioned_evidence.md
+```
+
+Do not overwrite previous reports.
+
+---
+
+# 38. REQUIRED REPORT EXAMPLES
+
+Include actual examples of:
+
+```text
+A. different requirements select genuinely different evidence
+
+B. previously hidden evidence moves a gold target upward
+
+C. expanded evidence creates a false/generic boost
+
+D. candidate still lacks evidence for one requirement
+
+E. answer-head qualifier improves discrimination
+
+F. CR7 preserves a good H2 result that CR6 would demote
+```
+
+Use actual graph evidence, not invented examples.
+
+---
+
+# 39. SUCCESS CRITERION
+
+Do not define success using a predetermined target score.
+
+Scientific success means demonstrating that:
+
+```text
+requirement-conditioned evidence retrieval
+finds evidence that CR1 previously discarded
+
+and
+
+that evidence improves final candidate discrimination
+without changing H2 or using answer-specific logic.
+```
+
+Metrics of interest:
+
+```text
+Micro Recall@10
+Macro Recall@10
+MRR
+median gold rank
+H2 top10 preservation
+CR1 top10 preservation
+oracle gap
+```
+
+---
+
+# 40. STOP RULE
+
+If CR6 does not improve over CR1:
+
+Do NOT add another neural model.
+
+Diagnose whether:
+
+```text
+candidate graph evidence genuinely lacks requirement-specific statements
+
+larger evidence pools add too much generic noise
+
+question decomposition remains incomplete
+
+attribution suppresses useful evidence
+
+or aggregation is now the main bottleneck
+```
+
+Do not touch H2 in response.
+
+Do not implement hierarchy.
+
+---
+
+# 41. HIERARCHY STILL DEFERRED
+
+Do not implement:
+
+```text
+coarse diffusion
+hierarchical retrieval
+cluster pruning
+hierarchy search
+multilevel candidate generation
+```
+
+in this pass.
+
+Only revisit hierarchy once fine-level top-k ranking quality is credible enough that approximation/acceleration is meaningful.
+
+---
+
+# 42. FINAL DECISION QUESTIONS
+
+At the end explicitly answer:
+
+```text
+1. Did CR6 beat CR1 at Recall@10?
+
+2. Did CR6 improve median gold rank?
+
+3. How many requirements selected different evidence than CR1?
+
+4. For gold targets, how often did the new evidence improve support?
+
+5. Did answer-head qualifiers help?
+
+6. Did expanded pools create evidence-size bias?
+
+7. Did CR6 recover additional H2 rank 11-100 targets?
+
+8. Did CR6 lose existing CR1/H2 top10 targets?
+
+9. Did CR7 provide a better retention/recall tradeoff?
+
+10. How much of the H2 oracle gap remains?
+
+11. Are remaining failures primarily:
+    - missing graph evidence,
+    - decomposition,
+    - attribution,
+    - or ranking?
+
+12. Is fine-level ranking now good enough to justify
+    hierarchical approximation as the next experiment?
+```
+
+---
+
+# 43. FINAL CODEX RESPONSE
+
+When finished provide:
+
+```text
+files changed
+
+classes/functions added
+
+evidence-pool construction method
+
+question-decomposition changes
+
+generic attribution fixes
+
+tests added
+
+full test-suite result
+
+exact reproduction commands
+
+H2 / CR0 / CR1 / CR3 / CR6 / CR7 table
+
+2025 top10 comparison
+
+2026 sensitivity comparison
+
+oracle gap before/after
+
+per-target movement
+
+requirement evidence-selection changes
+
+answer-qualifier diagnostics
+
+pool-size/noise diagnostics
+
+examples of genuine requirement-specific evidence
+
+examples where CR6 fails
+
+remaining bottleneck
+
+whether hierarchy should finally be attempted
+```
+
+The central hypothesis is:
+
+```text
+Requirement-aware scoring already improves retrieval.
+
+Its next limitation is that requirements are scored against
+evidence selected earlier using the whole question.
+
+Selecting evidence independently for each candidate × requirement
+from the candidate's full graph-attached evidence pool should reveal
+different supporting claims for different conditions and improve
+final answer discrimination without changing candidate generation.
+```
+
+Test exactly that hypothesis.

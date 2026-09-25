@@ -1,0 +1,556 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "comp_00033",
+      "type": "component",
+      "surface_form": "Automatic differentiation via JAX"
+    },
+    {
+      "id": "comp_00107",
+      "type": "component",
+      "surface_form": "Symmetry-adapted order parameters η0–η6"
+    },
+    {
+      "id": "comp_00110",
+      "type": "component",
+      "surface_form": "Symmetry‑respecting polynomial features via Reynolds operator"
+    },
+    {
+      "id": "comp_00111",
+      "type": "component",
+      "surface_form": "Coupling of IDNN free‑energy with phase‑field equations"
+    },
+    {
+      "id": "comp_00112",
+      "type": "component",
+      "surface_form": "Large‑scale DFT calculation of anti‑phase‑boundary energy"
+    },
+    {
+      "id": "comp_00113",
+      "type": "component",
+      "surface_form": "DFT calculations with optB88 vdW functional"
+    },
+    {
+      "id": "comp_00115",
+      "type": "component",
+      "surface_form": "Monte Carlo sampling with bias potentials"
+    },
+    {
+      "id": "comp_00116",
+      "type": "component",
+      "surface_form": "Symmetry‑adapted order parameters and invariant features"
+    },
+    {
+      "id": "comp_00117",
+      "type": "component",
+      "surface_form": "Integrable Deep Neural Network (IDNN) free‑energy representation"
+    },
+    {
+      "id": "comp_00118",
+      "type": "component",
+      "surface_form": "Active learning workflow with Billiard Walk sampling"
+    },
+    {
+      "id": "comp_00120",
+      "type": "component",
+      "surface_form": "Finite‑element implementation"
+    },
+    {
+      "id": "comp_00121",
+      "type": "component",
+      "surface_form": "Exploration sampling"
+    },
+    {
+      "id": "comp_00122",
+      "type": "component",
+      "surface_form": "Exploitation sampling"
+    },
+    {
+      "id": "comp_00123",
+      "type": "component",
+      "surface_form": "Billiard Walk sampler"
+    },
+    {
+      "id": "comp_00124",
+      "type": "component",
+      "surface_form": "IDNN surrogate model"
+    },
+    {
+      "id": "comp_00126",
+      "type": "component",
+      "surface_form": "Diffusivity surrogate function"
+    },
+    {
+      "id": "comp_00127",
+      "type": "component",
+      "surface_form": "Adaptive meshing and time stepping"
+    },
+    {
+      "id": "comp_00129",
+      "type": "component",
+      "surface_form": "Gradient‑parameter inference via grid search"
+    },
+    {
+      "id": "comp_00131",
+      "type": "component",
+      "surface_form": "Large‑scale interface‑energy DFT calculations"
+    },
+    {
+      "id": "comp_00132",
+      "type": "component",
+      "surface_form": "Sparse cluster‑expansion surrogate"
+    },
+    {
+      "id": "comp_00133",
+      "type": "component",
+      "surface_form": "Symmetry‑adapted order‑parameter generation"
+    },
+    {
+      "id": "comp_00135",
+      "type": "component",
+      "surface_form": "Integrable Deep Neural Network (IDNN) free‑energy model"
+    },
+    {
+      "id": "comp_00136",
+      "type": "component",
+      "surface_form": "Active‑learning sampling workflow"
+    },
+    {
+      "id": "comp_00235",
+      "type": "component",
+      "surface_form": "Local atomic reference frame"
+    },
+    {
+      "id": "comp_00236",
+      "type": "component",
+      "surface_form": "Sorted neighbor list"
+    },
+    {
+      "id": "comp_00237",
+      "type": "component",
+      "surface_form": "Input representation D_ij"
+    },
+    {
+      "id": "comp_00238",
+      "type": "component",
+      "surface_form": "Feed‑forward deep neural network"
+    },
+    {
+      "id": "comp_00246",
+      "type": "component",
+      "surface_form": "Integration with i‑PI for NPT simulations"
+    },
+    {
+      "id": "comp_00268",
+      "type": "component",
+      "surface_form": "QR‑based orthonormal reparameterization"
+    },
+    {
+      "id": "comp_00269",
+      "type": "component",
+      "surface_form": "Stochastic quadrature gradient estimation"
+    },
+    {
+      "id": "comp_00270",
+      "type": "component",
+      "surface_form": "Neural local scaling transformation"
+    },
+    {
+      "id": "comp_00271",
+      "type": "component",
+      "surface_form": "Differentiable energy functional modules"
+    },
+    {
+      "id": "comp_00272",
+      "type": "component",
+      "surface_form": "Adam optimizer with piecewise learning‑rate decay"
+    },
+    {
+      "id": "comp_00274",
+      "type": "component",
+      "surface_form": "Neural basis with local scaling transformation"
+    },
+    {
+      "id": "comp_00275",
+      "type": "component",
+      "surface_form": "QR‑based orthogonal constraint enforcement"
+    },
+    {
+      "id": "comp_00276",
+      "type": "component",
+      "surface_form": "Mini‑batch SGD for KS‑DFT"
+    },
+    {
+      "id": "comp_00278",
+      "type": "component",
+      "surface_form": "SGD‑based SCF optimizer"
+    },
+    {
+      "id": "comp_00279",
+      "type": "component",
+      "surface_form": "JaxSCF module"
+    },
+    {
+      "id": "comp_00280",
+      "type": "component",
+      "surface_form": "GPU‑accelerated tensor backend"
+    },
+    {
+      "id": "comp_00310",
+      "type": "component",
+      "surface_form": "Cutoff‑based edge connectivity"
+    },
+    {
+      "id": "comp_00311",
+      "type": "component",
+      "surface_form": "End‑to‑end GNN predictor"
+    },
+    {
+      "id": "comp_00312",
+      "type": "component",
+      "surface_form": "Boundary‑condition encoding"
+    },
+    {
+      "id": "comp_00313",
+      "type": "component",
+      "surface_form": "Genetic‑algorithm‑driven inverse design"
+    },
+    {
+      "id": "comp_00315",
+      "type": "component",
+      "surface_form": "GA optimizer"
+    },
+    {
+      "id": "comp_00316",
+      "type": "component",
+      "surface_form": "Stress‑concentration objective"
+    },
+    {
+      "id": "comp_00317",
+      "type": "component",
+      "surface_form": "Binary hole‑site representation"
+    },
+    {
+      "id": "comp_00318",
+      "type": "component",
+      "surface_form": "Brute‑force screening module"
+    },
+    {
+      "id": "comp_00319",
+      "type": "component",
+      "surface_form": "PNA-based GNN predictor"
+    },
+    {
+      "id": "comp_00320",
+      "type": "component",
+      "surface_form": "Alternative GNN backbones"
+    },
+    {
+      "id": "comp_00321",
+      "type": "component",
+      "surface_form": "Dropout regularization layers"
+    },
+    {
+      "id": "comp_00323",
+      "type": "component",
+      "surface_form": "Stress‑field surrogate objective"
+    },
+    {
+      "id": "comp_00324",
+      "type": "component",
+      "surface_form": "NEMD ground‑truth evaluator"
+    },
+    {
+      "id": "comp_00589",
+      "type": "component",
+      "surface_form": "GNoME"
+    },
+    {
+      "id": "comp_00590",
+      "type": "component",
+      "surface_form": "Symmetry-aware partial substitutions"
+    },
+    {
+      "id": "comp_00591",
+      "type": "component",
+      "surface_form": "Volume-based test-time augmentation"
+    },
+    {
+      "id": "comp_00593",
+      "type": "component",
+      "surface_form": "Shallow MLPs with swish nonlinearities"
+    },
+    {
+      "id": "comp_00594",
+      "type": "component",
+      "surface_form": "GNoME pretrained potentials"
+    },
+    {
+      "id": "comp_00595",
+      "type": "component",
+      "surface_form": "Zero-shot GNoME potential"
+    },
+    {
+      "id": "comp_00596",
+      "type": "component",
+      "surface_form": "GNoME models"
+    },
+    {
+      "id": "comp_00599",
+      "type": "component",
+      "surface_form": "SAPS"
+    },
+    {
+      "id": "comp_00601",
+      "type": "component",
+      "surface_form": "Graph neural network for structural models"
+    },
+    {
+      "id": "comp_00602",
+      "type": "component",
+      "surface_form": "Graph neural network for compositional models"
+    },
+    {
+      "id": "comp_00603",
+      "type": "component",
+      "surface_form": "Gaussian featurizer for edge embedding"
+    },
+    {
+      "id": "comp_00604",
+      "type": "component",
+      "surface_form": "Modified probabilistic substitution model"
+    },
+    {
+      "id": "comp_00606",
+      "type": "component",
+      "surface_form": "Deep ensemble of graph networks"
+    },
+    {
+      "id": "comp_00607",
+      "type": "component",
+      "surface_form": "Isotropic lattice scaling augmentation"
+    },
+    {
+      "id": "comp_00608",
+      "type": "component",
+      "surface_form": "Composition-based deterministic hashing"
+    },
+    {
+      "id": "comp_00609",
+      "type": "component",
+      "surface_form": "Cluster-based structure reduction"
+    },
+    {
+      "id": "comp_00610",
+      "type": "component",
+      "surface_form": "Minimum reduction aggregation"
+    },
+    {
+      "id": "comp_00611",
+      "type": "component",
+      "surface_form": "Five-layer equivariant graph neural network"
+    },
+    {
+      "id": "comp_00614",
+      "type": "component",
+      "surface_form": "Bessel function basis"
+    },
+    {
+      "id": "comp_00618",
+      "type": "component",
+      "surface_form": "One-hot chemical species encoding"
+    },
+    {
+      "id": "comp_00622",
+      "type": "component",
+      "surface_form": "GNN interatomic potentials"
+    },
+    {
+      "id": "comp_00624",
+      "type": "component",
+      "surface_form": "Deep neural network potential energy surface"
+    },
+    {
+      "id": "comp_00625",
+      "type": "component",
+      "surface_form": "Iterative self-consistent training protocol"
+    },
+    {
+      "id": "comp_00626",
+      "type": "component",
+      "surface_form": "Temperature ramping scheme"
+    },
+    {
+      "id": "comp_00627",
+      "type": "component",
+      "surface_form": "Training set cleaning pipeline"
+    },
+    {
+      "id": "comp_00629",
+      "type": "component",
+      "surface_form": "virial in loss function"
+    },
+    {
+      "id": "comp_00630",
+      "type": "component",
+      "surface_form": "active learning workflow"
+    },
+    {
+      "id": "comp_00631",
+      "type": "component",
+      "surface_form": "uncorrelated snapshots selection"
+    },
+    {
+      "id": "comp_00632",
+      "type": "component",
+      "surface_form": "Iterative training loop workflow"
+    },
+    {
+      "id": "comp_00634",
+      "type": "component",
+      "surface_form": "Maximum bond variation criterion"
+    },
+    {
+      "id": "comp_00635",
+      "type": "component",
+      "surface_form": "NVE simulation cell"
+    },
+    {
+      "id": "comp_00636",
+      "type": "component",
+      "surface_form": "NVT thermostat during training"
+    },
+    {
+      "id": "comp_00826",
+      "type": "component",
+      "surface_form": "materials embeddings from elemental properties"
+    },
+    {
+      "id": "comp_00827",
+      "type": "component",
+      "surface_form": "DFT-derived features"
+    },
+    {
+      "id": "comp_00828",
+      "type": "component",
+      "surface_form": "two-step classification-regression model"
+    },
+    {
+      "id": "comp_00829",
+      "type": "component",
+      "surface_form": "symbolic regression models"
+    },
+    {
+      "id": "comp_00831",
+      "type": "component",
+      "surface_form": "Elemental features"
+    },
+    {
+      "id": "comp_00832",
+      "type": "component",
+      "surface_form": "Statistical moment features"
+    },
+    {
+      "id": "comp_00833",
+      "type": "component",
+      "surface_form": "86-feature materials fingerprint"
+    },
+    {
+      "id": "comp_00835",
+      "type": "component",
+      "surface_form": "elastic moduli features"
+    },
+    {
+      "id": "comp_00838",
+      "type": "component",
+      "surface_form": "bond ionicity features"
+    },
+    {
+      "id": "comp_00840",
+      "type": "component",
+      "surface_form": "VS-SISSO symbolic models"
+    },
+    {
+      "id": "comp_00841",
+      "type": "component",
+      "surface_form": "cohesive energy descriptor"
+    },
+    {
+      "id": "comp_00842",
+      "type": "component",
+      "surface_form": "shear modulus descriptor"
+    },
+    {
+      "id": "comp_00843",
+      "type": "component",
+      "surface_form": "statistical elemental property combinations"
+    },
+    {
+      "id": "comp_00844",
+      "type": "component",
+      "surface_form": "Two-step model architecture"
+    },
+    {
+      "id": "comp_00845",
+      "type": "component",
+      "surface_form": "Tree ensemble model"
+    },
+    {
+      "id": "comp_00846",
+      "type": "component",
+      "surface_form": "Material fingerprints"
+    },
+    {
+      "id": "comp_00847",
+      "type": "component",
+      "surface_form": "SHAP analysis module"
+    },
+    {
+      "id": "comp_00849",
+      "type": "component",
+      "surface_form": "Two-cluster separation scheme"
+    },
+    {
+      "id": "comp_00852",
+      "type": "component",
+      "surface_form": "Two-step clustering approach"
+    },
+    {
+      "id": "comp_00853",
+      "type": "component",
+      "surface_form": "Composition-based elemental property weighting"
+    },
+    {
+      "id": "tech_00178",
+      "type": "technique",
+      "surface_form": "Billiard Walk random sampling"
+    },
+    {
+      "id": "tech_00186",
+      "type": "technique",
+      "surface_form": "Grid search for gradient parameters"
+    },
+    {
+      "id": "tech_00187",
+      "type": "technique",
+      "surface_form": "Classical nucleation rate calculation"
+    },
+    {
+      "id": "tech_00688",
+      "type": "technique",
+      "surface_form": "Composition-based hash filtering"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 104,
+    "technique": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "gnome",
+  "representative_ids": [
+    "comp_00129",
+    "comp_00124"
+  ]
+}

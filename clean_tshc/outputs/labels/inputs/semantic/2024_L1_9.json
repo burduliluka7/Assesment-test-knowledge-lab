@@ -1,0 +1,743 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00024",
+      "type": "article",
+      "surface_form": "The Joint Automated Repository for Various Integrated Simulations (JARVIS) for data-driven materials design"
+    },
+    {
+      "id": "arti_00027",
+      "type": "article",
+      "surface_form": "AFLOW: an automatic framework for high-throughput materials discovery"
+    },
+    {
+      "id": "arti_00032",
+      "type": "article",
+      "surface_form": "Commentary: The Materials Project: A materials genome approach to accelerating materials innovation"
+    },
+    {
+      "id": "clai_00009",
+      "type": "claim",
+      "surface_form": "The Materials Project provides an open RESTful API and a high‑level Python library (pymatgen) that enable programmatic querying and analysis of the full dataset."
+    },
+    {
+      "id": "clai_00015",
+      "type": "claim",
+      "surface_form": "The Materials Project aims to reduce the typical 10–20 year timeline for advanced material development by providing large‑scale accurate information, thereby accelerating discovery for clean energy, electronics, and other sectors."
+    },
+    {
+      "id": "clai_00017",
+      "type": "claim",
+      "surface_form": "The Materials Project website receives several hundred unique page views per day and has registered over 4,000 users from academia, government, and industry."
+    },
+    {
+      "id": "clai_00019",
+      "type": "claim",
+      "surface_form": "The open‑source software infrastructure of the Materials Project, including pymatgen, has attracted more than 100 active collaborators worldwide and incorporates community contributions such as FEFF and ABINIT support."
+    },
+    {
+      "id": "clai_00027",
+      "type": "claim",
+      "surface_form": "JARVIS-DFT contains approximately 40,000 materials and about 1 million calculated properties."
+    },
+    {
+      "id": "clai_00034",
+      "type": "claim",
+      "surface_form": "JARVIS‑FF includes data for roughly 1,500 materials and about 110 classical force‑fields."
+    },
+    {
+      "id": "clai_00037",
+      "type": "claim",
+      "surface_form": "JARVIS‑FF automatically computes bulk modulus, defect formation energies, and phonon spectra for each force‑field and compares them with DFT results to assess force‑field quality."
+    },
+    {
+      "id": "clai_00196",
+      "type": "claim",
+      "surface_form": "High‑throughput screening of 188,722 GeNOME crystals with the universal model identifies 21,973 insulators (3,940 direct‑gap) and 5,109 flat‑band materials, nearly doubling the entries in the Materials Flatband Database."
+    },
+    {
+      "id": "clai_00222",
+      "type": "claim",
+      "surface_form": "Following the AFLOW standard enables materials science researchers to reproduce AFLOWLIB consortium results and make direct comparisons of properties between different materials for identifying trends and formulating design rules."
+    },
+    {
+      "id": "clai_00548",
+      "type": "claim",
+      "surface_form": "GNoME discovered crystals correspond to 45,500 novel prototypes, a 5.6x increase from the 8,000 in Materials Project."
+    },
+    {
+      "id": "clai_00549",
+      "type": "claim",
+      "surface_form": "GNoME discovers approximately 52,000 layered materials compared to approximately 1,000 in Materials Project, and finds 528 promising Li-ion conductors, a 25x increase compared to the original study."
+    },
+    {
+      "id": "clai_00550",
+      "type": "claim",
+      "surface_form": "GNoME enables efficient discovery of materials with 4+ unique elements, which have been difficult for previous discovery efforts."
+    },
+    {
+      "id": "clai_00555",
+      "type": "claim",
+      "surface_form": "GNoME discovered 381,000 new stable crystal structures on the convex hull, far exceeding the 13,000 new stable crystals discovered by external research efforts from 2021 to 2023."
+    },
+    {
+      "id": "clai_00556",
+      "type": "claim",
+      "surface_form": "91% of 2,202 new Materials Project compositions added since the snapshot match GNoME database on structure."
+    },
+    {
+      "id": "clai_00669",
+      "type": "claim",
+      "surface_form": "The AFLOW database currently contains approximately 400 experimental prototype structures and several million bcc/fcc/hcp‑derived superstructures."
+    },
+    {
+      "id": "comp_00199",
+      "type": "component",
+      "surface_form": "Pretraining on Materials Project Trajectory dataset"
+    },
+    {
+      "id": "comp_00304",
+      "type": "component",
+      "surface_form": "Materials Project database"
+    },
+    {
+      "id": "comp_00305",
+      "type": "component",
+      "surface_form": "Materials API"
+    },
+    {
+      "id": "comp_00837",
+      "type": "component",
+      "surface_form": "composition-agnostic elemental property averages"
+    },
+    {
+      "id": "comp_00843",
+      "type": "component",
+      "surface_form": "statistical elemental property combinations"
+    },
+    {
+      "id": "comp_00853",
+      "type": "component",
+      "surface_form": "Composition-based elemental property weighting"
+    },
+    {
+      "id": "data_00042",
+      "type": "dataset",
+      "surface_form": "Top 1000 materials"
+    },
+    {
+      "id": "data_00043",
+      "type": "dataset",
+      "surface_form": "Top 1000 oxide materials"
+    },
+    {
+      "id": "data_00061",
+      "type": "dataset",
+      "surface_form": "Materials Project"
+    },
+    {
+      "id": "data_00092",
+      "type": "dataset",
+      "surface_form": "Polycrystalline aluminum bulk"
+    },
+    {
+      "id": "data_00125",
+      "type": "dataset",
+      "surface_form": "complex materials database"
+    },
+    {
+      "id": "data_00126",
+      "type": "dataset",
+      "surface_form": "SiGe alloys"
+    },
+    {
+      "id": "data_00127",
+      "type": "dataset",
+      "surface_form": "FeCoNi alloys"
+    },
+    {
+      "id": "data_00259",
+      "type": "dataset",
+      "surface_form": "Top 1000 materials (any chemistry)"
+    },
+    {
+      "id": "futu_00004",
+      "type": "future_topic",
+      "surface_form": "Use of CGCNN‑derived empirical rules for high‑throughput materials screening"
+    },
+    {
+      "id": "futu_00006",
+      "type": "future_topic",
+      "surface_form": "Cost-effective, data-driven materials design"
+    },
+    {
+      "id": "futu_00007",
+      "type": "future_topic",
+      "surface_form": "Open-source platforms for robust, sophisticated materials analyses"
+    },
+    {
+      "id": "futu_00008",
+      "type": "future_topic",
+      "surface_form": "materials-by-design applications"
+    },
+    {
+      "id": "futu_00009",
+      "type": "future_topic",
+      "surface_form": "Support for a wide variety of other technologically important applications within the data‑driven materials design paradigm"
+    },
+    {
+      "id": "futu_00052",
+      "type": "future_topic",
+      "surface_form": "Materials design across the whole periodic table"
+    },
+    {
+      "id": "futu_00053",
+      "type": "future_topic",
+      "surface_form": "Large electronic‑structure datasets"
+    },
+    {
+      "id": "futu_00093",
+      "type": "future_topic",
+      "surface_form": "Large‑scale material systems"
+    },
+    {
+      "id": "futu_00095",
+      "type": "future_topic",
+      "surface_form": "Disordered materials"
+    },
+    {
+      "id": "futu_00096",
+      "type": "future_topic",
+      "surface_form": "Interfaces and heterostructures"
+    },
+    {
+      "id": "futu_00097",
+      "type": "future_topic",
+      "surface_form": "Quasi‑crystals"
+    },
+    {
+      "id": "futu_00137",
+      "type": "future_topic",
+      "surface_form": "Screening for superhard materials"
+    },
+    {
+      "id": "futu_00169",
+      "type": "future_topic",
+      "surface_form": "Exploiting intermediate PES data (energies, forces, stresses) from high‑throughput relaxations to further improve IAP accuracy"
+    },
+    {
+      "id": "meth_00143",
+      "type": "method",
+      "surface_form": "Materials Project"
+    },
+    {
+      "id": "meth_00247",
+      "type": "method",
+      "surface_form": "JARVIS integrated materials design infrastructure"
+    },
+    {
+      "id": "meth_00262",
+      "type": "method",
+      "surface_form": "Python Materials Genomics"
+    },
+    {
+      "id": "meth_00282",
+      "type": "method",
+      "surface_form": "AFLOW high-throughput materials discovery framework"
+    },
+    {
+      "id": "prob_00080",
+      "type": "problem",
+      "surface_form": "Lack of prospective, task‑specific benchmark for materials discovery"
+    },
+    {
+      "id": "prob_00113",
+      "type": "problem",
+      "surface_form": "Scalable materials discovery"
+    },
+    {
+      "id": "prob_00136",
+      "type": "problem",
+      "surface_form": "Scalability to large‑scale material systems"
+    },
+    {
+      "id": "prob_00143",
+      "type": "problem",
+      "surface_form": "Accurate prediction of material properties"
+    },
+    {
+      "id": "prob_00146",
+      "type": "problem",
+      "surface_form": "High‑throughput materials screening"
+    },
+    {
+      "id": "prob_00171",
+      "type": "problem",
+      "surface_form": "Slow, trial‑and‑error materials discovery"
+    },
+    {
+      "id": "prob_00172",
+      "type": "problem",
+      "surface_form": "Lack of accessible high‑quality materials data"
+    },
+    {
+      "id": "prob_00176",
+      "type": "problem",
+      "surface_form": "Accelerated property evaluation"
+    },
+    {
+      "id": "prob_00195",
+      "type": "problem",
+      "surface_form": "Efficient property screening"
+    },
+    {
+      "id": "prob_00199",
+      "type": "problem",
+      "surface_form": "Accelerated property prediction"
+    },
+    {
+      "id": "prob_00269",
+      "type": "problem",
+      "surface_form": "Automated materials property prediction"
+    },
+    {
+      "id": "prob_00304",
+      "type": "problem",
+      "surface_form": "Reciprocal space property prediction"
+    },
+    {
+      "id": "prob_00348",
+      "type": "problem",
+      "surface_form": "property prediction for complex systems"
+    },
+    {
+      "id": "prob_00360",
+      "type": "problem",
+      "surface_form": "Efficient hard material discovery"
+    },
+    {
+      "id": "prob_00388",
+      "type": "problem",
+      "surface_form": "Scaling materials discovery efficiency"
+    },
+    {
+      "id": "prob_00392",
+      "type": "problem",
+      "surface_form": "Discovery of multi-element materials"
+    },
+    {
+      "id": "prob_00403",
+      "type": "problem",
+      "surface_form": "Composition generalization"
+    },
+    {
+      "id": "prob_00413",
+      "type": "problem",
+      "surface_form": "Computational cost of materials screening"
+    },
+    {
+      "id": "prob_00632",
+      "type": "problem",
+      "surface_form": "Data heterogeneity in materials property prediction"
+    },
+    {
+      "id": "prob_00633",
+      "type": "problem",
+      "surface_form": "Feature selection for materials property prediction"
+    },
+    {
+      "id": "task_00003",
+      "type": "task",
+      "surface_form": "materials science"
+    },
+    {
+      "id": "task_00018",
+      "type": "task",
+      "surface_form": "property prediction"
+    },
+    {
+      "id": "task_00115",
+      "type": "task",
+      "surface_form": "Materials discovery screening"
+    },
+    {
+      "id": "task_00122",
+      "type": "task",
+      "surface_form": "Material property prediction"
+    },
+    {
+      "id": "task_00153",
+      "type": "task",
+      "surface_form": "High‑throughput materials screening"
+    },
+    {
+      "id": "task_00188",
+      "type": "task",
+      "surface_form": "Materials design rule discovery"
+    },
+    {
+      "id": "task_00206",
+      "type": "task",
+      "surface_form": "High‑throughput computation of inorganic material properties"
+    },
+    {
+      "id": "task_00210",
+      "type": "task",
+      "surface_form": "Interactive materials design and rapid prototyping"
+    },
+    {
+      "id": "task_00239",
+      "type": "task",
+      "surface_form": "Materials property prediction via ML"
+    },
+    {
+      "id": "task_00242",
+      "type": "task",
+      "surface_form": "Machine‑learning property prediction"
+    },
+    {
+      "id": "task_00254",
+      "type": "task",
+      "surface_form": "computational materials design"
+    },
+    {
+      "id": "task_00346",
+      "type": "task",
+      "surface_form": "Materials property prediction from electronic bandstructure"
+    },
+    {
+      "id": "task_00353",
+      "type": "task",
+      "surface_form": "Composition-only property prediction"
+    },
+    {
+      "id": "task_00354",
+      "type": "task",
+      "surface_form": "Structure-based property prediction"
+    },
+    {
+      "id": "task_00356",
+      "type": "task",
+      "surface_form": "machine learning for materials"
+    },
+    {
+      "id": "task_00374",
+      "type": "task",
+      "surface_form": "High-throughput materials screening"
+    },
+    {
+      "id": "task_00376",
+      "type": "task",
+      "surface_form": "computational materials discovery"
+    },
+    {
+      "id": "task_00400",
+      "type": "task",
+      "surface_form": "computational materials physics"
+    },
+    {
+      "id": "task_00439",
+      "type": "task",
+      "surface_form": "high-throughput materials discovery"
+    },
+    {
+      "id": "task_00441",
+      "type": "task",
+      "surface_form": "superhard materials discovery"
+    },
+    {
+      "id": "task_00445",
+      "type": "task",
+      "surface_form": "Ultra-hard material discovery"
+    },
+    {
+      "id": "task_00463",
+      "type": "task",
+      "surface_form": "Materials microstructure modeling"
+    },
+    {
+      "id": "task_00482",
+      "type": "task",
+      "surface_form": "High-throughput materials database creation"
+    },
+    {
+      "id": "task_00493",
+      "type": "task",
+      "surface_form": "Layered materials identification"
+    },
+    {
+      "id": "task_00498",
+      "type": "task",
+      "surface_form": "Stable material discovery"
+    },
+    {
+      "id": "task_00505",
+      "type": "task",
+      "surface_form": "Composition space exploration"
+    },
+    {
+      "id": "task_00520",
+      "type": "task",
+      "surface_form": "Materials screening"
+    },
+    {
+      "id": "task_00607",
+      "type": "task",
+      "surface_form": "SiO2 benchmark tests"
+    },
+    {
+      "id": "task_00608",
+      "type": "task",
+      "surface_form": "Pre-training on Materials Project dataset"
+    },
+    {
+      "id": "task_00697",
+      "type": "task",
+      "surface_form": "Structural property prediction"
+    },
+    {
+      "id": "task_00716",
+      "type": "task",
+      "surface_form": "computational materials modeling"
+    },
+    {
+      "id": "task_00718",
+      "type": "task",
+      "surface_form": "material classification by bonding type"
+    },
+    {
+      "id": "task_00720",
+      "type": "task",
+      "surface_form": "Materials clustering"
+    },
+    {
+      "id": "task_00723",
+      "type": "task",
+      "surface_form": "materials clustering by bonding character"
+    },
+    {
+      "id": "task_00727",
+      "type": "task",
+      "surface_form": "Bonding-based material classification"
+    },
+    {
+      "id": "task_00730",
+      "type": "task",
+      "surface_form": "Materials clustering by bond-ionicity"
+    },
+    {
+      "id": "tech_00607",
+      "type": "technique",
+      "surface_form": "Top-N property screening"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 3,
+    "claim": 15,
+    "component": 6,
+    "dataset": 8,
+    "future_topic": 13,
+    "method": 4,
+    "problem": 20,
+    "task": 36,
+    "technique": 1
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00293",
+      "relation_type": "presents",
+      "members": [
+        "arti_00024",
+        "meth_00247"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_00340",
+      "relation_type": "presents",
+      "members": [
+        "arti_00027",
+        "meth_00282"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      }
+    },
+    {
+      "id": "h_00615",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00009"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_00621",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00015"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "prescriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00623",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00017"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_00625",
+      "relation_type": "claims",
+      "members": [
+        "arti_00032",
+        "clai_00019"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5408,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00633",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00027"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00640",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00034"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00643",
+      "relation_type": "claims",
+      "members": [
+        "arti_00024",
+        "clai_00037"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5400,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_01275",
+      "relation_type": "claims",
+      "members": [
+        "arti_00027",
+        "meth_00282",
+        "clai_00669"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5403,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "observational_study",
+        "evidence_strength": "strong",
+        "confidence": 0.99
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "materials",
+  "representative_ids": [
+    "task_00122",
+    "task_00376"
+  ]
+}

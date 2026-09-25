@@ -1,0 +1,57 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00307",
+      "type": "claim",
+      "surface_form": "Random cross-validation or k-fold CV are reasonable for test data if the data is not highly correlated."
+    },
+    {
+      "id": "comp_00460",
+      "type": "component",
+      "surface_form": "Nested cross-validation evaluation"
+    },
+    {
+      "id": "tech_00029",
+      "type": "technique",
+      "surface_form": "Leave-one-out cross-validation"
+    },
+    {
+      "id": "tech_00472",
+      "type": "technique",
+      "surface_form": "Nested cross-validation"
+    },
+    {
+      "id": "tech_00477",
+      "type": "technique",
+      "surface_form": "Stratified cross validation"
+    },
+    {
+      "id": "tech_00491",
+      "type": "technique",
+      "surface_form": "Nested Cross Validation"
+    },
+    {
+      "id": "tech_00499",
+      "type": "technique",
+      "surface_form": "Grouped cross-validation"
+    },
+    {
+      "id": "tech_00936",
+      "type": "technique",
+      "surface_form": "Five-fold cross-validation"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 1,
+    "technique": 6
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "cross validation",
+  "representative_ids": [
+    "tech_00472",
+    "tech_00491"
+  ]
+}

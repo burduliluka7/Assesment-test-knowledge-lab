@@ -1,0 +1,364 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00219",
+      "type": "claim",
+      "surface_form": "Specific Ueff parameters are defined for d-block elements (Table 4) and U, J parameters for f-block elements (Table 5) to correct self-interaction error in DFT+U calculations, with values ranging from 1.9 eV (In) to 7.5 eV (Zn)."
+    },
+    {
+      "id": "comp_00005",
+      "type": "component",
+      "surface_form": "Output layer"
+    },
+    {
+      "id": "comp_00007",
+      "type": "component",
+      "surface_form": "Hyperparameters"
+    },
+    {
+      "id": "comp_00013",
+      "type": "component",
+      "surface_form": "Pooling layer"
+    },
+    {
+      "id": "comp_00015",
+      "type": "component",
+      "surface_form": "Virtual edge type"
+    },
+    {
+      "id": "comp_00016",
+      "type": "component",
+      "surface_form": "Master (global) node"
+    },
+    {
+      "id": "comp_00018",
+      "type": "component",
+      "surface_form": "Set2Set readout"
+    },
+    {
+      "id": "comp_00026",
+      "type": "component",
+      "surface_form": "Hypernetwork"
+    },
+    {
+      "id": "comp_00030",
+      "type": "component",
+      "surface_form": "GRU vertex update"
+    },
+    {
+      "id": "comp_00042",
+      "type": "component",
+      "surface_form": "E3Linear layer"
+    },
+    {
+      "id": "comp_00043",
+      "type": "component",
+      "surface_form": "E3LayerNorm"
+    },
+    {
+      "id": "comp_00046",
+      "type": "component",
+      "surface_form": "EquiConv block"
+    },
+    {
+      "id": "comp_00047",
+      "type": "component",
+      "surface_form": "Vertex update block"
+    },
+    {
+      "id": "comp_00048",
+      "type": "component",
+      "surface_form": "Edge update block"
+    },
+    {
+      "id": "comp_00055",
+      "type": "component",
+      "surface_form": "Vertex and edge update blocks"
+    },
+    {
+      "id": "comp_00168",
+      "type": "component",
+      "surface_form": "output block"
+    },
+    {
+      "id": "comp_00213",
+      "type": "component",
+      "surface_form": "Pre‑relaxation pipeline"
+    },
+    {
+      "id": "comp_00216",
+      "type": "component",
+      "surface_form": "Arrhenius analysis module"
+    },
+    {
+      "id": "comp_00252",
+      "type": "component",
+      "surface_form": "Message Passing layers"
+    },
+    {
+      "id": "comp_00253",
+      "type": "component",
+      "surface_form": "Local Coordinate Message Passing (LCMP) layer"
+    },
+    {
+      "id": "comp_00256",
+      "type": "component",
+      "surface_form": "Vertex update network"
+    },
+    {
+      "id": "comp_00266",
+      "type": "component",
+      "surface_form": "Fully‑connected hidden layers"
+    },
+    {
+      "id": "comp_00281",
+      "type": "component",
+      "surface_form": "MEGNet block"
+    },
+    {
+      "id": "comp_00293",
+      "type": "component",
+      "surface_form": "ConvLSTM network architecture"
+    },
+    {
+      "id": "comp_00295",
+      "type": "component",
+      "surface_form": "Mode‑I and Mode‑II training pipelines"
+    },
+    {
+      "id": "comp_00302",
+      "type": "component",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "comp_00303",
+      "type": "component",
+      "surface_form": "custodian"
+    },
+    {
+      "id": "comp_00308",
+      "type": "component",
+      "surface_form": "Visual warning system"
+    },
+    {
+      "id": "comp_00315",
+      "type": "component",
+      "surface_form": "GA optimizer"
+    },
+    {
+      "id": "comp_00344",
+      "type": "component",
+      "surface_form": "SLME screening module"
+    },
+    {
+      "id": "comp_00350",
+      "type": "component",
+      "surface_form": "Data download utilities"
+    },
+    {
+      "id": "comp_00360",
+      "type": "component",
+      "surface_form": "OQMD database"
+    },
+    {
+      "id": "comp_00388",
+      "type": "component",
+      "surface_form": "Aconvasp command‑line tool"
+    },
+    {
+      "id": "comp_00394",
+      "type": "component",
+      "surface_form": "Alien‑mode task executor"
+    },
+    {
+      "id": "comp_00397",
+      "type": "component",
+      "surface_form": "AFLOW.IN / VASP POSCAR output generator"
+    },
+    {
+      "id": "comp_00441",
+      "type": "component",
+      "surface_form": "Materials-specific featurization library"
+    },
+    {
+      "id": "comp_00451",
+      "type": "component",
+      "surface_form": "Cleaning stage"
+    },
+    {
+      "id": "comp_00459",
+      "type": "component",
+      "surface_form": "Extensible featurizer sets"
+    },
+    {
+      "id": "comp_00461",
+      "type": "component",
+      "surface_form": "AtomicOrbitals featurizer"
+    },
+    {
+      "id": "comp_00462",
+      "type": "component",
+      "surface_form": "ElementProperty featurizer"
+    },
+    {
+      "id": "comp_00463",
+      "type": "component",
+      "surface_form": "ElementFraction featurizer"
+    },
+    {
+      "id": "comp_00464",
+      "type": "component",
+      "surface_form": "Stoichiometry featurizer"
+    },
+    {
+      "id": "comp_00465",
+      "type": "component",
+      "surface_form": "TMetalFraction featurizer"
+    },
+    {
+      "id": "comp_00466",
+      "type": "component",
+      "surface_form": "BandCenter featurizer"
+    },
+    {
+      "id": "comp_00467",
+      "type": "component",
+      "surface_form": "DensityFeatures featurizer"
+    },
+    {
+      "id": "comp_00468",
+      "type": "component",
+      "surface_form": "GlobalSymmetryFeatures featurizer"
+    },
+    {
+      "id": "comp_00471",
+      "type": "component",
+      "surface_form": "MEGNET blocks"
+    },
+    {
+      "id": "comp_00474",
+      "type": "component",
+      "surface_form": "Skip connection Add layers"
+    },
+    {
+      "id": "comp_00555",
+      "type": "component",
+      "surface_form": "CGAT-2"
+    },
+    {
+      "id": "comp_00560",
+      "type": "component",
+      "surface_form": "Edge update mechanism"
+    },
+    {
+      "id": "comp_00566",
+      "type": "component",
+      "surface_form": "CGAT-1/2/3 network series"
+    },
+    {
+      "id": "comp_00573",
+      "type": "component",
+      "surface_form": "RELAX1"
+    },
+    {
+      "id": "comp_00574",
+      "type": "component",
+      "surface_form": "RELAX2"
+    },
+    {
+      "id": "comp_00575",
+      "type": "component",
+      "surface_form": "STATIC"
+    },
+    {
+      "id": "comp_00576",
+      "type": "component",
+      "surface_form": "BANDS"
+    },
+    {
+      "id": "comp_00578",
+      "type": "component",
+      "surface_form": "Error correction system"
+    },
+    {
+      "id": "comp_00579",
+      "type": "component",
+      "surface_form": "DBS electronic minimizer"
+    },
+    {
+      "id": "comp_00581",
+      "type": "component",
+      "surface_form": "Pulay charge mixer"
+    },
+    {
+      "id": "comp_00582",
+      "type": "component",
+      "surface_form": "CG ionic optimizer"
+    },
+    {
+      "id": "comp_00586",
+      "type": "component",
+      "surface_form": "Ueff parameters for d-block elements"
+    },
+    {
+      "id": "comp_00627",
+      "type": "component",
+      "surface_form": "Training set cleaning pipeline"
+    },
+    {
+      "id": "comp_00806",
+      "type": "component",
+      "surface_form": "Cutoff function"
+    },
+    {
+      "id": "comp_00817",
+      "type": "component",
+      "surface_form": "extended xyz format database"
+    },
+    {
+      "id": "meth_00309",
+      "type": "method",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "prob_00114",
+      "type": "problem",
+      "surface_form": "Continuity of physical quantities"
+    },
+    {
+      "id": "tech_00047",
+      "type": "technique",
+      "surface_form": "Residual connections"
+    },
+    {
+      "id": "tech_00222",
+      "type": "technique",
+      "surface_form": "ResNet‑style skip connections"
+    },
+    {
+      "id": "tech_00293",
+      "type": "technique",
+      "surface_form": "Linear pooling for site‑energy extraction"
+    },
+    {
+      "id": "tech_00304",
+      "type": "technique",
+      "surface_form": "Residual skip connections"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 62,
+    "method": 1,
+    "problem": 1,
+    "technique": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "featurizer",
+  "representative_ids": [
+    "comp_00462",
+    "comp_00573"
+  ]
+}

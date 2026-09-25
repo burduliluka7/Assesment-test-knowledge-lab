@@ -1,0 +1,12 @@
+{
+  "construction": "sentence-transformers/all-MiniLM-L6-v2",
+  "coherence_and_retrieval": "BAAI/bge-small-en-v1.5",
+  "models_distinct": true,
+  "gold_loaded_after_prediction_freeze": true,
+  "prediction_sha256": "933da5a354835610f06abd190892b03ee550e07eee049555b7ebef6678919cd4",
+  "construction_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "evaluation_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "labels": "Generation-only member/type/relation packets; generation-only TF-IDF and centroid; disjoint held-out members.",
+  "null": "Independent fixed-seed within-type slot permutations",
+  "annotations": "Evaluation-only inspected support statuses; never imported by retrieval or hierarchy."
+}

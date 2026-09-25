@@ -1,0 +1,374 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00043",
+      "type": "article",
+      "surface_form": "Virtual Node Graph Neural Network for Full Phonon Prediction"
+    },
+    {
+      "id": "clai_00095",
+      "type": "claim",
+      "surface_form": "Conservative PET-OAM models achieve state-of-the-art performance on phonon tasks in matbench-discovery and the best overall accuracy in predicting shear modulus among tested models."
+    },
+    {
+      "id": "clai_00098",
+      "type": "claim",
+      "surface_form": "Central finite differences can more than halve the error for non-equivariant models on phonon calculations by averaging out inconsistencies between symmetry-equivalent displacements, and O(3)-averaging increases symmetric structures to 77% with symprec 0.01 Å in the non-conservative case."
+    },
+    {
+      "id": "clai_00099",
+      "type": "claim",
+      "surface_form": "Accurate conservative, rotationally unconstrained models can be used safely for phonon calculations, though it is recommended to use looser convergence tolerances or enforce rotational averaging when performing free geometry optimizations with unconstrained models, especially with direct-force predictions."
+    },
+    {
+      "id": "clai_00268",
+      "type": "claim",
+      "surface_form": "Elemental-SDNNFF produces accurate forces for Heusler alloys constituting 55 different elements and accurate predictions of phonon properties."
+    },
+    {
+      "id": "clai_00413",
+      "type": "claim",
+      "surface_form": "Phonax efficiently predicts phonon dispersion relations and density of states for inorganic crystal materials."
+    },
+    {
+      "id": "clai_00415",
+      "type": "claim",
+      "surface_form": "Augmenting a minimal 1×1×1 supercell training set with Hessian data yields more accurate phonon predictions than training on a larger 3×3×3 supercell alone."
+    },
+    {
+      "id": "clai_00505",
+      "type": "claim",
+      "surface_form": "Out of 50 materials screened for electron-phonon calculations, 19 systems were found with Tc above 1 K, with ScMoC2 having the highest transition temperature at 15.97 K."
+    },
+    {
+      "id": "clai_00609",
+      "type": "claim",
+      "surface_form": "Virtual Node Graph Neural Network (VGNN) enables graph neural networks to handle variable output dimensions by incorporating virtual nodes that resemble phonon dynamical matrices."
+    },
+    {
+      "id": "clai_00610",
+      "type": "claim",
+      "surface_form": "Three virtual node approaches were developed: vector virtual nodes (VVN) outputting 3m Γ-phonon branches, matrix virtual nodes (MVN) with m² 3×3 matrices, and momentum-dependent matrix virtual nodes (k-MVN) for full band structure prediction."
+    },
+    {
+      "id": "clai_00611",
+      "type": "claim",
+      "surface_form": "VGNN achieves direct prediction of Γ-phonon spectra and full phonon dispersion using only atomic coordinates as input without prior knowledge of interatomic forces."
+    },
+    {
+      "id": "clai_00618",
+      "type": "claim",
+      "surface_form": "A Γ-phonon database containing phonon spectra for 146,323 Materials Project materials was generated using the MVN approach, with unit cell atom counts ranging from 1 to 444 atoms."
+    },
+    {
+      "id": "clai_00619",
+      "type": "claim",
+      "surface_form": "The model was trained on a DFPT computational database containing phonon dispersion data for 1,521 crystalline inorganic materials."
+    },
+    {
+      "id": "clai_00620",
+      "type": "claim",
+      "surface_form": "For very complicated materials, VVN-predicted phonons tend to have higher frequencies than ground truth, and prediction loss becomes larger as input materials become more complicated."
+    },
+    {
+      "id": "clai_00622",
+      "type": "claim",
+      "surface_form": "While exact phonon band matching with DFPT is not always achieved, the model captures key features such as average frequency and band gaps."
+    },
+    {
+      "id": "clai_00623",
+      "type": "claim",
+      "surface_form": "The Γ-phonon database exhibits a hyperbolic relationship between average frequency and average atomic mass following ω̄ = C m̄^(-1/2) with C ≈ 1993."
+    },
+    {
+      "id": "clai_00645",
+      "type": "claim",
+      "surface_form": "M3GNet predicts phonon band structures and densities of states for SiO₂ polymorphs that quantitatively agree with DFT calculations, and the predicted phonon density‑of‑states center follows the expected ω ∝ 1/√m trend across materials."
+    },
+    {
+      "id": "comp_00215",
+      "type": "component",
+      "surface_form": "Phonon and elastic property predictor"
+    },
+    {
+      "id": "data_00041",
+      "type": "dataset",
+      "surface_form": "Phonon DOS benchmark"
+    },
+    {
+      "id": "data_00100",
+      "type": "dataset",
+      "surface_form": "PBE MDR phonon dataset"
+    },
+    {
+      "id": "data_00172",
+      "type": "dataset",
+      "surface_form": "MDR phonon benchmark"
+    },
+    {
+      "id": "data_00182",
+      "type": "dataset",
+      "surface_form": "MDR phonon"
+    },
+    {
+      "id": "data_00189",
+      "type": "dataset",
+      "surface_form": "MDR Phonons"
+    },
+    {
+      "id": "futu_00091",
+      "type": "future_topic",
+      "surface_form": "Phonon prediction tasks"
+    },
+    {
+      "id": "meth_00085",
+      "type": "method",
+      "surface_form": "Phonopy"
+    },
+    {
+      "id": "meth_00289",
+      "type": "method",
+      "surface_form": "Frozen‑phonon method"
+    },
+    {
+      "id": "meth_00325",
+      "type": "method",
+      "surface_form": "frozen-phonon method"
+    },
+    {
+      "id": "metr_00060",
+      "type": "metric",
+      "surface_form": "average phonon frequency"
+    },
+    {
+      "id": "prob_00059",
+      "type": "problem",
+      "surface_form": "Computational cost of phonon calculations"
+    },
+    {
+      "id": "prob_00307",
+      "type": "problem",
+      "surface_form": "Phonon dispersion prediction for crystals with varying atom counts"
+    },
+    {
+      "id": "prob_00309",
+      "type": "problem",
+      "surface_form": "Full phonon band structure prediction"
+    },
+    {
+      "id": "prob_00311",
+      "type": "problem",
+      "surface_form": "Γ-phonon frequency prediction"
+    },
+    {
+      "id": "prob_00315",
+      "type": "problem",
+      "surface_form": "Phonon prediction for complex materials"
+    },
+    {
+      "id": "prob_00316",
+      "type": "problem",
+      "surface_form": "Computational efficiency in phonon calculation"
+    },
+    {
+      "id": "prob_00317",
+      "type": "problem",
+      "surface_form": "Direct phonon prediction from atomic coordinates"
+    },
+    {
+      "id": "prob_00318",
+      "type": "problem",
+      "surface_form": "Phonon prediction for disordered alloy systems"
+    },
+    {
+      "id": "prob_00319",
+      "type": "problem",
+      "surface_form": "High entropy alloy phonon prediction"
+    },
+    {
+      "id": "prob_00320",
+      "type": "problem",
+      "surface_form": "Large-scale phonon database generation"
+    },
+    {
+      "id": "prob_00321",
+      "type": "problem",
+      "surface_form": "Topological material phonon prediction"
+    },
+    {
+      "id": "prob_00377",
+      "type": "problem",
+      "surface_form": "band structure prediction"
+    },
+    {
+      "id": "prob_00515",
+      "type": "problem",
+      "surface_form": "Phonon calculation accuracy"
+    },
+    {
+      "id": "task_00058",
+      "type": "task",
+      "surface_form": "Electronic band‑structure prediction"
+    },
+    {
+      "id": "task_00063",
+      "type": "task",
+      "surface_form": "High‑throughput screening of materials for phononic properties"
+    },
+    {
+      "id": "task_00152",
+      "type": "task",
+      "surface_form": "Phonon and elasticity calculations"
+    },
+    {
+      "id": "task_00156",
+      "type": "task",
+      "surface_form": "phonon band structure calculation"
+    },
+    {
+      "id": "task_00236",
+      "type": "task",
+      "surface_form": "Phonon and vibrational property prediction"
+    },
+    {
+      "id": "task_00265",
+      "type": "task",
+      "surface_form": "Phonon dispersion and vibrational thermodynamics"
+    },
+    {
+      "id": "task_00279",
+      "type": "task",
+      "surface_form": "Phonon frequency prediction"
+    },
+    {
+      "id": "task_00287",
+      "type": "task",
+      "surface_form": "phonon calculations"
+    },
+    {
+      "id": "task_00288",
+      "type": "task",
+      "surface_form": "Phonon frequency calculation"
+    },
+    {
+      "id": "task_00291",
+      "type": "task",
+      "surface_form": "PBE MDR phonon dataset evaluation"
+    },
+    {
+      "id": "task_00347",
+      "type": "task",
+      "surface_form": "Phonon density of states prediction"
+    },
+    {
+      "id": "task_00377",
+      "type": "task",
+      "surface_form": "Γ-phonon spectra prediction"
+    },
+    {
+      "id": "task_00378",
+      "type": "task",
+      "surface_form": "Full phonon bandstructure prediction"
+    },
+    {
+      "id": "task_00379",
+      "type": "task",
+      "surface_form": "Phonon density-of-states prediction"
+    },
+    {
+      "id": "task_00382",
+      "type": "task",
+      "surface_form": "Alloy system phonon validation"
+    },
+    {
+      "id": "task_00383",
+      "type": "task",
+      "surface_form": "Phonon dispersion prediction"
+    },
+    {
+      "id": "task_00384",
+      "type": "task",
+      "surface_form": "Γ-phonon prediction"
+    },
+    {
+      "id": "task_00387",
+      "type": "task",
+      "surface_form": "Phonon prediction in alloy systems"
+    },
+    {
+      "id": "task_00390",
+      "type": "task",
+      "surface_form": "Element-wise phonon energy prediction"
+    },
+    {
+      "id": "task_00395",
+      "type": "task",
+      "surface_form": "Binary alloy phonon prediction"
+    },
+    {
+      "id": "task_00396",
+      "type": "task",
+      "surface_form": "Ternary alloy phonon prediction"
+    },
+    {
+      "id": "task_00399",
+      "type": "task",
+      "surface_form": "phonon physics"
+    },
+    {
+      "id": "task_00454",
+      "type": "task",
+      "surface_form": "Phonon dispersion calculation"
+    },
+    {
+      "id": "task_00540",
+      "type": "task",
+      "surface_form": "phonon property prediction"
+    },
+    {
+      "id": "task_00646",
+      "type": "task",
+      "surface_form": "phonon prediction"
+    },
+    {
+      "id": "task_00651",
+      "type": "task",
+      "surface_form": "Phonon MDR benchmark"
+    },
+    {
+      "id": "task_00664",
+      "type": "task",
+      "surface_form": "Phonon properties prediction"
+    },
+    {
+      "id": "tech_00253",
+      "type": "technique",
+      "surface_form": "phonon band structure and DOS calculation"
+    },
+    {
+      "id": "tech_00553",
+      "type": "technique",
+      "surface_form": "Direct phonon band prediction"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 16,
+    "component": 1,
+    "dataset": 5,
+    "future_topic": 1,
+    "method": 3,
+    "metric": 1,
+    "problem": 13,
+    "task": 27,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "phonon",
+  "representative_ids": [
+    "task_00664",
+    "task_00646"
+  ]
+}

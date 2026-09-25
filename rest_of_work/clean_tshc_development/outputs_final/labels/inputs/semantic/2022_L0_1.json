@@ -1,0 +1,498 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00005",
+      "type": "article",
+      "surface_form": "General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+    },
+    {
+      "id": "cite_00120",
+      "type": "cited_work",
+      "surface_form": "E(3)-equivariant GNN"
+    },
+    {
+      "id": "cite_00133",
+      "type": "cited_work",
+      "surface_form": "Coulomb Matrix"
+    },
+    {
+      "id": "cite_00220",
+      "type": "cited_work",
+      "surface_form": "SE(3)-Equivariant Graph Neural Networks"
+    },
+    {
+      "id": "cite_00245",
+      "type": "cited_work",
+      "surface_form": "Gaussian Approximation Potentials"
+    },
+    {
+      "id": "cite_00246",
+      "type": "cited_work",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "cite_00502",
+      "type": "cited_work",
+      "surface_form": "SE(3)-equivariant GNN"
+    },
+    {
+      "id": "cite_00571",
+      "type": "cited_work",
+      "surface_form": "Gaussian approximation potential"
+    },
+    {
+      "id": "clai_00186",
+      "type": "claim",
+      "surface_form": "Using higher-order E(3)-equivariant representations (increasing rotation order from l=0 to l=1 and up to l=3) consistently reduces prediction error and improves accuracy across all evaluated tasks."
+    },
+    {
+      "id": "clai_00188",
+      "type": "claim",
+      "surface_form": "The equivariant architecture scales linearly with the number of atoms because convolutions are limited to a local cutoff radius."
+    },
+    {
+      "id": "clai_00383",
+      "type": "claim",
+      "surface_form": "The use of a local‑coordinate message‑passing (LCMP) layer is critical for achieving high prediction accuracy of rotation‑covariant Hamiltonian blocks."
+    },
+    {
+      "id": "clai_00578",
+      "type": "claim",
+      "surface_form": "DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling."
+    },
+    {
+      "id": "comp_00051",
+      "type": "component",
+      "surface_form": "Spherical harmonics encoding"
+    },
+    {
+      "id": "comp_00053",
+      "type": "component",
+      "surface_form": "Gaussian radial basis expansion"
+    },
+    {
+      "id": "comp_00056",
+      "type": "component",
+      "surface_form": "Spherical harmonics up to l=5"
+    },
+    {
+      "id": "comp_00057",
+      "type": "component",
+      "surface_form": "Virtual Hamiltonian construction"
+    },
+    {
+      "id": "comp_00164",
+      "type": "component",
+      "surface_form": "E(3)-equivariant convolution"
+    },
+    {
+      "id": "comp_00222",
+      "type": "component",
+      "surface_form": "Kernel normalization and exponentiation"
+    },
+    {
+      "id": "comp_00224",
+      "type": "component",
+      "surface_form": "Regularized least‑squares solution for expansion coefficients"
+    },
+    {
+      "id": "comp_00254",
+      "type": "component",
+      "surface_form": "Spherical harmonic orientation encoding"
+    },
+    {
+      "id": "comp_00296",
+      "type": "component",
+      "surface_form": "Bicrystal and gradient‑orientation extrapolation workflow"
+    },
+    {
+      "id": "comp_00802",
+      "type": "component",
+      "surface_form": "Squared exponential kernel"
+    },
+    {
+      "id": "futu_00064",
+      "type": "future_topic",
+      "surface_form": "Extension of Gaussian Approximation Potentials to other materials"
+    },
+    {
+      "id": "meth_00015",
+      "type": "method",
+      "surface_form": "Adaptive Moment Estimation"
+    },
+    {
+      "id": "meth_00051",
+      "type": "method",
+      "surface_form": "Gradient-domain machine learning"
+    },
+    {
+      "id": "meth_00061",
+      "type": "method",
+      "surface_form": "Gaussian process regression"
+    },
+    {
+      "id": "meth_00076",
+      "type": "method",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "meth_00096",
+      "type": "method",
+      "surface_form": "generalized gradient approximation"
+    },
+    {
+      "id": "meth_00102",
+      "type": "method",
+      "surface_form": "deep-learning DFT Hamiltonian"
+    },
+    {
+      "id": "meth_00120",
+      "type": "method",
+      "surface_form": "Equivariant Neural Networks"
+    },
+    {
+      "id": "meth_00122",
+      "type": "method",
+      "surface_form": "Equivariant message passing"
+    },
+    {
+      "id": "meth_00178",
+      "type": "method",
+      "surface_form": "Deep Potential MD"
+    },
+    {
+      "id": "meth_00209",
+      "type": "method",
+      "surface_form": "Deep Potential method"
+    },
+    {
+      "id": "meth_00210",
+      "type": "method",
+      "surface_form": "Deep Potential"
+    },
+    {
+      "id": "meth_00213",
+      "type": "method",
+      "surface_form": "deep neural network approach to represent DFT Hamiltonian"
+    },
+    {
+      "id": "meth_00216",
+      "type": "method",
+      "surface_form": "SE(3)-Transformer"
+    },
+    {
+      "id": "meth_00237",
+      "type": "method",
+      "surface_form": "equivariant message passing neural networks"
+    },
+    {
+      "id": "meth_00252",
+      "type": "method",
+      "surface_form": "G0W0 many‑body perturbation theory"
+    },
+    {
+      "id": "meth_00253",
+      "type": "method",
+      "surface_form": "Dynamical Mean Field Theory"
+    },
+    {
+      "id": "meth_00355",
+      "type": "method",
+      "surface_form": "AFLOW high-throughput DFT calculation protocol"
+    },
+    {
+      "id": "prob_00017",
+      "type": "problem",
+      "surface_form": "Efficient inference compared to DFT"
+    },
+    {
+      "id": "prob_00028",
+      "type": "problem",
+      "surface_form": "E(3) equivariance with spin‑orbit coupling"
+    },
+    {
+      "id": "prob_00115",
+      "type": "problem",
+      "surface_form": "high‑cost DFT geometry optimization"
+    },
+    {
+      "id": "prob_00120",
+      "type": "problem",
+      "surface_form": "Uncertainty estimation for ML potentials"
+    },
+    {
+      "id": "prob_00123",
+      "type": "problem",
+      "surface_form": "Permutation and rotation invariance"
+    },
+    {
+      "id": "prob_00129",
+      "type": "problem",
+      "surface_form": "DFT‑level accuracy with linear scaling"
+    },
+    {
+      "id": "prob_00135",
+      "type": "problem",
+      "surface_form": "Accuracy‑efficiency dilemma of DFT"
+    },
+    {
+      "id": "prob_00137",
+      "type": "problem",
+      "surface_form": "Rotation/gauge covariance of Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00139",
+      "type": "problem",
+      "surface_form": "Efficient prediction of DFT Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00141",
+      "type": "problem",
+      "surface_form": "Handling rotation covariance in electronic properties"
+    },
+    {
+      "id": "prob_00378",
+      "type": "problem",
+      "surface_form": "Reproducibility in high-throughput DFT"
+    },
+    {
+      "id": "prob_00381",
+      "type": "problem",
+      "surface_form": "Self-interaction error in DFT"
+    },
+    {
+      "id": "prob_00384",
+      "type": "problem",
+      "surface_form": "Aliasing errors in Fourier transforms"
+    },
+    {
+      "id": "prob_00385",
+      "type": "problem",
+      "surface_form": "Computational cost in high-throughput DFT"
+    },
+    {
+      "id": "prob_00414",
+      "type": "problem",
+      "surface_form": "Overfitting in neural network potentials"
+    },
+    {
+      "id": "prob_00589",
+      "type": "problem",
+      "surface_form": "Poor extrapolation in high-dimensional ML potentials"
+    },
+    {
+      "id": "prob_00594",
+      "type": "problem",
+      "surface_form": "Unphysical extrapolation at small distances"
+    },
+    {
+      "id": "prob_00612",
+      "type": "problem",
+      "surface_form": "ML potential extrapolation"
+    },
+    {
+      "id": "task_00056",
+      "type": "task",
+      "surface_form": "DFT Hamiltonian prediction"
+    },
+    {
+      "id": "task_00181",
+      "type": "task",
+      "surface_form": "DFT Hamiltonian matrix prediction"
+    },
+    {
+      "id": "task_00483",
+      "type": "task",
+      "surface_form": "High-throughput DFT calculations"
+    },
+    {
+      "id": "tech_00048",
+      "type": "technique",
+      "surface_form": "Gaussian process regression"
+    },
+    {
+      "id": "tech_00049",
+      "type": "technique",
+      "surface_form": "Stochastic gradient descent"
+    },
+    {
+      "id": "tech_00058",
+      "type": "technique",
+      "surface_form": "Exponential learning‑rate decay"
+    },
+    {
+      "id": "tech_00065",
+      "type": "technique",
+      "surface_form": "Exponential moving average of weights"
+    },
+    {
+      "id": "tech_00071",
+      "type": "technique",
+      "surface_form": "Radial basis function expansion of distances"
+    },
+    {
+      "id": "tech_00075",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis functions"
+    },
+    {
+      "id": "tech_00109",
+      "type": "technique",
+      "surface_form": "Hierarchical Body‑Order Expansion"
+    },
+    {
+      "id": "tech_00118",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis expansion"
+    },
+    {
+      "id": "tech_00120",
+      "type": "technique",
+      "surface_form": "Equivariant message passing"
+    },
+    {
+      "id": "tech_00121",
+      "type": "technique",
+      "surface_form": "Equivariant normalization"
+    },
+    {
+      "id": "tech_00123",
+      "type": "technique",
+      "surface_form": "Change‑of‑basis using unitary P matrix"
+    },
+    {
+      "id": "tech_00124",
+      "type": "technique",
+      "surface_form": "E(3)-equivariant neural network"
+    },
+    {
+      "id": "tech_00125",
+      "type": "technique",
+      "surface_form": "Mean‑squared error loss on Hamiltonian matrix elements"
+    },
+    {
+      "id": "tech_00219",
+      "type": "technique",
+      "surface_form": "Radial basis functions"
+    },
+    {
+      "id": "tech_00243",
+      "type": "technique",
+      "surface_form": "Spherical Bessel and spherical harmonics expansion"
+    },
+    {
+      "id": "tech_00257",
+      "type": "technique",
+      "surface_form": "Sparse Gaussian process"
+    },
+    {
+      "id": "tech_00261",
+      "type": "technique",
+      "surface_form": "CUR matrix reconstruction"
+    },
+    {
+      "id": "tech_00262",
+      "type": "technique",
+      "surface_form": "Regularized Gaussian‑process regression"
+    },
+    {
+      "id": "tech_00263",
+      "type": "technique",
+      "surface_form": "Bayesian variance prediction"
+    },
+    {
+      "id": "tech_00264",
+      "type": "technique",
+      "surface_form": "Kernel normalisation and integer power"
+    },
+    {
+      "id": "tech_00281",
+      "type": "technique",
+      "surface_form": "Local coordinate transformation"
+    },
+    {
+      "id": "tech_00285",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis functions for distance encoding"
+    },
+    {
+      "id": "tech_00289",
+      "type": "technique",
+      "surface_form": "ARPACK eigenvalue solver"
+    },
+    {
+      "id": "tech_00305",
+      "type": "technique",
+      "surface_form": "Gaussian basis expansion of distances"
+    },
+    {
+      "id": "tech_00306",
+      "type": "technique",
+      "surface_form": "Orthogonalization of Non‑Orthogonal Basis"
+    },
+    {
+      "id": "tech_00310",
+      "type": "technique",
+      "surface_form": "Analytic Gradient Evaluation"
+    },
+    {
+      "id": "tech_00494",
+      "type": "technique",
+      "surface_form": "Nonlinear transformations"
+    },
+    {
+      "id": "tech_00597",
+      "type": "technique",
+      "surface_form": "high-throughput DFT validation"
+    },
+    {
+      "id": "tech_00616",
+      "type": "technique",
+      "surface_form": "High-throughput DFT calculations"
+    },
+    {
+      "id": "tech_00894",
+      "type": "technique",
+      "surface_form": "Kernel-based similarity measure"
+    },
+    {
+      "id": "tech_00896",
+      "type": "technique",
+      "surface_form": "Linear combination of kernel functions"
+    },
+    {
+      "id": "tech_00898",
+      "type": "technique",
+      "surface_form": "Spherical harmonics expansion"
+    },
+    {
+      "id": "tech_00900",
+      "type": "technique",
+      "surface_form": "Kernel exponentiation"
+    },
+    {
+      "id": "tech_00921",
+      "type": "technique",
+      "surface_form": "conjugate-gradient relaxation"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 7,
+    "claim": 4,
+    "component": 10,
+    "future_topic": 1,
+    "method": 17,
+    "problem": 18,
+    "task": 3,
+    "technique": 34
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "equivariant",
+  "representative_ids": [
+    "meth_00102",
+    "tech_00118"
+  ]
+}

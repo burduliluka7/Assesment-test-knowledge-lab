@@ -1,0 +1,1741 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00006",
+      "type": "article",
+      "surface_form": "Phonon predictions with E(3)-equivariant graph neural networks"
+    },
+    {
+      "id": "arti_00007",
+      "type": "article",
+      "surface_form": "GNN-Assisted Phase Space Integration with Application to Atomistics"
+    },
+    {
+      "id": "arti_00014",
+      "type": "article",
+      "surface_form": "A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+    },
+    {
+      "id": "arti_00018",
+      "type": "article",
+      "surface_form": "Deep-learning electronic-structure calculation of magnetic superstructures"
+    },
+    {
+      "id": "arti_00021",
+      "type": "article",
+      "surface_form": "Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals"
+    },
+    {
+      "id": "arti_00023",
+      "type": "article",
+      "surface_form": "Linking atomic structural defects to mesoscale properties in crystalline solids using graph neural networks"
+    },
+    {
+      "id": "arti_00029",
+      "type": "article",
+      "surface_form": "Universal Machine Learning Kohn-Sham Hamiltonian for Materials"
+    },
+    {
+      "id": "arti_00030",
+      "type": "article",
+      "surface_form": "Using Deep Learning to Predict Fracture Patterns in Crystalline Solids"
+    },
+    {
+      "id": "arti_00041",
+      "type": "article",
+      "surface_form": "EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+    },
+    {
+      "id": "arti_00045",
+      "type": "article",
+      "surface_form": "DeePMD-kit v2: A software package for Deep Potential models"
+    },
+    {
+      "id": "cite_00132",
+      "type": "cited_work",
+      "surface_form": "Kernel Ridge Regression"
+    },
+    {
+      "id": "cite_00133",
+      "type": "cited_work",
+      "surface_form": "Coulomb Matrix"
+    },
+    {
+      "id": "cite_00134",
+      "type": "cited_work",
+      "surface_form": "Behler‑Parrinello Neural Network"
+    },
+    {
+      "id": "cite_00140",
+      "type": "cited_work",
+      "surface_form": "Molecular Graph Convolutions (GC)"
+    },
+    {
+      "id": "cite_00190",
+      "type": "cited_work",
+      "surface_form": "Behler-Parrinello NNP"
+    },
+    {
+      "id": "cite_00251",
+      "type": "cited_work",
+      "surface_form": "Behler‑Parrinello Neural Network Potential"
+    },
+    {
+      "id": "cite_00253",
+      "type": "cited_work",
+      "surface_form": "Crystal Graph Convolutional Neural Network (CGCNN)"
+    },
+    {
+      "id": "cite_00258",
+      "type": "cited_work",
+      "surface_form": "e(3)-equivariant Hamiltonian parameterization"
+    },
+    {
+      "id": "cite_00403",
+      "type": "cited_work",
+      "surface_form": "Integrable deep neural networks"
+    },
+    {
+      "id": "cite_00482",
+      "type": "cited_work",
+      "surface_form": "Behler‑Parrinello"
+    },
+    {
+      "id": "cite_00487",
+      "type": "cited_work",
+      "surface_form": "Behler-Parrinello neural network potentials"
+    },
+    {
+      "id": "cite_00494",
+      "type": "cited_work",
+      "surface_form": "Behler-Parrinello neural network"
+    },
+    {
+      "id": "cite_00500",
+      "type": "cited_work",
+      "surface_form": "Crystal Graph Convolutional Neural Network"
+    },
+    {
+      "id": "clai_00002",
+      "type": "claim",
+      "surface_form": "CGCNN classifies metals versus semiconductors with an area under the ROC curve of 0.95 and an overall accuracy of 0.90."
+    },
+    {
+      "id": "clai_00004",
+      "type": "claim",
+      "surface_form": "When applied to a set of 1,585 crystals with elastic properties, CGCNN predicts bulk modulus with a mean absolute error of 0.077 log(GPa) and shear modulus with a mean absolute error of 0.114 log(GPa), demonstrating good generalization."
+    },
+    {
+      "id": "clai_00130",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network (MPNN) achieves state‑of‑the‑art performance on all QM9 regression targets, reaching chemical accuracy on 11 of the 13 targets and outperforming prior models such as SchNet and DTNN."
+    },
+    {
+      "id": "clai_00133",
+      "type": "claim",
+      "surface_form": "A general training method allows MPNNs to use larger node representation dimensions without increasing computation time or memory, providing substantial savings over previous high‑dimensional MPNNs."
+    },
+    {
+      "id": "clai_00138",
+      "type": "claim",
+      "surface_form": "Learning directly from molecular graphs without handcrafted descriptors enables the MPNN to achieve lower prediction errors than descriptor‑based methods."
+    },
+    {
+      "id": "clai_00139",
+      "type": "claim",
+      "surface_form": "Across all QM9 properties, the MPNN reduces the mean absolute error by 30–70 % relative to the best previously reported graph‑neural‑network baseline."
+    },
+    {
+      "id": "clai_00145",
+      "type": "claim",
+      "surface_form": "An E(3)‑equivariant graph neural network architecture guarantees rotational invariance of predicted phase‑averaged quantities."
+    },
+    {
+      "id": "clai_00150",
+      "type": "claim",
+      "surface_form": "The GNN‑assisted integration framework can be applied to high‑dimensional integration problems beyond atomistics."
+    },
+    {
+      "id": "clai_00186",
+      "type": "claim",
+      "surface_form": "Using higher-order E(3)-equivariant representations (increasing rotation order from l=0 to l=1 and up to l=3) consistently reduces prediction error and improves accuracy across all evaluated tasks."
+    },
+    {
+      "id": "clai_00188",
+      "type": "claim",
+      "surface_form": "The equivariant architecture scales linearly with the number of atoms because convolutions are limited to a local cutoff radius."
+    },
+    {
+      "id": "clai_00191",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model achieves a mean absolute error of 5.4 meV for the real‑space Hamiltonian matrix on the test set after the first round of training."
+    },
+    {
+      "id": "clai_00198",
+      "type": "claim",
+      "surface_form": "A two‑step training procedure—first minimizing real‑space Hamiltonian error, then adding orbital‑energy error at random k‑points—is essential to obtain a truly universal Hamiltonian model."
+    },
+    {
+      "id": "clai_00317",
+      "type": "claim",
+      "surface_form": "Graph network models (CGCNN and MEGNet) have high errors on small datasets (<10^4 samples) but leverage large datasets more efficiently, outperforming traditional ML and AutoML approaches on tasks with approximately 10^4 data points or more."
+    },
+    {
+      "id": "clai_00321",
+      "type": "claim",
+      "surface_form": "Graph networks (CGCNN and MEGNet) far outperform traditional ML algorithms on formation energy prediction tasks, with MEGNet decisively outperforming Automatminer for the PhDOS task; among nine structure-based tasks, Automatminer and MEGNet each achieve best scores on 4 tasks."
+    },
+    {
+      "id": "clai_00383",
+      "type": "claim",
+      "surface_form": "The use of a local‑coordinate message‑passing (LCMP) layer is critical for achieving high prediction accuracy of rotation‑covariant Hamiltonian blocks."
+    },
+    {
+      "id": "clai_00398",
+      "type": "claim",
+      "surface_form": "Symmetry‑invariant polynomial features up to sixth order, constructed via the Reynolds operator, are used as inputs to the IDNN to respect the 384‑element symmetry group of the zig‑zag ordering."
+    },
+    {
+      "id": "clai_00399",
+      "type": "claim",
+      "surface_form": "The IDNN framework is generalizable and can be applied to other intercalation compounds without modification of the network architecture."
+    },
+    {
+      "id": "clai_00411",
+      "type": "claim",
+      "surface_form": "Koopman operator theory allows highly nonlinear dynamical systems to be represented in terms of an infinite-dimensional linear operator."
+    },
+    {
+      "id": "clai_00421",
+      "type": "claim",
+      "surface_form": "The QR‑based reparameterization used in D4FT preserves the orthonormal constraints of Kohn‑Sham orbitals, making the search space equivalent to the original orthogonal function space, as proved in Proposition 3.1, and can be interpreted as projected gradient descent on the orthogonal constraint set."
+    },
+    {
+      "id": "clai_00431",
+      "type": "claim",
+      "surface_form": "Standard numerical integration based on truncated series expansions may incur large truncation errors for fully neural wave functions, suggesting Monte Carlo integration as a more suitable alternative."
+    },
+    {
+      "id": "clai_00473",
+      "type": "claim",
+      "surface_form": "The parallelization algorithm is applicable to GNN-IP models using two-body message-passing functions including SchNet, PhysNet, PaiNN, NequIP, and MACE."
+    },
+    {
+      "id": "clai_00487",
+      "type": "claim",
+      "surface_form": "The number of force components in the initial training set is more important than total configurations for obtaining generalizable models."
+    },
+    {
+      "id": "clai_00492",
+      "type": "claim",
+      "surface_form": "Elemental embedding vectors learned by the crystal formation‑energy MEGNet model reproduce known periodic‑table trends and, when transferred to band‑gap and elastic‑moduli models, reduce their mean absolute errors, improving upon prior machine‑learning approaches."
+    },
+    {
+      "id": "clai_00495",
+      "type": "claim",
+      "surface_form": "Graph networks constitute a universal machine‑learning framework that can accurately predict properties for both molecules and crystals."
+    },
+    {
+      "id": "clai_00504",
+      "type": "claim",
+      "surface_form": "The transfer learning approach iterates until model MAE is below 30 meV/atom."
+    },
+    {
+      "id": "clai_00523",
+      "type": "claim",
+      "surface_form": "Representing tensors with spherical harmonics yields a dramatically sparser basis, where a rank‑N Cartesian tensor with 3^N components can be represented by (N+1)^2 spherical harmonics (e.g., a 10th‑order tensor requires 121 harmonics instead of 59 049 Cartesian components)."
+    },
+    {
+      "id": "clai_00553",
+      "type": "claim",
+      "surface_form": "Crystal structures, data, and software for analyzing stable crystals, phase diagrams, static GNN, and interatomic potentials will be made available at the Google DeepMind materials_discovery GitHub repository and via the Materials Project with permanent DOI link 10.17188/2009989."
+    },
+    {
+      "id": "clai_00557",
+      "type": "claim",
+      "surface_form": "The GNN predicts atomic von Mises stress in polycrystalline graphene with a mean normalized relative error of 5.5% and a maximum error below 7% on a test set of 400 crystals."
+    },
+    {
+      "id": "clai_00559",
+      "type": "claim",
+      "surface_form": "The GNN reproduces the linear decrease of Young’s modulus with vacancy concentration in porous graphene, matching MD results and yielding the fitted relation E = 823.7 − 5635.6·Cv (GPa)."
+    },
+    {
+      "id": "clai_00561",
+      "type": "claim",
+      "surface_form": "Including tensile strain as an input node feature enables the GNN to accurately predict stress evolution during loading, reproducing nonlinear strain‑stress curves for porous graphene."
+    },
+    {
+      "id": "clai_00564",
+      "type": "claim",
+      "surface_form": "Coupling the GNN with a genetic algorithm efficiently discovers optimal holey graphene designs (e.g., arrow‑shaped hole patterns) that achieve significantly lower stress concentration than suboptimal designs, using only ~800 stress evaluations—an order of magnitude fewer than brute‑force search—and reliably locates the global minimum in most of 1,000 random initializations."
+    },
+    {
+      "id": "clai_00565",
+      "type": "claim",
+      "surface_form": "The GNN respects physical constraints, accurately capturing derivative properties such as stress fields that obey underlying physical laws, and predicts global properties (Young’s modulus, total potential energy) that follow known physical relationships and match MD results across different crystalline systems."
+    },
+    {
+      "id": "clai_00567",
+      "type": "claim",
+      "surface_form": "The GNN accelerates atomic property prediction by hundreds to thousands of times compared with conventional MD simulations, requiring seconds on a single CPU versus thousands of seconds on 24 CPUs."
+    },
+    {
+      "id": "clai_00568",
+      "type": "claim",
+      "surface_form": "Linear fitting of atomic properties yields substantially higher prediction errors than the GNN approach, demonstrating the superiority of the nonlinear GNN model for mapping initial structures to final property distributions."
+    },
+    {
+      "id": "clai_00578",
+      "type": "claim",
+      "surface_form": "DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling."
+    },
+    {
+      "id": "clai_00586",
+      "type": "claim",
+      "surface_form": "The equivariant architecture handles spin‑orbital Hamiltonians by separating real and imaginary components and applying a change‑of‑basis for half‑integer representations, thereby preserving equivariance without requiring complex‑valued network layers."
+    },
+    {
+      "id": "clai_00587",
+      "type": "claim",
+      "surface_form": "The model can fit 2.8 × 10⁹ non‑zero complex‑valued Hamiltonian matrix elements with only ~10⁵ real trainable parameters, indicating high capacity efficiency."
+    },
+    {
+      "id": "clai_00602",
+      "type": "claim",
+      "surface_form": "MACE evaluates roughly ten times faster than prior force‑field models for invariant (L=0) architectures and 4–5 times faster for equivariant (L=1,2) architectures, while delivering lower prediction errors."
+    },
+    {
+      "id": "comp_00039",
+      "type": "component",
+      "surface_form": "Loop tensor contraction algorithm"
+    },
+    {
+      "id": "comp_00041",
+      "type": "component",
+      "surface_form": "Wigner‑Eckart layer"
+    },
+    {
+      "id": "comp_00051",
+      "type": "component",
+      "surface_form": "Spherical harmonics encoding"
+    },
+    {
+      "id": "comp_00056",
+      "type": "component",
+      "surface_form": "Spherical harmonics up to l=5"
+    },
+    {
+      "id": "comp_00060",
+      "type": "component",
+      "surface_form": "Extended periodic graph construction"
+    },
+    {
+      "id": "comp_00062",
+      "type": "component",
+      "surface_form": "Symmetry‑aware E(3)‑equivariant GNN energy model"
+    },
+    {
+      "id": "comp_00072",
+      "type": "component",
+      "surface_form": "Supervised training of the GNN on phase‑averaged quantities"
+    },
+    {
+      "id": "comp_00073",
+      "type": "component",
+      "surface_form": "GNN‑based phase‑space evaluator"
+    },
+    {
+      "id": "comp_00077",
+      "type": "component",
+      "surface_form": "Star‑graph representation per central atom"
+    },
+    {
+      "id": "comp_00107",
+      "type": "component",
+      "surface_form": "Symmetry-adapted order parameters η0–η6"
+    },
+    {
+      "id": "comp_00110",
+      "type": "component",
+      "surface_form": "Symmetry‑respecting polynomial features via Reynolds operator"
+    },
+    {
+      "id": "comp_00116",
+      "type": "component",
+      "surface_form": "Symmetry‑adapted order parameters and invariant features"
+    },
+    {
+      "id": "comp_00117",
+      "type": "component",
+      "surface_form": "Integrable Deep Neural Network (IDNN) free‑energy representation"
+    },
+    {
+      "id": "comp_00124",
+      "type": "component",
+      "surface_form": "IDNN surrogate model"
+    },
+    {
+      "id": "comp_00133",
+      "type": "component",
+      "surface_form": "Symmetry‑adapted order‑parameter generation"
+    },
+    {
+      "id": "comp_00135",
+      "type": "component",
+      "surface_form": "Integrable Deep Neural Network (IDNN) free‑energy model"
+    },
+    {
+      "id": "comp_00164",
+      "type": "component",
+      "surface_form": "E(3)-equivariant convolution"
+    },
+    {
+      "id": "comp_00167",
+      "type": "component",
+      "surface_form": "Equivariant SiLU‑based gate"
+    },
+    {
+      "id": "comp_00183",
+      "type": "component",
+      "surface_form": "Atom graph"
+    },
+    {
+      "id": "comp_00184",
+      "type": "component",
+      "surface_form": "Bond graph"
+    },
+    {
+      "id": "comp_00194",
+      "type": "component",
+      "surface_form": "Smooth radial Bessel function"
+    },
+    {
+      "id": "comp_00195",
+      "type": "component",
+      "surface_form": "Fourier‑basis angular expansion"
+    },
+    {
+      "id": "comp_00200",
+      "type": "component",
+      "surface_form": "Position‑included material graph"
+    },
+    {
+      "id": "comp_00222",
+      "type": "component",
+      "surface_form": "Kernel normalization and exponentiation"
+    },
+    {
+      "id": "comp_00230",
+      "type": "component",
+      "surface_form": "Tensor‑product layer with Clebsch‑Gordan coefficients"
+    },
+    {
+      "id": "comp_00254",
+      "type": "component",
+      "surface_form": "Spherical harmonic orientation encoding"
+    },
+    {
+      "id": "comp_00260",
+      "type": "component",
+      "surface_form": "Multiple MPNN models for orbital‑pair blocks"
+    },
+    {
+      "id": "comp_00261",
+      "type": "component",
+      "surface_form": "Single MPNN with multi‑dimensional output"
+    },
+    {
+      "id": "comp_00262",
+      "type": "component",
+      "surface_form": "Crystal graph representation"
+    },
+    {
+      "id": "comp_00268",
+      "type": "component",
+      "surface_form": "QR‑based orthonormal reparameterization"
+    },
+    {
+      "id": "comp_00311",
+      "type": "component",
+      "surface_form": "End‑to‑end GNN predictor"
+    },
+    {
+      "id": "comp_00319",
+      "type": "component",
+      "surface_form": "PNA-based GNN predictor"
+    },
+    {
+      "id": "comp_00320",
+      "type": "component",
+      "surface_form": "Alternative GNN backbones"
+    },
+    {
+      "id": "comp_00423",
+      "type": "component",
+      "surface_form": "Spherical harmonic projections"
+    },
+    {
+      "id": "comp_00432",
+      "type": "component",
+      "surface_form": "Radial basis functions"
+    },
+    {
+      "id": "comp_00438",
+      "type": "component",
+      "surface_form": "Gaussian radial basis functions"
+    },
+    {
+      "id": "comp_00497",
+      "type": "component",
+      "surface_form": "Spherical harmonics edge attributes"
+    },
+    {
+      "id": "comp_00509",
+      "type": "component",
+      "surface_form": "Radial function h"
+    },
+    {
+      "id": "comp_00510",
+      "type": "component",
+      "surface_form": "Spherical harmonics Y"
+    },
+    {
+      "id": "comp_00523",
+      "type": "component",
+      "surface_form": "Deep Potential - Range Correction"
+    },
+    {
+      "id": "comp_00524",
+      "type": "component",
+      "surface_form": "Deep Potential Long Range"
+    },
+    {
+      "id": "comp_00561",
+      "type": "component",
+      "surface_form": "CGCNN model for elastic properties"
+    },
+    {
+      "id": "comp_00564",
+      "type": "component",
+      "surface_form": "DFT stiffness tensor calculator"
+    },
+    {
+      "id": "comp_00601",
+      "type": "component",
+      "surface_form": "Graph neural network for structural models"
+    },
+    {
+      "id": "comp_00602",
+      "type": "component",
+      "surface_form": "Graph neural network for compositional models"
+    },
+    {
+      "id": "comp_00606",
+      "type": "component",
+      "surface_form": "Deep ensemble of graph networks"
+    },
+    {
+      "id": "comp_00611",
+      "type": "component",
+      "surface_form": "Five-layer equivariant graph neural network"
+    },
+    {
+      "id": "comp_00614",
+      "type": "component",
+      "surface_form": "Bessel function basis"
+    },
+    {
+      "id": "comp_00622",
+      "type": "component",
+      "surface_form": "GNN interatomic potentials"
+    },
+    {
+      "id": "comp_00624",
+      "type": "component",
+      "surface_form": "Deep neural network potential energy surface"
+    },
+    {
+      "id": "comp_00696",
+      "type": "component",
+      "surface_form": "Efficient spatial decomposition algorithm for GNN-IPs"
+    },
+    {
+      "id": "comp_00802",
+      "type": "component",
+      "surface_form": "Squared exponential kernel"
+    },
+    {
+      "id": "data_00009",
+      "type": "dataset",
+      "surface_form": "graphene"
+    },
+    {
+      "id": "data_00056",
+      "type": "dataset",
+      "surface_form": "Graphene 6×6 supercell"
+    },
+    {
+      "id": "data_00059",
+      "type": "dataset",
+      "surface_form": "twisted bilayer graphene"
+    },
+    {
+      "id": "data_00090",
+      "type": "dataset",
+      "surface_form": "Polycrystalline graphene"
+    },
+    {
+      "id": "data_00091",
+      "type": "dataset",
+      "surface_form": "Porous graphene membranes"
+    },
+    {
+      "id": "futu_00001",
+      "type": "future_topic",
+      "surface_form": "Application of CGCNN to additional material classes beyond perovskites"
+    },
+    {
+      "id": "futu_00002",
+      "type": "future_topic",
+      "surface_form": "Integration of CGCNN predictions with experimental validation pipelines"
+    },
+    {
+      "id": "futu_00003",
+      "type": "future_topic",
+      "surface_form": "Extension of CGCNN to predict dynamic or temperature‑dependent properties"
+    },
+    {
+      "id": "futu_00039",
+      "type": "future_topic",
+      "surface_form": "apply the general MPNN approach to practically important graph problems"
+    },
+    {
+      "id": "futu_00059",
+      "type": "future_topic",
+      "surface_form": "Development of deep‑learning ab initio methods for magnetic systems"
+    },
+    {
+      "id": "futu_00098",
+      "type": "future_topic",
+      "surface_form": "Gauge‑covariant neural network architectures"
+    },
+    {
+      "id": "futu_00131",
+      "type": "future_topic",
+      "surface_form": "Transfer learning of element embeddings from large‑scale formation‑energy models to improve predictions of band gaps and elastic moduli"
+    },
+    {
+      "id": "futu_00132",
+      "type": "future_topic",
+      "surface_form": "Extension of graph‑network models to additional state‑dependent material properties"
+    },
+    {
+      "id": "futu_00143",
+      "type": "future_topic",
+      "surface_form": "Exploration of universal interatomic potential (UIP) limitations in traditional benchmarks"
+    },
+    {
+      "id": "futu_00153",
+      "type": "future_topic",
+      "surface_form": "Design of de novo atomic structures using GNNs combined with genetic algorithms"
+    },
+    {
+      "id": "futu_00157",
+      "type": "future_topic",
+      "surface_form": "Extension of E(3)‑equivariant neural networks to capture DeepH’s small‑to‑large scale learning capability"
+    },
+    {
+      "id": "futu_00162",
+      "type": "future_topic",
+      "surface_form": "Scalable parallelizable MPNN architectures"
+    },
+    {
+      "id": "futu_00173",
+      "type": "future_topic",
+      "surface_form": "Developing linear‑scaling IAPs based on graph deep learning for large‑scale molecular dynamics simulations of complex materials"
+    },
+    {
+      "id": "meth_00005",
+      "type": "method",
+      "surface_form": "Graph Convolutional Network"
+    },
+    {
+      "id": "meth_00020",
+      "type": "method",
+      "surface_form": "kernel ridge regression"
+    },
+    {
+      "id": "meth_00049",
+      "type": "method",
+      "surface_form": "Spectral graph convolution"
+    },
+    {
+      "id": "meth_00053",
+      "type": "method",
+      "surface_form": "Behler‑Parrinello Neural Network Potential"
+    },
+    {
+      "id": "meth_00057",
+      "type": "method",
+      "surface_form": "Materials Graph Network"
+    },
+    {
+      "id": "meth_00102",
+      "type": "method",
+      "surface_form": "deep-learning DFT Hamiltonian"
+    },
+    {
+      "id": "meth_00103",
+      "type": "method",
+      "surface_form": "E(n)-equivariant graph neural network"
+    },
+    {
+      "id": "meth_00111",
+      "type": "method",
+      "surface_form": "Tensor Field Networks"
+    },
+    {
+      "id": "meth_00112",
+      "type": "method",
+      "surface_form": "Equivariant Transformers"
+    },
+    {
+      "id": "meth_00120",
+      "type": "method",
+      "surface_form": "Equivariant Neural Networks"
+    },
+    {
+      "id": "meth_00122",
+      "type": "method",
+      "surface_form": "Equivariant message passing"
+    },
+    {
+      "id": "meth_00128",
+      "type": "method",
+      "surface_form": "E(3)-equivariant Graph Neural Network for phase‑space integration"
+    },
+    {
+      "id": "meth_00148",
+      "type": "method",
+      "surface_form": "Integrable deep neural networks"
+    },
+    {
+      "id": "meth_00172",
+      "type": "method",
+      "surface_form": "Tensor-Field Networks"
+    },
+    {
+      "id": "meth_00178",
+      "type": "method",
+      "surface_form": "Deep Potential MD"
+    },
+    {
+      "id": "meth_00180",
+      "type": "method",
+      "surface_form": "Crystal Hamiltonian Graph neural Network"
+    },
+    {
+      "id": "meth_00199",
+      "type": "method",
+      "surface_form": "deep equivariant neural network method"
+    },
+    {
+      "id": "meth_00202",
+      "type": "method",
+      "surface_form": "e(3)-equivariant Hamiltonian parameterization"
+    },
+    {
+      "id": "meth_00203",
+      "type": "method",
+      "surface_form": "Equivariant representations for atomistic dynamics"
+    },
+    {
+      "id": "meth_00208",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network"
+    },
+    {
+      "id": "meth_00209",
+      "type": "method",
+      "surface_form": "Deep Potential method"
+    },
+    {
+      "id": "meth_00210",
+      "type": "method",
+      "surface_form": "Deep Potential"
+    },
+    {
+      "id": "meth_00213",
+      "type": "method",
+      "surface_form": "deep neural network approach to represent DFT Hamiltonian"
+    },
+    {
+      "id": "meth_00215",
+      "type": "method",
+      "surface_form": "Symmetry-adapted Graph Neural Network"
+    },
+    {
+      "id": "meth_00221",
+      "type": "method",
+      "surface_form": "Universal HamGNN Hamiltonian model"
+    },
+    {
+      "id": "meth_00232",
+      "type": "method",
+      "surface_form": "Graph Neural Network for atomic property prediction in defective crystalline solids"
+    },
+    {
+      "id": "meth_00237",
+      "type": "method",
+      "surface_form": "equivariant message passing neural networks"
+    },
+    {
+      "id": "meth_00260",
+      "type": "method",
+      "surface_form": "Keras"
+    },
+    {
+      "id": "meth_00276",
+      "type": "method",
+      "surface_form": "Materials 3-body Graph Network"
+    },
+    {
+      "id": "meth_00277",
+      "type": "method",
+      "surface_form": "Crystal Hamiltonian Graph Network"
+    },
+    {
+      "id": "meth_00285",
+      "type": "method",
+      "surface_form": "Findsym symmetry analysis"
+    },
+    {
+      "id": "meth_00318",
+      "type": "method",
+      "surface_form": "E(3)-equivariant graph neural networks"
+    },
+    {
+      "id": "meth_00323",
+      "type": "method",
+      "surface_form": "Graph convolution"
+    },
+    {
+      "id": "meth_00324",
+      "type": "method",
+      "surface_form": "symmetry-aware Euclidean neural networks"
+    },
+    {
+      "id": "meth_00332",
+      "type": "method",
+      "surface_form": "Deep Potential - Range Correction"
+    },
+    {
+      "id": "meth_00333",
+      "type": "method",
+      "surface_form": "Deep Potential Long Range"
+    },
+    {
+      "id": "meth_00338",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network potentials"
+    },
+    {
+      "id": "meth_00339",
+      "type": "method",
+      "surface_form": "atom-centered symmetry functions"
+    },
+    {
+      "id": "meth_00372",
+      "type": "method",
+      "surface_form": "graph networks for materials exploration"
+    },
+    {
+      "id": "meth_00382",
+      "type": "method",
+      "surface_form": "Graph Neural Network interatomic potentials"
+    },
+    {
+      "id": "meth_00403",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network potential"
+    },
+    {
+      "id": "meth_00414",
+      "type": "method",
+      "surface_form": "Scalable EquiVariance-Enabled Neural NETwork"
+    },
+    {
+      "id": "meth_00416",
+      "type": "method",
+      "surface_form": "E(3)-Equivariant Atom-Centered Interatomic Potentials"
+    },
+    {
+      "id": "prob_00023",
+      "type": "problem",
+      "surface_form": "High computational cost of equivariant MPNNs"
+    },
+    {
+      "id": "prob_00028",
+      "type": "problem",
+      "surface_form": "E(3) equivariance with spin‑orbit coupling"
+    },
+    {
+      "id": "prob_00090",
+      "type": "problem",
+      "surface_form": "Data inefficiency of neural interatomic potentials"
+    },
+    {
+      "id": "prob_00091",
+      "type": "problem",
+      "surface_form": "Lack of rotational equivariance in existing GNN‑IPs"
+    },
+    {
+      "id": "prob_00122",
+      "type": "problem",
+      "surface_form": "Accurate data‑driven interatomic potentials"
+    },
+    {
+      "id": "prob_00123",
+      "type": "problem",
+      "surface_form": "Permutation and rotation invariance"
+    },
+    {
+      "id": "prob_00128",
+      "type": "problem",
+      "surface_form": "Violation of physical symmetries in learned Hamiltonians"
+    },
+    {
+      "id": "prob_00130",
+      "type": "problem",
+      "surface_form": "Symmetry preservation without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00137",
+      "type": "problem",
+      "surface_form": "Rotation/gauge covariance of Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00139",
+      "type": "problem",
+      "surface_form": "Efficient prediction of DFT Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00141",
+      "type": "problem",
+      "surface_form": "Handling rotation covariance in electronic properties"
+    },
+    {
+      "id": "prob_00163",
+      "type": "problem",
+      "surface_form": "Rotationally Invariant Tensorial Property Representation"
+    },
+    {
+      "id": "prob_00182",
+      "type": "problem",
+      "surface_form": "Design optimization of holey graphene"
+    },
+    {
+      "id": "prob_00238",
+      "type": "problem",
+      "surface_form": "computational complexity bottleneck in equivariant GNNs"
+    },
+    {
+      "id": "prob_00239",
+      "type": "problem",
+      "surface_form": "scaling equivariant Transformers to higher-degree representations"
+    },
+    {
+      "id": "prob_00241",
+      "type": "problem",
+      "surface_form": "Computational complexity of SO(3) tensor products"
+    },
+    {
+      "id": "prob_00253",
+      "type": "problem",
+      "surface_form": "High computational complexity of SO(3) tensor products"
+    },
+    {
+      "id": "prob_00255",
+      "type": "problem",
+      "surface_form": "Computational intensity of SO(3) tensor products"
+    },
+    {
+      "id": "prob_00258",
+      "type": "problem",
+      "surface_form": "Overfitting in high-degree equivariant models"
+    },
+    {
+      "id": "prob_00262",
+      "type": "problem",
+      "surface_form": "Overfitting with higher spherical harmonic degrees"
+    },
+    {
+      "id": "prob_00330",
+      "type": "problem",
+      "surface_form": "Tensorial property prediction"
+    },
+    {
+      "id": "prob_00346",
+      "type": "problem",
+      "surface_form": "accurate interatomic potential generation"
+    },
+    {
+      "id": "prob_00384",
+      "type": "problem",
+      "surface_form": "Aliasing errors in Fourier transforms"
+    },
+    {
+      "id": "prob_00402",
+      "type": "problem",
+      "surface_form": "Graph network prediction instability"
+    },
+    {
+      "id": "prob_00408",
+      "type": "problem",
+      "surface_form": "Computational efficiency for GNN potentials"
+    },
+    {
+      "id": "prob_00414",
+      "type": "problem",
+      "surface_form": "Overfitting in neural network potentials"
+    },
+    {
+      "id": "prob_00479",
+      "type": "problem",
+      "surface_form": "Parallelization challenges of GNN-IPs"
+    },
+    {
+      "id": "prob_00488",
+      "type": "problem",
+      "surface_form": "atomic force computation in parallel GNN-IP"
+    },
+    {
+      "id": "prob_00490",
+      "type": "problem",
+      "surface_form": "Overfitting in GNN interatomic potentials"
+    },
+    {
+      "id": "task_00032",
+      "type": "task",
+      "surface_form": "Interatomic potential prediction"
+    },
+    {
+      "id": "task_00052",
+      "type": "task",
+      "surface_form": "Interatomic potential learning"
+    },
+    {
+      "id": "task_00056",
+      "type": "task",
+      "surface_form": "DFT Hamiltonian prediction"
+    },
+    {
+      "id": "task_00110",
+      "type": "task",
+      "surface_form": "Benchmarking of interatomic potentials"
+    },
+    {
+      "id": "task_00171",
+      "type": "task",
+      "surface_form": "Band‑structure and density‑of‑states prediction for large magnetic superstructures"
+    },
+    {
+      "id": "task_00191",
+      "type": "task",
+      "surface_form": "Scalability benchmarking on carbon fullerenes"
+    },
+    {
+      "id": "task_00193",
+      "type": "task",
+      "surface_form": "Electronic structure optimization with neural wavefunctions"
+    },
+    {
+      "id": "task_00198",
+      "type": "task",
+      "surface_form": "Construction of Interatomic Potentials with Magnetic and Charge Degrees of Freedom"
+    },
+    {
+      "id": "task_00218",
+      "type": "task",
+      "surface_form": "Design optimization of porous/holey graphene membranes"
+    },
+    {
+      "id": "task_00221",
+      "type": "task",
+      "surface_form": "Holey graphene design optimization"
+    },
+    {
+      "id": "task_00222",
+      "type": "task",
+      "surface_form": "Benchmarking GNN architectures"
+    },
+    {
+      "id": "task_00292",
+      "type": "task",
+      "surface_form": "machine learning interatomic potentials"
+    },
+    {
+      "id": "task_00326",
+      "type": "task",
+      "surface_form": "equivariant deep learning"
+    },
+    {
+      "id": "task_00413",
+      "type": "task",
+      "surface_form": "Virial tensor calculation"
+    },
+    {
+      "id": "task_00504",
+      "type": "task",
+      "surface_form": "Interatomic potential development"
+    },
+    {
+      "id": "task_00610",
+      "type": "task",
+      "surface_form": "Radial distribution function calculation"
+    },
+    {
+      "id": "task_00611",
+      "type": "task",
+      "surface_form": "Angular distribution function calculation"
+    },
+    {
+      "id": "tech_00052",
+      "type": "technique",
+      "surface_form": "Graph convolution"
+    },
+    {
+      "id": "tech_00071",
+      "type": "technique",
+      "surface_form": "Radial basis function expansion of distances"
+    },
+    {
+      "id": "tech_00075",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis functions"
+    },
+    {
+      "id": "tech_00098",
+      "type": "technique",
+      "surface_form": "Radial distribution function analysis"
+    },
+    {
+      "id": "tech_00116",
+      "type": "technique",
+      "surface_form": "Wigner‑Eckart theorem"
+    },
+    {
+      "id": "tech_00117",
+      "type": "technique",
+      "surface_form": "Clebsch‑Gordan coefficients"
+    },
+    {
+      "id": "tech_00118",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis expansion"
+    },
+    {
+      "id": "tech_00120",
+      "type": "technique",
+      "surface_form": "Equivariant message passing"
+    },
+    {
+      "id": "tech_00121",
+      "type": "technique",
+      "surface_form": "Equivariant normalization"
+    },
+    {
+      "id": "tech_00122",
+      "type": "technique",
+      "surface_form": "Gate‑based equivariant nonlinearity"
+    },
+    {
+      "id": "tech_00123",
+      "type": "technique",
+      "surface_form": "Change‑of‑basis using unitary P matrix"
+    },
+    {
+      "id": "tech_00124",
+      "type": "technique",
+      "surface_form": "E(3)-equivariant neural network"
+    },
+    {
+      "id": "tech_00139",
+      "type": "technique",
+      "surface_form": "E(3) equivariance"
+    },
+    {
+      "id": "tech_00171",
+      "type": "technique",
+      "surface_form": "Training of IDNN on chemical‑potential derivative data"
+    },
+    {
+      "id": "tech_00172",
+      "type": "technique",
+      "surface_form": "Reynolds operator for invariant feature construction"
+    },
+    {
+      "id": "tech_00177",
+      "type": "technique",
+      "surface_form": "Reynolds operator for invariant polynomial features"
+    },
+    {
+      "id": "tech_00181",
+      "type": "technique",
+      "surface_form": "Analytic integration of IDNN"
+    },
+    {
+      "id": "tech_00183",
+      "type": "technique",
+      "surface_form": "Symmetry‑invariant feature construction"
+    },
+    {
+      "id": "tech_00193",
+      "type": "technique",
+      "surface_form": "Reynolds operator for invariant polynomials"
+    },
+    {
+      "id": "tech_00195",
+      "type": "technique",
+      "surface_form": "Gradient‑based training of IDNN"
+    },
+    {
+      "id": "tech_00219",
+      "type": "technique",
+      "surface_form": "Radial basis functions"
+    },
+    {
+      "id": "tech_00230",
+      "type": "technique",
+      "surface_form": "Smooth radial basis functions"
+    },
+    {
+      "id": "tech_00237",
+      "type": "technique",
+      "surface_form": "Fourier angular basis"
+    },
+    {
+      "id": "tech_00243",
+      "type": "technique",
+      "surface_form": "Spherical Bessel and spherical harmonics expansion"
+    },
+    {
+      "id": "tech_00249",
+      "type": "technique",
+      "surface_form": "Multi‑step n‑body to bond to graph convolution pipeline"
+    },
+    {
+      "id": "tech_00254",
+      "type": "technique",
+      "surface_form": "elastic tensor extraction"
+    },
+    {
+      "id": "tech_00261",
+      "type": "technique",
+      "surface_form": "CUR matrix reconstruction"
+    },
+    {
+      "id": "tech_00264",
+      "type": "technique",
+      "surface_form": "Kernel normalisation and integer power"
+    },
+    {
+      "id": "tech_00266",
+      "type": "technique",
+      "surface_form": "Tensor‑product layer with Clebsch‑Gordan coefficients"
+    },
+    {
+      "id": "tech_00267",
+      "type": "technique",
+      "surface_form": "Spherical‑harmonic embedding of geometric inputs"
+    },
+    {
+      "id": "tech_00269",
+      "type": "technique",
+      "surface_form": "Message passing on a graph of atoms and edges"
+    },
+    {
+      "id": "tech_00285",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis functions for distance encoding"
+    },
+    {
+      "id": "tech_00289",
+      "type": "technique",
+      "surface_form": "ARPACK eigenvalue solver"
+    },
+    {
+      "id": "tech_00294",
+      "type": "technique",
+      "surface_form": "QR decomposition"
+    },
+    {
+      "id": "tech_00300",
+      "type": "technique",
+      "surface_form": "QR decomposition for orthogonalization"
+    },
+    {
+      "id": "tech_00305",
+      "type": "technique",
+      "surface_form": "Gaussian basis expansion of distances"
+    },
+    {
+      "id": "tech_00306",
+      "type": "technique",
+      "surface_form": "Orthogonalization of Non‑Orthogonal Basis"
+    },
+    {
+      "id": "tech_00307",
+      "type": "technique",
+      "surface_form": "Clebsch‑Gordan Coupling"
+    },
+    {
+      "id": "tech_00308",
+      "type": "technique",
+      "surface_form": "Wigner Symbol Recoupling"
+    },
+    {
+      "id": "tech_00309",
+      "type": "technique",
+      "surface_form": "Spherical‑Harmonic Expansion of Cartesian Tensors"
+    },
+    {
+      "id": "tech_00333",
+      "type": "technique",
+      "surface_form": "Graph representation of atomic structures"
+    },
+    {
+      "id": "tech_00441",
+      "type": "technique",
+      "surface_form": "Wigner-D matrices"
+    },
+    {
+      "id": "tech_00443",
+      "type": "technique",
+      "surface_form": "Clebsch-Gordan coefficients"
+    },
+    {
+      "id": "tech_00451",
+      "type": "technique",
+      "surface_form": "Higher-degree equivariant representations"
+    },
+    {
+      "id": "tech_00462",
+      "type": "technique",
+      "surface_form": "Inner product with spherical harmonics"
+    },
+    {
+      "id": "tech_00531",
+      "type": "technique",
+      "surface_form": "Radial basis function encoding"
+    },
+    {
+      "id": "tech_00534",
+      "type": "technique",
+      "surface_form": "Euclidean equivariant convolutions"
+    },
+    {
+      "id": "tech_00538",
+      "type": "technique",
+      "surface_form": "Dynamical matrix eigenvalue solving"
+    },
+    {
+      "id": "tech_00547",
+      "type": "technique",
+      "surface_form": "Eigenvalue problem solving"
+    },
+    {
+      "id": "tech_00558",
+      "type": "technique",
+      "surface_form": "Tensorial property fitting"
+    },
+    {
+      "id": "tech_00777",
+      "type": "technique",
+      "surface_form": "E(3)-equivariant representations"
+    },
+    {
+      "id": "tech_00894",
+      "type": "technique",
+      "surface_form": "Kernel-based similarity measure"
+    },
+    {
+      "id": "tech_00896",
+      "type": "technique",
+      "surface_form": "Linear combination of kernel functions"
+    },
+    {
+      "id": "tech_00898",
+      "type": "technique",
+      "surface_form": "Spherical harmonics expansion"
+    },
+    {
+      "id": "tech_00900",
+      "type": "technique",
+      "surface_form": "Kernel exponentiation"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 10,
+    "cited_work": 13,
+    "claim": 38,
+    "component": 52,
+    "dataset": 5,
+    "future_topic": 13,
+    "method": 43,
+    "problem": 29,
+    "task": 17,
+    "technique": 55
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00302",
+      "relation_type": "presents",
+      "members": [
+        "arti_00007",
+        "meth_00128"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5383,
+        "article_year": 2023
+      }
+    },
+    {
+      "id": "h_00306",
+      "relation_type": "presents",
+      "members": [
+        "arti_00029",
+        "meth_00221"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      }
+    },
+    {
+      "id": "h_00307",
+      "relation_type": "presents",
+      "members": [
+        "arti_00018",
+        "meth_00199"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5394,
+        "article_year": 2023
+      }
+    },
+    {
+      "id": "h_00325",
+      "relation_type": "presents",
+      "members": [
+        "arti_00021",
+        "meth_00057"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      }
+    },
+    {
+      "id": "h_00331",
+      "relation_type": "presents",
+      "members": [
+        "arti_00023",
+        "meth_00232"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      }
+    },
+    {
+      "id": "h_00751",
+      "relation_type": "claims",
+      "members": [
+        "arti_00007",
+        "meth_00128",
+        "clai_00145"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5383,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.98
+      }
+    },
+    {
+      "id": "h_00756",
+      "relation_type": "claims",
+      "members": [
+        "arti_00007",
+        "meth_00128",
+        "clai_00150"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5383,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "prescriptive",
+        "evidence_type": "simulation",
+        "evidence_strength": "weak",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00797",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00191"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00804",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00198"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01098",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00492"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01101",
+      "relation_type": "claims",
+      "members": [
+        "arti_00021",
+        "clai_00495"
+      ],
+      "year": 2019,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5397,
+        "article_year": 2019
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01163",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00557"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01165",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00559"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01167",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00561"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01170",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00564"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "h_01171",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00565"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "theoretical",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01173",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00567"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01174",
+      "relation_type": "claims",
+      "members": [
+        "arti_00023",
+        "meth_00232",
+        "clai_00568"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5399,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "graph",
+  "representative_ids": [
+    "comp_00062",
+    "meth_00382"
+  ]
+}

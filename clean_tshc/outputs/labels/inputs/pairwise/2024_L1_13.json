@@ -1,0 +1,35 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00256",
+      "type": "claim",
+      "surface_form": "Each cataloged DFT structure provides one energy and 3N forces (N = number of atoms) for training universal MLIPs."
+    },
+    {
+      "id": "clai_00278",
+      "type": "claim",
+      "surface_form": "None of the three U-MLIPs (M3GNet, CHGNet, MACE-MP0) could accurately reproduce mixing energies of metallic binary alloys in adequate agreement with DFT results."
+    },
+    {
+      "id": "clai_00288",
+      "type": "claim",
+      "surface_form": "U-MLIPs typically cover over 50 elements and may accurately model solids, liquids, and molecular structures."
+    },
+    {
+      "id": "clai_00305",
+      "type": "claim",
+      "surface_form": "Universal MLIPs attempt to cover 10-100 elements under varying levels of constraints."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mlips",
+  "representative_ids": [
+    "clai_00288",
+    "clai_00256"
+  ]
+}

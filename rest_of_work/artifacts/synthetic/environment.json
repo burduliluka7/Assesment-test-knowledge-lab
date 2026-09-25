@@ -1,0 +1,83 @@
+{
+  "python": "3.11.2",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "sentence-transformers": "5.1.0",
+    "transformers": "4.57.6",
+    "torch": "2.4.1",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.10.7"
+  },
+  "config": {
+    "data_dir": "tests/fixtures/synthetic",
+    "output": "artifacts/synthetic",
+    "snapshots": [
+      2020,
+      2022
+    ],
+    "budgets": [
+      2,
+      4
+    ],
+    "seed": 42,
+    "spectral_dim": 3,
+    "neighbors": 3,
+    "weights": {
+      "hyper": 0.3,
+      "spectral": 0.2,
+      "semantic": 0.35,
+      "temporal": 0.15
+    },
+    "relation_weights": {},
+    "embedding_model": "synthetic-hash",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "evaluation_model": "synthetic-independent-unavailable",
+    "evaluation_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "nli_model": "cross-encoder/nli-deberta-v3-small",
+    "nli_revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+    "include_type": true,
+    "variants": [
+      "temporal"
+    ],
+    "perturbation_seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "null_permutations": 50,
+    "retrieval_budgets": [
+      50,
+      100,
+      250,
+      500
+    ],
+    "retrieval_beam": 3,
+    "match_threshold": 0.2,
+    "event_threshold": 0.1,
+    "nli_threshold": 0.5,
+    "faithfulness_sample_per_level": 12,
+    "sensitivity": false
+  },
+  "config_hash": "aba1d79152199b67e22433071f2cf3df91d995c5d2670173b78305558a9f21aa",
+  "data_hash": "321c064610c69d7795ca86657bbb679b27618faee5baf20e91a755d445b9afd8",
+  "seeds": {
+    "construction": 42,
+    "perturbation": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ]
+  },
+  "evidence_scope": "retrospective corpus publication years; frozen model priors, not historically trained models",
+  "source_hash": "4d087976f24f0e091a9cd0e15cb0ffb180b5eaf19ac2f45413435fdce0219409",
+  "input_hashes": {
+    "tkh_collection10.json": "321c064610c69d7795ca86657bbb679b27618faee5baf20e91a755d445b9afd8"
+  }
+}

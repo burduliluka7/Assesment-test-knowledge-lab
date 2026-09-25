@@ -1,0 +1,30 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00281",
+      "type": "claim",
+      "surface_form": "MLIPs require substantial training data to learn the physics of the system, though this is becoming easier to meet as ab initio data becomes more plentiful and standardized."
+    },
+    {
+      "id": "clai_00293",
+      "type": "claim",
+      "surface_form": "U-MLIPs generally have low energy and force errors compared to their ab initio training data."
+    },
+    {
+      "id": "clai_00310",
+      "type": "claim",
+      "surface_form": "Some of the best-performing MLIPs are trained separately on energies and forces and are non-conservative, with forces not directly calculated by differentiating the PES."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mlips",
+  "representative_ids": [
+    "clai_00281",
+    "clai_00293"
+  ]
+}

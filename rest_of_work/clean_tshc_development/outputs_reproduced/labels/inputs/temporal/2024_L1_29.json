@@ -1,0 +1,32 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "comp_00825",
+      "type": "component",
+      "surface_form": "Surface cleavage module"
+    },
+    {
+      "id": "meth_00365",
+      "type": "method",
+      "surface_form": "Methfessel-Paxton smearing"
+    },
+    {
+      "id": "tech_00924",
+      "type": "technique",
+      "surface_form": "surface cleavage"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "method": 1,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "surface cleavage",
+  "representative_ids": [
+    "tech_00924",
+    "comp_00825"
+  ]
+}

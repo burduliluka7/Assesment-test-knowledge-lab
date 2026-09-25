@@ -1,0 +1,306 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "cite_00133",
+      "type": "cited_work",
+      "surface_form": "Coulomb Matrix"
+    },
+    {
+      "id": "cite_00355",
+      "type": "cited_work",
+      "surface_form": "Sine Coulomb Matrix"
+    },
+    {
+      "id": "clai_00132",
+      "type": "claim",
+      "surface_form": "The multiple‑tower architecture reduces the computational complexity of a propagation step from O(n²d²) to O(n²d²/k) and yields a 2× speedup for n=9, d=200, k=8."
+    },
+    {
+      "id": "clai_00319",
+      "type": "claim",
+      "surface_form": "All algorithms exhibit a universal trend of decreasing relative errors as dataset size increases."
+    },
+    {
+      "id": "comp_00017",
+      "type": "component",
+      "surface_form": "Multiple towers"
+    },
+    {
+      "id": "comp_00031",
+      "type": "component",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "comp_00222",
+      "type": "component",
+      "surface_form": "Kernel normalization and exponentiation"
+    },
+    {
+      "id": "comp_00224",
+      "type": "component",
+      "surface_form": "Regularized least‑squares solution for expansion coefficients"
+    },
+    {
+      "id": "comp_00236",
+      "type": "component",
+      "surface_form": "Sorted neighbor list"
+    },
+    {
+      "id": "comp_00366",
+      "type": "component",
+      "surface_form": "Composition‑weighted binary averaging heuristic"
+    },
+    {
+      "id": "comp_00579",
+      "type": "component",
+      "surface_form": "DBS electronic minimizer"
+    },
+    {
+      "id": "comp_00631",
+      "type": "component",
+      "surface_form": "uncorrelated snapshots selection"
+    },
+    {
+      "id": "data_00215",
+      "type": "dataset",
+      "surface_form": "Trimer configurations"
+    },
+    {
+      "id": "meth_00014",
+      "type": "method",
+      "surface_form": "Batch Normalization"
+    },
+    {
+      "id": "meth_00051",
+      "type": "method",
+      "surface_form": "Gradient-domain machine learning"
+    },
+    {
+      "id": "meth_00096",
+      "type": "method",
+      "surface_form": "generalized gradient approximation"
+    },
+    {
+      "id": "meth_00198",
+      "type": "method",
+      "surface_form": "CUR matrix decomposition"
+    },
+    {
+      "id": "meth_00269",
+      "type": "method",
+      "surface_form": "grand canonical linear programming"
+    },
+    {
+      "id": "meth_00308",
+      "type": "method",
+      "surface_form": "TPOT"
+    },
+    {
+      "id": "meth_00310",
+      "type": "method",
+      "surface_form": "Sine Coulomb Matrix"
+    },
+    {
+      "id": "prob_00279",
+      "type": "problem",
+      "surface_form": "Dataset size scaling characterization"
+    },
+    {
+      "id": "tech_00012",
+      "type": "technique",
+      "surface_form": "Batch normalization"
+    },
+    {
+      "id": "tech_00042",
+      "type": "technique",
+      "surface_form": "Principal component analysis"
+    },
+    {
+      "id": "tech_00049",
+      "type": "technique",
+      "surface_form": "Stochastic gradient descent"
+    },
+    {
+      "id": "tech_00063",
+      "type": "technique",
+      "surface_form": "Data preprocessing"
+    },
+    {
+      "id": "tech_00070",
+      "type": "technique",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "tech_00087",
+      "type": "technique",
+      "surface_form": "Multiple‑tower decomposition"
+    },
+    {
+      "id": "tech_00261",
+      "type": "technique",
+      "surface_form": "CUR matrix reconstruction"
+    },
+    {
+      "id": "tech_00264",
+      "type": "technique",
+      "surface_form": "Kernel normalisation and integer power"
+    },
+    {
+      "id": "tech_00271",
+      "type": "technique",
+      "surface_form": "Neighbor sorting by species and inverse distance"
+    },
+    {
+      "id": "tech_00291",
+      "type": "technique",
+      "surface_form": "Sigmoid‑gated neighbor aggregation"
+    },
+    {
+      "id": "tech_00292",
+      "type": "technique",
+      "surface_form": "Normalized summation pooling"
+    },
+    {
+      "id": "tech_00310",
+      "type": "technique",
+      "surface_form": "Analytic Gradient Evaluation"
+    },
+    {
+      "id": "tech_00379",
+      "type": "technique",
+      "surface_form": "Grand canonical linear programming"
+    },
+    {
+      "id": "tech_00384",
+      "type": "technique",
+      "surface_form": "Linear scaling correction"
+    },
+    {
+      "id": "tech_00397",
+      "type": "technique",
+      "surface_form": "Weighted averaging of pure‑element volumes"
+    },
+    {
+      "id": "tech_00482",
+      "type": "technique",
+      "surface_form": "Data curation filtering"
+    },
+    {
+      "id": "tech_00492",
+      "type": "technique",
+      "surface_form": "TPOT genetic algorithm"
+    },
+    {
+      "id": "tech_00497",
+      "type": "technique",
+      "surface_form": "Relative error normalization"
+    },
+    {
+      "id": "tech_00501",
+      "type": "technique",
+      "surface_form": "TPOT automated model search"
+    },
+    {
+      "id": "tech_00630",
+      "type": "technique",
+      "surface_form": "Two-step relaxation annealing"
+    },
+    {
+      "id": "tech_00637",
+      "type": "technique",
+      "surface_form": "high-throughput calculations"
+    },
+    {
+      "id": "tech_00641",
+      "type": "technique",
+      "surface_form": "matrix eigenvector methods"
+    },
+    {
+      "id": "tech_00642",
+      "type": "technique",
+      "surface_form": "DBS-to-RMM-DIIS switching"
+    },
+    {
+      "id": "tech_00649",
+      "type": "technique",
+      "surface_form": "Ecut scaling factor"
+    },
+    {
+      "id": "tech_00693",
+      "type": "technique",
+      "surface_form": "Batch size adjustment"
+    },
+    {
+      "id": "tech_00699",
+      "type": "technique",
+      "surface_form": "iterative configuration addition"
+    },
+    {
+      "id": "tech_00894",
+      "type": "technique",
+      "surface_form": "Kernel-based similarity measure"
+    },
+    {
+      "id": "tech_00895",
+      "type": "technique",
+      "surface_form": "Sparse representation"
+    },
+    {
+      "id": "tech_00896",
+      "type": "technique",
+      "surface_form": "Linear combination of kernel functions"
+    },
+    {
+      "id": "tech_00900",
+      "type": "technique",
+      "surface_form": "Kernel exponentiation"
+    },
+    {
+      "id": "tech_00903",
+      "type": "technique",
+      "surface_form": "Iterative database extension"
+    },
+    {
+      "id": "tech_00912",
+      "type": "technique",
+      "surface_form": "Franzblau shortest-path algorithm"
+    },
+    {
+      "id": "tech_00919",
+      "type": "technique",
+      "surface_form": "snapshot extraction at multiple time points"
+    },
+    {
+      "id": "tech_00921",
+      "type": "technique",
+      "surface_form": "conjugate-gradient relaxation"
+    },
+    {
+      "id": "tech_00922",
+      "type": "technique",
+      "surface_form": "high-temperature annealing protocol"
+    },
+    {
+      "id": "tech_00930",
+      "type": "technique",
+      "surface_form": "Dimer/trimer data inclusion"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 2,
+    "claim": 2,
+    "component": 8,
+    "dataset": 1,
+    "method": 7,
+    "problem": 1,
+    "technique": 36
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "matrix",
+  "representative_ids": [
+    "tech_00012",
+    "tech_00895"
+  ]
+}

@@ -1,0 +1,3769 @@
+[
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "entity_groups": [
+      "entity:bf051cf262e2ddb2"
+    ],
+    "R3_rank": 333,
+    "H2_rank": 114,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 114,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 114,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 145,
+        "rank_gain": -31,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 133,
+        "rank_gain": -19,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "entity_groups": [
+      "entity:993f8acbab636ecb"
+    ],
+    "R3_rank": 101,
+    "H2_rank": 26,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 22,
+        "rank_gain": 4,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 21,
+        "rank_gain": 5,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 22,
+        "rank_gain": 4,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 19,
+        "rank_gain": 7,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "entity_groups": [
+      "entity:aa389a6a204b59bb"
+    ],
+    "R3_rank": 119,
+    "H2_rank": 88,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 100,
+        "rank_gain": -12,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 99,
+        "rank_gain": -11,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 187,
+        "rank_gain": -99,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 130,
+        "rank_gain": -42,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "GAP",
+    "node_ids": [
+      "cite_00191"
+    ],
+    "entity_groups": [
+      "entity:e761d9015e5bc926"
+    ],
+    "R3_rank": 206,
+    "H2_rank": 47,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 93,
+        "rank_gain": -46,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 76,
+        "rank_gain": -29,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 140,
+        "rank_gain": -93,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 81,
+        "rank_gain": -34,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "entity_groups": [
+      "entity:25a0c32286289f5e"
+    ],
+    "R3_rank": 188,
+    "H2_rank": 91,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 6,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 37,
+        "rank_gain": 54,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 68,
+        "rank_gain": 23,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 40,
+        "rank_gain": 51,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 62,
+        "rank_gain": 29,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "ACE",
+    "node_ids": [
+      "cite_00209"
+    ],
+    "entity_groups": [
+      "entity:e1429317d388e69d"
+    ],
+    "R3_rank": 269,
+    "H2_rank": 154,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 154,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 154,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 171,
+        "rank_gain": -17,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 175,
+        "rank_gain": -21,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q1",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "entity_groups": [
+      "entity:886632f9b7247fdc"
+    ],
+    "R3_rank": 23,
+    "H2_rank": 42,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 75,
+        "rank_gain": -33,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 64,
+        "rank_gain": -22,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 99,
+        "rank_gain": -57,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 69,
+        "rank_gain": -27,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q2",
+    "label": "DeepH",
+    "node_ids": [
+      "cite_00254"
+    ],
+    "entity_groups": [
+      "entity:b95f4489c86ac2f5"
+    ],
+    "R3_rank": 260,
+    "H2_rank": 42,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 74,
+        "rank_gain": -32,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 64,
+        "rank_gain": -22,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 104,
+        "rank_gain": -62,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 71,
+        "rank_gain": -29,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q2",
+    "label": "D4FT",
+    "node_ids": [
+      "comp_00273",
+      "meth_00222"
+    ],
+    "entity_groups": [
+      "entity:ea4150d0a8c4a447"
+    ],
+    "R3_rank": 10,
+    "H2_rank": 12,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 13,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 2,
+        "rank_gain": 10,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 4,
+        "rank_gain": 8,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR1-200": {
+        "rank": 2,
+        "rank_gain": 10,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 4,
+        "rank_gain": 8,
+        "category": "RETRIEVED_TOP10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q2",
+    "label": "HamGNN",
+    "node_ids": [
+      "meth_00221"
+    ],
+    "entity_groups": [
+      "entity:cec6fad300732e16"
+    ],
+    "R3_rank": 90,
+    "H2_rank": 24,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 91,
+        "rank_gain": -67,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 49,
+        "rank_gain": -25,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 136,
+        "rank_gain": -112,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 59,
+        "rank_gain": -35,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q3",
+    "label": "DeepH-E3",
+    "node_ids": [
+      "cite_00255",
+      "meth_00118"
+    ],
+    "entity_groups": [
+      "entity:afe7996c92e6f28b"
+    ],
+    "R3_rank": 1,
+    "H2_rank": 1,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 13,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 1,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 1,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR1-200": {
+        "rank": 1,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 1,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q4",
+    "label": "VGNN",
+    "node_ids": [
+      "cite_00409"
+    ],
+    "entity_groups": [
+      "entity:8841df5bfaaf7595"
+    ],
+    "R3_rank": 2292,
+    "H2_rank": 65,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 39,
+        "rank_gain": 26,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 53,
+        "rank_gain": 12,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 46,
+        "rank_gain": 19,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 51,
+        "rank_gain": 14,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q6",
+    "label": "LiFlow",
+    "node_ids": [
+      "meth_00239"
+    ],
+    "entity_groups": [
+      "entity:9dcc17ed6e400cbd"
+    ],
+    "R3_rank": 8,
+    "H2_rank": 2,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 13,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 1,
+        "rank_gain": 1,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 2,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR1-200": {
+        "rank": 1,
+        "rank_gain": 1,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 2,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q7",
+    "label": "symbolic regression",
+    "node_ids": [
+      "cite_00016",
+      "meth_00068"
+    ],
+    "entity_groups": [
+      "entity:01109728d532501e"
+    ],
+    "R3_rank": 159,
+    "H2_rank": 186,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 186,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 186,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 150,
+        "rank_gain": 36,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 178,
+        "rank_gain": 8,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q8",
+    "label": "ConvLSTM",
+    "node_ids": [
+      "cite_00001"
+    ],
+    "entity_groups": [
+      "entity:5545af9eff9c17d9"
+    ],
+    "R3_rank": 138,
+    "H2_rank": 25,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 28,
+        "rank_gain": -3,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 23,
+        "rank_gain": 2,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 28,
+        "rank_gain": -3,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 23,
+        "rank_gain": 2,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q9",
+    "label": "E(3)-equivariant GNNs",
+    "node_ids": [
+      "cite_00120"
+    ],
+    "entity_groups": [
+      "entity:4b85e8f8173f39e0"
+    ],
+    "R3_rank": 2266,
+    "H2_rank": 119,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 1,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 119,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 119,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 133,
+        "rank_gain": -14,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 133,
+        "rank_gain": -14,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q9",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "entity_groups": [
+      "entity:25a0c32286289f5e"
+    ],
+    "R3_rank": 196,
+    "H2_rank": 111,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 6,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 111,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 111,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 53,
+        "rank_gain": 58,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 78,
+        "rank_gain": 33,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q10",
+    "label": "SchNet",
+    "node_ids": [
+      "cite_00005",
+      "meth_00050"
+    ],
+    "entity_groups": [
+      "entity:3a551d023ab092d7"
+    ],
+    "R3_rank": 28,
+    "H2_rank": 23,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 11,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 16,
+        "rank_gain": 7,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 16,
+        "rank_gain": 7,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 17,
+        "rank_gain": 6,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 15,
+        "rank_gain": 8,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "entity_groups": [
+      "entity:bf051cf262e2ddb2"
+    ],
+    "R3_rank": 334,
+    "H2_rank": 104,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 104,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 104,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 133,
+        "rank_gain": -29,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 122,
+        "rank_gain": -18,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "entity_groups": [
+      "entity:25a0c32286289f5e"
+    ],
+    "R3_rank": 216,
+    "H2_rank": 87,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 6,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 45,
+        "rank_gain": 42,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 67,
+        "rank_gain": 20,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 50,
+        "rank_gain": 37,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 67,
+        "rank_gain": 20,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "entity_groups": [
+      "entity:aa389a6a204b59bb"
+    ],
+    "R3_rank": 107,
+    "H2_rank": 73,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 97,
+        "rank_gain": -24,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 92,
+        "rank_gain": -19,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 173,
+        "rank_gain": -100,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 106,
+        "rank_gain": -33,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "entity_groups": [
+      "entity:993f8acbab636ecb"
+    ],
+    "R3_rank": 97,
+    "H2_rank": 29,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 8,
+        "rank_gain": 21,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 10,
+        "rank_gain": 19,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR1-200": {
+        "rank": 8,
+        "rank_gain": 21,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 10,
+        "rank_gain": 19,
+        "category": "RETRIEVED_TOP10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "SevenNet",
+    "node_ids": [
+      "cite_00054"
+    ],
+    "entity_groups": [
+      "entity:ed2fb4bd9c20b49d"
+    ],
+    "R3_rank": 175,
+    "H2_rank": 41,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 51,
+        "rank_gain": -10,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 50,
+        "rank_gain": -9,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 57,
+        "rank_gain": -16,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 48,
+        "rank_gain": -7,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "GAP",
+    "node_ids": [
+      "cite_00191"
+    ],
+    "entity_groups": [
+      "entity:e761d9015e5bc926"
+    ],
+    "R3_rank": 215,
+    "H2_rank": 50,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 89,
+        "rank_gain": -39,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 74,
+        "rank_gain": -24,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 140,
+        "rank_gain": -90,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 86,
+        "rank_gain": -36,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "DeePMD",
+    "node_ids": [
+      "cite_00214"
+    ],
+    "entity_groups": [
+      "entity:b693c30a8ac97351"
+    ],
+    "R3_rank": 229,
+    "H2_rank": 111,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 111,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 111,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 110,
+        "rank_gain": 1,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 110,
+        "rank_gain": 1,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "MatterSim",
+    "node_ids": [
+      "cite_00060",
+      "meth_00091"
+    ],
+    "entity_groups": [
+      "entity:690e7790e8005527"
+    ],
+    "R3_rank": 130,
+    "H2_rank": 35,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 1,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 68,
+        "rank_gain": -33,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 56,
+        "rank_gain": -21,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 79,
+        "rank_gain": -44,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 58,
+        "rank_gain": -23,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "Orb",
+    "node_ids": [
+      "cite_00011"
+    ],
+    "entity_groups": [
+      "entity:7362cbdad5030512"
+    ],
+    "R3_rank": 398,
+    "H2_rank": 130,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 130,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 130,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 188,
+        "rank_gain": -58,
+        "category": "IN_CANDIDATES_NO_SPECIFIC_EVIDENCE"
+      },
+      "RR3-200": {
+        "rank": 170,
+        "rank_gain": -40,
+        "category": "IN_CANDIDATES_NO_SPECIFIC_EVIDENCE"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "eSEN",
+    "node_ids": [
+      "cite_00053"
+    ],
+    "entity_groups": [
+      "entity:2a0287a84848114f"
+    ],
+    "R3_rank": 2320,
+    "H2_rank": 283,
+    "in_h2_100": false,
+    "in_h2_200": false,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 283,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 283,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 283,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      },
+      "RR3-200": {
+        "rank": 283,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q12",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "entity_groups": [
+      "entity:886632f9b7247fdc"
+    ],
+    "R3_rank": 24,
+    "H2_rank": 32,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 82,
+        "rank_gain": -50,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 59,
+        "rank_gain": -27,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 118,
+        "rank_gain": -86,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 63,
+        "rank_gain": -31,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "CGCNN",
+    "node_ids": [
+      "cite_00354",
+      "meth_00054"
+    ],
+    "entity_groups": [
+      "entity:f09f2d518ac0f5e4"
+    ],
+    "R3_rank": 160,
+    "H2_rank": 107,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 107,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 107,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 65,
+        "rank_gain": 42,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 82,
+        "rank_gain": 25,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "SchNet",
+    "node_ids": [
+      "cite_00005",
+      "meth_00050"
+    ],
+    "entity_groups": [
+      "entity:3a551d023ab092d7"
+    ],
+    "R3_rank": 34,
+    "H2_rank": 36,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 11,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 8,
+        "rank_gain": 28,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 11,
+        "rank_gain": 25,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 8,
+        "rank_gain": 28,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 11,
+        "rank_gain": 25,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "MEGNet",
+    "node_ids": [
+      "cite_00334",
+      "meth_00036"
+    ],
+    "entity_groups": [
+      "entity:78dd77aaab912c26"
+    ],
+    "R3_rank": 185,
+    "H2_rank": 185,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 185,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 185,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 188,
+        "rank_gain": -3,
+        "category": "IN_CANDIDATES_NO_SPECIFIC_EVIDENCE"
+      },
+      "RR3-200": {
+        "rank": 199,
+        "rank_gain": -14,
+        "category": "IN_CANDIDATES_NO_SPECIFIC_EVIDENCE"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "entity_groups": [
+      "entity:993f8acbab636ecb"
+    ],
+    "R3_rank": 111,
+    "H2_rank": 55,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 23,
+        "rank_gain": 32,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 40,
+        "rank_gain": 15,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 24,
+        "rank_gain": 31,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 39,
+        "rank_gain": 16,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "entity_groups": [
+      "entity:25a0c32286289f5e"
+    ],
+    "R3_rank": 186,
+    "H2_rank": 72,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 6,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 53,
+        "rank_gain": 19,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 65,
+        "rank_gain": 7,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 56,
+        "rank_gain": 16,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 67,
+        "rank_gain": 5,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "entity_groups": [
+      "entity:bf051cf262e2ddb2"
+    ],
+    "R3_rank": 253,
+    "H2_rank": 106,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 106,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 106,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 155,
+        "rank_gain": -49,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 131,
+        "rank_gain": -25,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "entity_groups": [
+      "entity:aa389a6a204b59bb"
+    ],
+    "R3_rank": 136,
+    "H2_rank": 100,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 99,
+        "rank_gain": 1,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 100,
+        "rank_gain": 0,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 189,
+        "rank_gain": -89,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 139,
+        "rank_gain": -39,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q13",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "entity_groups": [
+      "entity:886632f9b7247fdc"
+    ],
+    "R3_rank": 24,
+    "H2_rank": 57,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 79,
+        "rank_gain": -22,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 71,
+        "rank_gain": -14,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 99,
+        "rank_gain": -42,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 76,
+        "rank_gain": -19,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "Matbench Discovery",
+    "node_ids": [
+      "cite_00302",
+      "data_00013",
+      "meth_00159"
+    ],
+    "entity_groups": [
+      "entity:0e1f4bfaa74446cf"
+    ],
+    "R3_rank": 2,
+    "H2_rank": 8,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 11,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 1,
+        "rank_gain": 7,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 3,
+        "rank_gain": 5,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR1-200": {
+        "rank": 1,
+        "rank_gain": 7,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 3,
+        "rank_gain": 5,
+        "category": "RETRIEVED_TOP10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "Matbench",
+    "node_ids": [
+      "cite_00362",
+      "comp_00448",
+      "data_00114",
+      "meth_00348"
+    ],
+    "entity_groups": [
+      "entity:b0c0abe033c2f14e"
+    ],
+    "R3_rank": 97,
+    "H2_rank": 53,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 88,
+        "rank_gain": -35,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 71,
+        "rank_gain": -18,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 124,
+        "rank_gain": -71,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 78,
+        "rank_gain": -25,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "JARVIS-DFT",
+    "node_ids": [
+      "comp_00335"
+    ],
+    "entity_groups": [
+      "entity:b71b84ff1e30f628"
+    ],
+    "R3_rank": 547,
+    "H2_rank": 541,
+    "in_h2_100": false,
+    "in_h2_200": false,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 541,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 541,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 541,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      },
+      "RR3-200": {
+        "rank": 541,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "Materials Project",
+    "node_ids": [
+      "cite_00018",
+      "data_00061",
+      "meth_00143"
+    ],
+    "entity_groups": [
+      "entity:0e633d558b14c180"
+    ],
+    "R3_rank": 106,
+    "H2_rank": 35,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 5,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 51,
+        "rank_gain": -16,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 48,
+        "rank_gain": -13,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 56,
+        "rank_gain": -21,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 48,
+        "rank_gain": -13,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "OQMD",
+    "node_ids": [
+      "cite_00370",
+      "data_00095"
+    ],
+    "entity_groups": [
+      "entity:afb2a6707d64b8a6"
+    ],
+    "R3_rank": 118,
+    "H2_rank": 101,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 5,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 101,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 101,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 88,
+        "rank_gain": 13,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 95,
+        "rank_gain": 6,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "AFLOW",
+    "node_ids": [
+      "cite_00274"
+    ],
+    "entity_groups": [
+      "entity:3e25d7497646491b"
+    ],
+    "R3_rank": 260,
+    "H2_rank": 66,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 94,
+        "rank_gain": -28,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 81,
+        "rank_gain": -15,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 143,
+        "rank_gain": -77,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 97,
+        "rank_gain": -31,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "Alexandria",
+    "node_ids": [
+      "cite_00369"
+    ],
+    "entity_groups": [
+      "entity:658469be86f7cbee"
+    ],
+    "R3_rank": 3381,
+    "H2_rank": 353,
+    "in_h2_100": false,
+    "in_h2_200": false,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 353,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 353,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 353,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      },
+      "RR3-200": {
+        "rank": 353,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "GNoME",
+    "node_ids": [
+      "cite_00330",
+      "comp_00589",
+      "data_00144",
+      "meth_00169"
+    ],
+    "entity_groups": [
+      "entity:81ffffff8439e6c9"
+    ],
+    "R3_rank": 126,
+    "H2_rank": 41,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 30,
+        "rank_gain": 11,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 38,
+        "rank_gain": 3,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 33,
+        "rank_gain": 8,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 39,
+        "rank_gain": 2,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "WBM",
+    "node_ids": [
+      "data_00175"
+    ],
+    "entity_groups": [
+      "entity:90a762e42a0a4ffe"
+    ],
+    "R3_rank": 674,
+    "H2_rank": 726,
+    "in_h2_100": false,
+    "in_h2_200": false,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 726,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 726,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 726,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      },
+      "RR3-200": {
+        "rank": 726,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      }
+    }
+  },
+  {
+    "cutoff": 2025,
+    "question_id": "Q14",
+    "label": "OMat24",
+    "node_ids": [
+      "cite_00311"
+    ],
+    "entity_groups": [
+      "entity:b728019ff0ecd15b"
+    ],
+    "R3_rank": 475,
+    "H2_rank": 71,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 90,
+        "rank_gain": -19,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 83,
+        "rank_gain": -12,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 132,
+        "rank_gain": -61,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 99,
+        "rank_gain": -28,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "entity_groups": [
+      "entity:bf051cf262e2ddb2"
+    ],
+    "R3_rank": 439,
+    "H2_rank": 128,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 128,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 128,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 147,
+        "rank_gain": -19,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 141,
+        "rank_gain": -13,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "entity_groups": [
+      "entity:993f8acbab636ecb"
+    ],
+    "R3_rank": 114,
+    "H2_rank": 29,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 19,
+        "rank_gain": 10,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 16,
+        "rank_gain": 13,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 19,
+        "rank_gain": 10,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 16,
+        "rank_gain": 13,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "entity_groups": [
+      "entity:aa389a6a204b59bb"
+    ],
+    "R3_rank": 135,
+    "H2_rank": 96,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 99,
+        "rank_gain": -3,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 100,
+        "rank_gain": -4,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 184,
+        "rank_gain": -88,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 132,
+        "rank_gain": -36,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "GAP",
+    "node_ids": [
+      "cite_00191"
+    ],
+    "entity_groups": [
+      "entity:e761d9015e5bc926"
+    ],
+    "R3_rank": 241,
+    "H2_rank": 57,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 55,
+        "rank_gain": 2,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 63,
+        "rank_gain": -6,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 63,
+        "rank_gain": -6,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 64,
+        "rank_gain": -7,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "entity_groups": [
+      "entity:25a0c32286289f5e"
+    ],
+    "R3_rank": 219,
+    "H2_rank": 103,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 6,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 103,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 103,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 52,
+        "rank_gain": 51,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 79,
+        "rank_gain": 24,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "ACE",
+    "node_ids": [
+      "cite_00209"
+    ],
+    "entity_groups": [
+      "entity:e1429317d388e69d"
+    ],
+    "R3_rank": 320,
+    "H2_rank": 170,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 170,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 170,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 154,
+        "rank_gain": 16,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 172,
+        "rank_gain": -2,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q1",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "entity_groups": [
+      "entity:886632f9b7247fdc"
+    ],
+    "R3_rank": 27,
+    "H2_rank": 32,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 90,
+        "rank_gain": -58,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 60,
+        "rank_gain": -28,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 121,
+        "rank_gain": -89,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 66,
+        "rank_gain": -34,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q2",
+    "label": "DeepH",
+    "node_ids": [
+      "cite_00254"
+    ],
+    "entity_groups": [
+      "entity:b95f4489c86ac2f5"
+    ],
+    "R3_rank": 309,
+    "H2_rank": 73,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 96,
+        "rank_gain": -23,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 88,
+        "rank_gain": -15,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 157,
+        "rank_gain": -84,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 109,
+        "rank_gain": -36,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q2",
+    "label": "D4FT",
+    "node_ids": [
+      "comp_00273",
+      "meth_00222"
+    ],
+    "entity_groups": [
+      "entity:ea4150d0a8c4a447"
+    ],
+    "R3_rank": 12,
+    "H2_rank": 14,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 13,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 3,
+        "rank_gain": 11,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 6,
+        "rank_gain": 8,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR1-200": {
+        "rank": 3,
+        "rank_gain": 11,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 6,
+        "rank_gain": 8,
+        "category": "RETRIEVED_TOP10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q2",
+    "label": "HamGNN",
+    "node_ids": [
+      "meth_00221"
+    ],
+    "entity_groups": [
+      "entity:cec6fad300732e16"
+    ],
+    "R3_rank": 102,
+    "H2_rank": 64,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 91,
+        "rank_gain": -27,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 82,
+        "rank_gain": -18,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 151,
+        "rank_gain": -87,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 97,
+        "rank_gain": -33,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q3",
+    "label": "DeepH-E3",
+    "node_ids": [
+      "cite_00255",
+      "meth_00118"
+    ],
+    "entity_groups": [
+      "entity:afe7996c92e6f28b"
+    ],
+    "R3_rank": 1,
+    "H2_rank": 1,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 13,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 1,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 1,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR1-200": {
+        "rank": 1,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 1,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q4",
+    "label": "VGNN",
+    "node_ids": [
+      "cite_00409"
+    ],
+    "entity_groups": [
+      "entity:8841df5bfaaf7595"
+    ],
+    "R3_rank": 2567,
+    "H2_rank": 59,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 44,
+        "rank_gain": 15,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 55,
+        "rank_gain": 4,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 52,
+        "rank_gain": 7,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 53,
+        "rank_gain": 6,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q6",
+    "label": "LiFlow",
+    "node_ids": [
+      "meth_00239"
+    ],
+    "entity_groups": [
+      "entity:9dcc17ed6e400cbd"
+    ],
+    "R3_rank": 9,
+    "H2_rank": 2,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 13,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 1,
+        "rank_gain": 1,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 2,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR1-200": {
+        "rank": 1,
+        "rank_gain": 1,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 2,
+        "rank_gain": 0,
+        "category": "RETRIEVED_TOP10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q7",
+    "label": "symbolic regression",
+    "node_ids": [
+      "cite_00016",
+      "meth_00068"
+    ],
+    "entity_groups": [
+      "entity:01109728d532501e"
+    ],
+    "R3_rank": 184,
+    "H2_rank": 225,
+    "in_h2_100": false,
+    "in_h2_200": false,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 225,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 225,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 225,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      },
+      "RR3-200": {
+        "rank": 225,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q8",
+    "label": "ConvLSTM",
+    "node_ids": [
+      "cite_00001"
+    ],
+    "entity_groups": [
+      "entity:5545af9eff9c17d9"
+    ],
+    "R3_rank": 158,
+    "H2_rank": 29,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 30,
+        "rank_gain": -1,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 25,
+        "rank_gain": 4,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 30,
+        "rank_gain": -1,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 24,
+        "rank_gain": 5,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q9",
+    "label": "E(3)-equivariant GNNs",
+    "node_ids": [
+      "cite_00120"
+    ],
+    "entity_groups": [
+      "entity:4b85e8f8173f39e0"
+    ],
+    "R3_rank": 2391,
+    "H2_rank": 139,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 1,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 139,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 139,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 91,
+        "rank_gain": 48,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 122,
+        "rank_gain": 17,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q9",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "entity_groups": [
+      "entity:25a0c32286289f5e"
+    ],
+    "R3_rank": 232,
+    "H2_rank": 111,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 6,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 111,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 111,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 61,
+        "rank_gain": 50,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 88,
+        "rank_gain": 23,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q10",
+    "label": "SchNet",
+    "node_ids": [
+      "cite_00005",
+      "meth_00050"
+    ],
+    "entity_groups": [
+      "entity:3a551d023ab092d7"
+    ],
+    "R3_rank": 32,
+    "H2_rank": 25,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 11,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 18,
+        "rank_gain": 7,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 18,
+        "rank_gain": 7,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 18,
+        "rank_gain": 7,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 15,
+        "rank_gain": 10,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "entity_groups": [
+      "entity:bf051cf262e2ddb2"
+    ],
+    "R3_rank": 448,
+    "H2_rank": 110,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 110,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 110,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 138,
+        "rank_gain": -28,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 123,
+        "rank_gain": -13,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "entity_groups": [
+      "entity:25a0c32286289f5e"
+    ],
+    "R3_rank": 251,
+    "H2_rank": 92,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 6,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 50,
+        "rank_gain": 42,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 76,
+        "rank_gain": 16,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 57,
+        "rank_gain": 35,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 77,
+        "rank_gain": 15,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "entity_groups": [
+      "entity:aa389a6a204b59bb"
+    ],
+    "R3_rank": 121,
+    "H2_rank": 73,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 98,
+        "rank_gain": -25,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 92,
+        "rank_gain": -19,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 174,
+        "rank_gain": -101,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 110,
+        "rank_gain": -37,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "entity_groups": [
+      "entity:993f8acbab636ecb"
+    ],
+    "R3_rank": 109,
+    "H2_rank": 31,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 11,
+        "rank_gain": 20,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 13,
+        "rank_gain": 18,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 11,
+        "rank_gain": 20,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 13,
+        "rank_gain": 18,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "SevenNet",
+    "node_ids": [
+      "cite_00054"
+    ],
+    "entity_groups": [
+      "entity:ed2fb4bd9c20b49d"
+    ],
+    "R3_rank": 200,
+    "H2_rank": 42,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 55,
+        "rank_gain": -13,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 53,
+        "rank_gain": -11,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 63,
+        "rank_gain": -21,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 55,
+        "rank_gain": -13,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "GAP",
+    "node_ids": [
+      "cite_00191"
+    ],
+    "entity_groups": [
+      "entity:e761d9015e5bc926"
+    ],
+    "R3_rank": 250,
+    "H2_rank": 50,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 68,
+        "rank_gain": -18,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 63,
+        "rank_gain": -13,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 82,
+        "rank_gain": -32,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 66,
+        "rank_gain": -16,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "DeePMD",
+    "node_ids": [
+      "cite_00214"
+    ],
+    "entity_groups": [
+      "entity:b693c30a8ac97351"
+    ],
+    "R3_rank": 265,
+    "H2_rank": 56,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 34,
+        "rank_gain": 22,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 49,
+        "rank_gain": 7,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 36,
+        "rank_gain": 20,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 48,
+        "rank_gain": 8,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "MatterSim",
+    "node_ids": [
+      "cite_00060",
+      "meth_00091"
+    ],
+    "entity_groups": [
+      "entity:690e7790e8005527"
+    ],
+    "R3_rank": 148,
+    "H2_rank": 37,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 1,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 74,
+        "rank_gain": -37,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 58,
+        "rank_gain": -21,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 89,
+        "rank_gain": -52,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 61,
+        "rank_gain": -24,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "Orb",
+    "node_ids": [
+      "cite_00011"
+    ],
+    "entity_groups": [
+      "entity:7362cbdad5030512"
+    ],
+    "R3_rank": 446,
+    "H2_rank": 112,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 112,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 112,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 185,
+        "rank_gain": -73,
+        "category": "IN_CANDIDATES_NO_SPECIFIC_EVIDENCE"
+      },
+      "RR3-200": {
+        "rank": 151,
+        "rank_gain": -39,
+        "category": "IN_CANDIDATES_NO_SPECIFIC_EVIDENCE"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "eSEN",
+    "node_ids": [
+      "cite_00053",
+      "meth_00293"
+    ],
+    "entity_groups": [
+      "entity:4f84995aac124b43"
+    ],
+    "R3_rank": 266,
+    "H2_rank": 116,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 116,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 116,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 179,
+        "rank_gain": -63,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 152,
+        "rank_gain": -36,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "PET",
+    "node_ids": [
+      "cite_00044"
+    ],
+    "entity_groups": [
+      "entity:b08c04dfc4442a66"
+    ],
+    "R3_rank": 404,
+    "H2_rank": 233,
+    "in_h2_100": false,
+    "in_h2_200": false,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 233,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 233,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 233,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      },
+      "RR3-200": {
+        "rank": 233,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "UMA",
+    "node_ids": [
+      "cite_00046"
+    ],
+    "entity_groups": [
+      "entity:8c3f698af797fca8"
+    ],
+    "R3_rank": 2564,
+    "H2_rank": 402,
+    "in_h2_100": false,
+    "in_h2_200": false,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 402,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 402,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 402,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      },
+      "RR3-200": {
+        "rank": 402,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q12",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "entity_groups": [
+      "entity:886632f9b7247fdc"
+    ],
+    "R3_rank": 28,
+    "H2_rank": 32,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 93,
+        "rank_gain": -61,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 61,
+        "rank_gain": -29,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 152,
+        "rank_gain": -120,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 71,
+        "rank_gain": -39,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "CGCNN",
+    "node_ids": [
+      "cite_00354",
+      "meth_00054"
+    ],
+    "entity_groups": [
+      "entity:f09f2d518ac0f5e4"
+    ],
+    "R3_rank": 179,
+    "H2_rank": 130,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 130,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 130,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 67,
+        "rank_gain": 63,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 93,
+        "rank_gain": 37,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "SchNet",
+    "node_ids": [
+      "cite_00005",
+      "meth_00050"
+    ],
+    "entity_groups": [
+      "entity:3a551d023ab092d7"
+    ],
+    "R3_rank": 38,
+    "H2_rank": 25,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 11,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 5,
+        "rank_gain": 20,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 8,
+        "rank_gain": 17,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR1-200": {
+        "rank": 5,
+        "rank_gain": 20,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 8,
+        "rank_gain": 17,
+        "category": "RETRIEVED_TOP10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "MEGNet",
+    "node_ids": [
+      "cite_00334",
+      "meth_00036"
+    ],
+    "entity_groups": [
+      "entity:78dd77aaab912c26"
+    ],
+    "R3_rank": 206,
+    "H2_rank": 205,
+    "in_h2_100": false,
+    "in_h2_200": false,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 205,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 205,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 205,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      },
+      "RR3-200": {
+        "rank": 205,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "M3GNet",
+    "node_ids": [
+      "cite_00062",
+      "comp_00482",
+      "meth_00037"
+    ],
+    "entity_groups": [
+      "entity:993f8acbab636ecb"
+    ],
+    "R3_rank": 124,
+    "H2_rank": 87,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 26,
+        "rank_gain": 61,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 55,
+        "rank_gain": 32,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 27,
+        "rank_gain": 60,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 52,
+        "rank_gain": 35,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "NequIP",
+    "node_ids": [
+      "cite_00049",
+      "meth_00058"
+    ],
+    "entity_groups": [
+      "entity:25a0c32286289f5e"
+    ],
+    "R3_rank": 207,
+    "H2_rank": 79,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 6,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 54,
+        "rank_gain": 25,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 70,
+        "rank_gain": 9,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 59,
+        "rank_gain": 20,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 71,
+        "rank_gain": 8,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "MACE",
+    "node_ids": [
+      "cite_00048"
+    ],
+    "entity_groups": [
+      "entity:bf051cf262e2ddb2"
+    ],
+    "R3_rank": 386,
+    "H2_rank": 105,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 105,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 105,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 160,
+        "rank_gain": -55,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 139,
+        "rank_gain": -34,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "CHGNet",
+    "node_ids": [
+      "cite_00063",
+      "comp_00481",
+      "meth_00038"
+    ],
+    "entity_groups": [
+      "entity:aa389a6a204b59bb"
+    ],
+    "R3_rank": 150,
+    "H2_rank": 86,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 99,
+        "rank_gain": -13,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 98,
+        "rank_gain": -12,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 188,
+        "rank_gain": -102,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 134,
+        "rank_gain": -48,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q13",
+    "label": "EquiformerV2",
+    "node_ids": [
+      "cite_00050",
+      "meth_00081"
+    ],
+    "entity_groups": [
+      "entity:886632f9b7247fdc"
+    ],
+    "R3_rank": 25,
+    "H2_rank": 49,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 80,
+        "rank_gain": -31,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 68,
+        "rank_gain": -19,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 107,
+        "rank_gain": -58,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 74,
+        "rank_gain": -25,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "Matbench Discovery",
+    "node_ids": [
+      "cite_00302",
+      "data_00013",
+      "meth_00159"
+    ],
+    "entity_groups": [
+      "entity:0e1f4bfaa74446cf"
+    ],
+    "R3_rank": 2,
+    "H2_rank": 4,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 11,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 3,
+        "rank_gain": 1,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-100": {
+        "rank": 2,
+        "rank_gain": 2,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR1-200": {
+        "rank": 3,
+        "rank_gain": 1,
+        "category": "RETRIEVED_TOP10"
+      },
+      "RR3-200": {
+        "rank": 2,
+        "rank_gain": 2,
+        "category": "RETRIEVED_TOP10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "Matbench",
+    "node_ids": [
+      "cite_00362",
+      "comp_00448",
+      "data_00114",
+      "meth_00348"
+    ],
+    "entity_groups": [
+      "entity:b0c0abe033c2f14e"
+    ],
+    "R3_rank": 110,
+    "H2_rank": 58,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 90,
+        "rank_gain": -32,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 76,
+        "rank_gain": -18,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 132,
+        "rank_gain": -74,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 85,
+        "rank_gain": -27,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "JARVIS-DFT",
+    "node_ids": [
+      "comp_00335"
+    ],
+    "entity_groups": [
+      "entity:b71b84ff1e30f628"
+    ],
+    "R3_rank": 611,
+    "H2_rank": 620,
+    "in_h2_100": false,
+    "in_h2_200": false,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 620,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 620,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 620,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      },
+      "RR3-200": {
+        "rank": 620,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_200"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "Materials Project",
+    "node_ids": [
+      "cite_00018",
+      "data_00061",
+      "meth_00143"
+    ],
+    "entity_groups": [
+      "entity:0e633d558b14c180"
+    ],
+    "R3_rank": 117,
+    "H2_rank": 34,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 5,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 55,
+        "rank_gain": -21,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 52,
+        "rank_gain": -18,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 61,
+        "rank_gain": -27,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 52,
+        "rank_gain": -18,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "MPtrj",
+    "node_ids": [
+      "cite_00372",
+      "data_00102"
+    ],
+    "entity_groups": [
+      "entity:658c45336dfdd307"
+    ],
+    "R3_rank": 154,
+    "H2_rank": 157,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 2,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 157,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 157,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 177,
+        "rank_gain": -20,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 174,
+        "rank_gain": -17,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "OQMD",
+    "node_ids": [
+      "cite_00370",
+      "data_00095"
+    ],
+    "entity_groups": [
+      "entity:afb2a6707d64b8a6"
+    ],
+    "R3_rank": 131,
+    "H2_rank": 96,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 5,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 73,
+        "rank_gain": 23,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 88,
+        "rank_gain": 8,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 89,
+        "rank_gain": 7,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 92,
+        "rank_gain": 4,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "AFLOW",
+    "node_ids": [
+      "cite_00274"
+    ],
+    "entity_groups": [
+      "entity:3e25d7497646491b"
+    ],
+    "R3_rank": 301,
+    "H2_rank": 56,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 3,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 95,
+        "rank_gain": -39,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 78,
+        "rank_gain": -22,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 146,
+        "rank_gain": -90,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 89,
+        "rank_gain": -33,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "Alexandria",
+    "node_ids": [
+      "cite_00369",
+      "meth_00295"
+    ],
+    "entity_groups": [
+      "entity:5560aa9c0ad57aa0"
+    ],
+    "R3_rank": 467,
+    "H2_rank": 147,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 0,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 147,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 147,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 200,
+        "rank_gain": -53,
+        "category": "IN_CANDIDATES_NO_SPECIFIC_EVIDENCE"
+      },
+      "RR3-200": {
+        "rank": 180,
+        "rank_gain": -33,
+        "category": "IN_CANDIDATES_NO_SPECIFIC_EVIDENCE"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "GNoME",
+    "node_ids": [
+      "cite_00330",
+      "comp_00589",
+      "data_00144",
+      "meth_00169"
+    ],
+    "entity_groups": [
+      "entity:81ffffff8439e6c9"
+    ],
+    "R3_rank": 143,
+    "H2_rank": 43,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 8,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 32,
+        "rank_gain": 11,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-100": {
+        "rank": 40,
+        "rank_gain": 3,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR1-200": {
+        "rank": 34,
+        "rank_gain": 9,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 42,
+        "rank_gain": 1,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "WBM",
+    "node_ids": [
+      "cite_00376",
+      "data_00175"
+    ],
+    "entity_groups": [
+      "entity:f28bef572bc219dc"
+    ],
+    "R3_rank": 185,
+    "H2_rank": 183,
+    "in_h2_100": false,
+    "in_h2_200": true,
+    "specific_evidence_count": 5,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 183,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR3-100": {
+        "rank": 183,
+        "rank_gain": 0,
+        "category": "NOT_IN_H2_100"
+      },
+      "RR1-200": {
+        "rank": 156,
+        "rank_gain": 27,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      },
+      "RR3-200": {
+        "rank": 178,
+        "rank_gain": 5,
+        "category": "RERANK_IMPROVED_BUT_BELOW_10"
+      }
+    }
+  },
+  {
+    "cutoff": 2026,
+    "question_id": "Q14",
+    "label": "OMat24",
+    "node_ids": [
+      "cite_00311",
+      "data_00101"
+    ],
+    "entity_groups": [
+      "entity:0b8bc14a9655e61a"
+    ],
+    "R3_rank": 124,
+    "H2_rank": 41,
+    "in_h2_100": true,
+    "in_h2_200": true,
+    "specific_evidence_count": 5,
+    "rerankings": {
+      "RR1-100": {
+        "rank": 53,
+        "rank_gain": -12,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-100": {
+        "rank": 55,
+        "rank_gain": -14,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR1-200": {
+        "rank": 59,
+        "rank_gain": -18,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      },
+      "RR3-200": {
+        "rank": 55,
+        "rank_gain": -14,
+        "category": "IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED"
+      }
+    }
+  }
+]

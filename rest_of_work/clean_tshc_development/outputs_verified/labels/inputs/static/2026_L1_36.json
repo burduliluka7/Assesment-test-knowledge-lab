@@ -1,0 +1,41 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "task_00443",
+      "type": "task",
+      "surface_form": "Convex hull distance prediction"
+    },
+    {
+      "id": "task_00623",
+      "type": "task",
+      "surface_form": "Convex hull construction"
+    },
+    {
+      "id": "tech_00596",
+      "type": "technique",
+      "surface_form": "convex hull distance prediction"
+    },
+    {
+      "id": "tech_00618",
+      "type": "technique",
+      "surface_form": "Convex hull distance filtering"
+    },
+    {
+      "id": "tech_00666",
+      "type": "technique",
+      "surface_form": "Convex hull analysis"
+    }
+  ],
+  "generation_type_counts": {
+    "task": 2,
+    "technique": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "convex hull",
+  "representative_ids": [
+    "tech_00596",
+    "task_00443"
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00018",
+      "type": "article",
+      "surface_form": "Deep-learning electronic-structure calculation of magnetic superstructures"
+    },
+    {
+      "id": "cite_00403",
+      "type": "cited_work",
+      "surface_form": "Integrable deep neural networks"
+    },
+    {
+      "id": "clai_00002",
+      "type": "claim",
+      "surface_form": "CGCNN classifies metals versus semiconductors with an area under the ROC curve of 0.95 and an overall accuracy of 0.90."
+    },
+    {
+      "id": "clai_00004",
+      "type": "claim",
+      "surface_form": "When applied to a set of 1,585 crystals with elastic properties, CGCNN predicts bulk modulus with a mean absolute error of 0.077 log(GPa) and shear modulus with a mean absolute error of 0.114 log(GPa), demonstrating good generalization."
+    },
+    {
+      "id": "clai_00130",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network (MPNN) achieves state‑of‑the‑art performance on all QM9 regression targets, reaching chemical accuracy on 11 of the 13 targets and outperforming prior models such as SchNet and DTNN."
+    },
+    {
+      "id": "clai_00133",
+      "type": "claim",
+      "surface_form": "A general training method allows MPNNs to use larger node representation dimensions without increasing computation time or memory, providing substantial savings over previous high‑dimensional MPNNs."
+    },
+    {
+      "id": "clai_00139",
+      "type": "claim",
+      "surface_form": "Across all QM9 properties, the MPNN reduces the mean absolute error by 30–70 % relative to the best previously reported graph‑neural‑network baseline."
+    },
+    {
+      "id": "clai_00149",
+      "type": "claim",
+      "surface_form": "Training the GNN on high‑fidelity Monte‑Carlo integration data enables accurate prediction of phase‑averaged energies and their derivatives for atomic clusters."
+    },
+    {
+      "id": "clai_00150",
+      "type": "claim",
+      "surface_form": "The GNN‑assisted integration framework can be applied to high‑dimensional integration problems beyond atomistics."
+    },
+    {
+      "id": "clai_00399",
+      "type": "claim",
+      "surface_form": "The IDNN framework is generalizable and can be applied to other intercalation compounds without modification of the network architecture."
+    },
+    {
+      "id": "clai_00431",
+      "type": "claim",
+      "surface_form": "Standard numerical integration based on truncated series expansions may incur large truncation errors for fully neural wave functions, suggesting Monte Carlo integration as a more suitable alternative."
+    },
+    {
+      "id": "clai_00473",
+      "type": "claim",
+      "surface_form": "The parallelization algorithm is applicable to GNN-IP models using two-body message-passing functions including SchNet, PhysNet, PaiNN, NequIP, and MACE."
+    },
+    {
+      "id": "clai_00553",
+      "type": "claim",
+      "surface_form": "Crystal structures, data, and software for analyzing stable crystals, phase diagrams, static GNN, and interatomic potentials will be made available at the Google DeepMind materials_discovery GitHub repository and via the Materials Project with permanent DOI link 10.17188/2009989."
+    },
+    {
+      "id": "clai_00565",
+      "type": "claim",
+      "surface_form": "The GNN respects physical constraints, accurately capturing derivative properties such as stress fields that obey underlying physical laws, and predicts global properties (Young’s modulus, total potential energy) that follow known physical relationships and match MD results across different crystalline systems."
+    },
+    {
+      "id": "clai_00567",
+      "type": "claim",
+      "surface_form": "The GNN accelerates atomic property prediction by hundreds to thousands of times compared with conventional MD simulations, requiring seconds on a single CPU versus thousands of seconds on 24 CPUs."
+    },
+    {
+      "id": "clai_00568",
+      "type": "claim",
+      "surface_form": "Linear fitting of atomic properties yields substantially higher prediction errors than the GNN approach, demonstrating the superiority of the nonlinear GNN model for mapping initial structures to final property distributions."
+    },
+    {
+      "id": "comp_00072",
+      "type": "component",
+      "surface_form": "Supervised training of the GNN on phase‑averaged quantities"
+    },
+    {
+      "id": "comp_00073",
+      "type": "component",
+      "surface_form": "GNN‑based phase‑space evaluator"
+    },
+    {
+      "id": "comp_00117",
+      "type": "component",
+      "surface_form": "Integrable Deep Neural Network (IDNN) free‑energy representation"
+    },
+    {
+      "id": "comp_00124",
+      "type": "component",
+      "surface_form": "IDNN surrogate model"
+    },
+    {
+      "id": "comp_00135",
+      "type": "component",
+      "surface_form": "Integrable Deep Neural Network (IDNN) free‑energy model"
+    },
+    {
+      "id": "comp_00260",
+      "type": "component",
+      "surface_form": "Multiple MPNN models for orbital‑pair blocks"
+    },
+    {
+      "id": "comp_00261",
+      "type": "component",
+      "surface_form": "Single MPNN with multi‑dimensional output"
+    },
+    {
+      "id": "comp_00311",
+      "type": "component",
+      "surface_form": "End‑to‑end GNN predictor"
+    },
+    {
+      "id": "comp_00319",
+      "type": "component",
+      "surface_form": "PNA-based GNN predictor"
+    },
+    {
+      "id": "comp_00320",
+      "type": "component",
+      "surface_form": "Alternative GNN backbones"
+    },
+    {
+      "id": "comp_00561",
+      "type": "component",
+      "surface_form": "CGCNN model for elastic properties"
+    },
+    {
+      "id": "comp_00622",
+      "type": "component",
+      "surface_form": "GNN interatomic potentials"
+    },
+    {
+      "id": "comp_00696",
+      "type": "component",
+      "surface_form": "Efficient spatial decomposition algorithm for GNN-IPs"
+    },
+    {
+      "id": "futu_00001",
+      "type": "future_topic",
+      "surface_form": "Application of CGCNN to additional material classes beyond perovskites"
+    },
+    {
+      "id": "futu_00002",
+      "type": "future_topic",
+      "surface_form": "Integration of CGCNN predictions with experimental validation pipelines"
+    },
+    {
+      "id": "futu_00003",
+      "type": "future_topic",
+      "surface_form": "Extension of CGCNN to predict dynamic or temperature‑dependent properties"
+    },
+    {
+      "id": "futu_00039",
+      "type": "future_topic",
+      "surface_form": "apply the general MPNN approach to practically important graph problems"
+    },
+    {
+      "id": "futu_00153",
+      "type": "future_topic",
+      "surface_form": "Design of de novo atomic structures using GNNs combined with genetic algorithms"
+    },
+    {
+      "id": "futu_00162",
+      "type": "future_topic",
+      "surface_form": "Scalable parallelizable MPNN architectures"
+    },
+    {
+      "id": "meth_00148",
+      "type": "method",
+      "surface_form": "Integrable deep neural networks"
+    },
+    {
+      "id": "prob_00408",
+      "type": "problem",
+      "surface_form": "Computational efficiency for GNN potentials"
+    },
+    {
+      "id": "prob_00414",
+      "type": "problem",
+      "surface_form": "Overfitting in neural network potentials"
+    },
+    {
+      "id": "prob_00479",
+      "type": "problem",
+      "surface_form": "Parallelization challenges of GNN-IPs"
+    },
+    {
+      "id": "prob_00488",
+      "type": "problem",
+      "surface_form": "atomic force computation in parallel GNN-IP"
+    },
+    {
+      "id": "prob_00490",
+      "type": "problem",
+      "surface_form": "Overfitting in GNN interatomic potentials"
+    },
+    {
+      "id": "task_00193",
+      "type": "task",
+      "surface_form": "Electronic structure optimization with neural wavefunctions"
+    },
+    {
+      "id": "task_00222",
+      "type": "task",
+      "surface_form": "Benchmarking GNN architectures"
+    },
+    {
+      "id": "tech_00171",
+      "type": "technique",
+      "surface_form": "Training of IDNN on chemical‑potential derivative data"
+    },
+    {
+      "id": "tech_00181",
+      "type": "technique",
+      "surface_form": "Analytic integration of IDNN"
+    },
+    {
+      "id": "tech_00182",
+      "type": "technique",
+      "surface_form": "Integrated DNN (IDNN) training"
+    },
+    {
+      "id": "tech_00195",
+      "type": "technique",
+      "surface_form": "Gradient‑based training of IDNN"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 1,
+    "claim": 14,
+    "component": 13,
+    "future_topic": 6,
+    "method": 1,
+    "problem": 5,
+    "task": 2,
+    "technique": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "gnn",
+  "representative_ids": [
+    "prob_00408",
+    "comp_00622"
+  ]
+}

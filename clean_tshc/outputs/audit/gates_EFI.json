@@ -1,0 +1,199 @@
+{
+  "E": {
+    "static_vs_temporal": {
+      "2020": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "2022": {
+        "0": 0.5963792306538109,
+        "1": 0.8559851914259488,
+        "2": 0.8414150739144715
+      },
+      "2024": {
+        "0": 0.3996717502537278,
+        "1": 0.5211023991620266,
+        "2": 0.6049753325456737
+      },
+      "2026": {
+        "0": 0.3761335136181453,
+        "1": 0.49308979653951734,
+        "2": 0.6475235791523949
+      }
+    }
+  },
+  "F": {
+    "event_examples": {
+      "birth": {
+        "from_snapshot": null,
+        "to_snapshot": 2020,
+        "level": 0,
+        "event_type": "birth",
+        "old_ids": [],
+        "new_ids": [
+          "L0_2020_0000"
+        ],
+        "overlaps": [],
+        "variant": "temporal"
+      },
+      "continuation": {
+        "from_snapshot": 2020,
+        "to_snapshot": 2022,
+        "level": 0,
+        "event_type": "continuation",
+        "old_ids": [
+          "L0_2020_0001"
+        ],
+        "new_ids": [
+          "L0_2020_0001"
+        ],
+        "overlaps": [
+          {
+            "old_id": "L0_2020_0001",
+            "intersection": 128,
+            "jaccard": 1.0,
+            "old_fraction": 1.0,
+            "new_fraction": 1.0,
+            "new_id": "L0_2020_0001"
+          }
+        ],
+        "variant": "temporal"
+      },
+      "growth": {
+        "from_snapshot": 2020,
+        "to_snapshot": 2022,
+        "level": 0,
+        "event_type": "growth",
+        "old_ids": [
+          "L0_2020_0000"
+        ],
+        "new_ids": [
+          "L0_2020_0000"
+        ],
+        "overlaps": [
+          {
+            "old_id": "L0_2020_0000",
+            "intersection": 941,
+            "jaccard": 0.6954915003695491,
+            "old_fraction": 1.0,
+            "new_fraction": 0.9771547248182763,
+            "new_id": "L0_2020_0000"
+          },
+          {
+            "old_id": "L0_2020_0005",
+            "intersection": 1,
+            "jaccard": 0.0007052186177715092,
+            "old_fraction": 0.015151515151515152,
+            "new_fraction": 0.0010384215991692627,
+            "new_id": "L0_2020_0000"
+          },
+          {
+            "old_id": "L0_2020_0009",
+            "intersection": 17,
+            "jaccard": 0.012564671101256468,
+            "old_fraction": 1.0,
+            "new_fraction": 0.017653167185877467,
+            "new_id": "L0_2020_0000"
+          },
+          {
+            "old_id": "L0_2020_0010",
+            "intersection": 3,
+            "jaccard": 0.0022026431718061676,
+            "old_fraction": 0.25,
+            "new_fraction": 0.003115264797507788,
+            "new_id": "L0_2020_0000"
+          },
+          {
+            "old_id": "L0_2020_0011",
+            "intersection": 1,
+            "jaccard": 0.0007183908045977011,
+            "old_fraction": 0.025,
+            "new_fraction": 0.0010384215991692627,
+            "new_id": "L0_2020_0000"
+          }
+        ],
+        "variant": "temporal"
+      },
+      "merge": {
+        "from_snapshot": 2020,
+        "to_snapshot": 2022,
+        "level": 1,
+        "event_type": "merge",
+        "old_ids": [
+          "L1_2020_0016",
+          "L1_2020_0035"
+        ],
+        "new_ids": [
+          "L1_2020_0016"
+        ],
+        "overlaps": [
+          {
+            "old_id": "L1_2020_0016",
+            "intersection": 2,
+            "jaccard": 0.5,
+            "old_fraction": 1.0,
+            "new_fraction": 0.5,
+            "new_id": "L1_2020_0016"
+          },
+          {
+            "old_id": "L1_2020_0035",
+            "intersection": 2,
+            "jaccard": 0.5,
+            "old_fraction": 1.0,
+            "new_fraction": 0.5,
+            "new_id": "L1_2020_0016"
+          }
+        ],
+        "variant": "temporal"
+      },
+      "split": {
+        "from_snapshot": 2020,
+        "to_snapshot": 2022,
+        "level": 0,
+        "event_type": "split",
+        "old_ids": [
+          "L0_2020_0010"
+        ],
+        "new_ids": [
+          "L0_2020_0000",
+          "L0_2020_0010"
+        ],
+        "overlaps": [
+          {
+            "old_id": "L0_2020_0010",
+            "intersection": 3,
+            "jaccard": 0.0022026431718061676,
+            "old_fraction": 0.25,
+            "new_fraction": 0.003115264797507788,
+            "new_id": "L0_2020_0000"
+          },
+          {
+            "old_id": "L0_2020_0010",
+            "intersection": 9,
+            "jaccard": 0.5625,
+            "old_fraction": 0.75,
+            "new_fraction": 1.0,
+            "new_id": "L0_2020_0010"
+          }
+        ],
+        "variant": "temporal"
+      },
+      "death": null
+    }
+  },
+  "I": {
+    "status": "AUDITED",
+    "support_counts": {
+      "EXACT": 48,
+      "PARTIAL": 11,
+      "ALIAS": 1,
+      "ABSENT": 2,
+      "COMPOSITE": 1
+    },
+    "claim_statuses": {
+      "NOT_EVALUABLE_ALIGNMENT": 223,
+      "REVIEWED_TEXT_AND_SOURCE": 1
+    }
+  }
+}

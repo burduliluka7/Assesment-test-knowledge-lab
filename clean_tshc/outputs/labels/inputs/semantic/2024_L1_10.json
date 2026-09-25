@@ -1,0 +1,247 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00028",
+      "type": "article",
+      "surface_form": "Machine learning a general purpose interatomic potential for silicon"
+    },
+    {
+      "id": "arti_00051",
+      "type": "article",
+      "surface_form": "Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+    },
+    {
+      "id": "clai_00055",
+      "type": "claim",
+      "surface_form": "Cluster 1 (198 compounds, mostly ionic halides and oxides) achieves 136±5 K MAE and 0.92 R², while Cluster 2 (222 compounds, mostly covalent carbides and nitrides) achieves 189±7 K MAE and 0.90 R²."
+    },
+    {
+      "id": "clai_00058",
+      "type": "claim",
+      "surface_form": "Very-high melting temperatures (>3150 K) appear only in Cluster 2, predominantly in metal carbides, reflecting the covalent bonding character of these materials."
+    },
+    {
+      "id": "clai_00060",
+      "type": "claim",
+      "surface_form": "The two-step clustering approach provides interpretability by revealing different melting physics dominated by bonding types, with Cluster 1 governed by ionic bonding features and Cluster 2 by covalent bonding features."
+    },
+    {
+      "id": "clai_00062",
+      "type": "claim",
+      "surface_form": "Cluster 2 melting temperatures can be accurately represented with symbolic models depending on only two features: squared cohesive energy and inverse square root of periodic groups or electronegativities."
+    },
+    {
+      "id": "clai_00295",
+      "type": "claim",
+      "surface_form": "An MLIP trained on pristine crystalline phases may not be appropriate for studying amorphous phases of the same material."
+    },
+    {
+      "id": "clai_00464",
+      "type": "claim",
+      "surface_form": "SevenNet-0 successfully generated amorphous Si3N4 structure with 112,000 atoms through melt-quench MD simulation, reproducing key structural features matching DFT reference data."
+    },
+    {
+      "id": "data_00159",
+      "type": "dataset",
+      "surface_form": "amorphous Si3N4"
+    },
+    {
+      "id": "data_00208",
+      "type": "dataset",
+      "surface_form": "Amorphous carbon"
+    },
+    {
+      "id": "data_00212",
+      "type": "dataset",
+      "surface_form": "amorphous carbon Young's modulus"
+    },
+    {
+      "id": "data_00216",
+      "type": "dataset",
+      "surface_form": "Binary Ionic Compounds Melting Temperature Dataset"
+    },
+    {
+      "id": "data_00219",
+      "type": "dataset",
+      "surface_form": "Binary inorganic solid materials melting temperature dataset"
+    },
+    {
+      "id": "data_00220",
+      "type": "dataset",
+      "surface_form": "Binary compounds melting temperature dataset"
+    },
+    {
+      "id": "futu_00177",
+      "type": "future_topic",
+      "surface_form": "High-temperature surface reconstructions of amorphous carbon"
+    },
+    {
+      "id": "meth_00448",
+      "type": "method",
+      "surface_form": "Neural network model for melting temperature prediction"
+    },
+    {
+      "id": "prob_00119",
+      "type": "problem",
+      "surface_form": "Accurate, transferable interatomic potential for silicon"
+    },
+    {
+      "id": "prob_00483",
+      "type": "problem",
+      "surface_form": "Computational cost of large-scale amorphous structure generation"
+    },
+    {
+      "id": "prob_00484",
+      "type": "problem",
+      "surface_form": "Limited system sizes in amorphous materials simulation"
+    },
+    {
+      "id": "prob_00492",
+      "type": "problem",
+      "surface_form": "General-purpose interatomic potential deployment"
+    },
+    {
+      "id": "prob_00602",
+      "type": "problem",
+      "surface_form": "Fourfold ring prediction in amorphous carbon"
+    },
+    {
+      "id": "prob_00606",
+      "type": "problem",
+      "surface_form": "accurate interatomic potential for amorphous carbon"
+    },
+    {
+      "id": "prob_00617",
+      "type": "problem",
+      "surface_form": "limited scope of existing melting temperature prediction methods"
+    },
+    {
+      "id": "prob_00618",
+      "type": "problem",
+      "surface_form": "lack of experimental melting temperature data for binary ionic solids"
+    },
+    {
+      "id": "prob_00620",
+      "type": "problem",
+      "surface_form": "Melting temperature prediction"
+    },
+    {
+      "id": "prob_00624",
+      "type": "problem",
+      "surface_form": "melting temperature prediction accuracy"
+    },
+    {
+      "id": "prob_00625",
+      "type": "problem",
+      "surface_form": "capturing cluster-specific melting behavior"
+    },
+    {
+      "id": "prob_00626",
+      "type": "problem",
+      "surface_form": "melting temperature prediction for inorganic compounds"
+    },
+    {
+      "id": "task_00162",
+      "type": "task",
+      "surface_form": "Interatomic potential development for silicon"
+    },
+    {
+      "id": "task_00165",
+      "type": "task",
+      "surface_form": "Interatomic potential fitting for silicon"
+    },
+    {
+      "id": "task_00168",
+      "type": "task",
+      "surface_form": "Amorphous silicon generation and characterization"
+    },
+    {
+      "id": "task_00554",
+      "type": "task",
+      "surface_form": "Melting temperature prediction"
+    },
+    {
+      "id": "task_00609",
+      "type": "task",
+      "surface_form": "Large-scale amorphous Si3N4 melt-quench simulation"
+    },
+    {
+      "id": "task_00620",
+      "type": "task",
+      "surface_form": "amorphous materials"
+    },
+    {
+      "id": "task_00686",
+      "type": "task",
+      "surface_form": "Atomistic simulations of liquid carbon"
+    },
+    {
+      "id": "task_00690",
+      "type": "task",
+      "surface_form": "Nanoscale amorphous carbon structure simulations"
+    },
+    {
+      "id": "task_00694",
+      "type": "task",
+      "surface_form": "Amorphous carbon surface (ta-C) modeling"
+    },
+    {
+      "id": "task_00696",
+      "type": "task",
+      "surface_form": "Interatomic potential development for carbon"
+    },
+    {
+      "id": "task_00700",
+      "type": "task",
+      "surface_form": "Amorphous carbon (a-C) structure generation"
+    },
+    {
+      "id": "task_00701",
+      "type": "task",
+      "surface_form": "Tetrahedral amorphous carbon (ta-C) modeling"
+    },
+    {
+      "id": "task_00704",
+      "type": "task",
+      "surface_form": "amorphous carbon structure generation"
+    },
+    {
+      "id": "task_00711",
+      "type": "task",
+      "surface_form": "Amorphous carbon bulk structure generation"
+    },
+    {
+      "id": "task_00717",
+      "type": "task",
+      "surface_form": "melting temperature prediction for binary ionic solids"
+    },
+    {
+      "id": "task_00729",
+      "type": "task",
+      "surface_form": "Melting temperature prediction for inorganic solids"
+    },
+    {
+      "id": "tech_00932",
+      "type": "technique",
+      "surface_form": "supervised melting point regression"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 2,
+    "claim": 6,
+    "dataset": 6,
+    "future_topic": 1,
+    "method": 1,
+    "problem": 12,
+    "task": 16,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "amorphous",
+  "representative_ids": [
+    "task_00717",
+    "task_00729"
+  ]
+}

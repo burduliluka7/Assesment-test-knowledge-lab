@@ -1,0 +1,333 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00821",
+      "type": "component",
+      "surface_form": "ring statistics analysis"
+    },
+    {
+      "id": "prob_00011",
+      "type": "problem",
+      "surface_form": "Computational efficiency at scale"
+    },
+    {
+      "id": "prob_00496",
+      "type": "problem",
+      "surface_form": "Scalability of unconstrained MLIPs"
+    },
+    {
+      "id": "prob_00497",
+      "type": "problem",
+      "surface_form": "Physical constraint enforcement overhead"
+    },
+    {
+      "id": "prob_00498",
+      "type": "problem",
+      "surface_form": "Symmetry breaking in MLIPs"
+    },
+    {
+      "id": "prob_00500",
+      "type": "problem",
+      "surface_form": "Energy conservation in non-equivariant models"
+    },
+    {
+      "id": "prob_00502",
+      "type": "problem",
+      "surface_form": "Computational cost of enforcing physical symmetries"
+    },
+    {
+      "id": "prob_00503",
+      "type": "problem",
+      "surface_form": "Symmetry artifacts in automated workflows"
+    },
+    {
+      "id": "prob_00505",
+      "type": "problem",
+      "surface_form": "computational efficiency in atomistic simulations"
+    },
+    {
+      "id": "prob_00507",
+      "type": "problem",
+      "surface_form": "Non-uniform computational budget"
+    },
+    {
+      "id": "prob_00511",
+      "type": "problem",
+      "surface_form": "Accuracy-speed tradeoff"
+    },
+    {
+      "id": "prob_00512",
+      "type": "problem",
+      "surface_form": "Scaling to large parameter counts"
+    },
+    {
+      "id": "prob_00513",
+      "type": "problem",
+      "surface_form": "Efficient fine-tuning on smaller datasets"
+    },
+    {
+      "id": "prob_00514",
+      "type": "problem",
+      "surface_form": "Memory usage limitations in heterogeneous datasets"
+    },
+    {
+      "id": "prob_00516",
+      "type": "problem",
+      "surface_form": "Transfer learning for high-level theory targets"
+    },
+    {
+      "id": "prob_00517",
+      "type": "problem",
+      "surface_form": "Handling varying charge states and spin multiplicities"
+    },
+    {
+      "id": "prob_00518",
+      "type": "problem",
+      "surface_form": "Efficient training with varying molecule sizes"
+    },
+    {
+      "id": "prob_00519",
+      "type": "problem",
+      "surface_form": "Numerical instabilities in force constant calculations"
+    },
+    {
+      "id": "prob_00520",
+      "type": "problem",
+      "surface_form": "Combining system conditioning with pretrained models"
+    },
+    {
+      "id": "prob_00521",
+      "type": "problem",
+      "surface_form": "DFT setting inconsistency"
+    },
+    {
+      "id": "prob_00523",
+      "type": "problem",
+      "surface_form": "Energy conservation in MLIPs"
+    },
+    {
+      "id": "prob_00524",
+      "type": "problem",
+      "surface_form": "Cross-domain transferability"
+    },
+    {
+      "id": "prob_00526",
+      "type": "problem",
+      "surface_form": "computational cost bottleneck in DFT"
+    },
+    {
+      "id": "prob_00527",
+      "type": "problem",
+      "surface_form": "overfitting of direct models to forces"
+    },
+    {
+      "id": "prob_00528",
+      "type": "problem",
+      "surface_form": "accurate modeling of higher-order PES derivatives in non-conservative models"
+    },
+    {
+      "id": "prob_00529",
+      "type": "problem",
+      "surface_form": "memory and latency constraints for large-scale simulations"
+    },
+    {
+      "id": "prob_00530",
+      "type": "problem",
+      "surface_form": "graph construction runtime bottleneck"
+    },
+    {
+      "id": "prob_00531",
+      "type": "problem",
+      "surface_form": "Energy conservation in NVE MD"
+    },
+    {
+      "id": "prob_00532",
+      "type": "problem",
+      "surface_form": "PES smoothness for higher-order derivatives"
+    },
+    {
+      "id": "prob_00533",
+      "type": "problem",
+      "surface_form": "Computational speed"
+    },
+    {
+      "id": "prob_00534",
+      "type": "problem",
+      "surface_form": "Strong repulsive force modeling"
+    },
+    {
+      "id": "prob_00535",
+      "type": "problem",
+      "surface_form": "Prediction confidence estimation"
+    },
+    {
+      "id": "prob_00536",
+      "type": "problem",
+      "surface_form": "performance-speed-memory tradeoff in MLIPs"
+    },
+    {
+      "id": "prob_00537",
+      "type": "problem",
+      "surface_form": "equivariance requirement paradigm"
+    },
+    {
+      "id": "prob_00539",
+      "type": "problem",
+      "surface_form": "GPU memory scalability"
+    },
+    {
+      "id": "prob_00541",
+      "type": "problem",
+      "surface_form": "rotational invariance enforcement"
+    },
+    {
+      "id": "prob_00544",
+      "type": "problem",
+      "surface_form": "Energy conservation in NVE dynamics"
+    },
+    {
+      "id": "prob_00545",
+      "type": "problem",
+      "surface_form": "Force-derivative accuracy degradation in direct models"
+    },
+    {
+      "id": "prob_00548",
+      "type": "problem",
+      "surface_form": "Energy surface discontinuities"
+    },
+    {
+      "id": "prob_00552",
+      "type": "problem",
+      "surface_form": "Computational expense of DFT calculations"
+    },
+    {
+      "id": "prob_00553",
+      "type": "problem",
+      "surface_form": "Computational cost vs model size tradeoff"
+    },
+    {
+      "id": "prob_00555",
+      "type": "problem",
+      "surface_form": "Sequential inference efficiency"
+    },
+    {
+      "id": "prob_00559",
+      "type": "problem",
+      "surface_form": "Scaling molecular dynamics to large system sizes"
+    },
+    {
+      "id": "prob_00560",
+      "type": "problem",
+      "surface_form": "Energy conservation in ML-based MD"
+    },
+    {
+      "id": "prob_00561",
+      "type": "problem",
+      "surface_form": "Cross-domain generalization"
+    },
+    {
+      "id": "prob_00563",
+      "type": "problem",
+      "surface_form": "Inference efficiency for long simulations"
+    },
+    {
+      "id": "prob_00567",
+      "type": "problem",
+      "surface_form": "High inference cost for force/stress prediction"
+    },
+    {
+      "id": "prob_00569",
+      "type": "problem",
+      "surface_form": "Memory constraints for large MoLE models"
+    },
+    {
+      "id": "prob_00571",
+      "type": "problem",
+      "surface_form": "Variable system size batching"
+    },
+    {
+      "id": "prob_00572",
+      "type": "problem",
+      "surface_form": "Data scarcity in molecular crystals"
+    },
+    {
+      "id": "prob_00574",
+      "type": "problem",
+      "surface_form": "Inconsistent DFT theory levels"
+    },
+    {
+      "id": "prob_00575",
+      "type": "problem",
+      "surface_form": "Pseudopotential inconsistency"
+    },
+    {
+      "id": "prob_00576",
+      "type": "problem",
+      "surface_form": "Compute-optimal model scaling"
+    },
+    {
+      "id": "prob_00579",
+      "type": "problem",
+      "surface_form": "DFT-free benchmarking"
+    },
+    {
+      "id": "prob_00583",
+      "type": "problem",
+      "surface_form": "Unphysical diatomic curve behavior"
+    },
+    {
+      "id": "prob_00584",
+      "type": "problem",
+      "surface_form": "Smooth potential energy curves for diatomics"
+    },
+    {
+      "id": "prob_00585",
+      "type": "problem",
+      "surface_form": "Inter-molecular force estimation"
+    },
+    {
+      "id": "prob_00597",
+      "type": "problem",
+      "surface_form": "Force locality quantification"
+    },
+    {
+      "id": "task_00654",
+      "type": "task",
+      "surface_form": "Diatomic energy curve calculation"
+    },
+    {
+      "id": "task_00698",
+      "type": "task",
+      "surface_form": "Locality testing"
+    },
+    {
+      "id": "task_00707",
+      "type": "task",
+      "surface_form": "Young's modulus prediction"
+    },
+    {
+      "id": "tech_00915",
+      "type": "technique",
+      "surface_form": "Large-scale atomistic simulation"
+    },
+    {
+      "id": "tech_00925",
+      "type": "technique",
+      "surface_form": "Young's modulus averaging"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "problem": 57,
+    "task": 3,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "computational",
+  "representative_ids": [
+    "prob_00576",
+    "prob_00563"
+  ]
+}

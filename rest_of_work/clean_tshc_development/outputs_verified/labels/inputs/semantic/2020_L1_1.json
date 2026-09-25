@@ -1,0 +1,90 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "arti_00016",
+      "type": "article",
+      "surface_form": "Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+    },
+    {
+      "id": "futu_00025",
+      "type": "future_topic",
+      "surface_form": "learning a representation for molecules using equilibrium and non‑equilibrium conformations"
+    },
+    {
+      "id": "meth_00089",
+      "type": "method",
+      "surface_form": "Molecular dynamics"
+    },
+    {
+      "id": "meth_00206",
+      "type": "method",
+      "surface_form": "Deep Potential Molecular Dynamics"
+    },
+    {
+      "id": "meth_00207",
+      "type": "method",
+      "surface_form": "Car-Parrinello molecular dynamics"
+    },
+    {
+      "id": "meth_00387",
+      "type": "method",
+      "surface_form": "Classical Force Field Molecular Dynamics"
+    },
+    {
+      "id": "prob_00412",
+      "type": "problem",
+      "surface_form": "Time-scale limitation in first-principles molecular dynamics"
+    },
+    {
+      "id": "task_00026",
+      "type": "task",
+      "surface_form": "Molecular dynamics trajectory modeling"
+    },
+    {
+      "id": "task_00034",
+      "type": "task",
+      "surface_form": "molecular dynamics"
+    },
+    {
+      "id": "task_00175",
+      "type": "task",
+      "surface_form": "Molecular dynamics simulation of liquid water and ice"
+    },
+    {
+      "id": "tech_00362",
+      "type": "technique",
+      "surface_form": "Classical molecular dynamics simulations"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "future_topic": 1,
+    "method": 4,
+    "problem": 1,
+    "task": 3,
+    "technique": 1
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00332",
+      "relation_type": "presents",
+      "members": [
+        "arti_00016",
+        "meth_00206"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "dynamics",
+  "representative_ids": [
+    "task_00034",
+    "meth_00089"
+  ]
+}

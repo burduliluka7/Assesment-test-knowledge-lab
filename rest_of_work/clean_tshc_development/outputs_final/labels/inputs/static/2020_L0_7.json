@@ -1,0 +1,227 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00446",
+      "type": "component",
+      "surface_form": "TPOT evolutionary optimizer"
+    },
+    {
+      "id": "prob_00265",
+      "type": "problem",
+      "surface_form": "Model selection bias"
+    },
+    {
+      "id": "prob_00266",
+      "type": "problem",
+      "surface_form": "Sample selection bias"
+    },
+    {
+      "id": "prob_00267",
+      "type": "problem",
+      "surface_form": "Paradox of choice in descriptor/model selection"
+    },
+    {
+      "id": "prob_00268",
+      "type": "problem",
+      "surface_form": "Need for expert domain knowledge"
+    },
+    {
+      "id": "prob_00269",
+      "type": "problem",
+      "surface_form": "Automated materials property prediction"
+    },
+    {
+      "id": "prob_00272",
+      "type": "problem",
+      "surface_form": "Automated ML pipeline for materials"
+    },
+    {
+      "id": "prob_00273",
+      "type": "problem",
+      "surface_form": "Manual ML pipeline construction"
+    },
+    {
+      "id": "prob_00274",
+      "type": "problem",
+      "surface_form": "Researcher intervention requirement"
+    },
+    {
+      "id": "prob_00276",
+      "type": "problem",
+      "surface_form": "Computational cost vs accuracy tradeoff"
+    },
+    {
+      "id": "prob_00277",
+      "type": "problem",
+      "surface_form": "Automated model selection for materials science"
+    },
+    {
+      "id": "prob_00279",
+      "type": "problem",
+      "surface_form": "Dataset size scaling characterization"
+    },
+    {
+      "id": "prob_00280",
+      "type": "problem",
+      "surface_form": "Generalization error estimation"
+    },
+    {
+      "id": "prob_00281",
+      "type": "problem",
+      "surface_form": "Model selection automation"
+    },
+    {
+      "id": "prob_00283",
+      "type": "problem",
+      "surface_form": "Computational efficiency vs. performance trade-off"
+    },
+    {
+      "id": "prob_00284",
+      "type": "problem",
+      "surface_form": "AutoML runtime optimization"
+    },
+    {
+      "id": "tech_00005",
+      "type": "technique",
+      "surface_form": "Early stopping"
+    },
+    {
+      "id": "tech_00012",
+      "type": "technique",
+      "surface_form": "Batch normalization"
+    },
+    {
+      "id": "tech_00034",
+      "type": "technique",
+      "surface_form": "One-hot encoding"
+    },
+    {
+      "id": "tech_00042",
+      "type": "technique",
+      "surface_form": "Principal component analysis"
+    },
+    {
+      "id": "tech_00063",
+      "type": "technique",
+      "surface_form": "Data preprocessing"
+    },
+    {
+      "id": "tech_00472",
+      "type": "technique",
+      "surface_form": "Nested cross-validation"
+    },
+    {
+      "id": "tech_00473",
+      "type": "technique",
+      "surface_form": "Automated feature generation"
+    },
+    {
+      "id": "tech_00476",
+      "type": "technique",
+      "surface_form": "Five-fold nested cross validation"
+    },
+    {
+      "id": "tech_00477",
+      "type": "technique",
+      "surface_form": "Stratified cross validation"
+    },
+    {
+      "id": "tech_00478",
+      "type": "technique",
+      "surface_form": "Mean imputation"
+    },
+    {
+      "id": "tech_00479",
+      "type": "technique",
+      "surface_form": "Feature dropping threshold"
+    },
+    {
+      "id": "tech_00480",
+      "type": "technique",
+      "surface_form": "Gini importance-based feature selection"
+    },
+    {
+      "id": "tech_00482",
+      "type": "technique",
+      "surface_form": "Data curation filtering"
+    },
+    {
+      "id": "tech_00487",
+      "type": "technique",
+      "surface_form": "Unknown value imputation"
+    },
+    {
+      "id": "tech_00488",
+      "type": "technique",
+      "surface_form": "Categorical feature encoding"
+    },
+    {
+      "id": "tech_00489",
+      "type": "technique",
+      "surface_form": "Pearson correlation-based feature reduction"
+    },
+    {
+      "id": "tech_00491",
+      "type": "technique",
+      "surface_form": "Nested Cross Validation"
+    },
+    {
+      "id": "tech_00492",
+      "type": "technique",
+      "surface_form": "TPOT genetic algorithm"
+    },
+    {
+      "id": "tech_00494",
+      "type": "technique",
+      "surface_form": "Nonlinear transformations"
+    },
+    {
+      "id": "tech_00496",
+      "type": "technique",
+      "surface_form": "Configurable preset system"
+    },
+    {
+      "id": "tech_00497",
+      "type": "technique",
+      "surface_form": "Relative error normalization"
+    },
+    {
+      "id": "tech_00499",
+      "type": "technique",
+      "surface_form": "Grouped cross-validation"
+    },
+    {
+      "id": "tech_00500",
+      "type": "technique",
+      "surface_form": "Leave-one-cluster-out CV"
+    },
+    {
+      "id": "tech_00501",
+      "type": "technique",
+      "surface_form": "TPOT automated model search"
+    },
+    {
+      "id": "tech_00502",
+      "type": "technique",
+      "surface_form": "Data cleaning and feature reduction"
+    },
+    {
+      "id": "tech_00503",
+      "type": "technique",
+      "surface_form": "Element embedding"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "problem": 15,
+    "technique": 26
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "cross validation",
+  "representative_ids": [
+    "tech_00499",
+    "tech_00502"
+  ]
+}

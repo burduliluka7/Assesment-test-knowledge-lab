@@ -1,0 +1,774 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00001",
+      "type": "article",
+      "surface_form": "Neural Message Passing for Quantum Chemistry"
+    },
+    {
+      "id": "arti_00002",
+      "type": "article",
+      "surface_form": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions"
+    },
+    {
+      "id": "arti_00018",
+      "type": "article",
+      "surface_form": "Deep-learning electronic-structure calculation of magnetic superstructures"
+    },
+    {
+      "id": "arti_00026",
+      "type": "article",
+      "surface_form": "Materials Design and Discovery with High-Throughput Density Functional Theory: The Open Quantum Materials Database (OQMD)"
+    },
+    {
+      "id": "cite_00249",
+      "type": "cited_work",
+      "surface_form": "Topological properties and dynamics of magnetic skyrmions"
+    },
+    {
+      "id": "cite_00269",
+      "type": "cited_work",
+      "surface_form": "Magnetic Skyrmion Prediction"
+    },
+    {
+      "id": "cite_00308",
+      "type": "cited_work",
+      "surface_form": "Density Functional Theory"
+    },
+    {
+      "id": "cite_00380",
+      "type": "cited_work",
+      "surface_form": "Density Functional Theory (DFT)"
+    },
+    {
+      "id": "clai_00032",
+      "type": "claim",
+      "surface_form": "Comparisons of JARVIS‑DFT computed formation energies, band gaps, and elastic constants with experimental measurements show acceptable error margins, confirming the database’s predictive reliability."
+    },
+    {
+      "id": "clai_00161",
+      "type": "claim",
+      "surface_form": "The fitting network can fit potential energy, force, virial, and tensorial properties such as dipole and polarizability."
+    },
+    {
+      "id": "clai_00193",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model accurately predicts the energy band structures and charge densities of complex multi‑element crystals (e.g., Hf2Zr9Ta6Ti5Nb5B54, HfTaTiB4MoC4, K3Ba3Li2Al4B6O20F), matching DFT results."
+    },
+    {
+      "id": "clai_00196",
+      "type": "claim",
+      "surface_form": "High‑throughput screening of 188,722 GeNOME crystals with the universal model identifies 21,973 insulators (3,940 direct‑gap) and 5,109 flat‑band materials, nearly doubling the entries in the Materials Flatband Database."
+    },
+    {
+      "id": "clai_00197",
+      "type": "claim",
+      "surface_form": "Using the universal HamGNN model reduces computational cost by several orders of magnitude compared with DFT (e.g., 0.33 core·hours versus 181 core·hours for a large MOF) while preserving accuracy of band gaps and charge‑density differences."
+    },
+    {
+      "id": "clai_00199",
+      "type": "claim",
+      "surface_form": "Incorporating orbital‑energy loss in a second fine‑tuning round markedly improves band‑structure predictions, yielding energy bands and Fermi surfaces that closely match DFT calculations for the test set."
+    },
+    {
+      "id": "clai_00200",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model generalizes to crystals containing more than five distinct elements and to any element supported by the OpenMX PBE pseudopotential library, effectively covering the entire periodic table."
+    },
+    {
+      "id": "clai_00202",
+      "type": "claim",
+      "surface_form": "xDeepH accurately reproduces DFT band structures of (16,16) CrI3 nanotubes for both non‑collinear surface‑normal magnetization and collinear ferromagnetism."
+    },
+    {
+      "id": "clai_00210",
+      "type": "claim",
+      "surface_form": "The ENN architecture of xDeepH preserves equivariance under the Euclidean and time‑reversal symmetry group E(3)×{I,T}, which is essential for the method's performance."
+    },
+    {
+      "id": "clai_00211",
+      "type": "claim",
+      "surface_form": "The presence of a magnetic skyrmion in Moiré‑twisted CrI3 removes an extremely flat valence band that appears in the ferromagnetic configuration, indicating strong coupling between the flat band and the skyrmion."
+    },
+    {
+      "id": "clai_00226",
+      "type": "claim",
+      "surface_form": "For bulk elastic constants (B, C11, C12, C44) the GAP model achieves fractional errors of less than 10% relative to DFT, outperforming all other evaluated interatomic potentials."
+    },
+    {
+      "id": "clai_00227",
+      "type": "claim",
+      "surface_form": "Surface energies of the (111), (110) and (100) silicon cleavage planes are predicted by GAP with errors of around 2% relative to DFT, which is comparable or better than other potentials."
+    },
+    {
+      "id": "clai_00228",
+      "type": "claim",
+      "surface_form": "Formation energies of vacancy and interstitial point defects (hexagonal, tetrahedral, dumbbell) are predicted by GAP within 10% of DFT values, providing uniform accuracy across these defects."
+    },
+    {
+      "id": "clai_00229",
+      "type": "claim",
+      "surface_form": "For extrapolative planar defects not included in the training set—specifically the (112) Σ3 grain boundary and unstable stacking fault energies on the (111) shuffle and glide planes—GAP errors remain within 20% of DFT, outperforming other models."
+    },
+    {
+      "id": "clai_00230",
+      "type": "claim",
+      "surface_form": "Combining a simple repulsive pair potential with a many‑body SOAP‑kernel term in the GAP framework yields meV‑per‑atom accuracy for silicon energetics."
+    },
+    {
+      "id": "clai_00232",
+      "type": "claim",
+      "surface_form": "Using the GAP model enables simulations that would be prohibitively expensive with DFT, such as finite‑temperature phase‑boundary calculations, liquid self‑diffusivity, amorphous silicon formation by slow quench, and dynamic brittle fracture."
+    },
+    {
+      "id": "clai_00233",
+      "type": "claim",
+      "surface_form": "A training database of manageable size, constructed from DFT configurations covering relevant phases and defects, is sufficient to achieve high transferability of the GAP model across diverse silicon configurations."
+    },
+    {
+      "id": "clai_00234",
+      "type": "claim",
+      "surface_form": "Benchmark comparisons show that the new GAP model yields lower errors than previous GAP models for silicon."
+    },
+    {
+      "id": "clai_00312",
+      "type": "claim",
+      "surface_form": "Matbench contains data from 10 density functional theory-derived and experimental sources including Materials Project, Zhuo et al., Landolt-Bornstein Handbook, Castelli et al., JARVIS DFT 2D, and Citrine Informatics."
+    },
+    {
+      "id": "clai_00353",
+      "type": "claim",
+      "surface_form": "Neural‑network‑based electronic‑structure prediction tools achieve significant speedups over conventional density‑functional theory while maintaining comparable accuracy, accelerating electronic‑structure calculations."
+    },
+    {
+      "id": "clai_00373",
+      "type": "claim",
+      "surface_form": "DeepH predicts DFT Hamiltonian matrix elements for graphene with an average mean absolute error of 2.1 meV and a coefficient of determination r² = 0.9994 across all orbital combinations."
+    },
+    {
+      "id": "clai_00375",
+      "type": "claim",
+      "surface_form": "For monolayer MoS₂, DeepH predicts DFT Hamiltonian matrix elements with average mean absolute errors of 1.3 meV (Mo–Mo), 1.0 meV (Mo–S), 0.7 meV (S–Mo), and 0.8 meV (S–S)."
+    },
+    {
+      "id": "clai_00376",
+      "type": "claim",
+      "surface_form": "Band structures and electric susceptibility computed from DeepH for MoS₂ match DFT results closely."
+    },
+    {
+      "id": "clai_00377",
+      "type": "claim",
+      "surface_form": "DeepH generalizes to carbon nanotubes, achieving Hamiltonian prediction MAE below 3.5 meV for diameters larger than 2 nm and accurately reproducing their band structures."
+    },
+    {
+      "id": "clai_00378",
+      "type": "claim",
+      "surface_form": "DeepH scales linearly with system size and provides a three‑order‑of‑magnitude speed‑up over conventional DFT for a MoS₂ 35 × 35 supercell."
+    },
+    {
+      "id": "clai_00379",
+      "type": "claim",
+      "surface_form": "A DeepH model trained only on non‑twisted bilayer graphene structures predicts Hamiltonians for twisted bilayer graphene supercells up to ~1000 atoms with sub‑meV mean absolute error and correctly reproduces the flat‑band feature near the Fermi level at the magic angle (~1.08°)."
+    },
+    {
+      "id": "clai_00381",
+      "type": "claim",
+      "surface_form": "Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency."
+    },
+    {
+      "id": "clai_00382",
+      "type": "claim",
+      "surface_form": "DeepH resolves the accuracy‑efficiency dilemma of DFT, enabling efficient ab‑initio electronic‑structure calculations for large‑scale material systems."
+    },
+    {
+      "id": "clai_00384",
+      "type": "claim",
+      "surface_form": "DeepH can be applied to both periodic and non‑periodic systems, including three‑dimensional bulk carbon allotropes and quasi‑zero‑dimensional molecules, achieving sub‑meV mean absolute error for Hamiltonian predictions."
+    },
+    {
+      "id": "clai_00510",
+      "type": "claim",
+      "surface_form": "Screening of approximately 50 000 inorganic crystals with the machine‑learning model identified over 2 000 temperature‑induced solid‑solid polymorphic transitions between 300 K and 600 K, including 130 stable transitions within the technologically relevant 300 K–350 K interval."
+    },
+    {
+      "id": "clai_00511",
+      "type": "claim",
+      "surface_form": "Twenty‑one stable polar‑nonpolar transitions are predicted to exhibit relative lattice‑thermal‑conductivity changes of at least 20 % (0.20), ranging up to a 73 % increase for ZrSeO with a conductivity ratio of 1.73."
+    },
+    {
+      "id": "clai_00513",
+      "type": "claim",
+      "surface_form": "The presented workflow enables high‑throughput prediction of temperature‑induced solid‑solid phase transitions without performing explicit phonon calculations for each material, dramatically reducing computational cost."
+    },
+    {
+      "id": "clai_00517",
+      "type": "claim",
+      "surface_form": "Metastable phase transitions outnumber stable transitions across all symmetry categories in the screened dataset."
+    },
+    {
+      "id": "clai_00518",
+      "type": "claim",
+      "surface_form": "Across the screened temperature range, a larger number of predicted stable phase transitions is generally associated with smaller phase‑transition entropy changes."
+    },
+    {
+      "id": "clai_00519",
+      "type": "claim",
+      "surface_form": "The current screening neglects thermal‑expansion effects, which may cause discrepancies with experimental transition temperatures, especially when expansion strongly influences phase stability."
+    },
+    {
+      "id": "clai_00576",
+      "type": "claim",
+      "surface_form": "Discontinuities in forces caused by the sharp cutoff radius and neighbor‑list sorting are much smaller than thermal fluctuations and do not impair canonical sampling."
+    },
+    {
+      "id": "clai_00579",
+      "type": "claim",
+      "surface_form": "DeepH-E3 predicts DFT Hamiltonian matrix elements with sub‑meV mean absolute error, reducing the error by roughly a factor of two compared with the original DeepH method across diverse material systems."
+    },
+    {
+      "id": "clai_00580",
+      "type": "claim",
+      "surface_form": "DeepH-E3 enables accurate electronic‑structure calculations for supercells larger than 10⁴ atoms, reducing computational cost by several orders of magnitude and allowing calculations in minutes on a single GPU versus months on thousands of CPU cores."
+    },
+    {
+      "id": "clai_00581",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+    },
+    {
+      "id": "clai_00582",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 predicts a spin‑orbit‑coupling‑induced topological quantum phase transition in twisted bilayer Bi₂Te₃, evidenced by band‑gap closing and reopening and a change of the Z₂ invariant from 0 to 1 as SOC strength increases."
+    },
+    {
+      "id": "clai_00583",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 attains sub‑meV accuracy after training on only a few hundred DFT calculations of small, non‑twisted structures, demonstrating high data efficiency."
+    },
+    {
+      "id": "clai_00584",
+      "type": "claim",
+      "surface_form": "DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors."
+    },
+    {
+      "id": "clai_00585",
+      "type": "claim",
+      "surface_form": "The model generalizes to arbitrarily twisted bilayer structures; the mean absolute error of Hamiltonian predictions decreases as the Moiré supercell size grows (or twist angle decreases)."
+    },
+    {
+      "id": "clai_00651",
+      "type": "claim",
+      "surface_form": "The Open Quantum Materials Database (OQMD) contains over 200,000 DFT‑calculated crystal structures, including experimental ICSD entries and theoretical prototype structures, and is freely accessible to the scientific community without usage restrictions."
+    },
+    {
+      "id": "clai_00663",
+      "type": "claim",
+      "surface_form": "AFLOW provides a standardized definition of Brillouin‑zone integration paths for all 14 Bravais lattices, filling a gap in the literature."
+    },
+    {
+      "id": "clai_00668",
+      "type": "claim",
+      "surface_form": "AFLOW can automatically construct convex hulls for binary alloy systems at zero temperature using formation enthalpies from DFT calculations."
+    },
+    {
+      "id": "clai_00675",
+      "type": "claim",
+      "surface_form": "AFLOW can predict alloy miscibility using Miedema and Hume‑Rothery mixing rules."
+    },
+    {
+      "id": "clai_00678",
+      "type": "claim",
+      "surface_form": "GAP predicts diamond lattice parameter (3.539 Å) very close to DFT-LDA reference (3.532 Å), outperforming screened Tersoff potential (3.566 Å), with bulk modulus and elastic constants reasonably close to DFT reference values."
+    },
+    {
+      "id": "clai_00679",
+      "type": "claim",
+      "surface_form": "GAP radial and angular distribution functions for liquid and amorphous carbon closely match DFT reference results, including peak locations, extents, and overall curve shapes."
+    },
+    {
+      "id": "clai_00680",
+      "type": "claim",
+      "surface_form": "GAP recovers three- and four-membered rings that are key features of liquid and low-density amorphous carbon structures, which empirical potentials (Tersoff/Brenner) fail to predict."
+    },
+    {
+      "id": "clai_00684",
+      "type": "claim",
+      "surface_form": "Empirical potentials (Tersoff/Brenner) cannot describe interlayer spacing in graphite due to short-range cutoff being less than c/2, provide poor description of carbon surfaces, and yield much lower surface energies than GAP and DFT for ta-C surfaces."
+    },
+    {
+      "id": "clai_00685",
+      "type": "claim",
+      "surface_form": "Diamond exhibits strong force locality with force deviations vanishing practically at rfix = 5.5 Å, while graphite is highly nonlocal with larger force deviations that do not decay as rapidly."
+    },
+    {
+      "id": "clai_00686",
+      "type": "claim",
+      "surface_form": "For amorphous carbon with 3.7 Å cutoff radius, the lowest achievable standard deviation of force components is approximately 1 eV/Å due to fundamental nonlocality limits, representing a maximum accuracy bound for any finite-range interatomic potential."
+    },
+    {
+      "id": "comp_00351",
+      "type": "component",
+      "surface_form": "JARVIS‑Heterostructure app"
+    },
+    {
+      "id": "comp_00386",
+      "type": "component",
+      "surface_form": "Standardized Brillouin‑zone path generator"
+    },
+    {
+      "id": "data_00048",
+      "type": "dataset",
+      "surface_form": "NiBr2 spin‑spiral"
+    },
+    {
+      "id": "data_00049",
+      "type": "dataset",
+      "surface_form": "Moiré‑twisted bilayer CrI3"
+    },
+    {
+      "id": "data_00060",
+      "type": "dataset",
+      "surface_form": "twisted bilayer bismuthene"
+    },
+    {
+      "id": "data_00247",
+      "type": "dataset",
+      "surface_form": "twisted bilayer bismuthene (TBB)"
+    },
+    {
+      "id": "futu_00044",
+      "type": "future_topic",
+      "surface_form": "Use of the framework for high‑dimensional integrals in quantum physics (multi‑particle Schrödinger equation)"
+    },
+    {
+      "id": "futu_00053",
+      "type": "future_topic",
+      "surface_form": "Large electronic‑structure datasets"
+    },
+    {
+      "id": "futu_00059",
+      "type": "future_topic",
+      "surface_form": "Development of deep‑learning ab initio methods for magnetic systems"
+    },
+    {
+      "id": "futu_00061",
+      "type": "future_topic",
+      "surface_form": "Completion of Quantum ESPRESSO software integration"
+    },
+    {
+      "id": "futu_00064",
+      "type": "future_topic",
+      "surface_form": "Extension of Gaussian Approximation Potentials to other materials"
+    },
+    {
+      "id": "futu_00068",
+      "type": "future_topic",
+      "surface_form": "Integration of ML potentials with finite‑temperature phase‑boundary calculations for complex alloys"
+    },
+    {
+      "id": "futu_00084",
+      "type": "future_topic",
+      "surface_form": "AI-accelerated electronic structure prediction"
+    },
+    {
+      "id": "futu_00092",
+      "type": "future_topic",
+      "surface_form": "Twisted van der Waals materials"
+    },
+    {
+      "id": "futu_00156",
+      "type": "future_topic",
+      "surface_form": "Construction of a Moiré‑twisted material database using DeepH‑E3"
+    },
+    {
+      "id": "meth_00074",
+      "type": "method",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "meth_00098",
+      "type": "method",
+      "surface_form": "density functional perturbation theory"
+    },
+    {
+      "id": "meth_00153",
+      "type": "method",
+      "surface_form": "van der Waals density functional"
+    },
+    {
+      "id": "meth_00225",
+      "type": "method",
+      "surface_form": "Kohn-Sham density-functional theory"
+    },
+    {
+      "id": "meth_00248",
+      "type": "method",
+      "surface_form": "van der Waals functional OptB88"
+    },
+    {
+      "id": "meth_00268",
+      "type": "method",
+      "surface_form": "Open Quantum Materials Database"
+    },
+    {
+      "id": "meth_00377",
+      "type": "method",
+      "surface_form": "Open Quantum Mechanical Database"
+    },
+    {
+      "id": "prob_00016",
+      "type": "problem",
+      "surface_form": "Accurate prediction of quantum‑chemical properties"
+    },
+    {
+      "id": "prob_00020",
+      "type": "problem",
+      "surface_form": "computational scalability of quantum mechanical methods"
+    },
+    {
+      "id": "prob_00031",
+      "type": "problem",
+      "surface_form": "Accurate band‑structure prediction for twisted moiré materials"
+    },
+    {
+      "id": "prob_00033",
+      "type": "problem",
+      "surface_form": "Modeling strong spin‑orbit coupling in twisted vdW materials"
+    },
+    {
+      "id": "prob_00034",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure prediction for moiré systems"
+    },
+    {
+      "id": "prob_00060",
+      "type": "problem",
+      "surface_form": "Large‑scale prediction of temperature‑induced solid‑solid phase transitions"
+    },
+    {
+      "id": "prob_00062",
+      "type": "problem",
+      "surface_form": "Scale bridging across atomistic and continuum levels"
+    },
+    {
+      "id": "prob_00066",
+      "type": "problem",
+      "surface_form": "Multiscale bridging from atomic to continuum"
+    },
+    {
+      "id": "prob_00119",
+      "type": "problem",
+      "surface_form": "Accurate, transferable interatomic potential for silicon"
+    },
+    {
+      "id": "prob_00140",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure calculation for large‑scale materials"
+    },
+    {
+      "id": "prob_00142",
+      "type": "problem",
+      "surface_form": "Modeling twisted moiré materials"
+    },
+    {
+      "id": "prob_00178",
+      "type": "problem",
+      "surface_form": "Accelerated atomic‑property prediction"
+    },
+    {
+      "id": "prob_00201",
+      "type": "problem",
+      "surface_form": "Rapid heterostructure design"
+    },
+    {
+      "id": "prob_00376",
+      "type": "problem",
+      "surface_form": "electronic structure of correlated systems"
+    },
+    {
+      "id": "prob_00601",
+      "type": "problem",
+      "surface_form": "Interlayer spacing in graphite"
+    },
+    {
+      "id": "task_00045",
+      "type": "task",
+      "surface_form": "electronic structure"
+    },
+    {
+      "id": "task_00046",
+      "type": "task",
+      "surface_form": "Electronic structure calculation"
+    },
+    {
+      "id": "task_00073",
+      "type": "task",
+      "surface_form": "Martensitic phase‑transition free‑energy calculation in iron"
+    },
+    {
+      "id": "task_00074",
+      "type": "task",
+      "surface_form": "Grain‑boundary energy evaluation in aluminum and iron"
+    },
+    {
+      "id": "task_00083",
+      "type": "task",
+      "surface_form": "High‑throughput prediction of temperature‑induced solid‑solid phase transitions"
+    },
+    {
+      "id": "task_00091",
+      "type": "task",
+      "surface_form": "Microstructure evolution simulation"
+    },
+    {
+      "id": "task_00095",
+      "type": "task",
+      "surface_form": "Phase‑field microstructure evolution"
+    },
+    {
+      "id": "task_00162",
+      "type": "task",
+      "surface_form": "Interatomic potential development for silicon"
+    },
+    {
+      "id": "task_00165",
+      "type": "task",
+      "surface_form": "Interatomic potential fitting for silicon"
+    },
+    {
+      "id": "task_00167",
+      "type": "task",
+      "surface_form": "Liquid silicon structural analysis"
+    },
+    {
+      "id": "task_00168",
+      "type": "task",
+      "surface_form": "Amorphous silicon generation and characterization"
+    },
+    {
+      "id": "task_00170",
+      "type": "task",
+      "surface_form": "Efficient electronic‑structure calculation of magnetic materials"
+    },
+    {
+      "id": "task_00171",
+      "type": "task",
+      "surface_form": "Band‑structure and density‑of‑states prediction for large magnetic superstructures"
+    },
+    {
+      "id": "task_00172",
+      "type": "task",
+      "surface_form": "Exploration of magnetic skyrmion effects on electronic properties"
+    },
+    {
+      "id": "task_00179",
+      "type": "task",
+      "surface_form": "Electronic‑structure property calculation"
+    },
+    {
+      "id": "task_00180",
+      "type": "task",
+      "surface_form": "Study of twisted van der Waals heterostructures"
+    },
+    {
+      "id": "task_00182",
+      "type": "task",
+      "surface_form": "Band structure and density‑of‑states calculation"
+    },
+    {
+      "id": "task_00235",
+      "type": "task",
+      "surface_form": "Heterostructure design"
+    },
+    {
+      "id": "task_00244",
+      "type": "task",
+      "surface_form": "2D heterostructure band‑alignment analysis"
+    },
+    {
+      "id": "task_00273",
+      "type": "task",
+      "surface_form": "hybrid functional band‑structure calculation"
+    },
+    {
+      "id": "task_00402",
+      "type": "task",
+      "surface_form": "Metallic material simulation"
+    },
+    {
+      "id": "task_00436",
+      "type": "task",
+      "surface_form": "copper system simulation"
+    },
+    {
+      "id": "task_00437",
+      "type": "task",
+      "surface_form": "high-entropy alloy simulation"
+    },
+    {
+      "id": "task_00470",
+      "type": "task",
+      "surface_form": "Electronic band structure calculation"
+    },
+    {
+      "id": "task_00481",
+      "type": "task",
+      "surface_form": "Density of states calculation"
+    },
+    {
+      "id": "task_00488",
+      "type": "task",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "task_00509",
+      "type": "task",
+      "surface_form": "Bandgap calculation"
+    },
+    {
+      "id": "task_00543",
+      "type": "task",
+      "surface_form": "Heusler alloy simulation"
+    },
+    {
+      "id": "tech_00106",
+      "type": "technique",
+      "surface_form": "AI-accelerated electronic structure prediction"
+    },
+    {
+      "id": "tech_00107",
+      "type": "technique",
+      "surface_form": "coarse-graining using autoencoders"
+    },
+    {
+      "id": "tech_00167",
+      "type": "technique",
+      "surface_form": "DFT+U with van der Waals functionals"
+    },
+    {
+      "id": "tech_00329",
+      "type": "technique",
+      "surface_form": "Voronoi‑based grain generation"
+    },
+    {
+      "id": "tech_00622",
+      "type": "technique",
+      "surface_form": "Density-functional perturbation theory"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 4,
+    "cited_work": 4,
+    "claim": 53,
+    "component": 2,
+    "dataset": 4,
+    "future_topic": 9,
+    "method": 7,
+    "problem": 15,
+    "task": 28,
+    "technique": 5
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00339",
+      "relation_type": "presents",
+      "members": [
+        "arti_00026",
+        "meth_00268"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      }
+    },
+    {
+      "id": "h_00808",
+      "relation_type": "claims",
+      "members": [
+        "arti_00018",
+        "clai_00202"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5394,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00816",
+      "relation_type": "claims",
+      "members": [
+        "arti_00018",
+        "clai_00210"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5394,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "theoretical",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_00817",
+      "relation_type": "claims",
+      "members": [
+        "arti_00018",
+        "clai_00211"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5394,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "causal",
+        "evidence_type": "simulation",
+        "evidence_strength": "weak",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01257",
+      "relation_type": "claims",
+      "members": [
+        "arti_00026",
+        "clai_00651"
+      ],
+      "year": 2013,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5402,
+        "article_year": 2013
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.99
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "electronic",
+  "representative_ids": [
+    "clai_00382",
+    "prob_00034"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "comp_00310",
+      "type": "component",
+      "surface_form": "Cutoff‑based edge connectivity"
+    },
+    {
+      "id": "comp_00311",
+      "type": "component",
+      "surface_form": "End‑to‑end GNN predictor"
+    },
+    {
+      "id": "comp_00312",
+      "type": "component",
+      "surface_form": "Boundary‑condition encoding"
+    },
+    {
+      "id": "comp_00313",
+      "type": "component",
+      "surface_form": "Genetic‑algorithm‑driven inverse design"
+    },
+    {
+      "id": "comp_00315",
+      "type": "component",
+      "surface_form": "GA optimizer"
+    },
+    {
+      "id": "comp_00316",
+      "type": "component",
+      "surface_form": "Stress‑concentration objective"
+    },
+    {
+      "id": "comp_00319",
+      "type": "component",
+      "surface_form": "PNA-based GNN predictor"
+    },
+    {
+      "id": "comp_00320",
+      "type": "component",
+      "surface_form": "Alternative GNN backbones"
+    },
+    {
+      "id": "comp_00321",
+      "type": "component",
+      "surface_form": "Dropout regularization layers"
+    },
+    {
+      "id": "comp_00323",
+      "type": "component",
+      "surface_form": "Stress‑field surrogate objective"
+    },
+    {
+      "id": "comp_00324",
+      "type": "component",
+      "surface_form": "NEMD ground‑truth evaluator"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 11
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "gnn",
+  "representative_ids": [
+    "comp_00311",
+    "comp_00319"
+  ]
+}

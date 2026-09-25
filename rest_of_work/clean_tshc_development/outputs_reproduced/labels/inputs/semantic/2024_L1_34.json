@@ -1,0 +1,432 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00275",
+      "type": "claim",
+      "surface_form": "For MLIPs, the loss function is usually a weighted sum of RMSEs on forces and total energy."
+    },
+    {
+      "id": "clai_00409",
+      "type": "claim",
+      "surface_form": "Meta-learning allows ML algorithms to quickly learn and adapt to new tasks by leveraging experience from solving similar tasks with relatively small datasets."
+    },
+    {
+      "id": "clai_00575",
+      "type": "claim",
+      "surface_form": "Using a loss function with adaptive prefactors that emphasize forces early and energies/virial later reduces the total training time to a few core‑hours for all test cases."
+    },
+    {
+      "id": "comp_00064",
+      "type": "component",
+      "surface_form": "Hessian eigenvalue spectrum loss"
+    },
+    {
+      "id": "comp_00067",
+      "type": "component",
+      "surface_form": "Auto‑differentiation pipeline"
+    },
+    {
+      "id": "comp_00118",
+      "type": "component",
+      "surface_form": "Active learning workflow with Billiard Walk sampling"
+    },
+    {
+      "id": "comp_00136",
+      "type": "component",
+      "surface_form": "Active‑learning sampling workflow"
+    },
+    {
+      "id": "comp_00207",
+      "type": "component",
+      "surface_form": "Auto‑differentiation layer"
+    },
+    {
+      "id": "comp_00269",
+      "type": "component",
+      "surface_form": "Stochastic quadrature gradient estimation"
+    },
+    {
+      "id": "comp_00272",
+      "type": "component",
+      "surface_form": "Adam optimizer with piecewise learning‑rate decay"
+    },
+    {
+      "id": "comp_00625",
+      "type": "component",
+      "surface_form": "Iterative self-consistent training protocol"
+    },
+    {
+      "id": "comp_00629",
+      "type": "component",
+      "surface_form": "virial in loss function"
+    },
+    {
+      "id": "comp_00630",
+      "type": "component",
+      "surface_form": "active learning workflow"
+    },
+    {
+      "id": "futu_00107",
+      "type": "future_topic",
+      "surface_form": "Extension of Hessian‑based training to other higher‑order physical observables"
+    },
+    {
+      "id": "meth_00017",
+      "type": "method",
+      "surface_form": "transfer learning"
+    },
+    {
+      "id": "meth_00018",
+      "type": "method",
+      "surface_form": "Adam optimizer"
+    },
+    {
+      "id": "meth_00051",
+      "type": "method",
+      "surface_form": "Gradient-domain machine learning"
+    },
+    {
+      "id": "meth_00059",
+      "type": "method",
+      "surface_form": "Stochastic Gradient Descent"
+    },
+    {
+      "id": "meth_00096",
+      "type": "method",
+      "surface_form": "generalized gradient approximation"
+    },
+    {
+      "id": "meth_00259",
+      "type": "method",
+      "surface_form": "Gradient Boosting Decision Tree"
+    },
+    {
+      "id": "meth_00385",
+      "type": "method",
+      "surface_form": "Active learning for neural network potentials"
+    },
+    {
+      "id": "meth_00446",
+      "type": "method",
+      "surface_form": "gradient-boosted tree regression"
+    },
+    {
+      "id": "metr_00061",
+      "type": "metric",
+      "surface_form": "MSE loss"
+    },
+    {
+      "id": "prob_00415",
+      "type": "problem",
+      "surface_form": "Achieving Boltzmann-distributed training without expensive pre-simulations"
+    },
+    {
+      "id": "task_00022",
+      "type": "task",
+      "surface_form": "Binary classification"
+    },
+    {
+      "id": "task_00101",
+      "type": "task",
+      "surface_form": "Active‑learning data acquisition"
+    },
+    {
+      "id": "task_00197",
+      "type": "task",
+      "surface_form": "Transfer‑learning for small‑data properties"
+    },
+    {
+      "id": "tech_00010",
+      "type": "technique",
+      "surface_form": "AdamW optimizer"
+    },
+    {
+      "id": "tech_00011",
+      "type": "technique",
+      "surface_form": "5-fold cross-validation"
+    },
+    {
+      "id": "tech_00013",
+      "type": "technique",
+      "surface_form": "Exponential learning rate decay"
+    },
+    {
+      "id": "tech_00029",
+      "type": "technique",
+      "surface_form": "Leave-one-out cross-validation"
+    },
+    {
+      "id": "tech_00031",
+      "type": "technique",
+      "surface_form": "Huber loss"
+    },
+    {
+      "id": "tech_00038",
+      "type": "technique",
+      "surface_form": "Active learning"
+    },
+    {
+      "id": "tech_00039",
+      "type": "technique",
+      "surface_form": "Learning rate scheduling"
+    },
+    {
+      "id": "tech_00049",
+      "type": "technique",
+      "surface_form": "Stochastic gradient descent"
+    },
+    {
+      "id": "tech_00050",
+      "type": "technique",
+      "surface_form": "Softmax classification"
+    },
+    {
+      "id": "tech_00053",
+      "type": "technique",
+      "surface_form": "iterative training"
+    },
+    {
+      "id": "tech_00056",
+      "type": "technique",
+      "surface_form": "Cosine annealing learning‑rate schedule"
+    },
+    {
+      "id": "tech_00058",
+      "type": "technique",
+      "surface_form": "Exponential learning‑rate decay"
+    },
+    {
+      "id": "tech_00068",
+      "type": "technique",
+      "surface_form": "k‑fold cross‑validation"
+    },
+    {
+      "id": "tech_00080",
+      "type": "technique",
+      "surface_form": "10‑fold cross‑validation"
+    },
+    {
+      "id": "tech_00089",
+      "type": "technique",
+      "surface_form": "Automatic differentiation"
+    },
+    {
+      "id": "tech_00125",
+      "type": "technique",
+      "surface_form": "Mean‑squared error loss on Hamiltonian matrix elements"
+    },
+    {
+      "id": "tech_00131",
+      "type": "technique",
+      "surface_form": "Hessian‑based loss augmentation"
+    },
+    {
+      "id": "tech_00138",
+      "type": "technique",
+      "surface_form": "Inclusion of Hessian data in training"
+    },
+    {
+      "id": "tech_00147",
+      "type": "technique",
+      "surface_form": "Combined mean‑squared‑error loss over multiple physical quantities"
+    },
+    {
+      "id": "tech_00170",
+      "type": "technique",
+      "surface_form": "Active‑learning‑guided data acquisition"
+    },
+    {
+      "id": "tech_00179",
+      "type": "technique",
+      "surface_form": "Active learning with error‑driven exploitation"
+    },
+    {
+      "id": "tech_00197",
+      "type": "technique",
+      "surface_form": "F1‑score classification evaluation"
+    },
+    {
+      "id": "tech_00199",
+      "type": "technique",
+      "surface_form": "Multi‑task learning with auxiliary DFT properties"
+    },
+    {
+      "id": "tech_00204",
+      "type": "technique",
+      "surface_form": "ROC‑curve analysis"
+    },
+    {
+      "id": "tech_00232",
+      "type": "technique",
+      "surface_form": "Latent‑space regularization with magnetic moments"
+    },
+    {
+      "id": "tech_00278",
+      "type": "technique",
+      "surface_form": "Linear evolution of loss prefactors"
+    },
+    {
+      "id": "tech_00288",
+      "type": "technique",
+      "surface_form": "Adam optimizer with staged learning‑rate decay"
+    },
+    {
+      "id": "tech_00296",
+      "type": "technique",
+      "surface_form": "Stochastic gradient descent on quadrature grids"
+    },
+    {
+      "id": "tech_00310",
+      "type": "technique",
+      "surface_form": "Analytic Gradient Evaluation"
+    },
+    {
+      "id": "tech_00332",
+      "type": "technique",
+      "surface_form": "Transfer learning for new loading conditions"
+    },
+    {
+      "id": "tech_00364",
+      "type": "technique",
+      "surface_form": "Deep transfer learning"
+    },
+    {
+      "id": "tech_00376",
+      "type": "technique",
+      "surface_form": "k‑fold cross‑validation and learning‑curve analysis"
+    },
+    {
+      "id": "tech_00472",
+      "type": "technique",
+      "surface_form": "Nested cross-validation"
+    },
+    {
+      "id": "tech_00476",
+      "type": "technique",
+      "surface_form": "Five-fold nested cross validation"
+    },
+    {
+      "id": "tech_00477",
+      "type": "technique",
+      "surface_form": "Stratified cross validation"
+    },
+    {
+      "id": "tech_00491",
+      "type": "technique",
+      "surface_form": "Nested Cross Validation"
+    },
+    {
+      "id": "tech_00499",
+      "type": "technique",
+      "surface_form": "Grouped cross-validation"
+    },
+    {
+      "id": "tech_00533",
+      "type": "technique",
+      "surface_form": "Normalized MSE loss"
+    },
+    {
+      "id": "tech_00543",
+      "type": "technique",
+      "surface_form": "Mean square error loss"
+    },
+    {
+      "id": "tech_00544",
+      "type": "technique",
+      "surface_form": "AdamW optimizer with learning rate decay"
+    },
+    {
+      "id": "tech_00577",
+      "type": "technique",
+      "surface_form": "Data-parallel distributed training"
+    },
+    {
+      "id": "tech_00587",
+      "type": "technique",
+      "surface_form": "double precision training"
+    },
+    {
+      "id": "tech_00595",
+      "type": "technique",
+      "surface_form": "iterative retraining cycle"
+    },
+    {
+      "id": "tech_00598",
+      "type": "technique",
+      "surface_form": "Cyclical learning rate schedule"
+    },
+    {
+      "id": "tech_00621",
+      "type": "technique",
+      "surface_form": "Machine-learning assisted data mining"
+    },
+    {
+      "id": "tech_00625",
+      "type": "technique",
+      "surface_form": "Representation learning"
+    },
+    {
+      "id": "tech_00626",
+      "type": "technique",
+      "surface_form": "Meta learning"
+    },
+    {
+      "id": "tech_00655",
+      "type": "technique",
+      "surface_form": "Large-scale active learning"
+    },
+    {
+      "id": "tech_00661",
+      "type": "technique",
+      "surface_form": "Large-scale pretraining"
+    },
+    {
+      "id": "tech_00671",
+      "type": "technique",
+      "surface_form": "Linear decay learning rate schedule"
+    },
+    {
+      "id": "tech_00694",
+      "type": "technique",
+      "surface_form": "Self-consistent training"
+    },
+    {
+      "id": "tech_00797",
+      "type": "technique",
+      "surface_form": "Huber loss function"
+    },
+    {
+      "id": "tech_00921",
+      "type": "technique",
+      "surface_form": "conjugate-gradient relaxation"
+    },
+    {
+      "id": "tech_00936",
+      "type": "technique",
+      "surface_form": "Five-fold cross-validation"
+    },
+    {
+      "id": "tech_00953",
+      "type": "technique",
+      "surface_form": "Unsupervised classification"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 3,
+    "component": 10,
+    "future_topic": 1,
+    "method": 8,
+    "metric": 1,
+    "problem": 1,
+    "task": 3,
+    "technique": 55
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "learning",
+  "representative_ids": [
+    "meth_00051",
+    "tech_00049"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "prob_00604",
+      "type": "problem",
+      "surface_form": "Transferability across carbon phases"
+    },
+    {
+      "id": "task_00686",
+      "type": "task",
+      "surface_form": "Atomistic simulations of liquid carbon"
+    },
+    {
+      "id": "task_00692",
+      "type": "task",
+      "surface_form": "Carbon dimer potential energy curve computation"
+    },
+    {
+      "id": "task_00696",
+      "type": "task",
+      "surface_form": "Interatomic potential development for carbon"
+    },
+    {
+      "id": "task_00705",
+      "type": "task",
+      "surface_form": "liquid carbon simulation"
+    }
+  ],
+  "generation_type_counts": {
+    "problem": 1,
+    "task": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "carbon",
+  "representative_ids": [
+    "task_00705",
+    "task_00686"
+  ]
+}

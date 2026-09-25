@@ -1,0 +1,118 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00033",
+      "type": "article",
+      "surface_form": "Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+    },
+    {
+      "id": "cite_00236",
+      "type": "cited_work",
+      "surface_form": "Plasma synthesis of electrolyte nanopowders"
+    },
+    {
+      "id": "clai_00013",
+      "type": "claim",
+      "surface_form": "Using Materials Project tools, researchers designed a new class of sodium‑based carbonophosphate compounds, predicted them to be thermodynamically stable, synthesized them hydrothermally, and experimentally confirmed their Li‑ion battery performance after ion exchange."
+    },
+    {
+      "id": "clai_00028",
+      "type": "claim",
+      "surface_form": "The integrated JARVIS workflow (DFT → FF → ML) enables rapid screening of materials for high solar‑cell efficiency (SLME) with predictions validated against experimental data."
+    },
+    {
+      "id": "clai_00485",
+      "type": "claim",
+      "surface_form": "The DeePMD model is a promising candidate for developing a universal potential for solid-state electrolytes, though care must be taken when selecting training configurations."
+    },
+    {
+      "id": "clai_00654",
+      "type": "claim",
+      "surface_form": "High‑throughput screening identified TiP, LiSiNi₂, and CoSi₂ as the most promising Li‑ion battery anode conversion reactions, offering high capacity, moderate voltage, and low volume expansion."
+    },
+    {
+      "id": "comp_00363",
+      "type": "component",
+      "surface_form": "HF‑scavenging coating screen"
+    },
+    {
+      "id": "data_00245",
+      "type": "dataset",
+      "surface_form": "MoS₂ 35×35 supercell (efficiency test)"
+    },
+    {
+      "id": "futu_00129",
+      "type": "future_topic",
+      "surface_form": "Screening of material databases for solid-state electrolytes"
+    },
+    {
+      "id": "prob_00202",
+      "type": "problem",
+      "surface_form": "High‑capacity battery anode identification"
+    },
+    {
+      "id": "prob_00203",
+      "type": "problem",
+      "surface_form": "HF‑induced cathode degradation mitigation"
+    },
+    {
+      "id": "task_00159",
+      "type": "task",
+      "surface_form": "materials screening for lithium superionic conductors"
+    },
+    {
+      "id": "task_00246",
+      "type": "task",
+      "surface_form": "High‑throughput screening of Li‑ion battery anodes"
+    },
+    {
+      "id": "task_00247",
+      "type": "task",
+      "surface_form": "Li2O‑based reaction search for Li‑air batteries"
+    },
+    {
+      "id": "task_00248",
+      "type": "task",
+      "surface_form": "Screening of metal‑oxide cathode coatings for HF scavenging"
+    },
+    {
+      "id": "task_00527",
+      "type": "task",
+      "surface_form": "LGPS solid electrolyte simulation"
+    },
+    {
+      "id": "task_00529",
+      "type": "task",
+      "surface_form": "NASICON solid electrolyte simulation"
+    },
+    {
+      "id": "task_00534",
+      "type": "task",
+      "surface_form": "solid-state electrolytes"
+    },
+    {
+      "id": "tech_00255",
+      "type": "technique",
+      "surface_form": "filter‑and‑screen workflow for lithium superionic conductors"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 1,
+    "claim": 4,
+    "component": 1,
+    "dataset": 1,
+    "future_topic": 1,
+    "problem": 2,
+    "task": 7,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "solid",
+  "representative_ids": [
+    "task_00534",
+    "futu_00129"
+  ]
+}

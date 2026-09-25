@@ -1,0 +1,199 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00031",
+      "type": "claim",
+      "surface_form": "The meta‑GGA TBmBJ potential predicts band gaps with accuracy comparable to the hybrid HSE06 functional while requiring up to ten times less computational effort."
+    },
+    {
+      "id": "clai_00216",
+      "type": "claim",
+      "surface_form": "The PBE functional combined with PAW potentials is the default exchange-correlation functional and potential combination for ICSD, Binary Alloy, and Heusler databases."
+    },
+    {
+      "id": "clai_00217",
+      "type": "claim",
+      "surface_form": "The applied plane-wave kinetic energy cut-off (Ecut) is the largest recommended value among all species in the calculation, increased by a factor of 1.4."
+    },
+    {
+      "id": "clai_00218",
+      "type": "claim",
+      "surface_form": "DFT+U corrections are applied to the entire ICSD database and certain Heusler database entries containing O, S, Se, and F elements, but not to the Binary Alloy database."
+    },
+    {
+      "id": "clai_00226",
+      "type": "claim",
+      "surface_form": "For bulk elastic constants (B, C11, C12, C44) the GAP model achieves fractional errors of less than 10% relative to DFT, outperforming all other evaluated interatomic potentials."
+    },
+    {
+      "id": "clai_00227",
+      "type": "claim",
+      "surface_form": "Surface energies of the (111), (110) and (100) silicon cleavage planes are predicted by GAP with errors of around 2% relative to DFT, which is comparable or better than other potentials."
+    },
+    {
+      "id": "clai_00228",
+      "type": "claim",
+      "surface_form": "Formation energies of vacancy and interstitial point defects (hexagonal, tetrahedral, dumbbell) are predicted by GAP within 10% of DFT values, providing uniform accuracy across these defects."
+    },
+    {
+      "id": "clai_00229",
+      "type": "claim",
+      "surface_form": "For extrapolative planar defects not included in the training set—specifically the (112) Σ3 grain boundary and unstable stacking fault energies on the (111) shuffle and glide planes—GAP errors remain within 20% of DFT, outperforming other models."
+    },
+    {
+      "id": "clai_00230",
+      "type": "claim",
+      "surface_form": "Combining a simple repulsive pair potential with a many‑body SOAP‑kernel term in the GAP framework yields meV‑per‑atom accuracy for silicon energetics."
+    },
+    {
+      "id": "clai_00232",
+      "type": "claim",
+      "surface_form": "Using the GAP model enables simulations that would be prohibitively expensive with DFT, such as finite‑temperature phase‑boundary calculations, liquid self‑diffusivity, amorphous silicon formation by slow quench, and dynamic brittle fracture."
+    },
+    {
+      "id": "clai_00233",
+      "type": "claim",
+      "surface_form": "A training database of manageable size, constructed from DFT configurations covering relevant phases and defects, is sufficient to achieve high transferability of the GAP model across diverse silicon configurations."
+    },
+    {
+      "id": "clai_00234",
+      "type": "claim",
+      "surface_form": "Benchmark comparisons show that the new GAP model yields lower errors than previous GAP models for silicon."
+    },
+    {
+      "id": "clai_00235",
+      "type": "claim",
+      "surface_form": "The Smooth Overlap of Atomic Positions (SOAP) kernel captures the regularity of the silicon potential energy surface, leading to accurate interpolation within the sampled configuration space."
+    },
+    {
+      "id": "clai_00477",
+      "type": "claim",
+      "surface_form": "For LLZO, the computed activation energies range from 0.2 to 0.22 eV, in very good agreement with experimental values of 0.20-0.21 eV for cubic LLZO."
+    },
+    {
+      "id": "clai_00482",
+      "type": "claim",
+      "surface_form": "Training set cleaning procedures including minimum ion-ion distance cutoff, energy/force outlier removal, and loss condition monitoring are necessary to help the algorithm converge to a physical model."
+    },
+    {
+      "id": "clai_00496",
+      "type": "claim",
+      "surface_form": "Increasing the crystal graph radius cut‑off from 4 Å to 6 Å slightly worsens the formation‑energy mean absolute error (to 0.03 eV/atom), confirming the 4 Å cut‑off as near‑optimal."
+    },
+    {
+      "id": "clai_00497",
+      "type": "claim",
+      "surface_form": "CGAT-2 network achieves a mean absolute test error of 21 meV/atom for distance to the convex hull, enabling prediction of thermodynamic stability from unrelaxed crystal structures."
+    },
+    {
+      "id": "clai_00498",
+      "type": "claim",
+      "surface_form": "The ML-assisted high-throughput search uncovered 19,512 additional materials on the convex hull of thermodynamic stability after DFT validation."
+    },
+    {
+      "id": "clai_00500",
+      "type": "claim",
+      "surface_form": "Approximately 150,000 compounds were found with energy distance less than 50 meV/atom from the convex hull."
+    },
+    {
+      "id": "clai_00508",
+      "type": "claim",
+      "surface_form": "Materials within 50 meV/atom from convex hull were selected for subsequent DFT stiffness tensor calculations."
+    },
+    {
+      "id": "clai_00576",
+      "type": "claim",
+      "surface_form": "Discontinuities in forces caused by the sharp cutoff radius and neighbor‑list sorting are much smaller than thermal fluctuations and do not impair canonical sampling."
+    },
+    {
+      "id": "clai_00652",
+      "type": "claim",
+      "surface_form": "At 0 K and zero pressure, 23 % of the 32,489 ICSD structures in the OQMD are thermodynamically stable according to grand canonical linear programming analysis."
+    },
+    {
+      "id": "clai_00659",
+      "type": "claim",
+      "surface_form": "A combined heuristic‑plus‑machine‑learning model trained on OQMD ternary formation energies predicts formation energies with a mean absolute error of ~0.11 eV/atom, roughly half the typical DFT‑experiment error."
+    },
+    {
+      "id": "clai_00670",
+      "type": "claim",
+      "surface_form": "A hybrid HSE06 calculation for ZnO yields a band gap of 2.48 eV, substantially larger than the LDA/GGA gap of 0.7 eV and the PBE+U gap of 1.82 eV."
+    },
+    {
+      "id": "clai_00671",
+      "type": "claim",
+      "surface_form": "Tuning the exact‑exchange fraction α to 0.375 in HSE06 brings the calculated ZnO band gap into agreement with experiment."
+    },
+    {
+      "id": "clai_00674",
+      "type": "claim",
+      "surface_form": "A bulk ZnO HSE06 calculation (8×8×6 k‑point mesh, 400 eV cutoff) takes approximately 5 hours on 8 CPUs, while the equivalent GGA/PBE+U calculation finishes in less than a minute."
+    },
+    {
+      "id": "clai_00676",
+      "type": "claim",
+      "surface_form": "The Gaussian approximation potential (GAP) enables atomistic simulations with close-to-DFT accuracy at computational costs many orders of magnitude lower than quantum-mechanical methods."
+    },
+    {
+      "id": "clai_00677",
+      "type": "claim",
+      "surface_form": "Combined two-body, three-body, and SOAP many-body descriptors are necessary for GAP to achieve the accuracy limit imposed by force locality and make physically meaningful predictions; models using only subsets of descriptors produce unphysical structures during molecular dynamics simulations."
+    },
+    {
+      "id": "clai_00678",
+      "type": "claim",
+      "surface_form": "GAP predicts diamond lattice parameter (3.539 Å) very close to DFT-LDA reference (3.532 Å), outperforming screened Tersoff potential (3.566 Å), with bulk modulus and elastic constants reasonably close to DFT reference values."
+    },
+    {
+      "id": "clai_00686",
+      "type": "claim",
+      "surface_form": "For amorphous carbon with 3.7 Å cutoff radius, the lowest achievable standard deviation of force components is approximately 1 eV/Å due to fundamental nonlocality limits, representing a maximum accuracy bound for any finite-range interatomic potential."
+    },
+    {
+      "id": "comp_00585",
+      "type": "component",
+      "surface_form": "Plane-wave kinetic energy cut-off"
+    },
+    {
+      "id": "meth_00196",
+      "type": "method",
+      "surface_form": "Gaussian Approximation Potential (GAP) for silicon"
+    },
+    {
+      "id": "prob_00222",
+      "type": "problem",
+      "surface_form": "defect energetics and band‑gap underestimation"
+    },
+    {
+      "id": "prob_00588",
+      "type": "problem",
+      "surface_form": "Accuracy-efficiency gap in atomistic simulations"
+    },
+    {
+      "id": "prob_00613",
+      "type": "problem",
+      "surface_form": "Spurious energy barriers"
+    },
+    {
+      "id": "tech_00691",
+      "type": "technique",
+      "surface_form": "Minimum ion-ion distance cutoff"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 30,
+    "component": 1,
+    "method": 1,
+    "problem": 3,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "gap",
+  "representative_ids": [
+    "clai_00230",
+    "clai_00227"
+  ]
+}

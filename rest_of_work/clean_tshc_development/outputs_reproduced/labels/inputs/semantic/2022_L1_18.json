@@ -1,0 +1,168 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "cite_00224",
+      "type": "cited_work",
+      "surface_form": "Atomic Simulation Environment (ASE)"
+    },
+    {
+      "id": "clai_00481",
+      "type": "claim",
+      "surface_form": "Starting the training loop with PFF-MD configurations leads to faster convergence than starting with short FPMD trajectories because larger simulation cells can be used."
+    },
+    {
+      "id": "comp_00214",
+      "type": "component",
+      "surface_form": "Short‑time MD simulation workflow"
+    },
+    {
+      "id": "comp_00246",
+      "type": "component",
+      "surface_form": "Integration with i‑PI for NPT simulations"
+    },
+    {
+      "id": "comp_00635",
+      "type": "component",
+      "surface_form": "NVE simulation cell"
+    },
+    {
+      "id": "comp_00824",
+      "type": "component",
+      "surface_form": "Melt-quench trajectory generator"
+    },
+    {
+      "id": "futu_00127",
+      "type": "future_topic",
+      "surface_form": "Development of a transferable universal model for ionic diffusion properties"
+    },
+    {
+      "id": "meth_00084",
+      "type": "method",
+      "surface_form": "Vienna Ab Initio simulation Package"
+    },
+    {
+      "id": "meth_00255",
+      "type": "method",
+      "surface_form": "Vienna Ab‑initio simulation package"
+    },
+    {
+      "id": "meth_00256",
+      "type": "method",
+      "surface_form": "Large‑scale Atomic/Molecular Massively Parallel Simulator"
+    },
+    {
+      "id": "meth_00383",
+      "type": "method",
+      "surface_form": "DeePMD training protocol for diffusion coefficient computation"
+    },
+    {
+      "id": "metr_00043",
+      "type": "metric",
+      "surface_form": "diffusion coefficient uncertainty"
+    },
+    {
+      "id": "prob_00116",
+      "type": "problem",
+      "surface_form": "large‑scale ionic conductivity screening"
+    },
+    {
+      "id": "task_00080",
+      "type": "task",
+      "surface_form": "Ionic conductivity prediction"
+    },
+    {
+      "id": "task_00176",
+      "type": "task",
+      "surface_form": "MD simulation of organic molecules"
+    },
+    {
+      "id": "task_00219",
+      "type": "task",
+      "surface_form": "Validation against MD simulations"
+    },
+    {
+      "id": "task_00263",
+      "type": "task",
+      "surface_form": "atomistic simulations"
+    },
+    {
+      "id": "task_00524",
+      "type": "task",
+      "surface_form": "Li10GeP2S12 diffusion modeling"
+    },
+    {
+      "id": "task_00525",
+      "type": "task",
+      "surface_form": "Li7La3Zr2O12 diffusion modeling"
+    },
+    {
+      "id": "task_00526",
+      "type": "task",
+      "surface_form": "Na3Zr2Si2PO12 diffusion modeling"
+    },
+    {
+      "id": "task_00531",
+      "type": "task",
+      "surface_form": "Li diffusion simulation in LLZO"
+    },
+    {
+      "id": "task_00532",
+      "type": "task",
+      "surface_form": "Na diffusion simulation in NASICON"
+    },
+    {
+      "id": "task_00615",
+      "type": "task",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "tech_00695",
+      "type": "technique",
+      "surface_form": "FPMD simulations"
+    },
+    {
+      "id": "tech_00696",
+      "type": "technique",
+      "surface_form": "PFF-MD simulations"
+    },
+    {
+      "id": "tech_00904",
+      "type": "technique",
+      "surface_form": "Melt-quench protocol"
+    },
+    {
+      "id": "tech_00911",
+      "type": "technique",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "tech_00915",
+      "type": "technique",
+      "surface_form": "Large-scale atomistic simulation"
+    },
+    {
+      "id": "tech_00916",
+      "type": "technique",
+      "surface_form": "melt-quench trajectory generation"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 1,
+    "claim": 1,
+    "component": 4,
+    "future_topic": 1,
+    "method": 4,
+    "metric": 1,
+    "problem": 1,
+    "task": 10,
+    "technique": 6
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "simulation",
+  "representative_ids": [
+    "tech_00696",
+    "tech_00915"
+  ]
+}

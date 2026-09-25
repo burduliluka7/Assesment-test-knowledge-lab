@@ -1,0 +1,26 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00446",
+      "type": "component",
+      "surface_form": "TPOT evolutionary optimizer"
+    },
+    {
+      "id": "tech_00492",
+      "type": "technique",
+      "surface_form": "TPOT genetic algorithm"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "tpot",
+  "representative_ids": [
+    "comp_00446",
+    "tech_00492"
+  ]
+}

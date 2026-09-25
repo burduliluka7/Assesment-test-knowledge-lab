@@ -1,0 +1,667 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00051",
+      "type": "article",
+      "surface_form": "Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+    },
+    {
+      "id": "cite_00158",
+      "type": "cited_work",
+      "surface_form": "thermodynamic integration"
+    },
+    {
+      "id": "cite_00238",
+      "type": "cited_work",
+      "surface_form": "Ab initio thermodynamics of water"
+    },
+    {
+      "id": "clai_00052",
+      "type": "claim",
+      "surface_form": "A curated dataset of 476 binary ionic compound melting temperatures spanning 0-4,000°C was compiled for machine learning model development."
+    },
+    {
+      "id": "clai_00053",
+      "type": "claim",
+      "surface_form": "The best one-step gradient-boosted tree regression model achieves 165±4 K MAE and 0.89 R² on the test set for melting temperature prediction."
+    },
+    {
+      "id": "clai_00055",
+      "type": "claim",
+      "surface_form": "Cluster 1 (198 compounds, mostly ionic halides and oxides) achieves 136±5 K MAE and 0.92 R², while Cluster 2 (222 compounds, mostly covalent carbides and nitrides) achieves 189±7 K MAE and 0.90 R²."
+    },
+    {
+      "id": "clai_00057",
+      "type": "claim",
+      "surface_form": "Models trained without elastic moduli features yield errors greater than 400 K, demonstrating that elastic features are necessary for accurate melting temperature predictions."
+    },
+    {
+      "id": "clai_00058",
+      "type": "claim",
+      "surface_form": "Very-high melting temperatures (>3150 K) appear only in Cluster 2, predominantly in metal carbides, reflecting the covalent bonding character of these materials."
+    },
+    {
+      "id": "clai_00059",
+      "type": "claim",
+      "surface_form": "Tree ensemble methods (gradient-boosted trees and random forest regression) substantially outperform linear models, which achieve MAE >240 K and RMSE >340 K, at least 100 K worse than non-linear approaches."
+    },
+    {
+      "id": "clai_00060",
+      "type": "claim",
+      "surface_form": "The two-step clustering approach provides interpretability by revealing different melting physics dominated by bonding types, with Cluster 1 governed by ionic bonding features and Cluster 2 by covalent bonding features."
+    },
+    {
+      "id": "clai_00062",
+      "type": "claim",
+      "surface_form": "Cluster 2 melting temperatures can be accurately represented with symbolic models depending on only two features: squared cohesive energy and inverse square root of periodic groups or electronegativities."
+    },
+    {
+      "id": "clai_00295",
+      "type": "claim",
+      "surface_form": "An MLIP trained on pristine crystalline phases may not be appropriate for studying amorphous phases of the same material."
+    },
+    {
+      "id": "clai_00395",
+      "type": "claim",
+      "surface_form": "Assuming the order‑disorder interface energy is half the anti‑phase boundary energy, the interface energy employed in phase‑field simulations is approximately 15.45 mJ m⁻²."
+    },
+    {
+      "id": "clai_00397",
+      "type": "claim",
+      "surface_form": "Phase‑field simulations reproduce the lever‑rule mass fractions of ordered and disordered phases predicted by the Monte Carlo phase diagram after accounting for a slight shift in the order‑disorder boundaries from the IDNN free‑energy surface."
+    },
+    {
+      "id": "clai_00464",
+      "type": "claim",
+      "surface_form": "SevenNet-0 successfully generated amorphous Si3N4 structure with 112,000 atoms through melt-quench MD simulation, reproducing key structural features matching DFT reference data."
+    },
+    {
+      "id": "clai_00470",
+      "type": "claim",
+      "surface_form": "SevenNet-0, trained solely on crystal structures, reproduced key structural features of amorphous Si3N4 including fourfold coordination for Si and threefold coordination for N atoms."
+    },
+    {
+      "id": "comp_00111",
+      "type": "component",
+      "surface_form": "Coupling of IDNN free‑energy with phase‑field equations"
+    },
+    {
+      "id": "comp_00626",
+      "type": "component",
+      "surface_form": "Temperature ramping scheme"
+    },
+    {
+      "id": "data_00159",
+      "type": "dataset",
+      "surface_form": "amorphous Si3N4"
+    },
+    {
+      "id": "data_00174",
+      "type": "dataset",
+      "surface_form": "Thermal conductivity benchmark"
+    },
+    {
+      "id": "data_00208",
+      "type": "dataset",
+      "surface_form": "Amorphous carbon"
+    },
+    {
+      "id": "data_00212",
+      "type": "dataset",
+      "surface_form": "amorphous carbon Young's modulus"
+    },
+    {
+      "id": "data_00216",
+      "type": "dataset",
+      "surface_form": "Binary Ionic Compounds Melting Temperature Dataset"
+    },
+    {
+      "id": "data_00219",
+      "type": "dataset",
+      "surface_form": "Binary inorganic solid materials melting temperature dataset"
+    },
+    {
+      "id": "data_00220",
+      "type": "dataset",
+      "surface_form": "Binary compounds melting temperature dataset"
+    },
+    {
+      "id": "futu_00089",
+      "type": "future_topic",
+      "surface_form": "Direct CO2 capture from air"
+    },
+    {
+      "id": "futu_00090",
+      "type": "future_topic",
+      "surface_form": "Thermal conductivity prediction"
+    },
+    {
+      "id": "futu_00176",
+      "type": "future_topic",
+      "surface_form": "Realistic and accurate simulations of nanoscale amorphous carbon structures"
+    },
+    {
+      "id": "futu_00177",
+      "type": "future_topic",
+      "surface_form": "High-temperature surface reconstructions of amorphous carbon"
+    },
+    {
+      "id": "meth_00263",
+      "type": "method",
+      "surface_form": "Phase-Field Hub"
+    },
+    {
+      "id": "meth_00437",
+      "type": "method",
+      "surface_form": "two-step supervised-unsupervised melting temperature prediction with symbolic regression"
+    },
+    {
+      "id": "meth_00439",
+      "type": "method",
+      "surface_form": "CALculation of PHAse Diagram"
+    },
+    {
+      "id": "meth_00448",
+      "type": "method",
+      "surface_form": "Neural network model for melting temperature prediction"
+    },
+    {
+      "id": "prob_00022",
+      "type": "problem",
+      "surface_form": "accurate prediction of phase transitions and defect dynamics"
+    },
+    {
+      "id": "prob_00061",
+      "type": "problem",
+      "surface_form": "Identification of functional phase‑change materials"
+    },
+    {
+      "id": "prob_00071",
+      "type": "problem",
+      "surface_form": "Capturing chemical‑potential behavior near phase‑boundary regions"
+    },
+    {
+      "id": "prob_00073",
+      "type": "problem",
+      "surface_form": "Coupling ordering and composition in phase‑field simulations"
+    },
+    {
+      "id": "prob_00106",
+      "type": "problem",
+      "surface_form": "Electronic entropy inclusion in phase‑diagram modeling"
+    },
+    {
+      "id": "prob_00221",
+      "type": "problem",
+      "surface_form": "phase stability determination"
+    },
+    {
+      "id": "prob_00435",
+      "type": "problem",
+      "surface_form": "Condensed phase modeling"
+    },
+    {
+      "id": "prob_00443",
+      "type": "problem",
+      "surface_form": "Electronic entropy effects on phase stability"
+    },
+    {
+      "id": "prob_00444",
+      "type": "problem",
+      "surface_form": "Structural phase transformations"
+    },
+    {
+      "id": "prob_00483",
+      "type": "problem",
+      "surface_form": "Computational cost of large-scale amorphous structure generation"
+    },
+    {
+      "id": "prob_00602",
+      "type": "problem",
+      "surface_form": "Fourfold ring prediction in amorphous carbon"
+    },
+    {
+      "id": "prob_00606",
+      "type": "problem",
+      "surface_form": "accurate interatomic potential for amorphous carbon"
+    },
+    {
+      "id": "prob_00617",
+      "type": "problem",
+      "surface_form": "limited scope of existing melting temperature prediction methods"
+    },
+    {
+      "id": "prob_00618",
+      "type": "problem",
+      "surface_form": "lack of experimental melting temperature data for binary ionic solids"
+    },
+    {
+      "id": "prob_00620",
+      "type": "problem",
+      "surface_form": "Melting temperature prediction"
+    },
+    {
+      "id": "prob_00624",
+      "type": "problem",
+      "surface_form": "melting temperature prediction accuracy"
+    },
+    {
+      "id": "prob_00625",
+      "type": "problem",
+      "surface_form": "capturing cluster-specific melting behavior"
+    },
+    {
+      "id": "prob_00626",
+      "type": "problem",
+      "surface_form": "melting temperature prediction for inorganic compounds"
+    },
+    {
+      "id": "task_00019",
+      "type": "task",
+      "surface_form": "Phase diagram construction"
+    },
+    {
+      "id": "task_00089",
+      "type": "task",
+      "surface_form": "Generation of phase diagrams and voltage profiles"
+    },
+    {
+      "id": "task_00090",
+      "type": "task",
+      "surface_form": "Voltage‑composition curve prediction"
+    },
+    {
+      "id": "task_00102",
+      "type": "task",
+      "surface_form": "Phase‑field model preparation"
+    },
+    {
+      "id": "task_00146",
+      "type": "task",
+      "surface_form": "Phase‑diagram calculation via cluster expansion"
+    },
+    {
+      "id": "task_00207",
+      "type": "task",
+      "surface_form": "Phase diagram construction and stability assessment"
+    },
+    {
+      "id": "task_00260",
+      "type": "task",
+      "surface_form": "Constant‑volume heat‑capacity calculation"
+    },
+    {
+      "id": "task_00278",
+      "type": "task",
+      "surface_form": "thermal conductivity prediction"
+    },
+    {
+      "id": "task_00318",
+      "type": "task",
+      "surface_form": "Heat capacity (Cν) prediction"
+    },
+    {
+      "id": "task_00381",
+      "type": "task",
+      "surface_form": "Heat capacity prediction"
+    },
+    {
+      "id": "task_00429",
+      "type": "task",
+      "surface_form": "phase diagram determination"
+    },
+    {
+      "id": "task_00474",
+      "type": "task",
+      "surface_form": "thermoelectric property assessment"
+    },
+    {
+      "id": "task_00499",
+      "type": "task",
+      "surface_form": "Phase-separation energy prediction"
+    },
+    {
+      "id": "task_00521",
+      "type": "task",
+      "surface_form": "Phase diagram analysis"
+    },
+    {
+      "id": "task_00554",
+      "type": "task",
+      "surface_form": "Melting temperature prediction"
+    },
+    {
+      "id": "task_00609",
+      "type": "task",
+      "surface_form": "Large-scale amorphous Si3N4 melt-quench simulation"
+    },
+    {
+      "id": "task_00620",
+      "type": "task",
+      "surface_form": "amorphous materials"
+    },
+    {
+      "id": "task_00686",
+      "type": "task",
+      "surface_form": "Atomistic simulations of liquid carbon"
+    },
+    {
+      "id": "task_00690",
+      "type": "task",
+      "surface_form": "Nanoscale amorphous carbon structure simulations"
+    },
+    {
+      "id": "task_00693",
+      "type": "task",
+      "surface_form": "High-density amorphous phase modeling"
+    },
+    {
+      "id": "task_00694",
+      "type": "task",
+      "surface_form": "Amorphous carbon surface (ta-C) modeling"
+    },
+    {
+      "id": "task_00699",
+      "type": "task",
+      "surface_form": "Liquid carbon modeling"
+    },
+    {
+      "id": "task_00700",
+      "type": "task",
+      "surface_form": "Amorphous carbon (a-C) structure generation"
+    },
+    {
+      "id": "task_00701",
+      "type": "task",
+      "surface_form": "Tetrahedral amorphous carbon (ta-C) modeling"
+    },
+    {
+      "id": "task_00704",
+      "type": "task",
+      "surface_form": "amorphous carbon structure generation"
+    },
+    {
+      "id": "task_00705",
+      "type": "task",
+      "surface_form": "liquid carbon simulation"
+    },
+    {
+      "id": "task_00711",
+      "type": "task",
+      "surface_form": "Amorphous carbon bulk structure generation"
+    },
+    {
+      "id": "task_00717",
+      "type": "task",
+      "surface_form": "melting temperature prediction for binary ionic solids"
+    },
+    {
+      "id": "task_00729",
+      "type": "task",
+      "surface_form": "Melting temperature prediction for inorganic solids"
+    },
+    {
+      "id": "tech_00165",
+      "type": "technique",
+      "surface_form": "Polynomial fitting of free‑energy vs temperature"
+    },
+    {
+      "id": "tech_00402",
+      "type": "technique",
+      "surface_form": "formation enthalpy calculation"
+    },
+    {
+      "id": "tech_00539",
+      "type": "technique",
+      "surface_form": "Phase factor weighting"
+    },
+    {
+      "id": "tech_00586",
+      "type": "technique",
+      "surface_form": "thermodynamic integration"
+    },
+    {
+      "id": "tech_00608",
+      "type": "technique",
+      "surface_form": "Debye temperature estimation"
+    },
+    {
+      "id": "tech_00630",
+      "type": "technique",
+      "surface_form": "Two-step relaxation annealing"
+    },
+    {
+      "id": "tech_00689",
+      "type": "technique",
+      "surface_form": "Nosé-Hoover thermostat"
+    },
+    {
+      "id": "tech_00702",
+      "type": "technique",
+      "surface_form": "Temperature ramp simulation"
+    },
+    {
+      "id": "tech_00771",
+      "type": "technique",
+      "surface_form": "Frequency-based phase shifts"
+    },
+    {
+      "id": "tech_00820",
+      "type": "technique",
+      "surface_form": "combination with conservative models for finite-temperature applications"
+    },
+    {
+      "id": "tech_00922",
+      "type": "technique",
+      "surface_form": "high-temperature annealing protocol"
+    },
+    {
+      "id": "tech_00932",
+      "type": "technique",
+      "surface_form": "supervised melting point regression"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 2,
+    "claim": 13,
+    "component": 2,
+    "dataset": 7,
+    "future_topic": 4,
+    "method": 4,
+    "problem": 18,
+    "task": 29,
+    "technique": 12
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00295",
+      "relation_type": "presents",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      }
+    },
+    {
+      "id": "h_00658",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00052"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "survey_data",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00659",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00053"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00661",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00055"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00663",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00057"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "ablation_study",
+        "evidence_strength": "strong",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_00664",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00058"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "observational_study",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00665",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00059"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00666",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00060"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00668",
+      "relation_type": "claims",
+      "members": [
+        "arti_00051",
+        "meth_00437",
+        "clai_00062"
+      ],
+      "year": 2021,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5454,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "existential",
+        "evidence_type": "formal_proof",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "phase",
+  "representative_ids": [
+    "task_00554",
+    "task_00729"
+  ]
+}

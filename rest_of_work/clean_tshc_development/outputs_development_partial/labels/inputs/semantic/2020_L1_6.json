@@ -1,0 +1,201 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "arti_00030",
+      "type": "article",
+      "surface_form": "Using Deep Learning to Predict Fracture Patterns in Crystalline Solids"
+    },
+    {
+      "id": "clai_00021",
+      "type": "claim",
+      "surface_form": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear."
+    },
+    {
+      "id": "clai_00022",
+      "type": "claim",
+      "surface_form": "The model predicts fracture toughness values that are comparable to those obtained from atomistic molecular dynamics simulations."
+    },
+    {
+      "id": "clai_00024",
+      "type": "claim",
+      "surface_form": "The ConvLSTM approach reduces computational cost dramatically compared with full molecular dynamics simulations, enabling rapid fracture predictions."
+    },
+    {
+      "id": "clai_00025",
+      "type": "claim",
+      "surface_form": "Representing molecular dynamics results as image‑based geometric matrices preserves crystal orientation information and allows the neural network to learn spatiotemporal fracture behavior."
+    },
+    {
+      "id": "comp_00294",
+      "type": "component",
+      "surface_form": "Fracture‑toughness regression head"
+    },
+    {
+      "id": "futu_00066",
+      "type": "future_topic",
+      "surface_form": "Application of machine‑learning interatomic potentials to dynamic brittle fracture simulations"
+    },
+    {
+      "id": "meth_00230",
+      "type": "method",
+      "surface_form": "ConvLSTM-based fracture prediction model"
+    },
+    {
+      "id": "prob_00165",
+      "type": "problem",
+      "surface_form": "Efficient prediction of dynamic brittle fracture paths"
+    },
+    {
+      "id": "prob_00166",
+      "type": "problem",
+      "surface_form": "Fracture‑toughness estimation from atomistic data"
+    },
+    {
+      "id": "prob_00170",
+      "type": "problem",
+      "surface_form": "Modeling spatiotemporal dependencies in fracture"
+    },
+    {
+      "id": "task_00201",
+      "type": "task",
+      "surface_form": "Fracture‑toughness prediction"
+    },
+    {
+      "id": "task_00202",
+      "type": "task",
+      "surface_form": "Bicrystal fracture prediction"
+    },
+    {
+      "id": "task_00204",
+      "type": "task",
+      "surface_form": "Crack path prediction in crystalline solids"
+    },
+    {
+      "id": "task_00205",
+      "type": "task",
+      "surface_form": "Spatiotemporal fracture behavior forecasting"
+    },
+    {
+      "id": "tech_00316",
+      "type": "technique",
+      "surface_form": "One‑hot crack labeling"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 4,
+    "component": 1,
+    "future_topic": 1,
+    "method": 1,
+    "problem": 3,
+    "task": 4,
+    "technique": 1
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00292",
+      "relation_type": "presents",
+      "members": [
+        "arti_00030",
+        "meth_00230"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_00627",
+      "relation_type": "claims",
+      "members": [
+        "arti_00030",
+        "meth_00230",
+        "clai_00021"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00628",
+      "relation_type": "claims",
+      "members": [
+        "arti_00030",
+        "meth_00230",
+        "clai_00022"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00630",
+      "relation_type": "claims",
+      "members": [
+        "arti_00030",
+        "meth_00230",
+        "clai_00024"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "weak",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00631",
+      "relation_type": "claims",
+      "members": [
+        "arti_00030",
+        "meth_00230",
+        "clai_00025"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5406,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "weak",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "fracture",
+  "representative_ids": [
+    "task_00201",
+    "meth_00230"
+  ]
+}

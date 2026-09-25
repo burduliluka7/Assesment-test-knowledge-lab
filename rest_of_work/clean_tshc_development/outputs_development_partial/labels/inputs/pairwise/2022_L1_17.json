@@ -1,0 +1,30 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00640",
+      "type": "claim",
+      "surface_form": "Relaxing test crystals with M3GNet reduces median volume error from 2.4 % to 0.6 % and energy mean absolute error from 0.169 eV/atom to 0.035 eV/atom relative to DFT‑relaxed references."
+    },
+    {
+      "id": "clai_00641",
+      "type": "claim",
+      "surface_form": "A single‑CPU M3GNet relaxation completes in about 22 seconds, compared with 15 hours on 32 cores for DFT; pre‑relaxation with M3GNet shortens subsequent DFT relaxation time by roughly a factor of three and reduces total CPU time by an average factor of 2.97."
+    },
+    {
+      "id": "clai_00642",
+      "type": "claim",
+      "surface_form": "Screening 31.7 million hypothetical crystals with M3GNet identifies approximately 1.8 million candidates with predicted hull distances below 0.001 eV/atom, and among the 2,000 lowest‑energy candidates, 1,578 are confirmed stable (Ehull < 0.001 eV/atom) by DFT."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "ev atom",
+  "representative_ids": [
+    "clai_00640",
+    "clai_00642"
+  ]
+}

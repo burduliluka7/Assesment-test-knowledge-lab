@@ -1,0 +1,634 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "cite_00012",
+      "type": "cited_work",
+      "surface_form": "Lindemann melting criterion"
+    },
+    {
+      "id": "cite_00032",
+      "type": "cited_work",
+      "surface_form": "Lindemann melting law"
+    },
+    {
+      "id": "cite_00037",
+      "type": "cited_work",
+      "surface_form": "Projector Augmented-Wave Method"
+    },
+    {
+      "id": "cite_00246",
+      "type": "cited_work",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "cite_00270",
+      "type": "cited_work",
+      "surface_form": "Magnetic Moment Tensor Potentials"
+    },
+    {
+      "id": "cite_00298",
+      "type": "cited_work",
+      "surface_form": "Davidson blocked scheme"
+    },
+    {
+      "id": "cite_00380",
+      "type": "cited_work",
+      "surface_form": "Density Functional Theory (DFT)"
+    },
+    {
+      "id": "cite_00384",
+      "type": "cited_work",
+      "surface_form": "Billiard Walk"
+    },
+    {
+      "id": "cite_00470",
+      "type": "cited_work",
+      "surface_form": "McMillan formula"
+    },
+    {
+      "id": "cite_00471",
+      "type": "cited_work",
+      "surface_form": "Allen-Dynes formula"
+    },
+    {
+      "id": "cite_00548",
+      "type": "cited_work",
+      "surface_form": "density-functional perturbation theory"
+    },
+    {
+      "id": "clai_00086",
+      "type": "claim",
+      "surface_form": "Using a shifted softplus activation guarantees an infinitely differentiable (smooth) potential energy surface, facilitating geometry optimization."
+    },
+    {
+      "id": "clai_00220",
+      "type": "claim",
+      "surface_form": "The first RELAX calculation is performed in collinear spin-polarized fashion with initial magnetic moments set to 1.0 µB per atom, and spin polarization is turned off in subsequent calculations if magnetization is below 0.025 µB/atom."
+    },
+    {
+      "id": "clai_00223",
+      "type": "claim",
+      "surface_form": "BANDS calculations use 128 k-points per segment for single element structures and 20 k-points for compounds along high-symmetry paths."
+    },
+    {
+      "id": "clai_00522",
+      "type": "claim",
+      "surface_form": "At the lowest order, the magnetic ACE reproduces a distance‑dependent Heisenberg interaction."
+    },
+    {
+      "id": "clai_00524",
+      "type": "claim",
+      "surface_form": "Moments Tensor Potentials (MTP) and the Spectral Neighbor Analysis Potential (SNAP) can be expressed exactly as special cases of the ACE."
+    },
+    {
+      "id": "clai_00526",
+      "type": "claim",
+      "surface_form": "The ACE formulation is invariant under translation, rotation, inversion and permutation of identical atoms."
+    },
+    {
+      "id": "clai_00527",
+      "type": "claim",
+      "surface_form": "Although the full magnetic and charge‑transfer ACE contains many parameters, hierarchical ordering of interactions allows robust and systematic fitting to reference data."
+    },
+    {
+      "id": "clai_00529",
+      "type": "claim",
+      "surface_form": "Because the ACE basis is complete and hierarchical, it can in principle achieve arbitrary accuracy for any scalar, vectorial or tensorial property."
+    },
+    {
+      "id": "clai_00663",
+      "type": "claim",
+      "surface_form": "AFLOW provides a standardized definition of Brillouin‑zone integration paths for all 14 Bravais lattices, filling a gap in the literature."
+    },
+    {
+      "id": "comp_00113",
+      "type": "component",
+      "surface_form": "DFT calculations with optB88 vdW functional"
+    },
+    {
+      "id": "comp_00123",
+      "type": "component",
+      "surface_form": "Billiard Walk sampler"
+    },
+    {
+      "id": "comp_00157",
+      "type": "component",
+      "surface_form": "Magnetic moment prediction"
+    },
+    {
+      "id": "comp_00191",
+      "type": "component",
+      "surface_form": "Magnetic‑moment prediction head"
+    },
+    {
+      "id": "comp_00192",
+      "type": "component",
+      "surface_form": "Charge‑informed regularization"
+    },
+    {
+      "id": "comp_00217",
+      "type": "component",
+      "surface_form": "Repulsive pair potential"
+    },
+    {
+      "id": "comp_00227",
+      "type": "component",
+      "surface_form": "Magnetic moment layer"
+    },
+    {
+      "id": "comp_00288",
+      "type": "component",
+      "surface_form": "Combined Atomic Density ρ_i"
+    },
+    {
+      "id": "comp_00302",
+      "type": "component",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "comp_00362",
+      "type": "component",
+      "surface_form": "Li2O reaction enumeration engine"
+    },
+    {
+      "id": "comp_00581",
+      "type": "component",
+      "surface_form": "Pulay charge mixer"
+    },
+    {
+      "id": "comp_00588",
+      "type": "component",
+      "surface_form": "Collinear spin-polarized calculation setup"
+    },
+    {
+      "id": "comp_00607",
+      "type": "component",
+      "surface_form": "Isotropic lattice scaling augmentation"
+    },
+    {
+      "id": "data_00064",
+      "type": "dataset",
+      "surface_form": "Band gap"
+    },
+    {
+      "id": "futu_00064",
+      "type": "future_topic",
+      "surface_form": "Extension of Gaussian Approximation Potentials to other materials"
+    },
+    {
+      "id": "meth_00071",
+      "type": "method",
+      "surface_form": "electronegativity equalization method"
+    },
+    {
+      "id": "meth_00074",
+      "type": "method",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "meth_00076",
+      "type": "method",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "meth_00098",
+      "type": "method",
+      "surface_form": "density functional perturbation theory"
+    },
+    {
+      "id": "meth_00147",
+      "type": "method",
+      "surface_form": "Cahn-Hilliard equation"
+    },
+    {
+      "id": "meth_00150",
+      "type": "method",
+      "surface_form": "mixed finite element method"
+    },
+    {
+      "id": "meth_00184",
+      "type": "method",
+      "surface_form": "charge equilibration"
+    },
+    {
+      "id": "meth_00189",
+      "type": "method",
+      "surface_form": "Tersoff bond order potential"
+    },
+    {
+      "id": "meth_00191",
+      "type": "method",
+      "surface_form": "AMBER force field"
+    },
+    {
+      "id": "meth_00225",
+      "type": "method",
+      "surface_form": "Kohn-Sham density-functional theory"
+    },
+    {
+      "id": "meth_00227",
+      "type": "method",
+      "surface_form": "Psi4"
+    },
+    {
+      "id": "meth_00250",
+      "type": "method",
+      "surface_form": "Hybrid functional HSE06"
+    },
+    {
+      "id": "meth_00251",
+      "type": "method",
+      "surface_form": "Hybrid functional PBE0"
+    },
+    {
+      "id": "meth_00253",
+      "type": "method",
+      "surface_form": "Dynamical Mean Field Theory"
+    },
+    {
+      "id": "meth_00291",
+      "type": "method",
+      "surface_form": "hybrid functional"
+    },
+    {
+      "id": "meth_00309",
+      "type": "method",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "meth_00327",
+      "type": "method",
+      "surface_form": "Virtual-Crystal Approximation"
+    },
+    {
+      "id": "meth_00334",
+      "type": "method",
+      "surface_form": "Ziegler-Biersack-Littmark (ZBL) potential"
+    },
+    {
+      "id": "meth_00336",
+      "type": "method",
+      "surface_form": "AMBER"
+    },
+    {
+      "id": "meth_00344",
+      "type": "method",
+      "surface_form": "PBEsol"
+    },
+    {
+      "id": "meth_00347",
+      "type": "method",
+      "surface_form": "McMillan's formula"
+    },
+    {
+      "id": "meth_00361",
+      "type": "method",
+      "surface_form": "Pulay charge mixing"
+    },
+    {
+      "id": "meth_00363",
+      "type": "method",
+      "surface_form": "Harris-Foulkes corrections"
+    },
+    {
+      "id": "meth_00366",
+      "type": "method",
+      "surface_form": "Ultra-soft pseudopotentials"
+    },
+    {
+      "id": "meth_00367",
+      "type": "method",
+      "surface_form": "Local Density Approximation"
+    },
+    {
+      "id": "meth_00368",
+      "type": "method",
+      "surface_form": "PW91 functional"
+    },
+    {
+      "id": "meth_00370",
+      "type": "method",
+      "surface_form": "GW approximation"
+    },
+    {
+      "id": "meth_00431",
+      "type": "method",
+      "surface_form": "Brenner potential"
+    },
+    {
+      "id": "meth_00432",
+      "type": "method",
+      "surface_form": "Screened Tersoff potential"
+    },
+    {
+      "id": "meth_00435",
+      "type": "method",
+      "surface_form": "REBO potential"
+    },
+    {
+      "id": "meth_00436",
+      "type": "method",
+      "surface_form": "environment-dependent interaction potential"
+    },
+    {
+      "id": "meth_00438",
+      "type": "method",
+      "surface_form": "Lindemann melting criterion"
+    },
+    {
+      "id": "metr_00031",
+      "type": "metric",
+      "surface_form": "band structure"
+    },
+    {
+      "id": "prob_00034",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure prediction for moiré systems"
+    },
+    {
+      "id": "prob_00078",
+      "type": "problem",
+      "surface_form": "Capture of charge‑ordering phenomena"
+    },
+    {
+      "id": "prob_00103",
+      "type": "problem",
+      "surface_form": "Coupled charge‑ion dynamics"
+    },
+    {
+      "id": "prob_00109",
+      "type": "problem",
+      "surface_form": "Charge‑disproportionation driven phase transformation insight"
+    },
+    {
+      "id": "prob_00140",
+      "type": "problem",
+      "surface_form": "Scalable electronic‑structure calculation for large‑scale materials"
+    },
+    {
+      "id": "prob_00352",
+      "type": "problem",
+      "surface_form": "chemical element bias"
+    },
+    {
+      "id": "prob_00376",
+      "type": "problem",
+      "surface_form": "electronic structure of correlated systems"
+    },
+    {
+      "id": "prob_00382",
+      "type": "problem",
+      "surface_form": "Fermi edge handling"
+    },
+    {
+      "id": "task_00045",
+      "type": "task",
+      "surface_form": "electronic structure"
+    },
+    {
+      "id": "task_00046",
+      "type": "task",
+      "surface_form": "Electronic structure calculation"
+    },
+    {
+      "id": "task_00066",
+      "type": "task",
+      "surface_form": "Born effective charge and dielectric constant prediction"
+    },
+    {
+      "id": "task_00114",
+      "type": "task",
+      "surface_form": "Magnetic moment prediction"
+    },
+    {
+      "id": "task_00143",
+      "type": "task",
+      "surface_form": "Charge‑disproportionation analysis in LiMnO2"
+    },
+    {
+      "id": "task_00148",
+      "type": "task",
+      "surface_form": "Magnetic‑moment and charge inference"
+    },
+    {
+      "id": "task_00170",
+      "type": "task",
+      "surface_form": "Efficient electronic‑structure calculation of magnetic materials"
+    },
+    {
+      "id": "task_00179",
+      "type": "task",
+      "surface_form": "Electronic‑structure property calculation"
+    },
+    {
+      "id": "task_00182",
+      "type": "task",
+      "surface_form": "Band structure and density‑of‑states calculation"
+    },
+    {
+      "id": "task_00183",
+      "type": "task",
+      "surface_form": "Optical response computation"
+    },
+    {
+      "id": "task_00194",
+      "type": "task",
+      "surface_form": "Self‑consistent field convergence"
+    },
+    {
+      "id": "task_00267",
+      "type": "task",
+      "surface_form": "Nanoparticle structure generation"
+    },
+    {
+      "id": "task_00273",
+      "type": "task",
+      "surface_form": "hybrid functional band‑structure calculation"
+    },
+    {
+      "id": "task_00331",
+      "type": "task",
+      "surface_form": "Band gap prediction"
+    },
+    {
+      "id": "task_00340",
+      "type": "task",
+      "surface_form": "Band gap regression"
+    },
+    {
+      "id": "task_00401",
+      "type": "task",
+      "surface_form": "lattice dynamics"
+    },
+    {
+      "id": "task_00414",
+      "type": "task",
+      "surface_form": "Dipole moment prediction"
+    },
+    {
+      "id": "task_00417",
+      "type": "task",
+      "surface_form": "IR spectrum calculation"
+    },
+    {
+      "id": "task_00470",
+      "type": "task",
+      "surface_form": "Electronic band structure calculation"
+    },
+    {
+      "id": "task_00478",
+      "type": "task",
+      "surface_form": "magneto-optical property calculation"
+    },
+    {
+      "id": "task_00488",
+      "type": "task",
+      "surface_form": "density functional theory"
+    },
+    {
+      "id": "task_00509",
+      "type": "task",
+      "surface_form": "Bandgap calculation"
+    },
+    {
+      "id": "task_00703",
+      "type": "task",
+      "surface_form": "Lattice parameter reproduction"
+    },
+    {
+      "id": "tech_00136",
+      "type": "technique",
+      "surface_form": "Perturbative expansion in external electric field"
+    },
+    {
+      "id": "tech_00178",
+      "type": "technique",
+      "surface_form": "Billiard Walk random sampling"
+    },
+    {
+      "id": "tech_00180",
+      "type": "technique",
+      "surface_form": "Mixed finite‑element method"
+    },
+    {
+      "id": "tech_00184",
+      "type": "technique",
+      "surface_form": "Mixed finite‑element formulation"
+    },
+    {
+      "id": "tech_00189",
+      "type": "technique",
+      "surface_form": "optB88 vdW‑DF functional"
+    },
+    {
+      "id": "tech_00202",
+      "type": "technique",
+      "surface_form": "ISCD‑based elemental substitution"
+    },
+    {
+      "id": "tech_00211",
+      "type": "technique",
+      "surface_form": "Charge‑informed modeling"
+    },
+    {
+      "id": "tech_00250",
+      "type": "technique",
+      "surface_form": "pre‑relaxation using a learned interatomic potential"
+    },
+    {
+      "id": "tech_00371",
+      "type": "technique",
+      "surface_form": "Linear‑optics calculations with OptB88‑vdW and TB‑mBJ"
+    },
+    {
+      "id": "tech_00381",
+      "type": "technique",
+      "surface_form": "Reaction enumeration with stoichiometric constraints"
+    },
+    {
+      "id": "tech_00399",
+      "type": "technique",
+      "surface_form": "Gamma‑centered k‑mesh for hexagonal, fcc, rhombohedral lattices"
+    },
+    {
+      "id": "tech_00410",
+      "type": "technique",
+      "surface_form": "zero‑weight extra k‑path for band structures"
+    },
+    {
+      "id": "tech_00566",
+      "type": "technique",
+      "surface_form": "Particle mesh Ewald method"
+    },
+    {
+      "id": "tech_00602",
+      "type": "technique",
+      "surface_form": "Allen-Dynes modification to McMillan formula"
+    },
+    {
+      "id": "tech_00615",
+      "type": "technique",
+      "surface_form": "Alpha2F spectral function calculation"
+    },
+    {
+      "id": "tech_00617",
+      "type": "technique",
+      "surface_form": "Chemical element permutation"
+    },
+    {
+      "id": "tech_00622",
+      "type": "technique",
+      "surface_form": "Density-functional perturbation theory"
+    },
+    {
+      "id": "tech_00638",
+      "type": "technique",
+      "surface_form": "pseudo-hybrid Hubbard density functional"
+    },
+    {
+      "id": "tech_00650",
+      "type": "technique",
+      "surface_form": "Automatic spin polarization economization"
+    },
+    {
+      "id": "tech_00654",
+      "type": "technique",
+      "surface_form": "Reciprocal lattice grid spacing"
+    },
+    {
+      "id": "tech_00670",
+      "type": "technique",
+      "surface_form": "Soft-sphere potential relaxation"
+    },
+    {
+      "id": "tech_00675",
+      "type": "technique",
+      "surface_form": "Test-time isotropic lattice scaling"
+    },
+    {
+      "id": "tech_00926",
+      "type": "technique",
+      "surface_form": "Lattice parameter scaling"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 11,
+    "claim": 9,
+    "component": 13,
+    "dataset": 1,
+    "future_topic": 1,
+    "method": 32,
+    "metric": 1,
+    "problem": 8,
+    "task": 23,
+    "technique": 23
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "functional",
+  "representative_ids": [
+    "task_00046",
+    "task_00179"
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00029",
+      "type": "article",
+      "surface_form": "Universal Machine Learning Kohn-Sham Hamiltonian for Materials"
+    },
+    {
+      "id": "clai_00191",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model achieves a mean absolute error of 5.4 meV for the real‑space Hamiltonian matrix on the test set after the first round of training."
+    },
+    {
+      "id": "clai_00193",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model accurately predicts the energy band structures and charge densities of complex multi‑element crystals (e.g., Hf2Zr9Ta6Ti5Nb5B54, HfTaTiB4MoC4, K3Ba3Li2Al4B6O20F), matching DFT results."
+    },
+    {
+      "id": "clai_00196",
+      "type": "claim",
+      "surface_form": "High‑throughput screening of 188,722 GeNOME crystals with the universal model identifies 21,973 insulators (3,940 direct‑gap) and 5,109 flat‑band materials, nearly doubling the entries in the Materials Flatband Database."
+    },
+    {
+      "id": "clai_00197",
+      "type": "claim",
+      "surface_form": "Using the universal HamGNN model reduces computational cost by several orders of magnitude compared with DFT (e.g., 0.33 core·hours versus 181 core·hours for a large MOF) while preserving accuracy of band gaps and charge‑density differences."
+    },
+    {
+      "id": "clai_00198",
+      "type": "claim",
+      "surface_form": "A two‑step training procedure—first minimizing real‑space Hamiltonian error, then adding orbital‑energy error at random k‑points—is essential to obtain a truly universal Hamiltonian model."
+    },
+    {
+      "id": "clai_00199",
+      "type": "claim",
+      "surface_form": "Incorporating orbital‑energy loss in a second fine‑tuning round markedly improves band‑structure predictions, yielding energy bands and Fermi surfaces that closely match DFT calculations for the test set."
+    },
+    {
+      "id": "clai_00200",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model generalizes to crystals containing more than five distinct elements and to any element supported by the OpenMX PBE pseudopotential library, effectively covering the entire periodic table."
+    },
+    {
+      "id": "clai_00216",
+      "type": "claim",
+      "surface_form": "The PBE functional combined with PAW potentials is the default exchange-correlation functional and potential combination for ICSD, Binary Alloy, and Heusler databases."
+    },
+    {
+      "id": "clai_00217",
+      "type": "claim",
+      "surface_form": "The applied plane-wave kinetic energy cut-off (Ecut) is the largest recommended value among all species in the calculation, increased by a factor of 1.4."
+    },
+    {
+      "id": "clai_00218",
+      "type": "claim",
+      "surface_form": "DFT+U corrections are applied to the entire ICSD database and certain Heusler database entries containing O, S, Se, and F elements, but not to the Binary Alloy database."
+    },
+    {
+      "id": "clai_00219",
+      "type": "claim",
+      "surface_form": "Specific Ueff parameters are defined for d-block elements (Table 4) and U, J parameters for f-block elements (Table 5) to correct self-interaction error in DFT+U calculations, with values ranging from 1.9 eV (In) to 7.5 eV (Zn)."
+    },
+    {
+      "id": "clai_00220",
+      "type": "claim",
+      "surface_form": "The first RELAX calculation is performed in collinear spin-polarized fashion with initial magnetic moments set to 1.0 µB per atom, and spin polarization is turned off in subsequent calculations if magnetization is below 0.025 µB/atom."
+    },
+    {
+      "id": "clai_00221",
+      "type": "claim",
+      "surface_form": "Electronic convergence criteria are δEelec = 10⁻⁵ eV and ionic convergence criteria are δEion = 10⁻⁴ eV for Elements database entries, while all other databases use δEelec = 10⁻³ eV and δEion = 10⁻² eV."
+    },
+    {
+      "id": "clai_00222",
+      "type": "claim",
+      "surface_form": "Following the AFLOW standard enables materials science researchers to reproduce AFLOWLIB consortium results and make direct comparisons of properties between different materials for identifying trends and formulating design rules."
+    },
+    {
+      "id": "clai_00224",
+      "type": "claim",
+      "surface_form": "The AFLOWLIB data is accessible through a REST-API for standardized data exchange."
+    },
+    {
+      "id": "clai_00251",
+      "type": "claim",
+      "surface_form": "FastCHGNet trains in 1.5 hours using 32 GPUs compared to 8.3 days on a single A100 GPU for the original CHGNet model."
+    },
+    {
+      "id": "clai_00258",
+      "type": "claim",
+      "surface_form": "CHGNet achieves test mean absolute errors of 29 meV/atom for energy, 70 meV/Angstrom for force, and 0.308 GPa for stress."
+    },
+    {
+      "id": "clai_00259",
+      "type": "claim",
+      "surface_form": "M3GNet achieves test mean absolute errors of 35 meV/atom for energy, 72 meV/Angstrom for force, and 0.41 GPa for stress."
+    },
+    {
+      "id": "clai_00260",
+      "type": "claim",
+      "surface_form": "CHGNet uniquely includes electronic effects of valences by explicitly embedding magnetic moments on the vector representation of each atom, enabling charge-informed atomistic simulations."
+    },
+    {
+      "id": "clai_00261",
+      "type": "claim",
+      "surface_form": "CHGNet achieved the lowest formation energy MAE at 81 meV/atom, while all other models had MAEs of 129 meV/atom or higher."
+    },
+    {
+      "id": "clai_00273",
+      "type": "claim",
+      "surface_form": "M3GNet is an extension of MEGNet model to include 3-body interactions, explicit atomic coordinates, and 3×3 crystal lattice matrix."
+    },
+    {
+      "id": "clai_00289",
+      "type": "claim",
+      "surface_form": "M3GNet potential covers 89 elements with no particular constraints on applicability, though training has strong bias toward solid phases."
+    },
+    {
+      "id": "clai_00299",
+      "type": "claim",
+      "surface_form": "Including magnetic moments in CHGNet training led to error reductions of 1-10% for energy, force, and stress compared to not including magnetic moments."
+    },
+    {
+      "id": "futu_00052",
+      "type": "future_topic",
+      "surface_form": "Materials design across the whole periodic table"
+    },
+    {
+      "id": "futu_00053",
+      "type": "future_topic",
+      "surface_form": "Large electronic‑structure datasets"
+    },
+    {
+      "id": "futu_00057",
+      "type": "future_topic",
+      "surface_form": "Metal‑organic frameworks (MOFs)"
+    },
+    {
+      "id": "futu_00061",
+      "type": "future_topic",
+      "surface_form": "Completion of Quantum ESPRESSO software integration"
+    },
+    {
+      "id": "futu_00062",
+      "type": "future_topic",
+      "surface_form": "Standard parameter values for k-point grid density"
+    },
+    {
+      "id": "futu_00063",
+      "type": "future_topic",
+      "surface_form": "AFLOW Calculation Types classification"
+    },
+    {
+      "id": "meth_00221",
+      "type": "method",
+      "surface_form": "Universal HamGNN Hamiltonian model"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 23,
+    "future_topic": 6,
+    "method": 1
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00306",
+      "relation_type": "presents",
+      "members": [
+        "arti_00029",
+        "meth_00221"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      }
+    },
+    {
+      "id": "h_00797",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00191"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00799",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00193"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00802",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00196"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00803",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00197"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00804",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00198"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_00805",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00199"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00806",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00200"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "universal",
+  "representative_ids": [
+    "clai_00289",
+    "clai_00200"
+  ]
+}

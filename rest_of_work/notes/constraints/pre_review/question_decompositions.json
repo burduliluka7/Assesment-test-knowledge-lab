@@ -1,0 +1,1237 @@
+[
+  {
+    "question_id": "Q1",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for predicting interatomic potentials when balancing accuracy close to DFT with computational efficiency for systems of millions of atoms?",
+    "answer_type": "method",
+    "core_task": "predicting interatomic potentials",
+    "requirements": [
+      "accuracy close to DFT",
+      "computational efficiency",
+      "systems of millions of atoms"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "predicting interatomic potentials",
+        "source_span": "predicting interatomic potentials",
+        "start": 48,
+        "end": 81
+      },
+      "requirements": [
+        {
+          "text": "accuracy close to DFT",
+          "source_span": "accuracy close to DFT",
+          "start": 97,
+          "end": 118
+        },
+        {
+          "text": "computational efficiency",
+          "source_span": "computational efficiency",
+          "start": 124,
+          "end": 148
+        },
+        {
+          "text": "systems of millions of atoms",
+          "source_span": "systems of millions of atoms",
+          "start": 153,
+          "end": 181
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "predicting interatomic potentials",
+        "source_span": "predicting interatomic potentials",
+        "start": 48,
+        "end": 81,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "accuracy close to DFT",
+        "source_span": "accuracy close to DFT",
+        "start": 97,
+        "end": 118,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_1"
+      },
+      {
+        "text": "computational efficiency",
+        "source_span": "computational efficiency",
+        "start": 124,
+        "end": 148,
+        "kind": "requirement",
+        "connector": "with",
+        "id": "component_2"
+      },
+      {
+        "text": "systems of millions of atoms",
+        "source_span": "systems of millions of atoms",
+        "start": 153,
+        "end": 181,
+        "kind": "requirement",
+        "connector": "with",
+        "id": "component_3"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q2",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for accelerating electronic structure calculations when self-consistent field iterations become prohibitively expensive for large systems (>10³ atoms)?",
+    "answer_type": "method",
+    "core_task": "accelerating electronic structure calculations",
+    "requirements": [
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "accelerating electronic structure calculations",
+        "source_span": "accelerating electronic structure calculations",
+        "start": 48,
+        "end": 94
+      },
+      "requirements": [
+        {
+          "text": "self-consistent field iterations become prohibitively expensive",
+          "source_span": "self-consistent field iterations become prohibitively expensive",
+          "start": 100,
+          "end": 163
+        },
+        {
+          "text": "large systems (>10³ atoms)",
+          "source_span": "large systems (>10³ atoms)",
+          "start": 168,
+          "end": 194
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "accelerating electronic structure calculations",
+        "source_span": "accelerating electronic structure calculations",
+        "start": 48,
+        "end": 94,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "source_span": "self-consistent field iterations become prohibitively expensive",
+        "start": 100,
+        "end": 163,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_1"
+      },
+      {
+        "text": "large systems (>10³ atoms)",
+        "source_span": "large systems (>10³ atoms)",
+        "start": 168,
+        "end": 194,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_2"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q3",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for learning DFT Hamiltonians when dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms?",
+    "answer_type": "method",
+    "core_task": "learning DFT Hamiltonians",
+    "requirements": [
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "learning DFT Hamiltonians",
+        "source_span": "learning DFT Hamiltonians",
+        "start": 48,
+        "end": 73
+      },
+      "requirements": [
+        {
+          "text": "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms",
+          "source_span": "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms",
+          "start": 79,
+          "end": 169
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "learning DFT Hamiltonians",
+        "source_span": "learning DFT Hamiltonians",
+        "start": 48,
+        "end": 73,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms",
+        "source_span": "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms",
+        "start": 79,
+        "end": 169,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_1"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q4",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for phonon property prediction when universal MLIPs show inaccuracies despite good energy/force performance?",
+    "answer_type": "method",
+    "core_task": "phonon property prediction",
+    "requirements": [
+      "universal MLIPs show inaccuracies despite good energy/force performance"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "phonon property prediction",
+        "source_span": "phonon property prediction",
+        "start": 48,
+        "end": 74
+      },
+      "requirements": [
+        {
+          "text": "universal MLIPs show inaccuracies despite good energy/force performance",
+          "source_span": "universal MLIPs show inaccuracies despite good energy/force performance",
+          "start": 80,
+          "end": 151
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "phonon property prediction",
+        "source_span": "phonon property prediction",
+        "start": 48,
+        "end": 74,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "universal MLIPs show inaccuracies despite good energy/force performance",
+        "source_span": "universal MLIPs show inaccuracies despite good energy/force performance",
+        "start": 80,
+        "end": 151,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_1"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q5",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for coarse-graining molecular dynamics when crystalline symmetries and long-range elastic interactions must be preserved?",
+    "answer_type": "method",
+    "core_task": "coarse-graining molecular dynamics",
+    "requirements": [
+      "crystalline symmetries",
+      "long-range elastic interactions must be preserved"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "coarse-graining molecular dynamics",
+        "source_span": "coarse-graining molecular dynamics",
+        "start": 48,
+        "end": 82
+      },
+      "requirements": [
+        {
+          "text": "crystalline symmetries",
+          "source_span": "crystalline symmetries",
+          "start": 88,
+          "end": 110
+        },
+        {
+          "text": "long-range elastic interactions must be preserved",
+          "source_span": "long-range elastic interactions must be preserved",
+          "start": 115,
+          "end": 164
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "coarse-graining molecular dynamics",
+        "source_span": "coarse-graining molecular dynamics",
+        "start": 48,
+        "end": 82,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "crystalline symmetries",
+        "source_span": "crystalline symmetries",
+        "start": 88,
+        "end": 110,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_1"
+      },
+      {
+        "text": "long-range elastic interactions must be preserved",
+        "source_span": "long-range elastic interactions must be preserved",
+        "start": 115,
+        "end": 164,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_2"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q6",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for predicting ionic conductivity when full ab initio MD is too expensive but accuracy must be maintained?",
+    "answer_type": "method",
+    "core_task": "predicting ionic conductivity",
+    "requirements": [
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "predicting ionic conductivity",
+        "source_span": "predicting ionic conductivity",
+        "start": 48,
+        "end": 77
+      },
+      "requirements": [
+        {
+          "text": "full ab initio MD is too expensive",
+          "source_span": "full ab initio MD is too expensive",
+          "start": 83,
+          "end": 117
+        },
+        {
+          "text": "accuracy must be maintained",
+          "source_span": "accuracy must be maintained",
+          "start": 122,
+          "end": 149
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "predicting ionic conductivity",
+        "source_span": "predicting ionic conductivity",
+        "start": 48,
+        "end": 77,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "full ab initio MD is too expensive",
+        "source_span": "full ab initio MD is too expensive",
+        "start": 83,
+        "end": 117,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_1"
+      },
+      {
+        "text": "accuracy must be maintained",
+        "source_span": "accuracy must be maintained",
+        "start": 122,
+        "end": 149,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_2"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q7",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for predicting phase transitions when screening ~50,000 inorganic compounds at high throughput?",
+    "answer_type": "method",
+    "core_task": "predicting phase transitions",
+    "requirements": [
+      "screening ~50,000 inorganic compounds at high throughput"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "predicting phase transitions",
+        "source_span": "predicting phase transitions",
+        "start": 48,
+        "end": 76
+      },
+      "requirements": [
+        {
+          "text": "screening ~50,000 inorganic compounds at high throughput",
+          "source_span": "screening ~50,000 inorganic compounds at high throughput",
+          "start": 82,
+          "end": 138
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "predicting phase transitions",
+        "source_span": "predicting phase transitions",
+        "start": 48,
+        "end": 76,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "screening ~50,000 inorganic compounds at high throughput",
+        "source_span": "screening ~50,000 inorganic compounds at high throughput",
+        "start": 82,
+        "end": 138,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_1"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q8",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for predicting fracture patterns when generalizing from atomistic MD data to unseen bicrystalline structures?",
+    "answer_type": "method",
+    "core_task": "predicting fracture patterns",
+    "requirements": [
+      "generalizing from atomistic MD data to unseen bicrystalline structures"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "predicting fracture patterns",
+        "source_span": "predicting fracture patterns",
+        "start": 48,
+        "end": 76
+      },
+      "requirements": [
+        {
+          "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+          "source_span": "generalizing from atomistic MD data to unseen bicrystalline structures",
+          "start": 82,
+          "end": 152
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "predicting fracture patterns",
+        "source_span": "predicting fracture patterns",
+        "start": 48,
+        "end": 76,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "source_span": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "start": 82,
+        "end": 152,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_1"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q9",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for ensuring physical consistency when transferring information between scales without violating thermodynamic principles?",
+    "answer_type": "method",
+    "core_task": "ensuring physical consistency",
+    "requirements": [
+      "transferring information between scales"
+    ],
+    "exclusions": [
+      "violating thermodynamic principles"
+    ],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "ensuring physical consistency",
+        "source_span": "ensuring physical consistency",
+        "start": 48,
+        "end": 77
+      },
+      "requirements": [
+        {
+          "text": "transferring information between scales",
+          "source_span": "transferring information between scales",
+          "start": 83,
+          "end": 122
+        }
+      ],
+      "exclusions": [
+        {
+          "text": "violating thermodynamic principles",
+          "source_span": "violating thermodynamic principles",
+          "start": 131,
+          "end": 165
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "ensuring physical consistency",
+        "source_span": "ensuring physical consistency",
+        "start": 48,
+        "end": 77,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "transferring information between scales",
+        "source_span": "transferring information between scales",
+        "start": 83,
+        "end": 122,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_1"
+      },
+      {
+        "text": "violating thermodynamic principles",
+        "source_span": "violating thermodynamic principles",
+        "start": 131,
+        "end": 165,
+        "kind": "exclusion",
+        "connector": "without",
+        "id": "component_2"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q10",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for representing atomic environments when the system exhibits significant compositional diversity, defects, and disorder?",
+    "answer_type": "method",
+    "core_task": "representing atomic environments",
+    "requirements": [
+      "the system exhibits significant compositional diversity, defects",
+      "disorder"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "representing atomic environments",
+        "source_span": "representing atomic environments",
+        "start": 48,
+        "end": 80
+      },
+      "requirements": [
+        {
+          "text": "the system exhibits significant compositional diversity, defects",
+          "source_span": "the system exhibits significant compositional diversity, defects",
+          "start": 86,
+          "end": 150
+        },
+        {
+          "text": "disorder",
+          "source_span": "disorder",
+          "start": 156,
+          "end": 164
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "representing atomic environments",
+        "source_span": "representing atomic environments",
+        "start": 48,
+        "end": 80,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "the system exhibits significant compositional diversity, defects",
+        "source_span": "the system exhibits significant compositional diversity, defects",
+        "start": 86,
+        "end": 150,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_1"
+      },
+      {
+        "text": "disorder",
+        "source_span": "disorder",
+        "start": 156,
+        "end": 164,
+        "kind": "requirement",
+        "connector": "when",
+        "id": "component_2"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q11",
+    "question_type": "A",
+    "original_question": "Which methods (by Feb 2026) are best suited for integrating features from three or more distinct scales simultaneously within a unified framework?",
+    "answer_type": "method",
+    "core_task": "integrating features from three or more distinct scales simultaneously within a unified framework",
+    "requirements": [],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 15,
+          "end": 26
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 6,
+        "end": 13
+      },
+      "core_task": {
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "source_span": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "start": 48,
+        "end": 145
+      }
+    },
+    "components": [
+      {
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "source_span": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "start": 48,
+        "end": 145,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      }
+    ],
+    "fallback": false,
+    "warnings": [
+      "Alternative clause retained intact; no Boolean parsing"
+    ]
+  },
+  {
+    "question_id": "Q12",
+    "question_type": "A",
+    "original_question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+    "answer_type": "method",
+    "core_task": "large-scale atomistic simulation",
+    "requirements": [],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 22,
+          "end": 33
+        }
+      ],
+      "answer_type": {
+        "text": "methods",
+        "source_span": "methods",
+        "start": 66,
+        "end": 73
+      },
+      "core_task": {
+        "text": "large-scale atomistic simulation",
+        "source_span": "large-scale atomistic simulation",
+        "start": 78,
+        "end": 110
+      }
+    },
+    "components": [
+      {
+        "text": "large-scale atomistic simulation",
+        "source_span": "large-scale atomistic simulation",
+        "start": 78,
+        "end": 110,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q13",
+    "question_type": "A",
+    "original_question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+    "answer_type": "architecture",
+    "core_task": "predicting properties of solid-state crystalline materials",
+    "requirements": [],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 22,
+          "end": 33
+        }
+      ],
+      "answer_type": {
+        "text": "architectures",
+        "source_span": "architectures",
+        "start": 39,
+        "end": 52
+      },
+      "core_task": {
+        "text": "predicting properties of solid-state crystalline materials",
+        "source_span": "predicting properties of solid-state crystalline materials",
+        "start": 57,
+        "end": 115
+      }
+    },
+    "components": [
+      {
+        "text": "predicting properties of solid-state crystalline materials",
+        "source_span": "predicting properties of solid-state crystalline materials",
+        "start": 57,
+        "end": 115,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q14",
+    "question_type": "A",
+    "original_question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+    "answer_type": null,
+    "core_task": "evaluate MLIPs",
+    "requirements": [
+      "property prediction models for materials discovery"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 48,
+          "end": 59
+        }
+      ],
+      "answer_type": {
+        "text": "datasets",
+        "source_span": "datasets",
+        "start": 5,
+        "end": 13
+      },
+      "core_task": {
+        "text": "evaluate MLIPs",
+        "source_span": "evaluate MLIPs",
+        "start": 64,
+        "end": 78
+      },
+      "requirements": [
+        {
+          "text": "property prediction models for materials discovery",
+          "source_span": "property prediction models for materials discovery",
+          "start": 83,
+          "end": 133
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "evaluate MLIPs",
+        "source_span": "evaluate MLIPs",
+        "start": 64,
+        "end": 78,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "property prediction models for materials discovery",
+        "source_span": "property prediction models for materials discovery",
+        "start": 83,
+        "end": 133,
+        "kind": "requirement",
+        "connector": "",
+        "id": "component_1"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q15",
+    "question_type": "B",
+    "original_question": "What are the most important open scientific challenges (by Feb 2026) in AI-based multiscale modeling of solid-state materials?",
+    "answer_type": null,
+    "core_task": "What are the most important open scientific challenges (",
+    "requirements": [
+      "in AI-based multiscale modeling of solid-state materials"
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 56,
+          "end": 67
+        }
+      ],
+      "core_task": {
+        "text": "What are the most important open scientific challenges (",
+        "source_span": "What are the most important open scientific challenges (",
+        "start": 0,
+        "end": 56
+      },
+      "requirements": [
+        {
+          "text": "in AI-based multiscale modeling of solid-state materials",
+          "source_span": "in AI-based multiscale modeling of solid-state materials",
+          "start": 69,
+          "end": 125
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "What are the most important open scientific challenges (",
+        "source_span": "What are the most important open scientific challenges (",
+        "start": 0,
+        "end": 56,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "in AI-based multiscale modeling of solid-state materials",
+        "source_span": "in AI-based multiscale modeling of solid-state materials",
+        "start": 69,
+        "end": 125,
+        "kind": "requirement",
+        "connector": "",
+        "id": "component_1"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q16",
+    "question_type": "B",
+    "original_question": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy and data efficiency in comparison with vanilla GNN?",
+    "answer_type": null,
+    "core_task": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy",
+    "requirements": [
+      "data efficiency in comparison",
+      "vanilla GNN"
+    ],
+    "exclusions": [],
+    "temporal_condition": null,
+    "source_spans": {
+      "temporal_condition": [],
+      "core_task": {
+        "text": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy",
+        "source_span": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy",
+        "start": 0,
+        "end": 79
+      },
+      "requirements": [
+        {
+          "text": "data efficiency in comparison",
+          "source_span": "data efficiency in comparison",
+          "start": 84,
+          "end": 113
+        },
+        {
+          "text": "vanilla GNN",
+          "source_span": "vanilla GNN",
+          "start": 119,
+          "end": 130
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy",
+        "source_span": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy",
+        "start": 0,
+        "end": 79,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "data efficiency in comparison",
+        "source_span": "data efficiency in comparison",
+        "start": 84,
+        "end": 113,
+        "kind": "requirement",
+        "connector": "",
+        "id": "component_1"
+      },
+      {
+        "text": "vanilla GNN",
+        "source_span": "vanilla GNN",
+        "start": 119,
+        "end": 130,
+        "kind": "requirement",
+        "connector": "with",
+        "id": "component_2"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q17",
+    "question_type": "B",
+    "original_question": "Give evidences that ML-based coarse-grained molecular dynamics is effective for studying ionic transport and phase transitions in solid-state systems (by Feb 2026).",
+    "answer_type": null,
+    "core_task": "Give evidences",
+    "requirements": [
+      "ML-based coarse-grained molecular dynamics is effective",
+      "studying ionic transport",
+      "phase transitions in solid-state systems ("
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 151,
+          "end": 162
+        }
+      ],
+      "core_task": {
+        "text": "Give evidences",
+        "source_span": "Give evidences",
+        "start": 0,
+        "end": 14
+      },
+      "requirements": [
+        {
+          "text": "ML-based coarse-grained molecular dynamics is effective",
+          "source_span": "ML-based coarse-grained molecular dynamics is effective",
+          "start": 20,
+          "end": 75
+        },
+        {
+          "text": "studying ionic transport",
+          "source_span": "studying ionic transport",
+          "start": 80,
+          "end": 104
+        },
+        {
+          "text": "phase transitions in solid-state systems (",
+          "source_span": "phase transitions in solid-state systems (",
+          "start": 109,
+          "end": 151
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "Give evidences",
+        "source_span": "Give evidences",
+        "start": 0,
+        "end": 14,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "ML-based coarse-grained molecular dynamics is effective",
+        "source_span": "ML-based coarse-grained molecular dynamics is effective",
+        "start": 20,
+        "end": 75,
+        "kind": "requirement",
+        "connector": "that",
+        "id": "component_1"
+      },
+      {
+        "text": "studying ionic transport",
+        "source_span": "studying ionic transport",
+        "start": 80,
+        "end": 104,
+        "kind": "requirement",
+        "connector": "that",
+        "id": "component_2"
+      },
+      {
+        "text": "phase transitions in solid-state systems (",
+        "source_span": "phase transitions in solid-state systems (",
+        "start": 109,
+        "end": 151,
+        "kind": "requirement",
+        "connector": "that",
+        "id": "component_3"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  },
+  {
+    "question_id": "Q18",
+    "question_type": "B",
+    "original_question": "What mechanisms embed physical constraints, i.e., symmetry, locality, and size extensivity, into machine-learned interatomic potential architectures, and what evidence bears on whether these constraints improve transfer to system sizes and conditions beyond the training set (by Feb 2026)?",
+    "answer_type": "system",
+    "core_task": "sizes",
+    "requirements": [
+      "conditions beyond the training set ("
+    ],
+    "exclusions": [],
+    "temporal_condition": "by Feb 2026",
+    "source_spans": {
+      "temporal_condition": [
+        {
+          "text": "by Feb 2026",
+          "source_span": "by Feb 2026",
+          "start": 276,
+          "end": 287
+        }
+      ],
+      "answer_type": {
+        "text": "system",
+        "source_span": "system",
+        "start": 223,
+        "end": 229
+      },
+      "core_task": {
+        "text": "sizes",
+        "source_span": "sizes",
+        "start": 230,
+        "end": 235
+      },
+      "requirements": [
+        {
+          "text": "conditions beyond the training set (",
+          "source_span": "conditions beyond the training set (",
+          "start": 240,
+          "end": 276
+        }
+      ]
+    },
+    "components": [
+      {
+        "text": "sizes",
+        "source_span": "sizes",
+        "start": 230,
+        "end": 235,
+        "kind": "core_task",
+        "connector": "",
+        "id": "component_0"
+      },
+      {
+        "text": "conditions beyond the training set (",
+        "source_span": "conditions beyond the training set (",
+        "start": 240,
+        "end": 276,
+        "kind": "requirement",
+        "connector": "",
+        "id": "component_1"
+      }
+    ],
+    "fallback": false,
+    "warnings": []
+  }
+]

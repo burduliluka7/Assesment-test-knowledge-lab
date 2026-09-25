@@ -1,0 +1,121 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00005",
+      "type": "article",
+      "surface_form": "General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+    },
+    {
+      "id": "cite_00120",
+      "type": "cited_work",
+      "surface_form": "E(3)-equivariant GNN"
+    },
+    {
+      "id": "cite_00220",
+      "type": "cited_work",
+      "surface_form": "SE(3)-Equivariant Graph Neural Networks"
+    },
+    {
+      "id": "cite_00502",
+      "type": "cited_work",
+      "surface_form": "SE(3)-equivariant GNN"
+    },
+    {
+      "id": "clai_00186",
+      "type": "claim",
+      "surface_form": "Using higher-order E(3)-equivariant representations (increasing rotation order from l=0 to l=1 and up to l=3) consistently reduces prediction error and improves accuracy across all evaluated tasks."
+    },
+    {
+      "id": "clai_00188",
+      "type": "claim",
+      "surface_form": "The equivariant architecture scales linearly with the number of atoms because convolutions are limited to a local cutoff radius."
+    },
+    {
+      "id": "clai_00383",
+      "type": "claim",
+      "surface_form": "The use of a local‑coordinate message‑passing (LCMP) layer is critical for achieving high prediction accuracy of rotation‑covariant Hamiltonian blocks."
+    },
+    {
+      "id": "clai_00578",
+      "type": "claim",
+      "surface_form": "DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling."
+    },
+    {
+      "id": "comp_00164",
+      "type": "component",
+      "surface_form": "E(3)-equivariant convolution"
+    },
+    {
+      "id": "meth_00120",
+      "type": "method",
+      "surface_form": "Equivariant Neural Networks"
+    },
+    {
+      "id": "meth_00122",
+      "type": "method",
+      "surface_form": "Equivariant message passing"
+    },
+    {
+      "id": "meth_00217",
+      "type": "method",
+      "surface_form": "Tensor‑product‑based equivariant network"
+    },
+    {
+      "id": "meth_00237",
+      "type": "method",
+      "surface_form": "equivariant message passing neural networks"
+    },
+    {
+      "id": "prob_00028",
+      "type": "problem",
+      "surface_form": "E(3) equivariance with spin‑orbit coupling"
+    },
+    {
+      "id": "prob_00123",
+      "type": "problem",
+      "surface_form": "Permutation and rotation invariance"
+    },
+    {
+      "id": "prob_00137",
+      "type": "problem",
+      "surface_form": "Rotation/gauge covariance of Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00141",
+      "type": "problem",
+      "surface_form": "Handling rotation covariance in electronic properties"
+    },
+    {
+      "id": "tech_00120",
+      "type": "technique",
+      "surface_form": "Equivariant message passing"
+    },
+    {
+      "id": "tech_00121",
+      "type": "technique",
+      "surface_form": "Equivariant normalization"
+    },
+    {
+      "id": "tech_00124",
+      "type": "technique",
+      "surface_form": "E(3)-equivariant neural network"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 3,
+    "claim": 4,
+    "component": 1,
+    "method": 4,
+    "problem": 4,
+    "technique": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "equivariant",
+  "representative_ids": [
+    "tech_00124",
+    "meth_00120"
+  ]
+}

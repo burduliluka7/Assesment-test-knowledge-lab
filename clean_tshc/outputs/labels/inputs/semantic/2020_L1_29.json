@@ -1,0 +1,88 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00220",
+      "type": "component",
+      "surface_form": "Uncertainty quantification"
+    },
+    {
+      "id": "meth_00061",
+      "type": "method",
+      "surface_form": "Gaussian process regression"
+    },
+    {
+      "id": "meth_00367",
+      "type": "method",
+      "surface_form": "Local Density Approximation"
+    },
+    {
+      "id": "meth_00370",
+      "type": "method",
+      "surface_form": "GW approximation"
+    },
+    {
+      "id": "prob_00007",
+      "type": "problem",
+      "surface_form": "Uncertainty quantification"
+    },
+    {
+      "id": "prob_00120",
+      "type": "problem",
+      "surface_form": "Uncertainty estimation for ML potentials"
+    },
+    {
+      "id": "prob_00194",
+      "type": "problem",
+      "surface_form": "Uncertainty quantification for ML predictions"
+    },
+    {
+      "id": "prob_00280",
+      "type": "problem",
+      "surface_form": "Generalization error estimation"
+    },
+    {
+      "id": "prob_00589",
+      "type": "problem",
+      "surface_form": "Poor extrapolation in high-dimensional ML potentials"
+    },
+    {
+      "id": "prob_00612",
+      "type": "problem",
+      "surface_form": "ML potential extrapolation"
+    },
+    {
+      "id": "tech_00048",
+      "type": "technique",
+      "surface_form": "Gaussian process regression"
+    },
+    {
+      "id": "tech_00257",
+      "type": "technique",
+      "surface_form": "Sparse Gaussian process"
+    },
+    {
+      "id": "tech_00258",
+      "type": "technique",
+      "surface_form": "Uncertainty quantification via GP variance"
+    },
+    {
+      "id": "tech_00263",
+      "type": "technique",
+      "surface_form": "Bayesian variance prediction"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "method": 3,
+    "problem": 6,
+    "technique": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "uncertainty",
+  "representative_ids": [
+    "prob_00120",
+    "tech_00258"
+  ]
+}

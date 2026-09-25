@@ -1,0 +1,137 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "comp_00607",
+      "type": "component",
+      "surface_form": "Isotropic lattice scaling augmentation"
+    },
+    {
+      "id": "task_00035",
+      "type": "task",
+      "surface_form": "molecular simulation"
+    },
+    {
+      "id": "task_00263",
+      "type": "task",
+      "surface_form": "atomistic simulations"
+    },
+    {
+      "id": "task_00302",
+      "type": "task",
+      "surface_form": "Atomic interaction modeling"
+    },
+    {
+      "id": "task_00401",
+      "type": "task",
+      "surface_form": "lattice dynamics"
+    },
+    {
+      "id": "task_00402",
+      "type": "task",
+      "surface_form": "Metallic material simulation"
+    },
+    {
+      "id": "task_00403",
+      "type": "task",
+      "surface_form": "Water system simulation"
+    },
+    {
+      "id": "task_00404",
+      "type": "task",
+      "surface_form": "Organic molecule simulation"
+    },
+    {
+      "id": "task_00405",
+      "type": "task",
+      "surface_form": "Interface simulation"
+    },
+    {
+      "id": "task_00406",
+      "type": "task",
+      "surface_form": "Transition state modeling"
+    },
+    {
+      "id": "task_00407",
+      "type": "task",
+      "surface_form": "Excited state simulation"
+    },
+    {
+      "id": "task_00409",
+      "type": "task",
+      "surface_form": "Gas-phase system simulation"
+    },
+    {
+      "id": "task_00410",
+      "type": "task",
+      "surface_form": "Macromolecular system simulation"
+    },
+    {
+      "id": "task_00426",
+      "type": "task",
+      "surface_form": "Multi-device training"
+    },
+    {
+      "id": "task_00427",
+      "type": "task",
+      "surface_form": "Multi-device MD simulations"
+    },
+    {
+      "id": "task_00429",
+      "type": "task",
+      "surface_form": "phase diagram determination"
+    },
+    {
+      "id": "task_00435",
+      "type": "task",
+      "surface_form": "reaction dynamics"
+    },
+    {
+      "id": "task_00437",
+      "type": "task",
+      "surface_form": "high-entropy alloy simulation"
+    },
+    {
+      "id": "task_00517",
+      "type": "task",
+      "surface_form": "AIMD simulations"
+    },
+    {
+      "id": "task_00703",
+      "type": "task",
+      "surface_form": "Lattice parameter reproduction"
+    },
+    {
+      "id": "tech_00675",
+      "type": "technique",
+      "surface_form": "Test-time isotropic lattice scaling"
+    },
+    {
+      "id": "tech_00914",
+      "type": "technique",
+      "surface_form": "sp3 atom counting"
+    },
+    {
+      "id": "tech_00915",
+      "type": "technique",
+      "surface_form": "Large-scale atomistic simulation"
+    },
+    {
+      "id": "tech_00926",
+      "type": "technique",
+      "surface_form": "Lattice parameter scaling"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "task": 19,
+    "technique": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "simulation",
+  "representative_ids": [
+    "task_00263",
+    "task_00035"
+  ]
+}

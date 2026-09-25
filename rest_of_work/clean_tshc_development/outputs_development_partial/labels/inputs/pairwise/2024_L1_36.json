@@ -1,0 +1,35 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "metr_00006",
+      "type": "metric",
+      "surface_form": "DAF"
+    },
+    {
+      "id": "metr_00009",
+      "type": "metric",
+      "surface_form": "MAE ∆E"
+    },
+    {
+      "id": "metr_00024",
+      "type": "metric",
+      "surface_form": "performance"
+    },
+    {
+      "id": "metr_00067",
+      "type": "metric",
+      "surface_form": "Gvrh MAE"
+    }
+  ],
+  "generation_type_counts": {
+    "metric": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mae",
+  "representative_ids": [
+    "metr_00009",
+    "metr_00067"
+  ]
+}

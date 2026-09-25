@@ -1,0 +1,70 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "comp_00573",
+      "type": "component",
+      "surface_form": "RELAX1"
+    },
+    {
+      "id": "comp_00575",
+      "type": "component",
+      "surface_form": "STATIC"
+    },
+    {
+      "id": "comp_00576",
+      "type": "component",
+      "surface_form": "BANDS"
+    },
+    {
+      "id": "comp_00578",
+      "type": "component",
+      "surface_form": "Error correction system"
+    },
+    {
+      "id": "comp_00579",
+      "type": "component",
+      "surface_form": "DBS electronic minimizer"
+    },
+    {
+      "id": "comp_00581",
+      "type": "component",
+      "surface_form": "Pulay charge mixer"
+    },
+    {
+      "id": "comp_00582",
+      "type": "component",
+      "surface_form": "CG ionic optimizer"
+    },
+    {
+      "id": "comp_00584",
+      "type": "component",
+      "surface_form": "Dual grid technique"
+    },
+    {
+      "id": "comp_00585",
+      "type": "component",
+      "surface_form": "Plane-wave kinetic energy cut-off"
+    },
+    {
+      "id": "comp_00586",
+      "type": "component",
+      "surface_form": "Ueff parameters for d-block elements"
+    },
+    {
+      "id": "comp_00588",
+      "type": "component",
+      "surface_form": "Collinear spin-polarized calculation setup"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 11
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "relax1",
+  "representative_ids": [
+    "comp_00573",
+    "comp_00576"
+  ]
+}

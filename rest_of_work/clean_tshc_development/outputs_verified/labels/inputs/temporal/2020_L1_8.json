@@ -1,0 +1,55 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00235",
+      "type": "component",
+      "surface_form": "Local atomic reference frame"
+    },
+    {
+      "id": "comp_00236",
+      "type": "component",
+      "surface_form": "Sorted neighbor list"
+    },
+    {
+      "id": "comp_00237",
+      "type": "component",
+      "surface_form": "Input representation D_ij"
+    },
+    {
+      "id": "comp_00238",
+      "type": "component",
+      "surface_form": "Feed‑forward deep neural network"
+    },
+    {
+      "id": "comp_00239",
+      "type": "component",
+      "surface_form": "Atomic‑energy decomposition"
+    },
+    {
+      "id": "comp_00240",
+      "type": "component",
+      "surface_form": "Multi‑term loss function"
+    },
+    {
+      "id": "comp_00242",
+      "type": "component",
+      "surface_form": "Shared-parameter atomic neural network"
+    },
+    {
+      "id": "comp_00246",
+      "type": "component",
+      "surface_form": "Integration with i‑PI for NPT simulations"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 8
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "atomic",
+  "representative_ids": [
+    "comp_00242",
+    "comp_00239"
+  ]
+}

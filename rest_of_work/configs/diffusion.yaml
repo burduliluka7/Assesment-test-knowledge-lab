@@ -1,0 +1,24 @@
+# Frozen before diffusion scores: no benchmark-selected hyperparameters.
+data_dir: data/data
+output: artifacts/full
+v2_output: artifacts/evaluation
+diffusion_output: artifacts/evaluation/diffusion
+context_config: configs/contextual.yaml
+diffusion_cutoffs: [2025, 2026]
+diffusion_stages: [R0, R1, R3, H0, H0_shuffled, H0_pairwise, H1, H2, H3]
+diffusion_alpha: 0.85
+diffusion_seed_top_m: 100
+diffusion_tolerance: 1.0e-8
+diffusion_max_iterations: 100
+diffusion_rrf_k: 60
+diffusion_null_seed: 42
+diffusion_top_ks: [1, 5, 10, 20, 50, 100, 200]
+diffusion_seed_types: [article, cited_work, claim, component, dataset, future_topic, method, metric, problem, task, technique]
+diffusion_answer_types: [method, technique, component, dataset, cited_work, article, metric]
+diffusion_mention_sources: [claim, task, problem, article, technique, component]
+# H3 only: semantic priors, never fitted to answers. H0/H1/H2 use uniform 1.
+diffusion_relation_weights: {claims: 1.0, presents: 1.0, solves: 1.0, addresses: 1.0, evaluated_on: 0.75, uses_technique: 0.75, uses_component: 0.75, extends: 0.25, cites: 0.25, proposes_future_work: 0.10, authored_by: 0.0}
+diffusion_alpha_sensitivity: [0.50, 0.70, 0.85, 0.95]
+diffusion_seed_sensitivity: [50, 100, 200]
+diffusion_sensitivity_stages: [H0, H3]
+diffusion_verify_reuse: true

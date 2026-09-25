@@ -1,0 +1,849 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "cite_00410",
+      "type": "cited_work",
+      "surface_form": "JAX-MD"
+    },
+    {
+      "id": "cite_00492",
+      "type": "cited_work",
+      "surface_form": "e3nn-jax"
+    },
+    {
+      "id": "clai_00136",
+      "type": "claim",
+      "surface_form": "Using a pair‑message function that depends on both source and destination node states improves message‑passing efficiency compared with the standard matrix‑multiplication message function."
+    },
+    {
+      "id": "clai_00137",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network framework unifies eight previously proposed graph‑based neural models under a single formalism."
+    },
+    {
+      "id": "clai_00221",
+      "type": "claim",
+      "surface_form": "Electronic convergence criteria are δEelec = 10⁻⁵ eV and ionic convergence criteria are δEion = 10⁻⁴ eV for Elements database entries, while all other databases use δEelec = 10⁻³ eV and δEion = 10⁻² eV."
+    },
+    {
+      "id": "clai_00224",
+      "type": "claim",
+      "surface_form": "The AFLOWLIB data is accessible through a REST-API for standardized data exchange."
+    },
+    {
+      "id": "clai_00428",
+      "type": "claim",
+      "surface_form": "D4FT converges faster than JAX‑SCF, demonstrating a smaller computational complexity and reduced number of iterations."
+    },
+    {
+      "id": "clai_00429",
+      "type": "claim",
+      "surface_form": "D4FT provides a unified optimization algorithm with a stronger convergence guarantee than traditional SCF fixed‑point iteration."
+    },
+    {
+      "id": "clai_00462",
+      "type": "claim",
+      "surface_form": "The parallelization algorithm restricts communication range between neighboring processors to the original cutoff radius (rc) rather than rc multiplied by message-passing steps."
+    },
+    {
+      "id": "clai_00503",
+      "type": "claim",
+      "surface_form": "Compositional models cannot differentiate between polymorphs with the same chemical composition."
+    },
+    {
+      "id": "clai_00547",
+      "type": "claim",
+      "surface_form": "Large-scale pretraining of MLIPs on GNoME dataset enables models with unprecedented zero-shot accuracy on downstream AIMD data, outperforming state-of-the-art NequIP models trained on hundreds of structures from the target distribution."
+    },
+    {
+      "id": "clai_00551",
+      "type": "claim",
+      "surface_form": "More than 10⁹ candidate structures were generated over the course of active learning using symmetry-aware partial substitutions and random structure search, with 232,477 out of 381,000 stable structures (approximately 61%) attributed to the SAPS candidate generation procedure."
+    },
+    {
+      "id": "comp_00016",
+      "type": "component",
+      "surface_form": "Master (global) node"
+    },
+    {
+      "id": "comp_00029",
+      "type": "component",
+      "surface_form": "Directed message channels"
+    },
+    {
+      "id": "comp_00034",
+      "type": "component",
+      "surface_form": "Higher‑order many‑body message construction"
+    },
+    {
+      "id": "comp_00187",
+      "type": "component",
+      "surface_form": "Weighted message‑passing convolution"
+    },
+    {
+      "id": "comp_00218",
+      "type": "component",
+      "surface_form": "Many‑body kernel term"
+    },
+    {
+      "id": "comp_00221",
+      "type": "component",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "comp_00275",
+      "type": "component",
+      "surface_form": "QR‑based orthogonal constraint enforcement"
+    },
+    {
+      "id": "comp_00278",
+      "type": "component",
+      "surface_form": "SGD‑based SCF optimizer"
+    },
+    {
+      "id": "comp_00279",
+      "type": "component",
+      "surface_form": "JaxSCF module"
+    },
+    {
+      "id": "comp_00313",
+      "type": "component",
+      "surface_form": "Genetic‑algorithm‑driven inverse design"
+    },
+    {
+      "id": "comp_00352",
+      "type": "component",
+      "surface_form": "JARVIS‑Wannier Tight‑Binding app"
+    },
+    {
+      "id": "comp_00393",
+      "type": "component",
+      "surface_form": "Interstitial‑site topological search"
+    },
+    {
+      "id": "comp_00395",
+      "type": "component",
+      "surface_form": "Apennsy interstitial cage search"
+    },
+    {
+      "id": "comp_00434",
+      "type": "component",
+      "surface_form": "Maximum degree Lmax"
+    },
+    {
+      "id": "comp_00435",
+      "type": "component",
+      "surface_form": "Maximum order Mmax"
+    },
+    {
+      "id": "comp_00569",
+      "type": "component",
+      "surface_form": "Prototype-based structure sampler"
+    },
+    {
+      "id": "comp_00590",
+      "type": "component",
+      "surface_form": "Symmetry-aware partial substitutions"
+    },
+    {
+      "id": "comp_00604",
+      "type": "component",
+      "surface_form": "Modified probabilistic substitution model"
+    },
+    {
+      "id": "comp_00634",
+      "type": "component",
+      "surface_form": "Maximum bond variation criterion"
+    },
+    {
+      "id": "comp_00699",
+      "type": "component",
+      "surface_form": "Forward and reverse communication modules"
+    },
+    {
+      "id": "comp_00703",
+      "type": "component",
+      "surface_form": "forward communication routines"
+    },
+    {
+      "id": "comp_00704",
+      "type": "component",
+      "surface_form": "reverse communication routines"
+    },
+    {
+      "id": "comp_00816",
+      "type": "component",
+      "surface_form": "SOAP descriptor with sparse points"
+    },
+    {
+      "id": "comp_00838",
+      "type": "component",
+      "surface_form": "bond ionicity features"
+    },
+    {
+      "id": "data_00143",
+      "type": "dataset",
+      "surface_form": "AIMD transferability test"
+    },
+    {
+      "id": "futu_00101",
+      "type": "future_topic",
+      "surface_form": "Data sharing and collaborative platform development"
+    },
+    {
+      "id": "futu_00159",
+      "type": "future_topic",
+      "surface_form": "Higher body order messages"
+    },
+    {
+      "id": "futu_00163",
+      "type": "future_topic",
+      "surface_form": "Designing other functional properties with virtual node augmentation"
+    },
+    {
+      "id": "meth_00007",
+      "type": "method",
+      "surface_form": "Genetic Algorithms"
+    },
+    {
+      "id": "meth_00030",
+      "type": "method",
+      "surface_form": "Message Passing Neural Network"
+    },
+    {
+      "id": "meth_00087",
+      "type": "method",
+      "surface_form": "JAX"
+    },
+    {
+      "id": "meth_00126",
+      "type": "method",
+      "surface_form": "virtual node method"
+    },
+    {
+      "id": "meth_00197",
+      "type": "method",
+      "surface_form": "SOAP kernel"
+    },
+    {
+      "id": "meth_00204",
+      "type": "method",
+      "surface_form": "Directional message passing neural network"
+    },
+    {
+      "id": "meth_00220",
+      "type": "method",
+      "surface_form": "Neural Message Passing"
+    },
+    {
+      "id": "meth_00238",
+      "type": "method",
+      "surface_form": "Partial Node Assignment"
+    },
+    {
+      "id": "meth_00252",
+      "type": "method",
+      "surface_form": "G0W0 many‑body perturbation theory"
+    },
+    {
+      "id": "meth_00257",
+      "type": "method",
+      "surface_form": "Automated Interactive Infrastructure and Database"
+    },
+    {
+      "id": "meth_00264",
+      "type": "method",
+      "surface_form": "WannierTools"
+    },
+    {
+      "id": "meth_00303",
+      "type": "method",
+      "surface_form": "Noisy Nodes"
+    },
+    {
+      "id": "meth_00328",
+      "type": "method",
+      "surface_form": "Special Quasirandom Structures"
+    },
+    {
+      "id": "meth_00341",
+      "type": "method",
+      "surface_form": "coarse-grained message passing networks"
+    },
+    {
+      "id": "meth_00381",
+      "type": "method",
+      "surface_form": "JAX MD"
+    },
+    {
+      "id": "meth_00393",
+      "type": "method",
+      "surface_form": "ACE with message passing"
+    },
+    {
+      "id": "meth_00433",
+      "type": "method",
+      "surface_form": "SOAP descriptors"
+    },
+    {
+      "id": "meth_00434",
+      "type": "method",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "metr_00048",
+      "type": "metric",
+      "surface_form": "matching structures"
+    },
+    {
+      "id": "prob_00002",
+      "type": "problem",
+      "surface_form": "Out-of-distribution generalization"
+    },
+    {
+      "id": "prob_00003",
+      "type": "problem",
+      "surface_form": "Out-of-distribution detection"
+    },
+    {
+      "id": "prob_00018",
+      "type": "problem",
+      "surface_form": "Learning from graph topology without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00024",
+      "type": "problem",
+      "surface_form": "Poor scalability / limited parallelisation"
+    },
+    {
+      "id": "prob_00025",
+      "type": "problem",
+      "surface_form": "Limited expressivity of two‑body messages"
+    },
+    {
+      "id": "prob_00027",
+      "type": "problem",
+      "surface_form": "Extrapolation to out‑of‑domain configurations"
+    },
+    {
+      "id": "prob_00086",
+      "type": "problem",
+      "surface_form": "Reduction of false positives in early‑stage screening"
+    },
+    {
+      "id": "prob_00088",
+      "type": "problem",
+      "surface_form": "Handling unrelaxed input structures"
+    },
+    {
+      "id": "prob_00104",
+      "type": "problem",
+      "surface_form": "Valence‑dependent bonding representation"
+    },
+    {
+      "id": "prob_00148",
+      "type": "problem",
+      "surface_form": "High computational complexity of SCF"
+    },
+    {
+      "id": "prob_00149",
+      "type": "problem",
+      "surface_form": "SCF convergence reliability"
+    },
+    {
+      "id": "prob_00150",
+      "type": "problem",
+      "surface_form": "Limited expressiveness of fixed LCAO basis"
+    },
+    {
+      "id": "prob_00152",
+      "type": "problem",
+      "surface_form": "Slow convergence of traditional SCF"
+    },
+    {
+      "id": "prob_00153",
+      "type": "problem",
+      "surface_form": "Limited expressivity of fixed Gaussian basis sets"
+    },
+    {
+      "id": "prob_00155",
+      "type": "problem",
+      "surface_form": "Slow or unstable SCF convergence"
+    },
+    {
+      "id": "prob_00175",
+      "type": "problem",
+      "surface_form": "Defect‑to‑property linkage"
+    },
+    {
+      "id": "prob_00181",
+      "type": "problem",
+      "surface_form": "Exploration of huge defect‑structure spaces"
+    },
+    {
+      "id": "prob_00183",
+      "type": "problem",
+      "surface_form": "Nonlinear structure‑property mapping"
+    },
+    {
+      "id": "prob_00217",
+      "type": "problem",
+      "surface_form": "Standardized structure representation"
+    },
+    {
+      "id": "prob_00220",
+      "type": "problem",
+      "surface_form": "Identification of interstitial sites"
+    },
+    {
+      "id": "prob_00243",
+      "type": "problem",
+      "surface_form": "Limited expressivity from low Lmax"
+    },
+    {
+      "id": "prob_00328",
+      "type": "problem",
+      "surface_form": "Short and mid-range non-bonded interaction correction"
+    },
+    {
+      "id": "prob_00336",
+      "type": "problem",
+      "surface_form": "Power wall bottleneck"
+    },
+    {
+      "id": "prob_00337",
+      "type": "problem",
+      "surface_form": "Multi-device scalability"
+    },
+    {
+      "id": "prob_00338",
+      "type": "problem",
+      "surface_form": "Installation complexity"
+    },
+    {
+      "id": "prob_00351",
+      "type": "problem",
+      "surface_form": "hardware performance variability"
+    },
+    {
+      "id": "prob_00353",
+      "type": "problem",
+      "surface_form": "structural prototype bias"
+    },
+    {
+      "id": "prob_00365",
+      "type": "problem",
+      "surface_form": "Structural diversity deficiency"
+    },
+    {
+      "id": "prob_00368",
+      "type": "problem",
+      "surface_form": "Memory and storage requirements"
+    },
+    {
+      "id": "prob_00375",
+      "type": "problem",
+      "surface_form": "Calculation failure handling"
+    },
+    {
+      "id": "prob_00391",
+      "type": "problem",
+      "surface_form": "Limited transferability of MLIPs"
+    },
+    {
+      "id": "prob_00399",
+      "type": "problem",
+      "surface_form": "Discovery of partial substitution structures"
+    },
+    {
+      "id": "prob_00404",
+      "type": "problem",
+      "surface_form": "Scalable polymorph discovery"
+    },
+    {
+      "id": "prob_00406",
+      "type": "problem",
+      "surface_form": "Out-of-distribution robustness"
+    },
+    {
+      "id": "prob_00595",
+      "type": "problem",
+      "surface_form": "Incomplete configuration space sampling"
+    },
+    {
+      "id": "prob_00597",
+      "type": "problem",
+      "surface_form": "Force locality quantification"
+    },
+    {
+      "id": "prob_00603",
+      "type": "problem",
+      "surface_form": "Linear sp-bonded chain detection"
+    },
+    {
+      "id": "task_00059",
+      "type": "task",
+      "surface_form": "Topological invariant analysis"
+    },
+    {
+      "id": "task_00060",
+      "type": "task",
+      "surface_form": "High‑throughput Hamiltonian generation"
+    },
+    {
+      "id": "task_00105",
+      "type": "task",
+      "surface_form": "Stable vs. unstable classification for high‑throughput screening"
+    },
+    {
+      "id": "task_00238",
+      "type": "task",
+      "surface_form": "Tight‑binding model generation"
+    },
+    {
+      "id": "task_00426",
+      "type": "task",
+      "surface_form": "Multi-device training"
+    },
+    {
+      "id": "task_00477",
+      "type": "task",
+      "surface_form": "point defect analysis"
+    },
+    {
+      "id": "task_00515",
+      "type": "task",
+      "surface_form": "Experimental structure matching"
+    },
+    {
+      "id": "task_00698",
+      "type": "task",
+      "surface_form": "Locality testing"
+    },
+    {
+      "id": "tech_00008",
+      "type": "technique",
+      "surface_form": "Fine-tuning"
+    },
+    {
+      "id": "tech_00084",
+      "type": "technique",
+      "surface_form": "Set2Set pooling"
+    },
+    {
+      "id": "tech_00088",
+      "type": "technique",
+      "surface_form": "Directed message channels"
+    },
+    {
+      "id": "tech_00096",
+      "type": "technique",
+      "surface_form": "Polynomial mutation"
+    },
+    {
+      "id": "tech_00097",
+      "type": "technique",
+      "surface_form": "Hyperparameter tuning"
+    },
+    {
+      "id": "tech_00103",
+      "type": "technique",
+      "surface_form": "High‑throughput screening"
+    },
+    {
+      "id": "tech_00109",
+      "type": "technique",
+      "surface_form": "Hierarchical Body‑Order Expansion"
+    },
+    {
+      "id": "tech_00191",
+      "type": "technique",
+      "surface_form": "Genetic algorithm‑driven sparse regression"
+    },
+    {
+      "id": "tech_00200",
+      "type": "technique",
+      "surface_form": "Protostructure matching for data de‑duplication"
+    },
+    {
+      "id": "tech_00201",
+      "type": "technique",
+      "surface_form": "Batch‑wise out‑of‑distribution testing"
+    },
+    {
+      "id": "tech_00260",
+      "type": "technique",
+      "surface_form": "SOAP descriptor construction"
+    },
+    {
+      "id": "tech_00292",
+      "type": "technique",
+      "surface_form": "Normalized summation pooling"
+    },
+    {
+      "id": "tech_00301",
+      "type": "technique",
+      "surface_form": "Fixed‑point reformulation of SCF"
+    },
+    {
+      "id": "tech_00319",
+      "type": "technique",
+      "surface_form": "Binary cross‑entropy loss with sigmoid output"
+    },
+    {
+      "id": "tech_00325",
+      "type": "technique",
+      "surface_form": "RESTful JSON API"
+    },
+    {
+      "id": "tech_00331",
+      "type": "technique",
+      "surface_form": "Genetic algorithm optimization"
+    },
+    {
+      "id": "tech_00336",
+      "type": "technique",
+      "surface_form": "GRU‑based message passing"
+    },
+    {
+      "id": "tech_00337",
+      "type": "technique",
+      "surface_form": "Genetic‑algorithm optimization"
+    },
+    {
+      "id": "tech_00341",
+      "type": "technique",
+      "surface_form": "Simulated binary crossover"
+    },
+    {
+      "id": "tech_00342",
+      "type": "technique",
+      "surface_form": "Penalty constraint handling"
+    },
+    {
+      "id": "tech_00359",
+      "type": "technique",
+      "surface_form": "Cloud‑based continuous integration"
+    },
+    {
+      "id": "tech_00360",
+      "type": "technique",
+      "surface_form": "REST‑API data exchange"
+    },
+    {
+      "id": "tech_00367",
+      "type": "technique",
+      "surface_form": "Web‑based interactive interfaces"
+    },
+    {
+      "id": "tech_00372",
+      "type": "technique",
+      "surface_form": "Topological spillage analysis"
+    },
+    {
+      "id": "tech_00373",
+      "type": "technique",
+      "surface_form": "Wannier90 tight‑binding generation"
+    },
+    {
+      "id": "tech_00400",
+      "type": "technique",
+      "surface_form": "Multi‑threaded parallel execution"
+    },
+    {
+      "id": "tech_00401",
+      "type": "technique",
+      "surface_form": "Topological cage identification"
+    },
+    {
+      "id": "tech_00404",
+      "type": "technique",
+      "surface_form": "symmetry reduction of cages"
+    },
+    {
+      "id": "tech_00492",
+      "type": "technique",
+      "surface_form": "TPOT genetic algorithm"
+    },
+    {
+      "id": "tech_00501",
+      "type": "technique",
+      "surface_form": "TPOT automated model search"
+    },
+    {
+      "id": "tech_00535",
+      "type": "technique",
+      "surface_form": "Equal-spacing virtual node placement"
+    },
+    {
+      "id": "tech_00545",
+      "type": "technique",
+      "surface_form": "Coordination number normalization"
+    },
+    {
+      "id": "tech_00581",
+      "type": "technique",
+      "surface_form": "On-chip parameter storage"
+    },
+    {
+      "id": "tech_00584",
+      "type": "technique",
+      "surface_form": "Automatic system probability"
+    },
+    {
+      "id": "tech_00637",
+      "type": "technique",
+      "surface_form": "high-throughput calculations"
+    },
+    {
+      "id": "tech_00642",
+      "type": "technique",
+      "surface_form": "DBS-to-RMM-DIIS switching"
+    },
+    {
+      "id": "tech_00645",
+      "type": "technique",
+      "surface_form": "δEelec convergence criterion"
+    },
+    {
+      "id": "tech_00646",
+      "type": "technique",
+      "surface_form": "δEion convergence criterion"
+    },
+    {
+      "id": "tech_00651",
+      "type": "technique",
+      "surface_form": "Nested loop optimization"
+    },
+    {
+      "id": "tech_00652",
+      "type": "technique",
+      "surface_form": "Energy-based convergence criteria"
+    },
+    {
+      "id": "tech_00660",
+      "type": "technique",
+      "surface_form": "Data flywheel"
+    },
+    {
+      "id": "tech_00663",
+      "type": "technique",
+      "surface_form": "Fine-tuning from pretrained checkpoint"
+    },
+    {
+      "id": "tech_00669",
+      "type": "technique",
+      "surface_form": "Branch-and-bound algorithms"
+    },
+    {
+      "id": "tech_00678",
+      "type": "technique",
+      "surface_form": "Composition-based train/test splitting"
+    },
+    {
+      "id": "tech_00687",
+      "type": "technique",
+      "surface_form": "Structure matching with tolerance adjustments"
+    },
+    {
+      "id": "tech_00690",
+      "type": "technique",
+      "surface_form": "Interquartile range outlier filtering"
+    },
+    {
+      "id": "tech_00692",
+      "type": "technique",
+      "surface_form": "Maximum bond variation check"
+    },
+    {
+      "id": "tech_00699",
+      "type": "technique",
+      "surface_form": "iterative configuration addition"
+    },
+    {
+      "id": "tech_00704",
+      "type": "technique",
+      "surface_form": "Outlier detection in training loops"
+    },
+    {
+      "id": "tech_00778",
+      "type": "technique",
+      "surface_form": "Tensor products for many-body interactions"
+    },
+    {
+      "id": "tech_00779",
+      "type": "technique",
+      "surface_form": "Restricted communication range"
+    },
+    {
+      "id": "tech_00780",
+      "type": "technique",
+      "surface_form": "Node feature and gradient exchange"
+    },
+    {
+      "id": "tech_00790",
+      "type": "technique",
+      "surface_form": "reverse communication of energy gradients"
+    },
+    {
+      "id": "tech_00791",
+      "type": "technique",
+      "surface_form": "reverse communication of partial forces"
+    },
+    {
+      "id": "tech_00795",
+      "type": "technique",
+      "surface_form": "dynamic load balancing"
+    },
+    {
+      "id": "tech_00796",
+      "type": "technique",
+      "surface_form": "global pooling"
+    },
+    {
+      "id": "tech_00803",
+      "type": "technique",
+      "surface_form": "fixed-size testing"
+    },
+    {
+      "id": "tech_00804",
+      "type": "technique",
+      "surface_form": "scalable parallel algorithm"
+    },
+    {
+      "id": "tech_00903",
+      "type": "technique",
+      "surface_form": "Iterative database extension"
+    },
+    {
+      "id": "tech_00910",
+      "type": "technique",
+      "surface_form": "Cumulative error distribution analysis"
+    },
+    {
+      "id": "tech_00912",
+      "type": "technique",
+      "surface_form": "Franzblau shortest-path algorithm"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 2,
+    "claim": 10,
+    "component": 24,
+    "dataset": 1,
+    "future_topic": 3,
+    "method": 18,
+    "metric": 1,
+    "problem": 37,
+    "task": 8,
+    "technique": 61
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "message",
+  "representative_ids": [
+    "meth_00341",
+    "task_00515"
+  ]
+}

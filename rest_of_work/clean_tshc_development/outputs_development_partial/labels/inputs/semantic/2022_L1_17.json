@@ -1,0 +1,262 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "cite_00134",
+      "type": "cited_work",
+      "surface_form": "Behler‑Parrinello Neural Network"
+    },
+    {
+      "id": "cite_00482",
+      "type": "cited_work",
+      "surface_form": "Behler‑Parrinello"
+    },
+    {
+      "id": "cite_00494",
+      "type": "cited_work",
+      "surface_form": "Behler-Parrinello neural network"
+    },
+    {
+      "id": "clai_00130",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network (MPNN) achieves state‑of‑the‑art performance on all QM9 regression targets, reaching chemical accuracy on 11 of the 13 targets and outperforming prior models such as SchNet and DTNN."
+    },
+    {
+      "id": "clai_00133",
+      "type": "claim",
+      "surface_form": "A general training method allows MPNNs to use larger node representation dimensions without increasing computation time or memory, providing substantial savings over previous high‑dimensional MPNNs."
+    },
+    {
+      "id": "clai_00137",
+      "type": "claim",
+      "surface_form": "The Message Passing Neural Network framework unifies eight previously proposed graph‑based neural models under a single formalism."
+    },
+    {
+      "id": "clai_00139",
+      "type": "claim",
+      "surface_form": "Across all QM9 properties, the MPNN reduces the mean absolute error by 30–70 % relative to the best previously reported graph‑neural‑network baseline."
+    },
+    {
+      "id": "clai_00317",
+      "type": "claim",
+      "surface_form": "Graph network models (CGCNN and MEGNet) have high errors on small datasets (<10^4 samples) but leverage large datasets more efficiently, outperforming traditional ML and AutoML approaches on tasks with approximately 10^4 data points or more."
+    },
+    {
+      "id": "clai_00321",
+      "type": "claim",
+      "surface_form": "Graph networks (CGCNN and MEGNet) far outperform traditional ML algorithms on formation energy prediction tasks, with MEGNet decisively outperforming Automatminer for the PhDOS task; among nine structure-based tasks, Automatminer and MEGNet each achieve best scores on 4 tasks."
+    },
+    {
+      "id": "comp_00029",
+      "type": "component",
+      "surface_form": "Directed message channels"
+    },
+    {
+      "id": "comp_00238",
+      "type": "component",
+      "surface_form": "Feed‑forward deep neural network"
+    },
+    {
+      "id": "comp_00260",
+      "type": "component",
+      "surface_form": "Multiple MPNN models for orbital‑pair blocks"
+    },
+    {
+      "id": "comp_00261",
+      "type": "component",
+      "surface_form": "Single MPNN with multi‑dimensional output"
+    },
+    {
+      "id": "comp_00319",
+      "type": "component",
+      "surface_form": "PNA-based GNN predictor"
+    },
+    {
+      "id": "comp_00320",
+      "type": "component",
+      "surface_form": "Alternative GNN backbones"
+    },
+    {
+      "id": "comp_00470",
+      "type": "component",
+      "surface_form": "CGCNN convolution layers"
+    },
+    {
+      "id": "comp_00559",
+      "type": "component",
+      "surface_form": "Residual neural network"
+    },
+    {
+      "id": "futu_00039",
+      "type": "future_topic",
+      "surface_form": "apply the general MPNN approach to practically important graph problems"
+    },
+    {
+      "id": "meth_00026",
+      "type": "method",
+      "surface_form": "Interaction Networks"
+    },
+    {
+      "id": "meth_00028",
+      "type": "method",
+      "surface_form": "Graph Attention"
+    },
+    {
+      "id": "meth_00030",
+      "type": "method",
+      "surface_form": "Message Passing Neural Network"
+    },
+    {
+      "id": "meth_00031",
+      "type": "method",
+      "surface_form": "graph neural network"
+    },
+    {
+      "id": "meth_00036",
+      "type": "method",
+      "surface_form": "MEGNet"
+    },
+    {
+      "id": "meth_00043",
+      "type": "method",
+      "surface_form": "Global Convolution Networks"
+    },
+    {
+      "id": "meth_00046",
+      "type": "method",
+      "surface_form": "Gated Graph Neural Networks"
+    },
+    {
+      "id": "meth_00053",
+      "type": "method",
+      "surface_form": "Behler‑Parrinello Neural Network Potential"
+    },
+    {
+      "id": "meth_00139",
+      "type": "method",
+      "surface_form": "Scikit-learn"
+    },
+    {
+      "id": "meth_00172",
+      "type": "method",
+      "surface_form": "Tensor-Field Networks"
+    },
+    {
+      "id": "meth_00208",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network"
+    },
+    {
+      "id": "meth_00215",
+      "type": "method",
+      "surface_form": "Symmetry-adapted Graph Neural Network"
+    },
+    {
+      "id": "meth_00220",
+      "type": "method",
+      "surface_form": "Neural Message Passing"
+    },
+    {
+      "id": "meth_00228",
+      "type": "method",
+      "surface_form": "Graph Networks"
+    },
+    {
+      "id": "meth_00260",
+      "type": "method",
+      "surface_form": "Keras"
+    },
+    {
+      "id": "meth_00261",
+      "type": "method",
+      "surface_form": "Scikit‑learn"
+    },
+    {
+      "id": "meth_00341",
+      "type": "method",
+      "surface_form": "coarse-grained message passing networks"
+    },
+    {
+      "id": "meth_00343",
+      "type": "method",
+      "surface_form": "Transformer attention mechanism"
+    },
+    {
+      "id": "meth_00349",
+      "type": "method",
+      "surface_form": "Crystal Graph Attention Network"
+    },
+    {
+      "id": "meth_00403",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network potential"
+    },
+    {
+      "id": "prob_00091",
+      "type": "problem",
+      "surface_form": "Lack of rotational equivariance in existing GNN‑IPs"
+    },
+    {
+      "id": "task_00222",
+      "type": "task",
+      "surface_form": "Benchmarking GNN architectures"
+    },
+    {
+      "id": "tech_00085",
+      "type": "technique",
+      "surface_form": "Virtual edges for long‑range communication"
+    },
+    {
+      "id": "tech_00088",
+      "type": "technique",
+      "surface_form": "Directed message channels"
+    },
+    {
+      "id": "tech_00245",
+      "type": "technique",
+      "surface_form": "Gated multi‑layer perceptron"
+    },
+    {
+      "id": "tech_00288",
+      "type": "technique",
+      "surface_form": "Adam optimizer with staged learning‑rate decay"
+    },
+    {
+      "id": "tech_00311",
+      "type": "technique",
+      "surface_form": "Spatiotemporal learning with ConvLSTM"
+    },
+    {
+      "id": "tech_00318",
+      "type": "technique",
+      "surface_form": "LSTM sequential modeling"
+    },
+    {
+      "id": "tech_00327",
+      "type": "technique",
+      "surface_form": "Supervised GNN training"
+    },
+    {
+      "id": "tech_00336",
+      "type": "technique",
+      "surface_form": "GRU‑based message passing"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 3,
+    "claim": 6,
+    "component": 8,
+    "future_topic": 1,
+    "method": 20,
+    "problem": 1,
+    "task": 1,
+    "technique": 8
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "neural",
+  "representative_ids": [
+    "meth_00043",
+    "meth_00030"
+  ]
+}

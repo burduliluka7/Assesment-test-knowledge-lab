@@ -1,0 +1,25 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00267",
+      "type": "claim",
+      "surface_form": "MACE and grACE packages provide excellent scaling with number of elements while achieving high accuracy."
+    },
+    {
+      "id": "clai_00271",
+      "type": "claim",
+      "surface_form": "Orb performed 3-6 times faster than the pytorch version of MACE for large system sizes with dispersion corrections."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mace",
+  "representative_ids": [
+    "clai_00267",
+    "clai_00271"
+  ]
+}

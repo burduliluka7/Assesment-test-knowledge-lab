@@ -1,0 +1,611 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00019",
+      "type": "article",
+      "surface_form": "D4FT: A DEEP LEARNING APPROACH TO KOHN-SHAM DENSITY FUNCTIONAL THEORY"
+    },
+    {
+      "id": "arti_00029",
+      "type": "article",
+      "surface_form": "Universal Machine Learning Kohn-Sham Hamiltonian for Materials"
+    },
+    {
+      "id": "arti_00041",
+      "type": "article",
+      "surface_form": "EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+    },
+    {
+      "id": "cite_00258",
+      "type": "cited_work",
+      "surface_form": "e(3)-equivariant Hamiltonian parameterization"
+    },
+    {
+      "id": "clai_00096",
+      "type": "claim",
+      "surface_form": "Non-conservative models allow residual asymmetries to drive relaxation toward more stable close-packed structures, unlike equivariant models that remain trapped in symmetric but unstable configurations, though 70% (16%) of final configurations retain symmetry of initial structure with 0.01 Å threshold for conservative (non-conservative) models."
+    },
+    {
+      "id": "clai_00188",
+      "type": "claim",
+      "surface_form": "The equivariant architecture scales linearly with the number of atoms because convolutions are limited to a local cutoff radius."
+    },
+    {
+      "id": "clai_00191",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model achieves a mean absolute error of 5.4 meV for the real‑space Hamiltonian matrix on the test set after the first round of training."
+    },
+    {
+      "id": "clai_00198",
+      "type": "claim",
+      "surface_form": "A two‑step training procedure—first minimizing real‑space Hamiltonian error, then adding orbital‑energy error at random k‑points—is essential to obtain a truly universal Hamiltonian model."
+    },
+    {
+      "id": "clai_00398",
+      "type": "claim",
+      "surface_form": "Symmetry‑invariant polynomial features up to sixth order, constructed via the Reynolds operator, are used as inputs to the IDNN to respect the 384‑element symmetry group of the zig‑zag ordering."
+    },
+    {
+      "id": "clai_00411",
+      "type": "claim",
+      "surface_form": "Koopman operator theory allows highly nonlinear dynamical systems to be represented in terms of an infinite-dimensional linear operator."
+    },
+    {
+      "id": "clai_00441",
+      "type": "claim",
+      "surface_form": "Non-equivariant, non-conservative architectures can accurately model physical properties including those requiring higher-order derivatives of the potential energy surface."
+    },
+    {
+      "id": "clai_00578",
+      "type": "claim",
+      "surface_form": "DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling."
+    },
+    {
+      "id": "clai_00586",
+      "type": "claim",
+      "surface_form": "The equivariant architecture handles spin‑orbital Hamiltonians by separating real and imaginary components and applying a change‑of‑basis for half‑integer representations, thereby preserving equivariance without requiring complex‑valued network layers."
+    },
+    {
+      "id": "clai_00587",
+      "type": "claim",
+      "surface_form": "The model can fit 2.8 × 10⁹ non‑zero complex‑valued Hamiltonian matrix elements with only ~10⁵ real trainable parameters, indicating high capacity efficiency."
+    },
+    {
+      "id": "comp_00039",
+      "type": "component",
+      "surface_form": "Loop tensor contraction algorithm"
+    },
+    {
+      "id": "comp_00062",
+      "type": "component",
+      "surface_form": "Symmetry‑aware E(3)‑equivariant GNN energy model"
+    },
+    {
+      "id": "comp_00107",
+      "type": "component",
+      "surface_form": "Symmetry-adapted order parameters η0–η6"
+    },
+    {
+      "id": "comp_00110",
+      "type": "component",
+      "surface_form": "Symmetry‑respecting polynomial features via Reynolds operator"
+    },
+    {
+      "id": "comp_00116",
+      "type": "component",
+      "surface_form": "Symmetry‑adapted order parameters and invariant features"
+    },
+    {
+      "id": "comp_00125",
+      "type": "component",
+      "surface_form": "Symmetry functions"
+    },
+    {
+      "id": "comp_00133",
+      "type": "component",
+      "surface_form": "Symmetry‑adapted order‑parameter generation"
+    },
+    {
+      "id": "comp_00164",
+      "type": "component",
+      "surface_form": "E(3)-equivariant convolution"
+    },
+    {
+      "id": "comp_00167",
+      "type": "component",
+      "surface_form": "Equivariant SiLU‑based gate"
+    },
+    {
+      "id": "comp_00226",
+      "type": "component",
+      "surface_form": "E(3)×{I,T} equivariant neural network architecture"
+    },
+    {
+      "id": "comp_00230",
+      "type": "component",
+      "surface_form": "Tensor‑product layer with Clebsch‑Gordan coefficients"
+    },
+    {
+      "id": "comp_00329",
+      "type": "component",
+      "surface_form": "Equivariant flow network"
+    },
+    {
+      "id": "comp_00408",
+      "type": "component",
+      "surface_form": "Stress tensor decomposition"
+    },
+    {
+      "id": "comp_00424",
+      "type": "component",
+      "surface_form": "SO(2) linear operations"
+    },
+    {
+      "id": "comp_00564",
+      "type": "component",
+      "surface_form": "DFT stiffness tensor calculator"
+    },
+    {
+      "id": "comp_00590",
+      "type": "component",
+      "surface_form": "Symmetry-aware partial substitutions"
+    },
+    {
+      "id": "comp_00604",
+      "type": "component",
+      "surface_form": "Modified probabilistic substitution model"
+    },
+    {
+      "id": "comp_00643",
+      "type": "component",
+      "surface_form": "E(3) equivariant tensor representations"
+    },
+    {
+      "id": "comp_00712",
+      "type": "component",
+      "surface_form": "Inference-time symmetry corrections"
+    },
+    {
+      "id": "futu_00029",
+      "type": "future_topic",
+      "surface_form": "Inference-time modifications to recover physical symmetries"
+    },
+    {
+      "id": "meth_00102",
+      "type": "method",
+      "surface_form": "deep-learning DFT Hamiltonian"
+    },
+    {
+      "id": "meth_00111",
+      "type": "method",
+      "surface_form": "Tensor Field Networks"
+    },
+    {
+      "id": "meth_00112",
+      "type": "method",
+      "surface_form": "Equivariant Transformers"
+    },
+    {
+      "id": "meth_00120",
+      "type": "method",
+      "surface_form": "Equivariant Neural Networks"
+    },
+    {
+      "id": "meth_00172",
+      "type": "method",
+      "surface_form": "Tensor-Field Networks"
+    },
+    {
+      "id": "meth_00199",
+      "type": "method",
+      "surface_form": "deep equivariant neural network method"
+    },
+    {
+      "id": "meth_00202",
+      "type": "method",
+      "surface_form": "e(3)-equivariant Hamiltonian parameterization"
+    },
+    {
+      "id": "meth_00203",
+      "type": "method",
+      "surface_form": "Equivariant representations for atomistic dynamics"
+    },
+    {
+      "id": "meth_00213",
+      "type": "method",
+      "surface_form": "deep neural network approach to represent DFT Hamiltonian"
+    },
+    {
+      "id": "meth_00215",
+      "type": "method",
+      "surface_form": "Symmetry-adapted Graph Neural Network"
+    },
+    {
+      "id": "meth_00217",
+      "type": "method",
+      "surface_form": "Tensor‑product‑based equivariant network"
+    },
+    {
+      "id": "meth_00221",
+      "type": "method",
+      "surface_form": "Universal HamGNN Hamiltonian model"
+    },
+    {
+      "id": "meth_00285",
+      "type": "method",
+      "surface_form": "Findsym symmetry analysis"
+    },
+    {
+      "id": "meth_00324",
+      "type": "method",
+      "surface_form": "symmetry-aware Euclidean neural networks"
+    },
+    {
+      "id": "meth_00339",
+      "type": "method",
+      "surface_form": "atom-centered symmetry functions"
+    },
+    {
+      "id": "meth_00414",
+      "type": "method",
+      "surface_form": "Scalable EquiVariance-Enabled Neural NETwork"
+    },
+    {
+      "id": "metr_00020",
+      "type": "metric",
+      "surface_form": "MAE of DFT Hamiltonian matrix"
+    },
+    {
+      "id": "prob_00028",
+      "type": "problem",
+      "surface_form": "E(3) equivariance with spin‑orbit coupling"
+    },
+    {
+      "id": "prob_00091",
+      "type": "problem",
+      "surface_form": "Lack of rotational equivariance in existing GNN‑IPs"
+    },
+    {
+      "id": "prob_00123",
+      "type": "problem",
+      "surface_form": "Permutation and rotation invariance"
+    },
+    {
+      "id": "prob_00128",
+      "type": "problem",
+      "surface_form": "Violation of physical symmetries in learned Hamiltonians"
+    },
+    {
+      "id": "prob_00130",
+      "type": "problem",
+      "surface_form": "Symmetry preservation without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00137",
+      "type": "problem",
+      "surface_form": "Rotation/gauge covariance of Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00139",
+      "type": "problem",
+      "surface_form": "Efficient prediction of DFT Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00141",
+      "type": "problem",
+      "surface_form": "Handling rotation covariance in electronic properties"
+    },
+    {
+      "id": "prob_00163",
+      "type": "problem",
+      "surface_form": "Rotationally Invariant Tensorial Property Representation"
+    },
+    {
+      "id": "prob_00239",
+      "type": "problem",
+      "surface_form": "scaling equivariant Transformers to higher-degree representations"
+    },
+    {
+      "id": "prob_00241",
+      "type": "problem",
+      "surface_form": "Computational complexity of SO(3) tensor products"
+    },
+    {
+      "id": "prob_00253",
+      "type": "problem",
+      "surface_form": "High computational complexity of SO(3) tensor products"
+    },
+    {
+      "id": "prob_00255",
+      "type": "problem",
+      "surface_form": "Computational intensity of SO(3) tensor products"
+    },
+    {
+      "id": "prob_00258",
+      "type": "problem",
+      "surface_form": "Overfitting in high-degree equivariant models"
+    },
+    {
+      "id": "prob_00330",
+      "type": "problem",
+      "surface_form": "Tensorial property prediction"
+    },
+    {
+      "id": "prob_00399",
+      "type": "problem",
+      "surface_form": "Discovery of partial substitution structures"
+    },
+    {
+      "id": "prob_00454",
+      "type": "problem",
+      "surface_form": "SE(3) equivariant property prediction"
+    },
+    {
+      "id": "prob_00455",
+      "type": "problem",
+      "surface_form": "learning equivariant features without explicit constraints"
+    },
+    {
+      "id": "prob_00458",
+      "type": "problem",
+      "surface_form": "Learning geometric equivariance without explicit architectural constraints"
+    },
+    {
+      "id": "prob_00459",
+      "type": "problem",
+      "surface_form": "Scalability of equivariant molecular models"
+    },
+    {
+      "id": "prob_00498",
+      "type": "problem",
+      "surface_form": "Symmetry breaking in MLIPs"
+    },
+    {
+      "id": "prob_00500",
+      "type": "problem",
+      "surface_form": "Energy conservation in non-equivariant models"
+    },
+    {
+      "id": "prob_00502",
+      "type": "problem",
+      "surface_form": "Computational cost of enforcing physical symmetries"
+    },
+    {
+      "id": "prob_00503",
+      "type": "problem",
+      "surface_form": "Symmetry artifacts in automated workflows"
+    },
+    {
+      "id": "prob_00537",
+      "type": "problem",
+      "surface_form": "equivariance requirement paradigm"
+    },
+    {
+      "id": "prob_00541",
+      "type": "problem",
+      "surface_form": "rotational invariance enforcement"
+    },
+    {
+      "id": "task_00056",
+      "type": "task",
+      "surface_form": "DFT Hamiltonian prediction"
+    },
+    {
+      "id": "task_00060",
+      "type": "task",
+      "surface_form": "High‑throughput Hamiltonian generation"
+    },
+    {
+      "id": "task_00181",
+      "type": "task",
+      "surface_form": "DFT Hamiltonian matrix prediction"
+    },
+    {
+      "id": "task_00326",
+      "type": "task",
+      "surface_form": "equivariant deep learning"
+    },
+    {
+      "id": "task_00413",
+      "type": "task",
+      "surface_form": "Virial tensor calculation"
+    },
+    {
+      "id": "tech_00117",
+      "type": "technique",
+      "surface_form": "Clebsch‑Gordan coefficients"
+    },
+    {
+      "id": "tech_00121",
+      "type": "technique",
+      "surface_form": "Equivariant normalization"
+    },
+    {
+      "id": "tech_00122",
+      "type": "technique",
+      "surface_form": "Gate‑based equivariant nonlinearity"
+    },
+    {
+      "id": "tech_00124",
+      "type": "technique",
+      "surface_form": "E(3)-equivariant neural network"
+    },
+    {
+      "id": "tech_00139",
+      "type": "technique",
+      "surface_form": "E(3) equivariance"
+    },
+    {
+      "id": "tech_00172",
+      "type": "technique",
+      "surface_form": "Reynolds operator for invariant feature construction"
+    },
+    {
+      "id": "tech_00177",
+      "type": "technique",
+      "surface_form": "Reynolds operator for invariant polynomial features"
+    },
+    {
+      "id": "tech_00183",
+      "type": "technique",
+      "surface_form": "Symmetry‑invariant feature construction"
+    },
+    {
+      "id": "tech_00193",
+      "type": "technique",
+      "surface_form": "Reynolds operator for invariant polynomials"
+    },
+    {
+      "id": "tech_00254",
+      "type": "technique",
+      "surface_form": "elastic tensor extraction"
+    },
+    {
+      "id": "tech_00266",
+      "type": "technique",
+      "surface_form": "Tensor‑product layer with Clebsch‑Gordan coefficients"
+    },
+    {
+      "id": "tech_00307",
+      "type": "technique",
+      "surface_form": "Clebsch‑Gordan Coupling"
+    },
+    {
+      "id": "tech_00438",
+      "type": "technique",
+      "surface_form": "SO(2) linear operations"
+    },
+    {
+      "id": "tech_00443",
+      "type": "technique",
+      "surface_form": "Clebsch-Gordan coefficients"
+    },
+    {
+      "id": "tech_00451",
+      "type": "technique",
+      "surface_form": "Higher-degree equivariant representations"
+    },
+    {
+      "id": "tech_00458",
+      "type": "technique",
+      "surface_form": "SO(3) to SO(2) reduction"
+    },
+    {
+      "id": "tech_00534",
+      "type": "technique",
+      "surface_form": "Euclidean equivariant convolutions"
+    },
+    {
+      "id": "tech_00558",
+      "type": "technique",
+      "surface_form": "Tensorial property fitting"
+    },
+    {
+      "id": "tech_00715",
+      "type": "technique",
+      "surface_form": "Tensor decomposition along graph ACE basis"
+    },
+    {
+      "id": "tech_00773",
+      "type": "technique",
+      "surface_form": "Equivariant local representations"
+    },
+    {
+      "id": "tech_00777",
+      "type": "technique",
+      "surface_form": "E(3)-equivariant representations"
+    },
+    {
+      "id": "tech_00807",
+      "type": "technique",
+      "surface_form": "Inference-time symmetry recovery"
+    },
+    {
+      "id": "tech_00815",
+      "type": "technique",
+      "surface_form": "Jacobian symmetrization"
+    },
+    {
+      "id": "tech_00827",
+      "type": "technique",
+      "surface_form": "Rotational symmetrization"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 3,
+    "cited_work": 1,
+    "claim": 10,
+    "component": 19,
+    "future_topic": 1,
+    "method": 16,
+    "metric": 1,
+    "problem": 26,
+    "task": 5,
+    "technique": 24
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00306",
+      "relation_type": "presents",
+      "members": [
+        "arti_00029",
+        "meth_00221"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      }
+    },
+    {
+      "id": "h_00797",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00191"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00804",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00198"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "equivariant",
+  "representative_ids": [
+    "tech_00777",
+    "meth_00217"
+  ]
+}

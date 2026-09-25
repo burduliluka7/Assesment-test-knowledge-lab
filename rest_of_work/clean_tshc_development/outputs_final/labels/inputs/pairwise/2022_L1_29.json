@@ -1,0 +1,25 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "metr_00015",
+      "type": "metric",
+      "surface_form": "E RMSE"
+    },
+    {
+      "id": "metr_00061",
+      "type": "metric",
+      "surface_form": "MSE loss"
+    }
+  ],
+  "generation_type_counts": {
+    "metric": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "rmse",
+  "representative_ids": [
+    "metr_00061",
+    "metr_00015"
+  ]
+}

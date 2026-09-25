@@ -1,0 +1,2215 @@
+{
+  "status": "computed",
+  "results": {
+    "2025:R0": {
+      "cutoff": 2025,
+      "stage": "R0",
+      "index_seconds": 16.44492268562317,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.0,
+              "found": 0,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.0,
+              "found": 0,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.0,
+              "found": 0,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.0,
+              "found": 0,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.06944444444444443,
+              "found": 0,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.06944444444444443,
+              "found": 0,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 856.0,
+            "q25": 3391.0,
+            "median": 4231.0,
+            "q75": 4477.5,
+            "max": 4769.0
+          },
+          "mean_target_rank": 3843.9574468085107,
+          "duplicate_slot_fraction_at10": 0.04285714285714286,
+          "mrr": 0.0004380601560150625,
+          "r_precision": 0.0,
+          "recall_at_r": 0.0,
+          "candidate_recall_50": 0.0,
+          "candidate_recall_100": 0.0
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.41666666666666663,
+          "source_hit": 1.0,
+          "source_resolution_coverage": 0.6875,
+          "claim_recall": null,
+          "mean_claim_candidates": 160.0,
+          "source_at_k": {
+            "1": {
+              "hit": 0.0,
+              "recall": 0.0
+            },
+            "5": {
+              "hit": 0.75,
+              "recall": 0.2708333333333333
+            },
+            "10": {
+              "hit": 1.0,
+              "recall": 0.41666666666666663
+            },
+            "20": {
+              "hit": 1.0,
+              "recall": 0.5
+            },
+            "50": {
+              "hit": 1.0,
+              "recall": 0.5
+            },
+            "100": {
+              "hit": 1.0,
+              "recall": 0.5
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 4792.0,
+            "mean_claim_comparisons": 86.0,
+            "mean_total_comparisons": 4878.0,
+            "mean_entities_scored": 4995.0,
+            "mean_latency_seconds": 0.1517134071327746
+          },
+          "B": {
+            "mean_entity_comparisons": 4792.0,
+            "mean_claim_comparisons": 97.75,
+            "mean_total_comparisons": 4889.75,
+            "mean_entities_scored": 4995.0,
+            "mean_latency_seconds": 0.15305182500742376
+          }
+        },
+        "mean_vector_comparisons": 4792.0,
+        "mean_latency_seconds": 0.15201083332714108
+      }
+    },
+    "2025:R1": {
+      "cutoff": 2025,
+      "stage": "R1",
+      "index_seconds": 16.44492268562317,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.08333333333333333,
+              "micro_recall": 0.02127659574468085,
+              "unique_target_recall": 0.029411764705882353,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.08333333333333333,
+              "macro_precision": 0.07142857142857142,
+              "raw_end_to_end_lower_bound": 0.015873015873015872,
+              "macro_representable_recall": 0.041666666666666664,
+              "found": 1,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.09166666666666667,
+              "micro_recall": 0.0425531914893617,
+              "unique_target_recall": 0.058823529411764705,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.049999999999999996,
+              "found": 2,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.20277777777777775,
+              "micro_recall": 0.0851063829787234,
+              "unique_target_recall": 0.11764705882352941,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16111111111111112,
+              "found": 4,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.20277777777777775,
+              "micro_recall": 0.0851063829787234,
+              "unique_target_recall": 0.11764705882352941,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.014285714285714287,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16111111111111112,
+              "found": 4,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.23267496392496392,
+              "micro_recall": 0.14893617021276595,
+              "unique_target_recall": 0.14705882352941177,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.5833333333333334,
+              "macro_precision": 0.01,
+              "raw_end_to_end_lower_bound": 0.1111111111111111,
+              "macro_representable_recall": 0.19100829725829727,
+              "found": 7,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.35420274170274163,
+              "micro_recall": 0.2127659574468085,
+              "unique_target_recall": 0.20588235294117646,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.0071428571428571435,
+              "raw_end_to_end_lower_bound": 0.15873015873015872,
+              "macro_representable_recall": 0.312536075036075,
+              "found": 10,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 122.0,
+            "median": 233.0,
+            "q75": 355.5,
+            "max": 4864.0
+          },
+          "mean_target_rank": 573.3191489361702,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.12961874810712573,
+          "r_precision": 0.09166666666666667,
+          "recall_at_r": 0.09166666666666667,
+          "candidate_recall_50": 0.23267496392496392,
+          "candidate_recall_100": 0.35420274170274163
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.125,
+          "source_hit": 0.25,
+          "source_resolution_coverage": 0.6875,
+          "claim_recall": null,
+          "mean_claim_candidates": 193.5,
+          "source_at_k": {
+            "1": {
+              "hit": 0.0,
+              "recall": 0.0
+            },
+            "5": {
+              "hit": 0.25,
+              "recall": 0.125
+            },
+            "10": {
+              "hit": 0.25,
+              "recall": 0.125
+            },
+            "20": {
+              "hit": 0.25,
+              "recall": 0.1875
+            },
+            "50": {
+              "hit": 0.25,
+              "recall": 0.1875
+            },
+            "100": {
+              "hit": 0.25,
+              "recall": 0.1875
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 4792.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 4892.0,
+            "mean_entities_scored": 4995.0,
+            "mean_latency_seconds": 0.4678135857019307
+          },
+          "B": {
+            "mean_entity_comparisons": 4792.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 4892.0,
+            "mean_entities_scored": 4995.0,
+            "mean_latency_seconds": 0.488710425037425
+          }
+        },
+        "mean_vector_comparisons": 4792.0,
+        "mean_latency_seconds": 0.472457327776485
+      }
+    },
+    "2025:R2": {
+      "cutoff": 2025,
+      "stage": "R2",
+      "index_seconds": 0.6050214767456055,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.08333333333333333,
+              "micro_recall": 0.02127659574468085,
+              "unique_target_recall": 0.029411764705882353,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.08333333333333333,
+              "macro_precision": 0.07142857142857142,
+              "raw_end_to_end_lower_bound": 0.015873015873015872,
+              "macro_representable_recall": 0.041666666666666664,
+              "found": 1,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.09166666666666667,
+              "micro_recall": 0.0425531914893617,
+              "unique_target_recall": 0.058823529411764705,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.049999999999999996,
+              "found": 2,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.20277777777777775,
+              "micro_recall": 0.0851063829787234,
+              "unique_target_recall": 0.11764705882352941,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16111111111111112,
+              "found": 4,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.20277777777777775,
+              "micro_recall": 0.0851063829787234,
+              "unique_target_recall": 0.11764705882352941,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.014285714285714287,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16111111111111112,
+              "found": 4,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.2430916305916306,
+              "micro_recall": 0.1702127659574468,
+              "unique_target_recall": 0.17647058823529413,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.5833333333333334,
+              "macro_precision": 0.011428571428571429,
+              "raw_end_to_end_lower_bound": 0.12698412698412698,
+              "macro_representable_recall": 0.20142496392496392,
+              "found": 8,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.35420274170274163,
+              "micro_recall": 0.2127659574468085,
+              "unique_target_recall": 0.20588235294117646,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.0071428571428571435,
+              "raw_end_to_end_lower_bound": 0.15873015873015872,
+              "macro_representable_recall": 0.312536075036075,
+              "found": 10,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 111.0,
+            "median": 222.0,
+            "q75": 325.5,
+            "max": 4596.0
+          },
+          "mean_target_rank": 534.8936170212766,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.13163309244963722,
+          "r_precision": 0.09166666666666667,
+          "recall_at_r": 0.09166666666666667,
+          "candidate_recall_50": 0.2430916305916306,
+          "candidate_recall_100": 0.35420274170274163
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.125,
+          "source_hit": 0.25,
+          "source_resolution_coverage": 0.6875,
+          "claim_recall": null,
+          "mean_claim_candidates": 221.5,
+          "source_at_k": {
+            "1": {
+              "hit": 0.0,
+              "recall": 0.0
+            },
+            "5": {
+              "hit": 0.25,
+              "recall": 0.125
+            },
+            "10": {
+              "hit": 0.25,
+              "recall": 0.125
+            },
+            "20": {
+              "hit": 0.25,
+              "recall": 0.1875
+            },
+            "50": {
+              "hit": 0.25,
+              "recall": 0.1875
+            },
+            "100": {
+              "hit": 0.25,
+              "recall": 0.1875
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 4792.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 4892.0,
+            "mean_entities_scored": 4722.0,
+            "mean_latency_seconds": 0.44862110716556863
+          },
+          "B": {
+            "mean_entity_comparisons": 4792.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 4892.0,
+            "mean_entities_scored": 4722.0,
+            "mean_latency_seconds": 0.42391210002824664
+          }
+        },
+        "mean_vector_comparisons": 4792.0,
+        "mean_latency_seconds": 0.4431302166906082
+      }
+    },
+    "2025:R3": {
+      "cutoff": 2025,
+      "stage": "R3",
+      "index_seconds": 0.6050214767456055,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.08333333333333333,
+              "micro_recall": 0.02127659574468085,
+              "unique_target_recall": 0.029411764705882353,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.08333333333333333,
+              "macro_precision": 0.07142857142857142,
+              "raw_end_to_end_lower_bound": 0.015873015873015872,
+              "macro_representable_recall": 0.041666666666666664,
+              "found": 1,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.09166666666666667,
+              "micro_recall": 0.0425531914893617,
+              "unique_target_recall": 0.058823529411764705,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.049999999999999996,
+              "found": 2,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.20277777777777775,
+              "micro_recall": 0.0851063829787234,
+              "unique_target_recall": 0.11764705882352941,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16111111111111112,
+              "found": 4,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.20277777777777775,
+              "micro_recall": 0.0851063829787234,
+              "unique_target_recall": 0.11764705882352941,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.014285714285714287,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16111111111111112,
+              "found": 4,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.32642496392496395,
+              "micro_recall": 0.19148936170212766,
+              "unique_target_recall": 0.17647058823529413,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.012857142857142857,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28475829725829727,
+              "found": 9,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.3701118326118326,
+              "micro_recall": 0.2553191489361702,
+              "unique_target_recall": 0.2647058823529412,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.008571428571428572,
+              "raw_end_to_end_lower_bound": 0.19047619047619047,
+              "macro_representable_recall": 0.32844516594516593,
+              "found": 12,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 99.0,
+            "median": 160.0,
+            "q75": 260.0,
+            "max": 3381.0
+          },
+          "mean_target_rank": 378.8723404255319,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.15888332549131048,
+          "r_precision": 0.09166666666666667,
+          "recall_at_r": 0.09166666666666667,
+          "candidate_recall_50": 0.32642496392496395,
+          "candidate_recall_100": 0.3701118326118326
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.1875,
+          "source_hit": 0.25,
+          "source_resolution_coverage": 0.6875,
+          "claim_recall": null,
+          "mean_claim_candidates": 200.5,
+          "source_at_k": {
+            "1": {
+              "hit": 0.25,
+              "recall": 0.0625
+            },
+            "5": {
+              "hit": 0.25,
+              "recall": 0.125
+            },
+            "10": {
+              "hit": 0.25,
+              "recall": 0.1875
+            },
+            "20": {
+              "hit": 0.5,
+              "recall": 0.2708333333333333
+            },
+            "50": {
+              "hit": 0.5,
+              "recall": 0.2708333333333333
+            },
+            "100": {
+              "hit": 0.5,
+              "recall": 0.2708333333333333
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 4792.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 4892.0,
+            "mean_entities_scored": 4722.0,
+            "mean_latency_seconds": 0.44225354999070987
+          },
+          "B": {
+            "mean_entity_comparisons": 4792.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 4892.0,
+            "mean_entities_scored": 4722.0,
+            "mean_latency_seconds": 0.4902804249722976
+          }
+        },
+        "mean_vector_comparisons": 4792.0,
+        "mean_latency_seconds": 0.4529261888755072
+      }
+    },
+    "2025:R4": {
+      "cutoff": 2025,
+      "stage": "R4",
+      "index_seconds": 0.6050214767456055,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.08333333333333333,
+              "micro_recall": 0.02127659574468085,
+              "unique_target_recall": 0.029411764705882353,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.08333333333333333,
+              "macro_precision": 0.07142857142857142,
+              "raw_end_to_end_lower_bound": 0.015873015873015872,
+              "macro_representable_recall": 0.041666666666666664,
+              "found": 1,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.09166666666666667,
+              "micro_recall": 0.0425531914893617,
+              "unique_target_recall": 0.058823529411764705,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.049999999999999996,
+              "found": 2,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.20277777777777775,
+              "micro_recall": 0.0851063829787234,
+              "unique_target_recall": 0.11764705882352941,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16111111111111112,
+              "found": 4,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.2146825396825397,
+              "micro_recall": 0.10638297872340426,
+              "unique_target_recall": 0.14705882352941177,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.4166666666666667,
+              "macro_precision": 0.017857142857142856,
+              "raw_end_to_end_lower_bound": 0.07936507936507936,
+              "macro_representable_recall": 0.17301587301587304,
+              "found": 5,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.32642496392496395,
+              "micro_recall": 0.19148936170212766,
+              "unique_target_recall": 0.17647058823529413,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.012857142857142857,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28475829725829727,
+              "found": 9,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.3736832611832612,
+              "micro_recall": 0.2553191489361702,
+              "unique_target_recall": 0.23529411764705882,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.008571428571428572,
+              "raw_end_to_end_lower_bound": 0.19047619047619047,
+              "macro_representable_recall": 0.33201659451659454,
+              "found": 12,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 101.5,
+            "median": 180.0,
+            "q75": 290.5,
+            "max": 3382.0
+          },
+          "mean_target_rank": 388.3829787234043,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.14650761121381772,
+          "r_precision": 0.09166666666666667,
+          "recall_at_r": 0.09166666666666667,
+          "candidate_recall_50": 0.32642496392496395,
+          "candidate_recall_100": 0.3736832611832612
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.125,
+          "source_hit": 0.25,
+          "source_resolution_coverage": 0.6875,
+          "claim_recall": null,
+          "mean_claim_candidates": 204.0,
+          "source_at_k": {
+            "1": {
+              "hit": 0.25,
+              "recall": 0.0625
+            },
+            "5": {
+              "hit": 0.25,
+              "recall": 0.125
+            },
+            "10": {
+              "hit": 0.25,
+              "recall": 0.125
+            },
+            "20": {
+              "hit": 0.5,
+              "recall": 0.20833333333333331
+            },
+            "50": {
+              "hit": 0.5,
+              "recall": 0.20833333333333331
+            },
+            "100": {
+              "hit": 0.5,
+              "recall": 0.20833333333333331
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 16772.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 16872.0,
+            "mean_entities_scored": 4722.0,
+            "mean_latency_seconds": 0.43012377144935143
+          },
+          "B": {
+            "mean_entity_comparisons": 15574.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 15674.0,
+            "mean_entities_scored": 4722.0,
+            "mean_latency_seconds": 0.41598954997607507
+          }
+        },
+        "mean_vector_comparisons": 16505.777777777777,
+        "mean_latency_seconds": 0.4269828333441789
+      }
+    },
+    "2025:R5": {
+      "cutoff": 2025,
+      "stage": "R5",
+      "index_seconds": 0.6050214767456055,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.08333333333333333,
+              "micro_recall": 0.02127659574468085,
+              "unique_target_recall": 0.029411764705882353,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.08333333333333333,
+              "macro_precision": 0.07142857142857142,
+              "raw_end_to_end_lower_bound": 0.015873015873015872,
+              "macro_representable_recall": 0.041666666666666664,
+              "found": 1,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.17500000000000002,
+              "micro_recall": 0.06382978723404255,
+              "unique_target_recall": 0.08823529411764706,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.25,
+              "macro_precision": 0.042857142857142864,
+              "raw_end_to_end_lower_bound": 0.047619047619047616,
+              "macro_representable_recall": 0.13333333333333333,
+              "found": 3,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.20277777777777775,
+              "micro_recall": 0.0851063829787234,
+              "unique_target_recall": 0.11764705882352941,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16111111111111112,
+              "found": 4,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.21035353535353532,
+              "micro_recall": 0.10638297872340426,
+              "unique_target_recall": 0.14705882352941177,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.4166666666666667,
+              "macro_precision": 0.017857142857142856,
+              "raw_end_to_end_lower_bound": 0.07936507936507936,
+              "macro_representable_recall": 0.16868686868686866,
+              "found": 5,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.32642496392496395,
+              "micro_recall": 0.19148936170212766,
+              "unique_target_recall": 0.17647058823529413,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.012857142857142857,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28475829725829727,
+              "found": 9,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.3736832611832612,
+              "micro_recall": 0.2553191489361702,
+              "unique_target_recall": 0.23529411764705882,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.008571428571428572,
+              "raw_end_to_end_lower_bound": 0.19047619047619047,
+              "macro_representable_recall": 0.33201659451659454,
+              "found": 12,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 102.0,
+            "median": 180.0,
+            "q75": 290.5,
+            "max": 3382.0
+          },
+          "mean_target_rank": 388.17021276595744,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.19347839665443076,
+          "r_precision": 0.09166666666666667,
+          "recall_at_r": 0.09166666666666667,
+          "candidate_recall_50": 0.32642496392496395,
+          "candidate_recall_100": 0.3736832611832612
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.125,
+          "source_hit": 0.25,
+          "source_resolution_coverage": 0.6875,
+          "claim_recall": null,
+          "mean_claim_candidates": 179.0,
+          "source_at_k": {
+            "1": {
+              "hit": 0.0,
+              "recall": 0.0
+            },
+            "5": {
+              "hit": 0.25,
+              "recall": 0.0625
+            },
+            "10": {
+              "hit": 0.25,
+              "recall": 0.125
+            },
+            "20": {
+              "hit": 0.25,
+              "recall": 0.1875
+            },
+            "50": {
+              "hit": 0.25,
+              "recall": 0.1875
+            },
+            "100": {
+              "hit": 0.25,
+              "recall": 0.1875
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 16772.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 16872.0,
+            "mean_entities_scored": 4722.0,
+            "mean_latency_seconds": 0.44317932856834624
+          },
+          "B": {
+            "mean_entity_comparisons": 15574.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 15674.0,
+            "mean_entities_scored": 4722.0,
+            "mean_latency_seconds": 0.42425072501646355
+          }
+        },
+        "mean_vector_comparisons": 16505.777777777777,
+        "mean_latency_seconds": 0.4389729722234834
+      }
+    },
+    "2025:R1_direct": {
+      "cutoff": 2025,
+      "stage": "R1_direct",
+      "index_seconds": 5.841014385223389,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.16666666666666666,
+              "micro_recall": 0.0425531914893617,
+              "unique_target_recall": 0.058823529411764705,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.14285714285714285,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.125,
+              "found": 2,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.16666666666666666,
+              "micro_recall": 0.0425531914893617,
+              "unique_target_recall": 0.058823529411764705,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.125,
+              "found": 2,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.19444444444444442,
+              "micro_recall": 0.06382978723404255,
+              "unique_target_recall": 0.08823529411764706,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.25,
+              "macro_precision": 0.021428571428571432,
+              "raw_end_to_end_lower_bound": 0.047619047619047616,
+              "macro_representable_recall": 0.15277777777777776,
+              "found": 3,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.2965277777777778,
+              "micro_recall": 0.1276595744680851,
+              "unique_target_recall": 0.14705882352941177,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.5,
+              "macro_precision": 0.02142857142857143,
+              "raw_end_to_end_lower_bound": 0.09523809523809523,
+              "macro_representable_recall": 0.2548611111111111,
+              "found": 6,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.3048611111111111,
+              "micro_recall": 0.14893617021276595,
+              "unique_target_recall": 0.17647058823529413,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.5,
+              "macro_precision": 0.01,
+              "raw_end_to_end_lower_bound": 0.1111111111111111,
+              "macro_representable_recall": 0.26319444444444445,
+              "found": 7,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.3298611111111111,
+              "micro_recall": 0.2127659574468085,
+              "unique_target_recall": 0.2647058823529412,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.5,
+              "macro_precision": 0.0071428571428571435,
+              "raw_end_to_end_lower_bound": 0.15873015873015872,
+              "macro_representable_recall": 0.2881944444444444,
+              "found": 10,
+              "canonical_target_instances": 47,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 109.5,
+            "median": 181.0,
+            "q75": 304.5,
+            "max": 4864.0
+          },
+          "mean_target_rank": 543.3829787234042,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.20132670971591707,
+          "r_precision": 0.16666666666666666,
+          "recall_at_r": 0.16666666666666666,
+          "candidate_recall_50": 0.3048611111111111,
+          "candidate_recall_100": 0.3298611111111111
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.20833333333333331,
+          "source_hit": 0.5,
+          "source_resolution_coverage": 0.6875,
+          "claim_recall": null,
+          "mean_claim_candidates": 198.75,
+          "source_at_k": {
+            "1": {
+              "hit": 0.0,
+              "recall": 0.0
+            },
+            "5": {
+              "hit": 0.5,
+              "recall": 0.20833333333333331
+            },
+            "10": {
+              "hit": 0.5,
+              "recall": 0.20833333333333331
+            },
+            "20": {
+              "hit": 0.5,
+              "recall": 0.2708333333333333
+            },
+            "50": {
+              "hit": 0.5,
+              "recall": 0.2708333333333333
+            },
+            "100": {
+              "hit": 0.75,
+              "recall": 0.3958333333333333
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 4792.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 4892.0,
+            "mean_entities_scored": 4995.0,
+            "mean_latency_seconds": 0.44649715713291827
+          },
+          "B": {
+            "mean_entity_comparisons": 4792.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 4892.0,
+            "mean_entities_scored": 4995.0,
+            "mean_latency_seconds": 0.5085796499915887
+          }
+        },
+        "mean_vector_comparisons": 4792.0,
+        "mean_latency_seconds": 0.46029326665706727
+      }
+    },
+    "2026:R0": {
+      "cutoff": 2026,
+      "stage": "R0",
+      "index_seconds": 36.87250781059265,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.0,
+              "found": 0,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.0,
+              "found": 0,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.0,
+              "found": 0,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.0,
+              "found": 0,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.06944444444444443,
+              "found": 0,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.0,
+              "micro_recall": 0.0,
+              "unique_target_recall": 0.0,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.0,
+              "macro_precision": 0.0,
+              "raw_end_to_end_lower_bound": 0.0,
+              "macro_representable_recall": 0.06944444444444443,
+              "found": 0,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1020.0,
+            "q25": 3958.75,
+            "median": 4934.5,
+            "q75": 5198.75,
+            "max": 5754.0
+          },
+          "mean_target_rank": 4507.3,
+          "duplicate_slot_fraction_at10": 0.05714285714285715,
+          "mrr": 0.000377239423310107,
+          "r_precision": 0.0,
+          "recall_at_r": 0.0,
+          "candidate_recall_50": 0.0,
+          "candidate_recall_100": 0.0
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.3333333333333333,
+          "source_hit": 0.75,
+          "source_resolution_coverage": 0.8,
+          "claim_recall": null,
+          "mean_claim_candidates": 165.25,
+          "source_at_k": {
+            "1": {
+              "hit": 0.0,
+              "recall": 0.0
+            },
+            "5": {
+              "hit": 0.5,
+              "recall": 0.14583333333333331
+            },
+            "10": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            },
+            "20": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            },
+            "50": {
+              "hit": 0.75,
+              "recall": 0.41666666666666663
+            },
+            "100": {
+              "hit": 0.75,
+              "recall": 0.41666666666666663
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 5555.0,
+            "mean_claim_comparisons": 89.85714285714286,
+            "mean_total_comparisons": 5644.857142857143,
+            "mean_entities_scored": 5798.0,
+            "mean_latency_seconds": 0.1585557142804776
+          },
+          "B": {
+            "mean_entity_comparisons": 5555.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 5655.0,
+            "mean_entities_scored": 5798.0,
+            "mean_latency_seconds": 0.20916974998544902
+          }
+        },
+        "mean_vector_comparisons": 5555.0,
+        "mean_latency_seconds": 0.16980327777047124
+      }
+    },
+    "2026:R1": {
+      "cutoff": 2026,
+      "stage": "R1",
+      "index_seconds": 36.87250781059265,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.08333333333333333,
+              "micro_recall": 0.02,
+              "unique_target_recall": 0.02702702702702703,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.08333333333333333,
+              "macro_precision": 0.07142857142857142,
+              "raw_end_to_end_lower_bound": 0.015873015873015872,
+              "macro_representable_recall": 0.041666666666666664,
+              "found": 1,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.08333333333333333,
+              "micro_recall": 0.02,
+              "unique_target_recall": 0.02702702702702703,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.08333333333333333,
+              "macro_precision": 0.014285714285714287,
+              "raw_end_to_end_lower_bound": 0.015873015873015872,
+              "macro_representable_recall": 0.041666666666666664,
+              "found": 1,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.17424242424242423,
+              "micro_recall": 0.06,
+              "unique_target_recall": 0.08108108108108109,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.25,
+              "macro_precision": 0.021428571428571432,
+              "raw_end_to_end_lower_bound": 0.047619047619047616,
+              "macro_representable_recall": 0.13257575757575757,
+              "found": 3,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.202020202020202,
+              "micro_recall": 0.08,
+              "unique_target_recall": 0.10810810810810811,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.014285714285714287,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16035353535353533,
+              "found": 4,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.2188471250971251,
+              "micro_recall": 0.12,
+              "unique_target_recall": 0.13513513513513514,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.5,
+              "macro_precision": 0.008571428571428572,
+              "raw_end_to_end_lower_bound": 0.09523809523809523,
+              "macro_representable_recall": 0.1771804584304584,
+              "found": 6,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.32450188700188703,
+              "micro_recall": 0.18,
+              "unique_target_recall": 0.16216216216216217,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.0064285714285714285,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28283522033522035,
+              "found": 9,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 134.75,
+            "median": 261.5,
+            "q75": 421.0,
+            "max": 4325.0
+          },
+          "mean_target_rank": 517.04,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.1221706516530759,
+          "r_precision": 0.0909090909090909,
+          "recall_at_r": 0.0909090909090909,
+          "candidate_recall_50": 0.2188471250971251,
+          "candidate_recall_100": 0.32450188700188703
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.2708333333333333,
+          "source_hit": 0.75,
+          "source_resolution_coverage": 0.8,
+          "claim_recall": null,
+          "mean_claim_candidates": 184.5,
+          "source_at_k": {
+            "1": {
+              "hit": 0.25,
+              "recall": 0.0625
+            },
+            "5": {
+              "hit": 0.5,
+              "recall": 0.20833333333333331
+            },
+            "10": {
+              "hit": 0.75,
+              "recall": 0.2708333333333333
+            },
+            "20": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            },
+            "50": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            },
+            "100": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 5555.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 5655.0,
+            "mean_entities_scored": 5798.0,
+            "mean_latency_seconds": 0.5402606428750525
+          },
+          "B": {
+            "mean_entity_comparisons": 5555.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 5655.0,
+            "mean_entities_scored": 5798.0,
+            "mean_latency_seconds": 0.5204377750051208
+          }
+        },
+        "mean_vector_comparisons": 5555.0,
+        "mean_latency_seconds": 0.5358555611261787
+      }
+    },
+    "2026:R2": {
+      "cutoff": 2026,
+      "stage": "R2",
+      "index_seconds": 0.6872467994689941,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.08333333333333333,
+              "micro_recall": 0.02,
+              "unique_target_recall": 0.02702702702702703,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.08333333333333333,
+              "macro_precision": 0.07142857142857142,
+              "raw_end_to_end_lower_bound": 0.015873015873015872,
+              "macro_representable_recall": 0.041666666666666664,
+              "found": 1,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.0909090909090909,
+              "micro_recall": 0.04,
+              "unique_target_recall": 0.05405405405405406,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.04924242424242425,
+              "found": 2,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.17424242424242423,
+              "micro_recall": 0.06,
+              "unique_target_recall": 0.08108108108108109,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.25,
+              "macro_precision": 0.021428571428571432,
+              "raw_end_to_end_lower_bound": 0.047619047619047616,
+              "macro_representable_recall": 0.13257575757575757,
+              "found": 3,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.202020202020202,
+              "micro_recall": 0.08,
+              "unique_target_recall": 0.10810810810810811,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.014285714285714287,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16035353535353533,
+              "found": 4,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.230751887001887,
+              "micro_recall": 0.14,
+              "unique_target_recall": 0.13513513513513514,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.5833333333333334,
+              "macro_precision": 0.01,
+              "raw_end_to_end_lower_bound": 0.1111111111111111,
+              "macro_representable_recall": 0.18908522033522035,
+              "found": 7,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.32450188700188703,
+              "micro_recall": 0.18,
+              "unique_target_recall": 0.16216216216216217,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.0064285714285714285,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28283522033522035,
+              "found": 9,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 126.0,
+            "median": 235.0,
+            "q75": 381.0,
+            "max": 4102.0
+          },
+          "mean_target_rank": 469.86,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.13496295928264598,
+          "r_precision": 0.0909090909090909,
+          "recall_at_r": 0.0909090909090909,
+          "candidate_recall_50": 0.230751887001887,
+          "candidate_recall_100": 0.32450188700188703
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.2708333333333333,
+          "source_hit": 0.75,
+          "source_resolution_coverage": 0.8,
+          "claim_recall": null,
+          "mean_claim_candidates": 241.5,
+          "source_at_k": {
+            "1": {
+              "hit": 0.25,
+              "recall": 0.0625
+            },
+            "5": {
+              "hit": 0.5,
+              "recall": 0.20833333333333331
+            },
+            "10": {
+              "hit": 0.75,
+              "recall": 0.2708333333333333
+            },
+            "20": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            },
+            "50": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            },
+            "100": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 5555.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 5655.0,
+            "mean_entities_scored": 5467.0,
+            "mean_latency_seconds": 0.52430723571784
+          },
+          "B": {
+            "mean_entity_comparisons": 5555.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 5655.0,
+            "mean_entities_scored": 5467.0,
+            "mean_latency_seconds": 0.5522363750205841
+          }
+        },
+        "mean_vector_comparisons": 5555.0,
+        "mean_latency_seconds": 0.5305137111184498
+      }
+    },
+    "2026:R3": {
+      "cutoff": 2026,
+      "stage": "R3",
+      "index_seconds": 0.6872467994689941,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.08333333333333333,
+              "micro_recall": 0.02,
+              "unique_target_recall": 0.02702702702702703,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.08333333333333333,
+              "macro_precision": 0.07142857142857142,
+              "raw_end_to_end_lower_bound": 0.015873015873015872,
+              "macro_representable_recall": 0.041666666666666664,
+              "found": 1,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.0909090909090909,
+              "micro_recall": 0.04,
+              "unique_target_recall": 0.05405405405405406,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.04924242424242425,
+              "found": 2,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.17424242424242423,
+              "micro_recall": 0.06,
+              "unique_target_recall": 0.08108108108108109,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.25,
+              "macro_precision": 0.021428571428571432,
+              "raw_end_to_end_lower_bound": 0.047619047619047616,
+              "macro_representable_recall": 0.13257575757575757,
+              "found": 3,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.202020202020202,
+              "micro_recall": 0.08,
+              "unique_target_recall": 0.10810810810810811,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.014285714285714287,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16035353535353533,
+              "found": 4,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.32450188700188703,
+              "micro_recall": 0.18,
+              "unique_target_recall": 0.16216216216216217,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.012857142857142857,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28283522033522035,
+              "found": 9,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.32450188700188703,
+              "micro_recall": 0.18,
+              "unique_target_recall": 0.16216216216216217,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.0064285714285714285,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28283522033522035,
+              "found": 9,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 114.75,
+            "median": 181.5,
+            "q75": 292.25,
+            "max": 2567.0
+          },
+          "mean_target_rank": 333.04,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.15457579736279406,
+          "r_precision": 0.0909090909090909,
+          "recall_at_r": 0.0909090909090909,
+          "candidate_recall_50": 0.32450188700188703,
+          "candidate_recall_100": 0.32450188700188703
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.3333333333333333,
+          "source_hit": 0.75,
+          "source_resolution_coverage": 0.8,
+          "claim_recall": null,
+          "mean_claim_candidates": 218.0,
+          "source_at_k": {
+            "1": {
+              "hit": 0.25,
+              "recall": 0.0625
+            },
+            "5": {
+              "hit": 0.5,
+              "recall": 0.20833333333333331
+            },
+            "10": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            },
+            "20": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            },
+            "50": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            },
+            "100": {
+              "hit": 0.75,
+              "recall": 0.3333333333333333
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 5555.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 5655.0,
+            "mean_entities_scored": 5467.0,
+            "mean_latency_seconds": 0.5124074214171352
+          },
+          "B": {
+            "mean_entity_comparisons": 5555.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 5655.0,
+            "mean_entities_scored": 5467.0,
+            "mean_latency_seconds": 0.5717173499870114
+          }
+        },
+        "mean_vector_comparisons": 5555.0,
+        "mean_latency_seconds": 0.5255874055437744
+      }
+    },
+    "2026:R4": {
+      "cutoff": 2026,
+      "stage": "R4",
+      "index_seconds": 0.6872467994689941,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.08333333333333333,
+              "micro_recall": 0.02,
+              "unique_target_recall": 0.02702702702702703,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.08333333333333333,
+              "macro_precision": 0.07142857142857142,
+              "raw_end_to_end_lower_bound": 0.015873015873015872,
+              "macro_representable_recall": 0.041666666666666664,
+              "found": 1,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.0909090909090909,
+              "micro_recall": 0.04,
+              "unique_target_recall": 0.05405405405405406,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.04924242424242425,
+              "found": 2,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.17424242424242423,
+              "micro_recall": 0.06,
+              "unique_target_recall": 0.08108108108108109,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.25,
+              "macro_precision": 0.021428571428571432,
+              "raw_end_to_end_lower_bound": 0.047619047619047616,
+              "macro_representable_recall": 0.13257575757575757,
+              "found": 3,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.202020202020202,
+              "micro_recall": 0.08,
+              "unique_target_recall": 0.10810810810810811,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.014285714285714287,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16035353535353533,
+              "found": 4,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.32450188700188703,
+              "micro_recall": 0.18,
+              "unique_target_recall": 0.16216216216216217,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.012857142857142857,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28283522033522035,
+              "found": 9,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.32450188700188703,
+              "micro_recall": 0.18,
+              "unique_target_recall": 0.16216216216216217,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.0064285714285714285,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28283522033522035,
+              "found": 9,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 116.75,
+            "median": 191.0,
+            "q75": 304.0,
+            "max": 2893.0
+          },
+          "mean_target_rank": 353.12,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.13964664953006659,
+          "r_precision": 0.0909090909090909,
+          "recall_at_r": 0.0909090909090909,
+          "candidate_recall_50": 0.32450188700188703,
+          "candidate_recall_100": 0.32450188700188703
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.2708333333333333,
+          "source_hit": 0.75,
+          "source_resolution_coverage": 0.8,
+          "claim_recall": null,
+          "mean_claim_candidates": 220.25,
+          "source_at_k": {
+            "1": {
+              "hit": 0.25,
+              "recall": 0.0625
+            },
+            "5": {
+              "hit": 0.5,
+              "recall": 0.20833333333333331
+            },
+            "10": {
+              "hit": 0.75,
+              "recall": 0.2708333333333333
+            },
+            "20": {
+              "hit": 0.75,
+              "recall": 0.2708333333333333
+            },
+            "50": {
+              "hit": 0.75,
+              "recall": 0.2708333333333333
+            },
+            "100": {
+              "hit": 0.75,
+              "recall": 0.2708333333333333
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 19442.5,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 19542.5,
+            "mean_entities_scored": 5467.0,
+            "mean_latency_seconds": 0.48162849283211734
+          },
+          "B": {
+            "mean_entity_comparisons": 18053.75,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 18153.75,
+            "mean_entities_scored": 5467.0,
+            "mean_latency_seconds": 0.545281375059858
+          }
+        },
+        "mean_vector_comparisons": 19133.88888888889,
+        "mean_latency_seconds": 0.49577357777161524
+      }
+    },
+    "2026:R5": {
+      "cutoff": 2026,
+      "stage": "R5",
+      "index_seconds": 0.6872467994689941,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.0909090909090909,
+              "micro_recall": 0.04,
+              "unique_target_recall": 0.05405405405405406,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.14285714285714285,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.04924242424242425,
+              "found": 2,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.17424242424242423,
+              "micro_recall": 0.06,
+              "unique_target_recall": 0.08108108108108109,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.25,
+              "macro_precision": 0.042857142857142864,
+              "raw_end_to_end_lower_bound": 0.047619047619047616,
+              "macro_representable_recall": 0.13257575757575757,
+              "found": 3,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.202020202020202,
+              "micro_recall": 0.08,
+              "unique_target_recall": 0.10810810810810811,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.3333333333333333,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.06349206349206349,
+              "macro_representable_recall": 0.16035353535353533,
+              "found": 4,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.2084304584304584,
+              "micro_recall": 0.1,
+              "unique_target_recall": 0.13513513513513514,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.4166666666666667,
+              "macro_precision": 0.017857142857142856,
+              "raw_end_to_end_lower_bound": 0.07936507936507936,
+              "macro_representable_recall": 0.16676379176379175,
+              "found": 5,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.32450188700188703,
+              "micro_recall": 0.18,
+              "unique_target_recall": 0.16216216216216217,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.012857142857142857,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28283522033522035,
+              "found": 9,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.32450188700188703,
+              "micro_recall": 0.18,
+              "unique_target_recall": 0.16216216216216217,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.6666666666666666,
+              "macro_precision": 0.0064285714285714285,
+              "raw_end_to_end_lower_bound": 0.14285714285714285,
+              "macro_representable_recall": 0.28283522033522035,
+              "found": 9,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 116.75,
+            "median": 191.0,
+            "q75": 304.0,
+            "max": 2893.0
+          },
+          "mean_target_rank": 352.76,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.23150808423399352,
+          "r_precision": 0.0909090909090909,
+          "recall_at_r": 0.0909090909090909,
+          "candidate_recall_50": 0.32450188700188703,
+          "candidate_recall_100": 0.32450188700188703
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.1875,
+          "source_hit": 0.5,
+          "source_resolution_coverage": 0.8,
+          "claim_recall": null,
+          "mean_claim_candidates": 221.75,
+          "source_at_k": {
+            "1": {
+              "hit": 0.0,
+              "recall": 0.0
+            },
+            "5": {
+              "hit": 0.25,
+              "recall": 0.0625
+            },
+            "10": {
+              "hit": 0.5,
+              "recall": 0.1875
+            },
+            "20": {
+              "hit": 0.5,
+              "recall": 0.25
+            },
+            "50": {
+              "hit": 0.5,
+              "recall": 0.25
+            },
+            "100": {
+              "hit": 0.5,
+              "recall": 0.25
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 19442.5,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 19542.5,
+            "mean_entities_scored": 5467.0,
+            "mean_latency_seconds": 0.4936770214532901
+          },
+          "B": {
+            "mean_entity_comparisons": 18053.75,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 18153.75,
+            "mean_entities_scored": 5467.0,
+            "mean_latency_seconds": 0.5504690750385635
+          }
+        },
+        "mean_vector_comparisons": 19133.88888888889,
+        "mean_latency_seconds": 0.5062974778055731
+      }
+    },
+    "2026:R1_direct": {
+      "cutoff": 2026,
+      "stage": "R1_direct",
+      "index_seconds": 6.902526140213013,
+      "summary": {
+        "type_a": {
+          "questions": 14,
+          "evaluable": 12,
+          "at_k": {
+            "1": {
+              "macro_recall": 0.16666666666666666,
+              "micro_recall": 0.04,
+              "unique_target_recall": 0.05405405405405406,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.14285714285714285,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.125,
+              "found": 2,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "5": {
+              "macro_recall": 0.16666666666666666,
+              "micro_recall": 0.04,
+              "unique_target_recall": 0.05405405405405406,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.16666666666666666,
+              "macro_precision": 0.028571428571428574,
+              "raw_end_to_end_lower_bound": 0.031746031746031744,
+              "macro_representable_recall": 0.125,
+              "found": 2,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "10": {
+              "macro_recall": 0.19444444444444442,
+              "micro_recall": 0.06,
+              "unique_target_recall": 0.08108108108108109,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.25,
+              "macro_precision": 0.021428571428571432,
+              "raw_end_to_end_lower_bound": 0.047619047619047616,
+              "macro_representable_recall": 0.15277777777777776,
+              "found": 3,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "20": {
+              "macro_recall": 0.295770202020202,
+              "micro_recall": 0.12,
+              "unique_target_recall": 0.13513513513513514,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.5,
+              "macro_precision": 0.02142857142857143,
+              "raw_end_to_end_lower_bound": 0.09523809523809523,
+              "macro_representable_recall": 0.2541035353535353,
+              "found": 6,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "50": {
+              "macro_recall": 0.30334595959595956,
+              "micro_recall": 0.14,
+              "unique_target_recall": 0.16216216216216217,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.5,
+              "macro_precision": 0.01,
+              "raw_end_to_end_lower_bound": 0.1111111111111111,
+              "macro_representable_recall": 0.2616792929292929,
+              "found": 7,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            },
+            "100": {
+              "macro_recall": 0.3336489898989899,
+              "micro_recall": 0.22,
+              "unique_target_recall": 0.2702702702702703,
+              "unique_target_definition": "Union of named targets recovered in any associated question divided by unique canonical targets",
+              "macro_hit": 0.5,
+              "macro_precision": 0.007857142857142858,
+              "raw_end_to_end_lower_bound": 0.1746031746031746,
+              "macro_representable_recall": 0.2919823232323232,
+              "found": 11,
+              "canonical_target_instances": 50,
+              "total_target_instances": 63
+            }
+          },
+          "rank_quantiles": {
+            "min": 1.0,
+            "q25": 120.0,
+            "median": 206.0,
+            "q75": 364.0,
+            "max": 4325.0
+          },
+          "mean_target_rank": 479.84,
+          "duplicate_slot_fraction_at10": 0.0,
+          "mrr": 0.19767498981605577,
+          "r_precision": 0.16666666666666666,
+          "recall_at_r": 0.16666666666666666,
+          "candidate_recall_50": 0.30334595959595956,
+          "candidate_recall_100": 0.3336489898989899
+        },
+        "type_b": {
+          "questions": 4,
+          "source_recall": 0.20833333333333331,
+          "source_hit": 0.5,
+          "source_resolution_coverage": 0.8,
+          "claim_recall": null,
+          "mean_claim_candidates": 190.25,
+          "source_at_k": {
+            "1": {
+              "hit": 0.0,
+              "recall": 0.0
+            },
+            "5": {
+              "hit": 0.25,
+              "recall": 0.0625
+            },
+            "10": {
+              "hit": 0.5,
+              "recall": 0.20833333333333331
+            },
+            "20": {
+              "hit": 0.5,
+              "recall": 0.2708333333333333
+            },
+            "50": {
+              "hit": 0.5,
+              "recall": 0.2708333333333333
+            },
+            "100": {
+              "hit": 0.75,
+              "recall": 0.35416666666666663
+            }
+          }
+        },
+        "costs_by_type": {
+          "A": {
+            "mean_entity_comparisons": 5555.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 5655.0,
+            "mean_entities_scored": 5798.0,
+            "mean_latency_seconds": 0.5429240071430935
+          },
+          "B": {
+            "mean_entity_comparisons": 5555.0,
+            "mean_claim_comparisons": 100.0,
+            "mean_total_comparisons": 5655.0,
+            "mean_entities_scored": 5798.0,
+            "mean_latency_seconds": 0.5162619249895215
+          }
+        },
+        "mean_vector_comparisons": 5555.0,
+        "mean_latency_seconds": 0.5369990999978553
+      }
+    }
+  },
+  "definitions": {
+    "candidate_pool": "All snapshot nodes, including unusual types; soft priors never filter. R0 is all-type surface-only to isolate the R1 context increment; legacy routed type-prefixed flat remains separately archived.",
+    "cost": "Each actually computed query/text-vector dot product costs one; identical stored text vectors are computed once per query view and reused across fields/entities. Offline encoding/index construction excluded and timed.",
+    "grouping": "Exact normalized names only, no fuzzy merges. Same resolved target denominator in every stage; report number of underlying nodes covered by top-K groups.",
+    "missing_fields": "Contribute zero with fixed weights, without renormalizing available fields; this favors entities with documented context and is a design limitation.",
+    "evidence": "Context shared through a presenting article is a separate lower-weight claim_article field; ordinary cited-work provenance is not evidence that every article claim concerns that work.",
+    "resolution": "Canonical exact/alias coverage distinct from representable evidence/composites. Composite representability requires all canonical components plus shared article provenance; this is not proof of functional composition.",
+    "metrics": "Primary entity recall uses canonical exact/alias targets only. Representable recall separately includes evidence and fully graph-supported composites (all components required). Raw lower bound retains all expected targets. Precision gives one credit per recovered canonical target at fixed K; duplicate mentions cannot add credit. MRR is reciprocal first relevant rank over the exhaustive ranking.",
+    "source": "Source hit/recall measures provenance overlap, never semantic entailment. Required sources outside the snapshot remain in resolution coverage and raw lower-bound denominators.",
+    "hierarchy_gate": "Implement contextual hierarchy only after the flat original-question checkpoint demonstrates nontrivial recovery; original hierarchy construction remains unchanged."
+  },
+  "elapsed_seconds": 202.59539198875427
+}

@@ -1,0 +1,115 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00401",
+      "type": "component",
+      "surface_form": "OMat24-1M"
+    },
+    {
+      "id": "comp_00403",
+      "type": "component",
+      "surface_form": "OOD-Composition split"
+    },
+    {
+      "id": "comp_00405",
+      "type": "component",
+      "surface_form": "Multi-task loss function"
+    },
+    {
+      "id": "comp_00406",
+      "type": "component",
+      "surface_form": "Model EMA"
+    },
+    {
+      "id": "comp_00407",
+      "type": "component",
+      "surface_form": "Separate prediction heads"
+    },
+    {
+      "id": "comp_00409",
+      "type": "component",
+      "surface_form": "DeNS noise prediction head"
+    },
+    {
+      "id": "comp_00410",
+      "type": "component",
+      "surface_form": "Two-step training procedure"
+    },
+    {
+      "id": "comp_00411",
+      "type": "component",
+      "surface_form": "Rattled Boltzmann sampling"
+    },
+    {
+      "id": "comp_00412",
+      "type": "component",
+      "surface_form": "Ab-initio molecular dynamics (AIMD) sampling"
+    },
+    {
+      "id": "comp_00414",
+      "type": "component",
+      "surface_form": "sAlexandria subset"
+    },
+    {
+      "id": "comp_00415",
+      "type": "component",
+      "surface_form": "Denoising augmentation objectives"
+    },
+    {
+      "id": "comp_00624",
+      "type": "component",
+      "surface_form": "Deep neural network potential energy surface"
+    },
+    {
+      "id": "comp_00625",
+      "type": "component",
+      "surface_form": "Iterative self-consistent training protocol"
+    },
+    {
+      "id": "comp_00626",
+      "type": "component",
+      "surface_form": "Temperature ramping scheme"
+    },
+    {
+      "id": "comp_00627",
+      "type": "component",
+      "surface_form": "Training set cleaning pipeline"
+    },
+    {
+      "id": "comp_00629",
+      "type": "component",
+      "surface_form": "virial in loss function"
+    },
+    {
+      "id": "comp_00630",
+      "type": "component",
+      "surface_form": "active learning workflow"
+    },
+    {
+      "id": "comp_00631",
+      "type": "component",
+      "surface_form": "uncorrelated snapshots selection"
+    },
+    {
+      "id": "comp_00632",
+      "type": "component",
+      "surface_form": "Iterative training loop workflow"
+    },
+    {
+      "id": "comp_00634",
+      "type": "component",
+      "surface_form": "Maximum bond variation criterion"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 20
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "training",
+  "representative_ids": [
+    "comp_00410",
+    "comp_00407"
+  ]
+}

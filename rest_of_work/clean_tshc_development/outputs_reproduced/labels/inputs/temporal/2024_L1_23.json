@@ -1,0 +1,146 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "comp_00445",
+      "type": "component",
+      "surface_form": "Ensemble-based decision tree feature selector"
+    },
+    {
+      "id": "comp_00446",
+      "type": "component",
+      "surface_form": "TPOT evolutionary optimizer"
+    },
+    {
+      "id": "comp_00826",
+      "type": "component",
+      "surface_form": "materials embeddings from elemental properties"
+    },
+    {
+      "id": "comp_00827",
+      "type": "component",
+      "surface_form": "DFT-derived features"
+    },
+    {
+      "id": "comp_00828",
+      "type": "component",
+      "surface_form": "two-step classification-regression model"
+    },
+    {
+      "id": "comp_00829",
+      "type": "component",
+      "surface_form": "symbolic regression models"
+    },
+    {
+      "id": "comp_00831",
+      "type": "component",
+      "surface_form": "Elemental features"
+    },
+    {
+      "id": "comp_00832",
+      "type": "component",
+      "surface_form": "Statistical moment features"
+    },
+    {
+      "id": "comp_00833",
+      "type": "component",
+      "surface_form": "86-feature materials fingerprint"
+    },
+    {
+      "id": "comp_00835",
+      "type": "component",
+      "surface_form": "elastic moduli features"
+    },
+    {
+      "id": "comp_00838",
+      "type": "component",
+      "surface_form": "bond ionicity features"
+    },
+    {
+      "id": "comp_00840",
+      "type": "component",
+      "surface_form": "VS-SISSO symbolic models"
+    },
+    {
+      "id": "comp_00841",
+      "type": "component",
+      "surface_form": "cohesive energy descriptor"
+    },
+    {
+      "id": "comp_00842",
+      "type": "component",
+      "surface_form": "shear modulus descriptor"
+    },
+    {
+      "id": "comp_00843",
+      "type": "component",
+      "surface_form": "statistical elemental property combinations"
+    },
+    {
+      "id": "comp_00844",
+      "type": "component",
+      "surface_form": "Two-step model architecture"
+    },
+    {
+      "id": "comp_00845",
+      "type": "component",
+      "surface_form": "Tree ensemble model"
+    },
+    {
+      "id": "comp_00846",
+      "type": "component",
+      "surface_form": "Material fingerprints"
+    },
+    {
+      "id": "comp_00847",
+      "type": "component",
+      "surface_form": "SHAP analysis module"
+    },
+    {
+      "id": "comp_00849",
+      "type": "component",
+      "surface_form": "Two-cluster separation scheme"
+    },
+    {
+      "id": "comp_00852",
+      "type": "component",
+      "surface_form": "Two-step clustering approach"
+    },
+    {
+      "id": "comp_00853",
+      "type": "component",
+      "surface_form": "Composition-based elemental property weighting"
+    },
+    {
+      "id": "tech_00377",
+      "type": "technique",
+      "surface_form": "ROC‑AUC and MAE evaluation metrics"
+    },
+    {
+      "id": "tech_00481",
+      "type": "technique",
+      "surface_form": "Evolutionary algorithm optimization"
+    },
+    {
+      "id": "tech_00483",
+      "type": "technique",
+      "surface_form": "MAE evaluation"
+    },
+    {
+      "id": "tech_00492",
+      "type": "technique",
+      "surface_form": "TPOT genetic algorithm"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 22,
+    "technique": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "features",
+  "representative_ids": [
+    "comp_00831",
+    "comp_00843"
+  ]
+}

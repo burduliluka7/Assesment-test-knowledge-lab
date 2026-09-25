@@ -1,0 +1,238 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00016",
+      "type": "article",
+      "surface_form": "Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+    },
+    {
+      "id": "cite_00217",
+      "type": "cited_work",
+      "surface_form": "Deep Potential Molecular Dynamics"
+    },
+    {
+      "id": "clai_00270",
+      "type": "claim",
+      "surface_form": "MACE-OFF3 uses only short-range interactions yet achieves improved performance on benchmark molecular simulation properties compared to ANI."
+    },
+    {
+      "id": "clai_00483",
+      "type": "claim",
+      "surface_form": "The proposed training protocol based on augmenting the training set via intermediate molecular dynamics simulations can assess the quality of approximate trajectories and computed physical properties."
+    },
+    {
+      "id": "clai_00677",
+      "type": "claim",
+      "surface_form": "Combined two-body, three-body, and SOAP many-body descriptors are necessary for GAP to achieve the accuracy limit imposed by force locality and make physically meaningful predictions; models using only subsets of descriptors produce unphysical structures during molecular dynamics simulations."
+    },
+    {
+      "id": "comp_00620",
+      "type": "component",
+      "surface_form": "GNoME-driven molecular dynamics"
+    },
+    {
+      "id": "futu_00051",
+      "type": "future_topic",
+      "surface_form": "high-fidelity molecular dynamics simulations over long time scales"
+    },
+    {
+      "id": "futu_00106",
+      "type": "future_topic",
+      "surface_form": "Application of equivariant GNN phonon predictions to drug‑discovery related molecular systems"
+    },
+    {
+      "id": "futu_00151",
+      "type": "future_topic",
+      "surface_form": "Condensed-phase molecular-dynamics simulations"
+    },
+    {
+      "id": "meth_00089",
+      "type": "method",
+      "surface_form": "Molecular dynamics"
+    },
+    {
+      "id": "meth_00130",
+      "type": "method",
+      "surface_form": "Diffusive Molecular Dynamics"
+    },
+    {
+      "id": "meth_00206",
+      "type": "method",
+      "surface_form": "Deep Potential Molecular Dynamics"
+    },
+    {
+      "id": "meth_00207",
+      "type": "method",
+      "surface_form": "Car-Parrinello molecular dynamics"
+    },
+    {
+      "id": "meth_00233",
+      "type": "method",
+      "surface_form": "Non‑equilibrium molecular dynamics"
+    },
+    {
+      "id": "meth_00236",
+      "type": "method",
+      "surface_form": "Non-equilibrium Molecular Dynamics"
+    },
+    {
+      "id": "meth_00387",
+      "type": "method",
+      "surface_form": "Classical Force Field Molecular Dynamics"
+    },
+    {
+      "id": "prob_00118",
+      "type": "problem",
+      "surface_form": "force‑field generation for small molecules"
+    },
+    {
+      "id": "prob_00157",
+      "type": "problem",
+      "surface_form": "Scalability to larger molecules"
+    },
+    {
+      "id": "prob_00259",
+      "type": "problem",
+      "surface_form": "Speed-accuracy trade-offs in molecular property prediction"
+    },
+    {
+      "id": "prob_00322",
+      "type": "problem",
+      "surface_form": "Computational cost of ab initio molecular dynamics"
+    },
+    {
+      "id": "prob_00412",
+      "type": "problem",
+      "surface_form": "Time-scale limitation in first-principles molecular dynamics"
+    },
+    {
+      "id": "prob_00494",
+      "type": "problem",
+      "surface_form": "scalable parallel computation for molecular dynamics"
+    },
+    {
+      "id": "task_00007",
+      "type": "task",
+      "surface_form": "Molecular property prediction"
+    },
+    {
+      "id": "task_00024",
+      "type": "task",
+      "surface_form": "Molecular total energy prediction"
+    },
+    {
+      "id": "task_00026",
+      "type": "task",
+      "surface_form": "Molecular dynamics trajectory modeling"
+    },
+    {
+      "id": "task_00034",
+      "type": "task",
+      "surface_form": "molecular dynamics"
+    },
+    {
+      "id": "task_00035",
+      "type": "task",
+      "surface_form": "molecular simulation"
+    },
+    {
+      "id": "task_00037",
+      "type": "task",
+      "surface_form": "Molecule‑level property regression"
+    },
+    {
+      "id": "task_00140",
+      "type": "task",
+      "surface_form": "Charge‑informed molecular dynamics"
+    },
+    {
+      "id": "task_00175",
+      "type": "task",
+      "surface_form": "Molecular dynamics simulation of liquid water and ice"
+    },
+    {
+      "id": "task_00176",
+      "type": "task",
+      "surface_form": "MD simulation of organic molecules"
+    },
+    {
+      "id": "task_00295",
+      "type": "task",
+      "surface_form": "molecular property prediction on QM9"
+    },
+    {
+      "id": "task_00327",
+      "type": "task",
+      "surface_form": "molecular machine learning"
+    },
+    {
+      "id": "task_00328",
+      "type": "task",
+      "surface_form": "machine learning for molecules"
+    },
+    {
+      "id": "task_00404",
+      "type": "task",
+      "surface_form": "Organic molecule simulation"
+    },
+    {
+      "id": "task_00410",
+      "type": "task",
+      "surface_form": "Macromolecular system simulation"
+    },
+    {
+      "id": "task_00423",
+      "type": "task",
+      "surface_form": "Multi-task molecular dynamics training"
+    },
+    {
+      "id": "task_00518",
+      "type": "task",
+      "surface_form": "Machine learning molecular dynamics"
+    },
+    {
+      "id": "task_00612",
+      "type": "task",
+      "surface_form": "Multi-GPU molecular dynamics benchmarking"
+    },
+    {
+      "id": "tech_00594",
+      "type": "technique",
+      "surface_form": "deep potential molecular dynamics"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 1,
+    "claim": 3,
+    "component": 1,
+    "future_topic": 3,
+    "method": 7,
+    "problem": 6,
+    "task": 17,
+    "technique": 1
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00332",
+      "relation_type": "presents",
+      "members": [
+        "arti_00016",
+        "meth_00206"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "molecular",
+  "representative_ids": [
+    "task_00034",
+    "task_00518"
+  ]
+}

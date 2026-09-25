@@ -1,0 +1,691 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "arti_00028",
+      "type": "article",
+      "surface_form": "Machine learning a general purpose interatomic potential for silicon"
+    },
+    {
+      "id": "auth_00059",
+      "type": "author",
+      "surface_form": "Gábor Csányi"
+    },
+    {
+      "id": "auth_00116",
+      "type": "author",
+      "surface_form": "Albert P. Bartók"
+    },
+    {
+      "id": "auth_00117",
+      "type": "author",
+      "surface_form": "James Kermode"
+    },
+    {
+      "id": "auth_00118",
+      "type": "author",
+      "surface_form": "Noam Bernstein"
+    },
+    {
+      "id": "clai_00226",
+      "type": "claim",
+      "surface_form": "For bulk elastic constants (B, C11, C12, C44) the GAP model achieves fractional errors of less than 10% relative to DFT, outperforming all other evaluated interatomic potentials."
+    },
+    {
+      "id": "clai_00227",
+      "type": "claim",
+      "surface_form": "Surface energies of the (111), (110) and (100) silicon cleavage planes are predicted by GAP with errors of around 2% relative to DFT, which is comparable or better than other potentials."
+    },
+    {
+      "id": "clai_00228",
+      "type": "claim",
+      "surface_form": "Formation energies of vacancy and interstitial point defects (hexagonal, tetrahedral, dumbbell) are predicted by GAP within 10% of DFT values, providing uniform accuracy across these defects."
+    },
+    {
+      "id": "clai_00229",
+      "type": "claim",
+      "surface_form": "For extrapolative planar defects not included in the training set—specifically the (112) Σ3 grain boundary and unstable stacking fault energies on the (111) shuffle and glide planes—GAP errors remain within 20% of DFT, outperforming other models."
+    },
+    {
+      "id": "clai_00230",
+      "type": "claim",
+      "surface_form": "Combining a simple repulsive pair potential with a many‑body SOAP‑kernel term in the GAP framework yields meV‑per‑atom accuracy for silicon energetics."
+    },
+    {
+      "id": "clai_00232",
+      "type": "claim",
+      "surface_form": "Using the GAP model enables simulations that would be prohibitively expensive with DFT, such as finite‑temperature phase‑boundary calculations, liquid self‑diffusivity, amorphous silicon formation by slow quench, and dynamic brittle fracture."
+    },
+    {
+      "id": "clai_00233",
+      "type": "claim",
+      "surface_form": "A training database of manageable size, constructed from DFT configurations covering relevant phases and defects, is sufficient to achieve high transferability of the GAP model across diverse silicon configurations."
+    },
+    {
+      "id": "clai_00234",
+      "type": "claim",
+      "surface_form": "Benchmark comparisons show that the new GAP model yields lower errors than previous GAP models for silicon."
+    },
+    {
+      "id": "clai_00235",
+      "type": "claim",
+      "surface_form": "The Smooth Overlap of Atomic Positions (SOAP) kernel captures the regularity of the silicon potential energy surface, leading to accurate interpolation within the sampled configuration space."
+    },
+    {
+      "id": "clai_00676",
+      "type": "claim",
+      "surface_form": "The Gaussian approximation potential (GAP) enables atomistic simulations with close-to-DFT accuracy at computational costs many orders of magnitude lower than quantum-mechanical methods."
+    },
+    {
+      "id": "clai_00677",
+      "type": "claim",
+      "surface_form": "Combined two-body, three-body, and SOAP many-body descriptors are necessary for GAP to achieve the accuracy limit imposed by force locality and make physically meaningful predictions; models using only subsets of descriptors produce unphysical structures during molecular dynamics simulations."
+    },
+    {
+      "id": "clai_00678",
+      "type": "claim",
+      "surface_form": "GAP predicts diamond lattice parameter (3.539 Å) very close to DFT-LDA reference (3.532 Å), outperforming screened Tersoff potential (3.566 Å), with bulk modulus and elastic constants reasonably close to DFT reference values."
+    },
+    {
+      "id": "clai_00679",
+      "type": "claim",
+      "surface_form": "GAP radial and angular distribution functions for liquid and amorphous carbon closely match DFT reference results, including peak locations, extents, and overall curve shapes."
+    },
+    {
+      "id": "clai_00680",
+      "type": "claim",
+      "surface_form": "GAP recovers three- and four-membered rings that are key features of liquid and low-density amorphous carbon structures, which empirical potentials (Tersoff/Brenner) fail to predict."
+    },
+    {
+      "id": "clai_00684",
+      "type": "claim",
+      "surface_form": "Empirical potentials (Tersoff/Brenner) cannot describe interlayer spacing in graphite due to short-range cutoff being less than c/2, provide poor description of carbon surfaces, and yield much lower surface energies than GAP and DFT for ta-C surfaces."
+    },
+    {
+      "id": "clai_00685",
+      "type": "claim",
+      "surface_form": "Diamond exhibits strong force locality with force deviations vanishing practically at rfix = 5.5 Å, while graphite is highly nonlocal with larger force deviations that do not decay as rapidly."
+    },
+    {
+      "id": "clai_00686",
+      "type": "claim",
+      "surface_form": "For amorphous carbon with 3.7 Å cutoff radius, the lowest achievable standard deviation of force components is approximately 1 eV/Å due to fundamental nonlocality limits, representing a maximum accuracy bound for any finite-range interatomic potential."
+    },
+    {
+      "id": "clai_00687",
+      "type": "claim",
+      "surface_form": "DFT-based methods are practically limited to systems of a few hundred atoms, making generation of 8,000-atom amorphous carbon structures impossible with DFT-MD even on state-of-the-art supercomputers."
+    },
+    {
+      "id": "data_00199",
+      "type": "dataset",
+      "surface_form": "amorphous carbon structures"
+    },
+    {
+      "id": "data_00200",
+      "type": "dataset",
+      "surface_form": "ta-C surfaces"
+    },
+    {
+      "id": "data_00201",
+      "type": "dataset",
+      "surface_form": "Diamond"
+    },
+    {
+      "id": "data_00202",
+      "type": "dataset",
+      "surface_form": "Graphite"
+    },
+    {
+      "id": "data_00203",
+      "type": "dataset",
+      "surface_form": "a-C"
+    },
+    {
+      "id": "data_00205",
+      "type": "dataset",
+      "surface_form": "Liquid carbon 9000K"
+    },
+    {
+      "id": "data_00208",
+      "type": "dataset",
+      "surface_form": "Amorphous carbon"
+    },
+    {
+      "id": "data_00210",
+      "type": "dataset",
+      "surface_form": "DFT carbon reference data"
+    },
+    {
+      "id": "data_00212",
+      "type": "dataset",
+      "surface_form": "amorphous carbon Young's modulus"
+    },
+    {
+      "id": "data_00213",
+      "type": "dataset",
+      "surface_form": "ta-C surface energies"
+    },
+    {
+      "id": "data_00214",
+      "type": "dataset",
+      "surface_form": "Custom test set"
+    },
+    {
+      "id": "data_00215",
+      "type": "dataset",
+      "surface_form": "Trimer configurations"
+    },
+    {
+      "id": "futu_00064",
+      "type": "future_topic",
+      "surface_form": "Extension of Gaussian Approximation Potentials to other materials"
+    },
+    {
+      "id": "futu_00067",
+      "type": "future_topic",
+      "surface_form": "Development of transferable machine‑learning interatomic potentials with broader configurational coverage"
+    },
+    {
+      "id": "futu_00068",
+      "type": "future_topic",
+      "surface_form": "Integration of ML potentials with finite‑temperature phase‑boundary calculations for complex alloys"
+    },
+    {
+      "id": "futu_00176",
+      "type": "future_topic",
+      "surface_form": "Realistic and accurate simulations of nanoscale amorphous carbon structures"
+    },
+    {
+      "id": "futu_00177",
+      "type": "future_topic",
+      "surface_form": "High-temperature surface reconstructions of amorphous carbon"
+    },
+    {
+      "id": "futu_00178",
+      "type": "future_topic",
+      "surface_form": "Machine-learning based atomistic simulations bridging empirical and DFT realms"
+    },
+    {
+      "id": "meth_00061",
+      "type": "method",
+      "surface_form": "Gaussian process regression"
+    },
+    {
+      "id": "meth_00075",
+      "type": "method",
+      "surface_form": "Gaussian approximation potentials"
+    },
+    {
+      "id": "meth_00196",
+      "type": "method",
+      "surface_form": "Gaussian Approximation Potential (GAP) for silicon"
+    },
+    {
+      "id": "meth_00197",
+      "type": "method",
+      "surface_form": "SOAP kernel"
+    },
+    {
+      "id": "metr_00082",
+      "type": "metric",
+      "surface_form": "energetic and structural properties"
+    },
+    {
+      "id": "metr_00083",
+      "type": "metric",
+      "surface_form": "surface energy"
+    },
+    {
+      "id": "metr_00085",
+      "type": "metric",
+      "surface_form": "energy_RMS_eV"
+    },
+    {
+      "id": "metr_00087",
+      "type": "metric",
+      "surface_form": "sp3 concentration"
+    },
+    {
+      "id": "metr_00088",
+      "type": "metric",
+      "surface_form": "Young's modulus"
+    },
+    {
+      "id": "metr_00090",
+      "type": "metric",
+      "surface_form": "interaction energy"
+    },
+    {
+      "id": "prob_00007",
+      "type": "problem",
+      "surface_form": "Uncertainty quantification"
+    },
+    {
+      "id": "prob_00119",
+      "type": "problem",
+      "surface_form": "Accurate, transferable interatomic potential for silicon"
+    },
+    {
+      "id": "prob_00120",
+      "type": "problem",
+      "surface_form": "Uncertainty estimation for ML potentials"
+    },
+    {
+      "id": "prob_00121",
+      "type": "problem",
+      "surface_form": "Efficient sampling of high‑dimensional PES"
+    },
+    {
+      "id": "prob_00123",
+      "type": "problem",
+      "surface_form": "Permutation and rotation invariance"
+    },
+    {
+      "id": "prob_00124",
+      "type": "problem",
+      "surface_form": "Efficient representation of large training sets"
+    },
+    {
+      "id": "tech_00048",
+      "type": "technique",
+      "surface_form": "Gaussian process regression"
+    },
+    {
+      "id": "tech_00257",
+      "type": "technique",
+      "surface_form": "Sparse Gaussian process"
+    },
+    {
+      "id": "tech_00258",
+      "type": "technique",
+      "surface_form": "Uncertainty quantification via GP variance"
+    },
+    {
+      "id": "tech_00261",
+      "type": "technique",
+      "surface_form": "CUR matrix reconstruction"
+    },
+    {
+      "id": "tech_00262",
+      "type": "technique",
+      "surface_form": "Regularized Gaussian‑process regression"
+    },
+    {
+      "id": "tech_00263",
+      "type": "technique",
+      "surface_form": "Bayesian variance prediction"
+    },
+    {
+      "id": "tech_00264",
+      "type": "technique",
+      "surface_form": "Kernel normalisation and integer power"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "author": 4,
+    "claim": 18,
+    "dataset": 12,
+    "future_topic": 6,
+    "method": 4,
+    "metric": 6,
+    "problem": 6,
+    "technique": 7
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00309",
+      "relation_type": "presents",
+      "members": [
+        "arti_00028",
+        "meth_00196"
+      ],
+      "year": 2018,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5404,
+        "article_year": 2018
+      }
+    },
+    {
+      "id": "h_00590",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00075",
+        "data_00199",
+        "metr_00082"
+      ],
+      "year": 2016,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5451,
+        "article_year": 2016
+      },
+      "attributes": {
+        "task": "machine learning potential training",
+        "domain": "materials science",
+        "metric": "energetic and structural properties"
+      }
+    },
+    {
+      "id": "h_00591",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00075",
+        "data_00200",
+        "metr_00083"
+      ],
+      "year": 2016,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5451,
+        "article_year": 2016
+      },
+      "attributes": {
+        "task": "machine learning potential training",
+        "domain": "materials science",
+        "metric": "surface energy"
+      }
+    },
+    {
+      "id": "h_00596",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00075",
+        "data_00205",
+        "metr_00085"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5451,
+        "article_year": 2016
+      },
+      "attributes": {
+        "task": "interatomic potential training",
+        "domain": "materials science",
+        "metric": "energy_RMS_eV",
+        "value": 0.041,
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00599",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00075",
+        "data_00208",
+        "metr_00085"
+      ],
+      "year": 2016,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5451,
+        "article_year": 2016
+      },
+      "attributes": {
+        "metric": "energy_RMS_eV",
+        "value": 0.018,
+        "split": "test",
+        "delta_vs_baseline": 0.0
+      }
+    },
+    {
+      "id": "h_00603",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00075",
+        "data_00212",
+        "metr_00088"
+      ],
+      "year": 2016,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5451,
+        "article_year": 2016
+      },
+      "attributes": {
+        "task": "regression",
+        "domain": "materials science",
+        "metric": "Young's modulus"
+      }
+    },
+    {
+      "id": "h_00604",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00075",
+        "data_00213",
+        "metr_00083"
+      ],
+      "year": 2016,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5451,
+        "article_year": 2016
+      },
+      "attributes": {
+        "task": "regression",
+        "domain": "materials science",
+        "metric": "surface energy"
+      }
+    },
+    {
+      "id": "h_00606",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00075",
+        "data_00215",
+        "metr_00090"
+      ],
+      "year": 2016,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5451,
+        "article_year": 2016
+      },
+      "attributes": {
+        "task": "interatomic potential training",
+        "domain": "materials science",
+        "metric": "interaction energy",
+        "split": "test"
+      }
+    },
+    {
+      "id": "h_00832",
+      "relation_type": "claims",
+      "members": [
+        "arti_00028",
+        "meth_00196",
+        "clai_00226"
+      ],
+      "year": 2018,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5404,
+        "article_year": 2018
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00833",
+      "relation_type": "claims",
+      "members": [
+        "arti_00028",
+        "meth_00196",
+        "clai_00227"
+      ],
+      "year": 2018,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5404,
+        "article_year": 2018
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00834",
+      "relation_type": "claims",
+      "members": [
+        "arti_00028",
+        "meth_00196",
+        "clai_00228"
+      ],
+      "year": 2018,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5404,
+        "article_year": 2018
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_00835",
+      "relation_type": "claims",
+      "members": [
+        "arti_00028",
+        "meth_00196",
+        "clai_00229"
+      ],
+      "year": 2018,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5404,
+        "article_year": 2018
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_00836",
+      "relation_type": "claims",
+      "members": [
+        "arti_00028",
+        "meth_00196",
+        "clai_00230"
+      ],
+      "year": 2018,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5404,
+        "article_year": 2018
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_00838",
+      "relation_type": "claims",
+      "members": [
+        "arti_00028",
+        "meth_00196",
+        "clai_00232"
+      ],
+      "year": 2018,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5404,
+        "article_year": 2018
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_00839",
+      "relation_type": "claims",
+      "members": [
+        "arti_00028",
+        "meth_00196",
+        "clai_00233"
+      ],
+      "year": 2018,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5404,
+        "article_year": 2018
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.92
+      }
+    },
+    {
+      "id": "h_00840",
+      "relation_type": "claims",
+      "members": [
+        "arti_00028",
+        "meth_00196",
+        "clai_00234"
+      ],
+      "year": 2018,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5404,
+        "article_year": 2018
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.82
+      }
+    },
+    {
+      "id": "h_00841",
+      "relation_type": "claims",
+      "members": [
+        "arti_00028",
+        "meth_00196",
+        "clai_00235"
+      ],
+      "year": 2018,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5404,
+        "article_year": 2018
+      },
+      "attributes": {
+        "claim_type": "theoretical",
+        "evidence_type": "simulation",
+        "evidence_strength": "weak",
+        "confidence": 0.88
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "carbon",
+  "representative_ids": [
+    "clai_00686",
+    "data_00213"
+  ]
+}

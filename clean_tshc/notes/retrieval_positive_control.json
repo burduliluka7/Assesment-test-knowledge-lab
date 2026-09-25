@@ -1,0 +1,352 @@
+{
+  "status": "PASS",
+  "scope": "Evaluation-only positive controls: force an already mapped real EXACT/ALIAS node into the first slot, without modifying saved predictions or any model. This tests scoring, not retrieval quality.",
+  "controls": 49,
+  "all_controls_recovered": true,
+  "original_min_flat_rank": 31,
+  "rows": [
+    {
+      "question": "Q1",
+      "target": "MACE",
+      "status": "EXACT",
+      "original_best_rank": 5437,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q1",
+      "target": "M3GNet",
+      "status": "EXACT",
+      "original_best_rank": 880,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q1",
+      "target": "CHGNet",
+      "status": "EXACT",
+      "original_best_rank": 1340,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q1",
+      "target": "GAP",
+      "status": "EXACT",
+      "original_best_rank": 5357,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q1",
+      "target": "NequIP",
+      "status": "EXACT",
+      "original_best_rank": 1536,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q1",
+      "target": "ACE",
+      "status": "EXACT",
+      "original_best_rank": 5374,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q1",
+      "target": "EquiformerV2",
+      "status": "EXACT",
+      "original_best_rank": 4656,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q2",
+      "target": "DeepH",
+      "status": "EXACT",
+      "original_best_rank": 5227,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q2",
+      "target": "D4FT",
+      "status": "EXACT",
+      "original_best_rank": 370,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q3",
+      "target": "DeepH-E3",
+      "status": "EXACT",
+      "original_best_rank": 57,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q4",
+      "target": "Hessian training",
+      "status": "ALIAS",
+      "original_best_rank": 634,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q4",
+      "target": "VGNN",
+      "status": "EXACT",
+      "original_best_rank": 5193,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q6",
+      "target": "LiFlow",
+      "status": "EXACT",
+      "original_best_rank": 199,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q7",
+      "target": "symbolic regression",
+      "status": "EXACT",
+      "original_best_rank": 4259,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q8",
+      "target": "ConvLSTM",
+      "status": "EXACT",
+      "original_best_rank": 5206,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q9",
+      "target": "NequIP",
+      "status": "EXACT",
+      "original_best_rank": 2625,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q10",
+      "target": "SchNet",
+      "status": "EXACT",
+      "original_best_rank": 4197,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "MACE",
+      "status": "EXACT",
+      "original_best_rank": 5360,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "NequIP",
+      "status": "EXACT",
+      "original_best_rank": 2476,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "CHGNet",
+      "status": "EXACT",
+      "original_best_rank": 1262,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "M3GNet",
+      "status": "EXACT",
+      "original_best_rank": 748,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "SevenNet",
+      "status": "EXACT",
+      "original_best_rank": 5432,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "GAP",
+      "status": "EXACT",
+      "original_best_rank": 5328,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "DeePMD",
+      "status": "EXACT",
+      "original_best_rank": 4621,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "MatterSim",
+      "status": "EXACT",
+      "original_best_rank": 31,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "Orb",
+      "status": "EXACT",
+      "original_best_rank": 4994,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "eSEN",
+      "status": "EXACT",
+      "original_best_rank": 539,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "PET",
+      "status": "EXACT",
+      "original_best_rank": 5452,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "UMA",
+      "status": "EXACT",
+      "original_best_rank": 5390,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q12",
+      "target": "EquiformerV2",
+      "status": "EXACT",
+      "original_best_rank": 4726,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q13",
+      "target": "CGCNN",
+      "status": "EXACT",
+      "original_best_rank": 3322,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q13",
+      "target": "SchNet",
+      "status": "EXACT",
+      "original_best_rank": 2625,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q13",
+      "target": "MEGNet",
+      "status": "EXACT",
+      "original_best_rank": 3513,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q13",
+      "target": "M3GNet",
+      "status": "EXACT",
+      "original_best_rank": 2655,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q13",
+      "target": "NequIP",
+      "status": "EXACT",
+      "original_best_rank": 3198,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q13",
+      "target": "MACE",
+      "status": "EXACT",
+      "original_best_rank": 5434,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q13",
+      "target": "CHGNet",
+      "status": "EXACT",
+      "original_best_rank": 2770,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q13",
+      "target": "EquiformerV2",
+      "status": "EXACT",
+      "original_best_rank": 4979,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "Matbench Discovery",
+      "status": "EXACT",
+      "original_best_rank": 447,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "Matbench",
+      "status": "EXACT",
+      "original_best_rank": 1596,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "JARVIS-DFT",
+      "status": "EXACT",
+      "original_best_rank": 4681,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "Materials Project",
+      "status": "EXACT",
+      "original_best_rank": 591,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "MPtrj",
+      "status": "EXACT",
+      "original_best_rank": 896,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "OQMD",
+      "status": "EXACT",
+      "original_best_rank": 1293,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "AFLOW",
+      "status": "EXACT",
+      "original_best_rank": 5388,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "Alexandria",
+      "status": "EXACT",
+      "original_best_rank": 3122,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "GNoME",
+      "status": "EXACT",
+      "original_best_rank": 506,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "WBM",
+      "status": "EXACT",
+      "original_best_rank": 217,
+      "forced_identity_at_one_recall": 1.0
+    },
+    {
+      "question": "Q14",
+      "target": "OMat24",
+      "status": "EXACT",
+      "original_best_rank": 1331,
+      "forced_identity_at_one_recall": 1.0
+    }
+  ]
+}

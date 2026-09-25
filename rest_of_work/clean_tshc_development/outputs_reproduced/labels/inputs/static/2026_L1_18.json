@@ -1,0 +1,110 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00490",
+      "type": "component",
+      "surface_form": "Matrix Virtual Node"
+    },
+    {
+      "id": "comp_00491",
+      "type": "component",
+      "surface_form": "Momentum-dependent Matrix Virtual Node"
+    },
+    {
+      "id": "comp_00492",
+      "type": "component",
+      "surface_form": "Virtual-dynamical matrices"
+    },
+    {
+      "id": "comp_00493",
+      "type": "component",
+      "surface_form": "Virtual nodes"
+    },
+    {
+      "id": "comp_00494",
+      "type": "component",
+      "surface_form": "Bi-directed real-real edges"
+    },
+    {
+      "id": "comp_00497",
+      "type": "component",
+      "surface_form": "Spherical harmonics edge attributes"
+    },
+    {
+      "id": "comp_00498",
+      "type": "component",
+      "surface_form": "Atomic number node embedding"
+    },
+    {
+      "id": "comp_00499",
+      "type": "component",
+      "surface_form": "Atomic mass input features"
+    },
+    {
+      "id": "comp_00500",
+      "type": "component",
+      "surface_form": "Gated activation layers"
+    },
+    {
+      "id": "comp_00502",
+      "type": "component",
+      "surface_form": "Vector Virtual Nodes"
+    },
+    {
+      "id": "comp_00503",
+      "type": "component",
+      "surface_form": "Matrix Virtual Nodes"
+    },
+    {
+      "id": "comp_00505",
+      "type": "component",
+      "surface_form": "Directed real-to-virtual edges"
+    },
+    {
+      "id": "comp_00507",
+      "type": "component",
+      "surface_form": "Screening virtual node layer"
+    },
+    {
+      "id": "comp_00509",
+      "type": "component",
+      "surface_form": "Radial function h"
+    },
+    {
+      "id": "comp_00510",
+      "type": "component",
+      "surface_form": "Spherical harmonics Y"
+    },
+    {
+      "id": "comp_00511",
+      "type": "component",
+      "surface_form": "Momentum-dependent Matrix Virtual Nodes"
+    },
+    {
+      "id": "comp_00513",
+      "type": "component",
+      "surface_form": "k-dependent matrix virtual nodes"
+    },
+    {
+      "id": "comp_00514",
+      "type": "component",
+      "surface_form": "Composition-weighted atomic mass encoding"
+    },
+    {
+      "id": "comp_00515",
+      "type": "component",
+      "surface_form": "Two-hot encoding for alloy elements"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 19
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "virtual",
+  "representative_ids": [
+    "comp_00503",
+    "comp_00502"
+  ]
+}

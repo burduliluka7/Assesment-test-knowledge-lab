@@ -1,0 +1,1942 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00042",
+      "type": "article",
+      "surface_form": "Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+    },
+    {
+      "id": "cite_00284",
+      "type": "cited_work",
+      "surface_form": "RMM-DIIS"
+    },
+    {
+      "id": "cite_00298",
+      "type": "cited_work",
+      "surface_form": "Davidson blocked scheme"
+    },
+    {
+      "id": "cite_00470",
+      "type": "cited_work",
+      "surface_form": "McMillan formula"
+    },
+    {
+      "id": "cite_00471",
+      "type": "cited_work",
+      "surface_form": "Allen-Dynes formula"
+    },
+    {
+      "id": "cite_00478",
+      "type": "cited_work",
+      "surface_form": "Voigt-Reuss-Hill averaging"
+    },
+    {
+      "id": "clai_00036",
+      "type": "claim",
+      "surface_form": "JARVIS‑Tools implements automatic k‑point convergence protocols that improve the precision of DFT calculations."
+    },
+    {
+      "id": "clai_00053",
+      "type": "claim",
+      "surface_form": "The best one-step gradient-boosted tree regression model achieves 165±4 K MAE and 0.89 R² on the test set for melting temperature prediction."
+    },
+    {
+      "id": "clai_00054",
+      "type": "claim",
+      "surface_form": "A two-step approach combining unsupervised clustering with supervised regression achieves 156±4 K MAE and 0.92 R², outperforming direct one-step supervised learning."
+    },
+    {
+      "id": "clai_00059",
+      "type": "claim",
+      "surface_form": "Tree ensemble methods (gradient-boosted trees and random forest regression) substantially outperform linear models, which achieve MAE >240 K and RMSE >340 K, at least 100 K worse than non-linear approaches."
+    },
+    {
+      "id": "clai_00078",
+      "type": "claim",
+      "surface_form": "Continuous-filter convolutional (cfconv) layers enable convolution on arbitrarily positioned inputs, overcoming the limitations of discrete filters that require grid-aligned data."
+    },
+    {
+      "id": "clai_00132",
+      "type": "claim",
+      "surface_form": "The multiple‑tower architecture reduces the computational complexity of a propagation step from O(n²d²) to O(n²d²/k) and yields a 2× speedup for n=9, d=200, k=8."
+    },
+    {
+      "id": "clai_00224",
+      "type": "claim",
+      "surface_form": "The AFLOWLIB data is accessible through a REST-API for standardized data exchange."
+    },
+    {
+      "id": "clai_00311",
+      "type": "claim",
+      "surface_form": "Matbench v0.1 is a benchmark suite containing 13 supervised machine learning tasks (10 regression, 3 classification) for materials property prediction, with dataset sizes ranging from 312 to 132,752 samples."
+    },
+    {
+      "id": "clai_00314",
+      "type": "claim",
+      "surface_form": "Automatminer is a fully-automated machine learning pipeline consisting of four stages (autofeaturization, cleaning, dimensionality reduction, and AutoML search) that requires no user intervention or hyperparameter tuning."
+    },
+    {
+      "id": "clai_00318",
+      "type": "claim",
+      "surface_form": "Descriptor-based Automatminer and RF models have lower errors on small datasets but their improvement rates are shallower, with AutoML's advantage over conventional techniques narrowing as sample count increases and essentially lost near 10^5 samples."
+    },
+    {
+      "id": "clai_00319",
+      "type": "claim",
+      "surface_form": "All algorithms exhibit a universal trend of decreasing relative errors as dataset size increases."
+    },
+    {
+      "id": "clai_00320",
+      "type": "claim",
+      "surface_form": "For small datasets (<10^4 samples), inexpensive Automatminer presets (~1-5 minute training) retain the bulk of performance compared to expensive presets (24h+ training), with Express retaining 95% or more of the accuracy of more expensive presets at less than 50% of the computational cost on data-scarce tasks."
+    },
+    {
+      "id": "clai_00322",
+      "type": "claim",
+      "surface_form": "Matbench provides a consistent evaluation framework using five-fold nested cross-validation on identical folds across all algorithms to minimize comparison bias, with datasets pre-cleaned to remove unphysical computed data and task-irrelevant experimental data."
+    },
+    {
+      "id": "clai_00323",
+      "type": "claim",
+      "surface_form": "Automatminer source code and pre-processed Matbench tasks are open source and available online."
+    },
+    {
+      "id": "clai_00504",
+      "type": "claim",
+      "surface_form": "The transfer learning approach iterates until model MAE is below 30 meV/atom."
+    },
+    {
+      "id": "clai_00575",
+      "type": "claim",
+      "surface_form": "Using a loss function with adaptive prefactors that emphasize forces early and energies/virial later reduces the total training time to a few core‑hours for all test cases."
+    },
+    {
+      "id": "clai_00663",
+      "type": "claim",
+      "surface_form": "AFLOW provides a standardized definition of Brillouin‑zone integration paths for all 14 Bravais lattices, filling a gap in the literature."
+    },
+    {
+      "id": "clai_00675",
+      "type": "claim",
+      "surface_form": "AFLOW can predict alloy miscibility using Miedema and Hume‑Rothery mixing rules."
+    },
+    {
+      "id": "comp_00017",
+      "type": "component",
+      "surface_form": "Multiple towers"
+    },
+    {
+      "id": "comp_00031",
+      "type": "component",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "comp_00202",
+      "type": "component",
+      "surface_form": "Bond distance expansion"
+    },
+    {
+      "id": "comp_00223",
+      "type": "component",
+      "surface_form": "Representative environment selection"
+    },
+    {
+      "id": "comp_00236",
+      "type": "component",
+      "surface_form": "Sorted neighbor list"
+    },
+    {
+      "id": "comp_00240",
+      "type": "component",
+      "surface_form": "Multi‑term loss function"
+    },
+    {
+      "id": "comp_00267",
+      "type": "component",
+      "surface_form": "Linear pooling for interpretability"
+    },
+    {
+      "id": "comp_00297",
+      "type": "component",
+      "surface_form": "Image‑based data‑processing pipeline"
+    },
+    {
+      "id": "comp_00300",
+      "type": "component",
+      "surface_form": "Predictive model architecture"
+    },
+    {
+      "id": "comp_00301",
+      "type": "component",
+      "surface_form": "Iterative column‑wise prediction scheme"
+    },
+    {
+      "id": "comp_00313",
+      "type": "component",
+      "surface_form": "Genetic‑algorithm‑driven inverse design"
+    },
+    {
+      "id": "comp_00321",
+      "type": "component",
+      "surface_form": "Dropout regularization layers"
+    },
+    {
+      "id": "comp_00342",
+      "type": "component",
+      "surface_form": "Automatic k‑point convergence protocol"
+    },
+    {
+      "id": "comp_00343",
+      "type": "component",
+      "surface_form": "REST‑API"
+    },
+    {
+      "id": "comp_00346",
+      "type": "component",
+      "surface_form": "STM‑image database and analysis pipeline"
+    },
+    {
+      "id": "comp_00351",
+      "type": "component",
+      "surface_form": "JARVIS‑Heterostructure app"
+    },
+    {
+      "id": "comp_00366",
+      "type": "component",
+      "surface_form": "Composition‑weighted binary averaging heuristic"
+    },
+    {
+      "id": "comp_00367",
+      "type": "component",
+      "surface_form": "Linear correction of heuristic"
+    },
+    {
+      "id": "comp_00368",
+      "type": "component",
+      "surface_form": "Decision‑tree based ML model"
+    },
+    {
+      "id": "comp_00369",
+      "type": "component",
+      "surface_form": "Combined heuristic‑ML pipeline"
+    },
+    {
+      "id": "comp_00386",
+      "type": "component",
+      "surface_form": "Standardized Brillouin‑zone path generator"
+    },
+    {
+      "id": "comp_00393",
+      "type": "component",
+      "surface_form": "Interstitial‑site topological search"
+    },
+    {
+      "id": "comp_00395",
+      "type": "component",
+      "surface_form": "Apennsy interstitial cage search"
+    },
+    {
+      "id": "comp_00396",
+      "type": "component",
+      "surface_form": "cage reduction module"
+    },
+    {
+      "id": "comp_00439",
+      "type": "component",
+      "surface_form": "Automatminer pipeline"
+    },
+    {
+      "id": "comp_00440",
+      "type": "component",
+      "surface_form": "Matbench test suite"
+    },
+    {
+      "id": "comp_00444",
+      "type": "component",
+      "surface_form": "Magpie features"
+    },
+    {
+      "id": "comp_00445",
+      "type": "component",
+      "surface_form": "Ensemble-based decision tree feature selector"
+    },
+    {
+      "id": "comp_00446",
+      "type": "component",
+      "surface_form": "TPOT evolutionary optimizer"
+    },
+    {
+      "id": "comp_00447",
+      "type": "component",
+      "surface_form": "Automatminer"
+    },
+    {
+      "id": "comp_00449",
+      "type": "component",
+      "surface_form": "NCV fold structure"
+    },
+    {
+      "id": "comp_00452",
+      "type": "component",
+      "surface_form": "Dimensionality reduction stage"
+    },
+    {
+      "id": "comp_00455",
+      "type": "component",
+      "surface_form": "Automatminer Debug preset"
+    },
+    {
+      "id": "comp_00456",
+      "type": "component",
+      "surface_form": "Automatminer Debug_single preset"
+    },
+    {
+      "id": "comp_00458",
+      "type": "component",
+      "surface_form": "AutoML model search space"
+    },
+    {
+      "id": "comp_00563",
+      "type": "component",
+      "surface_form": "Vicker's hardness estimation model"
+    },
+    {
+      "id": "comp_00569",
+      "type": "component",
+      "surface_form": "Prototype-based structure sampler"
+    },
+    {
+      "id": "comp_00584",
+      "type": "component",
+      "surface_form": "Dual grid technique"
+    },
+    {
+      "id": "comp_00625",
+      "type": "component",
+      "surface_form": "Iterative self-consistent training protocol"
+    },
+    {
+      "id": "comp_00629",
+      "type": "component",
+      "surface_form": "virial in loss function"
+    },
+    {
+      "id": "comp_00631",
+      "type": "component",
+      "surface_form": "uncorrelated snapshots selection"
+    },
+    {
+      "id": "comp_00634",
+      "type": "component",
+      "surface_form": "Maximum bond variation criterion"
+    },
+    {
+      "id": "comp_00807",
+      "type": "component",
+      "surface_form": "Power spectrum kernel"
+    },
+    {
+      "id": "data_00044",
+      "type": "dataset",
+      "surface_form": "Discovery rate on 1000 sampled structures"
+    },
+    {
+      "id": "data_00068",
+      "type": "dataset",
+      "surface_form": "Poisson ratio"
+    },
+    {
+      "id": "data_00116",
+      "type": "dataset",
+      "surface_form": "Matbench v0.1"
+    },
+    {
+      "id": "data_00135",
+      "type": "dataset",
+      "surface_form": "Volume prediction dataset"
+    },
+    {
+      "id": "data_00215",
+      "type": "dataset",
+      "surface_form": "Trimer configurations"
+    },
+    {
+      "id": "futu_00062",
+      "type": "future_topic",
+      "surface_form": "Standard parameter values for k-point grid density"
+    },
+    {
+      "id": "futu_00095",
+      "type": "future_topic",
+      "surface_form": "Disordered materials"
+    },
+    {
+      "id": "futu_00096",
+      "type": "future_topic",
+      "surface_form": "Interfaces and heterostructures"
+    },
+    {
+      "id": "futu_00097",
+      "type": "future_topic",
+      "surface_form": "Quasi‑crystals"
+    },
+    {
+      "id": "futu_00136",
+      "type": "future_topic",
+      "surface_form": "Screening for superconducting materials"
+    },
+    {
+      "id": "futu_00154",
+      "type": "future_topic",
+      "surface_form": "Accelerating meso‑level material design through AI‑driven defect‑property translation"
+    },
+    {
+      "id": "futu_00155",
+      "type": "future_topic",
+      "surface_form": "Integration of multiscale modeling data (DFT, MD, FEM) to train GNNs for broader defect‑property relationships"
+    },
+    {
+      "id": "meth_00007",
+      "type": "method",
+      "surface_form": "Genetic Algorithms"
+    },
+    {
+      "id": "meth_00013",
+      "type": "method",
+      "surface_form": "Random Forest"
+    },
+    {
+      "id": "meth_00014",
+      "type": "method",
+      "surface_form": "Batch Normalization"
+    },
+    {
+      "id": "meth_00035",
+      "type": "method",
+      "surface_form": "Magpie"
+    },
+    {
+      "id": "meth_00044",
+      "type": "method",
+      "surface_form": "ResNets"
+    },
+    {
+      "id": "meth_00050",
+      "type": "method",
+      "surface_form": "SchNet"
+    },
+    {
+      "id": "meth_00063",
+      "type": "method",
+      "surface_form": "Random Forests"
+    },
+    {
+      "id": "meth_00078",
+      "type": "method",
+      "surface_form": "PaiNN"
+    },
+    {
+      "id": "meth_00094",
+      "type": "method",
+      "surface_form": "i-PI"
+    },
+    {
+      "id": "meth_00095",
+      "type": "method",
+      "surface_form": "FCHL19"
+    },
+    {
+      "id": "meth_00097",
+      "type": "method",
+      "surface_form": "Monkhorst-Pack k-point sampling"
+    },
+    {
+      "id": "meth_00100",
+      "type": "method",
+      "surface_form": "DFT+U"
+    },
+    {
+      "id": "meth_00109",
+      "type": "method",
+      "surface_form": "GemNet"
+    },
+    {
+      "id": "meth_00124",
+      "type": "method",
+      "surface_form": "e3nn"
+    },
+    {
+      "id": "meth_00173",
+      "type": "method",
+      "surface_form": "Cormorant"
+    },
+    {
+      "id": "meth_00174",
+      "type": "method",
+      "surface_form": "NewtonNet"
+    },
+    {
+      "id": "meth_00175",
+      "type": "method",
+      "surface_form": "SpookyNet"
+    },
+    {
+      "id": "meth_00176",
+      "type": "method",
+      "surface_form": "ANAKIN-ME"
+    },
+    {
+      "id": "meth_00186",
+      "type": "method",
+      "surface_form": "GGA+U"
+    },
+    {
+      "id": "meth_00193",
+      "type": "method",
+      "surface_form": "MODNet"
+    },
+    {
+      "id": "meth_00195",
+      "type": "method",
+      "surface_form": "EANN"
+    },
+    {
+      "id": "meth_00234",
+      "type": "method",
+      "surface_form": "Voronoi tessellation"
+    },
+    {
+      "id": "meth_00235",
+      "type": "method",
+      "surface_form": "Principal Neighborhood Aggregation"
+    },
+    {
+      "id": "meth_00238",
+      "type": "method",
+      "surface_form": "Partial Node Assignment"
+    },
+    {
+      "id": "meth_00257",
+      "type": "method",
+      "surface_form": "Automated Interactive Infrastructure and Database"
+    },
+    {
+      "id": "meth_00259",
+      "type": "method",
+      "surface_form": "Gradient Boosting Decision Tree"
+    },
+    {
+      "id": "meth_00264",
+      "type": "method",
+      "surface_form": "WannierTools"
+    },
+    {
+      "id": "meth_00265",
+      "type": "method",
+      "surface_form": "Matminer"
+    },
+    {
+      "id": "meth_00267",
+      "type": "method",
+      "surface_form": "LAMMPS"
+    },
+    {
+      "id": "meth_00269",
+      "type": "method",
+      "surface_form": "grand canonical linear programming"
+    },
+    {
+      "id": "meth_00270",
+      "type": "method",
+      "surface_form": "Convex hull stability analysis"
+    },
+    {
+      "id": "meth_00271",
+      "type": "method",
+      "surface_form": "Muggianu model"
+    },
+    {
+      "id": "meth_00285",
+      "type": "method",
+      "surface_form": "Findsym symmetry analysis"
+    },
+    {
+      "id": "meth_00307",
+      "type": "method",
+      "surface_form": "Automatminer"
+    },
+    {
+      "id": "meth_00311",
+      "type": "method",
+      "surface_form": "Magpie featurizer"
+    },
+    {
+      "id": "meth_00342",
+      "type": "method",
+      "surface_form": "Roost"
+    },
+    {
+      "id": "meth_00344",
+      "type": "method",
+      "surface_form": "PBEsol"
+    },
+    {
+      "id": "meth_00345",
+      "type": "method",
+      "surface_form": "PseudoDojo"
+    },
+    {
+      "id": "meth_00347",
+      "type": "method",
+      "surface_form": "McMillan's formula"
+    },
+    {
+      "id": "meth_00350",
+      "type": "method",
+      "surface_form": "pymatgen structure matcher"
+    },
+    {
+      "id": "meth_00363",
+      "type": "method",
+      "surface_form": "Harris-Foulkes corrections"
+    },
+    {
+      "id": "meth_00365",
+      "type": "method",
+      "surface_form": "Methfessel-Paxton smearing"
+    },
+    {
+      "id": "meth_00367",
+      "type": "method",
+      "surface_form": "Local Density Approximation"
+    },
+    {
+      "id": "meth_00370",
+      "type": "method",
+      "surface_form": "GW approximation"
+    },
+    {
+      "id": "meth_00385",
+      "type": "method",
+      "surface_form": "Active learning for neural network potentials"
+    },
+    {
+      "id": "meth_00386",
+      "type": "method",
+      "surface_form": "Grimme-D2"
+    },
+    {
+      "id": "metr_00021",
+      "type": "metric",
+      "surface_form": "MAE/ROC-AUC"
+    },
+    {
+      "id": "metr_00052",
+      "type": "metric",
+      "surface_form": "discovery rate"
+    },
+    {
+      "id": "metr_00053",
+      "type": "metric",
+      "surface_form": "normalized relative error"
+    },
+    {
+      "id": "metr_00069",
+      "type": "metric",
+      "surface_form": "Lattice Energy MAE"
+    },
+    {
+      "id": "prob_00007",
+      "type": "problem",
+      "surface_form": "Uncertainty quantification"
+    },
+    {
+      "id": "prob_00010",
+      "type": "problem",
+      "surface_form": "Computational cost reduction"
+    },
+    {
+      "id": "prob_00018",
+      "type": "problem",
+      "surface_form": "Learning from graph topology without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00121",
+      "type": "problem",
+      "surface_form": "Efficient sampling of high‑dimensional PES"
+    },
+    {
+      "id": "prob_00124",
+      "type": "problem",
+      "surface_form": "Efficient representation of large training sets"
+    },
+    {
+      "id": "prob_00130",
+      "type": "problem",
+      "surface_form": "Symmetry preservation without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00134",
+      "type": "problem",
+      "surface_form": "Accurate reproduction of AIMD structural properties"
+    },
+    {
+      "id": "prob_00159",
+      "type": "problem",
+      "surface_form": "Inability to model state‑dependent properties"
+    },
+    {
+      "id": "prob_00176",
+      "type": "problem",
+      "surface_form": "Accelerated property evaluation"
+    },
+    {
+      "id": "prob_00181",
+      "type": "problem",
+      "surface_form": "Exploration of huge defect‑structure spaces"
+    },
+    {
+      "id": "prob_00183",
+      "type": "problem",
+      "surface_form": "Nonlinear structure‑property mapping"
+    },
+    {
+      "id": "prob_00184",
+      "type": "problem",
+      "surface_form": "Reduction of computational cost for exhaustive search"
+    },
+    {
+      "id": "prob_00194",
+      "type": "problem",
+      "surface_form": "Uncertainty quantification for ML predictions"
+    },
+    {
+      "id": "prob_00195",
+      "type": "problem",
+      "surface_form": "Efficient property screening"
+    },
+    {
+      "id": "prob_00199",
+      "type": "problem",
+      "surface_form": "Accelerated property prediction"
+    },
+    {
+      "id": "prob_00217",
+      "type": "problem",
+      "surface_form": "Standardized structure representation"
+    },
+    {
+      "id": "prob_00220",
+      "type": "problem",
+      "surface_form": "Identification of interstitial sites"
+    },
+    {
+      "id": "prob_00265",
+      "type": "problem",
+      "surface_form": "Model selection bias"
+    },
+    {
+      "id": "prob_00266",
+      "type": "problem",
+      "surface_form": "Sample selection bias"
+    },
+    {
+      "id": "prob_00267",
+      "type": "problem",
+      "surface_form": "Paradox of choice in descriptor/model selection"
+    },
+    {
+      "id": "prob_00268",
+      "type": "problem",
+      "surface_form": "Need for expert domain knowledge"
+    },
+    {
+      "id": "prob_00272",
+      "type": "problem",
+      "surface_form": "Automated ML pipeline for materials"
+    },
+    {
+      "id": "prob_00273",
+      "type": "problem",
+      "surface_form": "Manual ML pipeline construction"
+    },
+    {
+      "id": "prob_00274",
+      "type": "problem",
+      "surface_form": "Researcher intervention requirement"
+    },
+    {
+      "id": "prob_00276",
+      "type": "problem",
+      "surface_form": "Computational cost vs accuracy tradeoff"
+    },
+    {
+      "id": "prob_00277",
+      "type": "problem",
+      "surface_form": "Automated model selection for materials science"
+    },
+    {
+      "id": "prob_00279",
+      "type": "problem",
+      "surface_form": "Dataset size scaling characterization"
+    },
+    {
+      "id": "prob_00280",
+      "type": "problem",
+      "surface_form": "Generalization error estimation"
+    },
+    {
+      "id": "prob_00281",
+      "type": "problem",
+      "surface_form": "Model selection automation"
+    },
+    {
+      "id": "prob_00283",
+      "type": "problem",
+      "surface_form": "Computational efficiency vs. performance trade-off"
+    },
+    {
+      "id": "prob_00284",
+      "type": "problem",
+      "surface_form": "AutoML runtime optimization"
+    },
+    {
+      "id": "prob_00352",
+      "type": "problem",
+      "surface_form": "chemical element bias"
+    },
+    {
+      "id": "prob_00353",
+      "type": "problem",
+      "surface_form": "structural prototype bias"
+    },
+    {
+      "id": "prob_00354",
+      "type": "problem",
+      "surface_form": "poor generalization error in high-throughput searches"
+    },
+    {
+      "id": "prob_00356",
+      "type": "problem",
+      "surface_form": "Training data bias"
+    },
+    {
+      "id": "prob_00357",
+      "type": "problem",
+      "surface_form": "Inconsistent prediction error"
+    },
+    {
+      "id": "prob_00358",
+      "type": "problem",
+      "surface_form": "False negative rate"
+    },
+    {
+      "id": "prob_00359",
+      "type": "problem",
+      "surface_form": "Limited convex hull coverage"
+    },
+    {
+      "id": "prob_00361",
+      "type": "problem",
+      "surface_form": "High-Tc superconductor identification"
+    },
+    {
+      "id": "prob_00365",
+      "type": "problem",
+      "surface_form": "Structural diversity deficiency"
+    },
+    {
+      "id": "prob_00366",
+      "type": "problem",
+      "surface_form": "Generalization error"
+    },
+    {
+      "id": "prob_00374",
+      "type": "problem",
+      "surface_form": "Local minima trapping in geometry optimization"
+    },
+    {
+      "id": "prob_00416",
+      "type": "problem",
+      "surface_form": "efficient training set construction"
+    },
+    {
+      "id": "prob_00593",
+      "type": "problem",
+      "surface_form": "Nonlinear parameter optimization"
+    },
+    {
+      "id": "prob_00596",
+      "type": "problem",
+      "surface_form": "Long-range behavior modeling"
+    },
+    {
+      "id": "prob_00597",
+      "type": "problem",
+      "surface_form": "Force locality quantification"
+    },
+    {
+      "id": "prob_00599",
+      "type": "problem",
+      "surface_form": "Accuracy limit determination"
+    },
+    {
+      "id": "prob_00600",
+      "type": "problem",
+      "surface_form": "Heterogeneous training database fitting"
+    },
+    {
+      "id": "prob_00603",
+      "type": "problem",
+      "surface_form": "Linear sp-bonded chain detection"
+    },
+    {
+      "id": "prob_00608",
+      "type": "problem",
+      "surface_form": "capturing tetrahedral motifs"
+    },
+    {
+      "id": "prob_00614",
+      "type": "problem",
+      "surface_form": "Training data completeness"
+    },
+    {
+      "id": "prob_00615",
+      "type": "problem",
+      "surface_form": "Near-surface structure sampling"
+    },
+    {
+      "id": "task_00001",
+      "type": "task",
+      "surface_form": "machine learning"
+    },
+    {
+      "id": "task_00059",
+      "type": "task",
+      "surface_form": "Topological invariant analysis"
+    },
+    {
+      "id": "task_00060",
+      "type": "task",
+      "surface_form": "High‑throughput Hamiltonian generation"
+    },
+    {
+      "id": "task_00161",
+      "type": "task",
+      "surface_form": "property prediction on MatBench benchmarks"
+    },
+    {
+      "id": "task_00186",
+      "type": "task",
+      "surface_form": "Continuous property regression"
+    },
+    {
+      "id": "task_00197",
+      "type": "task",
+      "surface_form": "Transfer‑learning for small‑data properties"
+    },
+    {
+      "id": "task_00233",
+      "type": "task",
+      "surface_form": "STM image analysis"
+    },
+    {
+      "id": "task_00235",
+      "type": "task",
+      "surface_form": "Heterostructure design"
+    },
+    {
+      "id": "task_00238",
+      "type": "task",
+      "surface_form": "Tight‑binding model generation"
+    },
+    {
+      "id": "task_00242",
+      "type": "task",
+      "surface_form": "Machine‑learning property prediction"
+    },
+    {
+      "id": "task_00243",
+      "type": "task",
+      "surface_form": "STM image classification"
+    },
+    {
+      "id": "task_00244",
+      "type": "task",
+      "surface_form": "2D heterostructure band‑alignment analysis"
+    },
+    {
+      "id": "task_00338",
+      "type": "task",
+      "surface_form": "ML method benchmarking"
+    },
+    {
+      "id": "task_00349",
+      "type": "task",
+      "surface_form": "Structure-based regression"
+    },
+    {
+      "id": "task_00350",
+      "type": "task",
+      "surface_form": "Composition-only regression"
+    },
+    {
+      "id": "task_00351",
+      "type": "task",
+      "surface_form": "Matbench regression tasks"
+    },
+    {
+      "id": "task_00353",
+      "type": "task",
+      "surface_form": "Composition-only property prediction"
+    },
+    {
+      "id": "task_00354",
+      "type": "task",
+      "surface_form": "Structure-based property prediction"
+    },
+    {
+      "id": "task_00357",
+      "type": "task",
+      "surface_form": "machine learning benchmarking"
+    },
+    {
+      "id": "task_00440",
+      "type": "task",
+      "surface_form": "superconductor candidate identification"
+    },
+    {
+      "id": "task_00443",
+      "type": "task",
+      "surface_form": "Convex hull distance prediction"
+    },
+    {
+      "id": "task_00450",
+      "type": "task",
+      "surface_form": "Vicker's hardness estimation"
+    },
+    {
+      "id": "task_00451",
+      "type": "task",
+      "surface_form": "Superconducting Tc calculation"
+    },
+    {
+      "id": "task_00455",
+      "type": "task",
+      "surface_form": "Convex hull stability analysis"
+    },
+    {
+      "id": "task_00457",
+      "type": "task",
+      "surface_form": "Vicker's hardness prediction"
+    },
+    {
+      "id": "task_00458",
+      "type": "task",
+      "surface_form": "Superconductivity prediction"
+    },
+    {
+      "id": "task_00477",
+      "type": "task",
+      "surface_form": "point defect analysis"
+    },
+    {
+      "id": "task_00697",
+      "type": "task",
+      "surface_form": "Structural property prediction"
+    },
+    {
+      "id": "task_00698",
+      "type": "task",
+      "surface_form": "Locality testing"
+    },
+    {
+      "id": "task_00703",
+      "type": "task",
+      "surface_form": "Lattice parameter reproduction"
+    },
+    {
+      "id": "task_00706",
+      "type": "task",
+      "surface_form": "machine learning potential training"
+    },
+    {
+      "id": "tech_00005",
+      "type": "technique",
+      "surface_form": "Early stopping"
+    },
+    {
+      "id": "tech_00012",
+      "type": "technique",
+      "surface_form": "Batch normalization"
+    },
+    {
+      "id": "tech_00018",
+      "type": "technique",
+      "surface_form": "Weight tying"
+    },
+    {
+      "id": "tech_00023",
+      "type": "technique",
+      "surface_form": "Ensemble learning"
+    },
+    {
+      "id": "tech_00028",
+      "type": "technique",
+      "surface_form": "Dropout regularization"
+    },
+    {
+      "id": "tech_00034",
+      "type": "technique",
+      "surface_form": "One-hot encoding"
+    },
+    {
+      "id": "tech_00035",
+      "type": "technique",
+      "surface_form": "Transfer learning"
+    },
+    {
+      "id": "tech_00038",
+      "type": "technique",
+      "surface_form": "Active learning"
+    },
+    {
+      "id": "tech_00039",
+      "type": "technique",
+      "surface_form": "Learning rate scheduling"
+    },
+    {
+      "id": "tech_00042",
+      "type": "technique",
+      "surface_form": "Principal component analysis"
+    },
+    {
+      "id": "tech_00050",
+      "type": "technique",
+      "surface_form": "Softmax classification"
+    },
+    {
+      "id": "tech_00053",
+      "type": "technique",
+      "surface_form": "iterative training"
+    },
+    {
+      "id": "tech_00063",
+      "type": "technique",
+      "surface_form": "Data preprocessing"
+    },
+    {
+      "id": "tech_00068",
+      "type": "technique",
+      "surface_form": "k‑fold cross‑validation"
+    },
+    {
+      "id": "tech_00070",
+      "type": "technique",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "tech_00074",
+      "type": "technique",
+      "surface_form": "Weight sharing across atoms"
+    },
+    {
+      "id": "tech_00080",
+      "type": "technique",
+      "surface_form": "10‑fold cross‑validation"
+    },
+    {
+      "id": "tech_00087",
+      "type": "technique",
+      "surface_form": "Multiple‑tower decomposition"
+    },
+    {
+      "id": "tech_00093",
+      "type": "technique",
+      "surface_form": "Arrhenius fitting"
+    },
+    {
+      "id": "tech_00096",
+      "type": "technique",
+      "surface_form": "Polynomial mutation"
+    },
+    {
+      "id": "tech_00098",
+      "type": "technique",
+      "surface_form": "Radial distribution function analysis"
+    },
+    {
+      "id": "tech_00129",
+      "type": "technique",
+      "surface_form": "Sub‑meV regression target"
+    },
+    {
+      "id": "tech_00244",
+      "type": "technique",
+      "surface_form": "Smooth cutoff function"
+    },
+    {
+      "id": "tech_00252",
+      "type": "technique",
+      "surface_form": "mean‑squared displacement (MSD) analysis"
+    },
+    {
+      "id": "tech_00256",
+      "type": "technique",
+      "surface_form": "Cubic spline fitting"
+    },
+    {
+      "id": "tech_00258",
+      "type": "technique",
+      "surface_form": "Uncertainty quantification via GP variance"
+    },
+    {
+      "id": "tech_00259",
+      "type": "technique",
+      "surface_form": "Diverse DFT training database construction"
+    },
+    {
+      "id": "tech_00271",
+      "type": "technique",
+      "surface_form": "Neighbor sorting by species and inverse distance"
+    },
+    {
+      "id": "tech_00274",
+      "type": "technique",
+      "surface_form": "Energy‑force‑virial joint loss"
+    },
+    {
+      "id": "tech_00275",
+      "type": "technique",
+      "surface_form": "Progressive weighting of loss terms"
+    },
+    {
+      "id": "tech_00278",
+      "type": "technique",
+      "surface_form": "Linear evolution of loss prefactors"
+    },
+    {
+      "id": "tech_00291",
+      "type": "technique",
+      "surface_form": "Sigmoid‑gated neighbor aggregation"
+    },
+    {
+      "id": "tech_00292",
+      "type": "technique",
+      "surface_form": "Normalized summation pooling"
+    },
+    {
+      "id": "tech_00302",
+      "type": "technique",
+      "surface_form": "Global state conditioning"
+    },
+    {
+      "id": "tech_00315",
+      "type": "technique",
+      "surface_form": "Orientation‑angle encoding"
+    },
+    {
+      "id": "tech_00319",
+      "type": "technique",
+      "surface_form": "Binary cross‑entropy loss with sigmoid output"
+    },
+    {
+      "id": "tech_00320",
+      "type": "technique",
+      "surface_form": "Iterative queue‑based prediction"
+    },
+    {
+      "id": "tech_00322",
+      "type": "technique",
+      "surface_form": "Rule‑based self‑healing"
+    },
+    {
+      "id": "tech_00325",
+      "type": "technique",
+      "surface_form": "RESTful JSON API"
+    },
+    {
+      "id": "tech_00330",
+      "type": "technique",
+      "surface_form": "Non‑equilibrium MD tensile testing"
+    },
+    {
+      "id": "tech_00331",
+      "type": "technique",
+      "surface_form": "Genetic algorithm optimization"
+    },
+    {
+      "id": "tech_00332",
+      "type": "technique",
+      "surface_form": "Transfer learning for new loading conditions"
+    },
+    {
+      "id": "tech_00334",
+      "type": "technique",
+      "surface_form": "Node‑wise regression"
+    },
+    {
+      "id": "tech_00337",
+      "type": "technique",
+      "surface_form": "Genetic‑algorithm optimization"
+    },
+    {
+      "id": "tech_00338",
+      "type": "technique",
+      "surface_form": "Rule‑of‑mixtures analysis"
+    },
+    {
+      "id": "tech_00341",
+      "type": "technique",
+      "surface_form": "Simulated binary crossover"
+    },
+    {
+      "id": "tech_00342",
+      "type": "technique",
+      "surface_form": "Penalty constraint handling"
+    },
+    {
+      "id": "tech_00354",
+      "type": "technique",
+      "surface_form": "Automatic k‑point convergence"
+    },
+    {
+      "id": "tech_00355",
+      "type": "technique",
+      "surface_form": "Geometry optimization with energy, force, and stress relaxation"
+    },
+    {
+      "id": "tech_00356",
+      "type": "technique",
+      "surface_form": "Monte‑Carlo dropout for uncertainty quantification"
+    },
+    {
+      "id": "tech_00357",
+      "type": "technique",
+      "surface_form": "Feature‑importance analysis"
+    },
+    {
+      "id": "tech_00358",
+      "type": "technique",
+      "surface_form": "Error‑handler auto‑resubmit"
+    },
+    {
+      "id": "tech_00359",
+      "type": "technique",
+      "surface_form": "Cloud‑based continuous integration"
+    },
+    {
+      "id": "tech_00360",
+      "type": "technique",
+      "surface_form": "REST‑API data exchange"
+    },
+    {
+      "id": "tech_00364",
+      "type": "technique",
+      "surface_form": "Deep transfer learning"
+    },
+    {
+      "id": "tech_00366",
+      "type": "technique",
+      "surface_form": "Automated workflow orchestration"
+    },
+    {
+      "id": "tech_00367",
+      "type": "technique",
+      "surface_form": "Web‑based interactive interfaces"
+    },
+    {
+      "id": "tech_00368",
+      "type": "technique",
+      "surface_form": "Automated k‑point and plane‑wave cutoff convergence"
+    },
+    {
+      "id": "tech_00370",
+      "type": "technique",
+      "surface_form": "BoltzTraP with constant relaxation time approximation"
+    },
+    {
+      "id": "tech_00372",
+      "type": "technique",
+      "surface_form": "Topological spillage analysis"
+    },
+    {
+      "id": "tech_00373",
+      "type": "technique",
+      "surface_form": "Wannier90 tight‑binding generation"
+    },
+    {
+      "id": "tech_00374",
+      "type": "technique",
+      "surface_form": "Tersoff‑Hamann STM image simulation"
+    },
+    {
+      "id": "tech_00376",
+      "type": "technique",
+      "surface_form": "k‑fold cross‑validation and learning‑curve analysis"
+    },
+    {
+      "id": "tech_00377",
+      "type": "technique",
+      "surface_form": "ROC‑AUC and MAE evaluation metrics"
+    },
+    {
+      "id": "tech_00379",
+      "type": "technique",
+      "surface_form": "Grand canonical linear programming"
+    },
+    {
+      "id": "tech_00384",
+      "type": "technique",
+      "surface_form": "Linear scaling correction"
+    },
+    {
+      "id": "tech_00385",
+      "type": "technique",
+      "surface_form": "Decision‑tree regression"
+    },
+    {
+      "id": "tech_00397",
+      "type": "technique",
+      "surface_form": "Weighted averaging of pure‑element volumes"
+    },
+    {
+      "id": "tech_00399",
+      "type": "technique",
+      "surface_form": "Gamma‑centered k‑mesh for hexagonal, fcc, rhombohedral lattices"
+    },
+    {
+      "id": "tech_00400",
+      "type": "technique",
+      "surface_form": "Multi‑threaded parallel execution"
+    },
+    {
+      "id": "tech_00404",
+      "type": "technique",
+      "surface_form": "symmetry reduction of cages"
+    },
+    {
+      "id": "tech_00406",
+      "type": "technique",
+      "surface_form": "Dudarev U‑parameter implementation"
+    },
+    {
+      "id": "tech_00409",
+      "type": "technique",
+      "surface_form": "dynamic band‑count adjustment"
+    },
+    {
+      "id": "tech_00472",
+      "type": "technique",
+      "surface_form": "Nested cross-validation"
+    },
+    {
+      "id": "tech_00473",
+      "type": "technique",
+      "surface_form": "Automated feature generation"
+    },
+    {
+      "id": "tech_00476",
+      "type": "technique",
+      "surface_form": "Five-fold nested cross validation"
+    },
+    {
+      "id": "tech_00477",
+      "type": "technique",
+      "surface_form": "Stratified cross validation"
+    },
+    {
+      "id": "tech_00478",
+      "type": "technique",
+      "surface_form": "Mean imputation"
+    },
+    {
+      "id": "tech_00479",
+      "type": "technique",
+      "surface_form": "Feature dropping threshold"
+    },
+    {
+      "id": "tech_00480",
+      "type": "technique",
+      "surface_form": "Gini importance-based feature selection"
+    },
+    {
+      "id": "tech_00482",
+      "type": "technique",
+      "surface_form": "Data curation filtering"
+    },
+    {
+      "id": "tech_00483",
+      "type": "technique",
+      "surface_form": "MAE evaluation"
+    },
+    {
+      "id": "tech_00487",
+      "type": "technique",
+      "surface_form": "Unknown value imputation"
+    },
+    {
+      "id": "tech_00488",
+      "type": "technique",
+      "surface_form": "Categorical feature encoding"
+    },
+    {
+      "id": "tech_00489",
+      "type": "technique",
+      "surface_form": "Pearson correlation-based feature reduction"
+    },
+    {
+      "id": "tech_00491",
+      "type": "technique",
+      "surface_form": "Nested Cross Validation"
+    },
+    {
+      "id": "tech_00492",
+      "type": "technique",
+      "surface_form": "TPOT genetic algorithm"
+    },
+    {
+      "id": "tech_00497",
+      "type": "technique",
+      "surface_form": "Relative error normalization"
+    },
+    {
+      "id": "tech_00499",
+      "type": "technique",
+      "surface_form": "Grouped cross-validation"
+    },
+    {
+      "id": "tech_00500",
+      "type": "technique",
+      "surface_form": "Leave-one-cluster-out CV"
+    },
+    {
+      "id": "tech_00501",
+      "type": "technique",
+      "surface_form": "TPOT automated model search"
+    },
+    {
+      "id": "tech_00502",
+      "type": "technique",
+      "surface_form": "Data cleaning and feature reduction"
+    },
+    {
+      "id": "tech_00595",
+      "type": "technique",
+      "surface_form": "iterative retraining cycle"
+    },
+    {
+      "id": "tech_00596",
+      "type": "technique",
+      "surface_form": "convex hull distance prediction"
+    },
+    {
+      "id": "tech_00598",
+      "type": "technique",
+      "surface_form": "Cyclical learning rate schedule"
+    },
+    {
+      "id": "tech_00600",
+      "type": "technique",
+      "surface_form": "Double grid technique"
+    },
+    {
+      "id": "tech_00602",
+      "type": "technique",
+      "surface_form": "Allen-Dynes modification to McMillan formula"
+    },
+    {
+      "id": "tech_00603",
+      "type": "technique",
+      "surface_form": "First-order polynomial fitting"
+    },
+    {
+      "id": "tech_00604",
+      "type": "technique",
+      "surface_form": "Γ-centered k-point grids"
+    },
+    {
+      "id": "tech_00607",
+      "type": "technique",
+      "surface_form": "Top-N property screening"
+    },
+    {
+      "id": "tech_00609",
+      "type": "technique",
+      "surface_form": "DOS filtering"
+    },
+    {
+      "id": "tech_00610",
+      "type": "technique",
+      "surface_form": "Space group filtering"
+    },
+    {
+      "id": "tech_00611",
+      "type": "technique",
+      "surface_form": "Unit cell size filtering"
+    },
+    {
+      "id": "tech_00613",
+      "type": "technique",
+      "surface_form": "q-grid and k-grid convergence"
+    },
+    {
+      "id": "tech_00618",
+      "type": "technique",
+      "surface_form": "Convex hull distance filtering"
+    },
+    {
+      "id": "tech_00619",
+      "type": "technique",
+      "surface_form": "Voigt-Reuss-Hill averaging"
+    },
+    {
+      "id": "tech_00620",
+      "type": "technique",
+      "surface_form": "Vicker's hardness estimation"
+    },
+    {
+      "id": "tech_00621",
+      "type": "technique",
+      "surface_form": "Machine-learning assisted data mining"
+    },
+    {
+      "id": "tech_00623",
+      "type": "technique",
+      "surface_form": "Prototype diversity sampling"
+    },
+    {
+      "id": "tech_00631",
+      "type": "technique",
+      "surface_form": "NKPPRA-based k-point sampling"
+    },
+    {
+      "id": "tech_00632",
+      "type": "technique",
+      "surface_form": "High-symmetry path sampling"
+    },
+    {
+      "id": "tech_00637",
+      "type": "technique",
+      "surface_form": "high-throughput calculations"
+    },
+    {
+      "id": "tech_00642",
+      "type": "technique",
+      "surface_form": "DBS-to-RMM-DIIS switching"
+    },
+    {
+      "id": "tech_00647",
+      "type": "technique",
+      "surface_form": "DOS energy window selection"
+    },
+    {
+      "id": "tech_00648",
+      "type": "technique",
+      "surface_form": "Band structure energy window selection"
+    },
+    {
+      "id": "tech_00649",
+      "type": "technique",
+      "surface_form": "Ecut scaling factor"
+    },
+    {
+      "id": "tech_00654",
+      "type": "technique",
+      "surface_form": "Reciprocal lattice grid spacing"
+    },
+    {
+      "id": "tech_00690",
+      "type": "technique",
+      "surface_form": "Interquartile range outlier filtering"
+    },
+    {
+      "id": "tech_00692",
+      "type": "technique",
+      "surface_form": "Maximum bond variation check"
+    },
+    {
+      "id": "tech_00693",
+      "type": "technique",
+      "surface_form": "Batch size adjustment"
+    },
+    {
+      "id": "tech_00694",
+      "type": "technique",
+      "surface_form": "Self-consistent training"
+    },
+    {
+      "id": "tech_00697",
+      "type": "technique",
+      "surface_form": "NVE ensemble sampling"
+    },
+    {
+      "id": "tech_00699",
+      "type": "technique",
+      "surface_form": "iterative configuration addition"
+    },
+    {
+      "id": "tech_00701",
+      "type": "technique",
+      "surface_form": "Species-resolved mean squared displacement"
+    },
+    {
+      "id": "tech_00703",
+      "type": "technique",
+      "surface_form": "Training set augmentation via intermediate MD"
+    },
+    {
+      "id": "tech_00704",
+      "type": "technique",
+      "surface_form": "Outlier detection in training loops"
+    },
+    {
+      "id": "tech_00895",
+      "type": "technique",
+      "surface_form": "Sparse representation"
+    },
+    {
+      "id": "tech_00901",
+      "type": "technique",
+      "surface_form": "CUR sparsification"
+    },
+    {
+      "id": "tech_00902",
+      "type": "technique",
+      "surface_form": "Uniform grid sparsification"
+    },
+    {
+      "id": "tech_00903",
+      "type": "technique",
+      "surface_form": "Iterative database extension"
+    },
+    {
+      "id": "tech_00907",
+      "type": "technique",
+      "surface_form": "Random displacement test"
+    },
+    {
+      "id": "tech_00910",
+      "type": "technique",
+      "surface_form": "Cumulative error distribution analysis"
+    },
+    {
+      "id": "tech_00912",
+      "type": "technique",
+      "surface_form": "Franzblau shortest-path algorithm"
+    },
+    {
+      "id": "tech_00919",
+      "type": "technique",
+      "surface_form": "snapshot extraction at multiple time points"
+    },
+    {
+      "id": "tech_00920",
+      "type": "technique",
+      "surface_form": "MD quenches"
+    },
+    {
+      "id": "tech_00926",
+      "type": "technique",
+      "surface_form": "Lattice parameter scaling"
+    },
+    {
+      "id": "tech_00927",
+      "type": "technique",
+      "surface_form": "Random atomic displacement"
+    },
+    {
+      "id": "tech_00928",
+      "type": "technique",
+      "surface_form": "Random angle perturbation"
+    },
+    {
+      "id": "tech_00930",
+      "type": "technique",
+      "surface_form": "Dimer/trimer data inclusion"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 5,
+    "claim": 18,
+    "component": 43,
+    "dataset": 5,
+    "future_topic": 7,
+    "method": 46,
+    "metric": 4,
+    "problem": 52,
+    "task": 31,
+    "technique": 139
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00312",
+      "relation_type": "presents",
+      "members": [
+        "arti_00042",
+        "meth_00307"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_00917",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00311"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00920",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00314"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00924",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00318"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00925",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00319"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00926",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00320"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00928",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00322"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00929",
+      "relation_type": "claims",
+      "members": [
+        "arti_00042",
+        "meth_00307",
+        "clai_00323"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5445,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "existential",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "learning",
+  "representative_ids": [
+    "tech_00023",
+    "comp_00367"
+  ]
+}

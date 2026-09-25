@@ -1,0 +1,17 @@
+# Frozen before outcomes: wider structural evidence access; no neural reranker.
+data_dir: data/data
+output: artifacts/full
+v2_output: artifacts/evaluation
+conditioned_output: artifacts/evaluation/conditioned
+constraint_config: configs/constraints.yaml
+conditioned_cutoffs: [2025, 2026]
+conditioned_verify_history: true
+conditioned_evidence_top_k: 3
+conditioned_pool_caps:
+  direct_claims: 20
+  explicit_mentions: 20
+  task_problem: 15
+  technical: 15
+  dataset: 10
+  article: 10
+  path_evidence: 10

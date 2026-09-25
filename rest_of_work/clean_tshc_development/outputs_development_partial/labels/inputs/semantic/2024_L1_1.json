@@ -1,0 +1,233 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00005",
+      "type": "article",
+      "surface_form": "General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+    },
+    {
+      "id": "arti_00041",
+      "type": "article",
+      "surface_form": "EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+    },
+    {
+      "id": "cite_00258",
+      "type": "cited_work",
+      "surface_form": "e(3)-equivariant Hamiltonian parameterization"
+    },
+    {
+      "id": "clai_00186",
+      "type": "claim",
+      "surface_form": "Using higher-order E(3)-equivariant representations (increasing rotation order from l=0 to l=1 and up to l=3) consistently reduces prediction error and improves accuracy across all evaluated tasks."
+    },
+    {
+      "id": "clai_00188",
+      "type": "claim",
+      "surface_form": "The equivariant architecture scales linearly with the number of atoms because convolutions are limited to a local cutoff radius."
+    },
+    {
+      "id": "clai_00383",
+      "type": "claim",
+      "surface_form": "The use of a local‑coordinate message‑passing (LCMP) layer is critical for achieving high prediction accuracy of rotation‑covariant Hamiltonian blocks."
+    },
+    {
+      "id": "clai_00487",
+      "type": "claim",
+      "surface_form": "The number of force components in the initial training set is more important than total configurations for obtaining generalizable models."
+    },
+    {
+      "id": "clai_00578",
+      "type": "claim",
+      "surface_form": "DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling."
+    },
+    {
+      "id": "clai_00586",
+      "type": "claim",
+      "surface_form": "The equivariant architecture handles spin‑orbital Hamiltonians by separating real and imaginary components and applying a change‑of‑basis for half‑integer representations, thereby preserving equivariance without requiring complex‑valued network layers."
+    },
+    {
+      "id": "clai_00602",
+      "type": "claim",
+      "surface_form": "MACE evaluates roughly ten times faster than prior force‑field models for invariant (L=0) architectures and 4–5 times faster for equivariant (L=1,2) architectures, while delivering lower prediction errors."
+    },
+    {
+      "id": "comp_00035",
+      "type": "component",
+      "surface_form": "Equivariant tensor‑product layer on nodes"
+    },
+    {
+      "id": "comp_00062",
+      "type": "component",
+      "surface_form": "Symmetry‑aware E(3)‑equivariant GNN energy model"
+    },
+    {
+      "id": "comp_00070",
+      "type": "component",
+      "surface_form": "E(3)-equivariant GNN architecture"
+    },
+    {
+      "id": "comp_00164",
+      "type": "component",
+      "surface_form": "E(3)-equivariant convolution"
+    },
+    {
+      "id": "comp_00167",
+      "type": "component",
+      "surface_form": "Equivariant SiLU‑based gate"
+    },
+    {
+      "id": "comp_00226",
+      "type": "component",
+      "surface_form": "E(3)×{I,T} equivariant neural network architecture"
+    },
+    {
+      "id": "futu_00098",
+      "type": "future_topic",
+      "surface_form": "Gauge‑covariant neural network architectures"
+    },
+    {
+      "id": "futu_00157",
+      "type": "future_topic",
+      "surface_form": "Extension of E(3)‑equivariant neural networks to capture DeepH’s small‑to‑large scale learning capability"
+    },
+    {
+      "id": "meth_00112",
+      "type": "method",
+      "surface_form": "Equivariant Transformers"
+    },
+    {
+      "id": "meth_00122",
+      "type": "method",
+      "surface_form": "Equivariant message passing"
+    },
+    {
+      "id": "meth_00199",
+      "type": "method",
+      "surface_form": "deep equivariant neural network method"
+    },
+    {
+      "id": "meth_00202",
+      "type": "method",
+      "surface_form": "e(3)-equivariant Hamiltonian parameterization"
+    },
+    {
+      "id": "meth_00203",
+      "type": "method",
+      "surface_form": "Equivariant representations for atomistic dynamics"
+    },
+    {
+      "id": "meth_00237",
+      "type": "method",
+      "surface_form": "equivariant message passing neural networks"
+    },
+    {
+      "id": "meth_00414",
+      "type": "method",
+      "surface_form": "Scalable EquiVariance-Enabled Neural NETwork"
+    },
+    {
+      "id": "prob_00023",
+      "type": "problem",
+      "surface_form": "High computational cost of equivariant MPNNs"
+    },
+    {
+      "id": "prob_00028",
+      "type": "problem",
+      "surface_form": "E(3) equivariance with spin‑orbit coupling"
+    },
+    {
+      "id": "prob_00091",
+      "type": "problem",
+      "surface_form": "Lack of rotational equivariance in existing GNN‑IPs"
+    },
+    {
+      "id": "prob_00123",
+      "type": "problem",
+      "surface_form": "Permutation and rotation invariance"
+    },
+    {
+      "id": "prob_00137",
+      "type": "problem",
+      "surface_form": "Rotation/gauge covariance of Hamiltonian matrices"
+    },
+    {
+      "id": "prob_00141",
+      "type": "problem",
+      "surface_form": "Handling rotation covariance in electronic properties"
+    },
+    {
+      "id": "prob_00238",
+      "type": "problem",
+      "surface_form": "computational complexity bottleneck in equivariant GNNs"
+    },
+    {
+      "id": "prob_00239",
+      "type": "problem",
+      "surface_form": "scaling equivariant Transformers to higher-degree representations"
+    },
+    {
+      "id": "prob_00258",
+      "type": "problem",
+      "surface_form": "Overfitting in high-degree equivariant models"
+    },
+    {
+      "id": "task_00326",
+      "type": "task",
+      "surface_form": "equivariant deep learning"
+    },
+    {
+      "id": "tech_00120",
+      "type": "technique",
+      "surface_form": "Equivariant message passing"
+    },
+    {
+      "id": "tech_00121",
+      "type": "technique",
+      "surface_form": "Equivariant normalization"
+    },
+    {
+      "id": "tech_00122",
+      "type": "technique",
+      "surface_form": "Gate‑based equivariant nonlinearity"
+    },
+    {
+      "id": "tech_00124",
+      "type": "technique",
+      "surface_form": "E(3)-equivariant neural network"
+    },
+    {
+      "id": "tech_00139",
+      "type": "technique",
+      "surface_form": "E(3) equivariance"
+    },
+    {
+      "id": "tech_00451",
+      "type": "technique",
+      "surface_form": "Higher-degree equivariant representations"
+    },
+    {
+      "id": "tech_00534",
+      "type": "technique",
+      "surface_form": "Euclidean equivariant convolutions"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 2,
+    "cited_work": 1,
+    "claim": 7,
+    "component": 6,
+    "future_topic": 2,
+    "method": 7,
+    "problem": 9,
+    "task": 1,
+    "technique": 7
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "equivariant",
+  "representative_ids": [
+    "tech_00451",
+    "tech_00124"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00339",
+      "type": "component",
+      "surface_form": "CFID"
+    },
+    {
+      "id": "comp_00356",
+      "type": "component",
+      "surface_form": "CFID descriptor set"
+    },
+    {
+      "id": "comp_00798",
+      "type": "component",
+      "surface_form": "Two-body descriptor"
+    },
+    {
+      "id": "comp_00799",
+      "type": "component",
+      "surface_form": "Three-body descriptor"
+    },
+    {
+      "id": "comp_00800",
+      "type": "component",
+      "surface_form": "Many-body descriptor"
+    },
+    {
+      "id": "comp_00801",
+      "type": "component",
+      "surface_form": "Hierarchical descriptor set"
+    },
+    {
+      "id": "comp_00803",
+      "type": "component",
+      "surface_form": "2-body descriptor"
+    },
+    {
+      "id": "comp_00804",
+      "type": "component",
+      "surface_form": "3-body descriptor"
+    },
+    {
+      "id": "comp_00809",
+      "type": "component",
+      "surface_form": "3b descriptor"
+    },
+    {
+      "id": "comp_00810",
+      "type": "component",
+      "surface_form": "MB descriptor"
+    },
+    {
+      "id": "comp_00813",
+      "type": "component",
+      "surface_form": "Two-body plus three-body descriptors"
+    },
+    {
+      "id": "comp_00815",
+      "type": "component",
+      "surface_form": "angle descriptor"
+    },
+    {
+      "id": "tech_00909",
+      "type": "technique",
+      "surface_form": "Hierarchical descriptor combination"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 12,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "descriptor",
+  "representative_ids": [
+    "comp_00804",
+    "comp_00799"
+  ]
+}

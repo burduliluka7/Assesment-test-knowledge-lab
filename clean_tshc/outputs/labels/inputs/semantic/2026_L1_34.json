@@ -1,0 +1,606 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "clai_00159",
+      "type": "claim",
+      "surface_form": "FP32 precision is 0.5x to 2x faster than FP64 precision in nearly all tested systems while demonstrating similar validation errors."
+    },
+    {
+      "id": "clai_00171",
+      "type": "claim",
+      "surface_form": "Biased train-test splitting strategies including cluster, maximal separation, size, and random splits enable rigorous benchmarking by explicitly testing model performance in significantly different regions of chemical space."
+    },
+    {
+      "id": "clai_00173",
+      "type": "claim",
+      "surface_form": "MACE without long-range correction does not generalize well to out-of-distribution samples, while integration of long-range correction schemes has significant effects on both MACE and Allegro architectures."
+    },
+    {
+      "id": "clai_00322",
+      "type": "claim",
+      "surface_form": "Matbench provides a consistent evaluation framework using five-fold nested cross-validation on identical folds across all algorithms to minimize comparison bias, with datasets pre-cleaned to remove unphysical computed data and task-irrelevant experimental data."
+    },
+    {
+      "id": "clai_00467",
+      "type": "claim",
+      "surface_form": "Architecture modifications reduced SevenNet-0 total model parameters from 16.24 million (GNoME) to 0.84 million."
+    },
+    {
+      "id": "clai_00468",
+      "type": "claim",
+      "surface_form": "SevenNet exhibits nearly ideal strong-scaling performance as long as GPUs are fully utilized."
+    },
+    {
+      "id": "clai_00469",
+      "type": "claim",
+      "surface_form": "Strong-scaling performance significantly declines with suboptimal GPU utilization, particularly for lightweight models or simulations with small numbers of atoms."
+    },
+    {
+      "id": "clai_00631",
+      "type": "claim",
+      "surface_form": "A novel two-stage training schedule with BF16 pre-training followed by FP32 fine-tuning recovers the 20-50% accuracy loss from BF16 precision alone while enabling efficient training."
+    },
+    {
+      "id": "comp_00105",
+      "type": "component",
+      "surface_form": "High‑throughput screening pipeline"
+    },
+    {
+      "id": "comp_00144",
+      "type": "component",
+      "surface_form": "Batch‑wise OOD test set"
+    },
+    {
+      "id": "comp_00146",
+      "type": "component",
+      "surface_form": "WBM test‑set generation pipeline"
+    },
+    {
+      "id": "comp_00308",
+      "type": "component",
+      "surface_form": "Visual warning system"
+    },
+    {
+      "id": "comp_00318",
+      "type": "component",
+      "surface_form": "Brute‑force screening module"
+    },
+    {
+      "id": "comp_00344",
+      "type": "component",
+      "surface_form": "SLME screening module"
+    },
+    {
+      "id": "comp_00403",
+      "type": "component",
+      "surface_form": "OOD-Composition split"
+    },
+    {
+      "id": "comp_00578",
+      "type": "component",
+      "surface_form": "Error correction system"
+    },
+    {
+      "id": "comp_00597",
+      "type": "component",
+      "surface_form": "Pretrained MLIP checkpoint"
+    },
+    {
+      "id": "comp_00660",
+      "type": "component",
+      "surface_form": "Train/validation/test splits"
+    },
+    {
+      "id": "comp_00688",
+      "type": "component",
+      "surface_form": "Biased split methods"
+    },
+    {
+      "id": "comp_00694",
+      "type": "component",
+      "surface_form": "Cluster split method"
+    },
+    {
+      "id": "comp_00695",
+      "type": "component",
+      "surface_form": "Maximal separation split method"
+    },
+    {
+      "id": "comp_00849",
+      "type": "component",
+      "surface_form": "Two-cluster separation scheme"
+    },
+    {
+      "id": "data_00143",
+      "type": "dataset",
+      "surface_form": "AIMD transferability test"
+    },
+    {
+      "id": "meth_00404",
+      "type": "method",
+      "surface_form": "OMol25 benchmark"
+    },
+    {
+      "id": "prob_00005",
+      "type": "problem",
+      "surface_form": "Computational efficiency"
+    },
+    {
+      "id": "prob_00008",
+      "type": "problem",
+      "surface_form": "Data scarcity"
+    },
+    {
+      "id": "prob_00010",
+      "type": "problem",
+      "surface_form": "Computational cost reduction"
+    },
+    {
+      "id": "prob_00011",
+      "type": "problem",
+      "surface_form": "Computational efficiency at scale"
+    },
+    {
+      "id": "prob_00024",
+      "type": "problem",
+      "surface_form": "Poor scalability / limited parallelisation"
+    },
+    {
+      "id": "prob_00086",
+      "type": "problem",
+      "surface_form": "Reduction of false positives in early‑stage screening"
+    },
+    {
+      "id": "prob_00173",
+      "type": "problem",
+      "surface_form": "Manual management of large calculation campaigns"
+    },
+    {
+      "id": "prob_00184",
+      "type": "problem",
+      "surface_form": "Reduction of computational cost for exhaustive search"
+    },
+    {
+      "id": "prob_00187",
+      "type": "problem",
+      "surface_form": "Transferability across composition, temperature, and supercell size"
+    },
+    {
+      "id": "prob_00236",
+      "type": "problem",
+      "surface_form": "Train-test data leakage"
+    },
+    {
+      "id": "prob_00237",
+      "type": "problem",
+      "surface_form": "Functional accuracy limitations"
+    },
+    {
+      "id": "prob_00251",
+      "type": "problem",
+      "surface_form": "Speed-accuracy trade-off"
+    },
+    {
+      "id": "prob_00262",
+      "type": "problem",
+      "surface_form": "Overfitting with higher spherical harmonic degrees"
+    },
+    {
+      "id": "prob_00276",
+      "type": "problem",
+      "surface_form": "Computational cost vs accuracy tradeoff"
+    },
+    {
+      "id": "prob_00283",
+      "type": "problem",
+      "surface_form": "Computational efficiency vs. performance trade-off"
+    },
+    {
+      "id": "prob_00287",
+      "type": "problem",
+      "surface_form": "High-throughput screening bottleneck"
+    },
+    {
+      "id": "prob_00336",
+      "type": "problem",
+      "surface_form": "Power wall bottleneck"
+    },
+    {
+      "id": "prob_00337",
+      "type": "problem",
+      "surface_form": "Multi-device scalability"
+    },
+    {
+      "id": "prob_00338",
+      "type": "problem",
+      "surface_form": "Installation complexity"
+    },
+    {
+      "id": "prob_00351",
+      "type": "problem",
+      "surface_form": "hardware performance variability"
+    },
+    {
+      "id": "prob_00354",
+      "type": "problem",
+      "surface_form": "poor generalization error in high-throughput searches"
+    },
+    {
+      "id": "prob_00368",
+      "type": "problem",
+      "surface_form": "Memory and storage requirements"
+    },
+    {
+      "id": "prob_00369",
+      "type": "problem",
+      "surface_form": "Computational costs"
+    },
+    {
+      "id": "prob_00375",
+      "type": "problem",
+      "surface_form": "Calculation failure handling"
+    },
+    {
+      "id": "prob_00390",
+      "type": "problem",
+      "surface_form": "Transfer to new downstream tasks"
+    },
+    {
+      "id": "prob_00398",
+      "type": "problem",
+      "surface_form": "Inefficient enumeration of reduced formulas"
+    },
+    {
+      "id": "prob_00407",
+      "type": "problem",
+      "surface_form": "Label leakage prevention"
+    },
+    {
+      "id": "prob_00423",
+      "type": "problem",
+      "surface_form": "Insufficient functional form complexity"
+    },
+    {
+      "id": "prob_00429",
+      "type": "problem",
+      "surface_form": "Limited transferability"
+    },
+    {
+      "id": "prob_00462",
+      "type": "problem",
+      "surface_form": "Overfitting from compensatory short-range adjustments"
+    },
+    {
+      "id": "prob_00467",
+      "type": "problem",
+      "surface_form": "Overfitting from increased message passing"
+    },
+    {
+      "id": "prob_00497",
+      "type": "problem",
+      "surface_form": "Physical constraint enforcement overhead"
+    },
+    {
+      "id": "prob_00507",
+      "type": "problem",
+      "surface_form": "Non-uniform computational budget"
+    },
+    {
+      "id": "prob_00511",
+      "type": "problem",
+      "surface_form": "Accuracy-speed tradeoff"
+    },
+    {
+      "id": "prob_00524",
+      "type": "problem",
+      "surface_form": "Cross-domain transferability"
+    },
+    {
+      "id": "prob_00533",
+      "type": "problem",
+      "surface_form": "Computational speed"
+    },
+    {
+      "id": "prob_00539",
+      "type": "problem",
+      "surface_form": "GPU memory scalability"
+    },
+    {
+      "id": "prob_00553",
+      "type": "problem",
+      "surface_form": "Computational cost vs model size tradeoff"
+    },
+    {
+      "id": "prob_00565",
+      "type": "problem",
+      "surface_form": "Task specialization requirement"
+    },
+    {
+      "id": "prob_00566",
+      "type": "problem",
+      "surface_form": "Capacity-efficiency tradeoff"
+    },
+    {
+      "id": "prob_00569",
+      "type": "problem",
+      "surface_form": "Memory constraints for large MoLE models"
+    },
+    {
+      "id": "prob_00597",
+      "type": "problem",
+      "surface_form": "Force locality quantification"
+    },
+    {
+      "id": "prob_00599",
+      "type": "problem",
+      "surface_form": "Accuracy limit determination"
+    },
+    {
+      "id": "task_00053",
+      "type": "task",
+      "surface_form": "Benchmark evaluation on rMD17"
+    },
+    {
+      "id": "task_00054",
+      "type": "task",
+      "surface_form": "Benchmark evaluation on 3BPA"
+    },
+    {
+      "id": "task_00055",
+      "type": "task",
+      "surface_form": "Benchmark evaluation on AcAc"
+    },
+    {
+      "id": "task_00160",
+      "type": "task",
+      "surface_form": "force‑field benchmarking on MD17 datasets"
+    },
+    {
+      "id": "task_00338",
+      "type": "task",
+      "surface_form": "ML method benchmarking"
+    },
+    {
+      "id": "task_00464",
+      "type": "task",
+      "surface_form": "Design optimization"
+    },
+    {
+      "id": "task_00545",
+      "type": "task",
+      "surface_form": "Structure optimization"
+    },
+    {
+      "id": "task_00607",
+      "type": "task",
+      "surface_form": "SiO2 benchmark tests"
+    },
+    {
+      "id": "task_00618",
+      "type": "task",
+      "surface_form": "GPU performance benchmarking"
+    },
+    {
+      "id": "task_00698",
+      "type": "task",
+      "surface_form": "Locality testing"
+    },
+    {
+      "id": "tech_00011",
+      "type": "technique",
+      "surface_form": "5-fold cross-validation"
+    },
+    {
+      "id": "tech_00025",
+      "type": "technique",
+      "surface_form": "Activation checkpointing"
+    },
+    {
+      "id": "tech_00029",
+      "type": "technique",
+      "surface_form": "Leave-one-out cross-validation"
+    },
+    {
+      "id": "tech_00043",
+      "type": "technique",
+      "surface_form": "Leave‑One‑Out cross‑validation"
+    },
+    {
+      "id": "tech_00066",
+      "type": "technique",
+      "surface_form": "GPU acceleration"
+    },
+    {
+      "id": "tech_00068",
+      "type": "technique",
+      "surface_form": "k‑fold cross‑validation"
+    },
+    {
+      "id": "tech_00078",
+      "type": "technique",
+      "surface_form": "Distributed data parallel"
+    },
+    {
+      "id": "tech_00080",
+      "type": "technique",
+      "surface_form": "10‑fold cross‑validation"
+    },
+    {
+      "id": "tech_00103",
+      "type": "technique",
+      "surface_form": "High‑throughput screening"
+    },
+    {
+      "id": "tech_00201",
+      "type": "technique",
+      "surface_form": "Batch‑wise out‑of‑distribution testing"
+    },
+    {
+      "id": "tech_00206",
+      "type": "technique",
+      "surface_form": "Model‑committee error screening"
+    },
+    {
+      "id": "tech_00342",
+      "type": "technique",
+      "surface_form": "Penalty constraint handling"
+    },
+    {
+      "id": "tech_00358",
+      "type": "technique",
+      "surface_form": "Error‑handler auto‑resubmit"
+    },
+    {
+      "id": "tech_00400",
+      "type": "technique",
+      "surface_form": "Multi‑threaded parallel execution"
+    },
+    {
+      "id": "tech_00416",
+      "type": "technique",
+      "surface_form": "Prototype-based splitting"
+    },
+    {
+      "id": "tech_00472",
+      "type": "technique",
+      "surface_form": "Nested cross-validation"
+    },
+    {
+      "id": "tech_00476",
+      "type": "technique",
+      "surface_form": "Five-fold nested cross validation"
+    },
+    {
+      "id": "tech_00477",
+      "type": "technique",
+      "surface_form": "Stratified cross validation"
+    },
+    {
+      "id": "tech_00478",
+      "type": "technique",
+      "surface_form": "Mean imputation"
+    },
+    {
+      "id": "tech_00487",
+      "type": "technique",
+      "surface_form": "Unknown value imputation"
+    },
+    {
+      "id": "tech_00491",
+      "type": "technique",
+      "surface_form": "Nested Cross Validation"
+    },
+    {
+      "id": "tech_00499",
+      "type": "technique",
+      "surface_form": "Grouped cross-validation"
+    },
+    {
+      "id": "tech_00500",
+      "type": "technique",
+      "surface_form": "Leave-one-cluster-out CV"
+    },
+    {
+      "id": "tech_00507",
+      "type": "technique",
+      "surface_form": "High-throughput screening workflow"
+    },
+    {
+      "id": "tech_00523",
+      "type": "technique",
+      "surface_form": "Confusion matrix analysis"
+    },
+    {
+      "id": "tech_00559",
+      "type": "technique",
+      "surface_form": "GPU-accelerated custom operators"
+    },
+    {
+      "id": "tech_00581",
+      "type": "technique",
+      "surface_form": "On-chip parameter storage"
+    },
+    {
+      "id": "tech_00663",
+      "type": "technique",
+      "surface_form": "Fine-tuning from pretrained checkpoint"
+    },
+    {
+      "id": "tech_00678",
+      "type": "technique",
+      "surface_form": "Composition-based train/test splitting"
+    },
+    {
+      "id": "tech_00734",
+      "type": "technique",
+      "surface_form": "GPU-parallelized training optimization"
+    },
+    {
+      "id": "tech_00756",
+      "type": "technique",
+      "surface_form": "Error function screening"
+    },
+    {
+      "id": "tech_00772",
+      "type": "technique",
+      "surface_form": "Stratified dataset splitting"
+    },
+    {
+      "id": "tech_00782",
+      "type": "technique",
+      "surface_form": "Multi-GPU parallelization"
+    },
+    {
+      "id": "tech_00803",
+      "type": "technique",
+      "surface_form": "fixed-size testing"
+    },
+    {
+      "id": "tech_00804",
+      "type": "technique",
+      "surface_form": "scalable parallel algorithm"
+    },
+    {
+      "id": "tech_00859",
+      "type": "technique",
+      "surface_form": "Mixed precision evaluation"
+    },
+    {
+      "id": "tech_00873",
+      "type": "technique",
+      "surface_form": "Fully-sharded data parallelism"
+    },
+    {
+      "id": "tech_00886",
+      "type": "technique",
+      "surface_form": "Fully-sharded data parallel"
+    },
+    {
+      "id": "tech_00910",
+      "type": "technique",
+      "surface_form": "Cumulative error distribution analysis"
+    },
+    {
+      "id": "tech_00936",
+      "type": "technique",
+      "surface_form": "Five-fold cross-validation"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 8,
+    "component": 14,
+    "dataset": 1,
+    "method": 1,
+    "problem": 43,
+    "task": 10,
+    "technique": 40
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "cross",
+  "representative_ids": [
+    "prob_00005",
+    "prob_00237"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00221",
+      "type": "component",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "comp_00816",
+      "type": "component",
+      "surface_form": "SOAP descriptor with sparse points"
+    },
+    {
+      "id": "comp_00822",
+      "type": "component",
+      "surface_form": "SOAP sparse points"
+    },
+    {
+      "id": "meth_00197",
+      "type": "method",
+      "surface_form": "SOAP kernel"
+    },
+    {
+      "id": "meth_00434",
+      "type": "method",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "tech_00260",
+      "type": "technique",
+      "surface_form": "SOAP descriptor construction"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 3,
+    "method": 2,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "soap",
+  "representative_ids": [
+    "meth_00434",
+    "comp_00816"
+  ]
+}

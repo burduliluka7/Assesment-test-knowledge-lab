@@ -1,0 +1,933 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "clai_00031",
+      "type": "claim",
+      "surface_form": "The meta‑GGA TBmBJ potential predicts band gaps with accuracy comparable to the hybrid HSE06 functional while requiring up to ten times less computational effort."
+    },
+    {
+      "id": "clai_00410",
+      "type": "claim",
+      "surface_form": "ML can accelerate the solution of inverse problems by providing direct design solutions without requiring traditional iterative optimization processes."
+    },
+    {
+      "id": "clai_00445",
+      "type": "claim",
+      "surface_form": "Distillation from conservative models resolves direct models' tendency to overfit to forces and struggle with second- and third-order PES derivatives when trained on mpa datasets."
+    },
+    {
+      "id": "clai_00447",
+      "type": "claim",
+      "surface_form": "Graph construction routines can dominate runtime for state-of-the-art MLIPs, requiring efficient off-the-shelf solutions for extreme scalability."
+    },
+    {
+      "id": "clai_00486",
+      "type": "claim",
+      "surface_form": "For LLZO, results are quite insensitive to the choice of cell volume (NPT equilibrated vs experimental cif-file values) for producing the initial training set."
+    },
+    {
+      "id": "comp_00007",
+      "type": "component",
+      "surface_form": "Hyperparameters"
+    },
+    {
+      "id": "comp_00017",
+      "type": "component",
+      "surface_form": "Multiple towers"
+    },
+    {
+      "id": "comp_00030",
+      "type": "component",
+      "surface_form": "GRU vertex update"
+    },
+    {
+      "id": "comp_00129",
+      "type": "component",
+      "surface_form": "Gradient‑parameter inference via grid search"
+    },
+    {
+      "id": "comp_00140",
+      "type": "component",
+      "surface_form": "Convex‑hull distance target"
+    },
+    {
+      "id": "comp_00149",
+      "type": "component",
+      "surface_form": "Convex‑hull distance classification analysis"
+    },
+    {
+      "id": "comp_00160",
+      "type": "component",
+      "surface_form": "Coordinate‑free Wyckoff position encoding"
+    },
+    {
+      "id": "comp_00163",
+      "type": "component",
+      "surface_form": "Voronoi tessellation features"
+    },
+    {
+      "id": "comp_00180",
+      "type": "component",
+      "surface_form": "Human‑in‑the‑Loop (HITL) Workflow"
+    },
+    {
+      "id": "comp_00313",
+      "type": "component",
+      "surface_form": "Genetic‑algorithm‑driven inverse design"
+    },
+    {
+      "id": "comp_00342",
+      "type": "component",
+      "surface_form": "Automatic k‑point convergence protocol"
+    },
+    {
+      "id": "comp_00371",
+      "type": "component",
+      "surface_form": "Supercell generation"
+    },
+    {
+      "id": "comp_00382",
+      "type": "component",
+      "surface_form": "CrystalNN fingerprint"
+    },
+    {
+      "id": "comp_00393",
+      "type": "component",
+      "surface_form": "Interstitial‑site topological search"
+    },
+    {
+      "id": "comp_00584",
+      "type": "component",
+      "surface_form": "Dual grid technique"
+    },
+    {
+      "id": "comp_00776",
+      "type": "component",
+      "surface_form": "Precomputed weight mechanism"
+    },
+    {
+      "id": "comp_00778",
+      "type": "component",
+      "surface_form": "Pre-merge weights mechanism"
+    },
+    {
+      "id": "comp_00833",
+      "type": "component",
+      "surface_form": "86-feature materials fingerprint"
+    },
+    {
+      "id": "comp_00846",
+      "type": "component",
+      "surface_form": "Material fingerprints"
+    },
+    {
+      "id": "data_00058",
+      "type": "dataset",
+      "surface_form": "MoS₂ 35×35 supercell"
+    },
+    {
+      "id": "data_00135",
+      "type": "dataset",
+      "surface_form": "Volume prediction dataset"
+    },
+    {
+      "id": "data_00245",
+      "type": "dataset",
+      "surface_form": "MoS₂ 35×35 supercell (efficiency test)"
+    },
+    {
+      "id": "futu_00062",
+      "type": "future_topic",
+      "surface_form": "Standard parameter values for k-point grid density"
+    },
+    {
+      "id": "meth_00007",
+      "type": "method",
+      "surface_form": "Genetic Algorithms"
+    },
+    {
+      "id": "meth_00025",
+      "type": "method",
+      "surface_form": "Self-DIstillation with NO labels"
+    },
+    {
+      "id": "meth_00027",
+      "type": "method",
+      "surface_form": "Oriented FAST and Rotated BRIEF"
+    },
+    {
+      "id": "meth_00045",
+      "type": "method",
+      "surface_form": "Neural fingerprint"
+    },
+    {
+      "id": "meth_00097",
+      "type": "method",
+      "surface_form": "Monkhorst-Pack k-point sampling"
+    },
+    {
+      "id": "meth_00127",
+      "type": "method",
+      "surface_form": "trajectory reweighting"
+    },
+    {
+      "id": "meth_00136",
+      "type": "method",
+      "surface_form": "pinball model"
+    },
+    {
+      "id": "meth_00160",
+      "type": "method",
+      "surface_form": "One-shot predictor"
+    },
+    {
+      "id": "meth_00164",
+      "type": "method",
+      "surface_form": "Voronoi RF"
+    },
+    {
+      "id": "meth_00186",
+      "type": "method",
+      "surface_form": "GGA+U"
+    },
+    {
+      "id": "meth_00234",
+      "type": "method",
+      "surface_form": "Voronoi tessellation"
+    },
+    {
+      "id": "meth_00240",
+      "type": "method",
+      "surface_form": "conditional normalizing flow"
+    },
+    {
+      "id": "meth_00244",
+      "type": "method",
+      "surface_form": "Force-Guided Bridge Matching"
+    },
+    {
+      "id": "meth_00270",
+      "type": "method",
+      "surface_form": "Convex hull stability analysis"
+    },
+    {
+      "id": "meth_00296",
+      "type": "method",
+      "surface_form": "DeNS"
+    },
+    {
+      "id": "meth_00316",
+      "type": "method",
+      "surface_form": "Voronoi decomposition"
+    },
+    {
+      "id": "meth_00374",
+      "type": "method",
+      "surface_form": "ab initio random structure searching"
+    },
+    {
+      "id": "meth_00412",
+      "type": "method",
+      "surface_form": "Euclidean Rotary Positional Encoding"
+    },
+    {
+      "id": "meth_00425",
+      "type": "method",
+      "surface_form": "Graph Parallelism"
+    },
+    {
+      "id": "metr_00048",
+      "type": "metric",
+      "surface_form": "matching structures"
+    },
+    {
+      "id": "prob_00018",
+      "type": "problem",
+      "surface_form": "Learning from graph topology without handcrafted descriptors"
+    },
+    {
+      "id": "prob_00186",
+      "type": "problem",
+      "surface_form": "Limited spatiotemporal scale of conventional MD"
+    },
+    {
+      "id": "prob_00189",
+      "type": "problem",
+      "surface_form": "Generating long‑time trajectories from short AIMD data"
+    },
+    {
+      "id": "prob_00220",
+      "type": "problem",
+      "surface_form": "Identification of interstitial sites"
+    },
+    {
+      "id": "prob_00274",
+      "type": "problem",
+      "surface_form": "Researcher intervention requirement"
+    },
+    {
+      "id": "prob_00301",
+      "type": "problem",
+      "surface_form": "Geometry-barrier prediction independence"
+    },
+    {
+      "id": "prob_00303",
+      "type": "problem",
+      "surface_form": "Complex unit cell input handling"
+    },
+    {
+      "id": "prob_00310",
+      "type": "problem",
+      "surface_form": "Variable-sized unit cell handling"
+    },
+    {
+      "id": "prob_00333",
+      "type": "problem",
+      "surface_form": "Padding zero computation waste"
+    },
+    {
+      "id": "prob_00342",
+      "type": "problem",
+      "surface_form": "multi-species system modeling"
+    },
+    {
+      "id": "prob_00374",
+      "type": "problem",
+      "surface_form": "Local minima trapping in geometry optimization"
+    },
+    {
+      "id": "prob_00383",
+      "type": "problem",
+      "surface_form": "Force accuracy in geometry optimization"
+    },
+    {
+      "id": "prob_00402",
+      "type": "problem",
+      "surface_form": "Graph network prediction instability"
+    },
+    {
+      "id": "prob_00425",
+      "type": "problem",
+      "surface_form": "Limited accessible length and time scales"
+    },
+    {
+      "id": "prob_00489",
+      "type": "problem",
+      "surface_form": "communication overhead in spatial decomposition"
+    },
+    {
+      "id": "prob_00530",
+      "type": "problem",
+      "surface_form": "graph construction runtime bottleneck"
+    },
+    {
+      "id": "prob_00593",
+      "type": "problem",
+      "surface_form": "Nonlinear parameter optimization"
+    },
+    {
+      "id": "task_00013",
+      "type": "task",
+      "surface_form": "geometric deep learning"
+    },
+    {
+      "id": "task_00059",
+      "type": "task",
+      "surface_form": "Topological invariant analysis"
+    },
+    {
+      "id": "task_00107",
+      "type": "task",
+      "surface_form": "Convex‑hull distance regression"
+    },
+    {
+      "id": "task_00283",
+      "type": "task",
+      "surface_form": "Below-hull classification"
+    },
+    {
+      "id": "task_00321",
+      "type": "task",
+      "surface_form": "Radius of gyration (R2) prediction"
+    },
+    {
+      "id": "task_00359",
+      "type": "task",
+      "surface_form": "Geometry prediction"
+    },
+    {
+      "id": "task_00364",
+      "type": "task",
+      "surface_form": "Local geometry comparison"
+    },
+    {
+      "id": "task_00373",
+      "type": "task",
+      "surface_form": "Local geometry prediction"
+    },
+    {
+      "id": "task_00443",
+      "type": "task",
+      "surface_form": "Convex hull distance prediction"
+    },
+    {
+      "id": "task_00455",
+      "type": "task",
+      "surface_form": "Convex hull stability analysis"
+    },
+    {
+      "id": "task_00456",
+      "type": "task",
+      "surface_form": "Unit cell volume prediction"
+    },
+    {
+      "id": "task_00468",
+      "type": "task",
+      "surface_form": "Geometry optimization"
+    },
+    {
+      "id": "task_00508",
+      "type": "task",
+      "surface_form": "Prototype analysis"
+    },
+    {
+      "id": "task_00515",
+      "type": "task",
+      "surface_form": "Experimental structure matching"
+    },
+    {
+      "id": "task_00623",
+      "type": "task",
+      "surface_form": "Convex hull construction"
+    },
+    {
+      "id": "tech_00002",
+      "type": "technique",
+      "surface_form": "prompt engineering"
+    },
+    {
+      "id": "tech_00005",
+      "type": "technique",
+      "surface_form": "Early stopping"
+    },
+    {
+      "id": "tech_00008",
+      "type": "technique",
+      "surface_form": "Fine-tuning"
+    },
+    {
+      "id": "tech_00015",
+      "type": "technique",
+      "surface_form": "Conditional flow matching"
+    },
+    {
+      "id": "tech_00016",
+      "type": "technique",
+      "surface_form": "Zero-shot evaluation"
+    },
+    {
+      "id": "tech_00018",
+      "type": "technique",
+      "surface_form": "Weight tying"
+    },
+    {
+      "id": "tech_00036",
+      "type": "technique",
+      "surface_form": "Zero-shot transfer"
+    },
+    {
+      "id": "tech_00040",
+      "type": "technique",
+      "surface_form": "Chain‑of‑Thought Reasoning"
+    },
+    {
+      "id": "tech_00046",
+      "type": "technique",
+      "surface_form": "Pairwise cosine similarity"
+    },
+    {
+      "id": "tech_00054",
+      "type": "technique",
+      "surface_form": "Human‑in‑the‑Loop"
+    },
+    {
+      "id": "tech_00064",
+      "type": "technique",
+      "surface_form": "Topological sort"
+    },
+    {
+      "id": "tech_00070",
+      "type": "technique",
+      "surface_form": "Distance binning"
+    },
+    {
+      "id": "tech_00084",
+      "type": "technique",
+      "surface_form": "Set2Set pooling"
+    },
+    {
+      "id": "tech_00087",
+      "type": "technique",
+      "surface_form": "Multiple‑tower decomposition"
+    },
+    {
+      "id": "tech_00096",
+      "type": "technique",
+      "surface_form": "Polynomial mutation"
+    },
+    {
+      "id": "tech_00097",
+      "type": "technique",
+      "surface_form": "Hyperparameter tuning"
+    },
+    {
+      "id": "tech_00186",
+      "type": "technique",
+      "surface_form": "Grid search for gradient parameters"
+    },
+    {
+      "id": "tech_00191",
+      "type": "technique",
+      "surface_form": "Genetic algorithm‑driven sparse regression"
+    },
+    {
+      "id": "tech_00214",
+      "type": "technique",
+      "surface_form": "Coordinate‑free Wyckoff encoding"
+    },
+    {
+      "id": "tech_00217",
+      "type": "technique",
+      "surface_form": "Voronoi tessellation feature extraction"
+    },
+    {
+      "id": "tech_00234",
+      "type": "technique",
+      "surface_form": "Three‑body angle graph construction"
+    },
+    {
+      "id": "tech_00275",
+      "type": "technique",
+      "surface_form": "Progressive weighting of loss terms"
+    },
+    {
+      "id": "tech_00281",
+      "type": "technique",
+      "surface_form": "Local coordinate transformation"
+    },
+    {
+      "id": "tech_00293",
+      "type": "technique",
+      "surface_form": "Linear pooling for site‑energy extraction"
+    },
+    {
+      "id": "tech_00295",
+      "type": "technique",
+      "surface_form": "Whitening transformations"
+    },
+    {
+      "id": "tech_00315",
+      "type": "technique",
+      "surface_form": "Orientation‑angle encoding"
+    },
+    {
+      "id": "tech_00322",
+      "type": "technique",
+      "surface_form": "Rule‑based self‑healing"
+    },
+    {
+      "id": "tech_00331",
+      "type": "technique",
+      "surface_form": "Genetic algorithm optimization"
+    },
+    {
+      "id": "tech_00337",
+      "type": "technique",
+      "surface_form": "Genetic‑algorithm optimization"
+    },
+    {
+      "id": "tech_00341",
+      "type": "technique",
+      "surface_form": "Simulated binary crossover"
+    },
+    {
+      "id": "tech_00344",
+      "type": "technique",
+      "surface_form": "Conditional flow matching regression"
+    },
+    {
+      "id": "tech_00349",
+      "type": "technique",
+      "surface_form": "Temperature conditioning of prior and flow model"
+    },
+    {
+      "id": "tech_00354",
+      "type": "technique",
+      "surface_form": "Automatic k‑point convergence"
+    },
+    {
+      "id": "tech_00355",
+      "type": "technique",
+      "surface_form": "Geometry optimization with energy, force, and stress relaxation"
+    },
+    {
+      "id": "tech_00368",
+      "type": "technique",
+      "surface_form": "Automated k‑point and plane‑wave cutoff convergence"
+    },
+    {
+      "id": "tech_00372",
+      "type": "technique",
+      "surface_form": "Topological spillage analysis"
+    },
+    {
+      "id": "tech_00399",
+      "type": "technique",
+      "surface_form": "Gamma‑centered k‑mesh for hexagonal, fcc, rhombohedral lattices"
+    },
+    {
+      "id": "tech_00415",
+      "type": "technique",
+      "surface_form": "GGA/GGA+U mixing corrections"
+    },
+    {
+      "id": "tech_00417",
+      "type": "technique",
+      "surface_form": "DeNS"
+    },
+    {
+      "id": "tech_00427",
+      "type": "technique",
+      "surface_form": "Structure prototype label matching"
+    },
+    {
+      "id": "tech_00460",
+      "type": "technique",
+      "surface_form": "Weight parameterization"
+    },
+    {
+      "id": "tech_00469",
+      "type": "technique",
+      "surface_form": "Linearly decayed loss weighting"
+    },
+    {
+      "id": "tech_00488",
+      "type": "technique",
+      "surface_form": "Categorical feature encoding"
+    },
+    {
+      "id": "tech_00492",
+      "type": "technique",
+      "surface_form": "TPOT genetic algorithm"
+    },
+    {
+      "id": "tech_00496",
+      "type": "technique",
+      "surface_form": "Configurable preset system"
+    },
+    {
+      "id": "tech_00501",
+      "type": "technique",
+      "surface_form": "TPOT automated model search"
+    },
+    {
+      "id": "tech_00505",
+      "type": "technique",
+      "surface_form": "Geometry similarity metric"
+    },
+    {
+      "id": "tech_00510",
+      "type": "technique",
+      "surface_form": "Averaged geometric similarity score g"
+    },
+    {
+      "id": "tech_00512",
+      "type": "technique",
+      "surface_form": "Solid angle error calculation"
+    },
+    {
+      "id": "tech_00519",
+      "type": "technique",
+      "surface_form": "minimum energy path calculation"
+    },
+    {
+      "id": "tech_00524",
+      "type": "technique",
+      "surface_form": "Em range binning"
+    },
+    {
+      "id": "tech_00526",
+      "type": "technique",
+      "surface_form": "Geometry-barrier correlation analysis"
+    },
+    {
+      "id": "tech_00540",
+      "type": "technique",
+      "surface_form": "Unit cell displacement enumeration"
+    },
+    {
+      "id": "tech_00550",
+      "type": "technique",
+      "surface_form": "Supercell approach"
+    },
+    {
+      "id": "tech_00568",
+      "type": "technique",
+      "surface_form": "Species-based block padding"
+    },
+    {
+      "id": "tech_00569",
+      "type": "technique",
+      "surface_form": "Softmin distance calculation"
+    },
+    {
+      "id": "tech_00576",
+      "type": "technique",
+      "surface_form": "64-bit integer neighbor encoding"
+    },
+    {
+      "id": "tech_00590",
+      "type": "technique",
+      "surface_form": "cutoff radius selection"
+    },
+    {
+      "id": "tech_00596",
+      "type": "technique",
+      "surface_form": "convex hull distance prediction"
+    },
+    {
+      "id": "tech_00600",
+      "type": "technique",
+      "surface_form": "Double grid technique"
+    },
+    {
+      "id": "tech_00604",
+      "type": "technique",
+      "surface_form": "Γ-centered k-point grids"
+    },
+    {
+      "id": "tech_00611",
+      "type": "technique",
+      "surface_form": "Unit cell size filtering"
+    },
+    {
+      "id": "tech_00613",
+      "type": "technique",
+      "surface_form": "q-grid and k-grid convergence"
+    },
+    {
+      "id": "tech_00618",
+      "type": "technique",
+      "surface_form": "Convex hull distance filtering"
+    },
+    {
+      "id": "tech_00631",
+      "type": "technique",
+      "surface_form": "NKPPRA-based k-point sampling"
+    },
+    {
+      "id": "tech_00637",
+      "type": "technique",
+      "surface_form": "high-throughput calculations"
+    },
+    {
+      "id": "tech_00642",
+      "type": "technique",
+      "surface_form": "DBS-to-RMM-DIIS switching"
+    },
+    {
+      "id": "tech_00654",
+      "type": "technique",
+      "surface_form": "Reciprocal lattice grid spacing"
+    },
+    {
+      "id": "tech_00660",
+      "type": "technique",
+      "surface_form": "Data flywheel"
+    },
+    {
+      "id": "tech_00664",
+      "type": "technique",
+      "surface_form": "Prototype analysis"
+    },
+    {
+      "id": "tech_00669",
+      "type": "technique",
+      "surface_form": "Branch-and-bound algorithms"
+    },
+    {
+      "id": "tech_00680",
+      "type": "technique",
+      "surface_form": "Gamma-centred kpoint generation"
+    },
+    {
+      "id": "tech_00687",
+      "type": "technique",
+      "surface_form": "Structure matching with tolerance adjustments"
+    },
+    {
+      "id": "tech_00699",
+      "type": "technique",
+      "surface_form": "iterative configuration addition"
+    },
+    {
+      "id": "tech_00706",
+      "type": "technique",
+      "surface_form": "Physically-motivated term addition"
+    },
+    {
+      "id": "tech_00713",
+      "type": "technique",
+      "surface_form": "Element-specific weights"
+    },
+    {
+      "id": "tech_00716",
+      "type": "technique",
+      "surface_form": "Iterative evaluation for numerical efficiency"
+    },
+    {
+      "id": "tech_00717",
+      "type": "technique",
+      "surface_form": "Two-hop graph convergence"
+    },
+    {
+      "id": "tech_00748",
+      "type": "technique",
+      "surface_form": "Pool-whitening"
+    },
+    {
+      "id": "tech_00760",
+      "type": "technique",
+      "surface_form": "Configurable insertion points"
+    },
+    {
+      "id": "tech_00767",
+      "type": "technique",
+      "surface_form": "Species-dependent hardness and radius embedding"
+    },
+    {
+      "id": "tech_00768",
+      "type": "technique",
+      "surface_form": "Residual charge feature update"
+    },
+    {
+      "id": "tech_00785",
+      "type": "technique",
+      "surface_form": "Supercell replication"
+    },
+    {
+      "id": "tech_00795",
+      "type": "technique",
+      "surface_form": "dynamic load balancing"
+    },
+    {
+      "id": "tech_00796",
+      "type": "technique",
+      "surface_form": "global pooling"
+    },
+    {
+      "id": "tech_00812",
+      "type": "technique",
+      "surface_form": "Multiple time-stepping algorithm"
+    },
+    {
+      "id": "tech_00822",
+      "type": "technique",
+      "surface_form": "Symmetric edge weighting"
+    },
+    {
+      "id": "tech_00836",
+      "type": "technique",
+      "surface_form": "Multiple-time-stepping simulations"
+    },
+    {
+      "id": "tech_00840",
+      "type": "technique",
+      "surface_form": "knowledge distillation from conservative to direct models"
+    },
+    {
+      "id": "tech_00856",
+      "type": "technique",
+      "surface_form": "efficient graph construction"
+    },
+    {
+      "id": "tech_00858",
+      "type": "technique",
+      "surface_form": "Distillation-based training with conservative teachers"
+    },
+    {
+      "id": "tech_00870",
+      "type": "technique",
+      "surface_form": "Weight precomputation"
+    },
+    {
+      "id": "tech_00872",
+      "type": "technique",
+      "surface_form": "Graph parallelism"
+    },
+    {
+      "id": "tech_00894",
+      "type": "technique",
+      "surface_form": "Kernel-based similarity measure"
+    },
+    {
+      "id": "tech_00901",
+      "type": "technique",
+      "surface_form": "CUR sparsification"
+    },
+    {
+      "id": "tech_00902",
+      "type": "technique",
+      "surface_form": "Uniform grid sparsification"
+    },
+    {
+      "id": "tech_00903",
+      "type": "technique",
+      "surface_form": "Iterative database extension"
+    },
+    {
+      "id": "tech_00912",
+      "type": "technique",
+      "surface_form": "Franzblau shortest-path algorithm"
+    },
+    {
+      "id": "tech_00920",
+      "type": "technique",
+      "surface_form": "MD quenches"
+    },
+    {
+      "id": "tech_00938",
+      "type": "technique",
+      "surface_form": "Random search"
+    },
+    {
+      "id": "tech_00956",
+      "type": "technique",
+      "surface_form": "Vectorized fingerprint generation"
+    },
+    {
+      "id": "tech_00960",
+      "type": "technique",
+      "surface_form": "Random search hyper-parameter optimization"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 5,
+    "component": 19,
+    "dataset": 3,
+    "future_topic": 1,
+    "method": 19,
+    "metric": 1,
+    "problem": 17,
+    "task": 15,
+    "technique": 102
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "geometry",
+  "representative_ids": [
+    "tech_00460",
+    "task_00468"
+  ]
+}

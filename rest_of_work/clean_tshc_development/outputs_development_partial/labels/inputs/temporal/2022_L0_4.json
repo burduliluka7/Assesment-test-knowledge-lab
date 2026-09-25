@@ -1,0 +1,105 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00052",
+      "type": "claim",
+      "surface_form": "A curated dataset of 476 binary ionic compound melting temperatures spanning 0-4,000°C was compiled for machine learning model development."
+    },
+    {
+      "id": "clai_00055",
+      "type": "claim",
+      "surface_form": "Cluster 1 (198 compounds, mostly ionic halides and oxides) achieves 136±5 K MAE and 0.92 R², while Cluster 2 (222 compounds, mostly covalent carbides and nitrides) achieves 189±7 K MAE and 0.90 R²."
+    },
+    {
+      "id": "clai_00056",
+      "type": "claim",
+      "surface_form": "Cohesive energy and elastic moduli (shear and bulk modulus) are the most important features for melting temperature prediction, as identified by both ensemble feature importance and SHAP analysis."
+    },
+    {
+      "id": "clai_00057",
+      "type": "claim",
+      "surface_form": "Models trained without elastic moduli features yield errors greater than 400 K, demonstrating that elastic features are necessary for accurate melting temperature predictions."
+    },
+    {
+      "id": "clai_00058",
+      "type": "claim",
+      "surface_form": "Very-high melting temperatures (>3150 K) appear only in Cluster 2, predominantly in metal carbides, reflecting the covalent bonding character of these materials."
+    },
+    {
+      "id": "clai_00060",
+      "type": "claim",
+      "surface_form": "The two-step clustering approach provides interpretability by revealing different melting physics dominated by bonding types, with Cluster 1 governed by ionic bonding features and Cluster 2 by covalent bonding features."
+    },
+    {
+      "id": "clai_00062",
+      "type": "claim",
+      "surface_form": "Cluster 2 melting temperatures can be accurately represented with symbolic models depending on only two features: squared cohesive energy and inverse square root of periodic groups or electronegativities."
+    },
+    {
+      "id": "clai_00183",
+      "type": "claim",
+      "surface_form": "NequIP outperforms kernel‑based approaches such as sGDML and FCHL19/GPR across benchmarks, including small-data regimes and the MD-17 dataset."
+    },
+    {
+      "id": "clai_00184",
+      "type": "claim",
+      "surface_form": "NequIP requires up to three orders of magnitude fewer training configurations than existing neural interatomic potentials to reach comparable accuracy."
+    },
+    {
+      "id": "clai_00185",
+      "type": "claim",
+      "surface_form": "When trained on only 133 structures (~1 k frames), NequIP outperforms DeepMD trained on 133,500 structures for liquid water and ice simulations."
+    },
+    {
+      "id": "clai_00190",
+      "type": "claim",
+      "surface_form": "NequIP reproduces structural and kinetic properties from ab‑initio molecular dynamics simulations with high fidelity."
+    },
+    {
+      "id": "clai_00640",
+      "type": "claim",
+      "surface_form": "Relaxing test crystals with M3GNet reduces median volume error from 2.4 % to 0.6 % and energy mean absolute error from 0.169 eV/atom to 0.035 eV/atom relative to DFT‑relaxed references."
+    },
+    {
+      "id": "clai_00641",
+      "type": "claim",
+      "surface_form": "A single‑CPU M3GNet relaxation completes in about 22 seconds, compared with 15 hours on 32 cores for DFT; pre‑relaxation with M3GNet shortens subsequent DFT relaxation time by roughly a factor of three and reduces total CPU time by an average factor of 2.97."
+    },
+    {
+      "id": "clai_00642",
+      "type": "claim",
+      "surface_form": "Screening 31.7 million hypothetical crystals with M3GNet identifies approximately 1.8 million candidates with predicted hull distances below 0.001 eV/atom, and among the 2,000 lowest‑energy candidates, 1,578 are confirmed stable (Ehull < 0.001 eV/atom) by DFT."
+    },
+    {
+      "id": "clai_00646",
+      "type": "claim",
+      "surface_form": "M3GNet molecular‑dynamics simulations of Li₃YCl₆ reproduce ionic conductivity (14.3 mS cm⁻¹) and activation energy (0.22 eV) consistent with ab‑initio MD, and short‑time MD correctly identifies known lithium superionic conductors by their high mean‑squared displacements at elevated temperatures."
+    },
+    {
+      "id": "clai_00647",
+      "type": "claim",
+      "surface_form": "On the MD17 and MD17‑CCSD(T) molecular force‑field benchmarks, M3GNet achieves lower energy and force errors than the Embedded Atom Neural Network and comparable accuracy to state‑of‑the‑art message‑passing and equivariant neural networks; when benchmarked against quantum‑accurate CCSD/CCSD(T) data, it attains state‑of‑the‑art accuracy for several molecules."
+    },
+    {
+      "id": "clai_00649",
+      "type": "claim",
+      "surface_form": "For a MgO test set, M3GNet outperforms Moment Tensor Potentials in extrapolating equation‑of‑state behavior beyond the training regime and exhibits long‑range interaction characteristics similar to a Buckingham + Coulomb model."
+    },
+    {
+      "id": "clai_00650",
+      "type": "claim",
+      "surface_form": "The M3GNet architecture preserves continuity of energies, forces, and stresses with respect to changes in bond count, satisfying a necessary physical constraint for interatomic potentials."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 18
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "melting",
+  "representative_ids": [
+    "clai_00647",
+    "clai_00642"
+  ]
+}

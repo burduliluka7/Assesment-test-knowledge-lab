@@ -1,0 +1,154 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00598",
+      "type": "claim",
+      "surface_form": "Separable S2 activation prevents large gradients by separating activation for degree 0 and degree > 0 vectors, whereas directly replacing gate activation with S2 activation causes training instability and non-convergence."
+    },
+    {
+      "id": "comp_00023",
+      "type": "component",
+      "surface_form": "Shifted softplus activation"
+    },
+    {
+      "id": "comp_00196",
+      "type": "component",
+      "surface_form": "Gated multilayer perceptron"
+    },
+    {
+      "id": "comp_00284",
+      "type": "component",
+      "surface_form": "Modified softplus activation"
+    },
+    {
+      "id": "comp_00416",
+      "type": "component",
+      "surface_form": "attention re-normalization"
+    },
+    {
+      "id": "comp_00417",
+      "type": "component",
+      "surface_form": "separable S2 activation"
+    },
+    {
+      "id": "comp_00428",
+      "type": "component",
+      "surface_form": "Attention re-normalization with layer normalization"
+    },
+    {
+      "id": "comp_00430",
+      "type": "component",
+      "surface_form": "Separated S2 attention"
+    },
+    {
+      "id": "comp_00437",
+      "type": "component",
+      "surface_form": "Equivariant graph attention block"
+    },
+    {
+      "id": "comp_00500",
+      "type": "component",
+      "surface_form": "Gated activation layers"
+    },
+    {
+      "id": "comp_00518",
+      "type": "component",
+      "surface_form": "Attention-based descriptor"
+    },
+    {
+      "id": "meth_00028",
+      "type": "method",
+      "surface_form": "Graph Attention"
+    },
+    {
+      "id": "meth_00301",
+      "type": "method",
+      "surface_form": "S2 activation"
+    },
+    {
+      "id": "meth_00343",
+      "type": "method",
+      "surface_form": "Transformer attention mechanism"
+    },
+    {
+      "id": "meth_00349",
+      "type": "method",
+      "surface_form": "Crystal Graph Attention Network"
+    },
+    {
+      "id": "prob_00242",
+      "type": "problem",
+      "surface_form": "Training instability with S2 activation"
+    },
+    {
+      "id": "tech_00033",
+      "type": "technique",
+      "surface_form": "SiLU activation"
+    },
+    {
+      "id": "tech_00215",
+      "type": "technique",
+      "surface_form": "Self‑attention (QKV) blocks"
+    },
+    {
+      "id": "tech_00221",
+      "type": "technique",
+      "surface_form": "Gate nonlinearity"
+    },
+    {
+      "id": "tech_00238",
+      "type": "technique",
+      "surface_form": "GatedMLP activation"
+    },
+    {
+      "id": "tech_00245",
+      "type": "technique",
+      "surface_form": "Gated multi‑layer perceptron"
+    },
+    {
+      "id": "tech_00287",
+      "type": "technique",
+      "surface_form": "Sigmoid + softplus activation combo"
+    },
+    {
+      "id": "tech_00439",
+      "type": "technique",
+      "surface_form": "equivariant graph attention"
+    },
+    {
+      "id": "tech_00449",
+      "type": "technique",
+      "surface_form": "Parallel equivariant graph attention"
+    },
+    {
+      "id": "tech_00452",
+      "type": "technique",
+      "surface_form": "Separable S2 activation"
+    },
+    {
+      "id": "tech_00464",
+      "type": "technique",
+      "surface_form": "SiLU activation on grid features"
+    },
+    {
+      "id": "tech_00465",
+      "type": "technique",
+      "surface_form": "Dropout on attention weights"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 10,
+    "method": 4,
+    "problem": 1,
+    "technique": 11
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "attention",
+  "representative_ids": [
+    "comp_00430",
+    "comp_00416"
+  ]
+}

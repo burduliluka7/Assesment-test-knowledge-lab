@@ -1,0 +1,323 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00004",
+      "type": "article",
+      "surface_form": "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+    },
+    {
+      "id": "clai_00029",
+      "type": "claim",
+      "surface_form": "Machine‑learning models trained on Classical Force‑field Inspired Descriptors (CFID) achieve high predictive accuracy for formation energies, exfoliation energies, band gaps, magnetic moments, refractive indices, dielectric constants, thermoelectric performance, and piezoelectric/infrared modes."
+    },
+    {
+      "id": "clai_00187",
+      "type": "claim",
+      "surface_form": "Predicting forces as the negative gradient of the learned total energy guarantees energy conservation and rotation‑equivariant forces."
+    },
+    {
+      "id": "clai_00487",
+      "type": "claim",
+      "surface_form": "The number of force components in the initial training set is more important than total configurations for obtaining generalizable models."
+    },
+    {
+      "id": "clai_00521",
+      "type": "claim",
+      "surface_form": "The derived ACE formulas enable efficient evaluation of forces and magnetic torques."
+    },
+    {
+      "id": "clai_00595",
+      "type": "claim",
+      "surface_form": "Higher degree representations (larger Lmax) better capture angular resolution and directional information critical for accurate force prediction and correlate with model expressivity."
+    },
+    {
+      "id": "clai_00602",
+      "type": "claim",
+      "surface_form": "MACE evaluates roughly ten times faster than prior force‑field models for invariant (L=0) architectures and 4–5 times faster for equivariant (L=1,2) architectures, while delivering lower prediction errors."
+    },
+    {
+      "id": "comp_00152",
+      "type": "component",
+      "surface_form": "Direct force prediction"
+    },
+    {
+      "id": "comp_00291",
+      "type": "component",
+      "surface_form": "Force and Torque Gradient Formulas"
+    },
+    {
+      "id": "comp_00720",
+      "type": "component",
+      "surface_form": "direct force models"
+    },
+    {
+      "id": "comp_00721",
+      "type": "component",
+      "surface_form": "non-conservative force models"
+    },
+    {
+      "id": "comp_00757",
+      "type": "component",
+      "surface_form": "direct-force prediction module"
+    },
+    {
+      "id": "futu_00082",
+      "type": "future_topic",
+      "surface_form": "Machine learning force fields"
+    },
+    {
+      "id": "meth_00192",
+      "type": "method",
+      "surface_form": "Universal Force Field"
+    },
+    {
+      "id": "meth_00287",
+      "type": "method",
+      "surface_form": "Direct force‑constant method"
+    },
+    {
+      "id": "meth_00397",
+      "type": "method",
+      "surface_form": "Elemental Spatial Density Neural Network Force Field"
+    },
+    {
+      "id": "meth_00419",
+      "type": "method",
+      "surface_form": "Direct force prediction"
+    },
+    {
+      "id": "prob_00012",
+      "type": "problem",
+      "surface_form": "Energy‑conserving force field learning"
+    },
+    {
+      "id": "prob_00092",
+      "type": "problem",
+      "surface_form": "Energy‑non‑conserving force predictions"
+    },
+    {
+      "id": "prob_00112",
+      "type": "problem",
+      "surface_form": "Accurate, fast energy/force/stress prediction"
+    },
+    {
+      "id": "prob_00131",
+      "type": "problem",
+      "surface_form": "Efficient force and virial prediction"
+    },
+    {
+      "id": "prob_00132",
+      "type": "problem",
+      "surface_form": "Efficient training of interatomic potentials with forces and virial regularization"
+    },
+    {
+      "id": "prob_00164",
+      "type": "problem",
+      "surface_form": "Efficient Evaluation of Forces and Torques"
+    },
+    {
+      "id": "prob_00198",
+      "type": "problem",
+      "surface_form": "Force‑field quality assessment"
+    },
+    {
+      "id": "prob_00249",
+      "type": "problem",
+      "surface_form": "Force prediction accuracy"
+    },
+    {
+      "id": "prob_00323",
+      "type": "problem",
+      "surface_form": "Accuracy limitations of classical force fields"
+    },
+    {
+      "id": "prob_00417",
+      "type": "problem",
+      "surface_form": "accurate force field generation"
+    },
+    {
+      "id": "prob_00522",
+      "type": "problem",
+      "surface_form": "Force-field generalizability"
+    },
+    {
+      "id": "prob_00527",
+      "type": "problem",
+      "surface_form": "overfitting of direct models to forces"
+    },
+    {
+      "id": "prob_00545",
+      "type": "problem",
+      "surface_form": "Force-derivative accuracy degradation in direct models"
+    },
+    {
+      "id": "prob_00567",
+      "type": "problem",
+      "surface_form": "High inference cost for force/stress prediction"
+    },
+    {
+      "id": "task_00025",
+      "type": "task",
+      "surface_form": "Interatomic force prediction"
+    },
+    {
+      "id": "task_00065",
+      "type": "task",
+      "surface_form": "Energy and force prediction under external electric fields"
+    },
+    {
+      "id": "task_00113",
+      "type": "task",
+      "surface_form": "Force prediction"
+    },
+    {
+      "id": "task_00173",
+      "type": "task",
+      "surface_form": "Energy, force, and virial prediction"
+    },
+    {
+      "id": "task_00177",
+      "type": "task",
+      "surface_form": "Prediction of potential energy, atomic forces, and virial tensor"
+    },
+    {
+      "id": "task_00234",
+      "type": "task",
+      "surface_form": "Force‑field benchmarking"
+    },
+    {
+      "id": "task_00241",
+      "type": "task",
+      "surface_form": "Classical force‑field property benchmarking"
+    },
+    {
+      "id": "task_00303",
+      "type": "task",
+      "surface_form": "Structure to Energy Forces"
+    },
+    {
+      "id": "task_00586",
+      "type": "task",
+      "surface_form": "Energy and force prediction on OMOL25 dataset"
+    },
+    {
+      "id": "task_00632",
+      "type": "task",
+      "surface_form": "Force-field generalizability"
+    },
+    {
+      "id": "tech_00105",
+      "type": "technique",
+      "surface_form": "machine learning force fields"
+    },
+    {
+      "id": "tech_00141",
+      "type": "technique",
+      "surface_form": "Supervised regression of energy and forces"
+    },
+    {
+      "id": "tech_00223",
+      "type": "technique",
+      "surface_form": "Energy‑gradient force derivation"
+    },
+    {
+      "id": "tech_00274",
+      "type": "technique",
+      "surface_form": "Energy‑force‑virial joint loss"
+    },
+    {
+      "id": "tech_00277",
+      "type": "technique",
+      "surface_form": "Backpropagation for force and virial computation"
+    },
+    {
+      "id": "tech_00573",
+      "type": "technique",
+      "surface_form": "Relative force loss normalization"
+    },
+    {
+      "id": "tech_00705",
+      "type": "technique",
+      "surface_form": "Analytical force calculation"
+    },
+    {
+      "id": "tech_00708",
+      "type": "technique",
+      "surface_form": "Joint energy-force training"
+    },
+    {
+      "id": "tech_00724",
+      "type": "technique",
+      "surface_form": "Energy and force benchmarking"
+    },
+    {
+      "id": "tech_00754",
+      "type": "technique",
+      "surface_form": "Force Matching method"
+    },
+    {
+      "id": "tech_00805",
+      "type": "technique",
+      "surface_form": "Direct force evaluation"
+    },
+    {
+      "id": "tech_00814",
+      "type": "technique",
+      "surface_form": "Net force subtraction"
+    },
+    {
+      "id": "tech_00829",
+      "type": "technique",
+      "surface_form": "Direct force prediction"
+    },
+    {
+      "id": "tech_00849",
+      "type": "technique",
+      "surface_form": "direct-force prediction"
+    },
+    {
+      "id": "tech_00888",
+      "type": "technique",
+      "surface_form": "Force RMS normalization"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 6,
+    "component": 5,
+    "future_topic": 1,
+    "method": 4,
+    "problem": 14,
+    "task": 10,
+    "technique": 15
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_01208",
+      "relation_type": "claims",
+      "members": [
+        "arti_00004",
+        "clai_00602"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5380,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "force",
+  "representative_ids": [
+    "meth_00419",
+    "tech_00829"
+  ]
+}

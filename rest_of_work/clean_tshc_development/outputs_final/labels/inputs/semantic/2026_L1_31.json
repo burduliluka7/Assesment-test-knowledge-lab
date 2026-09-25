@@ -1,0 +1,391 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "clai_00369",
+      "type": "claim",
+      "surface_form": "A two-step training strategy with direct force pretraining followed by conservative finetuning results in eSEN models with higher accuracy requiring less total training epochs and time compared to training conservative models from scratch."
+    },
+    {
+      "id": "clai_00409",
+      "type": "claim",
+      "surface_form": "Meta-learning allows ML algorithms to quickly learn and adapt to new tasks by leveraging experience from solving similar tasks with relatively small datasets."
+    },
+    {
+      "id": "clai_00451",
+      "type": "claim",
+      "surface_form": "Multimodal models such as nach0, MultiMat, and MatterChat demonstrate reasoning over combined structural, textual, and spectral data, whereas most current foundation models remain unimodal and lack integrated image, spectrum, and experimental‑metadata fusion."
+    },
+    {
+      "id": "clai_00535",
+      "type": "claim",
+      "surface_form": "Random‑forest models excel on small datasets but are outperformed by neural‑network models on large datasets due to the benefits of representation learning."
+    },
+    {
+      "id": "clai_00634",
+      "type": "claim",
+      "surface_form": "Multi-task UMA models do not overfit to forces during training, unlike single-task models which frequently exhibit force overfitting."
+    },
+    {
+      "id": "comp_00118",
+      "type": "component",
+      "surface_form": "Active learning workflow with Billiard Walk sampling"
+    },
+    {
+      "id": "comp_00136",
+      "type": "component",
+      "surface_form": "Active‑learning sampling workflow"
+    },
+    {
+      "id": "comp_00171",
+      "type": "component",
+      "surface_form": "Multimodal fusion pipeline"
+    },
+    {
+      "id": "comp_00175",
+      "type": "component",
+      "surface_form": "Cross‑modal Encoder‑Decoder"
+    },
+    {
+      "id": "comp_00630",
+      "type": "component",
+      "surface_form": "active learning workflow"
+    },
+    {
+      "id": "comp_00780",
+      "type": "component",
+      "surface_form": "Multi-task training framework"
+    },
+    {
+      "id": "futu_00121",
+      "type": "future_topic",
+      "surface_form": "improved multimodal fusion"
+    },
+    {
+      "id": "meth_00017",
+      "type": "method",
+      "surface_form": "transfer learning"
+    },
+    {
+      "id": "meth_00051",
+      "type": "method",
+      "surface_form": "Gradient-domain machine learning"
+    },
+    {
+      "id": "meth_00241",
+      "type": "method",
+      "surface_form": "Implicit Transfer Operator Learning"
+    },
+    {
+      "id": "meth_00385",
+      "type": "method",
+      "surface_form": "Active learning for neural network potentials"
+    },
+    {
+      "id": "prob_00026",
+      "type": "problem",
+      "surface_form": "Data‑efficiency / steep learning curves"
+    },
+    {
+      "id": "prob_00124",
+      "type": "problem",
+      "surface_form": "Efficient representation of large training sets"
+    },
+    {
+      "id": "prob_00226",
+      "type": "problem",
+      "surface_form": "Limited open dataset diversity"
+    },
+    {
+      "id": "prob_00401",
+      "type": "problem",
+      "surface_form": "Domain shift between training and evaluation"
+    },
+    {
+      "id": "prob_00415",
+      "type": "problem",
+      "surface_form": "Achieving Boltzmann-distributed training without expensive pre-simulations"
+    },
+    {
+      "id": "prob_00416",
+      "type": "problem",
+      "surface_form": "efficient training set construction"
+    },
+    {
+      "id": "prob_00439",
+      "type": "problem",
+      "surface_form": "Training data generation acceleration"
+    },
+    {
+      "id": "prob_00513",
+      "type": "problem",
+      "surface_form": "Efficient fine-tuning on smaller datasets"
+    },
+    {
+      "id": "prob_00514",
+      "type": "problem",
+      "surface_form": "Memory usage limitations in heterogeneous datasets"
+    },
+    {
+      "id": "prob_00516",
+      "type": "problem",
+      "surface_form": "Transfer learning for high-level theory targets"
+    },
+    {
+      "id": "prob_00558",
+      "type": "problem",
+      "surface_form": "Overfitting in single-task force prediction"
+    },
+    {
+      "id": "prob_00561",
+      "type": "problem",
+      "surface_form": "Cross-domain generalization"
+    },
+    {
+      "id": "prob_00600",
+      "type": "problem",
+      "surface_form": "Heterogeneous training database fitting"
+    },
+    {
+      "id": "prob_00614",
+      "type": "problem",
+      "surface_form": "Training data completeness"
+    },
+    {
+      "id": "task_00101",
+      "type": "task",
+      "surface_form": "Active‑learning data acquisition"
+    },
+    {
+      "id": "task_00197",
+      "type": "task",
+      "surface_form": "Transfer‑learning for small‑data properties"
+    },
+    {
+      "id": "task_00423",
+      "type": "task",
+      "surface_form": "Multi-task molecular dynamics training"
+    },
+    {
+      "id": "tech_00006",
+      "type": "technique",
+      "surface_form": "Two-stage training"
+    },
+    {
+      "id": "tech_00009",
+      "type": "technique",
+      "surface_form": "Cosine learning rate schedule"
+    },
+    {
+      "id": "tech_00013",
+      "type": "technique",
+      "surface_form": "Exponential learning rate decay"
+    },
+    {
+      "id": "tech_00017",
+      "type": "technique",
+      "surface_form": "Cosine learning rate scheduling"
+    },
+    {
+      "id": "tech_00020",
+      "type": "technique",
+      "surface_form": "Two-stage training schedule"
+    },
+    {
+      "id": "tech_00026",
+      "type": "technique",
+      "surface_form": "Learning rate warmup"
+    },
+    {
+      "id": "tech_00035",
+      "type": "technique",
+      "surface_form": "Transfer learning"
+    },
+    {
+      "id": "tech_00038",
+      "type": "technique",
+      "surface_form": "Active learning"
+    },
+    {
+      "id": "tech_00039",
+      "type": "technique",
+      "surface_form": "Learning rate scheduling"
+    },
+    {
+      "id": "tech_00053",
+      "type": "technique",
+      "surface_form": "iterative training"
+    },
+    {
+      "id": "tech_00055",
+      "type": "technique",
+      "surface_form": "Active learning loop"
+    },
+    {
+      "id": "tech_00056",
+      "type": "technique",
+      "surface_form": "Cosine annealing learning‑rate schedule"
+    },
+    {
+      "id": "tech_00058",
+      "type": "technique",
+      "surface_form": "Exponential learning‑rate decay"
+    },
+    {
+      "id": "tech_00077",
+      "type": "technique",
+      "surface_form": "Active learning for data generation"
+    },
+    {
+      "id": "tech_00091",
+      "type": "technique",
+      "surface_form": "Cosine learning rate scheduler"
+    },
+    {
+      "id": "tech_00170",
+      "type": "technique",
+      "surface_form": "Active‑learning‑guided data acquisition"
+    },
+    {
+      "id": "tech_00179",
+      "type": "technique",
+      "surface_form": "Active learning with error‑driven exploitation"
+    },
+    {
+      "id": "tech_00332",
+      "type": "technique",
+      "surface_form": "Transfer learning for new loading conditions"
+    },
+    {
+      "id": "tech_00364",
+      "type": "technique",
+      "surface_form": "Deep transfer learning"
+    },
+    {
+      "id": "tech_00431",
+      "type": "technique",
+      "surface_form": "Delta learning"
+    },
+    {
+      "id": "tech_00514",
+      "type": "technique",
+      "surface_form": "Multifidelity learning"
+    },
+    {
+      "id": "tech_00574",
+      "type": "technique",
+      "surface_form": "Multi-task training with shared descriptor"
+    },
+    {
+      "id": "tech_00577",
+      "type": "technique",
+      "surface_form": "Data-parallel distributed training"
+    },
+    {
+      "id": "tech_00587",
+      "type": "technique",
+      "surface_form": "double precision training"
+    },
+    {
+      "id": "tech_00595",
+      "type": "technique",
+      "surface_form": "iterative retraining cycle"
+    },
+    {
+      "id": "tech_00598",
+      "type": "technique",
+      "surface_form": "Cyclical learning rate schedule"
+    },
+    {
+      "id": "tech_00625",
+      "type": "technique",
+      "surface_form": "Representation learning"
+    },
+    {
+      "id": "tech_00626",
+      "type": "technique",
+      "surface_form": "Meta learning"
+    },
+    {
+      "id": "tech_00655",
+      "type": "technique",
+      "surface_form": "Large-scale active learning"
+    },
+    {
+      "id": "tech_00661",
+      "type": "technique",
+      "surface_form": "Large-scale pretraining"
+    },
+    {
+      "id": "tech_00671",
+      "type": "technique",
+      "surface_form": "Linear decay learning rate schedule"
+    },
+    {
+      "id": "tech_00694",
+      "type": "technique",
+      "surface_form": "Self-consistent training"
+    },
+    {
+      "id": "tech_00726",
+      "type": "technique",
+      "surface_form": "Fine-tuning pre-trained potentials"
+    },
+    {
+      "id": "tech_00774",
+      "type": "technique",
+      "surface_form": "Pretraining on reference charges"
+    },
+    {
+      "id": "tech_00816",
+      "type": "technique",
+      "surface_form": "Linear warmup with cosine decay"
+    },
+    {
+      "id": "tech_00818",
+      "type": "technique",
+      "surface_form": "pre-training with non-conservative models"
+    },
+    {
+      "id": "tech_00819",
+      "type": "technique",
+      "surface_form": "fine-tuning on bespoke datasets"
+    },
+    {
+      "id": "tech_00825",
+      "type": "technique",
+      "surface_form": "Single-precision training"
+    },
+    {
+      "id": "tech_00826",
+      "type": "technique",
+      "surface_form": "Two-step training procedure"
+    },
+    {
+      "id": "tech_00835",
+      "type": "technique",
+      "surface_form": "Linear learning-rate warm-up"
+    },
+    {
+      "id": "tech_00883",
+      "type": "technique",
+      "surface_form": "Low-precision training"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 5,
+    "component": 6,
+    "future_topic": 1,
+    "method": 4,
+    "problem": 14,
+    "task": 3,
+    "technique": 41
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "learning",
+  "representative_ids": [
+    "tech_00035",
+    "tech_00053"
+  ]
+}

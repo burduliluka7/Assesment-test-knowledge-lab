@@ -1,0 +1,10 @@
+data_dir: tests/fixtures/synthetic
+output: artifacts/synthetic
+snapshots: [2020, 2022]
+budgets: [2, 4]
+embedding_model: synthetic-hash
+evaluation_model: synthetic-independent-unavailable
+variants: [temporal]
+spectral_dim: 3
+neighbors: 3
+sensitivity: false

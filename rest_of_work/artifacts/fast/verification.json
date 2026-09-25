@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "hierarchies_reloaded": 3,
+  "variants": [
+    "temporal"
+  ],
+  "delivered_source_hash": "ade52b85246347726c9b0ff9f406094aa0a0e2a68c8730d1096ab08d66d41e02",
+  "checks": [
+    "coverage",
+    "laminarity",
+    "budgets",
+    "singleton leaves",
+    "persistent id uniqueness",
+    "multiplicity conservation",
+    "edge support ids",
+    "temporal event references",
+    "snapshot-only label inputs",
+    "five perturbations per variant",
+    "retrieval budgets",
+    "config and data-kind consistency"
+  ]
+}

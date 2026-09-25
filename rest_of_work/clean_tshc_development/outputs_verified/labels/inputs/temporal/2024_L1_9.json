@@ -1,0 +1,41 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "cite_00236",
+      "type": "cited_work",
+      "surface_form": "Plasma synthesis of electrolyte nanopowders"
+    },
+    {
+      "id": "task_00494",
+      "type": "task",
+      "surface_form": "Solid-electrolyte candidate screening"
+    },
+    {
+      "id": "task_00500",
+      "type": "task",
+      "surface_form": "Solid-state ionic conductor screening"
+    },
+    {
+      "id": "task_00506",
+      "type": "task",
+      "surface_form": "Li-ion conductor identification"
+    },
+    {
+      "id": "task_00514",
+      "type": "task",
+      "surface_form": "Superionic conductivity classification"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 1,
+    "task": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "conductor",
+  "representative_ids": [
+    "task_00500",
+    "task_00494"
+  ]
+}

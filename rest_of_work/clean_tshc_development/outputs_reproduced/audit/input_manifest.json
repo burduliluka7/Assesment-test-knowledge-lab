@@ -1,0 +1,145 @@
+[
+  {
+    "filename": "ASSESSMENT.md",
+    "bytes": 16047,
+    "sha256": "b4beb91a6ce14aeb89a1f9434947ed64e769e7d49650a622a97905e41240f7aa",
+    "schema": {}
+  },
+  {
+    "filename": "collection10_articles.csv",
+    "bytes": 5984,
+    "sha256": "64b52a7bfdf6379647be299661e0465977374e1001a045d89bbb82eebb77abdc",
+    "schema": {
+      "records": 52,
+      "columns": [
+        "id",
+        "year",
+        "arxiv_id",
+        "status",
+        "title"
+      ],
+      "delimiter": ","
+    }
+  },
+  {
+    "filename": "ground_truth.json",
+    "bytes": 156346,
+    "sha256": "434444a76687141d415c0c9a6f2d8e7020cf641a5f5ab2abe776eee9dc9571fe",
+    "schema": {
+      "root_type": "dict",
+      "top_level_keys": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7",
+        "Q8",
+        "Q9",
+        "Q10",
+        "Q11",
+        "Q12",
+        "Q13",
+        "Q14",
+        "Q15",
+        "Q16",
+        "Q17",
+        "Q18"
+      ],
+      "record_counts": {},
+      "metadata": null
+    }
+  },
+  {
+    "filename": "questions.csv",
+    "bytes": 3015,
+    "sha256": "ad75e968e83c7afa5cb4048b3b792c85b0125c6535105ef3830310092bf3c326",
+    "schema": {
+      "records": 18,
+      "columns": [
+        "question_id",
+        "question",
+        "type"
+      ],
+      "delimiter": ";"
+    }
+  },
+  {
+    "filename": "SUPPLIED_README.md",
+    "bytes": 844,
+    "sha256": "d9ba82615d484c4ce4b8412bf484a9f3cea75ac76352960d90817e94a77a2c0f",
+    "schema": {}
+  },
+  {
+    "filename": "tkh_collection10.json",
+    "bytes": 2132400,
+    "sha256": "5cc507de0432c111c2bbbc5b50899f952fd24f515313c7c4e99450d8d0211b3b",
+    "schema": {
+      "root_type": "dict",
+      "top_level_keys": [
+        "meta",
+        "nodes",
+        "hyperedges"
+      ],
+      "record_counts": {
+        "nodes": 5798,
+        "hyperedges": 1429
+      },
+      "metadata": {
+        "collection_id": 10,
+        "articles": 52,
+        "exported_at": "2026-08-15T11:09:59+00:00",
+        "year_range": [
+          1901,
+          2026
+        ],
+        "years_documented": {
+          "nodes_with_year": 5798,
+          "nodes_with_origin_year": 831,
+          "edges_with_year": 1429
+        },
+        "date_semantics": {
+          "node_year": "origin_year if known, else first_seen_year",
+          "node_origin_year": "when the thing itself was introduced (method/base-method/cited-work year, publication year for articles); null if unknown",
+          "node_first_seen_year": "publication year of the earliest corpus paper mentioning it",
+          "node_last_seen_year": "publication year of the latest corpus paper mentioning it",
+          "edge_year": "year the fact holds — the row's own year (eval/claim) or the asserting paper's publication year",
+          "provenance_article_year": "publication year of the paper asserting the edge",
+          "provenance_ingested_at": "when the PDF entered MVKG (article nodes)",
+          "provenance_extracted_at": "when the extraction pipeline finished (article nodes)",
+          "sanity": "years outside 1900-2100 dropped as extraction noise"
+        },
+        "node_types": {
+          "article": 52,
+          "author": 318,
+          "cited_work": 580,
+          "claim": 690,
+          "component": 855,
+          "dataset": 259,
+          "future_topic": 178,
+          "method": 448,
+          "metric": 90,
+          "problem": 634,
+          "task": 732,
+          "technique": 962
+        },
+        "relation_types": {
+          "addresses": 51,
+          "authored_by": 51,
+          "cites": 37,
+          "claims": 690,
+          "evaluated_on": 301,
+          "extends": 50,
+          "presents": 52,
+          "proposes_future_work": 45,
+          "solves": 51,
+          "uses_component": 50,
+          "uses_technique": 51
+        },
+        "nodes": 5798,
+        "hyperedges": 1429
+      }
+    }
+  }
+]

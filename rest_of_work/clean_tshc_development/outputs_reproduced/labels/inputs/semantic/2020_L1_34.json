@@ -1,0 +1,83 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00820",
+      "type": "component",
+      "surface_form": "surface slab models"
+    },
+    {
+      "id": "comp_00825",
+      "type": "component",
+      "surface_form": "Surface cleavage module"
+    },
+    {
+      "id": "prob_00015",
+      "type": "problem",
+      "surface_form": "Smooth potential energy surface"
+    },
+    {
+      "id": "prob_00219",
+      "type": "problem",
+      "surface_form": "Construction of complex surface slabs and nanoparticles"
+    },
+    {
+      "id": "prob_00611",
+      "type": "problem",
+      "surface_form": "surface reconstruction modeling"
+    },
+    {
+      "id": "task_00266",
+      "type": "task",
+      "surface_form": "Surface‑slab generation for catalysis and corrosion studies"
+    },
+    {
+      "id": "task_00688",
+      "type": "task",
+      "surface_form": "Surface energy estimation"
+    },
+    {
+      "id": "task_00692",
+      "type": "task",
+      "surface_form": "Carbon dimer potential energy curve computation"
+    },
+    {
+      "id": "task_00709",
+      "type": "task",
+      "surface_form": "surface reconstruction simulation"
+    },
+    {
+      "id": "task_00714",
+      "type": "task",
+      "surface_form": "Isolated dimer potential energy surface"
+    },
+    {
+      "id": "task_00715",
+      "type": "task",
+      "surface_form": "Isolated trimer potential energy surface"
+    },
+    {
+      "id": "tech_00314",
+      "type": "technique",
+      "surface_form": "Physics‑based surface‑energy calculation"
+    },
+    {
+      "id": "tech_00924",
+      "type": "technique",
+      "surface_form": "surface cleavage"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 2,
+    "problem": 3,
+    "task": 6,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "surface",
+  "representative_ids": [
+    "task_00688",
+    "tech_00314"
+  ]
+}

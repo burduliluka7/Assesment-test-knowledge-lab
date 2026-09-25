@@ -1,0 +1,55 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "task_00389",
+      "type": "task",
+      "surface_form": "Crystal structure property prediction"
+    },
+    {
+      "id": "task_00393",
+      "type": "task",
+      "surface_form": "Crystal stability assessment"
+    },
+    {
+      "id": "task_00495",
+      "type": "task",
+      "surface_form": "Stable crystal discovery"
+    },
+    {
+      "id": "task_00503",
+      "type": "task",
+      "surface_form": "Crystal structure discovery"
+    },
+    {
+      "id": "task_00511",
+      "type": "task",
+      "surface_form": "Crystal structure prediction and discovery"
+    },
+    {
+      "id": "task_00678",
+      "type": "task",
+      "surface_form": "Molecular crystal prediction"
+    },
+    {
+      "id": "task_00682",
+      "type": "task",
+      "surface_form": "Molecular crystal structure prediction"
+    },
+    {
+      "id": "task_00684",
+      "type": "task",
+      "surface_form": "crystallography"
+    }
+  ],
+  "generation_type_counts": {
+    "task": 8
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "crystal",
+  "representative_ids": [
+    "task_00511",
+    "task_00503"
+  ]
+}

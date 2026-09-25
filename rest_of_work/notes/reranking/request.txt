@@ -1,0 +1,1355 @@
+Continue from the CURRENT repository and the completed query-seeded hypergraph diffusion work.
+
+Do not create a parallel implementation. Inspect and reuse the existing:
+
+- contextual retrieval pipeline;
+- R0/R1/R3 implementations;
+- H0/H1/H2/H3 diffusion implementation;
+- `ThetaOperator`;
+- `MentionIndex`;
+- entity grouping;
+- target resolver;
+- query analysis;
+- normalized BGE embeddings;
+- snapshot/temporal filtering;
+- evaluation code;
+- `propagation_traces.json`;
+- `diffusion_per_target.json`;
+- `hypergraph_diffusion_results.json`;
+- current tests and artifact writers.
+
+The purpose of this pass is to solve the NEW bottleneck revealed by the diffusion experiment:
+
+```text
+candidate generation improved strongly,
+but final top-k answer discrimination did not.
+```
+
+Do NOT work on hierarchical diffusion yet.
+
+---
+
+# 0. CURRENT VERIFIED STATE
+
+Use the current generated artifacts as the baseline. Recompute them if needed, but do not reinterpret or replace them.
+
+At the conservative 2025 cutoff:
+
+```text
+R3:
+Candidate Recall@100 ≈ 0.3701
+Candidate Recall@200 ≈ 0.7140
+Micro Recall@10 = 4/47 ≈ 0.0851
+median gold rank ≈ 160
+```
+
+Hypergraph diffusion improved candidate generation:
+
+```text
+H0:
+Candidate Recall@100 ≈ 0.4994
+
+H1:
+Candidate Recall@100 ≈ 0.5473
+
+H2:
+Candidate Recall@100 ≈ 0.7146
+Candidate Recall@200 ≈ 0.9674
+median gold rank ≈ 66
+Micro Recall@10 = 3/47 ≈ 0.0638
+
+H3:
+Candidate Recall@100 ≈ 0.7230
+Candidate Recall@200 ≈ 0.8841
+median gold rank ≈ 59
+Micro Recall@10 = 3/47
+```
+
+H3 adds relation-weight assumptions and much stronger hub concentration while providing only a tiny C@100 gain and lower C@200.
+
+Therefore:
+
+```text
+USE H2 AS THE PRIMARY CANDIDATE GENERATOR.
+```
+
+Keep H3 as an ablation only.
+
+The central problem is now:
+
+```text
+the correct answer is often inside the top 100-200,
+but the system cannot discriminate the exact answer
+from many scientifically related candidates.
+```
+
+Example current H2 ranks include approximately:
+
+```text
+Q1:
+M3GNet       26
+GAP          47
+CHGNet       88
+NequIP       91
+MACE        114
+ACE         154
+EquiformerV2 42
+
+Q2:
+DeepH        42
+D4FT         12
+HamGNN       24
+
+Q12:
+M3GNet       29
+MatterSim    35
+SevenNet     41
+GAP          50
+CHGNet       73
+NequIP       87
+MACE        104
+DeePMD      111
+Orb         130
+```
+
+This is now a reranking problem, not primarily a candidate-generation problem.
+
+---
+
+# 1. PRIMARY RESEARCH QUESTION
+
+Test:
+
+```text
+Given H2's top 100 or top 200 candidate entities,
+can candidate-specific evidence distinguish the actual
+question answers well enough to improve top-k retrieval?
+```
+
+The goal is NOT to further increase graph coverage in this pass.
+
+The goal is:
+
+```text
+top-100/top-200
+        ↓
+candidate-specific evidence
+        ↓
+strong relevance scoring
+        ↓
+top-10
+```
+
+Primary metrics:
+
+```text
+Micro Recall@5
+Micro Recall@10
+Micro Recall@20
+
+Macro Recall@5
+Macro Recall@10
+Macro Recall@20
+
+Hit@1
+Hit@5
+Hit@10
+Hit@20
+
+MRR
+R-Precision
+Recall@R
+
+raw recovered /63
+
+candidate preservation
+```
+
+Candidate Recall@100/@200 should remain reported, but H2 already largely solves that stage.
+
+---
+
+# 2. DO NOT CHANGE THE CANDIDATE GENERATOR
+
+Freeze H2.
+
+Do NOT tune:
+
+```text
+alpha
+top-M seed count
+mention-index rules
+Theta construction
+graph structure
+entity grouping
+target resolver
+temporal cutoff logic
+```
+
+for the reranking experiment.
+
+Default candidate generation must be exactly the current H2 configuration:
+
+```text
+alpha = 0.85
+top-M = 100
+mention-assisted diffusion
+uniform native relation weights
+R3/H0 fusion behavior already used by H2
+```
+
+Do not switch the main experiment to the apparently better development-set alpha=.5/.7 result.
+
+Those are sensitivity findings, not selected defaults.
+
+The reranker must be evaluated on a FROZEN H2 candidate list.
+
+---
+
+# 3. DO NOT USE H3 AS DEFAULT
+
+Keep H3 for comparison only.
+
+Reasons:
+
+```text
+H2 Candidate@100 ≈ .7146
+H3 Candidate@100 ≈ .7230
+
+H2 Candidate@200 ≈ .9674
+H3 Candidate@200 ≈ .8841
+```
+
+and H3 displays much stronger high-degree/hub score concentration.
+
+Therefore H2 is the cleaner candidate generator.
+
+Do not delete H3.
+
+---
+
+# 4. BUILD A CANDIDATE-SPECIFIC EVIDENCE BUNDLE
+
+The reranker must NOT see only:
+
+```text
+Question: ...
+Candidate: MACE
+```
+
+For each H2 candidate construct a compact, query-dependent evidence bundle.
+
+Implement something like:
+
+```python
+build_candidate_evidence(
+    question,
+    candidate_entity_group,
+    graph,
+    h2_diagnostics,
+) -> CandidateEvidence
+```
+
+The evidence bundle should include:
+
+```text
+candidate canonical/display name
+candidate node types
+
+best DIRECT candidate claims
+best explicit-name mentioning claims
+best candidate-specific tasks
+best candidate-specific problems
+best candidate-specific techniques/components
+best candidate-specific datasets/evaluations
+best supporting article titles
+best short propagation path(s)
+candidate H2 rank
+candidate H2 score
+candidate R3 rank where available
+temporal/provenance information
+```
+
+Important:
+
+Do NOT concatenate the whole article.
+
+Do NOT copy every neighbor.
+
+Do NOT reuse the earlier broad article-context strategy that polluted entity representations.
+
+The new reranker should receive TARGETED evidence.
+
+---
+
+# 5. EVIDENCE PRIORITY
+
+Use this generic priority when constructing candidate evidence:
+
+```text
+1. direct claim explicitly linked to candidate
+
+2. claim explicitly mentioning candidate name
+
+3. direct task/problem linked to candidate
+
+4. direct evaluated_on / technique / component evidence
+
+5. article that presents the candidate
+
+6. article/claim evidence connected by a short,
+   high-support propagation path
+
+7. broader provenance evidence only as fallback
+```
+
+Prefer candidate-specific evidence over general article context.
+
+---
+
+# 6. QUERY-DEPENDENT EVIDENCE SELECTION
+
+Do not send all evidence to the reranker.
+
+For each evidence field:
+
+1. embed evidence text;
+2. compare to the original question;
+3. select only the top few pieces.
+
+Suggested fixed defaults:
+
+```text
+top direct claims           = 3
+top explicit mentions       = 3
+top task/problem evidence   = 3
+top technical evidence      = 2
+top dataset evidence        = 2
+top article titles          = 2
+top graph paths             = 2
+```
+
+Expose these in configuration.
+
+Do not tune the numbers against the current answer key.
+
+Deduplicate identical text before selection.
+
+---
+
+# 7. AVOID GENERIC HUB EVIDENCE
+
+The diffusion analysis showed that paths frequently pass through broad nodes such as:
+
+```text
+materials science
+machine learning
+large generic tasks
+high-degree methods
+large cites/extends structures
+```
+
+These can be useful for propagation but are poor evidence for final answer discrimination.
+
+When constructing reranker evidence:
+
+```text
+do NOT automatically include every node on the diffusion path.
+```
+
+Instead classify path nodes into:
+
+```text
+specific evidence
+generic bridge
+target entity
+```
+
+Generic bridges should remain available for provenance/path explanation but should normally not be included as semantic evidence text.
+
+Implement a generic hub/genericness indicator using graph properties such as:
+
+```text
+high degree
+high relation incidence
+very broad short labels
+high cross-article frequency
+```
+
+Do not blacklist current benchmark names manually.
+
+---
+
+# 8. BUILD ONE COMPACT RERANKING DOCUMENT PER CANDIDATE
+
+Create something approximately like:
+
+```text
+Candidate: MACE
+Types: method, cited_work
+
+Direct evidence:
+- ...
+- ...
+
+Explicit mentions:
+- ...
+
+Tasks/problems:
+- ...
+
+Technical evidence:
+- ...
+
+Evaluations/datasets:
+- ...
+
+Supporting publication:
+- ...
+
+Graph support:
+- claim X --claims--> article Y --presents--> MACE
+```
+
+The document must be deterministic.
+
+Do NOT include:
+
+```text
+ground-truth expected answer labels
+ground-truth method_claims
+ground-truth method_evidence
+false-positive categories
+required citations from evaluation
+```
+
+Ground truth is evaluation-only.
+
+---
+
+# 9. IMPLEMENT A RERANKER INTERFACE
+
+Add an abstraction such as:
+
+```python
+class CandidateReranker:
+    def score(
+        self,
+        question: str,
+        candidate_name: str,
+        evidence: CandidateEvidence,
+    ) -> float:
+        ...
+```
+
+Support at least:
+
+```text
+evidence_semantic
+cross_encoder   optional when model available
+```
+
+Do not make the experiment depend on a remote API.
+
+The repository has previously executed with:
+
+```text
+HF_HUB_OFFLINE=1
+```
+
+so inspect available cached/local models first.
+
+Do not silently download a model.
+
+---
+
+# 10. RR0 — H2 BASELINE
+
+Keep:
+
+```text
+RR0 = current H2 ranking
+```
+
+This must exactly reproduce the existing H2 metrics.
+
+Add a regression test for this.
+
+---
+
+# 11. RR1 — DETERMINISTIC EVIDENCE-AWARE BASELINE
+
+Before adding a cross-encoder, implement a transparent deterministic evidence reranker.
+
+Score candidate-specific evidence against the question.
+
+Use separate fields:
+
+```text
+candidate name
+direct claims
+explicit mentions
+tasks/problems
+technical evidence
+datasets
+article title
+```
+
+For multi-item fields use:
+
+```text
+max
+or
+mean of top 2
+```
+
+as already supported elsewhere.
+
+The key difference from old R1/R3 is:
+
+```text
+the documents are candidate-specific
+and created AFTER H2 candidate generation,
+rather than broad static graph-node representations.
+```
+
+Implement an availability-aware score so sparse candidates are not automatically punished merely because some fields do not exist.
+
+For example conceptually:
+
+```python
+available_semantic_score =
+    weighted_sum_of_available_fields
+    / sum_of_available_field_weights
+```
+
+BUT prevent a candidate with one lucky field from receiving unlimited advantage.
+
+Use a fixed evidence-coverage confidence term such as:
+
+```python
+coverage =
+    available_weight / total_possible_weight
+
+final_score =
+    available_semantic_score * coverage_adjustment
+```
+
+Choose a simple monotone adjustment before running evaluation.
+
+For example:
+
+```python
+coverage_adjustment =
+    0.5 + 0.5 * sqrt(coverage)
+```
+
+or another similarly mild fixed rule.
+
+Document the choice.
+
+Do not tune the rule against the benchmark.
+
+Call this:
+
+```text
+RR1_evidence_semantic
+```
+
+---
+
+# 12. RR2 — CROSS-ENCODER RERANKER IF LOCALLY AVAILABLE
+
+Inspect:
+
+```text
+existing requirements
+local Hugging Face cache
+current model-loading utilities
+```
+
+If a suitable text-pair reranker / cross-encoder is ALREADY available locally, add:
+
+```text
+RR2_cross_encoder
+```
+
+It should score:
+
+```text
+(question, candidate evidence bundle)
+```
+
+directly.
+
+Prefer a model explicitly designed for relevance/reranking if one already exists in the local environment.
+
+Do not download or silently substitute a model.
+
+If no reranking model is available:
+
+```text
+do not fabricate RR2 results.
+```
+
+Implement the interface and report:
+
+```text
+cross-encoder experiment unavailable because no local model was present.
+```
+
+Continue with RR1/RR3.
+
+---
+
+# 13. KEEP EVIDENCE BUNDLES WITHIN MODEL LIMITS
+
+If a cross-encoder is used, do not truncate arbitrary evidence at the end.
+
+Build the bundle in priority order:
+
+```text
+candidate name
+direct claims
+explicit mentions
+task/problem
+technical evidence
+dataset
+article
+path
+```
+
+Add evidence until token budget is reached.
+
+Record:
+
+```text
+which evidence was included
+which evidence was truncated
+token count
+```
+
+for debugging.
+
+---
+
+# 14. RR3 — FUSE H2 AND RERANKER
+
+Do not assume reranker-only ranking will preserve graph evidence.
+
+Create:
+
+```text
+RR3 = H2 + best available reranker
+```
+
+Use rank fusion rather than arbitrary raw-score addition initially.
+
+Prefer Reciprocal Rank Fusion:
+
+```python
+score =
+    1 / (k + h2_rank)
+    +
+    1 / (k + reranker_rank)
+```
+
+Reuse the existing RRF implementation where possible.
+
+Use the same predeclared/default `k` convention already used in H1 unless there is a structural reason not to.
+
+Do not tune RRF against answer labels.
+
+---
+
+# 15. TEST TOP-100 AND TOP-200 CANDIDATE POOLS
+
+This is important.
+
+H2 has:
+
+```text
+C@100 ≈ .7146
+C@200 ≈ .9674
+```
+
+So run the reranker with:
+
+```text
+candidate_k = 100
+candidate_k = 200
+```
+
+These answer different questions.
+
+Top 100:
+
+```text
+less reranking cost
+but ~29% candidate recall still missing
+```
+
+Top 200:
+
+```text
+almost all resolvable targets available
+but discrimination is harder and cost is higher
+```
+
+Do not choose one solely by best benchmark score.
+
+Report quality/cost tradeoff.
+
+---
+
+# 16. IMPORTANT ORACLE DIAGNOSTIC
+
+Add an evaluation-only oracle to estimate the maximum possible top-k recall available from the candidate pool.
+
+For each question:
+
+```text
+If all gold candidates present inside H2 top-K were magically
+placed first, what would Recall@10 be?
+```
+
+Compute:
+
+```text
+OracleRecall@10_from_H2_100
+OracleRecall@10_from_H2_200
+```
+
+This is NOT a retrieval algorithm.
+
+It is an evaluation diagnostic.
+
+It tells us whether:
+
+```text
+candidate generation still limits us
+```
+
+or:
+
+```text
+reranking alone could theoretically solve most remaining recall.
+```
+
+Keep oracle output completely evaluation-only.
+
+---
+
+# 17. EVIDENCE-PRESENCE DIAGNOSTIC
+
+For every gold candidate inside H2 top 200, record:
+
+```text
+number of direct claims
+number of explicit mentions
+number of tasks/problems
+number of technical evidence pieces
+number of datasets
+number of supporting articles
+
+best question/evidence similarity for each field
+```
+
+Compare distributions for:
+
+```text
+gold candidates
+non-gold H2 candidates
+```
+
+Do not use gold membership in production scoring.
+
+This is diagnostic only.
+
+We need to know whether gold candidates actually possess discriminative evidence.
+
+---
+
+# 18. PER-TARGET RANK MOVEMENT
+
+For every canonical target report:
+
+```text
+R3 rank
+H2 rank
+RR1 rank
+RR2 rank if available
+RR3 rank
+```
+
+Example:
+
+```text
+M3GNet:
+96 → 26 → ...
+
+DeepH:
+242 → 42 → ...
+
+VGNN:
+1806 → 65 → ...
+```
+
+The important question is:
+
+```text
+Can the reranker move rank 20-100 answers into the top 10?
+```
+
+---
+
+# 19. FAILURE CATEGORIES
+
+After reranking classify each canonical target into one of:
+
+```text
+NOT_IN_H2_100
+NOT_IN_H2_200
+
+IN_CANDIDATES_NO_SPECIFIC_EVIDENCE
+
+IN_CANDIDATES_EVIDENCE_PRESENT_RERANK_FAILED
+
+RERANK_IMPROVED_BUT_BELOW_10
+
+RETRIEVED_TOP10
+
+RERANK_DEGRADED_EXISTING_GOOD_RESULT
+```
+
+Provide counts and examples.
+
+This is required.
+
+---
+
+# 20. PROTECT EXISTING GOOD RESULTS
+
+The diffusion pass showed that some already-good R3 targets became worse.
+
+For example some targets were already top-10 or near top-10 before propagation.
+
+The reranker should therefore be evaluated for degradation as well as gains.
+
+Report:
+
+```text
+number improved
+number unchanged
+number worsened
+
+for:
+R3 top-10 targets
+H2 top-10 targets
+H2 ranks 11-50
+H2 ranks 51-100
+H2 ranks 101-200
+```
+
+Do not report only average improvement.
+
+---
+
+# 21. MULTI-ANSWER QUESTIONS
+
+The benchmark contains questions with many correct methods.
+
+The reranker must rank candidates individually.
+
+Do NOT force a single answer.
+
+Return:
+
+```text
+top_k = 1, 5, 10, 20
+```
+
+and evaluate all expected distinct canonical entities.
+
+Do not use pairwise comparisons between gold answers during production.
+
+---
+
+# 22. NO GROUND-TRUTH TRAINING
+
+This benchmark has already been heavily used during development.
+
+Therefore:
+
+```text
+DO NOT train reranker weights on these 14 Type-A questions.
+
+DO NOT fit field weights on ground truth.
+
+DO NOT grid-search thresholds for Recall@10.
+
+DO NOT select model hyperparameters using the answer key.
+```
+
+Use:
+
+```text
+fixed generic defaults
+pretrained model if locally available
+non-tuned evidence rules
+```
+
+Treat current benchmark results as development diagnostics.
+
+Add infrastructure so that a future unseen benchmark can be evaluated without code changes.
+
+---
+
+# 23. OPTIONAL NEW-BENCHMARK MODE
+
+Add a clean CLI path so future:
+
+```text
+questions_new.csv
+ground_truth_new.json
+```
+
+can be passed directly.
+
+No current question IDs should occur in production retrieval code.
+
+No current expected method should appear in configuration.
+
+---
+
+# 24. DO NOT IMPLEMENT HIERARCHY YET
+
+This pass must focus on final ranking quality.
+
+Do NOT implement:
+
+```text
+coarse diffusion
+hierarchical approximation
+12/40/120 graph search
+hierarchy pruning
+prototype hierarchy search
+```
+
+yet.
+
+The sequence should now be:
+
+```text
+H2 fine-graph candidate generation
+        ↓
+evidence-aware reranking
+        ↓
+does top-k quality become useful?
+        ↓
+only later:
+approximate H2 with hierarchy for efficiency
+```
+
+The hierarchy experiment is an efficiency experiment.
+
+The current problem is a quality/ranking problem.
+
+---
+
+# 25. DO NOT CHANGE TYPE-B DEFAULT RETRIEVAL
+
+Keep Type B separate.
+
+The new reranking experiment is for:
+
+```text
+Type-A scientific entity retrieval
+```
+
+Do not replace Type-B source/evidence retrieval with it.
+
+Optional Type-B experiments must be separate rows and cannot determine the selected Type-A configuration.
+
+---
+
+# 26. TESTS
+
+Add tests for at least:
+
+```text
+1. deterministic candidate evidence generation
+
+2. no ground-truth fields enter evidence bundles
+
+3. direct evidence precedes article-level evidence
+
+4. explicit mentions correctly linked
+
+5. duplicate evidence text removed
+
+6. generic hub/path nodes not automatically treated as evidence
+
+7. temporal cutoff respected
+
+8. unavailable fields handled correctly
+
+9. availability-aware normalization correct
+
+10. coverage adjustment monotone
+
+11. H2 candidate order unchanged before reranking
+
+12. RR0 reproduces historical H2 metrics
+
+13. RRF deterministic
+
+14. candidate_k=100 and 200 behave correctly
+
+15. answer grouping remains unchanged
+
+16. multi-answer evaluation correct
+
+17. oracle evaluation never enters production ranking
+
+18. cross-encoder code does not download models silently
+
+19. deterministic fallback when no cross-encoder exists
+
+20. historical diffusion artifacts remain unchanged
+```
+
+Run the entire existing test suite afterward.
+
+---
+
+# 27. REQUIRED ABLATIONS
+
+Run:
+
+```text
+H2
+current frozen candidate generator
+
+RR1-100
+H2 top100
+→ deterministic candidate-specific evidence reranker
+
+RR1-200
+H2 top200
+→ deterministic candidate-specific evidence reranker
+```
+
+If a local cross-encoder exists:
+
+```text
+RR2-100
+H2 top100
+→ cross-encoder
+
+RR2-200
+H2 top200
+→ cross-encoder
+```
+
+Then:
+
+```text
+RR3-100
+H2 + best available reranker via RRF
+
+RR3-200
+H2 + best available reranker via RRF
+```
+
+Also retain:
+
+```text
+R3
+H3
+```
+
+as reference rows.
+
+Do not add a large combinatorial search.
+
+---
+
+# 28. REQUIRED METRICS TABLE
+
+Produce a table containing:
+
+```text
+Variant
+
+Candidate K
+
+Hit@1
+Hit@5
+Hit@10
+Hit@20
+
+Macro Recall@5
+Macro Recall@10
+Macro Recall@20
+
+Micro Recall@5
+Micro Recall@10
+Micro Recall@20
+
+Unique Recall@10
+
+Raw recovered /63
+
+MRR
+R-Precision
+Recall@R
+
+median gold rank
+mean gold rank
+
+reranker comparisons
+reranker runtime
+total query runtime
+```
+
+Also report:
+
+```text
+Oracle Recall@10 from H2 top100
+Oracle Recall@10 from H2 top200
+```
+
+---
+
+# 29. REQUIRED ARTIFACTS
+
+Generate:
+
+```text
+artifacts/evaluation/reranker_results.json
+
+artifacts/evaluation/reranker_per_target.json
+
+artifacts/evaluation/candidate_evidence.json
+
+artifacts/evaluation/reranker_failure_analysis.json
+
+artifacts/evaluation/reranker_oracle.json
+
+artifacts/evaluation/reranker_tests.xml
+```
+
+Update the report with a new section:
+
+```text
+Evidence-aware candidate reranking
+```
+
+Do not overwrite the diffusion report.
+
+---
+
+# 30. REQUIRED EXAMPLES
+
+Include several examples of:
+
+```text
+A. major success
+
+H2 rank 65
+→ reranked rank 6
+
+Show exactly which evidence caused the candidate to move.
+
+B. false positive suppressed
+
+H2 rank 4
+→ reranked rank 70
+
+Show why the evidence was related but did not satisfy the question.
+
+C. failure
+
+Gold candidate H2 rank 35
+→ still rank 40
+
+Explain whether:
+- evidence was missing,
+- evidence was generic,
+- reranker failed,
+- or question requires reasoning not present in graph.
+```
+
+These should use actual output traces, not invented examples.
+
+---
+
+# 31. IMPORTANT INTERPRETATION
+
+The reranker has a different job from diffusion.
+
+Document this clearly:
+
+```text
+semantic retrieval:
+find query-relevant text
+
+hypergraph diffusion:
+transfer relevance from evidence to structurally related entities
+
+candidate reranker:
+determine which of those related entities
+actually satisfies the question constraints
+```
+
+Do not claim the reranker fixes graph extraction.
+
+Do not claim diffusion itself answers the question.
+
+---
+
+# 32. SUCCESS CRITERION
+
+Do not define success as reaching a predetermined numeric target.
+
+A meaningful success would show:
+
+```text
+top-10 recall improves substantially over H2/R3
+
+many H2 rank 11-100 targets enter top 10
+
+existing good top-10 targets are mostly preserved
+
+improvement comes from candidate-specific evidence
+
+no benchmark-specific aliases/weights are introduced
+
+top-200 reranking demonstrates whether H2's ~0.97 candidate
+coverage can translate into much higher final answer recall
+```
+
+If reranking still fails despite gold targets being in top 200, determine why.
+
+That failure would indicate:
+
+```text
+graph evidence does not contain enough discriminative information
+or
+the reranker cannot interpret it effectively.
+```
+
+Do not respond by changing hierarchy.
+
+---
+
+# 33. DECISION AFTER THIS PASS
+
+At the end answer:
+
+```text
+1. How much did Recall@10 improve over R3 and H2?
+
+2. Does top200 outperform top100 enough to justify its cost?
+
+3. What is the oracle Recall@10 from H2-100 and H2-200?
+
+4. How large is the gap between oracle performance and
+   actual reranker performance?
+
+5. For gold candidates already inside H2 top200,
+   how often is candidate-specific evidence available?
+
+6. Are failures caused primarily by:
+   missing evidence,
+   ambiguous evidence,
+   or reranker weakness?
+
+7. Does deterministic evidence scoring help?
+
+8. If available, does a cross-encoder materially outperform it?
+
+9. Does RRF preserve H2 strengths while gaining reranker precision?
+
+10. Is the final retrieval quality now high enough that
+    hierarchy approximation should be studied for efficiency?
+```
+
+Only if final ranking improves meaningfully should the NEXT pass investigate:
+
+```text
+H2 fine-graph retrieval
+        ↓
+hierarchical approximation
+        ↓
+same candidate quality with lower sparse work
+```
+
+---
+
+# 34. FINAL CODEX RESPONSE
+
+When finished provide:
+
+```text
+files changed
+
+new classes/functions
+
+local reranker model detected, if any
+
+tests added
+
+test-suite result
+
+exact reproduction commands
+
+H2/RR1/RR2/RR3 comparison
+
+top100 vs top200 comparison
+
+oracle candidate-pool ceiling
+
+Recall@10 before/after
+
+per-target rank movement
+
+examples of successful reranking
+
+examples of degradation
+
+remaining failure categories
+
+whether hierarchical approximation is now justified
+```
+
+Do not simply say:
+
+```text
+"reranking improved the results"
+```
+
+or:
+
+```text
+"reranking did not work."
+```
+
+Explain mechanistically what changed.
+
+The hypothesis for this pass is:
+
+```text
+H2 has largely solved broad candidate discovery.
+
+The remaining failure is that graph relevance ranks
+many scientifically related entities together.
+
+Candidate-specific evidence should allow a stronger relevance
+model to distinguish the entities that actually satisfy the
+question from entities that are merely nearby in semantic or
+graph space.
+```
+
+Test that hypothesis directly.

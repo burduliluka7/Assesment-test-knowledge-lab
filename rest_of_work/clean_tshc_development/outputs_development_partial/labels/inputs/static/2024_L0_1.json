@@ -1,0 +1,355 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00029",
+      "type": "article",
+      "surface_form": "Universal Machine Learning Kohn-Sham Hamiltonian for Materials"
+    },
+    {
+      "id": "clai_00065",
+      "type": "claim",
+      "surface_form": "CHGNet achieves state-of-the-art performance on the Matbench Discovery benchmark, outperforming eight other submitted models."
+    },
+    {
+      "id": "clai_00066",
+      "type": "claim",
+      "surface_form": "On the Materials Project Trajectory test set, CHGNet trained with magnetic moment labels attains mean absolute errors of 30 meV/atom for energy, 77 meV/Å for forces, 0.348 GPa for stress, and 0.032 µB for magnetic moments."
+    },
+    {
+      "id": "clai_00067",
+      "type": "claim",
+      "surface_form": "CHGNet molecular dynamics simulations of Li superionic conductors reproduce room‑temperature ionic conductivities and activation energies within the error bars of AIMD, correctly distinguishing faster from slower conductors."
+    },
+    {
+      "id": "clai_00068",
+      "type": "claim",
+      "surface_form": "CHGNet integrates magnetic moment labels as a proxy for atomic charge, enabling inference of atomic charges and accurate differentiation of oxidation states such as V³⁺/V⁴⁺ and Fe²⁺/Fe³⁺."
+    },
+    {
+      "id": "clai_00069",
+      "type": "claim",
+      "surface_form": "In charge‑informed molecular dynamics of Li₀.₅MnO₂ at 1100 K, CHGNet predicts the emergence of Mn²⁺ after ~0.8 ns, coinciding with a ~50 meV/oxygen reduction in potential energy and the formation of a spinel‑like phase, indicating a correlation between charge disproportionation and phase transformation."
+    },
+    {
+      "id": "clai_00070",
+      "type": "claim",
+      "surface_form": "Including electronic entropy via charge‑decorated cluster expansions, CHGNet reproduces the experimentally observed miscibility gap and eutectoid‑like transition in the LiₓFePO₄ phase diagram, whereas a non‑charge‑decorated model fails to capture these features."
+    },
+    {
+      "id": "clai_00072",
+      "type": "claim",
+      "surface_form": "Fine‑tuning the pretrained CHGNet on the Li‑Fe‑P‑O chemical space reduces the test error from 23 meV/atom to 15 meV/atom."
+    },
+    {
+      "id": "clai_00074",
+      "type": "claim",
+      "surface_form": "CHGNet enables nanosecond‑scale molecular dynamics simulations of garnet Li₃La₃Te₂O₁₂, yielding lithium self‑diffusion coefficients with quantified uncertainty."
+    },
+    {
+      "id": "clai_00075",
+      "type": "claim",
+      "surface_form": "Using magnetic moments as a charge proxy does not strictly ensure global charge neutrality in CHGNet predictions."
+    },
+    {
+      "id": "clai_00076",
+      "type": "claim",
+      "surface_form": "The Materials Project Trajectory dataset used to pre‑train CHGNet contains approximately 1.58 million atomic configurations spanning 94 elements, with magnetic moment labels for 76 elements, providing comprehensive chemical coverage."
+    },
+    {
+      "id": "clai_00191",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model achieves a mean absolute error of 5.4 meV for the real‑space Hamiltonian matrix on the test set after the first round of training."
+    },
+    {
+      "id": "clai_00196",
+      "type": "claim",
+      "surface_form": "High‑throughput screening of 188,722 GeNOME crystals with the universal model identifies 21,973 insulators (3,940 direct‑gap) and 5,109 flat‑band materials, nearly doubling the entries in the Materials Flatband Database."
+    },
+    {
+      "id": "clai_00197",
+      "type": "claim",
+      "surface_form": "Using the universal HamGNN model reduces computational cost by several orders of magnitude compared with DFT (e.g., 0.33 core·hours versus 181 core·hours for a large MOF) while preserving accuracy of band gaps and charge‑density differences."
+    },
+    {
+      "id": "clai_00198",
+      "type": "claim",
+      "surface_form": "A two‑step training procedure—first minimizing real‑space Hamiltonian error, then adding orbital‑energy error at random k‑points—is essential to obtain a truly universal Hamiltonian model."
+    },
+    {
+      "id": "clai_00199",
+      "type": "claim",
+      "surface_form": "Incorporating orbital‑energy loss in a second fine‑tuning round markedly improves band‑structure predictions, yielding energy bands and Fermi surfaces that closely match DFT calculations for the test set."
+    },
+    {
+      "id": "clai_00200",
+      "type": "claim",
+      "surface_form": "The universal HamGNN model generalizes to crystals containing more than five distinct elements and to any element supported by the OpenMX PBE pseudopotential library, effectively covering the entire periodic table."
+    },
+    {
+      "id": "clai_00251",
+      "type": "claim",
+      "surface_form": "FastCHGNet trains in 1.5 hours using 32 GPUs compared to 8.3 days on a single A100 GPU for the original CHGNet model."
+    },
+    {
+      "id": "clai_00258",
+      "type": "claim",
+      "surface_form": "CHGNet achieves test mean absolute errors of 29 meV/atom for energy, 70 meV/Angstrom for force, and 0.308 GPa for stress."
+    },
+    {
+      "id": "clai_00259",
+      "type": "claim",
+      "surface_form": "M3GNet achieves test mean absolute errors of 35 meV/atom for energy, 72 meV/Angstrom for force, and 0.41 GPa for stress."
+    },
+    {
+      "id": "clai_00260",
+      "type": "claim",
+      "surface_form": "CHGNet uniquely includes electronic effects of valences by explicitly embedding magnetic moments on the vector representation of each atom, enabling charge-informed atomistic simulations."
+    },
+    {
+      "id": "clai_00261",
+      "type": "claim",
+      "surface_form": "CHGNet achieved the lowest formation energy MAE at 81 meV/atom, while all other models had MAEs of 129 meV/atom or higher."
+    },
+    {
+      "id": "clai_00273",
+      "type": "claim",
+      "surface_form": "M3GNet is an extension of MEGNet model to include 3-body interactions, explicit atomic coordinates, and 3×3 crystal lattice matrix."
+    },
+    {
+      "id": "clai_00299",
+      "type": "claim",
+      "surface_form": "Including magnetic moments in CHGNet training led to error reductions of 1-10% for energy, force, and stress compared to not including magnetic moments."
+    },
+    {
+      "id": "futu_00017",
+      "type": "future_topic",
+      "surface_form": "reactions"
+    },
+    {
+      "id": "futu_00018",
+      "type": "future_topic",
+      "surface_form": "ion migrations"
+    },
+    {
+      "id": "futu_00019",
+      "type": "future_topic",
+      "surface_form": "phase transformations"
+    },
+    {
+      "id": "futu_00020",
+      "type": "future_topic",
+      "surface_form": "degradation"
+    },
+    {
+      "id": "futu_00021",
+      "type": "future_topic",
+      "surface_form": "interfacial reactions"
+    },
+    {
+      "id": "futu_00052",
+      "type": "future_topic",
+      "surface_form": "Materials design across the whole periodic table"
+    },
+    {
+      "id": "futu_00053",
+      "type": "future_topic",
+      "surface_form": "Large electronic‑structure datasets"
+    },
+    {
+      "id": "futu_00057",
+      "type": "future_topic",
+      "surface_form": "Metal‑organic frameworks (MOFs)"
+    },
+    {
+      "id": "meth_00221",
+      "type": "method",
+      "surface_form": "Universal HamGNN Hamiltonian model"
+    },
+    {
+      "id": "prob_00103",
+      "type": "problem",
+      "surface_form": "Coupled charge‑ion dynamics"
+    },
+    {
+      "id": "prob_00104",
+      "type": "problem",
+      "surface_form": "Valence‑dependent bonding representation"
+    },
+    {
+      "id": "prob_00106",
+      "type": "problem",
+      "surface_form": "Electronic entropy inclusion in phase‑diagram modeling"
+    },
+    {
+      "id": "prob_00107",
+      "type": "problem",
+      "surface_form": "Efficient large‑scale simulation of heterovalent materials"
+    },
+    {
+      "id": "prob_00108",
+      "type": "problem",
+      "surface_form": "Oxidation‑state discrimination in battery cathodes"
+    },
+    {
+      "id": "prob_00109",
+      "type": "problem",
+      "surface_form": "Charge‑disproportionation driven phase transformation insight"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 23,
+    "future_topic": 8,
+    "method": 1,
+    "problem": 6
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00306",
+      "relation_type": "presents",
+      "members": [
+        "arti_00029",
+        "meth_00221"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      }
+    },
+    {
+      "id": "h_00797",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00191"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00802",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00196"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00803",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00197"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_00804",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00198"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_00805",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00199"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_00806",
+      "relation_type": "claims",
+      "members": [
+        "arti_00029",
+        "meth_00221",
+        "clai_00200"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5405,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.95
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "chgnet",
+  "representative_ids": [
+    "clai_00260",
+    "clai_00070"
+  ]
+}

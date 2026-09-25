@@ -1,0 +1,65 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00252",
+      "type": "claim",
+      "surface_form": "MLIPs map atomic configurations to total energy and provide forces and stresses as analytical derivatives of the potential energy surface."
+    },
+    {
+      "id": "clai_00254",
+      "type": "claim",
+      "surface_form": "Approximately 40% of the UK's academic HPC was spent on DFT calculations in a recent year, most of which was AIMD."
+    },
+    {
+      "id": "clai_00256",
+      "type": "claim",
+      "surface_form": "Each cataloged DFT structure provides one energy and 3N forces (N = number of atoms) for training universal MLIPs."
+    },
+    {
+      "id": "clai_00278",
+      "type": "claim",
+      "surface_form": "None of the three U-MLIPs (M3GNet, CHGNet, MACE-MP0) could accurately reproduce mixing energies of metallic binary alloys in adequate agreement with DFT results."
+    },
+    {
+      "id": "clai_00288",
+      "type": "claim",
+      "surface_form": "U-MLIPs typically cover over 50 elements and may accurately model solids, liquids, and molecular structures."
+    },
+    {
+      "id": "clai_00292",
+      "type": "claim",
+      "surface_form": "First published U-MLIPs with broad periodic table applicability came nearly simultaneously in early 2022."
+    },
+    {
+      "id": "clai_00294",
+      "type": "claim",
+      "surface_form": "Pre-relaxing hypothetical structures with U-MLIP before ab initio calculations resulted in approximately 3× time savings compared to running ab initio on un-relaxed structures."
+    },
+    {
+      "id": "clai_00296",
+      "type": "claim",
+      "surface_form": "Good agreement on target properties provides greater confidence in U-MLIP than just similar energies and forces on select structures."
+    },
+    {
+      "id": "clai_00305",
+      "type": "claim",
+      "surface_form": "Universal MLIPs attempt to cover 10-100 elements under varying levels of constraints."
+    },
+    {
+      "id": "clai_00309",
+      "type": "claim",
+      "surface_form": "U-MLIPs systematically underpredict energies and forces due to softening of the potential energy surface, attributed to biased sampling in training datasets from DFT ionic relaxations near local PES minima."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 10
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mlips",
+  "representative_ids": [
+    "clai_00288",
+    "clai_00296"
+  ]
+}

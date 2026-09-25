@@ -1,0 +1,312 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00046",
+      "type": "article",
+      "surface_form": "Large-scale machine-learning-assisted exploration of the whole materials space"
+    },
+    {
+      "id": "clai_00011",
+      "type": "claim",
+      "surface_form": "Visual warnings are displayed on the Materials Project website for compounds whose calculated oxidation states, cell volumes, or bond lengths deviate significantly from experimental norms, helping users assess data reliability."
+    },
+    {
+      "id": "clai_00012",
+      "type": "claim",
+      "surface_form": "Automated validation checks compare calculated oxidation states, cell volumes, and bond lengths against experimental data and flag outliers for user review."
+    },
+    {
+      "id": "clai_00018",
+      "type": "claim",
+      "surface_form": "Class‑specific computational methodologies and reference reactions are applied for solid‑gas, d‑block oxide, and dissolved‑ion systems to improve agreement with experimental data."
+    },
+    {
+      "id": "clai_00020",
+      "type": "claim",
+      "surface_form": "Future development plans include adding calculations of surface energies, elastic constants, point defects, finite‑temperature properties, and implementing a two‑way ‘calculations‑on‑demand’ feature for user‑submitted compounds."
+    },
+    {
+      "id": "clai_00039",
+      "type": "claim",
+      "surface_form": "Interpretability analyses of JARVIS‑ML models reveal physical insights that go beyond conventional materials‑science intuition."
+    },
+    {
+      "id": "clai_00052",
+      "type": "claim",
+      "surface_form": "A curated dataset of 476 binary ionic compound melting temperatures spanning 0-4,000°C was compiled for machine learning model development."
+    },
+    {
+      "id": "clai_00055",
+      "type": "claim",
+      "surface_form": "Cluster 1 (198 compounds, mostly ionic halides and oxides) achieves 136±5 K MAE and 0.92 R², while Cluster 2 (222 compounds, mostly covalent carbides and nitrides) achieves 189±7 K MAE and 0.90 R²."
+    },
+    {
+      "id": "clai_00056",
+      "type": "claim",
+      "surface_form": "Cohesive energy and elastic moduli (shear and bulk modulus) are the most important features for melting temperature prediction, as identified by both ensemble feature importance and SHAP analysis."
+    },
+    {
+      "id": "clai_00057",
+      "type": "claim",
+      "surface_form": "Models trained without elastic moduli features yield errors greater than 400 K, demonstrating that elastic features are necessary for accurate melting temperature predictions."
+    },
+    {
+      "id": "clai_00058",
+      "type": "claim",
+      "surface_form": "Very-high melting temperatures (>3150 K) appear only in Cluster 2, predominantly in metal carbides, reflecting the covalent bonding character of these materials."
+    },
+    {
+      "id": "clai_00060",
+      "type": "claim",
+      "surface_form": "The two-step clustering approach provides interpretability by revealing different melting physics dominated by bonding types, with Cluster 1 governed by ionic bonding features and Cluster 2 by covalent bonding features."
+    },
+    {
+      "id": "clai_00062",
+      "type": "claim",
+      "surface_form": "Cluster 2 melting temperatures can be accurately represented with symbolic models depending on only two features: squared cohesive energy and inverse square root of periodic groups or electronegativities."
+    },
+    {
+      "id": "clai_00085",
+      "type": "claim",
+      "surface_form": "The ISO17 benchmark, comprising 645,000 conformations of 129 C7O2H10 isomers, is introduced to evaluate models on combined chemical and conformational variation."
+    },
+    {
+      "id": "clai_00499",
+      "type": "claim",
+      "surface_form": "The ML-assisted high-throughput search spanned approximately 1 billion compounds across 2500 binary and ternary structure prototypes."
+    },
+    {
+      "id": "clai_00502",
+      "type": "claim",
+      "surface_form": "CGAT-2 shows unprecedented generalization accuracy with strongly reduced chemical and structural bias compared to previous models trained on under-represented data."
+    },
+    {
+      "id": "clai_00503",
+      "type": "claim",
+      "surface_form": "Compositional models cannot differentiate between polymorphs with the same chemical composition."
+    },
+    {
+      "id": "clai_00506",
+      "type": "claim",
+      "surface_form": "The ternary compound TiVB3 is predicted to have a superhard hardness of 42 GPa."
+    },
+    {
+      "id": "clai_00657",
+      "type": "claim",
+      "surface_form": "DFT screening predicts forty‑one previously unreported rare‑earth‑containing Mg‑XL‑XS ternary systems to be thermodynamically stable LPSO phases, providing new experimental targets."
+    },
+    {
+      "id": "clai_00660",
+      "type": "claim",
+      "surface_form": "Applying the heuristic‑ML model to 1.6 million hypothetical ternary compositions identified nine top candidates, of which eight were confirmed by DFT to be new stable compounds (e.g., SiYb₃F₅, Pa₂O(SiO₆))."
+    },
+    {
+      "id": "comp_00364",
+      "type": "component",
+      "surface_form": "LPSO precipitate stability evaluator"
+    },
+    {
+      "id": "futu_00010",
+      "type": "future_topic",
+      "surface_form": "Continuous expansion of JARVIS datasets and tools"
+    },
+    {
+      "id": "futu_00011",
+      "type": "future_topic",
+      "surface_form": "Development of new machine‑learning models for material‑property predictions"
+    },
+    {
+      "id": "futu_00022",
+      "type": "future_topic",
+      "surface_form": "more challenging benchmark with chemical and structural variations"
+    },
+    {
+      "id": "futu_00023",
+      "type": "future_topic",
+      "surface_form": "modeling objects with arbitrary positions such as astronomical observations"
+    },
+    {
+      "id": "futu_00040",
+      "type": "future_topic",
+      "surface_form": "automate challenging chemical search problems in drug discovery"
+    },
+    {
+      "id": "futu_00041",
+      "type": "future_topic",
+      "surface_form": "automate challenging chemical search problems in materials science"
+    },
+    {
+      "id": "futu_00067",
+      "type": "future_topic",
+      "surface_form": "Development of transferable machine‑learning interatomic potentials with broader configurational coverage"
+    },
+    {
+      "id": "futu_00098",
+      "type": "future_topic",
+      "surface_form": "Gauge‑covariant neural network architectures"
+    },
+    {
+      "id": "futu_00133",
+      "type": "future_topic",
+      "surface_form": "Strategies to mitigate data limitations in materials‑science machine learning"
+    },
+    {
+      "id": "futu_00135",
+      "type": "future_topic",
+      "surface_form": "Experimental synthesis of proposed compounds"
+    },
+    {
+      "id": "futu_00157",
+      "type": "future_topic",
+      "surface_form": "Extension of E(3)‑equivariant neural networks to capture DeepH’s small‑to‑large scale learning capability"
+    },
+    {
+      "id": "futu_00171",
+      "type": "future_topic",
+      "surface_form": "Integrating M3GNet predictions with experimental synthesis validation workflows"
+    },
+    {
+      "id": "futu_00175",
+      "type": "future_topic",
+      "surface_form": "Training a machine‑learning model to predict new stable ternary compounds"
+    },
+    {
+      "id": "prob_00144",
+      "type": "problem",
+      "surface_form": "Interpretability of deep models for materials"
+    },
+    {
+      "id": "prob_00204",
+      "type": "problem",
+      "surface_form": "Affordable LPSO precipitate discovery"
+    },
+    {
+      "id": "prob_00205",
+      "type": "problem",
+      "surface_form": "Novel ternary compound discovery"
+    },
+    {
+      "id": "prob_00206",
+      "type": "problem",
+      "surface_form": "Rapid prediction of ternary formation energies without crystal structures"
+    },
+    {
+      "id": "prob_00207",
+      "type": "problem",
+      "surface_form": "Efficient identification of likely stable ternary compounds"
+    },
+    {
+      "id": "task_00249",
+      "type": "task",
+      "surface_form": "Stability assessment of Mg‑based LPSO precipitates"
+    },
+    {
+      "id": "task_00251",
+      "type": "task",
+      "surface_form": "Formation‑energy prediction for ternary compounds"
+    },
+    {
+      "id": "tech_00617",
+      "type": "technique",
+      "surface_form": "Chemical element permutation"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 19,
+    "component": 1,
+    "future_topic": 13,
+    "problem": 5,
+    "task": 2,
+    "technique": 1
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_01105",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00499"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01108",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00502"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01109",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00503"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "controlled_experiment",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01112",
+      "relation_type": "claims",
+      "members": [
+        "arti_00046",
+        "clai_00506"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5449,
+        "article_year": 2022
+      },
+      "attributes": {
+        "claim_type": "predictive",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.8
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "ternary",
+  "representative_ids": [
+    "futu_00175",
+    "futu_00022"
+  ]
+}

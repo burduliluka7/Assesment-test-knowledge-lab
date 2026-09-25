@@ -1,0 +1,191 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "comp_00310",
+      "type": "component",
+      "surface_form": "Cutoff‑based edge connectivity"
+    },
+    {
+      "id": "comp_00311",
+      "type": "component",
+      "surface_form": "End‑to‑end GNN predictor"
+    },
+    {
+      "id": "comp_00312",
+      "type": "component",
+      "surface_form": "Boundary‑condition encoding"
+    },
+    {
+      "id": "comp_00313",
+      "type": "component",
+      "surface_form": "Genetic‑algorithm‑driven inverse design"
+    },
+    {
+      "id": "comp_00315",
+      "type": "component",
+      "surface_form": "GA optimizer"
+    },
+    {
+      "id": "comp_00316",
+      "type": "component",
+      "surface_form": "Stress‑concentration objective"
+    },
+    {
+      "id": "comp_00317",
+      "type": "component",
+      "surface_form": "Binary hole‑site representation"
+    },
+    {
+      "id": "comp_00318",
+      "type": "component",
+      "surface_form": "Brute‑force screening module"
+    },
+    {
+      "id": "comp_00319",
+      "type": "component",
+      "surface_form": "PNA-based GNN predictor"
+    },
+    {
+      "id": "comp_00320",
+      "type": "component",
+      "surface_form": "Alternative GNN backbones"
+    },
+    {
+      "id": "comp_00321",
+      "type": "component",
+      "surface_form": "Dropout regularization layers"
+    },
+    {
+      "id": "comp_00323",
+      "type": "component",
+      "surface_form": "Stress‑field surrogate objective"
+    },
+    {
+      "id": "comp_00324",
+      "type": "component",
+      "surface_form": "NEMD ground‑truth evaluator"
+    },
+    {
+      "id": "comp_00589",
+      "type": "component",
+      "surface_form": "GNoME"
+    },
+    {
+      "id": "comp_00590",
+      "type": "component",
+      "surface_form": "Symmetry-aware partial substitutions"
+    },
+    {
+      "id": "comp_00591",
+      "type": "component",
+      "surface_form": "Volume-based test-time augmentation"
+    },
+    {
+      "id": "comp_00593",
+      "type": "component",
+      "surface_form": "Shallow MLPs with swish nonlinearities"
+    },
+    {
+      "id": "comp_00594",
+      "type": "component",
+      "surface_form": "GNoME pretrained potentials"
+    },
+    {
+      "id": "comp_00595",
+      "type": "component",
+      "surface_form": "Zero-shot GNoME potential"
+    },
+    {
+      "id": "comp_00596",
+      "type": "component",
+      "surface_form": "GNoME models"
+    },
+    {
+      "id": "comp_00599",
+      "type": "component",
+      "surface_form": "SAPS"
+    },
+    {
+      "id": "comp_00601",
+      "type": "component",
+      "surface_form": "Graph neural network for structural models"
+    },
+    {
+      "id": "comp_00602",
+      "type": "component",
+      "surface_form": "Graph neural network for compositional models"
+    },
+    {
+      "id": "comp_00603",
+      "type": "component",
+      "surface_form": "Gaussian featurizer for edge embedding"
+    },
+    {
+      "id": "comp_00604",
+      "type": "component",
+      "surface_form": "Modified probabilistic substitution model"
+    },
+    {
+      "id": "comp_00606",
+      "type": "component",
+      "surface_form": "Deep ensemble of graph networks"
+    },
+    {
+      "id": "comp_00607",
+      "type": "component",
+      "surface_form": "Isotropic lattice scaling augmentation"
+    },
+    {
+      "id": "comp_00608",
+      "type": "component",
+      "surface_form": "Composition-based deterministic hashing"
+    },
+    {
+      "id": "comp_00609",
+      "type": "component",
+      "surface_form": "Cluster-based structure reduction"
+    },
+    {
+      "id": "comp_00610",
+      "type": "component",
+      "surface_form": "Minimum reduction aggregation"
+    },
+    {
+      "id": "comp_00611",
+      "type": "component",
+      "surface_form": "Five-layer equivariant graph neural network"
+    },
+    {
+      "id": "comp_00614",
+      "type": "component",
+      "surface_form": "Bessel function basis"
+    },
+    {
+      "id": "comp_00618",
+      "type": "component",
+      "surface_form": "One-hot chemical species encoding"
+    },
+    {
+      "id": "comp_00622",
+      "type": "component",
+      "surface_form": "GNN interatomic potentials"
+    },
+    {
+      "id": "tech_00688",
+      "type": "technique",
+      "surface_form": "Composition-based hash filtering"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 34,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "gnome",
+  "representative_ids": [
+    "comp_00609",
+    "comp_00312"
+  ]
+}

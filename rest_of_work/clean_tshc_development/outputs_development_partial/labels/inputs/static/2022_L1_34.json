@@ -1,0 +1,32 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "prob_00597",
+      "type": "problem",
+      "surface_form": "Force locality quantification"
+    },
+    {
+      "id": "task_00698",
+      "type": "task",
+      "surface_form": "Locality testing"
+    },
+    {
+      "id": "tech_00906",
+      "type": "technique",
+      "surface_form": "Force locality test"
+    }
+  ],
+  "generation_type_counts": {
+    "problem": 1,
+    "task": 1,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "locality",
+  "representative_ids": [
+    "tech_00906",
+    "prob_00597"
+  ]
+}

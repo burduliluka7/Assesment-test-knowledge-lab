@@ -1,0 +1,85 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "prob_00302",
+      "type": "problem",
+      "surface_form": "Variable-length output prediction"
+    },
+    {
+      "id": "prob_00303",
+      "type": "problem",
+      "surface_form": "Complex unit cell input handling"
+    },
+    {
+      "id": "prob_00306",
+      "type": "problem",
+      "surface_form": "Variable output dimension in GNNs"
+    },
+    {
+      "id": "prob_00307",
+      "type": "problem",
+      "surface_form": "Phonon dispersion prediction for crystals with varying atom counts"
+    },
+    {
+      "id": "prob_00309",
+      "type": "problem",
+      "surface_form": "Full phonon band structure prediction"
+    },
+    {
+      "id": "prob_00310",
+      "type": "problem",
+      "surface_form": "Variable-sized unit cell handling"
+    },
+    {
+      "id": "prob_00311",
+      "type": "problem",
+      "surface_form": "Γ-phonon frequency prediction"
+    },
+    {
+      "id": "prob_00315",
+      "type": "problem",
+      "surface_form": "Phonon prediction for complex materials"
+    },
+    {
+      "id": "prob_00316",
+      "type": "problem",
+      "surface_form": "Computational efficiency in phonon calculation"
+    },
+    {
+      "id": "prob_00317",
+      "type": "problem",
+      "surface_form": "Direct phonon prediction from atomic coordinates"
+    },
+    {
+      "id": "prob_00318",
+      "type": "problem",
+      "surface_form": "Phonon prediction for disordered alloy systems"
+    },
+    {
+      "id": "prob_00319",
+      "type": "problem",
+      "surface_form": "High entropy alloy phonon prediction"
+    },
+    {
+      "id": "prob_00320",
+      "type": "problem",
+      "surface_form": "Large-scale phonon database generation"
+    },
+    {
+      "id": "prob_00321",
+      "type": "problem",
+      "surface_form": "Topological material phonon prediction"
+    }
+  ],
+  "generation_type_counts": {
+    "problem": 14
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "phonon",
+  "representative_ids": [
+    "prob_00315",
+    "prob_00309"
+  ]
+}

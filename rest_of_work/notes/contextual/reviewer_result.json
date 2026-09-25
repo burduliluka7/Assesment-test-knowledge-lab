@@ -1,0 +1,45 @@
+{
+  "role": "reviewer",
+  "requestedModel": "claude-sonnet-5",
+  "usedModels": [
+    "claude-sonnet-5"
+  ],
+  "authMethod": "claude.ai",
+  "subscriptionType": "pro",
+  "is_error": false,
+  "permission_denials": [],
+  "result": "```json\n{\n  \"verdict\": \"No hard leakage found. There are two design defects likely to keep R1 near zero, plus metric-definition problems that would mislabel ranking failure as candidate failure.\",\n  \"blocking_issues\": [\n    {\n      \"id\": \"B1\",\n      \"where\": \"contextual.py:38-39 (self_semantic_role), weights in configs/contextual.yaml:14\",\n      \"issue\": \"Nodes of type claim, task, problem, future_topic, dataset, metric, technique, component and article put their own surface text into their typed field. That text also sits in `name`, so it is counted twice (name 0.15 plus 0.10–0.20). `method` and `cited_work` nodes have no such self role, so they get one credit for the same text. Answer nodes are mostly methods, so this systematically favours claim, article, task and technique nodes for a long natural-language question. It is a plausible contributor to the median rank of 1463. The 0.05 type prior in R3 is too small to offset it.\",\n      \"fix\": \"Remove the self_semantic_role insertion, or exclude self text from typed fields so each text is counted once. This is a structural, query-independent fix, not answer-tuning. Rerun R1 and report it as a pre-registered change, alongside the old R1, as an ablation. Do not choose between the variants by looking at benchmark recall.\"\n    },\n    {\n      \"id\": \"B2\",\n      \"where\": \"retrieval_v2.py:69,93-98; candidate_entity_ids in contextual.py:134\",\n      \"issue\": \"`candidate_entity_ids` is the same ranking cut at 100, so `candidate_recall_100` equals recall@100 for R0–R4. The outcome `RESOLVED_BUT_NOT_CANDIDATE` then means 'in the pool but rank >100', not 'excluded from the pool'. Phase 0 established that 45/46 are in the pool and the failure is ranking. This label would report a candidate-generation failure that did not happen. `RETRIEVED` is also hard-coded to rank<=10, regardless of top_ks.\",\n      \"fix\": \"Add a pool-membership flag (`in_pool`, from the graph snapshot) and split the outcomes: `NOT_IN_POOL`, `IN_POOL_RANK_GT_CANDIDATE_K`, `CANDIDATE_BUT_BELOW_K`, `RETRIEVED`. Also report per-target rank percentiles (median, p25, p75) and the mean-rank shift per stage. Recall@100 will be about 0 and hides any real progress from R0 to R1.\"\n    }\n  ],\n  \"non_blocking_issues\": [\n    {\n      \"where\": \"contextual.py:125-131 (rerank)\",\n      \"issue\": \"`query_terms` is not stopword-filtered, so 'the', 'of' and 'for' produce most of the overlap. The bonus is also identical for every entity that shares a presenting article, because claim_article/claim/task/problem fields come from that article. R5 will mostly re-rank by field length or stopword luck.\",\n      \"fix\": \"Use a fixed, non-benchmark stopword list. Consider restricting the overlap to fields with path `direct` or `explicit_name_in_claim`.\"\n    },\n    {\n      \"where\": \"contextual.py:46-51,54\",\n      \"issue\": \"Presenting-article context (priority 2) is truncated by `(priority,node_id)`, so which items survive the caps is an arbitrary lexical id order. That is deterministic but not relevance-based. It also copies every claim and task of the article into each presented entity, which is the contamination Part C warns about.\",\n      \"fix\": \"Say this in the protocol. Optionally cap by claim-name containment first. Do not choose the cap by looking at recall.\"\n    },\n    {\n      \"where\": \"retrieval_v2.py:87-89\",\n      \"issue\": \"Precision credits unique normalised names, so R1 (ungrouped) and R2 (grouped) will show the same precision. The duplicate-slot effect is visible only through recall and rank. Precision also divides by k even when fewer than k rows exist.\",\n      \"fix\": \"Add a `duplicate_slot_fraction` (top-k rows minus unique names, over k). That quantifies the grouping effect.\"\n    },\n    {\n      \"where\": \"retrieval_v2.py:102 vs 83\",\n      \"issue\": \"`count` is the length of a list that can contain duplicate labels, but `at_r` iterates the label-deduplicated `ranks` dict. If a question lists a label twice, R-precision is deflated. `hit(...)` in `found` counts the duplicate twice.\",\n      \"fix\": \"Dedupe `resolutions` by label within a question before computing metrics. The raw denominator can stay separate.\"\n    },\n    {\n      \"where\": \"retrieval_v2.py:92\",\n      \"issue\": \"`representable_recall` counts EVIDENCE_BACKED targets as hit when any evidence claim or article node is retrieved. Claims are in the R0/R1 pool, so this is trivially inflated.\",\n      \"fix\": \"Keep it clearly labelled and out of headline numbers.\"\n    },\n    {\n      \"where\": \"v2_pipeline.py:131-132,140-142\",\n      \"issue\": \"`index_seconds` covers only the ungrouped index. The grouped index is built lazily and untimed.\",\n      \"fix\": \"Time each index.\"\n    },\n    {\n      \"where\": \"contextual.py:64-70 (analyze_question)\",\n      \"issue\": \"`declared_type` from questions.csv forces `kind='evidence'` for every type-B question. That is benchmark metadata, not an answer, so it is not leakage. It changes the type prior only in R3+. The split on the first 'for|to' can drop 'methods' from the body view.\",\n      \"fix\": \"Document it. Keep the original question as view 0, which is already the case.\"\n    },\n    {\n      \"where\": \"retrieval_v2.py:106\",\n      \"issue\": \"`metrics['10']` raises KeyError if top_ks omits 10.\",\n      \"fix\": \"Assert that 10 is in top_ks, or derive it from the config.\"\n    }\n  ],\n  \"verified_ok\": [\n    \"Metric definitions: MRR precedence is correct; micro, macro and unique-target aggregation match their stated definitions; the raw denominator retains unresolved targets.\",\n    \"No leakage: TargetResolver takes only the label and the snapshot; representations use the graph only; query views are exact substrings; the encoder cache is content-keyed, so a stale cache is not an issue.\",\n    \"Temporal: nodes are filtered by first_seen_year <= cutoff. The 2026 run is labelled as a sensitivity analysis. I did not verify hyperedge or provenance filtering in snapshots.py beyond its first lines.\"\n  ],\n  \"tests_to_add\": [\n    \"No double counting: a dataset node with no context has its text score from `name` only (or the fixed intended weight). A method and a dataset with the same name score equally under an identical query.\",\n    \"Pool versus rank: gold present in the pool at rank 300 gives `in_pool=True` and outcome `IN_POOL_RANK_GT_CANDIDATE_K`, not a candidate exclusion. Add a case where the gold node is absent from the snapshot to get `NOT_IN_POOL`.\",\n    \"Duplicate labels within one question do not change count, R-precision or Recall@R.\",\n    \"Rerank: the bonus is unchanged by adding stopwords to the query. Entities outside the top candidate_k keep their original order and rank.\",\n    \"Temporal leakage: a node with first_seen_year=2026 must not appear as context text in any 2025 representation, including through `provenance.articles`, hyperedges and the claim_article path. The existing test checks only that the node itself is absent.\",\n    \"Grouping, R1 versus R2: identical-name nodes of different types occupy one slot in R2 and multiple slots in R1. `duplicate_slot_fraction` is >0 in R1 and 0 in R2.\",\n    \"Fusion `max`: score equals the sum of components (the existing test covers only `mean`).\",\n    \"top_ks without 10 is handled.\"\n  ],\n  \"process_notes\": [\n    \"Apply B1 and B2 before reading more into the stage results. Report the pre-fix R1 (1/47 in the top 10) beside the fixed R1, and state that the fix was chosen on structural grounds, not from recall.\",\n    \"Hierarchy gate: if R1–R5 flat recall stays near zero after B1, defer hierarchy as the task specifies.\",\n    \"Report the rank distribution per stage (median, quartiles) for the 45/46 in-pool targets. That is the sensitive measure of whether any stage helps.\"\n  ]\n}\n```",
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 47054,
+    "cache_read_input_tokens": 86869,
+    "output_tokens": 9323,
+    "output_tokens_details": {
+      "thinking_tokens": 5157
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 47054,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2972,
+        "cache_read_input_tokens": 43323,
+        "cache_creation_input_tokens": 6635,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 6635
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  }
+}

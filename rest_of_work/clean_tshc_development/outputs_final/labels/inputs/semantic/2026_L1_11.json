@@ -1,0 +1,498 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00025",
+      "type": "article",
+      "surface_form": "A Foundational Potential Energy Surface Dataset for Materials"
+    },
+    {
+      "id": "clai_00142",
+      "type": "claim",
+      "surface_form": "Gaussian quadrature leads to abrupt energy jumps and fictitious minima when neighbor cut‑off radii change during large deformations."
+    },
+    {
+      "id": "clai_00160",
+      "type": "claim",
+      "surface_form": "The DPLR model adds electrostatic energy to the total energy, with electrostatic energy calculated in Fourier space for modeling long-range interactions."
+    },
+    {
+      "id": "clai_00217",
+      "type": "claim",
+      "surface_form": "The applied plane-wave kinetic energy cut-off (Ecut) is the largest recommended value among all species in the calculation, increased by a factor of 1.4."
+    },
+    {
+      "id": "clai_00419",
+      "type": "claim",
+      "surface_form": "A generalized energy model that includes external electric‑field dependence can predict polarization, Born effective charges, and polarizability, and improves energy and force MAE."
+    },
+    {
+      "id": "comp_00065",
+      "type": "component",
+      "surface_form": "Generalized energy model with electric‑field coupling"
+    },
+    {
+      "id": "comp_00103",
+      "type": "component",
+      "surface_form": "Polynomial smoothing of free-energy curve"
+    },
+    {
+      "id": "comp_00106",
+      "type": "component",
+      "surface_form": "Free‑energy equality transition detector"
+    },
+    {
+      "id": "comp_00365",
+      "type": "component",
+      "surface_form": "Heuristic + machine‑learning formation‑energy predictor"
+    },
+    {
+      "id": "comp_00391",
+      "type": "component",
+      "surface_form": "Surface‑slab builder"
+    },
+    {
+      "id": "comp_00585",
+      "type": "component",
+      "surface_form": "Plane-wave kinetic energy cut-off"
+    },
+    {
+      "id": "comp_00624",
+      "type": "component",
+      "surface_form": "Deep neural network potential energy surface"
+    },
+    {
+      "id": "comp_00767",
+      "type": "component",
+      "surface_form": "Reference energy adaptation layer"
+    },
+    {
+      "id": "comp_00820",
+      "type": "component",
+      "surface_form": "surface slab models"
+    },
+    {
+      "id": "comp_00825",
+      "type": "component",
+      "surface_form": "Surface cleavage module"
+    },
+    {
+      "id": "comp_00841",
+      "type": "component",
+      "surface_form": "cohesive energy descriptor"
+    },
+    {
+      "id": "data_00063",
+      "type": "dataset",
+      "surface_form": "Absolute energy"
+    },
+    {
+      "id": "data_00065",
+      "type": "dataset",
+      "surface_form": "Fermi energy"
+    },
+    {
+      "id": "data_00089",
+      "type": "dataset",
+      "surface_form": "Materials Project formation energy"
+    },
+    {
+      "id": "data_00094",
+      "type": "dataset",
+      "surface_form": "SSUB thermodynamic database"
+    },
+    {
+      "id": "data_00113",
+      "type": "dataset",
+      "surface_form": "AdsorbML"
+    },
+    {
+      "id": "futu_00104",
+      "type": "future_topic",
+      "surface_form": "Generalized energy models that include external fields"
+    },
+    {
+      "id": "metr_00063",
+      "type": "metric",
+      "surface_form": "successful adsorption energy calculations"
+    },
+    {
+      "id": "prob_00044",
+      "type": "problem",
+      "surface_form": "Energy discontinuities due to neighbor‑cutoff changes"
+    },
+    {
+      "id": "prob_00048",
+      "type": "problem",
+      "surface_form": "Discontinuities in free‑energy landscapes caused by quadrature cut‑off artifacts"
+    },
+    {
+      "id": "prob_00063",
+      "type": "problem",
+      "surface_form": "Accurate high‑dimensional free‑energy representation"
+    },
+    {
+      "id": "prob_00070",
+      "type": "problem",
+      "surface_form": "Efficient high‑dimensional free‑energy surrogate construction"
+    },
+    {
+      "id": "prob_00219",
+      "type": "problem",
+      "surface_form": "Construction of complex surface slabs and nanoparticles"
+    },
+    {
+      "id": "prob_00260",
+      "type": "problem",
+      "surface_form": "Accurate energy and force prediction for adsorbate-catalyst systems"
+    },
+    {
+      "id": "prob_00340",
+      "type": "problem",
+      "surface_form": "accurate potential energy surface representation"
+    },
+    {
+      "id": "prob_00343",
+      "type": "problem",
+      "surface_form": "free energy calculation"
+    },
+    {
+      "id": "prob_00421",
+      "type": "problem",
+      "surface_form": "Activation energy prediction accuracy"
+    },
+    {
+      "id": "prob_00523",
+      "type": "problem",
+      "surface_form": "Energy conservation in MLIPs"
+    },
+    {
+      "id": "prob_00531",
+      "type": "problem",
+      "surface_form": "Energy conservation in NVE MD"
+    },
+    {
+      "id": "prob_00544",
+      "type": "problem",
+      "surface_form": "Energy conservation in NVE dynamics"
+    },
+    {
+      "id": "prob_00548",
+      "type": "problem",
+      "surface_form": "Energy surface discontinuities"
+    },
+    {
+      "id": "prob_00560",
+      "type": "problem",
+      "surface_form": "Energy conservation in ML-based MD"
+    },
+    {
+      "id": "prob_00573",
+      "type": "problem",
+      "surface_form": "Single adsorbate limitation"
+    },
+    {
+      "id": "prob_00587",
+      "type": "problem",
+      "surface_form": "Adsorption energy estimation"
+    },
+    {
+      "id": "prob_00611",
+      "type": "problem",
+      "surface_form": "surface reconstruction modeling"
+    },
+    {
+      "id": "prob_00613",
+      "type": "problem",
+      "surface_form": "Spurious energy barriers"
+    },
+    {
+      "id": "task_00093",
+      "type": "task",
+      "surface_form": "Free‑energy surface reconstruction"
+    },
+    {
+      "id": "task_00112",
+      "type": "task",
+      "surface_form": "Formation energy regression"
+    },
+    {
+      "id": "task_00189",
+      "type": "task",
+      "surface_form": "Ground‑state energy calculation"
+    },
+    {
+      "id": "task_00196",
+      "type": "task",
+      "surface_form": "Unified free‑energy prediction"
+    },
+    {
+      "id": "task_00208",
+      "type": "task",
+      "surface_form": "Reaction energy calculation and screening"
+    },
+    {
+      "id": "task_00258",
+      "type": "task",
+      "surface_form": "Cohesive and formation energy prediction"
+    },
+    {
+      "id": "task_00266",
+      "type": "task",
+      "surface_form": "Surface‑slab generation for catalysis and corrosion studies"
+    },
+    {
+      "id": "task_00284",
+      "type": "task",
+      "surface_form": "Energy prediction"
+    },
+    {
+      "id": "task_00285",
+      "type": "task",
+      "surface_form": "Formation energy calculation"
+    },
+    {
+      "id": "task_00290",
+      "type": "task",
+      "surface_form": "WBM high energy states evaluation"
+    },
+    {
+      "id": "task_00294",
+      "type": "task",
+      "surface_form": "adsorption energy calculation"
+    },
+    {
+      "id": "task_00298",
+      "type": "task",
+      "surface_form": "AdsorbML integration"
+    },
+    {
+      "id": "task_00301",
+      "type": "task",
+      "surface_form": "AdsorbML adsorption energy calculation"
+    },
+    {
+      "id": "task_00314",
+      "type": "task",
+      "surface_form": "Energy gap (∆ε) prediction"
+    },
+    {
+      "id": "task_00319",
+      "type": "task",
+      "surface_form": "Gibbs free energy (G) prediction"
+    },
+    {
+      "id": "task_00322",
+      "type": "task",
+      "surface_form": "Internal energy (U) prediction"
+    },
+    {
+      "id": "task_00323",
+      "type": "task",
+      "surface_form": "Internal energy at 0K (U0) prediction"
+    },
+    {
+      "id": "task_00341",
+      "type": "task",
+      "surface_form": "Exfoliation energy regression"
+    },
+    {
+      "id": "task_00411",
+      "type": "task",
+      "surface_form": "potential energy prediction"
+    },
+    {
+      "id": "task_00416",
+      "type": "task",
+      "surface_form": "QM/MM energy correction"
+    },
+    {
+      "id": "task_00420",
+      "type": "task",
+      "surface_form": "Energy fitting"
+    },
+    {
+      "id": "task_00428",
+      "type": "task",
+      "surface_form": "free energy calculation"
+    },
+    {
+      "id": "task_00469",
+      "type": "task",
+      "surface_form": "Single-point energy calculation"
+    },
+    {
+      "id": "task_00476",
+      "type": "task",
+      "surface_form": "oxidation energy calculation"
+    },
+    {
+      "id": "task_00479",
+      "type": "task",
+      "surface_form": "Static energy calculation"
+    },
+    {
+      "id": "task_00484",
+      "type": "task",
+      "surface_form": "Static energy calculations"
+    },
+    {
+      "id": "task_00510",
+      "type": "task",
+      "surface_form": "Decomposition energy computation"
+    },
+    {
+      "id": "task_00523",
+      "type": "task",
+      "surface_form": "Activation energy computation"
+    },
+    {
+      "id": "task_00533",
+      "type": "task",
+      "surface_form": "Activation energy estimation"
+    },
+    {
+      "id": "task_00561",
+      "type": "task",
+      "surface_form": "Bulk total energy prediction"
+    },
+    {
+      "id": "task_00562",
+      "type": "task",
+      "surface_form": "Surface energy prediction"
+    },
+    {
+      "id": "task_00564",
+      "type": "task",
+      "surface_form": "Mixing energy prediction"
+    },
+    {
+      "id": "task_00570",
+      "type": "task",
+      "surface_form": "Total energy prediction"
+    },
+    {
+      "id": "task_00585",
+      "type": "task",
+      "surface_form": "Energy prediction on QMOF dataset"
+    },
+    {
+      "id": "task_00657",
+      "type": "task",
+      "surface_form": "Adsorption energy calculations"
+    },
+    {
+      "id": "task_00660",
+      "type": "task",
+      "surface_form": "Potential energy surface estimation"
+    },
+    {
+      "id": "task_00666",
+      "type": "task",
+      "surface_form": "Adsorption energy prediction"
+    },
+    {
+      "id": "task_00670",
+      "type": "task",
+      "surface_form": "CO2 adsorption for MOFs"
+    },
+    {
+      "id": "task_00672",
+      "type": "task",
+      "surface_form": "AdsorbML benchmark"
+    },
+    {
+      "id": "task_00681",
+      "type": "task",
+      "surface_form": "Multi-adsorbate interaction modeling"
+    },
+    {
+      "id": "task_00709",
+      "type": "task",
+      "surface_form": "surface reconstruction simulation"
+    },
+    {
+      "id": "tech_00135",
+      "type": "technique",
+      "surface_form": "Auto‑differentiation of energy model"
+    },
+    {
+      "id": "tech_00166",
+      "type": "technique",
+      "surface_form": "Free‑energy equality criterion"
+    },
+    {
+      "id": "tech_00314",
+      "type": "technique",
+      "surface_form": "Physics‑based surface‑energy calculation"
+    },
+    {
+      "id": "tech_00382",
+      "type": "technique",
+      "surface_form": "Machine‑learning regression on formation energies"
+    },
+    {
+      "id": "tech_00429",
+      "type": "technique",
+      "surface_form": "Energy difference sampling"
+    },
+    {
+      "id": "tech_00647",
+      "type": "technique",
+      "surface_form": "DOS energy window selection"
+    },
+    {
+      "id": "tech_00648",
+      "type": "technique",
+      "surface_form": "Band structure energy window selection"
+    },
+    {
+      "id": "tech_00743",
+      "type": "technique",
+      "surface_form": "Referenced energy targets"
+    },
+    {
+      "id": "tech_00838",
+      "type": "technique",
+      "surface_form": "Energy pre-normalization"
+    },
+    {
+      "id": "tech_00871",
+      "type": "technique",
+      "surface_form": "Energy referencing scheme"
+    },
+    {
+      "id": "tech_00887",
+      "type": "technique",
+      "surface_form": "Heat of formation referencing"
+    },
+    {
+      "id": "tech_00893",
+      "type": "technique",
+      "surface_form": "Machine-learning interpolation of DFT potential-energy surface"
+    },
+    {
+      "id": "tech_00924",
+      "type": "technique",
+      "surface_form": "surface cleavage"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 4,
+    "component": 11,
+    "dataset": 5,
+    "future_topic": 1,
+    "metric": 1,
+    "problem": 18,
+    "task": 41,
+    "technique": 13
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "energy",
+  "representative_ids": [
+    "task_00284",
+    "task_00562"
+  ]
+}

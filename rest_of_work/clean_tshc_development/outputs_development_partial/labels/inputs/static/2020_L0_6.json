@@ -1,0 +1,105 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00336",
+      "type": "component",
+      "surface_form": "JARVIS‑FF"
+    },
+    {
+      "id": "comp_00337",
+      "type": "component",
+      "surface_form": "JARVIS‑ML"
+    },
+    {
+      "id": "comp_00338",
+      "type": "component",
+      "surface_form": "JARVIS‑Tools"
+    },
+    {
+      "id": "comp_00341",
+      "type": "component",
+      "surface_form": "VaspJob / LammpsJob / Wannier90Win classes"
+    },
+    {
+      "id": "comp_00342",
+      "type": "component",
+      "surface_form": "Automatic k‑point convergence protocol"
+    },
+    {
+      "id": "comp_00343",
+      "type": "component",
+      "surface_form": "REST‑API"
+    },
+    {
+      "id": "comp_00344",
+      "type": "component",
+      "surface_form": "SLME screening module"
+    },
+    {
+      "id": "comp_00346",
+      "type": "component",
+      "surface_form": "STM‑image database and analysis pipeline"
+    },
+    {
+      "id": "comp_00347",
+      "type": "component",
+      "surface_form": "JARVIS-DFT workflow"
+    },
+    {
+      "id": "comp_00350",
+      "type": "component",
+      "surface_form": "Data download utilities"
+    },
+    {
+      "id": "comp_00351",
+      "type": "component",
+      "surface_form": "JARVIS‑Heterostructure app"
+    },
+    {
+      "id": "comp_00352",
+      "type": "component",
+      "surface_form": "JARVIS‑Wannier Tight‑Binding app"
+    },
+    {
+      "id": "comp_00353",
+      "type": "component",
+      "surface_form": "JARVIS-Beyond-DFT database"
+    },
+    {
+      "id": "comp_00354",
+      "type": "component",
+      "surface_form": "JARVIS-FF database"
+    },
+    {
+      "id": "comp_00355",
+      "type": "component",
+      "surface_form": "JARVIS-ML platform"
+    },
+    {
+      "id": "comp_00356",
+      "type": "component",
+      "surface_form": "CFID descriptor set"
+    },
+    {
+      "id": "comp_00357",
+      "type": "component",
+      "surface_form": "JARVIS‑WannierTB app"
+    },
+    {
+      "id": "comp_00359",
+      "type": "component",
+      "surface_form": "JARVIS‑Tools workflow"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 18
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "jarvis",
+  "representative_ids": [
+    "comp_00338",
+    "comp_00336"
+  ]
+}

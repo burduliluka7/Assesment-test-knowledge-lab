@@ -1,0 +1,43 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "comp_00821",
+      "type": "component",
+      "surface_form": "ring statistics analysis"
+    },
+    {
+      "id": "prob_00597",
+      "type": "problem",
+      "surface_form": "Force locality quantification"
+    },
+    {
+      "id": "task_00698",
+      "type": "task",
+      "surface_form": "Locality testing"
+    },
+    {
+      "id": "task_00707",
+      "type": "task",
+      "surface_form": "Young's modulus prediction"
+    },
+    {
+      "id": "tech_00925",
+      "type": "technique",
+      "surface_form": "Young's modulus averaging"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "problem": 1,
+    "task": 2,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "locality",
+  "representative_ids": [
+    "task_00707",
+    "tech_00925"
+  ]
+}

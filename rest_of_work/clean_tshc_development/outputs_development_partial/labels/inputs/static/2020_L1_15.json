@@ -1,0 +1,61 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00820",
+      "type": "component",
+      "surface_form": "surface slab models"
+    },
+    {
+      "id": "task_00688",
+      "type": "task",
+      "surface_form": "Surface energy estimation"
+    },
+    {
+      "id": "task_00692",
+      "type": "task",
+      "surface_form": "Carbon dimer potential energy curve computation"
+    },
+    {
+      "id": "task_00695",
+      "type": "task",
+      "surface_form": "Crystalline allotrope modeling"
+    },
+    {
+      "id": "task_00709",
+      "type": "task",
+      "surface_form": "surface reconstruction simulation"
+    },
+    {
+      "id": "task_00713",
+      "type": "task",
+      "surface_form": "Bulk crystal structure modeling"
+    },
+    {
+      "id": "task_00714",
+      "type": "task",
+      "surface_form": "Isolated dimer potential energy surface"
+    },
+    {
+      "id": "task_00715",
+      "type": "task",
+      "surface_form": "Isolated trimer potential energy surface"
+    },
+    {
+      "id": "task_00716",
+      "type": "task",
+      "surface_form": "computational materials modeling"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "task": 8
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "surface",
+  "representative_ids": [
+    "task_00688",
+    "task_00714"
+  ]
+}

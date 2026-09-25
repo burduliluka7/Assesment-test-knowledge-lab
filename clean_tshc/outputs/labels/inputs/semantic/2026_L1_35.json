@@ -1,0 +1,360 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "clai_00275",
+      "type": "claim",
+      "surface_form": "For MLIPs, the loss function is usually a weighted sum of RMSEs on forces and total energy."
+    },
+    {
+      "id": "clai_00504",
+      "type": "claim",
+      "surface_form": "The transfer learning approach iterates until model MAE is below 30 meV/atom."
+    },
+    {
+      "id": "clai_00515",
+      "type": "claim",
+      "surface_form": "Uncertainty quantification based on latent‑space Euclidean distance provides error estimates that correlate with prediction errors, allowing exclusion of transitions whose uncertainty exceeds 50 % of the absolute free‑energy difference."
+    },
+    {
+      "id": "clai_00575",
+      "type": "claim",
+      "surface_form": "Using a loss function with adaptive prefactors that emphasize forces early and energies/virial later reduces the total training time to a few core‑hours for all test cases."
+    },
+    {
+      "id": "clai_00597",
+      "type": "claim",
+      "surface_form": "Attention re-normalization improves energy MAE by 2.4% while force MAE remains approximately the same."
+    },
+    {
+      "id": "comp_00006",
+      "type": "component",
+      "surface_form": "Confidence head"
+    },
+    {
+      "id": "comp_00064",
+      "type": "component",
+      "surface_form": "Hessian eigenvalue spectrum loss"
+    },
+    {
+      "id": "comp_00078",
+      "type": "component",
+      "surface_form": "Combined MSE loss over energy, physical forces, and thermal forces"
+    },
+    {
+      "id": "comp_00104",
+      "type": "component",
+      "surface_form": "Latent‑space distance uncertainty quantification"
+    },
+    {
+      "id": "comp_00147",
+      "type": "component",
+      "surface_form": "Rolling MAE evaluation"
+    },
+    {
+      "id": "comp_00405",
+      "type": "component",
+      "surface_form": "Multi-task loss function"
+    },
+    {
+      "id": "comp_00629",
+      "type": "component",
+      "surface_form": "virial in loss function"
+    },
+    {
+      "id": "comp_00657",
+      "type": "component",
+      "surface_form": "Weighted RMSE loss function"
+    },
+    {
+      "id": "comp_00675",
+      "type": "component",
+      "surface_form": "force loss"
+    },
+    {
+      "id": "comp_00758",
+      "type": "component",
+      "surface_form": "intrinsic confidence measure"
+    },
+    {
+      "id": "metr_00061",
+      "type": "metric",
+      "surface_form": "MSE loss"
+    },
+    {
+      "id": "prob_00003",
+      "type": "problem",
+      "surface_form": "Out-of-distribution detection"
+    },
+    {
+      "id": "prob_00007",
+      "type": "problem",
+      "surface_form": "Uncertainty quantification"
+    },
+    {
+      "id": "prob_00027",
+      "type": "problem",
+      "surface_form": "Extrapolation to out‑of‑domain configurations"
+    },
+    {
+      "id": "prob_00038",
+      "type": "problem",
+      "surface_form": "Connecting ML potentials to experimental observables"
+    },
+    {
+      "id": "prob_00083",
+      "type": "problem",
+      "surface_form": "Out‑of‑distribution extrapolation assessment"
+    },
+    {
+      "id": "prob_00120",
+      "type": "problem",
+      "surface_form": "Uncertainty estimation for ML potentials"
+    },
+    {
+      "id": "prob_00194",
+      "type": "problem",
+      "surface_form": "Uncertainty quantification for ML predictions"
+    },
+    {
+      "id": "prob_00208",
+      "type": "problem",
+      "surface_form": "Noisy and near‑equilibrium biased training data"
+    },
+    {
+      "id": "prob_00233",
+      "type": "problem",
+      "surface_form": "Model extrapolation to low-density regions"
+    },
+    {
+      "id": "prob_00244",
+      "type": "problem",
+      "surface_form": "Loss of relative magnitude information"
+    },
+    {
+      "id": "prob_00265",
+      "type": "problem",
+      "surface_form": "Model selection bias"
+    },
+    {
+      "id": "prob_00266",
+      "type": "problem",
+      "surface_form": "Sample selection bias"
+    },
+    {
+      "id": "prob_00280",
+      "type": "problem",
+      "surface_form": "Generalization error estimation"
+    },
+    {
+      "id": "prob_00302",
+      "type": "problem",
+      "surface_form": "Variable-length output prediction"
+    },
+    {
+      "id": "prob_00353",
+      "type": "problem",
+      "surface_form": "structural prototype bias"
+    },
+    {
+      "id": "prob_00356",
+      "type": "problem",
+      "surface_form": "Training data bias"
+    },
+    {
+      "id": "prob_00357",
+      "type": "problem",
+      "surface_form": "Inconsistent prediction error"
+    },
+    {
+      "id": "prob_00366",
+      "type": "problem",
+      "surface_form": "Generalization error"
+    },
+    {
+      "id": "prob_00406",
+      "type": "problem",
+      "surface_form": "Out-of-distribution robustness"
+    },
+    {
+      "id": "prob_00461",
+      "type": "problem",
+      "surface_form": "Poor transferability to out-of-distribution samples"
+    },
+    {
+      "id": "prob_00465",
+      "type": "problem",
+      "surface_form": "Generalization to out-of-distribution samples"
+    },
+    {
+      "id": "prob_00468",
+      "type": "problem",
+      "surface_form": "Biased dataset generalization"
+    },
+    {
+      "id": "prob_00473",
+      "type": "problem",
+      "surface_form": "Out-of-distribution generalization evaluation"
+    },
+    {
+      "id": "prob_00535",
+      "type": "problem",
+      "surface_form": "Prediction confidence estimation"
+    },
+    {
+      "id": "prob_00589",
+      "type": "problem",
+      "surface_form": "Poor extrapolation in high-dimensional ML potentials"
+    },
+    {
+      "id": "prob_00594",
+      "type": "problem",
+      "surface_form": "Unphysical extrapolation at small distances"
+    },
+    {
+      "id": "prob_00612",
+      "type": "problem",
+      "surface_form": "ML potential extrapolation"
+    },
+    {
+      "id": "task_00567",
+      "type": "task",
+      "surface_form": "Force Mean Absolute Error prediction"
+    },
+    {
+      "id": "tech_00031",
+      "type": "technique",
+      "surface_form": "Huber loss"
+    },
+    {
+      "id": "tech_00125",
+      "type": "technique",
+      "surface_form": "Mean‑squared error loss on Hamiltonian matrix elements"
+    },
+    {
+      "id": "tech_00134",
+      "type": "technique",
+      "surface_form": "Hessian eigenvalue spectrum loss"
+    },
+    {
+      "id": "tech_00147",
+      "type": "technique",
+      "surface_form": "Combined mean‑squared‑error loss over multiple physical quantities"
+    },
+    {
+      "id": "tech_00154",
+      "type": "technique",
+      "surface_form": "Bootstrap uncertainty estimation"
+    },
+    {
+      "id": "tech_00203",
+      "type": "technique",
+      "surface_form": "Rolling MAE computation"
+    },
+    {
+      "id": "tech_00258",
+      "type": "technique",
+      "surface_form": "Uncertainty quantification via GP variance"
+    },
+    {
+      "id": "tech_00278",
+      "type": "technique",
+      "surface_form": "Linear evolution of loss prefactors"
+    },
+    {
+      "id": "tech_00320",
+      "type": "technique",
+      "surface_form": "Iterative queue‑based prediction"
+    },
+    {
+      "id": "tech_00356",
+      "type": "technique",
+      "surface_form": "Monte‑Carlo dropout for uncertainty quantification"
+    },
+    {
+      "id": "tech_00420",
+      "type": "technique",
+      "surface_form": "Per-atom MAE loss"
+    },
+    {
+      "id": "tech_00483",
+      "type": "technique",
+      "surface_form": "MAE evaluation"
+    },
+    {
+      "id": "tech_00533",
+      "type": "technique",
+      "surface_form": "Normalized MSE loss"
+    },
+    {
+      "id": "tech_00543",
+      "type": "technique",
+      "surface_form": "Mean square error loss"
+    },
+    {
+      "id": "tech_00546",
+      "type": "technique",
+      "surface_form": "Element-wise prediction analysis"
+    },
+    {
+      "id": "tech_00575",
+      "type": "technique",
+      "surface_form": "Relative model deviation"
+    },
+    {
+      "id": "tech_00657",
+      "type": "technique",
+      "surface_form": "Uncertainty quantification through deep ensembles"
+    },
+    {
+      "id": "tech_00676",
+      "type": "technique",
+      "surface_form": "Deep ensemble uncertainty quantification"
+    },
+    {
+      "id": "tech_00775",
+      "type": "technique",
+      "surface_form": "Loss function modification"
+    },
+    {
+      "id": "tech_00797",
+      "type": "technique",
+      "surface_form": "Huber loss function"
+    },
+    {
+      "id": "tech_00850",
+      "type": "technique",
+      "surface_form": "confidence bin predictions"
+    },
+    {
+      "id": "tech_00854",
+      "type": "technique",
+      "surface_form": "online confidence training"
+    },
+    {
+      "id": "tech_00889",
+      "type": "technique",
+      "surface_form": "Per-atom loss averaging"
+    },
+    {
+      "id": "tech_00951",
+      "type": "technique",
+      "surface_form": "weighted RMSE averaging"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 5,
+    "component": 10,
+    "metric": 1,
+    "problem": 27,
+    "task": 1,
+    "technique": 24
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "loss",
+  "representative_ids": [
+    "prob_00280",
+    "tech_00543"
+  ]
+}

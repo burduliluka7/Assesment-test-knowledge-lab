@@ -1,0 +1,105 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "prob_00002",
+      "type": "problem",
+      "surface_form": "Out-of-distribution generalization"
+    },
+    {
+      "id": "prob_00003",
+      "type": "problem",
+      "surface_form": "Out-of-distribution detection"
+    },
+    {
+      "id": "prob_00386",
+      "type": "problem",
+      "surface_form": "Ineffective ML estimation of material stability"
+    },
+    {
+      "id": "prob_00388",
+      "type": "problem",
+      "surface_form": "Scaling materials discovery efficiency"
+    },
+    {
+      "id": "prob_00389",
+      "type": "problem",
+      "surface_form": "Discovery in unseen chemical spaces"
+    },
+    {
+      "id": "prob_00390",
+      "type": "problem",
+      "surface_form": "Transfer to new downstream tasks"
+    },
+    {
+      "id": "prob_00392",
+      "type": "problem",
+      "surface_form": "Discovery of multi-element materials"
+    },
+    {
+      "id": "prob_00393",
+      "type": "problem",
+      "surface_form": "DFT computational scaling"
+    },
+    {
+      "id": "prob_00398",
+      "type": "problem",
+      "surface_form": "Inefficient enumeration of reduced formulas"
+    },
+    {
+      "id": "prob_00399",
+      "type": "problem",
+      "surface_form": "Discovery of partial substitution structures"
+    },
+    {
+      "id": "prob_00401",
+      "type": "problem",
+      "surface_form": "Domain shift between training and evaluation"
+    },
+    {
+      "id": "prob_00402",
+      "type": "problem",
+      "surface_form": "Graph network prediction instability"
+    },
+    {
+      "id": "prob_00403",
+      "type": "problem",
+      "surface_form": "Composition generalization"
+    },
+    {
+      "id": "prob_00404",
+      "type": "problem",
+      "surface_form": "Scalable polymorph discovery"
+    },
+    {
+      "id": "prob_00405",
+      "type": "problem",
+      "surface_form": "Limited crystal discovery through previous ML methods"
+    },
+    {
+      "id": "prob_00406",
+      "type": "problem",
+      "surface_form": "Out-of-distribution robustness"
+    },
+    {
+      "id": "prob_00407",
+      "type": "problem",
+      "surface_form": "Label leakage prevention"
+    },
+    {
+      "id": "prob_00409",
+      "type": "problem",
+      "surface_form": "Electrolyte discovery for ionic conductivity"
+    }
+  ],
+  "generation_type_counts": {
+    "problem": 18
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "discovery",
+  "representative_ids": [
+    "prob_00405",
+    "prob_00388"
+  ]
+}

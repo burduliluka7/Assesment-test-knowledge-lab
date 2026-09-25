@@ -1,0 +1,85 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "comp_00336",
+      "type": "component",
+      "surface_form": "JARVIS‑FF"
+    },
+    {
+      "id": "comp_00337",
+      "type": "component",
+      "surface_form": "JARVIS‑ML"
+    },
+    {
+      "id": "comp_00338",
+      "type": "component",
+      "surface_form": "JARVIS‑Tools"
+    },
+    {
+      "id": "comp_00347",
+      "type": "component",
+      "surface_form": "JARVIS-DFT workflow"
+    },
+    {
+      "id": "comp_00352",
+      "type": "component",
+      "surface_form": "JARVIS‑Wannier Tight‑Binding app"
+    },
+    {
+      "id": "comp_00353",
+      "type": "component",
+      "surface_form": "JARVIS-Beyond-DFT database"
+    },
+    {
+      "id": "comp_00355",
+      "type": "component",
+      "surface_form": "JARVIS-ML platform"
+    },
+    {
+      "id": "comp_00357",
+      "type": "component",
+      "surface_form": "JARVIS‑WannierTB app"
+    },
+    {
+      "id": "comp_00359",
+      "type": "component",
+      "surface_form": "JARVIS‑Tools workflow"
+    },
+    {
+      "id": "comp_00385",
+      "type": "component",
+      "surface_form": "AFLOW workflow engine"
+    },
+    {
+      "id": "comp_00399",
+      "type": "component",
+      "surface_form": "Hybrid functional workflow"
+    },
+    {
+      "id": "comp_00630",
+      "type": "component",
+      "surface_form": "active learning workflow"
+    },
+    {
+      "id": "comp_00632",
+      "type": "component",
+      "surface_form": "Iterative training loop workflow"
+    },
+    {
+      "id": "comp_00823",
+      "type": "component",
+      "surface_form": "Iterative training workflow"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 14
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "jarvis",
+  "representative_ids": [
+    "comp_00359",
+    "comp_00338"
+  ]
+}

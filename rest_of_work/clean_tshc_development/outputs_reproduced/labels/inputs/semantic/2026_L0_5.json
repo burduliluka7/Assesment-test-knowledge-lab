@@ -1,0 +1,1509 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00039",
+      "type": "article",
+      "surface_form": "Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models"
+    },
+    {
+      "id": "cite_00228",
+      "type": "cited_work",
+      "surface_form": "ANI extension to S and Halogens"
+    },
+    {
+      "id": "clai_00001",
+      "type": "claim",
+      "surface_form": "The modified convolution function reduces the mean absolute error for formation‑energy prediction from 0.112 eV/atom to 0.039 eV/atom, achieving DFT‑level accuracy comparable to the experimental DFT‑experiment error of 0.081–0.136 eV/atom."
+    },
+    {
+      "id": "clai_00002",
+      "type": "claim",
+      "surface_form": "CGCNN classifies metals versus semiconductors with an area under the ROC curve of 0.95 and an overall accuracy of 0.90."
+    },
+    {
+      "id": "clai_00003",
+      "type": "claim",
+      "surface_form": "By extracting per‑atom site energies in perovskites, the model reveals that large‑radius elements stabilize the A site and group 4‑6 elements stabilize the B site, and using these insights the high‑throughput search space for stable perovskites is reduced by a factor of seven (from 18,928 to 228 candidates)."
+    },
+    {
+      "id": "clai_00004",
+      "type": "claim",
+      "surface_form": "When applied to a set of 1,585 crystals with elastic properties, CGCNN predicts bulk modulus with a mean absolute error of 0.077 log(GPa) and shear modulus with a mean absolute error of 0.114 log(GPa), demonstrating good generalization."
+    },
+    {
+      "id": "clai_00033",
+      "type": "claim",
+      "surface_form": "Beyond‑DFT methods (HSE06, PBE0, G0W0, DMFT) are generated for a subset of materials to provide higher‑level reference data and enable uncertainty quantification."
+    },
+    {
+      "id": "clai_00036",
+      "type": "claim",
+      "surface_form": "JARVIS‑Tools implements automatic k‑point convergence protocols that improve the precision of DFT calculations."
+    },
+    {
+      "id": "clai_00043",
+      "type": "claim",
+      "surface_form": "Incorporating an adaptive, thermally and chemically conditioned Maxwell–Boltzmann prior markedly lowers mean absolute errors and raises rank correlations for MSD and RDF compared with an isotropic prior; ablation studies show performance degradation without it."
+    },
+    {
+      "id": "clai_00044",
+      "type": "claim",
+      "surface_form": "Incorporating the Corrector model reduces RDF mean absolute error and mitigates large‑displacement artifacts, improving MSD prediction across temperatures, especially for hydrogen diffusion."
+    },
+    {
+      "id": "clai_00065",
+      "type": "claim",
+      "surface_form": "CHGNet achieves state-of-the-art performance on the Matbench Discovery benchmark, outperforming eight other submitted models."
+    },
+    {
+      "id": "clai_00066",
+      "type": "claim",
+      "surface_form": "On the Materials Project Trajectory test set, CHGNet trained with magnetic moment labels attains mean absolute errors of 30 meV/atom for energy, 77 meV/Å for forces, 0.348 GPa for stress, and 0.032 µB for magnetic moments."
+    },
+    {
+      "id": "clai_00068",
+      "type": "claim",
+      "surface_form": "CHGNet integrates magnetic moment labels as a proxy for atomic charge, enabling inference of atomic charges and accurate differentiation of oxidation states such as V³⁺/V⁴⁺ and Fe²⁺/Fe³⁺."
+    },
+    {
+      "id": "clai_00069",
+      "type": "claim",
+      "surface_form": "In charge‑informed molecular dynamics of Li₀.₅MnO₂ at 1100 K, CHGNet predicts the emergence of Mn²⁺ after ~0.8 ns, coinciding with a ~50 meV/oxygen reduction in potential energy and the formation of a spinel‑like phase, indicating a correlation between charge disproportionation and phase transformation."
+    },
+    {
+      "id": "clai_00070",
+      "type": "claim",
+      "surface_form": "Including electronic entropy via charge‑decorated cluster expansions, CHGNet reproduces the experimentally observed miscibility gap and eutectoid‑like transition in the LiₓFePO₄ phase diagram, whereas a non‑charge‑decorated model fails to capture these features."
+    },
+    {
+      "id": "clai_00072",
+      "type": "claim",
+      "surface_form": "Fine‑tuning the pretrained CHGNet on the Li‑Fe‑P‑O chemical space reduces the test error from 23 meV/atom to 15 meV/atom."
+    },
+    {
+      "id": "clai_00073",
+      "type": "claim",
+      "surface_form": "CHGNet captures long‑range interactions up to 20 Å with only four atom‑convolution layers while maintaining low computational cost."
+    },
+    {
+      "id": "clai_00074",
+      "type": "claim",
+      "surface_form": "CHGNet enables nanosecond‑scale molecular dynamics simulations of garnet Li₃La₃Te₂O₁₂, yielding lithium self‑diffusion coefficients with quantified uncertainty."
+    },
+    {
+      "id": "clai_00075",
+      "type": "claim",
+      "surface_form": "Using magnetic moments as a charge proxy does not strictly ensure global charge neutrality in CHGNet predictions."
+    },
+    {
+      "id": "clai_00076",
+      "type": "claim",
+      "surface_form": "The Materials Project Trajectory dataset used to pre‑train CHGNet contains approximately 1.58 million atomic configurations spanning 94 elements, with magnetic moment labels for 76 elements, providing comprehensive chemical coverage."
+    },
+    {
+      "id": "clai_00082",
+      "type": "claim",
+      "surface_form": "On the ISO17 benchmark, SchNet reaches chemical‑accuracy (≈0.5 kcal/mol MAE) for energy predictions on molecules seen during training and further improves predictions on unseen isomers when forces are included in training."
+    },
+    {
+      "id": "clai_00083",
+      "type": "claim",
+      "surface_form": "Including force information in the training loss causally improves SchNet’s generalization to previously unseen chemical structures in ISO17."
+    },
+    {
+      "id": "clai_00084",
+      "type": "claim",
+      "surface_form": "GDML cannot be trained on 50,000 MD17 examples due to its quadratic scaling with the number of atoms and samples, whereas SchNet scales to that dataset size."
+    },
+    {
+      "id": "clai_00088",
+      "type": "claim",
+      "surface_form": "On the QM9 benchmark, SchNet attains a mean absolute error of 0.31 kcal/mol for total‑energy prediction with 110 k training examples, outperforming DTNN (0.84) and enn‑s2s (0.45)."
+    },
+    {
+      "id": "clai_00093",
+      "type": "claim",
+      "surface_form": "Non-conservative (unconstrained) MLIP models consistently show 2-3× theoretical speed-up over their conservative counterparts, with direct force prediction providing additional 2-3× speedup compared to forces computed via automatic differentiation."
+    },
+    {
+      "id": "clai_00097",
+      "type": "claim",
+      "surface_form": "Elastic moduli predictions are very sensitive to the lack of energy conservation in MLIP models, and non-conservative models consistently perform worse on matbench-discovery downstream tasks despite achieving better training and validation accuracies."
+    },
+    {
+      "id": "clai_00100",
+      "type": "claim",
+      "surface_form": "DFT setting inconsistency between training and evaluation datasets significantly affects MLIP model performance comparisons, with PET-OMAD performing worse than PET-OAM and PET-MPtrj on Inorganic Materials due to differences in ab initio theory levels."
+    },
+    {
+      "id": "clai_00104",
+      "type": "claim",
+      "surface_form": "UMLIPs trained on the MatPES dataset achieve test mean absolute errors in energies that are 4–10 times lower than UMLIPs trained on the larger MPRelax or OMat24 datasets."
+    },
+    {
+      "id": "clai_00105",
+      "type": "claim",
+      "surface_form": "Across equilibrium, near‑equilibrium, and molecular‑dynamics property benchmarks, MatPES‑trained UMLIPs match or surpass the performance of models trained on much larger datasets such as OMat24 (≈100 M structures)."
+    },
+    {
+      "id": "clai_00106",
+      "type": "claim",
+      "surface_form": "Molecular‑dynamics simulations using MatPES‑trained UMLIPs exhibit markedly higher stability, with median termination temperatures up to ~1,900 K, versus ~1,300–1,500 K for MPRelax and OMat24 models."
+    },
+    {
+      "id": "clai_00107",
+      "type": "claim",
+      "surface_form": "On near‑equilibrium benchmarks, MatPES UMLIPs significantly improve the prediction of shear modulus (G_VRH) and off‑equilibrium forces while achieving similar bulk‑modulus (K_VRH) and heat‑capacity (C_V) accuracy compared to MPRelax and OMat24 models."
+    },
+    {
+      "id": "clai_00110",
+      "type": "claim",
+      "surface_form": "The MatPES v2025.1 dataset contains 504,811 structures (434,712 PBE and 387,897 r2SCAN calculations) sampled from a configuration space of ~281 million MD snapshots and ~16 billion atomic environments."
+    },
+    {
+      "id": "clai_00111",
+      "type": "claim",
+      "surface_form": "The 2DIRECT sampling workflow yields a data‑efficient dataset that, despite being a fraction of the size of MPRelax, samples a substantially larger region of structural and atomic‑environment space."
+    },
+    {
+      "id": "clai_00112",
+      "type": "claim",
+      "surface_form": "The r2SCAN functional provides a more accurate description of interatomic bonding than PBE, leading to improved potential‑energy‑surface quality in the MatPES r2SCAN dataset."
+    },
+    {
+      "id": "clai_00114",
+      "type": "claim",
+      "surface_form": "Training a TensorNet model on the 400 k‑structure MatPES‑PBE dataset requires approximately 15 minutes per epoch on a single RTX A6000 GPU, whereas training on the 100 M‑structure OMat24 dataset needs about 20 hours per epoch on sixteen A100 GPUs, highlighting the computational efficiency of MatPES."
+    },
+    {
+      "id": "clai_00115",
+      "type": "claim",
+      "surface_form": "TransIP achieves SO(3) equivariance through training with a contrastive latent equivariance objective rather than hard-wired equivariant architectural constraints."
+    },
+    {
+      "id": "clai_00117",
+      "type": "claim",
+      "surface_form": "TransIP achieves 40% to 60% improvement in performance compared to data augmentation baseline (TransAug) across varying OMol25 dataset sizes."
+    },
+    {
+      "id": "clai_00118",
+      "type": "claim",
+      "surface_form": "In the limited data regime (1M samples), TransIP achieves 255 meV/Å force MAE versus 600 meV/Å for TransAug, with force cosine similarity of 0.7 versus 0.44."
+    },
+    {
+      "id": "clai_00119",
+      "type": "claim",
+      "surface_form": "TransIP achieves 58 meV/atom energy MAE compared to TransAug's 120 meV/atom at 1M training samples."
+    },
+    {
+      "id": "clai_00120",
+      "type": "claim",
+      "surface_form": "TransIP-S and TransIP-M achieve significantly faster inference than eSEN baseline at 160,000 and 70,000 atoms/sec versus 15,000 atoms/sec respectively."
+    },
+    {
+      "id": "clai_00124",
+      "type": "claim",
+      "surface_form": "A 48% reduction in equivariance error from 1M to 4M training examples translates to 40-60% performance improvements, exceeding what would be expected from data scaling alone."
+    },
+    {
+      "id": "clai_00125",
+      "type": "claim",
+      "surface_form": "TransIP learns an embedding where input rotations act approximately as a shared orthogonal transformation across different molecules despite no explicit equivariance in the architecture."
+    },
+    {
+      "id": "clai_00127",
+      "type": "claim",
+      "surface_form": "TransIP scales smoothly with parameter count while TransAug exhibits poorer scaling with larger models performing worse than smaller ones."
+    },
+    {
+      "id": "clai_00129",
+      "type": "claim",
+      "surface_form": "TransIP uses a single-stage training pipeline without requiring separate pretraining-finetuning framework or explicit equivariance constraints."
+    },
+    {
+      "id": "clai_00140",
+      "type": "claim",
+      "surface_form": "For internal energy at 0 K (U0), enthalpy (H), Gibbs free energy (G), heat capacity at constant volume (Cv), and highest vibrational frequency (Ω), the MPNN records lower mean absolute errors than SchNet and DTNN (U0 MAE 0.45 vs 0.55/0.72; H 0.39 vs 0.59/0.80; G 0.44 vs 0.55/0.74; Cv 0.80 vs 0.99/1.71; Ω 0.19 vs 0.41/0.78)."
+    },
+    {
+      "id": "clai_00147",
+      "type": "claim",
+      "surface_form": "The GNN surrogate achieves mean absolute errors of ≤0.313 meV for energy, ≤0.189 meV/Å for forces, and ≤0.0734 meV/Å² for thermal forces on validation sets."
+    },
+    {
+      "id": "clai_00153",
+      "type": "claim",
+      "surface_form": "DeePMD-kit supports multiple atomic descriptor types including local frame, DeepPot-SE, attention-based, and hybrid descriptors."
+    },
+    {
+      "id": "clai_00157",
+      "type": "claim",
+      "surface_form": "Compressed models are 1x-10x faster than the original models for both training and inference."
+    },
+    {
+      "id": "clai_00158",
+      "type": "claim",
+      "surface_form": "NVNMD (non-von Neumann molecular dynamics) is 50x-100x faster than regular MD simulations."
+    },
+    {
+      "id": "clai_00163",
+      "type": "claim",
+      "surface_form": "DeePMD-kit APIs have been integrated into multiple third-party MD packages including LAMMPS, i-PI, GROMACS, AMBER, OpenMM, and ABACUS."
+    },
+    {
+      "id": "clai_00164",
+      "type": "claim",
+      "surface_form": "DeePMD-kit supports interpolation between Deep Potential models and empirical pairwise potentials for cases where DFT calculations fail at close interatomic distances."
+    },
+    {
+      "id": "clai_00165",
+      "type": "claim",
+      "surface_form": "DeePMD-kit has added MPI implementation for multi-device training and MD simulations using Horovod for data-parallel distributed training."
+    },
+    {
+      "id": "clai_00166",
+      "type": "claim",
+      "surface_form": "DeePMD-kit can simulate systems containing almost all periodic table elements including drug-like molecules, ions, transition states, and excited states."
+    },
+    {
+      "id": "clai_00170",
+      "type": "claim",
+      "surface_form": "Baseline versions of MACE and Allegro are degenerate with respect to total charge and cannot distinguish between molecules with different charge states without long-range corrections."
+    },
+    {
+      "id": "clai_00172",
+      "type": "claim",
+      "surface_form": "EFA enables modeling of long-range interactions without requiring explicit neighbor cutoffs and outperforms CELLI on most benchmarking subsplits when reference charges are unavailable."
+    },
+    {
+      "id": "clai_00175",
+      "type": "claim",
+      "surface_form": "Metal-organic frameworks present an ideal application for MLIPs because classical force fields lack required accuracy while DFT is too computationally expensive for large unit cells and long timescales."
+    },
+    {
+      "id": "clai_00177",
+      "type": "claim",
+      "surface_form": "Total charge embeddings can recover much of CELLI's performance on some datasets but generalize poorly in size-based extrapolation and should be viewed as a potential extension rather than replacement for long-range methods."
+    },
+    {
+      "id": "clai_00178",
+      "type": "claim",
+      "surface_form": "The observed improvements from long-range corrections cannot be attributed to increased model capacity as all variants share identical hyperparameters and nearly identical parameter counts."
+    },
+    {
+      "id": "clai_00179",
+      "type": "claim",
+      "surface_form": "EFA and CELLI do not lead to improvements when no reference charges are provided in the ODAC25 dataset."
+    },
+    {
+      "id": "clai_00181",
+      "type": "claim",
+      "surface_form": "Foundational MLIP models often fail to outperform simple classical force fields for MOF systems without long-range corrections."
+    },
+    {
+      "id": "clai_00183",
+      "type": "claim",
+      "surface_form": "NequIP outperforms kernel‑based approaches such as sGDML and FCHL19/GPR across benchmarks, including small-data regimes and the MD-17 dataset."
+    },
+    {
+      "id": "clai_00184",
+      "type": "claim",
+      "surface_form": "NequIP requires up to three orders of magnitude fewer training configurations than existing neural interatomic potentials to reach comparable accuracy."
+    },
+    {
+      "id": "clai_00185",
+      "type": "claim",
+      "surface_form": "When trained on only 133 structures (~1 k frames), NequIP outperforms DeepMD trained on 133,500 structures for liquid water and ice simulations."
+    },
+    {
+      "id": "clai_00186",
+      "type": "claim",
+      "surface_form": "Using higher-order E(3)-equivariant representations (increasing rotation order from l=0 to l=1 and up to l=3) consistently reduces prediction error and improves accuracy across all evaluated tasks."
+    },
+    {
+      "id": "clai_00207",
+      "type": "claim",
+      "surface_form": "Introducing magnetic moments via a strictly localized magnetic‑moment layer yields more efficient and accurate training than treating atomic and magnetic structures on equal footing."
+    },
+    {
+      "id": "clai_00216",
+      "type": "claim",
+      "surface_form": "The PBE functional combined with PAW potentials is the default exchange-correlation functional and potential combination for ICSD, Binary Alloy, and Heusler databases."
+    },
+    {
+      "id": "clai_00218",
+      "type": "claim",
+      "surface_form": "DFT+U corrections are applied to the entire ICSD database and certain Heusler database entries containing O, S, Se, and F elements, but not to the Binary Alloy database."
+    },
+    {
+      "id": "clai_00236",
+      "type": "claim",
+      "surface_form": "MACE-MP-0 achieves the lowest mean absolute error (0.310 eV) in migration barrier predictions across the entire Dataset-2 of 574 migration paths."
+    },
+    {
+      "id": "clai_00239",
+      "type": "claim",
+      "surface_form": "All MLIPs struggle with high migration barrier predictions, with only 3.7-20.7% achieving acceptable accuracy (<0.1 eV error) in the 1.31-2.50 eV range."
+    },
+    {
+      "id": "clai_00242",
+      "type": "claim",
+      "surface_form": "MACE-MP-0 and SevenNet intermediate images provide better initial guesses relative to conventional interpolation techniques in over 71% of structures."
+    },
+    {
+      "id": "clai_00244",
+      "type": "claim",
+      "surface_form": "M3GNet and CHGNet exhibit systematic bias toward underestimating migration barriers, with 73.1% and 78.2% of predictions being underestimates respectively."
+    },
+    {
+      "id": "clai_00248",
+      "type": "claim",
+      "surface_form": "In the low-barrier range of 0.0025-0.25 eV, more than 50% of predictions achieve acceptable accuracy across all MLIPs tested."
+    },
+    {
+      "id": "clai_00249",
+      "type": "claim",
+      "surface_form": "IDPP interpolation does not make a significant difference in enhancing the initial guess for the minimum energy path compared to linear interpolation across all MLIPs."
+    },
+    {
+      "id": "clai_00251",
+      "type": "claim",
+      "surface_form": "FastCHGNet trains in 1.5 hours using 32 GPUs compared to 8.3 days on a single A100 GPU for the original CHGNet model."
+    },
+    {
+      "id": "clai_00252",
+      "type": "claim",
+      "surface_form": "MLIPs map atomic configurations to total energy and provide forces and stresses as analytical derivatives of the potential energy surface."
+    },
+    {
+      "id": "clai_00255",
+      "type": "claim",
+      "surface_form": "EquiformerV2-OMAT24 achieves the best performance on the MatBench leaderboard as of this writing."
+    },
+    {
+      "id": "clai_00256",
+      "type": "claim",
+      "surface_form": "Each cataloged DFT structure provides one energy and 3N forces (N = number of atoms) for training universal MLIPs."
+    },
+    {
+      "id": "clai_00257",
+      "type": "claim",
+      "surface_form": "Pre-trained targeted MLIPs for specific systems can be found on the NIST Interatomic Potentials Repository and OpenKIM."
+    },
+    {
+      "id": "clai_00258",
+      "type": "claim",
+      "surface_form": "CHGNet achieves test mean absolute errors of 29 meV/atom for energy, 70 meV/Angstrom for force, and 0.308 GPa for stress."
+    },
+    {
+      "id": "clai_00259",
+      "type": "claim",
+      "surface_form": "M3GNet achieves test mean absolute errors of 35 meV/atom for energy, 72 meV/Angstrom for force, and 0.41 GPa for stress."
+    },
+    {
+      "id": "clai_00260",
+      "type": "claim",
+      "surface_form": "CHGNet uniquely includes electronic effects of valences by explicitly embedding magnetic moments on the vector representation of each atom, enabling charge-informed atomistic simulations."
+    },
+    {
+      "id": "clai_00261",
+      "type": "claim",
+      "surface_form": "CHGNet achieved the lowest formation energy MAE at 81 meV/atom, while all other models had MAEs of 129 meV/atom or higher."
+    },
+    {
+      "id": "clai_00267",
+      "type": "claim",
+      "surface_form": "MACE and grACE packages provide excellent scaling with number of elements while achieving high accuracy."
+    },
+    {
+      "id": "clai_00270",
+      "type": "claim",
+      "surface_form": "MACE-OFF3 uses only short-range interactions yet achieves improved performance on benchmark molecular simulation properties compared to ANI."
+    },
+    {
+      "id": "clai_00273",
+      "type": "claim",
+      "surface_form": "M3GNet is an extension of MEGNet model to include 3-body interactions, explicit atomic coordinates, and 3×3 crystal lattice matrix."
+    },
+    {
+      "id": "clai_00278",
+      "type": "claim",
+      "surface_form": "None of the three U-MLIPs (M3GNet, CHGNet, MACE-MP0) could accurately reproduce mixing energies of metallic binary alloys in adequate agreement with DFT results."
+    },
+    {
+      "id": "clai_00280",
+      "type": "claim",
+      "surface_form": "There exists a continuum of approaches between pure PBPs (physics-derived with almost no fitting parameters) and pure MLIPs (purely numerical fit with almost no intuitive guidance)."
+    },
+    {
+      "id": "clai_00281",
+      "type": "claim",
+      "surface_form": "MLIPs require substantial training data to learn the physics of the system, though this is becoming easier to meet as ab initio data becomes more plentiful and standardized."
+    },
+    {
+      "id": "clai_00282",
+      "type": "claim",
+      "surface_form": "MLIPs are straightforward to iteratively improve by adding more training data, whereas improving PBPs often requires fundamental changes to underlying functional forms."
+    },
+    {
+      "id": "clai_00283",
+      "type": "claim",
+      "surface_form": "DeepMD represents local atomic environment as embedding vectors constructed by neural networks based on atom distances, angles, and types."
+    },
+    {
+      "id": "clai_00287",
+      "type": "claim",
+      "surface_form": "AIMNet2 targets molecular and macromolecular structures applicable to species containing up to 14 chemical elements in neutral and charged states."
+    },
+    {
+      "id": "clai_00290",
+      "type": "claim",
+      "surface_form": "ANI potential was expanded in 2020 to include S, Cl, and F elements, covering approximately 90% of drug-like molecules."
+    },
+    {
+      "id": "clai_00291",
+      "type": "claim",
+      "surface_form": "AIMNet2 extends ANI to include up to 14 elemental species with additional vdW and electrostatic correction terms."
+    },
+    {
+      "id": "clai_00292",
+      "type": "claim",
+      "surface_form": "First published U-MLIPs with broad periodic table applicability came nearly simultaneously in early 2022."
+    },
+    {
+      "id": "clai_00293",
+      "type": "claim",
+      "surface_form": "U-MLIPs generally have low energy and force errors compared to their ab initio training data."
+    },
+    {
+      "id": "clai_00296",
+      "type": "claim",
+      "surface_form": "Good agreement on target properties provides greater confidence in U-MLIP than just similar energies and forces on select structures."
+    },
+    {
+      "id": "clai_00299",
+      "type": "claim",
+      "surface_form": "Including magnetic moments in CHGNet training led to error reductions of 1-10% for energy, force, and stress compared to not including magnetic moments."
+    },
+    {
+      "id": "clai_00302",
+      "type": "claim",
+      "surface_form": "MLIPs are not fundamentally limited to specific system types (metallic, ionic, reactive vs. nonreactive), unlike distinctions that were essential for PBPs."
+    },
+    {
+      "id": "clai_00309",
+      "type": "claim",
+      "surface_form": "U-MLIPs systematically underpredict energies and forces due to softening of the potential energy surface, attributed to biased sampling in training datasets from DFT ionic relaxations near local PES minima."
+    },
+    {
+      "id": "clai_00310",
+      "type": "claim",
+      "surface_form": "Some of the best-performing MLIPs are trained separately on energies and forces and are non-conservative, with forces not directly calculated by differentiating the PES."
+    },
+    {
+      "id": "clai_00319",
+      "type": "claim",
+      "surface_form": "All algorithms exhibit a universal trend of decreasing relative errors as dataset size increases."
+    },
+    {
+      "id": "clai_00337",
+      "type": "claim",
+      "surface_form": "SevenNet‑driven MD ranks LiB3H8 as having the highest extrapolated room‑temperature conductivity, roughly an order of magnitude larger than the reference Li7P3S11."
+    },
+    {
+      "id": "clai_00339",
+      "type": "claim",
+      "surface_form": "All AIMD‑tested structures are diffusive at 1000 K, and 88 % of the top‑100 Ξ‑selected materials are diffusive in the SevenNet‑driven MD validation."
+    },
+    {
+      "id": "clai_00345",
+      "type": "claim",
+      "surface_form": "Mean‑square‑displacement (MSD) slopes obtained from SevenNet‑driven MD agree closely with those from ab‑initio AIMD, demonstrating consistency between the two simulation approaches."
+    },
+    {
+      "id": "clai_00350",
+      "type": "claim",
+      "surface_form": "Using an ML‑trained interatomic potential (ML‑IAP) enables validation of many more candidate structures than conventional AIMD, as demonstrated by MD simulations on 30 random and 100 top‑Ξ structures."
+    },
+    {
+      "id": "clai_00352",
+      "type": "claim",
+      "surface_form": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible."
+    },
+    {
+      "id": "clai_00359",
+      "type": "claim",
+      "surface_form": "OMat24 comprises over 118 million DFT calculations across diverse chemistries, materials, and configurations for inorganic bulk materials, making it up to 2 orders of magnitude larger than other openly available datasets in terms of number of single-point calculations."
+    },
+    {
+      "id": "clai_00360",
+      "type": "claim",
+      "surface_form": "OMat24 exhibits more uniform and comprehensive coverage of near-neighbor pairs and element distributions compared to both Alexandria and MPtrj datasets, with elemental coverage spanning most of the periodic table."
+    },
+    {
+      "id": "clai_00361",
+      "type": "claim",
+      "surface_form": "OMat24 contains a large fraction of far-from-equilibrium structures with 1 to 100 atoms per structure (majority having less than 20 atoms), yielding broader label distributions than relaxation-only datasets."
+    },
+    {
+      "id": "clai_00362",
+      "type": "claim",
+      "surface_form": "MLIP models trained on OMat24 achieve F1 scores above 0.9 for stability prediction and 20 meV/atom accuracy for formation energy on Matbench Discovery, with all five top-performing models on the Matbench Discovery leaderboard exclusively trained on OMat24."
+    },
+    {
+      "id": "clai_00364",
+      "type": "claim",
+      "surface_form": "OMat24's diversity corrects the systematic softening bias of prior models trained on less diverse datasets, with systematic softening improvements across all degrees consistently observed in five distinct architectures, indicating the effect is largely architecture-independent."
+    },
+    {
+      "id": "clai_00365",
+      "type": "claim",
+      "surface_form": "Training on OMat24 results in models with better extrapolation to regions with lower dataset density farther away from the convex hull compared to models trained on other datasets."
+    },
+    {
+      "id": "clai_00366",
+      "type": "claim",
+      "surface_form": "The mean absolute difference in formation energies between MP and OMat24 DFT settings is 13.5 meV/atom across 423 compounds, with differences largely attributed to different versions of pseudo-potentials and different pseudo-potential symbols for Yb and W."
+    },
+    {
+      "id": "clai_00367",
+      "type": "claim",
+      "surface_form": "The mean absolute error between DFT predicted and experimental formation energies for 222 compounds is 55 meV/atom using OMat24 DFT settings, with compatibility corrections computed following the Materials Project MP2020 Compatibility scheme."
+    },
+    {
+      "id": "clai_00368",
+      "type": "claim",
+      "surface_form": "Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations."
+    },
+    {
+      "id": "clai_00370",
+      "type": "claim",
+      "surface_form": "The diversity of the larger OMat24 dataset does not benefit from the regularization or augmentation provided by DeNS, whereas dataset augmentation techniques like DeNS can significantly enhance performance when training solely on the MPtraj dataset."
+    },
+    {
+      "id": "clai_00371",
+      "type": "claim",
+      "surface_form": "For the eSEN architecture, prediction error plateaus at approximately 100 million samples, matching the total size of the OMat24 training set."
+    },
+    {
+      "id": "clai_00389",
+      "type": "claim",
+      "surface_form": "Using the IDNN reduces the computational cost of generating free‑energy data for continuum models by approximately two orders of magnitude compared with direct DFT sampling."
+    },
+    {
+      "id": "clai_00404",
+      "type": "claim",
+      "surface_form": "Trained ML models are typically only effective for interpolating data points and may not be reliable when extrapolating beyond the known data range."
+    },
+    {
+      "id": "clai_00422",
+      "type": "claim",
+      "surface_form": "Direct minimization of the total KS‑DFT energy with stochastic gradient descent reduces the asymptotic computational complexity from O(N⁴) to O(N³), and the full‑batch D4FT algorithm has complexity O(nN²)+O(n²N²), which is lower than the O(n²N²) complexity of conventional SCF; minibatch training further lowers the cost."
+    },
+    {
+      "id": "clai_00424",
+      "type": "claim",
+      "surface_form": "Across a benchmark set ranging from He to benzene, D4FT reproduces ground‑state energies of the reference PySCF implementation with deviations ≤0.02 Ha (LSDA/6‑31g and LSDA/STO‑3g)."
+    },
+    {
+      "id": "clai_00425",
+      "type": "claim",
+      "surface_form": "D4FT correctly predicts the paramagnetic ground state of O₂ and the diamagnetic ground state of CO₂ by comparing spin‑restricted and spin‑unrestricted calculations."
+    },
+    {
+      "id": "clai_00430",
+      "type": "claim",
+      "surface_form": "D4FT successfully converges on unstable fullerene fragments (C₁₂₀, C₁₄₀) where PySCF fails to converge within the default iteration limit."
+    },
+    {
+      "id": "clai_00433",
+      "type": "claim",
+      "surface_form": "Orb-v3 achieves near state-of-the-art performance across evaluations with at least 10x reduction in latency and 8x reduction in memory compared to alternative MLIPs."
+    },
+    {
+      "id": "clai_00434",
+      "type": "claim",
+      "surface_form": "Orb-v3-direct-20 uses only 32.8GB GPU memory for 100,000 atom systems and completes in under half a second, while all baseline methods and conservative models encounter Out Of Memory errors."
+    },
+    {
+      "id": "clai_00435",
+      "type": "claim",
+      "surface_form": "Orb-v3-direct-* models are the only universal MLIPs that can compute hundreds of forward passes per second, exceeding one million steps per hour for small systems."
+    },
+    {
+      "id": "clai_00437",
+      "type": "claim",
+      "surface_form": "Orb-v3-direct-20-omat is comparable in accuracy to current state-of-the-art models while being approximately 30 times faster than SevenNet."
+    },
+    {
+      "id": "clai_00438",
+      "type": "claim",
+      "surface_form": "Only orb-v3-conservative-inf is truly energy-conserving in NVE molecular dynamics simulations; all other Orb-v3 variants exhibit energy drift."
+    },
+    {
+      "id": "clai_00442",
+      "type": "claim",
+      "surface_form": "Equigrad regularization improves rotational invariance of Orb-v3 by approximately 5x compared to default loss training."
+    },
+    {
+      "id": "clai_00450",
+      "type": "claim",
+      "surface_form": "MACE‑MP‑0 attains state‑of‑the‑art accuracy for periodic systems while preserving equivariant inductive biases."
+    },
+    {
+      "id": "clai_00459",
+      "type": "claim",
+      "surface_form": "MatterSim, a zero‑shot machine‑learned interatomic potential trained on >17 million DFT‑labeled structures, supports universal simulation across all elements, temperatures and pressures, achieving energy prediction errors below 50 meV/atom even in high‑temperature, non‑equilibrium regimes."
+    },
+    {
+      "id": "clai_00461",
+      "type": "claim",
+      "surface_form": "SevenNet-0 achieves mean absolute errors of 24 meV/atom for energy, 0.067 eV/Å for force, and 0.65 GPa for stress on the test set."
+    },
+    {
+      "id": "clai_00466",
+      "type": "claim",
+      "surface_form": "SevenNet-0 shows improvements in energy and force accuracies compared to M3GNet (35 meV/atom, 0.072 eV/Å)."
+    },
+    {
+      "id": "clai_00471",
+      "type": "claim",
+      "surface_form": "A 60-ps MD simulation with 112,000 atoms using SevenNet-0 required 12.7 hours, approximately 0.1 ns per day."
+    },
+    {
+      "id": "clai_00472",
+      "type": "claim",
+      "surface_form": "SevenNet interfaces with the LAMMPS package for MD simulations using TorchScript to integrate trained models."
+    },
+    {
+      "id": "clai_00477",
+      "type": "claim",
+      "surface_form": "For LLZO, the computed activation energies range from 0.2 to 0.22 eV, in very good agreement with experimental values of 0.20-0.21 eV for cubic LLZO."
+    },
+    {
+      "id": "clai_00480",
+      "type": "claim",
+      "surface_form": "For NASICON, training starting from FPMD configurations with 80 atoms fails to converge even after three training loops with activation energies spanning 0.2-0.4 eV."
+    },
+    {
+      "id": "clai_00489",
+      "type": "claim",
+      "surface_form": "Simple MEGNet models that use only atomic number and spatial distance as input achieve chemical accuracy, perform comparably to full‑feature models, and outperform prior state‑of‑the‑art models on 8 of the 13 QM9 properties."
+    },
+    {
+      "id": "clai_00490",
+      "type": "claim",
+      "surface_form": "MEGNet models trained on approximately 60,000 crystals outperform prior models (SchNet and CGCNN) for formation energy, band gap, bulk modulus, and shear modulus, achieving errors comparable to or better than density‑functional‑theory uncertainties."
+    },
+    {
+      "id": "clai_00491",
+      "type": "claim",
+      "surface_form": "A unified free‑energy MEGNet model that incorporates temperature, pressure, and entropy as global state inputs predicts U₀, U, H, and G with a combined mean absolute error of 0.010 eV, comparable to separate single‑property models."
+    },
+    {
+      "id": "clai_00492",
+      "type": "claim",
+      "surface_form": "Elemental embedding vectors learned by the crystal formation‑energy MEGNet model reproduce known periodic‑table trends and, when transferred to band‑gap and elastic‑moduli models, reduce their mean absolute errors, improving upon prior machine‑learning approaches."
+    },
+    {
+      "id": "clai_00493",
+      "type": "claim",
+      "surface_form": "Ensembling two independently trained three‑block MEGNet models lowers the formation‑energy mean absolute error from 0.028 eV/atom to 0.024 eV/atom."
+    },
+    {
+      "id": "clai_00496",
+      "type": "claim",
+      "surface_form": "Increasing the crystal graph radius cut‑off from 4 Å to 6 Å slightly worsens the formation‑energy mean absolute error (to 0.03 eV/atom), confirming the 4 Å cut‑off as near‑optimal."
+    },
+    {
+      "id": "clai_00497",
+      "type": "claim",
+      "surface_form": "CGAT-2 network achieves a mean absolute test error of 21 meV/atom for distance to the convex hull, enabling prediction of thermodynamic stability from unrelaxed crystal structures."
+    },
+    {
+      "id": "clai_00498",
+      "type": "claim",
+      "surface_form": "The ML-assisted high-throughput search uncovered 19,512 additional materials on the convex hull of thermodynamic stability after DFT validation."
+    },
+    {
+      "id": "clai_00500",
+      "type": "claim",
+      "surface_form": "Approximately 150,000 compounds were found with energy distance less than 50 meV/atom from the convex hull."
+    },
+    {
+      "id": "clai_00508",
+      "type": "claim",
+      "surface_form": "Materials within 50 meV/atom from convex hull were selected for subsequent DFT stiffness tensor calculations."
+    },
+    {
+      "id": "clai_00537",
+      "type": "claim",
+      "surface_form": "Models trained on Materials Project data systematically underpredict convex‑hull distances because the training set is biased toward low‑formation‑energy (stable) structures."
+    },
+    {
+      "id": "clai_00538",
+      "type": "claim",
+      "surface_form": "High disagreement among model predictions (large standard deviation) can be used to flag potential DFT relaxation failures in high‑throughput screenings."
+    },
+    {
+      "id": "clai_00539",
+      "type": "claim",
+      "surface_form": "Accurate regression models can still produce high false‑positive rates near the 0 eV/atom convex‑hull decision boundary."
+    },
+    {
+      "id": "clai_00540",
+      "type": "claim",
+      "surface_form": "Using the MACE checkpoint trained on the M3GNet dataset caused volume implosion failures for several hundred of the 250 k test crystals, whereas the checkpoint trained on the MPtrj dataset reduced failures to only 44 crystals."
+    },
+    {
+      "id": "clai_00545",
+      "type": "claim",
+      "surface_form": "Final GNoME models predict energies with a mean absolute error of 11 meV per atom on relaxed structures, improved from 21 meV per atom in the initial model trained on Materials Project data."
+    },
+    {
+      "id": "clai_00547",
+      "type": "claim",
+      "surface_form": "Large-scale pretraining of MLIPs on GNoME dataset enables models with unprecedented zero-shot accuracy on downstream AIMD data, outperforming state-of-the-art NequIP models trained on hundreds of structures from the target distribution."
+    },
+    {
+      "id": "clai_00553",
+      "type": "claim",
+      "surface_form": "Crystal structures, data, and software for analyzing stable crystals, phase diagrams, static GNN, and interatomic potentials will be made available at the Google DeepMind materials_discovery GitHub repository and via the Materials Project with permanent DOI link 10.17188/2009989."
+    },
+    {
+      "id": "clai_00554",
+      "type": "claim",
+      "surface_form": "Previous machine-learning techniques have been ineffective in estimating material stability (decomposition energy) with respect to the convex hull."
+    },
+    {
+      "id": "clai_00560",
+      "type": "claim",
+      "surface_form": "In polycrystalline aluminum, the GNN predicts atomic potential energy with a mean normalized relative error of 11.0% (maximum ≈13%) and achieves R² = 0.99 for mean potential energy versus grain number."
+    },
+    {
+      "id": "clai_00562",
+      "type": "claim",
+      "surface_form": "The GNN’s stress predictions are substantially more accurate than on‑the‑fly stress calculations from the force field, which exhibit higher errors."
+    },
+    {
+      "id": "clai_00565",
+      "type": "claim",
+      "surface_form": "The GNN respects physical constraints, accurately capturing derivative properties such as stress fields that obey underlying physical laws, and predicts global properties (Young’s modulus, total potential energy) that follow known physical relationships and match MD results across different crystalline systems."
+    },
+    {
+      "id": "clai_00567",
+      "type": "claim",
+      "surface_form": "The GNN accelerates atomic property prediction by hundreds to thousands of times compared with conventional MD simulations, requiring seconds on a single CPU versus thousands of seconds on 24 CPUs."
+    },
+    {
+      "id": "clai_00568",
+      "type": "claim",
+      "surface_form": "Linear fitting of atomic properties yields substantially higher prediction errors than the GNN approach, demonstrating the superiority of the nonlinear GNN model for mapping initial structures to final property distributions."
+    },
+    {
+      "id": "clai_00569",
+      "type": "claim",
+      "surface_form": "DeePMD reproduces AIMD energies, forces, and virial tensors for water and ice with root‑mean‑square errors of approximately 1 meV per molecule for energy, 40 meV Å⁻¹ for forces, and 1–2 meV for the virial."
+    },
+    {
+      "id": "clai_00570",
+      "type": "claim",
+      "surface_form": "DeePMD accurately reproduces radial distribution functions and three‑body angular distribution functions of liquid water and ice, matching AIMD results."
+    },
+    {
+      "id": "clai_00572",
+      "type": "claim",
+      "surface_form": "The computational cost of DeePMD scales linearly with the number of atoms and is several orders of magnitude lower than equivalent AIMD simulations, comparable to empirical force fields."
+    },
+    {
+      "id": "clai_00574",
+      "type": "claim",
+      "surface_form": "DeePMD preserves translational, rotational, and permutational symmetries by constructing a local reference frame for each atom and sorting neighbor lists by species and inverse distance."
+    },
+    {
+      "id": "clai_00589",
+      "type": "claim",
+      "surface_form": "EquiformerV2 trained on only OC22 (8.4M structures) achieves better results than GemNet-OC trained on both OC20 (130M structures) and OC22, demonstrating significantly better data efficiency."
+    },
+    {
+      "id": "clai_00591",
+      "type": "claim",
+      "surface_form": "EquiformerV2 offers better speed-accuracy trade-offs than Equiformer, being 2.3x faster at Lmax=2 while achieving better force MAE, and requiring 1.4x less training time when increasing Lmax from 2 to 4."
+    },
+    {
+      "id": "clai_00592",
+      "type": "claim",
+      "surface_form": "EquiformerV2 incorporates three architectural improvements: attention re-normalization, separable S2 activation, and separable layer normalization, replacing SO(3) convolutions with eSCN convolutions to efficiently incorporate higher-degree tensors."
+    },
+    {
+      "id": "clai_00593",
+      "type": "claim",
+      "surface_form": "EquiformerV2 achieves the highest success rate in the AdsorbML algorithm and enables a 2x reduction in DFT calculations needed for computing adsorption energies."
+    },
+    {
+      "id": "clai_00594",
+      "type": "claim",
+      "surface_form": "EquiformerV2 achieves better results than Equiformer on 9 out of 12 tasks on the QM9 dataset and is the overall best performing model."
+    },
+    {
+      "id": "clai_00600",
+      "type": "claim",
+      "surface_form": "MACE uses four-body (higher-order) messages, allowing only two message‑passing layers to achieve converged accuracy, whereas prior equivariant MPNNs required five or six layers."
+    },
+    {
+      "id": "clai_00603",
+      "type": "claim",
+      "surface_form": "MACE shows superior extrapolation ability, reducing energy RMSE by about 30 % at 1200 K and 40 % on dihedral‑slice energies for the 3BPA benchmark, and achieving lower errors on geometries far from the training distribution."
+    },
+    {
+      "id": "clai_00604",
+      "type": "claim",
+      "surface_form": "On the 3BPA molecule energy profile, MACE predictions are closest to the DFT ground truth across three dihedral slices, outperforming BOTNet and NequIP."
+    },
+    {
+      "id": "clai_00627",
+      "type": "claim",
+      "surface_form": "UMA-M reduces OC20 S2EF adsorption energy prediction errors by approximately 80% compared to previous state-of-the-art models, achieving 33.4 meV MAE versus 149.1 meV for EquiformerV2-OC20."
+    },
+    {
+      "id": "clai_00629",
+      "type": "claim",
+      "surface_form": "UMA-S can simulate 1,000 atoms at 16 steps per second (1.4ns per day) and fit system sizes up to 100,000+ atoms in memory on a single 80GB GPU."
+    },
+    {
+      "id": "clai_00632",
+      "type": "claim",
+      "surface_form": "UMA models achieve sub-20 meV/atom energy MAE on multiple molecule benchmarks including biomolecules and electrolytes, and lattice energy prediction accuracy of ≤3 kJ/mol for molecular crystals."
+    },
+    {
+      "id": "clai_00633",
+      "type": "claim",
+      "surface_form": "UMA models demonstrate log-linear scaling behavior at compute scales of 10^18-10^20 FLOPs, indicating greater model capacity is required to fit the UMA dataset."
+    },
+    {
+      "id": "clai_00640",
+      "type": "claim",
+      "surface_form": "Relaxing test crystals with M3GNet reduces median volume error from 2.4 % to 0.6 % and energy mean absolute error from 0.169 eV/atom to 0.035 eV/atom relative to DFT‑relaxed references."
+    },
+    {
+      "id": "clai_00641",
+      "type": "claim",
+      "surface_form": "A single‑CPU M3GNet relaxation completes in about 22 seconds, compared with 15 hours on 32 cores for DFT; pre‑relaxation with M3GNet shortens subsequent DFT relaxation time by roughly a factor of three and reduces total CPU time by an average factor of 2.97."
+    },
+    {
+      "id": "clai_00642",
+      "type": "claim",
+      "surface_form": "Screening 31.7 million hypothetical crystals with M3GNet identifies approximately 1.8 million candidates with predicted hull distances below 0.001 eV/atom, and among the 2,000 lowest‑energy candidates, 1,578 are confirmed stable (Ehull < 0.001 eV/atom) by DFT."
+    },
+    {
+      "id": "clai_00649",
+      "type": "claim",
+      "surface_form": "For a MgO test set, M3GNet outperforms Moment Tensor Potentials in extrapolating equation‑of‑state behavior beyond the training regime and exhibits long‑range interaction characteristics similar to a Buckingham + Coulomb model."
+    },
+    {
+      "id": "clai_00650",
+      "type": "claim",
+      "surface_form": "The M3GNet architecture preserves continuity of energies, forces, and stresses with respect to changes in bond count, satisfying a necessary physical constraint for interatomic potentials."
+    },
+    {
+      "id": "clai_00652",
+      "type": "claim",
+      "surface_form": "At 0 K and zero pressure, 23 % of the 32,489 ICSD structures in the OQMD are thermodynamically stable according to grand canonical linear programming analysis."
+    },
+    {
+      "id": "clai_00659",
+      "type": "claim",
+      "surface_form": "A combined heuristic‑plus‑machine‑learning model trained on OQMD ternary formation energies predicts formation energies with a mean absolute error of ~0.11 eV/atom, roughly half the typical DFT‑experiment error."
+    },
+    {
+      "id": "clai_00670",
+      "type": "claim",
+      "surface_form": "A hybrid HSE06 calculation for ZnO yields a band gap of 2.48 eV, substantially larger than the LDA/GGA gap of 0.7 eV and the PBE+U gap of 1.82 eV."
+    },
+    {
+      "id": "clai_00671",
+      "type": "claim",
+      "surface_form": "Tuning the exact‑exchange fraction α to 0.375 in HSE06 brings the calculated ZnO band gap into agreement with experiment."
+    },
+    {
+      "id": "clai_00674",
+      "type": "claim",
+      "surface_form": "A bulk ZnO HSE06 calculation (8×8×6 k‑point mesh, 400 eV cutoff) takes approximately 5 hours on 8 CPUs, while the equivalent GGA/PBE+U calculation finishes in less than a minute."
+    },
+    {
+      "id": "clai_00676",
+      "type": "claim",
+      "surface_form": "The Gaussian approximation potential (GAP) enables atomistic simulations with close-to-DFT accuracy at computational costs many orders of magnitude lower than quantum-mechanical methods."
+    },
+    {
+      "id": "clai_00687",
+      "type": "claim",
+      "surface_form": "DFT-based methods are practically limited to systems of a few hundred atoms, making generation of 8,000-atom amorphous carbon structures impossible with DFT-MD even on state-of-the-art supercomputers."
+    },
+    {
+      "id": "comp_00089",
+      "type": "component",
+      "surface_form": "MPE descriptor"
+    },
+    {
+      "id": "comp_00093",
+      "type": "component",
+      "surface_form": "ML‑driven MD validation pipeline"
+    },
+    {
+      "id": "comp_00097",
+      "type": "component",
+      "surface_form": "MD simulation pipeline"
+    },
+    {
+      "id": "comp_00214",
+      "type": "component",
+      "surface_form": "Short‑time MD simulation workflow"
+    },
+    {
+      "id": "comp_00276",
+      "type": "component",
+      "surface_form": "Mini‑batch SGD for KS‑DFT"
+    },
+    {
+      "id": "comp_00374",
+      "type": "component",
+      "surface_form": "Single‑point DFT calculations"
+    },
+    {
+      "id": "comp_00383",
+      "type": "component",
+      "surface_form": "MD stability assessment"
+    },
+    {
+      "id": "comp_00480",
+      "type": "component",
+      "surface_form": "Orb-v3"
+    },
+    {
+      "id": "comp_00561",
+      "type": "component",
+      "surface_form": "CGCNN model for elastic properties"
+    },
+    {
+      "id": "comp_00764",
+      "type": "component",
+      "surface_form": "orb-v3-conservative models"
+    },
+    {
+      "id": "comp_00765",
+      "type": "component",
+      "surface_form": "orb-v3-direct models"
+    },
+    {
+      "id": "comp_00827",
+      "type": "component",
+      "surface_form": "DFT-derived features"
+    },
+    {
+      "id": "data_00045",
+      "type": "dataset",
+      "surface_form": "DFT relaxation time with M3GNet pre‑relaxation"
+    },
+    {
+      "id": "data_00093",
+      "type": "dataset",
+      "surface_form": "Universal MLIP dataset"
+    },
+    {
+      "id": "data_00197",
+      "type": "dataset",
+      "surface_form": "Diatomics OMat"
+    },
+    {
+      "id": "futu_00001",
+      "type": "future_topic",
+      "surface_form": "Application of CGCNN to additional material classes beyond perovskites"
+    },
+    {
+      "id": "futu_00002",
+      "type": "future_topic",
+      "surface_form": "Integration of CGCNN predictions with experimental validation pipelines"
+    },
+    {
+      "id": "futu_00003",
+      "type": "future_topic",
+      "surface_form": "Extension of CGCNN to predict dynamic or temperature‑dependent properties"
+    },
+    {
+      "id": "futu_00026",
+      "type": "future_topic",
+      "surface_form": "Scaling unconstrained MLIPs to larger numbers of parameters and training samples"
+    },
+    {
+      "id": "futu_00047",
+      "type": "future_topic",
+      "surface_form": "Design of more robust and transferable MLIPs in other systems"
+    },
+    {
+      "id": "futu_00048",
+      "type": "future_topic",
+      "surface_form": "Development of universal or foundational MLIPs"
+    },
+    {
+      "id": "futu_00073",
+      "type": "future_topic",
+      "surface_form": "MLIP execution speed estimation"
+    },
+    {
+      "id": "futu_00074",
+      "type": "future_topic",
+      "surface_form": "MLIP adoption guidelines for non-experts"
+    },
+    {
+      "id": "futu_00109",
+      "type": "future_topic",
+      "surface_form": "Improving scalability of KS‑DFT for large molecules and solid cells using deep learning"
+    },
+    {
+      "id": "futu_00130",
+      "type": "future_topic",
+      "surface_form": "Unified free‑energy MEGNet model incorporating temperature, pressure, and entropy as global state inputs"
+    },
+    {
+      "id": "futu_00131",
+      "type": "future_topic",
+      "surface_form": "Transfer learning of element embeddings from large‑scale formation‑energy models to improve predictions of band gaps and elastic moduli"
+    },
+    {
+      "id": "futu_00134",
+      "type": "future_topic",
+      "surface_form": "Application of MEGNet models to a broader range of crystal properties beyond formation energy, band gap, and elastic moduli"
+    },
+    {
+      "id": "futu_00153",
+      "type": "future_topic",
+      "surface_form": "Design of de novo atomic structures using GNNs combined with genetic algorithms"
+    },
+    {
+      "id": "meth_00090",
+      "type": "method",
+      "surface_form": "MACE-MP-0"
+    },
+    {
+      "id": "meth_00092",
+      "type": "method",
+      "surface_form": "Orb-v2"
+    },
+    {
+      "id": "meth_00205",
+      "type": "method",
+      "surface_form": "Constrained DFT"
+    },
+    {
+      "id": "meth_00222",
+      "type": "method",
+      "surface_form": "D4FT"
+    },
+    {
+      "id": "meth_00312",
+      "type": "method",
+      "surface_form": "MLIP-NEB benchmarking workflow"
+    },
+    {
+      "id": "meth_00313",
+      "type": "method",
+      "surface_form": "Orb-v3"
+    },
+    {
+      "id": "meth_00350",
+      "type": "method",
+      "surface_form": "pymatgen structure matcher"
+    },
+    {
+      "id": "meth_00388",
+      "type": "method",
+      "surface_form": "MLIP_framework_analysis"
+    },
+    {
+      "id": "meth_00407",
+      "type": "method",
+      "surface_form": "long-range MLIP generalization framework with biased train-test splitting"
+    },
+    {
+      "id": "meth_00417",
+      "type": "method",
+      "surface_form": "unconstrained MLIP evaluation framework"
+    },
+    {
+      "id": "meth_00418",
+      "type": "method",
+      "surface_form": "Universal MLIPs"
+    },
+    {
+      "id": "prob_00017",
+      "type": "problem",
+      "surface_form": "Efficient inference compared to DFT"
+    },
+    {
+      "id": "prob_00029",
+      "type": "problem",
+      "surface_form": "Computational cost of large‑scale DFT"
+    },
+    {
+      "id": "prob_00115",
+      "type": "problem",
+      "surface_form": "high‑cost DFT geometry optimization"
+    },
+    {
+      "id": "prob_00126",
+      "type": "problem",
+      "surface_form": "Computational bottleneck of DFT for magnetic superstructures"
+    },
+    {
+      "id": "prob_00127",
+      "type": "problem",
+      "surface_form": "Inability of prior deep‑learning DFT methods to handle magnetic degrees of freedom"
+    },
+    {
+      "id": "prob_00129",
+      "type": "problem",
+      "surface_form": "DFT‑level accuracy with linear scaling"
+    },
+    {
+      "id": "prob_00135",
+      "type": "problem",
+      "surface_form": "Accuracy‑efficiency dilemma of DFT"
+    },
+    {
+      "id": "prob_00154",
+      "type": "problem",
+      "surface_form": "Scalability of KS‑DFT to larger systems"
+    },
+    {
+      "id": "prob_00211",
+      "type": "problem",
+      "surface_form": "Scalable generation of high‑quality DFT training data"
+    },
+    {
+      "id": "prob_00214",
+      "type": "problem",
+      "surface_form": "Assessment of MD stability for ML potentials"
+    },
+    {
+      "id": "prob_00232",
+      "type": "problem",
+      "surface_form": "Formation energy compatibility across DFT settings"
+    },
+    {
+      "id": "prob_00234",
+      "type": "problem",
+      "surface_form": "Systematic softening in MLIPs"
+    },
+    {
+      "id": "prob_00285",
+      "type": "problem",
+      "surface_form": "High computational cost of DFT-NEB"
+    },
+    {
+      "id": "prob_00290",
+      "type": "problem",
+      "surface_form": "Migration barrier prediction accuracy"
+    },
+    {
+      "id": "prob_00293",
+      "type": "problem",
+      "surface_form": "Migration energy barrier prediction"
+    },
+    {
+      "id": "prob_00300",
+      "type": "problem",
+      "surface_form": "Understanding MLIP performance trade-offs"
+    },
+    {
+      "id": "prob_00347",
+      "type": "problem",
+      "surface_form": "computational efficiency in MD"
+    },
+    {
+      "id": "prob_00349",
+      "type": "problem",
+      "surface_form": "computational cost of MD simulations with ML potentials"
+    },
+    {
+      "id": "prob_00378",
+      "type": "problem",
+      "surface_form": "Reproducibility in high-throughput DFT"
+    },
+    {
+      "id": "prob_00381",
+      "type": "problem",
+      "surface_form": "Self-interaction error in DFT"
+    },
+    {
+      "id": "prob_00384",
+      "type": "problem",
+      "surface_form": "Aliasing errors in Fourier transforms"
+    },
+    {
+      "id": "prob_00385",
+      "type": "problem",
+      "surface_form": "Computational cost in high-throughput DFT"
+    },
+    {
+      "id": "prob_00393",
+      "type": "problem",
+      "surface_form": "DFT computational scaling"
+    },
+    {
+      "id": "prob_00440",
+      "type": "problem",
+      "surface_form": "Uncertainty in U-MLIP applicability"
+    },
+    {
+      "id": "prob_00448",
+      "type": "problem",
+      "surface_form": "Computational efficiency of MLIPs"
+    },
+    {
+      "id": "prob_00457",
+      "type": "problem",
+      "surface_form": "scalability of Transformer models for MLIPs"
+    },
+    {
+      "id": "prob_00481",
+      "type": "problem",
+      "surface_form": "Computational scaling limitations of DFT"
+    },
+    {
+      "id": "prob_00482",
+      "type": "problem",
+      "surface_form": "Gap between ML models and large-scale MD"
+    },
+    {
+      "id": "prob_00491",
+      "type": "problem",
+      "surface_form": "Large-scale MD simulation scalability"
+    },
+    {
+      "id": "prob_00496",
+      "type": "problem",
+      "surface_form": "Scalability of unconstrained MLIPs"
+    },
+    {
+      "id": "prob_00521",
+      "type": "problem",
+      "surface_form": "DFT setting inconsistency"
+    },
+    {
+      "id": "prob_00526",
+      "type": "problem",
+      "surface_form": "computational cost bottleneck in DFT"
+    },
+    {
+      "id": "prob_00536",
+      "type": "problem",
+      "surface_form": "performance-speed-memory tradeoff in MLIPs"
+    },
+    {
+      "id": "prob_00552",
+      "type": "problem",
+      "surface_form": "Computational expense of DFT calculations"
+    },
+    {
+      "id": "prob_00556",
+      "type": "problem",
+      "surface_form": "Multi-task training across diverse DFT settings"
+    },
+    {
+      "id": "prob_00574",
+      "type": "problem",
+      "surface_form": "Inconsistent DFT theory levels"
+    },
+    {
+      "id": "prob_00579",
+      "type": "problem",
+      "surface_form": "DFT-free benchmarking"
+    },
+    {
+      "id": "prob_00583",
+      "type": "problem",
+      "surface_form": "Unphysical diatomic curve behavior"
+    },
+    {
+      "id": "prob_00584",
+      "type": "problem",
+      "surface_form": "Smooth potential energy curves for diatomics"
+    },
+    {
+      "id": "prob_00598",
+      "type": "problem",
+      "surface_form": "Nonlocality in carbon allotropes"
+    },
+    {
+      "id": "task_00219",
+      "type": "task",
+      "surface_form": "Validation against MD simulations"
+    },
+    {
+      "id": "task_00358",
+      "type": "task",
+      "surface_form": "Migration barrier prediction"
+    },
+    {
+      "id": "task_00363",
+      "type": "task",
+      "surface_form": "Migration barrier (Em) prediction"
+    },
+    {
+      "id": "task_00370",
+      "type": "task",
+      "surface_form": "migration barrier calculation"
+    },
+    {
+      "id": "task_00372",
+      "type": "task",
+      "surface_form": "Migration energy barrier prediction"
+    },
+    {
+      "id": "task_00427",
+      "type": "task",
+      "surface_form": "Multi-device MD simulations"
+    },
+    {
+      "id": "task_00483",
+      "type": "task",
+      "surface_form": "High-throughput DFT calculations"
+    },
+    {
+      "id": "task_00584",
+      "type": "task",
+      "surface_form": "Generalization benchmarking for MLIPs"
+    },
+    {
+      "id": "task_00595",
+      "type": "task",
+      "surface_form": "MLIP out-of-distribution generalization evaluation"
+    },
+    {
+      "id": "task_00654",
+      "type": "task",
+      "surface_form": "Diatomic energy curve calculation"
+    },
+    {
+      "id": "task_00659",
+      "type": "task",
+      "surface_form": "DFT surrogate modeling"
+    },
+    {
+      "id": "task_00692",
+      "type": "task",
+      "surface_form": "Carbon dimer potential energy curve computation"
+    },
+    {
+      "id": "task_00695",
+      "type": "task",
+      "surface_form": "Crystalline allotrope modeling"
+    },
+    {
+      "id": "tech_00190",
+      "type": "technique",
+      "surface_form": "Finite‑element discretization for DFT"
+    },
+    {
+      "id": "tech_00199",
+      "type": "technique",
+      "surface_form": "Multi‑task learning with auxiliary DFT properties"
+    },
+    {
+      "id": "tech_00224",
+      "type": "technique",
+      "surface_form": "active‑learning‑driven DFT validation"
+    },
+    {
+      "id": "tech_00259",
+      "type": "technique",
+      "surface_form": "Diverse DFT training database construction"
+    },
+    {
+      "id": "tech_00321",
+      "type": "technique",
+      "surface_form": "High‑throughput DFT"
+    },
+    {
+      "id": "tech_00330",
+      "type": "technique",
+      "surface_form": "Non‑equilibrium MD tensile testing"
+    },
+    {
+      "id": "tech_00390",
+      "type": "technique",
+      "surface_form": "Single‑point DFT with stringent convergence"
+    },
+    {
+      "id": "tech_00414",
+      "type": "technique",
+      "surface_form": "DFT fine-tuning"
+    },
+    {
+      "id": "tech_00578",
+      "type": "technique",
+      "surface_form": "MPI implementation"
+    },
+    {
+      "id": "tech_00597",
+      "type": "technique",
+      "surface_form": "high-throughput DFT validation"
+    },
+    {
+      "id": "tech_00616",
+      "type": "technique",
+      "surface_form": "High-throughput DFT calculations"
+    },
+    {
+      "id": "tech_00696",
+      "type": "technique",
+      "surface_form": "PFF-MD simulations"
+    },
+    {
+      "id": "tech_00733",
+      "type": "technique",
+      "surface_form": "Customized DFT augmentation"
+    },
+    {
+      "id": "tech_00792",
+      "type": "technique",
+      "surface_form": "TorchScript JIT compilation"
+    },
+    {
+      "id": "tech_00844",
+      "type": "technique",
+      "surface_form": "PyTorch model compilation"
+    },
+    {
+      "id": "tech_00878",
+      "type": "technique",
+      "surface_form": "Fine-tuning on MPtrj and sAlex"
+    },
+    {
+      "id": "tech_00934",
+      "type": "technique",
+      "surface_form": "training/test split with DFT-calculated features"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 1,
+    "claim": 186,
+    "component": 12,
+    "dataset": 3,
+    "future_topic": 13,
+    "method": 11,
+    "problem": 40,
+    "task": 13,
+    "technique": 17
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "dft",
+  "representative_ids": [
+    "clai_00368",
+    "clai_00164"
+  ]
+}

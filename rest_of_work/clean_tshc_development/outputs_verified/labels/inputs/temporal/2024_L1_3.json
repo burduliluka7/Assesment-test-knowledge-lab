@@ -1,0 +1,579 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00036",
+      "type": "article",
+      "surface_form": "Scalable Parallel Algorithm for Graph Neural Network Interatomic Potentials in Molecular Dynamics Simulations"
+    },
+    {
+      "id": "auth_00291",
+      "type": "author",
+      "surface_form": "Yutack Park"
+    },
+    {
+      "id": "auth_00293",
+      "type": "author",
+      "surface_form": "Seungwoo Hwang"
+    },
+    {
+      "id": "auth_00294",
+      "type": "author",
+      "surface_form": "Seungwu Han"
+    },
+    {
+      "id": "clai_00267",
+      "type": "claim",
+      "surface_form": "MACE and grACE packages provide excellent scaling with number of elements while achieving high accuracy."
+    },
+    {
+      "id": "clai_00270",
+      "type": "claim",
+      "surface_form": "MACE-OFF3 uses only short-range interactions yet achieves improved performance on benchmark molecular simulation properties compared to ANI."
+    },
+    {
+      "id": "clai_00290",
+      "type": "claim",
+      "surface_form": "ANI potential was expanded in 2020 to include S, Cl, and F elements, covering approximately 90% of drug-like molecules."
+    },
+    {
+      "id": "clai_00291",
+      "type": "claim",
+      "surface_form": "AIMNet2 extends ANI to include up to 14 elemental species with additional vdW and electrostatic correction terms."
+    },
+    {
+      "id": "clai_00461",
+      "type": "claim",
+      "surface_form": "SevenNet-0 achieves mean absolute errors of 24 meV/atom for energy, 0.067 eV/Å for force, and 0.65 GPa for stress on the test set."
+    },
+    {
+      "id": "clai_00462",
+      "type": "claim",
+      "surface_form": "The parallelization algorithm restricts communication range between neighboring processors to the original cutoff radius (rc) rather than rc multiplied by message-passing steps."
+    },
+    {
+      "id": "clai_00464",
+      "type": "claim",
+      "surface_form": "SevenNet-0 successfully generated amorphous Si3N4 structure with 112,000 atoms through melt-quench MD simulation, reproducing key structural features matching DFT reference data."
+    },
+    {
+      "id": "clai_00465",
+      "type": "claim",
+      "surface_form": "The melt-quench simulation with 112,000 atoms on 8 GPUs demonstrated 0.94 parallel efficiency compared to single-GPU baseline."
+    },
+    {
+      "id": "clai_00466",
+      "type": "claim",
+      "surface_form": "SevenNet-0 shows improvements in energy and force accuracies compared to M3GNet (35 meV/atom, 0.072 eV/Å)."
+    },
+    {
+      "id": "clai_00467",
+      "type": "claim",
+      "surface_form": "Architecture modifications reduced SevenNet-0 total model parameters from 16.24 million (GNoME) to 0.84 million."
+    },
+    {
+      "id": "clai_00468",
+      "type": "claim",
+      "surface_form": "SevenNet exhibits nearly ideal strong-scaling performance as long as GPUs are fully utilized."
+    },
+    {
+      "id": "clai_00469",
+      "type": "claim",
+      "surface_form": "Strong-scaling performance significantly declines with suboptimal GPU utilization, particularly for lightweight models or simulations with small numbers of atoms."
+    },
+    {
+      "id": "clai_00470",
+      "type": "claim",
+      "surface_form": "SevenNet-0, trained solely on crystal structures, reproduced key structural features of amorphous Si3N4 including fourfold coordination for Si and threefold coordination for N atoms."
+    },
+    {
+      "id": "clai_00471",
+      "type": "claim",
+      "surface_form": "A 60-ps MD simulation with 112,000 atoms using SevenNet-0 required 12.7 hours, approximately 0.1 ns per day."
+    },
+    {
+      "id": "clai_00472",
+      "type": "claim",
+      "surface_form": "SevenNet interfaces with the LAMMPS package for MD simulations using TorchScript to integrate trained models."
+    },
+    {
+      "id": "clai_00473",
+      "type": "claim",
+      "surface_form": "The parallelization algorithm is applicable to GNN-IP models using two-body message-passing functions including SchNet, PhysNet, PaiNN, NequIP, and MACE."
+    },
+    {
+      "id": "data_00158",
+      "type": "dataset",
+      "surface_form": "SiO2"
+    },
+    {
+      "id": "data_00159",
+      "type": "dataset",
+      "surface_form": "amorphous Si3N4"
+    },
+    {
+      "id": "data_00160",
+      "type": "dataset",
+      "surface_form": "parallel efficiency benchmark"
+    },
+    {
+      "id": "data_00162",
+      "type": "dataset",
+      "surface_form": "M3GNet dataset"
+    },
+    {
+      "id": "futu_00125",
+      "type": "future_topic",
+      "surface_form": "Bridge the gap between advanced machine learning models and large-scale MD simulations"
+    },
+    {
+      "id": "futu_00126",
+      "type": "future_topic",
+      "surface_form": "Develop pretrained, general-purpose potentials for multi-element systems"
+    },
+    {
+      "id": "meth_00414",
+      "type": "method",
+      "surface_form": "Scalable EquiVariance-Enabled Neural NETwork"
+    },
+    {
+      "id": "metr_00040",
+      "type": "metric",
+      "surface_form": "parallel efficiency"
+    },
+    {
+      "id": "metr_00042",
+      "type": "metric",
+      "surface_form": "MAE (energy)"
+    },
+    {
+      "id": "metr_00069",
+      "type": "metric",
+      "surface_form": "Lattice Energy MAE"
+    },
+    {
+      "id": "metr_00071",
+      "type": "metric",
+      "surface_form": "Energy/Atom MAE"
+    },
+    {
+      "id": "prob_00005",
+      "type": "problem",
+      "surface_form": "Computational efficiency"
+    },
+    {
+      "id": "prob_00479",
+      "type": "problem",
+      "surface_form": "Parallelization challenges of GNN-IPs"
+    },
+    {
+      "id": "prob_00481",
+      "type": "problem",
+      "surface_form": "Computational scaling limitations of DFT"
+    },
+    {
+      "id": "prob_00482",
+      "type": "problem",
+      "surface_form": "Gap between ML models and large-scale MD"
+    },
+    {
+      "id": "prob_00483",
+      "type": "problem",
+      "surface_form": "Computational cost of large-scale amorphous structure generation"
+    },
+    {
+      "id": "prob_00487",
+      "type": "problem",
+      "surface_form": "parallelization of GNN-based interatomic potentials"
+    },
+    {
+      "id": "prob_00488",
+      "type": "problem",
+      "surface_form": "atomic force computation in parallel GNN-IP"
+    },
+    {
+      "id": "prob_00489",
+      "type": "problem",
+      "surface_form": "communication overhead in spatial decomposition"
+    },
+    {
+      "id": "prob_00490",
+      "type": "problem",
+      "surface_form": "Overfitting in GNN interatomic potentials"
+    },
+    {
+      "id": "prob_00491",
+      "type": "problem",
+      "surface_form": "Large-scale MD simulation scalability"
+    },
+    {
+      "id": "prob_00492",
+      "type": "problem",
+      "surface_form": "General-purpose interatomic potential deployment"
+    },
+    {
+      "id": "prob_00494",
+      "type": "problem",
+      "surface_form": "scalable parallel computation for molecular dynamics"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "author": 3,
+    "claim": 16,
+    "dataset": 4,
+    "future_topic": 2,
+    "method": 1,
+    "metric": 4,
+    "problem": 12
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00323",
+      "relation_type": "presents",
+      "members": [
+        "arti_00036",
+        "meth_00414"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      }
+    },
+    {
+      "id": "h_00482",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00414",
+        "data_00158",
+        "metr_00040"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "metric": "parallel efficiency",
+        "value": 80.0,
+        "split": "weak-scaling"
+      }
+    },
+    {
+      "id": "h_00483",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00414",
+        "data_00159",
+        "metr_00040"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "task": "molecular dynamics simulation",
+        "domain": "materials science",
+        "metric": "parallel efficiency",
+        "value": 80.0,
+        "split": "weak-scaling"
+      }
+    },
+    {
+      "id": "h_00484",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00414",
+        "data_00160",
+        "metr_00040"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "task": "performance benchmarking",
+        "domain": "computer science",
+        "metric": "parallel efficiency",
+        "value": 0.94,
+        "split": "8 GPU"
+      }
+    },
+    {
+      "id": "h_00486",
+      "relation_type": "evaluated_on",
+      "members": [
+        "meth_00414",
+        "data_00162",
+        "metr_00042"
+      ],
+      "year": 2022,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "task": "interatomic potential training",
+        "domain": "materials science",
+        "metric": "MAE (energy)",
+        "value": 24.0,
+        "split": "test",
+        "delta_vs_baseline": 0.0
+      }
+    },
+    {
+      "id": "h_01067",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00461"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01068",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00462"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01070",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00464"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01071",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00465"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01072",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00466"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01073",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00467"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "citation_only",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01074",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00468"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01075",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00469"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "negative_result",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01076",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00470"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "simulation",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    },
+    {
+      "id": "h_01077",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00471"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01078",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00472"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.9
+      }
+    },
+    {
+      "id": "h_01079",
+      "relation_type": "claims",
+      "members": [
+        "arti_00036",
+        "clai_00473"
+      ],
+      "year": 2024,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5439,
+        "article_year": 2024
+      },
+      "attributes": {
+        "claim_type": "generalization",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "parallel",
+  "representative_ids": [
+    "prob_00494",
+    "clai_00468"
+  ]
+}

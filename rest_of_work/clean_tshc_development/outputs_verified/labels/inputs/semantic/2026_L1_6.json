@@ -1,0 +1,222 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00033",
+      "type": "article",
+      "surface_form": "Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+    },
+    {
+      "id": "cite_00236",
+      "type": "cited_work",
+      "surface_form": "Plasma synthesis of electrolyte nanopowders"
+    },
+    {
+      "id": "clai_00013",
+      "type": "claim",
+      "surface_form": "Using Materials Project tools, researchers designed a new class of sodium‑based carbonophosphate compounds, predicted them to be thermodynamically stable, synthesized them hydrothermally, and experimentally confirmed their Li‑ion battery performance after ion exchange."
+    },
+    {
+      "id": "clai_00067",
+      "type": "claim",
+      "surface_form": "CHGNet molecular dynamics simulations of Li superionic conductors reproduce room‑temperature ionic conductivities and activation energies within the error bars of AIMD, correctly distinguishing faster from slower conductors."
+    },
+    {
+      "id": "clai_00109",
+      "type": "claim",
+      "surface_form": "TensorNet‑MatPES predicts ionic conductivities of Li/Na solid electrolytes with high fidelity (positive R²), whereas TensorNet‑MPF severely overestimates conductivities and yields a negative R²."
+    },
+    {
+      "id": "clai_00238",
+      "type": "claim",
+      "surface_form": "Orb-v3 and SevenNet classify materials as good versus bad ionic conductors with accuracy greater than 82% using a 500 meV migration barrier threshold."
+    },
+    {
+      "id": "clai_00250",
+      "type": "claim",
+      "surface_form": "Orb-v3 and SevenNet are suitable for high-throughput screening of candidate battery materials based on their >82% classification accuracy for ionic conductors."
+    },
+    {
+      "id": "clai_00324",
+      "type": "claim",
+      "surface_form": "The frozen-framework PES descriptor screening ranks lithium-containing Materials Project compounds such that eight of the ten highest‑ranked materials are confirmed to be room‑temperature superionic conductors by first‑principles calculations."
+    },
+    {
+      "id": "clai_00475",
+      "type": "claim",
+      "surface_form": "The DeePMD model successfully reproduces the superionic behavior of solid-state electrolytes with linear Lithium/Sodium mean squared displacement over time and diffusion coefficient uncertainty of about 20% or smaller, which is precise enough for battery applications."
+    },
+    {
+      "id": "clai_00485",
+      "type": "claim",
+      "surface_form": "The DeePMD model is a promising candidate for developing a universal potential for solid-state electrolytes, though care must be taken when selecting training configurations."
+    },
+    {
+      "id": "clai_00552",
+      "type": "claim",
+      "surface_form": "GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD."
+    },
+    {
+      "id": "clai_00646",
+      "type": "claim",
+      "surface_form": "M3GNet molecular‑dynamics simulations of Li₃YCl₆ reproduce ionic conductivity (14.3 mS cm⁻¹) and activation energy (0.22 eV) consistent with ab‑initio MD, and short‑time MD correctly identifies known lithium superionic conductors by their high mean‑squared displacements at elevated temperatures."
+    },
+    {
+      "id": "comp_00384",
+      "type": "component",
+      "surface_form": "Ionic conductivity pipeline"
+    },
+    {
+      "id": "futu_00069",
+      "type": "future_topic",
+      "surface_form": "Discovery of novel ionic conductors for batteries"
+    },
+    {
+      "id": "futu_00070",
+      "type": "future_topic",
+      "surface_form": "High-throughput screening approaches for ionic transport"
+    },
+    {
+      "id": "futu_00128",
+      "type": "future_topic",
+      "surface_form": "Framework to identify novel solid-state electrolytes"
+    },
+    {
+      "id": "futu_00129",
+      "type": "future_topic",
+      "surface_form": "Screening of material databases for solid-state electrolytes"
+    },
+    {
+      "id": "futu_00152",
+      "type": "future_topic",
+      "surface_form": "Zero-shot prediction of ionic conductivity"
+    },
+    {
+      "id": "prob_00054",
+      "type": "problem",
+      "surface_form": "Rapid identification of solid‑state electrolyte candidates"
+    },
+    {
+      "id": "prob_00056",
+      "type": "problem",
+      "surface_form": "Accelerated validation of ionic conductivity predictions"
+    },
+    {
+      "id": "prob_00116",
+      "type": "problem",
+      "surface_form": "large‑scale ionic conductivity screening"
+    },
+    {
+      "id": "prob_00188",
+      "type": "problem",
+      "surface_form": "Accelerating molecular dynamics for solid‑state electrolytes"
+    },
+    {
+      "id": "prob_00299",
+      "type": "problem",
+      "surface_form": "High-throughput ionic conductor screening"
+    },
+    {
+      "id": "prob_00409",
+      "type": "problem",
+      "surface_form": "Electrolyte discovery for ionic conductivity"
+    },
+    {
+      "id": "task_00076",
+      "type": "task",
+      "surface_form": "Ranking lithium‑containing crystals for ionic conductivity"
+    },
+    {
+      "id": "task_00078",
+      "type": "task",
+      "surface_form": "Screening of solid‑state electrolyte materials"
+    },
+    {
+      "id": "task_00080",
+      "type": "task",
+      "surface_form": "Ionic conductivity prediction"
+    },
+    {
+      "id": "task_00082",
+      "type": "task",
+      "surface_form": "solid-state ionics"
+    },
+    {
+      "id": "task_00159",
+      "type": "task",
+      "surface_form": "materials screening for lithium superionic conductors"
+    },
+    {
+      "id": "task_00224",
+      "type": "task",
+      "surface_form": "Accelerated molecular dynamics simulation of lithium transport in solid‑state electrolytes"
+    },
+    {
+      "id": "task_00226",
+      "type": "task",
+      "surface_form": "High‑throughput screening of ionic conductivity"
+    },
+    {
+      "id": "task_00227",
+      "type": "task",
+      "surface_form": "Atomistic trajectory generation for lithium solid‑state electrolytes"
+    },
+    {
+      "id": "task_00262",
+      "type": "task",
+      "surface_form": "Ionic conductivity estimation"
+    },
+    {
+      "id": "task_00494",
+      "type": "task",
+      "surface_form": "Solid-electrolyte candidate screening"
+    },
+    {
+      "id": "task_00500",
+      "type": "task",
+      "surface_form": "Solid-state ionic conductor screening"
+    },
+    {
+      "id": "task_00506",
+      "type": "task",
+      "surface_form": "Li-ion conductor identification"
+    },
+    {
+      "id": "task_00527",
+      "type": "task",
+      "surface_form": "LGPS solid electrolyte simulation"
+    },
+    {
+      "id": "task_00529",
+      "type": "task",
+      "surface_form": "NASICON solid electrolyte simulation"
+    },
+    {
+      "id": "task_00534",
+      "type": "task",
+      "surface_form": "solid-state electrolytes"
+    },
+    {
+      "id": "tech_00255",
+      "type": "technique",
+      "surface_form": "filter‑and‑screen workflow for lithium superionic conductors"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 1,
+    "claim": 10,
+    "component": 1,
+    "future_topic": 5,
+    "problem": 6,
+    "task": 15,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "ionic",
+  "representative_ids": [
+    "task_00500",
+    "task_00080"
+  ]
+}

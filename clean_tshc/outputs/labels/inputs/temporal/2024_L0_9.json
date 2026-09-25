@@ -1,0 +1,203 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00295",
+      "type": "claim",
+      "surface_form": "An MLIP trained on pristine crystalline phases may not be appropriate for studying amorphous phases of the same material."
+    },
+    {
+      "id": "comp_00820",
+      "type": "component",
+      "surface_form": "surface slab models"
+    },
+    {
+      "id": "prob_00343",
+      "type": "problem",
+      "surface_form": "free energy calculation"
+    },
+    {
+      "id": "task_00211",
+      "type": "task",
+      "surface_form": "Atomic von Mises stress prediction"
+    },
+    {
+      "id": "task_00212",
+      "type": "task",
+      "surface_form": "Atomic tensile stress prediction"
+    },
+    {
+      "id": "task_00213",
+      "type": "task",
+      "surface_form": "Atomic potential energy prediction"
+    },
+    {
+      "id": "task_00216",
+      "type": "task",
+      "surface_form": "Per‑atom stress field prediction"
+    },
+    {
+      "id": "task_00217",
+      "type": "task",
+      "surface_form": "Global mechanical property estimation"
+    },
+    {
+      "id": "task_00218",
+      "type": "task",
+      "surface_form": "Design optimization of porous/holey graphene membranes"
+    },
+    {
+      "id": "task_00219",
+      "type": "task",
+      "surface_form": "Validation against MD simulations"
+    },
+    {
+      "id": "task_00220",
+      "type": "task",
+      "surface_form": "Atomic stress field prediction"
+    },
+    {
+      "id": "task_00221",
+      "type": "task",
+      "surface_form": "Holey graphene design optimization"
+    },
+    {
+      "id": "task_00222",
+      "type": "task",
+      "surface_form": "Benchmarking GNN architectures"
+    },
+    {
+      "id": "task_00223",
+      "type": "task",
+      "surface_form": "mechanical design"
+    },
+    {
+      "id": "task_00389",
+      "type": "task",
+      "surface_form": "Crystal structure property prediction"
+    },
+    {
+      "id": "task_00393",
+      "type": "task",
+      "surface_form": "Crystal stability assessment"
+    },
+    {
+      "id": "task_00416",
+      "type": "task",
+      "surface_form": "QM/MM energy correction"
+    },
+    {
+      "id": "task_00420",
+      "type": "task",
+      "surface_form": "Energy fitting"
+    },
+    {
+      "id": "task_00428",
+      "type": "task",
+      "surface_form": "free energy calculation"
+    },
+    {
+      "id": "task_00495",
+      "type": "task",
+      "surface_form": "Stable crystal discovery"
+    },
+    {
+      "id": "task_00503",
+      "type": "task",
+      "surface_form": "Crystal structure discovery"
+    },
+    {
+      "id": "task_00511",
+      "type": "task",
+      "surface_form": "Crystal structure prediction and discovery"
+    },
+    {
+      "id": "task_00686",
+      "type": "task",
+      "surface_form": "Atomistic simulations of liquid carbon"
+    },
+    {
+      "id": "task_00690",
+      "type": "task",
+      "surface_form": "Nanoscale amorphous carbon structure simulations"
+    },
+    {
+      "id": "task_00692",
+      "type": "task",
+      "surface_form": "Carbon dimer potential energy curve computation"
+    },
+    {
+      "id": "task_00693",
+      "type": "task",
+      "surface_form": "High-density amorphous phase modeling"
+    },
+    {
+      "id": "task_00694",
+      "type": "task",
+      "surface_form": "Amorphous carbon surface (ta-C) modeling"
+    },
+    {
+      "id": "task_00695",
+      "type": "task",
+      "surface_form": "Crystalline allotrope modeling"
+    },
+    {
+      "id": "task_00696",
+      "type": "task",
+      "surface_form": "Interatomic potential development for carbon"
+    },
+    {
+      "id": "task_00700",
+      "type": "task",
+      "surface_form": "Amorphous carbon (a-C) structure generation"
+    },
+    {
+      "id": "task_00701",
+      "type": "task",
+      "surface_form": "Tetrahedral amorphous carbon (ta-C) modeling"
+    },
+    {
+      "id": "task_00704",
+      "type": "task",
+      "surface_form": "amorphous carbon structure generation"
+    },
+    {
+      "id": "task_00705",
+      "type": "task",
+      "surface_form": "liquid carbon simulation"
+    },
+    {
+      "id": "task_00709",
+      "type": "task",
+      "surface_form": "surface reconstruction simulation"
+    },
+    {
+      "id": "task_00711",
+      "type": "task",
+      "surface_form": "Amorphous carbon bulk structure generation"
+    },
+    {
+      "id": "task_00713",
+      "type": "task",
+      "surface_form": "Bulk crystal structure modeling"
+    },
+    {
+      "id": "task_00716",
+      "type": "task",
+      "surface_form": "computational materials modeling"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 1,
+    "problem": 1,
+    "task": 34
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "carbon",
+  "representative_ids": [
+    "task_00716",
+    "task_00713"
+  ]
+}

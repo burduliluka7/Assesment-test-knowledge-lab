@@ -1,0 +1,338 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00013",
+      "type": "article",
+      "surface_form": "A SURVEY OF AI FOR MATERIALS SCIENCE: FOUNDATION MODELS, LLM AGENTS, DATASETS, AND TOOLS"
+    },
+    {
+      "id": "auth_00107",
+      "type": "author",
+      "surface_form": "Minh-Hao Van"
+    },
+    {
+      "id": "auth_00108",
+      "type": "author",
+      "surface_form": "Prateek Verma"
+    },
+    {
+      "id": "auth_00109",
+      "type": "author",
+      "surface_form": "Chen Zhao"
+    },
+    {
+      "id": "clai_00448",
+      "type": "claim",
+      "surface_form": "Foundation models enable cross-domain generalization and emergent capabilities for scientific discovery in materials science."
+    },
+    {
+      "id": "clai_00449",
+      "type": "claim",
+      "surface_form": "GNoME discovered over 2.2 million new stable inorganic materials and more than 45 000 new crystal prototypes, an order‑of‑magnitude increase over prior discovery efforts."
+    },
+    {
+      "id": "clai_00450",
+      "type": "claim",
+      "surface_form": "MACE‑MP‑0 attains state‑of‑the‑art accuracy for periodic systems while preserving equivariant inductive biases."
+    },
+    {
+      "id": "clai_00451",
+      "type": "claim",
+      "surface_form": "Multimodal models such as nach0, MultiMat, and MatterChat demonstrate reasoning over combined structural, textual, and spectral data, whereas most current foundation models remain unimodal and lack integrated image, spectrum, and experimental‑metadata fusion."
+    },
+    {
+      "id": "clai_00456",
+      "type": "claim",
+      "surface_form": "Future research should focus on scalable pretraining, continual learning, data governance, trustworthiness, and incorporation of physics‑informed constraints such as equivariance, quantum‑mechanical symmetries, and thermodynamic principles to improve accuracy, interpretability, and trustworthiness of foundation models."
+    },
+    {
+      "id": "clai_00457",
+      "type": "claim",
+      "surface_form": "The autonomous A‑Lab platform synthesized 41 of 58 targeted materials (71 % success) over a 17‑day experiment with minimal human intervention, demonstrating high‑throughput autonomous materials synthesis."
+    },
+    {
+      "id": "clai_00458",
+      "type": "claim",
+      "surface_form": "Benchmarks such as LLM4Mat‑Bench, MaCBench, and MatBench evaluate multiple models across millions of structures and dozens of properties, revealing significant performance differences and that domain‑specific pretraining yields substantial improvements on materials‑science tasks like property prediction and named‑entity recognition."
+    },
+    {
+      "id": "clai_00459",
+      "type": "claim",
+      "surface_form": "MatterSim, a zero‑shot machine‑learned interatomic potential trained on >17 million DFT‑labeled structures, supports universal simulation across all elements, temperatures and pressures, achieving energy prediction errors below 50 meV/atom even in high‑temperature, non‑equilibrium regimes."
+    },
+    {
+      "id": "comp_00825",
+      "type": "component",
+      "surface_form": "Surface cleavage module"
+    },
+    {
+      "id": "futu_00117",
+      "type": "future_topic",
+      "surface_form": "scalable pretraining"
+    },
+    {
+      "id": "futu_00118",
+      "type": "future_topic",
+      "surface_form": "continual learning"
+    },
+    {
+      "id": "futu_00121",
+      "type": "future_topic",
+      "surface_form": "improved multimodal fusion"
+    },
+    {
+      "id": "futu_00122",
+      "type": "future_topic",
+      "surface_form": "enhanced interpretability"
+    },
+    {
+      "id": "futu_00123",
+      "type": "future_topic",
+      "surface_form": "safety and robustness"
+    },
+    {
+      "id": "meth_00025",
+      "type": "method",
+      "surface_form": "Self-DIstillation with NO labels"
+    },
+    {
+      "id": "meth_00039",
+      "type": "method",
+      "surface_form": "BERT-BASE-CASED fine‑tuned model"
+    },
+    {
+      "id": "meth_00080",
+      "type": "method",
+      "surface_form": "LLM"
+    },
+    {
+      "id": "meth_00365",
+      "type": "method",
+      "surface_form": "Methfessel-Paxton smearing"
+    },
+    {
+      "id": "tech_00002",
+      "type": "technique",
+      "surface_form": "prompt engineering"
+    },
+    {
+      "id": "tech_00040",
+      "type": "technique",
+      "surface_form": "Chain‑of‑Thought Reasoning"
+    },
+    {
+      "id": "tech_00041",
+      "type": "technique",
+      "surface_form": "fine‑tuning"
+    },
+    {
+      "id": "tech_00045",
+      "type": "technique",
+      "surface_form": "self‑supervised pretraining"
+    },
+    {
+      "id": "tech_00054",
+      "type": "technique",
+      "surface_form": "Human‑in‑the‑Loop"
+    },
+    {
+      "id": "tech_00224",
+      "type": "technique",
+      "surface_form": "active‑learning‑driven DFT validation"
+    },
+    {
+      "id": "tech_00225",
+      "type": "technique",
+      "surface_form": "Bridging Module Alignment"
+    },
+    {
+      "id": "tech_00226",
+      "type": "technique",
+      "surface_form": "Contriever Retrieval"
+    },
+    {
+      "id": "tech_00924",
+      "type": "technique",
+      "surface_form": "surface cleavage"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "author": 3,
+    "claim": 8,
+    "component": 1,
+    "future_topic": 5,
+    "method": 4,
+    "technique": 9
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_01054",
+      "relation_type": "claims",
+      "members": [
+        "arti_00013",
+        "clai_00448"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5389,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01055",
+      "relation_type": "claims",
+      "members": [
+        "arti_00013",
+        "clai_00449"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5389,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01056",
+      "relation_type": "claims",
+      "members": [
+        "arti_00013",
+        "clai_00450"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5389,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01057",
+      "relation_type": "claims",
+      "members": [
+        "arti_00013",
+        "clai_00451"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5389,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01062",
+      "relation_type": "claims",
+      "members": [
+        "arti_00013",
+        "clai_00456"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5389,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "prescriptive",
+        "evidence_type": "theorem",
+        "evidence_strength": "weak",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01063",
+      "relation_type": "claims",
+      "members": [
+        "arti_00013",
+        "clai_00457"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5389,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01064",
+      "relation_type": "claims",
+      "members": [
+        "arti_00013",
+        "clai_00458"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5389,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01065",
+      "relation_type": "claims",
+      "members": [
+        "arti_00013",
+        "clai_00459"
+      ],
+      "year": 2025,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5389,
+        "article_year": 2025
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96,
+        "verdict": "contested"
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "llm",
+  "representative_ids": [
+    "futu_00117",
+    "clai_00458"
+  ]
+}

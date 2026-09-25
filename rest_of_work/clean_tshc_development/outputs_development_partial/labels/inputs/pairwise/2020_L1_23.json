@@ -1,0 +1,36 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "prob_00589",
+      "type": "problem",
+      "surface_form": "Poor extrapolation in high-dimensional ML potentials"
+    },
+    {
+      "id": "prob_00594",
+      "type": "problem",
+      "surface_form": "Unphysical extrapolation at small distances"
+    },
+    {
+      "id": "prob_00612",
+      "type": "problem",
+      "surface_form": "ML potential extrapolation"
+    },
+    {
+      "id": "tech_00893",
+      "type": "technique",
+      "surface_form": "Machine-learning interpolation of DFT potential-energy surface"
+    }
+  ],
+  "generation_type_counts": {
+    "problem": 3,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "extrapolation",
+  "representative_ids": [
+    "prob_00589",
+    "prob_00612"
+  ]
+}

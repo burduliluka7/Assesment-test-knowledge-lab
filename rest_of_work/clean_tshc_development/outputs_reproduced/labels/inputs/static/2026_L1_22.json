@@ -1,0 +1,48 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00780",
+      "type": "component",
+      "surface_form": "Multi-task training framework"
+    },
+    {
+      "id": "prob_00556",
+      "type": "problem",
+      "surface_form": "Multi-task training across diverse DFT settings"
+    },
+    {
+      "id": "prob_00558",
+      "type": "problem",
+      "surface_form": "Overfitting in single-task force prediction"
+    },
+    {
+      "id": "prob_00565",
+      "type": "problem",
+      "surface_form": "Task specialization requirement"
+    },
+    {
+      "id": "task_00627",
+      "type": "task",
+      "surface_form": "Multi-dataset training"
+    },
+    {
+      "id": "tech_00574",
+      "type": "technique",
+      "surface_form": "Multi-task training with shared descriptor"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "problem": 3,
+    "task": 1,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "task",
+  "representative_ids": [
+    "comp_00780",
+    "tech_00574"
+  ]
+}

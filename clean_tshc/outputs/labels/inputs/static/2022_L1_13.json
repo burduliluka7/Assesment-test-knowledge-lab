@@ -1,0 +1,135 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "comp_00026",
+      "type": "component",
+      "surface_form": "Hypernetwork"
+    },
+    {
+      "id": "comp_00200",
+      "type": "component",
+      "surface_form": "Position‑included material graph"
+    },
+    {
+      "id": "comp_00201",
+      "type": "component",
+      "surface_form": "Element embedding layer"
+    },
+    {
+      "id": "comp_00202",
+      "type": "component",
+      "surface_form": "Bond distance expansion"
+    },
+    {
+      "id": "comp_00203",
+      "type": "component",
+      "surface_form": "Three‑body angular module"
+    },
+    {
+      "id": "comp_00204",
+      "type": "component",
+      "surface_form": "Many‑body to bond update"
+    },
+    {
+      "id": "comp_00205",
+      "type": "component",
+      "surface_form": "Graph convolution block"
+    },
+    {
+      "id": "comp_00207",
+      "type": "component",
+      "surface_form": "Auto‑differentiation layer"
+    },
+    {
+      "id": "comp_00208",
+      "type": "component",
+      "surface_form": "Non‑linear activation g"
+    },
+    {
+      "id": "comp_00211",
+      "type": "component",
+      "surface_form": "3‑body interaction module"
+    },
+    {
+      "id": "comp_00212",
+      "type": "component",
+      "surface_form": "Relaxation engine"
+    },
+    {
+      "id": "comp_00213",
+      "type": "component",
+      "surface_form": "Pre‑relaxation pipeline"
+    },
+    {
+      "id": "comp_00214",
+      "type": "component",
+      "surface_form": "Short‑time MD simulation workflow"
+    },
+    {
+      "id": "comp_00215",
+      "type": "component",
+      "surface_form": "Phonon and elastic property predictor"
+    },
+    {
+      "id": "comp_00216",
+      "type": "component",
+      "surface_form": "Arrhenius analysis module"
+    },
+    {
+      "id": "comp_00555",
+      "type": "component",
+      "surface_form": "CGAT-2"
+    },
+    {
+      "id": "comp_00559",
+      "type": "component",
+      "surface_form": "Residual neural network"
+    },
+    {
+      "id": "comp_00560",
+      "type": "component",
+      "surface_form": "Edge update mechanism"
+    },
+    {
+      "id": "comp_00561",
+      "type": "component",
+      "surface_form": "CGCNN model for elastic properties"
+    },
+    {
+      "id": "comp_00563",
+      "type": "component",
+      "surface_form": "Vicker's hardness estimation model"
+    },
+    {
+      "id": "comp_00564",
+      "type": "component",
+      "surface_form": "DFT stiffness tensor calculator"
+    },
+    {
+      "id": "comp_00566",
+      "type": "component",
+      "surface_form": "CGAT-1/2/3 network series"
+    },
+    {
+      "id": "comp_00567",
+      "type": "component",
+      "surface_form": "Volume prediction network"
+    },
+    {
+      "id": "comp_00569",
+      "type": "component",
+      "surface_form": "Prototype-based structure sampler"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 24
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "cgat",
+  "representative_ids": [
+    "comp_00212",
+    "comp_00213"
+  ]
+}

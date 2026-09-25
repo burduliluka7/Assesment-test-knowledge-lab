@@ -1,0 +1,252 @@
+[
+  {
+    "q": "Q1",
+    "target_best_direct_ranks": [
+      [
+        "MACE",
+        5437
+      ],
+      [
+        "M3GNet",
+        880
+      ],
+      [
+        "CHGNet",
+        1340
+      ],
+      [
+        "GAP",
+        5357
+      ],
+      [
+        "NequIP",
+        1536
+      ],
+      [
+        "ACE",
+        5374
+      ],
+      [
+        "EquiformerV2",
+        4656
+      ]
+    ],
+    "top3": [
+      [
+        "clai_00352",
+        "claim",
+        "[claim] Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy c"
+      ],
+      [
+        "clai_00368",
+        "claim",
+        "[claim] Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly conver"
+      ],
+      [
+        "prob_00212",
+        "problem",
+        "[problem] Universal interatomic potential across the periodic table\n[method] MatPES dataset generation workflow\n[problem] Noisy and near‑equilibrium biased training data\n[problem] "
+      ]
+    ]
+  },
+  {
+    "q": "Q3",
+    "target_best_direct_ranks": [
+      [
+        "xDeepH",
+        106
+      ],
+      [
+        "DeepH-E3",
+        57
+      ]
+    ],
+    "top3": [
+      [
+        "prob_00033",
+        "problem",
+        "[problem] Modeling strong spin‑orbit coupling in twisted vdW materials\n[method] DeepH-E3\n[problem] E(3) equivariance with spin‑orbit coupling\n[problem] Computational cost of large‑"
+      ],
+      [
+        "task_00180",
+        "task",
+        "[task] Study of twisted van der Waals heterostructures\n[method] deep neural network approach to represent DFT Hamiltonian\n[task] materials science\n[task] computational physics\n[tas"
+      ],
+      [
+        "prob_00030",
+        "problem",
+        "[problem] Data efficiency for Hamiltonian learning\n[method] DeepH-E3\n[problem] E(3) equivariance with spin‑orbit coupling\n[problem] Computational cost of large‑scale DFT\n[problem] "
+      ]
+    ]
+  },
+  {
+    "q": "Q8",
+    "target_best_direct_ranks": [
+      [
+        "ConvLSTM",
+        5206
+      ],
+      [
+        "GNN stress fields",
+        287
+      ]
+    ],
+    "top3": [
+      [
+        "prob_00168",
+        "problem",
+        "[problem] Fracture pattern prediction from MD simulations\n[method] ConvLSTM-based fracture prediction model\n[problem] Efficient prediction of dynamic brittle fracture paths\n[proble"
+      ],
+      [
+        "prob_00167",
+        "problem",
+        "[problem] Generalization to unseen crystal orientations and bicrystal interfaces\n[method] ConvLSTM-based fracture prediction model\n[problem] Efficient prediction of dynamic brittle"
+      ],
+      [
+        "prob_00166",
+        "problem",
+        "[problem] Fracture‑toughness estimation from atomistic data\n[method] ConvLSTM-based fracture prediction model\n[problem] Efficient prediction of dynamic brittle fracture paths\n[prob"
+      ]
+    ]
+  },
+  {
+    "q": "Q12",
+    "target_best_direct_ranks": [
+      [
+        "MACE",
+        5360
+      ],
+      [
+        "NequIP",
+        2476
+      ],
+      [
+        "CHGNet",
+        1262
+      ],
+      [
+        "M3GNet",
+        748
+      ],
+      [
+        "SevenNet",
+        5432
+      ],
+      [
+        "GAP",
+        5328
+      ],
+      [
+        "DeePMD",
+        4621
+      ],
+      [
+        "MatterSim",
+        31
+      ],
+      [
+        "Orb",
+        4994
+      ],
+      [
+        "eSEN",
+        539
+      ],
+      [
+        "PET",
+        5452
+      ],
+      [
+        "UMA",
+        5390
+      ],
+      [
+        "EquiformerV2",
+        4726
+      ]
+    ],
+    "top3": [
+      [
+        "futu_00067",
+        "future_topic",
+        "[future_topic] Development of transferable machine‑learning interatomic potentials with broader configurational coverage\n[article] Machine learning a general purpose interatomic po"
+      ],
+      [
+        "futu_00065",
+        "future_topic",
+        "[future_topic] Improved uncertainty quantification methods for interatomic potentials\n[article] Machine learning a general purpose interatomic potential for silicon\n[future_topic] "
+      ],
+      [
+        "clai_00352",
+        "claim",
+        "[claim] Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy c"
+      ]
+    ]
+  },
+  {
+    "q": "Q14",
+    "target_best_direct_ranks": [
+      [
+        "Matbench Discovery",
+        447
+      ],
+      [
+        "Matbench",
+        1596
+      ],
+      [
+        "JARVIS-DFT",
+        4681
+      ],
+      [
+        "Materials Project",
+        591
+      ],
+      [
+        "MPtrj",
+        896
+      ],
+      [
+        "OQMD",
+        1293
+      ],
+      [
+        "AFLOW",
+        5388
+      ],
+      [
+        "Alexandria",
+        3122
+      ],
+      [
+        "GNoME",
+        506
+      ],
+      [
+        "WBM",
+        217
+      ],
+      [
+        "OMat24",
+        1331
+      ]
+    ],
+    "top3": [
+      [
+        "task_00635",
+        "task",
+        "[task] Materials property prediction on SPICE dataset\n[method] unconstrained MLIP evaluation framework\n[task] materials science\n[task] computational chemistry\n[task] materials disc"
+      ],
+      [
+        "futu_00075",
+        "future_topic",
+        "[future_topic] Evaluating new materials ML algorithms on the Matbench benchmark\n[article] Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer"
+      ],
+      [
+        "task_00627",
+        "task",
+        "[task] Multi-dataset training\n[method] unconstrained MLIP evaluation framework\n[task] materials science\n[task] computational chemistry\n[task] materials discovery\n[task] molecular d"
+      ]
+    ]
+  }
+]

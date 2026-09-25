@@ -1,0 +1,35 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "task_00294",
+      "type": "task",
+      "surface_form": "adsorption energy calculation"
+    },
+    {
+      "id": "task_00298",
+      "type": "task",
+      "surface_form": "AdsorbML integration"
+    },
+    {
+      "id": "task_00300",
+      "type": "task",
+      "surface_form": "AdsorbML structural relaxation"
+    },
+    {
+      "id": "task_00301",
+      "type": "task",
+      "surface_form": "AdsorbML adsorption energy calculation"
+    }
+  ],
+  "generation_type_counts": {
+    "task": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "adsorbml",
+  "representative_ids": [
+    "task_00301",
+    "task_00294"
+  ]
+}

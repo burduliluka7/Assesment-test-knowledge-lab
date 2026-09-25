@@ -1,0 +1,30 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00252",
+      "type": "claim",
+      "surface_form": "MLIPs map atomic configurations to total energy and provide forces and stresses as analytical derivatives of the potential energy surface."
+    },
+    {
+      "id": "clai_00296",
+      "type": "claim",
+      "surface_form": "Good agreement on target properties provides greater confidence in U-MLIP than just similar energies and forces on select structures."
+    },
+    {
+      "id": "clai_00309",
+      "type": "claim",
+      "surface_form": "U-MLIPs systematically underpredict energies and forces due to softening of the potential energy surface, attributed to biased sampling in training datasets from DFT ionic relaxations near local PES minima."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "forces",
+  "representative_ids": [
+    "clai_00309",
+    "clai_00296"
+  ]
+}

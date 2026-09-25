@@ -1,0 +1,255 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00022",
+      "type": "article",
+      "surface_form": "Atomic cluster expansion of scalar, vectorial and tensorial properties and including magnetism and charge transfer"
+    },
+    {
+      "id": "cite_00230",
+      "type": "cited_work",
+      "surface_form": "Atomic Cluster Expansion"
+    },
+    {
+      "id": "cite_00264",
+      "type": "cited_work",
+      "surface_form": "Variationally Optimized Atomic Orbitals"
+    },
+    {
+      "id": "cite_00265",
+      "type": "cited_work",
+      "surface_form": "Numerical Atomic Basis Orbitals"
+    },
+    {
+      "id": "cite_00391",
+      "type": "cited_work",
+      "surface_form": "classical nucleation theory"
+    },
+    {
+      "id": "clai_00520",
+      "type": "claim",
+      "surface_form": "The atomic cluster expansion (ACE) is generalized to model scalar, vectorial and tensorial atomic properties and to include additional atomic degrees of freedom—species, magnetic moments, and charges—on equal footing with atomic positions."
+    },
+    {
+      "id": "clai_00616",
+      "type": "claim",
+      "surface_form": "The approach generalizes to materials with varying atom counts, tested on systems with 2–40 atoms (training) and over 40 atoms (testing)."
+    },
+    {
+      "id": "comp_00705",
+      "type": "component",
+      "surface_form": "ghost atoms"
+    },
+    {
+      "id": "meth_00077",
+      "type": "method",
+      "surface_form": "Atomic Cluster Expansion"
+    },
+    {
+      "id": "meth_00099",
+      "type": "method",
+      "surface_form": "embedded-atom-method"
+    },
+    {
+      "id": "meth_00152",
+      "type": "method",
+      "surface_form": "classical nucleation theory"
+    },
+    {
+      "id": "meth_00194",
+      "type": "method",
+      "surface_form": "AtomSets"
+    },
+    {
+      "id": "meth_00224",
+      "type": "method",
+      "surface_form": "Linear Combination of Atomic Orbitals"
+    },
+    {
+      "id": "meth_00229",
+      "type": "method",
+      "surface_form": "Atomic Cluster Expansion extended to scalar, vectorial, tensorial properties with magnetic moments and charge transfer"
+    },
+    {
+      "id": "prob_00169",
+      "type": "problem",
+      "surface_form": "Noise reduction in atomistic data"
+    },
+    {
+      "id": "prob_00248",
+      "type": "problem",
+      "surface_form": "Modeling complex atomic structures"
+    },
+    {
+      "id": "task_00025",
+      "type": "task",
+      "surface_form": "Interatomic force prediction"
+    },
+    {
+      "id": "task_00092",
+      "type": "task",
+      "surface_form": "Nucleation rate and probability analysis"
+    },
+    {
+      "id": "task_00096",
+      "type": "task",
+      "surface_form": "Nucleation rate estimation"
+    },
+    {
+      "id": "task_00187",
+      "type": "task",
+      "surface_form": "Per‑atom energy extraction"
+    },
+    {
+      "id": "task_00211",
+      "type": "task",
+      "surface_form": "Atomic von Mises stress prediction"
+    },
+    {
+      "id": "task_00212",
+      "type": "task",
+      "surface_form": "Atomic tensile stress prediction"
+    },
+    {
+      "id": "task_00213",
+      "type": "task",
+      "surface_form": "Atomic potential energy prediction"
+    },
+    {
+      "id": "task_00216",
+      "type": "task",
+      "surface_form": "Per‑atom stress field prediction"
+    },
+    {
+      "id": "task_00263",
+      "type": "task",
+      "surface_form": "atomistic simulations"
+    },
+    {
+      "id": "task_00293",
+      "type": "task",
+      "surface_form": "atomic energy prediction"
+    },
+    {
+      "id": "task_00302",
+      "type": "task",
+      "surface_form": "Atomic interaction modeling"
+    },
+    {
+      "id": "task_00325",
+      "type": "task",
+      "surface_form": "atomistic machine learning"
+    },
+    {
+      "id": "tech_00074",
+      "type": "technique",
+      "surface_form": "Weight sharing across atoms"
+    },
+    {
+      "id": "tech_00210",
+      "type": "technique",
+      "surface_form": "Atomic Cluster Expansion"
+    },
+    {
+      "id": "tech_00312",
+      "type": "technique",
+      "surface_form": "Image‑based encoding of atomistic data"
+    },
+    {
+      "id": "tech_00639",
+      "type": "technique",
+      "surface_form": "local-orbital basis"
+    },
+    {
+      "id": "tech_00786",
+      "type": "technique",
+      "surface_form": "Atomic coordinate optimization at 0 K"
+    },
+    {
+      "id": "tech_00788",
+      "type": "technique",
+      "surface_form": "ghost atom creation"
+    },
+    {
+      "id": "tech_00914",
+      "type": "technique",
+      "surface_form": "sp3 atom counting"
+    },
+    {
+      "id": "tech_00923",
+      "type": "technique",
+      "surface_form": "sp2/sp3 atom counting"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 4,
+    "claim": 2,
+    "component": 1,
+    "method": 6,
+    "problem": 2,
+    "task": 12,
+    "technique": 8
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00119",
+      "relation_type": "extends",
+      "members": [
+        "meth_00229",
+        "meth_00077"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "n_targets": 1
+      }
+    },
+    {
+      "id": "h_00328",
+      "relation_type": "presents",
+      "members": [
+        "arti_00022",
+        "meth_00229"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      }
+    },
+    {
+      "id": "h_01126",
+      "relation_type": "claims",
+      "members": [
+        "arti_00022",
+        "meth_00229",
+        "clai_00520"
+      ],
+      "year": 2020,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5398,
+        "article_year": 2020
+      },
+      "attributes": {
+        "claim_type": "definitional",
+        "evidence_type": "theorem",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "atomic",
+  "representative_ids": [
+    "tech_00210",
+    "meth_00077"
+  ]
+}

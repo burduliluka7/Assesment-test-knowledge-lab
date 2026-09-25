@@ -1,0 +1,55 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00441",
+      "type": "component",
+      "surface_form": "Materials-specific featurization library"
+    },
+    {
+      "id": "comp_00461",
+      "type": "component",
+      "surface_form": "AtomicOrbitals featurizer"
+    },
+    {
+      "id": "comp_00462",
+      "type": "component",
+      "surface_form": "ElementProperty featurizer"
+    },
+    {
+      "id": "comp_00463",
+      "type": "component",
+      "surface_form": "ElementFraction featurizer"
+    },
+    {
+      "id": "comp_00464",
+      "type": "component",
+      "surface_form": "Stoichiometry featurizer"
+    },
+    {
+      "id": "comp_00465",
+      "type": "component",
+      "surface_form": "TMetalFraction featurizer"
+    },
+    {
+      "id": "comp_00467",
+      "type": "component",
+      "surface_form": "DensityFeatures featurizer"
+    },
+    {
+      "id": "comp_00639",
+      "type": "component",
+      "surface_form": "Explicit atomic position featurization"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 8
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "featurizer",
+  "representative_ids": [
+    "comp_00463",
+    "comp_00461"
+  ]
+}

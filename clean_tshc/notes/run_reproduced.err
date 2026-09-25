@@ -1,0 +1,23 @@
+Token indices sequence length is longer than the specified maximum sequence length for this model (544 > 512). Running this sequence through the model will result in indexing errors
+Traceback (most recent call last):
+  File "C:\Users\Luka Burduli\Documents\Assesment\clean_tshc\scripts\run_all.py", line 126, in <module>
+    main()
+  File "C:\Users\Luka Burduli\Documents\Assesment\clean_tshc\scripts\run_all.py", line 101, in main
+    metrics = execute_evaluation(
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Luka Burduli\Documents\Assesment\clean_tshc\src\tkh_abstraction\evaluation.py", line 323, in execute_evaluation
+    claims = align_claims(truth, snap, enc)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Luka Burduli\Documents\Assesment\clean_tshc\src\tkh_abstraction\benchmark.py", line 193, in align_claims
+    refs = [resolve_source(s, snap) for s in c["sources"]]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Luka Burduli\Documents\Assesment\clean_tshc\src\tkh_abstraction\benchmark.py", line 193, in <listcomp>
+    refs = [resolve_source(s, snap) for s in c["sources"]]
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Luka Burduli\Documents\Assesment\clean_tshc\src\tkh_abstraction\benchmark.py", line 142, in resolve_source
+    if source.get("doi") and normalize(source["doi"]) == normalize(
+                                                         ^^^^^^^^^^
+  File "C:\Users\Luka Burduli\Documents\Assesment\clean_tshc\src\tkh_abstraction\benchmark.py", line 13, in normalize
+    s = unicodedata.normalize("NFKC", s).casefold()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: normalize() argument 2 must be str, not None

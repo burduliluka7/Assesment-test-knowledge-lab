@@ -1,0 +1,897 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00255",
+      "type": "claim",
+      "surface_form": "EquiformerV2-OMAT24 achieves the best performance on the MatBench leaderboard as of this writing."
+    },
+    {
+      "id": "comp_00012",
+      "type": "component",
+      "surface_form": "embedding layer"
+    },
+    {
+      "id": "comp_00026",
+      "type": "component",
+      "surface_form": "Hypernetwork"
+    },
+    {
+      "id": "comp_00041",
+      "type": "component",
+      "surface_form": "Wigner‑Eckart layer"
+    },
+    {
+      "id": "comp_00042",
+      "type": "component",
+      "surface_form": "E3Linear layer"
+    },
+    {
+      "id": "comp_00043",
+      "type": "component",
+      "surface_form": "E3LayerNorm"
+    },
+    {
+      "id": "comp_00045",
+      "type": "component",
+      "surface_form": "Tensor product layer"
+    },
+    {
+      "id": "comp_00046",
+      "type": "component",
+      "surface_form": "EquiConv block"
+    },
+    {
+      "id": "comp_00047",
+      "type": "component",
+      "surface_form": "Vertex update block"
+    },
+    {
+      "id": "comp_00048",
+      "type": "component",
+      "surface_form": "Edge update block"
+    },
+    {
+      "id": "comp_00049",
+      "type": "component",
+      "surface_form": "Elemental embedding"
+    },
+    {
+      "id": "comp_00051",
+      "type": "component",
+      "surface_form": "Spherical harmonics encoding"
+    },
+    {
+      "id": "comp_00052",
+      "type": "component",
+      "surface_form": "Complex‑vector handling via time‑reversal basis"
+    },
+    {
+      "id": "comp_00054",
+      "type": "component",
+      "surface_form": "EquiConv layer"
+    },
+    {
+      "id": "comp_00055",
+      "type": "component",
+      "surface_form": "Vertex and edge update blocks"
+    },
+    {
+      "id": "comp_00056",
+      "type": "component",
+      "surface_form": "Spherical harmonics up to l=5"
+    },
+    {
+      "id": "comp_00058",
+      "type": "component",
+      "surface_form": "Atomic‑like localized basis representation"
+    },
+    {
+      "id": "comp_00151",
+      "type": "component",
+      "surface_form": "eSCN convolutions"
+    },
+    {
+      "id": "comp_00157",
+      "type": "component",
+      "surface_form": "Magnetic moment prediction"
+    },
+    {
+      "id": "comp_00183",
+      "type": "component",
+      "surface_form": "Atom graph"
+    },
+    {
+      "id": "comp_00184",
+      "type": "component",
+      "surface_form": "Bond graph"
+    },
+    {
+      "id": "comp_00187",
+      "type": "component",
+      "surface_form": "Weighted message‑passing convolution"
+    },
+    {
+      "id": "comp_00190",
+      "type": "component",
+      "surface_form": "Output heads"
+    },
+    {
+      "id": "comp_00191",
+      "type": "component",
+      "surface_form": "Magnetic‑moment prediction head"
+    },
+    {
+      "id": "comp_00192",
+      "type": "component",
+      "surface_form": "Charge‑informed regularization"
+    },
+    {
+      "id": "comp_00193",
+      "type": "component",
+      "surface_form": "Three‑stage interaction block"
+    },
+    {
+      "id": "comp_00194",
+      "type": "component",
+      "surface_form": "Smooth radial Bessel function"
+    },
+    {
+      "id": "comp_00195",
+      "type": "component",
+      "surface_form": "Fourier‑basis angular expansion"
+    },
+    {
+      "id": "comp_00196",
+      "type": "component",
+      "surface_form": "Gated multilayer perceptron"
+    },
+    {
+      "id": "comp_00198",
+      "type": "component",
+      "surface_form": "Force and stress autograd"
+    },
+    {
+      "id": "comp_00199",
+      "type": "component",
+      "surface_form": "Pretraining on Materials Project Trajectory dataset"
+    },
+    {
+      "id": "comp_00200",
+      "type": "component",
+      "surface_form": "Position‑included material graph"
+    },
+    {
+      "id": "comp_00202",
+      "type": "component",
+      "surface_form": "Bond distance expansion"
+    },
+    {
+      "id": "comp_00203",
+      "type": "component",
+      "surface_form": "Three‑body angular module"
+    },
+    {
+      "id": "comp_00205",
+      "type": "component",
+      "surface_form": "Graph convolution block"
+    },
+    {
+      "id": "comp_00207",
+      "type": "component",
+      "surface_form": "Auto‑differentiation layer"
+    },
+    {
+      "id": "comp_00211",
+      "type": "component",
+      "surface_form": "3‑body interaction module"
+    },
+    {
+      "id": "comp_00212",
+      "type": "component",
+      "surface_form": "Relaxation engine"
+    },
+    {
+      "id": "comp_00213",
+      "type": "component",
+      "surface_form": "Pre‑relaxation pipeline"
+    },
+    {
+      "id": "comp_00214",
+      "type": "component",
+      "surface_form": "Short‑time MD simulation workflow"
+    },
+    {
+      "id": "comp_00215",
+      "type": "component",
+      "surface_form": "Phonon and elastic property predictor"
+    },
+    {
+      "id": "comp_00216",
+      "type": "component",
+      "surface_form": "Arrhenius analysis module"
+    },
+    {
+      "id": "comp_00227",
+      "type": "component",
+      "surface_form": "Magnetic moment layer"
+    },
+    {
+      "id": "comp_00229",
+      "type": "component",
+      "surface_form": "Edge layer"
+    },
+    {
+      "id": "comp_00230",
+      "type": "component",
+      "surface_form": "Tensor‑product layer with Clebsch‑Gordan coefficients"
+    },
+    {
+      "id": "comp_00231",
+      "type": "component",
+      "surface_form": "Time‑reversal parity index"
+    },
+    {
+      "id": "comp_00234",
+      "type": "component",
+      "surface_form": "Hamiltonian construction block"
+    },
+    {
+      "id": "comp_00385",
+      "type": "component",
+      "surface_form": "AFLOW workflow engine"
+    },
+    {
+      "id": "comp_00386",
+      "type": "component",
+      "surface_form": "Standardized Brillouin‑zone path generator"
+    },
+    {
+      "id": "comp_00388",
+      "type": "component",
+      "surface_form": "Aconvasp command‑line tool"
+    },
+    {
+      "id": "comp_00390",
+      "type": "component",
+      "surface_form": "APL phonon library"
+    },
+    {
+      "id": "comp_00391",
+      "type": "component",
+      "surface_form": "Surface‑slab builder"
+    },
+    {
+      "id": "comp_00393",
+      "type": "component",
+      "surface_form": "Interstitial‑site topological search"
+    },
+    {
+      "id": "comp_00394",
+      "type": "component",
+      "surface_form": "Alien‑mode task executor"
+    },
+    {
+      "id": "comp_00395",
+      "type": "component",
+      "surface_form": "Apennsy interstitial cage search"
+    },
+    {
+      "id": "comp_00397",
+      "type": "component",
+      "surface_form": "AFLOW.IN / VASP POSCAR output generator"
+    },
+    {
+      "id": "comp_00399",
+      "type": "component",
+      "surface_form": "Hybrid functional workflow"
+    },
+    {
+      "id": "comp_00416",
+      "type": "component",
+      "surface_form": "attention re-normalization"
+    },
+    {
+      "id": "comp_00417",
+      "type": "component",
+      "surface_form": "separable S2 activation"
+    },
+    {
+      "id": "comp_00418",
+      "type": "component",
+      "surface_form": "separable layer normalization"
+    },
+    {
+      "id": "comp_00420",
+      "type": "component",
+      "surface_form": "Rotation matrix Dij"
+    },
+    {
+      "id": "comp_00421",
+      "type": "component",
+      "surface_form": "eSCN convolution"
+    },
+    {
+      "id": "comp_00422",
+      "type": "component",
+      "surface_form": "SO(3) irreps features"
+    },
+    {
+      "id": "comp_00423",
+      "type": "component",
+      "surface_form": "Spherical harmonic projections"
+    },
+    {
+      "id": "comp_00424",
+      "type": "component",
+      "surface_form": "SO(2) linear operations"
+    },
+    {
+      "id": "comp_00425",
+      "type": "component",
+      "surface_form": "Equivariant graph attention"
+    },
+    {
+      "id": "comp_00428",
+      "type": "component",
+      "surface_form": "Attention re-normalization with layer normalization"
+    },
+    {
+      "id": "comp_00430",
+      "type": "component",
+      "surface_form": "Separated S2 attention"
+    },
+    {
+      "id": "comp_00431",
+      "type": "component",
+      "surface_form": "Scalar Layer Normalization"
+    },
+    {
+      "id": "comp_00432",
+      "type": "component",
+      "surface_form": "Radial basis functions"
+    },
+    {
+      "id": "comp_00434",
+      "type": "component",
+      "surface_form": "Maximum degree Lmax"
+    },
+    {
+      "id": "comp_00435",
+      "type": "component",
+      "surface_form": "Maximum order Mmax"
+    },
+    {
+      "id": "comp_00437",
+      "type": "component",
+      "surface_form": "Equivariant graph attention block"
+    },
+    {
+      "id": "comp_00438",
+      "type": "component",
+      "surface_form": "Gaussian radial basis functions"
+    },
+    {
+      "id": "comp_00439",
+      "type": "component",
+      "surface_form": "Automatminer pipeline"
+    },
+    {
+      "id": "comp_00440",
+      "type": "component",
+      "surface_form": "Matbench test suite"
+    },
+    {
+      "id": "comp_00441",
+      "type": "component",
+      "surface_form": "Materials-specific featurization library"
+    },
+    {
+      "id": "comp_00444",
+      "type": "component",
+      "surface_form": "Magpie features"
+    },
+    {
+      "id": "comp_00447",
+      "type": "component",
+      "surface_form": "Automatminer"
+    },
+    {
+      "id": "comp_00449",
+      "type": "component",
+      "surface_form": "NCV fold structure"
+    },
+    {
+      "id": "comp_00451",
+      "type": "component",
+      "surface_form": "Cleaning stage"
+    },
+    {
+      "id": "comp_00452",
+      "type": "component",
+      "surface_form": "Dimensionality reduction stage"
+    },
+    {
+      "id": "comp_00455",
+      "type": "component",
+      "surface_form": "Automatminer Debug preset"
+    },
+    {
+      "id": "comp_00458",
+      "type": "component",
+      "surface_form": "AutoML model search space"
+    },
+    {
+      "id": "comp_00459",
+      "type": "component",
+      "surface_form": "Extensible featurizer sets"
+    },
+    {
+      "id": "comp_00461",
+      "type": "component",
+      "surface_form": "AtomicOrbitals featurizer"
+    },
+    {
+      "id": "comp_00462",
+      "type": "component",
+      "surface_form": "ElementProperty featurizer"
+    },
+    {
+      "id": "comp_00463",
+      "type": "component",
+      "surface_form": "ElementFraction featurizer"
+    },
+    {
+      "id": "comp_00464",
+      "type": "component",
+      "surface_form": "Stoichiometry featurizer"
+    },
+    {
+      "id": "comp_00465",
+      "type": "component",
+      "surface_form": "TMetalFraction featurizer"
+    },
+    {
+      "id": "comp_00466",
+      "type": "component",
+      "surface_form": "BandCenter featurizer"
+    },
+    {
+      "id": "comp_00467",
+      "type": "component",
+      "surface_form": "DensityFeatures featurizer"
+    },
+    {
+      "id": "comp_00468",
+      "type": "component",
+      "surface_form": "GlobalSymmetryFeatures featurizer"
+    },
+    {
+      "id": "comp_00470",
+      "type": "component",
+      "surface_form": "CGCNN convolution layers"
+    },
+    {
+      "id": "comp_00471",
+      "type": "component",
+      "surface_form": "MEGNET blocks"
+    },
+    {
+      "id": "comp_00473",
+      "type": "component",
+      "surface_form": "Set2Set"
+    },
+    {
+      "id": "comp_00474",
+      "type": "component",
+      "surface_form": "Skip connection Add layers"
+    },
+    {
+      "id": "comp_00490",
+      "type": "component",
+      "surface_form": "Matrix Virtual Node"
+    },
+    {
+      "id": "comp_00491",
+      "type": "component",
+      "surface_form": "Momentum-dependent Matrix Virtual Node"
+    },
+    {
+      "id": "comp_00492",
+      "type": "component",
+      "surface_form": "Virtual-dynamical matrices"
+    },
+    {
+      "id": "comp_00494",
+      "type": "component",
+      "surface_form": "Bi-directed real-real edges"
+    },
+    {
+      "id": "comp_00498",
+      "type": "component",
+      "surface_form": "Atomic number node embedding"
+    },
+    {
+      "id": "comp_00499",
+      "type": "component",
+      "surface_form": "Atomic mass input features"
+    },
+    {
+      "id": "comp_00500",
+      "type": "component",
+      "surface_form": "Gated activation layers"
+    },
+    {
+      "id": "comp_00502",
+      "type": "component",
+      "surface_form": "Vector Virtual Nodes"
+    },
+    {
+      "id": "comp_00503",
+      "type": "component",
+      "surface_form": "Matrix Virtual Nodes"
+    },
+    {
+      "id": "comp_00505",
+      "type": "component",
+      "surface_form": "Directed real-to-virtual edges"
+    },
+    {
+      "id": "comp_00507",
+      "type": "component",
+      "surface_form": "Screening virtual node layer"
+    },
+    {
+      "id": "comp_00509",
+      "type": "component",
+      "surface_form": "Radial function h"
+    },
+    {
+      "id": "comp_00510",
+      "type": "component",
+      "surface_form": "Spherical harmonics Y"
+    },
+    {
+      "id": "comp_00511",
+      "type": "component",
+      "surface_form": "Momentum-dependent Matrix Virtual Nodes"
+    },
+    {
+      "id": "comp_00513",
+      "type": "component",
+      "surface_form": "k-dependent matrix virtual nodes"
+    },
+    {
+      "id": "comp_00514",
+      "type": "component",
+      "surface_form": "Composition-weighted atomic mass encoding"
+    },
+    {
+      "id": "comp_00515",
+      "type": "component",
+      "surface_form": "Two-hot encoding for alloy elements"
+    },
+    {
+      "id": "comp_00516",
+      "type": "component",
+      "surface_form": "Local frame descriptor"
+    },
+    {
+      "id": "comp_00517",
+      "type": "component",
+      "surface_form": "DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00518",
+      "type": "component",
+      "surface_form": "Attention-based descriptor"
+    },
+    {
+      "id": "comp_00519",
+      "type": "component",
+      "surface_form": "Hybrid descriptor"
+    },
+    {
+      "id": "comp_00520",
+      "type": "component",
+      "surface_form": "Fitting network"
+    },
+    {
+      "id": "comp_00521",
+      "type": "component",
+      "surface_form": "Type embedding"
+    },
+    {
+      "id": "comp_00522",
+      "type": "component",
+      "surface_form": "Model deviation module"
+    },
+    {
+      "id": "comp_00523",
+      "type": "component",
+      "surface_form": "Deep Potential - Range Correction"
+    },
+    {
+      "id": "comp_00524",
+      "type": "component",
+      "surface_form": "Deep Potential Long Range"
+    },
+    {
+      "id": "comp_00525",
+      "type": "component",
+      "surface_form": "Model compression module"
+    },
+    {
+      "id": "comp_00526",
+      "type": "component",
+      "surface_form": "NVNMD engine"
+    },
+    {
+      "id": "comp_00527",
+      "type": "component",
+      "surface_form": "Two-body embedding DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00528",
+      "type": "component",
+      "surface_form": "Three-body embedding DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00530",
+      "type": "component",
+      "surface_form": "Fitting network F0"
+    },
+    {
+      "id": "comp_00531",
+      "type": "component",
+      "surface_form": "Fitting network F1"
+    },
+    {
+      "id": "comp_00533",
+      "type": "component",
+      "surface_form": "DP-empirical potential interpolation module"
+    },
+    {
+      "id": "comp_00535",
+      "type": "component",
+      "surface_form": "Operator merging module"
+    },
+    {
+      "id": "comp_00537",
+      "type": "component",
+      "surface_form": "Ensemble model deviation estimator"
+    },
+    {
+      "id": "comp_00538",
+      "type": "component",
+      "surface_form": "Core C++ library"
+    },
+    {
+      "id": "comp_00539",
+      "type": "component",
+      "surface_form": "GPU library"
+    },
+    {
+      "id": "comp_00541",
+      "type": "component",
+      "surface_form": "Model definitions module"
+    },
+    {
+      "id": "comp_00542",
+      "type": "component",
+      "surface_form": "Environment matrix operator"
+    },
+    {
+      "id": "comp_00543",
+      "type": "component",
+      "surface_form": "Ewald summation operator"
+    },
+    {
+      "id": "comp_00544",
+      "type": "component",
+      "surface_form": "Compressed operator"
+    },
+    {
+      "id": "comp_00546",
+      "type": "component",
+      "surface_form": "two-body embedding full-information descriptor"
+    },
+    {
+      "id": "comp_00547",
+      "type": "component",
+      "surface_form": "two-body embedding radial descriptor"
+    },
+    {
+      "id": "comp_00549",
+      "type": "component",
+      "surface_form": "hybrid descriptors"
+    },
+    {
+      "id": "comp_00550",
+      "type": "component",
+      "surface_form": "plugin system"
+    },
+    {
+      "id": "comp_00551",
+      "type": "component",
+      "surface_form": "model compression"
+    },
+    {
+      "id": "comp_00552",
+      "type": "component",
+      "surface_form": "NVNMD accelerator"
+    },
+    {
+      "id": "comp_00554",
+      "type": "component",
+      "surface_form": "se e2 a descriptor"
+    },
+    {
+      "id": "comp_00555",
+      "type": "component",
+      "surface_form": "CGAT-2"
+    },
+    {
+      "id": "comp_00559",
+      "type": "component",
+      "surface_form": "Residual neural network"
+    },
+    {
+      "id": "comp_00560",
+      "type": "component",
+      "surface_form": "Edge update mechanism"
+    },
+    {
+      "id": "comp_00561",
+      "type": "component",
+      "surface_form": "CGCNN model for elastic properties"
+    },
+    {
+      "id": "comp_00563",
+      "type": "component",
+      "surface_form": "Vicker's hardness estimation model"
+    },
+    {
+      "id": "comp_00564",
+      "type": "component",
+      "surface_form": "DFT stiffness tensor calculator"
+    },
+    {
+      "id": "comp_00566",
+      "type": "component",
+      "surface_form": "CGAT-1/2/3 network series"
+    },
+    {
+      "id": "comp_00569",
+      "type": "component",
+      "surface_form": "Prototype-based structure sampler"
+    },
+    {
+      "id": "comp_00573",
+      "type": "component",
+      "surface_form": "RELAX1"
+    },
+    {
+      "id": "comp_00574",
+      "type": "component",
+      "surface_form": "RELAX2"
+    },
+    {
+      "id": "comp_00575",
+      "type": "component",
+      "surface_form": "STATIC"
+    },
+    {
+      "id": "comp_00576",
+      "type": "component",
+      "surface_form": "BANDS"
+    },
+    {
+      "id": "comp_00578",
+      "type": "component",
+      "surface_form": "Error correction system"
+    },
+    {
+      "id": "comp_00579",
+      "type": "component",
+      "surface_form": "DBS electronic minimizer"
+    },
+    {
+      "id": "comp_00581",
+      "type": "component",
+      "surface_form": "Pulay charge mixer"
+    },
+    {
+      "id": "comp_00582",
+      "type": "component",
+      "surface_form": "CG ionic optimizer"
+    },
+    {
+      "id": "comp_00584",
+      "type": "component",
+      "surface_form": "Dual grid technique"
+    },
+    {
+      "id": "comp_00585",
+      "type": "component",
+      "surface_form": "Plane-wave kinetic energy cut-off"
+    },
+    {
+      "id": "comp_00586",
+      "type": "component",
+      "surface_form": "Ueff parameters for d-block elements"
+    },
+    {
+      "id": "comp_00588",
+      "type": "component",
+      "surface_form": "Collinear spin-polarized calculation setup"
+    },
+    {
+      "id": "comp_00696",
+      "type": "component",
+      "surface_form": "Efficient spatial decomposition algorithm for GNN-IPs"
+    },
+    {
+      "id": "comp_00697",
+      "type": "component",
+      "surface_form": "SevenNet package"
+    },
+    {
+      "id": "comp_00699",
+      "type": "component",
+      "surface_form": "Forward and reverse communication modules"
+    },
+    {
+      "id": "comp_00700",
+      "type": "component",
+      "surface_form": "SevenNet-0"
+    },
+    {
+      "id": "comp_00701",
+      "type": "component",
+      "surface_form": "interaction blocks"
+    },
+    {
+      "id": "comp_00703",
+      "type": "component",
+      "surface_form": "forward communication routines"
+    },
+    {
+      "id": "comp_00704",
+      "type": "component",
+      "surface_form": "reverse communication routines"
+    },
+    {
+      "id": "comp_00705",
+      "type": "component",
+      "surface_form": "ghost atoms"
+    },
+    {
+      "id": "comp_00706",
+      "type": "component",
+      "surface_form": "Linear self-connection layer"
+    },
+    {
+      "id": "comp_00708",
+      "type": "component",
+      "surface_form": "message-passing layers"
+    },
+    {
+      "id": "tech_00589",
+      "type": "technique",
+      "surface_form": "type embedding"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 174,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "layer",
+  "representative_ids": [
+    "comp_00049",
+    "comp_00452"
+  ]
+}

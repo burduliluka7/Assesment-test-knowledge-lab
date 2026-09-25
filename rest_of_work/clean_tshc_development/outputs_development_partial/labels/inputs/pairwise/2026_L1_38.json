@@ -1,0 +1,41 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "task_00030",
+      "type": "task",
+      "surface_form": "IS2RS"
+    },
+    {
+      "id": "task_00031",
+      "type": "task",
+      "surface_form": "IS2RE"
+    },
+    {
+      "id": "task_00308",
+      "type": "task",
+      "surface_form": "OC20 IS2RE"
+    },
+    {
+      "id": "task_00311",
+      "type": "task",
+      "surface_form": "OC22 IS2RE"
+    },
+    {
+      "id": "tech_00468",
+      "type": "technique",
+      "surface_form": "IS2RS auxiliary task"
+    }
+  ],
+  "generation_type_counts": {
+    "task": 4,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "is2re",
+  "representative_ids": [
+    "task_00031",
+    "task_00308"
+  ]
+}

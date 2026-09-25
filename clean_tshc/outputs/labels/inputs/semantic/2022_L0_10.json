@@ -1,0 +1,740 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "clai_00064",
+      "type": "claim",
+      "surface_form": "The featurization methods are transferable to more complex compositions, enabling new ML models to be fitted without revising the materials embedding method given extended datasets."
+    },
+    {
+      "id": "clai_00219",
+      "type": "claim",
+      "surface_form": "Specific Ueff parameters are defined for d-block elements (Table 4) and U, J parameters for f-block elements (Table 5) to correct self-interaction error in DFT+U calculations, with values ranging from 1.9 eV (In) to 7.5 eV (Zn)."
+    },
+    {
+      "id": "clai_00492",
+      "type": "claim",
+      "surface_form": "Elemental embedding vectors learned by the crystal formation‑energy MEGNet model reproduce known periodic‑table trends and, when transferred to band‑gap and elastic‑moduli models, reduce their mean absolute errors, improving upon prior machine‑learning approaches."
+    },
+    {
+      "id": "clai_00523",
+      "type": "claim",
+      "surface_form": "Representing tensors with spherical harmonics yields a dramatically sparser basis, where a rank‑N Cartesian tensor with 3^N components can be represented by (N+1)^2 spherical harmonics (e.g., a 10th‑order tensor requires 121 harmonics instead of 59 049 Cartesian components)."
+    },
+    {
+      "id": "comp_00005",
+      "type": "component",
+      "surface_form": "Output layer"
+    },
+    {
+      "id": "comp_00007",
+      "type": "component",
+      "surface_form": "Hyperparameters"
+    },
+    {
+      "id": "comp_00012",
+      "type": "component",
+      "surface_form": "embedding layer"
+    },
+    {
+      "id": "comp_00013",
+      "type": "component",
+      "surface_form": "Pooling layer"
+    },
+    {
+      "id": "comp_00015",
+      "type": "component",
+      "surface_form": "Virtual edge type"
+    },
+    {
+      "id": "comp_00016",
+      "type": "component",
+      "surface_form": "Master (global) node"
+    },
+    {
+      "id": "comp_00018",
+      "type": "component",
+      "surface_form": "Set2Set readout"
+    },
+    {
+      "id": "comp_00024",
+      "type": "component",
+      "surface_form": "Atom type embedding"
+    },
+    {
+      "id": "comp_00026",
+      "type": "component",
+      "surface_form": "Hypernetwork"
+    },
+    {
+      "id": "comp_00030",
+      "type": "component",
+      "surface_form": "GRU vertex update"
+    },
+    {
+      "id": "comp_00041",
+      "type": "component",
+      "surface_form": "Wigner‑Eckart layer"
+    },
+    {
+      "id": "comp_00042",
+      "type": "component",
+      "surface_form": "E3Linear layer"
+    },
+    {
+      "id": "comp_00043",
+      "type": "component",
+      "surface_form": "E3LayerNorm"
+    },
+    {
+      "id": "comp_00045",
+      "type": "component",
+      "surface_form": "Tensor product layer"
+    },
+    {
+      "id": "comp_00046",
+      "type": "component",
+      "surface_form": "EquiConv block"
+    },
+    {
+      "id": "comp_00047",
+      "type": "component",
+      "surface_form": "Vertex update block"
+    },
+    {
+      "id": "comp_00048",
+      "type": "component",
+      "surface_form": "Edge update block"
+    },
+    {
+      "id": "comp_00049",
+      "type": "component",
+      "surface_form": "Elemental embedding"
+    },
+    {
+      "id": "comp_00052",
+      "type": "component",
+      "surface_form": "Complex‑vector handling via time‑reversal basis"
+    },
+    {
+      "id": "comp_00055",
+      "type": "component",
+      "surface_form": "Vertex and edge update blocks"
+    },
+    {
+      "id": "comp_00058",
+      "type": "component",
+      "surface_form": "Atomic‑like localized basis representation"
+    },
+    {
+      "id": "comp_00166",
+      "type": "component",
+      "surface_form": "Tensor‑product module"
+    },
+    {
+      "id": "comp_00168",
+      "type": "component",
+      "surface_form": "output block"
+    },
+    {
+      "id": "comp_00203",
+      "type": "component",
+      "surface_form": "Three‑body angular module"
+    },
+    {
+      "id": "comp_00207",
+      "type": "component",
+      "surface_form": "Auto‑differentiation layer"
+    },
+    {
+      "id": "comp_00211",
+      "type": "component",
+      "surface_form": "3‑body interaction module"
+    },
+    {
+      "id": "comp_00213",
+      "type": "component",
+      "surface_form": "Pre‑relaxation pipeline"
+    },
+    {
+      "id": "comp_00216",
+      "type": "component",
+      "surface_form": "Arrhenius analysis module"
+    },
+    {
+      "id": "comp_00218",
+      "type": "component",
+      "surface_form": "Many‑body kernel term"
+    },
+    {
+      "id": "comp_00221",
+      "type": "component",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "comp_00235",
+      "type": "component",
+      "surface_form": "Local atomic reference frame"
+    },
+    {
+      "id": "comp_00237",
+      "type": "component",
+      "surface_form": "Input representation D_ij"
+    },
+    {
+      "id": "comp_00247",
+      "type": "component",
+      "surface_form": "Local atomic-like orbital basis"
+    },
+    {
+      "id": "comp_00249",
+      "type": "component",
+      "surface_form": "Local coordinate system for each edge"
+    },
+    {
+      "id": "comp_00250",
+      "type": "component",
+      "surface_form": "Edge embedding with Gaussian distance expansion"
+    },
+    {
+      "id": "comp_00251",
+      "type": "component",
+      "surface_form": "Vertex embedding of atomic numbers"
+    },
+    {
+      "id": "comp_00252",
+      "type": "component",
+      "surface_form": "Message Passing layers"
+    },
+    {
+      "id": "comp_00253",
+      "type": "component",
+      "surface_form": "Local Coordinate Message Passing (LCMP) layer"
+    },
+    {
+      "id": "comp_00255",
+      "type": "component",
+      "surface_form": "Rotation transformation to global frame"
+    },
+    {
+      "id": "comp_00256",
+      "type": "component",
+      "surface_form": "Vertex update network"
+    },
+    {
+      "id": "comp_00258",
+      "type": "component",
+      "surface_form": "Gaussian radial basis edge features"
+    },
+    {
+      "id": "comp_00259",
+      "type": "component",
+      "surface_form": "Elemental embeddings"
+    },
+    {
+      "id": "comp_00263",
+      "type": "component",
+      "surface_form": "Node feature vectors"
+    },
+    {
+      "id": "comp_00266",
+      "type": "component",
+      "surface_form": "Fully‑connected hidden layers"
+    },
+    {
+      "id": "comp_00281",
+      "type": "component",
+      "surface_form": "MEGNet block"
+    },
+    {
+      "id": "comp_00283",
+      "type": "component",
+      "surface_form": "Global state vector"
+    },
+    {
+      "id": "comp_00289",
+      "type": "component",
+      "surface_form": "Orthogonal Single‑Atom Basis Functions φ_v"
+    },
+    {
+      "id": "comp_00290",
+      "type": "component",
+      "surface_form": "Irreducible Basis Set B"
+    },
+    {
+      "id": "comp_00292",
+      "type": "component",
+      "surface_form": "Image‑based geometric matrix"
+    },
+    {
+      "id": "comp_00293",
+      "type": "component",
+      "surface_form": "ConvLSTM network architecture"
+    },
+    {
+      "id": "comp_00295",
+      "type": "component",
+      "surface_form": "Mode‑I and Mode‑II training pipelines"
+    },
+    {
+      "id": "comp_00298",
+      "type": "component",
+      "surface_form": "Geometric matrix X"
+    },
+    {
+      "id": "comp_00299",
+      "type": "component",
+      "surface_form": "Crack matrix y"
+    },
+    {
+      "id": "comp_00302",
+      "type": "component",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "comp_00303",
+      "type": "component",
+      "surface_form": "custodian"
+    },
+    {
+      "id": "comp_00308",
+      "type": "component",
+      "surface_form": "Visual warning system"
+    },
+    {
+      "id": "comp_00312",
+      "type": "component",
+      "surface_form": "Boundary‑condition encoding"
+    },
+    {
+      "id": "comp_00315",
+      "type": "component",
+      "surface_form": "GA optimizer"
+    },
+    {
+      "id": "comp_00324",
+      "type": "component",
+      "surface_form": "NEMD ground‑truth evaluator"
+    },
+    {
+      "id": "comp_00336",
+      "type": "component",
+      "surface_form": "JARVIS‑FF"
+    },
+    {
+      "id": "comp_00337",
+      "type": "component",
+      "surface_form": "JARVIS‑ML"
+    },
+    {
+      "id": "comp_00338",
+      "type": "component",
+      "surface_form": "JARVIS‑Tools"
+    },
+    {
+      "id": "comp_00344",
+      "type": "component",
+      "surface_form": "SLME screening module"
+    },
+    {
+      "id": "comp_00347",
+      "type": "component",
+      "surface_form": "JARVIS-DFT workflow"
+    },
+    {
+      "id": "comp_00350",
+      "type": "component",
+      "surface_form": "Data download utilities"
+    },
+    {
+      "id": "comp_00352",
+      "type": "component",
+      "surface_form": "JARVIS‑Wannier Tight‑Binding app"
+    },
+    {
+      "id": "comp_00353",
+      "type": "component",
+      "surface_form": "JARVIS-Beyond-DFT database"
+    },
+    {
+      "id": "comp_00355",
+      "type": "component",
+      "surface_form": "JARVIS-ML platform"
+    },
+    {
+      "id": "comp_00356",
+      "type": "component",
+      "surface_form": "CFID descriptor set"
+    },
+    {
+      "id": "comp_00357",
+      "type": "component",
+      "surface_form": "JARVIS‑WannierTB app"
+    },
+    {
+      "id": "comp_00359",
+      "type": "component",
+      "surface_form": "JARVIS‑Tools workflow"
+    },
+    {
+      "id": "comp_00360",
+      "type": "component",
+      "surface_form": "OQMD database"
+    },
+    {
+      "id": "comp_00385",
+      "type": "component",
+      "surface_form": "AFLOW workflow engine"
+    },
+    {
+      "id": "comp_00388",
+      "type": "component",
+      "surface_form": "Aconvasp command‑line tool"
+    },
+    {
+      "id": "comp_00394",
+      "type": "component",
+      "surface_form": "Alien‑mode task executor"
+    },
+    {
+      "id": "comp_00397",
+      "type": "component",
+      "surface_form": "AFLOW.IN / VASP POSCAR output generator"
+    },
+    {
+      "id": "comp_00399",
+      "type": "component",
+      "surface_form": "Hybrid functional workflow"
+    },
+    {
+      "id": "comp_00441",
+      "type": "component",
+      "surface_form": "Materials-specific featurization library"
+    },
+    {
+      "id": "comp_00451",
+      "type": "component",
+      "surface_form": "Cleaning stage"
+    },
+    {
+      "id": "comp_00459",
+      "type": "component",
+      "surface_form": "Extensible featurizer sets"
+    },
+    {
+      "id": "comp_00461",
+      "type": "component",
+      "surface_form": "AtomicOrbitals featurizer"
+    },
+    {
+      "id": "comp_00462",
+      "type": "component",
+      "surface_form": "ElementProperty featurizer"
+    },
+    {
+      "id": "comp_00463",
+      "type": "component",
+      "surface_form": "ElementFraction featurizer"
+    },
+    {
+      "id": "comp_00464",
+      "type": "component",
+      "surface_form": "Stoichiometry featurizer"
+    },
+    {
+      "id": "comp_00465",
+      "type": "component",
+      "surface_form": "TMetalFraction featurizer"
+    },
+    {
+      "id": "comp_00466",
+      "type": "component",
+      "surface_form": "BandCenter featurizer"
+    },
+    {
+      "id": "comp_00467",
+      "type": "component",
+      "surface_form": "DensityFeatures featurizer"
+    },
+    {
+      "id": "comp_00468",
+      "type": "component",
+      "surface_form": "GlobalSymmetryFeatures featurizer"
+    },
+    {
+      "id": "comp_00471",
+      "type": "component",
+      "surface_form": "MEGNET blocks"
+    },
+    {
+      "id": "comp_00474",
+      "type": "component",
+      "surface_form": "Skip connection Add layers"
+    },
+    {
+      "id": "comp_00555",
+      "type": "component",
+      "surface_form": "CGAT-2"
+    },
+    {
+      "id": "comp_00560",
+      "type": "component",
+      "surface_form": "Edge update mechanism"
+    },
+    {
+      "id": "comp_00564",
+      "type": "component",
+      "surface_form": "DFT stiffness tensor calculator"
+    },
+    {
+      "id": "comp_00566",
+      "type": "component",
+      "surface_form": "CGAT-1/2/3 network series"
+    },
+    {
+      "id": "comp_00573",
+      "type": "component",
+      "surface_form": "RELAX1"
+    },
+    {
+      "id": "comp_00574",
+      "type": "component",
+      "surface_form": "RELAX2"
+    },
+    {
+      "id": "comp_00575",
+      "type": "component",
+      "surface_form": "STATIC"
+    },
+    {
+      "id": "comp_00576",
+      "type": "component",
+      "surface_form": "BANDS"
+    },
+    {
+      "id": "comp_00578",
+      "type": "component",
+      "surface_form": "Error correction system"
+    },
+    {
+      "id": "comp_00579",
+      "type": "component",
+      "surface_form": "DBS electronic minimizer"
+    },
+    {
+      "id": "comp_00581",
+      "type": "component",
+      "surface_form": "Pulay charge mixer"
+    },
+    {
+      "id": "comp_00582",
+      "type": "component",
+      "surface_form": "CG ionic optimizer"
+    },
+    {
+      "id": "comp_00586",
+      "type": "component",
+      "surface_form": "Ueff parameters for d-block elements"
+    },
+    {
+      "id": "comp_00627",
+      "type": "component",
+      "surface_form": "Training set cleaning pipeline"
+    },
+    {
+      "id": "comp_00630",
+      "type": "component",
+      "surface_form": "active learning workflow"
+    },
+    {
+      "id": "comp_00632",
+      "type": "component",
+      "surface_form": "Iterative training loop workflow"
+    },
+    {
+      "id": "comp_00798",
+      "type": "component",
+      "surface_form": "Two-body descriptor"
+    },
+    {
+      "id": "comp_00799",
+      "type": "component",
+      "surface_form": "Three-body descriptor"
+    },
+    {
+      "id": "comp_00800",
+      "type": "component",
+      "surface_form": "Many-body descriptor"
+    },
+    {
+      "id": "comp_00801",
+      "type": "component",
+      "surface_form": "Hierarchical descriptor set"
+    },
+    {
+      "id": "comp_00806",
+      "type": "component",
+      "surface_form": "Cutoff function"
+    },
+    {
+      "id": "comp_00809",
+      "type": "component",
+      "surface_form": "3b descriptor"
+    },
+    {
+      "id": "comp_00810",
+      "type": "component",
+      "surface_form": "MB descriptor"
+    },
+    {
+      "id": "comp_00813",
+      "type": "component",
+      "surface_form": "Two-body plus three-body descriptors"
+    },
+    {
+      "id": "comp_00815",
+      "type": "component",
+      "surface_form": "angle descriptor"
+    },
+    {
+      "id": "comp_00816",
+      "type": "component",
+      "surface_form": "SOAP descriptor with sparse points"
+    },
+    {
+      "id": "comp_00817",
+      "type": "component",
+      "surface_form": "extended xyz format database"
+    },
+    {
+      "id": "comp_00818",
+      "type": "component",
+      "surface_form": "6×6 elastic constants matrix"
+    },
+    {
+      "id": "comp_00819",
+      "type": "component",
+      "surface_form": "compliance matrix"
+    },
+    {
+      "id": "comp_00823",
+      "type": "component",
+      "surface_form": "Iterative training workflow"
+    },
+    {
+      "id": "futu_00131",
+      "type": "future_topic",
+      "surface_form": "Transfer learning of element embeddings from large‑scale formation‑energy models to improve predictions of band gaps and elastic moduli"
+    },
+    {
+      "id": "meth_00197",
+      "type": "method",
+      "surface_form": "SOAP kernel"
+    },
+    {
+      "id": "meth_00309",
+      "type": "method",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "meth_00361",
+      "type": "method",
+      "surface_form": "Pulay charge mixing"
+    },
+    {
+      "id": "meth_00434",
+      "type": "method",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "prob_00163",
+      "type": "problem",
+      "surface_form": "Rotationally Invariant Tensorial Property Representation"
+    },
+    {
+      "id": "tech_00047",
+      "type": "technique",
+      "surface_form": "Residual connections"
+    },
+    {
+      "id": "tech_00116",
+      "type": "technique",
+      "surface_form": "Wigner‑Eckart theorem"
+    },
+    {
+      "id": "tech_00117",
+      "type": "technique",
+      "surface_form": "Clebsch‑Gordan coefficients"
+    },
+    {
+      "id": "tech_00222",
+      "type": "technique",
+      "surface_form": "ResNet‑style skip connections"
+    },
+    {
+      "id": "tech_00254",
+      "type": "technique",
+      "surface_form": "elastic tensor extraction"
+    },
+    {
+      "id": "tech_00293",
+      "type": "technique",
+      "surface_form": "Linear pooling for site‑energy extraction"
+    },
+    {
+      "id": "tech_00303",
+      "type": "technique",
+      "surface_form": "Transfer learning of elemental embeddings"
+    },
+    {
+      "id": "tech_00304",
+      "type": "technique",
+      "surface_form": "Residual skip connections"
+    },
+    {
+      "id": "tech_00307",
+      "type": "technique",
+      "surface_form": "Clebsch‑Gordan Coupling"
+    },
+    {
+      "id": "tech_00308",
+      "type": "technique",
+      "surface_form": "Wigner Symbol Recoupling"
+    },
+    {
+      "id": "tech_00309",
+      "type": "technique",
+      "surface_form": "Spherical‑Harmonic Expansion of Cartesian Tensors"
+    },
+    {
+      "id": "tech_00503",
+      "type": "technique",
+      "surface_form": "Element embedding"
+    },
+    {
+      "id": "tech_00639",
+      "type": "technique",
+      "surface_form": "local-orbital basis"
+    },
+    {
+      "id": "tech_00909",
+      "type": "technique",
+      "surface_form": "Hierarchical descriptor combination"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 4,
+    "component": 120,
+    "future_topic": 1,
+    "method": 4,
+    "problem": 1,
+    "technique": 14
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "descriptor",
+  "representative_ids": [
+    "comp_00049",
+    "comp_00259"
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "cite_00133",
+      "type": "cited_work",
+      "surface_form": "Coulomb Matrix"
+    },
+    {
+      "id": "cite_00355",
+      "type": "cited_work",
+      "surface_form": "Sine Coulomb Matrix"
+    },
+    {
+      "id": "comp_00051",
+      "type": "component",
+      "surface_form": "Spherical harmonics encoding"
+    },
+    {
+      "id": "comp_00053",
+      "type": "component",
+      "surface_form": "Gaussian radial basis expansion"
+    },
+    {
+      "id": "comp_00056",
+      "type": "component",
+      "surface_form": "Spherical harmonics up to l=5"
+    },
+    {
+      "id": "comp_00222",
+      "type": "component",
+      "surface_form": "Kernel normalization and exponentiation"
+    },
+    {
+      "id": "comp_00224",
+      "type": "component",
+      "surface_form": "Regularized least‑squares solution for expansion coefficients"
+    },
+    {
+      "id": "comp_00254",
+      "type": "component",
+      "surface_form": "Spherical harmonic orientation encoding"
+    },
+    {
+      "id": "comp_00802",
+      "type": "component",
+      "surface_form": "Squared exponential kernel"
+    },
+    {
+      "id": "meth_00198",
+      "type": "method",
+      "surface_form": "CUR matrix decomposition"
+    },
+    {
+      "id": "meth_00216",
+      "type": "method",
+      "surface_form": "SE(3)-Transformer"
+    },
+    {
+      "id": "tech_00071",
+      "type": "technique",
+      "surface_form": "Radial basis function expansion of distances"
+    },
+    {
+      "id": "tech_00075",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis functions"
+    },
+    {
+      "id": "tech_00118",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis expansion"
+    },
+    {
+      "id": "tech_00123",
+      "type": "technique",
+      "surface_form": "Change‑of‑basis using unitary P matrix"
+    },
+    {
+      "id": "tech_00219",
+      "type": "technique",
+      "surface_form": "Radial basis functions"
+    },
+    {
+      "id": "tech_00243",
+      "type": "technique",
+      "surface_form": "Spherical Bessel and spherical harmonics expansion"
+    },
+    {
+      "id": "tech_00261",
+      "type": "technique",
+      "surface_form": "CUR matrix reconstruction"
+    },
+    {
+      "id": "tech_00264",
+      "type": "technique",
+      "surface_form": "Kernel normalisation and integer power"
+    },
+    {
+      "id": "tech_00281",
+      "type": "technique",
+      "surface_form": "Local coordinate transformation"
+    },
+    {
+      "id": "tech_00285",
+      "type": "technique",
+      "surface_form": "Gaussian radial basis functions for distance encoding"
+    },
+    {
+      "id": "tech_00289",
+      "type": "technique",
+      "surface_form": "ARPACK eigenvalue solver"
+    },
+    {
+      "id": "tech_00305",
+      "type": "technique",
+      "surface_form": "Gaussian basis expansion of distances"
+    },
+    {
+      "id": "tech_00306",
+      "type": "technique",
+      "surface_form": "Orthogonalization of Non‑Orthogonal Basis"
+    },
+    {
+      "id": "tech_00494",
+      "type": "technique",
+      "surface_form": "Nonlinear transformations"
+    },
+    {
+      "id": "tech_00641",
+      "type": "technique",
+      "surface_form": "matrix eigenvector methods"
+    },
+    {
+      "id": "tech_00894",
+      "type": "technique",
+      "surface_form": "Kernel-based similarity measure"
+    },
+    {
+      "id": "tech_00896",
+      "type": "technique",
+      "surface_form": "Linear combination of kernel functions"
+    },
+    {
+      "id": "tech_00898",
+      "type": "technique",
+      "surface_form": "Spherical harmonics expansion"
+    },
+    {
+      "id": "tech_00900",
+      "type": "technique",
+      "surface_form": "Kernel exponentiation"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 2,
+    "component": 7,
+    "method": 2,
+    "technique": 19
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "basis",
+  "representative_ids": [
+    "tech_00118",
+    "tech_00075"
+  ]
+}

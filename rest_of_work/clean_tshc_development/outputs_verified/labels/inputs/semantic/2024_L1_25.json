@@ -1,0 +1,291 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "cite_00224",
+      "type": "cited_work",
+      "surface_form": "Atomic Simulation Environment (ASE)"
+    },
+    {
+      "id": "clai_00158",
+      "type": "claim",
+      "surface_form": "NVNMD (non-von Neumann molecular dynamics) is 50x-100x faster than regular MD simulations."
+    },
+    {
+      "id": "clai_00163",
+      "type": "claim",
+      "surface_form": "DeePMD-kit APIs have been integrated into multiple third-party MD packages including LAMMPS, i-PI, GROMACS, AMBER, OpenMM, and ABACUS."
+    },
+    {
+      "id": "clai_00165",
+      "type": "claim",
+      "surface_form": "DeePMD-kit has added MPI implementation for multi-device training and MD simulations using Horovod for data-parallel distributed training."
+    },
+    {
+      "id": "clai_00401",
+      "type": "claim",
+      "surface_form": "ML-based simulation can achieve comparable fidelity to direct numerical simulation while being considerably faster in computation time, with convolutional neural networks producing high-fidelity estimation of materials microstructure response with multiple orders of magnitude faster computation."
+    },
+    {
+      "id": "clai_00467",
+      "type": "claim",
+      "surface_form": "Architecture modifications reduced SevenNet-0 total model parameters from 16.24 million (GNoME) to 0.84 million."
+    },
+    {
+      "id": "clai_00468",
+      "type": "claim",
+      "surface_form": "SevenNet exhibits nearly ideal strong-scaling performance as long as GPUs are fully utilized."
+    },
+    {
+      "id": "clai_00469",
+      "type": "claim",
+      "surface_form": "Strong-scaling performance significantly declines with suboptimal GPU utilization, particularly for lightweight models or simulations with small numbers of atoms."
+    },
+    {
+      "id": "clai_00471",
+      "type": "claim",
+      "surface_form": "A 60-ps MD simulation with 112,000 atoms using SevenNet-0 required 12.7 hours, approximately 0.1 ns per day."
+    },
+    {
+      "id": "clai_00472",
+      "type": "claim",
+      "surface_form": "SevenNet interfaces with the LAMMPS package for MD simulations using TorchScript to integrate trained models."
+    },
+    {
+      "id": "clai_00480",
+      "type": "claim",
+      "surface_form": "For NASICON, training starting from FPMD configurations with 80 atoms fails to converge even after three training loops with activation energies spanning 0.2-0.4 eV."
+    },
+    {
+      "id": "comp_00071",
+      "type": "component",
+      "surface_form": "Monte‑Carlo data generation pipeline"
+    },
+    {
+      "id": "comp_00079",
+      "type": "component",
+      "surface_form": "Offline Monte‑Carlo data generation"
+    },
+    {
+      "id": "comp_00115",
+      "type": "component",
+      "surface_form": "Monte Carlo sampling with bias potentials"
+    },
+    {
+      "id": "comp_00280",
+      "type": "component",
+      "surface_form": "GPU‑accelerated tensor backend"
+    },
+    {
+      "id": "comp_00539",
+      "type": "component",
+      "surface_form": "GPU library"
+    },
+    {
+      "id": "meth_00084",
+      "type": "method",
+      "surface_form": "Vienna Ab Initio simulation Package"
+    },
+    {
+      "id": "meth_00133",
+      "type": "method",
+      "surface_form": "Metropolis Monte Carlo"
+    },
+    {
+      "id": "meth_00146",
+      "type": "method",
+      "surface_form": "Semi-Grand Canonical Monte Carlo"
+    },
+    {
+      "id": "meth_00154",
+      "type": "method",
+      "surface_form": "Monte Carlo simulation"
+    },
+    {
+      "id": "meth_00255",
+      "type": "method",
+      "surface_form": "Vienna Ab‑initio simulation package"
+    },
+    {
+      "id": "meth_00256",
+      "type": "method",
+      "surface_form": "Large‑scale Atomic/Molecular Massively Parallel Simulator"
+    },
+    {
+      "id": "prob_00049",
+      "type": "problem",
+      "surface_form": "High computational cost of on‑the‑fly quadrature in time‑coarsened atomistic simulations"
+    },
+    {
+      "id": "prob_00067",
+      "type": "problem",
+      "surface_form": "Efficient sampling of high‑dimensional order‑parameter space"
+    },
+    {
+      "id": "prob_00076",
+      "type": "problem",
+      "surface_form": "Efficient sampling of high‑dimensional chemical‑potential space"
+    },
+    {
+      "id": "prob_00107",
+      "type": "problem",
+      "surface_form": "Efficient large‑scale simulation of heterovalent materials"
+    },
+    {
+      "id": "prob_00121",
+      "type": "problem",
+      "surface_form": "Efficient sampling of high‑dimensional PES"
+    },
+    {
+      "id": "prob_00191",
+      "type": "problem",
+      "surface_form": "Integration of multi‑scale simulations"
+    },
+    {
+      "id": "prob_00341",
+      "type": "problem",
+      "surface_form": "computational efficiency in MD simulations"
+    },
+    {
+      "id": "prob_00347",
+      "type": "problem",
+      "surface_form": "computational efficiency in MD"
+    },
+    {
+      "id": "prob_00349",
+      "type": "problem",
+      "surface_form": "computational cost of MD simulations with ML potentials"
+    },
+    {
+      "id": "prob_00482",
+      "type": "problem",
+      "surface_form": "Gap between ML models and large-scale MD"
+    },
+    {
+      "id": "prob_00491",
+      "type": "problem",
+      "surface_form": "Large-scale MD simulation scalability"
+    },
+    {
+      "id": "prob_00615",
+      "type": "problem",
+      "surface_form": "Near-surface structure sampling"
+    },
+    {
+      "id": "task_00099",
+      "type": "task",
+      "surface_form": "Statistical‑mechanics Monte Carlo sampling"
+    },
+    {
+      "id": "task_00144",
+      "type": "task",
+      "surface_form": "Cluster‑expansion generation for Monte Carlo sampling"
+    },
+    {
+      "id": "task_00219",
+      "type": "task",
+      "surface_form": "Validation against MD simulations"
+    },
+    {
+      "id": "task_00427",
+      "type": "task",
+      "surface_form": "Multi-device MD simulations"
+    },
+    {
+      "id": "task_00618",
+      "type": "task",
+      "surface_form": "GPU performance benchmarking"
+    },
+    {
+      "id": "tech_00066",
+      "type": "technique",
+      "surface_form": "GPU acceleration"
+    },
+    {
+      "id": "tech_00140",
+      "type": "technique",
+      "surface_form": "Monte‑Carlo integration for target generation"
+    },
+    {
+      "id": "tech_00169",
+      "type": "technique",
+      "surface_form": "Semi‑Grand Canonical Monte Carlo with umbrella sampling"
+    },
+    {
+      "id": "tech_00176",
+      "type": "technique",
+      "surface_form": "Umbrella sampling bias potentials"
+    },
+    {
+      "id": "tech_00194",
+      "type": "technique",
+      "surface_form": "Umbrella sampling with quadratic bias potentials"
+    },
+    {
+      "id": "tech_00374",
+      "type": "technique",
+      "surface_form": "Tersoff‑Hamann STM image simulation"
+    },
+    {
+      "id": "tech_00461",
+      "type": "technique",
+      "surface_form": "Uniform sphere sampling"
+    },
+    {
+      "id": "tech_00559",
+      "type": "technique",
+      "surface_form": "GPU-accelerated custom operators"
+    },
+    {
+      "id": "tech_00623",
+      "type": "technique",
+      "surface_form": "Prototype diversity sampling"
+    },
+    {
+      "id": "tech_00632",
+      "type": "technique",
+      "surface_form": "High-symmetry path sampling"
+    },
+    {
+      "id": "tech_00695",
+      "type": "technique",
+      "surface_form": "FPMD simulations"
+    },
+    {
+      "id": "tech_00696",
+      "type": "technique",
+      "surface_form": "PFF-MD simulations"
+    },
+    {
+      "id": "tech_00782",
+      "type": "technique",
+      "surface_form": "Multi-GPU parallelization"
+    },
+    {
+      "id": "tech_00792",
+      "type": "technique",
+      "surface_form": "TorchScript JIT compilation"
+    },
+    {
+      "id": "tech_00915",
+      "type": "technique",
+      "surface_form": "Large-scale atomistic simulation"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 1,
+    "claim": 10,
+    "component": 5,
+    "method": 6,
+    "problem": 12,
+    "task": 5,
+    "technique": 15
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "sampling",
+  "representative_ids": [
+    "prob_00341",
+    "prob_00491"
+  ]
+}

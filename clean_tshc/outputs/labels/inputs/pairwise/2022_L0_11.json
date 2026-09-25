@@ -1,0 +1,30 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "metr_00042",
+      "type": "metric",
+      "surface_form": "MAE (energy)"
+    },
+    {
+      "id": "metr_00067",
+      "type": "metric",
+      "surface_form": "Gvrh MAE"
+    },
+    {
+      "id": "metr_00069",
+      "type": "metric",
+      "surface_form": "Lattice Energy MAE"
+    }
+  ],
+  "generation_type_counts": {
+    "metric": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mae",
+  "representative_ids": [
+    "metr_00042",
+    "metr_00069"
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "cite_00113",
+      "type": "cited_work",
+      "surface_form": "Steerable CNN"
+    },
+    {
+      "id": "cite_00317",
+      "type": "cited_work",
+      "surface_form": "chemical compression"
+    },
+    {
+      "id": "cite_00540",
+      "type": "cited_work",
+      "surface_form": "Spherical CNNs"
+    },
+    {
+      "id": "clai_00090",
+      "type": "claim",
+      "surface_form": "The PET model achieves state-of-the-art accuracy on matbench-discovery benchmark (DAF=6.075, Accuracy=0.977, F1=0.924) and exceeds SOTA on SPICE molecular benchmark across most subsets for both energy and force predictions."
+    },
+    {
+      "id": "clai_00094",
+      "type": "claim",
+      "surface_form": "The PET architecture scales to 730M parameters (OMat-XL) while maintaining tractable memory usage and computational efficiency due to increased node representation size and unconstrained architecture."
+    },
+    {
+      "id": "clai_00102",
+      "type": "claim",
+      "surface_form": "The PET-OMat model series spans a broad range of cost/accuracy tradeoff scenarios from 4.5M to 730M parameters, with pre-trained models released covering diverse chemical systems across the full periodic table."
+    },
+    {
+      "id": "clai_00264",
+      "type": "claim",
+      "surface_form": "Matminer is an open source toolkit for materials data mining."
+    },
+    {
+      "id": "comp_00302",
+      "type": "component",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "comp_00352",
+      "type": "component",
+      "surface_form": "JARVIS‑Wannier Tight‑Binding app"
+    },
+    {
+      "id": "comp_00357",
+      "type": "component",
+      "surface_form": "JARVIS‑WannierTB app"
+    },
+    {
+      "id": "comp_00740",
+      "type": "component",
+      "surface_form": "Conservative PET variant"
+    },
+    {
+      "id": "comp_00741",
+      "type": "component",
+      "surface_form": "Non-conservative PET variant"
+    },
+    {
+      "id": "meth_00011",
+      "type": "method",
+      "surface_form": "AlphaFold"
+    },
+    {
+      "id": "meth_00016",
+      "type": "method",
+      "surface_form": "FAIRCHEM"
+    },
+    {
+      "id": "meth_00018",
+      "type": "method",
+      "surface_form": "Adam optimizer"
+    },
+    {
+      "id": "meth_00021",
+      "type": "method",
+      "surface_form": "Recurrent Neural Networks"
+    },
+    {
+      "id": "meth_00034",
+      "type": "method",
+      "surface_form": "Residual Network"
+    },
+    {
+      "id": "meth_00036",
+      "type": "method",
+      "surface_form": "MEGNet"
+    },
+    {
+      "id": "meth_00037",
+      "type": "method",
+      "surface_form": "M3GNet"
+    },
+    {
+      "id": "meth_00043",
+      "type": "method",
+      "surface_form": "Global Convolution Networks"
+    },
+    {
+      "id": "meth_00044",
+      "type": "method",
+      "surface_form": "ResNets"
+    },
+    {
+      "id": "meth_00050",
+      "type": "method",
+      "surface_form": "SchNet"
+    },
+    {
+      "id": "meth_00052",
+      "type": "method",
+      "surface_form": "Edge-conditioned neural network"
+    },
+    {
+      "id": "meth_00065",
+      "type": "method",
+      "surface_form": "Residual CNN"
+    },
+    {
+      "id": "meth_00078",
+      "type": "method",
+      "surface_form": "PaiNN"
+    },
+    {
+      "id": "meth_00080",
+      "type": "method",
+      "surface_form": "LLM"
+    },
+    {
+      "id": "meth_00081",
+      "type": "method",
+      "surface_form": "EquiformerV2"
+    },
+    {
+      "id": "meth_00091",
+      "type": "method",
+      "surface_form": "MatterSim"
+    },
+    {
+      "id": "meth_00094",
+      "type": "method",
+      "surface_form": "i-PI"
+    },
+    {
+      "id": "meth_00095",
+      "type": "method",
+      "surface_form": "FCHL19"
+    },
+    {
+      "id": "meth_00109",
+      "type": "method",
+      "surface_form": "GemNet"
+    },
+    {
+      "id": "meth_00113",
+      "type": "method",
+      "surface_form": "SEGNN"
+    },
+    {
+      "id": "meth_00114",
+      "type": "method",
+      "surface_form": "BOTNet"
+    },
+    {
+      "id": "meth_00115",
+      "type": "method",
+      "surface_form": "Allegro"
+    },
+    {
+      "id": "meth_00124",
+      "type": "method",
+      "surface_form": "e3nn"
+    },
+    {
+      "id": "meth_00139",
+      "type": "method",
+      "surface_form": "Scikit-learn"
+    },
+    {
+      "id": "meth_00143",
+      "type": "method",
+      "surface_form": "Materials Project"
+    },
+    {
+      "id": "meth_00165",
+      "type": "method",
+      "surface_form": "Wrenformer"
+    },
+    {
+      "id": "meth_00166",
+      "type": "method",
+      "surface_form": "BOWSR"
+    },
+    {
+      "id": "meth_00173",
+      "type": "method",
+      "surface_form": "Cormorant"
+    },
+    {
+      "id": "meth_00174",
+      "type": "method",
+      "surface_form": "NewtonNet"
+    },
+    {
+      "id": "meth_00175",
+      "type": "method",
+      "surface_form": "SpookyNet"
+    },
+    {
+      "id": "meth_00176",
+      "type": "method",
+      "surface_form": "ANAKIN-ME"
+    },
+    {
+      "id": "meth_00181",
+      "type": "method",
+      "surface_form": "TeaNet"
+    },
+    {
+      "id": "meth_00182",
+      "type": "method",
+      "surface_form": "ænet"
+    },
+    {
+      "id": "meth_00191",
+      "type": "method",
+      "surface_form": "AMBER force field"
+    },
+    {
+      "id": "meth_00193",
+      "type": "method",
+      "surface_form": "MODNet"
+    },
+    {
+      "id": "meth_00195",
+      "type": "method",
+      "surface_form": "EANN"
+    },
+    {
+      "id": "meth_00219",
+      "type": "method",
+      "surface_form": "CNN for NLP"
+    },
+    {
+      "id": "meth_00226",
+      "type": "method",
+      "surface_form": "GPAW"
+    },
+    {
+      "id": "meth_00239",
+      "type": "method",
+      "surface_form": "LiFlow"
+    },
+    {
+      "id": "meth_00246",
+      "type": "method",
+      "surface_form": "ChiroPaiNN"
+    },
+    {
+      "id": "meth_00260",
+      "type": "method",
+      "surface_form": "Keras"
+    },
+    {
+      "id": "meth_00261",
+      "type": "method",
+      "surface_form": "Scikit‑learn"
+    },
+    {
+      "id": "meth_00264",
+      "type": "method",
+      "surface_form": "WannierTools"
+    },
+    {
+      "id": "meth_00265",
+      "type": "method",
+      "surface_form": "Matminer"
+    },
+    {
+      "id": "meth_00267",
+      "type": "method",
+      "surface_form": "LAMMPS"
+    },
+    {
+      "id": "meth_00280",
+      "type": "method",
+      "surface_form": "CrystalNN"
+    },
+    {
+      "id": "meth_00293",
+      "type": "method",
+      "surface_form": "eSEN"
+    },
+    {
+      "id": "meth_00295",
+      "type": "method",
+      "surface_form": "Alexandria"
+    },
+    {
+      "id": "meth_00300",
+      "type": "method",
+      "surface_form": "eSCN"
+    },
+    {
+      "id": "meth_00306",
+      "type": "method",
+      "surface_form": "Spherical CNNs"
+    },
+    {
+      "id": "meth_00309",
+      "type": "method",
+      "surface_form": "FireWorks"
+    },
+    {
+      "id": "meth_00321",
+      "type": "method",
+      "surface_form": "Euclidean Neural Network"
+    },
+    {
+      "id": "meth_00322",
+      "type": "method",
+      "surface_form": "Euclidean neural networks"
+    },
+    {
+      "id": "meth_00329",
+      "type": "method",
+      "surface_form": "DeePMD-kit v2"
+    },
+    {
+      "id": "meth_00330",
+      "type": "method",
+      "surface_form": "DeepPot-SE"
+    },
+    {
+      "id": "meth_00331",
+      "type": "method",
+      "surface_form": "DPA-1"
+    },
+    {
+      "id": "meth_00335",
+      "type": "method",
+      "surface_form": "Horovod"
+    },
+    {
+      "id": "meth_00336",
+      "type": "method",
+      "surface_form": "AMBER"
+    },
+    {
+      "id": "meth_00337",
+      "type": "method",
+      "surface_form": "DP-GEN"
+    },
+    {
+      "id": "meth_00342",
+      "type": "method",
+      "surface_form": "Roost"
+    },
+    {
+      "id": "meth_00345",
+      "type": "method",
+      "surface_form": "PseudoDojo"
+    },
+    {
+      "id": "meth_00365",
+      "type": "method",
+      "surface_form": "Methfessel-Paxton smearing"
+    },
+    {
+      "id": "meth_00379",
+      "type": "method",
+      "surface_form": "SMACT"
+    },
+    {
+      "id": "meth_00405",
+      "type": "method",
+      "surface_form": "GemNet-OC"
+    },
+    {
+      "id": "meth_00406",
+      "type": "method",
+      "surface_form": "TransAug"
+    },
+    {
+      "id": "meth_00409",
+      "type": "method",
+      "surface_form": "Euclidean Fast Attention"
+    },
+    {
+      "id": "meth_00420",
+      "type": "method",
+      "surface_form": "Poly(ethylene terephthalate)"
+    },
+    {
+      "id": "meth_00421",
+      "type": "method",
+      "surface_form": "PET-MAD"
+    },
+    {
+      "id": "meth_00422",
+      "type": "method",
+      "surface_form": "PET architecture"
+    },
+    {
+      "id": "meth_00423",
+      "type": "method",
+      "surface_form": "Open Materials 2024"
+    },
+    {
+      "id": "meth_00424",
+      "type": "method",
+      "surface_form": "DPA"
+    },
+    {
+      "id": "meth_00429",
+      "type": "method",
+      "surface_form": "eqV2"
+    },
+    {
+      "id": "tech_00010",
+      "type": "technique",
+      "surface_form": "AdamW optimizer"
+    },
+    {
+      "id": "tech_00044",
+      "type": "technique",
+      "surface_form": "AdamW optimization"
+    },
+    {
+      "id": "tech_00241",
+      "type": "technique",
+      "surface_form": "FIRE optimizer for structure relaxation"
+    },
+    {
+      "id": "tech_00288",
+      "type": "technique",
+      "surface_form": "Adam optimizer with staged learning‑rate decay"
+    },
+    {
+      "id": "tech_00311",
+      "type": "technique",
+      "surface_form": "Spatiotemporal learning with ConvLSTM"
+    },
+    {
+      "id": "tech_00318",
+      "type": "technique",
+      "surface_form": "LSTM sequential modeling"
+    },
+    {
+      "id": "tech_00370",
+      "type": "technique",
+      "surface_form": "BoltzTraP with constant relaxation time approximation"
+    },
+    {
+      "id": "tech_00373",
+      "type": "technique",
+      "surface_form": "Wannier90 tight‑binding generation"
+    },
+    {
+      "id": "tech_00392",
+      "type": "technique",
+      "surface_form": "FIRE relaxation"
+    },
+    {
+      "id": "tech_00437",
+      "type": "technique",
+      "surface_form": "FIRE optimizer with FrechetCellFilter"
+    },
+    {
+      "id": "tech_00544",
+      "type": "technique",
+      "surface_form": "AdamW optimizer with learning rate decay"
+    },
+    {
+      "id": "tech_00711",
+      "type": "technique",
+      "surface_form": "Chemical compression"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 3,
+    "claim": 4,
+    "component": 5,
+    "method": 72,
+    "technique": 12
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "optimizer",
+  "representative_ids": [
+    "meth_00195",
+    "meth_00124"
+  ]
+}

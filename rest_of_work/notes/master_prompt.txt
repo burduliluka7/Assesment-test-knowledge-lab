@@ -1,0 +1,1992 @@
+You are working in an EMPTY repository on a one-week research internship assessment for Constructor Knowledge Labs, Knowledge Discovery.
+
+Your job is to produce a clean, reproducible research submission for:
+
+“Multi-Resolution Semantic Abstraction over an Evolving Knowledge Hypergraph.”
+
+Do not merely scaffold the project. Implement the method, tests, evaluation, documentation, and required deliverables.
+
+However, this is explicitly a 5–7 day assessment whose rubric values RIGOR OVER BREADTH.
+
+Therefore:
+
+* prefer a simple, defensible method over an unnecessarily large system;
+* do not add infrastructure unrelated to the assessment;
+* do not fabricate metrics or conclusions;
+* do not claim something is verified unless code/data actually verifies it;
+* treat evaluation validity as the highest-priority component;
+* clearly separate modeling assumptions from empirical findings.
+
+If the supplied real dataset is present, use it.
+
+If the real dataset is absent, implement and test everything with clearly marked synthetic fixtures, but DO NOT fabricate real experimental results.
+
+---
+
+# 1. Assessment objective
+
+We are given a temporal scientific knowledge hypergraph
+
+H_t = (V_t, E_t)
+
+that grows over time.
+
+Nodes represent scientific entities such as:
+
+* article
+* author
+* cited_work
+* claim
+* component
+* dataset
+* future_topic
+* method
+* metric
+* problem
+* task
+* technique
+
+Hyperedges represent higher-order scientific relations such as:
+
+* addresses
+* authored_by
+* cites
+* claims
+* evaluated_on
+* extends
+* presents
+* proposes_future_work
+* solves
+* uses_component
+* uses_technique
+
+A hyperedge may contain many nodes simultaneously.
+
+We need, for each temporal snapshot t, a hierarchy
+
+P_0(t), P_1(t), ..., P_K(t)
+
+where:
+
+* P_K is the finest partition, one node per cluster;
+* P_0 is the coarsest partition;
+* each finer partition refines the coarser partition;
+* P_0 should contain roughly 10–15 macro-concepts;
+* every level respects a configurable hard size budget N_k;
+* clusters should be semantically meaningful;
+* native hyperedge structure must be used;
+* the hierarchy should evolve smoothly through time;
+* persistent supernode identities must be trackable;
+* clusters need automatic labels and one-sentence glosses;
+* evaluation must be independent enough to avoid circularity.
+
+The main research question is:
+
+How can structural hypergraph information, semantic information, and temporal continuity be combined into a laminar, budget-constrained hierarchy whose usefulness can be independently evaluated?
+
+---
+
+# 2. Non-negotiable properties from the task
+
+The implementation must address P1–P6.
+
+## P1 — Laminar refinement
+
+For every level:
+
+for each C in P_{k+1},
+
+there exists exactly one D in P_k such that
+
+C subset D.
+
+No overlapping clusters.
+
+This should be guaranteed BY CONSTRUCTION.
+
+## P2 — Hard size budget
+
+Each level satisfies:
+
+|P_k| <= N_k.
+
+N_0 should be approximately 10–15.
+
+The task does NOT prescribe the number of intermediate levels or their exact budgets.
+
+Therefore:
+
+* make hierarchy budgets configurable;
+* choose a reasonable default;
+* clearly state that intermediate budgets are a design choice rather than a dataset fact.
+
+For example a default could be approximately:
+
+N_0 = 12
+N_1 = 40
+N_2 = 120
+
+plus the singleton finest level.
+
+Do not pretend these numbers came from the assessment.
+
+## P3 — Semantic coherence
+
+Clusters should represent meaningful scientific ideas rather than only dense topological regions.
+
+The implementation must explicitly reconcile:
+
+STRUCTURAL SIGNAL
+
+and
+
+SEMANTIC SIGNAL.
+
+## P4 — Hyperedge fidelity
+
+The proposed method must operate on the native hypergraph.
+
+Do NOT make clique expansion the main method.
+
+A pairwise projection may be implemented only as a baseline.
+
+The hyperedge-collapse rule described later must actually create the coarse hypergraph used by the next hierarchy level.
+
+## P5 — Temporal stability
+
+The hierarchy should not reshuffle unnecessarily when moving:
+
+H_t -> H_{t+1}.
+
+Persistent identity should be trackable.
+
+Record:
+
+* birth
+* continuation/growth
+* split
+* merge
+* death
+
+Temporal information must affect construction of the new partition, not merely rename independently computed clusters afterward.
+
+## P6 — Labels and temporal honesty
+
+Every exported supernode needs:
+
+* short label;
+* one-sentence gloss.
+
+For singleton nodes, using their existing surface form is acceptable.
+
+For non-singleton supernodes, generate an abstraction automatically.
+
+Measure faithfulness at least for levels 0 and 1, as explicitly requested in T5.
+
+Never use information that was not available at the snapshot cutoff.
+
+---
+
+# 3. Expected real data
+
+Search the repository recursively before deciding that the data is absent.
+
+Expected files:
+
+* data.zip
+* tkh_collection10.json
+* questions.csv
+* ground_truth.json
+* collection10_articles.csv
+
+The assessment states that the supplied TKH contains approximately:
+
+* 5,798 nodes
+* 1,429 hyperedges
+* 12 node types
+* 11 relation types
+* hyperedge arity 2–65
+* approximately 80% arity > 2
+* years approximately 1997–2026
+
+These are expectations from the task description.
+
+VERIFY THEM FROM THE DATA.
+
+Do not simply hard-code them into the report as measured results.
+
+Expected node fields include:
+
+id
+type
+surface_form
+year
+origin_year
+first_seen_year
+last_seen_year
+provenance
+
+Expected edge fields include:
+
+id
+relation_type
+members
+year
+provenance
+
+Read `meta.date_semantics`.
+
+Do not infer temporal meaning merely from field names if the metadata says otherwise.
+
+If the real data is absent:
+
+* do not download a replacement dataset automatically;
+* do not fabricate Option A results;
+* create tiny synthetic fixtures for testing;
+* explain where the supplied assessment files should be placed;
+* make the full-data CLI fail cleanly with a useful message.
+
+---
+
+# 4. Temporal snapshots
+
+Construct cumulative snapshots.
+
+A sensible initial configuration is:
+
+2020
+2022
+2024
+2026
+
+because the assignment indicates these provide well-populated snapshots.
+
+But derive and verify the actual valid years from the real data.
+
+Use edge year <= snapshot cutoff.
+
+For node visibility, follow `meta.date_semantics`.
+
+The task specifically distinguishes:
+
+origin_year:
+when the entity was historically introduced
+
+from
+
+first_seen_year:
+when the corpus first contains evidence mentioning it.
+
+For temporal honesty, an earlier snapshot must not use future corpus evidence merely because `origin_year` is earlier.
+
+A reasonable default interpretation, if consistent with metadata, is:
+
+node visible at t if first_seen_year <= t.
+
+Handle edge-member consistency carefully.
+
+Record temporal inconsistencies rather than silently ignoring them.
+
+Add a unit test proving that future evidence cannot leak into an earlier snapshot.
+
+---
+
+# 5. Proposed research method
+
+Implement the main method as:
+
+TEMPORAL SPECTRAL–SEMANTIC NATIVE HYPERGRAPH COARSENING
+
+It combines four signals:
+
+1. native multiplicity-aware hyperedge preservation;
+2. global structure from a normalized hypergraph Laplacian;
+3. semantic text embeddings;
+4. temporal similarity to the previous snapshot.
+
+The important recursive structure is:
+
+current hypergraph
+
+```
+↓
+```
+
+native incidence representation
++
+semantic embeddings
+
+```
+↓
+```
+
+hypergraph Laplacian
+
+```
+↓
+```
+
+spectral coordinates
+
+```
+↓
+```
+
+hybrid agglomerative coarsening
+
+```
+↓
+```
+
+partition satisfying hard budget
+
+```
+↓
+```
+
+ACTUAL multiplicity-aware hyperedge collapse
+
+```
+↓
+```
+
+new coarse hypergraph
+
+```
+↓
+```
+
+recompute Laplacian
+
+```
+↓
+```
+
+next hierarchy level.
+
+Therefore the hyperedge-collapse rule is not cosmetic.
+
+It changes the graph on which the next resolution operates.
+
+---
+
+# 6. Internal hypergraph representation
+
+Represent every current supernode with at least:
+
+* id
+* underlying base-node ids
+* base-node count
+* node-type distribution
+* semantic centroid
+* hierarchy level
+* snapshot
+* parent id
+* persistent temporal id when assigned
+
+Represent every hyperedge with:
+
+* original edge id
+* relation type
+* provenance
+* original arity
+* participating current supernodes
+* multiplicity for each current supernode
+* current support arity
+* weight
+
+If three original endpoints have collapsed into supernode S, retain multiplicity 3.
+
+Do not discard it.
+
+Also retain enough provenance/member information to trace a coarse relationship back to the original relationship.
+
+---
+
+# 7. Mandatory T4 hyperedge collapse
+
+Suppose hyperedge e originally contains n endpoints.
+
+After clustering, define
+
+m_{e,C}
+
+as the number of endpoints belonging to coarse supernode C.
+
+Represent the coarse relation as:
+
+{(C, m_{e,C}) : m_{e,C} > 0}.
+
+Handle the required cases.
+
+## Case 1: m = n
+
+All endpoints belong to one supernode.
+
+The hyperedge becomes INTERNAL to that supernode.
+
+Do not retain it as a meaningful inter-supernode self-edge.
+
+Preserve it as internal evidence/statistics/provenance.
+
+## Case 2: 1 < m < n
+
+Example:
+
+{a,b,c,d}
+
+with
+
+a,b,c -> S1
+d -> S2
+
+becomes:
+
+{S1:3, S2:1}.
+
+Preserve:
+
+* multiplicity;
+* original arity;
+* relation type;
+* original edge identity;
+* provenance.
+
+## Case 3: at least three resulting supernodes
+
+Example:
+
+{a,b,c,d,e}
+
+becomes:
+
+{S1:2, S2:1, S3:2}.
+
+Keep this as ONE hyperedge.
+
+DO NOT replace it by the pairwise triangle:
+
+S1-S2
+S1-S3
+S2-S3.
+
+The collapsed hypergraph produced by this function must actually be used at the next resolution.
+
+Add strong unit tests for all three cases.
+
+---
+
+# 8. Native hyperedge fragmentation objective
+
+Use multiplicity directly.
+
+For hyperedge e with original/current endpoint multiplicities, define:
+
+p_{e,C} = m_{e,C} / n_e.
+
+Define normalized fragmentation:
+
+# phi_e(P)
+
+(1 - sum_C p_{e,C}^2)
+/
+(1 - 1/n_e).
+
+For n_e > 1.
+
+Interpretation:
+
+phi_e = 0
+
+when every endpoint is contained in one cluster.
+
+phi_e = 1
+
+when every endpoint is maximally separated.
+
+Importantly:
+
+a 3+1 split and a 2+2 split do NOT receive identical treatment.
+
+Define:
+
+# J_hyper(P)
+
+weighted mean of phi_e(P).
+
+Use configurable relation weights.
+
+Default all relation weights to 1 unless an actual experiment justifies something else.
+
+Do not invent scientifically meaningful relation weights without evidence.
+
+---
+
+# 9. Hypergraph Laplacian
+
+At each hierarchy resolution construct a native hypergraph incidence matrix.
+
+Let:
+
+B[u,e] = 1
+
+when current supernode u participates in current non-internal hyperedge e.
+
+Maintain multiplicities separately.
+
+Define:
+
+D_e[e,e] =
+number of distinct current supernodes incident to e.
+
+Let W contain hyperedge weights.
+
+Define:
+
+# D_v[u,u]
+
+sum_e B[u,e] W[e,e].
+
+Use the normalized hypergraph operator:
+
+# Theta
+
+D_v^(-1/2)
+B
+W
+D_e^(-1)
+B^T
+D_v^(-1/2).
+
+Then:
+
+L_H = I - Theta.
+
+Use sparse matrices.
+
+Handle isolated nodes safely.
+
+Verify numerically that the Laplacian is symmetric up to floating-point tolerance.
+
+Compute a small configurable number of low-frequency eigenvectors.
+
+Use those eigenvectors as a GLOBAL structural representation.
+
+Do not rely on brittle eigenvector signs.
+
+Explain the distinction:
+
+J_hyper:
+local, direct, multiplicity-aware preservation of actual hyperedges.
+
+L_H spectral coordinates:
+global structural geometry of the current hypergraph.
+
+The two structural signals are related but not identical.
+
+---
+
+# 10. Semantic signal
+
+Every node has `surface_form`.
+
+Use a deterministic sentence-embedding model for clustering.
+
+For example:
+
+sentence-transformers/all-MiniLM-L6-v2
+
+if available.
+
+Make the model configurable.
+
+A useful input format is:
+
+"<node_type>: <surface_form>"
+
+but keep that configurable.
+
+Normalize base embeddings.
+
+For any supernode C:
+
+mu_C =
+member-count-weighted mean of the base embeddings.
+
+Use a Ward-style semantic merge increase:
+
+# Delta_sem(A,B)
+
+n_A n_B / (n_A+n_B)
+*
+||mu_A - mu_B||^2.
+
+Cache embeddings.
+
+Record the exact model name/version in artifacts.
+
+---
+
+# 11. Spectral merge signal
+
+For each current unit use its low-frequency spectral coordinate s_A.
+
+For merging A and B define:
+
+# Delta_spec(A,B)
+
+n_A n_B / (n_A+n_B)
+*
+||s_A - s_B||^2.
+
+The spectral representation is recomputed AFTER each completed hierarchy level on the actually collapsed hypergraph.
+
+It does not need to be recomputed after every individual agglomerative merge inside the same level.
+
+Document this clearly.
+
+---
+
+# 12. Temporal regularization — IMPORTANT
+
+For the first temporal snapshot:
+
+J_temp = 0.
+
+For later snapshots compare the CURRENT candidate partition against the previous snapshot partition at the SAME hierarchy level.
+
+Restrict comparison to persistent base nodes appearing in both snapshots.
+
+Use Variation of Information:
+
+# VI(P,Q)
+
+H(P) + H(Q) - 2 I(P,Q)
+
+=
+H(P|Q) + H(Q|P).
+
+Normalize it, for example by:
+
+log(N_persistent)
+
+when N_persistent > 1.
+
+Call this:
+
+J_temp(P_t, P_{t-1}).
+
+This is preferable to a one-sided impurity because it penalizes BOTH:
+
+* unnecessary splitting of an old community;
+* unnecessary merging of previously separate communities.
+
+Implement contingency-count updates so merge deltas can be computed efficiently.
+
+New nodes that did not exist previously should not directly incur temporal penalties.
+
+Temporal regularization must encourage continuity, NOT prohibit genuine change.
+
+A sufficiently strong structural/semantic signal must still be able to create a legitimate split or merge.
+
+---
+
+# 13. Combined objective
+
+The main method optimizes a weighted criterion such as:
+
+# J(P_t)
+
+lambda_h * J_hyper(P_t)
++
+lambda_s * J_spec(P_t)
++
+lambda_m * J_sem(P_t)
++
+lambda_t * J_temp(P_t, P_{t-1})
+
+subject to:
+
+|P_k| <= N_k
+
+and laminar refinement.
+
+Use configurable weights.
+
+Provide reasonable default values, but mark them clearly as DESIGN CHOICES.
+
+For example:
+
+lambda_h = 0.30
+lambda_s = 0.20
+lambda_m = 0.35
+lambda_t = 0.15
+
+For the first snapshot set lambda_t = 0 and renormalize.
+
+Do NOT describe these numbers as theoretically optimal.
+
+Use a SMALL sensitivity analysis, especially for:
+
+* semantic vs structural balance;
+* temporal weight.
+
+Avoid a huge hyperparameter search.
+
+Do not tune on the final extrinsic benchmark and then report the same benchmark as unbiased test evidence.
+
+---
+
+# 14. Agglomerative hierarchy construction
+
+Build bottom-up.
+
+The singleton partition is P_K.
+
+At each target level:
+
+1. compute current hypergraph representation;
+2. compute semantic centroids;
+3. compute current hypergraph Laplacian;
+4. compute spectral coordinates;
+5. construct candidate merge pairs;
+6. greedily/agglomeratively choose merges according to the hybrid objective;
+7. stop at the configured hard budget;
+8. save the partition;
+9. collapse hyperedges using the T4 rule;
+10. construct the next coarse hypergraph;
+11. recompute its Laplacian;
+12. continue.
+
+Candidate merge pairs can come from the union of:
+
+* shared hyperedge neighbors;
+* semantic k-nearest neighbors;
+* spectral k-nearest neighbors;
+* previous-snapshot compatible clusters.
+
+Do not evaluate all O(n^2) pairs unnecessarily.
+
+A heap with lazy invalidation is acceptable.
+
+The corpus is small, so optimize for clarity before extreme performance.
+
+---
+
+# 15. Laminarity
+
+Because each new coarse node is formed only by merging nodes/supernodes from the immediately finer level, laminarity should hold automatically.
+
+Still implement a validator.
+
+For every hierarchy verify:
+
+* every base node appears exactly once per level;
+* no overlap;
+* every fine cluster has exactly one coarse parent;
+* all intended nodes are covered;
+* all size budgets hold.
+
+If a hierarchy invariant fails, fail the run.
+
+Do not silently continue.
+
+---
+
+# 16. Temporal identity tracking
+
+After constructing snapshot t, compare supernodes with snapshot t-1 at the same hierarchy level.
+
+Use persistent base-node overlap.
+
+At minimum calculate Jaccard:
+
+# J(A,B)
+
+|A intersection B|
+/
+|A union B|.
+
+Use maximum-weight/Hungarian matching for primary continuations.
+
+Then use many-to-many overlaps to detect:
+
+* continuation/growth;
+* split;
+* merge;
+* birth;
+* death.
+
+Make overlap thresholds configurable.
+
+Store the overlap values that caused each classification.
+
+Do not hide ambiguous events.
+
+The temporal regularizer influences construction.
+
+This overlap matching is therefore for ID assignment/event interpretation, not the only temporal mechanism.
+
+---
+
+# 17. T1 descriptive analysis
+
+For every snapshot report:
+
+* node count;
+* hyperedge count;
+* node-type distribution;
+* relation-type distribution;
+* hyperedge arity distribution;
+* min/max/median/quantiles of arity;
+* fraction of arity > 2;
+* time span;
+* growth since previous snapshot;
+* new nodes;
+* new edges.
+
+Also check data quality:
+
+* duplicate ids;
+* dangling edge members;
+* missing surface forms;
+* malformed dates;
+* missing temporal fields;
+* contradictory temporal values;
+* isolated nodes.
+
+Do not silently repair important problems.
+
+Record them.
+
+---
+
+# 18. Pairwise projection baseline
+
+Implement clique expansion ONLY as a baseline.
+
+For a hyperedge of size n, construct pairwise contributions with a reasonable size normalization so large hyperedges do not trivially dominate.
+
+Document the normalization.
+
+Quantify what projection loses.
+
+At minimum report:
+
+* percentage of hyperedges with arity > 2;
+* total pair instances produced by expansion;
+* unique projected pair count;
+* expansion factor;
+* number of different original hyperedges contributing to the same projected pair;
+* examples of higher-order relationships that become indistinguishable in pairwise form.
+
+Then compare the projected baseline empirically with the native method.
+
+Do not deliberately weaken the baseline.
+
+---
+
+# 19. Method variants
+
+Keep the comparison focused.
+
+Implement approximately these variants:
+
+## A. Semantic-only
+
+Semantic agglomeration.
+
+No structural or temporal signal.
+
+## B. Native structural
+
+J_hyper + hypergraph spectral signal.
+
+No semantic signal.
+
+## C. Static hybrid
+
+J_hyper + spectral + semantic.
+
+No temporal regularization.
+
+## D. Full temporal hybrid
+
+J_hyper + spectral + semantic + temporal VI.
+
+## E. Pairwise projection baseline
+
+Clique-projected structural representation with an otherwise reasonably comparable clustering approach.
+
+This set is sufficient.
+
+Do not create five more variants simply because they are possible.
+
+---
+
+# 20. Evaluation is the highest priority
+
+The assignment explicitly warns against circular evaluation.
+
+Create a section in code/report separating:
+
+OPTIMIZATION SIGNALS
+
+from
+
+EVALUATION SIGNALS.
+
+The central rule is:
+
+Never claim that a method is good solely because it scores well on the exact quantity it optimized.
+
+---
+
+# 21. Independent semantic coherence
+
+DO NOT evaluate semantic coherence using the same embedding model used during clustering.
+
+Use an independent model family.
+
+For example:
+
+clustering:
+MiniLM-family
+
+evaluation:
+BGE/E5-family
+
+provided the actual model can be loaded.
+
+Record exact identifiers.
+
+If an independent evaluator cannot be loaded, do NOT silently reuse the clustering model.
+
+Mark the evaluation unavailable or use a genuinely independent human/LLM rating.
+
+For each cluster compute an independent coherence statistic such as:
+
+mean cosine similarity to an evaluation-space centroid
+
+or equivalent within-cluster dispersion.
+
+Report it:
+
+* per level;
+* per snapshot;
+* aggregated appropriately.
+
+---
+
+# 22. Null model for coherence
+
+The assignment requires comparison against chance.
+
+For semantic coherence, the simplest rigorous null is:
+
+randomly permute node-to-cluster assignments while preserving the exact observed cluster-size distribution.
+
+Repeat over multiple fixed seeds.
+
+For example:
+
+50–100 permutations if cheap.
+
+Report:
+
+* real coherence;
+* null mean;
+* null standard deviation;
+* difference from null;
+* empirical permutation p-value where sensible.
+
+This is enough to satisfy the required null-model logic.
+
+A degree/arity-preserving hypergraph shuffle may be added if time allows, but it is OPTIONAL because the assessment explicitly permits either an appropriate hypergraph shuffle OR random labels.
+
+Do not sacrifice the required evaluations merely to add more null models.
+
+---
+
+# 23. Perturbation stability
+
+Required experiment:
+
+remove 10% of hyperedges.
+
+Use FIVE fixed random seeds, as stated in the task.
+
+For each seed:
+
+1. remove 10% of edges;
+2. rebuild the hierarchy;
+3. compare with the original hierarchy on common nodes.
+
+Calculate ARI separately at each hierarchy level.
+
+Optionally also calculate normalized VI.
+
+Report:
+
+* all seed values;
+* mean;
+* standard deviation;
+* 95% confidence interval.
+
+A t-based CI over the five seed-level values is acceptable if clearly labeled as approximate.
+
+Do not report only a point estimate.
+
+---
+
+# 24. Real cross-snapshot stability
+
+Separately compare actual consecutive snapshots:
+
+2020 -> 2022
+2022 -> 2024
+2024 -> 2026
+
+or whatever cutoffs are actually used.
+
+Restrict metrics to nodes present in both snapshots.
+
+At every hierarchy level calculate:
+
+* ARI;
+* normalized VI;
+* event counts.
+
+Also report how much the graph actually grew.
+
+Interpret carefully:
+
+higher stability is not automatically better if the scientific corpus genuinely changed.
+
+---
+
+# 25. Labels
+
+Generate labels automatically.
+
+For every non-singleton supernode produce:
+
+* concise label;
+* exactly one-sentence gloss.
+
+For singleton nodes, reuse their existing textual identity where appropriate.
+
+Implement a conservative deterministic backend so the repository works offline.
+
+Optionally implement an LLM backend.
+
+For an LLM call, provide ONLY snapshot-visible evidence.
+
+Log the EXACT label-generation input and output.
+
+Use evidence available in the actual dataset, which may include:
+
+* representative member surface forms;
+* node types;
+* relevant edge/relation information;
+* provenance fields if they contain usable evidence.
+
+DO NOT assume provenance contains full paper text unless inspection confirms that.
+
+Prompt the labeler to avoid unsupported evaluative language such as:
+
+* best;
+* state-of-the-art;
+* superior;
+* outperforming;
+* historically first;
+
+unless directly supported by provided evidence.
+
+When uncertain, prefer a broader supported label.
+
+---
+
+# 26. Label circularity control
+
+The assignment explicitly warns that using the same member surface forms both to form clusters and as the sole basis for label evaluation is circular.
+
+Therefore:
+
+Generation and evaluation must not be identical.
+
+Preferred approach:
+
+* clustering uses embedding model A;
+* label generation sees representative cluster evidence;
+* faithfulness evaluation uses an independent NLI/entailment model and, where possible, additional evidence not shown to the generator;
+* provide a blind human-audit CSV as a fallback/check.
+
+If the dataset does not contain enough independent textual evidence to make NLI genuinely meaningful, SAY SO.
+
+In that case a small blind manual audit is methodologically stronger than pretending the automated check is independent.
+
+Never fabricate manual ratings.
+
+---
+
+# 27. Label faithfulness metric
+
+Quantify OVER-CLAIM RATE.
+
+Possible automated pathway:
+
+premise:
+snapshot-visible evidence
+
+hypothesis:
+generated gloss.
+
+Use an independent NLI model.
+
+Record:
+
+* entailment;
+* neutral;
+* contradiction.
+
+Define the threshold/rule BEFORE interpreting results.
+
+Alternatively/additionally create a blind sample with categories:
+
+* accurate;
+* vague;
+* unsupported;
+* wrong.
+
+Then:
+
+# OverClaimRate
+
+(# unsupported + # wrong)
+/
+
+# evaluated.
+
+Evaluate at least hierarchy levels 0 and 1.
+
+---
+
+# 28. Extrinsic benchmark
+
+This is mandatory.
+
+Inspect the actual schemas of:
+
+questions.csv
+ground_truth.json
+collection10_articles.csv.
+
+Do not assume beyond what the files contain.
+
+The task indicates that ground truth includes conceptually:
+
+* expected_methods;
+* method_claims.
+
+Build a deterministic coarse-to-fine retrieval procedure.
+
+For each question:
+
+1. start at coarse hierarchy level;
+2. score supernodes for relevance;
+3. open only the best few;
+4. continue downward;
+5. eventually surface method nodes and supporting claims;
+6. count the number of inspected hierarchy objects/nodes.
+
+Compare against a FLAT baseline searching all eligible nodes.
+
+Use the SAME query-scoring model for both systems.
+
+Use fair budgets.
+
+Useful metrics:
+
+* hit-rate@budget;
+* recall@budget;
+* precision;
+* F1;
+* steps/nodes inspected to first expected method;
+* steps to recover expected methods;
+* supporting-claim recall if reliably map-able.
+
+The hierarchy must not receive a stronger retrieval model than the flat baseline.
+
+The goal is to determine whether the abstraction improves SEARCH EFFICIENCY/UTILITY, not merely whether it looks nice.
+
+---
+
+# 29. Choosing which method to ship
+
+Do NOT pre-assume that the full temporal hybrid wins.
+
+After real metrics exist, compare variants on:
+
+* hard-constraint satisfaction;
+* independent coherence;
+* perturbation stability;
+* actual temporal stability;
+* label overclaim rate;
+* extrinsic retrieval;
+* runtime/complexity.
+
+If the simpler static hybrid performs essentially as well as the full temporal system, say so.
+
+If semantic-only does surprisingly well, say so.
+
+If native structure hurts semantics but improves retrieval, say so.
+
+Negative or ambiguous findings are acceptable.
+
+Do not invent a single weighted leaderboard unless it is genuinely justified.
+
+A trade-off/Pareto discussion is preferable.
+
+---
+
+# 30. Formal Deliverable 0
+
+The report must include a precise formal statement.
+
+Define:
+
+* H_t;
+* hierarchy P_0...P_K;
+* incidence matrix;
+* multiplicity-aware coarse hypergraph;
+* semantic embeddings;
+* spectral embeddings;
+* temporal predecessor partition.
+
+Write the objective explicitly:
+
+# J(P_t)
+
+lambda_h J_hyper
++
+lambda_s J_spec
++
+lambda_m J_sem
++
+lambda_t J_temp.
+
+State constraints:
+
+* laminarity;
+* hard budgets;
+* partition exclusivity/coverage.
+
+Explicitly separate:
+
+GUARANTEED BY CONSTRUCTION
+
+from
+
+EMPIRICALLY EVALUATED.
+
+Likely:
+
+P1:
+guaranteed.
+
+P2:
+guaranteed.
+
+P4:
+guaranteed procedurally because the next level operates on the actually collapsed native hypergraph.
+
+P3:
+empirical.
+
+P5:
+encouraged by VI regularization and empirically measured.
+
+P6:
+constrained by evidence but empirically measured.
+
+Do not claim P3/P5/P6 as mathematical guarantees.
+
+---
+
+# 31. Complexity discussion
+
+Use actual implemented quantities.
+
+Let:
+
+n = current number of units
+m = number of hyperedges
+I = sum_e |e|
+d = semantic embedding dimension
+q = spectral dimension.
+
+Discuss:
+
+* data loading O(I);
+* sparse incidence construction;
+* sparse Laplacian construction;
+* iterative sparse eigensolver cost;
+* nearest-neighbor candidate generation;
+* number of agglomerative merges;
+* local incident-edge updates;
+* heap operations;
+* embedding inference.
+
+Do not casually write O(n^3) if the implementation never performs dense eigendecomposition.
+
+---
+
+# 32. Literature grounding
+
+Use 3–4 core papers spanning all requested themes.
+
+A defensible set is:
+
+1. Zhou, Huang & Schölkopf:
+   “Learning with Hypergraphs: Clustering, Classification, and Embedding”
+   for hypergraph spectral learning.
+
+2. Chen, Saad & Zhang:
+   “Graph coarsening: from scientific computing to machine learning”
+   for multilevel/coarsening principles.
+
+3. Schaub, Li & Peel:
+   “Hierarchical community structure in networks”
+   for hierarchical community structure.
+
+4. Chi, Song, Zhou, Hino & Tseng:
+   “Evolutionary Spectral Clustering by Incorporating Temporal Smoothness”
+   for the current-fit versus temporal-smoothness principle.
+
+Verify bibliographic information.
+
+Do not copy methods blindly.
+
+Explain:
+
+* what we borrow;
+* what we change;
+* why this assessment needs semantic + hierarchical + hypergraph + temporal treatment simultaneously.
+
+The task says recent 2022–2026 venue papers are welcome, not mandatory.
+
+Two of the above are recent enough to provide modern grounding while the older two provide foundational spectral/dynamic ideas.
+
+---
+
+# 33. Rejected alternatives
+
+Explicitly discuss at least:
+
+## Pure semantic hierarchical clustering
+
+Good semantic signal but ignores TKH structure.
+
+## Pure structural hypergraph clustering
+
+Native structure but no guarantee of scientific semantic coherence.
+
+## Clique expansion
+
+Allows mature graph algorithms but destroys explicit higher-order edge identity.
+
+## Independent snapshot clustering
+
+Fits each snapshot independently but makes temporal continuity mostly cosmetic.
+
+Do not say these methods are universally bad.
+
+Explain why they fail to satisfy some requirements of THIS assessment as naturally as the proposed hybrid.
+
+---
+
+# 34. Required output artifacts
+
+Generate:
+
+hierarchy_<snapshot>.json
+
+for every snapshot.
+
+For every supernode include at least:
+
+* id;
+* persistent id where available;
+* snapshot;
+* level;
+* parent id;
+* member ids;
+* label;
+* gloss.
+
+Generate:
+
+temporal_events.json
+
+with:
+
+* source snapshot;
+* target snapshot;
+* level;
+* event type;
+* source ids;
+* target ids;
+* overlap scores.
+
+Generate:
+
+metrics.json
+
+containing the actual numbers underlying T6:
+
+* independent coherence;
+* null comparison;
+* perturbation stability + CI;
+* cross-snapshot stability;
+* overclaim rate;
+* extrinsic results;
+* method-variant results.
+
+Missing metrics must not be written as zero.
+
+Use statuses such as:
+
+computed
+missing_data
+missing_model
+not_applicable.
+
+---
+
+# 35. Repository structure
+
+Keep the repository simple.
+
+A good structure is:
+
+README.md
+AI_USAGE.md
+pyproject.toml
+requirements.txt
+.gitignore
+
+configs/
+default.yaml
+fast.yaml
+
+data/
+README.md
+
+src/
+tkh_abstraction/
+**init**.py
+config.py
+cli.py
+schema.py
+io.py
+snapshots.py
+hypergraph.py
+collapse.py
+spectral.py
+semantics.py
+coarsening.py
+hierarchy.py
+temporal.py
+labeling.py
+retrieval.py
+baselines.py
+reporting.py
+
+```
+    evaluation/
+        coherence.py
+        stability.py
+        faithfulness.py
+        extrinsic.py
+        statistics.py
+```
+
+tests/
+fixtures/
+test_snapshots.py
+test_collapse.py
+test_spectral.py
+test_hierarchy.py
+test_temporal.py
+test_retrieval.py
+test_temporal_honesty.py
+
+artifacts/
+
+report/
+report.md
+figures/
+literature_notes.md
+
+Do not build:
+
+* web frontend;
+* database;
+* graph database;
+* Docker cluster;
+* Kubernetes;
+* API server;
+* model training pipeline.
+
+---
+
+# 36. CLI
+
+Provide commands such as:
+
+python -m tkh_abstraction.cli validate-data
+
+python -m tkh_abstraction.cli describe
+
+python -m tkh_abstraction.cli build
+
+python -m tkh_abstraction.cli label
+
+python -m tkh_abstraction.cli evaluate
+
+python -m tkh_abstraction.cli report
+
+python -m tkh_abstraction.cli run-all
+
+Support:
+
+--config
+--snapshot
+--variant
+--seed
+--fast.
+
+One command should reproduce the final submission from clean data.
+
+---
+
+# 37. Mandatory tests
+
+Write tests for scientifically important invariants.
+
+## Hyperedge collapse
+
+Test:
+
+* m=n;
+* partial internal collapse;
+* 3+ resulting coarse nodes;
+* multiplicity preserved;
+* original arity preserved;
+* provenance preserved;
+* no accidental clique expansion.
+
+## Hierarchy
+
+Test:
+
+* laminarity;
+* no overlap;
+* full coverage;
+* exactly one parent;
+* hard budgets.
+
+## Spectral
+
+On a tiny synthetic hypergraph test:
+
+* incidence dimensions;
+* symmetry;
+* finite values;
+* eigenvalues not substantially negative beyond floating error.
+
+Do NOT test exact eigenvector signs.
+
+## Temporal events
+
+Synthetic cases:
+
+* continuation;
+* growth;
+* split;
+* merge;
+* birth;
+* death.
+
+## Temporal honesty
+
+Create future evidence and ensure an earlier snapshot cannot pass it to the labeller.
+
+## Retrieval
+
+Create a tiny hierarchy with a known target.
+
+Verify:
+
+* coarse-to-fine traversal;
+* budget accounting;
+* flat baseline accounting.
+
+---
+
+# 38. Synthetic fixture
+
+Create a tiny temporal hypergraph containing:
+
+* at least two communities;
+* a genuine high-arity edge;
+* a bridging edge;
+* semantic node text;
+* new nodes appearing later;
+* a split;
+* a merge;
+* future evidence hidden from early snapshots.
+
+Use this only for:
+
+* tests;
+* development;
+* demonstrations.
+
+Never put synthetic scores into the real `metrics.json`.
+
+---
+
+# 39. Reproducibility
+
+Pin dependencies.
+
+Prefer Python 3.11 unless the environment requires otherwise.
+
+Record:
+
+* Python version;
+* dependency versions;
+* embedding model identifiers;
+* NLI model identifier if used;
+* configuration;
+* random seeds.
+
+Cache embeddings.
+
+Make caches split-aware so an evaluation run cannot accidentally reuse information from a full-data run when it should not.
+
+---
+
+# 40. Evaluation-circularity section
+
+The report MUST contain a prominent section:
+
+“Evaluation validity and circularity controls.”
+
+Include a table like:
+
+Component:
+semantic clustering
+
+Optimization input:
+embedding model A
+
+Evaluation input:
+embedding model B
+
+Control:
+different embedding family + random-label null.
+
+Component:
+temporal clustering
+
+Optimization:
+previous partition through VI penalty
+
+Evaluation:
+ARI/VI after real evolution and edge-removal perturbations
+
+Control:
+separate perturbation and real-snapshot experiments.
+
+Component:
+labels
+
+Generation:
+snapshot-visible cluster evidence
+
+Evaluation:
+independent NLI and/or blind human review
+
+Control:
+evaluation not performed by the same generation step.
+
+Component:
+extrinsic retrieval
+
+Optimization:
+hierarchy
+
+Evaluation:
+supplied question/ground-truth benchmark
+
+Control:
+same retrieval scorer and budget for flat and hierarchical systems.
+
+This section is one of the most important deliverables.
+
+---
+
+# 41. Figures
+
+Do not generate ten unnecessary plots.
+
+Produce a small set of useful figures, for example:
+
+1. graph growth / arity statistics;
+2. hierarchy or temporal evolution visualization;
+3. independent coherence vs null;
+4. perturbation/cross-snapshot stability;
+5. extrinsic hierarchical vs flat retrieval.
+
+Extra diagnostics may be saved outside the core report.
+
+---
+
+# 42. Report
+
+Generate:
+
+report/report.md.
+
+Keep the MAIN REPORT equivalent to approximately 3–5 academic pages.
+
+Recommended structure:
+
+1. Problem & formalization
+2. Related work
+3. Method
+4. Evaluation design and circularity controls
+5. Results
+6. Limitations / which method to ship
+7. What I would do with four more weeks
+8. Verified vs assumed
+
+Do not let generated boilerplate turn it into a 20-page report.
+
+The assessment explicitly asks for concise prose and figures.
+
+---
+
+# 43. Verified vs assumed
+
+Create an explicit section.
+
+Examples of VERIFIED facts:
+
+* actual node count;
+* actual edge count;
+* actual arity distribution;
+* hierarchy passed laminarity validator;
+* measured ARI;
+* measured retrieval recall.
+
+Examples of ASSUMPTIONS/DESIGN CHOICES:
+
+* hierarchy level budgets;
+* objective weights;
+* choice of embedding model;
+* choice of temporal coefficient;
+* NLI as a proxy for faithfulness.
+
+Never phrase assumptions as experimental findings.
+
+---
+
+# 44. AI_USAGE.md
+
+Required.
+
+Document:
+
+* Codex/OpenAI coding assistant usage;
+* major tasks/modules assisted;
+* this master prompt or a concise but substantive copy of it;
+* automated tests performed;
+* modifications made after verification.
+
+Do not write that a human manually checked something unless the candidate actually performed that check.
+
+Leave a clear section for manual verification to be filled in later.
+
+---
+
+# 45. Questions / ambiguity handling
+
+The assessment encourages asking questions early rather than silently guessing.
+
+Codex itself cannot contact the assessors.
+
+Therefore:
+
+if the real dataset materially contradicts the documented schema or creates a genuine interpretation ambiguity:
+
+1. document it in `QUESTIONS.md`;
+2. choose the most conservative interpretation needed to continue;
+3. mark it explicitly as an assumption;
+4. do not hide it.
+
+Do not create questions about things that can simply be determined by inspecting the supplied data.
+
+---
+
+# 46. Priority order
+
+When time or complexity conflicts arise, prioritize:
+
+1. evaluation validity;
+2. correct formalization;
+3. native hypergraph collapse;
+4. real temporal coupling;
+5. reproducibility;
+6. required outputs;
+7. additional sophistication.
+
+Do NOT prioritize extra baselines, extra plots, or sophisticated engineering over the mandatory evaluation.
+
+---
+
+# 47. Implementation sequence
+
+Work in this order.
+
+## Phase A
+
+* inspect repository;
+* find/extract data;
+* implement schema/loader;
+* create snapshots;
+* T1 descriptive statistics;
+* synthetic fixtures/tests.
+
+## Phase B
+
+* native multiplicity-aware hypergraph;
+* T4 collapse;
+* Laplacian;
+* spectral coordinates;
+* tests.
+
+## Phase C
+
+* semantic embeddings;
+* objective terms;
+* agglomerative coarsening;
+* recursive hierarchy;
+* hard budgets;
+* hierarchy validation.
+
+## Phase D
+
+* temporal VI regularizer;
+* sequential snapshot construction;
+* persistent matching;
+* event log.
+
+## Phase E
+
+* labeling;
+* temporal-honesty filters;
+* faithfulness evaluation.
+
+## Phase F
+
+* independent coherence;
+* random-label null;
+* 10% edge perturbation × 5 seeds;
+* real snapshot stability;
+* method variants;
+* clique projection comparison;
+* extrinsic benchmark.
+
+## Phase G
+
+* hierarchy JSONs;
+* temporal_events.json;
+* metrics.json;
+* report;
+* README;
+* AI_USAGE;
+* final tests.
+
+Do not stop after writing a plan.
+
+Implement the files.
+
+Run the tests.
+
+Fix failures.
+
+Run the real experiment if the data is present.
+
+---
+
+# 48. Final scientific standard
+
+The final submission should support a statement of this FORM only if the results justify it:
+
+“We propose a recursive temporal spectral-semantic hypergraph coarsening method. Each resolution combines a native multiplicity-aware hyperedge objective, spectral coordinates computed from the current hypergraph, semantic embeddings, and temporal regularization. Hyperedges are explicitly collapsed after each level and the collapsed hypergraph is used at the next resolution. Laminarity and display budgets hold by construction, while semantic coherence, temporal stability and label faithfulness are treated as empirical claims and evaluated with independent signals.”
+
+Do NOT automatically write:
+
+“our method outperforms the baselines.”
+
+Do not claim superiority until actual results support it.
+
+The assessment explicitly rewards honesty about noisy, negative, and ambiguous results.
+
+---
+
+# 49. Final checks before finishing
+
+Run:
+
+* all unit tests;
+* hierarchy invariants;
+* fast integration run;
+* real-data validation if data exists;
+* full pipeline if feasible.
+
+Inspect:
+
+* hierarchy JSON validity;
+* temporal event consistency;
+* metrics.json;
+* label inputs;
+* report tables.
+
+Confirm that:
+
+* P1 holds;
+* P2 holds;
+* T4 collapse is genuinely used;
+* temporal regularization affects construction;
+* evaluation coherence uses an independent signal;
+* null comparison exists;
+* five 10%-edge perturbation runs exist;
+* cross-snapshot stability exists;
+* label overclaim is quantified;
+* extrinsic hierarchical-vs-flat evaluation exists;
+* report separates verified from assumed.
+
+At the end tell me:
+
+1. what was implemented;
+2. whether the real assessment data was found;
+3. tests that were run and their results;
+4. generated deliverables;
+5. metrics that could not be computed and why;
+6. important assumptions;
+7. the exact command required to reproduce the full submission.

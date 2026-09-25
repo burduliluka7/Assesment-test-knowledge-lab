@@ -1,0 +1,8270 @@
+{
+  "target_outcomes": [
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR1-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR2-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR4-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR2-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR1-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR2-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR2-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR4-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR2-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR4-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR2-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR4-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR2-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR4-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR4-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR2-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR1-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR3-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR1-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR4-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR4-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR1-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR2-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR1-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR2-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR1-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR2-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR1-100",
+      "category": "SEMANTIC_SCORER_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR1-200",
+      "category": "SEMANTIC_SCORER_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR1-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR2-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR1-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "ACE",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "CHGNet",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "EquiformerV2",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR2-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR4-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "GAP",
+      "stage": "CR2-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "M3GNet",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR1-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "MACE",
+      "stage": "CR2-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "label": "NequIP",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "D4FT",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR2-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR4-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "DeepH",
+      "stage": "CR2-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "label": "HamGNN",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR4-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "label": "DeepH-E3",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR2-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR4-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "label": "VGNN",
+      "stage": "CR2-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR4-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "label": "LiFlow",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR1-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "label": "symbolic regression",
+      "stage": "CR2-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR4-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "label": "ConvLSTM",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "E(3)-equivariant GNNs",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "label": "NequIP",
+      "stage": "CR2-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR1-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR3-100",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR1-200",
+      "category": "PARTIAL_REQUIREMENT_SUPPORT",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "label": "SchNet",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "CHGNet",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE",
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "DeePMD",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "EquiformerV2",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "GAP",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "M3GNet",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MACE",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR4-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "MatterSim",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "NequIP",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "Orb",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "PET",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "PET",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "PET",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "PET",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "PET",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "PET",
+      "stage": "CR1-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "PET",
+      "stage": "CR2-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR4-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "SevenNet",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "UMA",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "UMA",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "UMA",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "UMA",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "UMA",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "UMA",
+      "stage": "CR1-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "UMA",
+      "stage": "CR2-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "label": "eSEN",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CGCNN",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "CHGNet",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "EquiformerV2",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "M3GNet",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MACE",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR1-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "MEGNet",
+      "stage": "CR2-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR2-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR4-100",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "NequIP",
+      "stage": "CR2-200",
+      "category": "CONTRADICTORY_EVIDENCE",
+      "flags": [
+        "MODEL_CONTRADICTION_DETECTED"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "label": "SchNet",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR1-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR1-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "AFLOW",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Alexandria",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "GNoME",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR1-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "JARVIS-DFT",
+      "stage": "CR2-200",
+      "category": "NOT_IN_H2_200",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "MPtrj",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "MPtrj",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "MPtrj",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "MPtrj",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "MPtrj",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "MPtrj",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "MPtrj",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR1-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR2-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR3-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR4-100",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR1-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench",
+      "stage": "CR2-200",
+      "category": "NO_ATTRIBUTABLE_EVIDENCE",
+      "flags": [
+        "NO_DIRECT_ATTRIBUTABLE_EVIDENCE"
+      ]
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR0-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR3-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Matbench Discovery",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR2-100",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "Materials Project",
+      "stage": "CR2-200",
+      "category": "RETRIEVED_TOP10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OMat24",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR0-100",
+      "category": "BASELINE_REFERENCE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR1-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR2-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR3-100",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR4-100",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "OQMD",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR0-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR1-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR2-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR3-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR4-100",
+      "category": "NOT_IN_H2_100",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR1-200",
+      "category": "SUPPORTED_BUT_RANKED_BELOW_10",
+      "flags": []
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "label": "WBM",
+      "stage": "CR2-200",
+      "category": "NLI_FAILURE",
+      "flags": []
+    }
+  ],
+  "coverage": [
+    {
+      "cutoff": 2025,
+      "k": 100,
+      "gold": true,
+      "scorer": "CR1",
+      "n": 31,
+      "mean_coverage": 0.7311827956989246,
+      "mean_soft_coverage": 0.5636675010907906,
+      "all_supported": 22,
+      "partial_supported": 1,
+      "none_supported": 8,
+      "contradicted": 0,
+      "no_direct_attributable": 7
+    },
+    {
+      "cutoff": 2025,
+      "k": 100,
+      "gold": true,
+      "scorer": "CR2",
+      "n": 31,
+      "mean_coverage": 0.1182795698924731,
+      "mean_soft_coverage": 0.06153366273261121,
+      "all_supported": 1,
+      "partial_supported": 6,
+      "none_supported": 24,
+      "contradicted": 9,
+      "no_direct_attributable": 7
+    },
+    {
+      "cutoff": 2025,
+      "k": 100,
+      "gold": false,
+      "scorer": "CR1",
+      "n": 1369,
+      "mean_coverage": 0.2739834429023618,
+      "mean_soft_coverage": 0.3060766026017635,
+      "all_supported": 321,
+      "partial_supported": 102,
+      "none_supported": 946,
+      "contradicted": 0,
+      "no_direct_attributable": 915
+    },
+    {
+      "cutoff": 2025,
+      "k": 100,
+      "gold": false,
+      "scorer": "CR2",
+      "n": 1369,
+      "mean_coverage": 0.024653031409788168,
+      "mean_soft_coverage": 0.010105328017402077,
+      "all_supported": 8,
+      "partial_supported": 61,
+      "none_supported": 1300,
+      "contradicted": 312,
+      "no_direct_attributable": 915
+    },
+    {
+      "cutoff": 2025,
+      "k": 200,
+      "gold": true,
+      "scorer": "CR1",
+      "n": 43,
+      "mean_coverage": 0.7189922480620154,
+      "mean_soft_coverage": 0.5315045539461221,
+      "all_supported": 29,
+      "partial_supported": 3,
+      "none_supported": 11,
+      "contradicted": 0,
+      "no_direct_attributable": 10
+    },
+    {
+      "cutoff": 2025,
+      "k": 200,
+      "gold": true,
+      "scorer": "CR2",
+      "n": 43,
+      "mean_coverage": 0.10271317829457363,
+      "mean_soft_coverage": 0.04514249169225697,
+      "all_supported": 1,
+      "partial_supported": 8,
+      "none_supported": 34,
+      "contradicted": 11,
+      "no_direct_attributable": 10
+    },
+    {
+      "cutoff": 2025,
+      "k": 200,
+      "gold": false,
+      "scorer": "CR1",
+      "n": 2757,
+      "mean_coverage": 0.22436827469471646,
+      "mean_soft_coverage": 0.265659722330821,
+      "all_supported": 527,
+      "partial_supported": 174,
+      "none_supported": 2056,
+      "contradicted": 0,
+      "no_direct_attributable": 1954
+    },
+    {
+      "cutoff": 2025,
+      "k": 200,
+      "gold": false,
+      "scorer": "CR2",
+      "n": 2757,
+      "mean_coverage": 0.018317011244105914,
+      "mean_soft_coverage": 0.008192298810399122,
+      "all_supported": 15,
+      "partial_supported": 86,
+      "none_supported": 2656,
+      "contradicted": 588,
+      "no_direct_attributable": 1954
+    },
+    {
+      "cutoff": 2026,
+      "k": 100,
+      "gold": true,
+      "scorer": "CR1",
+      "n": 32,
+      "mean_coverage": 0.8020833333333333,
+      "mean_soft_coverage": 0.5790885135924317,
+      "all_supported": 25,
+      "partial_supported": 1,
+      "none_supported": 6,
+      "contradicted": 0,
+      "no_direct_attributable": 6
+    },
+    {
+      "cutoff": 2026,
+      "k": 100,
+      "gold": true,
+      "scorer": "CR2",
+      "n": 32,
+      "mean_coverage": 0.11458333333333333,
+      "mean_soft_coverage": 0.0597012795582809,
+      "all_supported": 1,
+      "partial_supported": 6,
+      "none_supported": 25,
+      "contradicted": 8,
+      "no_direct_attributable": 6
+    },
+    {
+      "cutoff": 2026,
+      "k": 100,
+      "gold": false,
+      "scorer": "CR1",
+      "n": 1368,
+      "mean_coverage": 0.2794834307992203,
+      "mean_soft_coverage": 0.3131472988547,
+      "all_supported": 330,
+      "partial_supported": 99,
+      "none_supported": 939,
+      "contradicted": 0,
+      "no_direct_attributable": 903
+    },
+    {
+      "cutoff": 2026,
+      "k": 100,
+      "gold": false,
+      "scorer": "CR2",
+      "n": 1368,
+      "mean_coverage": 0.025462962962962958,
+      "mean_soft_coverage": 0.010876904297762986,
+      "all_supported": 9,
+      "partial_supported": 63,
+      "none_supported": 1296,
+      "contradicted": 316,
+      "no_direct_attributable": 903
+    },
+    {
+      "cutoff": 2026,
+      "k": 200,
+      "gold": true,
+      "scorer": "CR1",
+      "n": 45,
+      "mean_coverage": 0.7537037037037037,
+      "mean_soft_coverage": 0.5332178096741492,
+      "all_supported": 32,
+      "partial_supported": 3,
+      "none_supported": 10,
+      "contradicted": 0,
+      "no_direct_attributable": 10
+    },
+    {
+      "cutoff": 2026,
+      "k": 200,
+      "gold": true,
+      "scorer": "CR2",
+      "n": 45,
+      "mean_coverage": 0.09814814814814815,
+      "mean_soft_coverage": 0.04387962833829431,
+      "all_supported": 1,
+      "partial_supported": 8,
+      "none_supported": 36,
+      "contradicted": 10,
+      "no_direct_attributable": 10
+    },
+    {
+      "cutoff": 2026,
+      "k": 200,
+      "gold": false,
+      "scorer": "CR1",
+      "n": 2755,
+      "mean_coverage": 0.21718088324258922,
+      "mean_soft_coverage": 0.27018020250663205,
+      "all_supported": 507,
+      "partial_supported": 176,
+      "none_supported": 2072,
+      "contradicted": 0,
+      "no_direct_attributable": 1949
+    },
+    {
+      "cutoff": 2026,
+      "k": 200,
+      "gold": false,
+      "scorer": "CR2",
+      "n": 2755,
+      "mean_coverage": 0.01926799758015729,
+      "mean_soft_coverage": 0.00907637518699465,
+      "all_supported": 16,
+      "partial_supported": 89,
+      "none_supported": 2650,
+      "contradicted": 604,
+      "no_direct_attributable": 1949
+    }
+  ],
+  "attribution_counts": [
+    {
+      "cutoff": 2025,
+      "k": 100,
+      "gold": true,
+      "candidate_pairs": 31,
+      "counts": {
+        "DIRECT_SUBJECT_SUPPORT": 43,
+        "EXPLICIT_NAME_SUPPORT": 30,
+        "COMPARISON_WINNER": 4,
+        "COMPARISON_BASELINE": 4,
+        "MENTION_ONLY": 20,
+        "UNCERTAIN": 95,
+        "INDIRECT_GRAPH_NEIGHBOR": 58
+      },
+      "co_membership_only": 42,
+      "path_only": 19
+    },
+    {
+      "cutoff": 2025,
+      "k": 100,
+      "gold": false,
+      "candidate_pairs": 1369,
+      "counts": {
+        "UNCERTAIN": 5355,
+        "EXPLICIT_NAME_SUPPORT": 542,
+        "DIRECT_SUBJECT_SUPPORT": 464,
+        "INDIRECT_GRAPH_NEIGHBOR": 2175,
+        "COMPARISON_BASELINE": 32,
+        "MENTION_ONLY": 251,
+        "COMPARISON_WINNER": 14
+      },
+      "co_membership_only": 1932,
+      "path_only": 1524
+    },
+    {
+      "cutoff": 2025,
+      "k": 200,
+      "gold": true,
+      "candidate_pairs": 43,
+      "counts": {
+        "DIRECT_SUBJECT_SUPPORT": 49,
+        "EXPLICIT_NAME_SUPPORT": 40,
+        "COMPARISON_WINNER": 5,
+        "COMPARISON_BASELINE": 4,
+        "MENTION_ONLY": 27,
+        "UNCERTAIN": 104,
+        "INDIRECT_GRAPH_NEIGHBOR": 87
+      },
+      "co_membership_only": 42,
+      "path_only": 27
+    },
+    {
+      "cutoff": 2025,
+      "k": 200,
+      "gold": false,
+      "candidate_pairs": 2757,
+      "counts": {
+        "UNCERTAIN": 7932,
+        "EXPLICIT_NAME_SUPPORT": 951,
+        "DIRECT_SUBJECT_SUPPORT": 611,
+        "INDIRECT_GRAPH_NEIGHBOR": 5079,
+        "COMPARISON_BASELINE": 49,
+        "MENTION_ONLY": 390,
+        "COMPARISON_WINNER": 28
+      },
+      "co_membership_only": 3032,
+      "path_only": 3069
+    },
+    {
+      "cutoff": 2026,
+      "k": 100,
+      "gold": true,
+      "candidate_pairs": 32,
+      "counts": {
+        "DIRECT_SUBJECT_SUPPORT": 40,
+        "EXPLICIT_NAME_SUPPORT": 32,
+        "COMPARISON_WINNER": 4,
+        "COMPARISON_BASELINE": 4,
+        "MENTION_ONLY": 23,
+        "UNCERTAIN": 97,
+        "INDIRECT_GRAPH_NEIGHBOR": 63
+      },
+      "co_membership_only": 43,
+      "path_only": 22
+    },
+    {
+      "cutoff": 2026,
+      "k": 100,
+      "gold": false,
+      "candidate_pairs": 1368,
+      "counts": {
+        "UNCERTAIN": 5584,
+        "EXPLICIT_NAME_SUPPORT": 529,
+        "DIRECT_SUBJECT_SUPPORT": 450,
+        "INDIRECT_GRAPH_NEIGHBOR": 2136,
+        "COMPARISON_BASELINE": 31,
+        "MENTION_ONLY": 280,
+        "COMPARISON_WINNER": 37
+      },
+      "co_membership_only": 1959,
+      "path_only": 1498
+    },
+    {
+      "cutoff": 2026,
+      "k": 200,
+      "gold": true,
+      "candidate_pairs": 45,
+      "counts": {
+        "DIRECT_SUBJECT_SUPPORT": 48,
+        "EXPLICIT_NAME_SUPPORT": 41,
+        "COMPARISON_WINNER": 5,
+        "COMPARISON_BASELINE": 4,
+        "MENTION_ONLY": 30,
+        "UNCERTAIN": 110,
+        "INDIRECT_GRAPH_NEIGHBOR": 96
+      },
+      "co_membership_only": 44,
+      "path_only": 30
+    },
+    {
+      "cutoff": 2026,
+      "k": 200,
+      "gold": false,
+      "candidate_pairs": 2755,
+      "counts": {
+        "UNCERTAIN": 8487,
+        "EXPLICIT_NAME_SUPPORT": 974,
+        "DIRECT_SUBJECT_SUPPORT": 568,
+        "INDIRECT_GRAPH_NEIGHBOR": 4884,
+        "COMPARISON_BASELINE": 52,
+        "MENTION_ONLY": 424,
+        "COMPARISON_WINNER": 56
+      },
+      "co_membership_only": 3045,
+      "path_only": 2977
+    }
+  ],
+  "rank_movement": [
+    {
+      "cutoff": 2025,
+      "stage": "CR1-100",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-100",
+      "bin": "H2 11-50",
+      "count": 16,
+      "improved": 13,
+      "same": 0,
+      "worsened": 3,
+      "entered10": 5,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-100",
+      "bin": "H2 51-100",
+      "count": 12,
+      "improved": 8,
+      "same": 0,
+      "worsened": 4,
+      "entered10": 4,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-100",
+      "bin": "H2 >100",
+      "count": 16,
+      "improved": 0,
+      "same": 16,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-100",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-100",
+      "bin": "CR0 prior top10",
+      "count": 6,
+      "improved": 1,
+      "same": 1,
+      "worsened": 4,
+      "entered10": 0,
+      "left10": 3
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-100",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 0,
+      "same": 1,
+      "worsened": 2,
+      "entered10": 0,
+      "left10": 2
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-100",
+      "bin": "H2 11-50",
+      "count": 16,
+      "improved": 5,
+      "same": 0,
+      "worsened": 11,
+      "entered10": 3,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-100",
+      "bin": "H2 51-100",
+      "count": 12,
+      "improved": 9,
+      "same": 0,
+      "worsened": 3,
+      "entered10": 2,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-100",
+      "bin": "H2 >100",
+      "count": 16,
+      "improved": 0,
+      "same": 16,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-100",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 0,
+      "same": 1,
+      "worsened": 2,
+      "entered10": 0,
+      "left10": 2
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-100",
+      "bin": "CR0 prior top10",
+      "count": 6,
+      "improved": 0,
+      "same": 1,
+      "worsened": 5,
+      "entered10": 0,
+      "left10": 5
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR3-100",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 1,
+      "same": 2,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR3-100",
+      "bin": "H2 11-50",
+      "count": 16,
+      "improved": 14,
+      "same": 0,
+      "worsened": 2,
+      "entered10": 6,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR3-100",
+      "bin": "H2 51-100",
+      "count": 12,
+      "improved": 7,
+      "same": 1,
+      "worsened": 4,
+      "entered10": 1,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR3-100",
+      "bin": "H2 >100",
+      "count": 16,
+      "improved": 0,
+      "same": 16,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR3-100",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 1,
+      "same": 2,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR3-100",
+      "bin": "CR0 prior top10",
+      "count": 6,
+      "improved": 1,
+      "same": 2,
+      "worsened": 3,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR4-100",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR4-100",
+      "bin": "H2 11-50",
+      "count": 16,
+      "improved": 5,
+      "same": 3,
+      "worsened": 8,
+      "entered10": 3,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR4-100",
+      "bin": "H2 51-100",
+      "count": 12,
+      "improved": 3,
+      "same": 4,
+      "worsened": 5,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR4-100",
+      "bin": "H2 >100",
+      "count": 16,
+      "improved": 0,
+      "same": 16,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR4-100",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR4-100",
+      "bin": "CR0 prior top10",
+      "count": 6,
+      "improved": 0,
+      "same": 1,
+      "worsened": 5,
+      "entered10": 0,
+      "left10": 4
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-200",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-200",
+      "bin": "H2 11-50",
+      "count": 16,
+      "improved": 10,
+      "same": 0,
+      "worsened": 6,
+      "entered10": 5,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-200",
+      "bin": "H2 51-100",
+      "count": 12,
+      "improved": 7,
+      "same": 0,
+      "worsened": 5,
+      "entered10": 4,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-200",
+      "bin": "H2 >100",
+      "count": 16,
+      "improved": 10,
+      "same": 4,
+      "worsened": 2,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-200",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-200",
+      "bin": "CR0 prior top10",
+      "count": 6,
+      "improved": 0,
+      "same": 1,
+      "worsened": 5,
+      "entered10": 0,
+      "left10": 3
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-200",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 0,
+      "same": 1,
+      "worsened": 2,
+      "entered10": 0,
+      "left10": 2
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-200",
+      "bin": "H2 11-50",
+      "count": 16,
+      "improved": 5,
+      "same": 0,
+      "worsened": 11,
+      "entered10": 3,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-200",
+      "bin": "H2 51-100",
+      "count": 12,
+      "improved": 6,
+      "same": 0,
+      "worsened": 6,
+      "entered10": 2,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-200",
+      "bin": "H2 >100",
+      "count": 16,
+      "improved": 6,
+      "same": 4,
+      "worsened": 6,
+      "entered10": 1,
+      "left10": 0
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-200",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 0,
+      "same": 1,
+      "worsened": 2,
+      "entered10": 0,
+      "left10": 2
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-200",
+      "bin": "CR0 prior top10",
+      "count": 6,
+      "improved": 0,
+      "same": 1,
+      "worsened": 5,
+      "entered10": 0,
+      "left10": 5
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-100",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-100",
+      "bin": "H2 11-50",
+      "count": 15,
+      "improved": 13,
+      "same": 0,
+      "worsened": 2,
+      "entered10": 4,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-100",
+      "bin": "H2 51-100",
+      "count": 14,
+      "improved": 10,
+      "same": 0,
+      "worsened": 4,
+      "entered10": 5,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-100",
+      "bin": "H2 >100",
+      "count": 18,
+      "improved": 0,
+      "same": 18,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-100",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-100",
+      "bin": "CR0 prior top10",
+      "count": 5,
+      "improved": 0,
+      "same": 1,
+      "worsened": 4,
+      "entered10": 0,
+      "left10": 3
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-100",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 0,
+      "same": 1,
+      "worsened": 2,
+      "entered10": 0,
+      "left10": 2
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-100",
+      "bin": "H2 11-50",
+      "count": 15,
+      "improved": 6,
+      "same": 0,
+      "worsened": 9,
+      "entered10": 4,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-100",
+      "bin": "H2 51-100",
+      "count": 14,
+      "improved": 10,
+      "same": 0,
+      "worsened": 4,
+      "entered10": 2,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-100",
+      "bin": "H2 >100",
+      "count": 18,
+      "improved": 0,
+      "same": 18,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-100",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 0,
+      "same": 1,
+      "worsened": 2,
+      "entered10": 0,
+      "left10": 2
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-100",
+      "bin": "CR0 prior top10",
+      "count": 5,
+      "improved": 0,
+      "same": 1,
+      "worsened": 4,
+      "entered10": 0,
+      "left10": 4
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR3-100",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 2,
+      "same": 1,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR3-100",
+      "bin": "H2 11-50",
+      "count": 15,
+      "improved": 14,
+      "same": 0,
+      "worsened": 1,
+      "entered10": 4,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR3-100",
+      "bin": "H2 51-100",
+      "count": 14,
+      "improved": 9,
+      "same": 0,
+      "worsened": 5,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR3-100",
+      "bin": "H2 >100",
+      "count": 18,
+      "improved": 0,
+      "same": 18,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR3-100",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 2,
+      "same": 1,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR3-100",
+      "bin": "CR0 prior top10",
+      "count": 5,
+      "improved": 1,
+      "same": 2,
+      "worsened": 2,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR4-100",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR4-100",
+      "bin": "H2 11-50",
+      "count": 15,
+      "improved": 5,
+      "same": 1,
+      "worsened": 9,
+      "entered10": 3,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR4-100",
+      "bin": "H2 51-100",
+      "count": 14,
+      "improved": 4,
+      "same": 4,
+      "worsened": 6,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR4-100",
+      "bin": "H2 >100",
+      "count": 18,
+      "improved": 0,
+      "same": 18,
+      "worsened": 0,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR4-100",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR4-100",
+      "bin": "CR0 prior top10",
+      "count": 5,
+      "improved": 0,
+      "same": 1,
+      "worsened": 4,
+      "entered10": 0,
+      "left10": 3
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-200",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-200",
+      "bin": "H2 11-50",
+      "count": 15,
+      "improved": 10,
+      "same": 1,
+      "worsened": 4,
+      "entered10": 3,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-200",
+      "bin": "H2 51-100",
+      "count": 14,
+      "improved": 9,
+      "same": 0,
+      "worsened": 5,
+      "entered10": 5,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-200",
+      "bin": "H2 >100",
+      "count": 18,
+      "improved": 10,
+      "same": 5,
+      "worsened": 3,
+      "entered10": 0,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-200",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 0,
+      "same": 2,
+      "worsened": 1,
+      "entered10": 0,
+      "left10": 1
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-200",
+      "bin": "CR0 prior top10",
+      "count": 5,
+      "improved": 0,
+      "same": 1,
+      "worsened": 4,
+      "entered10": 0,
+      "left10": 3
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-200",
+      "bin": "H2 1-10",
+      "count": 3,
+      "improved": 0,
+      "same": 1,
+      "worsened": 2,
+      "entered10": 0,
+      "left10": 2
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-200",
+      "bin": "H2 11-50",
+      "count": 15,
+      "improved": 5,
+      "same": 0,
+      "worsened": 10,
+      "entered10": 4,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-200",
+      "bin": "H2 51-100",
+      "count": 14,
+      "improved": 6,
+      "same": 0,
+      "worsened": 8,
+      "entered10": 2,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-200",
+      "bin": "H2 >100",
+      "count": 18,
+      "improved": 7,
+      "same": 5,
+      "worsened": 6,
+      "entered10": 1,
+      "left10": 0
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-200",
+      "bin": "H2 prior top10",
+      "count": 3,
+      "improved": 0,
+      "same": 1,
+      "worsened": 2,
+      "entered10": 0,
+      "left10": 2
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-200",
+      "bin": "CR0 prior top10",
+      "count": 5,
+      "improved": 0,
+      "same": 1,
+      "worsened": 4,
+      "entered10": 0,
+      "left10": 4
+    }
+  ],
+  "category_counts": [
+    {
+      "cutoff": 2025,
+      "stage": "CR1-100",
+      "counts": {
+        "NOT_IN_H2_100": 16,
+        "NO_ATTRIBUTABLE_EVIDENCE": 7,
+        "SUPPORTED_BUT_RANKED_BELOW_10": 11,
+        "RETRIEVED_TOP10": 11,
+        "PARTIAL_REQUIREMENT_SUPPORT": 1,
+        "SEMANTIC_SCORER_FAILURE": 1
+      }
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-100",
+      "counts": {
+        "NOT_IN_H2_100": 16,
+        "NO_ATTRIBUTABLE_EVIDENCE": 7,
+        "CONTRADICTORY_EVIDENCE": 7,
+        "PARTIAL_REQUIREMENT_SUPPORT": 3,
+        "NLI_FAILURE": 8,
+        "RETRIEVED_TOP10": 6
+      }
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR3-100",
+      "counts": {
+        "NOT_IN_H2_100": 16,
+        "NO_ATTRIBUTABLE_EVIDENCE": 7,
+        "SUPPORTED_BUT_RANKED_BELOW_10": 13,
+        "RETRIEVED_TOP10": 10,
+        "PARTIAL_REQUIREMENT_SUPPORT": 1
+      }
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR4-100",
+      "counts": {
+        "NOT_IN_H2_100": 16,
+        "NO_ATTRIBUTABLE_EVIDENCE": 7,
+        "CONTRADICTORY_EVIDENCE": 6,
+        "PARTIAL_REQUIREMENT_SUPPORT": 3,
+        "NLI_FAILURE": 10,
+        "RETRIEVED_TOP10": 5
+      }
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR1-200",
+      "counts": {
+        "PARTIAL_REQUIREMENT_SUPPORT": 3,
+        "NO_ATTRIBUTABLE_EVIDENCE": 10,
+        "SUPPORTED_BUT_RANKED_BELOW_10": 18,
+        "RETRIEVED_TOP10": 11,
+        "NOT_IN_H2_200": 4,
+        "SEMANTIC_SCORER_FAILURE": 1
+      }
+    },
+    {
+      "cutoff": 2025,
+      "stage": "CR2-200",
+      "counts": {
+        "CONTRADICTORY_EVIDENCE": 9,
+        "NO_ATTRIBUTABLE_EVIDENCE": 10,
+        "PARTIAL_REQUIREMENT_SUPPORT": 5,
+        "NLI_FAILURE": 12,
+        "RETRIEVED_TOP10": 7,
+        "NOT_IN_H2_200": 4
+      }
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-100",
+      "counts": {
+        "NOT_IN_H2_100": 18,
+        "NO_ATTRIBUTABLE_EVIDENCE": 6,
+        "SUPPORTED_BUT_RANKED_BELOW_10": 14,
+        "RETRIEVED_TOP10": 11,
+        "PARTIAL_REQUIREMENT_SUPPORT": 1
+      }
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-100",
+      "counts": {
+        "NOT_IN_H2_100": 18,
+        "NO_ATTRIBUTABLE_EVIDENCE": 6,
+        "NLI_FAILURE": 10,
+        "PARTIAL_REQUIREMENT_SUPPORT": 3,
+        "CONTRADICTORY_EVIDENCE": 6,
+        "RETRIEVED_TOP10": 7
+      }
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR3-100",
+      "counts": {
+        "NOT_IN_H2_100": 18,
+        "NO_ATTRIBUTABLE_EVIDENCE": 6,
+        "SUPPORTED_BUT_RANKED_BELOW_10": 18,
+        "RETRIEVED_TOP10": 7,
+        "PARTIAL_REQUIREMENT_SUPPORT": 1
+      }
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR4-100",
+      "counts": {
+        "NOT_IN_H2_100": 18,
+        "NO_ATTRIBUTABLE_EVIDENCE": 6,
+        "NLI_FAILURE": 13,
+        "PARTIAL_REQUIREMENT_SUPPORT": 3,
+        "CONTRADICTORY_EVIDENCE": 5,
+        "RETRIEVED_TOP10": 5
+      }
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR1-200",
+      "counts": {
+        "PARTIAL_REQUIREMENT_SUPPORT": 3,
+        "NO_ATTRIBUTABLE_EVIDENCE": 10,
+        "SUPPORTED_BUT_RANKED_BELOW_10": 22,
+        "RETRIEVED_TOP10": 10,
+        "NOT_IN_H2_200": 5
+      }
+    },
+    {
+      "cutoff": 2026,
+      "stage": "CR2-200",
+      "counts": {
+        "CONTRADICTORY_EVIDENCE": 8,
+        "NO_ATTRIBUTABLE_EVIDENCE": 10,
+        "NLI_FAILURE": 14,
+        "PARTIAL_REQUIREMENT_SUPPORT": 5,
+        "RETRIEVED_TOP10": 8,
+        "NOT_IN_H2_200": 5
+      }
+    }
+  ],
+  "decomposition": {
+    "mean_explicit_requirements": 1.1428571428571428,
+    "mean_positive_components": 2.142857142857143,
+    "fallback_questions": []
+  },
+  "nli": {
+    "pairs": 10716,
+    "label_counts": {
+      "neutral": 8247,
+      "contradiction": 2035,
+      "entailment": 434
+    },
+    "truncated": 0,
+    "mean_entailment": 0.04704124217924301,
+    "mean_neutral": 0.7500643796509797,
+    "interpretation": "Selected-pair scientific NLI behavior, not human scientific entailment labels"
+  },
+  "unassigned_categories": {
+    "DECOMPOSITION_INCORRECT": "Requires manual adjudication; no false claim of exhaustive ground truth",
+    "DECOMPOSITION_MISSING_REQUIREMENT": "No independently annotated decomposition target; zero explicit requirements is not automatically a failure",
+    "COMPARISON_ATTRIBUTION_FAILURE": "Requires trace adjudication; rule-role distributions and controlled probes reported separately"
+  },
+  "score_ties": [
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 3,
+      "distinct_scores": 96,
+      "largest_tie": 3,
+      "score_std": 0.19807125246584395,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 97,
+      "distinct_scores": 4,
+      "largest_tie": 97,
+      "score_std": 0.021364521710242224,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 21,
+      "distinct_scores": 168,
+      "largest_tie": 21,
+      "score_std": 0.1821464454538165,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q1",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 196,
+      "distinct_scores": 5,
+      "largest_tie": 196,
+      "score_std": 0.015149109193544681,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 5,
+      "distinct_scores": 93,
+      "largest_tie": 5,
+      "score_std": 0.19263260643024938,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 100,
+      "distinct_scores": 1,
+      "largest_tie": 100,
+      "score_std": 0.0,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 19,
+      "distinct_scores": 171,
+      "largest_tie": 19,
+      "score_std": 0.17645043210651437,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q2",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 200,
+      "distinct_scores": 1,
+      "largest_tie": 200,
+      "score_std": 0.0,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 8,
+      "distinct_scores": 88,
+      "largest_tie": 8,
+      "score_std": 0.17922064643048524,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 98,
+      "distinct_scores": 3,
+      "largest_tie": 98,
+      "score_std": 0.018554352983970675,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 28,
+      "distinct_scores": 163,
+      "largest_tie": 28,
+      "score_std": 0.16152296478171096,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q3",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 198,
+      "distinct_scores": 3,
+      "largest_tie": 198,
+      "score_std": 0.013153196672134578,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 8,
+      "distinct_scores": 87,
+      "largest_tie": 8,
+      "score_std": 0.16489321426605905,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 99,
+      "distinct_scores": 2,
+      "largest_tie": 99,
+      "score_std": 0.002849636445358597,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 25,
+      "distinct_scores": 151,
+      "largest_tie": 25,
+      "score_std": 0.14441578254912524,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q4",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 197,
+      "distinct_scores": 4,
+      "largest_tie": 197,
+      "score_std": 0.002020078591629519,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q5",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 10,
+      "distinct_scores": 91,
+      "largest_tie": 10,
+      "score_std": 0.18411175485351192,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q5",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 99,
+      "distinct_scores": 2,
+      "largest_tie": 99,
+      "score_std": 0.04237768076381744,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q5",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 39,
+      "distinct_scores": 154,
+      "largest_tie": 39,
+      "score_std": 0.164101038875365,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q5",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 199,
+      "distinct_scores": 2,
+      "largest_tie": 199,
+      "score_std": 0.03004112070520941,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 2,
+      "distinct_scores": 97,
+      "largest_tie": 2,
+      "score_std": 0.1583792131300098,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 100,
+      "distinct_scores": 1,
+      "largest_tie": 100,
+      "score_std": 0.0,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 26,
+      "distinct_scores": 172,
+      "largest_tie": 26,
+      "score_std": 0.1427702107403744,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q6",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 199,
+      "distinct_scores": 2,
+      "largest_tie": 199,
+      "score_std": 0.0001841440810208163,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 1,
+      "distinct_scores": 97,
+      "largest_tie": 3,
+      "score_std": 0.18771566357900232,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 98,
+      "distinct_scores": 3,
+      "largest_tie": 98,
+      "score_std": 5.9197548916998606e-06,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 22,
+      "distinct_scores": 170,
+      "largest_tie": 22,
+      "score_std": 0.17293970732872915,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q7",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 198,
+      "distinct_scores": 3,
+      "largest_tie": 198,
+      "score_std": 4.198287493920877e-06,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 4,
+      "distinct_scores": 96,
+      "largest_tie": 4,
+      "score_std": 0.1686894414293243,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 97,
+      "distinct_scores": 4,
+      "largest_tie": 97,
+      "score_std": 0.0031053619472875445,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 24,
+      "distinct_scores": 157,
+      "largest_tie": 24,
+      "score_std": 0.15302253040935856,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q8",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 191,
+      "distinct_scores": 10,
+      "largest_tie": 191,
+      "score_std": 0.002203879299408402,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 4,
+      "distinct_scores": 97,
+      "largest_tie": 4,
+      "score_std": 0.047475911227434685,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 61,
+      "distinct_scores": 40,
+      "largest_tie": 61,
+      "score_std": 0.10847146952977214,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 25,
+      "distinct_scores": 161,
+      "largest_tie": 25,
+      "score_std": 0.04634561539665232,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q9",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 134,
+      "distinct_scores": 67,
+      "largest_tie": 134,
+      "score_std": 0.08069879700287214,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 10,
+      "distinct_scores": 90,
+      "largest_tie": 10,
+      "score_std": 0.15642370736571937,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 90,
+      "distinct_scores": 11,
+      "largest_tie": 90,
+      "score_std": 0.06662302986860602,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 49,
+      "distinct_scores": 149,
+      "largest_tie": 49,
+      "score_std": 0.14105704510798522,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q10",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 187,
+      "distinct_scores": 14,
+      "largest_tie": 187,
+      "score_std": 0.049040737519898486,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q11",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 17,
+      "distinct_scores": 80,
+      "largest_tie": 17,
+      "score_std": 0.17470956492458253,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q11",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 37,
+      "distinct_scores": 64,
+      "largest_tie": 37,
+      "score_std": 0.10088945650354249,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q11",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 44,
+      "distinct_scores": 150,
+      "largest_tie": 44,
+      "score_std": 0.1504592945484453,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q11",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 89,
+      "distinct_scores": 112,
+      "largest_tie": 89,
+      "score_std": 0.10933432006022689,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 8,
+      "distinct_scores": 92,
+      "largest_tie": 8,
+      "score_std": 0.21482211087307154,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 73,
+      "distinct_scores": 28,
+      "largest_tie": 73,
+      "score_std": 0.10575056599825561,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 27,
+      "distinct_scores": 165,
+      "largest_tie": 27,
+      "score_std": 0.19837290450618078,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q12",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 155,
+      "distinct_scores": 46,
+      "largest_tie": 155,
+      "score_std": 0.10134910940162774,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 5,
+      "distinct_scores": 95,
+      "largest_tie": 5,
+      "score_std": 0.1951357264880414,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 74,
+      "distinct_scores": 27,
+      "largest_tie": 74,
+      "score_std": 0.029639080727624074,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 36,
+      "distinct_scores": 154,
+      "largest_tie": 36,
+      "score_std": 0.18315573986079617,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q13",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 169,
+      "distinct_scores": 32,
+      "largest_tie": 169,
+      "score_std": 0.02103549048518263,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 2,
+      "distinct_scores": 95,
+      "largest_tie": 2,
+      "score_std": 0.16991439121413707,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 64,
+      "distinct_scores": 37,
+      "largest_tie": 64,
+      "score_std": 0.03194467806352795,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 24,
+      "distinct_scores": 155,
+      "largest_tie": 24,
+      "score_std": 0.1641675551385978,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2025,
+      "question_id": "Q14",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 141,
+      "distinct_scores": 60,
+      "largest_tie": 141,
+      "score_std": 0.022739631506378498,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 1,
+      "distinct_scores": 98,
+      "largest_tie": 2,
+      "score_std": 0.20722322175072694,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 96,
+      "distinct_scores": 5,
+      "largest_tie": 96,
+      "score_std": 0.021364503471227828,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 21,
+      "distinct_scores": 170,
+      "largest_tie": 21,
+      "score_std": 0.189226907857899,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q1",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 195,
+      "distinct_scores": 6,
+      "largest_tie": 195,
+      "score_std": 0.015149102784068284,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 4,
+      "distinct_scores": 94,
+      "largest_tie": 4,
+      "score_std": 0.1970667813588974,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 100,
+      "distinct_scores": 1,
+      "largest_tie": 100,
+      "score_std": 0.0,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 18,
+      "distinct_scores": 171,
+      "largest_tie": 18,
+      "score_std": 0.17693375497887134,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q2",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 200,
+      "distinct_scores": 1,
+      "largest_tie": 200,
+      "score_std": 0.0,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 6,
+      "distinct_scores": 90,
+      "largest_tie": 6,
+      "score_std": 0.185052040948898,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 98,
+      "distinct_scores": 3,
+      "largest_tie": 98,
+      "score_std": 0.018554352983970675,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 23,
+      "distinct_scores": 164,
+      "largest_tie": 23,
+      "score_std": 0.16641751113988257,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q3",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 198,
+      "distinct_scores": 3,
+      "largest_tie": 198,
+      "score_std": 0.013153196672134576,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 9,
+      "distinct_scores": 87,
+      "largest_tie": 9,
+      "score_std": 0.18085353080521854,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 100,
+      "distinct_scores": 1,
+      "largest_tie": 100,
+      "score_std": 0.0,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 21,
+      "distinct_scores": 168,
+      "largest_tie": 21,
+      "score_std": 0.15360365837712717,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q4",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 197,
+      "distinct_scores": 4,
+      "largest_tie": 197,
+      "score_std": 4.7280176933100963e-07,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q5",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 10,
+      "distinct_scores": 91,
+      "largest_tie": 10,
+      "score_std": 0.17000377900204694,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q5",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 99,
+      "distinct_scores": 2,
+      "largest_tie": 99,
+      "score_std": 0.04237768076381745,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q5",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 36,
+      "distinct_scores": 153,
+      "largest_tie": 36,
+      "score_std": 0.15688402003120713,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q5",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 199,
+      "distinct_scores": 2,
+      "largest_tie": 199,
+      "score_std": 0.03004112070520941,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 1,
+      "distinct_scores": 98,
+      "largest_tie": 2,
+      "score_std": 0.1633463135707427,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 100,
+      "distinct_scores": 1,
+      "largest_tie": 100,
+      "score_std": 0.0,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 25,
+      "distinct_scores": 173,
+      "largest_tie": 25,
+      "score_std": 0.1452814654398485,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q6",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 199,
+      "distinct_scores": 2,
+      "largest_tie": 199,
+      "score_std": 0.0001841440810208163,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 0,
+      "distinct_scores": 98,
+      "largest_tie": 3,
+      "score_std": 0.1918545459302837,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 98,
+      "distinct_scores": 3,
+      "largest_tie": 98,
+      "score_std": 5.9197548916998606e-06,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 13,
+      "distinct_scores": 181,
+      "largest_tie": 13,
+      "score_std": 0.17000352995801246,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q7",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 198,
+      "distinct_scores": 3,
+      "largest_tie": 198,
+      "score_std": 4.198287493920877e-06,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 5,
+      "distinct_scores": 95,
+      "largest_tie": 5,
+      "score_std": 0.17124156027298298,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 98,
+      "distinct_scores": 3,
+      "largest_tie": 98,
+      "score_std": 0.0031053250904751763,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 15,
+      "distinct_scores": 169,
+      "largest_tie": 15,
+      "score_std": 0.14959278667535766,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q8",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 193,
+      "distinct_scores": 8,
+      "largest_tie": 193,
+      "score_std": 0.002203896574322301,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 4,
+      "distinct_scores": 96,
+      "largest_tie": 4,
+      "score_std": 0.04903170655971494,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 62,
+      "distinct_scores": 39,
+      "largest_tie": 62,
+      "score_std": 0.1057311489651763,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 24,
+      "distinct_scores": 171,
+      "largest_tie": 24,
+      "score_std": 0.047512739915148205,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q9",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 131,
+      "distinct_scores": 70,
+      "largest_tie": 131,
+      "score_std": 0.08167643161885173,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 12,
+      "distinct_scores": 89,
+      "largest_tie": 12,
+      "score_std": 0.15555966362605034,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 91,
+      "distinct_scores": 10,
+      "largest_tie": 91,
+      "score_std": 0.06657775325353571,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 50,
+      "distinct_scores": 151,
+      "largest_tie": 50,
+      "score_std": 0.13768169904642974,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q10",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 188,
+      "distinct_scores": 13,
+      "largest_tie": 188,
+      "score_std": 0.04899963037878904,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q11",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 13,
+      "distinct_scores": 83,
+      "largest_tie": 13,
+      "score_std": 0.16012582439444795,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q11",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 31,
+      "distinct_scores": 70,
+      "largest_tie": 31,
+      "score_std": 0.12403799019509788,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q11",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 42,
+      "distinct_scores": 152,
+      "largest_tie": 42,
+      "score_std": 0.14236887217476787,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q11",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 77,
+      "distinct_scores": 124,
+      "largest_tie": 77,
+      "score_std": 0.13173172586699433,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 4,
+      "distinct_scores": 95,
+      "largest_tie": 4,
+      "score_std": 0.22767701288169107,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 65,
+      "distinct_scores": 36,
+      "largest_tie": 65,
+      "score_std": 0.08980436182642565,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 21,
+      "distinct_scores": 171,
+      "largest_tie": 21,
+      "score_std": 0.19911743174698876,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q12",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 148,
+      "distinct_scores": 53,
+      "largest_tie": 148,
+      "score_std": 0.07038276708618388,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 3,
+      "distinct_scores": 97,
+      "largest_tie": 3,
+      "score_std": 0.19690838587477727,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 74,
+      "distinct_scores": 27,
+      "largest_tie": 74,
+      "score_std": 0.02963916902298089,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 27,
+      "distinct_scores": 163,
+      "largest_tie": 27,
+      "score_std": 0.17968330671912325,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q13",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 170,
+      "distinct_scores": 31,
+      "largest_tie": 170,
+      "score_std": 0.021035795523665034,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "k": 100,
+      "scorer": "CR1",
+      "exact_zeros": 3,
+      "distinct_scores": 93,
+      "largest_tie": 3,
+      "score_std": 0.18070147545264298,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "k": 100,
+      "scorer": "CR2",
+      "exact_zeros": 66,
+      "distinct_scores": 35,
+      "largest_tie": 66,
+      "score_std": 0.03194746135738715,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "k": 200,
+      "scorer": "CR1",
+      "exact_zeros": 20,
+      "distinct_scores": 163,
+      "largest_tie": 20,
+      "score_std": 0.16725842337685284,
+      "fallback_candidates": 0
+    },
+    {
+      "cutoff": 2026,
+      "question_id": "Q14",
+      "k": 200,
+      "scorer": "CR2",
+      "exact_zeros": 143,
+      "distinct_scores": 58,
+      "largest_tie": 143,
+      "score_std": 0.022740342977062625,
+      "fallback_candidates": 0
+    }
+  ]
+}

@@ -1,0 +1,1855 @@
+Update the existing TKH retrieval/evaluation implementation. Inspect the current repository first and modify the existing code rather than creating a disconnected parallel implementation.
+
+The goal is not simply to add a more complicated retriever. The goal is to determine why the current system has effectively zero Type-A retrieval recall, fix the actual bottleneck in a benchmark-independent way, and only then determine whether the existing hierarchy is useful as an acceleration mechanism.
+
+Do not optimize specifically for the current benchmark. Do not hard-code aliases, question IDs, expected answers, or mappings from the current `ground_truth.json`.
+
+The implementation must generalize to a new `questions.csv`, `ground_truth.json`, and graph export.
+
+---
+
+# 0. CURRENT SITUATION AND IMPORTANT CONSTRAINT
+
+The existing results indicate that hierarchy search itself is probably not the main problem.
+
+The current report contains approximately the following results:
+
+```text
+legacy_typed_fixed_beam:
+Type-A recall = 0.000
+entity comparisons ≈ 84
+
+prototype_best_first:
+Type-A recall = 0.000
+entity comparisons = 500
+
+flat_exhaustive:
+Type-A recall = 0.000
+entity comparisons ≈ 2394
+```
+
+Therefore:
+
+```text
+better hierarchy traversal alone cannot explain/fix the failure,
+because exhaustive flat retrieval also fails.
+```
+
+The first priority is to determine whether the failure comes from:
+
+```text
+A. target-resolution/evaluation bugs
+B. candidate filtering/routing bugs
+C. temporal filtering bugs
+D. poor node representations
+E. poor query representations
+F. duplicate heterogeneous graph entities consuming top-k slots
+G. ranking/reranking
+```
+
+Do not start by modifying hierarchy construction.
+
+---
+
+# 1. DO NOT TRUST THE EXISTING BASELINE NUMBERS — RECOMPUTE THEM
+
+There are inconsistent mapping/evaluation numbers in the existing artifacts.
+
+The historical evaluator reported approximately:
+
+```text
+21/50 unique targets
+```
+
+The current report says:
+
+```text
+33/50 unique targets
+46/63 target instances
+```
+
+A newer description refers to roughly:
+
+```text
+37/50
+```
+
+A direct basic normalized-surface check of the current exported graph gives another useful audit number:
+
+```text
+34/50 unique expected labels have literal normalized surface-form matches
+```
+
+Treat these numbers as evidence of an evaluator/version mismatch that must be explained, not as competing target values to optimize toward.
+
+Also inspect the benchmark denominator itself.
+
+The supplied `ground_truth.json` contains:
+
+```text
+14 Type-A questions: Q1 through Q14
+63 Type-A target instances
+50 unique Type-A target labels
+```
+
+while the existing report refers to:
+
+```text
+46/63 across 12 Type-A questions
+```
+
+Reconcile this discrepancy.
+
+Before changing retrieval, report exactly:
+
+```text
+number of Type-A questions
+number of Type-B questions
+number of unique Type-A targets
+number of Type-A target instances
+
+mapping coverage under each existing resolver/evaluator
+eligible node types
+temporal snapshot used
+normalization rules used
+duplicate handling
+```
+
+Do not silently carry forward stale denominators.
+
+---
+
+# PHASE 0 — REQUIRED RETRIEVAL SANITY AUDIT
+
+Do this before implementing the new retrieval architecture.
+
+For every Type-A expected target that can currently be resolved to one or more graph nodes, inspect the current flat retriever.
+
+For each resolved gold node answer:
+
+```text
+1. Does the node exist in the temporal snapshot?
+2. Does it survive current node-type routing?
+3. Does it enter the exhaustive-flat candidate set?
+4. What is its surface-form similarity score?
+5. What is its rank?
+6. If excluded, exactly why was it excluded?
+```
+
+Produce an artifact such as:
+
+```text
+artifacts/evaluation/gold_candidate_audit.json
+```
+
+with records like:
+
+```json
+{
+  "question_id": "Q...",
+  "gold_label": "...",
+  "resolved_node_ids": ["..."],
+  "present_in_snapshot": true,
+  "eligible_after_type_routing": true,
+  "present_in_flat_candidates": true,
+  "best_surface_score": 0.0,
+  "best_surface_rank": 123,
+  "exclusion_reason": null
+}
+```
+
+This is a hard diagnostic requirement.
+
+In particular, inspect questions for which nearly/all expected labels literally exist in the graph.
+
+For the current graph, direct inspection suggests:
+
+```text
+Q12: 13/13 expected labels have normalized literal graph matches
+Q13: 8/8
+Q14: 10/11
+```
+
+Do not hard-code these facts into retrieval. Use them only as a sanity test.
+
+If exhaustive flat retrieval still gives zero recall on such questions, determine whether:
+
+```text
+the correct nodes are missing from candidates
+or
+the correct nodes are present but ranked very badly.
+```
+
+This distinction must be established before major retrieval changes.
+
+---
+
+# 2. KEEP THE EXISTING GRAPH AND HIERARCHY
+
+Do not rebuild or fundamentally change TKH construction unless an actual graph bug is demonstrated.
+
+The exported graph already contains heterogeneous node types such as:
+
+```text
+article
+author
+cited_work
+claim
+component
+dataset
+future_topic
+method
+metric
+problem
+task
+technique
+```
+
+and relations such as:
+
+```text
+addresses
+authored_by
+cites
+claims
+evaluated_on
+extends
+presents
+proposes_future_work
+solves
+uses_component
+uses_technique
+```
+
+Keep:
+
+```text
+existing hierarchy
+existing 12 / 40 / 120 hierarchy where applicable
+legacy fixed-beam retrieval
+prototype/best-first retrieval
+old flat exhaustive retrieval
+```
+
+as baselines/ablations.
+
+Do not make hierarchy changes until contextual flat retrieval has been evaluated.
+
+---
+
+# PART A — BENCHMARK-INDEPENDENT TARGET RESOLUTION
+
+Implement a generic resolver:
+
+```python
+resolve_target(label: str, graph) -> TargetResolution
+```
+
+Do not assume every benchmark label represents exactly one graph node.
+
+Use these resolution states:
+
+```text
+EXACT_NODE
+ALIAS_NODE
+COMPOSITE
+EVIDENCE_BACKED
+AMBIGUOUS
+UNRESOLVED
+```
+
+Return at least:
+
+```text
+original target string
+resolution type
+candidate/resolved node IDs
+node types
+component resolutions
+confidence
+matching signals
+reason/explanation
+```
+
+Example structure:
+
+```python
+TargetResolution(
+    label=...,
+    resolution_type=...,
+    resolved_node_ids=[...],
+    component_resolutions=[...],
+    confidence=...,
+    signals=[...],
+    reason=...
+)
+```
+
+---
+
+## A1. Normalized exact identity
+
+First perform conservative normalization.
+
+Possible generic normalization includes:
+
+```text
+Unicode normalization
+case folding
+whitespace normalization
+Unicode dash/hyphen normalization
+safe punctuation normalization
+safe parentheses normalization
+obvious singular/plural normalization
+safe version-format normalization
+E(3) typography normalization
+```
+
+Do not remove semantically meaningful tokens.
+
+Search across reasonable graph entity types, not only `method`.
+
+For example, a benchmark answer may correspond to:
+
+```text
+method
+technique
+dataset
+cited_work
+article
+component
+task
+metric
+```
+
+If multiple nodes have exactly the same normalized scientific name, preserve all matching node IDs at this stage.
+
+Do not arbitrarily choose the first one.
+
+---
+
+## A2. Generic lexical alias candidates
+
+If exact resolution fails, generate candidate aliases through generic rules such as:
+
+```text
+whole-token containment
+short-name inside canonical long name
+acronym compatibility
+version compatibility
+singular/plural variants
+safe edit similarity
+identifier-token overlap
+```
+
+Examples of the pattern the algorithm should support include:
+
+```text
+HamGNN
+vs
+Universal HamGNN Hamiltonian model
+```
+
+and:
+
+```text
+E(3)-equivariant GNNs
+vs
+E(3)-equivariant GNN
+```
+
+These examples are diagnostic examples only.
+
+DO NOT add:
+
+```python
+ALIASES = {
+    "HamGNN": "...",
+    ...
+}
+```
+
+or any equivalent benchmark-specific mapping.
+
+Require meaningful identifier/token evidence.
+
+Short generic strings must not be accepted using loose containment alone.
+
+---
+
+## A3. Semantic similarity is candidate generation, not proof of identity
+
+If lexical matching does not resolve the target, semantic similarity may generate candidate nodes using the contextual graph representations defined later.
+
+However:
+
+```text
+semantic similarity alone MUST NOT be sufficient
+to classify a candidate as ALIAS_NODE.
+```
+
+A high embedding similarity means:
+
+```text
+"possibly related"
+```
+
+not:
+
+```text
+"definitely the same scientific entity."
+```
+
+To accept `ALIAS_NODE`, require at least one independent identity/coreference signal such as:
+
+```text
+identifier/name overlap
+acronym expansion compatibility
+canonical-name containment
+repeated explicit use of the short name in adjacent claims
+article/title provenance linking the names
+version-family evidence
+another graph-derived coreference signal
+```
+
+If semantic evidence is strong but entity identity is not established, prefer:
+
+```text
+EVIDENCE_BACKED
+AMBIGUOUS
+UNRESOLVED
+```
+
+instead of forcing an alias.
+
+---
+
+## A4. Graph-context verification
+
+Verify alias candidates using graph evidence.
+
+Potential evidence includes:
+
+```text
+adjacent claims
+article titles
+cited-work titles
+provenance
+related tasks/problems
+techniques
+components
+datasets
+direct article-method relations
+explicit textual mentions
+```
+
+Build this generically from the graph.
+
+Do not use `ground_truth.json` method claims or expected evidence as resolver input.
+
+Only:
+
+```text
+target label
++
+graph
+```
+
+may be used.
+
+---
+
+## A5. Composite targets
+
+Some expected answers are not atomic entities.
+
+Support generic patterns such as:
+
+```text
+A + B
+A/B
+A → B → C
+A combined with B
+A with B
+```
+
+Attempt to resolve components independently.
+
+Return something like:
+
+```python
+TargetResolution(
+    resolution_type="COMPOSITE",
+    component_resolutions=[
+        ...,
+        ...
+    ]
+)
+```
+
+Do not create synthetic fake graph nodes purely so evaluation can produce one node ID.
+
+Examples in the current benchmark include patterns such as:
+
+```text
+DeePMD+AL
+GNN+GPP
+CE→MC→NN→PF
+```
+
+These examples must NOT become special cases in production code.
+
+Synthetic examples should be used in unit tests instead.
+
+---
+
+## A6. Evidence-backed targets
+
+A target may be clearly represented in graph evidence without having a canonical standalone node.
+
+For example, a phrase may repeatedly occur in:
+
+```text
+claims
+articles
+cited works
+related method descriptions
+```
+
+but not exist as its own entity node.
+
+Return:
+
+```text
+EVIDENCE_BACKED
+```
+
+with relevant graph evidence.
+
+Do not call it `ALIAS_NODE` unless actual entity equivalence is established.
+
+---
+
+## A7. Ambiguity
+
+Add explicit:
+
+```text
+AMBIGUOUS
+```
+
+resolution.
+
+Use it when multiple plausible candidates remain and available evidence cannot safely select one.
+
+Do not count ambiguity as successful canonical resolution.
+
+---
+
+## A8. Two different mapping coverage notions
+
+Do not report a single inflated "mapped" number.
+
+Report:
+
+```text
+canonical_resolution_coverage
+    EXACT_NODE + confident ALIAS_NODE
+
+representable_resolution_coverage
+    EXACT_NODE
+    + ALIAS_NODE
+    + COMPOSITE
+    + EVIDENCE_BACKED
+
+ambiguous_count
+
+unresolved_count
+```
+
+Also report each by:
+
+```text
+unique target
+question-target instance
+```
+
+and show per-resolution-type counts.
+
+Produce:
+
+```text
+artifacts/evaluation/target_resolution.json
+```
+
+with one record for every unique benchmark target.
+
+---
+
+# PART B — RETRIEVAL ENTITY GROUPING / SAFE DEDUPLICATION
+
+The graph intentionally contains heterogeneous representations of the same named scientific concept.
+
+A scientific name may appear as:
+
+```text
+method
+component
+dataset
+cited_work
+article
+```
+
+and therefore several nearly identical graph nodes may occupy several top-k positions.
+
+This can significantly damage multi-answer retrieval.
+
+Introduce a query-independent retrieval abstraction such as:
+
+```python
+EntityGroup(
+    canonical_display_name=...,
+    member_node_ids=[...],
+    member_types=[...],
+    provenance=[...]
+)
+```
+
+or equivalent.
+
+This is a retrieval/evaluation layer only.
+
+DO NOT modify or collapse the actual TKH graph.
+
+Group only safely equivalent entities using conservative identity rules such as:
+
+```text
+identical normalized names
+clearly established aliases
+```
+
+Do not fuzzy-merge semantically related but distinct methods.
+
+Ranking output should preferably contain one result per scientific entity group rather than multiple identical-name nodes occupying top-k.
+
+Preserve underlying node IDs so evidence traversal can still use the full graph.
+
+Add an ablation:
+
+```text
+context retrieval without grouping
+context retrieval with grouping
+```
+
+to measure whether duplicate heterogeneous nodes were consuming answer slots.
+
+---
+
+# PART C — CONTEXTUAL GRAPH REPRESENTATIONS
+
+The current retriever should no longer rely mainly on:
+
+```text
+"method: MACE"
+"dataset: Matbench"
+```
+
+or similar short surface forms.
+
+However, DO NOT simply concatenate an enormous neighborhood into one giant string and embed it once.
+
+The graph contains broad heterogeneous relations and some nodes have many neighbors. A giant context document risks semantic dilution and irrelevant co-member contamination.
+
+Use relation-aware, multi-field representations.
+
+For each searchable entity/node/group construct fields such as:
+
+```text
+name
+type
+article/title/provenance
+claims
+tasks
+problems
+techniques
+components
+datasets/evaluations
+cited works
+selected extension/base-method context
+```
+
+Conceptually:
+
+```python
+NodeRetrievalRepresentation(
+    name_text=...,
+    article_texts=[...],
+    claim_texts=[...],
+    task_texts=[...],
+    problem_texts=[...],
+    technique_texts=[...],
+    component_texts=[...],
+    dataset_texts=[...],
+)
+```
+
+Store vectors separately where practical:
+
+```text
+name_vector
+article vectors
+claim vectors
+task vectors
+problem vectors
+technique vectors
+component vectors
+dataset vectors
+```
+
+This allows the query to strongly match one useful claim/task without that evidence being diluted inside an enormous concatenated paragraph.
+
+---
+
+## C1. Relation-aware extraction
+
+Do not treat every 1-hop graph co-member as equally useful.
+
+For method-like entities, relations such as:
+
+```text
+presents
+claims
+addresses
+solves
+uses_technique
+uses_component
+evaluated_on
+```
+
+are generally strong contextual evidence.
+
+Relations such as broad:
+
+```text
+extends
+cites
+```
+
+may contain many co-members and should be treated more cautiously.
+
+Do not blindly add the names of every member of a large hyperedge to every other member's retrieval representation.
+
+Preserve direction/role information where available.
+
+---
+
+## C2. Context size
+
+Use deterministic, query-independent limits for stored context.
+
+For example:
+
+```text
+deduplicate identical text
+cap claims per entity
+cap neighbors per relation
+prefer direct evidence
+prefer evidence directly attached through the entity's article/provenance
+avoid indiscriminate 2-hop expansion
+```
+
+If 2-hop context is used, expose it as an ablation.
+
+---
+
+## C3. Embedding normalization
+
+Normalize all vectors explicitly whenever cosine similarity is implemented as a dot product.
+
+This includes:
+
+```text
+query embeddings
+node/name embeddings
+field embeddings
+cluster centroids
+prototype vectors
+```
+
+Add tests verifying normalization.
+
+Cache graph-derived representations and embeddings.
+
+They must not be rebuilt for every query.
+
+---
+
+# PART D — QUESTION ANALYSIS
+
+Implement:
+
+```python
+analyze_question(question: str) -> QueryIntent
+```
+
+Useful fields:
+
+```text
+original_question
+provided benchmark type, if available
+desired answer/entity types
+task
+problem
+constraints
+domain terms
+performance requirements
+temporal cutoff
+plural/singular answer expectation
+dataset/evidence/method intent
+```
+
+Use generic language patterns.
+
+Examples:
+
+```text
+"Which methods..."
+→ method/technique preference
+
+"What datasets or benchmarks..."
+→ dataset/benchmark preference
+
+"Why/how..."
+→ evidence/claim preference
+```
+
+Do not use question IDs.
+
+Type inference should create priors, not brittle hard filters.
+
+---
+
+# PART E — QUERY REPRESENTATION: STAGED, NOT ALL AT ONCE
+
+Do not immediately introduce unconstrained LLM query expansion.
+
+We need to know whether the improvement comes from graph context or from invented query paraphrases.
+
+Evaluate in stages.
+
+## E1. Original question
+
+First use:
+
+```text
+original question embedding
+```
+
+against contextual graph representations.
+
+This is the most important first experiment.
+
+## E2. Extractive query views
+
+Then generate deterministic/extractive views from the question such as:
+
+```text
+task phrase
+domain phrase
+constraint phrase
+task + domain
+task + constraint
+problem phrase
+```
+
+These should be derived from words/concepts actually present in the question.
+
+## E3. Optional generative query reformulation
+
+Only afterward, as a separate optional experiment, allow semantic reformulation or generative query expansion.
+
+Keep it clearly separated:
+
+```text
+context_original_query
+context_extractive_multiquery
+context_generative_multiquery
+```
+
+Do not let generative query expansion obscure whether contextual graph representation solved the core retrieval problem.
+
+---
+
+# PART F — SOFT TYPE PRIORS
+
+Use answer-type inference as a prior rather than an aggressive filter.
+
+For example:
+
+```text
+method question:
+    strong prior: method
+    moderate prior: technique, cited_work
+    weaker prior: component/article
+    claim nodes usable for evidence
+
+dataset question:
+    strong prior: dataset
+    moderate prior: method/task/metric/article where appropriate
+```
+
+Do not discard other node types too early.
+
+The current graph/evaluator has already demonstrated that expected scientific names can reside under unexpected schema types such as `cited_work`.
+
+Implement configurable type scoring such as:
+
+```python
+score += type_prior[type]
+```
+
+rather than:
+
+```python
+if type != "method":
+    discard
+```
+
+unless the question semantics make exclusion genuinely safe.
+
+---
+
+# PART G — STRONG FLAT CONTEXTUAL BASELINE
+
+This is the central experiment.
+
+Before changing hierarchy retrieval, implement a strong exhaustive flat contextual retriever.
+
+The first contextual version should use:
+
+```text
+original question
+→ score all eligible entity representations
+→ rank
+→ safe entity dedup/grouping
+→ top-k
+```
+
+Compare:
+
+```text
+flat_surface
+flat_context_original
+flat_context_original_grouped
+```
+
+Only after these have been measured add:
+
+```text
+flat_context_extractive_multiquery
+flat_context_reranked
+optional flat_context_generative
+```
+
+The purpose is to determine:
+
+```text
+Can graph-derived context fix retrieval without hierarchy pruning?
+```
+
+If contextual flat retrieval still has effectively zero Type-A recall, DO NOT add more hierarchy complexity.
+
+Investigate representation, eligibility and scoring instead.
+
+---
+
+# PART H — MULTI-FIELD SCORING
+
+Because representations are multi-field, compute interpretable field scores.
+
+For example:
+
+```text
+name_score
+claim_score
+task_score
+problem_score
+technique_score
+component_score
+dataset_score
+article_score
+type_score
+temporal_score
+```
+
+For fields with multiple vectors, use a robust aggregation such as:
+
+```text
+max similarity
+mean of top-m similarities
+softmax/top-m pooling
+```
+
+Make the choice configurable.
+
+A possible deterministic scorer is conceptually:
+
+```python
+final_score = (
+    w_name * name_score
+    + w_claim * claim_score
+    + w_task_problem * task_problem_score
+    + w_technical * technical_context_score
+    + w_dataset * dataset_score
+    + w_article * article_score
+    + w_type * type_score
+    + w_temporal * temporal_score
+)
+```
+
+Do not copy these exact weights blindly.
+
+Expose defaults in configuration.
+
+Avoid double counting.
+
+For example, if `semantic_score` already embeds claims/tasks in a giant combined document, do not add the same claim/task evidence again as independent terms.
+
+The reason for multi-field representation is partly to make contributions explicit.
+
+Output score decomposition for every returned result.
+
+---
+
+# PART I — MULTI-QUERY FUSION
+
+When extractive/multi-query retrieval is enabled:
+
+```text
+original question
+task phrase
+task + domain
+task + constraint
+problem/constraint phrase
+```
+
+should retrieve independently.
+
+Merge candidates using configurable strategies such as:
+
+```text
+max field/query similarity
+reciprocal rank fusion
+weighted rank/score fusion
+```
+
+Do not hard-code reformulations from current questions.
+
+---
+
+# PART J — CANDIDATE GENERATION VS RERANKING
+
+After initial contextual retrieval, retain a reasonably large candidate pool such as:
+
+```text
+top 50
+top 100
+```
+
+Then rerank.
+
+For every question report:
+
+```text
+candidate_recall@50
+candidate_recall@100
+
+reranked_recall@5
+reranked_recall@10
+reranked_recall@20
+```
+
+This must distinguish:
+
+```text
+candidate generation failure
+```
+
+from:
+
+```text
+reranking failure
+```
+
+If a correct entity is not in top-100 candidates, changing the reranker cannot fix it.
+
+Implement a transparent deterministic reranker first.
+
+A learned cross-encoder or LLM reranker may be added only as an optional experiment.
+
+---
+
+# PART K — MULTI-ANSWER RETRIEVAL
+
+Do not assume rank #1 is the answer.
+
+Many Type-A questions have several expected answers.
+
+Support:
+
+```text
+top_k = 1, 5, 10, 20, 50, 100
+```
+
+Compute at least:
+
+```text
+Hit@1
+Hit@5
+Hit@10
+Hit@20
+
+Recall@5
+Recall@10
+Recall@20
+
+Precision@5
+Precision@10
+
+MRR
+
+R-Precision
+Recall@R
+```
+
+where:
+
+```text
+R = number of resolvable expected targets for that question
+```
+
+For multi-target questions:
+
+```python
+Recall@k =
+    number of distinct resolvable gold entities recovered in top-k
+    /
+    number of resolvable gold entities
+```
+
+Deduplicated scientific entities should count once even if multiple graph nodes correspond to the same target.
+
+---
+
+# PART L — REPORT THREE DIFFERENT AGGREGATIONS
+
+Because expected methods repeat across questions, report:
+
+```text
+1. unique-target metrics
+2. micro question-target-instance metrics
+3. macro per-question metrics
+```
+
+For example:
+
+```text
+unique target recall
+micro Recall@k over target instances
+macro mean Recall@k over questions
+```
+
+Do not present only one aggregate number.
+
+---
+
+# PART M — SEPARATE MAPPING FAILURE FROM RETRIEVAL FAILURE
+
+For every target instance classify outcome as:
+
+```text
+UNREPRESENTABLE
+AMBIGUOUS_MAPPING
+RESOLVED_BUT_NOT_CANDIDATE
+CANDIDATE_BUT_BELOW_K
+RETRIEVED
+```
+
+Report:
+
+```text
+canonical_resolution_coverage
+
+representable_resolution_coverage
+
+candidate_recall_given_resolved
+
+retrieval_recall_given_candidate
+
+retrieval_recall_given_resolved
+
+end_to_end_recall_against_all_expected
+```
+
+Do not hide unresolved targets by removing them from every denominator.
+
+Report both:
+
+```text
+conditional metrics
+and
+raw end-to-end lower-bound metrics
+```
+
+---
+
+# PART N — TEMPORAL CORRECTNESS
+
+Some questions use cutoffs such as:
+
+```text
+by Feb 2026
+```
+
+The graph mostly stores year-level temporal information:
+
+```text
+origin_year
+first_seen_year
+last_seen_year
+edge_year
+provenance article year
+```
+
+Do not pretend year-only data supports exact month-level filtering.
+
+Use this rule:
+
+```text
+If exact publication/event month/day is available:
+    include evidence only if date <= requested cutoff.
+
+If only year-level timing is available:
+    for "by Feb 2026" use <= 2025 as the conservative primary evaluation.
+
+A 2026-inclusive run may be reported as a sensitivity analysis,
+clearly marked as potentially containing post-February evidence.
+```
+
+This should preserve the existing conservative-2025 logic.
+
+Add tests ensuring post-cutoff evidence does not leak into historical retrieval where dates are known.
+
+---
+
+# PART O — TYPE-B QUESTIONS
+
+Do not force Type-B questions into method-node recall.
+
+Type B is primarily evidence/explanation retrieval.
+
+Use a pipeline such as:
+
+```text
+question
+→ relevant entities/tasks/techniques
+→ claims/articles/citations
+→ ranked supporting evidence
+```
+
+The current report indicates that strict automated claim alignment currently maps essentially none of the provided claims under all alignment gates.
+
+Therefore do not make that unreliable claim-alignment recall the only Type-B success metric.
+
+Report at least:
+
+```text
+required-source hit@k / recall@k
+article/citation coverage
+claim candidate retrieval
+evidence retrieval diagnostics
+```
+
+Keep strict semantic/NLI claim alignment as an additional diagnostic if desired.
+
+Do not substitute unverified claims for gold evidence.
+
+Keep Type-A entity retrieval and Type-B evidence retrieval completely separate in reports.
+
+---
+
+# PART P — HIERARCHY ONLY AFTER FLAT CONTEXT WORKS
+
+Once contextual flat retrieval demonstrates meaningful recovery of resolvable Type-A targets, plug the SAME graph representations and SAME field-scoring logic into the hierarchy.
+
+Do not change hierarchy construction initially.
+
+Compare:
+
+```text
+flat_surface
+
+flat_context_original
+flat_context_grouped
+flat_context_multiquery
+flat_context_reranked
+
+legacy_typed_fixed_beam_surface
+
+fixed_beam_contextual
+
+prototype_best_first_contextual
+```
+
+The important comparison is:
+
+```text
+best flat contextual retrieval
+vs
+hierarchical contextual retrieval
+```
+
+Measure:
+
+```text
+Recall@k
+MRR
+R-Precision
+candidate recall
+nodes/clusters scored
+number of expansions
+charged comparisons
+wall-clock latency, if meaningful
+```
+
+The hierarchy should be considered useful for retrieval primarily if:
+
+```text
+its quality is close to the contextual flat retriever
+while requiring materially less search work.
+```
+
+Do not call lower comparison cost a success when retrieval quality is near zero.
+
+If contextual flat retrieval remains poor, stop adding hierarchy complexity and diagnose representation/routing.
+
+---
+
+# PART Q — PROTOTYPES / BEST-FIRST
+
+Keep the existing prototype/best-first implementation as an ablation.
+
+Do not treat it as the default new retriever.
+
+The current prototype experiment already showed that increasing search effort from the old fixed beam to a 500-comparison best-first search did not improve Type-A recall.
+
+It may become useful once contextual representations are improved, but that must be demonstrated experimentally.
+
+Use contextual prototype vectors only after the flat contextual baseline has been established.
+
+Normalize prototype vectors explicitly.
+
+Also preserve the existing diagnostic that some very small budgets cannot even score all root clusters.
+
+---
+
+# PART R — REQUIRED ABLATION SEQUENCE
+
+Do not implement all changes and report only a final combined score.
+
+Run the following incremental sequence so we know which component helps:
+
+```text
+R0  flat_surface + original query
+
+R1  flat_context_fields + original query
+
+R2  R1 + entity grouping/deduplication
+
+R3  R2 + soft type priors
+
+R4  R3 + extractive multi-query
+
+R5  R4 + deterministic graph-aware reranking
+
+R6  optional generative query expansion
+
+R7  fixed-beam contextual using best justified flat representation
+
+R8  prototype/best-first contextual
+```
+
+For each stage report the same metrics.
+
+This is important.
+
+We need to know whether improvement comes from:
+
+```text
+context
+deduplication
+type priors
+query decomposition
+reranking
+hierarchy navigation
+```
+
+Do not collapse all changes into one opaque system.
+
+---
+
+# PART S — TESTS
+
+Add unit and integration tests for at least:
+
+```text
+1. Unicode/hyphen normalized exact matching
+
+2. singular/plural matching
+
+3. acronym/short-name candidate generation
+
+4. safe whole-token containment
+
+5. ambiguous alias rejection
+
+6. semantic similarity alone cannot certify alias identity
+
+7. composite decomposition
+
+8. evidence-backed resolution
+
+9. unresolved target behavior
+
+10. retrieval entity grouping of identical normalized names
+
+11. distinct entities are not incorrectly fuzzy-merged
+
+12. relation-aware contextual representation
+
+13. broad hyperedge co-members are not indiscriminately copied into context
+
+14. embedding normalization
+
+15. multi-field score aggregation
+
+16. soft type priors
+
+17. extractive multi-query fusion
+
+18. candidate Recall@k
+
+19. multi-answer Recall@k
+
+20. R-Precision / Recall@R
+
+21. unresolved targets remain in raw benchmark denominator
+
+22. temporal cutoff filtering
+
+23. flat and hierarchy retrievers return a compatible result structure
+
+24. entity-level top-k does not contain duplicate copies of the same safely grouped name
+```
+
+Do not write unit tests that simply encode the current 50 benchmark answers.
+
+Use synthetic examples for resolver logic.
+
+Existing tests must continue to pass.
+
+---
+
+# PART T — REQUIRED DIAGNOSTIC ARTIFACTS
+
+Produce at least:
+
+```text
+artifacts/evaluation/baseline_reconciliation.json
+
+artifacts/evaluation/target_resolution.json
+
+artifacts/evaluation/gold_candidate_audit.json
+
+artifacts/evaluation/retrieval_ablation_results.json
+
+artifacts/evaluation/per_question_diagnostics.json
+```
+
+Each question diagnostic should include something like:
+
+```json
+{
+  "question_id": "Q...",
+  "question": "...",
+  "intent": {},
+  "temporal_policy": {},
+  "gold": [
+    {
+      "label": "...",
+      "resolution_type": "...",
+      "resolved_nodes": [],
+      "entity_group": null
+    }
+  ],
+  "candidate_diagnostics": [],
+  "retrieved": [
+    {
+      "rank": 1,
+      "entity_id": "...",
+      "node_ids": [],
+      "name": "...",
+      "types": [],
+      "score": 0.0,
+      "score_components": {
+        "name": 0.0,
+        "claim": 0.0,
+        "task_problem": 0.0,
+        "technical": 0.0,
+        "dataset": 0.0,
+        "article": 0.0,
+        "type": 0.0,
+        "temporal": 0.0
+      }
+    }
+  ]
+}
+```
+
+Make failures inspectable.
+
+---
+
+# PART U — SCIENTIFIC / BENCHMARK-INDEPENDENCE CONSTRAINTS
+
+The benchmark answers may be used for:
+
+```text
+evaluation
+target-resolution diagnostics
+failure analysis
+```
+
+They must NOT be used to construct the retriever.
+
+Specifically:
+
+```text
+Do not insert expected answers into graph documents.
+
+Do not manually add missing benchmark aliases.
+
+Do not modify query text based on expected answers.
+
+Do not add Q1/Q2/etc. special cases.
+
+Do not tune thresholds to maximize this benchmark score.
+
+Do not construct retrieval-time documents from
+ground_truth.json method_claims or method_evidence.
+
+Do not learn retrieval weights directly from this tiny benchmark
+unless implemented explicitly as a separate clearly labeled experiment
+with proper train/validation separation.
+```
+
+Production retrieval input must be only:
+
+```text
+question
+graph
+graph-derived representations
+hierarchy
+configuration
+```
+
+Ground truth is for scoring.
+
+---
+
+# PART V — IMPLEMENTATION ORDER
+
+Use the following order.
+
+## Step 1 — inspect existing implementation
+
+Before coding inspect:
+
+```text
+target mapping
+candidate routing
+temporal filtering
+flat exhaustive retrieval
+embedding generation
+node text representation
+evaluation matching
+hierarchy retrieval
+prototype implementation
+result deduplication
+```
+
+## Step 2 — reproduce current numbers
+
+Run the existing benchmark and save the unmodified result.
+
+Reconcile:
+
+```text
+21/50
+33/50
+~37/50
+current recomputed exact/normalized coverage
+
+12 vs 14 Type-A question count
+
+46/63 instance coverage
+```
+
+Explain why each number differs.
+
+## Step 3 — run Phase-0 gold candidate audit
+
+Do not skip this.
+
+Determine whether zero exhaustive-flat recall is caused by candidate exclusion or bad ranking.
+
+## Step 4 — implement resolver improvements
+
+Add:
+
+```text
+EXACT
+ALIAS
+COMPOSITE
+EVIDENCE_BACKED
+AMBIGUOUS
+UNRESOLVED
+```
+
+with conservative alias acceptance.
+
+## Step 5 — implement entity grouping
+
+Prevent duplicate heterogeneous representations of one safely identical scientific entity from consuming multiple top-k slots.
+
+## Step 6 — build multi-field contextual representations
+
+Do not change hierarchy yet.
+
+## Step 7 — run flat contextual original-query baseline
+
+This is the central checkpoint.
+
+Report its results immediately.
+
+## Step 8 — add remaining flat ablations incrementally
+
+Add:
+
+```text
+type priors
+extractive multi-query
+reranking
+optional generative expansion
+```
+
+one at a time.
+
+## Step 9 — only then evaluate hierarchy
+
+Reuse the successful contextual scoring representation.
+
+Do not introduce another unrelated hierarchy-specific representation unless necessary.
+
+---
+
+# PART W — COMMAND-LINE / CONFIGURATION
+
+Preserve backward-compatible commands where reasonable.
+
+Expose useful ablations with configuration/CLI options equivalent to:
+
+```text
+--retriever flat_surface
+--retriever flat_context
+--retriever hierarchy_context
+
+--entity-grouping on/off
+
+--resolver exact
+--resolver generic
+
+--query-mode original
+--query-mode extractive_multi
+--query-mode generative_multi
+
+--type-prior on/off
+
+--rerank on/off
+
+--candidate-k 50
+--candidate-k 100
+
+--top-k 1/5/10/20/50
+
+--temporal-policy conservative
+```
+
+Names may differ to fit the existing architecture.
+
+Do not create unnecessary duplicate configuration systems.
+
+---
+
+# PART X — FINAL REPORT
+
+After implementation:
+
+1. run the full test suite;
+2. run the complete benchmark;
+3. show exact old/new numbers;
+4. do not claim improvement unless the metrics demonstrate it;
+5. preserve failures instead of hiding them.
+
+Report:
+
+```text
+A. benchmark reconciliation
+   - number of questions
+   - number of unique targets
+   - target instances
+   - why historical mapping counts differed
+
+B. target resolution
+   - exact
+   - alias
+   - composite
+   - evidence-backed
+   - ambiguous
+   - unresolved
+   - canonical coverage
+   - representable coverage
+
+C. Phase-0 audit
+   - how many resolved gold nodes entered the flat candidate set
+   - how many were excluded
+   - reasons for exclusion
+   - distribution of gold surface ranks
+
+D. retrieval ablations
+   - flat_surface
+   - flat_context_original
+   - + grouping
+   - + type priors
+   - + extractive multi-query
+   - + reranking
+   - optional generative query expansion
+
+E. Type-A metrics
+   - Hit@k
+   - Recall@k
+   - Precision@k
+   - MRR
+   - R-Precision
+   - Recall@R
+   - candidate Recall@50 / @100
+   - macro/micro/unique-target metrics
+   - end-to-end raw benchmark recall
+
+F. Type-B metrics
+   - source/citation retrieval
+   - evidence candidate retrieval
+   - claim alignment only where evaluable
+
+G. hierarchy
+   - contextual flat quality
+   - contextual hierarchy quality
+   - charged comparisons
+   - expansions
+   - latency
+   - quality/cost tradeoff
+```
+
+Explicitly answer these questions:
+
+```text
+1. Why was exhaustive surface-form flat retrieval at zero Type-A recall?
+
+2. Were correct gold nodes actually present in its candidate set?
+
+3. How much of the target-mapping problem was:
+   canonical aliasing,
+   composites,
+   evidence-only concepts,
+   ambiguity,
+   or genuinely absent concepts?
+
+4. Does graph-derived contextual representation materially improve
+   Type-A retrieval?
+
+5. How much improvement comes from entity deduplication?
+
+6. How much additional improvement comes from query decomposition
+   and reranking?
+
+7. Once representations are fixed, does the 12/40/120 hierarchy
+   preserve enough retrieval quality to justify its lower search cost?
+
+8. Is prototype/best-first retrieval useful after contextualization,
+   or does it remain unnecessary complexity?
+```
+
+At the very end provide:
+
+```text
+files changed
+important new classes/functions
+tests added
+commands to reproduce every major ablation
+before/after metrics
+remaining unresolved targets with reasons
+remaining failure modes
+recommended default retriever
+whether the hierarchy is justified by the measured results
+```
+
+---
+
+# MOST IMPORTANT DECISION RULE
+
+Do not keep adding complexity merely because a benchmark metric remains low.
+
+Use this debugging order:
+
+```text
+mapping correctness
+→ candidate eligibility
+→ entity deduplication
+→ contextual representation
+→ query representation
+→ reranking
+→ hierarchy search
+```
+
+The key experiment is:
+
+```text
+Can flat contextual retrieval recover the graph-resolvable Type-A targets?
+```
+
+If the answer is no:
+
+```text
+do not further complicate hierarchy traversal.
+```
+
+Investigate representation/evaluation/routing.
+
+If the answer is yes, then test:
+
+```text
+Can hierarchical contextual retrieval preserve approximately the same
+quality while scoring substantially fewer entities/clusters?
+```
+
+That is the correct role of the hierarchy in this experiment.

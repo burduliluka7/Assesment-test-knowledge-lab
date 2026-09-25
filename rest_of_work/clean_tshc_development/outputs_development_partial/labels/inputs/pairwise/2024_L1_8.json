@@ -1,0 +1,31 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "cite_00228",
+      "type": "cited_work",
+      "surface_form": "ANI extension to S and Halogens"
+    },
+    {
+      "id": "clai_00290",
+      "type": "claim",
+      "surface_form": "ANI potential was expanded in 2020 to include S, Cl, and F elements, covering approximately 90% of drug-like molecules."
+    },
+    {
+      "id": "clai_00291",
+      "type": "claim",
+      "surface_form": "AIMNet2 extends ANI to include up to 14 elemental species with additional vdW and electrostatic correction terms."
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 1,
+    "claim": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "ani",
+  "representative_ids": [
+    "clai_00290",
+    "clai_00291"
+  ]
+}

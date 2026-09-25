@@ -1,0 +1,468 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "clai_00021",
+      "type": "claim",
+      "surface_form": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear."
+    },
+    {
+      "id": "clai_00022",
+      "type": "claim",
+      "surface_form": "The model predicts fracture toughness values that are comparable to those obtained from atomistic molecular dynamics simulations."
+    },
+    {
+      "id": "clai_00023",
+      "type": "claim",
+      "surface_form": "A model trained exclusively on single‑crystal data generalizes to bicrystal and gradient‑orientation crystals, reproducing MD fracture patterns for small orientation differences, capturing overall crack paths for large orientation differences, and handling arbitrary geometry gradients."
+    },
+    {
+      "id": "clai_00024",
+      "type": "claim",
+      "surface_form": "The ConvLSTM approach reduces computational cost dramatically compared with full molecular dynamics simulations, enabling rapid fracture predictions."
+    },
+    {
+      "id": "clai_00025",
+      "type": "claim",
+      "surface_form": "Representing molecular dynamics results as image‑based geometric matrices preserves crystal orientation information and allows the neural network to learn spatiotemporal fracture behavior."
+    },
+    {
+      "id": "clai_00418",
+      "type": "claim",
+      "surface_form": "Fine‑tuning an energy model on a benzene vibrational spectrum improves spectrum predictions for unseen molecules such as toluene and phenol."
+    },
+    {
+      "id": "clai_00509",
+      "type": "claim",
+      "surface_form": "A graph convolutional neural network predicts vibrational free energies with root‑mean‑square errors of 8.23 meV/atom (training), 11.34 meV/atom (validation) and 12.31 meV/atom (test), and its predictions for MgS and NaH polymorphs match DFT‑computed values across the 200–700 K range."
+    },
+    {
+      "id": "comp_00063",
+      "type": "component",
+      "surface_form": "Irreducible‑representation analysis for IR/Raman activity"
+    },
+    {
+      "id": "comp_00069",
+      "type": "component",
+      "surface_form": "Fine‑tuning procedure using molecular vibrational spectra"
+    },
+    {
+      "id": "comp_00102",
+      "type": "component",
+      "surface_form": "ML vibrational free-energy model"
+    },
+    {
+      "id": "comp_00198",
+      "type": "component",
+      "surface_form": "Force and stress autograd"
+    },
+    {
+      "id": "comp_00316",
+      "type": "component",
+      "surface_form": "Stress‑concentration objective"
+    },
+    {
+      "id": "comp_00323",
+      "type": "component",
+      "surface_form": "Stress‑field surrogate objective"
+    },
+    {
+      "id": "comp_00563",
+      "type": "component",
+      "surface_form": "Vicker's hardness estimation model"
+    },
+    {
+      "id": "comp_00842",
+      "type": "component",
+      "surface_form": "shear modulus descriptor"
+    },
+    {
+      "id": "data_00173",
+      "type": "dataset",
+      "surface_form": "MatCalc mechanical properties benchmark"
+    },
+    {
+      "id": "data_00183",
+      "type": "dataset",
+      "surface_form": "Elastic tensor"
+    },
+    {
+      "id": "data_00190",
+      "type": "dataset",
+      "surface_form": "Elasticity"
+    },
+    {
+      "id": "futu_00138",
+      "type": "future_topic",
+      "surface_form": "Investigation of gap deformation potentials"
+    },
+    {
+      "id": "meth_00230",
+      "type": "method",
+      "surface_form": "ConvLSTM-based fracture prediction model"
+    },
+    {
+      "id": "metr_00088",
+      "type": "metric",
+      "surface_form": "Young's modulus"
+    },
+    {
+      "id": "prob_00081",
+      "type": "problem",
+      "surface_form": "High false‑positive rates for stable‑material prediction"
+    },
+    {
+      "id": "prob_00082",
+      "type": "problem",
+      "surface_form": "Thermodynamic stability prediction"
+    },
+    {
+      "id": "prob_00085",
+      "type": "problem",
+      "surface_form": "Accurate stability classification for high‑throughput materials discovery"
+    },
+    {
+      "id": "prob_00165",
+      "type": "problem",
+      "surface_form": "Efficient prediction of dynamic brittle fracture paths"
+    },
+    {
+      "id": "prob_00166",
+      "type": "problem",
+      "surface_form": "Fracture‑toughness estimation from atomistic data"
+    },
+    {
+      "id": "prob_00168",
+      "type": "problem",
+      "surface_form": "Fracture pattern prediction from MD simulations"
+    },
+    {
+      "id": "prob_00170",
+      "type": "problem",
+      "surface_form": "Modeling spatiotemporal dependencies in fracture"
+    },
+    {
+      "id": "prob_00181",
+      "type": "problem",
+      "surface_form": "Exploration of huge defect‑structure spaces"
+    },
+    {
+      "id": "prob_00218",
+      "type": "problem",
+      "surface_form": "Automated phonon and vibrational property extraction"
+    },
+    {
+      "id": "prob_00222",
+      "type": "problem",
+      "surface_form": "defect energetics and band‑gap underestimation"
+    },
+    {
+      "id": "prob_00362",
+      "type": "problem",
+      "surface_form": "Extreme deformation potential detection"
+    },
+    {
+      "id": "prob_00386",
+      "type": "problem",
+      "surface_form": "Ineffective ML estimation of material stability"
+    },
+    {
+      "id": "prob_00434",
+      "type": "problem",
+      "surface_form": "Material stability prediction"
+    },
+    {
+      "id": "task_00017",
+      "type": "task",
+      "surface_form": "Stress prediction"
+    },
+    {
+      "id": "task_00049",
+      "type": "task",
+      "surface_form": "defect dynamics simulation"
+    },
+    {
+      "id": "task_00067",
+      "type": "task",
+      "surface_form": "Fine‑tuning of interatomic potentials using vibrational spectra"
+    },
+    {
+      "id": "task_00109",
+      "type": "task",
+      "surface_form": "Stability classification"
+    },
+    {
+      "id": "task_00111",
+      "type": "task",
+      "surface_form": "Thermodynamic stability classification"
+    },
+    {
+      "id": "task_00157",
+      "type": "task",
+      "surface_form": "Elastic modulus prediction"
+    },
+    {
+      "id": "task_00200",
+      "type": "task",
+      "surface_form": "Crack‑pattern prediction"
+    },
+    {
+      "id": "task_00201",
+      "type": "task",
+      "surface_form": "Fracture‑toughness prediction"
+    },
+    {
+      "id": "task_00202",
+      "type": "task",
+      "surface_form": "Bicrystal fracture prediction"
+    },
+    {
+      "id": "task_00203",
+      "type": "task",
+      "surface_form": "Gradient‑orientation fracture prediction"
+    },
+    {
+      "id": "task_00204",
+      "type": "task",
+      "surface_form": "Crack path prediction in crystalline solids"
+    },
+    {
+      "id": "task_00205",
+      "type": "task",
+      "surface_form": "Spatiotemporal fracture behavior forecasting"
+    },
+    {
+      "id": "task_00217",
+      "type": "task",
+      "surface_form": "Global mechanical property estimation"
+    },
+    {
+      "id": "task_00223",
+      "type": "task",
+      "surface_form": "mechanical design"
+    },
+    {
+      "id": "task_00230",
+      "type": "task",
+      "surface_form": "Materials property calculation"
+    },
+    {
+      "id": "task_00252",
+      "type": "task",
+      "surface_form": "Stability ranking of large compositional spaces"
+    },
+    {
+      "id": "task_00259",
+      "type": "task",
+      "surface_form": "Elastic modulus computation"
+    },
+    {
+      "id": "task_00282",
+      "type": "task",
+      "surface_form": "Stress tensor prediction"
+    },
+    {
+      "id": "task_00324",
+      "type": "task",
+      "surface_form": "Zero-point vibrational energy (ZPVE) prediction"
+    },
+    {
+      "id": "task_00329",
+      "type": "task",
+      "surface_form": "Bulk modulus prediction"
+    },
+    {
+      "id": "task_00330",
+      "type": "task",
+      "surface_form": "Shear modulus prediction"
+    },
+    {
+      "id": "task_00336",
+      "type": "task",
+      "surface_form": "Steel yield strength prediction"
+    },
+    {
+      "id": "task_00414",
+      "type": "task",
+      "surface_form": "Dipole moment prediction"
+    },
+    {
+      "id": "task_00415",
+      "type": "task",
+      "surface_form": "Polarizability prediction"
+    },
+    {
+      "id": "task_00442",
+      "type": "task",
+      "surface_form": "gap deformation potential screening"
+    },
+    {
+      "id": "task_00450",
+      "type": "task",
+      "surface_form": "Vicker's hardness estimation"
+    },
+    {
+      "id": "task_00453",
+      "type": "task",
+      "surface_form": "Fixed shape deformation potential prediction"
+    },
+    {
+      "id": "task_00457",
+      "type": "task",
+      "surface_form": "Vicker's hardness prediction"
+    },
+    {
+      "id": "task_00459",
+      "type": "task",
+      "surface_form": "Gap deformation potential prediction"
+    },
+    {
+      "id": "task_00472",
+      "type": "task",
+      "surface_form": "Mechanical properties calculation"
+    },
+    {
+      "id": "task_00475",
+      "type": "task",
+      "surface_form": "surface stability prediction"
+    },
+    {
+      "id": "task_00477",
+      "type": "task",
+      "surface_form": "point defect analysis"
+    },
+    {
+      "id": "task_00516",
+      "type": "task",
+      "surface_form": "Materials stability prediction"
+    },
+    {
+      "id": "task_00547",
+      "type": "task",
+      "surface_form": "Thermodynamic stability calculation"
+    },
+    {
+      "id": "task_00553",
+      "type": "task",
+      "surface_form": "Vacancy formation energy prediction"
+    },
+    {
+      "id": "task_00563",
+      "type": "task",
+      "surface_form": "Defect energy prediction"
+    },
+    {
+      "id": "task_00572",
+      "type": "task",
+      "surface_form": "Electrolyte property prediction"
+    },
+    {
+      "id": "task_00598",
+      "type": "task",
+      "surface_form": "Maximal separation stress testing"
+    },
+    {
+      "id": "task_00603",
+      "type": "task",
+      "surface_form": "Electrostatic property prediction"
+    },
+    {
+      "id": "task_00613",
+      "type": "task",
+      "surface_form": "stress computation"
+    },
+    {
+      "id": "task_00631",
+      "type": "task",
+      "surface_form": "Stress/virial prediction"
+    },
+    {
+      "id": "task_00652",
+      "type": "task",
+      "surface_form": "Mechanical property benchmark"
+    },
+    {
+      "id": "task_00656",
+      "type": "task",
+      "surface_form": "Vibrational analysis"
+    },
+    {
+      "id": "task_00663",
+      "type": "task",
+      "surface_form": "Materials thermodynamic stability prediction"
+    },
+    {
+      "id": "task_00665",
+      "type": "task",
+      "surface_form": "Elasticity prediction"
+    },
+    {
+      "id": "task_00707",
+      "type": "task",
+      "surface_form": "Young's modulus prediction"
+    },
+    {
+      "id": "tech_00133",
+      "type": "technique",
+      "surface_form": "Fine‑tuning with experimental vibrational spectra"
+    },
+    {
+      "id": "tech_00137",
+      "type": "technique",
+      "surface_form": "Fine‑tuning with experimental‑like spectra"
+    },
+    {
+      "id": "tech_00246",
+      "type": "technique",
+      "surface_form": "Auto‑differentiation for forces and stresses"
+    },
+    {
+      "id": "tech_00316",
+      "type": "technique",
+      "surface_form": "One‑hot crack labeling"
+    },
+    {
+      "id": "tech_00386",
+      "type": "technique",
+      "surface_form": "Stability ranking"
+    },
+    {
+      "id": "tech_00620",
+      "type": "technique",
+      "surface_form": "Vicker's hardness estimation"
+    },
+    {
+      "id": "tech_00863",
+      "type": "technique",
+      "surface_form": "Strain displacement application"
+    },
+    {
+      "id": "tech_00925",
+      "type": "technique",
+      "surface_form": "Young's modulus averaging"
+    },
+    {
+      "id": "tech_00947",
+      "type": "technique",
+      "surface_form": "DFT elastic moduli calculation"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 7,
+    "component": 8,
+    "dataset": 3,
+    "future_topic": 1,
+    "method": 1,
+    "metric": 1,
+    "problem": 13,
+    "task": 46,
+    "technique": 9
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "prediction",
+  "representative_ids": [
+    "task_00157",
+    "task_00516"
+  ]
+}

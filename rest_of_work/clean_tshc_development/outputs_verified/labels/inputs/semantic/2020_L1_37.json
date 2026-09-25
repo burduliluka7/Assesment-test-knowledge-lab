@@ -1,0 +1,69 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "comp_00628",
+      "type": "component",
+      "surface_form": "Diffusion coefficient convergence criterion"
+    },
+    {
+      "id": "futu_00127",
+      "type": "future_topic",
+      "surface_form": "Development of a transferable universal model for ionic diffusion properties"
+    },
+    {
+      "id": "meth_00383",
+      "type": "method",
+      "surface_form": "DeePMD training protocol for diffusion coefficient computation"
+    },
+    {
+      "id": "metr_00043",
+      "type": "metric",
+      "surface_form": "diffusion coefficient uncertainty"
+    },
+    {
+      "id": "task_00080",
+      "type": "task",
+      "surface_form": "Ionic conductivity prediction"
+    },
+    {
+      "id": "task_00524",
+      "type": "task",
+      "surface_form": "Li10GeP2S12 diffusion modeling"
+    },
+    {
+      "id": "task_00525",
+      "type": "task",
+      "surface_form": "Li7La3Zr2O12 diffusion modeling"
+    },
+    {
+      "id": "task_00526",
+      "type": "task",
+      "surface_form": "Na3Zr2Si2PO12 diffusion modeling"
+    },
+    {
+      "id": "task_00531",
+      "type": "task",
+      "surface_form": "Li diffusion simulation in LLZO"
+    },
+    {
+      "id": "task_00532",
+      "type": "task",
+      "surface_form": "Na diffusion simulation in NASICON"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "future_topic": 1,
+    "method": 1,
+    "metric": 1,
+    "task": 6
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "diffusion",
+  "representative_ids": [
+    "task_00524",
+    "task_00526"
+  ]
+}

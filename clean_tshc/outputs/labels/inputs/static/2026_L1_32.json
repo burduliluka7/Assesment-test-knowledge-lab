@@ -1,0 +1,62 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "prob_00587",
+      "type": "problem",
+      "surface_form": "Adsorption energy estimation"
+    },
+    {
+      "id": "task_00298",
+      "type": "task",
+      "surface_form": "AdsorbML integration"
+    },
+    {
+      "id": "task_00300",
+      "type": "task",
+      "surface_form": "AdsorbML structural relaxation"
+    },
+    {
+      "id": "task_00301",
+      "type": "task",
+      "surface_form": "AdsorbML adsorption energy calculation"
+    },
+    {
+      "id": "task_00657",
+      "type": "task",
+      "surface_form": "Adsorption energy calculations"
+    },
+    {
+      "id": "task_00666",
+      "type": "task",
+      "surface_form": "Adsorption energy prediction"
+    },
+    {
+      "id": "task_00670",
+      "type": "task",
+      "surface_form": "CO2 adsorption for MOFs"
+    },
+    {
+      "id": "task_00672",
+      "type": "task",
+      "surface_form": "AdsorbML benchmark"
+    },
+    {
+      "id": "tech_00876",
+      "type": "technique",
+      "surface_form": "Adsorption energy via total energy subtraction"
+    }
+  ],
+  "generation_type_counts": {
+    "problem": 1,
+    "task": 7,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "adsorption",
+  "representative_ids": [
+    "task_00301",
+    "task_00657"
+  ]
+}

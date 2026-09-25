@@ -1,0 +1,65 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00476",
+      "type": "component",
+      "surface_form": "Intermediate image generation"
+    },
+    {
+      "id": "comp_00477",
+      "type": "component",
+      "surface_form": "Threshold-based classifier"
+    },
+    {
+      "id": "comp_00479",
+      "type": "component",
+      "surface_form": "SevenNet-MF-ompa"
+    },
+    {
+      "id": "comp_00480",
+      "type": "component",
+      "surface_form": "Orb-v3"
+    },
+    {
+      "id": "comp_00481",
+      "type": "component",
+      "surface_form": "CHGNet"
+    },
+    {
+      "id": "comp_00483",
+      "type": "component",
+      "surface_form": "MLIP-NEB relaxation framework"
+    },
+    {
+      "id": "comp_00484",
+      "type": "component",
+      "surface_form": "Geometric similarity metric"
+    },
+    {
+      "id": "comp_00485",
+      "type": "component",
+      "surface_form": "Endpoint relaxation module"
+    },
+    {
+      "id": "comp_00486",
+      "type": "component",
+      "surface_form": "NEB framework integration"
+    },
+    {
+      "id": "comp_00488",
+      "type": "component",
+      "surface_form": "Barrier classification threshold"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 10
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "chgnet",
+  "representative_ids": [
+    "comp_00485",
+    "comp_00477"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00254",
+      "type": "claim",
+      "surface_form": "Approximately 40% of the UK's academic HPC was spent on DFT calculations in a recent year, most of which was AIMD."
+    },
+    {
+      "id": "clai_00274",
+      "type": "claim",
+      "surface_form": "GNoME was trained on an in-house database of roughly 80 million DFT calculations."
+    },
+    {
+      "id": "clai_00292",
+      "type": "claim",
+      "surface_form": "First published U-MLIPs with broad periodic table applicability came nearly simultaneously in early 2022."
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "dft calculations",
+  "representative_ids": [
+    "clai_00254",
+    "clai_00274"
+  ]
+}

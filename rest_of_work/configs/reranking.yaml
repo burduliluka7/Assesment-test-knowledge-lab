@@ -1,0 +1,28 @@
+# Frozen reranking defaults; H2 configuration, resolver and candidate order are unchanged.
+data_dir: data/data
+output: artifacts/full
+v2_output: artifacts/evaluation
+reranker_output: artifacts/evaluation/reranking
+context_config: configs/contextual.yaml
+diffusion_config: configs/diffusion.yaml
+reranker_cutoffs: [2025, 2026]
+reranker_candidate_ks: [100, 200]
+reranker_top_ks: [1, 5, 10, 20, 50, 100, 200]
+reranker_rrf_k: 60
+reranker_field_caps: {direct_claims: 3, explicit_mentions: 3, task_problem: 3, technical: 2, dataset: 2, article: 2, path_evidence: 2}
+reranker_field_weights: {name: 0.10, direct_claims: 0.20, explicit_mentions: 0.20, task_problem: 0.20, technical: 0.10, dataset: 0.10, article: 0.05, path_evidence: 0.05}
+reranker_pooling: max
+reranker_coverage_floor: 0.5
+reranker_direct_arity_cap: 16
+reranker_hub_quantile: 0.90
+reranker_short_label_tokens: 3
+reranker_cross_article_min: 3
+reranker_path_seed_limit: 20
+reranker_path_max_hops: 3
+reranker_path_count: 2
+reranker_document_tokens: 480
+# Only an explicitly configured local relevance-trained model may run RR2.
+# The installed three-way NLI classifier is not a relevance reranker.
+reranker_cross_encoder_path: null
+reranker_cross_encoder_relevance_label: null
+reranker_verify_history: true

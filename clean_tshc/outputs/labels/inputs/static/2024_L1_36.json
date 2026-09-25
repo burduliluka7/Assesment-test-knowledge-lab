@@ -1,0 +1,70 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "task_00020",
+      "type": "task",
+      "surface_form": "catalysis"
+    },
+    {
+      "id": "task_00257",
+      "type": "task",
+      "surface_form": "Structure relaxation"
+    },
+    {
+      "id": "task_00293",
+      "type": "task",
+      "surface_form": "atomic energy prediction"
+    },
+    {
+      "id": "task_00304",
+      "type": "task",
+      "surface_form": "Initial Structure to Relaxed Structure"
+    },
+    {
+      "id": "task_00305",
+      "type": "task",
+      "surface_form": "Initial Structure to Relaxed Energy"
+    },
+    {
+      "id": "task_00314",
+      "type": "task",
+      "surface_form": "Energy gap (∆ε) prediction"
+    },
+    {
+      "id": "task_00318",
+      "type": "task",
+      "surface_form": "Heat capacity (Cν) prediction"
+    },
+    {
+      "id": "task_00319",
+      "type": "task",
+      "surface_form": "Gibbs free energy (G) prediction"
+    },
+    {
+      "id": "task_00322",
+      "type": "task",
+      "surface_form": "Internal energy (U) prediction"
+    },
+    {
+      "id": "task_00323",
+      "type": "task",
+      "surface_form": "Internal energy at 0K (U0) prediction"
+    },
+    {
+      "id": "task_00381",
+      "type": "task",
+      "surface_form": "Heat capacity prediction"
+    }
+  ],
+  "generation_type_counts": {
+    "task": 11
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "prediction",
+  "representative_ids": [
+    "task_00322",
+    "task_00314"
+  ]
+}

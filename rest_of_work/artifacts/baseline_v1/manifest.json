@@ -1,0 +1,573 @@
+{
+  "schema_version": "baseline-audit-v1",
+  "core_sources": {
+    "src/tkh_abstraction/config.py": "0341f2d90f03fb9acb1fa23c87b23be1df0c2e93974e1027e465259b2f9b4471",
+    "src/tkh_abstraction/schema.py": "9208be66f9543cb0d2f8fdb6a8c8ad86800724c149161c2ec1ca806a8e978f41",
+    "src/tkh_abstraction/snapshots.py": "e3c9217bc17ae07133701c9729cfd4b8b1ddf092225a3a4865d2607f736aa49f",
+    "src/tkh_abstraction/hypergraph.py": "6e8599d37dadc5ab4a1bee688ca9ea6d97b86c586645219d7286b89149db7a2e",
+    "src/tkh_abstraction/collapse.py": "64381d963066f918c6ef609a8f0b76d550ae0d89354ecee7ea5c1714374e89bf",
+    "src/tkh_abstraction/spectral.py": "5d071f723d0094e0ea4a5854dc265cf17ef824ddde81559a4bf8aa72e0276984",
+    "src/tkh_abstraction/semantics.py": "98e479a63ef8892c57f262ffc9ea10b0cd35e20fc28da7d7ba53fc0017acb2af",
+    "src/tkh_abstraction/coarsening.py": "4c382479e15b95a465f5b6bba218dd4948e4087ad39f1ca3508480c38763040d",
+    "src/tkh_abstraction/hierarchy.py": "381baec94120ffa092de08d8ef3594c7ac8a0a63bf9ea2cb182b96a6b9b45908",
+    "src/tkh_abstraction/temporal.py": "f60999eba32e84e0f31a46092613164f03ea7ac005121a3859c38bc55947862c",
+    "src/tkh_abstraction/baselines.py": "f304d0eb7c51d57216ec5248c7eec0569d67b659b36d0249714f3f7d5e82206d"
+  },
+  "artifact_sha256": {
+    "artifacts/full/variants/pairwise/hierarchy_2020.json": "24f4117640b113001b9d076fd20bfbcbf8b6268aedbd2dcbb4244ef458994e05",
+    "artifacts/full/variants/pairwise/hierarchy_2022.json": "da388d4dc4306651b093be1fcdec8454b02de4dc7eedf2f4323f4f3ca2bb8a1e",
+    "artifacts/full/variants/pairwise/hierarchy_2024.json": "d8517deec945a7fc8ca846d63e08b4acea4957f36dc8a36fff3271ae3b1151bb",
+    "artifacts/full/variants/pairwise/hierarchy_2025_benchmark.json": "0eec4c06982ae6b250c2cc0085d258cb33fa09bae094900844149cfcfc03c186",
+    "artifacts/full/variants/pairwise/hierarchy_2026.json": "52dbb0808f547fa07e95bf8ec8787363fc38fe2d0cf97c1ef632438eb7115d7b",
+    "artifacts/full/variants/semantic/hierarchy_2020.json": "82a232a74a7ea4b1cb06a73d921ca9ae1255358c54598ff9b41970328d16190d",
+    "artifacts/full/variants/semantic/hierarchy_2022.json": "d70db8da3bb0ee46acc4aa508f3f74b4f64d7d19b1500fb993e92b6df2995b65",
+    "artifacts/full/variants/semantic/hierarchy_2024.json": "a77f815857854c343c431bd98f34ab5466796432a6db5954f5299f4cccd1e651",
+    "artifacts/full/variants/semantic/hierarchy_2025_benchmark.json": "7c10bebf63c05b28fce8d9c50f6e75e935245878b00db50cc7ac361cd6b346b7",
+    "artifacts/full/variants/semantic/hierarchy_2026.json": "7b06b9a50f7f378e24fb5f59db0d78ea1ea48e05d4df3edc565710415a7d5328",
+    "artifacts/full/variants/static/hierarchy_2020.json": "f5bdf214e86a8f05ba18f8ad155b8520aae4d49299fdcd0cb65dc37a61d9aa85",
+    "artifacts/full/variants/static/hierarchy_2022.json": "7bdabd324b15822bcc0b02012da0e42554ce6e9374bb50a68d8c06b4b9087127",
+    "artifacts/full/variants/static/hierarchy_2024.json": "dc46b5e77790de8367ca874dd6aedfcac9e8e36ce71c6875ab04d298d0cb3a88",
+    "artifacts/full/variants/static/hierarchy_2025_benchmark.json": "118ea89665944b58023c1f148c2e7fa043a470ca30037df6bc8f502ee1f1f2ef",
+    "artifacts/full/variants/static/hierarchy_2026.json": "9b3a122c724d0171231fa2f8dd95ae9302f04af45d3f43e242c6a41bb96216a1",
+    "artifacts/full/variants/structural/hierarchy_2020.json": "9bc594e086f6481124c0c28d497464beda98b9aaa0a98b4a77b80330d0f602c9",
+    "artifacts/full/variants/structural/hierarchy_2022.json": "e0c983e55126936e1540773b19b347699bb0ba94b67e58b4e2a346b07a3c2191",
+    "artifacts/full/variants/structural/hierarchy_2024.json": "e2585e9f5961c5bcacb24465952d1e671671377cd787922f5c26c23ac6a8c705",
+    "artifacts/full/variants/structural/hierarchy_2025_benchmark.json": "74d63ab7fd41582749d5df137e891145dccb0b65255d4d1a285b6520b8254b80",
+    "artifacts/full/variants/structural/hierarchy_2026.json": "a06e4624909471712370329158e4a918b988b907d57ba38f10223a373ec23755",
+    "artifacts/full/variants/temporal/hierarchy_2020.json": "71f6da3851afb41ba7c1ae702e164adf7e7b8fe68520d30b8cf4973691d0d653",
+    "artifacts/full/variants/temporal/hierarchy_2022.json": "4a255152139092024742261891eaf531864ea4688014984863f3c3b847896465",
+    "artifacts/full/variants/temporal/hierarchy_2024.json": "2e07212fcc842a549cf15d29e7081eedc9a70435077d7c4aa2e64de364e7ee30",
+    "artifacts/full/variants/temporal/hierarchy_2025_benchmark.json": "d956514513687b82c223202c517c9d0e0202cb866dbff22056eb0cbff9bd0c2f",
+    "artifacts/full/variants/temporal/hierarchy_2026.json": "7890f5c4c8025b59bdda2f980f804d0f1e4d45cacaea8013af0af9a171846c75",
+    "artifacts/full/temporal_events.json": "5c0d1e3764ab4b79c60839ecc9bf891b6469b2d4fd2abafea1bc779682dc5ece",
+    "artifacts/full/variants/pairwise/temporal_events.json": "c116a545b3704677b2f85a41a1ac9d24b25ea4b68b2d9b812b27b91753b04c8f",
+    "artifacts/full/variants/semantic/temporal_events.json": "a5ac515e29df2b179cac4d2c5bd4d2266a9d3a835da9ea48f838c0ae8653c7f0",
+    "artifacts/full/variants/static/temporal_events.json": "6f6803dadf3eceba21d0de10e3292a4901eada2c8117400591220621493dcb2d",
+    "artifacts/full/variants/structural/temporal_events.json": "ca3a9e0bfcf61a485925db1da24abf2e2b4f10bf5feddbe8bb59e59600ec8c06",
+    "artifacts/full/variants/temporal/temporal_events.json": "5c0d1e3764ab4b79c60839ecc9bf891b6469b2d4fd2abafea1bc779682dc5ece"
+  },
+  "partition_hashes": {
+    "artifacts/full/variants/pairwise/hierarchy_2020.json": "dd5dbb2ba9ba9cac56c22eda54161af263f4f89cefbd2a5f71a94f938254be1e",
+    "artifacts/full/variants/pairwise/hierarchy_2022.json": "339c7e2940a7e635f1e9f00511cd7759fea2a5b6fe4c38138e29dbdb43edc93d",
+    "artifacts/full/variants/pairwise/hierarchy_2024.json": "0ab2cc6b4011aab7e3220bf5fe17f71d1e2054c3b6a5f7bff83062769a841769",
+    "artifacts/full/variants/pairwise/hierarchy_2025_benchmark.json": "7a87de6aa24116d0e1c62938684e7ad4cf4a003736ebc996a65ee14479823eca",
+    "artifacts/full/variants/pairwise/hierarchy_2026.json": "7ff79483c7519c1c17f67613f1bcb559ecf72d2e4392c6076ec24501aefabc7e",
+    "artifacts/full/variants/semantic/hierarchy_2020.json": "d76c75ed851d0a47553ebdd97c1793d6fcf85317045a2d2871d58c695cd9a8d6",
+    "artifacts/full/variants/semantic/hierarchy_2022.json": "fa69211d5534c0f8c8b2b465fe70fe0bd741343f49d42742d11aa45c9f5e0352",
+    "artifacts/full/variants/semantic/hierarchy_2024.json": "3403d38adcbc04b455af04c4165bffc46f98e5adf11fa6a1c494f1f30cf20b89",
+    "artifacts/full/variants/semantic/hierarchy_2025_benchmark.json": "3f2df43ceb0252e65ec398593c166720fffce61094dc81a77452a0853f4da228",
+    "artifacts/full/variants/semantic/hierarchy_2026.json": "23b4e3eba7869749e2a1d7a484b6a6100e755e45d8fd6c32713ad4821f04cb5e",
+    "artifacts/full/variants/static/hierarchy_2020.json": "0e3a4af9a88788e12b3edc36b69799baa7860345e4bb912ac6022909695282e4",
+    "artifacts/full/variants/static/hierarchy_2022.json": "d8f02d4b3f94f3e9b2ad97ce99c56a19c7c98f6b89391626425371cc4248062e",
+    "artifacts/full/variants/static/hierarchy_2024.json": "53a8a97318fa4f3288a9cc659a23ad27dcaa83fc0f7c95f954cabc2048ec019b",
+    "artifacts/full/variants/static/hierarchy_2025_benchmark.json": "0f7b84cf05150dd4fd412c9ef1b86c08a2d1f43da08dc8f5ef646a588d9a0474",
+    "artifacts/full/variants/static/hierarchy_2026.json": "22d715432673d9db6a754218ba09c421763073b430cd3fb5e424f76e2ba8328e",
+    "artifacts/full/variants/structural/hierarchy_2020.json": "c678a866ef0de8dad9f7979165667b1803d4a4f513fc08bcd3cd2c7f284af5d0",
+    "artifacts/full/variants/structural/hierarchy_2022.json": "fc397f2df7b815de1810c202f00b56f9d56fc62981e05889f918aa258a044195",
+    "artifacts/full/variants/structural/hierarchy_2024.json": "c0ee2815afc2e8d9090cd558bd642ebc163dbb44946032686aaf7c764fc60612",
+    "artifacts/full/variants/structural/hierarchy_2025_benchmark.json": "fa9e354507d467128ac61c7e482a6ed089e024d6f0a19963398914df230c2128",
+    "artifacts/full/variants/structural/hierarchy_2026.json": "31d8f96f396ca39d254cebc978bc227007980382c8ce5376f26511b8a7e8e8cb",
+    "artifacts/full/variants/temporal/hierarchy_2020.json": "0e3a4af9a88788e12b3edc36b69799baa7860345e4bb912ac6022909695282e4",
+    "artifacts/full/variants/temporal/hierarchy_2022.json": "927b39e4540a118c233a46b75ade9d8bf9628e774c2dbdce5b4a74ad3f1663e6",
+    "artifacts/full/variants/temporal/hierarchy_2024.json": "a51bb0f5b559c057b2525939535b8d159e5fb50d691895f918e02da1f658bb84",
+    "artifacts/full/variants/temporal/hierarchy_2025_benchmark.json": "d7177f11b5c593a89fb0f54c63881c10eac87502291e3671227bd3110768db8b",
+    "artifacts/full/variants/temporal/hierarchy_2026.json": "7f4d9d2d7d722b642c07fe85c8d1b6fdcce90f964b4d1b1d492419f5aa9e206b"
+  },
+  "construction_config": {
+    "data_dir": "data/data",
+    "output": "artifacts/full",
+    "snapshots": [
+      2020,
+      2022,
+      2024,
+      2026
+    ],
+    "budgets": [
+      12,
+      40,
+      120
+    ],
+    "seed": 42,
+    "spectral_dim": 8,
+    "neighbors": 12,
+    "weights": {
+      "hyper": 0.3,
+      "spectral": 0.2,
+      "semantic": 0.35,
+      "temporal": 0.15
+    },
+    "relation_weights": {},
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "evaluation_model": "BAAI/bge-small-en-v1.5",
+    "evaluation_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "nli_model": "cross-encoder/nli-deberta-v3-small",
+    "nli_revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+    "include_type": true,
+    "variants": [
+      "semantic",
+      "structural",
+      "static",
+      "temporal",
+      "pairwise"
+    ],
+    "perturbation_seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "null_permutations": 50,
+    "retrieval_budgets": [
+      50,
+      100,
+      250,
+      500
+    ],
+    "retrieval_beam": 3,
+    "match_threshold": 0.2,
+    "event_threshold": 0.1,
+    "nli_threshold": 0.5,
+    "faithfulness_sample_per_level": 12,
+    "sensitivity": true
+  },
+  "data_hash": "36ae00351b01f5a39e09e8c15c6703004ee97a55ed437c261f227dd849ff4cc3",
+  "original_archive_sha256": "88c6ad81e3adaa2ba9cc6995bfad61794cad4cead0b9c14489ea9a96806c62bf",
+  "question_count": 18,
+  "baseline_summary": {
+    "semantic": {
+      "mapping": {
+        "mapped": 21,
+        "total": 50,
+        "ambiguous": 1
+      },
+      "retrieval": {
+        "status": "computed",
+        "hierarchical_recall": 0.03666666666666667,
+        "flat_recall": 0.02,
+        "questions_with_mapped_targets": 10,
+        "hierarchical_hit_rate": 0.2,
+        "flat_hit_rate": 0.1,
+        "hierarchical_inspections": 59.7,
+        "flat_inspections": 408.0,
+        "paired_recall_difference": {
+          "status": "computed",
+          "difference": 0.016666666666666666,
+          "ci95": [
+            0.0,
+            0.05
+          ],
+          "method": "paired question bootstrap; descriptive, questions are not a random domain sample",
+          "n": 10
+        }
+      },
+      "faithfulness": {
+        "2020:L0": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        },
+        "2020:L1": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        },
+        "2022:L0": {
+          "n": 12,
+          "overclaim_rate": 0.75
+        },
+        "2022:L1": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2024:L0": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        },
+        "2024:L1": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        },
+        "2026:L0": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2026:L1": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        }
+      }
+    },
+    "structural": {
+      "mapping": {
+        "mapped": 21,
+        "total": 50,
+        "ambiguous": 1
+      },
+      "retrieval": {
+        "status": "computed",
+        "hierarchical_recall": 0.02,
+        "flat_recall": 0.02,
+        "questions_with_mapped_targets": 10,
+        "hierarchical_hit_rate": 0.1,
+        "flat_hit_rate": 0.1,
+        "hierarchical_inspections": 352.8,
+        "flat_inspections": 408.0,
+        "paired_recall_difference": {
+          "status": "computed",
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired question bootstrap; descriptive, questions are not a random domain sample",
+          "n": 10
+        }
+      },
+      "faithfulness": {
+        "2020:L0": {
+          "n": 12,
+          "overclaim_rate": 1.0
+        },
+        "2020:L1": {
+          "n": 12,
+          "overclaim_rate": 0.6666666666666666
+        },
+        "2022:L0": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2022:L1": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2024:L0": {
+          "n": 12,
+          "overclaim_rate": 1.0
+        },
+        "2024:L1": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2026:L0": {
+          "n": 12,
+          "overclaim_rate": 1.0
+        },
+        "2026:L1": {
+          "n": 12,
+          "overclaim_rate": 1.0
+        }
+      }
+    },
+    "static": {
+      "mapping": {
+        "mapped": 21,
+        "total": 50,
+        "ambiguous": 1
+      },
+      "retrieval": {
+        "status": "computed",
+        "hierarchical_recall": 0.04,
+        "flat_recall": 0.02,
+        "questions_with_mapped_targets": 10,
+        "hierarchical_hit_rate": 0.1,
+        "flat_hit_rate": 0.1,
+        "hierarchical_inspections": 57.1,
+        "flat_inspections": 408.0,
+        "paired_recall_difference": {
+          "status": "computed",
+          "difference": 0.02,
+          "ci95": [
+            0.0,
+            0.06000000000000001
+          ],
+          "method": "paired question bootstrap; descriptive, questions are not a random domain sample",
+          "n": 10
+        }
+      },
+      "faithfulness": {
+        "2020:L0": {
+          "n": 12,
+          "overclaim_rate": 0.75
+        },
+        "2020:L1": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        },
+        "2022:L0": {
+          "n": 12,
+          "overclaim_rate": 0.75
+        },
+        "2022:L1": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        },
+        "2024:L0": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2024:L1": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2026:L0": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2026:L1": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        }
+      }
+    },
+    "temporal": {
+      "mapping": {
+        "mapped": 21,
+        "total": 50,
+        "ambiguous": 1
+      },
+      "retrieval": {
+        "status": "computed",
+        "hierarchical_recall": 0.02,
+        "flat_recall": 0.02,
+        "questions_with_mapped_targets": 10,
+        "hierarchical_hit_rate": 0.1,
+        "flat_hit_rate": 0.1,
+        "hierarchical_inspections": 52.2,
+        "flat_inspections": 408.0,
+        "paired_recall_difference": {
+          "status": "computed",
+          "difference": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "method": "paired question bootstrap; descriptive, questions are not a random domain sample",
+          "n": 10
+        }
+      },
+      "faithfulness": {
+        "2020:L0": {
+          "n": 12,
+          "overclaim_rate": 0.75
+        },
+        "2020:L1": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        },
+        "2022:L0": {
+          "n": 12,
+          "overclaim_rate": 0.75
+        },
+        "2022:L1": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2024:L0": {
+          "n": 12,
+          "overclaim_rate": 1.0
+        },
+        "2024:L1": {
+          "n": 12,
+          "overclaim_rate": 1.0
+        },
+        "2026:L0": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2026:L1": {
+          "n": 12,
+          "overclaim_rate": 1.0
+        }
+      }
+    },
+    "pairwise": {
+      "mapping": {
+        "mapped": 21,
+        "total": 50,
+        "ambiguous": 1
+      },
+      "retrieval": {
+        "status": "computed",
+        "hierarchical_recall": 0.0,
+        "flat_recall": 0.02,
+        "questions_with_mapped_targets": 10,
+        "hierarchical_hit_rate": 0.0,
+        "flat_hit_rate": 0.1,
+        "hierarchical_inspections": 48.6,
+        "flat_inspections": 408.0,
+        "paired_recall_difference": {
+          "status": "computed",
+          "difference": -0.02,
+          "ci95": [
+            -0.06000000000000001,
+            0.0
+          ],
+          "method": "paired question bootstrap; descriptive, questions are not a random domain sample",
+          "n": 10
+        }
+      },
+      "faithfulness": {
+        "2020:L0": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        },
+        "2020:L1": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        },
+        "2022:L0": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2022:L1": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2024:L0": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        },
+        "2024:L1": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2026:L0": {
+          "n": 12,
+          "overclaim_rate": 0.9166666666666666
+        },
+        "2026:L1": {
+          "n": 12,
+          "overclaim_rate": 0.8333333333333334
+        }
+      }
+    }
+  },
+  "raw_vs_visible": [
+    {
+      "cutoff": 2020,
+      "raw_edge_year": 405,
+      "visible_edges": 374
+    },
+    {
+      "cutoff": 2022,
+      "raw_edge_year": 589,
+      "visible_edges": 526
+    },
+    {
+      "cutoff": 2024,
+      "raw_edge_year": 1063,
+      "visible_edges": 983
+    },
+    {
+      "cutoff": 2026,
+      "raw_edge_year": 1429,
+      "visible_edges": 1429
+    }
+  ],
+  "prior_reproduction_check": {
+    "status": "passed",
+    "fresh_cached_model_vectors_identical": true,
+    "hierarchies": [
+      {
+        "variant": "semantic",
+        "snapshot": 2020,
+        "identical": true
+      },
+      {
+        "variant": "semantic",
+        "snapshot": 2022,
+        "identical": true
+      },
+      {
+        "variant": "semantic",
+        "snapshot": 2024,
+        "identical": true
+      },
+      {
+        "variant": "semantic",
+        "snapshot": 2026,
+        "identical": true
+      },
+      {
+        "variant": "structural",
+        "snapshot": 2020,
+        "identical": true
+      },
+      {
+        "variant": "structural",
+        "snapshot": 2022,
+        "identical": true
+      },
+      {
+        "variant": "structural",
+        "snapshot": 2024,
+        "identical": true
+      },
+      {
+        "variant": "structural",
+        "snapshot": 2026,
+        "identical": true
+      },
+      {
+        "variant": "static",
+        "snapshot": 2020,
+        "identical": true
+      },
+      {
+        "variant": "static",
+        "snapshot": 2022,
+        "identical": true
+      },
+      {
+        "variant": "static",
+        "snapshot": 2024,
+        "identical": true
+      },
+      {
+        "variant": "static",
+        "snapshot": 2026,
+        "identical": true
+      },
+      {
+        "variant": "temporal",
+        "snapshot": 2020,
+        "identical": true
+      },
+      {
+        "variant": "temporal",
+        "snapshot": 2022,
+        "identical": true
+      },
+      {
+        "variant": "temporal",
+        "snapshot": 2024,
+        "identical": true
+      },
+      {
+        "variant": "temporal",
+        "snapshot": 2026,
+        "identical": true
+      },
+      {
+        "variant": "pairwise",
+        "snapshot": 2020,
+        "identical": true
+      },
+      {
+        "variant": "pairwise",
+        "snapshot": 2022,
+        "identical": true
+      },
+      {
+        "variant": "pairwise",
+        "snapshot": 2024,
+        "identical": true
+      },
+      {
+        "variant": "pairwise",
+        "snapshot": 2026,
+        "identical": true
+      }
+    ]
+  }
+}

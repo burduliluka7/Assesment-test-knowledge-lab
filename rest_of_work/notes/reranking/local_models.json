@@ -1,0 +1,38 @@
+{
+  "cache": "C:\\Users\\Luka Burduli\\.cache\\huggingface\\hub",
+  "models": [
+    {
+      "model": "models--BAAI--bge-small-en-v1.5",
+      "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+      "architectures": [
+        "BertModel"
+      ],
+      "id2label": {
+        "0": "LABEL_0"
+      },
+      "local_weights": true
+    },
+    {
+      "model": "models--cross-encoder--nli-deberta-v3-small",
+      "revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+      "architectures": [
+        "DebertaV2ForSequenceClassification"
+      ],
+      "id2label": {
+        "0": "contradiction",
+        "1": "entailment",
+        "2": "neutral"
+      },
+      "local_weights": true
+    },
+    {
+      "model": "models--sentence-transformers--all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "architectures": [
+        "BertModel"
+      ],
+      "id2label": null,
+      "local_weights": true
+    }
+  ]
+}

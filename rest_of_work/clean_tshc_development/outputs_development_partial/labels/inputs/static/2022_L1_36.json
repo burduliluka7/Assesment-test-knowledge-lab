@@ -1,0 +1,31 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "task_00443",
+      "type": "task",
+      "surface_form": "Convex hull distance prediction"
+    },
+    {
+      "id": "tech_00596",
+      "type": "technique",
+      "surface_form": "convex hull distance prediction"
+    },
+    {
+      "id": "tech_00618",
+      "type": "technique",
+      "surface_form": "Convex hull distance filtering"
+    }
+  ],
+  "generation_type_counts": {
+    "task": 1,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "convex hull distance",
+  "representative_ids": [
+    "tech_00596",
+    "task_00443"
+  ]
+}

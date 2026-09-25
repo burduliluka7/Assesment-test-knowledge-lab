@@ -1,0 +1,25 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "metr_00061",
+      "type": "metric",
+      "surface_form": "MSE loss"
+    },
+    {
+      "id": "metr_00074",
+      "type": "metric",
+      "surface_form": "energy RMSE (10^-3 eV/atom)"
+    }
+  ],
+  "generation_type_counts": {
+    "metric": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mse",
+  "representative_ids": [
+    "metr_00061",
+    "metr_00074"
+  ]
+}

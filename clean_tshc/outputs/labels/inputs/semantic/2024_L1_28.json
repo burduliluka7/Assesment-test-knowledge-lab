@@ -1,0 +1,612 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00054",
+      "type": "claim",
+      "surface_form": "A two-step approach combining unsupervised clustering with supervised regression achieves 156±4 K MAE and 0.92 R², outperforming direct one-step supervised learning."
+    },
+    {
+      "id": "comp_00132",
+      "type": "component",
+      "surface_form": "Sparse cluster‑expansion surrogate"
+    },
+    {
+      "id": "comp_00160",
+      "type": "component",
+      "surface_form": "Coordinate‑free Wyckoff position encoding"
+    },
+    {
+      "id": "comp_00224",
+      "type": "component",
+      "surface_form": "Regularized least‑squares solution for expansion coefficients"
+    },
+    {
+      "id": "comp_00231",
+      "type": "component",
+      "surface_form": "Time‑reversal parity index"
+    },
+    {
+      "id": "comp_00236",
+      "type": "component",
+      "surface_form": "Sorted neighbor list"
+    },
+    {
+      "id": "comp_00270",
+      "type": "component",
+      "surface_form": "Neural local scaling transformation"
+    },
+    {
+      "id": "comp_00418",
+      "type": "component",
+      "surface_form": "separable layer normalization"
+    },
+    {
+      "id": "comp_00422",
+      "type": "component",
+      "surface_form": "SO(3) irreps features"
+    },
+    {
+      "id": "comp_00431",
+      "type": "component",
+      "surface_form": "Scalar Layer Normalization"
+    },
+    {
+      "id": "comp_00445",
+      "type": "component",
+      "surface_form": "Ensemble-based decision tree feature selector"
+    },
+    {
+      "id": "comp_00536",
+      "type": "component",
+      "surface_form": "Precise neighbor indexing"
+    },
+    {
+      "id": "comp_00608",
+      "type": "component",
+      "surface_form": "Composition-based deterministic hashing"
+    },
+    {
+      "id": "comp_00631",
+      "type": "component",
+      "surface_form": "uncorrelated snapshots selection"
+    },
+    {
+      "id": "comp_00832",
+      "type": "component",
+      "surface_form": "Statistical moment features"
+    },
+    {
+      "id": "comp_00833",
+      "type": "component",
+      "surface_form": "86-feature materials fingerprint"
+    },
+    {
+      "id": "comp_00845",
+      "type": "component",
+      "surface_form": "Tree ensemble model"
+    },
+    {
+      "id": "comp_00846",
+      "type": "component",
+      "surface_form": "Material fingerprints"
+    },
+    {
+      "id": "comp_00847",
+      "type": "component",
+      "surface_form": "SHAP analysis module"
+    },
+    {
+      "id": "comp_00849",
+      "type": "component",
+      "surface_form": "Two-cluster separation scheme"
+    },
+    {
+      "id": "comp_00852",
+      "type": "component",
+      "surface_form": "Two-step clustering approach"
+    },
+    {
+      "id": "data_00215",
+      "type": "dataset",
+      "surface_form": "Trimer configurations"
+    },
+    {
+      "id": "data_00248",
+      "type": "dataset",
+      "surface_form": "He (local scaling)"
+    },
+    {
+      "id": "data_00250",
+      "type": "dataset",
+      "surface_form": "Be (local scaling)"
+    },
+    {
+      "id": "data_00251",
+      "type": "dataset",
+      "surface_form": "C (local scaling)"
+    },
+    {
+      "id": "data_00253",
+      "type": "dataset",
+      "surface_form": "O (local scaling)"
+    },
+    {
+      "id": "meth_00010",
+      "type": "method",
+      "surface_form": "Layer Normalization"
+    },
+    {
+      "id": "meth_00013",
+      "type": "method",
+      "surface_form": "Random Forest"
+    },
+    {
+      "id": "meth_00014",
+      "type": "method",
+      "surface_form": "Batch Normalization"
+    },
+    {
+      "id": "meth_00015",
+      "type": "method",
+      "surface_form": "Adaptive Moment Estimation"
+    },
+    {
+      "id": "meth_00019",
+      "type": "method",
+      "surface_form": "Deep ensembles"
+    },
+    {
+      "id": "meth_00029",
+      "type": "method",
+      "surface_form": "Principal Component Analysis"
+    },
+    {
+      "id": "meth_00045",
+      "type": "method",
+      "surface_form": "Neural fingerprint"
+    },
+    {
+      "id": "meth_00063",
+      "type": "method",
+      "surface_form": "Random Forests"
+    },
+    {
+      "id": "meth_00106",
+      "type": "method",
+      "surface_form": "SHAP"
+    },
+    {
+      "id": "meth_00235",
+      "type": "method",
+      "surface_form": "Principal Neighborhood Aggregation"
+    },
+    {
+      "id": "meth_00443",
+      "type": "method",
+      "surface_form": "Silhouette score"
+    },
+    {
+      "id": "meth_00447",
+      "type": "method",
+      "surface_form": "tree ensemble methods"
+    },
+    {
+      "id": "metr_00027",
+      "type": "metric",
+      "surface_form": "softening scale"
+    },
+    {
+      "id": "metr_00028",
+      "type": "metric",
+      "surface_form": "phonon softening scale"
+    },
+    {
+      "id": "prob_00279",
+      "type": "problem",
+      "surface_form": "Dataset size scaling characterization"
+    },
+    {
+      "id": "prob_00282",
+      "type": "problem",
+      "surface_form": "Feature engineering automation"
+    },
+    {
+      "id": "prob_00623",
+      "type": "problem",
+      "surface_form": "Feature correlation handling"
+    },
+    {
+      "id": "task_00432",
+      "type": "task",
+      "surface_form": "data format conversion"
+    },
+    {
+      "id": "task_00616",
+      "type": "task",
+      "surface_form": "Weak-scaling benchmark"
+    },
+    {
+      "id": "task_00617",
+      "type": "task",
+      "surface_form": "Strong-scaling benchmark"
+    },
+    {
+      "id": "task_00702",
+      "type": "task",
+      "surface_form": "Ring statistics analysis"
+    },
+    {
+      "id": "task_00722",
+      "type": "task",
+      "surface_form": "SHAP feature importance analysis"
+    },
+    {
+      "id": "task_00732",
+      "type": "task",
+      "surface_form": "Cluster-based regression"
+    },
+    {
+      "id": "tech_00012",
+      "type": "technique",
+      "surface_form": "Batch normalization"
+    },
+    {
+      "id": "tech_00023",
+      "type": "technique",
+      "surface_form": "Ensemble learning"
+    },
+    {
+      "id": "tech_00042",
+      "type": "technique",
+      "surface_form": "Principal component analysis"
+    },
+    {
+      "id": "tech_00060",
+      "type": "technique",
+      "surface_form": "Message normalization"
+    },
+    {
+      "id": "tech_00063",
+      "type": "technique",
+      "surface_form": "Data preprocessing"
+    },
+    {
+      "id": "tech_00064",
+      "type": "technique",
+      "surface_form": "Topological sort"
+    },
+    {
+      "id": "tech_00104",
+      "type": "technique",
+      "surface_form": "Feature standardization"
+    },
+    {
+      "id": "tech_00132",
+      "type": "technique",
+      "surface_form": "Acoustic sum‑rule enforcement via equivariance"
+    },
+    {
+      "id": "tech_00145",
+      "type": "technique",
+      "surface_form": "RMS normalization of variance features"
+    },
+    {
+      "id": "tech_00146",
+      "type": "technique",
+      "surface_form": "Energy scaling to zero mean and unit variance"
+    },
+    {
+      "id": "tech_00168",
+      "type": "technique",
+      "surface_form": "Genetic‑algorithm selection of cluster‑expansion basis functions"
+    },
+    {
+      "id": "tech_00175",
+      "type": "technique",
+      "surface_form": "Cluster expansion parameterization"
+    },
+    {
+      "id": "tech_00208",
+      "type": "technique",
+      "surface_form": "Data augmentation for equivariance"
+    },
+    {
+      "id": "tech_00214",
+      "type": "technique",
+      "surface_form": "Coordinate‑free Wyckoff encoding"
+    },
+    {
+      "id": "tech_00235",
+      "type": "technique",
+      "surface_form": "Principal component analysis (PCA) of latent features"
+    },
+    {
+      "id": "tech_00242",
+      "type": "technique",
+      "surface_form": "NVT ensemble MD with 2 fs timestep"
+    },
+    {
+      "id": "tech_00265",
+      "type": "technique",
+      "surface_form": "Time‑reversal equivariance via parity indexing"
+    },
+    {
+      "id": "tech_00271",
+      "type": "technique",
+      "surface_form": "Neighbor sorting by species and inverse distance"
+    },
+    {
+      "id": "tech_00281",
+      "type": "technique",
+      "surface_form": "Local coordinate transformation"
+    },
+    {
+      "id": "tech_00284",
+      "type": "technique",
+      "surface_form": "Rotation‑invariant local coordinate representation"
+    },
+    {
+      "id": "tech_00291",
+      "type": "technique",
+      "surface_form": "Sigmoid‑gated neighbor aggregation"
+    },
+    {
+      "id": "tech_00297",
+      "type": "technique",
+      "surface_form": "Neural local scaling"
+    },
+    {
+      "id": "tech_00298",
+      "type": "technique",
+      "surface_form": "Local scaling transformation"
+    },
+    {
+      "id": "tech_00315",
+      "type": "technique",
+      "surface_form": "Orientation‑angle encoding"
+    },
+    {
+      "id": "tech_00338",
+      "type": "technique",
+      "surface_form": "Rule‑of‑mixtures analysis"
+    },
+    {
+      "id": "tech_00339",
+      "type": "technique",
+      "surface_form": "Sum and Max aggregation"
+    },
+    {
+      "id": "tech_00357",
+      "type": "technique",
+      "surface_form": "Feature‑importance analysis"
+    },
+    {
+      "id": "tech_00384",
+      "type": "technique",
+      "surface_form": "Linear scaling correction"
+    },
+    {
+      "id": "tech_00447",
+      "type": "technique",
+      "surface_form": "Separate normalization statistics"
+    },
+    {
+      "id": "tech_00454",
+      "type": "technique",
+      "surface_form": "Degree scaling"
+    },
+    {
+      "id": "tech_00455",
+      "type": "technique",
+      "surface_form": "Order scaling"
+    },
+    {
+      "id": "tech_00456",
+      "type": "technique",
+      "surface_form": "Transformer block scaling"
+    },
+    {
+      "id": "tech_00473",
+      "type": "technique",
+      "surface_form": "Automated feature generation"
+    },
+    {
+      "id": "tech_00479",
+      "type": "technique",
+      "surface_form": "Feature dropping threshold"
+    },
+    {
+      "id": "tech_00480",
+      "type": "technique",
+      "surface_form": "Gini importance-based feature selection"
+    },
+    {
+      "id": "tech_00488",
+      "type": "technique",
+      "surface_form": "Categorical feature encoding"
+    },
+    {
+      "id": "tech_00489",
+      "type": "technique",
+      "surface_form": "Pearson correlation-based feature reduction"
+    },
+    {
+      "id": "tech_00497",
+      "type": "technique",
+      "surface_form": "Relative error normalization"
+    },
+    {
+      "id": "tech_00500",
+      "type": "technique",
+      "surface_form": "Leave-one-cluster-out CV"
+    },
+    {
+      "id": "tech_00502",
+      "type": "technique",
+      "surface_form": "Data cleaning and feature reduction"
+    },
+    {
+      "id": "tech_00537",
+      "type": "technique",
+      "surface_form": "Complex-valued feature conversion"
+    },
+    {
+      "id": "tech_00549",
+      "type": "technique",
+      "surface_form": "Matrix feature conversion"
+    },
+    {
+      "id": "tech_00560",
+      "type": "technique",
+      "surface_form": "Distance-based neighbor sorting"
+    },
+    {
+      "id": "tech_00564",
+      "type": "technique",
+      "surface_form": "Residual layer normalization"
+    },
+    {
+      "id": "tech_00576",
+      "type": "technique",
+      "surface_form": "64-bit integer neighbor encoding"
+    },
+    {
+      "id": "tech_00582",
+      "type": "technique",
+      "surface_form": "Automatic batch size determination"
+    },
+    {
+      "id": "tech_00583",
+      "type": "technique",
+      "surface_form": "Automatic neighbor size determination"
+    },
+    {
+      "id": "tech_00649",
+      "type": "technique",
+      "surface_form": "Ecut scaling factor"
+    },
+    {
+      "id": "tech_00668",
+      "type": "technique",
+      "surface_form": "Message passing with normalized sums"
+    },
+    {
+      "id": "tech_00672",
+      "type": "technique",
+      "surface_form": "Data shifting and scaling"
+    },
+    {
+      "id": "tech_00677",
+      "type": "technique",
+      "surface_form": "Median prediction aggregation"
+    },
+    {
+      "id": "tech_00688",
+      "type": "technique",
+      "surface_form": "Composition-based hash filtering"
+    },
+    {
+      "id": "tech_00693",
+      "type": "technique",
+      "surface_form": "Batch size adjustment"
+    },
+    {
+      "id": "tech_00697",
+      "type": "technique",
+      "surface_form": "NVE ensemble sampling"
+    },
+    {
+      "id": "tech_00784",
+      "type": "technique",
+      "surface_form": "Strong scaling benchmark"
+    },
+    {
+      "id": "tech_00800",
+      "type": "technique",
+      "surface_form": "Weak-scaling evaluation"
+    },
+    {
+      "id": "tech_00801",
+      "type": "technique",
+      "surface_form": "Strong-scaling evaluation"
+    },
+    {
+      "id": "tech_00919",
+      "type": "technique",
+      "surface_form": "snapshot extraction at multiple time points"
+    },
+    {
+      "id": "tech_00930",
+      "type": "technique",
+      "surface_form": "Dimer/trimer data inclusion"
+    },
+    {
+      "id": "tech_00931",
+      "type": "technique",
+      "surface_form": "unsupervised clustering by bonding type"
+    },
+    {
+      "id": "tech_00939",
+      "type": "technique",
+      "surface_form": "Min-max scaling"
+    },
+    {
+      "id": "tech_00942",
+      "type": "technique",
+      "surface_form": "ensemble averaging over random seeds"
+    },
+    {
+      "id": "tech_00943",
+      "type": "technique",
+      "surface_form": "Calinski-Harabasz score optimization"
+    },
+    {
+      "id": "tech_00944",
+      "type": "technique",
+      "surface_form": "silhouette score optimization"
+    },
+    {
+      "id": "tech_00948",
+      "type": "technique",
+      "surface_form": "SHAP feature importance analysis"
+    },
+    {
+      "id": "tech_00952",
+      "type": "technique",
+      "surface_form": "SHAP analysis"
+    },
+    {
+      "id": "tech_00956",
+      "type": "technique",
+      "surface_form": "Vectorized fingerprint generation"
+    },
+    {
+      "id": "tech_00957",
+      "type": "technique",
+      "surface_form": "Silhouette score analysis"
+    },
+    {
+      "id": "tech_00958",
+      "type": "technique",
+      "surface_form": "Ensemble-averaged feature importance"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 20,
+    "dataset": 5,
+    "method": 12,
+    "metric": 2,
+    "problem": 3,
+    "task": 6,
+    "technique": 69
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "scaling",
+  "representative_ids": [
+    "tech_00800",
+    "tech_00297"
+  ]
+}

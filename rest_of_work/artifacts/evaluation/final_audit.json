@@ -1,0 +1,228 @@
+{
+  "status": "passed_with_explicit_partials",
+  "checks": [
+    {
+      "requirement": "T1: snapshot counts, types, arities, span, growth, quality",
+      "status": "PASS",
+      "evidence": [
+        "full/descriptive.json",
+        "full/data_quality.json"
+      ],
+      "detail": "All four snapshots export the required distributions, spans and changes."
+    },
+    {
+      "requirement": "T1: raw guide versus visible edges",
+      "status": "PASS",
+      "evidence": [
+        "baseline_v1/manifest.json",
+        "../report/report.md"
+      ],
+      "detail": "Raw 405/589/1063/1429 versus consistent 374/526/983/1429; article/member visibility explains the differences."
+    },
+    {
+      "requirement": "T2 / Deliverable 0: objective, tradeoff, guarantees, complexity, alternatives",
+      "status": "PASS",
+      "evidence": [
+        "../report/report.md",
+        "../src/tkh_abstraction/coarsening.py",
+        "../tests/test_core.py"
+      ],
+      "detail": "Formal objective and native/pairwise alternative; tested construction guarantees distinguished from empirical quality."
+    },
+    {
+      "requirement": "Literature: four verified complementary papers",
+      "status": "PASS",
+      "evidence": [
+        "../report/literature_notes.md",
+        "../report/report.md"
+      ],
+      "detail": "Primary-source bibliography verification recorded; spectral hypergraphs, hierarchy, coarsening and evolution covered."
+    },
+    {
+      "requirement": "P1/P2: laminar exclusive covering partitions and budgets",
+      "status": "PASS",
+      "evidence": [
+        "evaluation/verification.json",
+        "../tests/test_core.py"
+      ],
+      "detail": "25 hierarchies validate; tests reject overlap, empty clusters and invalid parents."
+    },
+    {
+      "requirement": "P3: semantic/structural tradeoff",
+      "status": "PASS",
+      "evidence": [
+        "full/metrics.json",
+        "../configs/default.yaml"
+      ],
+      "detail": "Five measured variants and original sensitivity; empirical usefulness is not guaranteed."
+    },
+    {
+      "requirement": "T3/P5: temporal objective, IDs and events",
+      "status": "PASS",
+      "evidence": [
+        "full/temporal_events.json",
+        "evaluation/event_counts.json",
+        "../tests/test_core.py"
+      ],
+      "detail": "Construction-time VI test, persistent IDs, and all six event types; measured stability separately."
+    },
+    {
+      "requirement": "T4/P4: native collapse",
+      "status": "PASS",
+      "evidence": [
+        "../src/tkh_abstraction/collapse.py",
+        "../tests/test_core.py"
+      ],
+      "detail": "m=n, partial and 3-endpoint cases preserve multiplicity/provenance; spy test proves coarse graph is next-level input; loss documented."
+    },
+    {
+      "requirement": "T5: automatic labels, exact visible inputs, glosses",
+      "status": "PASS",
+      "evidence": [
+        "evaluation/labels/temporal/generation_inputs_2026.json",
+        "../report/appendix_v2.md",
+        "../src/tkh_abstraction/labels_v2.py"
+      ],
+      "detail": "Every exported node has labels; all non-singletons have v2 overlays and complete generation inputs; split/cutoff audited."
+    },
+    {
+      "requirement": "T6 coherence: independent model, nulls, singleton treatment",
+      "status": "PASS",
+      "evidence": [
+        "full/metrics.json",
+        "../src/tkh_abstraction/evaluation/coherence.py"
+      ],
+      "detail": "MiniLM construction versus BGE evaluation; exact-size/type nulls; singleton exclusions and descriptive p-values."
+    },
+    {
+      "requirement": "T6 stability: five 10% edge-removal rebuilds and real transitions",
+      "status": "PASS",
+      "evidence": [
+        "full/metrics.json",
+        "full/reproduction_check.json"
+      ],
+      "detail": "Five deterministic removal sets asserted, all levels and approximate confidence intervals retained; unchanged artifact hashes verified."
+    },
+    {
+      "requirement": "T6 labels: unchanged threshold, holdout, proxies and human audit",
+      "status": "PARTIAL",
+      "evidence": [
+        "evaluation/labels/temporal/faithfulness.json",
+        "evaluation/labels/temporal/audit_blind.csv"
+      ],
+      "detail": "Automated paired held-out support evaluated at .50; human audit remains unfilled and scientific faithfulness unverified."
+    },
+    {
+      "requirement": "T6 extrinsic: typed entities, flat/legacy/prototypes, cost and FP categories",
+      "status": "PASS",
+      "evidence": [
+        "evaluation/extrinsic_v2.json",
+        "evaluation/retrieval/temporal_2025.json",
+        "evaluation/tests.xml"
+      ],
+      "detail": "Both cutoffs, five variants, five budgets; actual comparison traces; unmatched labels explicit; ground truth isolated from ranking."
+    },
+    {
+      "requirement": "T6 supporting claims / Type B defensible ground truth",
+      "status": "PARTIAL",
+      "evidence": [
+        "evaluation/claim_alignment.json",
+        "evaluation/diagnostics.json",
+        "evaluation/retrieval/temporal_2025.json"
+      ],
+      "detail": "Actual question-to-entity-to-claim retrieval and source hits exist; no benchmark claims clear all prespecified alignment gates, so claim recall is null, never zero/imputed."
+    },
+    {
+      "requirement": "P6: temporal honesty and label faithfulness",
+      "status": "PARTIAL",
+      "evidence": [
+        "../tests/test_v2.py",
+        "evaluation/labels/temporal/faithfulness.json",
+        "../report/report.md"
+      ],
+      "detail": "Visible inputs and no generation/holdout overlap verified; unversioned text, pretrained future knowledge and unverified expert faithfulness remain limitations."
+    },
+    {
+      "requirement": "Variants and shipping decision",
+      "status": "PASS",
+      "evidence": [
+        "full/metrics.json",
+        "../report/report.md"
+      ],
+      "detail": "All five variants measured; temporal retained as browser on stability/coherence grounds, not certified QA."
+    },
+    {
+      "requirement": "T7 deliverables and required hierarchy fields",
+      "status": "PASS",
+      "evidence": [
+        "evaluation/final_audit.json",
+        "../README.md",
+        "../requirements.txt",
+        "../AI_USAGE.md"
+      ],
+      "detail": "Required files and all six hierarchy fields programmatically asserted; archive manifest checked by packaging step."
+    },
+    {
+      "requirement": "Reproducibility: commands, seeds, dependencies, caches",
+      "status": "PASS",
+      "evidence": [
+        "evaluation/run.log",
+        "evaluation/tests.xml",
+        "full/reproduction_check.json",
+        "../README.md"
+      ],
+      "detail": "README evaluation command executed; earlier clean isolated environment rebuild recorded. Pinned public model downloads are external prerequisites; derived embeddings are optional."
+    },
+    {
+      "requirement": "Report: concise prose, verified/assumed, four more weeks",
+      "status": "PASS",
+      "evidence": [
+        "../report/report.md",
+        "../report/appendix_v2.md"
+      ],
+      "detail": "Main report separates measured results and limitations; detailed evidence in appendix. Markdown page count depends on renderer."
+    },
+    {
+      "requirement": "AI usage: prompts, serial Ultralight consultations, automated checks",
+      "status": "PASS",
+      "evidence": [
+        "../AI_USAGE.md",
+        "../notes/improvement/reviewer_retry.json",
+        "../notes/improvement/planner_retry.json"
+      ],
+      "detail": "No human review or failed consultation is represented as a completed scientific audit."
+    }
+  ],
+  "validated_hierarchies": 25,
+  "retrieval_runs_checked": 2880,
+  "test_result": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "97",
+    "time": "3.668",
+    "timestamp": "2026-09-24T14:52:05.279624+02:00",
+    "hostname": "DESKTOP-NHKRUP0"
+  },
+  "reuse": {
+    "status": "passed",
+    "validated_hierarchies": 25,
+    "baseline_manifest_sha256": "8bc68c749cebdfdcc461308eb78607d004a943ba5aca4009f4217cd58423e0c8",
+    "construction_keys_verified": [
+      "snapshots",
+      "budgets",
+      "seed",
+      "spectral_dim",
+      "neighbors",
+      "weights",
+      "relation_weights",
+      "embedding_model",
+      "embedding_revision",
+      "include_type",
+      "match_threshold",
+      "event_threshold"
+    ]
+  },
+  "original_metrics_unchanged": true
+}

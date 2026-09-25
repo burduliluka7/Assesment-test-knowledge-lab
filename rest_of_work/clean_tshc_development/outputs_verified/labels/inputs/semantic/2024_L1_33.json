@@ -1,0 +1,113 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00154",
+      "type": "claim",
+      "surface_form": "The DeepPot-SE descriptor is continuous up to the second-order derivative in its domain, unlike the local frame descriptor which is not smooth at the cutoff radius and when exchanging the order of two nearest neighbors."
+    },
+    {
+      "id": "comp_00517",
+      "type": "component",
+      "surface_form": "DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00519",
+      "type": "component",
+      "surface_form": "Hybrid descriptor"
+    },
+    {
+      "id": "comp_00527",
+      "type": "component",
+      "surface_form": "Two-body embedding DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00528",
+      "type": "component",
+      "surface_form": "Three-body embedding DeepPot-SE descriptor"
+    },
+    {
+      "id": "comp_00546",
+      "type": "component",
+      "surface_form": "two-body embedding full-information descriptor"
+    },
+    {
+      "id": "comp_00547",
+      "type": "component",
+      "surface_form": "two-body embedding radial descriptor"
+    },
+    {
+      "id": "comp_00549",
+      "type": "component",
+      "surface_form": "hybrid descriptors"
+    },
+    {
+      "id": "comp_00554",
+      "type": "component",
+      "surface_form": "se e2 a descriptor"
+    },
+    {
+      "id": "comp_00798",
+      "type": "component",
+      "surface_form": "Two-body descriptor"
+    },
+    {
+      "id": "comp_00799",
+      "type": "component",
+      "surface_form": "Three-body descriptor"
+    },
+    {
+      "id": "comp_00800",
+      "type": "component",
+      "surface_form": "Many-body descriptor"
+    },
+    {
+      "id": "comp_00801",
+      "type": "component",
+      "surface_form": "Hierarchical descriptor set"
+    },
+    {
+      "id": "comp_00809",
+      "type": "component",
+      "surface_form": "3b descriptor"
+    },
+    {
+      "id": "comp_00810",
+      "type": "component",
+      "surface_form": "MB descriptor"
+    },
+    {
+      "id": "comp_00813",
+      "type": "component",
+      "surface_form": "Two-body plus three-body descriptors"
+    },
+    {
+      "id": "prob_00267",
+      "type": "problem",
+      "surface_form": "Paradox of choice in descriptor/model selection"
+    },
+    {
+      "id": "prob_00622",
+      "type": "problem",
+      "surface_form": "Physically interpretable descriptor construction"
+    },
+    {
+      "id": "tech_00909",
+      "type": "technique",
+      "surface_form": "Hierarchical descriptor combination"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 1,
+    "component": 15,
+    "problem": 2,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "descriptor",
+  "representative_ids": [
+    "comp_00519",
+    "comp_00813"
+  ]
+}

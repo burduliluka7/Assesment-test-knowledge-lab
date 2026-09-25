@@ -1,0 +1,100 @@
+{
+  "categories": [
+    {
+      "category": "R3_11_100",
+      "instances": 8,
+      "improved": 3,
+      "unchanged": 1,
+      "worsened": 4,
+      "median_rank_gain": -1.5
+    },
+    {
+      "category": "R3_above100_or_missing",
+      "instances": 35,
+      "improved": 31,
+      "unchanged": 0,
+      "worsened": 4,
+      "median_rank_gain": 95.0
+    },
+    {
+      "category": "R3_top10",
+      "instances": 4,
+      "improved": 1,
+      "unchanged": 1,
+      "worsened": 2,
+      "median_rank_gain": -1.0
+    },
+    {
+      "category": "positive_seed_path_within_four_hops",
+      "instances": 47,
+      "improved": 35,
+      "unchanged": 2,
+      "worsened": 10,
+      "median_rank_gain": 67.0
+    },
+    {
+      "category": "sparse_cited_work",
+      "instances": 4,
+      "improved": 4,
+      "unchanged": 0,
+      "worsened": 0,
+      "median_rank_gain": 1667.5
+    },
+    {
+      "category": "top20_evidence_seed_within_two_hops",
+      "instances": 14,
+      "improved": 9,
+      "unchanged": 1,
+      "worsened": 4,
+      "median_rank_gain": 28.0
+    }
+  ],
+  "seed_node_counts": {
+    "problem": 317,
+    "task": 334,
+    "method": 61,
+    "claim": 300,
+    "future_topic": 118,
+    "technique": 68,
+    "article": 101,
+    "component": 58,
+    "cited_work": 27,
+    "dataset": 15,
+    "metric": 1
+  },
+  "mean_seed_mass_by_type": {
+    "problem": 0.22686648815142868,
+    "task": 0.23942968709675608,
+    "method": 0.043742823984793976,
+    "claim": 0.21336439430798232,
+    "future_topic": 0.08453574621092386,
+    "technique": 0.048400970730109634,
+    "article": 0.07192388501760502,
+    "component": 0.041211532346261605,
+    "cited_work": 0.01924825151020026,
+    "dataset": 0.010579871824441298,
+    "metric": 0.0006963488194973901
+  },
+  "seed_types_in_H2_top100_paths": {
+    "problem": 33,
+    "task": 24,
+    "future_topic": 7,
+    "claim": 2,
+    "cited_work": 8,
+    "method": 1,
+    "technique": 13,
+    "article": 5
+  },
+  "relations_in_H2_top100_paths": {
+    "solves": 35,
+    "extends": 54,
+    "addresses": 45,
+    "presents": 37,
+    "cites": 65,
+    "claims": 3,
+    "proposes_future_work": 7,
+    "uses_technique": 13,
+    "evaluated_on": 1
+  },
+  "interpretation": "Path counts overlap and describe selected short positive-seed paths, not causal utility, flow fractions or scientific entailment"
+}

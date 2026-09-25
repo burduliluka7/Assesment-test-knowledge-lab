@@ -1,0 +1,239 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00047",
+      "type": "article",
+      "surface_form": "Challenges and opportunities for machine learning in multiscale computational modeling"
+    },
+    {
+      "id": "clai_00357",
+      "type": "claim",
+      "surface_form": "Current challenges limiting AI‑driven multiscale modeling include limited data availability, restricted model transferability, and limited explainability."
+    },
+    {
+      "id": "clai_00402",
+      "type": "claim",
+      "surface_form": "Hierarchical multiscale modeling approaches require large amounts of memory and storage space to store precomputed quantities of interest."
+    },
+    {
+      "id": "clai_00608",
+      "type": "claim",
+      "surface_form": "Increasing the correlation order of messages (ν) steepens the learning‑curve power law, yielding higher data efficiency."
+    },
+    {
+      "id": "clai_00638",
+      "type": "claim",
+      "surface_form": "Scaling law experiments were only performed on pretraining due to compute constraints, without studying finetuning effects with energy conservation."
+    },
+    {
+      "id": "comp_00270",
+      "type": "component",
+      "surface_form": "Neural local scaling transformation"
+    },
+    {
+      "id": "data_00248",
+      "type": "dataset",
+      "surface_form": "He (local scaling)"
+    },
+    {
+      "id": "data_00250",
+      "type": "dataset",
+      "surface_form": "Be (local scaling)"
+    },
+    {
+      "id": "data_00251",
+      "type": "dataset",
+      "surface_form": "C (local scaling)"
+    },
+    {
+      "id": "data_00253",
+      "type": "dataset",
+      "surface_form": "O (local scaling)"
+    },
+    {
+      "id": "futu_00085",
+      "type": "future_topic",
+      "surface_form": "Data-driven multiscale modeling"
+    },
+    {
+      "id": "futu_00099",
+      "type": "future_topic",
+      "surface_form": "Addressing data and discretization dependence in ML for multiscale modeling"
+    },
+    {
+      "id": "futu_00160",
+      "type": "future_topic",
+      "surface_form": "Learning curve power‑law behavior"
+    },
+    {
+      "id": "meth_00351",
+      "type": "method",
+      "surface_form": "ml_multiscale_modeling_perspective"
+    },
+    {
+      "id": "meth_00352",
+      "type": "method",
+      "surface_form": "Hierarchical multiscale modeling"
+    },
+    {
+      "id": "meth_00353",
+      "type": "method",
+      "surface_form": "Concurrent multiscale modeling"
+    },
+    {
+      "id": "meth_00428",
+      "type": "method",
+      "surface_form": "Chinchilla scaling"
+    },
+    {
+      "id": "prob_00096",
+      "type": "problem",
+      "surface_form": "Scale Disparity Management"
+    },
+    {
+      "id": "prob_00279",
+      "type": "problem",
+      "surface_form": "Dataset size scaling characterization"
+    },
+    {
+      "id": "prob_00512",
+      "type": "problem",
+      "surface_form": "Scaling to large parameter counts"
+    },
+    {
+      "id": "prob_00576",
+      "type": "problem",
+      "surface_form": "Compute-optimal model scaling"
+    },
+    {
+      "id": "task_00121",
+      "type": "task",
+      "surface_form": "multiscale modeling"
+    },
+    {
+      "id": "task_00461",
+      "type": "task",
+      "surface_form": "Multiscale computational modeling"
+    },
+    {
+      "id": "task_00617",
+      "type": "task",
+      "surface_form": "Strong-scaling benchmark"
+    },
+    {
+      "id": "tech_00297",
+      "type": "technique",
+      "surface_form": "Neural local scaling"
+    },
+    {
+      "id": "tech_00384",
+      "type": "technique",
+      "surface_form": "Linear scaling correction"
+    },
+    {
+      "id": "tech_00454",
+      "type": "technique",
+      "surface_form": "Degree scaling"
+    },
+    {
+      "id": "tech_00455",
+      "type": "technique",
+      "surface_form": "Order scaling"
+    },
+    {
+      "id": "tech_00649",
+      "type": "technique",
+      "surface_form": "Ecut scaling factor"
+    },
+    {
+      "id": "tech_00784",
+      "type": "technique",
+      "surface_form": "Strong scaling benchmark"
+    },
+    {
+      "id": "tech_00800",
+      "type": "technique",
+      "surface_form": "Weak-scaling evaluation"
+    },
+    {
+      "id": "tech_00801",
+      "type": "technique",
+      "surface_form": "Strong-scaling evaluation"
+    },
+    {
+      "id": "tech_00824",
+      "type": "technique",
+      "surface_form": "Target scaling"
+    },
+    {
+      "id": "tech_00865",
+      "type": "technique",
+      "surface_form": "Empirical scaling laws"
+    },
+    {
+      "id": "tech_00881",
+      "type": "technique",
+      "surface_form": "Scaling law exploitation"
+    },
+    {
+      "id": "tech_00939",
+      "type": "technique",
+      "surface_form": "Min-max scaling"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "claim": 4,
+    "component": 1,
+    "dataset": 4,
+    "future_topic": 3,
+    "method": 4,
+    "problem": 4,
+    "task": 3,
+    "technique": 12
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00318",
+      "relation_type": "presents",
+      "members": [
+        "arti_00047",
+        "meth_00351"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      }
+    },
+    {
+      "id": "h_01008",
+      "relation_type": "claims",
+      "members": [
+        "arti_00047",
+        "meth_00351",
+        "clai_00402"
+      ],
+      "year": 2023,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5450,
+        "article_year": 2023
+      },
+      "attributes": {
+        "claim_type": "descriptive",
+        "evidence_type": "citation_only",
+        "evidence_strength": "medium",
+        "confidence": 0.85
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "scaling",
+  "representative_ids": [
+    "tech_00784",
+    "tech_00939"
+  ]
+}

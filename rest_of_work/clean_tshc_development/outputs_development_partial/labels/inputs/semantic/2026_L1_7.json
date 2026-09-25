@@ -1,0 +1,515 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "arti_00010",
+      "type": "article",
+      "surface_form": "Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+    },
+    {
+      "id": "cite_00237",
+      "type": "cited_work",
+      "surface_form": "Li diffusion with NN potential"
+    },
+    {
+      "id": "clai_00011",
+      "type": "claim",
+      "surface_form": "Visual warnings are displayed on the Materials Project website for compounds whose calculated oxidation states, cell volumes, or bond lengths deviate significantly from experimental norms, helping users assess data reliability."
+    },
+    {
+      "id": "clai_00012",
+      "type": "claim",
+      "surface_form": "Automated validation checks compare calculated oxidation states, cell volumes, and bond lengths against experimental data and flag outliers for user review."
+    },
+    {
+      "id": "clai_00016",
+      "type": "claim",
+      "surface_form": "The distribution of chromium coordination environments in oxides derived from the database matches known chemical principles: Cr⁶⁺ prefers tetrahedral (4‑fold) coordination, while Cr³⁺ prefers octahedral (6‑fold) coordination."
+    },
+    {
+      "id": "clai_00018",
+      "type": "claim",
+      "surface_form": "Class‑specific computational methodologies and reference reactions are applied for solid‑gas, d‑block oxide, and dissolved‑ion systems to improve agreement with experimental data."
+    },
+    {
+      "id": "clai_00020",
+      "type": "claim",
+      "surface_form": "Future development plans include adding calculations of surface energies, elastic constants, point defects, finite‑temperature properties, and implementing a two‑way ‘calculations‑on‑demand’ feature for user‑submitted compounds."
+    },
+    {
+      "id": "clai_00028",
+      "type": "claim",
+      "surface_form": "The integrated JARVIS workflow (DFT → FF → ML) enables rapid screening of materials for high solar‑cell efficiency (SLME) with predictions validated against experimental data."
+    },
+    {
+      "id": "clai_00040",
+      "type": "claim",
+      "surface_form": "LiFlow predicts lithium mean‑squared displacement with a Spearman rank correlation of 0.7–0.8 on unseen material compositions, enabling screening of high‑diffusivity electrolytes."
+    },
+    {
+      "id": "clai_00042",
+      "type": "claim",
+      "surface_form": "The computational cost of LiFlow scales linearly with the number of atoms (O(n)), in contrast to the cubic scaling (O(n³)) of ab initio molecular dynamics."
+    },
+    {
+      "id": "clai_00046",
+      "type": "claim",
+      "surface_form": "Within the training temperature range, LiFlow’s predicted diffusivity D* closely matches reference values from Winter and Gómez‑Bombarelli."
+    },
+    {
+      "id": "clai_00047",
+      "type": "claim",
+      "surface_form": "A direct regression (Regressor) model yields higher mean‑squared‑displacement errors than the generative LiFlow model, demonstrating the necessity of generative modeling for accurate atomic transport simulation."
+    },
+    {
+      "id": "clai_00048",
+      "type": "claim",
+      "surface_form": "When extrapolating to temperatures lower than the training range, LiFlow’s predicted diffusivity D* decreases more slowly than reference data, indicating fictitious diffusive behavior at high 1000/T."
+    },
+    {
+      "id": "clai_00085",
+      "type": "claim",
+      "surface_form": "The ISO17 benchmark, comprising 645,000 conformations of 129 C7O2H10 isomers, is introduced to evaluate models on combined chemical and conformational variation."
+    },
+    {
+      "id": "clai_00328",
+      "type": "claim",
+      "surface_form": "Using the frozen‑framework approximation, where only a single Li ion moves while the host lattice remains fixed, reduces the generalization error of the ML‑IAP compared with fully relaxed MD or NEB simulations."
+    },
+    {
+      "id": "clai_00333",
+      "type": "claim",
+      "surface_form": "Finite‑size tests using a larger supercell and an ML‑IAP (SevenNet) show that diffusion coefficients converge within statistical uncertainties, confirming that the AIMD results are not significantly affected by supercell size."
+    },
+    {
+      "id": "clai_00386",
+      "type": "claim",
+      "surface_form": "A cluster expansion fitted to 333 DFT‑computed LiCoO₂ configurations using a genetic‑algorithm‑guided sparse regression achieves a root‑mean‑square error of 2.49 meV per primitive cell under 10‑fold cross‑validation and accurately reproduces formation energies, especially for configurations on or near the convex hull."
+    },
+    {
+      "id": "clai_00387",
+      "type": "claim",
+      "surface_form": "Large‑scale DFT calculations estimate the coherent anti‑phase boundary energy between the η₁ = ½ and η₃ = ½ ordered LiCoO₂ rotational variants to be 30.9 mJ m⁻²."
+    },
+    {
+      "id": "clai_00388",
+      "type": "claim",
+      "surface_form": "Integrable Deep Neural Networks trained on derivative (chemical‑potential) data accurately learn the high‑dimensional free‑energy density and chemical‑potential functions for LiₓCoO₂, achieving mean‑squared errors comparable to the reported minima and reproducing DFT formation energies with a mean absolute error below 5 meV atom⁻¹."
+    },
+    {
+      "id": "clai_00391",
+      "type": "claim",
+      "surface_form": "The presented scale‑bridging framework, linking DFT‑informed statistical mechanics to continuum phase‑field models via IDNN‑learned free‑energy functions, constitutes the first systematic implementation of this kind for LiCoO₂ cathodes."
+    },
+    {
+      "id": "clai_00394",
+      "type": "claim",
+      "surface_form": "Inclusion of van der Waals interactions together with DFT+U improves the accuracy of predicted order‑disorder transition temperatures for LiCoO₂ relative to earlier first‑principles studies."
+    },
+    {
+      "id": "clai_00499",
+      "type": "claim",
+      "surface_form": "The ML-assisted high-throughput search spanned approximately 1 billion compounds across 2500 binary and ternary structure prototypes."
+    },
+    {
+      "id": "clai_00635",
+      "type": "claim",
+      "surface_form": "UMA-M achieves ligand strain errors approaching DFT reference accuracy, demonstrating practical surrogate capability for structure-based drug design applications."
+    },
+    {
+      "id": "clai_00654",
+      "type": "claim",
+      "surface_form": "High‑throughput screening identified TiP, LiSiNi₂, and CoSi₂ as the most promising Li‑ion battery anode conversion reactions, offering high capacity, moderate voltage, and low volume expansion."
+    },
+    {
+      "id": "clai_00657",
+      "type": "claim",
+      "surface_form": "DFT screening predicts forty‑one previously unreported rare‑earth‑containing Mg‑XL‑XS ternary systems to be thermodynamically stable LPSO phases, providing new experimental targets."
+    },
+    {
+      "id": "clai_00658",
+      "type": "claim",
+      "surface_form": "Calcium and strontium are predicted to form stable (or nearly stable) LPSO precipitates in Mg alloys, offering affordable alternatives to rare‑earth elements, with Ca especially promising in the Mg‑Ca‑Zn system."
+    },
+    {
+      "id": "clai_00660",
+      "type": "claim",
+      "surface_form": "Applying the heuristic‑ML model to 1.6 million hypothetical ternary compositions identified nine top candidates, of which eight were confirmed by DFT to be new stable compounds (e.g., SiYb₃F₅, Pa₂O(SiO₆))."
+    },
+    {
+      "id": "comp_00363",
+      "type": "component",
+      "surface_form": "HF‑scavenging coating screen"
+    },
+    {
+      "id": "comp_00364",
+      "type": "component",
+      "surface_form": "LPSO precipitate stability evaluator"
+    },
+    {
+      "id": "comp_00600",
+      "type": "component",
+      "surface_form": "Relaxed oxidation-state balancing constraint"
+    },
+    {
+      "id": "comp_00628",
+      "type": "component",
+      "surface_form": "Diffusion coefficient convergence criterion"
+    },
+    {
+      "id": "comp_00750",
+      "type": "component",
+      "surface_form": "diffusion pretraining scheme"
+    },
+    {
+      "id": "data_00177",
+      "type": "dataset",
+      "surface_form": "Structure-based drug-design benchmarks"
+    },
+    {
+      "id": "futu_00012",
+      "type": "future_topic",
+      "surface_form": "Application of LiFlow to non‑crystalline (amorphous) materials"
+    },
+    {
+      "id": "futu_00013",
+      "type": "future_topic",
+      "surface_form": "Integration of LiFlow with universal MLIPs such as MACE‑MP‑0 and CHGNet"
+    },
+    {
+      "id": "futu_00015",
+      "type": "future_topic",
+      "surface_form": "Scaling LiFlow to multi‑ion systems beyond lithium"
+    },
+    {
+      "id": "futu_00018",
+      "type": "future_topic",
+      "surface_form": "ion migrations"
+    },
+    {
+      "id": "futu_00022",
+      "type": "future_topic",
+      "surface_form": "more challenging benchmark with chemical and structural variations"
+    },
+    {
+      "id": "futu_00040",
+      "type": "future_topic",
+      "surface_form": "automate challenging chemical search problems in drug discovery"
+    },
+    {
+      "id": "futu_00041",
+      "type": "future_topic",
+      "surface_form": "automate challenging chemical search problems in materials science"
+    },
+    {
+      "id": "futu_00113",
+      "type": "future_topic",
+      "surface_form": "High-throughput computational chemistry"
+    },
+    {
+      "id": "futu_00115",
+      "type": "future_topic",
+      "surface_form": "Bio-materials and enzymatic process simulation"
+    },
+    {
+      "id": "futu_00175",
+      "type": "future_topic",
+      "surface_form": "Training a machine‑learning model to predict new stable ternary compounds"
+    },
+    {
+      "id": "meth_00383",
+      "type": "method",
+      "surface_form": "DeePMD training protocol for diffusion coefficient computation"
+    },
+    {
+      "id": "metr_00043",
+      "type": "metric",
+      "surface_form": "diffusion coefficient uncertainty"
+    },
+    {
+      "id": "prob_00108",
+      "type": "problem",
+      "surface_form": "Oxidation‑state discrimination in battery cathodes"
+    },
+    {
+      "id": "prob_00161",
+      "type": "problem",
+      "surface_form": "Interpretability of learned chemical trends"
+    },
+    {
+      "id": "prob_00190",
+      "type": "problem",
+      "surface_form": "Capturing temperature‑dependent diffusion without re‑running AIMD"
+    },
+    {
+      "id": "prob_00202",
+      "type": "problem",
+      "surface_form": "High‑capacity battery anode identification"
+    },
+    {
+      "id": "prob_00203",
+      "type": "problem",
+      "surface_form": "HF‑induced cathode degradation mitigation"
+    },
+    {
+      "id": "prob_00204",
+      "type": "problem",
+      "surface_form": "Affordable LPSO precipitate discovery"
+    },
+    {
+      "id": "prob_00205",
+      "type": "problem",
+      "surface_form": "Novel ternary compound discovery"
+    },
+    {
+      "id": "prob_00206",
+      "type": "problem",
+      "surface_form": "Rapid prediction of ternary formation energies without crystal structures"
+    },
+    {
+      "id": "prob_00207",
+      "type": "problem",
+      "surface_form": "Efficient identification of likely stable ternary compounds"
+    },
+    {
+      "id": "prob_00297",
+      "type": "problem",
+      "surface_form": "ion migration barrier estimation"
+    },
+    {
+      "id": "prob_00389",
+      "type": "problem",
+      "surface_form": "Discovery in unseen chemical spaces"
+    },
+    {
+      "id": "prob_00463",
+      "type": "problem",
+      "surface_form": "Chemical space generalization"
+    },
+    {
+      "id": "prob_00590",
+      "type": "problem",
+      "surface_form": "Underestimated sp3 concentration in ta-C"
+    },
+    {
+      "id": "task_00002",
+      "type": "task",
+      "surface_form": "physics"
+    },
+    {
+      "id": "task_00004",
+      "type": "task",
+      "surface_form": "chemistry"
+    },
+    {
+      "id": "task_00006",
+      "type": "task",
+      "surface_form": "drug discovery"
+    },
+    {
+      "id": "task_00008",
+      "type": "task",
+      "surface_form": "Computational mechanics"
+    },
+    {
+      "id": "task_00010",
+      "type": "task",
+      "surface_form": "computational chemistry"
+    },
+    {
+      "id": "task_00020",
+      "type": "task",
+      "surface_form": "catalysis"
+    },
+    {
+      "id": "task_00023",
+      "type": "task",
+      "surface_form": "condensed matter physics"
+    },
+    {
+      "id": "task_00027",
+      "type": "task",
+      "surface_form": "quantum chemistry"
+    },
+    {
+      "id": "task_00094",
+      "type": "task",
+      "surface_form": "Free‑energy surrogate modeling for LiCoO₂"
+    },
+    {
+      "id": "task_00097",
+      "type": "task",
+      "surface_form": "Formation‑energy computation for LixCoO2 configurations"
+    },
+    {
+      "id": "task_00103",
+      "type": "task",
+      "surface_form": "battery materials"
+    },
+    {
+      "id": "task_00138",
+      "type": "task",
+      "surface_form": "Drug Discovery Assistance"
+    },
+    {
+      "id": "task_00142",
+      "type": "task",
+      "surface_form": "Li‑diffusivity prediction in garnet electrolytes"
+    },
+    {
+      "id": "task_00225",
+      "type": "task",
+      "surface_form": "Prediction of mean squared displacement and self‑diffusivity"
+    },
+    {
+      "id": "task_00231",
+      "type": "task",
+      "surface_form": "Solar‑cell efficiency screening"
+    },
+    {
+      "id": "task_00246",
+      "type": "task",
+      "surface_form": "High‑throughput screening of Li‑ion battery anodes"
+    },
+    {
+      "id": "task_00247",
+      "type": "task",
+      "surface_form": "Li2O‑based reaction search for Li‑air batteries"
+    },
+    {
+      "id": "task_00248",
+      "type": "task",
+      "surface_form": "Screening of metal‑oxide cathode coatings for HF scavenging"
+    },
+    {
+      "id": "task_00249",
+      "type": "task",
+      "surface_form": "Stability assessment of Mg‑based LPSO precipitates"
+    },
+    {
+      "id": "task_00251",
+      "type": "task",
+      "surface_form": "Formation‑energy prediction for ternary compounds"
+    },
+    {
+      "id": "task_00368",
+      "type": "task",
+      "surface_form": "High-throughput screening of battery materials"
+    },
+    {
+      "id": "task_00408",
+      "type": "task",
+      "surface_form": "Ion solution simulation"
+    },
+    {
+      "id": "task_00435",
+      "type": "task",
+      "surface_form": "reaction dynamics"
+    },
+    {
+      "id": "task_00519",
+      "type": "task",
+      "surface_form": "Ionic diffusivity computation"
+    },
+    {
+      "id": "task_00524",
+      "type": "task",
+      "surface_form": "Li10GeP2S12 diffusion modeling"
+    },
+    {
+      "id": "task_00525",
+      "type": "task",
+      "surface_form": "Li7La3Zr2O12 diffusion modeling"
+    },
+    {
+      "id": "task_00526",
+      "type": "task",
+      "surface_form": "Na3Zr2Si2PO12 diffusion modeling"
+    },
+    {
+      "id": "task_00531",
+      "type": "task",
+      "surface_form": "Li diffusion simulation in LLZO"
+    },
+    {
+      "id": "task_00532",
+      "type": "task",
+      "surface_form": "Na diffusion simulation in NASICON"
+    },
+    {
+      "id": "task_00544",
+      "type": "task",
+      "surface_form": "Statics and dynamics of chemically complex systems"
+    },
+    {
+      "id": "task_00550",
+      "type": "task",
+      "surface_form": "Aqueous systems dynamics"
+    },
+    {
+      "id": "task_00565",
+      "type": "task",
+      "surface_form": "Ion migration barrier prediction"
+    },
+    {
+      "id": "task_00649",
+      "type": "task",
+      "surface_form": "enzyme simulation"
+    },
+    {
+      "id": "task_00658",
+      "type": "task",
+      "surface_form": "Ligand-strain energy calculations"
+    },
+    {
+      "id": "task_00667",
+      "type": "task",
+      "surface_form": "Ligand strain prediction"
+    },
+    {
+      "id": "task_00668",
+      "type": "task",
+      "surface_form": "Pocket-ligand interaction energy prediction"
+    },
+    {
+      "id": "task_00675",
+      "type": "task",
+      "surface_form": "Surface catalysis modeling"
+    },
+    {
+      "id": "task_00677",
+      "type": "task",
+      "surface_form": "Catalysis prediction"
+    },
+    {
+      "id": "tech_00691",
+      "type": "technique",
+      "surface_form": "Minimum ion-ion distance cutoff"
+    },
+    {
+      "id": "tech_00751",
+      "type": "technique",
+      "surface_form": "Lowest-energy conformer selection"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 1,
+    "claim": 25,
+    "component": 5,
+    "dataset": 1,
+    "future_topic": 10,
+    "method": 1,
+    "metric": 1,
+    "problem": 13,
+    "task": 38,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "diffusion",
+  "representative_ids": [
+    "task_00010",
+    "futu_00113"
+  ]
+}

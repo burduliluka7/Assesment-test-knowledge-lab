@@ -1,0 +1,93 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "meth_00355",
+      "type": "method",
+      "surface_form": "AFLOW high-throughput DFT calculation protocol"
+    },
+    {
+      "id": "prob_00017",
+      "type": "problem",
+      "surface_form": "Efficient inference compared to DFT"
+    },
+    {
+      "id": "prob_00029",
+      "type": "problem",
+      "surface_form": "Computational cost of large‑scale DFT"
+    },
+    {
+      "id": "prob_00032",
+      "type": "problem",
+      "surface_form": "Accuracy‑efficiency trade‑off in large‑scale DFT"
+    },
+    {
+      "id": "prob_00115",
+      "type": "problem",
+      "surface_form": "high‑cost DFT geometry optimization"
+    },
+    {
+      "id": "prob_00129",
+      "type": "problem",
+      "surface_form": "DFT‑level accuracy with linear scaling"
+    },
+    {
+      "id": "prob_00135",
+      "type": "problem",
+      "surface_form": "Accuracy‑efficiency dilemma of DFT"
+    },
+    {
+      "id": "prob_00378",
+      "type": "problem",
+      "surface_form": "Reproducibility in high-throughput DFT"
+    },
+    {
+      "id": "prob_00381",
+      "type": "problem",
+      "surface_form": "Self-interaction error in DFT"
+    },
+    {
+      "id": "prob_00384",
+      "type": "problem",
+      "surface_form": "Aliasing errors in Fourier transforms"
+    },
+    {
+      "id": "prob_00385",
+      "type": "problem",
+      "surface_form": "Computational cost in high-throughput DFT"
+    },
+    {
+      "id": "task_00483",
+      "type": "task",
+      "surface_form": "High-throughput DFT calculations"
+    },
+    {
+      "id": "tech_00321",
+      "type": "technique",
+      "surface_form": "High‑throughput DFT"
+    },
+    {
+      "id": "tech_00597",
+      "type": "technique",
+      "surface_form": "high-throughput DFT validation"
+    },
+    {
+      "id": "tech_00616",
+      "type": "technique",
+      "surface_form": "High-throughput DFT calculations"
+    }
+  ],
+  "generation_type_counts": {
+    "method": 1,
+    "problem": 10,
+    "task": 1,
+    "technique": 3
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "dft",
+  "representative_ids": [
+    "task_00483",
+    "prob_00032"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "role": "reviewer",
+  "requestedModel": "claude-sonnet-5",
+  "usedModels": [
+    "claude-sonnet-5"
+  ],
+  "authMethod": "claude.ai",
+  "subscriptionType": "pro",
+  "is_error": false,
+  "permission_denials": [],
+  "result": "## Summary\n\nReviewed `coarsening.py`, `temporal.py`, `spectral.py`, `hierarchy.py`, `retrieval.py`, `pipeline.py`, and the three evaluation modules. The greedy-merge exact-delta mechanism and the VI-based temporal continuity math both check out; the issues below are the ones worth fixing or explicitly verifying before trusting the resulting numbers.\n\n## Must-verify (highest priority — could silently invalidate a headline metric)\n\n**1. `native_fragmentation` baseline may be corrupted if `collapse()` mutates in place — `hierarchy.py:16,20,33`**\n```python\ngraph=from_snapshot(snap,X,cfg['relation_weights']); native=graph   # line 16 — same object reference\nif variant=='pairwise': graph=clique_projection(graph)\n...\ngraph,_=collapse(graph,[[u.id] for u in graph.units],[...])         # line 20 — reassigns `graph`, but if collapse() mutates its input in place, `native` is corrupted too\n...\ndiagnostics.append(dict(...,native_fragmentation=objective_hyper(native,assignments(levels[level]))))  # line 33\n```\nFor non-`pairwise` variants, `native` and the initial `graph` are literally the same object. Every level's `native_fragmentation` diagnostic is supposed to measure fragmentation against the *original, uncoarsened* hypergraph. If `collapse()` (not in the reviewed file set) mutates its input `Hypergraph` rather than returning a fresh one, `native` silently becomes the *already-coarsened* graph after the first collapse call, and `native_fragmentation` for every subsequent level would be computed against a moving target instead of the fixed native baseline — quietly invalidating the fragmentation comparison across levels/variants. This is the most consequential \"native collapse reuse\" risk and should be confirmed against `collapse.py` (out of the reviewed scope) before relying on `native_fragmentation` values.\n\n**2. Cosine-scorer parity between `flat()` and `hierarchical()` depends on an unverified normalization invariant — `retrieval.py:5,11,30`**\n```python\ndef normalize(x): return x/max(float(np.linalg.norm(x)),1e-12)\ndef flat(...): ... ranking=sorted(eligible,key=lambda i:(-float(X[i]@query),...))          # line 11: raw dot, no normalize()\ndef hierarchical(...): score=float(normalize(X[ii].mean(axis=0))@query)                     # line 30: explicit normalize()\n```\nThe module docstring claims \"Same cosine scorer in both systems\" (`retrieval.py:1`), but `flat()` never normalizes `X[i]` while `hierarchical()` explicitly normalizes the cluster mean. This is only equivalent to true cosine similarity if every row of `X` (and `query`) is already unit-normalized upstream (in `semantics.py`, out of scope). `coherence.py:9-10`'s `score()` makes the identical assumption (`Y@mu/norm` without normalizing `Y`). If the encoder does not guarantee unit-norm output, `flat`'s ranking and `coherence`'s node-weighted score both silently stop being cosine similarity, biasing the flat-vs-hierarchical retrieval comparison and the coherence metric. Recommend confirming the encoder normalizes embeddings, or making `flat()`/`score()` normalize explicitly to remove the dependency.\n\n## Concrete bugs (self-contained, fixable)\n\n**3. `recall_all_expected` conflates \"no mappable ground truth\" with \"zero recall\" — `evaluation/extrinsic.py:29`**\n```python\ntargets={m:set(mapping[m]['node_ids']) for m in expected}; available={m:s for m,s in targets.items() if s}\n...\nrecall=len(hits)/len(available) if available else None            # correctly None when nothing is mappable\nrecall_all_expected=len(hits)/len(expected) if expected else None # line 29 — returns 0.0, not None, when `available` is empty but `expected` is non-empty\n```\nWhen none of a question's expected methods can be mapped to a corpus node (`available` empty), `recall_mapped` correctly reports `None` (censored), but `recall_all_expected` reports `0.0` — indistinguishable from \"we searched and found nothing.\" This field isn't used in the aggregated `summary` (`extrinsic.py:50-57` only uses `recall_mapped`), so it doesn't corrupt headline numbers, but it's a real correctness bug in a per-question diagnostic field that any downstream consumer (e.g. `reporting.py`) could misuse. Fix: return `None` when `available` is empty, mirroring `recall_mapped`.\n\n**4. Extrinsic benchmark-cutoff hierarchies bypass the run-key cache and discard their events — `pipeline.py:110-124`**\n```python\nxx=cluster.encode(...); pp=results[variant][max(predecessors)] if predecessors else None\nhh,ee=build(ss,xx,cfg,variant,pp); ll=label(hh,ss,xx)     # line 118 — `ee` (temporal events) computed then dropped\nwrite_json(out/'variants'/variant/f'hierarchy_{cutoff}_benchmark.json',hh)\n```\nUnlike the main snapshot loop (`pipeline.py:66-75`), this path has no `run_key` check, so every re-run of the pipeline unconditionally rebuilds the 2025/2026 benchmark hierarchies from scratch — inconsistent with the rest of the pipeline's reproducibility/caching design (not incorrect, just wasteful and inconsistent). More importantly, `ee` (the temporal-continuity events linking the benchmark year to its predecessor) is computed but never written or appended to `events_by_variant`, so the persistent-id assignments baked into `hh` for benchmark years are unauditable — there's no artifact recording which prior clusters they continued from.\n\n## Disclosed limitations (not bugs — flagging only to confirm they're intentional)\n\n- **Candidate-restricted greedy, not global-exact** (`coarsening.py:1`): merge selection only considers kNN/hyperedge-support/temporal/chain candidate pairs, not all pairs. The *chosen* pair's delta is exactly recomputed at merge time (`coarsening.py:78`), so the accounting is exact for whatever gets merged — but the search space itself is restricted by design, matching the module docstring.\n- **Whole-sibling-batch retrieval accounting can yield zero results at tight budgets** (`retrieval.py:24-26`): if `len(inspected)+len(candidates)>budget`, the level is skipped entirely rather than partially scored, so `hierarchical()` can return an empty `ranked_ids` for small budgets even though some inspections were affordable (confirmed in `tests/test_core.py:120`: budget=3 → 0 leaves scored). This is explicitly commented as intentional (\"Whole sibling batches prevent free ranking or arbitrary partial scanning\"), but worth double-checking that `cfg['retrieval_budgets']` values used in `evaluation/extrinsic.py:48` are large enough relative to root fan-out that this doesn't manufacture artificial zero-recall points at the smallest budget.\n- **`hierarchical`'s retrieval scoring uses the independent evaluator's embeddings (`X=yy`) while the hierarchy structure `h` was built from the clustering model's embeddings** (`pipeline.py:123`, `evaluation/extrinsic.py:37`) — this is a deliberate and methodologically sound choice to avoid circularity, not an issue.\n- **`vi_delta`/`track` temporal logic** (`temporal.py`) is validated by a 20-seed brute-force property test (`tests/test_core.py:67-74`) and reads correctly; no issues found.",
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 27412,
+    "cache_read_input_tokens": 92361,
+    "output_tokens": 45742,
+    "output_tokens_details": {
+      "thinking_tokens": 41906
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 27412,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 44339,
+        "cache_read_input_tokens": 28443,
+        "cache_creation_input_tokens": 5357,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5357
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  }
+}

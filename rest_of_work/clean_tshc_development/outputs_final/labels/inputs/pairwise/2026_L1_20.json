@@ -1,0 +1,46 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "comp_00439",
+      "type": "component",
+      "surface_form": "Automatminer pipeline"
+    },
+    {
+      "id": "comp_00447",
+      "type": "component",
+      "surface_form": "Automatminer"
+    },
+    {
+      "id": "comp_00455",
+      "type": "component",
+      "surface_form": "Automatminer Debug preset"
+    },
+    {
+      "id": "comp_00456",
+      "type": "component",
+      "surface_form": "Automatminer Debug_single preset"
+    },
+    {
+      "id": "comp_00457",
+      "type": "component",
+      "surface_form": "Automatminer Heavy preset"
+    },
+    {
+      "id": "task_00355",
+      "type": "task",
+      "surface_form": "Automatminer preset comparison"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 5,
+    "task": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "automatminer",
+  "representative_ids": [
+    "comp_00457",
+    "comp_00455"
+  ]
+}

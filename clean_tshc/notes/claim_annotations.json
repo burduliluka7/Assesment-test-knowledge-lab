@@ -1,0 +1,9 @@
+{
+  "Q18.C16": {
+    "claim_text": "Relaxing strict locality through explicit long-range corrections improves transferability to out-of-distribution chemical space, not merely in-distribution accuracy",
+    "node_ids": ["clai_00167"],
+    "source_article_ids": [5438],
+    "rationale": "Codex inspected the complete graph claim and benchmark statement after predictions were frozen. The graph explicitly states that long-range correction schemes improve both in-distribution performance and transferability to unseen regions of chemical space. This directly supports the benchmark's distinction between those two regimes. Both resolve to article 5438 by full title. This is assistant-reviewed textual alignment, not independent human scientific adjudication or validation of the paper's result.",
+    "verification_method": "Full premise/claim reading plus exact source-title resolution; no similarity threshold or rank-based selection."
+  }
+}

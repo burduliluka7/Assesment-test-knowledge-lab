@@ -1,0 +1,344 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "arti_00010",
+      "type": "article",
+      "surface_form": "Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+    },
+    {
+      "id": "cite_00235",
+      "type": "cited_work",
+      "surface_form": "Lithium Phosphorus Oxynitride electrolyte"
+    },
+    {
+      "id": "cite_00236",
+      "type": "cited_work",
+      "surface_form": "Plasma synthesis of electrolyte nanopowders"
+    },
+    {
+      "id": "clai_00013",
+      "type": "claim",
+      "surface_form": "Using Materials Project tools, researchers designed a new class of sodium‑based carbonophosphate compounds, predicted them to be thermodynamically stable, synthesized them hydrothermally, and experimentally confirmed their Li‑ion battery performance after ion exchange."
+    },
+    {
+      "id": "clai_00028",
+      "type": "claim",
+      "surface_form": "The integrated JARVIS workflow (DFT → FF → ML) enables rapid screening of materials for high solar‑cell efficiency (SLME) with predictions validated against experimental data."
+    },
+    {
+      "id": "clai_00067",
+      "type": "claim",
+      "surface_form": "CHGNet molecular dynamics simulations of Li superionic conductors reproduce room‑temperature ionic conductivities and activation energies within the error bars of AIMD, correctly distinguishing faster from slower conductors."
+    },
+    {
+      "id": "clai_00069",
+      "type": "claim",
+      "surface_form": "In charge‑informed molecular dynamics of Li₀.₅MnO₂ at 1100 K, CHGNet predicts the emergence of Mn²⁺ after ~0.8 ns, coinciding with a ~50 meV/oxygen reduction in potential energy and the formation of a spinel‑like phase, indicating a correlation between charge disproportionation and phase transformation."
+    },
+    {
+      "id": "clai_00070",
+      "type": "claim",
+      "surface_form": "Including electronic entropy via charge‑decorated cluster expansions, CHGNet reproduces the experimentally observed miscibility gap and eutectoid‑like transition in the LiₓFePO₄ phase diagram, whereas a non‑charge‑decorated model fails to capture these features."
+    },
+    {
+      "id": "clai_00074",
+      "type": "claim",
+      "surface_form": "CHGNet enables nanosecond‑scale molecular dynamics simulations of garnet Li₃La₃Te₂O₁₂, yielding lithium self‑diffusion coefficients with quantified uncertainty."
+    },
+    {
+      "id": "clai_00386",
+      "type": "claim",
+      "surface_form": "A cluster expansion fitted to 333 DFT‑computed LiCoO₂ configurations using a genetic‑algorithm‑guided sparse regression achieves a root‑mean‑square error of 2.49 meV per primitive cell under 10‑fold cross‑validation and accurately reproduces formation energies, especially for configurations on or near the convex hull."
+    },
+    {
+      "id": "clai_00388",
+      "type": "claim",
+      "surface_form": "Integrable Deep Neural Networks trained on derivative (chemical‑potential) data accurately learn the high‑dimensional free‑energy density and chemical‑potential functions for LiₓCoO₂, achieving mean‑squared errors comparable to the reported minima and reproducing DFT formation energies with a mean absolute error below 5 meV atom⁻¹."
+    },
+    {
+      "id": "clai_00391",
+      "type": "claim",
+      "surface_form": "The presented scale‑bridging framework, linking DFT‑informed statistical mechanics to continuum phase‑field models via IDNN‑learned free‑energy functions, constitutes the first systematic implementation of this kind for LiCoO₂ cathodes."
+    },
+    {
+      "id": "clai_00394",
+      "type": "claim",
+      "surface_form": "Inclusion of van der Waals interactions together with DFT+U improves the accuracy of predicted order‑disorder transition temperatures for LiCoO₂ relative to earlier first‑principles studies."
+    },
+    {
+      "id": "clai_00475",
+      "type": "claim",
+      "surface_form": "The DeePMD model successfully reproduces the superionic behavior of solid-state electrolytes with linear Lithium/Sodium mean squared displacement over time and diffusion coefficient uncertainty of about 20% or smaller, which is precise enough for battery applications."
+    },
+    {
+      "id": "clai_00485",
+      "type": "claim",
+      "surface_form": "The DeePMD model is a promising candidate for developing a universal potential for solid-state electrolytes, though care must be taken when selecting training configurations."
+    },
+    {
+      "id": "clai_00552",
+      "type": "claim",
+      "surface_form": "GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD."
+    },
+    {
+      "id": "clai_00646",
+      "type": "claim",
+      "surface_form": "M3GNet molecular‑dynamics simulations of Li₃YCl₆ reproduce ionic conductivity (14.3 mS cm⁻¹) and activation energy (0.22 eV) consistent with ab‑initio MD, and short‑time MD correctly identifies known lithium superionic conductors by their high mean‑squared displacements at elevated temperatures."
+    },
+    {
+      "id": "clai_00654",
+      "type": "claim",
+      "surface_form": "High‑throughput screening identified TiP, LiSiNi₂, and CoSi₂ as the most promising Li‑ion battery anode conversion reactions, offering high capacity, moderate voltage, and low volume expansion."
+    },
+    {
+      "id": "clai_00657",
+      "type": "claim",
+      "surface_form": "DFT screening predicts forty‑one previously unreported rare‑earth‑containing Mg‑XL‑XS ternary systems to be thermodynamically stable LPSO phases, providing new experimental targets."
+    },
+    {
+      "id": "comp_00126",
+      "type": "component",
+      "surface_form": "Diffusivity surrogate function"
+    },
+    {
+      "id": "comp_00363",
+      "type": "component",
+      "surface_form": "HF‑scavenging coating screen"
+    },
+    {
+      "id": "comp_00364",
+      "type": "component",
+      "surface_form": "LPSO precipitate stability evaluator"
+    },
+    {
+      "id": "comp_00600",
+      "type": "component",
+      "surface_form": "Relaxed oxidation-state balancing constraint"
+    },
+    {
+      "id": "comp_00628",
+      "type": "component",
+      "surface_form": "Diffusion coefficient convergence criterion"
+    },
+    {
+      "id": "futu_00018",
+      "type": "future_topic",
+      "surface_form": "ion migrations"
+    },
+    {
+      "id": "futu_00127",
+      "type": "future_topic",
+      "surface_form": "Development of a transferable universal model for ionic diffusion properties"
+    },
+    {
+      "id": "futu_00128",
+      "type": "future_topic",
+      "surface_form": "Framework to identify novel solid-state electrolytes"
+    },
+    {
+      "id": "futu_00129",
+      "type": "future_topic",
+      "surface_form": "Screening of material databases for solid-state electrolytes"
+    },
+    {
+      "id": "futu_00152",
+      "type": "future_topic",
+      "surface_form": "Zero-shot prediction of ionic conductivity"
+    },
+    {
+      "id": "meth_00383",
+      "type": "method",
+      "surface_form": "DeePMD training protocol for diffusion coefficient computation"
+    },
+    {
+      "id": "metr_00043",
+      "type": "metric",
+      "surface_form": "diffusion coefficient uncertainty"
+    },
+    {
+      "id": "prob_00108",
+      "type": "problem",
+      "surface_form": "Oxidation‑state discrimination in battery cathodes"
+    },
+    {
+      "id": "prob_00116",
+      "type": "problem",
+      "surface_form": "large‑scale ionic conductivity screening"
+    },
+    {
+      "id": "prob_00202",
+      "type": "problem",
+      "surface_form": "High‑capacity battery anode identification"
+    },
+    {
+      "id": "prob_00203",
+      "type": "problem",
+      "surface_form": "HF‑induced cathode degradation mitigation"
+    },
+    {
+      "id": "prob_00204",
+      "type": "problem",
+      "surface_form": "Affordable LPSO precipitate discovery"
+    },
+    {
+      "id": "prob_00409",
+      "type": "problem",
+      "surface_form": "Electrolyte discovery for ionic conductivity"
+    },
+    {
+      "id": "prob_00418",
+      "type": "problem",
+      "surface_form": "Neural network potential convergence for solid-state electrolytes"
+    },
+    {
+      "id": "task_00080",
+      "type": "task",
+      "surface_form": "Ionic conductivity prediction"
+    },
+    {
+      "id": "task_00088",
+      "type": "task",
+      "surface_form": "Investigation of temperature, particle size, and charge‑cycling effects"
+    },
+    {
+      "id": "task_00094",
+      "type": "task",
+      "surface_form": "Free‑energy surrogate modeling for LiCoO₂"
+    },
+    {
+      "id": "task_00097",
+      "type": "task",
+      "surface_form": "Formation‑energy computation for LixCoO2 configurations"
+    },
+    {
+      "id": "task_00142",
+      "type": "task",
+      "surface_form": "Li‑diffusivity prediction in garnet electrolytes"
+    },
+    {
+      "id": "task_00159",
+      "type": "task",
+      "surface_form": "materials screening for lithium superionic conductors"
+    },
+    {
+      "id": "task_00231",
+      "type": "task",
+      "surface_form": "Solar‑cell efficiency screening"
+    },
+    {
+      "id": "task_00246",
+      "type": "task",
+      "surface_form": "High‑throughput screening of Li‑ion battery anodes"
+    },
+    {
+      "id": "task_00247",
+      "type": "task",
+      "surface_form": "Li2O‑based reaction search for Li‑air batteries"
+    },
+    {
+      "id": "task_00248",
+      "type": "task",
+      "surface_form": "Screening of metal‑oxide cathode coatings for HF scavenging"
+    },
+    {
+      "id": "task_00249",
+      "type": "task",
+      "surface_form": "Stability assessment of Mg‑based LPSO precipitates"
+    },
+    {
+      "id": "task_00408",
+      "type": "task",
+      "surface_form": "Ion solution simulation"
+    },
+    {
+      "id": "task_00494",
+      "type": "task",
+      "surface_form": "Solid-electrolyte candidate screening"
+    },
+    {
+      "id": "task_00506",
+      "type": "task",
+      "surface_form": "Li-ion conductor identification"
+    },
+    {
+      "id": "task_00514",
+      "type": "task",
+      "surface_form": "Superionic conductivity classification"
+    },
+    {
+      "id": "task_00519",
+      "type": "task",
+      "surface_form": "Ionic diffusivity computation"
+    },
+    {
+      "id": "task_00524",
+      "type": "task",
+      "surface_form": "Li10GeP2S12 diffusion modeling"
+    },
+    {
+      "id": "task_00525",
+      "type": "task",
+      "surface_form": "Li7La3Zr2O12 diffusion modeling"
+    },
+    {
+      "id": "task_00526",
+      "type": "task",
+      "surface_form": "Na3Zr2Si2PO12 diffusion modeling"
+    },
+    {
+      "id": "task_00527",
+      "type": "task",
+      "surface_form": "LGPS solid electrolyte simulation"
+    },
+    {
+      "id": "task_00529",
+      "type": "task",
+      "surface_form": "NASICON solid electrolyte simulation"
+    },
+    {
+      "id": "task_00531",
+      "type": "task",
+      "surface_form": "Li diffusion simulation in LLZO"
+    },
+    {
+      "id": "task_00532",
+      "type": "task",
+      "surface_form": "Na diffusion simulation in NASICON"
+    },
+    {
+      "id": "task_00534",
+      "type": "task",
+      "surface_form": "solid-state electrolytes"
+    },
+    {
+      "id": "tech_00255",
+      "type": "technique",
+      "surface_form": "filter‑and‑screen workflow for lithium superionic conductors"
+    },
+    {
+      "id": "tech_00691",
+      "type": "technique",
+      "surface_form": "Minimum ion-ion distance cutoff"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 2,
+    "claim": 16,
+    "component": 5,
+    "future_topic": 5,
+    "method": 1,
+    "metric": 1,
+    "problem": 7,
+    "task": 24,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "diffusion",
+  "representative_ids": [
+    "clai_00475",
+    "task_00080"
+  ]
+}

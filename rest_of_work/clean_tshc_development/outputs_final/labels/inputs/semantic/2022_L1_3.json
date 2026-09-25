@@ -1,0 +1,408 @@
+{
+  "cutoff": 2022,
+  "generation_members": [
+    {
+      "id": "arti_00016",
+      "type": "article",
+      "surface_form": "Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+    },
+    {
+      "id": "cite_00217",
+      "type": "cited_work",
+      "surface_form": "Deep Potential Molecular Dynamics"
+    },
+    {
+      "id": "clai_00081",
+      "type": "claim",
+      "surface_form": "Training SchNet with forces on only 1,000 examples yields better accuracy than training on 50,000 examples using energies alone, demonstrating that force information improves data efficiency."
+    },
+    {
+      "id": "clai_00082",
+      "type": "claim",
+      "surface_form": "On the ISO17 benchmark, SchNet reaches chemical‑accuracy (≈0.5 kcal/mol MAE) for energy predictions on molecules seen during training and further improves predictions on unseen isomers when forces are included in training."
+    },
+    {
+      "id": "clai_00083",
+      "type": "claim",
+      "surface_form": "Including force information in the training loss causally improves SchNet’s generalization to previously unseen chemical structures in ISO17."
+    },
+    {
+      "id": "clai_00084",
+      "type": "claim",
+      "surface_form": "GDML cannot be trained on 50,000 MD17 examples due to its quadratic scaling with the number of atoms and samples, whereas SchNet scales to that dataset size."
+    },
+    {
+      "id": "clai_00088",
+      "type": "claim",
+      "surface_form": "On the QM9 benchmark, SchNet attains a mean absolute error of 0.31 kcal/mol for total‑energy prediction with 110 k training examples, outperforming DTNN (0.84) and enn‑s2s (0.45)."
+    },
+    {
+      "id": "clai_00183",
+      "type": "claim",
+      "surface_form": "NequIP outperforms kernel‑based approaches such as sGDML and FCHL19/GPR across benchmarks, including small-data regimes and the MD-17 dataset."
+    },
+    {
+      "id": "clai_00184",
+      "type": "claim",
+      "surface_form": "NequIP requires up to three orders of magnitude fewer training configurations than existing neural interatomic potentials to reach comparable accuracy."
+    },
+    {
+      "id": "clai_00185",
+      "type": "claim",
+      "surface_form": "When trained on only 133 structures (~1 k frames), NequIP outperforms DeepMD trained on 133,500 structures for liquid water and ice simulations."
+    },
+    {
+      "id": "clai_00483",
+      "type": "claim",
+      "surface_form": "The proposed training protocol based on augmenting the training set via intermediate molecular dynamics simulations can assess the quality of approximate trajectories and computed physical properties."
+    },
+    {
+      "id": "clai_00486",
+      "type": "claim",
+      "surface_form": "For LLZO, results are quite insensitive to the choice of cell volume (NPT equilibrated vs experimental cif-file values) for producing the initial training set."
+    },
+    {
+      "id": "clai_00489",
+      "type": "claim",
+      "surface_form": "Simple MEGNet models that use only atomic number and spatial distance as input achieve chemical accuracy, perform comparably to full‑feature models, and outperform prior state‑of‑the‑art models on 8 of the 13 QM9 properties."
+    },
+    {
+      "id": "clai_00490",
+      "type": "claim",
+      "surface_form": "MEGNet models trained on approximately 60,000 crystals outperform prior models (SchNet and CGCNN) for formation energy, band gap, bulk modulus, and shear modulus, achieving errors comparable to or better than density‑functional‑theory uncertainties."
+    },
+    {
+      "id": "clai_00491",
+      "type": "claim",
+      "surface_form": "A unified free‑energy MEGNet model that incorporates temperature, pressure, and entropy as global state inputs predicts U₀, U, H, and G with a combined mean absolute error of 0.010 eV, comparable to separate single‑property models."
+    },
+    {
+      "id": "clai_00493",
+      "type": "claim",
+      "surface_form": "Ensembling two independently trained three‑block MEGNet models lowers the formation‑energy mean absolute error from 0.028 eV/atom to 0.024 eV/atom."
+    },
+    {
+      "id": "clai_00567",
+      "type": "claim",
+      "surface_form": "The GNN accelerates atomic property prediction by hundreds to thousands of times compared with conventional MD simulations, requiring seconds on a single CPU versus thousands of seconds on 24 CPUs."
+    },
+    {
+      "id": "clai_00568",
+      "type": "claim",
+      "surface_form": "Linear fitting of atomic properties yields substantially higher prediction errors than the GNN approach, demonstrating the superiority of the nonlinear GNN model for mapping initial structures to final property distributions."
+    },
+    {
+      "id": "clai_00569",
+      "type": "claim",
+      "surface_form": "DeePMD reproduces AIMD energies, forces, and virial tensors for water and ice with root‑mean‑square errors of approximately 1 meV per molecule for energy, 40 meV Å⁻¹ for forces, and 1–2 meV for the virial."
+    },
+    {
+      "id": "clai_00570",
+      "type": "claim",
+      "surface_form": "DeePMD accurately reproduces radial distribution functions and three‑body angular distribution functions of liquid water and ice, matching AIMD results."
+    },
+    {
+      "id": "clai_00571",
+      "type": "claim",
+      "surface_form": "For a diverse set of organic molecules, DeePMD achieves lower mean absolute errors in both energy and forces than the GDML benchmark."
+    },
+    {
+      "id": "clai_00572",
+      "type": "claim",
+      "surface_form": "The computational cost of DeePMD scales linearly with the number of atoms and is several orders of magnitude lower than equivalent AIMD simulations, comparable to empirical force fields."
+    },
+    {
+      "id": "clai_00574",
+      "type": "claim",
+      "surface_form": "DeePMD preserves translational, rotational, and permutational symmetries by constructing a local reference frame for each atom and sorting neighbor lists by species and inverse distance."
+    },
+    {
+      "id": "clai_00577",
+      "type": "claim",
+      "surface_form": "In principle, DeePMD could be trained on chemically accurate data from high‑level quantum chemistry or quantum Monte Carlo, extending its applicability beyond density‑functional theory."
+    },
+    {
+      "id": "clai_00640",
+      "type": "claim",
+      "surface_form": "Relaxing test crystals with M3GNet reduces median volume error from 2.4 % to 0.6 % and energy mean absolute error from 0.169 eV/atom to 0.035 eV/atom relative to DFT‑relaxed references."
+    },
+    {
+      "id": "clai_00641",
+      "type": "claim",
+      "surface_form": "A single‑CPU M3GNet relaxation completes in about 22 seconds, compared with 15 hours on 32 cores for DFT; pre‑relaxation with M3GNet shortens subsequent DFT relaxation time by roughly a factor of three and reduces total CPU time by an average factor of 2.97."
+    },
+    {
+      "id": "clai_00642",
+      "type": "claim",
+      "surface_form": "Screening 31.7 million hypothetical crystals with M3GNet identifies approximately 1.8 million candidates with predicted hull distances below 0.001 eV/atom, and among the 2,000 lowest‑energy candidates, 1,578 are confirmed stable (Ehull < 0.001 eV/atom) by DFT."
+    },
+    {
+      "id": "clai_00646",
+      "type": "claim",
+      "surface_form": "M3GNet molecular‑dynamics simulations of Li₃YCl₆ reproduce ionic conductivity (14.3 mS cm⁻¹) and activation energy (0.22 eV) consistent with ab‑initio MD, and short‑time MD correctly identifies known lithium superionic conductors by their high mean‑squared displacements at elevated temperatures."
+    },
+    {
+      "id": "clai_00647",
+      "type": "claim",
+      "surface_form": "On the MD17 and MD17‑CCSD(T) molecular force‑field benchmarks, M3GNet achieves lower energy and force errors than the Embedded Atom Neural Network and comparable accuracy to state‑of‑the‑art message‑passing and equivariant neural networks; when benchmarked against quantum‑accurate CCSD/CCSD(T) data, it attains state‑of‑the‑art accuracy for several molecules."
+    },
+    {
+      "id": "clai_00649",
+      "type": "claim",
+      "surface_form": "For a MgO test set, M3GNet outperforms Moment Tensor Potentials in extrapolating equation‑of‑state behavior beyond the training regime and exhibits long‑range interaction characteristics similar to a Buckingham + Coulomb model."
+    },
+    {
+      "id": "clai_00650",
+      "type": "claim",
+      "surface_form": "The M3GNet architecture preserves continuity of energies, forces, and stresses with respect to changes in bond count, satisfying a necessary physical constraint for interatomic potentials."
+    },
+    {
+      "id": "comp_00210",
+      "type": "component",
+      "surface_form": "M3GNet potential model"
+    },
+    {
+      "id": "data_00045",
+      "type": "dataset",
+      "surface_form": "DFT relaxation time with M3GNet pre‑relaxation"
+    },
+    {
+      "id": "futu_00025",
+      "type": "future_topic",
+      "surface_form": "learning a representation for molecules using equilibrium and non‑equilibrium conformations"
+    },
+    {
+      "id": "futu_00051",
+      "type": "future_topic",
+      "surface_form": "high-fidelity molecular dynamics simulations over long time scales"
+    },
+    {
+      "id": "futu_00134",
+      "type": "future_topic",
+      "surface_form": "Application of MEGNet models to a broader range of crystal properties beyond formation energy, band gap, and elastic moduli"
+    },
+    {
+      "id": "futu_00153",
+      "type": "future_topic",
+      "surface_form": "Design of de novo atomic structures using GNNs combined with genetic algorithms"
+    },
+    {
+      "id": "futu_00169",
+      "type": "future_topic",
+      "surface_form": "Exploiting intermediate PES data (energies, forces, stresses) from high‑throughput relaxations to further improve IAP accuracy"
+    },
+    {
+      "id": "futu_00172",
+      "type": "future_topic",
+      "surface_form": "Applying M3GNet to discover materials with targeted exceptional properties such as superconductivity or high‑energy‑density battery electrodes"
+    },
+    {
+      "id": "futu_00178",
+      "type": "future_topic",
+      "surface_form": "Machine-learning based atomistic simulations bridging empirical and DFT realms"
+    },
+    {
+      "id": "meth_00206",
+      "type": "method",
+      "surface_form": "Deep Potential Molecular Dynamics"
+    },
+    {
+      "id": "prob_00016",
+      "type": "problem",
+      "surface_form": "Accurate prediction of quantum‑chemical properties"
+    },
+    {
+      "id": "prob_00178",
+      "type": "problem",
+      "surface_form": "Accelerated atomic‑property prediction"
+    },
+    {
+      "id": "prob_00415",
+      "type": "problem",
+      "surface_form": "Achieving Boltzmann-distributed training without expensive pre-simulations"
+    },
+    {
+      "id": "task_00024",
+      "type": "task",
+      "surface_form": "Molecular total energy prediction"
+    },
+    {
+      "id": "task_00160",
+      "type": "task",
+      "surface_form": "force‑field benchmarking on MD17 datasets"
+    },
+    {
+      "id": "task_00211",
+      "type": "task",
+      "surface_form": "Atomic von Mises stress prediction"
+    },
+    {
+      "id": "task_00212",
+      "type": "task",
+      "surface_form": "Atomic tensile stress prediction"
+    },
+    {
+      "id": "task_00216",
+      "type": "task",
+      "surface_form": "Per‑atom stress field prediction"
+    },
+    {
+      "id": "task_00220",
+      "type": "task",
+      "surface_form": "Atomic stress field prediction"
+    }
+  ],
+  "generation_type_counts": {
+    "article": 1,
+    "cited_work": 1,
+    "claim": 29,
+    "component": 1,
+    "dataset": 1,
+    "future_topic": 7,
+    "method": 1,
+    "problem": 3,
+    "task": 6
+  },
+  "internal_hyperedges": [
+    {
+      "id": "h_00332",
+      "relation_type": "presents",
+      "members": [
+        "arti_00016",
+        "meth_00206"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      }
+    },
+    {
+      "id": "h_01175",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00569"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "h_01176",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00570"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "simulation",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01177",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00571"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "comparative",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.95
+      }
+    },
+    {
+      "id": "h_01178",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00572"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "performance",
+        "evidence_type": "benchmark",
+        "evidence_strength": "strong",
+        "confidence": 0.96
+      }
+    },
+    {
+      "id": "h_01180",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00574"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "methodological",
+        "evidence_type": "theorem",
+        "evidence_strength": "medium",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "h_01183",
+      "relation_type": "claims",
+      "members": [
+        "arti_00016",
+        "clai_00577"
+      ],
+      "year": 2017,
+      "provenance": {
+        "source": "mvkg",
+        "article_id": 5392,
+        "article_year": 2017
+      },
+      "attributes": {
+        "claim_type": "prescriptive",
+        "evidence_type": "theorem",
+        "evidence_strength": "weak",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "prediction",
+  "representative_ids": [
+    "clai_00647",
+    "clai_00572"
+  ]
+}

@@ -1,0 +1,1617 @@
+Continue from the CURRENT repository and completed diffusion + evidence-reranking implementation.
+
+Do not create a parallel implementation.
+
+Inspect and reuse the existing:
+
+- H2 candidate-generation pipeline;
+- `FrozenH2Candidates`;
+- `CandidateEvidenceIndex`;
+- `CandidateReranker`;
+- `ThetaOperator`;
+- `MentionIndex`;
+- entity grouping;
+- resolver;
+- contextual representations;
+- BGE embeddings/cache;
+- local NLI model;
+- temporal snapshot filtering;
+- reranking evaluator;
+- oracle evaluator;
+- current artifacts;
+- current tests.
+
+The goal of this pass is **NOT to improve candidate generation**.
+
+The goal is to improve final answer discrimination inside the already strong H2 candidate pool.
+
+---
+
+# 0. CURRENT VERIFIED STATE
+
+Treat the latest reranking report as the baseline.
+
+At conservative 2025:
+
+```text
+R3:
+Micro Recall@10 = 4/47 ≈ 0.0851
+
+H2:
+Micro Recall@10 = 3/47 ≈ 0.0638
+Candidate Recall@100 ≈ 0.7146
+Candidate Recall@200 ≈ 0.9674
+median gold rank ≈ 66
+
+RR1-100:
+Micro Recall@10 = 6/47 ≈ 0.1277
+median gold rank ≈ 89
+
+RR1-200:
+Micro Recall@10 = 6/47 ≈ 0.1277
+median gold rank ≈ 104
+```
+
+The evaluation-only oracle shows:
+
+```text
+H2 top100 oracle:
+31/47 canonical targets could be placed in top10
+
+H2 top200 oracle:
+43/47 canonical targets could be placed in top10
+```
+
+And:
+
+```text
+41/43
+```
+
+primary in-pool gold instances already have selected candidate-specific evidence.
+
+Therefore the current bottleneck is NOT primarily:
+
+```text
+candidate mapping
+candidate inclusion
+hypergraph search
+diffusion
+or total evidence absence
+```
+
+It is primarily:
+
+```text
+evidence attribution
++
+question-condition understanding
++
+candidate/evidence scoring
++
+final ranking
+```
+
+---
+
+# 1. ABSOLUTE FREEZE: DO NOT TOUCH H2
+
+H2 is frozen.
+
+Do NOT change:
+
+```text
+alpha
+seed M
+Theta
+hyperedge weighting
+mention rules
+mention matching
+candidate mapping
+target resolver
+entity grouping
+graph construction
+temporal cutoff logic
+aliases
+query diffusion
+RRF used inside H2
+candidate eligibility
+hierarchy
+```
+
+The new system MUST receive exactly the same frozen H2 candidate rankings used in the latest report.
+
+Add regression checks ensuring:
+
+```text
+H2 top100 prefixes identical
+H2 top200 prefixes identical
+H2 metrics identical
+```
+
+to the previous artifacts.
+
+If these change, stop and diagnose before evaluating the new reranker.
+
+---
+
+# 2. K=100 IS PRIMARY; K=200 IS DIAGNOSTIC
+
+Primary reranking experiment:
+
+```text
+H2 top100
+```
+
+Also run:
+
+```text
+H2 top200
+```
+
+as a diagnostic.
+
+Do not select K=200 as the new default merely because its oracle ceiling is larger.
+
+The previous reranker obtained no additional top-ten hits from K200.
+
+Report both.
+
+---
+
+# 3. CURRENT RR1 MUST REMAIN AS CR0
+
+Preserve the current whole-question evidence scorer exactly.
+
+Call it:
+
+```text
+CR0_current_RR1
+```
+
+This is the fixed baseline for this pass.
+
+Do not rewrite RR1 in place.
+
+Historical metrics must remain reproducible.
+
+---
+
+# 4. CORE CHANGE: GENERIC QUESTION DECOMPOSITION
+
+Implement a generic question decomposition stage.
+
+For every incoming scientific question, derive something like:
+
+```python
+QuestionDecomposition(
+    answer_type: str | None,
+    core_task: str | None,
+    requirements: list[str],
+    exclusions: list[str],
+    temporal_condition: str | None,
+)
+```
+
+These are free-form strings, NOT a predefined materials-science taxonomy.
+
+DO NOT define categories such as:
+
+```text
+accuracy_constraint
+efficiency_constraint
+DFT_constraint
+scalability_constraint
+transferability_constraint
+SCF_constraint
+```
+
+as production categories.
+
+Instead preserve arbitrary question wording.
+
+Example conceptually:
+
+```text
+Question:
+Which methods predict interatomic potentials while balancing
+accuracy close to DFT with computational efficiency for
+systems containing millions of atoms?
+```
+
+Generic extraction:
+
+```text
+answer_type:
+method
+
+core_task:
+predict interatomic potentials
+
+requirements:
+- accuracy close to DFT
+- computational efficiency
+- systems containing millions of atoms
+
+exclusions:
+[]
+
+temporal_condition:
+by February 2026
+```
+
+For an unrelated future question the SAME code must work, e.g.:
+
+```text
+Which datasets contain magnetic materials and spin-resolved properties?
+```
+
+should produce something like:
+
+```text
+answer_type:
+dataset
+
+core_task:
+magnetic-material data
+
+requirements:
+- contains magnetic materials
+- contains spin-resolved properties
+```
+
+No benchmark-specific rules.
+
+---
+
+# 5. NO Q-ID OR EXPECTED-ANSWER LOGIC
+
+Production decomposition/scoring code MUST NOT reference:
+
+```text
+Q1
+Q2
+...
+Q14
+
+MACE
+NequIP
+DeepH
+M3GNet
+etc.
+```
+
+No current expected target may occur in production logic as a special case.
+
+Current names/Q IDs may appear only in:
+
+```text
+evaluation fixtures
+reports
+debug snapshots
+tests reproducing known historical outputs
+```
+
+Add an automated check for this where practical.
+
+---
+
+# 6. DO NOT USE GROUND TRUTH TO DECOMPOSE QUESTIONS
+
+Question decomposition receives:
+
+```text
+question text
+question Type A/B metadata if already legitimately available
+```
+
+It must NOT receive:
+
+```text
+expected_methods
+method_claims
+method_evidence
+fp_categories
+required_citations
+oracle membership
+gold labels
+```
+
+Ground truth remains evaluation-only.
+
+---
+
+# 7. IMPLEMENT DECOMPOSITION WITHOUT BENCHMARK-SPECIFIC TRAINING
+
+Use the most generic locally available mechanism.
+
+Preferred order:
+
+1. existing local general-purpose model/pipeline if suitable;
+2. deterministic linguistic extraction if generic;
+3. a local structured generation interface if already available and reproducible.
+
+Do not call a remote API.
+
+Do not download a model silently.
+
+If no suitable generative model exists, implement a conservative deterministic decomposition based on generic linguistic structure, not benchmark vocabulary.
+
+For example detect generic constructions such as:
+
+```text
+which methods ...
+for ...
+when ...
+while ...
+with ...
+without ...
+that ...
+by <date>
+```
+
+but do NOT special-case domain words.
+
+Always preserve the original question as a fallback task representation.
+
+Export the decomposition for every question.
+
+---
+
+# 8. DECOMPOSITION MUST BE CONSERVATIVE
+
+Do NOT invent requirements.
+
+If the question explicitly states:
+
+```text
+computational efficiency
+```
+
+extract it.
+
+If the question says nothing about:
+
+```text
+interpretability
+```
+
+do not infer interpretability.
+
+If uncertain, leave a requirement out rather than hallucinating one.
+
+Record:
+
+```text
+source span
+```
+
+from the original question for every extracted field where feasible.
+
+Example:
+
+```json
+{
+  "text": "computational efficiency",
+  "source_span": "computational efficiency"
+}
+```
+
+This makes decomposition auditable.
+
+---
+
+# 9. CANDIDATE-SPECIFIC REQUIREMENT HYPOTHESES
+
+For every H2 candidate `c`, convert each decomposition component into a candidate-specific hypothesis.
+
+Example:
+
+```text
+candidate = MACE
+
+core task:
+predict interatomic potentials
+
+→
+"MACE is a method for predicting interatomic potentials."
+```
+
+Requirement:
+
+```text
+accuracy close to DFT
+```
+
+→
+
+```text
+"MACE achieves accuracy close to DFT for the requested task."
+```
+
+Requirement:
+
+```text
+computational efficiency
+```
+
+→
+
+```text
+"MACE is computationally efficient for the requested task."
+```
+
+Requirement:
+
+```text
+systems containing millions of atoms
+```
+
+→
+
+```text
+"MACE is suitable for systems containing millions of atoms."
+```
+
+These hypotheses must be generated from:
+
+```text
+candidate name
++
+question decomposition
+```
+
+NOT from benchmark gold claims.
+
+Do not manually write candidate-specific hypotheses.
+
+---
+
+# 10. REQUIREMENT-LEVEL EVIDENCE MATCHING
+
+Do not score:
+
+```text
+whole question
+vs
+whole evidence bundle
+```
+
+as the main new mechanism.
+
+Instead, for each candidate and each requirement/task:
+
+```text
+requirement r
+candidate c
+candidate evidence E(c)
+```
+
+compute:
+
+```text
+support(c, r)
+```
+
+using the best candidate-specific evidence.
+
+Different evidence pieces may support different requirements.
+
+Example:
+
+```text
+accuracy requirement
+→ claim A
+
+efficiency requirement
+→ claim B
+
+scale requirement
+→ article/claim C
+```
+
+Do not require one sentence to satisfy all requirements.
+
+---
+
+# 11. CR1 — REQUIREMENT-DECOMPOSED COSINE
+
+Implement:
+
+```text
+CR1_requirement_cosine
+```
+
+For each candidate:
+
+1. compute semantic similarity between each requirement/task and each selected candidate-specific evidence item;
+2. take the strongest valid evidence support for each requirement;
+3. aggregate across requirements.
+
+Conceptually:
+
+```python
+support_r = max(
+    cosine(requirement_r, evidence_i)
+    for valid evidence_i in candidate_evidence
+)
+```
+
+But evidence attribution rules below MUST be applied.
+
+Do not let arbitrary path-neighbor text qualify equally with direct evidence.
+
+---
+
+# 12. SEPARATE SUPPORT STRENGTH FROM REQUIREMENT COVERAGE
+
+For candidate `c`, calculate at least:
+
+```text
+mean/max support strength
+requirement coverage
+```
+
+For example:
+
+```python
+coverage =
+    supported_requirements / total_requirements
+```
+
+Do not require a manually tuned threshold if avoidable.
+
+A simple generic aggregation can be predeclared, e.g.:
+
+```python
+candidate_score =
+    mean(requirement_supports)
+    * mild_coverage_factor
+```
+
+or a smooth geometric/soft-min style aggregation.
+
+The desired behavior is:
+
+```text
+Candidate A:
+strong on all requirements
+
+should outrank
+
+Candidate B:
+extremely strong on only one requirement
+but unsupported on the rest
+```
+
+Do not tune aggregation weights against Q1-Q14.
+
+---
+
+# 13. CORE TASK MUST NOT BE LOST
+
+The system should normally score:
+
+```text
+core task
++
+explicit requirements
+```
+
+A candidate satisfying secondary constraints but unrelated to the actual task must not rank highly.
+
+Treat core task support as mandatory/high-priority in the design.
+
+Do not hard-code particular tasks.
+
+---
+
+# 14. FIX EVIDENCE ATTRIBUTION
+
+This is critical.
+
+The current report identified cases such as:
+
+```text
+"SevenNet ... outperforms the earlier M3GNet model ..."
+```
+
+which positively boosts M3GNet under max cosine.
+
+This is incorrect attribution for many relevance purposes.
+
+For each evidence item, classify its relation to the candidate into generic categories:
+
+```text
+DIRECT_SUBJECT_SUPPORT
+EXPLICIT_NAME_SUPPORT
+COMPARISON_WINNER
+COMPARISON_BASELINE
+MENTION_ONLY
+INDIRECT_GRAPH_NEIGHBOR
+UNCERTAIN
+```
+
+The exact implementation may be conservative.
+
+Do not claim perfect information extraction.
+
+---
+
+# 15. DIRECT GRAPH RELATIONS
+
+Evidence directly connected through:
+
+```text
+claims
+presents
+solves
+addresses
+uses_component
+uses_technique
+evaluated_on
+```
+
+should retain its existing provenance labels.
+
+But:
+
+```text
+co-membership
+```
+
+is not automatically subject-predicate support.
+
+Do not treat:
+
+```text
+candidate and claim occur in same hyperedge
+```
+
+as equivalent to:
+
+```text
+claim asserts something about candidate.
+```
+
+Keep this distinction explicit.
+
+---
+
+# 16. EXPLICIT MENTIONS NEED POLARITY / ROLE CHECKING
+
+For text explicitly containing the candidate name, determine whether possible:
+
+```text
+candidate is positively described
+candidate is compared against another method
+candidate is the winner
+candidate is the baseline/loser
+candidate is merely listed
+candidate relation is unclear
+```
+
+Do not let:
+
+```text
+"X outperforms candidate C"
+```
+
+provide the same positive support to C as:
+
+```text
+"candidate C outperforms X"
+```
+
+If attribution cannot be determined safely:
+
+```text
+mark UNCERTAIN
+```
+
+and apply weaker support.
+
+Do NOT create benchmark-specific comparison patterns.
+
+Generic comparison patterns such as:
+
+```text
+outperforms
+better than
+worse than
+compared with
+improves over
+fails compared with
+```
+
+are acceptable if implemented generically.
+
+---
+
+# 17. PATH EVIDENCE MUST BE DEMOTED FOR FINAL SCORING
+
+Current path evidence can be highly query-similar while actually describing a neighbor.
+
+Therefore:
+
+```text
+path evidence
+```
+
+should remain useful for:
+
+```text
+candidate discovery
+diagnostics
+evidence discovery
+```
+
+but should NOT receive equal final support weight unless the candidate is explicitly attributable in the text.
+
+Implement:
+
+```text
+path evidence with candidate attribution
+    → eligible support
+
+path evidence without candidate attribution
+    → diagnostic only or strongly weakened
+```
+
+This is an important change.
+
+Keep the original path traces for comparison.
+
+---
+
+# 18. CR2 — REQUIREMENT + LOCAL NLI
+
+The local cache contains a three-way NLI DeBERTa classifier.
+
+Use it only as a controlled experiment.
+
+Call:
+
+```text
+CR2_requirement_nli
+```
+
+Do NOT describe it as a relevance cross-encoder.
+
+For each:
+
+```text
+candidate
+requirement
+candidate-specific hypothesis
+evidence text
+```
+
+evaluate:
+
+```text
+entailment
+neutral
+contradiction
+```
+
+Example:
+
+```text
+Premise:
+"D4FT successfully converges where PySCF fails ..."
+
+Hypothesis:
+"D4FT can reduce difficulties caused by expensive or
+non-convergent SCF calculations."
+```
+
+Record all probabilities.
+
+---
+
+# 19. NLI MUST BE CANDIDATE-SPECIFIC
+
+Never send vague hypotheses such as:
+
+```text
+"This is computationally efficient."
+```
+
+Use:
+
+```text
+"<candidate> is computationally efficient for the requested task."
+```
+
+Candidate identity matters.
+
+This is particularly important for comparisons.
+
+Example:
+
+```text
+Premise:
+"SevenNet outperforms M3GNet."
+
+Hypothesis:
+"M3GNet is the better-performing method in this comparison."
+```
+
+should ideally not receive high entailment.
+
+Likewise:
+
+```text
+Hypothesis:
+"SevenNet is the better-performing method in this comparison."
+```
+
+should receive stronger support if the NLI model works appropriately.
+
+These are diagnostic examples; do not hard-code their names.
+
+---
+
+# 20. DO NOT TRUST NLI BLINDLY
+
+Scientific NLI may fail.
+
+Export diagnostics for:
+
+```text
+high entailment
+high contradiction
+ambiguous neutral
+comparison statements
+numerical/scaling requirements
+negation
+conjunctions
+```
+
+Do not make CR2 the default simply because it exists.
+
+Compare it against CR1.
+
+---
+
+# 21. CR3 — H2 + CR1 FUSION
+
+Implement:
+
+```text
+CR3_H2_plus_requirement_cosine
+```
+
+Fuse:
+
+```text
+H2 ranking
+CR1 ranking
+```
+
+using existing deterministic RRF.
+
+Reuse the current fixed RRF parameter rather than tuning it.
+
+Purpose:
+
+```text
+preserve strong H2 graph relevance
+while adding constraint-level discrimination.
+```
+
+---
+
+# 22. CR4 — H2 + CR2 FUSION
+
+Implement:
+
+```text
+CR4_H2_plus_requirement_NLI
+```
+
+Fuse:
+
+```text
+H2 ranking
+CR2 ranking
+```
+
+with the same RRF rule.
+
+Do not optimize fusion weights.
+
+---
+
+# 23. OPTIONAL CR5 ONLY IF JUSTIFIED
+
+Only if CR1 and CR2 clearly provide complementary signal, add:
+
+```text
+CR5_H2_plus_cosine_plus_NLI
+```
+
+using rank fusion.
+
+Do NOT add CR5 automatically just to increase experiment count.
+
+No parameter search.
+
+---
+
+# 24. REQUIRED ABLATION SET
+
+Run primarily:
+
+```text
+CR0
+current RR1-100
+
+CR1
+H2 top100
+→ generic question decomposition
+→ requirement cosine scoring
+
+CR2
+H2 top100
+→ generic question decomposition
+→ candidate-specific NLI scoring
+
+CR3
+H2 + CR1 via RRF
+
+CR4
+H2 + CR2 via RRF
+```
+
+Diagnostic:
+
+```text
+CR1-200
+CR2-200
+```
+
+only to measure remaining oracle/discrimination behavior.
+
+Do not explode into dozens of variants.
+
+---
+
+# 25. ORACLE MUST REMAIN UNCHANGED
+
+Keep the existing evaluation-only oracle.
+
+Primary comparison:
+
+```text
+H2 top100 oracle micro Recall@10:
+31/47 ≈ .6596
+```
+
+Compare:
+
+```text
+CR0
+CR1
+CR2
+CR3
+CR4
+```
+
+against that same ceiling.
+
+Do not alter oracle semantics.
+
+Do not use oracle membership during ranking.
+
+---
+
+# 26. REQUIREMENT-LEVEL DIAGNOSTICS
+
+For each question export:
+
+```json
+{
+  "question_id": "...",
+  "original_question": "...",
+  "answer_type": "...",
+  "core_task": "...",
+  "requirements": [],
+  "exclusions": [],
+  "temporal_condition": "...",
+  "source_spans": {}
+}
+```
+
+For each candidate export something like:
+
+```json
+{
+  "candidate": "MACE",
+  "h2_rank": 114,
+  "cr1_rank": 0,
+  "cr2_rank": 0,
+
+  "requirements": [
+    {
+      "requirement": "...",
+      "best_evidence": "...",
+      "evidence_node_id": "...",
+      "attribution": "DIRECT_SUBJECT_SUPPORT",
+      "cosine": 0.0,
+      "nli_entailment": 0.0,
+      "nli_neutral": 0.0,
+      "nli_contradiction": 0.0
+    }
+  ],
+
+  "requirement_coverage": 0.0,
+  "unsupported_requirements": [],
+  "contradicted_requirements": []
+}
+```
+
+---
+
+# 27. TRACK ATTRIBUTION FAILURES
+
+For every selected evidence item report:
+
+```text
+direct subject
+safe explicit support
+comparison winner
+comparison baseline
+mention only
+co-membership only
+path only
+uncertain
+```
+
+Then summarize:
+
+```text
+gold candidates
+vs
+non-gold candidates
+```
+
+for these categories.
+
+Gold membership remains evaluation-only.
+
+---
+
+# 28. EXPLICITLY RECHECK KNOWN FAILURE PATTERNS
+
+Do not special-case these candidates, but use them as post-hoc diagnostics:
+
+```text
+M3GNet comparative mention
+SchNet comparative mention
+HamGNN sparse evidence
+MACE sparse/partial requirement coverage
+```
+
+For each, report whether the new mechanism changes behavior for the expected reason.
+
+Example:
+
+```text
+Did "SevenNet outperforms M3GNet"
+stop acting as unconditional positive M3GNet support?
+```
+
+Do not alter code after inspecting these examples unless the issue is a genuine generic bug.
+
+---
+
+# 29. METRICS
+
+Report:
+
+```text
+Hit@1
+Hit@5
+Hit@10
+Hit@20
+
+Macro Recall@5
+Macro Recall@10
+Macro Recall@20
+
+Micro Recall@5
+Micro Recall@10
+Micro Recall@20
+
+Unique Recall@10
+
+Raw recovered /63
+
+MRR
+R-Precision
+Recall@R
+
+median gold rank
+mean gold rank
+
+candidate preservation
+
+runtime
+NLI calls
+semantic support comparisons
+```
+
+Keep current denominators unchanged.
+
+---
+
+# 30. ADD REQUIREMENT-SPECIFIC METRICS
+
+Diagnostic-only metrics:
+
+```text
+mean requirements/question
+mean requirement coverage for gold
+mean requirement coverage for non-gold
+
+fraction of gold candidates with:
+- all requirements supported
+- partial support
+- contradiction detected
+- no direct attributable evidence
+
+fraction of non-gold candidates with same
+```
+
+Do not treat these as ground-truth scientific entailment.
+
+They reflect model scoring behavior.
+
+---
+
+# 31. TRACK RANK MOVEMENT
+
+For every canonical target:
+
+```text
+R3
+H2
+CR0
+CR1
+CR2
+CR3
+CR4
+```
+
+Report:
+
+```text
+improved
+same
+worsened
+entered top10
+left top10
+```
+
+Especially separate:
+
+```text
+H2 rank 1-10
+H2 rank 11-50
+H2 rank 51-100
+H2 >100
+```
+
+---
+
+# 32. FAILURE CATEGORIES
+
+Create generic failure categories such as:
+
+```text
+NOT_IN_H2_100
+
+DECOMPOSITION_MISSING_REQUIREMENT
+
+DECOMPOSITION_INCORRECT
+
+NO_ATTRIBUTABLE_EVIDENCE
+
+PARTIAL_REQUIREMENT_SUPPORT
+
+CONTRADICTORY_EVIDENCE
+
+COMPARISON_ATTRIBUTION_FAILURE
+
+SEMANTIC_SCORER_FAILURE
+
+NLI_FAILURE
+
+SUPPORTED_BUT_RANKED_BELOW_10
+
+RETRIEVED_TOP10
+```
+
+A single target may have diagnostic flags, but choose a primary mutually exclusive category for summary tables.
+
+---
+
+# 33. IMPORTANT NEGATION / EXCLUSION HANDLING
+
+Questions may contain:
+
+```text
+without
+does not
+excluding
+neither
+except
+```
+
+Do not treat these as positive requirements.
+
+Extract:
+
+```text
+exclusions / negative constraints
+```
+
+separately.
+
+For NLI:
+
+```text
+candidate violates exclusion
+```
+
+should reduce candidate score.
+
+Implement generically.
+
+---
+
+# 34. TEMPORAL CONDITION IS FILTERING, NOT SEMANTIC SUPPORT
+
+Temporal phrases such as:
+
+```text
+by February 2026
+before 2025
+after 2020
+```
+
+should continue to be enforced primarily by the existing snapshot logic.
+
+Do not give a candidate a high semantic score merely because its evidence contains `2026`.
+
+Question decomposition may extract the temporal condition for diagnostics, but do not duplicate or override the trusted temporal filtering mechanism.
+
+---
+
+# 35. ANSWER TYPE
+
+If question decomposition confidently identifies:
+
+```text
+method
+dataset
+article
+metric
+technique
+etc.
+```
+
+use it only as a generic soft final-answer prior unless the existing supplied Type A/B routing already provides stronger trusted information.
+
+Do not introduce hard exclusions that could remove valid candidates unless already justified by existing evaluator semantics.
+
+---
+
+# 36. TESTS
+
+Add tests covering at least:
+
+```text
+1. H2 frozen rankings remain byte/metric identical where expected
+
+2. CR0 reproduces RR1 exactly
+
+3. decomposition never reads ground truth
+
+4. decomposition handles arbitrary question text
+
+5. no current Q IDs in production decomposition/scoring
+
+6. no current expected answer names in production rules
+
+7. multiple requirements extracted independently
+
+8. negative/exclusion phrase handling
+
+9. temporal phrase extraction does not override snapshots
+
+10. candidate-specific hypothesis generation
+
+11. different candidates produce different hypotheses
+
+12. different requirements may select different evidence
+
+13. comparison winner/baseline handling
+
+14. mention-only is weaker than direct attributable evidence
+
+15. path-only evidence cannot act as full direct support
+
+16. NLI model loaded strictly locally
+
+17. no download attempted
+
+18. NLI entailment/neutral/contradiction probabilities preserved
+
+19. NLI failure has deterministic fallback
+
+20. RRF deterministic
+
+21. K100 candidate pool preserved
+
+22. oracle never enters production ranking
+
+23. perturbing ground truth does not change retrieval scores
+
+24. Type B historical outputs unchanged
+
+25. hierarchy artifacts unchanged
+
+26. all previous tests still pass
+```
+
+Use generic synthetic tests where possible rather than reproducing benchmark phrases.
+
+---
+
+# 37. REQUIRED ARTIFACTS
+
+Generate:
+
+```text
+artifacts/evaluation/constraint_reranking_results.json
+
+artifacts/evaluation/question_decompositions.json
+
+artifacts/evaluation/requirement_support.json
+
+artifacts/evaluation/evidence_attribution.json
+
+artifacts/evaluation/constraint_reranking_per_target.json
+
+artifacts/evaluation/constraint_failure_analysis.json
+
+artifacts/evaluation/constraint_reranking_tests.xml
+```
+
+Add a report:
+
+```text
+artifacts/evaluation/constraint_reranking.md
+```
+
+Do not overwrite the diffusion or previous reranking reports.
+
+---
+
+# 38. REQUIRED REPORT EXAMPLES
+
+Include actual examples of:
+
+```text
+A. comparative evidence fixed correctly
+
+B. candidate satisfies all requirements and moves upward
+
+C. candidate satisfies only part of question and is demoted
+
+D. NLI disagrees with cosine
+
+E. NLI clearly fails on technical scientific evidence
+
+F. candidate has good H2 rank but insufficient attributable evidence
+```
+
+Use actual traces, not invented examples.
+
+---
+
+# 39. NO HIERARCHY WORK IN THIS PASS
+
+Do NOT implement:
+
+```text
+hierarchical diffusion
+coarse H2
+cluster beam search
+hierarchical reranking
+new prototypes
+```
+
+The current priority is final ranking quality.
+
+Hierarchy approximation comes only after the fine-level answer ranking becomes credible.
+
+---
+
+# 40. NO NEW CANDIDATE GENERATION CHANGES
+
+Do not respond to reranking failure by altering:
+
+```text
+H2
+mention index
+graph paths
+diffusion alpha
+M
+relations
+aliases
+mapping
+```
+
+in this pass.
+
+If a failure is caused by H2 absence, report it.
+
+Do not fix it here.
+
+---
+
+# 41. DO NOT MANUALLY OPTIMIZE AGAINST Q1-Q14
+
+This benchmark may continue to be used as the development set.
+
+That is acceptable.
+
+But:
+
+```text
+do not hard-code individual questions
+do not hard-code expected answers
+do not manually insert answer-specific evidence
+do not tune dozens of thresholds until recall rises
+```
+
+Architectural changes may be motivated by observed generic failure modes.
+
+That distinction must remain explicit.
+
+---
+
+# 42. DECISION QUESTIONS
+
+At the end answer:
+
+```text
+1. Did CR1 improve Recall@10 over CR0?
+
+2. Did CR2 improve over CR1?
+
+3. Does candidate-specific NLI actually help technical retrieval?
+
+4. Does requirement decomposition reduce the oracle gap?
+
+5. How many H2 rank 11-100 targets enter the top ten?
+
+6. How many existing good H2/CR0 results are lost?
+
+7. Does comparison attribution fix the M3GNet/SchNet-style failure?
+
+8. Are remaining failures mainly:
+   - missing candidate evidence,
+   - partial requirement coverage,
+   - attribution failure,
+   - NLI failure,
+   - or ranking aggregation failure?
+
+9. Does CR3 or CR4 preserve H2 strengths better than standalone scoring?
+
+10. Is top-10 retrieval now good enough to justify returning to
+    hierarchical approximation?
+```
+
+---
+
+# 43. STOP RULE
+
+If requirement decomposition/NLI does NOT improve top-10 ranking meaningfully:
+
+Do NOT immediately add another complex model.
+
+Instead inspect whether:
+
+```text
+the graph evidence itself does not contain enough information
+question decomposition is incorrect
+evidence attribution remains wrong
+or the local NLI model is unsuitable for scientific text
+```
+
+Report that clearly.
+
+If CR1 works but CR2 does not:
+
+```text
+keep the generic requirement decomposition idea
+and reject the local NLI model for this use case.
+```
+
+If CR2 works:
+
+```text
+retain it as a controlled scientific entailment component,
+not as a generic relevance cross-encoder.
+```
+
+---
+
+# 44. FINAL CODEX RESPONSE
+
+When finished provide:
+
+```text
+files changed
+
+classes/functions added
+
+question decomposition method
+
+whether a local model was used for decomposition
+
+NLI model identity
+
+tests added
+
+full test result
+
+exact commands
+
+CR0/CR1/CR2/CR3/CR4 table
+
+2025 Recall@10 comparison
+
+oracle gap before/after
+
+per-target movement
+
+requirement coverage statistics
+
+comparison-attribution statistics
+
+examples where NLI helped
+
+examples where NLI failed
+
+remaining failure categories
+
+whether hierarchy approximation is now justified
+```
+
+The hypothesis for this pass is:
+
+```text
+H2 already finds many of the correct entities.
+
+The remaining ranking error is caused partly because whole-question
+semantic similarity cannot distinguish:
+
+"candidate appears in related scientific text"
+
+from:
+
+"candidate-specific evidence actually supports the task and
+requirements stated in the question."
+
+Generic question decomposition, candidate-aware evidence attribution,
+and per-requirement support scoring should improve that distinction
+without hard-coding individual benchmark questions or answers.
+```
+
+Test that hypothesis directly and conservatively.

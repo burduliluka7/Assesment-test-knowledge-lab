@@ -1,0 +1,1 @@
+Rate each gloss against its evidence: accurate, vague, unsupported, or wrong. Keep variant/cluster identities hidden while rating. Copy audit_blind.csv to audit_ratings.csv and fill rating cells; do not alter labels or glosses. Re-evaluation imports matching ratings and computes (unsupported + wrong) / evaluated. No ratings are generated automatically.

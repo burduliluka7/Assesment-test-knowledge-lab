@@ -1,0 +1,32 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "comp_00600",
+      "type": "component",
+      "surface_form": "Relaxed oxidation-state balancing constraint"
+    },
+    {
+      "id": "prob_00397",
+      "type": "problem",
+      "surface_form": "Overly restrictive oxidation-state balancing"
+    },
+    {
+      "id": "tech_00658",
+      "type": "technique",
+      "surface_form": "Oxidation-state balancing with relaxed constraints"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 1,
+    "problem": 1,
+    "technique": 1
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "state balancing",
+  "representative_ids": [
+    "tech_00658",
+    "prob_00397"
+  ]
+}

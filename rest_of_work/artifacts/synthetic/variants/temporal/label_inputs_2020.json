@@ -1,0 +1,247 @@
+[
+  {
+    "id": "2020:L0:0000",
+    "snapshot": 2020,
+    "level": 0,
+    "label": "graph / learning / neural",
+    "gloss": "This cluster groups corpus entries concerning graph, learning, neural.",
+    "generator": "tfidf-keyphrase-template-v1",
+    "input": [
+      {
+        "id": "n0",
+        "type": "method",
+        "surface_form": "graph neural learning topic 0",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n2",
+        "type": "method",
+        "surface_form": "graph neural learning topic 2",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n4",
+        "type": "method",
+        "surface_form": "graph neural learning topic 4",
+        "first_seen_year": 2020
+      }
+    ],
+    "shared_tfidf_context": {
+      "snapshot_corpus_file": "label_corpus_2020.json",
+      "ordered_surface_forms_sha256": "d5a899acfb82dc8fe124d02eca733255246d2832e2521d86f74efdc8c5191a50",
+      "document_count": 8,
+      "stop_words": "english",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 20000
+    },
+    "representatives": [
+      "n0",
+      "n4",
+      "n2"
+    ],
+    "keywords": [
+      "graph",
+      "learning",
+      "neural"
+    ]
+  },
+  {
+    "id": "2020:L0:0001",
+    "snapshot": 2020,
+    "level": 0,
+    "label": "atomic / potentials / quantum",
+    "gloss": "This cluster groups corpus entries concerning atomic, potentials, quantum.",
+    "generator": "tfidf-keyphrase-template-v1",
+    "input": [
+      {
+        "id": "n1",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 1",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n3",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 3",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n5",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 5",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n6",
+        "type": "method",
+        "surface_form": "graph neural learning topic 6",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n7",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 7",
+        "first_seen_year": 2020
+      }
+    ],
+    "shared_tfidf_context": {
+      "snapshot_corpus_file": "label_corpus_2020.json",
+      "ordered_surface_forms_sha256": "d5a899acfb82dc8fe124d02eca733255246d2832e2521d86f74efdc8c5191a50",
+      "document_count": 8,
+      "stop_words": "english",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 20000
+    },
+    "representatives": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n6"
+    ],
+    "keywords": [
+      "atomic",
+      "potentials",
+      "quantum"
+    ]
+  },
+  {
+    "id": "2020:L1:0001",
+    "snapshot": 2020,
+    "level": 1,
+    "label": "topic / atomic / graph",
+    "gloss": "This cluster groups corpus entries concerning topic, atomic, graph.",
+    "generator": "tfidf-keyphrase-template-v1",
+    "input": [
+      {
+        "id": "n6",
+        "type": "method",
+        "surface_form": "graph neural learning topic 6",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n7",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 7",
+        "first_seen_year": 2020
+      }
+    ],
+    "shared_tfidf_context": {
+      "snapshot_corpus_file": "label_corpus_2020.json",
+      "ordered_surface_forms_sha256": "d5a899acfb82dc8fe124d02eca733255246d2832e2521d86f74efdc8c5191a50",
+      "document_count": 8,
+      "stop_words": "english",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 20000
+    },
+    "representatives": [
+      "n6",
+      "n7"
+    ],
+    "keywords": [
+      "topic",
+      "atomic",
+      "graph"
+    ]
+  },
+  {
+    "id": "2020:L1:0002",
+    "snapshot": 2020,
+    "level": 1,
+    "label": "graph / learning / neural",
+    "gloss": "This cluster groups corpus entries concerning graph, learning, neural.",
+    "generator": "tfidf-keyphrase-template-v1",
+    "input": [
+      {
+        "id": "n0",
+        "type": "method",
+        "surface_form": "graph neural learning topic 0",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n2",
+        "type": "method",
+        "surface_form": "graph neural learning topic 2",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n4",
+        "type": "method",
+        "surface_form": "graph neural learning topic 4",
+        "first_seen_year": 2020
+      }
+    ],
+    "shared_tfidf_context": {
+      "snapshot_corpus_file": "label_corpus_2020.json",
+      "ordered_surface_forms_sha256": "d5a899acfb82dc8fe124d02eca733255246d2832e2521d86f74efdc8c5191a50",
+      "document_count": 8,
+      "stop_words": "english",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 20000
+    },
+    "representatives": [
+      "n0",
+      "n4",
+      "n2"
+    ],
+    "keywords": [
+      "graph",
+      "learning",
+      "neural"
+    ]
+  },
+  {
+    "id": "2020:L1:0003",
+    "snapshot": 2020,
+    "level": 1,
+    "label": "atomic / potentials / quantum",
+    "gloss": "This cluster groups corpus entries concerning atomic, potentials, quantum.",
+    "generator": "tfidf-keyphrase-template-v1",
+    "input": [
+      {
+        "id": "n1",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 1",
+        "first_seen_year": 2020
+      },
+      {
+        "id": "n3",
+        "type": "method",
+        "surface_form": "quantum atomic potentials topic 3",
+        "first_seen_year": 2020
+      }
+    ],
+    "shared_tfidf_context": {
+      "snapshot_corpus_file": "label_corpus_2020.json",
+      "ordered_surface_forms_sha256": "d5a899acfb82dc8fe124d02eca733255246d2832e2521d86f74efdc8c5191a50",
+      "document_count": 8,
+      "stop_words": "english",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 20000
+    },
+    "representatives": [
+      "n1",
+      "n3"
+    ],
+    "keywords": [
+      "atomic",
+      "potentials",
+      "quantum"
+    ]
+  }
+]

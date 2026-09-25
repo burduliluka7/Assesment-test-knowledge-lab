@@ -1,0 +1,125 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "meth_00020",
+      "type": "method",
+      "surface_form": "kernel ridge regression"
+    },
+    {
+      "id": "meth_00029",
+      "type": "method",
+      "surface_form": "Principal Component Analysis"
+    },
+    {
+      "id": "meth_00041",
+      "type": "method",
+      "surface_form": "Support Vector Regression"
+    },
+    {
+      "id": "meth_00068",
+      "type": "method",
+      "surface_form": "symbolic regression"
+    },
+    {
+      "id": "meth_00072",
+      "type": "method",
+      "surface_form": "Linear Regression"
+    },
+    {
+      "id": "meth_00076",
+      "type": "method",
+      "surface_form": "Moment Tensor Potentials"
+    },
+    {
+      "id": "meth_00106",
+      "type": "method",
+      "surface_form": "SHAP"
+    },
+    {
+      "id": "meth_00225",
+      "type": "method",
+      "surface_form": "Kohn-Sham density-functional theory"
+    },
+    {
+      "id": "meth_00403",
+      "type": "method",
+      "surface_form": "Behler-Parrinello neural network potential"
+    },
+    {
+      "id": "meth_00431",
+      "type": "method",
+      "surface_form": "Brenner potential"
+    },
+    {
+      "id": "meth_00432",
+      "type": "method",
+      "surface_form": "Screened Tersoff potential"
+    },
+    {
+      "id": "meth_00433",
+      "type": "method",
+      "surface_form": "SOAP descriptors"
+    },
+    {
+      "id": "meth_00434",
+      "type": "method",
+      "surface_form": "SOAP descriptor"
+    },
+    {
+      "id": "meth_00435",
+      "type": "method",
+      "surface_form": "REBO potential"
+    },
+    {
+      "id": "meth_00436",
+      "type": "method",
+      "surface_form": "environment-dependent interaction potential"
+    },
+    {
+      "id": "meth_00438",
+      "type": "method",
+      "surface_form": "Lindemann melting criterion"
+    },
+    {
+      "id": "meth_00439",
+      "type": "method",
+      "surface_form": "CALculation of PHAse Diagram"
+    },
+    {
+      "id": "meth_00440",
+      "type": "method",
+      "surface_form": "variable-selection assisted sure independence screening and sparsifying operator"
+    },
+    {
+      "id": "meth_00443",
+      "type": "method",
+      "surface_form": "Silhouette score"
+    },
+    {
+      "id": "meth_00445",
+      "type": "method",
+      "surface_form": "Voigt-Reuss-Hill averaging"
+    },
+    {
+      "id": "meth_00447",
+      "type": "method",
+      "surface_form": "tree ensemble methods"
+    },
+    {
+      "id": "meth_00448",
+      "type": "method",
+      "surface_form": "Neural network model for melting temperature prediction"
+    }
+  ],
+  "generation_type_counts": {
+    "method": 22
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "regression",
+  "representative_ids": [
+    "meth_00068",
+    "meth_00020"
+  ]
+}

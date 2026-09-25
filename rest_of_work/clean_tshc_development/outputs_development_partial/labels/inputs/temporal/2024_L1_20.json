@@ -1,0 +1,492 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "comp_00139",
+      "type": "component",
+      "surface_form": "Online leaderboard"
+    },
+    {
+      "id": "comp_00140",
+      "type": "component",
+      "surface_form": "Convex‑hull distance target"
+    },
+    {
+      "id": "comp_00142",
+      "type": "component",
+      "surface_form": "Discovery Acceleration Factor"
+    },
+    {
+      "id": "comp_00143",
+      "type": "component",
+      "surface_form": "Multi‑modal training data support"
+    },
+    {
+      "id": "comp_00145",
+      "type": "component",
+      "surface_form": "Protostructure‑based cleaning procedure"
+    },
+    {
+      "id": "comp_00146",
+      "type": "component",
+      "surface_form": "WBM test‑set generation pipeline"
+    },
+    {
+      "id": "comp_00147",
+      "type": "component",
+      "surface_form": "Rolling MAE evaluation"
+    },
+    {
+      "id": "comp_00149",
+      "type": "component",
+      "surface_form": "Convex‑hull distance classification analysis"
+    },
+    {
+      "id": "comp_00152",
+      "type": "component",
+      "surface_form": "Direct force prediction"
+    },
+    {
+      "id": "comp_00153",
+      "type": "component",
+      "surface_form": "De‑noising non‑equilibrium structures (DeNS) auxiliary task"
+    },
+    {
+      "id": "comp_00155",
+      "type": "component",
+      "surface_form": "Linear self‑connection layer"
+    },
+    {
+      "id": "comp_00156",
+      "type": "component",
+      "surface_form": "Atomic Cluster Expansion (ACE) high‑body‑order features"
+    },
+    {
+      "id": "comp_00158",
+      "type": "component",
+      "surface_form": "Pseudo‑relaxation emulation"
+    },
+    {
+      "id": "comp_00159",
+      "type": "component",
+      "surface_form": "Structure perturbation augmentation"
+    },
+    {
+      "id": "comp_00160",
+      "type": "component",
+      "surface_form": "Coordinate‑free Wyckoff position encoding"
+    },
+    {
+      "id": "comp_00163",
+      "type": "component",
+      "surface_form": "Voronoi tessellation features"
+    },
+    {
+      "id": "comp_00817",
+      "type": "component",
+      "surface_form": "extended xyz format database"
+    },
+    {
+      "id": "comp_00823",
+      "type": "component",
+      "surface_form": "Iterative training workflow"
+    },
+    {
+      "id": "task_00417",
+      "type": "task",
+      "surface_form": "IR spectrum calculation"
+    },
+    {
+      "id": "task_00443",
+      "type": "task",
+      "surface_form": "Convex hull distance prediction"
+    },
+    {
+      "id": "task_00455",
+      "type": "task",
+      "surface_form": "Convex hull stability analysis"
+    },
+    {
+      "id": "task_00610",
+      "type": "task",
+      "surface_form": "Radial distribution function calculation"
+    },
+    {
+      "id": "task_00611",
+      "type": "task",
+      "surface_form": "Angular distribution function calculation"
+    },
+    {
+      "id": "tech_00053",
+      "type": "technique",
+      "surface_form": "iterative training"
+    },
+    {
+      "id": "tech_00098",
+      "type": "technique",
+      "surface_form": "Radial distribution function analysis"
+    },
+    {
+      "id": "tech_00197",
+      "type": "technique",
+      "surface_form": "F1‑score classification evaluation"
+    },
+    {
+      "id": "tech_00198",
+      "type": "technique",
+      "surface_form": "Discovery Acceleration Factor (DAF) calculation"
+    },
+    {
+      "id": "tech_00199",
+      "type": "technique",
+      "surface_form": "Multi‑task learning with auxiliary DFT properties"
+    },
+    {
+      "id": "tech_00202",
+      "type": "technique",
+      "surface_form": "ISCD‑based elemental substitution"
+    },
+    {
+      "id": "tech_00203",
+      "type": "technique",
+      "surface_form": "Rolling MAE computation"
+    },
+    {
+      "id": "tech_00204",
+      "type": "technique",
+      "surface_form": "ROC‑curve analysis"
+    },
+    {
+      "id": "tech_00206",
+      "type": "technique",
+      "surface_form": "Model‑committee error screening"
+    },
+    {
+      "id": "tech_00207",
+      "type": "technique",
+      "surface_form": "De‑noising non‑equilibrium structures"
+    },
+    {
+      "id": "tech_00208",
+      "type": "technique",
+      "surface_form": "Data augmentation for equivariance"
+    },
+    {
+      "id": "tech_00209",
+      "type": "technique",
+      "surface_form": "Linear self‑connection"
+    },
+    {
+      "id": "tech_00210",
+      "type": "technique",
+      "surface_form": "Atomic Cluster Expansion"
+    },
+    {
+      "id": "tech_00211",
+      "type": "technique",
+      "surface_form": "Charge‑informed modeling"
+    },
+    {
+      "id": "tech_00212",
+      "type": "technique",
+      "surface_form": "Pseudo‑relaxation emulation"
+    },
+    {
+      "id": "tech_00213",
+      "type": "technique",
+      "surface_form": "Structure perturbation augmentation"
+    },
+    {
+      "id": "tech_00214",
+      "type": "technique",
+      "surface_form": "Coordinate‑free Wyckoff encoding"
+    },
+    {
+      "id": "tech_00215",
+      "type": "technique",
+      "surface_form": "Self‑attention (QKV) blocks"
+    },
+    {
+      "id": "tech_00216",
+      "type": "technique",
+      "surface_form": "Bayesian optimization with surrogate model"
+    },
+    {
+      "id": "tech_00217",
+      "type": "technique",
+      "surface_form": "Voronoi tessellation feature extraction"
+    },
+    {
+      "id": "tech_00461",
+      "type": "technique",
+      "surface_form": "Uniform sphere sampling"
+    },
+    {
+      "id": "tech_00462",
+      "type": "technique",
+      "surface_form": "Inner product with spherical harmonics"
+    },
+    {
+      "id": "tech_00595",
+      "type": "technique",
+      "surface_form": "iterative retraining cycle"
+    },
+    {
+      "id": "tech_00596",
+      "type": "technique",
+      "surface_form": "convex hull distance prediction"
+    },
+    {
+      "id": "tech_00597",
+      "type": "technique",
+      "surface_form": "high-throughput DFT validation"
+    },
+    {
+      "id": "tech_00600",
+      "type": "technique",
+      "surface_form": "Double grid technique"
+    },
+    {
+      "id": "tech_00602",
+      "type": "technique",
+      "surface_form": "Allen-Dynes modification to McMillan formula"
+    },
+    {
+      "id": "tech_00603",
+      "type": "technique",
+      "surface_form": "First-order polynomial fitting"
+    },
+    {
+      "id": "tech_00604",
+      "type": "technique",
+      "surface_form": "Γ-centered k-point grids"
+    },
+    {
+      "id": "tech_00607",
+      "type": "technique",
+      "surface_form": "Top-N property screening"
+    },
+    {
+      "id": "tech_00608",
+      "type": "technique",
+      "surface_form": "Debye temperature estimation"
+    },
+    {
+      "id": "tech_00609",
+      "type": "technique",
+      "surface_form": "DOS filtering"
+    },
+    {
+      "id": "tech_00610",
+      "type": "technique",
+      "surface_form": "Space group filtering"
+    },
+    {
+      "id": "tech_00611",
+      "type": "technique",
+      "surface_form": "Unit cell size filtering"
+    },
+    {
+      "id": "tech_00613",
+      "type": "technique",
+      "surface_form": "q-grid and k-grid convergence"
+    },
+    {
+      "id": "tech_00616",
+      "type": "technique",
+      "surface_form": "High-throughput DFT calculations"
+    },
+    {
+      "id": "tech_00617",
+      "type": "technique",
+      "surface_form": "Chemical element permutation"
+    },
+    {
+      "id": "tech_00618",
+      "type": "technique",
+      "surface_form": "Convex hull distance filtering"
+    },
+    {
+      "id": "tech_00619",
+      "type": "technique",
+      "surface_form": "Voigt-Reuss-Hill averaging"
+    },
+    {
+      "id": "tech_00621",
+      "type": "technique",
+      "surface_form": "Machine-learning assisted data mining"
+    },
+    {
+      "id": "tech_00622",
+      "type": "technique",
+      "surface_form": "Density-functional perturbation theory"
+    },
+    {
+      "id": "tech_00623",
+      "type": "technique",
+      "surface_form": "Prototype diversity sampling"
+    },
+    {
+      "id": "tech_00630",
+      "type": "technique",
+      "surface_form": "Two-step relaxation annealing"
+    },
+    {
+      "id": "tech_00631",
+      "type": "technique",
+      "surface_form": "NKPPRA-based k-point sampling"
+    },
+    {
+      "id": "tech_00632",
+      "type": "technique",
+      "surface_form": "High-symmetry path sampling"
+    },
+    {
+      "id": "tech_00637",
+      "type": "technique",
+      "surface_form": "high-throughput calculations"
+    },
+    {
+      "id": "tech_00639",
+      "type": "technique",
+      "surface_form": "local-orbital basis"
+    },
+    {
+      "id": "tech_00641",
+      "type": "technique",
+      "surface_form": "matrix eigenvector methods"
+    },
+    {
+      "id": "tech_00642",
+      "type": "technique",
+      "surface_form": "DBS-to-RMM-DIIS switching"
+    },
+    {
+      "id": "tech_00646",
+      "type": "technique",
+      "surface_form": "δEion convergence criterion"
+    },
+    {
+      "id": "tech_00647",
+      "type": "technique",
+      "surface_form": "DOS energy window selection"
+    },
+    {
+      "id": "tech_00648",
+      "type": "technique",
+      "surface_form": "Band structure energy window selection"
+    },
+    {
+      "id": "tech_00649",
+      "type": "technique",
+      "surface_form": "Ecut scaling factor"
+    },
+    {
+      "id": "tech_00650",
+      "type": "technique",
+      "surface_form": "Automatic spin polarization economization"
+    },
+    {
+      "id": "tech_00654",
+      "type": "technique",
+      "surface_form": "Reciprocal lattice grid spacing"
+    },
+    {
+      "id": "tech_00894",
+      "type": "technique",
+      "surface_form": "Kernel-based similarity measure"
+    },
+    {
+      "id": "tech_00895",
+      "type": "technique",
+      "surface_form": "Sparse representation"
+    },
+    {
+      "id": "tech_00896",
+      "type": "technique",
+      "surface_form": "Linear combination of kernel functions"
+    },
+    {
+      "id": "tech_00898",
+      "type": "technique",
+      "surface_form": "Spherical harmonics expansion"
+    },
+    {
+      "id": "tech_00900",
+      "type": "technique",
+      "surface_form": "Kernel exponentiation"
+    },
+    {
+      "id": "tech_00901",
+      "type": "technique",
+      "surface_form": "CUR sparsification"
+    },
+    {
+      "id": "tech_00902",
+      "type": "technique",
+      "surface_form": "Uniform grid sparsification"
+    },
+    {
+      "id": "tech_00903",
+      "type": "technique",
+      "surface_form": "Iterative database extension"
+    },
+    {
+      "id": "tech_00907",
+      "type": "technique",
+      "surface_form": "Random displacement test"
+    },
+    {
+      "id": "tech_00909",
+      "type": "technique",
+      "surface_form": "Hierarchical descriptor combination"
+    },
+    {
+      "id": "tech_00910",
+      "type": "technique",
+      "surface_form": "Cumulative error distribution analysis"
+    },
+    {
+      "id": "tech_00919",
+      "type": "technique",
+      "surface_form": "snapshot extraction at multiple time points"
+    },
+    {
+      "id": "tech_00920",
+      "type": "technique",
+      "surface_form": "MD quenches"
+    },
+    {
+      "id": "tech_00922",
+      "type": "technique",
+      "surface_form": "high-temperature annealing protocol"
+    },
+    {
+      "id": "tech_00927",
+      "type": "technique",
+      "surface_form": "Random atomic displacement"
+    },
+    {
+      "id": "tech_00928",
+      "type": "technique",
+      "surface_form": "Random angle perturbation"
+    },
+    {
+      "id": "tech_00930",
+      "type": "technique",
+      "surface_form": "Dimer/trimer data inclusion"
+    }
+  ],
+  "generation_type_counts": {
+    "component": 18,
+    "task": 5,
+    "technique": 72
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "convex hull",
+  "representative_ids": [
+    "tech_00637",
+    "tech_00895"
+  ]
+}

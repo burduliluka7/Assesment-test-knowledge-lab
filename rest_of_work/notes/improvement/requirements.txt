@@ -1,0 +1,143 @@
+Before declaring the repository submission-ready, perform a FINAL REQUIREMENTS AUDIT against the original internship task.
+
+In addition to the previously requested retrieval, typed-target, claim-evidence, and label-faithfulness improvements, verify all of the following explicitly:
+
+1. T1:
+   - per-snapshot node count;
+   - per-snapshot hyperedge count;
+   - per-snapshot node-type distribution;
+   - hyperedge arity distribution;
+   - temporal span;
+   - growth/change;
+   - documented data-quality problems.
+
+2. Explain the difference between raw edge-year counts and the stricter temporally consistent visible-edge counts used in the report. Do not leave the 2020/2022/2024 count discrepancy relative to the task guide unexplained.
+
+3. T2 / Deliverable 0:
+   - formal objective present;
+   - structure/semantics tradeoff explicit;
+   - complexity present;
+   - P1–P6 construction guarantees versus empirical properties clearly separated;
+   - at least one credible rejected alternative defended.
+
+4. Literature:
+   - 3–4 papers;
+   - collectively cover hierarchical/multi-resolution structure, hypergraph clustering/spectral methods, coarsening, and dynamic/evolutionary clustering;
+   - bibliography information verified.
+
+5. T3:
+   - temporal regularization affects construction;
+   - persistent IDs exist;
+   - temporal event file records birth, growth/continuation, merge, split and death where applicable;
+   - include a compact event-count summary in report or generated appendix.
+
+6. T4:
+   verify implementation and tests for:
+   - m=n;
+   - 1<m<n;
+   - three-or-more coarse endpoints;
+   - multiplicity preservation;
+   - provenance preservation;
+   - actual collapsed hypergraph used as next-level input;
+   - loss introduced by coarsening explicitly stated.
+
+7. T5:
+   - label + one-sentence gloss generated automatically at least for every L0/L1 supernode;
+   - preferably all exported non-singleton supernodes;
+   - exact labeller input format is shown in the report with one compact real example;
+   - full inputs remain exported as an artifact;
+   - temporal cutoff filtering is tested;
+   - overclaim/faithfulness metric is computed.
+
+8. T6 coherence:
+   - clustering semantic model and coherence-evaluation model are different;
+   - null model exists;
+   - observed vs null result and statistical interpretation reported;
+   - singleton handling stated.
+
+9. T6 stability:
+   - remove 10% hyperedges;
+   - exactly five or more deterministic seeds;
+   - rebuild hierarchy;
+   - ARI or hierarchy analogue at each relevant level;
+   - confidence interval/significance treatment;
+   - real cross-snapshot stability evaluated separately.
+
+10. T6 labels:
+    - do not lower NLI threshold merely to improve results;
+    - reduce circularity using generation/held-out verification evidence where feasible;
+    - report mapping/holdout coverage and limitations;
+    - preserve blind human audit file even if unfilled.
+
+11. T6 extrinsic:
+    - hierarchical coarse-to-fine retrieval;
+    - flat baseline;
+    - same retrieval scorer/model;
+    - fair cost accounting;
+    - heterogeneous entity target types supported;
+    - Type A entity retrieval evaluated;
+    - Type B claim/evidence retrieval evaluated wherever ground-truth alignment is defensible;
+    - expected target mapping coverage reported;
+    - claim mapping coverage reported;
+    - supporting-claim retrieval reported or explicitly marked unavailable per unmapped item;
+    - `valid_but_unlisted`, `wrong_domain`, and `outdated_as_main` handled separately;
+    - no ground-truth leakage into hierarchy construction or ranking.
+
+12. Variant comparison:
+    - semantic;
+    - native structural;
+    - static hybrid;
+    - temporal hybrid;
+    - pairwise baseline;
+    - state which would be shipped and why, based on measured tradeoffs rather than a fabricated scalar score.
+
+13. Deliverables:
+    programmatically verify that the repository contains:
+    - runnable README;
+    - pinned dependencies;
+    - hierarchy JSON per snapshot;
+    - every required hierarchy field: id, level, parent id, member ids, label, gloss;
+    - temporal_events.json;
+    - metrics.json;
+    - report.md and/or report.pdf;
+    - AI_USAGE.md;
+    - optional visualization only if already useful.
+
+14. Reproducibility:
+    - execute the README reproduction command;
+    - run the complete test suite;
+    - verify random seeds/configs/model IDs;
+    - verify no hidden absolute local paths;
+    - verify caches are optional rather than required;
+    - confirm a clean environment can reproduce the pipeline, or document precisely what external model downloads are required.
+
+15. Report:
+    - maintain approximately 3–5 pages of main prose;
+    - include “verified vs assumed” explicitly;
+    - include “what I would do with four more weeks”;
+    - do not inflate the report with implementation details better placed in README/appendix/artifacts.
+
+16. AI_USAGE:
+    append this improvement pass and major prompts;
+    list automated verification;
+    never claim human verification that did not occur.
+
+At completion, create a machine-readable or Markdown rubric checklist, e.g.
+
+artifacts/submission_checklist.md
+
+with each original requirement marked:
+
+PASS
+PARTIAL
+NOT APPLICABLE
+or
+FAIL
+
+and link every PASS to the concrete file/artifact/test/metric that proves it.
+
+Do not mark something PASS just because the report claims it.
+
+Evidence must exist in code, tests, or generated artifacts.
+
+Do not stop until every mandatory original-task item is either PASS or has an explicit, honest explanation for why it remains PARTIAL.

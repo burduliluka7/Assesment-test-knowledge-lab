@@ -1,0 +1,2490 @@
+{
+  "status": "valid_with_warnings",
+  "nodes": 5798,
+  "hyperedges": 1429,
+  "date_semantics": {
+    "node_year": "origin_year if known, else first_seen_year",
+    "node_origin_year": "when the thing itself was introduced (method/base-method/cited-work year, publication year for articles); null if unknown",
+    "node_first_seen_year": "publication year of the earliest corpus paper mentioning it",
+    "node_last_seen_year": "publication year of the latest corpus paper mentioning it",
+    "edge_year": "year the fact holds — the row's own year (eval/claim) or the asserting paper's publication year",
+    "provenance_article_year": "publication year of the paper asserting the edge",
+    "provenance_ingested_at": "when the PDF entered MVKG (article nodes)",
+    "provenance_extracted_at": "when the extraction pipeline finished (article nodes)",
+    "sanity": "years outside 1900-2100 dropped as extraction noise"
+  },
+  "issues": [
+    {
+      "code": "origin_after_first_seen",
+      "id": "meth_00175",
+      "severity": "warning"
+    },
+    {
+      "code": "origin_after_first_seen",
+      "id": "meth_00209",
+      "severity": "warning"
+    },
+    {
+      "code": "origin_after_first_seen",
+      "id": "cite_00213",
+      "severity": "warning"
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00344",
+      "severity": "warning",
+      "edge_year": 2017,
+      "article_year": 2018
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00344",
+      "severity": "warning",
+      "members": [
+        "meth_00218",
+        "data_00063"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00346",
+      "severity": "warning",
+      "edge_year": 2017,
+      "article_year": 2018
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00346",
+      "severity": "warning",
+      "members": [
+        "meth_00218",
+        "data_00065"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00347",
+      "severity": "warning",
+      "edge_year": 2017,
+      "article_year": 2018
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00347",
+      "severity": "warning",
+      "members": [
+        "meth_00218",
+        "data_00066"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00348",
+      "severity": "warning",
+      "edge_year": 2017,
+      "article_year": 2018
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00348",
+      "severity": "warning",
+      "members": [
+        "meth_00218",
+        "data_00067"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00349",
+      "severity": "warning",
+      "edge_year": 2017,
+      "article_year": 2018
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00349",
+      "severity": "warning",
+      "members": [
+        "meth_00218",
+        "data_00068"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00351",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00351",
+      "severity": "warning",
+      "members": [
+        "meth_00437",
+        "data_00216"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00352",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00352",
+      "severity": "warning",
+      "members": [
+        "meth_00437",
+        "data_00217"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00353",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00353",
+      "severity": "warning",
+      "members": [
+        "meth_00437",
+        "data_00218"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00354",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00354",
+      "severity": "warning",
+      "members": [
+        "meth_00437",
+        "data_00219"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00355",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00355",
+      "severity": "warning",
+      "members": [
+        "meth_00437",
+        "data_00220"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00357",
+      "severity": "warning",
+      "edge_year": 2022,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00357",
+      "severity": "warning",
+      "members": [
+        "meth_00417",
+        "data_00164"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00361",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00361",
+      "severity": "warning",
+      "members": [
+        "meth_00417",
+        "data_00167"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00362",
+      "severity": "warning",
+      "edge_year": 2022,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00362",
+      "severity": "warning",
+      "members": [
+        "meth_00417",
+        "data_00168"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00378",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2023
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00378",
+      "severity": "warning",
+      "members": [
+        "meth_00329",
+        "data_00130"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00379",
+      "severity": "warning",
+      "edge_year": 2018,
+      "article_year": 2023
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00379",
+      "severity": "warning",
+      "members": [
+        "meth_00329",
+        "data_00131"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00385",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00385",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00386",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00386",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00387",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00387",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00388",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00388",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00389",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00389",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00390",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00390",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00391",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00391",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00392",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00392",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00393",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00393",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00394",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00394",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00395",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00395",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00396",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00396",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00397",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00397",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00398",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00398",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00399",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00399",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00407",
+      "severity": "warning",
+      "edge_year": 2017,
+      "article_year": 2021
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00407",
+      "severity": "warning",
+      "members": [
+        "meth_00171"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00426",
+      "severity": "warning",
+      "edge_year": 2022,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00426",
+      "severity": "warning",
+      "members": [
+        "meth_00134",
+        "data_00013"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00427",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00427",
+      "severity": "warning",
+      "members": [
+        "meth_00134",
+        "data_00014"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00428",
+      "severity": "warning",
+      "edge_year": 2023,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00428",
+      "severity": "warning",
+      "members": [
+        "meth_00134",
+        "data_00015"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00429",
+      "severity": "warning",
+      "edge_year": 2023,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00429",
+      "severity": "warning",
+      "members": [
+        "meth_00292",
+        "data_00013"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00430",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00430",
+      "severity": "warning",
+      "members": [
+        "meth_00292",
+        "data_00099"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00431",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00431",
+      "severity": "warning",
+      "members": [
+        "meth_00292",
+        "data_00100"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00473",
+      "severity": "warning",
+      "edge_year": 2023,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00473",
+      "severity": "warning",
+      "members": [
+        "meth_00313",
+        "data_00164"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00474",
+      "severity": "warning",
+      "edge_year": 2022,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00474",
+      "severity": "warning",
+      "members": [
+        "meth_00313",
+        "data_00170"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00475",
+      "severity": "warning",
+      "edge_year": 1997,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00475",
+      "severity": "warning",
+      "members": [
+        "meth_00313"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00477",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00477",
+      "severity": "warning",
+      "members": [
+        "meth_00313",
+        "data_00013"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00486",
+      "severity": "warning",
+      "edge_year": 2022,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00486",
+      "severity": "warning",
+      "members": [
+        "meth_00414",
+        "data_00162"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00497",
+      "severity": "warning",
+      "edge_year": 2023,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00497",
+      "severity": "warning",
+      "members": [
+        "meth_00159",
+        "data_00016"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00530",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00530",
+      "severity": "warning",
+      "members": [
+        "meth_00081",
+        "data_00106"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00531",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00531",
+      "severity": "warning",
+      "members": [
+        "meth_00081",
+        "data_00107"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00532",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00532",
+      "severity": "warning",
+      "members": [
+        "meth_00081",
+        "data_00108"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00533",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00533",
+      "severity": "warning",
+      "members": [
+        "meth_00081",
+        "data_00109"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00535",
+      "severity": "warning",
+      "edge_year": 2022,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00535",
+      "severity": "warning",
+      "members": [
+        "meth_00081",
+        "data_00111"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00536",
+      "severity": "warning",
+      "edge_year": 2022,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00536",
+      "severity": "warning",
+      "members": [
+        "meth_00081",
+        "data_00112"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00537",
+      "severity": "warning",
+      "edge_year": 2022,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00537",
+      "severity": "warning",
+      "members": [
+        "meth_00081",
+        "data_00113"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00543",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2023
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00543",
+      "severity": "warning",
+      "members": [
+        "meth_00320",
+        "data_00123"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00548",
+      "severity": "warning",
+      "edge_year": 2022,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00548",
+      "severity": "warning",
+      "members": [
+        "meth_00082",
+        "data_00013"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00558",
+      "severity": "warning",
+      "edge_year": 2022,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00558",
+      "severity": "warning",
+      "members": [
+        "meth_00082",
+        "data_00113"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00565",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00565",
+      "severity": "warning",
+      "members": [
+        "meth_00082",
+        "data_00187"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00566",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00566",
+      "severity": "warning",
+      "members": [
+        "meth_00082",
+        "data_00188"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00567",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00567",
+      "severity": "warning",
+      "members": [
+        "meth_00082",
+        "data_00164"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00569",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00569",
+      "severity": "warning",
+      "members": [
+        "meth_00082",
+        "data_00190"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00573",
+      "severity": "warning",
+      "edge_year": 2025,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00573",
+      "severity": "warning",
+      "members": [
+        "meth_00082",
+        "data_00193"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00575",
+      "severity": "warning",
+      "edge_year": 2015,
+      "article_year": 2026
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00575",
+      "severity": "warning",
+      "members": [
+        "meth_00082",
+        "data_00195"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00579",
+      "severity": "warning",
+      "edge_year": 2020,
+      "article_year": 2022
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00579",
+      "severity": "warning",
+      "members": [
+        "meth_00188"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00580",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2022
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00580",
+      "severity": "warning",
+      "members": [
+        "meth_00188",
+        "data_00040"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00658",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00658",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00659",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00659",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00660",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00660",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00661",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00661",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00662",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00662",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00663",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00663",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00664",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00664",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00665",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00665",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00666",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00666",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00667",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00667",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00668",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00668",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00669",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00669",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00670",
+      "severity": "warning",
+      "edge_year": 2021,
+      "article_year": 2024
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00670",
+      "severity": "warning",
+      "members": [
+        "arti_00051",
+        "meth_00437"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00788",
+      "severity": "warning",
+      "members": [
+        "meth_00058"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00789",
+      "severity": "warning",
+      "members": [
+        "meth_00058"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00790",
+      "severity": "warning",
+      "members": [
+        "meth_00058"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00791",
+      "severity": "warning",
+      "members": [
+        "meth_00058"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00792",
+      "severity": "warning",
+      "members": [
+        "meth_00058"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00793",
+      "severity": "warning",
+      "members": [
+        "meth_00058"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00794",
+      "severity": "warning",
+      "members": [
+        "meth_00058"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00795",
+      "severity": "warning",
+      "members": [
+        "meth_00058"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00796",
+      "severity": "warning",
+      "members": [
+        "meth_00058"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00857",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00857",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00858",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00858",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00859",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00859",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00860",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00860",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00861",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00861",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00862",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00862",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00863",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00863",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00864",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00864",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00865",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00865",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00866",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00866",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00867",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00867",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00868",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00868",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00869",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00869",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00870",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00870",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00871",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00871",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00872",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00872",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00873",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00873",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00874",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00874",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00875",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00875",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00876",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00876",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00877",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00877",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00878",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00878",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00879",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00879",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00880",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00880",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00881",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00881",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00882",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00882",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00883",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00883",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00884",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00884",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00885",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00885",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00886",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00886",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00887",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00887",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00888",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00888",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00889",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00889",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00890",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00890",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00891",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00891",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00892",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00892",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00893",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00893",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00894",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00894",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00895",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00895",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00896",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00896",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00897",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00897",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00898",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00898",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00899",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00899",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00900",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00900",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00901",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00901",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00902",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00902",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00903",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00903",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00904",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00904",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00905",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00905",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00906",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00906",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00907",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00907",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00908",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00908",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00909",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00909",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00910",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00910",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00911",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00911",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00912",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00912",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00913",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00913",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00914",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00914",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00915",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00915",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "h_00916",
+      "severity": "warning",
+      "edge_year": 2024,
+      "article_year": 2025
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_00916",
+      "severity": "warning",
+      "members": [
+        "arti_00050",
+        "meth_00388"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01148",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01149",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01150",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01151",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01152",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01153",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01154",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01155",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01156",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01157",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01158",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01159",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01160",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01161",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01162",
+      "severity": "warning",
+      "members": [
+        "meth_00169"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01245",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01246",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01247",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01248",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01249",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01250",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01251",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01252",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01253",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01254",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01255",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "h_01256",
+      "severity": "warning",
+      "members": [
+        "meth_00037"
+      ]
+    }
+  ],
+  "issue_counts": {
+    "origin_after_first_seen": 3,
+    "edge_before_asserting_paper": 134,
+    "edge_before_members_seen": 170
+  },
+  "isolated_nodes": [],
+  "node_types": {
+    "article": 52,
+    "method": 448,
+    "component": 855,
+    "task": 732,
+    "technique": 962,
+    "author": 318,
+    "problem": 634,
+    "dataset": 259,
+    "metric": 90,
+    "claim": 690,
+    "cited_work": 580,
+    "future_topic": 178
+  },
+  "relation_types": {
+    "addresses": 51,
+    "evaluated_on": 301,
+    "extends": 50,
+    "solves": 51,
+    "uses_component": 50,
+    "uses_technique": 51,
+    "presents": 52,
+    "claims": 690,
+    "cites": 37,
+    "authored_by": 51,
+    "proposes_future_work": 45
+  },
+  "metadata_count_comparison": {
+    "nodes": {
+      "declared": 5798,
+      "measured": 5798
+    },
+    "hyperedges": {
+      "declared": 1429,
+      "measured": 1429
+    }
+  }
+}

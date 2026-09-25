@@ -1,0 +1,50 @@
+{
+  "status": "valid_with_warnings",
+  "nodes": 12,
+  "hyperedges": 6,
+  "date_semantics": {
+    "node_first_seen_year": "earliest corpus mention",
+    "edge_year": "fact year",
+    "provenance_article_year": "asserting paper year"
+  },
+  "issues": [
+    {
+      "code": "edge_before_asserting_paper",
+      "id": "future_assertion",
+      "severity": "warning",
+      "edge_year": 1999,
+      "article_year": 2022
+    },
+    {
+      "code": "edge_before_members_seen",
+      "id": "future_assertion",
+      "severity": "warning",
+      "members": [
+        "n0",
+        "n10"
+      ]
+    }
+  ],
+  "issue_counts": {
+    "edge_before_asserting_paper": 1,
+    "edge_before_members_seen": 1
+  },
+  "isolated_nodes": [],
+  "node_types": {
+    "method": 12
+  },
+  "relation_types": {
+    "uses_technique": 5,
+    "claims": 1
+  },
+  "metadata_count_comparison": {
+    "nodes": {
+      "declared": null,
+      "measured": 12
+    },
+    "hyperedges": {
+      "declared": null,
+      "measured": 6
+    }
+  }
+}

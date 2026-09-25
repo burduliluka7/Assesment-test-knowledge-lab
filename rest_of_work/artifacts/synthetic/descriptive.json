@@ -1,0 +1,77 @@
+{
+  "status": "computed",
+  "snapshots": [
+    {
+      "snapshot": 2020,
+      "nodes": 8,
+      "hyperedges": 3,
+      "node_types": {
+        "method": 8
+      },
+      "relation_types": {
+        "uses_technique": 3
+      },
+      "arity_distribution": {
+        "4": 2,
+        "2": 1
+      },
+      "arity_quantiles": {
+        "min": 2.0,
+        "q25": 3.0,
+        "median": 4.0,
+        "q75": 4.0,
+        "max": 4.0
+      },
+      "fraction_arity_gt2": 0.6666666666666666,
+      "time_span": [
+        2020,
+        2020
+      ],
+      "new_nodes": 8,
+      "new_edges": 3,
+      "isolated_nodes": 0,
+      "deferred_edges": 1
+    },
+    {
+      "snapshot": 2022,
+      "nodes": 12,
+      "hyperedges": 6,
+      "node_types": {
+        "method": 12
+      },
+      "relation_types": {
+        "uses_technique": 5,
+        "claims": 1
+      },
+      "arity_distribution": {
+        "4": 3,
+        "2": 2,
+        "3": 1
+      },
+      "arity_quantiles": {
+        "min": 2.0,
+        "q25": 2.25,
+        "median": 3.5,
+        "q75": 4.0,
+        "max": 4.0
+      },
+      "fraction_arity_gt2": 0.6666666666666666,
+      "time_span": [
+        1999,
+        2022
+      ],
+      "new_nodes": 4,
+      "new_edges": 3,
+      "isolated_nodes": 0,
+      "deferred_edges": 0
+    }
+  ],
+  "historical_origin_range": [
+    1990,
+    1990
+  ],
+  "corpus_first_seen_range": [
+    2020,
+    2022
+  ]
+}

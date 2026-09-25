@@ -1,0 +1,241 @@
+{
+  "cutoff": 2024,
+  "generation_members": [
+    {
+      "id": "clai_00144",
+      "type": "claim",
+      "surface_form": "Fifth‑order Gaussian quadrature yields internal energies and free‑energy curves that remain in good agreement with molecular dynamics results across the full temperature range studied."
+    },
+    {
+      "id": "clai_00146",
+      "type": "claim",
+      "surface_form": "The E(3)‑equivariant GNN surrogate provides superior accuracy compared with third‑ and fifth‑order Gaussian quadrature for thermal expansion of copper, martensitic phase transition of iron, and grain‑boundary energy calculations, matching molecular dynamics reference data."
+    },
+    {
+      "id": "clai_00148",
+      "type": "claim",
+      "surface_form": "Inference with the trained GNN is significantly faster than evaluating fifth‑order Gaussian quadrature, enabling frequent high‑dimensional integral evaluations and quasistatic finite‑temperature atomistic simulations without costly MD averaging."
+    },
+    {
+      "id": "clai_00395",
+      "type": "claim",
+      "surface_form": "Assuming the order‑disorder interface energy is half the anti‑phase boundary energy, the interface energy employed in phase‑field simulations is approximately 15.45 mJ m⁻²."
+    },
+    {
+      "id": "clai_00397",
+      "type": "claim",
+      "surface_form": "Phase‑field simulations reproduce the lever‑rule mass fractions of ordered and disordered phases predicted by the Monte Carlo phase diagram after accounting for a slight shift in the order‑disorder boundaries from the IDNN free‑energy surface."
+    },
+    {
+      "id": "clai_00668",
+      "type": "claim",
+      "surface_form": "AFLOW can automatically construct convex hulls for binary alloy systems at zero temperature using formation enthalpies from DFT calculations."
+    },
+    {
+      "id": "clai_00675",
+      "type": "claim",
+      "surface_form": "AFLOW can predict alloy miscibility using Miedema and Hume‑Rothery mixing rules."
+    },
+    {
+      "id": "comp_00111",
+      "type": "component",
+      "surface_form": "Coupling of IDNN free‑energy with phase‑field equations"
+    },
+    {
+      "id": "comp_00112",
+      "type": "component",
+      "surface_form": "Large‑scale DFT calculation of anti‑phase‑boundary energy"
+    },
+    {
+      "id": "comp_00131",
+      "type": "component",
+      "surface_form": "Large‑scale interface‑energy DFT calculations"
+    },
+    {
+      "id": "futu_00046",
+      "type": "future_topic",
+      "surface_form": "Investigation of GNN‑based quadrature for polymeric fluid Fokker‑Planck equations"
+    },
+    {
+      "id": "meth_00129",
+      "type": "method",
+      "surface_form": "Gaussian quadrature"
+    },
+    {
+      "id": "meth_00132",
+      "type": "method",
+      "surface_form": "Gaussian Phase Packets"
+    },
+    {
+      "id": "meth_00263",
+      "type": "method",
+      "surface_form": "Phase-Field Hub"
+    },
+    {
+      "id": "meth_00439",
+      "type": "method",
+      "surface_form": "CALculation of PHAse Diagram"
+    },
+    {
+      "id": "prob_00045",
+      "type": "problem",
+      "surface_form": "Insufficient accuracy of low‑order Gaussian quadrature"
+    },
+    {
+      "id": "prob_00046",
+      "type": "problem",
+      "surface_form": "Curse of dimensionality in phase‑space integration"
+    },
+    {
+      "id": "prob_00062",
+      "type": "problem",
+      "surface_form": "Scale bridging across atomistic and continuum levels"
+    },
+    {
+      "id": "prob_00066",
+      "type": "problem",
+      "surface_form": "Multiscale bridging from atomic to continuum"
+    },
+    {
+      "id": "prob_00071",
+      "type": "problem",
+      "surface_form": "Capturing chemical‑potential behavior near phase‑boundary regions"
+    },
+    {
+      "id": "prob_00073",
+      "type": "problem",
+      "surface_form": "Coupling ordering and composition in phase‑field simulations"
+    },
+    {
+      "id": "prob_00077",
+      "type": "problem",
+      "surface_form": "Quantitative interface‑energy calculation for coherent anti‑phase boundaries"
+    },
+    {
+      "id": "prob_00106",
+      "type": "problem",
+      "surface_form": "Electronic entropy inclusion in phase‑diagram modeling"
+    },
+    {
+      "id": "prob_00221",
+      "type": "problem",
+      "surface_form": "phase stability determination"
+    },
+    {
+      "id": "prob_00380",
+      "type": "problem",
+      "surface_form": "Electronic convergence stability"
+    },
+    {
+      "id": "task_00019",
+      "type": "task",
+      "surface_form": "Phase diagram construction"
+    },
+    {
+      "id": "task_00073",
+      "type": "task",
+      "surface_form": "Martensitic phase‑transition free‑energy calculation in iron"
+    },
+    {
+      "id": "task_00074",
+      "type": "task",
+      "surface_form": "Grain‑boundary energy evaluation in aluminum and iron"
+    },
+    {
+      "id": "task_00089",
+      "type": "task",
+      "surface_form": "Generation of phase diagrams and voltage profiles"
+    },
+    {
+      "id": "task_00090",
+      "type": "task",
+      "surface_form": "Voltage‑composition curve prediction"
+    },
+    {
+      "id": "task_00091",
+      "type": "task",
+      "surface_form": "Microstructure evolution simulation"
+    },
+    {
+      "id": "task_00095",
+      "type": "task",
+      "surface_form": "Phase‑field microstructure evolution"
+    },
+    {
+      "id": "task_00098",
+      "type": "task",
+      "surface_form": "Coherent interface‑energy determination"
+    },
+    {
+      "id": "task_00102",
+      "type": "task",
+      "surface_form": "Phase‑field model preparation"
+    },
+    {
+      "id": "task_00146",
+      "type": "task",
+      "surface_form": "Phase‑diagram calculation via cluster expansion"
+    },
+    {
+      "id": "task_00207",
+      "type": "task",
+      "surface_form": "Phase diagram construction and stability assessment"
+    },
+    {
+      "id": "task_00429",
+      "type": "task",
+      "surface_form": "phase diagram determination"
+    },
+    {
+      "id": "task_00437",
+      "type": "task",
+      "surface_form": "high-entropy alloy simulation"
+    },
+    {
+      "id": "task_00499",
+      "type": "task",
+      "surface_form": "Phase-separation energy prediction"
+    },
+    {
+      "id": "task_00521",
+      "type": "task",
+      "surface_form": "Phase diagram analysis"
+    },
+    {
+      "id": "tech_00142",
+      "type": "technique",
+      "surface_form": "Replacement of Gaussian quadrature"
+    },
+    {
+      "id": "tech_00173",
+      "type": "technique",
+      "surface_form": "Phase‑field simulation using Cahn‑Hilliard and Allen‑Cahn equations"
+    },
+    {
+      "id": "tech_00539",
+      "type": "technique",
+      "surface_form": "Phase factor weighting"
+    },
+    {
+      "id": "tech_00548",
+      "type": "technique",
+      "surface_form": "Phase factor multiplication"
+    }
+  ],
+  "generation_type_counts": {
+    "claim": 7,
+    "component": 3,
+    "future_topic": 1,
+    "method": 4,
+    "problem": 10,
+    "task": 15,
+    "technique": 4
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "phase",
+  "representative_ids": [
+    "task_00102",
+    "task_00146"
+  ]
+}

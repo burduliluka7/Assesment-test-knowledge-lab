@@ -1,0 +1,151 @@
+{
+  "schema_version": "evaluation-v2",
+  "config": {
+    "data_dir": "data/data",
+    "output": "artifacts/full",
+    "snapshots": [
+      2020,
+      2022,
+      2024,
+      2026
+    ],
+    "budgets": [
+      12,
+      40,
+      120
+    ],
+    "seed": 42,
+    "spectral_dim": 8,
+    "neighbors": 12,
+    "weights": {
+      "hyper": 0.3,
+      "spectral": 0.2,
+      "semantic": 0.35,
+      "temporal": 0.15
+    },
+    "relation_weights": {},
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "evaluation_model": "BAAI/bge-small-en-v1.5",
+    "evaluation_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "nli_model": "cross-encoder/nli-deberta-v3-small",
+    "nli_revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+    "include_type": true,
+    "variants": [
+      "semantic",
+      "structural",
+      "static",
+      "temporal",
+      "pairwise"
+    ],
+    "perturbation_seeds": [
+      11,
+      23,
+      37,
+      53,
+      71
+    ],
+    "null_permutations": 50,
+    "retrieval_budgets": [
+      50,
+      100,
+      250,
+      500
+    ],
+    "retrieval_beam": 3,
+    "match_threshold": 0.2,
+    "event_threshold": 0.1,
+    "nli_threshold": 0.5,
+    "faithfulness_sample_per_level": 12,
+    "sensitivity": true,
+    "v2_output": "artifacts/evaluation",
+    "v2_budgets": [
+      25,
+      50,
+      100,
+      200,
+      500
+    ],
+    "v2_cutoffs": [
+      2025,
+      2026
+    ],
+    "v2_prototypes": 4,
+    "v2_centroid_weight": 0.5,
+    "v2_prototype_top_r": 2,
+    "v2_output_k": 10,
+    "v2_claim_budget": 100,
+    "v2_claim_k": 10,
+    "v2_alignment_cosine": 0.78,
+    "v2_alignment_lexical": 0.15,
+    "v2_alignment_entailment": 0.8,
+    "v2_alignment_margin": 0.03,
+    "v2_label_holdout_fraction": 0.3,
+    "v2_label_sample_per_level": 12
+  },
+  "reuse": {
+    "status": "passed",
+    "validated_hierarchies": 25,
+    "baseline_manifest_sha256": "8bc68c749cebdfdcc461308eb78607d004a943ba5aca4009f4217cd58423e0c8",
+    "construction_keys_verified": [
+      "snapshots",
+      "budgets",
+      "seed",
+      "spectral_dim",
+      "neighbors",
+      "weights",
+      "relation_weights",
+      "embedding_model",
+      "embedding_revision",
+      "include_type",
+      "match_threshold",
+      "event_threshold"
+    ]
+  },
+  "data_hash": "36ae00351b01f5a39e09e8c15c6703004ee97a55ed437c261f227dd849ff4cc3",
+  "ground_truth_hash": "02609fa7af0cc4b25b1bf26aec7b2d35fadcdbc7e68c8340e82941d09224a21e",
+  "questions_hash": "c50dece3408783e5679cc907d2bf8f5d49b656f0bb5161f977b993b199770a37",
+  "code_hashes": {
+    "src/tkh_abstraction/__init__.py": "b7e0f68dfef42009feed8b11e701103294dc18b040db09fb57ecaaf8c114c3ff",
+    "src/tkh_abstraction/baselines.py": "f304d0eb7c51d57216ec5248c7eec0569d67b659b36d0249714f3f7d5e82206d",
+    "src/tkh_abstraction/cli.py": "d6165fc2b3762b4352b774f1d947985a449de8db2e4ee0eda75838214cf23c9f",
+    "src/tkh_abstraction/coarsening.py": "4c382479e15b95a465f5b6bba218dd4948e4087ad39f1ca3508480c38763040d",
+    "src/tkh_abstraction/collapse.py": "64381d963066f918c6ef609a8f0b76d550ae0d89354ecee7ea5c1714374e89bf",
+    "src/tkh_abstraction/config.py": "0341f2d90f03fb9acb1fa23c87b23be1df0c2e93974e1027e465259b2f9b4471",
+    "src/tkh_abstraction/entailment.py": "37d80c1498a8ef3d2d1329fec2c598f45f274932b65dc3ab910be8eb47e60471",
+    "src/tkh_abstraction/evaluation/__init__.py": "c296a03ba78b46e11f19d91952788dfdb06adc1f4429876615398430f5998542",
+    "src/tkh_abstraction/evaluation/claim_alignment.py": "ab149c25f9165c940e96d125d973423e10e62cf48a4f2f3535cd0de34922d27f",
+    "src/tkh_abstraction/evaluation/coherence.py": "de827c30fff7e1ecd7e0b51b8dac1b35eb2d57a4b81a92a7c1b477148c587c3d",
+    "src/tkh_abstraction/evaluation/extrinsic.py": "e06a38e1af415995e297604261168ad6f99c87c430039fc5d3a142ae56914809",
+    "src/tkh_abstraction/evaluation/faithfulness.py": "92b78c2943b6b6922809a8b25f45399abcb240fb345b0835fb9373c51cdfd146",
+    "src/tkh_abstraction/evaluation/retrieval_v2.py": "d063bff44f7aa024da4fbdc0007b1a0d8b94252ccef6efda03056e46c5fa9f81",
+    "src/tkh_abstraction/evaluation/stability.py": "9845270acd94dc4002c87da980f423a8fcae9c8f4eede59bc9746f067efee735",
+    "src/tkh_abstraction/evaluation/statistics.py": "3b2840ade9b44f88033cfd6dc362e3261e670e568eb356059616c07b2dddde8f",
+    "src/tkh_abstraction/hierarchy.py": "381baec94120ffa092de08d8ef3594c7ac8a0a63bf9ea2cb182b96a6b9b45908",
+    "src/tkh_abstraction/hypergraph.py": "6e8599d37dadc5ab4a1bee688ca9ea6d97b86c586645219d7286b89149db7a2e",
+    "src/tkh_abstraction/io.py": "b59cb011b140daafb80d2cc8794edd50e0258397747b704a84d3e9efab299585",
+    "src/tkh_abstraction/labeling.py": "f2ed0fb4033ff2ed0126c514307d737feeb704458dcb3df6ae0e2105034466d0",
+    "src/tkh_abstraction/labels_v2.py": "30c6b6fa179305f1c7a0691d8b9ccaeccc84d03fe13f7264226c3b7c97a80252",
+    "src/tkh_abstraction/pipeline.py": "03482e313c6fed23d6ee9804c156265de3a833798dbabf0dee154298fdafadfa",
+    "src/tkh_abstraction/report_v2.py": "9f50faccd31efa07df9505c1bf14dcbe784835e5d4f591d1c98cfb190837f63b",
+    "src/tkh_abstraction/reporting.py": "8fd6fe3bf8005d81e1d5bbc5bf5752397f6738a239a28953b79402b415d420ea",
+    "src/tkh_abstraction/retrieval.py": "bd1bd48bed105201d11b82fef5be95df14d83fc1211d20088b0b2d98accba236",
+    "src/tkh_abstraction/schema.py": "9208be66f9543cb0d2f8fdb6a8c8ad86800724c149161c2ec1ca806a8e978f41",
+    "src/tkh_abstraction/search_v2.py": "4fcfb7a6f81bf202f3d18b38784eceee6695dd170bc4e0fd7cc4541cd27d4f7c",
+    "src/tkh_abstraction/semantics.py": "98e479a63ef8892c57f262ffc9ea10b0cd35e20fc28da7d7ba53fc0017acb2af",
+    "src/tkh_abstraction/snapshots.py": "e3c9217bc17ae07133701c9729cfd4b8b1ddf092225a3a4865d2607f736aa49f",
+    "src/tkh_abstraction/spectral.py": "5d071f723d0094e0ea4a5854dc265cf17ef824ddde81559a4bf8aa72e0276984",
+    "src/tkh_abstraction/target_mapping.py": "74d50e8797a146b10ab03f4a04473b88c19aa9b4a3c4dddb742f763e14d8fd53",
+    "src/tkh_abstraction/temporal.py": "f60999eba32e84e0f31a46092613164f03ea7ac005121a3859c38bc55947862c",
+    "src/tkh_abstraction/v2_pipeline.py": "fe0bfa489dfb830399dd454cbfdd1b9f6b24065549f49c58f4f4ca618f2aa85d"
+  },
+  "definitions": {
+    "entity_cost": "Every query-centroid and query-prototype dot product, including leaves, costs one. Offline indexing excluded and timed separately.",
+    "claim_cost": "Each new question-claim dot product costs one; already-paid claim leaf scores reused and logged. Graph enumeration excluded.",
+    "flat": "Exhaustive same BGE leaf scorer is primary reference; seeded query-independent scan is secondary equal-budget reference.",
+    "precision": "Output-node fraction matching expected names; extended adds valid_but_unlisted. Empty output precision=0; unmapped recall=null.",
+    "recall": "Macro question recall over mapped named targets; identical-surface mentions share a target. Claim recall only conservative automated alignments.",
+    "cutoff": "2025 primary; 2026 annual sensitivity may include post-February material.",
+    "label": "Paired legacy/improved gloss NLI on fixed held-out chunks; generation-only independence. Original historical NLI retained separately."
+  }
+}

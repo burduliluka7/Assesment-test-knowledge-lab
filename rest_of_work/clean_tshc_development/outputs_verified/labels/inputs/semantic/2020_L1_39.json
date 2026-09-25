@@ -1,0 +1,126 @@
+{
+  "cutoff": 2020,
+  "generation_members": [
+    {
+      "id": "metr_00001",
+      "type": "metric",
+      "surface_form": "MAE (formation energy per atom)"
+    },
+    {
+      "id": "metr_00002",
+      "type": "metric",
+      "surface_form": "MAE"
+    },
+    {
+      "id": "metr_00005",
+      "type": "metric",
+      "surface_form": "force MAE"
+    },
+    {
+      "id": "metr_00007",
+      "type": "metric",
+      "surface_form": "Energy MAE"
+    },
+    {
+      "id": "metr_00013",
+      "type": "metric",
+      "surface_form": "error ratio"
+    },
+    {
+      "id": "metr_00015",
+      "type": "metric",
+      "surface_form": "E RMSE"
+    },
+    {
+      "id": "metr_00021",
+      "type": "metric",
+      "surface_form": "MAE/ROC-AUC"
+    },
+    {
+      "id": "metr_00022",
+      "type": "metric",
+      "surface_form": "relative error (MAE/MAD)"
+    },
+    {
+      "id": "metr_00023",
+      "type": "metric",
+      "surface_form": "ROC-AUC"
+    },
+    {
+      "id": "metr_00044",
+      "type": "metric",
+      "surface_form": "activation_energy"
+    },
+    {
+      "id": "metr_00058",
+      "type": "metric",
+      "surface_form": "AFbT"
+    },
+    {
+      "id": "metr_00061",
+      "type": "metric",
+      "surface_form": "MSE loss"
+    },
+    {
+      "id": "metr_00069",
+      "type": "metric",
+      "surface_form": "Lattice Energy MAE"
+    },
+    {
+      "id": "metr_00074",
+      "type": "metric",
+      "surface_form": "energy RMSE (10^-3 eV/atom)"
+    },
+    {
+      "id": "metr_00079",
+      "type": "metric",
+      "surface_form": "ME"
+    },
+    {
+      "id": "metr_00080",
+      "type": "metric",
+      "surface_form": "MAE (eV/atom)"
+    },
+    {
+      "id": "metr_00082",
+      "type": "metric",
+      "surface_form": "energetic and structural properties"
+    },
+    {
+      "id": "metr_00083",
+      "type": "metric",
+      "surface_form": "surface energy"
+    },
+    {
+      "id": "metr_00085",
+      "type": "metric",
+      "surface_form": "energy_RMS_eV"
+    },
+    {
+      "id": "metr_00090",
+      "type": "metric",
+      "surface_form": "interaction energy"
+    },
+    {
+      "id": "tech_00377",
+      "type": "technique",
+      "surface_form": "ROC‑AUC and MAE evaluation metrics"
+    },
+    {
+      "id": "tech_00483",
+      "type": "technique",
+      "surface_form": "MAE evaluation"
+    }
+  ],
+  "generation_type_counts": {
+    "metric": 20,
+    "technique": 2
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "mae",
+  "representative_ids": [
+    "metr_00007",
+    "metr_00002"
+  ]
+}

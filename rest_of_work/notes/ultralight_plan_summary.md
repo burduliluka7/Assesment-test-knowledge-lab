@@ -1,0 +1,7 @@
+# Ultralight planning consultation
+
+The official Claude Code CLI was invoked via the user's local `claude_delegate.py`, role `planner`, with `notes/ultralight_plan_prompt.txt`. The returned JSON reported requested and used model `claude-opus-5`, `authMethod: claude.ai`, subscription `pro`, `is_error: false`, no permission denials, and exit status 0. No API keys or billing-provider changes were used. This is a summary of the inspected response, not a verbatim transcript.
+
+Adopted recommendations: require both edge and asserting-paper visibility; never use origin_year for node visibility; document annual versus February-2026 benchmark ambiguity; evaluate 2025 primarily; separate claim-only questions; exact/boundary method mappings with explicit ambiguity; exact sparse VI merge delta; fixed within-level objective scaling; recursive native collapse; connected candidates for hard-budget progress; separate evaluator with type-free input and type-stratified null; charge all retrieval scoring; distinguish NLI support proxy from expert audit; record overlapping identity events.
+
+Implementation choices made by Codex: variance normalization rather than median-delta scaling; matrix-free sparse eigensolver at every nontrivial resolution; support cycles rather than full shared-edge candidate cliques; five perturbations at the final snapshot for every variant; fixed beam and quality/cost comparison rather than a broad beam sweep; no fuzzy claim matching. These limit scope to the one-week assessment.

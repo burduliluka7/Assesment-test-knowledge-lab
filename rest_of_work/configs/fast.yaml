@@ -1,0 +1,7 @@
+data_dir: data/data
+output: artifacts/fast
+snapshots: [2020, 2026]
+budgets: [12, 40, 120]
+variants: [temporal]
+null_permutations: 10
+sensitivity: false

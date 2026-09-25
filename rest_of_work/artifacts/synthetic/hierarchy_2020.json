@@ -1,0 +1,458 @@
+{
+  "snapshot": 2020,
+  "variant": "temporal",
+  "budgets": [
+    2,
+    4
+  ],
+  "levels": [
+    [
+      {
+        "id": "2020:L0:0000",
+        "persistent_id": "2020:L0:0000",
+        "snapshot": 2020,
+        "level": 0,
+        "parent_id": null,
+        "member_ids": [
+          "n0",
+          "n2",
+          "n4"
+        ],
+        "base_node_count": 3,
+        "node_type_distribution": {
+          "method": 3
+        },
+        "label": "graph / learning / neural",
+        "gloss": "This cluster groups corpus entries concerning graph, learning, neural."
+      },
+      {
+        "id": "2020:L0:0001",
+        "persistent_id": "2020:L0:0001",
+        "snapshot": 2020,
+        "level": 0,
+        "parent_id": null,
+        "member_ids": [
+          "n1",
+          "n3",
+          "n5",
+          "n6",
+          "n7"
+        ],
+        "base_node_count": 5,
+        "node_type_distribution": {
+          "method": 5
+        },
+        "label": "atomic / potentials / quantum",
+        "gloss": "This cluster groups corpus entries concerning atomic, potentials, quantum."
+      }
+    ],
+    [
+      {
+        "id": "2020:L1:0000",
+        "persistent_id": "2020:L1:0000",
+        "snapshot": 2020,
+        "level": 1,
+        "parent_id": "2020:L0:0001",
+        "member_ids": [
+          "n5"
+        ],
+        "base_node_count": 1,
+        "node_type_distribution": {
+          "method": 1
+        },
+        "label": "quantum atomic potentials topic 5",
+        "gloss": "Corpus entry: quantum atomic potentials topic 5 ."
+      },
+      {
+        "id": "2020:L1:0001",
+        "persistent_id": "2020:L1:0001",
+        "snapshot": 2020,
+        "level": 1,
+        "parent_id": "2020:L0:0001",
+        "member_ids": [
+          "n6",
+          "n7"
+        ],
+        "base_node_count": 2,
+        "node_type_distribution": {
+          "method": 2
+        },
+        "label": "topic / atomic / graph",
+        "gloss": "This cluster groups corpus entries concerning topic, atomic, graph."
+      },
+      {
+        "id": "2020:L1:0002",
+        "persistent_id": "2020:L1:0002",
+        "snapshot": 2020,
+        "level": 1,
+        "parent_id": "2020:L0:0000",
+        "member_ids": [
+          "n0",
+          "n2",
+          "n4"
+        ],
+        "base_node_count": 3,
+        "node_type_distribution": {
+          "method": 3
+        },
+        "label": "graph / learning / neural",
+        "gloss": "This cluster groups corpus entries concerning graph, learning, neural."
+      },
+      {
+        "id": "2020:L1:0003",
+        "persistent_id": "2020:L1:0003",
+        "snapshot": 2020,
+        "level": 1,
+        "parent_id": "2020:L0:0001",
+        "member_ids": [
+          "n1",
+          "n3"
+        ],
+        "base_node_count": 2,
+        "node_type_distribution": {
+          "method": 2
+        },
+        "label": "atomic / potentials / quantum",
+        "gloss": "This cluster groups corpus entries concerning atomic, potentials, quantum."
+      }
+    ],
+    [
+      {
+        "id": "2020:L2:n0",
+        "persistent_id": "2020:L2:n0",
+        "snapshot": 2020,
+        "level": 2,
+        "parent_id": "2020:L1:0002",
+        "member_ids": [
+          "n0"
+        ],
+        "base_node_count": 1,
+        "node_type_distribution": {
+          "method": 1
+        },
+        "label": "graph neural learning topic 0",
+        "gloss": "Corpus entry: graph neural learning topic 0 ."
+      },
+      {
+        "id": "2020:L2:n1",
+        "persistent_id": "2020:L2:n1",
+        "snapshot": 2020,
+        "level": 2,
+        "parent_id": "2020:L1:0003",
+        "member_ids": [
+          "n1"
+        ],
+        "base_node_count": 1,
+        "node_type_distribution": {
+          "method": 1
+        },
+        "label": "quantum atomic potentials topic 1",
+        "gloss": "Corpus entry: quantum atomic potentials topic 1 ."
+      },
+      {
+        "id": "2020:L2:n2",
+        "persistent_id": "2020:L2:n2",
+        "snapshot": 2020,
+        "level": 2,
+        "parent_id": "2020:L1:0002",
+        "member_ids": [
+          "n2"
+        ],
+        "base_node_count": 1,
+        "node_type_distribution": {
+          "method": 1
+        },
+        "label": "graph neural learning topic 2",
+        "gloss": "Corpus entry: graph neural learning topic 2 ."
+      },
+      {
+        "id": "2020:L2:n3",
+        "persistent_id": "2020:L2:n3",
+        "snapshot": 2020,
+        "level": 2,
+        "parent_id": "2020:L1:0003",
+        "member_ids": [
+          "n3"
+        ],
+        "base_node_count": 1,
+        "node_type_distribution": {
+          "method": 1
+        },
+        "label": "quantum atomic potentials topic 3",
+        "gloss": "Corpus entry: quantum atomic potentials topic 3 ."
+      },
+      {
+        "id": "2020:L2:n4",
+        "persistent_id": "2020:L2:n4",
+        "snapshot": 2020,
+        "level": 2,
+        "parent_id": "2020:L1:0002",
+        "member_ids": [
+          "n4"
+        ],
+        "base_node_count": 1,
+        "node_type_distribution": {
+          "method": 1
+        },
+        "label": "graph neural learning topic 4",
+        "gloss": "Corpus entry: graph neural learning topic 4 ."
+      },
+      {
+        "id": "2020:L2:n5",
+        "persistent_id": "2020:L2:n5",
+        "snapshot": 2020,
+        "level": 2,
+        "parent_id": "2020:L1:0000",
+        "member_ids": [
+          "n5"
+        ],
+        "base_node_count": 1,
+        "node_type_distribution": {
+          "method": 1
+        },
+        "label": "quantum atomic potentials topic 5",
+        "gloss": "Corpus entry: quantum atomic potentials topic 5 ."
+      },
+      {
+        "id": "2020:L2:n6",
+        "persistent_id": "2020:L2:n6",
+        "snapshot": 2020,
+        "level": 2,
+        "parent_id": "2020:L1:0001",
+        "member_ids": [
+          "n6"
+        ],
+        "base_node_count": 1,
+        "node_type_distribution": {
+          "method": 1
+        },
+        "label": "graph neural learning topic 6",
+        "gloss": "Corpus entry: graph neural learning topic 6 ."
+      },
+      {
+        "id": "2020:L2:n7",
+        "persistent_id": "2020:L2:n7",
+        "snapshot": 2020,
+        "level": 2,
+        "parent_id": "2020:L1:0001",
+        "member_ids": [
+          "n7"
+        ],
+        "base_node_count": 1,
+        "node_type_distribution": {
+          "method": 1
+        },
+        "label": "quantum atomic potentials topic 7",
+        "gloss": "Corpus entry: quantum atomic potentials topic 7 ."
+      }
+    ]
+  ],
+  "coarse_hyperedges": {
+    "1": [
+      {
+        "original_edge_id": "e0",
+        "relation_type": "uses_technique",
+        "provenance": {
+          "article_year": 2020
+        },
+        "original_arity": 4,
+        "original_members": [
+          "n0",
+          "n2",
+          "n4",
+          "n6"
+        ],
+        "multiplicities": {
+          "2020:L1:0002": 3,
+          "2020:L1:0001": 1
+        },
+        "support_arity": 2,
+        "internal": false,
+        "weight": 1.0
+      },
+      {
+        "original_edge_id": "e1",
+        "relation_type": "uses_technique",
+        "provenance": {
+          "article_year": 2020
+        },
+        "original_arity": 4,
+        "original_members": [
+          "n1",
+          "n3",
+          "n5",
+          "n7"
+        ],
+        "multiplicities": {
+          "2020:L1:0003": 2,
+          "2020:L1:0000": 1,
+          "2020:L1:0001": 1
+        },
+        "support_arity": 3,
+        "internal": false,
+        "weight": 1.0
+      },
+      {
+        "original_edge_id": "e2",
+        "relation_type": "uses_technique",
+        "provenance": {
+          "article_year": 2020
+        },
+        "original_arity": 2,
+        "original_members": [
+          "n6",
+          "n7"
+        ],
+        "multiplicities": {
+          "2020:L1:0001": 2
+        },
+        "support_arity": 1,
+        "internal": true,
+        "weight": 1.0
+      }
+    ],
+    "0": [
+      {
+        "original_edge_id": "e0",
+        "relation_type": "uses_technique",
+        "provenance": {
+          "article_year": 2020
+        },
+        "original_arity": 4,
+        "original_members": [
+          "n0",
+          "n2",
+          "n4",
+          "n6"
+        ],
+        "multiplicities": {
+          "2020:L0:0000": 3,
+          "2020:L0:0001": 1
+        },
+        "support_arity": 2,
+        "internal": false,
+        "weight": 1.0
+      },
+      {
+        "original_edge_id": "e1",
+        "relation_type": "uses_technique",
+        "provenance": {
+          "article_year": 2020
+        },
+        "original_arity": 4,
+        "original_members": [
+          "n1",
+          "n3",
+          "n5",
+          "n7"
+        ],
+        "multiplicities": {
+          "2020:L0:0001": 4
+        },
+        "support_arity": 1,
+        "internal": true,
+        "weight": 1.0
+      },
+      {
+        "original_edge_id": "e2",
+        "relation_type": "uses_technique",
+        "provenance": {
+          "article_year": 2020
+        },
+        "original_arity": 2,
+        "original_members": [
+          "n6",
+          "n7"
+        ],
+        "multiplicities": {
+          "2020:L0:0001": 2
+        },
+        "support_arity": 1,
+        "internal": true,
+        "weight": 1.0
+      }
+    ]
+  },
+  "diagnostics": [
+    {
+      "level": 1,
+      "spectral": {
+        "eigenvalues": [
+          2.220446049250313e-16,
+          0.125,
+          0.625
+        ],
+        "incidence_shape": [
+          8,
+          3
+        ],
+        "isolated": 0,
+        "residual_max": 1.640826585026965e-16
+      },
+      "agglomeration": {
+        "merges": 4,
+        "candidate_pairs": 21,
+        "heap_pushes": 39,
+        "weights": {
+          "hyper": 0.35294117647058826,
+          "spectral": 0.23529411764705885,
+          "semantic": 0.4117647058823529,
+          "temporal": 0.0
+        },
+        "normalization": {
+          "semantic_total_variance": 2.875801831483841,
+          "spectral_total_variance": 2.0000000000000004
+        },
+        "sum_merge_deltas": {
+          "hyper": -0.5555555555555555,
+          "spectral": 0.07142857142857145,
+          "semantic": 0.39052665282407467,
+          "temporal": 0.0
+        },
+        "nonzero_temporal_merges": 0
+      },
+      "native_fragmentation": 0.4444444444444445
+    },
+    {
+      "level": 0,
+      "spectral": {
+        "eigenvalues": [
+          1.1102230246251565e-16,
+          0.41666666666666663,
+          1.0
+        ],
+        "incidence_shape": [
+          4,
+          2
+        ],
+        "isolated": 0,
+        "residual_max": 3.061795595222709e-16
+      },
+      "agglomeration": {
+        "merges": 2,
+        "candidate_pairs": 6,
+        "heap_pushes": 9,
+        "weights": {
+          "hyper": 0.35294117647058826,
+          "spectral": 0.23529411764705885,
+          "semantic": 0.4117647058823529,
+          "temporal": 0.0
+        },
+        "normalization": {
+          "semantic_total_variance": 1.7527244836091995,
+          "spectral_total_variance": 3.811549891293194
+        },
+        "sum_merge_deltas": {
+          "hyper": -0.2777777777777778,
+          "spectral": 0.41913697335210026,
+          "semantic": 0.36134221162727365,
+          "temporal": 0.0
+        },
+        "nonzero_temporal_merges": 0
+      },
+      "native_fragmentation": 0.16666666666666666
+    }
+  ],
+  "runtime_seconds": 1.541546400054358,
+  "run_key": "ced6fe5fc6132f285ce13c9a4bb15c66b3f7a8440d34c79a6d6205213ea27b29"
+}

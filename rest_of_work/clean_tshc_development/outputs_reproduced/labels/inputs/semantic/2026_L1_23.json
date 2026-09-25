@@ -1,0 +1,814 @@
+{
+  "cutoff": 2026,
+  "generation_members": [
+    {
+      "id": "cite_00012",
+      "type": "cited_work",
+      "surface_form": "Lindemann melting criterion"
+    },
+    {
+      "id": "cite_00032",
+      "type": "cited_work",
+      "surface_form": "Lindemann melting law"
+    },
+    {
+      "id": "cite_00152",
+      "type": "cited_work",
+      "surface_form": "Nudged Elastic Band"
+    },
+    {
+      "id": "cite_00224",
+      "type": "cited_work",
+      "surface_form": "Atomic Simulation Environment (ASE)"
+    },
+    {
+      "id": "cite_00298",
+      "type": "cited_work",
+      "surface_form": "Davidson blocked scheme"
+    },
+    {
+      "id": "cite_00384",
+      "type": "cited_work",
+      "surface_form": "Billiard Walk"
+    },
+    {
+      "id": "cite_00386",
+      "type": "cited_work",
+      "surface_form": "Allen-Cahn equation"
+    },
+    {
+      "id": "cite_00470",
+      "type": "cited_work",
+      "surface_form": "McMillan formula"
+    },
+    {
+      "id": "cite_00471",
+      "type": "cited_work",
+      "surface_form": "Allen-Dynes formula"
+    },
+    {
+      "id": "cite_00476",
+      "type": "cited_work",
+      "surface_form": "McMillan's formula"
+    },
+    {
+      "id": "cite_00478",
+      "type": "cited_work",
+      "surface_form": "Voigt-Reuss-Hill averaging"
+    },
+    {
+      "id": "clai_00086",
+      "type": "claim",
+      "surface_form": "Using a shifted softplus activation guarantees an infinitely differentiable (smooth) potential energy surface, facilitating geometry optimization."
+    },
+    {
+      "id": "clai_00144",
+      "type": "claim",
+      "surface_form": "Fifth‑order Gaussian quadrature yields internal energies and free‑energy curves that remain in good agreement with molecular dynamics results across the full temperature range studied."
+    },
+    {
+      "id": "clai_00146",
+      "type": "claim",
+      "surface_form": "The E(3)‑equivariant GNN surrogate provides superior accuracy compared with third‑ and fifth‑order Gaussian quadrature for thermal expansion of copper, martensitic phase transition of iron, and grain‑boundary energy calculations, matching molecular dynamics reference data."
+    },
+    {
+      "id": "clai_00148",
+      "type": "claim",
+      "surface_form": "Inference with the trained GNN is significantly faster than evaluating fifth‑order Gaussian quadrature, enabling frequent high‑dimensional integral evaluations and quasistatic finite‑temperature atomistic simulations without costly MD averaging."
+    },
+    {
+      "id": "clai_00221",
+      "type": "claim",
+      "surface_form": "Electronic convergence criteria are δEelec = 10⁻⁵ eV and ionic convergence criteria are δEion = 10⁻⁴ eV for Elements database entries, while all other databases use δEelec = 10⁻³ eV and δEion = 10⁻² eV."
+    },
+    {
+      "id": "clai_00428",
+      "type": "claim",
+      "surface_form": "D4FT converges faster than JAX‑SCF, demonstrating a smaller computational complexity and reduced number of iterations."
+    },
+    {
+      "id": "clai_00429",
+      "type": "claim",
+      "surface_form": "D4FT provides a unified optimization algorithm with a stronger convergence guarantee than traditional SCF fixed‑point iteration."
+    },
+    {
+      "id": "comp_00071",
+      "type": "component",
+      "surface_form": "Monte‑Carlo data generation pipeline"
+    },
+    {
+      "id": "comp_00079",
+      "type": "component",
+      "surface_form": "Offline Monte‑Carlo data generation"
+    },
+    {
+      "id": "comp_00081",
+      "type": "component",
+      "surface_form": "Frozen framework approximation"
+    },
+    {
+      "id": "comp_00115",
+      "type": "component",
+      "surface_form": "Monte Carlo sampling with bias potentials"
+    },
+    {
+      "id": "comp_00121",
+      "type": "component",
+      "surface_form": "Exploration sampling"
+    },
+    {
+      "id": "comp_00122",
+      "type": "component",
+      "surface_form": "Exploitation sampling"
+    },
+    {
+      "id": "comp_00123",
+      "type": "component",
+      "surface_form": "Billiard Walk sampler"
+    },
+    {
+      "id": "comp_00246",
+      "type": "component",
+      "surface_form": "Integration with i‑PI for NPT simulations"
+    },
+    {
+      "id": "comp_00278",
+      "type": "component",
+      "surface_form": "SGD‑based SCF optimizer"
+    },
+    {
+      "id": "comp_00331",
+      "type": "component",
+      "surface_form": "Modified PaiNN flow approximator"
+    },
+    {
+      "id": "comp_00366",
+      "type": "component",
+      "surface_form": "Composition‑weighted binary averaging heuristic"
+    },
+    {
+      "id": "comp_00373",
+      "type": "component",
+      "surface_form": "2DIRECT sampling pipeline"
+    },
+    {
+      "id": "comp_00824",
+      "type": "component",
+      "surface_form": "Melt-quench trajectory generator"
+    },
+    {
+      "id": "data_00068",
+      "type": "dataset",
+      "surface_form": "Poisson ratio"
+    },
+    {
+      "id": "futu_00046",
+      "type": "future_topic",
+      "surface_form": "Investigation of GNN‑based quadrature for polymeric fluid Fokker‑Planck equations"
+    },
+    {
+      "id": "meth_00003",
+      "type": "method",
+      "surface_form": "CLIP"
+    },
+    {
+      "id": "meth_00060",
+      "type": "method",
+      "surface_form": "Nudged Elastic Band"
+    },
+    {
+      "id": "meth_00084",
+      "type": "method",
+      "surface_form": "Vienna Ab Initio simulation Package"
+    },
+    {
+      "id": "meth_00129",
+      "type": "method",
+      "surface_form": "Gaussian quadrature"
+    },
+    {
+      "id": "meth_00132",
+      "type": "method",
+      "surface_form": "Gaussian Phase Packets"
+    },
+    {
+      "id": "meth_00133",
+      "type": "method",
+      "surface_form": "Metropolis Monte Carlo"
+    },
+    {
+      "id": "meth_00141",
+      "type": "method",
+      "surface_form": "quasi-harmonic approximation"
+    },
+    {
+      "id": "meth_00146",
+      "type": "method",
+      "surface_form": "Semi-Grand Canonical Monte Carlo"
+    },
+    {
+      "id": "meth_00147",
+      "type": "method",
+      "surface_form": "Cahn-Hilliard equation"
+    },
+    {
+      "id": "meth_00150",
+      "type": "method",
+      "surface_form": "mixed finite element method"
+    },
+    {
+      "id": "meth_00154",
+      "type": "method",
+      "surface_form": "Monte Carlo simulation"
+    },
+    {
+      "id": "meth_00187",
+      "type": "method",
+      "surface_form": "SmoothRBF"
+    },
+    {
+      "id": "meth_00253",
+      "type": "method",
+      "surface_form": "Dynamical Mean Field Theory"
+    },
+    {
+      "id": "meth_00255",
+      "type": "method",
+      "surface_form": "Vienna Ab‑initio simulation package"
+    },
+    {
+      "id": "meth_00304",
+      "type": "method",
+      "surface_form": "Harmonic Networks"
+    },
+    {
+      "id": "meth_00327",
+      "type": "method",
+      "surface_form": "Virtual-Crystal Approximation"
+    },
+    {
+      "id": "meth_00328",
+      "type": "method",
+      "surface_form": "Special Quasirandom Structures"
+    },
+    {
+      "id": "meth_00347",
+      "type": "method",
+      "surface_form": "McMillan's formula"
+    },
+    {
+      "id": "meth_00363",
+      "type": "method",
+      "surface_form": "Harris-Foulkes corrections"
+    },
+    {
+      "id": "meth_00366",
+      "type": "method",
+      "surface_form": "Ultra-soft pseudopotentials"
+    },
+    {
+      "id": "meth_00367",
+      "type": "method",
+      "surface_form": "Local Density Approximation"
+    },
+    {
+      "id": "meth_00370",
+      "type": "method",
+      "surface_form": "GW approximation"
+    },
+    {
+      "id": "meth_00438",
+      "type": "method",
+      "surface_form": "Lindemann melting criterion"
+    },
+    {
+      "id": "meth_00445",
+      "type": "method",
+      "surface_form": "Voigt-Reuss-Hill averaging"
+    },
+    {
+      "id": "metr_00028",
+      "type": "metric",
+      "surface_form": "phonon softening scale"
+    },
+    {
+      "id": "prob_00021",
+      "type": "problem",
+      "surface_form": "multiscale integration"
+    },
+    {
+      "id": "prob_00043",
+      "type": "problem",
+      "surface_form": "Frame dependence of quadrature‑based energy averages"
+    },
+    {
+      "id": "prob_00045",
+      "type": "problem",
+      "surface_form": "Insufficient accuracy of low‑order Gaussian quadrature"
+    },
+    {
+      "id": "prob_00046",
+      "type": "problem",
+      "surface_form": "Curse of dimensionality in phase‑space integration"
+    },
+    {
+      "id": "prob_00064",
+      "type": "problem",
+      "surface_form": "Efficient sampling of non‑convex free‑energy regions"
+    },
+    {
+      "id": "prob_00097",
+      "type": "problem",
+      "surface_form": "Physical Fidelity Preservation"
+    },
+    {
+      "id": "prob_00121",
+      "type": "problem",
+      "surface_form": "Efficient sampling of high‑dimensional PES"
+    },
+    {
+      "id": "prob_00148",
+      "type": "problem",
+      "surface_form": "High computational complexity of SCF"
+    },
+    {
+      "id": "prob_00152",
+      "type": "problem",
+      "surface_form": "Slow convergence of traditional SCF"
+    },
+    {
+      "id": "prob_00155",
+      "type": "problem",
+      "surface_form": "Slow or unstable SCF convergence"
+    },
+    {
+      "id": "prob_00210",
+      "type": "problem",
+      "surface_form": "Data‑efficiency in sampling massive configuration spaces"
+    },
+    {
+      "id": "prob_00231",
+      "type": "problem",
+      "surface_form": "Drift forces in AIMD calculations"
+    },
+    {
+      "id": "prob_00380",
+      "type": "problem",
+      "surface_form": "Electronic convergence stability"
+    },
+    {
+      "id": "prob_00474",
+      "type": "problem",
+      "surface_form": "Chemical space under-sampling bias"
+    },
+    {
+      "id": "prob_00519",
+      "type": "problem",
+      "surface_form": "Numerical instabilities in force constant calculations"
+    },
+    {
+      "id": "prob_00528",
+      "type": "problem",
+      "surface_form": "accurate modeling of higher-order PES derivatives in non-conservative models"
+    },
+    {
+      "id": "prob_00529",
+      "type": "problem",
+      "surface_form": "memory and latency constraints for large-scale simulations"
+    },
+    {
+      "id": "prob_00532",
+      "type": "problem",
+      "surface_form": "PES smoothness for higher-order derivatives"
+    },
+    {
+      "id": "prob_00534",
+      "type": "problem",
+      "surface_form": "Strong repulsive force modeling"
+    },
+    {
+      "id": "prob_00563",
+      "type": "problem",
+      "surface_form": "Inference efficiency for long simulations"
+    },
+    {
+      "id": "prob_00595",
+      "type": "problem",
+      "surface_form": "Incomplete configuration space sampling"
+    },
+    {
+      "id": "prob_00615",
+      "type": "problem",
+      "surface_form": "Near-surface structure sampling"
+    },
+    {
+      "id": "task_00068",
+      "type": "task",
+      "surface_form": "Phase‑space integration of atomistic ensembles"
+    },
+    {
+      "id": "task_00144",
+      "type": "task",
+      "surface_form": "Cluster‑expansion generation for Monte Carlo sampling"
+    },
+    {
+      "id": "task_00194",
+      "type": "task",
+      "surface_form": "Self‑consistent field convergence"
+    },
+    {
+      "id": "task_00448",
+      "type": "task",
+      "surface_form": "Elastic constant calculation"
+    },
+    {
+      "id": "task_00517",
+      "type": "task",
+      "surface_form": "AIMD simulations"
+    },
+    {
+      "id": "task_00615",
+      "type": "task",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "task_00622",
+      "type": "task",
+      "surface_form": "Monte Carlo simulations"
+    },
+    {
+      "id": "tech_00004",
+      "type": "technique",
+      "surface_form": "Stratified sampling"
+    },
+    {
+      "id": "tech_00019",
+      "type": "technique",
+      "surface_form": "Exponential moving average"
+    },
+    {
+      "id": "tech_00062",
+      "type": "technique",
+      "surface_form": "Linear interpolation"
+    },
+    {
+      "id": "tech_00065",
+      "type": "technique",
+      "surface_form": "Exponential moving average of weights"
+    },
+    {
+      "id": "tech_00081",
+      "type": "technique",
+      "surface_form": "Logarithmic transformation"
+    },
+    {
+      "id": "tech_00089",
+      "type": "technique",
+      "surface_form": "Automatic differentiation"
+    },
+    {
+      "id": "tech_00092",
+      "type": "technique",
+      "surface_form": "Central finite differences"
+    },
+    {
+      "id": "tech_00093",
+      "type": "technique",
+      "surface_form": "Arrhenius fitting"
+    },
+    {
+      "id": "tech_00132",
+      "type": "technique",
+      "surface_form": "Acoustic sum‑rule enforcement via equivariance"
+    },
+    {
+      "id": "tech_00140",
+      "type": "technique",
+      "surface_form": "Monte‑Carlo integration for target generation"
+    },
+    {
+      "id": "tech_00157",
+      "type": "technique",
+      "surface_form": "Frozen framework approximation"
+    },
+    {
+      "id": "tech_00161",
+      "type": "technique",
+      "surface_form": "Arrhenius extrapolation"
+    },
+    {
+      "id": "tech_00169",
+      "type": "technique",
+      "surface_form": "Semi‑Grand Canonical Monte Carlo with umbrella sampling"
+    },
+    {
+      "id": "tech_00176",
+      "type": "technique",
+      "surface_form": "Umbrella sampling bias potentials"
+    },
+    {
+      "id": "tech_00180",
+      "type": "technique",
+      "surface_form": "Mixed finite‑element method"
+    },
+    {
+      "id": "tech_00194",
+      "type": "technique",
+      "surface_form": "Umbrella sampling with quadratic bias potentials"
+    },
+    {
+      "id": "tech_00236",
+      "type": "technique",
+      "surface_form": "SmoothRBF distance expansion"
+    },
+    {
+      "id": "tech_00242",
+      "type": "technique",
+      "surface_form": "NVT ensemble MD with 2 fs timestep"
+    },
+    {
+      "id": "tech_00244",
+      "type": "technique",
+      "surface_form": "Smooth cutoff function"
+    },
+    {
+      "id": "tech_00252",
+      "type": "technique",
+      "surface_form": "mean‑squared displacement (MSD) analysis"
+    },
+    {
+      "id": "tech_00256",
+      "type": "technique",
+      "surface_form": "Cubic spline fitting"
+    },
+    {
+      "id": "tech_00301",
+      "type": "technique",
+      "surface_form": "Fixed‑point reformulation of SCF"
+    },
+    {
+      "id": "tech_00345",
+      "type": "technique",
+      "surface_form": "Linear interpolation flow"
+    },
+    {
+      "id": "tech_00351",
+      "type": "technique",
+      "surface_form": "Euler integration of learned flows"
+    },
+    {
+      "id": "tech_00369",
+      "type": "technique",
+      "surface_form": "Finite‑difference elastic constant calculation"
+    },
+    {
+      "id": "tech_00391",
+      "type": "technique",
+      "surface_form": "Stratified sampling in feature space"
+    },
+    {
+      "id": "tech_00394",
+      "type": "technique",
+      "surface_form": "Voigt‑Reuss‑Hill averaging"
+    },
+    {
+      "id": "tech_00395",
+      "type": "technique",
+      "surface_form": "Harmonic phonon approximation"
+    },
+    {
+      "id": "tech_00397",
+      "type": "technique",
+      "surface_form": "Weighted averaging of pure‑element volumes"
+    },
+    {
+      "id": "tech_00406",
+      "type": "technique",
+      "surface_form": "Dudarev U‑parameter implementation"
+    },
+    {
+      "id": "tech_00411",
+      "type": "technique",
+      "surface_form": "Boltzmann sampling"
+    },
+    {
+      "id": "tech_00413",
+      "type": "technique",
+      "surface_form": "AIMD sampling"
+    },
+    {
+      "id": "tech_00426",
+      "type": "technique",
+      "surface_form": "Boltzmann-like structure selection"
+    },
+    {
+      "id": "tech_00433",
+      "type": "technique",
+      "surface_form": "Zeroth-order softening computation"
+    },
+    {
+      "id": "tech_00434",
+      "type": "technique",
+      "surface_form": "First-order softening computation"
+    },
+    {
+      "id": "tech_00435",
+      "type": "technique",
+      "surface_form": "Second-order softening computation"
+    },
+    {
+      "id": "tech_00461",
+      "type": "technique",
+      "surface_form": "Uniform sphere sampling"
+    },
+    {
+      "id": "tech_00494",
+      "type": "technique",
+      "surface_form": "Nonlinear transformations"
+    },
+    {
+      "id": "tech_00508",
+      "type": "technique",
+      "surface_form": "IDPP interpolation"
+    },
+    {
+      "id": "tech_00515",
+      "type": "technique",
+      "surface_form": "LI interpolation"
+    },
+    {
+      "id": "tech_00561",
+      "type": "technique",
+      "surface_form": "Smooth switching function"
+    },
+    {
+      "id": "tech_00602",
+      "type": "technique",
+      "surface_form": "Allen-Dynes modification to McMillan formula"
+    },
+    {
+      "id": "tech_00603",
+      "type": "technique",
+      "surface_form": "First-order polynomial fitting"
+    },
+    {
+      "id": "tech_00619",
+      "type": "technique",
+      "surface_form": "Voigt-Reuss-Hill averaging"
+    },
+    {
+      "id": "tech_00623",
+      "type": "technique",
+      "surface_form": "Prototype diversity sampling"
+    },
+    {
+      "id": "tech_00632",
+      "type": "technique",
+      "surface_form": "High-symmetry path sampling"
+    },
+    {
+      "id": "tech_00646",
+      "type": "technique",
+      "surface_form": "δEion convergence criterion"
+    },
+    {
+      "id": "tech_00670",
+      "type": "technique",
+      "surface_form": "Soft-sphere potential relaxation"
+    },
+    {
+      "id": "tech_00674",
+      "type": "technique",
+      "surface_form": "Swish nonlinearities"
+    },
+    {
+      "id": "tech_00686",
+      "type": "technique",
+      "surface_form": "First-step oversampling"
+    },
+    {
+      "id": "tech_00695",
+      "type": "technique",
+      "surface_form": "FPMD simulations"
+    },
+    {
+      "id": "tech_00697",
+      "type": "technique",
+      "surface_form": "NVE ensemble sampling"
+    },
+    {
+      "id": "tech_00721",
+      "type": "technique",
+      "surface_form": "Scalable implicit AEF methods"
+    },
+    {
+      "id": "tech_00736",
+      "type": "technique",
+      "surface_form": "Random SO(3) rotation sampling"
+    },
+    {
+      "id": "tech_00769",
+      "type": "technique",
+      "surface_form": "Unit sphere integration"
+    },
+    {
+      "id": "tech_00781",
+      "type": "technique",
+      "surface_form": "Melt-quench MD simulation"
+    },
+    {
+      "id": "tech_00809",
+      "type": "technique",
+      "surface_form": "Inference-time inversion averaging"
+    },
+    {
+      "id": "tech_00811",
+      "type": "technique",
+      "surface_form": "Random rotation/inversion at each MD timestep"
+    },
+    {
+      "id": "tech_00830",
+      "type": "technique",
+      "surface_form": "Finite-difference Hessian estimation"
+    },
+    {
+      "id": "tech_00831",
+      "type": "technique",
+      "surface_form": "Looser convergence tolerances"
+    },
+    {
+      "id": "tech_00842",
+      "type": "technique",
+      "surface_form": "finite differences for higher-order derivatives"
+    },
+    {
+      "id": "tech_00847",
+      "type": "technique",
+      "surface_form": "Smooth envelope cutoffs"
+    },
+    {
+      "id": "tech_00852",
+      "type": "technique",
+      "surface_form": "matrix exponential parameterization"
+    },
+    {
+      "id": "tech_00874",
+      "type": "technique",
+      "surface_form": "Dataset sampling ratio adjustment"
+    },
+    {
+      "id": "tech_00904",
+      "type": "technique",
+      "surface_form": "Melt-quench protocol"
+    },
+    {
+      "id": "tech_00907",
+      "type": "technique",
+      "surface_form": "Random displacement test"
+    },
+    {
+      "id": "tech_00911",
+      "type": "technique",
+      "surface_form": "Melt-quench simulation"
+    },
+    {
+      "id": "tech_00916",
+      "type": "technique",
+      "surface_form": "melt-quench trajectory generation"
+    },
+    {
+      "id": "tech_00927",
+      "type": "technique",
+      "surface_form": "Random atomic displacement"
+    },
+    {
+      "id": "tech_00928",
+      "type": "technique",
+      "surface_form": "Random angle perturbation"
+    },
+    {
+      "id": "tech_00942",
+      "type": "technique",
+      "surface_form": "ensemble averaging over random seeds"
+    }
+  ],
+  "generation_type_counts": {
+    "cited_work": 11,
+    "claim": 7,
+    "component": 13,
+    "dataset": 1,
+    "future_topic": 1,
+    "method": 24,
+    "metric": 1,
+    "problem": 22,
+    "task": 7,
+    "technique": 71
+  },
+  "internal_hyperedges": [],
+  "tfidf_scope": "Generation members only, within current snapshot and level",
+  "phrase": "sampling",
+  "representative_ids": [
+    "meth_00370",
+    "tech_00169"
+  ]
+}

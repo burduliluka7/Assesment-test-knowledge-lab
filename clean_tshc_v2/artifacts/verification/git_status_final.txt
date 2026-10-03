@@ -1,0 +1,1326 @@
+ M clean_tshc/report/full_report.pdf
+ M clean_tshc/report/full_report.tex
+?? clean_tshc/report/clean_tshc_interview_100_QA.md
+?? clean_tshc/report/interview_additions_notes.md
+?? clean_tshc/report/me_vs_ilia
+?? clean_tshc/report/prompt_for_claude_codex_full_report_expansion.txt
+?? "clean_tshc_v2 copy/README.md"
+?? "clean_tshc_v2 copy/archive/flat_20261001/README.md"
+?? "clean_tshc_v2 copy/archive/flat_20261001/config.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q10_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q11_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q12_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q13_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q14_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q15_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q16_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q17_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q18_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q1_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q2_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q3_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q4_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q5_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q6_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q7_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q8_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/Q9_runtime.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/clean_tshc_after_v2.sha256"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/clean_tshc_before_v2.sha256"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/configuration.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/dense_token_packing.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/evaluation_manifest.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/evaluation_stderr.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/evaluation_stdout.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/events.jsonl"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/failure_classes.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/final_verification.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/freeze.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/input_diagnostics.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/model_availability.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/model_version_manifest.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/new_files.txt"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/predeclaration.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/prediction_accesses.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/prediction_completed_stderr.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/prediction_completed_stdout.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/prediction_console.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/prediction_final_stderr.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/prediction_final_stdout.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/prediction_retry_stderr.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/prediction_retry_stdout.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/protected_verification.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/rank_audit.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/snapshot_anomalies.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/strict_target_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/tests_before_final_run.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/tests_before_final_run_stderr.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/tests_final.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/tests_final_stderr.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/tests_prefreeze.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/audit/tests_prefreeze_stderr.log"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/candidate_cards/cards.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/candidate_cards/v1_documents.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/metrics.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/per_question_evaluation.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q1.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q10.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q11.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q12.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q13.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q14.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q15.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q16.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q17.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q18.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q2.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q3.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q4.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q5.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q6.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q7.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q8.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/query_understanding/Q9.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q10_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q10_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q10_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q11_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q11_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q11_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q12_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q12_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q12_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q13_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q13_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q13_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q14_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q14_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q14_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q15_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q15_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q15_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q16_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q16_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q16_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q17_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q17_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q17_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q18_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q18_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q18_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q1_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q1_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q1_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q2_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q2_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q2_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q3_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q3_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q3_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q4_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q4_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q4_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q5_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q5_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q5_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q6_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q6_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q6_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q7_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q7_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q7_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q8_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q8_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q8_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q9_A4_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q9_V2-C_cross_encoder.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/Q9_requirement_support.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/A0.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/A1.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/A2.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/A3.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/A4.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/DenseRaw.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/DenseStructured.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/Lexical.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/LexicalAll.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/SoftType.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/V2-A.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/V2-B.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/V2-C.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/by_system/V2-D.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/predictions.json"
+?? "clean_tshc_v2 copy/archive/flat_20261001/outputs/retrieval/predictions.sha256"
+?? "clean_tshc_v2 copy/archive/flat_20261001/report/v2_retrieval_report.md"
+?? "clean_tshc_v2 copy/archive/flat_20261001/requirements.txt"
+?? "clean_tshc_v2 copy/archive/flat_20261001/scripts/diagnose_inputs.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/scripts/evaluate.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/scripts/finalize.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/scripts/predict.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/scripts/prepare_models.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/scripts/verify_protected.ps1"
+?? "clean_tshc_v2 copy/archive/flat_20261001/scripts/verify_protected.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/__init__.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/candidate_cards.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/evaluation.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/extractive.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/io.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/isolation.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/models.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/question_understanding.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/ranking.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/snapshots.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/strict_targets.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/src/tkh_abstraction_v2/v1_documents.py"
+?? "clean_tshc_v2 copy/archive/flat_20261001/tests/test_invariants.py"
+?? "clean_tshc_v2 copy/config.json"
+?? "clean_tshc_v2 copy/data/questions.csv"
+?? "clean_tshc_v2 copy/data/tkh_collection10.json"
+?? "clean_tshc_v2 copy/notes/consultation_prompt.txt"
+?? "clean_tshc_v2 copy/notes/consultation_review.md"
+?? "clean_tshc_v2 copy/notes/entity_redesign/git_status_before.txt"
+?? "clean_tshc_v2 copy/notes/entity_redesign/implementation_plan.md"
+?? "clean_tshc_v2 copy/notes/entity_redesign/method_specification.md"
+?? "clean_tshc_v2 copy/notes/entity_redesign/planner_decisions.md"
+?? "clean_tshc_v2 copy/notes/entity_redesign/planner_prompt.txt"
+?? "clean_tshc_v2 copy/notes/entity_redesign/planner_result.json"
+?? "clean_tshc_v2 copy/notes/entity_redesign/planner_review.md"
+?? "clean_tshc_v2 copy/notes/entity_redesign/planner_stderr.log"
+?? "clean_tshc_v2 copy/notes/entity_redesign/report_handoff.json"
+?? "clean_tshc_v2 copy/notes/entity_redesign/report_prompt.txt"
+?? "clean_tshc_v2 copy/notes/entity_redesign/report_result.json"
+?? "clean_tshc_v2 copy/notes/entity_redesign/report_revision_prompt.txt"
+?? "clean_tshc_v2 copy/notes/entity_redesign/report_revision_result.json"
+?? "clean_tshc_v2 copy/notes/entity_redesign/report_revision_stderr.log"
+?? "clean_tshc_v2 copy/notes/entity_redesign/report_stderr.log"
+?? "clean_tshc_v2 copy/notes/entity_redesign/v1_before.json"
+?? "clean_tshc_v2 copy/notes/entity_redesign/v1_diff_before.patch"
+?? "clean_tshc_v2 copy/notes/entity_redesign/v2_before.json"
+?? "clean_tshc_v2 copy/notes/methodology.md"
+?? "clean_tshc_v2 copy/notes/run_ledger.json"
+?? "clean_tshc_v2 copy/notes/statistical_validity.md"
+?? "clean_tshc_v2 copy/outputs/audit/configuration.json"
+?? "clean_tshc_v2 copy/outputs/audit/efficiency.json"
+?? "clean_tshc_v2 copy/outputs/audit/evaluation_manifest.json"
+?? "clean_tshc_v2 copy/outputs/audit/events.jsonl"
+?? "clean_tshc_v2 copy/outputs/audit/failure_classes.json"
+?? "clean_tshc_v2 copy/outputs/audit/files_changed.json"
+?? "clean_tshc_v2 copy/outputs/audit/final_artifact_hashes.json"
+?? "clean_tshc_v2 copy/outputs/audit/final_verification.json"
+?? "clean_tshc_v2 copy/outputs/audit/freeze.json"
+?? "clean_tshc_v2 copy/outputs/audit/git_diff_clean_tshc.txt"
+?? "clean_tshc_v2 copy/outputs/audit/git_status_final.txt"
+?? "clean_tshc_v2 copy/outputs/audit/latex_pass1.log"
+?? "clean_tshc_v2 copy/outputs/audit/latex_pass2.log"
+?? "clean_tshc_v2 copy/outputs/audit/model_availability.json"
+?? "clean_tshc_v2 copy/outputs/audit/model_version_manifest.json"
+?? "clean_tshc_v2 copy/outputs/audit/predeclaration.json"
+?? "clean_tshc_v2 copy/outputs/audit/prediction_accesses.json"
+?? "clean_tshc_v2 copy/outputs/audit/prediction_exit.json"
+?? "clean_tshc_v2 copy/outputs/audit/prediction_stderr.log"
+?? "clean_tshc_v2 copy/outputs/audit/prediction_stdout.log"
+?? "clean_tshc_v2 copy/outputs/audit/protected_verification.json"
+?? "clean_tshc_v2 copy/outputs/audit/rank_audit.json"
+?? "clean_tshc_v2 copy/outputs/audit/replay_exit.json"
+?? "clean_tshc_v2 copy/outputs/audit/replay_stderr.log"
+?? "clean_tshc_v2 copy/outputs/audit/replay_stdout.log"
+?? "clean_tshc_v2 copy/outputs/audit/report_compile.json"
+?? "clean_tshc_v2 copy/outputs/audit/report_extracted.txt"
+?? "clean_tshc_v2 copy/outputs/audit/report_page_1.png"
+?? "clean_tshc_v2 copy/outputs/audit/report_page_11.png"
+?? "clean_tshc_v2 copy/outputs/audit/report_page_12.png"
+?? "clean_tshc_v2 copy/outputs/audit/report_page_13.png"
+?? "clean_tshc_v2 copy/outputs/audit/report_page_14.png"
+?? "clean_tshc_v2 copy/outputs/audit/report_page_18.png"
+?? "clean_tshc_v2 copy/outputs/audit/report_page_22.png"
+?? "clean_tshc_v2 copy/outputs/audit/report_page_25.png"
+?? "clean_tshc_v2 copy/outputs/audit/report_page_27.png"
+?? "clean_tshc_v2 copy/outputs/audit/report_page_9.png"
+?? "clean_tshc_v2 copy/outputs/audit/report_validation.json"
+?? "clean_tshc_v2 copy/outputs/audit/strict_target_support.json"
+?? "clean_tshc_v2 copy/outputs/audit/tests_exit.json"
+?? "clean_tshc_v2 copy/outputs/audit/tests_final.log"
+?? "clean_tshc_v2 copy/outputs/audit/tests_final_stderr.log"
+?? "clean_tshc_v2 copy/outputs/audit/v1_after.json"
+?? "clean_tshc_v2 copy/outputs/audit/v1_diff_final.patch"
+?? "clean_tshc_v2 copy/outputs/efficiency_report.json"
+?? "clean_tshc_v2 copy/outputs/entity_index/2026.json"
+?? "clean_tshc_v2 copy/outputs/evaluation_only/positive_controls.json"
+?? "clean_tshc_v2 copy/outputs/failure_traces.json"
+?? "clean_tshc_v2 copy/outputs/metrics.json"
+?? "clean_tshc_v2 copy/outputs/per_question_evaluation.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q1.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q10.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q11.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q12.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q13.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q14.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q15.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q16.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q17.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q18.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q2.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q3.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q4.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q5.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q6.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q7.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q8.json"
+?? "clean_tshc_v2 copy/outputs/query_understanding/Q9.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/audit/configuration.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/audit/efficiency.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/audit/events.jsonl"
+?? "clean_tshc_v2 copy/outputs/reproduction/audit/freeze.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/audit/model_version_manifest.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/audit/predeclaration.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/audit/prediction_accesses.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/entity_index/2026.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q1.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q10.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q11.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q12.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q13.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q14.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q15.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q16.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q17.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q18.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q2.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q3.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q4.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q5.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q6.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q7.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q8.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/query_understanding/Q9.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q1.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q10.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q11.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q12.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q13.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q14.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q15.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q16.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q17.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q18.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q2.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q3.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q4.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q5.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q6.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q7.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q8.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/channels/Q9.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q1.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q10.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q11.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q12.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q13.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q14.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q15.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q16.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q17.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q18.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q2.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q3.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q4.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q5.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q6.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q7.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q8.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/cross_encoder/Q9.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/predictions.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/predictions.sha256"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q1.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q10.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q11.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q12.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q13.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q14.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q15.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q16.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q17.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q18.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q2.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q3.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q4.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q5.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q6.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q7.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q8.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/requirement_verification/Q9.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q1.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q10.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q11.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q12.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q13.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q14.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q15.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q16.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q17.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q18.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q2.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q3.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q4.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q5.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q6.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q7.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q8.json"
+?? "clean_tshc_v2 copy/outputs/reproduction/retrieval/selected_evidence/Q9.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q1.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q10.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q11.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q12.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q13.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q14.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q15.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q16.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q17.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q18.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q2.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q3.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q4.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q5.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q6.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q7.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q8.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/channels/Q9.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q1.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q10.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q11.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q12.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q13.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q14.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q15.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q16.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q17.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q18.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q2.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q3.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q4.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q5.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q6.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q7.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q8.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/cross_encoder/Q9.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/predictions.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/predictions.sha256"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q1.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q10.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q11.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q12.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q13.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q14.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q15.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q16.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q17.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q18.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q2.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q3.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q4.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q5.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q6.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q7.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q8.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/requirement_verification/Q9.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q1.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q10.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q11.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q12.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q13.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q14.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q15.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q16.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q17.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q18.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q2.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q3.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q4.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q5.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q6.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q7.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q8.json"
+?? "clean_tshc_v2 copy/outputs/retrieval/selected_evidence/Q9.json"
+?? "clean_tshc_v2 copy/report/stage_metrics.pdf"
+?? "clean_tshc_v2 copy/report/stage_metrics.png"
+?? "clean_tshc_v2 copy/report/v2_entity_retrieval_report.log"
+?? "clean_tshc_v2 copy/report/v2_entity_retrieval_report.pdf"
+?? "clean_tshc_v2 copy/report/v2_entity_retrieval_report.tex"
+?? "clean_tshc_v2 copy/report/v2_retrieval_report.md"
+?? "clean_tshc_v2 copy/report/verification_summary.tex"
+?? "clean_tshc_v2 copy/requirements.txt"
+?? "clean_tshc_v2 copy/scripts/audit_reference.py"
+?? "clean_tshc_v2 copy/scripts/build_report_materials.py"
+?? "clean_tshc_v2 copy/scripts/compile_report.py"
+?? "clean_tshc_v2 copy/scripts/diagnose_inputs.py"
+?? "clean_tshc_v2 copy/scripts/evaluate.py"
+?? "clean_tshc_v2 copy/scripts/finalize.py"
+?? "clean_tshc_v2 copy/scripts/predict.py"
+?? "clean_tshc_v2 copy/scripts/prepare_models.py"
+?? "clean_tshc_v2 copy/scripts/verify_protected.ps1"
+?? "clean_tshc_v2 copy/scripts/verify_protected.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/__init__.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/candidate_cards.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/entity_evaluation.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/entity_experiment.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/entity_index.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/entity_retrieval.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/evaluation.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/extractive.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/intent.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/io.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/isolation.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/models.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/question_understanding.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/ranking.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/snapshots.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/strict_targets.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/v1_documents.py"
+?? "clean_tshc_v2 copy/src/tkh_abstraction_v2/verification.py"
+?? "clean_tshc_v2 copy/tests/test_entity_artifacts.py"
+?? "clean_tshc_v2 copy/tests/test_entity_pipeline.py"
+?? "clean_tshc_v2 copy/tests/test_invariants.py"
+?? clean_tshc_v2/AI_USAGE.md
+?? clean_tshc_v2/README.md
+?? clean_tshc_v2/archive/flat_20261001/README.md
+?? clean_tshc_v2/archive/flat_20261001/config.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q10_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q11_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q12_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q13_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q14_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q15_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q16_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q17_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q18_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q1_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q2_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q3_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q4_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q5_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q6_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q7_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q8_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/Q9_runtime.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/clean_tshc_after_v2.sha256
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/clean_tshc_before_v2.sha256
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/configuration.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/dense_token_packing.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/evaluation_manifest.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/evaluation_stderr.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/evaluation_stdout.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/events.jsonl
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/failure_classes.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/final_verification.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/freeze.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/input_diagnostics.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/model_availability.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/model_version_manifest.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/new_files.txt
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/predeclaration.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/prediction_accesses.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/prediction_completed_stderr.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/prediction_completed_stdout.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/prediction_console.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/prediction_final_stderr.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/prediction_final_stdout.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/prediction_retry_stderr.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/prediction_retry_stdout.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/protected_verification.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/rank_audit.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/snapshot_anomalies.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/strict_target_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/tests_before_final_run.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/tests_before_final_run_stderr.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/tests_final.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/tests_final_stderr.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/tests_prefreeze.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/audit/tests_prefreeze_stderr.log
+?? clean_tshc_v2/archive/flat_20261001/outputs/candidate_cards/cards.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/candidate_cards/v1_documents.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/metrics.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/per_question_evaluation.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q1.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q10.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q11.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q12.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q13.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q14.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q15.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q16.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q17.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q18.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q2.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q3.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q4.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q5.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q6.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q7.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q8.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/query_understanding/Q9.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q10_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q10_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q10_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q11_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q11_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q11_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q12_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q12_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q12_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q13_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q13_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q13_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q14_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q14_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q14_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q15_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q15_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q15_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q16_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q16_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q16_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q17_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q17_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q17_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q18_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q18_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q18_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q1_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q1_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q1_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q2_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q2_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q2_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q3_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q3_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q3_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q4_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q4_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q4_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q5_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q5_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q5_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q6_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q6_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q6_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q7_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q7_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q7_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q8_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q8_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q8_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q9_A4_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q9_V2-C_cross_encoder.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/Q9_requirement_support.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/A0.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/A1.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/A2.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/A3.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/A4.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/DenseRaw.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/DenseStructured.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/Lexical.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/LexicalAll.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/SoftType.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/V2-A.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/V2-B.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/V2-C.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/by_system/V2-D.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/predictions.json
+?? clean_tshc_v2/archive/flat_20261001/outputs/retrieval/predictions.sha256
+?? clean_tshc_v2/archive/flat_20261001/report/v2_retrieval_report.md
+?? clean_tshc_v2/archive/flat_20261001/requirements.txt
+?? clean_tshc_v2/archive/flat_20261001/scripts/diagnose_inputs.py
+?? clean_tshc_v2/archive/flat_20261001/scripts/evaluate.py
+?? clean_tshc_v2/archive/flat_20261001/scripts/finalize.py
+?? clean_tshc_v2/archive/flat_20261001/scripts/predict.py
+?? clean_tshc_v2/archive/flat_20261001/scripts/prepare_models.py
+?? clean_tshc_v2/archive/flat_20261001/scripts/verify_protected.ps1
+?? clean_tshc_v2/archive/flat_20261001/scripts/verify_protected.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/__init__.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/candidate_cards.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/evaluation.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/extractive.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/io.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/isolation.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/models.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/question_understanding.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/ranking.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/snapshots.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/strict_targets.py
+?? clean_tshc_v2/archive/flat_20261001/src/tkh_abstraction_v2/v1_documents.py
+?? clean_tshc_v2/archive/flat_20261001/tests/test_invariants.py
+?? clean_tshc_v2/artifacts/evaluation/audit/evaluation_manifest.json
+?? clean_tshc_v2/artifacts/evaluation/audit/failure_classes.json
+?? clean_tshc_v2/artifacts/evaluation/audit/rank_audit.json
+?? clean_tshc_v2/artifacts/evaluation/audit/strict_target_support.json
+?? clean_tshc_v2/artifacts/evaluation/efficiency_report.json
+?? clean_tshc_v2/artifacts/evaluation/evaluation_only/positive_controls.json
+?? clean_tshc_v2/artifacts/evaluation/failure_traces.json
+?? clean_tshc_v2/artifacts/evaluation/metrics.json
+?? clean_tshc_v2/artifacts/evaluation/per_question_evaluation.json
+?? clean_tshc_v2/artifacts/prediction/audit/configuration.json
+?? clean_tshc_v2/artifacts/prediction/audit/efficiency.json
+?? clean_tshc_v2/artifacts/prediction/audit/events.jsonl
+?? clean_tshc_v2/artifacts/prediction/audit/freeze.json
+?? clean_tshc_v2/artifacts/prediction/audit/model_version_manifest.json
+?? clean_tshc_v2/artifacts/prediction/audit/predeclaration.json
+?? clean_tshc_v2/artifacts/prediction/audit/prediction_accesses.json
+?? clean_tshc_v2/artifacts/prediction/entity_index/2026.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q1.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q10.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q11.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q12.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q13.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q14.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q15.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q16.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q17.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q18.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q2.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q3.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q4.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q5.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q6.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q7.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q8.json
+?? clean_tshc_v2/artifacts/prediction/query_understanding/Q9.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q1.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q10.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q11.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q12.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q13.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q14.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q15.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q16.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q17.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q18.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q2.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q3.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q4.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q5.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q6.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q7.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q8.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/channels/Q9.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q1.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q10.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q11.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q12.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q13.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q14.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q15.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q16.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q17.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q18.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q2.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q3.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q4.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q5.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q6.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q7.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q8.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/cross_encoder/Q9.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/predictions.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/predictions.sha256
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q1.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q10.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q11.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q12.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q13.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q14.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q15.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q16.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q17.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q18.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q2.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q3.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q4.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q5.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q6.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q7.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q8.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7/Q9.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q1.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q10.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q11.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q12.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q13.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q14.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q15.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q16.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q17.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q18.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q2.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q3.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q4.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q5.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q6.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q7.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q8.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_NoNLI/Q9.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q1.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q10.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q11.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q12.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q13.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q14.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q15.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q16.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q17.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q18.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q2.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q3.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q4.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q5.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q6.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q7.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q8.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/requirement_ranking/A7_SingleEvidence/Q9.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q1.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q10.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q11.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q12.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q13.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q14.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q15.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q16.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q17.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q18.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q2.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q3.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q4.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q5.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q6.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q7.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q8.json
+?? clean_tshc_v2/artifacts/prediction/retrieval/selected_evidence/Q9.json
+?? clean_tshc_v2/artifacts/reproduction/audit/configuration.json
+?? clean_tshc_v2/artifacts/reproduction/audit/efficiency.json
+?? clean_tshc_v2/artifacts/reproduction/audit/events.jsonl
+?? clean_tshc_v2/artifacts/reproduction/audit/freeze.json
+?? clean_tshc_v2/artifacts/reproduction/audit/model_version_manifest.json
+?? clean_tshc_v2/artifacts/reproduction/audit/predeclaration.json
+?? clean_tshc_v2/artifacts/reproduction/audit/prediction_accesses.json
+?? clean_tshc_v2/artifacts/reproduction/entity_index/2026.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q1.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q10.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q11.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q12.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q13.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q14.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q15.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q16.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q17.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q18.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q2.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q3.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q4.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q5.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q6.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q7.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q8.json
+?? clean_tshc_v2/artifacts/reproduction/query_understanding/Q9.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q1.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q10.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q11.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q12.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q13.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q14.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q15.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q16.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q17.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q18.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q2.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q3.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q4.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q5.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q6.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q7.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q8.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/channels/Q9.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q1.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q10.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q11.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q12.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q13.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q14.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q15.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q16.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q17.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q18.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q2.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q3.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q4.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q5.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q6.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q7.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q8.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/cross_encoder/Q9.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/predictions.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/predictions.sha256
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q1.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q10.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q11.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q12.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q13.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q14.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q15.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q16.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q17.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q18.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q2.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q3.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q4.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q5.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q6.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q7.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q8.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7/Q9.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q1.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q10.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q11.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q12.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q13.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q14.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q15.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q16.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q17.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q18.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q2.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q3.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q4.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q5.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q6.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q7.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q8.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_NoNLI/Q9.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q1.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q10.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q11.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q12.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q13.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q14.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q15.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q16.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q17.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q18.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q2.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q3.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q4.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q5.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q6.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q7.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q8.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/requirement_ranking/A7_SingleEvidence/Q9.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q1.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q10.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q11.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q12.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q13.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q14.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q15.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q16.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q17.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q18.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q2.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q3.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q4.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q5.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q6.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q7.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q8.json
+?? clean_tshc_v2/artifacts/reproduction/retrieval/selected_evidence/Q9.json
+?? clean_tshc_v2/artifacts/run_logs/evaluation_exit.json
+?? clean_tshc_v2/artifacts/run_logs/evaluation_stderr.log
+?? clean_tshc_v2/artifacts/run_logs/evaluation_stdout.log
+?? clean_tshc_v2/artifacts/run_logs/materials_exit.json
+?? clean_tshc_v2/artifacts/run_logs/materials_stderr.log
+?? clean_tshc_v2/artifacts/run_logs/materials_stdout.log
+?? clean_tshc_v2/artifacts/run_logs/prediction_exit.json
+?? clean_tshc_v2/artifacts/run_logs/prediction_process.json
+?? clean_tshc_v2/artifacts/run_logs/prediction_stderr.log
+?? clean_tshc_v2/artifacts/run_logs/prediction_stdout.log
+?? clean_tshc_v2/artifacts/run_logs/reproduction_exit.json
+?? clean_tshc_v2/artifacts/run_logs/reproduction_process.json
+?? clean_tshc_v2/artifacts/run_logs/reproduction_stderr.log
+?? clean_tshc_v2/artifacts/run_logs/reproduction_stdout.log
+?? clean_tshc_v2/artifacts/run_logs/workflow_completed.json
+?? clean_tshc_v2/artifacts/verification/clean_tshc_after.json
+?? clean_tshc_v2/artifacts/verification/clean_tshc_diff_final.patch
+?? clean_tshc_v2/artifacts/verification/clean_tshc_git_diff.txt
+?? clean_tshc_v2/artifacts/verification/files_changed.json
+?? clean_tshc_v2/artifacts/verification/final_artifact_hashes.json
+?? clean_tshc_v2/artifacts/verification/final_verification.json
+?? clean_tshc_v2/artifacts/verification/git_status_final.txt
+?? clean_tshc_v2/artifacts/verification/protected_verification.json
+?? clean_tshc_v2/artifacts/verification/report_compile.json
+?? clean_tshc_v2/artifacts/verification/report_numerical_audit.json
+?? clean_tshc_v2/artifacts/verification/report_visual_check.json
+?? clean_tshc_v2/artifacts/verification/rest_of_work_after.json
+?? clean_tshc_v2/artifacts/verification/rest_of_work_diff_final.patch
+?? clean_tshc_v2/artifacts/verification/rest_of_work_git_diff.txt
+?? clean_tshc_v2/artifacts/verification/tests_exit.json
+?? clean_tshc_v2/artifacts/verification/tests_final.log
+?? clean_tshc_v2/artifacts/verification/tests_final_stderr.log
+?? clean_tshc_v2/artifacts/verification/v2_assessment_companion_page1.png
+?? clean_tshc_v2/artifacts/verification/v2_assessment_companion_page2.png
+?? clean_tshc_v2/artifacts/verification/v2_assessment_companion_page3.png
+?? clean_tshc_v2/artifacts/verification/v2_assessment_companion_page4.png
+?? clean_tshc_v2/artifacts/verification/v2_assessment_companion_pass1.log
+?? clean_tshc_v2/artifacts/verification/v2_assessment_companion_pass2.log
+?? clean_tshc_v2/artifacts/verification/v2_entity_retrieval_report_page10.png
+?? clean_tshc_v2/artifacts/verification/v2_entity_retrieval_report_page19.png
+?? clean_tshc_v2/artifacts/verification/v2_entity_retrieval_report_page20.png
+?? clean_tshc_v2/artifacts/verification/v2_entity_retrieval_report_page3.png
+?? clean_tshc_v2/artifacts/verification/v2_entity_retrieval_report_pass1.log
+?? clean_tshc_v2/artifacts/verification/v2_entity_retrieval_report_pass2.log
+?? clean_tshc_v2/config.json
+?? clean_tshc_v2/data/questions.csv
+?? clean_tshc_v2/data/tkh_collection10.json
+?? clean_tshc_v2/model_manifest.json
+?? clean_tshc_v2/notes/ASSESSMENT_ALIGNMENT.md
+?? clean_tshc_v2/notes/consultation_prompt.txt
+?? clean_tshc_v2/notes/consultation_review.md
+?? clean_tshc_v2/notes/entity_redesign/git_status_before.txt
+?? clean_tshc_v2/notes/entity_redesign/implementation_plan.md
+?? clean_tshc_v2/notes/entity_redesign/method_specification.md
+?? clean_tshc_v2/notes/entity_redesign/planner_decisions.md
+?? clean_tshc_v2/notes/entity_redesign/planner_prompt.txt
+?? clean_tshc_v2/notes/entity_redesign/planner_result.json
+?? clean_tshc_v2/notes/entity_redesign/planner_review.md
+?? clean_tshc_v2/notes/entity_redesign/planner_stderr.log
+?? clean_tshc_v2/notes/entity_redesign/report_handoff.json
+?? clean_tshc_v2/notes/entity_redesign/report_prompt.txt
+?? clean_tshc_v2/notes/entity_redesign/report_result.json
+?? clean_tshc_v2/notes/entity_redesign/report_revision_prompt.txt
+?? clean_tshc_v2/notes/entity_redesign/report_revision_result.json
+?? clean_tshc_v2/notes/entity_redesign/report_revision_stderr.log
+?? clean_tshc_v2/notes/entity_redesign/report_stderr.log
+?? clean_tshc_v2/notes/entity_redesign/v1_before.json
+?? clean_tshc_v2/notes/entity_redesign/v1_diff_before.patch
+?? clean_tshc_v2/notes/entity_redesign/v2_before.json
+?? clean_tshc_v2/notes/methodology.md
+?? clean_tshc_v2/notes/requirement_design/assessment_artifact_links.json
+?? clean_tshc_v2/notes/requirement_design/assessment_brief.md
+?? clean_tshc_v2/notes/requirement_design/assessment_review.md
+?? clean_tshc_v2/notes/requirement_design/assessment_review_prompt.txt
+?? clean_tshc_v2/notes/requirement_design/assessment_review_result.json
+?? clean_tshc_v2/notes/requirement_design/assessment_review_stderr.log
+?? clean_tshc_v2/notes/requirement_design/cache_carryforward.json
+?? clean_tshc_v2/notes/requirement_design/clean_tshc_before.json
+?? clean_tshc_v2/notes/requirement_design/clean_tshc_diff_before.patch
+?? clean_tshc_v2/notes/requirement_design/consultation_decisions.md
+?? clean_tshc_v2/notes/requirement_design/final_design_registration.json
+?? clean_tshc_v2/notes/requirement_design/git_status_before.txt
+?? clean_tshc_v2/notes/requirement_design/implementation_plan.md
+?? clean_tshc_v2/notes/requirement_design/method_specification.md
+?? clean_tshc_v2/notes/requirement_design/numeric_fix_cache_carryforward.json
+?? clean_tshc_v2/notes/requirement_design/planner_prompt.txt
+?? clean_tshc_v2/notes/requirement_design/planner_result.json
+?? clean_tshc_v2/notes/requirement_design/planner_review.md
+?? clean_tshc_v2/notes/requirement_design/planner_stderr.log
+?? clean_tshc_v2/notes/requirement_design/report_corrections.md
+?? clean_tshc_v2/notes/requirement_design/report_exit.json
+?? clean_tshc_v2/notes/requirement_design/report_handoff.json
+?? clean_tshc_v2/notes/requirement_design/report_prompt.txt
+?? clean_tshc_v2/notes/requirement_design/report_result.json
+?? clean_tshc_v2/notes/requirement_design/report_stderr.log
+?? clean_tshc_v2/notes/requirement_design/rest_of_work_before.json
+?? clean_tshc_v2/notes/requirement_design/rest_of_work_diff_before.patch
+?? clean_tshc_v2/notes/requirement_design/reviewer_prompt.txt
+?? clean_tshc_v2/notes/requirement_design/reviewer_result.json
+?? clean_tshc_v2/notes/requirement_design/reviewer_review.md
+?? clean_tshc_v2/notes/requirement_design/reviewer_stderr.log
+?? clean_tshc_v2/notes/requirement_design/v2_before.json
+?? clean_tshc_v2/notes/requirement_design/v2_initial.json
+?? clean_tshc_v2/notes/run_ledger.json
+?? clean_tshc_v2/notes/statistical_validity.md
+?? clean_tshc_v2/outputs/audit/configuration.json
+?? clean_tshc_v2/outputs/audit/efficiency.json
+?? clean_tshc_v2/outputs/audit/evaluation_manifest.json
+?? clean_tshc_v2/outputs/audit/events.jsonl
+?? clean_tshc_v2/outputs/audit/failure_classes.json
+?? clean_tshc_v2/outputs/audit/files_changed.json
+?? clean_tshc_v2/outputs/audit/final_artifact_hashes.json
+?? clean_tshc_v2/outputs/audit/final_verification.json
+?? clean_tshc_v2/outputs/audit/freeze.json
+?? clean_tshc_v2/outputs/audit/git_diff_clean_tshc.txt
+?? clean_tshc_v2/outputs/audit/git_status_final.txt
+?? clean_tshc_v2/outputs/audit/latex_pass1.log
+?? clean_tshc_v2/outputs/audit/latex_pass2.log
+?? clean_tshc_v2/outputs/audit/model_availability.json
+?? clean_tshc_v2/outputs/audit/model_version_manifest.json
+?? clean_tshc_v2/outputs/audit/predeclaration.json
+?? clean_tshc_v2/outputs/audit/prediction_accesses.json
+?? clean_tshc_v2/outputs/audit/prediction_exit.json
+?? clean_tshc_v2/outputs/audit/prediction_stderr.log
+?? clean_tshc_v2/outputs/audit/prediction_stdout.log
+?? clean_tshc_v2/outputs/audit/protected_verification.json
+?? clean_tshc_v2/outputs/audit/rank_audit.json
+?? clean_tshc_v2/outputs/audit/replay_exit.json
+?? clean_tshc_v2/outputs/audit/replay_stderr.log
+?? clean_tshc_v2/outputs/audit/replay_stdout.log
+?? clean_tshc_v2/outputs/audit/report_compile.json
+?? clean_tshc_v2/outputs/audit/report_extracted.txt
+?? clean_tshc_v2/outputs/audit/report_page_1.png
+?? clean_tshc_v2/outputs/audit/report_page_11.png
+?? clean_tshc_v2/outputs/audit/report_page_12.png
+?? clean_tshc_v2/outputs/audit/report_page_13.png
+?? clean_tshc_v2/outputs/audit/report_page_14.png
+?? clean_tshc_v2/outputs/audit/report_page_18.png
+?? clean_tshc_v2/outputs/audit/report_page_22.png
+?? clean_tshc_v2/outputs/audit/report_page_25.png
+?? clean_tshc_v2/outputs/audit/report_page_27.png
+?? clean_tshc_v2/outputs/audit/report_page_9.png
+?? clean_tshc_v2/outputs/audit/report_validation.json
+?? clean_tshc_v2/outputs/audit/strict_target_support.json
+?? clean_tshc_v2/outputs/audit/tests_exit.json
+?? clean_tshc_v2/outputs/audit/tests_final.log
+?? clean_tshc_v2/outputs/audit/tests_final_stderr.log
+?? clean_tshc_v2/outputs/audit/v1_after.json
+?? clean_tshc_v2/outputs/audit/v1_diff_final.patch
+?? clean_tshc_v2/outputs/efficiency_report.json
+?? clean_tshc_v2/outputs/entity_index/2026.json
+?? clean_tshc_v2/outputs/evaluation_only/positive_controls.json
+?? clean_tshc_v2/outputs/failure_traces.json
+?? clean_tshc_v2/outputs/metrics.json
+?? clean_tshc_v2/outputs/per_question_evaluation.json
+?? clean_tshc_v2/outputs/query_understanding/Q1.json
+?? clean_tshc_v2/outputs/query_understanding/Q10.json
+?? clean_tshc_v2/outputs/query_understanding/Q11.json
+?? clean_tshc_v2/outputs/query_understanding/Q12.json
+?? clean_tshc_v2/outputs/query_understanding/Q13.json
+?? clean_tshc_v2/outputs/query_understanding/Q14.json
+?? clean_tshc_v2/outputs/query_understanding/Q15.json
+?? clean_tshc_v2/outputs/query_understanding/Q16.json
+?? clean_tshc_v2/outputs/query_understanding/Q17.json
+?? clean_tshc_v2/outputs/query_understanding/Q18.json
+?? clean_tshc_v2/outputs/query_understanding/Q2.json
+?? clean_tshc_v2/outputs/query_understanding/Q3.json
+?? clean_tshc_v2/outputs/query_understanding/Q4.json
+?? clean_tshc_v2/outputs/query_understanding/Q5.json
+?? clean_tshc_v2/outputs/query_understanding/Q6.json
+?? clean_tshc_v2/outputs/query_understanding/Q7.json
+?? clean_tshc_v2/outputs/query_understanding/Q8.json
+?? clean_tshc_v2/outputs/query_understanding/Q9.json
+?? clean_tshc_v2/outputs/reproduction/audit/configuration.json
+?? clean_tshc_v2/outputs/reproduction/audit/efficiency.json
+?? clean_tshc_v2/outputs/reproduction/audit/events.jsonl
+?? clean_tshc_v2/outputs/reproduction/audit/freeze.json
+?? clean_tshc_v2/outputs/reproduction/audit/model_version_manifest.json
+?? clean_tshc_v2/outputs/reproduction/audit/predeclaration.json
+?? clean_tshc_v2/outputs/reproduction/audit/prediction_accesses.json
+?? clean_tshc_v2/outputs/reproduction/entity_index/2026.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q1.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q10.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q11.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q12.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q13.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q14.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q15.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q16.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q17.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q18.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q2.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q3.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q4.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q5.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q6.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q7.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q8.json
+?? clean_tshc_v2/outputs/reproduction/query_understanding/Q9.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q1.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q10.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q11.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q12.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q13.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q14.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q15.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q16.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q17.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q18.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q2.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q3.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q4.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q5.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q6.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q7.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q8.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/channels/Q9.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q1.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q10.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q11.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q12.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q13.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q14.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q15.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q16.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q17.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q18.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q2.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q3.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q4.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q5.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q6.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q7.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q8.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/cross_encoder/Q9.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/predictions.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/predictions.sha256
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q1.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q10.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q11.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q12.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q13.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q14.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q15.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q16.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q17.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q18.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q2.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q3.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q4.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q5.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q6.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q7.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q8.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/requirement_verification/Q9.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q1.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q10.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q11.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q12.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q13.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q14.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q15.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q16.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q17.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q18.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q2.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q3.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q4.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q5.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q6.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q7.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q8.json
+?? clean_tshc_v2/outputs/reproduction/retrieval/selected_evidence/Q9.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q1.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q10.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q11.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q12.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q13.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q14.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q15.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q16.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q17.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q18.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q2.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q3.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q4.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q5.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q6.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q7.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q8.json
+?? clean_tshc_v2/outputs/retrieval/channels/Q9.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q1.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q10.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q11.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q12.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q13.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q14.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q15.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q16.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q17.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q18.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q2.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q3.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q4.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q5.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q6.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q7.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q8.json
+?? clean_tshc_v2/outputs/retrieval/cross_encoder/Q9.json
+?? clean_tshc_v2/outputs/retrieval/predictions.json
+?? clean_tshc_v2/outputs/retrieval/predictions.sha256
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q1.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q10.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q11.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q12.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q13.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q14.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q15.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q16.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q17.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q18.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q2.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q3.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q4.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q5.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q6.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q7.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q8.json
+?? clean_tshc_v2/outputs/retrieval/requirement_verification/Q9.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q1.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q10.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q11.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q12.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q13.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q14.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q15.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q16.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q17.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q18.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q2.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q3.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q4.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q5.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q6.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q7.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q8.json
+?? clean_tshc_v2/outputs/retrieval/selected_evidence/Q9.json
+?? clean_tshc_v2/report/stage_metrics.pdf
+?? clean_tshc_v2/report/stage_metrics.png
+?? clean_tshc_v2/report/v2_assessment_companion.log
+?? clean_tshc_v2/report/v2_assessment_companion.pdf
+?? clean_tshc_v2/report/v2_assessment_companion.tex
+?? clean_tshc_v2/report/v2_entity_retrieval_report.log
+?? clean_tshc_v2/report/v2_entity_retrieval_report.pdf
+?? clean_tshc_v2/report/v2_entity_retrieval_report.tex
+?? clean_tshc_v2/report/v2_retrieval_report.md
+?? clean_tshc_v2/report/verification_summary.tex
+?? clean_tshc_v2/requirements.txt
+?? clean_tshc_v2/scripts/audit_reference.py
+?? clean_tshc_v2/scripts/author_reports.py
+?? clean_tshc_v2/scripts/build_report_materials.py
+?? clean_tshc_v2/scripts/compile_report.py
+?? clean_tshc_v2/scripts/evaluate.py
+?? clean_tshc_v2/scripts/finalize.py
+?? clean_tshc_v2/scripts/finish_experiment.py
+?? clean_tshc_v2/scripts/predict.py
+?? clean_tshc_v2/scripts/prepare_models.py
+?? clean_tshc_v2/scripts/run_local.py
+?? clean_tshc_v2/scripts/verify_protected.ps1
+?? clean_tshc_v2/scripts/verify_protected.py
+?? clean_tshc_v2/scripts/verify_report_numbers.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/__init__.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/entity_evaluation.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/entity_experiment.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/entity_index.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/entity_retrieval.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/extractive.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/freeze.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/intent.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/io.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/isolation.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/models.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/question_understanding.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/ranking.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/requirement_ranking.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/snapshots.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/strict_targets.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/v1_documents.py
+?? clean_tshc_v2/src/tkh_abstraction_v2/verification.py
+?? clean_tshc_v2/tests/test_entity_artifacts.py
+?? clean_tshc_v2/tests/test_entity_pipeline.py
+?? clean_tshc_v2/tests/test_invariants.py
+?? clean_tshc_v2/tests/test_requirement_ranking.py

@@ -1,0 +1,48 @@
+{
+  "original_question": "What are the leading (by Feb 2026) ML-based interatomic potential methods for large-scale atomistic simulation?",
+  "answer_type": "method",
+  "core_task": "large-scale atomistic simulation",
+  "requirements": [],
+  "exclusions": [],
+  "temporal_condition": "by Feb 2026",
+  "source_spans": {
+    "temporal_condition": [
+      {
+        "text": "by Feb 2026",
+        "source_span": "by Feb 2026",
+        "start": 22,
+        "end": 33
+      }
+    ],
+    "answer_type": {
+      "text": "methods",
+      "source_span": "methods",
+      "start": 66,
+      "end": 73
+    },
+    "core_task": {
+      "text": "large-scale atomistic simulation",
+      "source_span": "large-scale atomistic simulation",
+      "start": 78,
+      "end": 110
+    }
+  },
+  "components": [
+    {
+      "text": "large-scale atomistic simulation",
+      "source_span": "large-scale atomistic simulation",
+      "start": 78,
+      "end": 110,
+      "kind": "core_task",
+      "connector": "",
+      "id": "component_0"
+    }
+  ],
+  "fallback": false,
+  "warnings": [
+    "Temporal phrase recorded; primary snapshot remains publication-visible year 2026, no month precision"
+  ],
+  "parser": "deterministic_extractive",
+  "search_query": "method; large-scale atomistic simulation",
+  "structured_query": "answer type: method\ntask: large-scale atomistic simulation\ntime: by Feb 2026"
+}

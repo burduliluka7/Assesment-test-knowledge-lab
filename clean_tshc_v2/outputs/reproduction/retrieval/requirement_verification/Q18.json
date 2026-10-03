@@ -1,0 +1,438 @@
+{
+  "entity:cite_00112": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Allegro supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00088": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": "clai_00089",
+        "evidence_text": "Unconstrained machine-learned interatomic potentials (MLIPs) trained on large datasets achieve accuracies on par with state-of-the-art equivariant architectures while maintaining orders-of-magnitude lower computational cost than quantum-mechanical methods.",
+        "evidence_link": {
+          "evidence_id": "clai_00089",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6029269695281982,
+        "hypothesis": "Machine-learned interatomic potentials supports sizes and conditions beyond the training set (.",
+        "premise": "Candidate: Machine-learned interatomic potentials. Relation: safe_literal_mention. Evidence: Unconstrained machine-learned interatomic potentials (MLIPs) trained on large datasets achieve accuracies on par with state-of-the-art equivariant architectures while maintaining orders-of-magnitude lower computational cost than quantum-mechanical methods.",
+        "probabilities": {
+          "contradiction": 0.011213138699531555,
+          "entailment": 0.045295197516679764,
+          "neutral": 0.9434916377067566
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 89,
+        "full_tokens": 89,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00114": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "DimeNet supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:comp_00737": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "System-conditioning embedding supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00119": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Cormorant supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00108": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "FAIRCHEM supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00106": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Tensor Field Networks supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00100": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "SE(3)-Transformers supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00058": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Phonopy supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00082": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": "tech_00883",
+        "evidence_text": "Low-precision training",
+        "evidence_link": {
+          "evidence_id": "tech_00883",
+          "field": "techniques",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00220",
+                "relation": "uses_technique",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5443,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7348553538322449,
+        "hypothesis": "Universal Models for Atoms supports sizes and conditions beyond the training set (.",
+        "premise": "Candidate: Universal Models for Atoms. Relation: validated_method_target. Evidence: Low-precision training",
+        "probabilities": {
+          "contradiction": 0.0037658121436834335,
+          "entailment": 0.0019985376857221127,
+          "neutral": 0.9942356944084167
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 40,
+        "full_tokens": 40,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00315": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Ziegler-Biersack-Littmark potential supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00326": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "ANI-1xnr supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:comp_00725": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Adaptive cutoff mechanism supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:comp_00641": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Embedding vectors for local atomic environment supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:comp_00661": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Magnetic moment embedding supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00191": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": "clai_00233",
+        "evidence_text": "A training database of manageable size, constructed from DFT configurations covering relevant phases and defects, is sufficient to achieve high transferability of the GAP model across diverse silicon configurations.",
+        "evidence_link": {
+          "evidence_id": "clai_00233",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6804671287536621,
+        "hypothesis": "GAP supports sizes and conditions beyond the training set (.",
+        "premise": "Candidate: GAP. Relation: safe_literal_mention. Evidence: A training database of manageable size, constructed from DFT configurations covering relevant phases and defects, is sufficient to achieve high transferability of the GAP model across diverse silicon configurations.",
+        "probabilities": {
+          "contradiction": 0.023449020460247993,
+          "entailment": 0.043463680893182755,
+          "neutral": 0.9330872893333435
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 61,
+        "full_tokens": 61,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00316": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Open Materials 24 supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00313": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Lennard-Jones potential supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00322": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "SuperSalt supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00059": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "sizes and conditions beyond the training set (",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "DPA supports sizes and conditions beyond the training set (.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  }
+}

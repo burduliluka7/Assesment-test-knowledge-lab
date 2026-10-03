@@ -1,0 +1,40 @@
+{
+  "tests_passed": 57,
+  "tests_failed": 0,
+  "prediction_sha256": "2d7485f1d0ecfb541d1d83413e2ac1d961519ce9c1e0870dbd74311462918570",
+  "frozen_artifacts_verified": 155,
+  "replay_frozen_artifacts_verified": 155,
+  "cached_replay_byte_identical": true,
+  "prediction_project_reads": 4186,
+  "gold_reads": 0,
+  "historical_evaluation_reads": 0,
+  "positive_controls_passed": true,
+  "freeze_before_evaluator_and_gold": true,
+  "evaluation_write_protection_tested": true,
+  "no_benchmark_training_or_fitting": true,
+  "predictive_policy_matches_pre_evaluation_registration": true,
+  "primary_pool": 500,
+  "requirement_evidence_k": 3,
+  "protected_trees": {
+    "clean_tshc": {
+      "files": 1056,
+      "unchanged": true
+    },
+    "rest_of_work": {
+      "files": 86667,
+      "unchanged": true
+    }
+  },
+  "report_authored_by": [
+    "claude-opus-5"
+  ],
+  "report_compiled": true,
+  "report_metric_rows_verified": 29,
+  "report_target_rows_verified": 63,
+  "report_pages": {
+    "v2_entity_retrieval_report": 20,
+    "v2_assessment_companion": 4
+  },
+  "github_changes": false,
+  "limitation": "Development-only; full replay reuses cached outputs, not a second uncached inference experiment"
+}

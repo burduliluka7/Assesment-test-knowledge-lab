@@ -1,0 +1,1708 @@
+{
+  "entity:tech_00107": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "coarse-graining using autoencoders supports coarse-graining molecular dynamics.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "coarse-graining using autoencoders supports crystalline symmetries.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "coarse-graining using autoencoders supports long-range elastic interactions must be preserved.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00233": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Non-equilibrium Molecular Dynamics supports coarse-graining molecular dynamics.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Non-equilibrium Molecular Dynamics supports crystalline symmetries.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Non-equilibrium Molecular Dynamics supports long-range elastic interactions must be preserved.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00128": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "prob_00049",
+        "evidence_text": "High computational cost of on‑the‑fly quadrature in time‑coarsened atomistic simulations",
+        "evidence_link": {
+          "evidence_id": "prob_00049",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00035",
+                "relation": "solves",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5383,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8103039264678955,
+        "hypothesis": "E(3)-equivariant Graph Neural Network for phase‑space integration supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: E(3)-equivariant Graph Neural Network for phase‑space integration. Relation: validated_method_target. Evidence: High computational cost of on‑the‑fly quadrature in time‑coarsened atomistic simulations",
+        "probabilities": {
+          "contradiction": 0.05433567240834236,
+          "entailment": 0.010245116427540779,
+          "neutral": 0.9354191422462463
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 73,
+        "full_tokens": 73,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "clai_00141",
+        "evidence_text": "Standard Gaussian quadrature rules produce frame‑dependent (non‑objective) phase‑averaged internal energies for rotated crystal lattices.",
+        "evidence_link": {
+          "evidence_id": "clai_00141",
+          "field": "claims",
+          "support_kind": "explicit_method_claim",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00747",
+                "relation": "claims",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5383,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7273489236831665,
+        "hypothesis": "E(3)-equivariant Graph Neural Network for phase‑space integration supports crystalline symmetries.",
+        "premise": "Candidate: E(3)-equivariant Graph Neural Network for phase‑space integration. Relation: explicit_method_claim. Evidence: Standard Gaussian quadrature rules produce frame‑dependent (non‑objective) phase‑averaged internal energies for rotated crystal lattices.",
+        "probabilities": {
+          "contradiction": 0.03487291932106018,
+          "entailment": 0.11877275258302689,
+          "neutral": 0.8463543653488159
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 75,
+        "full_tokens": 75,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "comp_00078",
+        "evidence_text": "Combined MSE loss over energy, physical forces, and thermal forces",
+        "evidence_link": {
+          "evidence_id": "comp_00078",
+          "field": "components",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00036",
+                "relation": "uses_component",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5383,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7484970092773438,
+        "hypothesis": "E(3)-equivariant Graph Neural Network for phase‑space integration supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: E(3)-equivariant Graph Neural Network for phase‑space integration. Relation: validated_method_target. Evidence: Combined MSE loss over energy, physical forces, and thermal forces",
+        "probabilities": {
+          "contradiction": 0.0008954823133535683,
+          "entailment": 0.000679443241097033,
+          "neutral": 0.9984251260757446
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 68,
+        "full_tokens": 68,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00123": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "task_00010",
+        "evidence_text": "computational chemistry",
+        "evidence_link": {
+          "evidence_id": "task_00010",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00027",
+                "relation": "addresses",
+                "year": 2024,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5382,
+                  "article_year": 2024
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7921828031539917,
+        "hypothesis": "Phonax (E(3)-equivariant graph neural network framework for phonon and Hessian prediction) supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: Phonax (E(3)-equivariant graph neural network framework for phonon and Hessian prediction). Relation: validated_method_target. Evidence: computational chemistry",
+        "probabilities": {
+          "contradiction": 0.0105280801653862,
+          "entailment": 0.0004497827321756631,
+          "neutral": 0.9890221357345581
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 66,
+        "full_tokens": 66,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "prob_00036",
+        "evidence_text": "Preserving crystalline symmetries automatically",
+        "evidence_link": {
+          "evidence_id": "prob_00036",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00029",
+                "relation": "solves",
+                "year": 2024,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5382,
+                  "article_year": 2024
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8823792934417725,
+        "hypothesis": "Phonax (E(3)-equivariant graph neural network framework for phonon and Hessian prediction) supports crystalline symmetries.",
+        "premise": "Candidate: Phonax (E(3)-equivariant graph neural network framework for phonon and Hessian prediction). Relation: validated_method_target. Evidence: Preserving crystalline symmetries automatically",
+        "probabilities": {
+          "contradiction": 0.01283721998333931,
+          "entailment": 0.25956669449806213,
+          "neutral": 0.72759610414505
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 64,
+        "full_tokens": 64,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "prob_00037",
+        "evidence_text": "Improving interatomic potentials with higher‑order data",
+        "evidence_link": {
+          "evidence_id": "prob_00037",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00029",
+                "relation": "solves",
+                "year": 2024,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5382,
+                  "article_year": 2024
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7261794209480286,
+        "hypothesis": "Phonax (E(3)-equivariant graph neural network framework for phonon and Hessian prediction) supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: Phonax (E(3)-equivariant graph neural network framework for phonon and Hessian prediction). Relation: validated_method_target. Evidence: Improving interatomic potentials with higher‑order data",
+        "probabilities": {
+          "contradiction": 0.001908397302031517,
+          "entailment": 0.001412237761542201,
+          "neutral": 0.996679425239563
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 76,
+        "full_tokens": 76,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00089": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "clai_00552",
+        "evidence_text": "GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD.",
+        "evidence_link": {
+          "evidence_id": "clai_00552",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7993927001953125,
+        "hypothesis": "Molecular dynamics supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: Molecular dynamics. Relation: safe_literal_mention. Evidence: GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD.",
+        "probabilities": {
+          "contradiction": 0.9948689937591553,
+          "entailment": 0.0010702714789658785,
+          "neutral": 0.004060743376612663
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 58,
+        "full_tokens": 58,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "clai_00025",
+        "evidence_text": "Representing molecular dynamics results as image‑based geometric matrices preserves crystal orientation information and allows the neural network to learn spatiotemporal fracture behavior.",
+        "evidence_link": {
+          "evidence_id": "clai_00025",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6654862761497498,
+        "hypothesis": "Molecular dynamics supports crystalline symmetries.",
+        "premise": "Candidate: Molecular dynamics. Relation: safe_literal_mention. Evidence: Representing molecular dynamics results as image‑based geometric matrices preserves crystal orientation information and allows the neural network to learn spatiotemporal fracture behavior.",
+        "probabilities": {
+          "contradiction": 0.014336604624986649,
+          "entailment": 0.05998815968632698,
+          "neutral": 0.9256752729415894
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 49,
+        "full_tokens": 49,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "clai_00677",
+        "evidence_text": "Combined two-body, three-body, and SOAP many-body descriptors are necessary for GAP to achieve the accuracy limit imposed by force locality and make physically meaningful predictions; models using only subsets of descriptors produce unphysical structures during molecular dynamics simulations.",
+        "evidence_link": {
+          "evidence_id": "clai_00677",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7481024861335754,
+        "hypothesis": "Molecular dynamics supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: Molecular dynamics. Relation: safe_literal_mention. Evidence: Combined two-body, three-body, and SOAP many-body descriptors are necessary for GAP to achieve the accuracy limit imposed by force locality and make physically meaningful predictions; models using only subsets of descriptors produce unphysical structures during molecular dynamics simulations.",
+        "probabilities": {
+          "contradiction": 0.003816987620666623,
+          "entailment": 0.002315133111551404,
+          "neutral": 0.9938679337501526
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 79,
+        "full_tokens": 79,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 2
+  },
+  "entity:cite_00245": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "task_00034",
+        "evidence_text": "molecular dynamics",
+        "evidence_link": {
+          "evidence_id": "task_00034",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00262",
+                "relation": "addresses",
+                "year": 2016,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5451,
+                  "article_year": 2016
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8867743611335754,
+        "hypothesis": "Gaussian Approximation Potentials supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: Gaussian Approximation Potentials. Relation: validated_method_target. Evidence: molecular dynamics",
+        "probabilities": {
+          "contradiction": 0.004377092234790325,
+          "entailment": 0.0010431777918711305,
+          "neutral": 0.9945797920227051
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 34,
+        "full_tokens": 34,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "task_00695",
+        "evidence_text": "Crystalline allotrope modeling",
+        "evidence_link": {
+          "evidence_id": "task_00695",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00262",
+                "relation": "addresses",
+                "year": 2016,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5451,
+                  "article_year": 2016
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7566335201263428,
+        "hypothesis": "Gaussian Approximation Potentials supports crystalline symmetries.",
+        "premise": "Candidate: Gaussian Approximation Potentials. Relation: validated_method_target. Evidence: Crystalline allotrope modeling",
+        "probabilities": {
+          "contradiction": 0.006359841674566269,
+          "entailment": 0.5266966223716736,
+          "neutral": 0.46694353222846985
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 33,
+        "full_tokens": 33,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "task_00039",
+        "evidence_text": "Elastic constant prediction",
+        "evidence_link": {
+          "evidence_id": "task_00039",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00262",
+                "relation": "addresses",
+                "year": 2016,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5451,
+                  "article_year": 2016
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7669122219085693,
+        "hypothesis": "Gaussian Approximation Potentials supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: Gaussian Approximation Potentials. Relation: validated_method_target. Evidence: Elastic constant prediction",
+        "probabilities": {
+          "contradiction": 0.00034110277192667127,
+          "entailment": 0.0005785536486655474,
+          "neutral": 0.9990803003311157
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 37,
+        "full_tokens": 37,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00180": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "task_00140",
+        "evidence_text": "Charge‑informed molecular dynamics",
+        "evidence_link": {
+          "evidence_id": "task_00140",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00077",
+                "relation": "addresses",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5391,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8381787538528442,
+        "hypothesis": "Crystal Hamiltonian Graph neural Network supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: Crystal Hamiltonian Graph neural Network. Relation: validated_method_target. Evidence: Charge‑informed molecular dynamics",
+        "probabilities": {
+          "contradiction": 0.3254879117012024,
+          "entailment": 0.010427508503198624,
+          "neutral": 0.6640845537185669
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 39,
+        "full_tokens": 39,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "task_00147",
+        "evidence_text": "Structure relaxation of crystalline materials",
+        "evidence_link": {
+          "evidence_id": "task_00147",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00077",
+                "relation": "addresses",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5391,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7401596307754517,
+        "hypothesis": "Crystal Hamiltonian Graph neural Network supports crystalline symmetries.",
+        "premise": "Candidate: Crystal Hamiltonian Graph neural Network. Relation: validated_method_target. Evidence: Structure relaxation of crystalline materials",
+        "probabilities": {
+          "contradiction": 0.006710743065923452,
+          "entailment": 0.06366016715765,
+          "neutral": 0.9296291470527649
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 35,
+        "full_tokens": 35,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "tech_00240",
+        "evidence_text": "Auto‑differentiation for forces/stress",
+        "evidence_link": {
+          "evidence_id": "tech_00240",
+          "field": "techniques",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00081",
+                "relation": "uses_technique",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5391,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7246522307395935,
+        "hypothesis": "Crystal Hamiltonian Graph neural Network supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: Crystal Hamiltonian Graph neural Network. Relation: validated_method_target. Evidence: Auto‑differentiation for forces/stress",
+        "probabilities": {
+          "contradiction": 0.0011751154670491815,
+          "entailment": 0.0005333391018211842,
+          "neutral": 0.998291552066803
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 44,
+        "full_tokens": 44,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00082": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "prob_00559",
+        "evidence_text": "Scaling molecular dynamics to large system sizes",
+        "evidence_link": {
+          "evidence_id": "prob_00559",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00218",
+                "relation": "solves",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5443,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8907034397125244,
+        "hypothesis": "Universal Models for Atoms supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: Universal Models for Atoms. Relation: validated_method_target. Evidence: Scaling molecular dynamics to large system sizes",
+        "probabilities": {
+          "contradiction": 0.9846764206886292,
+          "entailment": 0.0009537541191093624,
+          "neutral": 0.014369882643222809
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 41,
+        "full_tokens": 41,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "data_00180",
+        "evidence_text": "Molecular Crystals",
+        "evidence_link": {
+          "evidence_id": "data_00180",
+          "field": "datasets",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00216",
+                "relation": "evaluated_on",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5443,
+                  "article_year": 2026
+                }
+              }
+            ],
+            [
+              {
+                "hyperedge_id": "h_00554",
+                "relation": "evaluated_on",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5443,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7552832961082458,
+        "hypothesis": "Universal Models for Atoms supports crystalline symmetries.",
+        "premise": "Candidate: Universal Models for Atoms. Relation: validated_method_target. Evidence: Molecular Crystals",
+        "probabilities": {
+          "contradiction": 0.0021446088794618845,
+          "entailment": 0.0024693680461496115,
+          "neutral": 0.9953860640525818
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 32,
+        "full_tokens": 32,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "data_00190",
+        "evidence_text": "Elasticity",
+        "evidence_link": {
+          "evidence_id": "data_00190",
+          "field": "datasets",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00216",
+                "relation": "evaluated_on",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5443,
+                  "article_year": 2026
+                }
+              }
+            ],
+            [
+              {
+                "hyperedge_id": "h_00569",
+                "relation": "evaluated_on",
+                "year": 2020,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5443,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.774470329284668,
+        "hypothesis": "Universal Models for Atoms supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: Universal Models for Atoms. Relation: validated_method_target. Evidence: Elasticity",
+        "probabilities": {
+          "contradiction": 0.0002853604673873633,
+          "entailment": 0.00038854460581205785,
+          "neutral": 0.9993261098861694
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 38,
+        "full_tokens": 38,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 2
+  },
+  "entity:meth_00242": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Score Dynamics supports coarse-graining molecular dynamics.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Score Dynamics supports crystalline symmetries.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Score Dynamics supports long-range elastic interactions must be preserved.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00329": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Voronoi‑based grain generation supports coarse-graining molecular dynamics.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Voronoi‑based grain generation supports crystalline symmetries.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Voronoi‑based grain generation supports long-range elastic interactions must be preserved.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00152": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Nudged Elastic Band supports coarse-graining molecular dynamics.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Nudged Elastic Band supports crystalline symmetries.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Nudged Elastic Band supports long-range elastic interactions must be preserved.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00009": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Equivariant message passing supports coarse-graining molecular dynamics.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Equivariant message passing supports crystalline symmetries.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Equivariant message passing supports long-range elastic interactions must be preserved.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00033": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "clai_00021",
+        "evidence_text": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "evidence_link": {
+          "evidence_id": "clai_00021",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.709911584854126,
+        "hypothesis": "convolutional LSTM supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: convolutional LSTM. Relation: safe_literal_mention. Evidence: The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "probabilities": {
+          "contradiction": 0.041627008467912674,
+          "entailment": 0.9077699780464172,
+          "neutral": 0.05060303956270218
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 92,
+        "full_tokens": 92,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "clai_00021",
+        "evidence_text": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "evidence_link": {
+          "evidence_id": "clai_00021",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6329278349876404,
+        "hypothesis": "convolutional LSTM supports crystalline symmetries.",
+        "premise": "Candidate: convolutional LSTM. Relation: safe_literal_mention. Evidence: The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "probabilities": {
+          "contradiction": 0.08615250140428543,
+          "entailment": 0.1282678246498108,
+          "neutral": 0.7855796217918396
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 88,
+        "full_tokens": 88,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "clai_00021",
+        "evidence_text": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "evidence_link": {
+          "evidence_id": "clai_00021",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7117518782615662,
+        "hypothesis": "convolutional LSTM supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: convolutional LSTM. Relation: safe_literal_mention. Evidence: The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "probabilities": {
+          "contradiction": 0.004112690221518278,
+          "entailment": 0.00897485762834549,
+          "neutral": 0.9869124889373779
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 94,
+        "full_tokens": 94,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00006": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Flow Matching supports coarse-graining molecular dynamics.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Flow Matching supports crystalline symmetries.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Flow Matching supports long-range elastic interactions must be preserved.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00015": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "clai_00354",
+        "evidence_text": "Graph neural network architectures such as MEGNet and SchNet enhance prediction of phase transitions, defect dynamics, and bulk material properties relative to classical computational approaches.",
+        "evidence_link": {
+          "evidence_id": "clai_00354",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7205111384391785,
+        "hypothesis": "Graph Neural Network supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: Graph Neural Network. Relation: safe_literal_mention. Evidence: Graph neural network architectures such as MEGNet and SchNet enhance prediction of phase transitions, defect dynamics, and bulk material properties relative to classical computational approaches.",
+        "probabilities": {
+          "contradiction": 0.9880746006965637,
+          "entailment": 0.00017244555056095123,
+          "neutral": 0.011753011494874954
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 60,
+        "full_tokens": 60,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "clai_00416",
+        "evidence_text": "The E(3)-equivariant graph neural network architecture automatically preserves crystalline symmetries, yielding the correct acoustic‑sum‑rule zero modes without additional corrections.",
+        "evidence_link": {
+          "evidence_id": "clai_00416",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7512907981872559,
+        "hypothesis": "Graph Neural Network supports crystalline symmetries.",
+        "premise": "Candidate: Graph Neural Network. Relation: safe_literal_mention. Evidence: The E(3)-equivariant graph neural network architecture automatically preserves crystalline symmetries, yielding the correct acoustic‑sum‑rule zero modes without additional corrections.",
+        "probabilities": {
+          "contradiction": 0.000949458044487983,
+          "entailment": 0.9897827506065369,
+          "neutral": 0.00926770269870758
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 57,
+        "full_tokens": 57,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "clai_00416",
+        "evidence_text": "The E(3)-equivariant graph neural network architecture automatically preserves crystalline symmetries, yielding the correct acoustic‑sum‑rule zero modes without additional corrections.",
+        "evidence_link": {
+          "evidence_id": "clai_00416",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6689643859863281,
+        "hypothesis": "Graph Neural Network supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: Graph Neural Network. Relation: safe_literal_mention. Evidence: The E(3)-equivariant graph neural network architecture automatically preserves crystalline symmetries, yielding the correct acoustic‑sum‑rule zero modes without additional corrections.",
+        "probabilities": {
+          "contradiction": 0.9005624651908875,
+          "entailment": 0.003250504145398736,
+          "neutral": 0.09618697315454483
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 63,
+        "full_tokens": 63,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 2
+  },
+  "entity:meth_00230": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "task_00033",
+        "evidence_text": "computational physics",
+        "evidence_link": {
+          "evidence_id": "task_00033",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00157",
+                "relation": "addresses",
+                "year": 2020,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5406,
+                  "article_year": 2020
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7768315076828003,
+        "hypothesis": "ConvLSTM-based fracture prediction model supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: ConvLSTM-based fracture prediction model. Relation: validated_method_target. Evidence: computational physics",
+        "probabilities": {
+          "contradiction": 0.014973021112382412,
+          "entailment": 8.404102845815942e-05,
+          "neutral": 0.9849429130554199
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 42,
+        "full_tokens": 42,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "prob_00167",
+        "evidence_text": "Generalization to unseen crystal orientations and bicrystal interfaces",
+        "evidence_link": {
+          "evidence_id": "prob_00167",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00159",
+                "relation": "solves",
+                "year": 2020,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5406,
+                  "article_year": 2020
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7750821709632874,
+        "hypothesis": "ConvLSTM-based fracture prediction model supports crystalline symmetries.",
+        "premise": "Candidate: ConvLSTM-based fracture prediction model. Relation: validated_method_target. Evidence: Generalization to unseen crystal orientations and bicrystal interfaces",
+        "probabilities": {
+          "contradiction": 0.012541425414383411,
+          "entailment": 0.008823666721582413,
+          "neutral": 0.9786348938941956
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 46,
+        "full_tokens": 46,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "prob_00166",
+        "evidence_text": "Fracture‑toughness estimation from atomistic data",
+        "evidence_link": {
+          "evidence_id": "prob_00166",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00159",
+                "relation": "solves",
+                "year": 2020,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5406,
+                  "article_year": 2020
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7122764587402344,
+        "hypothesis": "ConvLSTM-based fracture prediction model supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: ConvLSTM-based fracture prediction model. Relation: validated_method_target. Evidence: Fracture‑toughness estimation from atomistic data",
+        "probabilities": {
+          "contradiction": 0.001546189421787858,
+          "entailment": 0.000639539968688041,
+          "neutral": 0.9978142976760864
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 51,
+        "full_tokens": 51,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00239": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "prob_00188",
+        "evidence_text": "Accelerating molecular dynamics for solid‑state electrolytes",
+        "evidence_link": {
+          "evidence_id": "prob_00188",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00165",
+                "relation": "solves",
+                "year": 2025,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5407,
+                  "article_year": 2025
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8251036405563354,
+        "hypothesis": "LiFlow supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: LiFlow. Relation: validated_method_target. Evidence: Accelerating molecular dynamics for solid‑state electrolytes",
+        "probabilities": {
+          "contradiction": 0.9944175481796265,
+          "entailment": 0.000806381634902209,
+          "neutral": 0.00477617746219039
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 36,
+        "full_tokens": 36,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "comp_00262",
+        "evidence_text": "Crystal graph representation",
+        "evidence_link": {
+          "evidence_id": "comp_00262",
+          "field": "components",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00166",
+                "relation": "uses_component",
+                "year": 2025,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5407,
+                  "article_year": 2025
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7599518895149231,
+        "hypothesis": "LiFlow supports crystalline symmetries.",
+        "premise": "Candidate: LiFlow. Relation: validated_method_target. Evidence: Crystal graph representation",
+        "probabilities": {
+          "contradiction": 0.0019211870385333896,
+          "entailment": 0.006115134805440903,
+          "neutral": 0.9919636249542236
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 27,
+        "full_tokens": 27,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "task_00225",
+        "evidence_text": "Prediction of mean squared displacement and self‑diffusivity",
+        "evidence_link": {
+          "evidence_id": "task_00225",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00162",
+                "relation": "addresses",
+                "year": 2025,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5407,
+                  "article_year": 2025
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7397633790969849,
+        "hypothesis": "LiFlow supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: LiFlow. Relation: validated_method_target. Evidence: Prediction of mean squared displacement and self‑diffusivity",
+        "probabilities": {
+          "contradiction": 0.0011124289594590664,
+          "entailment": 0.000612210133112967,
+          "neutral": 0.9982753992080688
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 41,
+        "full_tokens": 41,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 2
+  },
+  "entity:cite_00323": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "clai_00269",
+        "evidence_text": "MACE-MP0 was demonstrated to have stable nanosecond-long molecular dynamics on over 30 examples with diverse chemistry.",
+        "evidence_link": {
+          "evidence_id": "clai_00269",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7386407256126404,
+        "hypothesis": "MACE-MP0 supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: MACE-MP0. Relation: safe_literal_mention. Evidence: MACE-MP0 was demonstrated to have stable nanosecond-long molecular dynamics on over 30 examples with diverse chemistry.",
+        "probabilities": {
+          "contradiction": 0.5395627021789551,
+          "entailment": 0.04182915389537811,
+          "neutral": 0.4186081886291504
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 57,
+        "full_tokens": 57,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "clai_00278",
+        "evidence_text": "None of the three U-MLIPs (M3GNet, CHGNet, MACE-MP0) could accurately reproduce mixing energies of metallic binary alloys in adequate agreement with DFT results.",
+        "evidence_link": {
+          "evidence_id": "clai_00278",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.5444168448448181,
+        "hypothesis": "MACE-MP0 supports crystalline symmetries.",
+        "premise": "Candidate: MACE-MP0. Relation: safe_literal_mention. Evidence: None of the three U-MLIPs (M3GNet, CHGNet, MACE-MP0) could accurately reproduce mixing energies of metallic binary alloys in adequate agreement with DFT results.",
+        "probabilities": {
+          "contradiction": 0.08967708051204681,
+          "entailment": 0.0027252761647105217,
+          "neutral": 0.9075976014137268
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 71,
+        "full_tokens": 71,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "clai_00269",
+        "evidence_text": "MACE-MP0 was demonstrated to have stable nanosecond-long molecular dynamics on over 30 examples with diverse chemistry.",
+        "evidence_link": {
+          "evidence_id": "clai_00269",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6469282507896423,
+        "hypothesis": "MACE-MP0 supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: MACE-MP0. Relation: safe_literal_mention. Evidence: MACE-MP0 was demonstrated to have stable nanosecond-long molecular dynamics on over 30 examples with diverse chemistry.",
+        "probabilities": {
+          "contradiction": 0.09770378470420837,
+          "entailment": 0.012102682143449783,
+          "neutral": 0.890193521976471
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 59,
+        "full_tokens": 59,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00410": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "JAX-MD supports coarse-graining molecular dynamics.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "JAX-MD supports crystalline symmetries.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "JAX-MD supports long-range elastic interactions must be preserved.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00330": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "coarse-graining molecular dynamics",
+        "evidence_id": "clai_00552",
+        "evidence_text": "GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD.",
+        "evidence_link": {
+          "evidence_id": "clai_00552",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7993927001953125,
+        "hypothesis": "GNoME supports coarse-graining molecular dynamics.",
+        "premise": "Candidate: GNoME. Relation: safe_literal_mention. Evidence: GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD.",
+        "probabilities": {
+          "contradiction": 0.995203971862793,
+          "entailment": 0.0011358807096257806,
+          "neutral": 0.0036601992323994637
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 60,
+        "full_tokens": 60,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "crystalline symmetries",
+        "evidence_id": "clai_00553",
+        "evidence_text": "Crystal structures, data, and software for analyzing stable crystals, phase diagrams, static GNN, and interatomic potentials will be made available at the Google DeepMind materials_discovery GitHub repository and via the Materials Project with permanent DOI link 10.17188/2009989.",
+        "evidence_link": {
+          "evidence_id": "clai_00553",
+          "field": "claims",
+          "support_kind": "explicit_method_claim",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_01159",
+                "relation": "claims",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5455,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.6700690984725952,
+        "hypothesis": "GNoME supports crystalline symmetries.",
+        "premise": "Candidate: GNoME. Relation: explicit_method_claim. Evidence: Crystal structures, data, and software for analyzing stable crystals, phase diagrams, static GNN, and interatomic potentials will be made available at the Google DeepMind materials_discovery GitHub repository and via the Materials Project with permanent DOI link 10.17188/2009989.",
+        "probabilities": {
+          "contradiction": 0.006407954730093479,
+          "entailment": 0.002707759151235223,
+          "neutral": 0.9908842444419861
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 80,
+        "full_tokens": 80,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "long-range elastic interactions must be preserved",
+        "evidence_id": "clai_00552",
+        "evidence_text": "GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD.",
+        "evidence_link": {
+          "evidence_id": "clai_00552",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.68816077709198,
+        "hypothesis": "GNoME supports long-range elastic interactions must be preserved.",
+        "premise": "Candidate: GNoME. Relation: safe_literal_mention. Evidence: GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD.",
+        "probabilities": {
+          "contradiction": 0.007860186509788036,
+          "entailment": 0.011128474958240986,
+          "neutral": 0.9810112714767456
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 62,
+        "full_tokens": 62,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 2
+  }
+}

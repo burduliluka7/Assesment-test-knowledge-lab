@@ -1,0 +1,49 @@
+{
+  "original_question": "What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs and property prediction models for materials discovery?",
+  "answer_type": null,
+  "core_task": "evaluate MLIPs and property prediction models for materials discovery",
+  "requirements": [],
+  "exclusions": [],
+  "temporal_condition": "by Feb 2026",
+  "source_spans": {
+    "temporal_condition": [
+      {
+        "text": "by Feb 2026",
+        "source_span": "by Feb 2026",
+        "start": 48,
+        "end": 59
+      }
+    ],
+    "answer_type": {
+      "text": "datasets",
+      "source_span": "datasets",
+      "start": 5,
+      "end": 13
+    },
+    "core_task": {
+      "text": "evaluate MLIPs and property prediction models for materials discovery",
+      "source_span": "evaluate MLIPs and property prediction models for materials discovery",
+      "start": 64,
+      "end": 133
+    }
+  },
+  "components": [
+    {
+      "text": "evaluate MLIPs and property prediction models for materials discovery",
+      "source_span": "evaluate MLIPs and property prediction models for materials discovery",
+      "start": 64,
+      "end": 133,
+      "kind": "core_task",
+      "connector": "",
+      "id": "component_0"
+    }
+  ],
+  "fallback": false,
+  "warnings": [
+    "Unrecognized answer family; use all non-author entities",
+    "Temporal phrase recorded; primary snapshot remains publication-visible year 2026, no month precision"
+  ],
+  "parser": "deterministic_extractive",
+  "search_query": "evaluate MLIPs and property prediction models for materials discovery",
+  "structured_query": "answer type: scientific entity\ntask: evaluate MLIPs and property prediction models for materials discovery\ntime: by Feb 2026"
+}

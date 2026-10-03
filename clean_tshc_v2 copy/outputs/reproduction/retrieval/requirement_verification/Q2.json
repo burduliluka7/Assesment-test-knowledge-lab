@@ -1,0 +1,1695 @@
+{
+  "entity:meth_00107": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "task_00046",
+        "evidence_text": "Electronic structure calculation",
+        "evidence_link": {
+          "evidence_id": "task_00046",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00012",
+                "relation": "addresses",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5379,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8878328800201416,
+        "hypothesis": "Comprehensive review of AI-driven multiscale modeling approaches for solid‑state physics and chemistry supports accelerating electronic structure calculations.",
+        "premise": "Candidate: Comprehensive review of AI-driven multiscale modeling approaches for solid‑state physics and chemistry. Relation: validated_method_target. Evidence: Electronic structure calculation",
+        "probabilities": {
+          "contradiction": 0.0012575371656566858,
+          "entailment": 0.0017731699626892805,
+          "neutral": 0.9969692826271057
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 59,
+        "full_tokens": 59,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "prob_00020",
+        "evidence_text": "computational scalability of quantum mechanical methods",
+        "evidence_link": {
+          "evidence_id": "prob_00020",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00013",
+                "relation": "solves",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5379,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.731844425201416,
+        "hypothesis": "Comprehensive review of AI-driven multiscale modeling approaches for solid‑state physics and chemistry supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: Comprehensive review of AI-driven multiscale modeling approaches for solid‑state physics and chemistry. Relation: validated_method_target. Evidence: computational scalability of quantum mechanical methods",
+        "probabilities": {
+          "contradiction": 0.0071860793977975845,
+          "entailment": 0.00031507990206591785,
+          "neutral": 0.9924988150596619
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 66,
+        "full_tokens": 66,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "claims",
+          "support_kind": "explicit_method_claim",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00958",
+                "relation": "claims",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5379,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7684086561203003,
+        "hypothesis": "Comprehensive review of AI-driven multiscale modeling approaches for solid‑state physics and chemistry supports large systems (>10³ atoms).",
+        "premise": "Candidate: Comprehensive review of AI-driven multiscale modeling approaches for solid‑state physics and chemistry. Relation: explicit_method_claim. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.04970713332295418,
+          "entailment": 0.018612965941429138,
+          "neutral": 0.9316798448562622
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 115,
+        "full_tokens": 115,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00640": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "SCF iteration convergence acceleration supports accelerating electronic structure calculations.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "SCF iteration convergence acceleration supports self-consistent field iterations become prohibitively expensive.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "SCF iteration convergence acceleration supports large systems (>10³ atoms).",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00255": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "task_00046",
+        "evidence_text": "Electronic structure calculation",
+        "evidence_link": {
+          "evidence_id": "task_00046",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00021",
+                "relation": "addresses",
+                "year": 2022,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5381,
+                  "article_year": 2022
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8878328800201416,
+        "hypothesis": "DeepH-E3 supports accelerating electronic structure calculations.",
+        "premise": "Candidate: DeepH-E3. Relation: validated_method_target. Evidence: Electronic structure calculation",
+        "probabilities": {
+          "contradiction": 0.00046166719403117895,
+          "entailment": 0.0006118523306213319,
+          "neutral": 0.9989264607429504
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 35,
+        "full_tokens": 35,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "prob_00029",
+        "evidence_text": "Computational cost of large‑scale DFT",
+        "evidence_link": {
+          "evidence_id": "prob_00029",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00024",
+                "relation": "solves",
+                "year": 2022,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5381,
+                  "article_year": 2022
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7567629218101501,
+        "hypothesis": "DeepH-E3 supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: DeepH-E3. Relation: validated_method_target. Evidence: Computational cost of large‑scale DFT",
+        "probabilities": {
+          "contradiction": 0.0703951045870781,
+          "entailment": 0.0002511419006623328,
+          "neutral": 0.9293537139892578
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 43,
+        "full_tokens": 43,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "clai_00584",
+        "evidence_text": "DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors.",
+        "evidence_link": {
+          "evidence_id": "clai_00584",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7416889667510986,
+        "hypothesis": "DeepH-E3 supports large systems (>10³ atoms).",
+        "premise": "Candidate: DeepH-E3. Relation: safe_literal_mention. Evidence: DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors.",
+        "probabilities": {
+          "contradiction": 0.0004936744226142764,
+          "entailment": 0.0001329430378973484,
+          "neutral": 0.9993733763694763
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 78,
+        "full_tokens": 78,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00106": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "AI-accelerated electronic structure prediction supports accelerating electronic structure calculations.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "AI-accelerated electronic structure prediction supports self-consistent field iterations become prohibitively expensive.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "AI-accelerated electronic structure prediction supports large systems (>10³ atoms).",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00119": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Cormorant supports accelerating electronic structure calculations.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Cormorant supports self-consistent field iterations become prohibitively expensive.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Cormorant supports large systems (>10³ atoms).",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00261": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "clai_00205",
+        "evidence_text": "xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell.",
+        "evidence_link": {
+          "evidence_id": "clai_00205",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6516953110694885,
+        "hypothesis": "Constrained DFT supports accelerating electronic structure calculations.",
+        "premise": "Candidate: Constrained DFT. Relation: safe_literal_mention. Evidence: xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell.",
+        "probabilities": {
+          "contradiction": 0.008219379000365734,
+          "entailment": 0.956375241279602,
+          "neutral": 0.035405464470386505
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 71,
+        "full_tokens": 71,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "clai_00205",
+        "evidence_text": "xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell.",
+        "evidence_link": {
+          "evidence_id": "clai_00205",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6034277081489563,
+        "hypothesis": "Constrained DFT supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: Constrained DFT. Relation: safe_literal_mention. Evidence: xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell.",
+        "probabilities": {
+          "contradiction": 0.003195385914295912,
+          "entailment": 0.0002522225840948522,
+          "neutral": 0.9965523481369019
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 75,
+        "full_tokens": 75,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "clai_00205",
+        "evidence_text": "xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell.",
+        "evidence_link": {
+          "evidence_id": "clai_00205",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6827466487884521,
+        "hypothesis": "Constrained DFT supports large systems (>10³ atoms).",
+        "premise": "Candidate: Constrained DFT. Relation: safe_literal_mention. Evidence: xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell.",
+        "probabilities": {
+          "contradiction": 0.03473073989152908,
+          "entailment": 0.8773831129074097,
+          "neutral": 0.08788616210222244
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 74,
+        "full_tokens": 74,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00503": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Fukui‑Hatsugai‑Suzuki method supports accelerating electronic structure calculations.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Fukui‑Hatsugai‑Suzuki method supports self-consistent field iterations become prohibitively expensive.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Fukui‑Hatsugai‑Suzuki method supports large systems (>10³ atoms).",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00213": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "prob_00140",
+        "evidence_text": "Scalable electronic‑structure calculation for large‑scale materials",
+        "evidence_link": {
+          "evidence_id": "prob_00140",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00091",
+                "relation": "solves",
+                "year": 2022,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5393,
+                  "article_year": 2022
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.9075859785079956,
+        "hypothesis": "deep neural network approach to represent DFT Hamiltonian supports accelerating electronic structure calculations.",
+        "premise": "Candidate: deep neural network approach to represent DFT Hamiltonian. Relation: validated_method_target. Evidence: Scalable electronic‑structure calculation for large‑scale materials",
+        "probabilities": {
+          "contradiction": 0.0019429652020335197,
+          "entailment": 0.003751572920009494,
+          "neutral": 0.994305431842804
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 48,
+        "full_tokens": 48,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "prob_00135",
+        "evidence_text": "Accuracy‑efficiency dilemma of DFT",
+        "evidence_link": {
+          "evidence_id": "prob_00135",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00091",
+                "relation": "solves",
+                "year": 2022,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5393,
+                  "article_year": 2022
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7240301370620728,
+        "hypothesis": "deep neural network approach to represent DFT Hamiltonian supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: deep neural network approach to represent DFT Hamiltonian. Relation: validated_method_target. Evidence: Accuracy‑efficiency dilemma of DFT",
+        "probabilities": {
+          "contradiction": 0.006148123182356358,
+          "entailment": 0.0002739607007242739,
+          "neutral": 0.9935778379440308
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 48,
+        "full_tokens": 48,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "prob_00140",
+        "evidence_text": "Scalable electronic‑structure calculation for large‑scale materials",
+        "evidence_link": {
+          "evidence_id": "prob_00140",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00091",
+                "relation": "solves",
+                "year": 2022,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5393,
+                  "article_year": 2022
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7661607265472412,
+        "hypothesis": "deep neural network approach to represent DFT Hamiltonian supports large systems (>10³ atoms).",
+        "premise": "Candidate: deep neural network approach to represent DFT Hamiltonian. Relation: validated_method_target. Evidence: Scalable electronic‑structure calculation for large‑scale materials",
+        "probabilities": {
+          "contradiction": 0.0002927128807641566,
+          "entailment": 0.00013167470751795918,
+          "neutral": 0.9995755553245544
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 51,
+        "full_tokens": 51,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00247": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "task_00046",
+        "evidence_text": "Electronic structure calculation",
+        "evidence_link": {
+          "evidence_id": "task_00046",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00129",
+                "relation": "addresses",
+                "year": 2020,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5400,
+                  "article_year": 2020
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8878328800201416,
+        "hypothesis": "JARVIS integrated materials design infrastructure supports accelerating electronic structure calculations.",
+        "premise": "Candidate: JARVIS integrated materials design infrastructure. Relation: validated_method_target. Evidence: Electronic structure calculation",
+        "probabilities": {
+          "contradiction": 0.0006148911197669804,
+          "entailment": 0.0014295387081801891,
+          "neutral": 0.9979555606842041
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 37,
+        "full_tokens": 37,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "task_00234",
+        "evidence_text": "Force‑field benchmarking",
+        "evidence_link": {
+          "evidence_id": "task_00234",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00129",
+                "relation": "addresses",
+                "year": 2020,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5400,
+                  "article_year": 2020
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7364232540130615,
+        "hypothesis": "JARVIS integrated materials design infrastructure supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: JARVIS integrated materials design infrastructure. Relation: validated_method_target. Evidence: Force‑field benchmarking",
+        "probabilities": {
+          "contradiction": 0.024119295179843903,
+          "entailment": 0.0003507347428239882,
+          "neutral": 0.9755300283432007
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 42,
+        "full_tokens": 42,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "comp_00340",
+        "evidence_text": "Atoms class",
+        "evidence_link": {
+          "evidence_id": "comp_00340",
+          "field": "components",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00132",
+                "relation": "uses_component",
+                "year": 2020,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5400,
+                  "article_year": 2020
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.741807222366333,
+        "hypothesis": "JARVIS integrated materials design infrastructure supports large systems (>10³ atoms).",
+        "premise": "Candidate: JARVIS integrated materials design infrastructure. Relation: validated_method_target. Evidence: Atoms class",
+        "probabilities": {
+          "contradiction": 0.0010186017025262117,
+          "entailment": 0.00010541360097704455,
+          "neutral": 0.9988759160041809
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 40,
+        "full_tokens": 40,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:comp_00273": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "task_00010",
+        "evidence_text": "computational chemistry",
+        "evidence_link": {
+          "evidence_id": "task_00010",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00100",
+                "relation": "addresses",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5395,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8108478784561157,
+        "hypothesis": "D4FT supports accelerating electronic structure calculations.",
+        "premise": "Candidate: D4FT. Relation: validated_method_target. Evidence: computational chemistry",
+        "probabilities": {
+          "contradiction": 0.0012433963129296899,
+          "entailment": 0.0003795782395172864,
+          "neutral": 0.9983769655227661
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 30,
+        "full_tokens": 30,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "task_00194",
+        "evidence_text": "Self‑consistent field convergence",
+        "evidence_link": {
+          "evidence_id": "task_00194",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00100",
+                "relation": "addresses",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5395,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8241862058639526,
+        "hypothesis": "D4FT supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: D4FT. Relation: validated_method_target. Evidence: Self‑consistent field convergence",
+        "probabilities": {
+          "contradiction": 0.015490343794226646,
+          "entailment": 7.448465476045385e-05,
+          "neutral": 0.9844351410865784
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 37,
+        "full_tokens": 37,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "prob_00151",
+        "evidence_text": "Scalability to large molecular systems",
+        "evidence_link": {
+          "evidence_id": "prob_00151",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00103",
+                "relation": "solves",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5395,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8250571489334106,
+        "hypothesis": "D4FT supports large systems (>10³ atoms).",
+        "premise": "Candidate: D4FT. Relation: validated_method_target. Evidence: Scalability to large molecular systems",
+        "probabilities": {
+          "contradiction": 0.0003015449328813702,
+          "entailment": 0.0001144054185715504,
+          "neutral": 0.9995840191841125
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 36,
+        "full_tokens": 36,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00215": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Tensor-Field Networks supports accelerating electronic structure calculations.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Tensor-Field Networks supports self-consistent field iterations become prohibitively expensive.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Tensor-Field Networks supports large systems (>10³ atoms).",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00383": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "statistical learning method (Hegde & Bowen) supports accelerating electronic structure calculations.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "statistical learning method (Hegde & Bowen) supports self-consistent field iterations become prohibitively expensive.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "statistical learning method (Hegde & Bowen) supports large systems (>10³ atoms).",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00050": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "prob_00248",
+        "evidence_text": "Modeling complex atomic structures",
+        "evidence_link": {
+          "evidence_id": "prob_00248",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00224",
+                "relation": "solves",
+                "year": 2024,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5444,
+                  "article_year": 2024
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8230553865432739,
+        "hypothesis": "EquiformerV2 supports accelerating electronic structure calculations.",
+        "premise": "Candidate: EquiformerV2. Relation: validated_method_target. Evidence: Modeling complex atomic structures",
+        "probabilities": {
+          "contradiction": 0.0015809511533007026,
+          "entailment": 0.00037462246837094426,
+          "neutral": 0.9980443716049194
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 34,
+        "full_tokens": 34,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "prob_00262",
+        "evidence_text": "Overfitting with higher spherical harmonic degrees",
+        "evidence_link": {
+          "evidence_id": "prob_00262",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00224",
+                "relation": "solves",
+                "year": 2024,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5444,
+                  "article_year": 2024
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7128241658210754,
+        "hypothesis": "EquiformerV2 supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: EquiformerV2. Relation: validated_method_target. Evidence: Overfitting with higher spherical harmonic degrees",
+        "probabilities": {
+          "contradiction": 0.06652873754501343,
+          "entailment": 7.229813490994275e-05,
+          "neutral": 0.9333990216255188
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 41,
+        "full_tokens": 41,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "prob_00248",
+        "evidence_text": "Modeling complex atomic structures",
+        "evidence_link": {
+          "evidence_id": "prob_00248",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00224",
+                "relation": "solves",
+                "year": 2024,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5444,
+                  "article_year": 2024
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7632924914360046,
+        "hypothesis": "EquiformerV2 supports large systems (>10³ atoms).",
+        "premise": "Candidate: EquiformerV2. Relation: validated_method_target. Evidence: Modeling complex atomic structures",
+        "probabilities": {
+          "contradiction": 0.0004357821599114686,
+          "entailment": 0.00013923174992669374,
+          "neutral": 0.9994250535964966
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 37,
+        "full_tokens": 37,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00225": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "clai_00382",
+        "evidence_text": "DeepH resolves the accuracy‑efficiency dilemma of DFT, enabling efficient ab‑initio electronic‑structure calculations for large‑scale material systems.",
+        "evidence_link": {
+          "evidence_id": "clai_00382",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8209496736526489,
+        "hypothesis": "Kohn-Sham density-functional theory supports accelerating electronic structure calculations.",
+        "premise": "Candidate: Kohn-Sham density-functional theory. Relation: safe_literal_mention. Evidence: DeepH resolves the accuracy‑efficiency dilemma of DFT, enabling efficient ab‑initio electronic‑structure calculations for large‑scale material systems.",
+        "probabilities": {
+          "contradiction": 0.0008058185339905322,
+          "entailment": 0.9927313923835754,
+          "neutral": 0.006462876219302416
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 64,
+        "full_tokens": 64,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "clai_00036",
+        "evidence_text": "JARVIS‑Tools implements automatic k‑point convergence protocols that improve the precision of DFT calculations.",
+        "evidence_link": {
+          "evidence_id": "clai_00036",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7139458060264587,
+        "hypothesis": "Kohn-Sham density-functional theory supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: Kohn-Sham density-functional theory. Relation: safe_literal_mention. Evidence: JARVIS‑Tools implements automatic k‑point convergence protocols that improve the precision of DFT calculations.",
+        "probabilities": {
+          "contradiction": 0.009891225956380367,
+          "entailment": 0.00011362846998963505,
+          "neutral": 0.9899951219558716
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 59,
+        "full_tokens": 59,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7684086561203003,
+        "hypothesis": "Kohn-Sham density-functional theory supports large systems (>10³ atoms).",
+        "premise": "Candidate: Kohn-Sham density-functional theory. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.1319199800491333,
+          "entailment": 0.13949352502822876,
+          "neutral": 0.7285865545272827
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 95,
+        "full_tokens": 95,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00254": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "clai_00382",
+        "evidence_text": "DeepH resolves the accuracy‑efficiency dilemma of DFT, enabling efficient ab‑initio electronic‑structure calculations for large‑scale material systems.",
+        "evidence_link": {
+          "evidence_id": "clai_00382",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8209496736526489,
+        "hypothesis": "DeepH supports accelerating electronic structure calculations.",
+        "premise": "Candidate: DeepH. Relation: safe_literal_mention. Evidence: DeepH resolves the accuracy‑efficiency dilemma of DFT, enabling efficient ab‑initio electronic‑structure calculations for large‑scale material systems.",
+        "probabilities": {
+          "contradiction": 0.0007859833422116935,
+          "entailment": 0.9907602071762085,
+          "neutral": 0.00845382921397686
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 54,
+        "full_tokens": 54,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "clai_00578",
+        "evidence_text": "DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling.",
+        "evidence_link": {
+          "evidence_id": "clai_00578",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6621460914611816,
+        "hypothesis": "DeepH supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: DeepH. Relation: safe_literal_mention. Evidence: DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling.",
+        "probabilities": {
+          "contradiction": 0.08017395436763763,
+          "entailment": 8.342966611962765e-05,
+          "neutral": 0.9197425842285156
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 65,
+        "full_tokens": 65,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "clai_00584",
+        "evidence_text": "DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors.",
+        "evidence_link": {
+          "evidence_id": "clai_00584",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7416889667510986,
+        "hypothesis": "DeepH supports large systems (>10³ atoms).",
+        "premise": "Candidate: DeepH. Relation: safe_literal_mention. Evidence: DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors.",
+        "probabilities": {
+          "contradiction": 0.0007485219393856823,
+          "entailment": 0.00014176761033013463,
+          "neutral": 0.99910968542099
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 72,
+        "full_tokens": 72,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00251": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Behler-Parrinello neural network potential supports accelerating electronic structure calculations.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Behler-Parrinello neural network potential supports self-consistent field iterations become prohibitively expensive.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Behler-Parrinello neural network potential supports large systems (>10³ atoms).",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00179": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "prob_00094",
+        "evidence_text": "Accelerated materials discovery",
+        "evidence_link": {
+          "evidence_id": "prob_00094",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00068",
+                "relation": "solves",
+                "year": 2025,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5389,
+                  "article_year": 2025
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8257520198822021,
+        "hypothesis": "Task‑driven taxonomy of foundation models for materials science supports accelerating electronic structure calculations.",
+        "premise": "Candidate: Task‑driven taxonomy of foundation models for materials science. Relation: validated_method_target. Evidence: Accelerated materials discovery",
+        "probabilities": {
+          "contradiction": 0.5143961310386658,
+          "entailment": 0.0008388040587306023,
+          "neutral": 0.48476505279541016
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 45,
+        "full_tokens": 45,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "tech_00227",
+        "evidence_text": "Self‑Reflective Iteration",
+        "evidence_link": {
+          "evidence_id": "tech_00227",
+          "field": "techniques",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00070",
+                "relation": "uses_technique",
+                "year": 2025,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5389,
+                  "article_year": 2025
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7831739187240601,
+        "hypothesis": "Task‑driven taxonomy of foundation models for materials science supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: Task‑driven taxonomy of foundation models for materials science. Relation: validated_method_target. Evidence: Self‑Reflective Iteration",
+        "probabilities": {
+          "contradiction": 0.011418088339269161,
+          "entailment": 0.00020572452922351658,
+          "neutral": 0.9883762001991272
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 52,
+        "full_tokens": 52,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "task_00044",
+        "evidence_text": "atomistic simulation",
+        "evidence_link": {
+          "evidence_id": "task_00044",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00066",
+                "relation": "addresses",
+                "year": 2025,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5389,
+                  "article_year": 2025
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7353443503379822,
+        "hypothesis": "Task‑driven taxonomy of foundation models for materials science supports large systems (>10³ atoms).",
+        "premise": "Candidate: Task‑driven taxonomy of foundation models for materials science. Relation: validated_method_target. Evidence: atomistic simulation",
+        "probabilities": {
+          "contradiction": 0.0007458211621269584,
+          "entailment": 0.00014085748989600688,
+          "neutral": 0.9991132616996765
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 48,
+        "full_tokens": 48,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00504": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Order‑N electronic structure theory supports accelerating electronic structure calculations.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Order‑N electronic structure theory supports self-consistent field iterations become prohibitively expensive.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Order‑N electronic structure theory supports large systems (>10³ atoms).",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00373": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "clai_00530",
+        "evidence_text": "EquiformerV2+DeNS (a universal interatomic potential) achieves the highest classification performance among all evaluated models, with F1 scores up to 0.983, ROC AUC 0.96, and discovery acceleration factors up to 6.33, establishing state‑of‑the‑art for ML‑guided materials discovery.",
+        "evidence_link": {
+          "evidence_id": "clai_00530",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6744999885559082,
+        "hypothesis": "DeNS supports accelerating electronic structure calculations.",
+        "premise": "Candidate: DeNS. Relation: safe_literal_mention. Evidence: EquiformerV2+DeNS (a universal interatomic potential) achieves the highest classification performance among all evaluated models, with F1 scores up to 0.983, ROC AUC 0.96, and discovery acceleration factors up to 6.33, establishing state‑of‑the‑art for ML‑guided materials discovery.",
+        "probabilities": {
+          "contradiction": 0.9707233905792236,
+          "entailment": 0.00016658408276271075,
+          "neutral": 0.029109975323081017
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 91,
+        "full_tokens": 91,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "clai_00370",
+        "evidence_text": "The diversity of the larger OMat24 dataset does not benefit from the regularization or augmentation provided by DeNS, whereas dataset augmentation techniques like DeNS can significantly enhance performance when training solely on the MPtraj dataset.",
+        "evidence_link": {
+          "evidence_id": "clai_00370",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.5833256244659424,
+        "hypothesis": "DeNS supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: DeNS. Relation: safe_literal_mention. Evidence: The diversity of the larger OMat24 dataset does not benefit from the regularization or augmentation provided by DeNS, whereas dataset augmentation techniques like DeNS can significantly enhance performance when training solely on the MPtraj dataset.",
+        "probabilities": {
+          "contradiction": 0.07421628385782242,
+          "entailment": 5.6293498346349224e-05,
+          "neutral": 0.9257274270057678
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 74,
+        "full_tokens": 74,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "clai_00530",
+        "evidence_text": "EquiformerV2+DeNS (a universal interatomic potential) achieves the highest classification performance among all evaluated models, with F1 scores up to 0.983, ROC AUC 0.96, and discovery acceleration factors up to 6.33, establishing state‑of‑the‑art for ML‑guided materials discovery.",
+        "evidence_link": {
+          "evidence_id": "clai_00530",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.674197793006897,
+        "hypothesis": "DeNS supports large systems (>10³ atoms).",
+        "premise": "Candidate: DeNS. Relation: safe_literal_mention. Evidence: EquiformerV2+DeNS (a universal interatomic potential) achieves the highest classification performance among all evaluated models, with F1 scores up to 0.983, ROC AUC 0.96, and discovery acceleration factors up to 6.33, establishing state‑of‑the‑art for ML‑guided materials discovery.",
+        "probabilities": {
+          "contradiction": 0.0008119085105136037,
+          "entailment": 0.0005201509338803589,
+          "neutral": 0.9986679553985596
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 94,
+        "full_tokens": 94,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 2
+  },
+  "entity:cite_00135": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "accelerating electronic structure calculations",
+        "evidence_id": "prob_00016",
+        "evidence_text": "Accurate prediction of quantum‑chemical properties",
+        "evidence_link": {
+          "evidence_id": "prob_00016",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00004",
+                "relation": "solves",
+                "year": 2017,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 4166,
+                  "article_year": 2017
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7564550638198853,
+        "hypothesis": "Message Passing Neural Network supports accelerating electronic structure calculations.",
+        "premise": "Candidate: Message Passing Neural Network. Relation: validated_method_target. Evidence: Accurate prediction of quantum‑chemical properties",
+        "probabilities": {
+          "contradiction": 0.039656683802604675,
+          "entailment": 0.0005900713731534779,
+          "neutral": 0.9597532153129578
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 37,
+        "full_tokens": 37,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "evidence_id": "prob_00017",
+        "evidence_text": "Efficient inference compared to DFT",
+        "evidence_link": {
+          "evidence_id": "prob_00017",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00004",
+                "relation": "solves",
+                "year": 2017,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 4166,
+                  "article_year": 2017
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7120218276977539,
+        "hypothesis": "Message Passing Neural Network supports self-consistent field iterations become prohibitively expensive.",
+        "premise": "Candidate: Message Passing Neural Network. Relation: validated_method_target. Evidence: Efficient inference compared to DFT",
+        "probabilities": {
+          "contradiction": 0.0050379433669149876,
+          "entailment": 0.00011015891504939646,
+          "neutral": 0.9948518872261047
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 39,
+        "full_tokens": 39,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "large systems (>10³ atoms)",
+        "evidence_id": "prob_00016",
+        "evidence_text": "Accurate prediction of quantum‑chemical properties",
+        "evidence_link": {
+          "evidence_id": "prob_00016",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00004",
+                "relation": "solves",
+                "year": 2017,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 4166,
+                  "article_year": 2017
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7136319875717163,
+        "hypothesis": "Message Passing Neural Network supports large systems (>10³ atoms).",
+        "premise": "Candidate: Message Passing Neural Network. Relation: validated_method_target. Evidence: Accurate prediction of quantum‑chemical properties",
+        "probabilities": {
+          "contradiction": 0.000502824317663908,
+          "entailment": 0.0001688507618382573,
+          "neutral": 0.9993283748626709
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 40,
+        "full_tokens": 40,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  }
+}

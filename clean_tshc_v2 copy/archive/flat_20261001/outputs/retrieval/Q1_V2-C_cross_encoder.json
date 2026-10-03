@@ -1,0 +1,2427 @@
+{
+  "tech_00716": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00716",
+        "text": "NAME: Iterative evaluation for numerical efficiency\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -1.7168179750442505,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "meth_00073": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00073",
+        "text": "NAME: Machine Learning Interatomic Potentials\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00167",
+        "text": "DIRECT_CLAIMS: Long-range correction schemes in machine learning interatomic potentials are essential for achieving state-of-the-art accuracy, improving in-distribution performance, and enabling significant gains in transferability to unseen regions of chemical space."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00038",
+        "text": "ARTICLE: Orb-v3: atomistic simulation at scale"
+      }
+    ],
+    "omitted": [],
+    "token_count": 112,
+    "query_truncated": false,
+    "relevance_score": 0.37108081579208374,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "meth_00424": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00424",
+        "text": "NAME: DPA\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -0.6718201041221619,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "meth_00088": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00088",
+        "text": "NAME: Machine-learned interatomic potentials\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00089",
+        "text": "DIRECT_CLAIMS: Unconstrained machine-learned interatomic potentials (MLIPs) trained on large datasets achieve accuracies on par with state-of-the-art equivariant architectures while maintaining orders-of-magnitude lower computational cost than quantum-mechanical methods."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00116",
+        "text": "DIRECT_CLAIMS: A generic unconstrained Transformer can serve as an effective backbone for machine-learned interatomic potentials without explicit equivariance constraints."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00368",
+        "text": "DIRECT_CLAIMS: Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "omitted": [],
+    "token_count": 203,
+    "query_truncated": false,
+    "relevance_score": 2.416996479034424,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "meth_00423": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00423",
+        "text": "NAME: Open Materials 2024\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": 0.5730822682380676,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "cite_00312": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00312",
+        "text": "NAME: Embedded Atom Method\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -1.3629963397979736,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "meth_00162": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00162",
+        "text": "NAME: universal interatomic potentials\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00011",
+        "text": "ARTICLE: Matbench Discovery: A framework to evaluate machine learning crystal stability predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -0.5104958415031433,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "comp_00219": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00219",
+        "text": "NAME: Sparse set of representative atoms\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -4.920604228973389,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "meth_00107": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00107",
+        "text": "NAME: Comprehensive review of AI-driven multiscale modeling approaches for solid‑state physics and chemistry\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00351",
+        "text": "DIRECT_CLAIMS: Artificial intelligence has transformed multiscale modeling by linking atomic, mesoscale, and continuum scales, delivering improved accuracy and reduced computational cost compared with traditional methods."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00352",
+        "text": "DIRECT_CLAIMS: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00353",
+        "text": "DIRECT_CLAIMS: Neural‑network‑based electronic‑structure prediction tools achieve significant speedups over conventional density‑functional theory while maintaining comparable accuracy, accelerating electronic‑structure calculations."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00354",
+        "text": "DIRECT_CLAIMS: Graph neural network architectures such as MEGNet and SchNet enhance prediction of phase transitions, defect dynamics, and bulk material properties relative to classical computational approaches."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00003",
+        "text": "ARTICLE: Artificial Intelligence for Multiscale Modeling in Solid-State Physics and Chemistry: A Comprehensive Review"
+      }
+    ],
+    "omitted": [],
+    "token_count": 251,
+    "query_truncated": false,
+    "relevance_score": 2.411022901535034,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "meth_00190": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00190",
+        "text": "NAME: Modified Embedded Atom Method\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -1.5589580535888672,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "tech_00819": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00819",
+        "text": "NAME: fine-tuning on bespoke datasets\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 71,
+    "query_truncated": false,
+    "relevance_score": -3.323051929473877,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "meth_00091": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00091",
+        "text": "NAME: MatterSim\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00459",
+        "text": "DIRECT_CLAIMS: MatterSim, a zero‑shot machine‑learned interatomic potential trained on >17 million DFT‑labeled structures, supports universal simulation across all elements, temperatures and pressures, achieving energy prediction errors below 50 meV/atom even in high‑temperature, non‑equilibrium regimes."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 124,
+    "query_truncated": false,
+    "relevance_score": 1.49391770362854,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "tech_00893": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00893",
+        "text": "NAME: Machine-learning interpolation of DFT potential-energy surface\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 71,
+    "query_truncated": false,
+    "relevance_score": 0.17039653658866882,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "meth_00099": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00099",
+        "text": "NAME: embedded-atom-method\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -1.7713027000427246,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "tech_00733": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00733",
+        "text": "NAME: Customized DFT augmentation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -1.457350254058838,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "cite_00059": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00059",
+        "text": "NAME: DPA\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -3.6842494010925293,
+    "batch_runtime_seconds": 0.7040426000021398,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04400266250013374
+  },
+  "tech_00259": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00259",
+        "text": "NAME: Diverse DFT training database construction\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -2.3785319328308105,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00398": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00398",
+        "text": "NAME: Accurate NeurAl networK engINe for Molecular Energies\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 69,
+    "query_truncated": false,
+    "relevance_score": -2.9476237297058105,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00394": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00394",
+        "text": "NAME: Graph Atomic Cluster Expansion\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -2.283097982406616,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "tech_00522": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00522",
+        "text": "NAME: DFT-NEB reference calculations\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -0.9280288219451904,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "cite_00052": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00052",
+        "text": "NAME: DPA-2\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -3.573622703552246,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00210": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00210",
+        "text": "NAME: Deep Potential\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00152",
+        "text": "DIRECT_CLAIMS: DeePMD-kit is an open-source software package that facilitates molecular dynamics simulations using Deep Potential machine learning potentials for computational chemistry and materials science."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00164",
+        "text": "DIRECT_CLAIMS: DeePMD-kit supports interpolation between Deep Potential models and empirical pairwise potentials for cases where DFT calculations fail at close interatomic distances."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      }
+    ],
+    "omitted": [],
+    "token_count": 132,
+    "query_truncated": false,
+    "relevance_score": -0.11376576125621796,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00375": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00375",
+        "text": "NAME: Equivariant interatomic potentials\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -0.772052526473999,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00396": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00396",
+        "text": "NAME: Atoms-In-Molecules Network 2\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 69,
+    "query_truncated": false,
+    "relevance_score": -2.1172406673431396,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00422": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00422",
+        "text": "NAME: PET architecture\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00094",
+        "text": "DIRECT_CLAIMS: The PET architecture scales to 730M parameters (OMat-XL) while maintaining tractable memory usage and computational efficiency due to increased node representation size and unconstrained architecture."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 103,
+    "query_truncated": false,
+    "relevance_score": -1.3625133037567139,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00205": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00205",
+        "text": "NAME: Constrained DFT\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00205",
+        "text": "DIRECT_CLAIMS: xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 108,
+    "query_truncated": false,
+    "relevance_score": -2.7447993755340576,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00418": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00418",
+        "text": "NAME: Universal MLIPs\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00103",
+        "text": "DIRECT_CLAIMS: Universal MLIPs trained on massive datasets can generalize across diverse chemical systems and can be successfully applied to structural optimization and lattice dynamics workflows."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00256",
+        "text": "DIRECT_CLAIMS: Each cataloged DFT structure provides one energy and 3N forces (N = number of atoms) for training universal MLIPs."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00305",
+        "text": "DIRECT_CLAIMS: Universal MLIPs attempt to cover 10-100 elements under varying levels of constraints."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00435",
+        "text": "DIRECT_CLAIMS: Orb-v3-direct-* models are the only universal MLIPs that can compute hundreds of forward passes per second, exceeding one million steps per hour for small systems."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 193,
+    "query_truncated": false,
+    "relevance_score": -1.8111907243728638,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00421": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00421",
+        "text": "NAME: PET-MAD\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -1.728853464126587,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "cite_00044": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00044",
+        "text": "NAME: PET\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00090",
+        "text": "DIRECT_CLAIMS: The PET model achieves state-of-the-art accuracy on matbench-discovery benchmark (DAF=6.075, Accuracy=0.977, F1=0.924) and exceeds SOTA on SPICE molecular benchmark across most subsets for both energy and force predictions."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00091",
+        "text": "DIRECT_CLAIMS: PET-OMAD demonstrates the best overall accuracy in predicting energies and forces on MADBench in almost all cases, with the highest success rate (98.43%) in predicting desorption reactions."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00094",
+        "text": "DIRECT_CLAIMS: The PET architecture scales to 730M parameters (OMat-XL) while maintaining tractable memory usage and computational efficiency due to increased node representation size and unconstrained architecture."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00095",
+        "text": "DIRECT_CLAIMS: Conservative PET-OAM models achieve state-of-the-art performance on phonon tasks in matbench-discovery and the best overall accuracy in predicting shear modulus among tested models."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 261,
+    "query_truncated": false,
+    "relevance_score": -1.061506748199463,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "tech_00719": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00719",
+        "text": "NAME: Active learning for DFT data\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -2.0193910598754883,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00430": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00430",
+        "text": "NAME: Tersoff potential\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00678",
+        "text": "DIRECT_CLAIMS: GAP predicts diamond lattice parameter (3.539 Å) very close to DFT-LDA reference (3.532 Å), outperforming screened Tersoff potential (3.566 Å), with bulk modulus and elastic constants reasonably close to DFT reference values."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00682",
+        "text": "DIRECT_CLAIMS: GAP predictions for Young's modulus of amorphous carbon agree very well with experimental values at all relevant densities, while screened Tersoff potential captures the trend but significantly overestimates absolute values."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 176,
+    "query_truncated": false,
+    "relevance_score": 1.2274353504180908,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "tech_00832": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00832",
+        "text": "NAME: MSE loss for per-atom energies, forces, and virials\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 76,
+    "query_truncated": false,
+    "relevance_score": -4.1521525382995605,
+    "batch_runtime_seconds": 0.6492384000011953,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040577400000074704
+  },
+  "meth_00389": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00389",
+        "text": "NAME: Physics-based potentials\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -2.032694101333618,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "cite_00261": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00261",
+        "text": "NAME: Constrained DFT\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00205",
+        "text": "DIRECT_CLAIMS: xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 110,
+    "query_truncated": false,
+    "relevance_score": -5.0040740966796875,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "comp_00729": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00729",
+        "text": "NAME: Unconstrained architecture\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00094",
+        "text": "DIRECT_CLAIMS: The PET architecture scales to 730M parameters (OMat-XL) while maintaining tractable memory usage and computational efficiency due to increased node representation size and unconstrained architecture."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 106,
+    "query_truncated": false,
+    "relevance_score": -4.176584243774414,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "cite_00057": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00057",
+        "text": "NAME: DPA-3\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -3.5037007331848145,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "meth_00432": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00432",
+        "text": "NAME: Screened Tersoff potential\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00678",
+        "text": "DIRECT_CLAIMS: GAP predicts diamond lattice parameter (3.539 Å) very close to DFT-LDA reference (3.532 Å), outperforming screened Tersoff potential (3.566 Å), with bulk modulus and elastic constants reasonably close to DFT reference values."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00682",
+        "text": "DIRECT_CLAIMS: GAP predictions for Young's modulus of amorphous carbon agree very well with experimental values at all relevant densities, while screened Tersoff potential captures the trend but significantly overestimates absolute values."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 177,
+    "query_truncated": false,
+    "relevance_score": 0.830132007598877,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "meth_00416": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00416",
+        "text": "NAME: E(3)-Equivariant Atom-Centered Interatomic Potentials\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00036",
+        "text": "ARTICLE: Scalable Parallel Algorithm for Graph Neural Network Interatomic Potentials in Molecular Dynamics Simulations"
+      }
+    ],
+    "omitted": [],
+    "token_count": 80,
+    "query_truncated": false,
+    "relevance_score": -0.7980647087097168,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "meth_00275": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00275",
+        "text": "NAME: Universal machine learning interatomic potentials\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00025",
+        "text": "ARTICLE: A Foundational Potential Energy Surface Dataset for Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -1.6824740171432495,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "comp_00739": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00739",
+        "text": "NAME: Max-atom batching\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 66,
+    "query_truncated": false,
+    "relevance_score": -4.656599044799805,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "tech_00911": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00911",
+        "text": "NAME: Melt-quench simulation\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00465",
+        "text": "DIRECT_CLAIMS: The melt-quench simulation with 112,000 atoms on 8 GPUs demonstrated 0.94 parallel efficiency compared to single-GPU baseline."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 96,
+    "query_truncated": false,
+    "relevance_score": -2.318480968475342,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "comp_00655": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00655",
+        "text": "NAME: Atomwise predictions\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -2.6205875873565674,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "tech_00812": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00812",
+        "text": "NAME: Multiple time-stepping algorithm\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 66,
+    "query_truncated": false,
+    "relevance_score": -2.057478904724121,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "cite_00159": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00159",
+        "text": "NAME: Deep Potential\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00152",
+        "text": "DIRECT_CLAIMS: DeePMD-kit is an open-source software package that facilitates molecular dynamics simulations using Deep Potential machine learning potentials for computational chemistry and materials science."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00164",
+        "text": "DIRECT_CLAIMS: DeePMD-kit supports interpolation between Deep Potential models and empirical pairwise potentials for cases where DFT calculations fail at close interatomic distances."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00005",
+        "text": "ARTICLE: General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+      }
+    ],
+    "omitted": [],
+    "token_count": 141,
+    "query_truncated": false,
+    "relevance_score": -2.295915126800537,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "meth_00315": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00315",
+        "text": "NAME: Elastic Band method\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -0.4395744204521179,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "cite_00292": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00292",
+        "text": "NAME: LDA\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00670",
+        "text": "DIRECT_CLAIMS: A hybrid HSE06 calculation for ZnO yields a band gap of 2.48 eV, substantially larger than the LDA/GGA gap of 0.7 eV and the PBE+U gap of 1.82 eV."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00678",
+        "text": "DIRECT_CLAIMS: GAP predicts diamond lattice parameter (3.539 Å) very close to DFT-LDA reference (3.532 Å), outperforming screened Tersoff potential (3.566 Å), with bulk modulus and elastic constants reasonably close to DFT reference values."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 181,
+    "query_truncated": false,
+    "relevance_score": -1.4659407138824463,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "cite_00565": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00565",
+        "text": "NAME: Embedded Atom Neural Network Potentials\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "omitted": [],
+    "token_count": 66,
+    "query_truncated": false,
+    "relevance_score": -5.281578063964844,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "cite_00567": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00567",
+        "text": "NAME: Tersoff potential\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00678",
+        "text": "DIRECT_CLAIMS: GAP predicts diamond lattice parameter (3.539 Å) very close to DFT-LDA reference (3.532 Å), outperforming screened Tersoff potential (3.566 Å), with bulk modulus and elastic constants reasonably close to DFT reference values."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00682",
+        "text": "DIRECT_CLAIMS: GAP predictions for Young's modulus of amorphous carbon agree very well with experimental values at all relevant densities, while screened Tersoff potential captures the trend but significantly overestimates absolute values."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "omitted": [],
+    "token_count": 178,
+    "query_truncated": false,
+    "relevance_score": -0.7797453999519348,
+    "batch_runtime_seconds": 0.4662110999925062,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.029138193749531638
+  },
+  "tech_00822": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00822",
+        "text": "NAME: Symmetric edge weighting\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -2.901400327682495,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "meth_00417": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00417",
+        "text": "NAME: unconstrained MLIP evaluation framework\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00089",
+        "text": "DIRECT_CLAIMS: Unconstrained machine-learned interatomic potentials (MLIPs) trained on large datasets achieve accuracies on par with state-of-the-art equivariant architectures while maintaining orders-of-magnitude lower computational cost than quantum-mechanical methods."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00090",
+        "text": "DIRECT_CLAIMS: The PET model achieves state-of-the-art accuracy on matbench-discovery benchmark (DAF=6.075, Accuracy=0.977, F1=0.924) and exceeds SOTA on SPICE molecular benchmark across most subsets for both energy and force predictions."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00091",
+        "text": "DIRECT_CLAIMS: PET-OMAD demonstrates the best overall accuracy in predicting energies and forces on MADBench in almost all cases, with the highest success rate (98.43%) in predicting desorption reactions."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00092",
+        "text": "DIRECT_CLAIMS: Fine-tuning models pre-trained on OMat24 to the MAD dataset achieves near-converged validation metrics in 30-100 epochs versus 700+ epochs when training from scratch, halving validation energy and force errors and achieving 50% lower test error than training on MAD alone."
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00132",
+        "text": "DATASET_METRIC: SPICE"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00163",
+        "text": "DATASET_METRIC: MAD"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 323,
+    "query_truncated": false,
+    "relevance_score": 2.214998722076416,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "cite_00214": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00214",
+        "text": "NAME: DeepMD\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00152",
+        "text": "DIRECT_CLAIMS: DeePMD-kit is an open-source software package that facilitates molecular dynamics simulations using Deep Potential machine learning potentials for computational chemistry and materials science."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00153",
+        "text": "DIRECT_CLAIMS: DeePMD-kit supports multiple atomic descriptor types including local frame, DeepPot-SE, attention-based, and hybrid descriptors."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00163",
+        "text": "DIRECT_CLAIMS: DeePMD-kit APIs have been integrated into multiple third-party MD packages including LAMMPS, i-PI, GROMACS, AMBER, OpenMM, and ABACUS."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00164",
+        "text": "DIRECT_CLAIMS: DeePMD-kit supports interpolation between Deep Potential models and empirical pairwise potentials for cases where DFT calculations fail at close interatomic distances."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 208,
+    "query_truncated": false,
+    "relevance_score": -3.1885509490966797,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "tech_00806": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00806",
+        "text": "NAME: Large-scale dataset training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -3.4138383865356445,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "meth_00118": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00118",
+        "text": "NAME: DeepH-E3\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00578",
+        "text": "DIRECT_CLAIMS: DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00579",
+        "text": "DIRECT_CLAIMS: DeepH-E3 predicts DFT Hamiltonian matrix elements with sub‑meV mean absolute error, reducing the error by roughly a factor of two compared with the original DeepH method across diverse material systems."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00580",
+        "text": "DIRECT_CLAIMS: DeepH-E3 enables accurate electronic‑structure calculations for supercells larger than 10⁴ atoms, reducing computational cost by several orders of magnitude and allowing calculations in minutes on a single GPU versus months on thousands of CPU cores."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00581",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00009",
+        "text": "DATASET_METRIC: graphene"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00010",
+        "text": "DATASET_METRIC: MoS2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00005",
+        "text": "ARTICLE: General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+      }
+    ],
+    "omitted": [],
+    "token_count": 288,
+    "query_truncated": false,
+    "relevance_score": -3.296583890914917,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "tech_00521": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00521",
+        "text": "NAME: universal machine learning interatomic potentials\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -1.996325135231018,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "tech_00913": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00913",
+        "text": "NAME: Angular distribution function analysis\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -2.917489528656006,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "meth_00209": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00209",
+        "text": "NAME: Deep Potential method\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -2.7714390754699707,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "tech_00923": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00923",
+        "text": "NAME: sp2/sp3 atom counting\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -2.7480735778808594,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "cite_00055": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00055",
+        "text": "NAME: MatRIS\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -4.251304626464844,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "tech_00900": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00900",
+        "text": "NAME: Kernel exponentiation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -2.292109489440918,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "tech_00512": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00512",
+        "text": "NAME: Solid angle error calculation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -2.376430034637451,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "tech_00824": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00824",
+        "text": "NAME: Target scaling\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -2.4961791038513184,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "comp_00728": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00728",
+        "text": "NAME: PET-OAM\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00095",
+        "text": "DIRECT_CLAIMS: Conservative PET-OAM models achieve state-of-the-art performance on phonon tasks in matbench-discovery and the best overall accuracy in predicting shear modulus among tested models."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00100",
+        "text": "DIRECT_CLAIMS: DFT setting inconsistency between training and evaluation datasets significantly affects MLIP model performance comparisons, with PET-OMAD performing worse than PET-OAM and PET-MPtrj on Inorganic Materials due to differences in ab initio theory levels."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 167,
+    "query_truncated": false,
+    "relevance_score": -1.4578197002410889,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "tech_00915": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00915",
+        "text": "NAME: Large-scale atomistic simulation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -2.0467710494995117,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "tech_00910": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00910",
+        "text": "NAME: Cumulative error distribution analysis\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -2.707412004470825,
+    "batch_runtime_seconds": 0.9287176999932854,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.058044856249580334
+  },
+  "cite_00255": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00255",
+        "text": "NAME: DeepH‑E3\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00581",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00582",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 predicts a spin‑orbit‑coupling‑induced topological quantum phase transition in twisted bilayer Bi₂Te₃, evidenced by band‑gap closing and reopening and a change of the Z₂ invariant from 0 to 1 as SOC strength increases."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00583",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 attains sub‑meV accuracy after training on only a few hundred DFT calculations of small, non‑twisted structures, demonstrating high data efficiency."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00584",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 271,
+    "query_truncated": false,
+    "relevance_score": -4.048816680908203,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "meth_00196": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00196",
+        "text": "NAME: Gaussian Approximation Potential (GAP) for silicon\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00225",
+        "text": "DIRECT_CLAIMS: The Gaussian Approximation Potential (GAP) for silicon reproduces density functional theory reference results across a wide range of observable properties, including bulk crystal, liquid, amorphous phases, and point, line, and plane defects."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00226",
+        "text": "DIRECT_CLAIMS: For bulk elastic constants (B, C11, C12, C44) the GAP model achieves fractional errors of less than 10% relative to DFT, outperforming all other evaluated interatomic potentials."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00227",
+        "text": "DIRECT_CLAIMS: Surface energies of the (111), (110) and (100) silicon cleavage planes are predicted by GAP with errors of around 2% relative to DFT, which is comparable or better than other potentials."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00228",
+        "text": "DIRECT_CLAIMS: Formation energies of vacancy and interstitial point defects (hexagonal, tetrahedral, dumbbell) are predicted by GAP within 10% of DFT values, providing uniform accuracy across these defects."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 262,
+    "query_truncated": false,
+    "relevance_score": 0.25737157464027405,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "tech_00914": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00914",
+        "text": "NAME: sp3 atom counting\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -2.4633445739746094,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "meth_00094": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00094",
+        "text": "NAME: i-PI\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -3.6457929611206055,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "meth_00016": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00016",
+        "text": "NAME: FAIRCHEM\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -1.0156869888305664,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "comp_00705": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00705",
+        "text": "NAME: ghost atoms\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00036",
+        "text": "ARTICLE: Scalable Parallel Algorithm for Graph Neural Network Interatomic Potentials in Molecular Dynamics Simulations"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -3.957437038421631,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "meth_00009": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00009",
+        "text": "NAME: Mixture of Experts\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 58,
+    "query_truncated": false,
+    "relevance_score": -6.345420837402344,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "tech_00817": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00817",
+        "text": "NAME: Scaled attention weights\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -3.1674678325653076,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "comp_00735": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00735",
+        "text": "NAME: SO(3)-averaging over Lebedev grid\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 72,
+    "query_truncated": false,
+    "relevance_score": -4.668021202087402,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "meth_00391": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00391",
+        "text": "NAME: Ziegler-Biersack-Littmark potential\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -1.513216257095337,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "meth_00420": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00420",
+        "text": "NAME: Poly(ethylene terephthalate)\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 72,
+    "query_truncated": false,
+    "relevance_score": -1.1300477981567383,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "meth_00300": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00300",
+        "text": "NAME: eSCN\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 58,
+    "query_truncated": false,
+    "relevance_score": -6.6579718589782715,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "meth_00101": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00101",
+        "text": "NAME: ab initio molecular dynamics\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00041",
+        "text": "DIRECT_CLAIMS: LiFlow achieves speed‑ups of up to ~600,000× over ab initio molecular dynamics (and ~400× over MLIP), predicting a 1 ns trajectory in 48 s for a 2 × 2 × 1 LGPS supercell and 352 s for a 4 × 4 × 4 supercell."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00042",
+        "text": "DIRECT_CLAIMS: The computational cost of LiFlow scales linearly with the number of atoms (O(n)), in contrast to the cubic scaling (O(n³)) of ab initio molecular dynamics."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00045",
+        "text": "DIRECT_CLAIMS: LiFlow trained on 25 ps ab initio molecular dynamics trajectories can generate stable trajectories up to 1 ns in larger (4 × 4 × 4) supercells, reproducing lithium self‑diffusivity, activation energies, and temperature dependence comparable to long AIMD simulations."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      }
+    ],
+    "omitted": [],
+    "token_count": 252,
+    "query_truncated": false,
+    "relevance_score": -5.240079402923584,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "meth_00067": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00067",
+        "text": "NAME: BFGS optimizer\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -1.4697810411453247,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "meth_00429": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00429",
+        "text": "NAME: eqV2\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 59,
+    "query_truncated": false,
+    "relevance_score": -6.632847785949707,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "tech_00031": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00031",
+        "text": "NAME: Huber loss\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -3.7417550086975098,
+    "batch_runtime_seconds": 0.7347875000123167,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.045924218750769796
+  },
+  "comp_00639": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00639",
+        "text": "NAME: Explicit atomic position featurization\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -4.105890274047852,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "tech_00820": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00820",
+        "text": "NAME: combination with conservative models for finite-temperature applications\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 70,
+    "query_truncated": false,
+    "relevance_score": -3.1121132373809814,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "meth_00382": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00382",
+        "text": "NAME: Graph Neural Network interatomic potentials\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 59,
+    "query_truncated": false,
+    "relevance_score": -2.372213125228882,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "tech_00836": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00836",
+        "text": "NAME: Multiple-time-stepping simulations\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -2.4156057834625244,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "comp_00769": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00769",
+        "text": "NAME: Charge, spin, and DFT task embeddings\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -5.943578720092773,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "tech_00833": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00833",
+        "text": "NAME: Huber loss thresholds\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 66,
+    "query_truncated": false,
+    "relevance_score": -3.585343837738037,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "meth_00314": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00314",
+        "text": "NAME: image dependent pair potential\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -1.7256951332092285,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "meth_00392": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00392",
+        "text": "NAME: Deep Molecular Dynamics\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -2.1697123050689697,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "meth_00316": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00316",
+        "text": "NAME: Voronoi decomposition\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -1.6016749143600464,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "tech_00825": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00825",
+        "text": "NAME: Single-precision training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -2.5706276893615723,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "meth_00139": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00139",
+        "text": "NAME: Scikit-learn\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -4.537055015563965,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "tech_00830": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00830",
+        "text": "NAME: Finite-difference Hessian estimation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -2.0321898460388184,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "meth_00082": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00082",
+        "text": "NAME: Universal Models for Atoms\nTYPE: method"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00177",
+        "text": "DATASET_METRIC: Structure-based drug-design benchmarks"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00002",
+        "text": "DATASET_METRIC: Materials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 78,
+    "query_truncated": false,
+    "relevance_score": -8.91978645324707,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "meth_00428": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00428",
+        "text": "NAME: Chinchilla scaling\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 59,
+    "query_truncated": false,
+    "relevance_score": -7.056593894958496,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "tech_00903": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00903",
+        "text": "NAME: Iterative database extension\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -3.1855688095092773,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "cite_00232": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00232",
+        "text": "NAME: Symmetry-Preserving Inter-Atomic Potential\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00012",
+        "text": "ARTICLE: E(3)-Equivariant Graph Neural Networks for Data-Efficient and Accurate Interatomic Potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 78,
+    "query_truncated": false,
+    "relevance_score": -2.777451992034912,
+    "batch_runtime_seconds": 0.18325510001159273,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011453443750724546
+  },
+  "meth_00201": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00201",
+        "text": "NAME: Graph neural network for DFT Hamiltonian\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -4.8489460945129395,
+    "batch_runtime_seconds": 0.039984700008062646,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.009996175002015661
+  },
+  "tech_00053": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00053",
+        "text": "NAME: iterative training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -3.4014053344726562,
+    "batch_runtime_seconds": 0.039984700008062646,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.009996175002015661
+  },
+  "cite_00042": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00042",
+        "text": "NAME: LAMbench\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 66,
+    "query_truncated": false,
+    "relevance_score": -4.0638837814331055,
+    "batch_runtime_seconds": 0.039984700008062646,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.009996175002015661
+  },
+  "meth_00060": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00060",
+        "text": "NAME: Nudged Elastic Band\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -1.7410272359848022,
+    "batch_runtime_seconds": 0.039984700008062646,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.009996175002015661
+  }
+}

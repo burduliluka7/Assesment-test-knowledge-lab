@@ -1,0 +1,91 @@
+{
+  "original_question": "Which methods (by Feb 2026) are best suited for accelerating electronic structure calculations when self-consistent field iterations become prohibitively expensive for large systems (>10³ atoms)?",
+  "answer_type": "method",
+  "core_task": "accelerating electronic structure calculations",
+  "requirements": [
+    "self-consistent field iterations become prohibitively expensive",
+    "large systems (>10³ atoms)"
+  ],
+  "exclusions": [],
+  "temporal_condition": "by Feb 2026",
+  "source_spans": {
+    "temporal_condition": [
+      {
+        "text": "by Feb 2026",
+        "source_span": "by Feb 2026",
+        "start": 15,
+        "end": 26
+      }
+    ],
+    "answer_type": {
+      "text": "methods",
+      "source_span": "methods",
+      "start": 6,
+      "end": 13
+    },
+    "core_task": {
+      "text": "accelerating electronic structure calculations",
+      "source_span": "accelerating electronic structure calculations",
+      "start": 48,
+      "end": 94
+    },
+    "requirements": [
+      {
+        "text": "self-consistent field iterations become prohibitively expensive",
+        "source_span": "self-consistent field iterations become prohibitively expensive",
+        "start": 100,
+        "end": 163
+      },
+      {
+        "text": "large systems (>10³ atoms)",
+        "source_span": "large systems (>10³ atoms)",
+        "start": 168,
+        "end": 194
+      }
+    ]
+  },
+  "components": [
+    {
+      "text": "accelerating electronic structure calculations",
+      "source_span": "accelerating electronic structure calculations",
+      "start": 48,
+      "end": 94,
+      "kind": "core_task",
+      "connector": "",
+      "id": "component_0"
+    },
+    {
+      "text": "self-consistent field iterations become prohibitively expensive",
+      "source_span": "self-consistent field iterations become prohibitively expensive",
+      "start": 100,
+      "end": 163,
+      "kind": "requirement",
+      "connector": "when",
+      "id": "component_1"
+    },
+    {
+      "text": "large systems (>10³ atoms)",
+      "source_span": "large systems (>10³ atoms)",
+      "start": 168,
+      "end": 194,
+      "kind": "requirement",
+      "connector": "when",
+      "id": "component_2"
+    }
+  ],
+  "fallback": false,
+  "warnings": [
+    "Temporal phrase recorded; primary snapshot remains publication-visible year 2026, no month precision",
+    "Only publication-year visibility can be enforced; dates within a year are not resolved by the source data"
+  ],
+  "parser": "deterministic_extractive",
+  "search_query": "method; accelerating electronic structure calculations; self-consistent field iterations become prohibitively expensive; large systems (>10³ atoms)",
+  "structured_query": "answer families: method\nscientific modifiers: \nanswer type: method\ntask: accelerating electronic structure calculations\nrequirement: self-consistent field iterations become prohibitively expensive\nrequirement: large systems (>10³ atoms)\ntime: by Feb 2026",
+  "answer_types": [
+    "method"
+  ],
+  "preserved_modifiers": "",
+  "parsed_only_query": "method; accelerating electronic structure calculations; self-consistent field iterations become prohibitively expensive; large systems (>10³ atoms)",
+  "combined_query": "Original question: Which methods (by Feb 2026) are best suited for accelerating electronic structure calculations when self-consistent field iterations become prohibitively expensive for large systems (>10³ atoms)?\nStructured intent:\nanswer families: method\nscientific modifiers: \nanswer type: method\ntask: accelerating electronic structure calculations\nrequirement: self-consistent field iterations become prohibitively expensive\nrequirement: large systems (>10³ atoms)\ntime: by Feb 2026",
+  "temporal_cutoff": 2026
+}

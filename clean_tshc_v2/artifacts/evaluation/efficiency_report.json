@@ -1,0 +1,32 @@
+{
+  "dense_comparisons": 295920,
+  "evidence_comparisons": 153864,
+  "cross_encoder_pairs": 8849,
+  "cross_encoder_inference_pairs": 1500,
+  "cross_encoder_wall_seconds": 102.24639819993172,
+  "total_wall_seconds": 471.1076621999964,
+  "bm25_document_term_lookups_exact": 1637900,
+  "requirement_arms": {
+    "A7": {
+      "requirement_dense_comparisons": 175234,
+      "requirement_cross_encoder_pairs": 6791,
+      "actual_requirement_cross_encoder_pairs": 1422,
+      "nli_pairs": 6791,
+      "actual_nli_pairs": 1422,
+      "actual_wall_seconds": 232.66297929995926
+    },
+    "A7_SingleEvidence": {
+      "requirement_dense_comparisons": 175234,
+      "requirement_cross_encoder_pairs": 6791,
+      "actual_requirement_cross_encoder_pairs": 1422,
+      "nli_pairs": 6791,
+      "actual_nli_pairs": 1422,
+      "actual_wall_seconds": 119.58569269999862
+    }
+  },
+  "wall_note": "Completed predictor invocation with mixed cold/cached inference; interrupted pre-evaluation invocations are not included. Logical totals describe all pairs, actual totals only cache misses. Single CPU run descriptive time; logical comparisons are not production latency. NoNLI reuses primary relevance scores;100/200 controls reuse500-pool global scores.",
+  "prediction_process": {
+    "exit_code": 0,
+    "wall_seconds": 601.6485134999966
+  }
+}

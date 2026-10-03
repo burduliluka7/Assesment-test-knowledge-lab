@@ -1,0 +1,524 @@
+{
+  "entity:tech_00915": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Large-scale atomistic simulation supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00392": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8285714387893677,
+        "hypothesis": "Deep Molecular Dynamics supports large-scale atomistic simulation.",
+        "premise": "Candidate: Deep Molecular Dynamics. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.0010240856790915132,
+          "entailment": 0.9927918910980225,
+          "neutral": 0.006184056866914034
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 86,
+        "full_tokens": 86,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 0
+  },
+  "entity:meth_00225": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8285714387893677,
+        "hypothesis": "Kohn-Sham density-functional theory supports large-scale atomistic simulation.",
+        "premise": "Candidate: Kohn-Sham density-functional theory. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.0017116516828536987,
+          "entailment": 0.9895450472831726,
+          "neutral": 0.008743270300328732
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 94,
+        "full_tokens": 94,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 0
+  },
+  "entity:meth_00135": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": "clai_00464",
+        "evidence_text": "SevenNet-0 successfully generated amorphous Si3N4 structure with 112,000 atoms through melt-quench MD simulation, reproducing key structural features matching DFT reference data.",
+        "evidence_link": {
+          "evidence_id": "clai_00464",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.80051189661026,
+        "hypothesis": "ML‑IAP supports large-scale atomistic simulation.",
+        "premise": "Candidate: ML‑IAP. Relation: safe_literal_mention. Evidence: SevenNet-0 successfully generated amorphous Si3N4 structure with 112,000 atoms through melt-quench MD simulation, reproducing key structural features matching DFT reference data.",
+        "probabilities": {
+          "contradiction": 0.0016770422225818038,
+          "entailment": 0.9742009043693542,
+          "neutral": 0.024121984839439392
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 66,
+        "full_tokens": 66,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 0
+  },
+  "entity:cite_00191": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8285714387893677,
+        "hypothesis": "GAP supports large-scale atomistic simulation.",
+        "premise": "Candidate: GAP. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.001361935050226748,
+          "entailment": 0.9905751943588257,
+          "neutral": 0.00806292425841093
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 82,
+        "full_tokens": 82,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 0
+  },
+  "entity:cite_00578": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "QML supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00414": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8285714387893677,
+        "hypothesis": "DFT supports large-scale atomistic simulation.",
+        "premise": "Candidate: DFT. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.0010955672478303313,
+          "entailment": 0.991195559501648,
+          "neutral": 0.007708903402090073
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 82,
+        "full_tokens": 82,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 0
+  },
+  "entity:meth_00417": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": "task_00263",
+        "evidence_text": "atomistic simulations",
+        "evidence_link": {
+          "evidence_id": "task_00263",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00197",
+                "relation": "addresses",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5440,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.9319312572479248,
+        "hypothesis": "unconstrained MLIP evaluation framework supports large-scale atomistic simulation.",
+        "premise": "Candidate: unconstrained MLIP evaluation framework. Relation: validated_method_target. Evidence: atomistic simulations",
+        "probabilities": {
+          "contradiction": 0.0003939570742659271,
+          "entailment": 0.0005177502753213048,
+          "neutral": 0.9990882873535156
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 37,
+        "full_tokens": 37,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00568": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Brenner potential supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00569": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "EDIP supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00575": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CASTEP supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00570": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "REBO supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00573": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CUR supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00071": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "ReaxFF supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00245": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": "tech_00915",
+        "evidence_text": "Large-scale atomistic simulation",
+        "evidence_link": {
+          "evidence_id": "tech_00915",
+          "field": "techniques",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00267",
+                "relation": "uses_technique",
+                "year": 2016,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5451,
+                  "article_year": 2016
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 1.0,
+        "hypothesis": "Gaussian Approximation Potentials supports large-scale atomistic simulation.",
+        "premise": "Candidate: Gaussian Approximation Potentials. Relation: validated_method_target. Evidence: Large-scale atomistic simulation",
+        "probabilities": {
+          "contradiction": 0.0013714467640966177,
+          "entailment": 0.9452362656593323,
+          "neutral": 0.05339230224490166
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 38,
+        "full_tokens": 38,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 0
+  },
+  "entity:cite_00576": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Pastewka potential supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00574": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Quickstep supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00579": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Shapeev potential supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00369": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Alexandria supports large-scale atomistic simulation.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00214": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "large-scale atomistic simulation",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8285714387893677,
+        "hypothesis": "DeepMD supports large-scale atomistic simulation.",
+        "premise": "Candidate: DeepMD. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.001333524938672781,
+          "entailment": 0.9919438362121582,
+          "neutral": 0.006722717545926571
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 84,
+        "full_tokens": 84,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 0
+  }
+}

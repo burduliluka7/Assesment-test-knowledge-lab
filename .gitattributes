@@ -1,2 +1,4 @@
 # Preserve exact input, source-manifest and scientific-artifact bytes across platforms.
 * -text
+clean_tshc_v2/archive/flat_20261001/outputs/retrieval/predictions.json filter=lfs diff=lfs merge=lfs -text
+clean_tshc_v2[[:space:]]copy/archive/flat_20261001/outputs/retrieval/predictions.json filter=lfs diff=lfs merge=lfs -text

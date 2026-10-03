@@ -1,0 +1,91 @@
+{
+  "original_question": "Which methods (by Feb 2026) are best suited for coarse-graining molecular dynamics when crystalline symmetries and long-range elastic interactions must be preserved?",
+  "answer_type": "method",
+  "core_task": "coarse-graining molecular dynamics",
+  "requirements": [
+    "crystalline symmetries",
+    "long-range elastic interactions must be preserved"
+  ],
+  "exclusions": [],
+  "temporal_condition": "by Feb 2026",
+  "source_spans": {
+    "temporal_condition": [
+      {
+        "text": "by Feb 2026",
+        "source_span": "by Feb 2026",
+        "start": 15,
+        "end": 26
+      }
+    ],
+    "answer_type": {
+      "text": "methods",
+      "source_span": "methods",
+      "start": 6,
+      "end": 13
+    },
+    "core_task": {
+      "text": "coarse-graining molecular dynamics",
+      "source_span": "coarse-graining molecular dynamics",
+      "start": 48,
+      "end": 82
+    },
+    "requirements": [
+      {
+        "text": "crystalline symmetries",
+        "source_span": "crystalline symmetries",
+        "start": 88,
+        "end": 110
+      },
+      {
+        "text": "long-range elastic interactions must be preserved",
+        "source_span": "long-range elastic interactions must be preserved",
+        "start": 115,
+        "end": 164
+      }
+    ]
+  },
+  "components": [
+    {
+      "text": "coarse-graining molecular dynamics",
+      "source_span": "coarse-graining molecular dynamics",
+      "start": 48,
+      "end": 82,
+      "kind": "core_task",
+      "connector": "",
+      "id": "component_0"
+    },
+    {
+      "text": "crystalline symmetries",
+      "source_span": "crystalline symmetries",
+      "start": 88,
+      "end": 110,
+      "kind": "requirement",
+      "connector": "when",
+      "id": "component_1"
+    },
+    {
+      "text": "long-range elastic interactions must be preserved",
+      "source_span": "long-range elastic interactions must be preserved",
+      "start": 115,
+      "end": 164,
+      "kind": "requirement",
+      "connector": "when",
+      "id": "component_2"
+    }
+  ],
+  "fallback": false,
+  "warnings": [
+    "Temporal phrase recorded; primary snapshot remains publication-visible year 2026, no month precision",
+    "Only publication-year visibility can be enforced; dates within a year are not resolved by the source data"
+  ],
+  "parser": "deterministic_extractive",
+  "search_query": "method; coarse-graining molecular dynamics; crystalline symmetries; long-range elastic interactions must be preserved",
+  "structured_query": "answer families: method\nscientific modifiers: \nanswer type: method\ntask: coarse-graining molecular dynamics\nrequirement: crystalline symmetries\nrequirement: long-range elastic interactions must be preserved\ntime: by Feb 2026",
+  "answer_types": [
+    "method"
+  ],
+  "preserved_modifiers": "",
+  "parsed_only_query": "method; coarse-graining molecular dynamics; crystalline symmetries; long-range elastic interactions must be preserved",
+  "combined_query": "Original question: Which methods (by Feb 2026) are best suited for coarse-graining molecular dynamics when crystalline symmetries and long-range elastic interactions must be preserved?\nStructured intent:\nanswer families: method\nscientific modifiers: \nanswer type: method\ntask: coarse-graining molecular dynamics\nrequirement: crystalline symmetries\nrequirement: long-range elastic interactions must be preserved\ntime: by Feb 2026",
+  "temporal_cutoff": 2026
+}

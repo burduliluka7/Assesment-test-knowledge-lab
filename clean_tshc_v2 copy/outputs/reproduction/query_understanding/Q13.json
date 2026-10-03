@@ -1,0 +1,56 @@
+{
+  "original_question": "What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?",
+  "answer_type": "architecture",
+  "core_task": "predicting properties of solid-state crystalline materials",
+  "requirements": [],
+  "exclusions": [],
+  "temporal_condition": "by Feb 2026",
+  "source_spans": {
+    "temporal_condition": [
+      {
+        "text": "by Feb 2026",
+        "source_span": "by Feb 2026",
+        "start": 22,
+        "end": 33
+      }
+    ],
+    "answer_type": {
+      "text": "architectures",
+      "source_span": "architectures",
+      "start": 39,
+      "end": 52
+    },
+    "core_task": {
+      "text": "predicting properties of solid-state crystalline materials",
+      "source_span": "predicting properties of solid-state crystalline materials",
+      "start": 57,
+      "end": 115
+    }
+  },
+  "components": [
+    {
+      "text": "predicting properties of solid-state crystalline materials",
+      "source_span": "predicting properties of solid-state crystalline materials",
+      "start": 57,
+      "end": 115,
+      "kind": "core_task",
+      "connector": "",
+      "id": "component_0"
+    }
+  ],
+  "fallback": false,
+  "warnings": [
+    "Temporal phrase recorded; primary snapshot remains publication-visible year 2026, no month precision",
+    "Only publication-year visibility can be enforced; dates within a year are not resolved by the source data"
+  ],
+  "parser": "deterministic_extractive",
+  "search_query": "architecture; predicting properties of solid-state crystalline materials",
+  "structured_query": "answer families: architecture\nscientific modifiers: GNN\nanswer type: architecture\ntask: predicting properties of solid-state crystalline materials\ntime: by Feb 2026",
+  "answer_types": [
+    "architecture"
+  ],
+  "preserved_modifiers": "GNN",
+  "parsed_only_query": "GNN; architecture; predicting properties of solid-state crystalline materials",
+  "combined_query": "Original question: What are the leading (by Feb 2026) GNN architectures for predicting properties of solid-state crystalline materials?\nStructured intent:\nanswer families: architecture\nscientific modifiers: GNN\nanswer type: architecture\ntask: predicting properties of solid-state crystalline materials\ntime: by Feb 2026",
+  "temporal_cutoff": 2026
+}

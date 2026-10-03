@@ -1,0 +1,80 @@
+{
+  "original_question": "Which methods (by Feb 2026) are best suited for integrating features from three or more distinct scales simultaneously within a unified framework?",
+  "answer_type": "method",
+  "core_task": "integrating features from three or more distinct scales simultaneously within a unified framework",
+  "requirements": [],
+  "exclusions": [],
+  "temporal_condition": "by Feb 2026",
+  "source_spans": {
+    "temporal_condition": [
+      {
+        "text": "by Feb 2026",
+        "source_span": "by Feb 2026",
+        "start": 15,
+        "end": 26
+      }
+    ],
+    "answer_type": {
+      "text": "methods",
+      "source_span": "methods",
+      "start": 6,
+      "end": 13
+    },
+    "core_task": {
+      "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+      "source_span": "integrating features from three or more distinct scales simultaneously within a unified framework",
+      "start": 48,
+      "end": 145
+    }
+  },
+  "components": [
+    {
+      "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+      "source_span": "integrating features from three or more distinct scales simultaneously within a unified framework",
+      "start": 48,
+      "end": 145,
+      "kind": "core_task",
+      "connector": "",
+      "id": "component_0"
+    }
+  ],
+  "fallback": false,
+  "warnings": [
+    "Alternative clause retained intact; no Boolean parsing",
+    "Temporal phrase recorded; primary snapshot remains publication-visible year 2026, no month precision",
+    "Only publication-year visibility can be enforced; dates within a year are not resolved by the source data"
+  ],
+  "parser": "deterministic_extractive",
+  "search_query": "method; integrating features from three or more distinct scales simultaneously within a unified framework",
+  "structured_query": "answer families: method\nscientific modifiers: \nanswer type: method\ntask: integrating features from three or more distinct scales simultaneously within a unified framework\ntime: by Feb 2026",
+  "answer_types": [
+    "method"
+  ],
+  "preserved_modifiers": "",
+  "parsed_only_query": "method; integrating features from three or more distinct scales simultaneously within a unified framework",
+  "combined_query": "Original question: Which methods (by Feb 2026) are best suited for integrating features from three or more distinct scales simultaneously within a unified framework?\nStructured intent:\nanswer families: method\nscientific modifiers: \nanswer type: method\ntask: integrating features from three or more distinct scales simultaneously within a unified framework\ntime: by Feb 2026",
+  "temporal_cutoff": 2026,
+  "ranking_components": [
+    {
+      "id": "r0",
+      "kind": "core_task",
+      "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+      "source_span": {
+        "start": 48,
+        "end": 145,
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework"
+      },
+      "connector": "",
+      "polarity": "positive"
+    }
+  ],
+  "answer_heads": [
+    "method"
+  ],
+  "answer_families": [
+    "cited_work",
+    "component",
+    "method",
+    "technique"
+  ]
+}

@@ -1,0 +1,2392 @@
+{
+  "comp_00633": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00633",
+        "text": "NAME: Training set cleaning procedure\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "omitted": [],
+    "token_count": 94,
+    "query_truncated": false,
+    "relevance_score": -9.476608276367188,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "comp_00627": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00627",
+        "text": "NAME: Training set cleaning pipeline\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "omitted": [],
+    "token_count": 94,
+    "query_truncated": false,
+    "relevance_score": -9.502628326416016,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00691": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00691",
+        "text": "NAME: Minimum ion-ion distance cutoff\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00482",
+        "text": "DIRECT_CLAIMS: Training set cleaning procedures including minimum ion-ion distance cutoff, energy/force outlier removal, and loss condition monitoring are necessary to help the algorithm converge to a physical model."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "omitted": [],
+    "token_count": 137,
+    "query_truncated": false,
+    "relevance_score": -9.640220642089844,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00703": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00703",
+        "text": "NAME: Training set augmentation via intermediate MD\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "omitted": [],
+    "token_count": 98,
+    "query_truncated": false,
+    "relevance_score": -8.638351440429688,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00020": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00020",
+        "text": "NAME: Two-stage training schedule\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00631",
+        "text": "DIRECT_CLAIMS: A novel two-stage training schedule with BF16 pre-training followed by FP32 fine-tuning recovers the 20-50% accuracy loss from BF16 precision alone while enabling efficient training."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 128,
+    "query_truncated": false,
+    "relevance_score": -10.387174606323242,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00006": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00006",
+        "text": "NAME: Two-stage training\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00631",
+        "text": "DIRECT_CLAIMS: A novel two-stage training schedule with BF16 pre-training followed by FP32 fine-tuning recovers the 20-50% accuracy loss from BF16 precision alone while enabling efficient training."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 127,
+    "query_truncated": false,
+    "relevance_score": -10.366005897521973,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "comp_00400": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00400",
+        "text": "NAME: OMat24 dataset\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00114",
+        "text": "DIRECT_CLAIMS: Training a TensorNet model on the 400 k‑structure MatPES‑PBE dataset requires approximately 15 minutes per epoch on a single RTX A6000 GPU, whereas training on the 100 M‑structure OMat24 dataset needs about 20 hours per epoch on sixteen A100 GPUs, highlighting the computational efficiency of MatPES."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00370",
+        "text": "DIRECT_CLAIMS: The diversity of the larger OMat24 dataset does not benefit from the regularization or augmentation provided by DeNS, whereas dataset augmentation techniques like DeNS can significantly enhance performance when training solely on the MPtraj dataset."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00446",
+        "text": "DIRECT_CLAIMS: Rattled systems in the OMat24 dataset have deleterious effects on model performance when evaluated on out-of-distribution hetero-diatomic systems."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00039",
+        "text": "ARTICLE: Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 254,
+    "query_truncated": false,
+    "relevance_score": -10.28654670715332,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "comp_00790": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00790",
+        "text": "NAME: UMA-S\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00629",
+        "text": "DIRECT_CLAIMS: UMA-S can simulate 1,000 atoms at 16 steps per second (1.4ns per day) and fit system sizes up to 100,000+ atoms in memory on a single 80GB GPU."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 131,
+    "query_truncated": false,
+    "relevance_score": -10.24073600769043,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00806": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00806",
+        "text": "NAME: Large-scale dataset training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 91,
+    "query_truncated": false,
+    "relevance_score": -4.221540451049805,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00496": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00496",
+        "text": "NAME: Configurable preset system\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 97,
+    "query_truncated": false,
+    "relevance_score": -9.597576141357422,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "comp_00780": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00780",
+        "text": "NAME: Multi-task training framework\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -9.499049186706543,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00008": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00008",
+        "text": "NAME: Fine-tuning\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00092",
+        "text": "DIRECT_CLAIMS: Fine-tuning models pre-trained on OMat24 to the MAD dataset achieves near-converged validation metrics in 30-100 epochs versus 700+ epochs when training from scratch, halving validation energy and force errors and achieving 50% lower test error than training on MAD alone."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00630",
+        "text": "DIRECT_CLAIMS: A single UMA model without any fine-tuning performs similarly or better than task-specialized models across diverse DFT tasks including materials, catalysis, molecules, molecular crystals, and MOFs."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00631",
+        "text": "DIRECT_CLAIMS: A novel two-stage training schedule with BF16 pre-training followed by FP32 fine-tuning recovers the 20-50% accuracy loss from BF16 precision alone while enabling efficient training."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 231,
+    "query_truncated": false,
+    "relevance_score": -10.591312408447266,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00574": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00574",
+        "text": "NAME: Multi-task training with shared descriptor\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 92,
+    "query_truncated": false,
+    "relevance_score": -9.643946647644043,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00826": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00826",
+        "text": "NAME: Two-step training procedure\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 90,
+    "query_truncated": false,
+    "relevance_score": -4.288257598876953,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00883": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00883",
+        "text": "NAME: Low-precision training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 83,
+    "query_truncated": false,
+    "relevance_score": -9.400396347045898,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "tech_00584": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00584",
+        "text": "NAME: Automatic system probability\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 86,
+    "query_truncated": false,
+    "relevance_score": -9.485937118530273,
+    "batch_runtime_seconds": 0.6698094999883324,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.041863093749270774
+  },
+  "comp_00737": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00737",
+        "text": "NAME: System-conditioning embedding\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 91,
+    "query_truncated": false,
+    "relevance_score": -0.8581078052520752,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "cite_00240": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00240",
+        "text": "NAME: PyTorch\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00271",
+        "text": "DIRECT_CLAIMS: Orb performed 3-6 times faster than the pytorch version of MACE for large system sizes with dispersion corrections."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00005",
+        "text": "ARTICLE: General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+      }
+    ],
+    "omitted": [],
+    "token_count": 127,
+    "query_truncated": false,
+    "relevance_score": -9.293818473815918,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "comp_00550": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00550",
+        "text": "NAME: plugin system\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 86,
+    "query_truncated": false,
+    "relevance_score": -9.873376846313477,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "tech_00661": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00661",
+        "text": "NAME: Large-scale pretraining\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00547",
+        "text": "DIRECT_CLAIMS: Large-scale pretraining of MLIPs on GNoME dataset enables models with unprecedented zero-shot accuracy on downstream AIMD data, outperforming state-of-the-art NequIP models trained on hundreds of structures from the target distribution."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 138,
+    "query_truncated": false,
+    "relevance_score": -10.06513500213623,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "meth_00076": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00076",
+        "text": "NAME: Moment Tensor Potentials\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00649",
+        "text": "DIRECT_CLAIMS: For a MgO test set, M3GNet outperforms Moment Tensor Potentials in extrapolating equation‑of‑state behavior beyond the training regime and exhibits long‑range interaction characteristics similar to a Buckingham + Coulomb model."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "omitted": [],
+    "token_count": 138,
+    "query_truncated": false,
+    "relevance_score": -7.954923152923584,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "cite_00246": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00246",
+        "text": "NAME: Moment Tensor Potentials\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00649",
+        "text": "DIRECT_CLAIMS: For a MgO test set, M3GNet outperforms Moment Tensor Potentials in extrapolating equation‑of‑state behavior beyond the training regime and exhibits long‑range interaction characteristics similar to a Buckingham + Coulomb model."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00012",
+        "text": "ARTICLE: E(3)-Equivariant Graph Neural Networks for Data-Efficient and Accurate Interatomic Potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 151,
+    "query_truncated": false,
+    "relevance_score": -7.879047870635986,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "meth_00352": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00352",
+        "text": "NAME: Hierarchical multiscale modeling\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00402",
+        "text": "DIRECT_CLAIMS: Hierarchical multiscale modeling approaches require large amounts of memory and storage space to store precomputed quantities of interest."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 113,
+    "query_truncated": false,
+    "relevance_score": -8.152181625366211,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "tech_00332": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00332",
+        "text": "NAME: Transfer learning for new loading conditions\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00023",
+        "text": "ARTICLE: Linking atomic structural defects to mesoscale properties in crystalline solids using graph neural networks"
+      }
+    ],
+    "omitted": [],
+    "token_count": 92,
+    "query_truncated": false,
+    "relevance_score": -7.901669025421143,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "tech_00625": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00625",
+        "text": "NAME: Representation learning\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00535",
+        "text": "DIRECT_CLAIMS: Random‑forest models excel on small datasets but are outperformed by neural‑network models on large datasets due to the benefits of representation learning."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 120,
+    "query_truncated": false,
+    "relevance_score": -8.658956527709961,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "tech_00880": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00880",
+        "text": "NAME: Cross-domain training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 83,
+    "query_truncated": false,
+    "relevance_score": -9.392633438110352,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "comp_00308": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00308",
+        "text": "NAME: Visual warning system\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00032",
+        "text": "ARTICLE: Commentary: The Materials Project: A materials genome approach to accelerating materials innovation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 86,
+    "query_truncated": false,
+    "relevance_score": -9.821000099182129,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "comp_00578": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00578",
+        "text": "NAME: Error correction system\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -9.89819622039795,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "tech_00109": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00109",
+        "text": "NAME: Hierarchical Body‑Order Expansion\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00004",
+        "text": "ARTICLE: MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -9.365985870361328,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "meth_00123": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00123",
+        "text": "NAME: Phonax (E(3)-equivariant graph neural network framework for phonon and Hessian prediction)\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00413",
+        "text": "DIRECT_CLAIMS: Phonax efficiently predicts phonon dispersion relations and density of states for inorganic crystal materials."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00414",
+        "text": "DIRECT_CLAIMS: Including Hessian (second‑derivative) data in training improves the energy model accuracy beyond training with only energy and force data, reduces force MAE, and provides an effective ~7× increase in the amount of force information."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00415",
+        "text": "DIRECT_CLAIMS: Augmenting a minimal 1×1×1 supercell training set with Hessian data yields more accurate phonon predictions than training on a larger 3×3×3 supercell alone."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00416",
+        "text": "DIRECT_CLAIMS: The E(3)-equivariant graph neural network architecture automatically preserves crystalline symmetries, yielding the correct acoustic‑sum‑rule zero modes without additional corrections."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00006",
+        "text": "ARTICLE: Phonon predictions with E(3)-equivariant graph neural networks"
+      }
+    ],
+    "omitted": [],
+    "token_count": 273,
+    "query_truncated": false,
+    "relevance_score": -9.479389190673828,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "tech_00818": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00818",
+        "text": "NAME: pre-training with non-conservative models\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -4.243472099304199,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "comp_00220": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00220",
+        "text": "NAME: Uncertainty quantification\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00033",
+        "text": "DIRECT_CLAIMS: Beyond‑DFT methods (HSE06, PBE0, G0W0, DMFT) are generated for a subset of materials to provide higher‑level reference data and enable uncertainty quantification."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00231",
+        "text": "DIRECT_CLAIMS: The Gaussian process regression framework underlying GAP provides an uncertainty quantification that qualitatively estimates the potential’s accuracy for any given atomic configuration."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00515",
+        "text": "DIRECT_CLAIMS: Uncertainty quantification based on latent‑space Euclidean distance provides error estimates that correlate with prediction errors, allowing exclusion of transitions whose uncertainty exceeds 50 % of the absolute free‑energy difference."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 213,
+    "query_truncated": false,
+    "relevance_score": -6.541409492492676,
+    "batch_runtime_seconds": 0.7076696000003722,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04422935000002326
+  },
+  "comp_00722": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00722",
+        "text": "NAME: conservative models\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00096",
+        "text": "DIRECT_CLAIMS: Non-conservative models allow residual asymmetries to drive relaxation toward more stable close-packed structures, unlike equivariant models that remain trapped in symmetric but unstable configurations, though 70% (16%) of final configurations retain symmetry of initial structure with 0.01 Å threshold for conservative (non-conservative) models."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00097",
+        "text": "DIRECT_CLAIMS: Elastic moduli predictions are very sensitive to the lack of energy conservation in MLIP models, and non-conservative models consistently perform worse on matbench-discovery downstream tasks despite achieving better training and validation accuracies."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00369",
+        "text": "DIRECT_CLAIMS: A two-step training strategy with direct force pretraining followed by conservative finetuning results in eSEN models with higher accuracy requiring less total training epochs and time compared to training conservative models from scratch."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00434",
+        "text": "DIRECT_CLAIMS: Orb-v3-direct-20 uses only 32.8GB GPU memory for 100,000 atom systems and completes in under half a second, while all baseline methods and conservative models encounter Out Of Memory errors."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 300,
+    "query_truncated": false,
+    "relevance_score": -5.201191425323486,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "meth_00353": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00353",
+        "text": "NAME: Concurrent multiscale modeling\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00403",
+        "text": "DIRECT_CLAIMS: Concurrent multiscale modeling approaches face formidable computation costs as the problem size increases."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 106,
+    "query_truncated": false,
+    "relevance_score": -8.050241470336914,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "comp_00473": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00473",
+        "text": "NAME: Set2Set\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -9.579160690307617,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "comp_00410": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00410",
+        "text": "NAME: Two-step training procedure\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00039",
+        "text": "ARTICLE: Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 89,
+    "query_truncated": false,
+    "relevance_score": -9.637246131896973,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "meth_00017": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00017",
+        "text": "NAME: transfer learning\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00407",
+        "text": "DIRECT_CLAIMS: Physics-informed machine learning and transfer learning can reduce the need for large datasets while maintaining prediction accuracy and performance of ML models."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00504",
+        "text": "DIRECT_CLAIMS: The transfer learning approach iterates until model MAE is below 30 meV/atom."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 136,
+    "query_truncated": false,
+    "relevance_score": -7.584405899047852,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "tech_00587": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00587",
+        "text": "NAME: double precision training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 86,
+    "query_truncated": false,
+    "relevance_score": -9.774040222167969,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "tech_00825": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00825",
+        "text": "NAME: Single-precision training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 89,
+    "query_truncated": false,
+    "relevance_score": -4.379457473754883,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "tech_00879": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00879",
+        "text": "NAME: Compute-optimal model sizing\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 85,
+    "query_truncated": false,
+    "relevance_score": -9.68466854095459,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "tech_00629": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00629",
+        "text": "NAME: Neural operators\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00406",
+        "text": "DIRECT_CLAIMS: Neural operators can make predictions that are not affected by discretization settings while maintaining prediction accuracy."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 106,
+    "query_truncated": false,
+    "relevance_score": -8.084291458129883,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "tech_00001": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00001",
+        "text": "NAME: Mixed precision training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00039",
+        "text": "ARTICLE: Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 87,
+    "query_truncated": false,
+    "relevance_score": -9.677392959594727,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "tech_00588": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00588",
+        "text": "NAME: single precision training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 86,
+    "query_truncated": false,
+    "relevance_score": -9.698808670043945,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "comp_00571": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00571",
+        "text": "NAME: Neural operators\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00406",
+        "text": "DIRECT_CLAIMS: Neural operators can make predictions that are not affected by discretization settings while maintaining prediction accuracy."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 106,
+    "query_truncated": false,
+    "relevance_score": -7.967466831207275,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "cite_00357": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00357",
+        "text": "NAME: Zhang and Ling\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 95,
+    "query_truncated": false,
+    "relevance_score": -9.401881217956543,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "meth_00427": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00427",
+        "text": "NAME: Scaling laws for neural networks\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -9.269841194152832,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "cite_00347": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00347",
+        "text": "NAME: Magpie\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 94,
+    "query_truncated": false,
+    "relevance_score": -9.463973999023438,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "comp_00729": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00729",
+        "text": "NAME: Unconstrained architecture\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00094",
+        "text": "DIRECT_CLAIMS: The PET architecture scales to 730M parameters (OMat-XL) while maintaining tractable memory usage and computational efficiency due to increased node representation size and unconstrained architecture."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 130,
+    "query_truncated": false,
+    "relevance_score": -3.542656660079956,
+    "batch_runtime_seconds": 0.8018112999998266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05011320624998916
+  },
+  "comp_00596": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00596",
+        "text": "NAME: GNoME models\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00545",
+        "text": "DIRECT_CLAIMS: Final GNoME models predict energies with a mean absolute error of 11 meV per atom on relaxed structures, improved from 21 meV per atom in the initial model trained on Materials Project data."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 118,
+    "query_truncated": false,
+    "relevance_score": -10.029885292053223,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "cite_00349": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00349",
+        "text": "NAME: TPOT\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 94,
+    "query_truncated": false,
+    "relevance_score": -9.511507034301758,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "tech_00247": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00247",
+        "text": "NAME: Joint training on energy, force, and stress targets\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "omitted": [],
+    "token_count": 92,
+    "query_truncated": false,
+    "relevance_score": -8.044364929199219,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "comp_00007": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00007",
+        "text": "NAME: Hyperparameters\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00178",
+        "text": "DIRECT_CLAIMS: The observed improvements from long-range corrections cannot be attributed to increased model capacity as all variants share identical hyperparameters and nearly identical parameter counts."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00536",
+        "text": "DIRECT_CLAIMS: Optimizing hyperparameters solely for the Matbench Discovery benchmark may degrade performance of models intended for general‑purpose use."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 151,
+    "query_truncated": false,
+    "relevance_score": -7.405344486236572,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "cite_00348": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00348",
+        "text": "NAME: SineCoulombMatrix\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 99,
+    "query_truncated": false,
+    "relevance_score": -9.197799682617188,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "tech_00868": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00868",
+        "text": "NAME: Multi-task training across chemical domains\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 86,
+    "query_truncated": false,
+    "relevance_score": -9.77660846710205,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "comp_00095": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00095",
+        "text": "NAME: PES descriptors\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00340",
+        "text": "DIRECT_CLAIMS: Computing the frozen‑framework PES descriptors for 5997 Materials Project structures required seven days on a 48‑core CPU with two RTX 6000 GPUs, comparable to the time needed for ML‑driven MD on 100 materials."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00347",
+        "text": "DIRECT_CLAIMS: Alternative ranking models (logistic regression L1/L2 and CatBoost) trained on PES descriptors, matminer descriptors, or their combination do not surpass the simple Ξ descriptor in predictive performance."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 194,
+    "query_truncated": false,
+    "relevance_score": -6.98939847946167,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "cite_00311": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00311",
+        "text": "NAME: OMat24\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00092",
+        "text": "DIRECT_CLAIMS: Fine-tuning models pre-trained on OMat24 to the MAD dataset achieves near-converged validation metrics in 30-100 epochs versus 700+ epochs when training from scratch, halving validation energy and force errors and achieving 50% lower test error than training on MAD alone."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00104",
+        "text": "DIRECT_CLAIMS: UMLIPs trained on the MatPES dataset achieve test mean absolute errors in energies that are 4–10 times lower than UMLIPs trained on the larger MPRelax or OMat24 datasets."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00105",
+        "text": "DIRECT_CLAIMS: Across equilibrium, near‑equilibrium, and molecular‑dynamics property benchmarks, MatPES‑trained UMLIPs match or surpass the performance of models trained on much larger datasets such as OMat24 (≈100 M structures)."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00106",
+        "text": "DIRECT_CLAIMS: Molecular‑dynamics simulations using MatPES‑trained UMLIPs exhibit markedly higher stability, with median termination temperatures up to ~1,900 K, versus ~1,300–1,500 K for MPRelax and OMat24 models."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00038",
+        "text": "ARTICLE: Orb-v3: atomistic simulation at scale"
+      }
+    ],
+    "omitted": [],
+    "token_count": 302,
+    "query_truncated": false,
+    "relevance_score": -10.264123916625977,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "cite_00350": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00350",
+        "text": "NAME: scikit-learn\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 96,
+    "query_truncated": false,
+    "relevance_score": -9.039376258850098,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "tech_00035": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00035",
+        "text": "NAME: Transfer learning\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00407",
+        "text": "DIRECT_CLAIMS: Physics-informed machine learning and transfer learning can reduce the need for large datasets while maintaining prediction accuracy and performance of ML models."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00504",
+        "text": "DIRECT_CLAIMS: The transfer learning approach iterates until model MAE is below 30 meV/atom."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      }
+    ],
+    "omitted": [],
+    "token_count": 138,
+    "query_truncated": false,
+    "relevance_score": -7.880450248718262,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "cite_00359": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00359",
+        "text": "NAME: RooSt\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 94,
+    "query_truncated": false,
+    "relevance_score": -9.373775482177734,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "comp_00598": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00598",
+        "text": "NAME: GNoME dataset\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00547",
+        "text": "DIRECT_CLAIMS: Large-scale pretraining of MLIPs on GNoME dataset enables models with unprecedented zero-shot accuracy on downstream AIMD data, outperforming state-of-the-art NequIP models trained on hundreds of structures from the target distribution."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 135,
+    "query_truncated": false,
+    "relevance_score": -10.163776397705078,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "cite_00360": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00360",
+        "text": "NAME: LOCO-CV\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 95,
+    "query_truncated": false,
+    "relevance_score": -9.496124267578125,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "cite_00361": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00361",
+        "text": "NAME: Keras\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 94,
+    "query_truncated": false,
+    "relevance_score": -9.464561462402344,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "comp_00682": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00682",
+        "text": "NAME: Biased train-test splitting strategies\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00171",
+        "text": "DIRECT_CLAIMS: Biased train-test splitting strategies including cluster, maximal separation, size, and random splits enable rigorous benchmarking by explicitly testing model performance in significantly different regions of chemical space."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      }
+    ],
+    "omitted": [],
+    "token_count": 128,
+    "query_truncated": false,
+    "relevance_score": -7.515479564666748,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "comp_00472": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00472",
+        "text": "NAME: MEGNetLayer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -9.529027938842773,
+    "batch_runtime_seconds": 0.7722434000024805,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04826521250015503
+  },
+  "meth_00418": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00418",
+        "text": "NAME: Universal MLIPs\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00103",
+        "text": "DIRECT_CLAIMS: Universal MLIPs trained on massive datasets can generalize across diverse chemical systems and can be successfully applied to structural optimization and lattice dynamics workflows."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00256",
+        "text": "DIRECT_CLAIMS: Each cataloged DFT structure provides one energy and 3N forces (N = number of atoms) for training universal MLIPs."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00305",
+        "text": "DIRECT_CLAIMS: Universal MLIPs attempt to cover 10-100 elements under varying levels of constraints."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00435",
+        "text": "DIRECT_CLAIMS: Orb-v3-direct-* models are the only universal MLIPs that can compute hundreds of forward passes per second, exceeding one million steps per hour for small systems."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 217,
+    "query_truncated": false,
+    "relevance_score": -5.784275054931641,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "meth_00308": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00308",
+        "text": "NAME: TPOT\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 92,
+    "query_truncated": false,
+    "relevance_score": -9.5816650390625,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "cite_00415": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00415",
+        "text": "NAME: MPTraj\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00370",
+        "text": "DIRECT_CLAIMS: The diversity of the larger OMat24 dataset does not benefit from the regularization or augmentation provided by DeNS, whereas dataset augmentation techniques like DeNS can significantly enhance performance when training solely on the MPtraj dataset."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00038",
+        "text": "ARTICLE: Orb-v3: atomistic simulation at scale"
+      }
+    ],
+    "omitted": [],
+    "token_count": 139,
+    "query_truncated": false,
+    "relevance_score": -10.494787216186523,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "comp_00570": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00570",
+        "text": "NAME: Representation learning module\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -7.4248857498168945,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "meth_00035": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00035",
+        "text": "NAME: Magpie\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 92,
+    "query_truncated": false,
+    "relevance_score": -9.523045539855957,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "tech_00502": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00502",
+        "text": "NAME: Data cleaning and feature reduction\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 95,
+    "query_truncated": false,
+    "relevance_score": -9.898083686828613,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "tech_00708": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00708",
+        "text": "NAME: Joint energy-force training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 91,
+    "query_truncated": false,
+    "relevance_score": -4.803215026855469,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "tech_00577": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00577",
+        "text": "NAME: Data-parallel distributed training\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00165",
+        "text": "DIRECT_CLAIMS: DeePMD-kit has added MPI implementation for multi-device training and MD simulations using Horovod for data-parallel distributed training."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 120,
+    "query_truncated": false,
+    "relevance_score": -10.189618110656738,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "comp_00424": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00424",
+        "text": "NAME: SO(2) linear operations\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00596",
+        "text": "DIRECT_CLAIMS: eSCN convolutions reduce SO(3) tensor product complexity by replacing non-trivial paths with SO(2) linear operations while maintaining equivariance."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00041",
+        "text": "ARTICLE: EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+      }
+    ],
+    "omitted": [],
+    "token_count": 136,
+    "query_truncated": false,
+    "relevance_score": -9.179312705993652,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "cite_00351": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00351",
+        "text": "NAME: Random Forests\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 94,
+    "query_truncated": false,
+    "relevance_score": -9.64422607421875,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "tech_00959": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00959",
+        "text": "NAME: Multi-seed training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 91,
+    "query_truncated": false,
+    "relevance_score": -9.661468505859375,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "tech_00954": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00954",
+        "text": "NAME: Supervised regression\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00054",
+        "text": "DIRECT_CLAIMS: A two-step approach combining unsupervised clustering with supervised regression achieves 156±4 K MAE and 0.92 R², outperforming direct one-step supervised learning."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 134,
+    "query_truncated": false,
+    "relevance_score": -9.918947219848633,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "comp_00439": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00439",
+        "text": "NAME: Automatminer pipeline\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 95,
+    "query_truncated": false,
+    "relevance_score": -9.715025901794434,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "comp_00443": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00443",
+        "text": "NAME: SineCoulombMatrix featurizer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 100,
+    "query_truncated": false,
+    "relevance_score": -9.65700912475586,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "comp_00444": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00444",
+        "text": "NAME: Magpie features\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -9.641265869140625,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "comp_00662": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00662",
+        "text": "NAME: Multi-property training head\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 91,
+    "query_truncated": false,
+    "relevance_score": -4.630616188049316,
+    "batch_runtime_seconds": 0.5688346999959322,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03555216874974576
+  },
+  "tech_00693": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00693",
+        "text": "NAME: Batch size adjustment\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -8.068653106689453,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00450": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00450",
+        "text": "NAME: Autofeaturization stage\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 96,
+    "query_truncated": false,
+    "relevance_score": -9.4296875,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00451": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00451",
+        "text": "NAME: Cleaning stage\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 92,
+    "query_truncated": false,
+    "relevance_score": -9.813545227050781,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "tech_00707": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00707",
+        "text": "NAME: Iterative training data augmentation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -4.813453197479248,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "tech_00750": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00750",
+        "text": "NAME: Long-range correction schemes\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00167",
+        "text": "DIRECT_CLAIMS: Long-range correction schemes in machine learning interatomic potentials are essential for achieving state-of-the-art accuracy, improving in-distribution performance, and enabling significant gains in transferability to unseen regions of chemical space."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00173",
+        "text": "DIRECT_CLAIMS: MACE without long-range correction does not generalize well to out-of-distribution samples, while integration of long-range correction schemes has significant effects on both MACE and Allegro architectures."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      }
+    ],
+    "omitted": [],
+    "token_count": 180,
+    "query_truncated": false,
+    "relevance_score": -5.272659778594971,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00742": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00742",
+        "text": "NAME: OMat24 pre-training\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 91,
+    "query_truncated": false,
+    "relevance_score": -4.032911777496338,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00085": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00085",
+        "text": "NAME: Free‑volume descriptors\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00326",
+        "text": "DIRECT_CLAIMS: The combined descriptor Ξ, defined as the product of sigmoid‑transformed connected and disconnected free‑volume descriptors at a 0.5 eV threshold, achieves higher ranking scores than each individual descriptor and far exceeds random‑guess performance."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 146,
+    "query_truncated": false,
+    "relevance_score": -6.25850772857666,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00453": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00453",
+        "text": "NAME: AutoML stage\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -9.59957504272461,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00636": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00636",
+        "text": "NAME: NVT thermostat during training\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "omitted": [],
+    "token_count": 99,
+    "query_truncated": false,
+    "relevance_score": -9.194710731506348,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00072": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00072",
+        "text": "NAME: Supervised training of the GNN on phase‑averaged quantities\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00007",
+        "text": "ARTICLE: GNN-Assisted Phase Space Integration with Application to Atomistics"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -9.611822128295898,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00468": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00468",
+        "text": "NAME: GlobalSymmetryFeatures featurizer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 100,
+    "query_truncated": false,
+    "relevance_score": -9.750402450561523,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00295": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00295",
+        "text": "NAME: Mode‑I and Mode‑II training pipelines\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00030",
+        "text": "ARTICLE: Using Deep Learning to Predict Fracture Patterns in Crystalline Solids"
+      }
+    ],
+    "omitted": [],
+    "token_count": 89,
+    "query_truncated": false,
+    "relevance_score": -9.66353988647461,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00461": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00461",
+        "text": "NAME: AtomicOrbitals featurizer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 97,
+    "query_truncated": false,
+    "relevance_score": -9.739313125610352,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00462": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00462",
+        "text": "NAME: ElementProperty featurizer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 97,
+    "query_truncated": false,
+    "relevance_score": -9.878938674926758,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00463": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00463",
+        "text": "NAME: ElementFraction featurizer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 96,
+    "query_truncated": false,
+    "relevance_score": -9.689798355102539,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "comp_00434": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00434",
+        "text": "NAME: Maximum degree Lmax\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00041",
+        "text": "ARTICLE: EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+      }
+    ],
+    "omitted": [],
+    "token_count": 95,
+    "query_truncated": false,
+    "relevance_score": -9.358234405517578,
+    "batch_runtime_seconds": 0.4518009000021266,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02823755625013291
+  },
+  "tech_00854": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00854",
+        "text": "NAME: online confidence training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00038",
+        "text": "ARTICLE: Orb-v3: atomistic simulation at scale"
+      }
+    ],
+    "omitted": [],
+    "token_count": 82,
+    "query_truncated": false,
+    "relevance_score": -9.5445556640625,
+    "batch_runtime_seconds": 0.07280029999674298,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.018200074999185745
+  },
+  "tech_00438": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00438",
+        "text": "NAME: SO(2) linear operations\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00596",
+        "text": "DIRECT_CLAIMS: eSCN convolutions reduce SO(3) tensor product complexity by replacing non-trivial paths with SO(2) linear operations while maintaining equivariance."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00041",
+        "text": "ARTICLE: EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+      }
+    ],
+    "omitted": [],
+    "token_count": 136,
+    "query_truncated": false,
+    "relevance_score": -9.239688873291016,
+    "batch_runtime_seconds": 0.07280029999674298,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.018200074999185745
+  },
+  "comp_00465": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00465",
+        "text": "NAME: TMetalFraction featurizer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 98,
+    "query_truncated": false,
+    "relevance_score": -9.740446090698242,
+    "batch_runtime_seconds": 0.07280029999674298,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.018200074999185745
+  },
+  "comp_00464": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00464",
+        "text": "NAME: Stoichiometry featurizer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00042",
+        "text": "ARTICLE: Benchmarking Materials Property Prediction Methods: The Matbench Test Set and Automatminer Reference Algorithm"
+      }
+    ],
+    "omitted": [],
+    "token_count": 98,
+    "query_truncated": false,
+    "relevance_score": -9.57454776763916,
+    "batch_runtime_seconds": 0.07280029999674298,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.018200074999185745
+  }
+}

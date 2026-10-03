@@ -1,0 +1,191 @@
+{
+  "snapshot": 2026,
+  "nodes": 5798,
+  "edges": 1429,
+  "candidate_count": 5480,
+  "node_types": {
+    "article": 52,
+    "method": 448,
+    "component": 855,
+    "task": 732,
+    "technique": 962,
+    "author": 318,
+    "problem": 634,
+    "dataset": 259,
+    "metric": 90,
+    "claim": 690,
+    "cited_work": 580,
+    "future_topic": 178
+  },
+  "cards_without_non_title_evidence": 4187,
+  "cards_without_any_evidence": 0,
+  "excluded_high_arity_incidences": 4794,
+  "query_coverage": {
+    "Q1": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 3,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 4208
+    },
+    "Q10": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 2,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 2228
+    },
+    "Q11": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 0,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 2716
+    },
+    "Q12": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 0,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 980
+    },
+    "Q13": {
+      "answer_type": "architecture",
+      "fallback": false,
+      "requirements": 0,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 3384
+    },
+    "Q14": {
+      "answer_type": null,
+      "fallback": false,
+      "requirements": 0,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 5480,
+      "lexical_positive_candidates": 4592
+    },
+    "Q15": {
+      "answer_type": null,
+      "fallback": false,
+      "requirements": 1,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 5480,
+      "lexical_positive_candidates": 3967
+    },
+    "Q16": {
+      "answer_type": null,
+      "fallback": false,
+      "requirements": 1,
+      "exclusions": 0,
+      "time_recorded": false,
+      "eligible_count": 5480,
+      "lexical_positive_candidates": 3747
+    },
+    "Q17": {
+      "answer_type": null,
+      "fallback": false,
+      "requirements": 3,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 5480,
+      "lexical_positive_candidates": 1722
+    },
+    "Q18": {
+      "answer_type": "system",
+      "fallback": false,
+      "requirements": 0,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 2993
+    },
+    "Q2": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 2,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 1392
+    },
+    "Q3": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 1,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 3816
+    },
+    "Q4": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 1,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 2777
+    },
+    "Q5": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 2,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 1297
+    },
+    "Q6": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 2,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 1294
+    },
+    "Q7": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 1,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 1540
+    },
+    "Q8": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 1,
+      "exclusions": 0,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 2212
+    },
+    "Q9": {
+      "answer_type": "method",
+      "fallback": false,
+      "requirements": 1,
+      "exclusions": 1,
+      "time_recorded": true,
+      "eligible_count": 2845,
+      "lexical_positive_candidates": 945
+    }
+  },
+  "copied_input_sha256": {
+    "questions.csv": "ad75e968e83c7afa5cb4048b3b792c85b0125c6535105ef3830310092bf3c326",
+    "tkh_collection10.json": "5cc507de0432c111c2bbbc5b50899f952fd24f515313c7c4e99450d8d0211b3b"
+  }
+}

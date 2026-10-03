@@ -1,0 +1,4277 @@
+{
+  "records": [
+    {
+      "question_id": "Q1",
+      "target": "MACE",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00048"
+        ]
+      ],
+      "node_ids": [
+        "cite_00048"
+      ],
+      "hyperedge_ids": [
+        "h_01300",
+        "h_01302",
+        "h_01312",
+        "h_01316",
+        "h_01317",
+        "h_01318",
+        "h_01319",
+        "h_01320",
+        "h_01321",
+        "h_01322",
+        "h_01323",
+        "h_01326",
+        "h_01331"
+      ],
+      "source_articles": [
+        5382,
+        5384,
+        5401,
+        5437,
+        5438,
+        5439,
+        5440,
+        5441,
+        5442,
+        5443,
+        5444,
+        5447,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00048",
+          "surface_form": "MACE",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5401,
+              5437,
+              5438,
+              5447,
+              5453,
+              5384,
+              5442,
+              5382,
+              5441,
+              5439,
+              5444,
+              5443
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q1",
+      "target": "M3GNet",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00037",
+          "comp_00482",
+          "cite_00062"
+        ]
+      ],
+      "node_ids": [
+        "cite_00062",
+        "comp_00482",
+        "meth_00037"
+      ],
+      "hyperedge_ids": [
+        "h_00040",
+        "h_00056",
+        "h_00078",
+        "h_00243",
+        "h_01245",
+        "h_01246",
+        "h_01247",
+        "h_01248",
+        "h_01249",
+        "h_01250",
+        "h_01251",
+        "h_01252",
+        "h_01253",
+        "h_01254",
+        "h_01255",
+        "h_01256",
+        "h_01302",
+        "h_01312",
+        "h_01318",
+        "h_01321",
+        "h_01326",
+        "h_01331",
+        "h_01333"
+      ],
+      "source_articles": [
+        5384,
+        5387,
+        5391,
+        5401,
+        5439,
+        5442,
+        5447,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00062",
+          "surface_form": "M3GNet",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5401,
+              5447,
+              5453,
+              5384,
+              5442,
+              5439,
+              5455
+            ]
+          }
+        },
+        {
+          "node_id": "comp_00482",
+          "surface_form": "M3GNet",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5447
+            ],
+            "entity_id": 248384
+          }
+        },
+        {
+          "node_id": "meth_00037",
+          "surface_form": "M3GNet",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5384,
+              5387,
+              5391
+            ],
+            "entity_id": 126975
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q1",
+      "target": "CHGNet",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00038",
+          "comp_00481",
+          "cite_00063"
+        ]
+      ],
+      "node_ids": [
+        "cite_00063",
+        "comp_00481",
+        "meth_00038"
+      ],
+      "hyperedge_ids": [
+        "h_00040",
+        "h_00056",
+        "h_00243",
+        "h_01302",
+        "h_01312",
+        "h_01318",
+        "h_01321",
+        "h_01322",
+        "h_01326",
+        "h_01331",
+        "h_01333"
+      ],
+      "source_articles": [
+        5384,
+        5387,
+        5401,
+        5439,
+        5442,
+        5443,
+        5447,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00063",
+          "surface_form": "CHGNet",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5401,
+              5447,
+              5453,
+              5384,
+              5442,
+              5439,
+              5455,
+              5443
+            ]
+          }
+        },
+        {
+          "node_id": "comp_00481",
+          "surface_form": "CHGNet",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5447
+            ],
+            "entity_id": 248383
+          }
+        },
+        {
+          "node_id": "meth_00038",
+          "surface_form": "CHGNet",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5384,
+              5387
+            ],
+            "entity_id": 126976
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q1",
+      "target": "GAP",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00191"
+        ]
+      ],
+      "node_ids": [
+        "cite_00191"
+      ],
+      "hyperedge_ids": [
+        "h_01304",
+        "h_01311",
+        "h_01315",
+        "h_01327",
+        "h_01329",
+        "h_01331"
+      ],
+      "source_articles": [
+        5388,
+        5398,
+        5435,
+        5448,
+        5451,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00191",
+          "surface_form": "GAP",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5448,
+              5388,
+              5453,
+              5435,
+              5398,
+              5451
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q1",
+      "target": "NequIP",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00058",
+          "cite_00049"
+        ]
+      ],
+      "node_ids": [
+        "cite_00049",
+        "meth_00058"
+      ],
+      "hyperedge_ids": [
+        "h_00017",
+        "h_00028",
+        "h_00034",
+        "h_00056",
+        "h_00788",
+        "h_00789",
+        "h_00790",
+        "h_00791",
+        "h_00792",
+        "h_00793",
+        "h_00794",
+        "h_00795",
+        "h_00796",
+        "h_01298",
+        "h_01300",
+        "h_01301",
+        "h_01309",
+        "h_01318",
+        "h_01319",
+        "h_01321",
+        "h_01323",
+        "h_01326",
+        "h_01331",
+        "h_01333"
+      ],
+      "source_articles": [
+        5380,
+        5382,
+        5383,
+        5387,
+        5394,
+        5439,
+        5440,
+        5442,
+        5444,
+        5447,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00049",
+          "surface_form": "NequIP",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5383,
+              5394,
+              5447,
+              5453,
+              5442,
+              5382,
+              5439,
+              5455,
+              5444,
+              5380
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00058",
+          "surface_form": "NequIP",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5380,
+              5382,
+              5383,
+              5387
+            ],
+            "entity_id": 182749
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q1",
+      "target": "ACE",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00209"
+        ]
+      ],
+      "node_ids": [
+        "cite_00209"
+      ],
+      "hyperedge_ids": [
+        "h_01298",
+        "h_01304",
+        "h_01311",
+        "h_01331"
+      ],
+      "source_articles": [
+        5380,
+        5388,
+        5398,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00209",
+          "surface_form": "ACE",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5388,
+              5453,
+              5398,
+              5380
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q1",
+      "target": "EquiformerV2",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00081",
+          "cite_00050"
+        ]
+      ],
+      "node_ids": [
+        "cite_00050",
+        "meth_00081"
+      ],
+      "hyperedge_ids": [
+        "h_00205",
+        "h_00211",
+        "h_00217",
+        "h_00221",
+        "h_00222",
+        "h_00223",
+        "h_00224",
+        "h_00225",
+        "h_00226",
+        "h_00274",
+        "h_00334",
+        "h_00526",
+        "h_00527",
+        "h_00528",
+        "h_00529",
+        "h_00530",
+        "h_00531",
+        "h_00532",
+        "h_00533",
+        "h_00534",
+        "h_00535",
+        "h_00536",
+        "h_00537",
+        "h_01194",
+        "h_01195",
+        "h_01196",
+        "h_01197",
+        "h_01198",
+        "h_01199",
+        "h_01200",
+        "h_01201",
+        "h_01202",
+        "h_01203",
+        "h_01204",
+        "h_01205",
+        "h_01316",
+        "h_01319",
+        "h_01320",
+        "h_01321",
+        "h_01322",
+        "h_01331"
+      ],
+      "source_articles": [
+        5437,
+        5440,
+        5441,
+        5442,
+        5443,
+        5444,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00050",
+          "surface_form": "Equiformerv2",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5437,
+              5453,
+              5442,
+              5441,
+              5443
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00081",
+          "surface_form": "EquiformerV2",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5441,
+              5442,
+              5443,
+              5444,
+              5453
+            ],
+            "entity_id": 232148
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q2",
+      "target": "DeepH",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00254"
+        ]
+      ],
+      "node_ids": [
+        "cite_00254"
+      ],
+      "hyperedge_ids": [
+        "h_01299",
+        "h_01309"
+      ],
+      "source_articles": [
+        5381,
+        5394
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00254",
+          "surface_form": "DeepH",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5394,
+              5381
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q2",
+      "target": "D4FT",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00222",
+          "comp_00273"
+        ]
+      ],
+      "node_ids": [
+        "comp_00273",
+        "meth_00222"
+      ],
+      "hyperedge_ids": [
+        "h_00100",
+        "h_00101",
+        "h_00102",
+        "h_00103",
+        "h_00104",
+        "h_00105",
+        "h_00320",
+        "h_00441",
+        "h_00442",
+        "h_00443",
+        "h_00444",
+        "h_00445",
+        "h_00446",
+        "h_00447",
+        "h_00448",
+        "h_00449",
+        "h_00450",
+        "h_00451",
+        "h_00452",
+        "h_00453",
+        "h_00454",
+        "h_00455",
+        "h_00456",
+        "h_00457",
+        "h_00458",
+        "h_00459",
+        "h_00460",
+        "h_00461",
+        "h_00462",
+        "h_00463",
+        "h_00464",
+        "h_00465",
+        "h_00466",
+        "h_00467",
+        "h_00468",
+        "h_00469",
+        "h_00470",
+        "h_00471",
+        "h_00472",
+        "h_01027",
+        "h_01028",
+        "h_01029",
+        "h_01030",
+        "h_01031",
+        "h_01032",
+        "h_01033",
+        "h_01034",
+        "h_01035",
+        "h_01036",
+        "h_01037",
+        "h_01038"
+      ],
+      "source_articles": [
+        5395
+      ],
+      "evidence": [
+        {
+          "node_id": "comp_00273",
+          "surface_form": "D4FT",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5395
+            ],
+            "entity_id": 247240
+          }
+        },
+        {
+          "node_id": "meth_00222",
+          "surface_form": "D4FT",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5395
+            ],
+            "entity_id": 247215
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q2",
+      "target": "HamGNN",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "meth_00221"
+        ]
+      ],
+      "node_ids": [
+        "meth_00221"
+      ],
+      "hyperedge_ids": [
+        "h_00306",
+        "h_00797",
+        "h_00798",
+        "h_00799",
+        "h_00800",
+        "h_00801",
+        "h_00802",
+        "h_00803",
+        "h_00804",
+        "h_00805",
+        "h_00806"
+      ],
+      "source_articles": [
+        5405
+      ],
+      "evidence": [
+        {
+          "node_id": "meth_00221",
+          "surface_form": "Universal HamGNN Hamiltonian model",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5405
+            ],
+            "entity_id": 247208
+          }
+        }
+      ],
+      "rationale": "Universal HamGNN Hamiltonian model is an explicit instance of the named family; do not assert all family variants are identical.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q3",
+      "target": "xDeepH",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "futu_00060"
+        ]
+      ],
+      "node_ids": [
+        "futu_00060"
+      ],
+      "hyperedge_ids": [
+        "h_01400"
+      ],
+      "source_articles": [
+        5394
+      ],
+      "evidence": [
+        {
+          "node_id": "futu_00060",
+          "surface_form": "Large‑scale study of magnetic skyrmions using xDeepH",
+          "type": "future_topic",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5394
+            ]
+          }
+        }
+      ],
+      "rationale": "An explicit xDeepH future-topic mention exists. It is not evidence that the requested capability has been demonstrated.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q3",
+      "target": "DeepH-E3",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00118",
+          "cite_00255"
+        ]
+      ],
+      "node_ids": [
+        "cite_00255",
+        "meth_00118"
+      ],
+      "hyperedge_ids": [
+        "h_00021",
+        "h_00022",
+        "h_00023",
+        "h_00024",
+        "h_00025",
+        "h_00026",
+        "h_00096",
+        "h_00333",
+        "h_00524",
+        "h_00525",
+        "h_01184",
+        "h_01185",
+        "h_01186",
+        "h_01187",
+        "h_01188",
+        "h_01189",
+        "h_01190",
+        "h_01191",
+        "h_01192",
+        "h_01193",
+        "h_01309"
+      ],
+      "source_articles": [
+        5381,
+        5394
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00255",
+          "surface_form": "DeepH‑E3",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5394
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00118",
+          "surface_form": "DeepH-E3",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5381,
+              5394
+            ],
+            "entity_id": 246118
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q4",
+      "target": "Hessian training",
+      "status": "ALIAS",
+      "components": [
+        [
+          "comp_00061",
+          "tech_00138"
+        ]
+      ],
+      "node_ids": [
+        "comp_00061",
+        "tech_00138"
+      ],
+      "hyperedge_ids": [
+        "h_00030",
+        "h_00031"
+      ],
+      "source_articles": [
+        5382
+      ],
+      "evidence": [
+        {
+          "node_id": "comp_00061",
+          "surface_form": "Hessian‑based training augmentation",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5382
+            ],
+            "entity_id": 246197
+          }
+        },
+        {
+          "node_id": "tech_00138",
+          "surface_form": "Inclusion of Hessian data in training",
+          "type": "technique",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5382
+            ],
+            "entity_id": 246214
+          }
+        }
+      ],
+      "rationale": "Hessian-based training augmentation and Inclusion of Hessian data in training explicitly describe the same training procedure; clai_00414 confirms inclusion of Hessian data.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q4",
+      "target": "VGNN",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00409"
+        ]
+      ],
+      "node_ids": [
+        "cite_00409"
+      ],
+      "hyperedge_ids": [
+        "h_01300"
+      ],
+      "source_articles": [
+        5382
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00409",
+          "surface_form": "VGNN",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5382
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q4",
+      "target": "MACE-F",
+      "status": "ABSENT",
+      "components": [],
+      "node_ids": [],
+      "hyperedge_ids": [],
+      "source_articles": [],
+      "evidence": [],
+      "rationale": "No exact MACE-F or verified same-entity alternate label found. Other MACE variants are not silently substituted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q5",
+      "target": "Bead-mapping",
+      "status": "ABSENT",
+      "components": [],
+      "node_ids": [],
+      "hyperedge_ids": [],
+      "source_articles": [],
+      "evidence": [],
+      "rationale": "No literal bead-related node or defensible target mapping found in the supplied export; operational audit status, not proof against all semantic paraphrases.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q5",
+      "target": "GNN+GPP",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "meth_00128"
+        ],
+        [
+          "meth_00132"
+        ]
+      ],
+      "node_ids": [
+        "meth_00128",
+        "meth_00132"
+      ],
+      "hyperedge_ids": [
+        "h_00032",
+        "h_00033",
+        "h_00034",
+        "h_00035",
+        "h_00036",
+        "h_00037",
+        "h_00302",
+        "h_00372",
+        "h_00373",
+        "h_00374",
+        "h_00747",
+        "h_00748",
+        "h_00749",
+        "h_00750",
+        "h_00751",
+        "h_00752",
+        "h_00753",
+        "h_00754",
+        "h_00755",
+        "h_00756",
+        "h_00757"
+      ],
+      "source_articles": [
+        5383
+      ],
+      "evidence": [
+        {
+          "node_id": "meth_00128",
+          "surface_form": "E(3)-equivariant Graph Neural Network for phase‑space integration",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5383
+            ],
+            "entity_id": 246236
+          }
+        },
+        {
+          "node_id": "meth_00132",
+          "surface_form": "Gaussian Phase Packets",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5383
+            ],
+            "entity_id": 246288
+          }
+        }
+      ],
+      "rationale": "Graph network phase-space integrator and Gaussian Phase Packets occur in article 5383 and extends edge h_00034; this does not establish the full coarse-graining constraints.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q6",
+      "target": "DeePMD+AL",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "meth_00383"
+        ],
+        [
+          "meth_00385"
+        ]
+      ],
+      "node_ids": [
+        "meth_00383",
+        "meth_00385"
+      ],
+      "hyperedge_ids": [
+        "h_00173",
+        "h_00174",
+        "h_00175",
+        "h_00176",
+        "h_00177",
+        "h_00178",
+        "h_00324",
+        "h_00487",
+        "h_00488",
+        "h_00489",
+        "h_00490",
+        "h_00491",
+        "h_00492",
+        "h_01081",
+        "h_01082",
+        "h_01083",
+        "h_01084",
+        "h_01085",
+        "h_01086",
+        "h_01087",
+        "h_01088",
+        "h_01089",
+        "h_01090",
+        "h_01091",
+        "h_01092",
+        "h_01093"
+      ],
+      "source_articles": [
+        5435
+      ],
+      "evidence": [
+        {
+          "node_id": "meth_00383",
+          "surface_form": "DeePMD training protocol for diffusion coefficient computation",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5435
+            ],
+            "entity_id": 249300
+          }
+        },
+        {
+          "node_id": "meth_00385",
+          "surface_form": "Active learning for neural network potentials",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5435
+            ],
+            "entity_id": 249374
+          }
+        }
+      ],
+      "rationale": "DeePMD diffusion protocol and active learning occur in article 5435 and extends edge h_00175. Co-membership does not establish that the protocol used active learning; report component coverage only.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q6",
+      "target": "LiFlow",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00239"
+        ]
+      ],
+      "node_ids": [
+        "meth_00239"
+      ],
+      "hyperedge_ids": [
+        "h_00162",
+        "h_00163",
+        "h_00164",
+        "h_00165",
+        "h_00166",
+        "h_00167",
+        "h_00294",
+        "h_00350",
+        "h_00646",
+        "h_00647",
+        "h_00648",
+        "h_00649",
+        "h_00650",
+        "h_00651",
+        "h_00652",
+        "h_00653",
+        "h_00654",
+        "h_00655",
+        "h_00656",
+        "h_00657"
+      ],
+      "source_articles": [
+        5407
+      ],
+      "evidence": [
+        {
+          "node_id": "meth_00239",
+          "surface_form": "LiFlow",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5407
+            ],
+            "entity_id": 247523
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q6",
+      "target": "MLIP descriptors",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "meth_00134",
+          "comp_00095"
+        ]
+      ],
+      "node_ids": [
+        "comp_00095",
+        "meth_00134"
+      ],
+      "hyperedge_ids": [
+        "h_00038",
+        "h_00039",
+        "h_00040",
+        "h_00041",
+        "h_00042",
+        "h_00043",
+        "h_00313",
+        "h_00426",
+        "h_00427",
+        "h_00428",
+        "h_00930",
+        "h_00931",
+        "h_00932",
+        "h_00933",
+        "h_00934",
+        "h_00935",
+        "h_00936",
+        "h_00937",
+        "h_00938",
+        "h_00939",
+        "h_00940",
+        "h_00941",
+        "h_00942",
+        "h_00943",
+        "h_00944",
+        "h_00945",
+        "h_00946",
+        "h_00947",
+        "h_00948",
+        "h_00949",
+        "h_00950",
+        "h_00951",
+        "h_00952",
+        "h_00953",
+        "h_00954",
+        "h_00955",
+        "h_00956"
+      ],
+      "source_articles": [
+        5384
+      ],
+      "evidence": [
+        {
+          "node_id": "comp_00095",
+          "surface_form": "PES descriptors",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5384
+            ],
+            "entity_id": 246322
+          }
+        },
+        {
+          "node_id": "meth_00134",
+          "surface_form": "Frozen-framework potential energy surface (PES) descriptor screening",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5384
+            ],
+            "entity_id": 246291
+          }
+        }
+      ],
+      "rationale": "PES descriptor screening and PES descriptors exist in the ML-potential ionic-conductivity study; broad answer family remains underspecified.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q7",
+      "target": "GNN free energies",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "meth_00140"
+        ]
+      ],
+      "node_ids": [
+        "meth_00140"
+      ],
+      "hyperedge_ids": [
+        "h_00044",
+        "h_00045",
+        "h_00046",
+        "h_00047",
+        "h_00048",
+        "h_00327",
+        "h_01115",
+        "h_01116",
+        "h_01117",
+        "h_01118",
+        "h_01119",
+        "h_01120",
+        "h_01121",
+        "h_01122",
+        "h_01123",
+        "h_01124",
+        "h_01125"
+      ],
+      "source_articles": [
+        5385
+      ],
+      "evidence": [
+        {
+          "node_id": "meth_00140",
+          "surface_form": "Uncertainty-aware graph convolutional neural network for vibrational free‑energy prediction",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5385
+            ],
+            "entity_id": 246369
+          }
+        }
+      ],
+      "rationale": "Explicit graph convolutional model for vibrational free-energy prediction; broader screening conditions are not certified by identity mapping.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q7",
+      "target": "symbolic regression",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00068",
+          "cite_00016"
+        ]
+      ],
+      "node_ids": [
+        "cite_00016",
+        "meth_00068"
+      ],
+      "hyperedge_ids": [
+        "h_00280",
+        "h_01332"
+      ],
+      "source_articles": [
+        5454
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00016",
+          "surface_form": "Symbolic Regression",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5454
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00068",
+          "surface_form": "symbolic regression",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5454
+            ],
+            "entity_id": 213558
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q8",
+      "target": "ConvLSTM",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00001"
+        ]
+      ],
+      "node_ids": [
+        "cite_00001"
+      ],
+      "hyperedge_ids": [
+        "h_01313"
+      ],
+      "source_articles": [
+        5406
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00001",
+          "surface_form": "ConvLSTM",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5406
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q8",
+      "target": "GNN stress fields",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "clai_00565"
+        ]
+      ],
+      "node_ids": [
+        "clai_00565"
+      ],
+      "hyperedge_ids": [
+        "h_01171"
+      ],
+      "source_articles": [
+        5399
+      ],
+      "evidence": [
+        {
+          "node_id": "clai_00565",
+          "surface_form": "The GNN respects physical constraints, accurately capturing derivative properties such as stress fields that obey underlying physical laws, and predicts global properties (Young’s modulus, total potential energy) that follow known physical relationships and match MD results across different crystalline systems.",
+          "type": "claim",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5399
+            ]
+          }
+        }
+      ],
+      "rationale": "Claim explicitly attributes stress-field prediction to the GNN; no single canonical method node matches the answer label.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q9",
+      "target": "E(3)-equivariant GNNs",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "cite_00120",
+          "comp_00070"
+        ]
+      ],
+      "node_ids": [
+        "cite_00120",
+        "comp_00070"
+      ],
+      "hyperedge_ids": [
+        "h_00036",
+        "h_01299",
+        "h_01316"
+      ],
+      "source_articles": [
+        5381,
+        5383,
+        5437
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00120",
+          "surface_form": "E(3)-equivariant GNN",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5437,
+              5381
+            ]
+          }
+        },
+        {
+          "node_id": "comp_00070",
+          "surface_form": "E(3)-equivariant GNN architecture",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5383
+            ],
+            "entity_id": 246250
+          }
+        }
+      ],
+      "rationale": "Singular E(3)-equivariant GNN and E(3)-equivariant GNN architecture evidence the family, not every possible member or thermodynamic condition.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q9",
+      "target": "physics-informed",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "clai_00407"
+        ]
+      ],
+      "node_ids": [
+        "clai_00407"
+      ],
+      "hyperedge_ids": [
+        "h_01013"
+      ],
+      "source_articles": [
+        5450
+      ],
+      "evidence": [
+        {
+          "node_id": "clai_00407",
+          "surface_form": "Physics-informed machine learning and transfer learning can reduce the need for large datasets while maintaining prediction accuracy and performance of ML models.",
+          "type": "claim",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5450
+            ]
+          }
+        }
+      ],
+      "rationale": "Explicit physics-informed learning claim exists; this does not establish the question's particular thermodynamic guarantees.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q9",
+      "target": "NequIP",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00058",
+          "cite_00049"
+        ]
+      ],
+      "node_ids": [
+        "cite_00049",
+        "meth_00058"
+      ],
+      "hyperedge_ids": [
+        "h_00017",
+        "h_00028",
+        "h_00034",
+        "h_00056",
+        "h_00788",
+        "h_00789",
+        "h_00790",
+        "h_00791",
+        "h_00792",
+        "h_00793",
+        "h_00794",
+        "h_00795",
+        "h_00796",
+        "h_01298",
+        "h_01300",
+        "h_01301",
+        "h_01309",
+        "h_01318",
+        "h_01319",
+        "h_01321",
+        "h_01323",
+        "h_01326",
+        "h_01331",
+        "h_01333"
+      ],
+      "source_articles": [
+        5380,
+        5382,
+        5383,
+        5387,
+        5394,
+        5439,
+        5440,
+        5442,
+        5444,
+        5447,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00049",
+          "surface_form": "NequIP",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5383,
+              5394,
+              5447,
+              5453,
+              5442,
+              5382,
+              5439,
+              5455,
+              5444,
+              5380
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00058",
+          "surface_form": "NequIP",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5380,
+              5382,
+              5383,
+              5387
+            ],
+            "entity_id": 182749
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q10",
+      "target": "GNNs + ACE descriptors",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "meth_00382"
+        ],
+        [
+          "comp_00156"
+        ]
+      ],
+      "node_ids": [
+        "comp_00156",
+        "meth_00382"
+      ],
+      "hyperedge_ids": [
+        "h_00058",
+        "h_00286"
+      ],
+      "source_articles": [
+        5387,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "comp_00156",
+          "surface_form": "Atomic Cluster Expansion (ACE) high‑body‑order features",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5387
+            ],
+            "entity_id": 246566
+          }
+        },
+        {
+          "node_id": "meth_00382",
+          "surface_form": "Graph Neural Network interatomic potentials",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5455
+            ],
+            "entity_id": 249299
+          }
+        }
+      ],
+      "rationale": "Both component families exist, but no verified single connected scientific workflow has been established for this gold label.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q10",
+      "target": "SchNet",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00050",
+          "cite_00005"
+        ]
+      ],
+      "node_ids": [
+        "cite_00005",
+        "meth_00050"
+      ],
+      "hyperedge_ids": [
+        "h_00007",
+        "h_00008",
+        "h_00009",
+        "h_00010",
+        "h_00011",
+        "h_00017",
+        "h_00023",
+        "h_00062",
+        "h_00114",
+        "h_00193",
+        "h_00247",
+        "h_00297",
+        "h_00684",
+        "h_00685",
+        "h_00686",
+        "h_00687",
+        "h_00688",
+        "h_00689",
+        "h_00690",
+        "h_00691",
+        "h_00692",
+        "h_00693",
+        "h_00694",
+        "h_01299",
+        "h_01301",
+        "h_01302",
+        "h_01304",
+        "h_01306",
+        "h_01309",
+        "h_01314",
+        "h_01316",
+        "h_01318",
+        "h_01323",
+        "h_01327",
+        "h_01331"
+      ],
+      "source_articles": [
+        4167,
+        5380,
+        5381,
+        5383,
+        5384,
+        5388,
+        5390,
+        5394,
+        5397,
+        5407,
+        5437,
+        5439,
+        5444,
+        5448,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00005",
+          "surface_form": "SchNet",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5407,
+              5437,
+              5383,
+              5448,
+              5388,
+              5394,
+              5453,
+              5384,
+              5439,
+              5381,
+              5444,
+              5390
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00050",
+          "surface_form": "SchNet",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              4167,
+              5380,
+              5381,
+              5388,
+              5397,
+              5439,
+              5448
+            ],
+            "entity_id": 180527
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q11",
+      "target": "CE→MC→NN→PF",
+      "status": "COMPOSITE",
+      "components": [
+        [
+          "comp_00114"
+        ],
+        [
+          "comp_00115"
+        ],
+        [
+          "comp_00117"
+        ],
+        [
+          "comp_00119"
+        ]
+      ],
+      "node_ids": [
+        "comp_00114",
+        "comp_00115",
+        "comp_00117",
+        "comp_00119"
+      ],
+      "hyperedge_ids": [
+        "h_00052"
+      ],
+      "source_articles": [
+        5386
+      ],
+      "evidence": [
+        {
+          "node_id": "comp_00114",
+          "surface_form": "Cluster expansion surrogate model",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5386
+            ],
+            "entity_id": 246430
+          }
+        },
+        {
+          "node_id": "comp_00115",
+          "surface_form": "Monte Carlo sampling with bias potentials",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5386
+            ],
+            "entity_id": 246431
+          }
+        },
+        {
+          "node_id": "comp_00117",
+          "surface_form": "Integrable Deep Neural Network (IDNN) free‑energy representation",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5386
+            ],
+            "entity_id": 246433
+          }
+        },
+        {
+          "node_id": "comp_00119",
+          "surface_form": "Phase‑field simulation framework",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5386
+            ],
+            "entity_id": 246435
+          }
+        }
+      ],
+      "rationale": "Four named stages occur in the same article 5386 uses_component hyperedge h_00052 for meth_00144; clai_00391 explicitly describes the scale-bridging framework. This supports a component bundle, not an inferred causal ordering.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q11",
+      "target": "hybrid frameworks",
+      "status": "PARTIAL",
+      "components": [
+        [
+          "clai_00391"
+        ]
+      ],
+      "node_ids": [
+        "clai_00391"
+      ],
+      "hyperedge_ids": [
+        "h_00997"
+      ],
+      "source_articles": [
+        5386
+      ],
+      "evidence": [
+        {
+          "node_id": "clai_00391",
+          "surface_form": "The presented scale‑bridging framework, linking DFT‑informed statistical mechanics to continuum phase‑field models via IDNN‑learned free‑energy functions, constitutes the first systematic implementation of this kind for LiCoO₂ cathodes.",
+          "type": "claim",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5386
+            ]
+          }
+        }
+      ],
+      "rationale": "One explicitly described scale-bridging framework exists; generic plural label is not a canonical entity or exhaustive family.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "MACE",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00048"
+        ]
+      ],
+      "node_ids": [
+        "cite_00048"
+      ],
+      "hyperedge_ids": [
+        "h_01300",
+        "h_01302",
+        "h_01312",
+        "h_01316",
+        "h_01317",
+        "h_01318",
+        "h_01319",
+        "h_01320",
+        "h_01321",
+        "h_01322",
+        "h_01323",
+        "h_01326",
+        "h_01331"
+      ],
+      "source_articles": [
+        5382,
+        5384,
+        5401,
+        5437,
+        5438,
+        5439,
+        5440,
+        5441,
+        5442,
+        5443,
+        5444,
+        5447,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00048",
+          "surface_form": "MACE",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5401,
+              5437,
+              5438,
+              5447,
+              5453,
+              5384,
+              5442,
+              5382,
+              5441,
+              5439,
+              5444,
+              5443
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "NequIP",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00058",
+          "cite_00049"
+        ]
+      ],
+      "node_ids": [
+        "cite_00049",
+        "meth_00058"
+      ],
+      "hyperedge_ids": [
+        "h_00017",
+        "h_00028",
+        "h_00034",
+        "h_00056",
+        "h_00788",
+        "h_00789",
+        "h_00790",
+        "h_00791",
+        "h_00792",
+        "h_00793",
+        "h_00794",
+        "h_00795",
+        "h_00796",
+        "h_01298",
+        "h_01300",
+        "h_01301",
+        "h_01309",
+        "h_01318",
+        "h_01319",
+        "h_01321",
+        "h_01323",
+        "h_01326",
+        "h_01331",
+        "h_01333"
+      ],
+      "source_articles": [
+        5380,
+        5382,
+        5383,
+        5387,
+        5394,
+        5439,
+        5440,
+        5442,
+        5444,
+        5447,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00049",
+          "surface_form": "NequIP",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5383,
+              5394,
+              5447,
+              5453,
+              5442,
+              5382,
+              5439,
+              5455,
+              5444,
+              5380
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00058",
+          "surface_form": "NequIP",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5380,
+              5382,
+              5383,
+              5387
+            ],
+            "entity_id": 182749
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "CHGNet",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00038",
+          "comp_00481",
+          "cite_00063"
+        ]
+      ],
+      "node_ids": [
+        "cite_00063",
+        "comp_00481",
+        "meth_00038"
+      ],
+      "hyperedge_ids": [
+        "h_00040",
+        "h_00056",
+        "h_00243",
+        "h_01302",
+        "h_01312",
+        "h_01318",
+        "h_01321",
+        "h_01322",
+        "h_01326",
+        "h_01331",
+        "h_01333"
+      ],
+      "source_articles": [
+        5384,
+        5387,
+        5401,
+        5439,
+        5442,
+        5443,
+        5447,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00063",
+          "surface_form": "CHGNet",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5401,
+              5447,
+              5453,
+              5384,
+              5442,
+              5439,
+              5455,
+              5443
+            ]
+          }
+        },
+        {
+          "node_id": "comp_00481",
+          "surface_form": "CHGNet",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5447
+            ],
+            "entity_id": 248383
+          }
+        },
+        {
+          "node_id": "meth_00038",
+          "surface_form": "CHGNet",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5384,
+              5387
+            ],
+            "entity_id": 126976
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "M3GNet",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00037",
+          "comp_00482",
+          "cite_00062"
+        ]
+      ],
+      "node_ids": [
+        "cite_00062",
+        "comp_00482",
+        "meth_00037"
+      ],
+      "hyperedge_ids": [
+        "h_00040",
+        "h_00056",
+        "h_00078",
+        "h_00243",
+        "h_01245",
+        "h_01246",
+        "h_01247",
+        "h_01248",
+        "h_01249",
+        "h_01250",
+        "h_01251",
+        "h_01252",
+        "h_01253",
+        "h_01254",
+        "h_01255",
+        "h_01256",
+        "h_01302",
+        "h_01312",
+        "h_01318",
+        "h_01321",
+        "h_01326",
+        "h_01331",
+        "h_01333"
+      ],
+      "source_articles": [
+        5384,
+        5387,
+        5391,
+        5401,
+        5439,
+        5442,
+        5447,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00062",
+          "surface_form": "M3GNet",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5401,
+              5447,
+              5453,
+              5384,
+              5442,
+              5439,
+              5455
+            ]
+          }
+        },
+        {
+          "node_id": "comp_00482",
+          "surface_form": "M3GNet",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5447
+            ],
+            "entity_id": 248384
+          }
+        },
+        {
+          "node_id": "meth_00037",
+          "surface_form": "M3GNet",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5384,
+              5387,
+              5391
+            ],
+            "entity_id": 126975
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "SevenNet",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00054"
+        ]
+      ],
+      "node_ids": [
+        "cite_00054"
+      ],
+      "hyperedge_ids": [
+        "h_01302",
+        "h_01319",
+        "h_01320",
+        "h_01321",
+        "h_01322",
+        "h_01326",
+        "h_01331"
+      ],
+      "source_articles": [
+        5384,
+        5440,
+        5441,
+        5442,
+        5443,
+        5447,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00054",
+          "surface_form": "SevenNet",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5447,
+              5453,
+              5384,
+              5442,
+              5441,
+              5443
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "GAP",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00191"
+        ]
+      ],
+      "node_ids": [
+        "cite_00191"
+      ],
+      "hyperedge_ids": [
+        "h_01304",
+        "h_01311",
+        "h_01315",
+        "h_01327",
+        "h_01329",
+        "h_01331"
+      ],
+      "source_articles": [
+        5388,
+        5398,
+        5435,
+        5448,
+        5451,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00191",
+          "surface_form": "GAP",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5448,
+              5388,
+              5453,
+              5435,
+              5398,
+              5451
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "DeePMD",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00214"
+        ]
+      ],
+      "node_ids": [
+        "cite_00214"
+      ],
+      "hyperedge_ids": [
+        "h_01302",
+        "h_01304",
+        "h_01315",
+        "h_01331"
+      ],
+      "source_articles": [
+        5384,
+        5388,
+        5435,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00214",
+          "surface_form": "DeepMD",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5388,
+              5453,
+              5384,
+              5435
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "MatterSim",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00091",
+          "cite_00060"
+        ]
+      ],
+      "node_ids": [
+        "cite_00060",
+        "meth_00091"
+      ],
+      "hyperedge_ids": [
+        "h_00199",
+        "h_00205",
+        "h_01305",
+        "h_01319",
+        "h_01320",
+        "h_01321",
+        "h_01331"
+      ],
+      "source_articles": [
+        5389,
+        5440,
+        5441,
+        5442,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00060",
+          "surface_form": "MatterSim",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5453,
+              5442,
+              5441,
+              5389
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00091",
+          "surface_form": "MatterSim",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5441
+            ],
+            "entity_id": 234532
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "Orb",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00011"
+        ]
+      ],
+      "node_ids": [
+        "cite_00011"
+      ],
+      "hyperedge_ids": [
+        "h_01314",
+        "h_01319",
+        "h_01320",
+        "h_01321",
+        "h_01322",
+        "h_01326",
+        "h_01331"
+      ],
+      "source_articles": [
+        5407,
+        5440,
+        5441,
+        5442,
+        5443,
+        5447,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00011",
+          "surface_form": "Orb",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5407,
+              5440,
+              5447,
+              5453,
+              5442,
+              5441,
+              5443
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "eSEN",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00293",
+          "cite_00053"
+        ]
+      ],
+      "node_ids": [
+        "cite_00053",
+        "meth_00293"
+      ],
+      "hyperedge_ids": [
+        "h_00181",
+        "h_00199",
+        "h_00211",
+        "h_00217",
+        "h_01316",
+        "h_01319",
+        "h_01320",
+        "h_01321",
+        "h_01322"
+      ],
+      "source_articles": [
+        5437,
+        5440,
+        5441,
+        5442,
+        5443
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00053",
+          "surface_form": "eSEN",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5437,
+              5442,
+              5441,
+              5443
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00293",
+          "surface_form": "eSEN",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5437,
+              5440,
+              5442,
+              5443
+            ],
+            "entity_id": 248025
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "PET",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00044"
+        ]
+      ],
+      "node_ids": [
+        "cite_00044"
+      ],
+      "hyperedge_ids": [
+        "h_01319"
+      ],
+      "source_articles": [
+        5440
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00044",
+          "surface_form": "PET",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "UMA",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00046"
+        ]
+      ],
+      "node_ids": [
+        "cite_00046"
+      ],
+      "hyperedge_ids": [
+        "h_01317",
+        "h_01319"
+      ],
+      "source_articles": [
+        5438,
+        5440
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00046",
+          "surface_form": "UMA",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5438
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q12",
+      "target": "EquiformerV2",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00081",
+          "cite_00050"
+        ]
+      ],
+      "node_ids": [
+        "cite_00050",
+        "meth_00081"
+      ],
+      "hyperedge_ids": [
+        "h_00205",
+        "h_00211",
+        "h_00217",
+        "h_00221",
+        "h_00222",
+        "h_00223",
+        "h_00224",
+        "h_00225",
+        "h_00226",
+        "h_00274",
+        "h_00334",
+        "h_00526",
+        "h_00527",
+        "h_00528",
+        "h_00529",
+        "h_00530",
+        "h_00531",
+        "h_00532",
+        "h_00533",
+        "h_00534",
+        "h_00535",
+        "h_00536",
+        "h_00537",
+        "h_01194",
+        "h_01195",
+        "h_01196",
+        "h_01197",
+        "h_01198",
+        "h_01199",
+        "h_01200",
+        "h_01201",
+        "h_01202",
+        "h_01203",
+        "h_01204",
+        "h_01205",
+        "h_01316",
+        "h_01319",
+        "h_01320",
+        "h_01321",
+        "h_01322",
+        "h_01331"
+      ],
+      "source_articles": [
+        5437,
+        5440,
+        5441,
+        5442,
+        5443,
+        5444,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00050",
+          "surface_form": "Equiformerv2",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5437,
+              5453,
+              5442,
+              5441,
+              5443
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00081",
+          "surface_form": "EquiformerV2",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5441,
+              5442,
+              5443,
+              5444,
+              5453
+            ],
+            "entity_id": 232148
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q13",
+      "target": "CGCNN",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00054",
+          "cite_00354"
+        ]
+      ],
+      "node_ids": [
+        "cite_00354",
+        "meth_00054"
+      ],
+      "hyperedge_ids": [
+        "h_00056",
+        "h_01302",
+        "h_01324",
+        "h_01328",
+        "h_01333"
+      ],
+      "source_articles": [
+        5384,
+        5387,
+        5445,
+        5449,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00354",
+          "surface_form": "CGCNN",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5445,
+              5384,
+              5449,
+              5455
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00054",
+          "surface_form": "CGCNN",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5387
+            ],
+            "entity_id": 180801
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q13",
+      "target": "SchNet",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00050",
+          "cite_00005"
+        ]
+      ],
+      "node_ids": [
+        "cite_00005",
+        "meth_00050"
+      ],
+      "hyperedge_ids": [
+        "h_00007",
+        "h_00008",
+        "h_00009",
+        "h_00010",
+        "h_00011",
+        "h_00017",
+        "h_00023",
+        "h_00062",
+        "h_00114",
+        "h_00193",
+        "h_00247",
+        "h_00297",
+        "h_00684",
+        "h_00685",
+        "h_00686",
+        "h_00687",
+        "h_00688",
+        "h_00689",
+        "h_00690",
+        "h_00691",
+        "h_00692",
+        "h_00693",
+        "h_00694",
+        "h_01299",
+        "h_01301",
+        "h_01302",
+        "h_01304",
+        "h_01306",
+        "h_01309",
+        "h_01314",
+        "h_01316",
+        "h_01318",
+        "h_01323",
+        "h_01327",
+        "h_01331"
+      ],
+      "source_articles": [
+        4167,
+        5380,
+        5381,
+        5383,
+        5384,
+        5388,
+        5390,
+        5394,
+        5397,
+        5407,
+        5437,
+        5439,
+        5444,
+        5448,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00005",
+          "surface_form": "SchNet",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5407,
+              5437,
+              5383,
+              5448,
+              5388,
+              5394,
+              5453,
+              5384,
+              5439,
+              5381,
+              5444,
+              5390
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00050",
+          "surface_form": "SchNet",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              4167,
+              5380,
+              5381,
+              5388,
+              5397,
+              5439,
+              5448
+            ],
+            "entity_id": 180527
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q13",
+      "target": "MEGNet",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00036",
+          "cite_00334"
+        ]
+      ],
+      "node_ids": [
+        "cite_00334",
+        "meth_00036"
+      ],
+      "hyperedge_ids": [
+        "h_00056",
+        "h_00073",
+        "h_01324",
+        "h_01331"
+      ],
+      "source_articles": [
+        5387,
+        5390,
+        5445,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00334",
+          "surface_form": "MEGNet",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5453,
+              5445
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00036",
+          "surface_form": "MEGNet",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5387,
+              5390
+            ],
+            "entity_id": 126974
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q13",
+      "target": "M3GNet",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00037",
+          "comp_00482",
+          "cite_00062"
+        ]
+      ],
+      "node_ids": [
+        "cite_00062",
+        "comp_00482",
+        "meth_00037"
+      ],
+      "hyperedge_ids": [
+        "h_00040",
+        "h_00056",
+        "h_00078",
+        "h_00243",
+        "h_01245",
+        "h_01246",
+        "h_01247",
+        "h_01248",
+        "h_01249",
+        "h_01250",
+        "h_01251",
+        "h_01252",
+        "h_01253",
+        "h_01254",
+        "h_01255",
+        "h_01256",
+        "h_01302",
+        "h_01312",
+        "h_01318",
+        "h_01321",
+        "h_01326",
+        "h_01331",
+        "h_01333"
+      ],
+      "source_articles": [
+        5384,
+        5387,
+        5391,
+        5401,
+        5439,
+        5442,
+        5447,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00062",
+          "surface_form": "M3GNet",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5401,
+              5447,
+              5453,
+              5384,
+              5442,
+              5439,
+              5455
+            ]
+          }
+        },
+        {
+          "node_id": "comp_00482",
+          "surface_form": "M3GNet",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5447
+            ],
+            "entity_id": 248384
+          }
+        },
+        {
+          "node_id": "meth_00037",
+          "surface_form": "M3GNet",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5384,
+              5387,
+              5391
+            ],
+            "entity_id": 126975
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q13",
+      "target": "NequIP",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00058",
+          "cite_00049"
+        ]
+      ],
+      "node_ids": [
+        "cite_00049",
+        "meth_00058"
+      ],
+      "hyperedge_ids": [
+        "h_00017",
+        "h_00028",
+        "h_00034",
+        "h_00056",
+        "h_00788",
+        "h_00789",
+        "h_00790",
+        "h_00791",
+        "h_00792",
+        "h_00793",
+        "h_00794",
+        "h_00795",
+        "h_00796",
+        "h_01298",
+        "h_01300",
+        "h_01301",
+        "h_01309",
+        "h_01318",
+        "h_01319",
+        "h_01321",
+        "h_01323",
+        "h_01326",
+        "h_01331",
+        "h_01333"
+      ],
+      "source_articles": [
+        5380,
+        5382,
+        5383,
+        5387,
+        5394,
+        5439,
+        5440,
+        5442,
+        5444,
+        5447,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00049",
+          "surface_form": "NequIP",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5383,
+              5394,
+              5447,
+              5453,
+              5442,
+              5382,
+              5439,
+              5455,
+              5444,
+              5380
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00058",
+          "surface_form": "NequIP",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5380,
+              5382,
+              5383,
+              5387
+            ],
+            "entity_id": 182749
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q13",
+      "target": "MACE",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00048"
+        ]
+      ],
+      "node_ids": [
+        "cite_00048"
+      ],
+      "hyperedge_ids": [
+        "h_01300",
+        "h_01302",
+        "h_01312",
+        "h_01316",
+        "h_01317",
+        "h_01318",
+        "h_01319",
+        "h_01320",
+        "h_01321",
+        "h_01322",
+        "h_01323",
+        "h_01326",
+        "h_01331"
+      ],
+      "source_articles": [
+        5382,
+        5384,
+        5401,
+        5437,
+        5438,
+        5439,
+        5440,
+        5441,
+        5442,
+        5443,
+        5444,
+        5447,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00048",
+          "surface_form": "MACE",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5401,
+              5437,
+              5438,
+              5447,
+              5453,
+              5384,
+              5442,
+              5382,
+              5441,
+              5439,
+              5444,
+              5443
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q13",
+      "target": "CHGNet",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00038",
+          "comp_00481",
+          "cite_00063"
+        ]
+      ],
+      "node_ids": [
+        "cite_00063",
+        "comp_00481",
+        "meth_00038"
+      ],
+      "hyperedge_ids": [
+        "h_00040",
+        "h_00056",
+        "h_00243",
+        "h_01302",
+        "h_01312",
+        "h_01318",
+        "h_01321",
+        "h_01322",
+        "h_01326",
+        "h_01331",
+        "h_01333"
+      ],
+      "source_articles": [
+        5384,
+        5387,
+        5401,
+        5439,
+        5442,
+        5443,
+        5447,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00063",
+          "surface_form": "CHGNet",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5401,
+              5447,
+              5453,
+              5384,
+              5442,
+              5439,
+              5455,
+              5443
+            ]
+          }
+        },
+        {
+          "node_id": "comp_00481",
+          "surface_form": "CHGNet",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5447
+            ],
+            "entity_id": 248383
+          }
+        },
+        {
+          "node_id": "meth_00038",
+          "surface_form": "CHGNet",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5384,
+              5387
+            ],
+            "entity_id": 126976
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q13",
+      "target": "EquiformerV2",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00081",
+          "cite_00050"
+        ]
+      ],
+      "node_ids": [
+        "cite_00050",
+        "meth_00081"
+      ],
+      "hyperedge_ids": [
+        "h_00205",
+        "h_00211",
+        "h_00217",
+        "h_00221",
+        "h_00222",
+        "h_00223",
+        "h_00224",
+        "h_00225",
+        "h_00226",
+        "h_00274",
+        "h_00334",
+        "h_00526",
+        "h_00527",
+        "h_00528",
+        "h_00529",
+        "h_00530",
+        "h_00531",
+        "h_00532",
+        "h_00533",
+        "h_00534",
+        "h_00535",
+        "h_00536",
+        "h_00537",
+        "h_01194",
+        "h_01195",
+        "h_01196",
+        "h_01197",
+        "h_01198",
+        "h_01199",
+        "h_01200",
+        "h_01201",
+        "h_01202",
+        "h_01203",
+        "h_01204",
+        "h_01205",
+        "h_01316",
+        "h_01319",
+        "h_01320",
+        "h_01321",
+        "h_01322",
+        "h_01331"
+      ],
+      "source_articles": [
+        5437,
+        5440,
+        5441,
+        5442,
+        5443,
+        5444,
+        5453
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00050",
+          "surface_form": "Equiformerv2",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5440,
+              5437,
+              5453,
+              5442,
+              5441,
+              5443
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00081",
+          "surface_form": "EquiformerV2",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5441,
+              5442,
+              5443,
+              5444,
+              5453
+            ],
+            "entity_id": 232148
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "Matbench Discovery",
+      "status": "EXACT",
+      "components": [
+        [
+          "data_00013",
+          "meth_00159",
+          "cite_00302"
+        ]
+      ],
+      "node_ids": [
+        "cite_00302",
+        "data_00013",
+        "meth_00159"
+      ],
+      "hyperedge_ids": [
+        "h_00039",
+        "h_00054",
+        "h_00055",
+        "h_00056",
+        "h_00057",
+        "h_00058",
+        "h_00059",
+        "h_00204",
+        "h_00210",
+        "h_00216",
+        "h_00329",
+        "h_00426",
+        "h_00429",
+        "h_00477",
+        "h_00497",
+        "h_00548",
+        "h_01136",
+        "h_01137",
+        "h_01138",
+        "h_01139",
+        "h_01140",
+        "h_01141",
+        "h_01142",
+        "h_01143",
+        "h_01144",
+        "h_01145",
+        "h_01146",
+        "h_01147",
+        "h_01302",
+        "h_01326"
+      ],
+      "source_articles": [
+        5384,
+        5387,
+        5441,
+        5442,
+        5443,
+        5447
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00302",
+          "surface_form": "Matbench discovery",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5447,
+              5384
+            ]
+          }
+        },
+        {
+          "node_id": "data_00013",
+          "surface_form": "Matbench Discovery",
+          "type": "dataset",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5384,
+              5441,
+              5442,
+              5443
+            ],
+            "entity_id": 246347
+          }
+        },
+        {
+          "node_id": "meth_00159",
+          "surface_form": "Matbench Discovery",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5387
+            ],
+            "entity_id": 246526
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "Matbench",
+      "status": "EXACT",
+      "components": [
+        [
+          "comp_00448",
+          "data_00114",
+          "meth_00348",
+          "cite_00362"
+        ]
+      ],
+      "node_ids": [
+        "cite_00362",
+        "comp_00448",
+        "data_00114",
+        "meth_00348"
+      ],
+      "hyperedge_ids": [
+        "h_00228",
+        "h_00231",
+        "h_00253",
+        "h_00422",
+        "h_01302",
+        "h_01306",
+        "h_01328"
+      ],
+      "source_articles": [
+        5384,
+        5390,
+        5445,
+        5449
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00362",
+          "surface_form": "Matbench",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5384,
+              5449,
+              5390
+            ]
+          }
+        },
+        {
+          "node_id": "comp_00448",
+          "surface_form": "Matbench",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5445
+            ],
+            "entity_id": 248237
+          }
+        },
+        {
+          "node_id": "data_00114",
+          "surface_form": "Matbench",
+          "type": "dataset",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5445
+            ],
+            "entity_id": 248305
+          }
+        },
+        {
+          "node_id": "meth_00348",
+          "surface_form": "Matbench",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5449
+            ],
+            "entity_id": 248948
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "JARVIS-DFT",
+      "status": "EXACT",
+      "components": [
+        [
+          "comp_00335"
+        ]
+      ],
+      "node_ids": [
+        "comp_00335"
+      ],
+      "hyperedge_ids": [
+        "h_00132"
+      ],
+      "source_articles": [
+        5400
+      ],
+      "evidence": [
+        {
+          "node_id": "comp_00335",
+          "surface_form": "JARVIS‑DFT",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5400
+            ],
+            "entity_id": 247622
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "Materials Project",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00143",
+          "data_00061",
+          "cite_00018"
+        ]
+      ],
+      "node_ids": [
+        "cite_00018",
+        "data_00061",
+        "meth_00143"
+      ],
+      "hyperedge_ids": [
+        "h_00045",
+        "h_00107",
+        "h_00211",
+        "h_00234",
+        "h_00285",
+        "h_00286",
+        "h_00342",
+        "h_00498",
+        "h_00541",
+        "h_01302",
+        "h_01312",
+        "h_01318",
+        "h_01321",
+        "h_01324",
+        "h_01326",
+        "h_01328",
+        "h_01330",
+        "h_01331",
+        "h_01332",
+        "h_01333"
+      ],
+      "source_articles": [
+        5384,
+        5385,
+        5396,
+        5401,
+        5439,
+        5442,
+        5445,
+        5446,
+        5447,
+        5449,
+        5452,
+        5453,
+        5454,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00018",
+          "surface_form": "Materials Project",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5454,
+              5401,
+              5452,
+              5447,
+              5453,
+              5445,
+              5384,
+              5442,
+              5439,
+              5449,
+              5455
+            ]
+          }
+        },
+        {
+          "node_id": "data_00061",
+          "surface_form": "Materials Project",
+          "type": "dataset",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5396,
+              5446,
+              5455
+            ],
+            "entity_id": 247191
+          }
+        },
+        {
+          "node_id": "meth_00143",
+          "surface_form": "Materials Project",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5385,
+              5442,
+              5455
+            ],
+            "entity_id": 246396
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "MPtrj",
+      "status": "EXACT",
+      "components": [
+        [
+          "data_00102",
+          "cite_00372"
+        ]
+      ],
+      "node_ids": [
+        "cite_00372",
+        "data_00102"
+      ],
+      "hyperedge_ids": [
+        "h_00210",
+        "h_00433",
+        "h_01321"
+      ],
+      "source_articles": [
+        5442
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00372",
+          "surface_form": "MPTrj",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5442
+            ]
+          }
+        },
+        {
+          "node_id": "data_00102",
+          "surface_form": "MPtrj",
+          "type": "dataset",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5442
+            ],
+            "entity_id": 247999
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "OQMD",
+      "status": "EXACT",
+      "components": [
+        [
+          "data_00095",
+          "cite_00370"
+        ]
+      ],
+      "node_ids": [
+        "cite_00370",
+        "data_00095"
+      ],
+      "hyperedge_ids": [
+        "h_00141",
+        "h_00285",
+        "h_00508",
+        "h_00588",
+        "h_01321",
+        "h_01333"
+      ],
+      "source_articles": [
+        5402,
+        5442,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00370",
+          "surface_form": "OQMD",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5442,
+              5455
+            ]
+          }
+        },
+        {
+          "node_id": "data_00095",
+          "surface_form": "OQMD",
+          "type": "dataset",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5402,
+              5455
+            ],
+            "entity_id": 247757
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "AFLOW",
+      "status": "EXACT",
+      "components": [
+        [
+          "cite_00274"
+        ]
+      ],
+      "node_ids": [
+        "cite_00274"
+      ],
+      "hyperedge_ids": [
+        "h_01321",
+        "h_01328",
+        "h_01330"
+      ],
+      "source_articles": [
+        5442,
+        5449,
+        5452
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00274",
+          "surface_form": "AFLOW",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5452,
+              5442,
+              5449
+            ]
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "Alexandria",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00295",
+          "cite_00369"
+        ]
+      ],
+      "node_ids": [
+        "cite_00369",
+        "meth_00295"
+      ],
+      "hyperedge_ids": [
+        "h_00211",
+        "h_01320",
+        "h_01321",
+        "h_01322"
+      ],
+      "source_articles": [
+        5441,
+        5442,
+        5443
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00369",
+          "surface_form": "Alexandria",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5442,
+              5441,
+              5443
+            ]
+          }
+        },
+        {
+          "node_id": "meth_00295",
+          "surface_form": "Alexandria",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5442
+            ],
+            "entity_id": 248027
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "GNoME",
+      "status": "EXACT",
+      "components": [
+        [
+          "meth_00169",
+          "comp_00589",
+          "data_00144",
+          "cite_00330"
+        ]
+      ],
+      "node_ids": [
+        "cite_00330",
+        "comp_00589",
+        "data_00144",
+        "meth_00169"
+      ],
+      "hyperedge_ids": [
+        "h_00056",
+        "h_00285",
+        "h_00288",
+        "h_00507",
+        "h_01148",
+        "h_01149",
+        "h_01150",
+        "h_01151",
+        "h_01152",
+        "h_01153",
+        "h_01154",
+        "h_01155",
+        "h_01156",
+        "h_01157",
+        "h_01158",
+        "h_01159",
+        "h_01160",
+        "h_01161",
+        "h_01162",
+        "h_01305",
+        "h_01318",
+        "h_01321",
+        "h_01331"
+      ],
+      "source_articles": [
+        5387,
+        5389,
+        5439,
+        5442,
+        5453,
+        5455
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00330",
+          "surface_form": "GNoME",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5453,
+              5442,
+              5389,
+              5439
+            ]
+          }
+        },
+        {
+          "node_id": "comp_00589",
+          "surface_form": "GNoME",
+          "type": "component",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5455
+            ],
+            "entity_id": 249144
+          }
+        },
+        {
+          "node_id": "data_00144",
+          "surface_form": "GNoME",
+          "type": "dataset",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5455
+            ],
+            "entity_id": 249228
+          }
+        },
+        {
+          "node_id": "meth_00169",
+          "surface_form": "GNoME",
+          "type": "method",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5387
+            ],
+            "entity_id": 246628
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "WBM",
+      "status": "EXACT",
+      "components": [
+        [
+          "data_00175",
+          "cite_00376"
+        ]
+      ],
+      "node_ids": [
+        "cite_00376",
+        "data_00175"
+      ],
+      "hyperedge_ids": [
+        "h_00204",
+        "h_00216",
+        "h_00481",
+        "h_00561",
+        "h_01321"
+      ],
+      "source_articles": [
+        5441,
+        5442,
+        5443
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00376",
+          "surface_form": "WBM",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5442
+            ]
+          }
+        },
+        {
+          "node_id": "data_00175",
+          "surface_form": "WBM",
+          "type": "dataset",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5441,
+              5443
+            ],
+            "entity_id": 250135
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    },
+    {
+      "question_id": "Q14",
+      "target": "OMat24",
+      "status": "EXACT",
+      "components": [
+        [
+          "data_00101",
+          "cite_00311"
+        ]
+      ],
+      "node_ids": [
+        "cite_00311",
+        "data_00101"
+      ],
+      "hyperedge_ids": [
+        "h_00210",
+        "h_00432",
+        "h_01320",
+        "h_01322",
+        "h_01326"
+      ],
+      "source_articles": [
+        5441,
+        5442,
+        5443,
+        5447
+      ],
+      "evidence": [
+        {
+          "node_id": "cite_00311",
+          "surface_form": "OMat24",
+          "type": "cited_work",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5447,
+              5441,
+              5443
+            ]
+          }
+        },
+        {
+          "node_id": "data_00101",
+          "surface_form": "OMat24",
+          "type": "dataset",
+          "provenance": {
+            "source": "mvkg",
+            "collection_id": 10,
+            "articles": [
+              5442
+            ],
+            "entity_id": 247998
+          }
+        }
+      ],
+      "rationale": "Normalized full surface-form identity, including typographic hyphens; heterogeneous node types accepted.",
+      "verification_method": "Fresh normalized matching; assistant inspection of explicit node text, relation and provenance for nonexact cases. No human expert adjudication."
+    }
+  ],
+  "counts": {
+    "EXACT": 48,
+    "PARTIAL": 11,
+    "ALIAS": 1,
+    "ABSENT": 2,
+    "COMPOSITE": 1
+  },
+  "target_occurrences": 63,
+  "unique_targets": 50,
+  "basic_normalized_exact_occurrences": 47,
+  "basic_method_only_exact_occurrences": 28,
+  "basic_no_literal_occurrences": 16,
+  "limitations": "PARTIAL targets remain in conditional denominator but receive no full raw recovery credit; their component coverage is reported separately. ABSENT means no defensible mapping found by this audit, not a proof of semantic absence."
+}

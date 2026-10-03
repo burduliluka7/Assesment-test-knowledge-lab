@@ -1,0 +1,1686 @@
+{
+  "entity:meth_00225": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": "clai_00368",
+        "evidence_text": "Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "evidence_link": {
+          "evidence_id": "clai_00368",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8707232475280762,
+        "hypothesis": "Kohn-Sham density-functional theory supports predicting interatomic potentials.",
+        "premise": "Candidate: Kohn-Sham density-functional theory. Relation: safe_literal_mention. Evidence: Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "probabilities": {
+          "contradiction": 0.0011586000910028815,
+          "entailment": 0.9861220717430115,
+          "neutral": 0.012719351798295975
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 68,
+        "full_tokens": 68,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": "clai_00001",
+        "evidence_text": "The modified convolution function reduces the mean absolute error for formation‑energy prediction from 0.112 eV/atom to 0.039 eV/atom, achieving DFT‑level accuracy comparable to the experimental DFT‑experiment error of 0.081–0.136 eV/atom.",
+        "evidence_link": {
+          "evidence_id": "clai_00001",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7626581192016602,
+        "hypothesis": "Kohn-Sham density-functional theory supports accuracy close to DFT.",
+        "premise": "Candidate: Kohn-Sham density-functional theory. Relation: safe_literal_mention. Evidence: The modified convolution function reduces the mean absolute error for formation‑energy prediction from 0.112 eV/atom to 0.039 eV/atom, achieving DFT‑level accuracy comparable to the experimental DFT‑experiment error of 0.081–0.136 eV/atom.",
+        "probabilities": {
+          "contradiction": 0.0008643565233796835,
+          "entailment": 0.9911428689956665,
+          "neutral": 0.007992725819349289
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 90,
+        "full_tokens": 90,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": "clai_00422",
+        "evidence_text": "Direct minimization of the total KS‑DFT energy with stochastic gradient descent reduces the asymptotic computational complexity from O(N⁴) to O(N³), and the full‑batch D4FT algorithm has complexity O(nN²)+O(n²N²), which is lower than the O(n²N²) complexity of conventional SCF; minibatch training further lowers the cost.",
+        "evidence_link": {
+          "evidence_id": "clai_00422",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7290514707565308,
+        "hypothesis": "Kohn-Sham density-functional theory supports computational efficiency.",
+        "premise": "Candidate: Kohn-Sham density-functional theory. Relation: safe_literal_mention. Evidence: Direct minimization of the total KS‑DFT energy with stochastic gradient descent reduces the asymptotic computational complexity from O(N⁴) to O(N³), and the full‑batch D4FT algorithm has complexity O(nN²)+O(n²N²), which is lower than the O(n²N²) complexity of conventional SCF; minibatch training further lowers the cost.",
+        "probabilities": {
+          "contradiction": 0.07432346045970917,
+          "entailment": 0.6538537740707397,
+          "neutral": 0.2718227207660675
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 118,
+        "full_tokens": 118,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7671495676040649,
+        "hypothesis": "Kohn-Sham density-functional theory supports systems of millions of atoms.",
+        "premise": "Candidate: Kohn-Sham density-functional theory. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.0005512196803465486,
+          "entailment": 0.9953951239585876,
+          "neutral": 0.004053704906255007
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 93,
+        "full_tokens": 93,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00414": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": "clai_00368",
+        "evidence_text": "Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "evidence_link": {
+          "evidence_id": "clai_00368",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8707232475280762,
+        "hypothesis": "DFT supports predicting interatomic potentials.",
+        "premise": "Candidate: DFT. Relation: safe_literal_mention. Evidence: Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "probabilities": {
+          "contradiction": 0.0009850627975538373,
+          "entailment": 0.9674578905105591,
+          "neutral": 0.031557004898786545
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 56,
+        "full_tokens": 56,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": "clai_00001",
+        "evidence_text": "The modified convolution function reduces the mean absolute error for formation‑energy prediction from 0.112 eV/atom to 0.039 eV/atom, achieving DFT‑level accuracy comparable to the experimental DFT‑experiment error of 0.081–0.136 eV/atom.",
+        "evidence_link": {
+          "evidence_id": "clai_00001",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7626581192016602,
+        "hypothesis": "DFT supports accuracy close to DFT.",
+        "premise": "Candidate: DFT. Relation: safe_literal_mention. Evidence: The modified convolution function reduces the mean absolute error for formation‑energy prediction from 0.112 eV/atom to 0.039 eV/atom, achieving DFT‑level accuracy comparable to the experimental DFT‑experiment error of 0.081–0.136 eV/atom.",
+        "probabilities": {
+          "contradiction": 0.0009738014196045697,
+          "entailment": 0.9879944324493408,
+          "neutral": 0.01103184837847948
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 78,
+        "full_tokens": 78,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": "clai_00422",
+        "evidence_text": "Direct minimization of the total KS‑DFT energy with stochastic gradient descent reduces the asymptotic computational complexity from O(N⁴) to O(N³), and the full‑batch D4FT algorithm has complexity O(nN²)+O(n²N²), which is lower than the O(n²N²) complexity of conventional SCF; minibatch training further lowers the cost.",
+        "evidence_link": {
+          "evidence_id": "clai_00422",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7290514707565308,
+        "hypothesis": "DFT supports computational efficiency.",
+        "premise": "Candidate: DFT. Relation: safe_literal_mention. Evidence: Direct minimization of the total KS‑DFT energy with stochastic gradient descent reduces the asymptotic computational complexity from O(N⁴) to O(N³), and the full‑batch D4FT algorithm has complexity O(nN²)+O(n²N²), which is lower than the O(n²N²) complexity of conventional SCF; minibatch training further lowers the cost.",
+        "probabilities": {
+          "contradiction": 0.0850544199347496,
+          "entailment": 0.517810583114624,
+          "neutral": 0.3971349895000458
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 106,
+        "full_tokens": 106,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7671495676040649,
+        "hypothesis": "DFT supports systems of millions of atoms.",
+        "premise": "Candidate: DFT. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.00040996097959578037,
+          "entailment": 0.9964025020599365,
+          "neutral": 0.0031876289285719395
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 81,
+        "full_tokens": 81,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00191": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8002790212631226,
+        "hypothesis": "GAP supports predicting interatomic potentials.",
+        "premise": "Candidate: GAP. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.002803476294502616,
+          "entailment": 0.9732344150543213,
+          "neutral": 0.023962121456861496
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 81,
+        "full_tokens": 81,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": "clai_00679",
+        "evidence_text": "GAP radial and angular distribution functions for liquid and amorphous carbon closely match DFT reference results, including peak locations, extents, and overall curve shapes.",
+        "evidence_link": {
+          "evidence_id": "clai_00679",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7546687126159668,
+        "hypothesis": "GAP supports accuracy close to DFT.",
+        "premise": "Candidate: GAP. Relation: safe_literal_mention. Evidence: GAP radial and angular distribution functions for liquid and amorphous carbon closely match DFT reference results, including peak locations, extents, and overall curve shapes.",
+        "probabilities": {
+          "contradiction": 9.399171540280804e-05,
+          "entailment": 0.975980818271637,
+          "neutral": 0.023925183340907097
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 53,
+        "full_tokens": 53,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": "clai_00233",
+        "evidence_text": "A training database of manageable size, constructed from DFT configurations covering relevant phases and defects, is sufficient to achieve high transferability of the GAP model across diverse silicon configurations.",
+        "evidence_link": {
+          "evidence_id": "clai_00233",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6493412256240845,
+        "hypothesis": "GAP supports computational efficiency.",
+        "premise": "Candidate: GAP. Relation: safe_literal_mention. Evidence: A training database of manageable size, constructed from DFT configurations covering relevant phases and defects, is sufficient to achieve high transferability of the GAP model across diverse silicon configurations.",
+        "probabilities": {
+          "contradiction": 0.001024493365548551,
+          "entailment": 0.0011349942069500685,
+          "neutral": 0.9978405237197876
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 55,
+        "full_tokens": 55,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7671495676040649,
+        "hypothesis": "GAP supports systems of millions of atoms.",
+        "premise": "Candidate: GAP. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.00046958544407971203,
+          "entailment": 0.9954857230186462,
+          "neutral": 0.00404468784108758
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 81,
+        "full_tokens": 81,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00392": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": "clai_00164",
+        "evidence_text": "DeePMD-kit supports interpolation between Deep Potential models and empirical pairwise potentials for cases where DFT calculations fail at close interatomic distances.",
+        "evidence_link": {
+          "evidence_id": "clai_00164",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8003813028335571,
+        "hypothesis": "Deep Molecular Dynamics supports predicting interatomic potentials.",
+        "premise": "Candidate: Deep Molecular Dynamics. Relation: safe_literal_mention. Evidence: DeePMD-kit supports interpolation between Deep Potential models and empirical pairwise potentials for cases where DFT calculations fail at close interatomic distances.",
+        "probabilities": {
+          "contradiction": 0.006709190551191568,
+          "entailment": 0.9312520027160645,
+          "neutral": 0.062038764357566833
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 57,
+        "full_tokens": 57,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": "clai_00164",
+        "evidence_text": "DeePMD-kit supports interpolation between Deep Potential models and empirical pairwise potentials for cases where DFT calculations fail at close interatomic distances.",
+        "evidence_link": {
+          "evidence_id": "clai_00164",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7283463478088379,
+        "hypothesis": "Deep Molecular Dynamics supports accuracy close to DFT.",
+        "premise": "Candidate: Deep Molecular Dynamics. Relation: safe_literal_mention. Evidence: DeePMD-kit supports interpolation between Deep Potential models and empirical pairwise potentials for cases where DFT calculations fail at close interatomic distances.",
+        "probabilities": {
+          "contradiction": 0.05042165890336037,
+          "entailment": 0.17355979979038239,
+          "neutral": 0.776018500328064
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 56,
+        "full_tokens": 56,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": "clai_00574",
+        "evidence_text": "DeePMD preserves translational, rotational, and permutational symmetries by constructing a local reference frame for each atom and sorting neighbor lists by species and inverse distance.",
+        "evidence_link": {
+          "evidence_id": "clai_00574",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6526367664337158,
+        "hypothesis": "Deep Molecular Dynamics supports computational efficiency.",
+        "premise": "Candidate: Deep Molecular Dynamics. Relation: safe_literal_mention. Evidence: DeePMD preserves translational, rotational, and permutational symmetries by constructing a local reference frame for each atom and sorting neighbor lists by species and inverse distance.",
+        "probabilities": {
+          "contradiction": 0.0015737558715045452,
+          "entailment": 0.0004467903054319322,
+          "neutral": 0.997979462146759
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 57,
+        "full_tokens": 57,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": "clai_00352",
+        "evidence_text": "Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "evidence_link": {
+          "evidence_id": "clai_00352",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7671495676040649,
+        "hypothesis": "Deep Molecular Dynamics supports systems of millions of atoms.",
+        "premise": "Candidate: Deep Molecular Dynamics. Relation: safe_literal_mention. Evidence: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible.",
+        "probabilities": {
+          "contradiction": 0.00043375534005463123,
+          "entailment": 0.9956674575805664,
+          "neutral": 0.0038988664746284485
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 85,
+        "full_tokens": 85,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00066": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": "clai_00368",
+        "evidence_text": "Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "evidence_link": {
+          "evidence_id": "clai_00368",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8707232475280762,
+        "hypothesis": "Open Materials 2024 supports predicting interatomic potentials.",
+        "premise": "Candidate: Open Materials 2024. Relation: safe_literal_mention. Evidence: Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "probabilities": {
+          "contradiction": 0.0010276554385200143,
+          "entailment": 0.9884746670722961,
+          "neutral": 0.010497720912098885
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 60,
+        "full_tokens": 60,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": "clai_00368",
+        "evidence_text": "Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "evidence_link": {
+          "evidence_id": "clai_00368",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7416497468948364,
+        "hypothesis": "Open Materials 2024 supports accuracy close to DFT.",
+        "premise": "Candidate: Open Materials 2024. Relation: safe_literal_mention. Evidence: Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "probabilities": {
+          "contradiction": 0.0005771151045337319,
+          "entailment": 0.9912580847740173,
+          "neutral": 0.008164807222783566
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 59,
+        "full_tokens": 59,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": "clai_00368",
+        "evidence_text": "Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "evidence_link": {
+          "evidence_id": "clai_00368",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6766554117202759,
+        "hypothesis": "Open Materials 2024 supports computational efficiency.",
+        "premise": "Candidate: Open Materials 2024. Relation: safe_literal_mention. Evidence: Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "probabilities": {
+          "contradiction": 0.008716077543795109,
+          "entailment": 0.004512191750109196,
+          "neutral": 0.9867717623710632
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 57,
+        "full_tokens": 57,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": "clai_00361",
+        "evidence_text": "OMat24 contains a large fraction of far-from-equilibrium structures with 1 to 100 atoms per structure (majority having less than 20 atoms), yielding broader label distributions than relaxation-only datasets.",
+        "evidence_link": {
+          "evidence_id": "clai_00361",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7076422572135925,
+        "hypothesis": "Open Materials 2024 supports systems of millions of atoms.",
+        "premise": "Candidate: Open Materials 2024. Relation: safe_literal_mention. Evidence: OMat24 contains a large fraction of far-from-equilibrium structures with 1 to 100 atoms per structure (majority having less than 20 atoms), yielding broader label distributions than relaxation-only datasets.",
+        "probabilities": {
+          "contradiction": 0.9821571111679077,
+          "entailment": 0.0006182889337651432,
+          "neutral": 0.017224526032805443
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 69,
+        "full_tokens": 69,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 2
+  },
+  "entity:cite_00568": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Brenner potential supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Brenner potential supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Brenner potential supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Brenner potential supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00071": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "ReaxFF supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "ReaxFF supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "ReaxFF supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "ReaxFF supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00574": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Quickstep supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Quickstep supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Quickstep supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Quickstep supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00577": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Franzblau algorithm supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Franzblau algorithm supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Franzblau algorithm supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Franzblau algorithm supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00569": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "EDIP supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "EDIP supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "EDIP supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "EDIP supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00575": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CASTEP supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CASTEP supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CASTEP supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CASTEP supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00570": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "REBO supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "REBO supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "REBO supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "REBO supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00573": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CUR supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CUR supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CUR supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CUR supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00578": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "QML supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "QML supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "QML supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "QML supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00580": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": "clai_00381",
+        "evidence_text": "Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency.",
+        "evidence_link": {
+          "evidence_id": "clai_00381",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6691137552261353,
+        "hypothesis": "tight-binding supports predicting interatomic potentials.",
+        "premise": "Candidate: tight-binding. Relation: safe_literal_mention. Evidence: Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency.",
+        "probabilities": {
+          "contradiction": 0.002858153311535716,
+          "entailment": 0.0008854770567268133,
+          "neutral": 0.9962563514709473
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 64,
+        "full_tokens": 64,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": "clai_00381",
+        "evidence_text": "Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency.",
+        "evidence_link": {
+          "evidence_id": "clai_00381",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6833615899085999,
+        "hypothesis": "tight-binding supports accuracy close to DFT.",
+        "premise": "Candidate: tight-binding. Relation: safe_literal_mention. Evidence: Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency.",
+        "probabilities": {
+          "contradiction": 0.002743296790868044,
+          "entailment": 0.0004521644441410899,
+          "neutral": 0.9968045949935913
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 63,
+        "full_tokens": 63,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": "clai_00381",
+        "evidence_text": "Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency.",
+        "evidence_link": {
+          "evidence_id": "clai_00381",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.663597822189331,
+        "hypothesis": "tight-binding supports computational efficiency.",
+        "premise": "Candidate: tight-binding. Relation: safe_literal_mention. Evidence: Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency.",
+        "probabilities": {
+          "contradiction": 0.8654899597167969,
+          "entailment": 0.042793046683073044,
+          "neutral": 0.09171703457832336
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 61,
+        "full_tokens": 61,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": "clai_00381",
+        "evidence_text": "Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency.",
+        "evidence_link": {
+          "evidence_id": "clai_00381",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6276832818984985,
+        "hypothesis": "tight-binding supports systems of millions of atoms.",
+        "premise": "Candidate: tight-binding. Relation: safe_literal_mention. Evidence: Compared with empirical tight‑binding and continuum models, DeepH offers higher accuracy and transferability for twisted van‑der‑Waals materials, albeit with slightly lower computational efficiency.",
+        "probabilities": {
+          "contradiction": 0.0007593179470859468,
+          "entailment": 5.923347271163948e-05,
+          "neutral": 0.9991814494132996
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 64,
+        "full_tokens": 64,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 2
+  },
+  "entity:cite_00579": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Shapeev potential supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Shapeev potential supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Shapeev potential supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Shapeev potential supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00576": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Pastewka potential supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Pastewka potential supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Pastewka potential supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Pastewka potential supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00088": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": "clai_00368",
+        "evidence_text": "Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "evidence_link": {
+          "evidence_id": "clai_00368",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8707232475280762,
+        "hypothesis": "Machine-learned interatomic potentials supports predicting interatomic potentials.",
+        "premise": "Candidate: Machine-learned interatomic potentials. Relation: safe_literal_mention. Evidence: Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "probabilities": {
+          "contradiction": 0.0008509658509865403,
+          "entailment": 0.9693903923034668,
+          "neutral": 0.029758626595139503
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 68,
+        "full_tokens": 68,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": "clai_00368",
+        "evidence_text": "Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "evidence_link": {
+          "evidence_id": "clai_00368",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7416497468948364,
+        "hypothesis": "Machine-learned interatomic potentials supports accuracy close to DFT.",
+        "premise": "Candidate: Machine-learned interatomic potentials. Relation: safe_literal_mention. Evidence: Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "probabilities": {
+          "contradiction": 0.0005765403038822114,
+          "entailment": 0.9874987006187439,
+          "neutral": 0.011924708262085915
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 67,
+        "full_tokens": 67,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": "clai_00368",
+        "evidence_text": "Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "evidence_link": {
+          "evidence_id": "clai_00368",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6766554117202759,
+        "hypothesis": "Machine-learned interatomic potentials supports computational efficiency.",
+        "premise": "Candidate: Machine-learned interatomic potentials. Relation: safe_literal_mention. Evidence: Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "probabilities": {
+          "contradiction": 0.00417814776301384,
+          "entailment": 0.006800967734307051,
+          "neutral": 0.9890208840370178
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 65,
+        "full_tokens": 65,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": "clai_00089",
+        "evidence_text": "Unconstrained machine-learned interatomic potentials (MLIPs) trained on large datasets achieve accuracies on par with state-of-the-art equivariant architectures while maintaining orders-of-magnitude lower computational cost than quantum-mechanical methods.",
+        "evidence_link": {
+          "evidence_id": "clai_00089",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7435927391052246,
+        "hypothesis": "Machine-learned interatomic potentials supports systems of millions of atoms.",
+        "premise": "Candidate: Machine-learned interatomic potentials. Relation: safe_literal_mention. Evidence: Unconstrained machine-learned interatomic potentials (MLIPs) trained on large datasets achieve accuracies on par with state-of-the-art equivariant architectures while maintaining orders-of-magnitude lower computational cost than quantum-mechanical methods.",
+        "probabilities": {
+          "contradiction": 0.00026127969613298774,
+          "entailment": 0.00015745261043775827,
+          "neutral": 0.9995812773704529
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 86,
+        "full_tokens": 86,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00572": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "neural network potentials supports predicting interatomic potentials.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "neural network potentials supports accuracy close to DFT.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "neural network potentials supports computational efficiency.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "neural network potentials supports systems of millions of atoms.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:comp_00400": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting interatomic potentials",
+        "evidence_id": "task_00292",
+        "evidence_text": "machine learning interatomic potentials",
+        "evidence_link": {
+          "evidence_id": "task_00292",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00209",
+                "relation": "addresses",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5442,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.9515875577926636,
+        "hypothesis": "OMat24 dataset supports predicting interatomic potentials.",
+        "premise": "Candidate: OMat24 dataset. Relation: validated_method_target. Evidence: machine learning interatomic potentials",
+        "probabilities": {
+          "contradiction": 0.0009158789180219173,
+          "entailment": 0.45679038763046265,
+          "neutral": 0.5422937273979187
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 37,
+        "full_tokens": 37,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "accuracy close to DFT",
+        "evidence_id": "tech_00414",
+        "evidence_text": "DFT fine-tuning",
+        "evidence_link": {
+          "evidence_id": "tech_00414",
+          "field": "techniques",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00214",
+                "relation": "uses_technique",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5442,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.8361994624137878,
+        "hypothesis": "OMat24 dataset supports accuracy close to DFT.",
+        "premise": "Candidate: OMat24 dataset. Relation: validated_method_target. Evidence: DFT fine-tuning",
+        "probabilities": {
+          "contradiction": 0.00021914186072535813,
+          "entailment": 0.007340998388826847,
+          "neutral": 0.992439866065979
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 34,
+        "full_tokens": 34,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "computational efficiency",
+        "evidence_id": "task_00010",
+        "evidence_text": "computational chemistry",
+        "evidence_link": {
+          "evidence_id": "task_00010",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00209",
+                "relation": "addresses",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5442,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.800778329372406,
+        "hypothesis": "OMat24 dataset supports computational efficiency.",
+        "premise": "Candidate: OMat24 dataset. Relation: validated_method_target. Evidence: computational chemistry",
+        "probabilities": {
+          "contradiction": 0.0021331445313990116,
+          "entailment": 0.004272300284355879,
+          "neutral": 0.9935945868492126
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 30,
+        "full_tokens": 30,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "systems of millions of atoms",
+        "evidence_id": "task_00149",
+        "evidence_text": "atomistic modeling",
+        "evidence_link": {
+          "evidence_id": "task_00149",
+          "field": "tasks",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00209",
+                "relation": "addresses",
+                "year": 2026,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5442,
+                  "article_year": 2026
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7354528903961182,
+        "hypothesis": "OMat24 dataset supports systems of millions of atoms.",
+        "premise": "Candidate: OMat24 dataset. Relation: validated_method_target. Evidence: atomistic modeling",
+        "probabilities": {
+          "contradiction": 0.00046540331095457077,
+          "entailment": 0.0001386917574563995,
+          "neutral": 0.9993958473205566
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 34,
+        "full_tokens": 34,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  }
+}

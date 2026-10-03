@@ -1,0 +1,138 @@
+{
+  "original_question": "Which methods (by Feb 2026) are best suited for predicting ionic conductivity when full ab initio MD is too expensive but accuracy must be maintained?",
+  "answer_type": "method",
+  "core_task": "predicting ionic conductivity",
+  "requirements": [
+    "full ab initio MD is too expensive",
+    "accuracy must be maintained"
+  ],
+  "exclusions": [],
+  "temporal_condition": "by Feb 2026",
+  "source_spans": {
+    "temporal_condition": [
+      {
+        "text": "by Feb 2026",
+        "source_span": "by Feb 2026",
+        "start": 15,
+        "end": 26
+      }
+    ],
+    "answer_type": {
+      "text": "methods",
+      "source_span": "methods",
+      "start": 6,
+      "end": 13
+    },
+    "core_task": {
+      "text": "predicting ionic conductivity",
+      "source_span": "predicting ionic conductivity",
+      "start": 48,
+      "end": 77
+    },
+    "requirements": [
+      {
+        "text": "full ab initio MD is too expensive",
+        "source_span": "full ab initio MD is too expensive",
+        "start": 83,
+        "end": 117
+      },
+      {
+        "text": "accuracy must be maintained",
+        "source_span": "accuracy must be maintained",
+        "start": 122,
+        "end": 149
+      }
+    ]
+  },
+  "components": [
+    {
+      "text": "predicting ionic conductivity",
+      "source_span": "predicting ionic conductivity",
+      "start": 48,
+      "end": 77,
+      "kind": "core_task",
+      "connector": "",
+      "id": "component_0"
+    },
+    {
+      "text": "full ab initio MD is too expensive",
+      "source_span": "full ab initio MD is too expensive",
+      "start": 83,
+      "end": 117,
+      "kind": "requirement",
+      "connector": "when",
+      "id": "component_1"
+    },
+    {
+      "text": "accuracy must be maintained",
+      "source_span": "accuracy must be maintained",
+      "start": 122,
+      "end": 149,
+      "kind": "requirement",
+      "connector": "when",
+      "id": "component_2"
+    }
+  ],
+  "fallback": false,
+  "warnings": [
+    "Temporal phrase recorded; primary snapshot remains publication-visible year 2026, no month precision",
+    "Only publication-year visibility can be enforced; dates within a year are not resolved by the source data"
+  ],
+  "parser": "deterministic_extractive",
+  "search_query": "method; predicting ionic conductivity; full ab initio MD is too expensive; accuracy must be maintained",
+  "structured_query": "answer families: method\nscientific modifiers: \nanswer type: method\ntask: predicting ionic conductivity\nrequirement: full ab initio MD is too expensive\nrequirement: accuracy must be maintained\ntime: by Feb 2026",
+  "answer_types": [
+    "method"
+  ],
+  "preserved_modifiers": "",
+  "parsed_only_query": "method; predicting ionic conductivity; full ab initio MD is too expensive; accuracy must be maintained",
+  "combined_query": "Original question: Which methods (by Feb 2026) are best suited for predicting ionic conductivity when full ab initio MD is too expensive but accuracy must be maintained?\nStructured intent:\nanswer families: method\nscientific modifiers: \nanswer type: method\ntask: predicting ionic conductivity\nrequirement: full ab initio MD is too expensive\nrequirement: accuracy must be maintained\ntime: by Feb 2026",
+  "temporal_cutoff": 2026,
+  "ranking_components": [
+    {
+      "id": "r0",
+      "kind": "core_task",
+      "text": "predicting ionic conductivity",
+      "source_span": {
+        "start": 48,
+        "end": 77,
+        "text": "predicting ionic conductivity"
+      },
+      "connector": "",
+      "polarity": "positive"
+    },
+    {
+      "id": "r1",
+      "kind": "requirement",
+      "text": "full ab initio MD is too expensive",
+      "source_span": {
+        "start": 83,
+        "end": 117,
+        "text": "full ab initio MD is too expensive"
+      },
+      "connector": "when",
+      "polarity": "positive"
+    },
+    {
+      "id": "r2",
+      "kind": "requirement",
+      "text": "accuracy must be maintained",
+      "source_span": {
+        "start": 122,
+        "end": 149,
+        "text": "accuracy must be maintained"
+      },
+      "connector": "when",
+      "polarity": "positive"
+    }
+  ],
+  "answer_heads": [
+    "method"
+  ],
+  "answer_families": [
+    "cited_work",
+    "component",
+    "method",
+    "technique"
+  ]
+}

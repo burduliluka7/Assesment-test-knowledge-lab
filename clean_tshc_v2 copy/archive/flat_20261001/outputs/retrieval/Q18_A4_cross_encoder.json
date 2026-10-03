@@ -1,0 +1,2397 @@
+{
+  "tech_00020": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00020",
+        "text": "NAME: Two-stage training schedule\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00631",
+        "text": "DIRECT_CLAIMS: A novel two-stage training schedule with BF16 pre-training followed by FP32 fine-tuning recovers the 20-50% accuracy loss from BF16 precision alone while enabling efficient training."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 128,
+    "query_truncated": false,
+    "relevance_score": -10.387175559997559,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "tech_00006": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00006",
+        "text": "NAME: Two-stage training\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00631",
+        "text": "DIRECT_CLAIMS: A novel two-stage training schedule with BF16 pre-training followed by FP32 fine-tuning recovers the 20-50% accuracy loss from BF16 precision alone while enabling efficient training."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 127,
+    "query_truncated": false,
+    "relevance_score": -10.366005897521973,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "prob_00520": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00520",
+        "text": "NAME: Combining system conditioning with pretrained models\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -3.8432438373565674,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "prob_00371": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00371",
+        "text": "NAME: Limited extrapolation capability\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 86,
+    "query_truncated": false,
+    "relevance_score": -7.113088607788086,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "clai_00404": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00404",
+        "text": "NAME: Trained ML models are typically only effective for interpolating data points and may not be reliable when extrapolating beyond the known data range.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00351",
+        "text": "OTHER: ml_multiscale_modeling_perspective"
+      }
+    ],
+    "omitted": [],
+    "token_count": 120,
+    "query_truncated": false,
+    "relevance_score": -7.732844352722168,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "clai_00272": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00272",
+        "text": "NAME: DFT database size used to train U-MLIPs has increased by more than an order of magnitude each year, from roughly 2×10^5 in 2022 to 1.18×10^8 in 2024.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00388",
+        "text": "OTHER: MLIP_framework_analysis"
+      }
+    ],
+    "omitted": [],
+    "token_count": 140,
+    "query_truncated": false,
+    "relevance_score": -5.676980018615723,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "prob_00549": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00549",
+        "text": "NAME: Balancing accuracy and efficiency in multi-task training\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 88,
+    "query_truncated": false,
+    "relevance_score": -9.529282569885254,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "clai_00487": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00487",
+        "text": "NAME: The number of force components in the initial training set is more important than total configurations for obtaining generalizable models.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00383",
+        "text": "OTHER: DeePMD training protocol for diffusion coefficient computation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 123,
+    "query_truncated": false,
+    "relevance_score": -8.820475578308105,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "tech_00661": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00661",
+        "text": "NAME: Large-scale pretraining\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00547",
+        "text": "DIRECT_CLAIMS: Large-scale pretraining of MLIPs on GNoME dataset enables models with unprecedented zero-shot accuracy on downstream AIMD data, outperforming state-of-the-art NequIP models trained on hundreds of structures from the target distribution."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 138,
+    "query_truncated": false,
+    "relevance_score": -10.065134048461914,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "clai_00406": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00406",
+        "text": "NAME: Neural operators can make predictions that are not affected by discretization settings while maintaining prediction accuracy.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00351",
+        "text": "OTHER: ml_multiscale_modeling_perspective"
+      }
+    ],
+    "omitted": [],
+    "token_count": 111,
+    "query_truncated": false,
+    "relevance_score": -7.76198148727417,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "task_00627": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "task_00627",
+        "text": "NAME: Multi-dataset training\nTYPE: task"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 90,
+    "query_truncated": false,
+    "relevance_score": -4.159296035766602,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "clai_00092": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00092",
+        "text": "NAME: Fine-tuning models pre-trained on OMat24 to the MAD dataset achieves near-converged validation metrics in 30-100 epochs versus 700+ epochs when training from scratch, halving validation energy and force errors and achieving 50% lower test error than training on MAD alone.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00417",
+        "text": "OTHER: unconstrained MLIP evaluation framework"
+      }
+    ],
+    "omitted": [],
+    "token_count": 156,
+    "query_truncated": false,
+    "relevance_score": -5.554643630981445,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "clai_00407": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00407",
+        "text": "NAME: Physics-informed machine learning and transfer learning can reduce the need for large datasets while maintaining prediction accuracy and performance of ML models.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00351",
+        "text": "OTHER: ml_multiscale_modeling_perspective"
+      }
+    ],
+    "omitted": [],
+    "token_count": 119,
+    "query_truncated": false,
+    "relevance_score": -7.333837985992432,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "comp_00737": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00737",
+        "text": "NAME: System-conditioning embedding\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 91,
+    "query_truncated": false,
+    "relevance_score": -0.8581078052520752,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "clai_00365": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00365",
+        "text": "NAME: Training on OMat24 results in models with better extrapolation to regions with lower dataset density farther away from the convex hull compared to models trained on other datasets.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00039",
+        "text": "ARTICLE: Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00292",
+        "text": "OTHER: OMat24 dataset"
+      }
+    ],
+    "omitted": [],
+    "token_count": 127,
+    "query_truncated": false,
+    "relevance_score": -9.978403091430664,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "prob_00557": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00557",
+        "text": "NAME: Memory constraints in large MoE training\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 85,
+    "query_truncated": false,
+    "relevance_score": -7.527087211608887,
+    "batch_runtime_seconds": 0.38581360000534914,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02411335000033432
+  },
+  "clai_00233": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00233",
+        "text": "NAME: A training database of manageable size, constructed from DFT configurations covering relevant phases and defects, is sufficient to achieve high transferability of the GAP model across diverse silicon configurations.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00196",
+        "text": "OTHER: Gaussian Approximation Potential (GAP) for silicon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 127,
+    "query_truncated": false,
+    "relevance_score": -4.945979118347168,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "comp_00400": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00400",
+        "text": "NAME: OMat24 dataset\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00114",
+        "text": "DIRECT_CLAIMS: Training a TensorNet model on the 400 k‑structure MatPES‑PBE dataset requires approximately 15 minutes per epoch on a single RTX A6000 GPU, whereas training on the 100 M‑structure OMat24 dataset needs about 20 hours per epoch on sixteen A100 GPUs, highlighting the computational efficiency of MatPES."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00370",
+        "text": "DIRECT_CLAIMS: The diversity of the larger OMat24 dataset does not benefit from the regularization or augmentation provided by DeNS, whereas dataset augmentation techniques like DeNS can significantly enhance performance when training solely on the MPtraj dataset."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00446",
+        "text": "DIRECT_CLAIMS: Rattled systems in the OMat24 dataset have deleterious effects on model performance when evaluated on out-of-distribution hetero-diatomic systems."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00039",
+        "text": "ARTICLE: Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 254,
+    "query_truncated": false,
+    "relevance_score": -10.28654670715332,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "clai_00124": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00124",
+        "text": "NAME: A 48% reduction in equivariance error from 1M to 4M training examples translates to 40-60% performance improvements, exceeding what would be expected from data scaling alone.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "omitted": [],
+    "token_count": 118,
+    "query_truncated": false,
+    "relevance_score": -7.52965784072876,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "clai_00286": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00286",
+        "text": "NAME: Most MLIPs are trained on limited domains (1-10 elements) and cannot extrapolate to new elements or local structures not in training data.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00388",
+        "text": "OTHER: MLIP_framework_analysis"
+      }
+    ],
+    "omitted": [],
+    "token_count": 125,
+    "query_truncated": false,
+    "relevance_score": -5.426063060760498,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "clai_00482": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00482",
+        "text": "NAME: Training set cleaning procedures including minimum ion-ion distance cutoff, energy/force outlier removal, and loss condition monitoring are necessary to help the algorithm converge to a physical model.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00383",
+        "text": "OTHER: DeePMD training protocol for diffusion coefficient computation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 136,
+    "query_truncated": false,
+    "relevance_score": -8.881823539733887,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "prob_00027": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00027",
+        "text": "NAME: Extrapolation to out‑of‑domain configurations\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00004",
+        "text": "ARTICLE: MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+      }
+    ],
+    "omitted": [],
+    "token_count": 98,
+    "query_truncated": false,
+    "relevance_score": -8.592504501342773,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "futu_00161": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "futu_00161",
+        "text": "NAME: Extrapolation benchmark generalization\nTYPE: future_topic"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00004",
+        "text": "ARTICLE: MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+      }
+    ],
+    "omitted": [],
+    "token_count": 97,
+    "query_truncated": false,
+    "relevance_score": -9.508602142333984,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "prob_00556": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00556",
+        "text": "NAME: Multi-task training across diverse DFT settings\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 88,
+    "query_truncated": false,
+    "relevance_score": -9.571386337280273,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "clai_00631": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00631",
+        "text": "NAME: A novel two-stage training schedule with BF16 pre-training followed by FP32 fine-tuning recovers the 20-50% accuracy loss from BF16 precision alone while enabling efficient training.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 119,
+    "query_truncated": false,
+    "relevance_score": -10.362668991088867,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "comp_00780": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00780",
+        "text": "NAME: Multi-task training framework\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -9.499049186706543,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "meth_00352": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00352",
+        "text": "NAME: Hierarchical multiscale modeling\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00402",
+        "text": "DIRECT_CLAIMS: Hierarchical multiscale modeling approaches require large amounts of memory and storage space to store precomputed quantities of interest."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 113,
+    "query_truncated": false,
+    "relevance_score": -8.152181625366211,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "tech_00574": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00574",
+        "text": "NAME: Multi-task training with shared descriptor\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 92,
+    "query_truncated": false,
+    "relevance_score": -9.643946647644043,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "tech_00806": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00806",
+        "text": "NAME: Large-scale dataset training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 91,
+    "query_truncated": false,
+    "relevance_score": -4.221540451049805,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "tech_00109": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00109",
+        "text": "NAME: Hierarchical Body‑Order Expansion\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00004",
+        "text": "ARTICLE: MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -9.365985870361328,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "clai_00643": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00643",
+        "text": "NAME: Training M3GNet on energies alone (M3GNet‑E) yields force and stress mean absolute errors larger than the intrinsic data dispersion, demonstrating that forces and stresses must be included in training.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00037",
+        "text": "OTHER: M3GNet"
+      }
+    ],
+    "omitted": [],
+    "token_count": 128,
+    "query_truncated": false,
+    "relevance_score": -8.409255981445312,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "prob_00472": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00472",
+        "text": "NAME: Size-based extrapolation\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      }
+    ],
+    "omitted": [],
+    "token_count": 89,
+    "query_truncated": false,
+    "relevance_score": -5.5554914474487305,
+    "batch_runtime_seconds": 0.6502849999960745,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.040642812499754655
+  },
+  "tech_00883": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00883",
+        "text": "NAME: Low-precision training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 83,
+    "query_truncated": false,
+    "relevance_score": -9.400396347045898,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "tech_00625": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00625",
+        "text": "NAME: Representation learning\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00535",
+        "text": "DIRECT_CLAIMS: Random‑forest models excel on small datasets but are outperformed by neural‑network models on large datasets due to the benefits of representation learning."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 120,
+    "query_truncated": false,
+    "relevance_score": -8.658956527709961,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "task_00426": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "task_00426",
+        "text": "NAME: Multi-device training\nTYPE: task"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 87,
+    "query_truncated": false,
+    "relevance_score": -9.770886421203613,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "prob_00571": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00571",
+        "text": "NAME: Variable system size batching\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -8.998083114624023,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "clai_00114": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00114",
+        "text": "NAME: Training a TensorNet model on the 400 k‑structure MatPES‑PBE dataset requires approximately 15 minutes per epoch on a single RTX A6000 GPU, whereas training on the 100 M‑structure OMat24 dataset needs about 20 hours per epoch on sixteen A100 GPUs, highlighting the computational efficiency of MatPES.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00025",
+        "text": "ARTICLE: A Foundational Potential Energy Surface Dataset for Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 148,
+    "query_truncated": false,
+    "relevance_score": -9.941896438598633,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "clai_00412": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00412",
+        "text": "NAME: Centralized data sharing platforms can help overcome the shortage of high-quality training data for ML in computational modeling.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00351",
+        "text": "OTHER: ml_multiscale_modeling_perspective"
+      }
+    ],
+    "omitted": [],
+    "token_count": 113,
+    "query_truncated": false,
+    "relevance_score": -8.77613353729248,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "clai_00638": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00638",
+        "text": "NAME: Scaling law experiments were only performed on pretraining due to compute constraints, without studying finetuning effects with energy conservation.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 104,
+    "query_truncated": false,
+    "relevance_score": -8.850828170776367,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "clai_00369": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00369",
+        "text": "NAME: A two-step training strategy with direct force pretraining followed by conservative finetuning results in eSEN models with higher accuracy requiring less total training epochs and time compared to training conservative models from scratch.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00039",
+        "text": "ARTICLE: Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00292",
+        "text": "OTHER: OMat24 dataset"
+      }
+    ],
+    "omitted": [],
+    "token_count": 133,
+    "query_truncated": false,
+    "relevance_score": -10.164836883544922,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "clai_00405": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00405",
+        "text": "NAME: Most common ML techniques such as CNNs are limited to specific discretization settings and do not generalize well to settings that differ from training data discretization.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00351",
+        "text": "OTHER: ml_multiscale_modeling_perspective"
+      }
+    ],
+    "omitted": [],
+    "token_count": 125,
+    "query_truncated": false,
+    "relevance_score": -8.264537811279297,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "tech_00879": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00879",
+        "text": "NAME: Compute-optimal model sizing\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 85,
+    "query_truncated": false,
+    "relevance_score": -9.68466854095459,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "prob_00367": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00367",
+        "text": "NAME: High dimensionality of solution space\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 87,
+    "query_truncated": false,
+    "relevance_score": -6.822295188903809,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "tech_00818": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00818",
+        "text": "NAME: pre-training with non-conservative models\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -4.243472099304199,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "tech_00629": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00629",
+        "text": "NAME: Neural operators\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00406",
+        "text": "DIRECT_CLAIMS: Neural operators can make predictions that are not affected by discretization settings while maintaining prediction accuracy."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 106,
+    "query_truncated": false,
+    "relevance_score": -8.084291458129883,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "comp_00571": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00571",
+        "text": "NAME: Neural operators\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00406",
+        "text": "DIRECT_CLAIMS: Neural operators can make predictions that are not affected by discretization settings while maintaining prediction accuracy."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 106,
+    "query_truncated": false,
+    "relevance_score": -7.967466831207275,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "clai_00545": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00545",
+        "text": "NAME: Final GNoME models predict energies with a mean absolute error of 11 meV per atom on relaxed structures, improved from 21 meV per atom in the initial model trained on Materials Project data.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00169",
+        "text": "OTHER: GNoME"
+      }
+    ],
+    "omitted": [],
+    "token_count": 115,
+    "query_truncated": false,
+    "relevance_score": -9.734329223632812,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "prob_00025": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00025",
+        "text": "NAME: Limited expressivity of two‑body messages\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00004",
+        "text": "ARTICLE: MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+      }
+    ],
+    "omitted": [],
+    "token_count": 96,
+    "query_truncated": false,
+    "relevance_score": -9.012588500976562,
+    "batch_runtime_seconds": 0.33069430000614375,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.020668393750383984
+  },
+  "meth_00427": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00427",
+        "text": "NAME: Scaling laws for neural networks\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -9.269841194152832,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "prob_00026": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00026",
+        "text": "NAME: Data‑efficiency / steep learning curves\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00004",
+        "text": "ARTICLE: MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+      }
+    ],
+    "omitted": [],
+    "token_count": 95,
+    "query_truncated": false,
+    "relevance_score": -9.036623001098633,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "tech_00008": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00008",
+        "text": "NAME: Fine-tuning\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00092",
+        "text": "DIRECT_CLAIMS: Fine-tuning models pre-trained on OMat24 to the MAD dataset achieves near-converged validation metrics in 30-100 epochs versus 700+ epochs when training from scratch, halving validation energy and force errors and achieving 50% lower test error than training on MAD alone."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00630",
+        "text": "DIRECT_CLAIMS: A single UMA model without any fine-tuning performs similarly or better than task-specialized models across diverse DFT tasks including materials, catalysis, molecules, molecular crystals, and MOFs."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00631",
+        "text": "DIRECT_CLAIMS: A novel two-stage training schedule with BF16 pre-training followed by FP32 fine-tuning recovers the 20-50% accuracy loss from BF16 precision alone while enabling efficient training."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 231,
+    "query_truncated": false,
+    "relevance_score": -10.591312408447266,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "prob_00243": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00243",
+        "text": "NAME: Limited expressivity from low Lmax\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00041",
+        "text": "ARTICLE: EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+      }
+    ],
+    "omitted": [],
+    "token_count": 98,
+    "query_truncated": false,
+    "relevance_score": -8.643718719482422,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "comp_00596": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00596",
+        "text": "NAME: GNoME models\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00545",
+        "text": "DIRECT_CLAIMS: Final GNoME models predict energies with a mean absolute error of 11 meV per atom on relaxed structures, improved from 21 meV per atom in the initial model trained on Materials Project data."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 118,
+    "query_truncated": false,
+    "relevance_score": -10.029886245727539,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "meth_00353": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00353",
+        "text": "NAME: Concurrent multiscale modeling\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00403",
+        "text": "DIRECT_CLAIMS: Concurrent multiscale modeling approaches face formidable computation costs as the problem size increases."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 106,
+    "query_truncated": false,
+    "relevance_score": -8.050241470336914,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "clai_00484": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00484",
+        "text": "NAME: Starting the training loop with sufficient data sampling a relevant portion of phase space is important for obtaining generalizable models.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00383",
+        "text": "OTHER: DeePMD training protocol for diffusion coefficient computation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 123,
+    "query_truncated": false,
+    "relevance_score": -9.215972900390625,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "clai_00486": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00486",
+        "text": "NAME: For LLZO, results are quite insensitive to the choice of cell volume (NPT equilibrated vs experimental cif-file values) for producing the initial training set.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00383",
+        "text": "OTHER: DeePMD training protocol for diffusion coefficient computation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 138,
+    "query_truncated": false,
+    "relevance_score": -9.526657104492188,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "prob_00369": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00369",
+        "text": "NAME: Computational costs\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 83,
+    "query_truncated": false,
+    "relevance_score": -7.5313920974731445,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "comp_00633": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00633",
+        "text": "NAME: Training set cleaning procedure\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "omitted": [],
+    "token_count": 94,
+    "query_truncated": false,
+    "relevance_score": -9.476608276367188,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "clai_00026": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00026",
+        "text": "NAME: The training dataset comprises 14,300 paired geometric‑crack image matrices, and the model exhibits convergent loss during training.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00030",
+        "text": "ARTICLE: Using Deep Learning to Predict Fracture Patterns in Crystalline Solids"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00230",
+        "text": "OTHER: ConvLSTM-based fracture prediction model"
+      }
+    ],
+    "omitted": [],
+    "token_count": 115,
+    "query_truncated": false,
+    "relevance_score": -9.875307083129883,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "clai_00608": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00608",
+        "text": "NAME: Increasing the correlation order of messages (ν) steepens the learning‑curve power law, yielding higher data efficiency.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00004",
+        "text": "ARTICLE: MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+      }
+    ],
+    "omitted": [],
+    "token_count": 111,
+    "query_truncated": false,
+    "relevance_score": -9.708499908447266,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "tech_00826": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00826",
+        "text": "NAME: Two-step training procedure\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 90,
+    "query_truncated": false,
+    "relevance_score": -4.288257598876953,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "comp_00598": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00598",
+        "text": "NAME: GNoME dataset\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00547",
+        "text": "DIRECT_CLAIMS: Large-scale pretraining of MLIPs on GNoME dataset enables models with unprecedented zero-shot accuracy on downstream AIMD data, outperforming state-of-the-art NequIP models trained on hundreds of structures from the target distribution."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 135,
+    "query_truncated": false,
+    "relevance_score": -10.163774490356445,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "task_00598": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "task_00598",
+        "text": "NAME: Maximal separation stress testing\nTYPE: task"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      }
+    ],
+    "omitted": [],
+    "token_count": 87,
+    "query_truncated": false,
+    "relevance_score": -7.22890043258667,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "tech_00880": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00880",
+        "text": "NAME: Cross-domain training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 83,
+    "query_truncated": false,
+    "relevance_score": -9.392633438110352,
+    "batch_runtime_seconds": 0.5570177999907173,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03481361249941983
+  },
+  "prob_00368": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00368",
+        "text": "NAME: Memory and storage requirements\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 85,
+    "query_truncated": false,
+    "relevance_score": -7.795663356781006,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "comp_00682": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00682",
+        "text": "NAME: Biased train-test splitting strategies\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00171",
+        "text": "DIRECT_CLAIMS: Biased train-test splitting strategies including cluster, maximal separation, size, and random splits enable rigorous benchmarking by explicitly testing model performance in significantly different regions of chemical space."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      }
+    ],
+    "omitted": [],
+    "token_count": 128,
+    "query_truncated": false,
+    "relevance_score": -7.515479564666748,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "futu_00030": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "futu_00030",
+        "text": "NAME: Development of larger, higher‑quality PES datasets beyond MatPES\nTYPE: future_topic"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00025",
+        "text": "ARTICLE: A Foundational Potential Energy Surface Dataset for Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 96,
+    "query_truncated": false,
+    "relevance_score": -9.740459442138672,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "clai_00033": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00033",
+        "text": "NAME: Beyond‑DFT methods (HSE06, PBE0, G0W0, DMFT) are generated for a subset of materials to provide higher‑level reference data and enable uncertainty quantification.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00024",
+        "text": "ARTICLE: The Joint Automated Repository for Various Integrated Simulations (JARVIS) for data-driven materials design"
+      }
+    ],
+    "omitted": [],
+    "token_count": 131,
+    "query_truncated": false,
+    "relevance_score": -9.503623962402344,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "meth_00017": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00017",
+        "text": "NAME: transfer learning\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00407",
+        "text": "DIRECT_CLAIMS: Physics-informed machine learning and transfer learning can reduce the need for large datasets while maintaining prediction accuracy and performance of ML models."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00504",
+        "text": "DIRECT_CLAIMS: The transfer learning approach iterates until model MAE is below 30 meV/atom."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 136,
+    "query_truncated": false,
+    "relevance_score": -7.584405899047852,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "prob_00008": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00008",
+        "text": "NAME: Data scarcity\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -7.2515549659729,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "tech_00691": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00691",
+        "text": "NAME: Minimum ion-ion distance cutoff\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00482",
+        "text": "DIRECT_CLAIMS: Training set cleaning procedures including minimum ion-ion distance cutoff, energy/force outlier removal, and loss condition monitoring are necessary to help the algorithm converge to a physical model."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "omitted": [],
+    "token_count": 137,
+    "query_truncated": false,
+    "relevance_score": -9.640219688415527,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "clai_00534": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00534",
+        "text": "NAME: Prospective benchmarking that introduces covariate shift between training and test distributions provides a more realistic indicator of real‑world discovery performance than retrospective split strategies, and requires training and test sets larger than the training set to evaluate model scalability.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00011",
+        "text": "ARTICLE: Matbench Discovery: A framework to evaluate machine learning crystal stability predictions"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00159",
+        "text": "OTHER: Matbench Discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 137,
+    "query_truncated": false,
+    "relevance_score": -8.833759307861328,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "clai_00176": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00176",
+        "text": "NAME: Increasing the number of message passing steps can lead to overfitting and decreased performance compared to baseline models.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00407",
+        "text": "OTHER: long-range MLIP generalization framework with biased train-test splitting"
+      }
+    ],
+    "omitted": [],
+    "token_count": 120,
+    "query_truncated": false,
+    "relevance_score": -8.052041053771973,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "prob_00568": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00568",
+        "text": "NAME: Numerical instability in multi-modal training\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 87,
+    "query_truncated": false,
+    "relevance_score": -9.082025527954102,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "comp_00007": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00007",
+        "text": "NAME: Hyperparameters\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00178",
+        "text": "DIRECT_CLAIMS: The observed improvements from long-range corrections cannot be attributed to increased model capacity as all variants share identical hyperparameters and nearly identical parameter counts."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00536",
+        "text": "DIRECT_CLAIMS: Optimizing hyperparameters solely for the Matbench Discovery benchmark may degrade performance of models intended for general‑purpose use."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 151,
+    "query_truncated": false,
+    "relevance_score": -7.405344009399414,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "task_00314": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "task_00314",
+        "text": "NAME: Energy gap (∆ε) prediction\nTYPE: task"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00041",
+        "text": "ARTICLE: EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+      }
+    ],
+    "omitted": [],
+    "token_count": 98,
+    "query_truncated": false,
+    "relevance_score": -9.20494556427002,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "clai_00371": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00371",
+        "text": "NAME: For the eSEN architecture, prediction error plateaus at approximately 100 million samples, matching the total size of the OMat24 training set.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00039",
+        "text": "ARTICLE: Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00292",
+        "text": "OTHER: OMat24 dataset"
+      }
+    ],
+    "omitted": [],
+    "token_count": 119,
+    "query_truncated": false,
+    "relevance_score": -9.72593879699707,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "comp_00424": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00424",
+        "text": "NAME: SO(2) linear operations\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00596",
+        "text": "DIRECT_CLAIMS: eSCN convolutions reduce SO(3) tensor product complexity by replacing non-trivial paths with SO(2) linear operations while maintaining equivariance."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00041",
+        "text": "ARTICLE: EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+      }
+    ],
+    "omitted": [],
+    "token_count": 136,
+    "query_truncated": false,
+    "relevance_score": -9.179311752319336,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "prob_00436": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00436",
+        "text": "NAME: Multi-scale system modeling\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 91,
+    "query_truncated": false,
+    "relevance_score": -4.294467449188232,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "comp_00570": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00570",
+        "text": "NAME: Representation learning module\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -7.4248857498168945,
+    "batch_runtime_seconds": 0.3338190000067698,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.02086368750042311
+  },
+  "prob_00255": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00255",
+        "text": "NAME: Computational intensity of SO(3) tensor products\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00041",
+        "text": "ARTICLE: EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+      }
+    ],
+    "omitted": [],
+    "token_count": 100,
+    "query_truncated": false,
+    "relevance_score": -8.50853443145752,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "clai_00403": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00403",
+        "text": "NAME: Concurrent multiscale modeling approaches face formidable computation costs as the problem size increases.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00351",
+        "text": "OTHER: ml_multiscale_modeling_perspective"
+      }
+    ],
+    "omitted": [],
+    "token_count": 108,
+    "query_truncated": false,
+    "relevance_score": -7.6730780601501465,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "comp_00095": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00095",
+        "text": "NAME: PES descriptors\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00340",
+        "text": "DIRECT_CLAIMS: Computing the frozen‑framework PES descriptors for 5997 Materials Project structures required seven days on a 48‑core CPU with two RTX 6000 GPUs, comparable to the time needed for ML‑driven MD on 100 materials."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00347",
+        "text": "DIRECT_CLAIMS: Alternative ranking models (logistic regression L1/L2 and CatBoost) trained on PES descriptors, matminer descriptors, or their combination do not surpass the simple Ξ descriptor in predictive performance."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 194,
+    "query_truncated": false,
+    "relevance_score": -6.989398002624512,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "clai_00402": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00402",
+        "text": "NAME: Hierarchical multiscale modeling approaches require large amounts of memory and storage space to store precomputed quantities of interest.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00351",
+        "text": "OTHER: ml_multiscale_modeling_perspective"
+      }
+    ],
+    "omitted": [],
+    "token_count": 115,
+    "query_truncated": false,
+    "relevance_score": -8.342182159423828,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "comp_00627": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00627",
+        "text": "NAME: Training set cleaning pipeline\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "omitted": [],
+    "token_count": 94,
+    "query_truncated": false,
+    "relevance_score": -9.502628326416016,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "tech_00587": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00587",
+        "text": "NAME: double precision training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 86,
+    "query_truncated": false,
+    "relevance_score": -9.774040222167969,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "tech_00954": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00954",
+        "text": "NAME: Supervised regression\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00054",
+        "text": "DIRECT_CLAIMS: A two-step approach combining unsupervised clustering with supervised regression achieves 156±4 K MAE and 0.92 R², outperforming direct one-step supervised learning."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 134,
+    "query_truncated": false,
+    "relevance_score": -9.91894817352295,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "prob_00518": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00518",
+        "text": "NAME: Efficient training with varying molecule sizes\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 91,
+    "query_truncated": false,
+    "relevance_score": -3.6443214416503906,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "comp_00729": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00729",
+        "text": "NAME: Unconstrained architecture\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00094",
+        "text": "DIRECT_CLAIMS: The PET architecture scales to 730M parameters (OMat-XL) while maintaining tractable memory usage and computational efficiency due to increased node representation size and unconstrained architecture."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 130,
+    "query_truncated": false,
+    "relevance_score": -3.542656421661377,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "task_00296": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "task_00296",
+        "text": "NAME: relaxation on OC20 dataset\nTYPE: task"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00041",
+        "text": "ARTICLE: EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+      }
+    ],
+    "omitted": [],
+    "token_count": 98,
+    "query_truncated": false,
+    "relevance_score": -9.064582824707031,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "prob_00567": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00567",
+        "text": "NAME: High inference cost for force/stress prediction\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 87,
+    "query_truncated": false,
+    "relevance_score": -9.91030216217041,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "tech_00588": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00588",
+        "text": "NAME: single precision training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "omitted": [],
+    "token_count": 86,
+    "query_truncated": false,
+    "relevance_score": -9.698808670043945,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "clai_00414": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00414",
+        "text": "NAME: Including Hessian (second‑derivative) data in training improves the energy model accuracy beyond training with only energy and force data, reduces force MAE, and provides an effective ~7× increase in the amount of force information.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00006",
+        "text": "ARTICLE: Phonon predictions with E(3)-equivariant graph neural networks"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00123",
+        "text": "OTHER: Phonax (E(3)-equivariant graph neural network framework for phonon and Hessian prediction)"
+      }
+    ],
+    "omitted": [],
+    "token_count": 160,
+    "query_truncated": false,
+    "relevance_score": -10.162416458129883,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "tech_00750": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00750",
+        "text": "NAME: Long-range correction schemes\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00167",
+        "text": "DIRECT_CLAIMS: Long-range correction schemes in machine learning interatomic potentials are essential for achieving state-of-the-art accuracy, improving in-distribution performance, and enabling significant gains in transferability to unseen regions of chemical space."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00173",
+        "text": "DIRECT_CLAIMS: MACE without long-range correction does not generalize well to out-of-distribution samples, while integration of long-range correction schemes has significant effects on both MACE and Allegro architectures."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      }
+    ],
+    "omitted": [],
+    "token_count": 180,
+    "query_truncated": false,
+    "relevance_score": -5.272658824920654,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "metr_00059": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "metr_00059",
+        "text": "NAME: energy RMSE (meV)\nTYPE: metric"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00008",
+        "text": "DATASET_METRIC: acetylacetone"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00004",
+        "text": "ARTICLE: MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00090",
+        "text": "OTHER: MACE-MP-0"
+      }
+    ],
+    "omitted": [],
+    "token_count": 111,
+    "query_truncated": false,
+    "relevance_score": -9.67137336730957,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "tech_00438": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00438",
+        "text": "NAME: SO(2) linear operations\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00596",
+        "text": "DIRECT_CLAIMS: eSCN convolutions reduce SO(3) tensor product complexity by replacing non-trivial paths with SO(2) linear operations while maintaining equivariance."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00041",
+        "text": "ARTICLE: EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+      }
+    ],
+    "omitted": [],
+    "token_count": 136,
+    "query_truncated": false,
+    "relevance_score": -9.239689826965332,
+    "batch_runtime_seconds": 0.45170190000499133,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.028231368750311958
+  },
+  "comp_00434": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00434",
+        "text": "NAME: Maximum degree Lmax\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00041",
+        "text": "ARTICLE: EQUIFORMERV2: IMPROVED EQUIVARIANT TRANSFORMER FOR SCALING TO HIGHER-DEGREE REPRESENTATIONS"
+      }
+    ],
+    "omitted": [],
+    "token_count": 95,
+    "query_truncated": false,
+    "relevance_score": -9.358234405517578,
+    "batch_runtime_seconds": 0.17690419999416918,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.044226049998542294
+  },
+  "comp_00220": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00220",
+        "text": "NAME: Uncertainty quantification\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00033",
+        "text": "DIRECT_CLAIMS: Beyond‑DFT methods (HSE06, PBE0, G0W0, DMFT) are generated for a subset of materials to provide higher‑level reference data and enable uncertainty quantification."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00231",
+        "text": "DIRECT_CLAIMS: The Gaussian process regression framework underlying GAP provides an uncertainty quantification that qualitatively estimates the potential’s accuracy for any given atomic configuration."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00515",
+        "text": "DIRECT_CLAIMS: Uncertainty quantification based on latent‑space Euclidean distance provides error estimates that correlate with prediction errors, allowing exclusion of transitions whose uncertainty exceeds 50 % of the absolute free‑energy difference."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 213,
+    "query_truncated": false,
+    "relevance_score": -6.541406631469727,
+    "batch_runtime_seconds": 0.17690419999416918,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.044226049998542294
+  },
+  "prob_00001": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "prob_00001",
+        "text": "NAME: model interpretability\nTYPE: problem"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00047",
+        "text": "ARTICLE: Challenges and opportunities for machine learning in multiscale computational modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -7.317901611328125,
+    "batch_runtime_seconds": 0.17690419999416918,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.044226049998542294
+  },
+  "clai_00104": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "clai_00104",
+        "text": "NAME: UMLIPs trained on the MatPES dataset achieve test mean absolute errors in energies that are 4–10 times lower than UMLIPs trained on the larger MPRelax or OMat24 datasets.\nTYPE: claim"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00025",
+        "text": "ARTICLE: A Foundational Potential Energy Surface Dataset for Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 122,
+    "query_truncated": false,
+    "relevance_score": -10.249454498291016,
+    "batch_runtime_seconds": 0.17690419999416918,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.044226049998542294
+  }
+}

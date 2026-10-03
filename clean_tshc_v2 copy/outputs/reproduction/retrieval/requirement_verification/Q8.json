@@ -1,0 +1,814 @@
+{
+  "entity:cite_00004": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "TensorFlow supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "TensorFlow supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00230": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": "prob_00168",
+        "evidence_text": "Fracture pattern prediction from MD simulations",
+        "evidence_link": {
+          "evidence_id": "prob_00168",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00159",
+                "relation": "solves",
+                "year": 2020,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5406,
+                  "article_year": 2020
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.9171990156173706,
+        "hypothesis": "ConvLSTM-based fracture prediction model supports predicting fracture patterns.",
+        "premise": "Candidate: ConvLSTM-based fracture prediction model. Relation: validated_method_target. Evidence: Fracture pattern prediction from MD simulations",
+        "probabilities": {
+          "contradiction": 0.0005674100830219686,
+          "entailment": 0.8816560506820679,
+          "neutral": 0.1177765429019928
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 43,
+        "full_tokens": 43,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": "prob_00167",
+        "evidence_text": "Generalization to unseen crystal orientations and bicrystal interfaces",
+        "evidence_link": {
+          "evidence_id": "prob_00167",
+          "field": "problems",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00159",
+                "relation": "solves",
+                "year": 2020,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5406,
+                  "article_year": 2020
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.879935622215271,
+        "hypothesis": "ConvLSTM-based fracture prediction model supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": "Candidate: ConvLSTM-based fracture prediction model. Relation: validated_method_target. Evidence: Generalization to unseen crystal orientations and bicrystal interfaces",
+        "probabilities": {
+          "contradiction": 0.0004545926349237561,
+          "entailment": 0.0004643845313694328,
+          "neutral": 0.999081015586853
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 56,
+        "full_tokens": 56,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00002": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "PredRNN supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "PredRNN supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00003": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "WaveNet supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "WaveNet supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00033": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": "clai_00021",
+        "evidence_text": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "evidence_link": {
+          "evidence_id": "clai_00021",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7472245693206787,
+        "hypothesis": "convolutional LSTM supports predicting fracture patterns.",
+        "premise": "Candidate: convolutional LSTM. Relation: safe_literal_mention. Evidence: The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "probabilities": {
+          "contradiction": 0.00035209706402383745,
+          "entailment": 0.9946615099906921,
+          "neutral": 0.004986521787941456
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 89,
+        "full_tokens": 89,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": "clai_00021",
+        "evidence_text": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "evidence_link": {
+          "evidence_id": "clai_00021",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7681083679199219,
+        "hypothesis": "convolutional LSTM supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": "Candidate: convolutional LSTM. Relation: safe_literal_mention. Evidence: The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "probabilities": {
+          "contradiction": 0.004193050786852837,
+          "entailment": 0.004158605355769396,
+          "neutral": 0.9916483163833618
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 98,
+        "full_tokens": 98,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00001": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": "clai_00021",
+        "evidence_text": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "evidence_link": {
+          "evidence_id": "clai_00021",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7472245693206787,
+        "hypothesis": "ConvLSTM supports predicting fracture patterns.",
+        "premise": "Candidate: ConvLSTM. Relation: safe_literal_mention. Evidence: The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "probabilities": {
+          "contradiction": 0.00028366706101223826,
+          "entailment": 0.9922917485237122,
+          "neutral": 0.007424585986882448
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 89,
+        "full_tokens": 89,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": "clai_00021",
+        "evidence_text": "The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "evidence_link": {
+          "evidence_id": "clai_00021",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7681083679199219,
+        "hypothesis": "ConvLSTM supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": "Candidate: ConvLSTM. Relation: safe_literal_mention. Evidence: The ConvLSTM model accurately predicts fracture patterns, crack‑length trends, and both mode‑I (tensile) and mode‑II (shear) loading responses across crystal orientations, closely matching atomistic molecular dynamics simulations, with only a minor discrepancy for the x100 orientation under mode‑II shear.",
+        "probabilities": {
+          "contradiction": 0.004399734083563089,
+          "entailment": 0.007143871393054724,
+          "neutral": 0.9884563684463501
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 98,
+        "full_tokens": 98,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00089": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": "clai_00025",
+        "evidence_text": "Representing molecular dynamics results as image‑based geometric matrices preserves crystal orientation information and allows the neural network to learn spatiotemporal fracture behavior.",
+        "evidence_link": {
+          "evidence_id": "clai_00025",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.795040488243103,
+        "hypothesis": "Molecular dynamics supports predicting fracture patterns.",
+        "premise": "Candidate: Molecular dynamics. Relation: safe_literal_mention. Evidence: Representing molecular dynamics results as image‑based geometric matrices preserves crystal orientation information and allows the neural network to learn spatiotemporal fracture behavior.",
+        "probabilities": {
+          "contradiction": 0.0006012630765326321,
+          "entailment": 0.9521647095680237,
+          "neutral": 0.04723406955599785
+        },
+        "status": "SUPPORTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 50,
+        "full_tokens": 50,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": "clai_00552",
+        "evidence_text": "GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD.",
+        "evidence_link": {
+          "evidence_id": "clai_00552",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.8186231255531311,
+        "hypothesis": "Molecular dynamics supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": "Candidate: Molecular dynamics. Relation: safe_literal_mention. Evidence: GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD.",
+        "probabilities": {
+          "contradiction": 0.7967901825904846,
+          "entailment": 0.034122224897146225,
+          "neutral": 0.16908752918243408
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 64,
+        "full_tokens": 64,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 2
+  },
+  "entity:tech_00312": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Image‑based encoding of atomistic data supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Image‑based encoding of atomistic data supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:comp_00296": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Bicrystal and gradient‑orientation extrapolation workflow supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Bicrystal and gradient‑orientation extrapolation workflow supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00319": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Binary cross‑entropy loss with sigmoid output supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Binary cross‑entropy loss with sigmoid output supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00318": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "LSTM sequential modeling supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "LSTM sequential modeling supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00320": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Iterative queue‑based prediction supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Iterative queue‑based prediction supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00315": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Orientation‑angle encoding supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Orientation‑angle encoding supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00314": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Physics‑based surface‑energy calculation supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Physics‑based surface‑energy calculation supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00311": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Spatiotemporal learning with ConvLSTM supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Spatiotemporal learning with ConvLSTM supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00142": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Adam optimizer supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Adam optimizer supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00317": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Conv1D feature extraction supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Conv1D feature extraction supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00313": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Pixel‑wise crack‑length measurement supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Pixel‑wise crack‑length measurement supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:comp_00301": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Iterative column‑wise prediction scheme supports predicting fracture patterns.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Iterative column‑wise prediction scheme supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:tech_00080": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "predicting fracture patterns",
+        "evidence_id": "clai_00386",
+        "evidence_text": "A cluster expansion fitted to 333 DFT‑computed LiCoO₂ configurations using a genetic‑algorithm‑guided sparse regression achieves a root‑mean‑square error of 2.49 meV per primitive cell under 10‑fold cross‑validation and accurately reproduces formation energies, especially for configurations on or near the convex hull.",
+        "evidence_link": {
+          "evidence_id": "clai_00386",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6496256589889526,
+        "hypothesis": "10‑fold cross‑validation supports predicting fracture patterns.",
+        "premise": "Candidate: 10‑fold cross‑validation. Relation: safe_literal_mention. Evidence: A cluster expansion fitted to 333 DFT‑computed LiCoO₂ configurations using a genetic‑algorithm‑guided sparse regression achieves a root‑mean‑square error of 2.49 meV per primitive cell under 10‑fold cross‑validation and accurately reproduces formation energies, especially for configurations on or near the convex hull.",
+        "probabilities": {
+          "contradiction": 0.9665960669517517,
+          "entailment": 0.0025116882752627134,
+          "neutral": 0.03089216537773609
+        },
+        "status": "CONTRADICTED",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 98,
+        "full_tokens": 98,
+        "proxy_only": true
+      },
+      {
+        "kind": "requirement",
+        "text": "generalizing from atomistic MD data to unseen bicrystalline structures",
+        "evidence_id": "clai_00386",
+        "evidence_text": "A cluster expansion fitted to 333 DFT‑computed LiCoO₂ configurations using a genetic‑algorithm‑guided sparse regression achieves a root‑mean‑square error of 2.49 meV per primitive cell under 10‑fold cross‑validation and accurately reproduces formation energies, especially for configurations on or near the convex hull.",
+        "evidence_link": {
+          "evidence_id": "clai_00386",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7301003336906433,
+        "hypothesis": "10‑fold cross‑validation supports generalizing from atomistic MD data to unseen bicrystalline structures.",
+        "premise": "Candidate: 10‑fold cross‑validation. Relation: safe_literal_mention. Evidence: A cluster expansion fitted to 333 DFT‑computed LiCoO₂ configurations using a genetic‑algorithm‑guided sparse regression achieves a root‑mean‑square error of 2.49 meV per primitive cell under 10‑fold cross‑validation and accurately reproduces formation energies, especially for configurations on or near the convex hull.",
+        "probabilities": {
+          "contradiction": 0.02115948125720024,
+          "entailment": 0.0024682648945599794,
+          "neutral": 0.9763723015785217
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 107,
+        "full_tokens": 107,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 2
+  }
+}

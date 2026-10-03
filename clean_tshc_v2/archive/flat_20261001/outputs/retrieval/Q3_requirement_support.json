@@ -1,0 +1,2702 @@
+{
+  "tech_00167": {
+    "score": 0.5669417784155826,
+    "core_support": 0.7643813490867615,
+    "requirement_supports": [
+      0.7417001724243164
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7417001724243164,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "tech_00167",
+        "text": "NAME: DFT+U with van der Waals functionals\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00167",
+        "text": "NAME: DFT+U with van der Waals functionals\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00153": {
+    "score": 0.5598585248029337,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7335693836212158
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7335693836212158,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00153",
+        "text": "NAME: van der Waals density functional\nTYPE: method"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00201": {
+    "score": 0.6718839655228237,
+    "core_support": 0.8852171897888184,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "meth_00201",
+        "text": "NAME: Graph neural network for DFT Hamiltonian\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00262": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00203": {
+    "score": 0.5991176329390413,
+    "core_support": 0.78934645652771,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "meth_00203",
+        "text": "NAME: Equivariant representations for atomistic dynamics\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00202": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00118": {
+    "score": 0.6494995513830872,
+    "core_support": 0.8411093950271606,
+    "requirement_supports": [
+      0.7721939086914062
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7721939086914062,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00578",
+        "text": "DIRECT_CLAIMS: DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00581",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00155": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00266": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00230": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00271": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00234": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00174": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00264": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00255": {
+    "score": 0.5863595085656925,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7721939086914062
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7721939086914062,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00581",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00268": {
+    "score": 0.5781960297614575,
+    "core_support": 0.7617819309234619,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "tech_00268",
+        "text": "NAME: Mean‑squared‑error loss on Hamiltonian matrix elements\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00258": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00102": {
+    "score": 0.5843209513322769,
+    "core_support": 0.9000580906867981,
+    "requirement_supports": [
+      0.6492035984992981
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6492035984992981,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "meth_00102",
+        "text": "NAME: deep-learning DFT Hamiltonian\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00005",
+        "text": "ARTICLE: General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00200": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00113": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00131": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00112": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00268": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00769": {
+    "score": 0.5504902176974156,
+    "core_support": 0.7594690322875977,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "comp_00769",
+        "text": "NAME: Charge, spin, and DFT task embeddings\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00213": {
+    "score": 0.6265162444770311,
+    "core_support": 0.9000116586685181,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "meth_00213",
+        "text": "NAME: deep neural network approach to represent DFT Hamiltonian\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00272": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00190": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00269": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00248": {
+    "score": 0.4711853924037399,
+    "core_support": 0.6876208782196045,
+    "requirement_supports": [
+      0.6852400898933411
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6852400898933411,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00024",
+        "text": "ARTICLE: The Joint Automated Repository for Various Integrated Simulations (JARVIS) for data-driven materials design"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00248",
+        "text": "NAME: van der Waals functional OptB88\nTYPE: method"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00265": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00205": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00261": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00228": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00130": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00396": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00224": {
+    "score": 0.5437957240717992,
+    "core_support": 0.8153300285339355,
+    "requirement_supports": [
+      0.6669639348983765
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6669639348983765,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00019",
+        "text": "ARTICLE: D4FT: A DEEP LEARNING APPROACH TO KOHN-SHAM DENSITY FUNCTIONAL THEORY"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00224",
+        "text": "NAME: Linear Combination of Atomic Orbitals\nTYPE: method"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00199": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00283": {
+    "score": 0.5731973312199372,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00011": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00250": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00249": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00265": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00266": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00267": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00204": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00269": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00259": {
+    "score": 0.5731973312199372,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00009": {
+    "score": 0.5329315089823865,
+    "core_support": 0.735244631767273,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00256": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00300": {
+    "score": 0.5329315089823865,
+    "core_support": 0.735244631767273,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00251": {
+    "score": 0.5731973312199372,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00257": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00233": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00429": {
+    "score": 0.5329315089823865,
+    "core_support": 0.735244631767273,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00215": {
+    "score": 0.5458879956435041,
+    "core_support": 0.7711015939712524,
+    "requirement_supports": [
+      0.7079326510429382
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7079326510429382,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00248": {
+    "score": 0.5731973312199372,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00270": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00227": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00428": {
+    "score": 0.5329315089823865,
+    "core_support": 0.735244631767273,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00082": {
+    "score": 0.5329315089823865,
+    "core_support": 0.735244631767273,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00190": {
+    "score": 0.5458879956435041,
+    "core_support": 0.7711015939712524,
+    "requirement_supports": [
+      0.7079326510429382
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7079326510429382,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00151": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00229": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00390": {
+    "score": 0.5376174771058473,
+    "core_support": 0.7588666677474976,
+    "requirement_supports": [
+      0.7084478735923767
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7084478735923767,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "tech_00390",
+        "text": "NAME: Single‑point DFT with stringent convergence\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00025",
+        "text": "ARTICLE: A Foundational Potential Energy Surface Dataset for Materials"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00100": {
+    "score": 0.5371651353186451,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7038347721099854
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7038347721099854,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00212",
+        "text": "DIRECT_CLAIMS: The AFLOW standard enables reproducible high-throughput DFT calculations through standardized parameter sets for k-point density, energy cut-offs, exchange-correlation functionals, pseudopotentials, DFT+U parameters, and convergence criteria."
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00267": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00426": {
+    "score": 0.5329315089823865,
+    "core_support": 0.735244631767273,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00253": {
+    "score": 0.5458879956435041,
+    "core_support": 0.7711015939712524,
+    "requirement_supports": [
+      0.7079326510429382
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7079326510429382,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00394": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00146": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00199": {
+    "score": 0.5224712694335665,
+    "core_support": 0.7836043834686279,
+    "requirement_supports": [
+      0.666753888130188
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.666753888130188,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "tech_00199",
+        "text": "NAME: Multi‑task learning with auxiliary DFT properties\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00011",
+        "text": "ARTICLE: Matbench Discovery: A framework to evaluate machine learning crystal stability predictions"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00217": {
+    "score": 0.5731973312199372,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00289": {
+    "score": 0.5731973312199372,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00216": {
+    "score": 0.5731973312199372,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00427": {
+    "score": 0.5329315089823865,
+    "core_support": 0.735244631767273,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00771": {
+    "score": 0.5329315089823865,
+    "core_support": 0.735244631767273,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00284": {
+    "score": 0.5731973312199372,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00377": {
+    "score": 0.48970447630733815,
+    "core_support": 0.7335033416748047,
+    "requirement_supports": [
+      0.6676240563392639
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6676240563392639,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00247": {
+    "score": 0.5807995482855901,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.7053526639938354
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7053526639938354,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00247",
+        "text": "NAME: Local atomic-like orbital basis\nTYPE: component"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00232": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00088": {
+    "score": 0.590331526603741,
+    "core_support": 0.8234416246414185,
+    "requirement_supports": [
+      0.7169075608253479
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7169075608253479,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00231": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00279": {
+    "score": 0.5371651353186451,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7038347721099854
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7038347721099854,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00212",
+        "text": "DIRECT_CLAIMS: The AFLOW standard enables reproducible high-throughput DFT calculations through standardized parameter sets for k-point density, energy cut-offs, exchange-correlation functionals, pseudopotentials, DFT+U parameters, and convergence criteria."
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00393": {
+    "score": 0.49108245022395636,
+    "core_support": 0.7825125455856323,
+    "requirement_supports": [
+      0.6275713443756104
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6275713443756104,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00254": {
+    "score": 0.6157046134352129,
+    "core_support": 0.8162465691566467,
+    "requirement_supports": [
+      0.7543120384216309
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7543120384216309,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00005",
+        "text": "ARTICLE: General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00376",
+        "text": "DIRECT_CLAIMS: Band structures and electric susceptibility computed from DeepH for MoS₂ match DFT results closely."
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00380": {
+    "score": 0.5731973312199372,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00079": {
+    "score": 0.590331526603741,
+    "core_support": 0.8234416246414185,
+    "requirement_supports": [
+      0.7169075608253479
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7169075608253479,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00375": {
+    "score": 0.48970447630733815,
+    "core_support": 0.7335033416748047,
+    "requirement_supports": [
+      0.6676240563392639
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6676240563392639,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "tech_00232": {
+    "score": 0.50757065656029,
+    "core_support": 0.7498401403427124,
+    "requirement_supports": [
+      0.6769051551818848
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6769051551818848,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00015",
+        "text": "ARTICLE: CHGNet: Pretrained universal neural network potential for charge-informed atomistic modeling"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00015",
+        "text": "ARTICLE: CHGNet: Pretrained universal neural network potential for charge-informed atomistic modeling"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00263": {
+    "score": 0.5763443482651454,
+    "core_support": 0.7593423128128052,
+    "requirement_supports": [
+      0.7590046525001526
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7590046525001526,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "cite_00053": {
+    "score": 0.590331526603741,
+    "core_support": 0.8234416246414185,
+    "requirement_supports": [
+      0.7169075608253479
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7169075608253479,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00219": {
+    "score": 0.5010110571441828,
+    "core_support": 0.7251138687133789,
+    "requirement_supports": [
+      0.6909412145614624
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6909412145614624,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00150": {
+    "score": 0.5351424620649539,
+    "core_support": 0.7631977796554565,
+    "requirement_supports": [
+      0.7011845111846924
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7011845111846924,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00293": {
+    "score": 0.590331526603741,
+    "core_support": 0.8234416246414185,
+    "requirement_supports": [
+      0.7169075608253479
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7169075608253479,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00077": {
+    "score": 0.5338136254618533,
+    "core_support": 0.7129889130592346,
+    "requirement_supports": [
+      0.748698353767395
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.748698353767395,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "other",
+        "node_id": "meth_00229",
+        "text": "OTHER: Atomic Cluster Expansion extended to scalar, vectorial, tensorial properties with magnetic moments and charge transfer"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00229",
+        "text": "OTHER: Atomic Cluster Expansion extended to scalar, vectorial, tensorial properties with magnetic moments and charge transfer"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "meth_00229": {
+    "score": 0.5425693906012441,
+    "core_support": 0.7113316059112549,
+    "requirement_supports": [
+      0.7627516984939575
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7627516984939575,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00523",
+        "text": "DIRECT_CLAIMS: Representing tensors with spherical harmonics yields a dramatically sparser basis, where a rank‑N Cartesian tensor with 3^N components can be represented by (N+1)^2 spherical harmonics (e.g., a 10th‑order tensor requires 121 harmonics instead of 59 049 Cartesian components)."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00022",
+        "text": "ARTICLE: Atomic cluster expansion of scalar, vectorial and tensorial properties and including magnetism and charge transfer"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00250": {
+    "score": 0.5731973312199372,
+    "core_support": 0.8234172463417053,
+    "requirement_supports": [
+      0.6961201429367065
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6961201429367065,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00556": {
+    "score": 0.5087728714391915,
+    "core_support": 0.7359421253204346,
+    "requirement_supports": [
+      0.691321849822998
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.691321849822998,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00772": {
+    "score": 0.5329315089823865,
+    "core_support": 0.735244631767273,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  },
+  "comp_00785": {
+    "score": 0.5329315089823865,
+    "core_support": 0.735244631767273,
+    "requirement_supports": [
+      0.7248356342315674
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7248356342315674,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "learning DFT Hamiltonians",
+      "dealing with twisted van der Waals heterostructures containing thousands of magnetic atoms"
+    ]
+  }
+}

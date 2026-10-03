@@ -1,0 +1,740 @@
+{
+  "Q1": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 101252,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1325,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 1.1306702000147197,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.03503969998564571,
+    "prefix_timing_estimates": {
+      "100": 11.414375175001624,
+      "200": 22.995035300016752,
+      "500": 49.02593870006967
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 17096,
+        "requirement_cross_encoder_pairs": 732,
+        "nli_pairs": 732,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 1.4192921000067145
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 17096,
+        "requirement_cross_encoder_pairs": 732,
+        "nli_pairs": 732,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.5926267000031658
+      }
+    },
+    "total_wall_seconds": 3.285864900011802
+  },
+  "Q2": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 101252,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1418,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 1.0774613000103272,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.03160859999479726,
+    "prefix_timing_estimates": {
+      "100": 8.699094749965298,
+      "200": 16.786987799947383,
+      "500": 43.25118169997586
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 12822,
+        "requirement_cross_encoder_pairs": 573,
+        "nli_pairs": 573,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.9743218999938108
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 12822,
+        "requirement_cross_encoder_pairs": 573,
+        "nli_pairs": 573,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.5603897999972105
+      }
+    },
+    "total_wall_seconds": 2.7428272000106517
+  },
+  "Q3": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 101252,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1290,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 1.0114658999955282,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.02657709998311475,
+    "prefix_timing_estimates": {
+      "100": 8.516282700053125,
+      "200": 20.26949610003794,
+      "500": 43.58753880002769
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 328,
+        "nli_pairs": 328,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.7485985999810509
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 328,
+        "nli_pairs": 328,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.5965901000017766
+      }
+    },
+    "total_wall_seconds": 2.477680899988627
+  },
+  "Q4": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 92318,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1225,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 0.9563076000194997,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.032568100024946034,
+    "prefix_timing_estimates": {
+      "100": 7.430136650036729,
+      "200": 13.44910629997321,
+      "500": 28.410300499992445
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 300,
+        "nli_pairs": 300,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.6326992999820504
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 300,
+        "nli_pairs": 300,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.3769892000127584
+      }
+    },
+    "total_wall_seconds": 2.1021016000013333
+  },
+  "Q5": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 98274,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1383,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 1.0808316000038758,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.027939799998421222,
+    "prefix_timing_estimates": {
+      "100": 7.869822399916302,
+      "200": 14.24492069988628,
+      "500": 29.501441399857868
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 12822,
+        "requirement_cross_encoder_pairs": 522,
+        "nli_pairs": 522,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.9463930999918375
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 12822,
+        "requirement_cross_encoder_pairs": 522,
+        "nli_pairs": 522,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.4922004000109155
+      }
+    },
+    "total_wall_seconds": 2.658720799983712
+  },
+  "Q6": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 101252,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1463,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 1.0371443000040017,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.023672600014833733,
+    "prefix_timing_estimates": {
+      "100": 7.739711175003322,
+      "200": 14.61449970000831,
+      "500": 30.3199997000047
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 12822,
+        "requirement_cross_encoder_pairs": 531,
+        "nli_pairs": 531,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.8955548999947496
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 12822,
+        "requirement_cross_encoder_pairs": 531,
+        "nli_pairs": 531,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.6083043999969959
+      }
+    },
+    "total_wall_seconds": 2.8650349999952596
+  },
+  "Q7": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 89340,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1167,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 1.0373024999862537,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.023188899998785928,
+    "prefix_timing_estimates": {
+      "100": 6.6753583250247175,
+      "200": 13.227834750054171,
+      "500": 28.76707590004662
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 284,
+        "nli_pairs": 284,
+        "cache_hit": false,
+        "actual_nli_pairs": 284,
+        "actual_requirement_cross_encoder_pairs": 284,
+        "actual_wall_seconds": 60.116187800012995
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 284,
+        "nli_pairs": 284,
+        "cache_hit": false,
+        "actual_nli_pairs": 284,
+        "actual_requirement_cross_encoder_pairs": 284,
+        "actual_wall_seconds": 26.170520299987402
+      }
+    },
+    "total_wall_seconds": 87.46291169998585
+  },
+  "Q8": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 92318,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1357,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 0.7138256999896839,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.023817600012989715,
+    "prefix_timing_estimates": {
+      "100": 7.679715225014661,
+      "200": 14.612734750015079,
+      "500": 30.631151899986435
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 332,
+        "nli_pairs": 332,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.484194499993464
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 332,
+        "nli_pairs": 332,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.29005479998886585
+      }
+    },
+    "total_wall_seconds": 1.5776484000089113
+  },
+  "Q9": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 92318,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1503,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 0.9631762999924831,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.02667779999319464,
+    "prefix_timing_estimates": {
+      "100": 7.8396896999984165,
+      "200": 14.98075519996928,
+      "500": 30.857986499991966
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 12822,
+        "requirement_cross_encoder_pairs": 480,
+        "nli_pairs": 480,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.5926681999990251
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 12822,
+        "requirement_cross_encoder_pairs": 480,
+        "nli_pairs": 480,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.3290378999954555
+      }
+    },
+    "total_wall_seconds": 1.9824259000015445
+  },
+  "Q10": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 92318,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1431,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 0.673200099990936,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.02204039998468943,
+    "prefix_timing_estimates": {
+      "100": 7.243540474977635,
+      "200": 14.970608949981397,
+      "500": 32.57068479989539
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 17096,
+        "requirement_cross_encoder_pairs": 700,
+        "nli_pairs": 700,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.7270811999915168
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 17096,
+        "requirement_cross_encoder_pairs": 700,
+        "nli_pairs": 700,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.390330800000811
+      }
+    },
+    "total_wall_seconds": 1.874433199991472
+  },
+  "Q11": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 89340,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1468,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 0.6444495000177994,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.021776299981866032,
+    "prefix_timing_estimates": {
+      "100": 8.586602825038426,
+      "200": 15.427984300069511,
+      "500": 29.123348300141515
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 4274,
+        "requirement_cross_encoder_pairs": 170,
+        "nli_pairs": 170,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.34067579999100417
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 4274,
+        "requirement_cross_encoder_pairs": 170,
+        "nli_pairs": 170,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.21681760001229122
+      }
+    },
+    "total_wall_seconds": 1.2910737000056542
+  },
+  "Q12": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 74450,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1438,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 0.8460813999990933,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.022070499981055036,
+    "prefix_timing_estimates": {
+      "100": 7.534395500006212,
+      "200": 15.51459140003135,
+      "500": 29.447778100031428
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 4274,
+        "requirement_cross_encoder_pairs": 156,
+        "nli_pairs": 156,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.3602369999862276
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 4274,
+        "requirement_cross_encoder_pairs": 156,
+        "nli_pairs": 156,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.285056299995631
+      }
+    },
+    "total_wall_seconds": 1.5748547000112012
+  },
+  "Q13": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 74450,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1321,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 0.6741165000130422,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.021387699991464615,
+    "prefix_timing_estimates": {
+      "100": 7.111432999990939,
+      "200": 13.090287449987954,
+      "500": 28.766205800056923
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 4274,
+        "requirement_cross_encoder_pairs": 126,
+        "nli_pairs": 126,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.3210544000030495
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 4274,
+        "requirement_cross_encoder_pairs": 126,
+        "nli_pairs": 126,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.21854859997984022
+      }
+    },
+    "total_wall_seconds": 1.2961194000090472
+  },
+  "Q14": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 86362,
+    "name_entity_checks": 349,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 349,
+    "eligible_entities": 349,
+    "generation_wall_seconds": 0.1437170999997761,
+    "cross_encoder_pairs": 349,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.019457599992165342,
+    "prefix_timing_estimates": {
+      "100": 3.7589595000536065,
+      "200": 6.930546850053361,
+      "500": 9.306695300008865
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 4274,
+        "requirement_cross_encoder_pairs": 65,
+        "nli_pairs": 65,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.13212929997825995
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 4274,
+        "requirement_cross_encoder_pairs": 65,
+        "nli_pairs": 65,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.07639199998811819
+      }
+    },
+    "total_wall_seconds": 0.3953598999942187
+  },
+  "Q15": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 83384,
+    "name_entity_checks": 2978,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1452,
+    "eligible_entities": 2978,
+    "generation_wall_seconds": 0.7191911000118125,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 0,
+    "cross_encoder_cache_hit": true,
+    "cross_encoder_wall_seconds": 0.02427159997751005,
+    "prefix_timing_estimates": {
+      "100": 7.313447350003116,
+      "200": 13.452287349966355,
+      "500": 30.518631899933098
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 354,
+        "nli_pairs": 354,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.5347678000107408
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 354,
+        "nli_pairs": 354,
+        "cache_hit": true,
+        "actual_nli_pairs": 0,
+        "actual_requirement_cross_encoder_pairs": 0,
+        "actual_wall_seconds": 0.48998610000126064
+      }
+    },
+    "total_wall_seconds": 1.8321607999969274
+  },
+  "Q16": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 77428,
+    "name_entity_checks": 2978,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1180,
+    "eligible_entities": 2978,
+    "generation_wall_seconds": 0.7197738000249956,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 500,
+    "cross_encoder_cache_hit": false,
+    "cross_encoder_wall_seconds": 32.15578960001585,
+    "prefix_timing_estimates": {
+      "100": 7.3299829000170575,
+      "200": 13.63531065004645,
+      "500": 31.24991610000143
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 264,
+        "nli_pairs": 264,
+        "cache_hit": false,
+        "actual_nli_pairs": 264,
+        "actual_requirement_cross_encoder_pairs": 264,
+        "actual_wall_seconds": 41.816757000022335
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 8548,
+        "requirement_cross_encoder_pairs": 264,
+        "nli_pairs": 264,
+        "cache_hit": false,
+        "actual_nli_pairs": 264,
+        "actual_requirement_cross_encoder_pairs": 264,
+        "actual_wall_seconds": 23.84926820002147
+      }
+    },
+    "total_wall_seconds": 98.60504280001624
+  },
+  "Q17": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 101252,
+    "name_entity_checks": 2978,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1315,
+    "eligible_entities": 2978,
+    "generation_wall_seconds": 0.8164249999972526,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 500,
+    "cross_encoder_cache_hit": false,
+    "cross_encoder_wall_seconds": 33.41882130000158,
+    "prefix_timing_estimates": {
+      "100": 7.551379249998718,
+      "200": 13.416038549985387,
+      "500": 32.38045129994862
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 17096,
+        "requirement_cross_encoder_pairs": 712,
+        "nli_pairs": 712,
+        "cache_hit": false,
+        "actual_nli_pairs": 712,
+        "actual_requirement_cross_encoder_pairs": 712,
+        "actual_wall_seconds": 99.72557450001477
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 17096,
+        "requirement_cross_encoder_pairs": 712,
+        "nli_pairs": 712,
+        "cache_hit": false,
+        "actual_nli_pairs": 712,
+        "actual_requirement_cross_encoder_pairs": 712,
+        "actual_wall_seconds": 53.12186959999963
+      }
+    },
+    "total_wall_seconds": 187.15849089997937
+  },
+  "Q18": {
+    "dense_comparisons": 16440,
+    "evidence_comparisons": 8548,
+    "bm25_document_term_lookups": 131032,
+    "name_entity_checks": 2577,
+    "graph_seed_nodes": 200,
+    "candidate_union_size": 1452,
+    "eligible_entities": 2577,
+    "generation_wall_seconds": 0.7497573999862652,
+    "cross_encoder_pairs": 500,
+    "cross_encoder_inference_pairs": 500,
+    "cross_encoder_cache_hit": false,
+    "cross_encoder_wall_seconds": 36.289692999998806,
+    "prefix_timing_estimates": {
+      "100": 8.870078125029977,
+      "200": 16.847397600053228,
+      "500": 35.17116420000093
+    },
+    "timing_note": "100/200 reuse pairs from500; estimates, not independent production latency measurements",
+    "requirements": {
+      "A7": {
+        "requirement_dense_comparisons": 4274,
+        "requirement_cross_encoder_pairs": 162,
+        "nli_pairs": 162,
+        "cache_hit": false,
+        "actual_nli_pairs": 162,
+        "actual_requirement_cross_encoder_pairs": 162,
+        "actual_wall_seconds": 21.894791900005657
+      },
+      "A7_SingleEvidence": {
+        "requirement_dense_comparisons": 4274,
+        "requirement_cross_encoder_pairs": 162,
+        "nli_pairs": 162,
+        "cache_hit": false,
+        "actual_nli_pairs": 162,
+        "actual_requirement_cross_encoder_pairs": 162,
+        "actual_wall_seconds": 10.920709900005022
+      }
+    },
+    "total_wall_seconds": 69.92491040000459
+  }
+}

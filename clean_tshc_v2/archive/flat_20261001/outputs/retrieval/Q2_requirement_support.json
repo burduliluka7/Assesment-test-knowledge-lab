@@ -1,0 +1,3402 @@
+{
+  "meth_00364": {
+    "score": 0.567271301857488,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.6716968417167664,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7015267479443991,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00364",
+        "text": "NAME: Tetrahedron method with Blöchl corrections\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00107": {
+    "score": 0.6085123802571032,
+    "core_support": 0.8467477560043335,
+    "requirement_supports": [
+      0.6632099747657776,
+      0.778717041015625
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7186465815139272,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00353",
+        "text": "DIRECT_CLAIMS: Neural‑network‑based electronic‑structure prediction tools achieve significant speedups over conventional density‑functional theory while maintaining comparable accuracy, accelerating electronic‑structure calculations."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00352",
+        "text": "DIRECT_CLAIMS: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00352",
+        "text": "DIRECT_CLAIMS: Machine‑learning‑driven interatomic potentials (e.g., GAP, DeePMD) and DFT‑trained surrogate models enable simulations of up to millions of atoms while retaining accuracy close to first‑principles benchmarks, making large‑scale high‑fidelity simulations feasible."
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00256": {
+    "score": 0.5865977123686563,
+    "core_support": 0.789067804813385,
+    "requirement_supports": [
+      0.6969248056411743,
+      0.7929871678352356
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7434059643421734,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "meth_00256",
+        "text": "NAME: Large‑scale Atomic/Molecular Massively Parallel Simulator\nTYPE: method"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00256",
+        "text": "NAME: Large‑scale Atomic/Molecular Massively Parallel Simulator\nTYPE: method"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00256",
+        "text": "NAME: Large‑scale Atomic/Molecular Massively Parallel Simulator\nTYPE: method"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00106": {
+    "score": 0.5803468638014478,
+    "core_support": 0.8357373476028442,
+    "requirement_supports": [
+      0.658698558807373,
+      0.7320638298988342
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6944129821002543,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "tech_00106",
+        "text": "NAME: AI-accelerated electronic structure prediction\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00003",
+        "text": "ARTICLE: Artificial Intelligence for Multiscale Modeling in Solid-State Physics and Chemistry: A Comprehensive Review"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00003",
+        "text": "ARTICLE: Artificial Intelligence for Multiscale Modeling in Solid-State Physics and Chemistry: A Comprehensive Review"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00261": {
+    "score": 0.5581084212626789,
+    "core_support": 0.8090832233428955,
+    "requirement_supports": [
+      0.6592738032341003,
+      0.7217469215393066
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6898034777642996,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00205",
+        "text": "DIRECT_CLAIMS: xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00205",
+        "text": "DIRECT_CLAIMS: xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell."
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00131": {
+    "score": 0.5155134084923311,
+    "core_support": 0.740816593170166,
+    "requirement_supports": [
+      0.656746506690979,
+      0.737328052520752
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6958718436452697,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "comp_00131",
+        "text": "NAME: Large‑scale interface‑energy DFT calculations\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00131",
+        "text": "NAME: Large‑scale interface‑energy DFT calculations\nTYPE: component"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00205": {
+    "score": 0.5606308598957587,
+    "core_support": 0.8090832233428955,
+    "requirement_supports": [
+      0.6652466058731079,
+      0.7217469215393066
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6929211281620644,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00205",
+        "text": "NAME: Constrained DFT\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00205",
+        "text": "DIRECT_CLAIMS: xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell."
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00223": {
+    "score": 0.531230019022363,
+    "core_support": 0.7428959608078003,
+    "requirement_supports": [
+      0.7775397300720215,
+      0.6576375961303711
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7150799668431649,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00019",
+        "text": "ARTICLE: D4FT: A DEEP LEARNING APPROACH TO KOHN-SHAM DENSITY FUNCTIONAL THEORY"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00223",
+        "text": "NAME: self-consistent field\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00019",
+        "text": "ARTICLE: D4FT: A DEEP LEARNING APPROACH TO KOHN-SHAM DENSITY FUNCTIONAL THEORY"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00423": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00264": {
+    "score": 0.5513404781089603,
+    "core_support": 0.8090832233428955,
+    "requirement_supports": [
+      0.6644062995910645,
+      0.6989073753356934
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6814385247428348,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00264",
+        "text": "NAME: Variationally Optimized Atomic Orbitals\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00806": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00739": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00118": {
+    "score": 0.5607762323451406,
+    "core_support": 0.7835991382598877,
+    "requirement_supports": [
+      0.6651287078857422,
+      0.7699909210205078
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7156417164909568,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00580",
+        "text": "DIRECT_CLAIMS: DeepH-E3 enables accurate electronic‑structure calculations for supercells larger than 10⁴ atoms, reducing computational cost by several orders of magnitude and allowing calculations in minutes on a single GPU versus months on thousands of CPU cores."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00578",
+        "text": "DIRECT_CLAIMS: DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00580",
+        "text": "DIRECT_CLAIMS: DeepH-E3 enables accurate electronic‑structure calculations for supercells larger than 10⁴ atoms, reducing computational cost by several orders of magnitude and allowing calculations in minutes on a single GPU versus months on thousands of CPU cores."
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00819": {
+    "score": 0.5587098881451207,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.7009307742118835,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7266905352543057,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00819",
+        "text": "NAME: fine-tuning on bespoke datasets\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00824": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00312": {
+    "score": 0.4885149242557945,
+    "core_support": 0.7245737910270691,
+    "requirement_supports": [
+      0.653262734413147,
+      0.6958290338516235
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6742100394817403,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00579": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00832": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00580": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00265": {
+    "score": 0.5334433791333199,
+    "core_support": 0.8090832233428955,
+    "requirement_supports": [
+      0.6219717264175415,
+      0.6989073753356934
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6593183046476822,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00276": {
+    "score": 0.5557279581052155,
+    "core_support": 0.7696340084075928,
+    "requirement_supports": [
+      0.7035847902297974,
+      0.7410364151000977
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7220678296883495,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00276",
+        "text": "NAME: Linear‑scaling via atomic decomposition\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00504": {
+    "score": 0.4835663305893639,
+    "core_support": 0.7453447580337524,
+    "requirement_supports": [
+      0.6243895292282104,
+      0.6741275787353516
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6487820909414189,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "cite_00504",
+        "text": "NAME: Order‑N electronic structure theory\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00005",
+        "text": "ARTICLE: General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00504",
+        "text": "NAME: Order‑N electronic structure theory\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00605": {
+    "score": 0.5128684807606455,
+    "core_support": 0.750828742980957,
+    "requirement_supports": [
+      0.6541944742202759,
+      0.7132197618484497
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6830698552168416,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00418": {
+    "score": 0.5699115124865891,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.7187045216560364,
+      0.7645233869552612
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.741260018560649,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00305",
+        "text": "DIRECT_CLAIMS: Universal MLIPs attempt to cover 10-100 elements under varying levels of constraints."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00256",
+        "text": "DIRECT_CLAIMS: Each cataloged DFT structure provides one energy and 3N forces (N = number of atoms) for training universal MLIPs."
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00291": {
+    "score": 0.5115094511536663,
+    "core_support": 0.7599223852157593,
+    "requirement_supports": [
+      0.6531707644462585,
+      0.6936527490615845
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6731074924295554,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00027",
+        "text": "ARTICLE: AFLOW: an automatic framework for high-throughput materials discovery"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00027",
+        "text": "ARTICLE: AFLOW: an automatic framework for high-throughput materials discovery"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00027",
+        "text": "ARTICLE: AFLOW: an automatic framework for high-throughput materials discovery"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00694": {
+    "score": 0.47405212675330954,
+    "core_support": 0.7014744877815247,
+    "requirement_supports": [
+      0.6824955940246582,
+      0.669157862663269
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6757938243093365,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00694",
+        "text": "NAME: Self-consistent training\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00648": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00812": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00625": {
+    "score": 0.48900786013625147,
+    "core_support": 0.7014744877815247,
+    "requirement_supports": [
+      0.7262386083602905,
+      0.669157862663269
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6971142481357836,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00625",
+        "text": "NAME: Iterative self-consistent training protocol\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00350": {
+    "score": 0.5128684807606455,
+    "core_support": 0.750828742980957,
+    "requirement_supports": [
+      0.6541944742202759,
+      0.7132197618484497
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6830698552168416,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00374": {
+    "score": 0.494632506065288,
+    "core_support": 0.7302635908126831,
+    "requirement_supports": [
+      0.6739708185195923,
+      0.6807143688201904
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6773342013598541,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00374",
+        "text": "NAME: ab initio random structure searching\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00042": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00823": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00219": {
+    "score": 0.534051892129774,
+    "core_support": 0.7632633447647095,
+    "requirement_supports": [
+      0.6491069793701172,
+      0.754226565361023
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6996954534668578,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00219",
+        "text": "NAME: Sparse set of representative atoms\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00219",
+        "text": "NAME: Sparse set of representative atoms\nTYPE: component"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00468": {
+    "score": 0.5128684807606455,
+    "core_support": 0.750828742980957,
+    "requirement_supports": [
+      0.6541944742202759,
+      0.7132197618484497
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6830698552168416,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00045": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00836": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00743": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00263": {
+    "score": 0.5334433791333199,
+    "core_support": 0.8090832233428955,
+    "requirement_supports": [
+      0.6219717264175415,
+      0.6989073753356934
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6593183046476822,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00057": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00190": {
+    "score": 0.5212739014647676,
+    "core_support": 0.7620705962181091,
+    "requirement_supports": [
+      0.6590046882629395,
+      0.7099913358688354
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.684023112887006,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00363": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00059": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00355": {
+    "score": 0.5645922189013498,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.6653673052787781,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6982136095086299,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00214",
+        "text": "DIRECT_CLAIMS: AFLOW calculations follow a standardized sequential workflow: RELAX1 → RELAX2 → STATIC → BANDS for materials in the Elements, ICSD, and Heusler databases."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00359": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00719": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00644": {
+    "score": 0.5632330695143903,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.6621676683425903,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6965327918006263,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00644",
+        "text": "NAME: ℓ-quantum number scaling\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00082": {
+    "score": 0.5387809351050937,
+    "core_support": 0.7475967407226562,
+    "requirement_supports": [
+      0.6607364416122437,
+      0.7860702872276306
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7206839005000035,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00082",
+        "text": "NAME: Universal Models for Atoms\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00055": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00635": {
+    "score": 0.5771388754297332,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.6952681541442871,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7137296687965072,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00546",
+        "text": "DIRECT_CLAIMS: GNNs trained on large and diverse first-principles calculations increase the number of stable crystals by more than an order of magnitude, with scaling showing consistent power-law improvements in MLIP accuracy and generalization on out-of-distribution structural tasks."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00262": {
+    "score": 0.556713403446856,
+    "core_support": 0.8090832233428955,
+    "requirement_supports": [
+      0.6774189472198486,
+      0.6989073753356934
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6880792820628252,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00262",
+        "text": "NAME: Direct optimization constrained DFT\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00356": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00362": {
+    "score": 0.5625857516285993,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.6606464982032776,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6957322739358616,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00362",
+        "text": "NAME: Conjugate Gradients\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00099": {
+    "score": 0.5212739014647676,
+    "core_support": 0.7620705962181091,
+    "requirement_supports": [
+      0.6590046882629395,
+      0.7099913358688354
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.684023112887006,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00366": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00285": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00367": {
+    "score": 0.5657584844924807,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.6681190133094788,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6996558938348535,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00367",
+        "text": "NAME: Local Density Approximation\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00915": {
+    "score": 0.5216090547639051,
+    "core_support": 0.7491549253463745,
+    "requirement_supports": [
+      0.6513293981552124,
+      0.7442970275878906
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6962632656025551,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00915",
+        "text": "NAME: Large-scale atomistic simulation\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00915",
+        "text": "NAME: Large-scale atomistic simulation\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00365": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00323": {
+    "score": 0.5128678983358083,
+    "core_support": 0.7608873844146729,
+    "requirement_supports": [
+      0.649371862411499,
+      0.6996434926986694
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6740391664271602,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00023",
+        "text": "ARTICLE: Linking atomic structural defects to mesoscale properties in crystalline solids using graph neural networks"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00323",
+        "text": "NAME: Stress‑field surrogate objective\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00023",
+        "text": "ARTICLE: Linking atomic structural defects to mesoscale properties in crystalline solids using graph neural networks"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00358": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00368": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00370": {
+    "score": 0.5571355896541155,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.6479082107543945,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6889922283999598,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00370",
+        "text": "NAME: GW approximation\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00394": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00300": {
+    "score": 0.5365547118914261,
+    "core_support": 0.7475967407226562,
+    "requirement_supports": [
+      0.6552874445915222,
+      0.7860702872276306
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7177060608541062,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00814": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00031": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00289": {
+    "score": 0.5115094511536663,
+    "core_support": 0.7599223852157593,
+    "requirement_supports": [
+      0.6531707644462585,
+      0.6936527490615845
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6731074924295554,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00027",
+        "text": "ARTICLE: AFLOW: an automatic framework for high-throughput materials discovery"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00027",
+        "text": "ARTICLE: AFLOW: an automatic framework for high-throughput materials discovery"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00027",
+        "text": "ARTICLE: AFLOW: an automatic framework for high-throughput materials discovery"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00429": {
+    "score": 0.5365547118914261,
+    "core_support": 0.7475967407226562,
+    "requirement_supports": [
+      0.6552874445915222,
+      0.7860702872276306
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7177060608541062,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00817": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00150": {
+    "score": 0.47973694361427754,
+    "core_support": 0.7203633189201355,
+    "requirement_supports": [
+      0.656746506690979,
+      0.675313413143158
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6659652581053541,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00465": {
+    "score": 0.5128684807606455,
+    "core_support": 0.750828742980957,
+    "requirement_supports": [
+      0.6541944742202759,
+      0.7132197618484497
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6830698552168416,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00052": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00834": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00097": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00360": {
+    "score": 0.560577553140653,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.655938446521759,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6932487974231899,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00360",
+        "text": "NAME: Davidson Block Subspace\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00192": {
+    "score": 0.5212739014647676,
+    "core_support": 0.7620705962181091,
+    "requirement_supports": [
+      0.6590046882629395,
+      0.7099913358688354
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.684023112887006,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00727": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00357": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00830": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00191": {
+    "score": 0.5212739014647676,
+    "core_support": 0.7620705962181091,
+    "requirement_supports": [
+      0.6590046882629395,
+      0.7099913358688354
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.684023112887006,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00371": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00723": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00361": {
+    "score": 0.5569932391899298,
+    "core_support": 0.8086239099502563,
+    "requirement_supports": [
+      0.647577166557312,
+      0.732681393623352
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6888161880152592,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00049",
+        "text": "ARTICLE: The AFLOW Standard for High-Throughput Materials Science Calculations"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00112": {
+    "score": 0.5232807878540013,
+    "core_support": 0.7540673017501831,
+    "requirement_supports": [
+      0.656746506690979,
+      0.7332491874694824
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6939444087278039,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "identity",
+        "node_id": "comp_00112",
+        "text": "NAME: Large‑scale DFT calculation of anti‑phase‑boundary energy\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00112",
+        "text": "NAME: Large‑scale DFT calculation of anti‑phase‑boundary energy\nTYPE: component"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00725": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00565": {
+    "score": 0.5128684807606455,
+    "core_support": 0.750828742980957,
+    "requirement_supports": [
+      0.6541944742202759,
+      0.7132197618484497
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6830698552168416,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00428": {
+    "score": 0.5365547118914261,
+    "core_support": 0.7475967407226562,
+    "requirement_supports": [
+      0.6552874445915222,
+      0.7860702872276306
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7177060608541062,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "comp_00239": {
+    "score": 0.5386684740418884,
+    "core_support": 0.7696340084075928,
+    "requirement_supports": [
+      0.6610511541366577,
+      0.7410364151000977
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6999021199133568,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00231": {
+    "score": 0.4952744680340101,
+    "core_support": 0.7298195362091064,
+    "requirement_supports": [
+      0.6426569819450378,
+      0.7166080474853516
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6786259389637729,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "other",
+        "node_id": "meth_00084",
+        "text": "OTHER: Vienna Ab Initio simulation Package"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00084",
+        "text": "OTHER: Vienna Ab Initio simulation Package"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00084",
+        "text": "OTHER: Vienna Ab Initio simulation Package"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00158": {
+    "score": 0.48772161874899794,
+    "core_support": 0.7203633189201355,
+    "requirement_supports": [
+      0.6787900328636169,
+      0.675313413143158
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6770494914706646,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00158",
+        "text": "NAME: Allen–Cahn phase field model\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00833": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "cite_00577": {
+    "score": 0.5117627699754566,
+    "core_support": 0.7491549253463745,
+    "requirement_supports": [
+      0.663368284702301,
+      0.7034599781036377
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6831200765834132,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00577",
+        "text": "NAME: Franzblau algorithm\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00157": {
+    "score": 0.47973694361427754,
+    "core_support": 0.7203633189201355,
+    "requirement_supports": [
+      0.656746506690979,
+      0.675313413143158
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6659652581053541,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00424": {
+    "score": 0.5501473930003228,
+    "core_support": 0.768841564655304,
+    "requirement_supports": [
+      0.6796112060546875,
+      0.7533969879150391
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.715553656684744,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00253": {
+    "score": 0.5065444658941365,
+    "core_support": 0.7417874932289124,
+    "requirement_supports": [
+      0.684410810470581,
+      0.6813327670097351
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6828700544534783,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00024",
+        "text": "ARTICLE: The Joint Automated Repository for Various Integrated Simulations (JARVIS) for data-driven materials design"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00253",
+        "text": "NAME: Dynamical Mean Field Theory\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00024",
+        "text": "ARTICLE: The Joint Automated Repository for Various Integrated Simulations (JARVIS) for data-driven materials design"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00287": {
+    "score": 0.5115094511536663,
+    "core_support": 0.7599223852157593,
+    "requirement_supports": [
+      0.6531707644462585,
+      0.6936527490615845
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6731074924295554,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00027",
+        "text": "ARTICLE: AFLOW: an automatic framework for high-throughput materials discovery"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00027",
+        "text": "ARTICLE: AFLOW: an automatic framework for high-throughput materials discovery"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00027",
+        "text": "ARTICLE: AFLOW: an automatic framework for high-throughput materials discovery"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00781": {
+    "score": 0.555961946431621,
+    "core_support": 0.7722760438919067,
+    "requirement_supports": [
+      0.6717503070831299,
+      0.7715021371841431
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.7199005469984997,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00464",
+        "text": "DIRECT_CLAIMS: SevenNet-0 successfully generated amorphous Si3N4 structure with 112,000 atoms through melt-quench MD simulation, reproducing key structural features matching DFT reference data."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00036",
+        "text": "ARTICLE: Scalable Parallel Algorithm for Graph Neural Network Interatomic Potentials in Molecular Dynamics Simulations"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00464",
+        "text": "DIRECT_CLAIMS: SevenNet-0 successfully generated amorphous Si3N4 structure with 112,000 atoms through melt-quench MD simulation, reproducing key structural features matching DFT reference data."
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "meth_00155": {
+    "score": 0.47973694361427754,
+    "core_support": 0.7203633189201355,
+    "requirement_supports": [
+      0.656746506690979,
+      0.675313413143158
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6659652581053541,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  },
+  "tech_00763": {
+    "score": 0.49903194636516496,
+    "core_support": 0.7184655666351318,
+    "requirement_supports": [
+      0.6801249980926514,
+      0.7093425989151001
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6945801852444171,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      }
+    ],
+    "components": [
+      "accelerating electronic structure calculations",
+      "self-consistent field iterations become prohibitively expensive",
+      "large systems (>10³ atoms)"
+    ]
+  }
+}

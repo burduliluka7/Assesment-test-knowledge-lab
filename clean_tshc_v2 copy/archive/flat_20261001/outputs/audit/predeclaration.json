@@ -1,0 +1,19 @@
+{
+  "primary": "V2-C",
+  "first_stage": "V2-B fixed before gold, not selected by measured performance",
+  "ablations": {
+    "A0": "raw/V1/all",
+    "A1": "raw/V1/hard-type",
+    "A2": "raw/cards/all",
+    "A3": "parsed/cards/all",
+    "A4": "A3 top100 relevance"
+  },
+  "systems": {
+    "V2-A": "parsed/cards/hard-type/BGE",
+    "V2-B": "V2-A + BM25 RRF60",
+    "V2-C": "V2-B top100 relevance",
+    "V2-D": "V2-B top100 requirement support"
+  },
+  "development_only": true,
+  "no_hierarchy_routing": true
+}

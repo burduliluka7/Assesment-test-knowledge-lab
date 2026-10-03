@@ -1,0 +1,7 @@
+The complete V2 suite passed: \textbf{57 tests passed, zero failed and zero skipped}, in 812.27 seconds. Most elapsed time was the full protected-directory content audit. Tests cover entity/time/type/name/BM25/graph/RRF invariants, original text and source spans, owned evidence selection and packing, requirement aggregation and exclusions, missing-data semantics, prediction access isolation, freeze-before-gold, frozen-file protection and deterministic cached replay.
+
+All 1,056 files under \texttt{clean\_tshc} and 86,667 files under \texttt{rest\_of\_work} match their initial SHA-256 hashes; protected git diffs and status entries also match. There are \textbf{zero new protected-tree changes}. The user's pre-existing V1 work is preserved.
+
+The prediction access audit records zero gold or historical-result reads and no denied reads. Evaluation-only positive controls pass. Primary and cached replay prediction SHA-256 values match, and the registered predictive policy remains unchanged after evaluation. A cached replay does not establish independent uncached NLI determinism. No model was trained, fitted or tuned against benchmark gold, and no GitHub action was taken.
+
+The exact file inventory, test log, protected-tree comparison, report checks and final artifact hashes are under \path{artifacts/verification/}. These checks establish local consistency and preserve the development-only interpretation.

@@ -1,0 +1,517 @@
+{
+  "entity:data_00013": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": "clai_00343",
+        "evidence_text": "The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+        "evidence_link": {
+          "evidence_id": "clai_00343",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7533457279205322,
+        "hypothesis": "Matbench Discovery supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": "Candidate: Matbench Discovery. Relation: safe_literal_mention. Evidence: The SevenNet machine-learned interatomic potential outperforms the earlier M3GNet model on the Matbench Discovery benchmark.",
+        "probabilities": {
+          "contradiction": 0.0042043463326990604,
+          "entailment": 0.0009495128178969026,
+          "neutral": 0.9948461055755615
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 59,
+        "full_tokens": 59,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00116": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": "clai_00311",
+        "evidence_text": "Matbench v0.1 is a benchmark suite containing 13 supervised machine learning tasks (10 regression, 3 classification) for materials property prediction, with dataset sizes ranging from 312 to 132,752 samples.",
+        "evidence_link": {
+          "evidence_id": "clai_00311",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7853942513465881,
+        "hypothesis": "Matbench v0.1 supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": "Candidate: Matbench v0.1. Relation: safe_literal_mention. Evidence: Matbench v0.1 is a benchmark suite containing 13 supervised machine learning tasks (10 regression, 3 classification) for materials property prediction, with dataset sizes ranging from 312 to 132,752 samples.",
+        "probabilities": {
+          "contradiction": 0.017742833122611046,
+          "entailment": 0.02223587967455387,
+          "neutral": 0.9600212574005127
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 81,
+        "full_tokens": 81,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00114": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Matbench supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00101": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": "clai_00368",
+        "evidence_text": "Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "evidence_link": {
+          "evidence_id": "clai_00368",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7328650951385498,
+        "hypothesis": "OMat24 supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": "Candidate: OMat24. Relation: safe_literal_mention. Evidence: Machine-learned interatomic potentials trained on OMat24 predict tightly converged DFT forces with accuracy comparable to or better than predictions for less tightly converged calculations.",
+        "probabilities": {
+          "contradiction": 0.005910336505621672,
+          "entailment": 0.0017122238641604781,
+          "neutral": 0.9923774003982544
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 66,
+        "full_tokens": 66,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00117": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Matbench experimental metallicity classification supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00115": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Matbench test suite v0.1 supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00062": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": "clai_00490",
+        "evidence_text": "MEGNet models trained on approximately 60,000 crystals outperform prior models (SchNet and CGCNN) for formation energy, band gap, bulk modulus, and shear modulus, achieving errors comparable to or better than density‑functional‑theory uncertainties.",
+        "evidence_link": {
+          "evidence_id": "clai_00490",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6978212594985962,
+        "hypothesis": "Formation energy supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": "Candidate: Formation energy. Relation: safe_literal_mention. Evidence: MEGNet models trained on approximately 60,000 crystals outperform prior models (SchNet and CGCNN) for formation energy, band gap, bulk modulus, and shear modulus, achieving errors comparable to or better than density‑functional‑theory uncertainties.",
+        "probabilities": {
+          "contradiction": 0.002670691814273596,
+          "entailment": 0.004271592944860458,
+          "neutral": 0.9930577278137207
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 81,
+        "full_tokens": 81,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:metr_00021": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "MAE/ROC-AUC supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:metr_00023": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "ROC-AUC supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00144": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": "clai_00552",
+        "evidence_text": "GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD.",
+        "evidence_link": {
+          "evidence_id": "clai_00552",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7656764984130859,
+        "hypothesis": "GNoME supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": "Candidate: GNoME. Relation: safe_literal_mention. Evidence: GNoME-driven molecular dynamics simulations on 623 materials with previously unseen compositions enable classification of unseen compositions as superionic conductors in comparison with AIMD.",
+        "probabilities": {
+          "contradiction": 0.11784898489713669,
+          "entailment": 0.016256971284747124,
+          "neutral": 0.8658940196037292
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 65,
+        "full_tokens": 65,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:metr_00022": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "relative error (MAE/MAD) supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00164": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": "clai_00095",
+        "evidence_text": "Conservative PET-OAM models achieve state-of-the-art performance on phonon tasks in matbench-discovery and the best overall accuracy in predicting shear modulus among tested models.",
+        "evidence_link": {
+          "evidence_id": "clai_00095",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6894350051879883,
+        "hypothesis": "Matbench-Discovery supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": "Candidate: Matbench-Discovery. Relation: safe_literal_mention. Evidence: Conservative PET-OAM models achieve state-of-the-art performance on phonon tasks in matbench-discovery and the best overall accuracy in predicting shear modulus among tested models.",
+        "probabilities": {
+          "contradiction": 0.013572292402386665,
+          "entailment": 0.10527374595403671,
+          "neutral": 0.8811540007591248
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 73,
+        "full_tokens": 73,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00093": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Universal MLIP dataset supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00156": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": "clai_00180",
+        "evidence_text": "The resulting datasets comprise 76,525 unique molecules from OMOL25, 20,869 MOFs from ODAC25, and 20,407 MOFs from QMOF for benchmarking MLIP generalization.",
+        "evidence_link": {
+          "evidence_id": "clai_00180",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6729084253311157,
+        "hypothesis": "QMOF supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": "Candidate: QMOF. Relation: safe_literal_mention. Evidence: The resulting datasets comprise 76,525 unique molecules from OMOL25, 20,869 MOFs from ODAC25, and 20,407 MOFs from QMOF for benchmarking MLIP generalization.",
+        "probabilities": {
+          "contradiction": 0.0019810793455690145,
+          "entailment": 0.002722903387621045,
+          "neutral": 0.995296061038971
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 72,
+        "full_tokens": 72,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00157": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": "clai_00180",
+        "evidence_text": "The resulting datasets comprise 76,525 unique molecules from OMOL25, 20,869 MOFs from ODAC25, and 20,407 MOFs from QMOF for benchmarking MLIP generalization.",
+        "evidence_link": {
+          "evidence_id": "clai_00180",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6729084253311157,
+        "hypothesis": "ODAC25 supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": "Candidate: ODAC25. Relation: safe_literal_mention. Evidence: The resulting datasets comprise 76,525 unique molecules from OMOL25, 20,869 MOFs from ODAC25, and 20,407 MOFs from QMOF for benchmarking MLIP generalization.",
+        "probabilities": {
+          "contradiction": 0.0022050782572478056,
+          "entailment": 0.0019930503331124783,
+          "neutral": 0.9958018660545349
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 74,
+        "full_tokens": 74,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00102": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "MPtrj supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:metr_00026": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "F1 supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00100": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "PBE MDR phonon dataset supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00151": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": "clai_00180",
+        "evidence_text": "The resulting datasets comprise 76,525 unique molecules from OMOL25, 20,869 MOFs from ODAC25, and 20,407 MOFs from QMOF for benchmarking MLIP generalization.",
+        "evidence_link": {
+          "evidence_id": "clai_00180",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6729084253311157,
+        "hypothesis": "OMol25 supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": "Candidate: OMol25. Relation: safe_literal_mention. Evidence: The resulting datasets comprise 76,525 unique molecules from OMOL25, 20,869 MOFs from ODAC25, and 20,407 MOFs from QMOF for benchmarking MLIP generalization.",
+        "probabilities": {
+          "contradiction": 0.00168793520424515,
+          "entailment": 0.002006997587159276,
+          "neutral": 0.9963051080703735
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 74,
+        "full_tokens": 74,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:data_00142": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "evaluate MLIPs and property prediction models for materials discovery",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "r2SCAN quaternary validation supports evaluate MLIPs and property prediction models for materials discovery.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  }
+}

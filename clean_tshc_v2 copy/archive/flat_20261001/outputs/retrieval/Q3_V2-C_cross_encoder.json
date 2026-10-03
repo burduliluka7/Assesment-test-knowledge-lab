@@ -1,0 +1,2292 @@
+{
+  "tech_00167": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00167",
+        "text": "NAME: DFT+U with van der Waals functionals\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 87,
+    "query_truncated": false,
+    "relevance_score": -2.1872239112854004,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "meth_00153": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00153",
+        "text": "NAME: van der Waals density functional\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 82,
+    "query_truncated": false,
+    "relevance_score": -3.0789403915405273,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "meth_00201": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00201",
+        "text": "NAME: Graph neural network for DFT Hamiltonian\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -0.01183229684829712,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "cite_00262": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00262",
+        "text": "NAME: Direct optimization constrained DFT\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -7.150518417358398,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "meth_00203": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00203",
+        "text": "NAME: Equivariant representations for atomistic dynamics\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 66,
+    "query_truncated": false,
+    "relevance_score": -7.984431266784668,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "meth_00202": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00202",
+        "text": "NAME: e(3)-equivariant Hamiltonian parameterization\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 70,
+    "query_truncated": false,
+    "relevance_score": -3.1432833671569824,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "meth_00118": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00118",
+        "text": "NAME: DeepH-E3\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00578",
+        "text": "DIRECT_CLAIMS: DeepH-E3 provides a universal E(3)-equivariant deep-learning framework that exactly preserves Euclidean symmetry of the DFT Hamiltonian, including spin-orbit coupling."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00579",
+        "text": "DIRECT_CLAIMS: DeepH-E3 predicts DFT Hamiltonian matrix elements with sub‑meV mean absolute error, reducing the error by roughly a factor of two compared with the original DeepH method across diverse material systems."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00580",
+        "text": "DIRECT_CLAIMS: DeepH-E3 enables accurate electronic‑structure calculations for supercells larger than 10⁴ atoms, reducing computational cost by several orders of magnitude and allowing calculations in minutes on a single GPU versus months on thousands of CPU cores."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00581",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00009",
+        "text": "DATASET_METRIC: graphene"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00010",
+        "text": "DATASET_METRIC: MoS2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00005",
+        "text": "ARTICLE: General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+      }
+    ],
+    "omitted": [],
+    "token_count": 288,
+    "query_truncated": false,
+    "relevance_score": -0.7606631517410278,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "meth_00155": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00155",
+        "text": "NAME: Finite-element DFT\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 81,
+    "query_truncated": false,
+    "relevance_score": -5.749383926391602,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "tech_00266": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00266",
+        "text": "NAME: Tensor‑product layer with Clebsch‑Gordan coefficients\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -8.584474563598633,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "comp_00230": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00230",
+        "text": "NAME: Tensor‑product layer with Clebsch‑Gordan coefficients\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -10.204879760742188,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "cite_00271": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00271",
+        "text": "NAME: Spin Hamiltonian ANN\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -6.297850608825684,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "comp_00234": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00234",
+        "text": "NAME: Hamiltonian construction block\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -6.262807369232178,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "tech_00174": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00174",
+        "text": "NAME: DFT+U with optB88 vdW functional\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 89,
+    "query_truncated": false,
+    "relevance_score": -7.4036359786987305,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "cite_00264": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00264",
+        "text": "NAME: Variationally Optimized Atomic Orbitals\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 66,
+    "query_truncated": false,
+    "relevance_score": -9.863083839416504,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "cite_00255": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00255",
+        "text": "NAME: DeepH‑E3\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00581",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 reproduces the band structure of magic‑angle twisted bilayer graphene (θ = 1.08°, 11 164 atoms) in excellent agreement with DFT and low‑energy continuum models, correctly capturing the flat bands near the Fermi level."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00582",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 predicts a spin‑orbit‑coupling‑induced topological quantum phase transition in twisted bilayer Bi₂Te₃, evidenced by band‑gap closing and reopening and a change of the Z₂ invariant from 0 to 1 as SOC strength increases."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00583",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 attains sub‑meV accuracy after training on only a few hundred DFT calculations of small, non‑twisted structures, demonstrating high data efficiency."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00584",
+        "text": "DIRECT_CLAIMS: DeepH‑E3 generalizes across diverse material systems—including graphene, MoS₂, bismuthene, Bi₂Se₃, and Bi₂Te₃—achieving consistently sub‑meV Hamiltonian prediction errors."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 271,
+    "query_truncated": false,
+    "relevance_score": -5.626628398895264,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "tech_00268": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00268",
+        "text": "NAME: Mean‑squared‑error loss on Hamiltonian matrix elements\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -5.333425521850586,
+    "batch_runtime_seconds": 0.7384210000018356,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04615131250011473
+  },
+  "cite_00258": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00258",
+        "text": "NAME: e(3)-equivariant Hamiltonian parameterization\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 72,
+    "query_truncated": false,
+    "relevance_score": -6.426638603210449,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "meth_00102": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00102",
+        "text": "NAME: deep-learning DFT Hamiltonian\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00005",
+        "text": "ARTICLE: General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -0.79543137550354,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "meth_00200": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00200",
+        "text": "NAME: SE(3)-equivariant network\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -7.703233242034912,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "comp_00113": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00113",
+        "text": "NAME: DFT calculations with optB88 vdW functional\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 88,
+    "query_truncated": false,
+    "relevance_score": -8.667874336242676,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "comp_00131": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00131",
+        "text": "NAME: Large‑scale interface‑energy DFT calculations\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 85,
+    "query_truncated": false,
+    "relevance_score": -8.78312873840332,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "comp_00112": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00112",
+        "text": "NAME: Large‑scale DFT calculation of anti‑phase‑boundary energy\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 89,
+    "query_truncated": false,
+    "relevance_score": -9.22727108001709,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "cite_00268": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00268",
+        "text": "NAME: Multiferroicity\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -9.758172035217285,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "comp_00769": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00769",
+        "text": "NAME: Charge, spin, and DFT task embeddings\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -9.469767570495605,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "meth_00213": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00213",
+        "text": "NAME: deep neural network approach to represent DFT Hamiltonian\nTYPE: method"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00009",
+        "text": "DATASET_METRIC: graphene"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00010",
+        "text": "DATASET_METRIC: MoS2"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 88,
+    "query_truncated": false,
+    "relevance_score": -2.1501176357269287,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "cite_00272": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00272",
+        "text": "NAME: Vanderbilt Pseudopotential\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -9.832157135009766,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "tech_00190": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00190",
+        "text": "NAME: Finite‑element discretization for DFT\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 85,
+    "query_truncated": false,
+    "relevance_score": -5.792514801025391,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "tech_00269": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00269",
+        "text": "NAME: Message passing on a graph of atoms and edges\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -8.508842468261719,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "meth_00248": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00248",
+        "text": "NAME: van der Waals functional OptB88\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00024",
+        "text": "ARTICLE: The Joint Automated Repository for Various Integrated Simulations (JARVIS) for data-driven materials design"
+      }
+    ],
+    "omitted": [],
+    "token_count": 71,
+    "query_truncated": false,
+    "relevance_score": -4.295261859893799,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "cite_00265": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00265",
+        "text": "NAME: Numerical Atomic Basis Orbitals\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -10.155277252197266,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "meth_00205": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00205",
+        "text": "NAME: Constrained DFT\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00205",
+        "text": "DIRECT_CLAIMS: xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 108,
+    "query_truncated": false,
+    "relevance_score": -4.702078819274902,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "cite_00261": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00261",
+        "text": "NAME: Constrained DFT\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00205",
+        "text": "DIRECT_CLAIMS: xDeepH reduces the computational cost of electronic‑structure calculations relative to conventional constrained DFT, enabling simulations of magnetic superstructures containing thousands of atoms, such as a 4,336‑atom skyrmion supercell."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 110,
+    "query_truncated": false,
+    "relevance_score": -7.372364521026611,
+    "batch_runtime_seconds": 0.2790645999921253,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.01744153749950783
+  },
+  "comp_00228": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00228",
+        "text": "NAME: Vertex layer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 58,
+    "query_truncated": false,
+    "relevance_score": -9.794490814208984,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "comp_00130": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00130",
+        "text": "NAME: Calibrated DFT+U+vdW‑DF workflow\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 92,
+    "query_truncated": false,
+    "relevance_score": -8.90941047668457,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "cite_00396": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00396",
+        "text": "NAME: DFT-FE\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 82,
+    "query_truncated": false,
+    "relevance_score": -7.955883026123047,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "meth_00224": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00224",
+        "text": "NAME: Linear Combination of Atomic Orbitals\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00019",
+        "text": "ARTICLE: D4FT: A DEEP LEARNING APPROACH TO KOHN-SHAM DENSITY FUNCTIONAL THEORY"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -5.66184139251709,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "meth_00199": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00199",
+        "text": "NAME: deep equivariant neural network method\nTYPE: method"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00047",
+        "text": "DATASET_METRIC: CrI3 nanotube"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00048",
+        "text": "DATASET_METRIC: NiBr2 spin‑spiral"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 87,
+    "query_truncated": false,
+    "relevance_score": -8.615150451660156,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "tech_00283": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00283",
+        "text": "NAME: Mean‑squared‑error loss on Hamiltonian blocks\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 73,
+    "query_truncated": false,
+    "relevance_score": -5.896053314208984,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "comp_00011": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00011",
+        "text": "NAME: Embedding module\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -9.86553955078125,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "cite_00250": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00250",
+        "text": "NAME: Machine learning and the physical sciences\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -9.259961128234863,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "cite_00249": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00249",
+        "text": "NAME: Topological properties and dynamics of magnetic skyrmions\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 67,
+    "query_truncated": false,
+    "relevance_score": -10.171379089355469,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "tech_00265": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00265",
+        "text": "NAME: Time‑reversal equivariance via parity indexing\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -8.543502807617188,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "cite_00266": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00266",
+        "text": "NAME: FLAPW\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -9.781242370605469,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "tech_00267": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00267",
+        "text": "NAME: Spherical‑harmonic embedding of geometric inputs\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -8.459993362426758,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "meth_00204": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00204",
+        "text": "NAME: Directional message passing neural network\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -8.127016067504883,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "cite_00269": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00269",
+        "text": "NAME: Magnetic Skyrmion Prediction\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -10.026068687438965,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "comp_00259": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00259",
+        "text": "NAME: Elemental embeddings\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -7.494647026062012,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "meth_00009": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00009",
+        "text": "NAME: Mixture of Experts\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 58,
+    "query_truncated": false,
+    "relevance_score": -9.196586608886719,
+    "batch_runtime_seconds": 0.21507750000455417,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.013442343750284635
+  },
+  "cite_00256": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00256",
+        "text": "NAME: SE(3)-equivariant network\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 69,
+    "query_truncated": false,
+    "relevance_score": -9.960527420043945,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "meth_00300": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00300",
+        "text": "NAME: eSCN\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 58,
+    "query_truncated": false,
+    "relevance_score": -9.469474792480469,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "comp_00251": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00251",
+        "text": "NAME: Vertex embedding of atomic numbers\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 70,
+    "query_truncated": false,
+    "relevance_score": -8.125499725341797,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "cite_00257": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00257",
+        "text": "NAME: Graph Neural Network Hamiltonian predictor\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -6.708759307861328,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "comp_00233": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00233",
+        "text": "NAME: Spherical‑harmonics embedding\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -9.909154891967773,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "meth_00429": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00429",
+        "text": "NAME: eqV2\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 59,
+    "query_truncated": false,
+    "relevance_score": -9.481487274169922,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "comp_00215": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00215",
+        "text": "NAME: Phonon and elastic property predictor\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "omitted": [],
+    "token_count": 66,
+    "query_truncated": false,
+    "relevance_score": -10.67293930053711,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "comp_00248": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00248",
+        "text": "NAME: Sparse Hamiltonian matrix blocks\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -7.528788089752197,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "cite_00270": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00270",
+        "text": "NAME: Magnetic Moment Tensor Potentials\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -10.044551849365234,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "comp_00227": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00227",
+        "text": "NAME: Magnetic moment layer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 59,
+    "query_truncated": false,
+    "relevance_score": -9.90097427368164,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "meth_00428": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00428",
+        "text": "NAME: Chinchilla scaling\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 59,
+    "query_truncated": false,
+    "relevance_score": -9.625137329101562,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "meth_00082": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00082",
+        "text": "NAME: Universal Models for Atoms\nTYPE: method"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00177",
+        "text": "DATASET_METRIC: Structure-based drug-design benchmarks"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00002",
+        "text": "DATASET_METRIC: Materials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 78,
+    "query_truncated": false,
+    "relevance_score": -10.740501403808594,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "meth_00190": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00190",
+        "text": "NAME: Modified Embedded Atom Method\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -7.293362617492676,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "meth_00151": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00151",
+        "text": "NAME: deal.II library\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 80,
+    "query_truncated": false,
+    "relevance_score": -8.778444290161133,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "comp_00229": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00229",
+        "text": "NAME: Edge layer\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 58,
+    "query_truncated": false,
+    "relevance_score": -9.858991622924805,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "tech_00390": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00390",
+        "text": "NAME: Single‑point DFT with stringent convergence\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00025",
+        "text": "ARTICLE: A Foundational Potential Energy Surface Dataset for Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -9.190437316894531,
+    "batch_runtime_seconds": 0.1966550999932224,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0122909437495764
+  },
+  "meth_00100": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00100",
+        "text": "NAME: DFT+U\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00212",
+        "text": "DIRECT_CLAIMS: The AFLOW standard enables reproducible high-throughput DFT calculations through standardized parameter sets for k-point density, energy cut-offs, exchange-correlation functionals, pseudopotentials, DFT+U parameters, and convergence criteria."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00218",
+        "text": "DIRECT_CLAIMS: DFT+U corrections are applied to the entire ICSD database and certain Heusler database entries containing O, S, Se, and F elements, but not to the Binary Alloy database."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00219",
+        "text": "DIRECT_CLAIMS: Specific Ueff parameters are defined for d-block elements (Table 4) and U, J parameters for f-block elements (Table 5) to correct self-interaction error in DFT+U calculations, with values ranging from 1.9 eV (In) to 7.5 eV (Zn)."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00385",
+        "text": "DIRECT_CLAIMS: A Hubbard U parameter of 2.5 eV in DFT+U (with a vdW‑DF exchange‑correlation functional) reproduces the experimental average lithiation voltages of LiCoO₂ across the composition ranges {0‑1}, {0‑0.5}, and {0.5‑1}."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 320,
+    "query_truncated": false,
+    "relevance_score": -7.4558892250061035,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "cite_00267": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00267",
+        "text": "NAME: Curved Magnetism\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -9.858114242553711,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "meth_00426": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00426",
+        "text": "NAME: SO(2) equivariant networks\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -9.939630508422852,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "tech_00253": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00253",
+        "text": "NAME: phonon band structure and DOS calculation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00014",
+        "text": "ARTICLE: A Universal Graph Deep Learning Interatomic Potential for the Periodic Table"
+      }
+    ],
+    "omitted": [],
+    "token_count": 66,
+    "query_truncated": false,
+    "relevance_score": -10.07841682434082,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "cite_00394": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00394",
+        "text": "NAME: vdW-DF\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 84,
+    "query_truncated": false,
+    "relevance_score": -10.082931518554688,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "meth_00146": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00146",
+        "text": "NAME: Semi-Grand Canonical Monte Carlo\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 82,
+    "query_truncated": false,
+    "relevance_score": -8.833520889282227,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "tech_00199": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00199",
+        "text": "NAME: Multi‑task learning with auxiliary DFT properties\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00011",
+        "text": "ARTICLE: Matbench Discovery: A framework to evaluate machine learning crystal stability predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -5.135188102722168,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "meth_00217": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00217",
+        "text": "NAME: Tensor‑product‑based equivariant network\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -5.773617744445801,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "tech_00289": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00289",
+        "text": "NAME: ARPACK eigenvalue solver\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 71,
+    "query_truncated": false,
+    "relevance_score": -5.25095796585083,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "meth_00216": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00216",
+        "text": "NAME: SE(3)-Transformer\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 70,
+    "query_truncated": false,
+    "relevance_score": -4.989905834197998,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "meth_00427": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00427",
+        "text": "NAME: Scaling laws for neural networks\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -9.873690605163574,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "comp_00771": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00771",
+        "text": "NAME: Edge-wise block with MoLE\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -10.943351745605469,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "tech_00284": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00284",
+        "text": "NAME: Rotation‑invariant local coordinate representation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 69,
+    "query_truncated": false,
+    "relevance_score": -6.2582855224609375,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "meth_00377": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00377",
+        "text": "NAME: Open Quantum Mechanical Database\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 55,
+    "query_truncated": false,
+    "relevance_score": -7.551173210144043,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "comp_00247": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00247",
+        "text": "NAME: Local atomic-like orbital basis\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 69,
+    "query_truncated": false,
+    "relevance_score": -8.006738662719727,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "comp_00232": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00232",
+        "text": "NAME: Spatial‑inversion parity index\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -9.882482528686523,
+    "batch_runtime_seconds": 0.845423100006883,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.05283894375043019
+  },
+  "cite_00088": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00088",
+        "text": "NAME: Passaro & Zitnick\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -9.379865646362305,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "comp_00231": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00231",
+        "text": "NAME: Time‑reversal parity index\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -10.093317985534668,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "cite_00279": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00279",
+        "text": "NAME: DFT+U\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00212",
+        "text": "DIRECT_CLAIMS: The AFLOW standard enables reproducible high-throughput DFT calculations through standardized parameter sets for k-point density, energy cut-offs, exchange-correlation functionals, pseudopotentials, DFT+U parameters, and convergence criteria."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00218",
+        "text": "DIRECT_CLAIMS: DFT+U corrections are applied to the entire ICSD database and certain Heusler database entries containing O, S, Se, and F elements, but not to the Binary Alloy database."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00219",
+        "text": "DIRECT_CLAIMS: Specific Ueff parameters are defined for d-block elements (Table 4) and U, J parameters for f-block elements (Table 5) to correct self-interaction error in DFT+U calculations, with values ranging from 1.9 eV (In) to 7.5 eV (Zn)."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00385",
+        "text": "DIRECT_CLAIMS: A Hubbard U parameter of 2.5 eV in DFT+U (with a vdW‑DF exchange‑correlation functional) reproduces the experimental average lithiation voltages of LiCoO₂ across the composition ranges {0‑1}, {0‑0.5}, and {0.5‑1}."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 322,
+    "query_truncated": false,
+    "relevance_score": -8.973810195922852,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "meth_00393": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00393",
+        "text": "NAME: ACE with message passing\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -8.539141654968262,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "cite_00254": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00254",
+        "text": "NAME: DeepH\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00373",
+        "text": "DIRECT_CLAIMS: DeepH predicts DFT Hamiltonian matrix elements for graphene with an average mean absolute error of 2.1 meV and a coefficient of determination r² = 0.9994 across all orbital combinations."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00374",
+        "text": "DIRECT_CLAIMS: When applied to unseen graphene configurations sampled between 100 K and 400 K, DeepH maintains a mean absolute error of 1.9 meV for Hamiltonian matrix elements."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00375",
+        "text": "DIRECT_CLAIMS: For monolayer MoS₂, DeepH predicts DFT Hamiltonian matrix elements with average mean absolute errors of 1.3 meV (Mo–Mo), 1.0 meV (Mo–S), 0.7 meV (S–Mo), and 0.8 meV (S–S)."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00376",
+        "text": "DIRECT_CLAIMS: Band structures and electric susceptibility computed from DeepH for MoS₂ match DFT results closely."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00005",
+        "text": "ARTICLE: General framework for E(3)-equivariant neural network representation of density functional theory Hamiltonian"
+      }
+    ],
+    "omitted": [],
+    "token_count": 253,
+    "query_truncated": false,
+    "relevance_score": -8.214959144592285,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "cite_00380": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00380",
+        "text": "NAME: Density Functional Theory (DFT)\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 72,
+    "query_truncated": false,
+    "relevance_score": -4.557858467102051,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "cite_00079": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00079",
+        "text": "NAME: Deringer et al.\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -9.148080825805664,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "meth_00375": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00375",
+        "text": "NAME: Equivariant interatomic potentials\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -7.635276794433594,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "tech_00232": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00232",
+        "text": "NAME: Latent‑space regularization with magnetic moments\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00015",
+        "text": "ARTICLE: CHGNet: Pretrained universal neural network potential for charge-informed atomistic modeling"
+      }
+    ],
+    "omitted": [],
+    "token_count": 72,
+    "query_truncated": false,
+    "relevance_score": -9.17486572265625,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "cite_00263": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00263",
+        "text": "NAME: Nearsightedness of electronic matter\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00018",
+        "text": "ARTICLE: Deep-learning electronic-structure calculation of magnetic superstructures"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -10.031112670898438,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "cite_00053": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00053",
+        "text": "NAME: eSEN\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -9.245648384094238,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "comp_00219": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00219",
+        "text": "NAME: Sparse set of representative atoms\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00028",
+        "text": "ARTICLE: Machine learning a general purpose interatomic potential for silicon"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -10.173104286193848,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "meth_00150": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00150",
+        "text": "NAME: mixed finite element method\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 80,
+    "query_truncated": false,
+    "relevance_score": -8.079252243041992,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "meth_00293": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00293",
+        "text": "NAME: eSEN\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00034",
+        "text": "ARTICLE: LEARNING INTER-ATOMIC POTENTIALS WITHOUT EXPLICIT EQUIVARIANCE"
+      }
+    ],
+    "omitted": [],
+    "token_count": 59,
+    "query_truncated": false,
+    "relevance_score": -6.593439102172852,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "meth_00077": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00077",
+        "text": "NAME: Atomic Cluster Expansion\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00520",
+        "text": "DIRECT_CLAIMS: The atomic cluster expansion (ACE) is generalized to model scalar, vectorial and tensorial atomic properties and to include additional atomic degrees of freedom—species, magnetic moments, and charges—on equal footing with atomic positions."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00004",
+        "text": "ARTICLE: MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00229",
+        "text": "OTHER: Atomic Cluster Expansion extended to scalar, vectorial, tensorial properties with magnetic moments and charge transfer"
+      }
+    ],
+    "omitted": [],
+    "token_count": 138,
+    "query_truncated": false,
+    "relevance_score": -10.152045249938965,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "meth_00229": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00229",
+        "text": "NAME: Atomic Cluster Expansion extended to scalar, vectorial, tensorial properties with magnetic moments and charge transfer\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00520",
+        "text": "DIRECT_CLAIMS: The atomic cluster expansion (ACE) is generalized to model scalar, vectorial and tensorial atomic properties and to include additional atomic degrees of freedom—species, magnetic moments, and charges—on equal footing with atomic positions."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00521",
+        "text": "DIRECT_CLAIMS: The derived ACE formulas enable efficient evaluation of forces and magnetic torques."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00522",
+        "text": "DIRECT_CLAIMS: At the lowest order, the magnetic ACE reproduces a distance‑dependent Heisenberg interaction."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00523",
+        "text": "DIRECT_CLAIMS: Representing tensors with spherical harmonics yields a dramatically sparser basis, where a rank‑N Cartesian tensor with 3^N components can be represented by (N+1)^2 spherical harmonics (e.g., a 10th‑order tensor requires 121 harmonics instead of 59 049 Cartesian components)."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00022",
+        "text": "ARTICLE: Atomic cluster expansion of scalar, vectorial and tensorial properties and including magnetism and charge transfer"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00077",
+        "text": "OTHER: Atomic Cluster Expansion"
+      }
+    ],
+    "omitted": [],
+    "token_count": 250,
+    "query_truncated": false,
+    "relevance_score": -10.47018051147461,
+    "batch_runtime_seconds": 0.9011193000042113,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0563199562502632
+  },
+  "comp_00250": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00250",
+        "text": "NAME: Edge embedding with Gaussian distance expansion\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 73,
+    "query_truncated": false,
+    "relevance_score": -8.149572372436523,
+    "batch_runtime_seconds": 0.07486370000697207,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.018715925001743017
+  },
+  "comp_00556": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00556",
+        "text": "NAME: DCGAT-2\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00501",
+        "text": "DIRECT_CLAIMS: DCGAT-2 dataset contains approximately 780,000 more compounds than DCGAT-1, with 3 to 20 times more compounds containing undersampled chemical elements."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      }
+    ],
+    "omitted": [],
+    "token_count": 100,
+    "query_truncated": false,
+    "relevance_score": -10.868844985961914,
+    "batch_runtime_seconds": 0.07486370000697207,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.018715925001743017
+  },
+  "comp_00772": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00772",
+        "text": "NAME: Node-wise feed-forward block with residual connections\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -11.08169937133789,
+    "batch_runtime_seconds": 0.07486370000697207,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.018715925001743017
+  },
+  "comp_00785": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00785",
+        "text": "NAME: Layer blocks with spherical harmonics\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00040",
+        "text": "ARTICLE: UMA: A Family of Universal Models for Atoms"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -11.04308795928955,
+    "batch_runtime_seconds": 0.07486370000697207,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.018715925001743017
+  }
+}

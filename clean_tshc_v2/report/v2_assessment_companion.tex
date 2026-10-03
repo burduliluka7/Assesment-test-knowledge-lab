@@ -1,0 +1,114 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath,booktabs,graphicx,hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=black,pdftitle={V2 retrieval assessment companion}}
+\setlength{\emergencystretch}{3em}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\tabcolsep}{5pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries V2 Entity-Centric Requirement-Aware Retrieval}\\[2mm]
+{Assessment companion: method, validity and development results}\\
+{2 October 2026}
+\end{center}
+\section*{Scope and motivation}
+\textbf{V2 is a flat-retrieval companion, not a complete assessment submission.} The temporal multiresolution hierarchy, laminar refinement, display budgets, native hyperedge collapse, independent coherence, temporal stability and label faithfulness remain in the unchanged V1 submission. Those results were not rerun or independently certified here. V2 builds no hierarchy and traverses none on its answer path; its recall gains cannot establish hierarchy benefit.
+
+The benchmark asks which entities suit a task under several conditions. Topical relevance can miss a condition or overlook an entity described in unfamiliar vocabulary. V2 separates high-recall entity generation from candidate-specific requirement evidence. The hypothesis is that broader generation recovers valid identities and requirement-aware reranking then improves precision. Both parts are tested; improvement is not assumed.
+
+\section*{Entities, queries and retrieval}
+The full original question is preserved for dense retrieval and global relevance scoring. Structured views supplement it. A deterministic parser extracts literal source spans for core task, requirements and exclusions; a ranking-only splitter handles conjunctions while preserving disjunctions and numeric commas. Scientific modifiers remain in the original even when the parser does not produce a separate component.
+
+The 2026 index contains 2,978 canonical entities, 4,274 evidence items and 10,241 entity--evidence links. Identity grouping uses conservative exact normalisation within compatible type families, graph aliases and the lowest member identifier. No target-derived aliases or fuzzy corrections are introduced. Visibility is publication-year based, with edge and asserting-article checks; month-level conditions cannot be resolved.
+
+Hard answer-family filtering applies to all entity channels. Six lists cover five families: original and structured dense retrieval, BM25 ($k_1=1.5$, $b=0.75$), safe exact names, evidence-to-owner retrieval, and bounded graph expansion. Each list caps at 500 entities. Graph expansion uses 200 evidence seeds, at most two directed hops, an article as the only intermediate, degree cap 80 and fanout 64. Paths are structural context, not entailment. Reciprocal rank fusion uses $\sum_j 1/(60+\mathrm{rank}_j)$ over canonical identities.
+
+\textbf{Assessment links.} The existing \href{../../clean_tshc/report.md}{V1 report}, \href{../../clean_tshc/outputs/hierarchies/}{snapshot hierarchies}, \href{../../clean_tshc/outputs/temporal_events.json}{temporal events} and \href{../../clean_tshc/outputs/metrics.json}{assessment metrics} were checked for existence only and are forbidden prediction inputs. The complete P1--P6/T1--T7 scope matrix is \path{../notes/ASSESSMENT_ALIGNMENT.md}.
+
+\newpage
+\section*{Requirement-aware ranking}
+A5 is the fused union. A6 scores its top-500 prefix with pinned MS MARCO MiniLM relevance; the original question and identity-first selected evidence are jointly encoded. A7, the predeclared primary system, reorders the same prefix by component evidence. Both preserve the untouched fusion tail.
+
+For each candidate and each component, cosine similarity ranks only legitimately attached candidate-specific evidence. Ties use relation priority and evidence identifier; duplicate text, article fields and graph-only evidence are excluded. The top three blocks are packed jointly, identity first, within 512 tokens; inclusion and omission are recorded. The same relevance model scores each component bundle. Pinned DeBERTa NLI is a separate support proxy, never a substitute relevance model. Its premise is the joint evidence bundle and its hypothesis is a candidate-specific literal requirement statement.
+
+NLI returns \texttt{SUPPORTED} or \texttt{CONTRADICTED} when the relevant probability is at least 0.7 and its opposite is below 0.3. Otherwise evidence is unresolved; missing evidence is never contradiction. An unavailable model with available evidence is \texttt{NOT\_EVALUABLE}. An exclusion hypothesis asserts the undesired property, so entailment/contradiction polarity is reversed. Probabilities are uncalibrated.
+
+Tier 3 means any contradiction; tier 0 means no contradiction and all positive components supported; tier 1 means some positive support without contradiction; tier 2 is the remainder. Positive components include the core and requirements. Within each component, logits receive competition ranks (one plus the number of strictly higher logits). Missing logits receive the fixed midpoint $(n_{\rm scoreable}+1)/2$, or 1 when none is scoreable. This convention can favour missing over weak observed evidence.
+\[
+S_{\rm req}=\exp\!\left[\frac1m\sum_{i=1}^{m}\log\left(\frac1{r_i}+10^{-12}\right)\right],
+\qquad S_{\rm weak}=\min_i\frac1{r_i}.
+\]
+The fixed order is tier ascending, $S_{\rm req}$ descending, $S_{\rm weak}$ descending, global relevance rank, RRF rank and identifier. Exclusions affect tiers, not positive relevance aggregation. NoNLI disables tiers; SingleEvidence uses independently scored top-one bundles. Global pool-depth controls use 100/200/500 candidates. No control was promoted after scoring.
+
+\section*{Evaluation validity}
+Prediction and evaluation run in separate processes. A strict predictor allowlist admits questions, graph, fixed configuration, source, pinned models and prediction-independent caches; it rejects gold, mappings, previous results and evaluator imports. Predictions and traces freeze with SHA-256 before scoring code or gold loads; the evaluator protects frozen files and checks hashes before and after scoring. The audit records 4,186 project reads, zero denied reads, zero gold reads and zero historical-result reads. Positive controls are evaluation-only.
+
+\textbf{All results are development diagnostics.} The benchmark influenced earlier human design. Runtime isolation cannot make it held-out. No model, score weight or threshold was trained, fitted or tuned on benchmark gold. A cached replay is byte-identical; it is not a second uncached neural inference experiment. Python audit hooks are cooperative safeguards, not an operating-system sandbox.
+
+\newpage
+\section*{Measured results}
+Identity metrics cover 14 Type-A questions with 63 target occurrences. Only 49 map directly (48 exact, one alias); 11 partial, two absent and one composite receive no direct credit. Final recall divides by 63; candidate recall divides by 49; MRR averages the first direct hit over 14 questions, with zero for misses. Requirement diagnostics include all 18 questions.
+
+\begin{center}\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Candidate stage & Hits@100 & Hits@500 & Union hits & Mean size\\
+\midrule
+A0 raw dense & 2 & 6 & 6 & 500.0\\
+A1 typed dense & 10 & 19 & 19 & 489.2\\
+A2 + BM25/name & 20 & 33 & 43 & 913.6\\
+A3 + evidence & 31 & 43 & 45 & 1108.9\\
+A4 + graph & 35 & 43 & 46 & 1295.6\\
+A5 RRF & 37 & 44 & 46 & 1295.6\\
+A6/A7 input prefix & 37 & 44 & 44 & 489.2\\
+\bottomrule
+\end{tabular}
+\end{center}
+A5 candidate recall at 50/100/200/500/1000 is 59.18/75.51/87.76/89.80/93.88\%. The full union recovers 46/49, but only 44/49 reach reranking.
+
+\begin{center}\small
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Arm & R@1 & R@5 & R@10 & R@25 & R@100 & MRR & Mean rank\\
+\midrule
+A5 & .000 & .063 & .095 & .175 & .587 & .155 & 80.8\\
+A6 & .016 & .079 & .143 & .222 & .524 & .148 & 106.5\\
+A7 primary & .000 & .079 & .143 & .222 & .460 & .110 & 182.0\\
+NoNLI & .000 & .032 & .032 & .190 & .444 & .065 & 190.7\\
+SingleEvidence & .000 & .032 & .095 & .175 & .333 & .080 & 240.0\\
+A6 depth 100 & .016 & .095 & .190 & .286 & .587 & .167 & 77.7\\
+A6 depth 200 & .016 & .079 & .143 & .254 & .540 & .152 & 82.2\\
+\bottomrule
+\end{tabular}
+\end{center}
+Means above condition on 46 observed direct ranks; three mapped targets are missing. A5/A6/A7 observed medians are 39.5/51.5/50.5. The detailed report also gives missing-penalised means and all arms/cutoffs.
+
+\textbf{Broader generation improves recall; the requirement stage does not improve aggregate ranking over A6.} A7 matches A6 at R@10 but lowers MRR and R@100. Relative to A6, 18 of 44 pooled targets rise, 25 fall and one is unchanged; four enter and four leave the top10. Conditional R@10 is 9/44. Relative to A5, A7 moves 17 up and 26 down. Depth100 performs better here than the declared depth500 control; that observation did not change the primary configuration.
+
+Of 20,349 candidate/component instances, 13,558 have no support evidence, 664 are supported, 1,316 contradicted and 18,369 unresolved. Tier counts 0/1/2/3 are 61/268/7564/956 over 8,849 candidate-question pairs. Multi-evidence bundles are selected and actually packed in 4,839 cases; 1,117 statuses differ between top3 and top1. These are proxy changes, not validated scientific improvements.
+
+\newpage
+\section*{Failures, limits and next steps}
+Operational primary labels partition all 63 target occurrences: ranker failure 22, uncertain mapping 14, recovered at10 nine, missing requirement evidence seven, contradiction-proxy failure six, type-filter failure three, outside rerank pool two. These are deterministic outcome labels, not established causes. A contradiction flag does not prove the model wrong, and a nongold candidate is not necessarily scientifically unsuitable.
+
+The strongest limits are the small development benchmark, unmappable identities, sparse evidence (2,508 of 2,978 entities lack candidate-specific evidence), year-only visibility, schema-inferred ownership, heuristic parsing, pretrained domain mismatch and uncalibrated NLI. The fixed midpoint and tier ordering are assumptions, not estimated confidence. There was one seed and CPU configuration, no uncertainty intervals and no human expert adjudication. NLI determinism was not independently established.
+
+\textbf{Efficiency.} Logical work totals 295,920 dense comparisons, 153,864 evidence comparisons and 1,637,900 BM25 document-term lookups. Global relevance has 8,849 logical pairs, 1,500 actually inferred in this invocation. Each evidence arm has 6,791 relevance and 6,791 NLI pairs logically, with 1,422 each actually inferred. Prediction took 601.6 seconds, mixing cached and cold work and excluding interrupted invocations. Logical counts are not production latency. NoNLI shares relevance scores; depth controls reuse global scores. Competition ranking currently costs $O(mK^2)$ at $K\le500$.
+
+\textbf{Verified versus assumed.} Metrics, access logs, hashes and replay are measured. The aggregation, missing-data convention, NLI thresholds and channel/pool depths are declared choices. Scientific entailment, held-out generalisation and hierarchy benefit are not established.
+
+\textbf{Four more weeks.} First obtain independently adjudicated requirement evidence and measure contradiction precision. Next preregister sensitivity studies for missing-data and tier rules, expand the benchmark with multiple annotators and a held-out split, and run uncertainty/perturbation analyses. A matched hierarchy-versus-flat study must hold entities, evidence, models, snapshot, mapping and cost accounting fixed. Engineering follow-ups are uncached timing, NLI repeatability and an $O(mK\log K)$ competition-rank implementation.
+
+\section*{Reproducibility, safety and AI disclosure}
+The V2 README gives commands for prediction, separate evaluation, replay, tests and LaTeX compilation. Model revisions, seed42, CPU4 threads, pool500, evidencek3, RRF60 and threshold0.7 are pinned in \path{../config.json}; no model substitution or silent download is used. Frozen predictions have SHA-256
+\begin{center}\small\ttfamily
+2d7485f1d0ecfb541d1d83413e2ac1d9\\
+61519ce9c1e0870dbd74311462918570
+\end{center}
+All 57 V2 tests passed. All 1,056 V1 and 86,667 rest-of-work file hashes match the start state; existing V1 work is preserved. No GitHub operations occurred. Final checks are recorded in \path{../artifacts/verification/final_verification.json}.
+
+Claude Opus5 drafted both reports through the subscription Ultralight helper and supplied planning/compliance advice; Sonnet5 reviewed source. Codex implemented and executed the experiment, verified measurements, corrected factual/layout errors and condensed this companion. Prompts, decisions and returned drafts are retained; see \path{../AI_USAGE.md}. Neither AI authorship nor automated checks constitute expert scientific validation.
+\end{document}

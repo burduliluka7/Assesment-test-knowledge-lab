@@ -1,0 +1,96 @@
+{
+  "original_question": "What are the most important open scientific challenges (by Feb 2026) in AI-based multiscale modeling of solid-state materials?",
+  "answer_type": null,
+  "core_task": "What are the most important open scientific challenges (",
+  "requirements": [
+    "in AI-based multiscale modeling of solid-state materials"
+  ],
+  "exclusions": [],
+  "temporal_condition": "by Feb 2026",
+  "source_spans": {
+    "temporal_condition": [
+      {
+        "text": "by Feb 2026",
+        "source_span": "by Feb 2026",
+        "start": 56,
+        "end": 67
+      }
+    ],
+    "core_task": {
+      "text": "What are the most important open scientific challenges (",
+      "source_span": "What are the most important open scientific challenges (",
+      "start": 0,
+      "end": 56
+    },
+    "requirements": [
+      {
+        "text": "in AI-based multiscale modeling of solid-state materials",
+        "source_span": "in AI-based multiscale modeling of solid-state materials",
+        "start": 69,
+        "end": 125
+      }
+    ]
+  },
+  "components": [
+    {
+      "text": "What are the most important open scientific challenges (",
+      "source_span": "What are the most important open scientific challenges (",
+      "start": 0,
+      "end": 56,
+      "kind": "core_task",
+      "connector": "",
+      "id": "component_0"
+    },
+    {
+      "text": "in AI-based multiscale modeling of solid-state materials",
+      "source_span": "in AI-based multiscale modeling of solid-state materials",
+      "start": 69,
+      "end": 125,
+      "kind": "requirement",
+      "connector": "",
+      "id": "component_1"
+    }
+  ],
+  "fallback": false,
+  "warnings": [
+    "Unrecognized answer family; use all non-author entities",
+    "Temporal phrase recorded; primary snapshot remains publication-visible year 2026, no month precision",
+    "Only publication-year visibility can be enforced; dates within a year are not resolved by the source data"
+  ],
+  "parser": "deterministic_extractive",
+  "search_query": "What are the most important open scientific challenges (; in AI-based multiscale modeling of solid-state materials",
+  "structured_query": "answer families: \nscientific modifiers: \nanswer type: scientific entity\ntask: What are the most important open scientific challenges (\nrequirement: in AI-based multiscale modeling of solid-state materials\ntime: by Feb 2026",
+  "answer_types": [],
+  "preserved_modifiers": "",
+  "parsed_only_query": "What are the most important open scientific challenges (; in AI-based multiscale modeling of solid-state materials",
+  "combined_query": "Original question: What are the most important open scientific challenges (by Feb 2026) in AI-based multiscale modeling of solid-state materials?\nStructured intent:\nanswer families: \nscientific modifiers: \nanswer type: scientific entity\ntask: What are the most important open scientific challenges (\nrequirement: in AI-based multiscale modeling of solid-state materials\ntime: by Feb 2026",
+  "temporal_cutoff": 2026,
+  "ranking_components": [
+    {
+      "id": "r0",
+      "kind": "core_task",
+      "text": "What are the most important open scientific challenges (",
+      "source_span": {
+        "start": 0,
+        "end": 56,
+        "text": "What are the most important open scientific challenges ("
+      },
+      "connector": "",
+      "polarity": "positive"
+    },
+    {
+      "id": "r1",
+      "kind": "requirement",
+      "text": "in AI-based multiscale modeling of solid-state materials",
+      "source_span": {
+        "start": 69,
+        "end": 125,
+        "text": "in AI-based multiscale modeling of solid-state materials"
+      },
+      "connector": "",
+      "polarity": "positive"
+    }
+  ],
+  "answer_heads": [],
+  "answer_families": []
+}

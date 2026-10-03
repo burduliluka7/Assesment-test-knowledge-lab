@@ -1,0 +1,3402 @@
+{
+  "comp_00093": {
+    "score": 0.5449901622487163,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5755367875099182,
+      0.6093155145645142
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5921853542873323,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00093",
+        "text": "NAME: ML‑driven MD validation pipeline\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00093",
+        "text": "NAME: ML‑driven MD validation pipeline\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00099": {
+    "score": 0.48410303293258783,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5225945115089417,
+      0.5294790267944336
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5260255063795546,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00099",
+        "text": "NAME: Conductivity extrapolation module\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00099",
+        "text": "NAME: Conductivity extrapolation module\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00139": {
+    "score": 0.469775270523737,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5093714594841003,
+      0.5115448236465454
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5104569848796052,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00139",
+        "text": "NAME: Scikit-learn\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00367": {
+    "score": 0.47341154518425776,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5093714594841003,
+      0.5194946527481079
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5144081545470383,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00367",
+        "text": "NAME: BVSE\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00097": {
+    "score": 0.49857989989300133,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.557192325592041,
+      0.5267474055290222
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5417560446236754,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00097",
+        "text": "NAME: MD simulation pipeline\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00097",
+        "text": "NAME: MD simulation pipeline\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00093": {
+    "score": 0.5168758650894965,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5602527856826782,
+      0.5630234479904175
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5616364083117278,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00093",
+        "text": "NAME: Arrhenius fitting\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00093",
+        "text": "NAME: Arrhenius fitting\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00137": {
+    "score": 0.480907652330469,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5309106111526489,
+      0.5143277645111084
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5225534114225725,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00137",
+        "text": "NAME: bond‑valence technique\nTYPE: method"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00137",
+        "text": "NAME: bond‑valence technique\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00092": {
+    "score": 0.48768733856898844,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5187814235687256,
+      0.5412981510162354
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5299202065965418,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00092",
+        "text": "NAME: MSD analysis procedure\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00092",
+        "text": "NAME: MSD analysis procedure\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00363": {
+    "score": 0.4952913615870601,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5460096597671509,
+      0.5304679870605469
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5381827246691355,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00363",
+        "text": "NAME: Behler‑Parrinello NN\nTYPE: cited_work"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00363",
+        "text": "NAME: Behler‑Parrinello NN\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00100": {
+    "score": 0.4876213951321468,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5198955535888672,
+      0.539992094039917
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5298485525737465,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00100",
+        "text": "NAME: Classification models\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00100",
+        "text": "NAME: Classification models\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00136": {
+    "score": 0.47608158508857484,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5093714594841003,
+      0.5253710746765137
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5173094152233323,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00136",
+        "text": "NAME: pinball model\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00098": {
+    "score": 0.4826894074631565,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.519615650177002,
+      0.5294089913368225
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5244894634242273,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00098",
+        "text": "NAME: MSD fitting module\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00098",
+        "text": "NAME: MSD fitting module\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00043": {
+    "score": 0.5342970074115766,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5534709095954895,
+      0.6089879274368286
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5805661909990397,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00043",
+        "text": "NAME: Leave‑One‑Out cross‑validation\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00043",
+        "text": "NAME: Leave‑One‑Out cross‑validation\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00089": {
+    "score": 0.4628366433792153,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5093714594841003,
+      0.49654528498649597
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5029174847959852,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00089",
+        "text": "NAME: MPE descriptor\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00159": {
+    "score": 0.49282028432317615,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5209430456161499,
+      0.5504589080810547
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5354976564489193,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00159",
+        "text": "NAME: Windowed MSD fitting\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00159",
+        "text": "NAME: Windowed MSD fitting\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00081": {
+    "score": 0.5081367683182856,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5547404289245605,
+      0.5495527982711792
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5521405210900994,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00081",
+        "text": "NAME: Frozen framework approximation\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00081",
+        "text": "NAME: Frozen framework approximation\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00161": {
+    "score": 0.5153564036337981,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5694986581802368,
+      0.5506309866905212
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5599853641593784,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00161",
+        "text": "NAME: Arrhenius extrapolation\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00161",
+        "text": "NAME: Arrhenius extrapolation\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00366": {
+    "score": 0.49449597566314585,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.526252031326294,
+      0.5486176013946533
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5373184597194622,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00366",
+        "text": "NAME: Pinball model\nTYPE: cited_work"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00366",
+        "text": "NAME: Pinball model\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00096": {
+    "score": 0.5060574140375802,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5623888969421387,
+      0.5376514792442322
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5498810983762515,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00096",
+        "text": "NAME: SevenNet ML‑IAP\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00096",
+        "text": "NAME: SevenNet ML‑IAP\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00245": {
+    "score": 0.5123372318387178,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5733639001846313,
+      0.5405296087265015
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5567047373830221,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00245",
+        "text": "NAME: Gaussian Approximation Potentials\nTYPE: cited_work"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00245",
+        "text": "NAME: Gaussian Approximation Potentials\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00157": {
+    "score": 0.5085278171907655,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5486628413200378,
+      0.5564957857131958
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.552565434108965,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00157",
+        "text": "NAME: Frozen framework approximation\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00157",
+        "text": "NAME: Frozen framework approximation\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00083": {
+    "score": 0.46551382505235234,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5093714594841003,
+      0.5023062229156494
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.505826505705751,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00083",
+        "text": "NAME: Level map\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00153": {
+    "score": 0.5318922039635063,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5646107196807861,
+      0.591610848903656
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5779531357908304,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00153",
+        "text": "NAME: Weighted ROC‑AUC scoring\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00153",
+        "text": "NAME: Weighted ROC‑AUC scoring\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00101": {
+    "score": 0.4641248173302432,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5093714594841003,
+      0.4993131160736084
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5043172123514801,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00101",
+        "text": "NAME: Descriptor fusion\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00091": {
+    "score": 0.5055671201639866,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5490205883979797,
+      0.5496762990951538
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5493483459132695,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00091",
+        "text": "NAME: PES analysis pipeline\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00091",
+        "text": "NAME: PES analysis pipeline\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00151": {
+    "score": 0.5019119203263163,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5632041692733765,
+      0.5281133651733398
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.545376612181544,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00151",
+        "text": "NAME: Free‑volume integration\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00151",
+        "text": "NAME: Free‑volume integration\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00148": {
+    "score": 0.5233641720048988,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5800846815109253,
+      0.5575124621391296
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5686865912243305,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00148",
+        "text": "NAME: Grid‑based PES evaluation\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00148",
+        "text": "NAME: Grid‑based PES evaluation\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00154": {
+    "score": 0.5150091692142332,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.525571346282959,
+      0.5958490371704102
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5596080598481917,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00154",
+        "text": "NAME: Bootstrap uncertainty estimation\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00154",
+        "text": "NAME: Bootstrap uncertainty estimation\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00155": {
+    "score": 0.5141643208024849,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5680668354034424,
+      0.5494680404663086
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5586900490460042,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00155",
+        "text": "NAME: Nernst‑Einstein conversion\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00155",
+        "text": "NAME: Nernst‑Einstein conversion\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00087": {
+    "score": 0.5034340841950721,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5491572618484497,
+      0.5449121594429016
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.547030592771181,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00087",
+        "text": "NAME: Aggregation over multiple mobile ions\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00087",
+        "text": "NAME: Aggregation over multiple mobile ions\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00150": {
+    "score": 0.5084871166578002,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5281240940093994,
+      0.5780453681945801
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5525212089812411,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00150",
+        "text": "NAME: Level‑map construction\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00150",
+        "text": "NAME: Level‑map construction\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00160": {
+    "score": 0.48448033376542693,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5115637183189392,
+      0.5417395830154419
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5264354808026631,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00160",
+        "text": "NAME: Multivariate descriptor analysis\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00160",
+        "text": "NAME: Multivariate descriptor analysis\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00099": {
+    "score": 0.49803652824597505,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5093714594841003,
+      0.5749443173408508
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5411656179451896,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00099",
+        "text": "NAME: Mean‑squared‑displacement (MSD) analysis\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00086": {
+    "score": 0.4899943005199368,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5122362375259399,
+      0.5534135103225708
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5324269474056104,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00086",
+        "text": "NAME: Combined ranking descriptor Ξ\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00086",
+        "text": "NAME: Combined ranking descriptor Ξ\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00158": {
+    "score": 0.5057602199903334,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5652275085449219,
+      0.5343232154846191
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5495581678458457,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00158",
+        "text": "NAME: ML‑driven molecular dynamics\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00158",
+        "text": "NAME: ML‑driven molecular dynamics\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00082": {
+    "score": 0.5288987343768247,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.6001193523406982,
+      0.5503581762313843
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5747004369890336,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00082",
+        "text": "NAME: Potential‑energy‑surface (PES) grid scan\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00082",
+        "text": "NAME: Potential‑energy‑surface (PES) grid scan\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00156": {
+    "score": 0.5153471861302399,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5781863927841187,
+      0.5423378944396973
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5599753484361812,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00156",
+        "text": "NAME: Potential‑energy‑surface (PES) analysis\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00156",
+        "text": "NAME: Potential‑energy‑surface (PES) analysis\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00152": {
+    "score": 0.495523651311604,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5106709003448486,
+      0.5677088499069214
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5384351302763464,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00152",
+        "text": "NAME: Sigmoid‑based thresholding and descriptor fusion\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00152",
+        "text": "NAME: Sigmoid‑based thresholding and descriptor fusion\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00364": {
+    "score": 0.5493719203545889,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.6150368452072144,
+      0.5793883800506592
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5969465649587707,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00524",
+        "text": "DIRECT_CLAIMS: Moments Tensor Potentials (MTP) and the Spectral Neighbor Analysis Potential (SNAP) can be expressed exactly as special cases of the ACE."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00524",
+        "text": "DIRECT_CLAIMS: Moments Tensor Potentials (MTP) and the Spectral Neighbor Analysis Potential (SNAP) can be expressed exactly as special cases of the ACE."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00149": {
+    "score": 0.46351438903885145,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5093714594841003,
+      0.4980005621910095
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5036539220408563,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00149",
+        "text": "NAME: Breadth‑first search for percolation paths\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00084": {
+    "score": 0.48188575126820443,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5308005809783936,
+      0.5165290832519531
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5236162120125519,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00084",
+        "text": "NAME: Breadth‑first search for minimum‑percolation‑energy\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00084",
+        "text": "NAME: Breadth‑first search for minimum‑percolation‑energy\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00094": {
+    "score": 0.5197106782986303,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5659826993942261,
+      0.5634535551071167
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5647167113719933,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00344",
+        "text": "DIRECT_CLAIMS: Selecting structures by the Ξ ranking descriptor markedly enriches the sample with high ionic conductivity at 1000 K, 500 K, and extrapolated room temperature compared with a random selection."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00344",
+        "text": "DIRECT_CLAIMS: Selecting structures by the Ξ ranking descriptor markedly enriches the sample with high ionic conductivity at 1000 K, 500 K, and extrapolated room temperature compared with a random selection."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00135": {
+    "score": 0.5848858798026941,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.6562923192977905,
+      0.6154360771179199
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6355359709971211,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00331",
+        "text": "DIRECT_CLAIMS: The proposed descriptor‑based screening approach is not tied to a specific ML‑IAP; it can be employed with any universal interatomic potential model."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00333",
+        "text": "DIRECT_CLAIMS: Finite‑size tests using a larger supercell and an ML‑IAP (SevenNet) show that diffusion coefficients converge within statistical uncertainties, confirming that the AIMD results are not significantly affected by supercell size."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00384": {
+    "score": 0.4089925195720181,
+    "core_support": 0.764116108417511,
+    "requirement_supports": [
+      0.5424728393554688,
+      0.5281217098236084
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5352491788440948,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00025",
+        "text": "ARTICLE: A Foundational Potential Energy Surface Dataset for Materials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00025",
+        "text": "ARTICLE: A Foundational Potential Energy Surface Dataset for Materials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00025",
+        "text": "ARTICLE: A Foundational Potential Energy Surface Dataset for Materials"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00365": {
+    "score": 0.5541816390883497,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.6128308773040771,
+      0.5917000770568848
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6021727968977515,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00243",
+        "text": "DIRECT_CLAIMS: MLIP-NEB relaxations produce intermediate image geometries closer to DFT-NEB references than linear interpolation in over 66% of structures."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00243",
+        "text": "DIRECT_CLAIMS: MLIP-NEB relaxations produce intermediate image geometries closer to DFT-NEB references than linear interpolation in over 66% of structures."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00054": {
+    "score": 0.55646554790314,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.588497519493103,
+      0.6212550401687622
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6046544882095101,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00242",
+        "text": "DIRECT_CLAIMS: MACE-MP-0 and SevenNet intermediate images provide better initial guesses relative to conventional interpolation techniques in over 71% of structures."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00242",
+        "text": "DIRECT_CLAIMS: MACE-MP-0 and SevenNet intermediate images provide better initial guesses relative to conventional interpolation techniques in over 71% of structures."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00062": {
+    "score": 0.552152828597644,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5959452390670776,
+      0.60401850938797
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5999682949774543,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00259",
+        "text": "DIRECT_CLAIMS: M3GNet achieves test mean absolute errors of 35 meV/atom for energy, 72 meV/Angstrom for force, and 0.41 GPa for stress."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00262",
+        "text": "DIRECT_CLAIMS: MACE-MP0 performed best for discovering new stable materials with classification F1 score of 0.67, followed by CHGNet (0.61) and M3GNet (0.57)."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00383": {
+    "score": 0.43379523094529665,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.601386308670044
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5921754289186297,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00383",
+        "text": "NAME: statistical learning method (Hegde & Bowen)\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00004": {
+    "score": 0.5455803161198972,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5924662351608276,
+      0.5931872129440308
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5928266144485199,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00347",
+        "text": "DIRECT_CLAIMS: Alternative ranking models (logistic regression L1/L2 and CatBoost) trained on PES descriptors, matminer descriptors, or their combination do not surpass the simple Ξ descriptor in predictive performance."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00347",
+        "text": "DIRECT_CLAIMS: Alternative ranking models (logistic regression L1/L2 and CatBoost) trained on PES descriptors, matminer descriptors, or their combination do not surpass the simple Ξ descriptor in predictive performance."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00703": {
+    "score": 0.48392328201132856,
+    "core_support": 0.820034921169281,
+    "requirement_supports": [
+      0.6064332723617554,
+      0.5742557048797607
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5901252123766954,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00703",
+        "text": "NAME: Training set augmentation via intermediate MD\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00703",
+        "text": "NAME: Training set augmentation via intermediate MD\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00374": {
+    "score": 0.41336655193678223,
+    "core_support": 0.7214475870132446,
+    "requirement_supports": [
+      0.6195409893989563,
+      0.5298964977264404
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5729682368862001,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00374",
+        "text": "NAME: ab initio random structure searching\nTYPE: method"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00374",
+        "text": "NAME: ab initio random structure searching\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00214": {
+    "score": 0.40491508915804286,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5239766240119934
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5527510435632856,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00214",
+        "text": "NAME: Directional Message Passing\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00063": {
+    "score": 0.5586528606960929,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5818408131599426,
+      0.6333122253417969
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6070312184533873,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00066",
+        "text": "DIRECT_CLAIMS: On the Materials Project Trajectory test set, CHGNet trained with magnetic moment labels attains mean absolute errors of 30 meV/atom for energy, 77 meV/Å for forces, 0.348 GPa for stress, and 0.032 µB for magnetic moments."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00066",
+        "text": "DIRECT_CLAIMS: On the Materials Project Trajectory test set, CHGNet trained with magnetic moment labels attains mean absolute errors of 30 meV/atom for energy, 77 meV/Å for forces, 0.348 GPa for stress, and 0.032 µB for magnetic moments."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00216": {
+    "score": 0.3985162585836801,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5075467824935913
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5440159769474225,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00216",
+        "text": "NAME: SE(3)-Transformer\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00090": {
+    "score": 0.4961203120131881,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5223169326782227,
+      0.5563881993293762
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.539083460748036,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00349",
+        "text": "DIRECT_CLAIMS: Both connected and disconnected versions of the FV descriptor at a 0.5 eV threshold show systematic relationships with conductivity and activation‑energy labels in the Kahle2020 simulated dataset and the Laskowski2023 experimental dataset."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00349",
+        "text": "DIRECT_CLAIMS: Both connected and disconnected versions of the FV descriptor at a 0.5 eV threshold show systematic relationships with conductivity and activation‑energy labels in the Kahle2020 simulated dataset and the Laskowski2023 experimental dataset."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00423": {
+    "score": 0.43408419510274643,
+    "core_support": 0.763715386390686,
+    "requirement_supports": [
+      0.5883340835571289,
+      0.5491119027137756
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5683847711308077,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00037",
+        "text": "ARTICLE: Pushing the limits of unconstrained machine-learned interatomic potentials"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00215": {
+    "score": 0.4050398027927449,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5242994427680969
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5529212905942655,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00215",
+        "text": "NAME: Symmetry-adapted Graph Neural Network\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00101": {
+    "score": 0.43090076002229744,
+    "core_support": 0.7239198684692383,
+    "requirement_supports": [
+      0.6478642821311951,
+      0.5468767881393433
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5952326753145439,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00042",
+        "text": "DIRECT_CLAIMS: The computational cost of LiFlow scales linearly with the number of atoms (O(n)), in contrast to the cubic scaling (O(n³)) of ab initio molecular dynamics."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00016",
+        "text": "ARTICLE: Deep Potential Molecular Dynamics: a scalable model with the accuracy of quantum mechanics"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00382": {
+    "score": 0.40367786944447986,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5207794904708862
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5510621104854618,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00382",
+        "text": "NAME: PhiSNet\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00252": {
+    "score": 0.3927735924863629,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.4930245578289032
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5361766428175733,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00252",
+        "text": "NAME: Message Passing layers\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00038": {
+    "score": 0.5586528606960929,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5818408131599426,
+      0.6333122253417969
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6070312184533873,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00066",
+        "text": "DIRECT_CLAIMS: On the Materials Project Trajectory test set, CHGNet trained with magnetic moment labels attains mean absolute errors of 30 meV/atom for energy, 77 meV/Å for forces, 0.348 GPa for stress, and 0.032 µB for magnetic moments."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00066",
+        "text": "DIRECT_CLAIMS: On the Materials Project Trajectory test set, CHGNet trained with magnetic moment labels attains mean absolute errors of 30 meV/atom for energy, 77 meV/Å for forces, 0.348 GPa for stress, and 0.032 µB for magnetic moments."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00259": {
+    "score": 0.3922123138705235,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.49161648750305176
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5354104393617325,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00929": {
+    "score": 0.45064291912737015,
+    "core_support": 0.7674226760864258,
+    "requirement_supports": [
+      0.5877002477645874,
+      0.5867322683334351
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5872160585943118,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00929",
+        "text": "NAME: Multi-temperature MD sampling\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00929",
+        "text": "NAME: Multi-temperature MD sampling\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00289": {
+    "score": 0.40022362575005577,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5119050741195679
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.546346710002894,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00289",
+        "text": "NAME: ARPACK eigenvalue solver\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00217": {
+    "score": 0.4068948968926683,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5291130542755127
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5554536862176861,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00217",
+        "text": "NAME: Tensor‑product‑based equivariant network\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00435": {
+    "score": 0.43004464851964413,
+    "core_support": 0.7674226760864258,
+    "requirement_supports": [
+      0.5750618577003479,
+      0.5460636615753174
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5603752168397136,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00435",
+        "text": "NAME: REBO potential\nTYPE: method"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00435",
+        "text": "NAME: REBO potential\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00454": {
+    "score": 0.42843693149666084,
+    "core_support": 0.820034921169281,
+    "requirement_supports": [
+      0.516502320766449,
+      0.5284900665283203
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5224618128283564,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00454",
+        "text": "NAME: Grimme-D2\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00163": {
+    "score": 0.3878674398596557,
+    "core_support": 0.6507965922355652,
+    "requirement_supports": [
+      0.6285214424133301,
+      0.5651399493217468
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.595988738243518,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00163",
+        "text": "NAME: ab initio quantum mechanics\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00045",
+        "text": "ARTICLE: DeePMD-kit v2: A software package for Deep Potential models"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00037": {
+    "score": 0.576515916969444,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.6311439275741577,
+      0.6217734813690186
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6264411840649525,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00639",
+        "text": "DIRECT_CLAIMS: The final M3GNet interatomic potential achieves test mean absolute errors of 0.035 eV/atom for energy, 0.072 eV/Å for forces, and 0.41 GPa for stresses on a held‑out Materials Project dataset covering 89 elements."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00640",
+        "text": "DIRECT_CLAIMS: Relaxing test crystals with M3GNet reduces median volume error from 2.4 % to 0.6 % and energy mean absolute error from 0.169 eV/atom to 0.035 eV/atom relative to DFT‑relaxed references."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00255": {
+    "score": 0.40652075816426925,
+    "core_support": 0.692573070526123,
+    "requirement_supports": [
+      0.6437328457832336,
+      0.5352153778076172
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5869716503060824,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00024",
+        "text": "ARTICLE: The Joint Automated Repository for Various Integrated Simulations (JARVIS) for data-driven materials design"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00255",
+        "text": "NAME: Vienna Ab‑initio simulation package\nTYPE: method"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00255",
+        "text": "NAME: Vienna Ab‑initio simulation package\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00101": {
+    "score": 0.47122023611603514,
+    "core_support": 0.7871986627578735,
+    "requirement_supports": [
+      0.6478642821311951,
+      0.5530891418457031
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5986039590884988,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00042",
+        "text": "DIRECT_CLAIMS: The computational cost of LiFlow scales linearly with the number of atoms (O(n)), in contrast to the cubic scaling (O(n³)) of ab initio molecular dynamics."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00283": {
+    "score": 0.42636813804537144,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5809696912765503
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5820366777063409,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00283",
+        "text": "NAME: Mean‑squared‑error loss on Hamiltonian blocks\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00064": {
+    "score": 0.48888860298155185,
+    "core_support": 0.830450177192688,
+    "requirement_supports": [
+      0.577113926410675,
+      0.6005250215530396
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.588703111165832,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00109",
+        "text": "DIRECT_CLAIMS: TensorNet‑MatPES predicts ionic conductivities of Li/Na solid electrolytes with high fidelity (positive R²), whereas TensorNet‑MPF severely overestimates conductivities and yields a negative R²."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00114",
+        "text": "DIRECT_CLAIMS: Training a TensorNet model on the 400 k‑structure MatPES‑PBE dataset requires approximately 15 minutes per epoch on a single RTX A6000 GPU, whereas training on the 100 M‑structure OMat24 dataset needs about 20 hours per epoch on sixteen A100 GPUs, highlighting the computational efficiency of MatPES."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00114",
+        "text": "DIRECT_CLAIMS: Training a TensorNet model on the 400 k‑structure MatPES‑PBE dataset requires approximately 15 minutes per epoch on a single RTX A6000 GPU, whereas training on the 100 M‑structure OMat24 dataset needs about 20 hours per epoch on sixteen A100 GPUs, highlighting the computational efficiency of MatPES."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00312": {
+    "score": 0.42387855587362955,
+    "core_support": 0.7699843645095825,
+    "requirement_supports": [
+      0.5600577592849731,
+      0.5411108732223511
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5505028094221183,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00071": {
+    "score": 0.4342734168429141,
+    "core_support": 0.769528865814209,
+    "requirement_supports": [
+      0.5674848556518555,
+      0.5612061023712158
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5643367469827477,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00015",
+        "text": "ARTICLE: CHGNet: Pretrained universal neural network potential for charge-informed atomistic modeling"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00015",
+        "text": "ARTICLE: CHGNet: Pretrained universal neural network potential for charge-informed atomistic modeling"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00071",
+        "text": "NAME: electronegativity equalization method\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00278": {
+    "score": 0.48888860298155185,
+    "core_support": 0.830450177192688,
+    "requirement_supports": [
+      0.577113926410675,
+      0.6005250215530396
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.588703111165832,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00109",
+        "text": "DIRECT_CLAIMS: TensorNet‑MatPES predicts ionic conductivities of Li/Na solid electrolytes with high fidelity (positive R²), whereas TensorNet‑MPF severely overestimates conductivities and yields a negative R²."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00114",
+        "text": "DIRECT_CLAIMS: Training a TensorNet model on the 400 k‑structure MatPES‑PBE dataset requires approximately 15 minutes per epoch on a single RTX A6000 GPU, whereas training on the 100 M‑structure OMat24 dataset needs about 20 hours per epoch on sixteen A100 GPUs, highlighting the computational efficiency of MatPES."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00114",
+        "text": "DIRECT_CLAIMS: Training a TensorNet model on the 400 k‑structure MatPES‑PBE dataset requires approximately 15 minutes per epoch on a single RTX A6000 GPU, whereas training on the 100 M‑structure OMat24 dataset needs about 20 hours per epoch on sixteen A100 GPUs, highlighting the computational efficiency of MatPES."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00692": {
+    "score": 0.4793089112706305,
+    "core_support": 0.820034921169281,
+    "requirement_supports": [
+      0.569259524345398,
+      0.6001447439193726
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5844981706232558,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00692",
+        "text": "NAME: Maximum bond variation check\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00692",
+        "text": "NAME: Maximum bond variation check\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00512": {
+    "score": 0.46302219151929536,
+    "core_support": 0.7871986627578735,
+    "requirement_supports": [
+      0.5482982397079468,
+      0.6309835910797119
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5881897587289369,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00512",
+        "text": "NAME: Solid angle error calculation\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00512",
+        "text": "NAME: Solid angle error calculation\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00434": {
+    "score": 0.42282900424937214,
+    "core_support": 0.7674226760864258,
+    "requirement_supports": [
+      0.5741351842880249,
+      0.5287448167800903
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5509727786591413,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00213": {
+    "score": 0.42748257273915125,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5840107202529907
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5835579965123425,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00010",
+        "text": "DATASET_METRIC: MoS2"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00238": {
+    "score": 0.4287532953486656,
+    "core_support": 0.7520248889923096,
+    "requirement_supports": [
+      0.6240521669387817,
+      0.5208703279495239
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5701317890198846,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00012",
+        "text": "ARTICLE: E(3)-Equivariant Graph Neural Networks for Data-Efficient and Accurate Interatomic Potentials"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00238",
+        "text": "NAME: Ab initio thermodynamics of water\nTYPE: cited_work"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00238",
+        "text": "NAME: Ab initio thermodynamics of water\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00339": {
+    "score": 0.5455803161198972,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.5924662351608276,
+      0.5931872129440308
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5928266144485199,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00347",
+        "text": "DIRECT_CLAIMS: Alternative ranking models (logistic regression L1/L2 and CatBoost) trained on PES descriptors, matminer descriptors, or their combination do not surpass the simple Ξ descriptor in predictive performance."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00347",
+        "text": "DIRECT_CLAIMS: Alternative ranking models (logistic regression L1/L2 and CatBoost) trained on PES descriptors, matminer descriptors, or their combination do not surpass the simple Ξ descriptor in predictive performance."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00634": {
+    "score": 0.46882999067877307,
+    "core_support": 0.820034921169281,
+    "requirement_supports": [
+      0.5848509073257446,
+      0.558883011341095
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5717195433705095,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00634",
+        "text": "NAME: Maximum bond variation criterion\nTYPE: component"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00634",
+        "text": "NAME: Maximum bond variation criterion\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00694": {
+    "score": 0.47533561402660424,
+    "core_support": 0.820034921169281,
+    "requirement_supports": [
+      0.5480659008026123,
+      0.6130603551864624
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.579652892524171,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00694",
+        "text": "NAME: Self-consistent training\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00694",
+        "text": "NAME: Self-consistent training\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00381": {
+    "score": 0.4079446254647938,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5318466424942017
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5568866744644494,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00381",
+        "text": "NAME: Tensor‑field networks\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00138": {
+    "score": 0.5936676220270461,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.6416991949081421,
+      0.6484749913215637
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6450781966933248,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00536",
+        "text": "DIRECT_CLAIMS: Optimizing hyperparameters solely for the Matbench Discovery benchmark may degrade performance of models intended for general‑purpose use."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00536",
+        "text": "DIRECT_CLAIMS: Optimizing hyperparameters solely for the Matbench Discovery benchmark may degrade performance of models intended for general‑purpose use."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00282": {
+    "score": 0.4136236055368504,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5467573404312134
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5646390705723138,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00282",
+        "text": "NAME: Spherical harmonic encoding\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00761": {
+    "score": 0.4242318904495035,
+    "core_support": 0.7565792202949524,
+    "requirement_supports": [
+      0.564070463180542,
+      0.5573967695236206
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5607236877112706,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00257": {
+    "score": 0.3925740585171102,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.49252375960350037
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5359042582789776,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00257",
+        "text": "NAME: Edge update network\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00256": {
+    "score": 0.3937303008585054,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.49542927742004395
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5374826488550047,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "comp_00256",
+        "text": "NAME: Vertex update network\nTYPE: component"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00408": {
+    "score": 0.42949779749347555,
+    "core_support": 0.7565792202949524,
+    "requirement_supports": [
+      0.5770992040634155,
+      0.5584220886230469
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5676838405977312,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00035",
+        "text": "ARTICLE: Generalization of Long-Range Machine Learning Potentials in Complex Chemical Spaces"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00408",
+        "text": "NAME: Charge Equilibration Layer for Long-range Interactions\nTYPE: method"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00408",
+        "text": "NAME: Charge Equilibration Layer for Long-range Interactions\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00281": {
+    "score": 0.4137503371946301,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5470924377441406
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5648120724138502,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00281",
+        "text": "NAME: Local coordinate transformation\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "comp_00095": {
+    "score": 0.5690108176733918,
+    "core_support": 0.9203033447265625,
+    "requirement_supports": [
+      0.626207709312439,
+      0.6104648113250732
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.6182861563351749,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00340",
+        "text": "DIRECT_CLAIMS: Computing the frozen‑framework PES descriptors for 5997 Materials Project structures required seven days on a 48‑core CPU with two RTX 6000 GPUs, comparable to the time needed for ML‑driven MD on 100 materials."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00340",
+        "text": "DIRECT_CLAIMS: Computing the frozen‑framework PES descriptors for 5997 Materials Project structures required seven days on a 48‑core CPU with two RTX 6000 GPUs, comparable to the time needed for ML‑driven MD on 100 materials."
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "cite_00380": {
+    "score": 0.3970784822285305,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.503891110420227
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5420532632773242,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "cite_00380",
+        "text": "NAME: Density Functional Theory (DFT)\nTYPE: cited_work"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00504": {
+    "score": 0.4679214535795148,
+    "core_support": 0.7871986627578735,
+    "requirement_supports": [
+      0.5704019069671631,
+      0.619435727596283
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5944134253737141,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00504",
+        "text": "NAME: Mean absolute error evaluation\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00504",
+        "text": "NAME: Mean absolute error evaluation\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00920": {
+    "score": 0.437723113600539,
+    "core_support": 0.7674226760864258,
+    "requirement_supports": [
+      0.59305739402771,
+      0.5485711693763733
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5703807396372054,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00920",
+        "text": "NAME: MD quenches\nTYPE: technique"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00920",
+        "text": "NAME: MD quenches\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "tech_00280": {
+    "score": 0.4029977800238244,
+    "core_support": 0.7325451374053955,
+    "requirement_supports": [
+      0.5831056237220764,
+      0.5190262198448181
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5501337179729345,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00017",
+        "text": "ARTICLE: Deep-Learning Density Functional Theory Hamiltonian for Efficient ab initio Electronic-Structure Calculation"
+      },
+      {
+        "field": "identity",
+        "node_id": "tech_00280",
+        "text": "NAME: Gaussian distance expansion\nTYPE: technique"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00381": {
+    "score": 0.3816649409028754,
+    "core_support": 0.7214475870132446,
+    "requirement_supports": [
+      0.5290257930755615,
+      0.5290273427963257
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5290265679353761,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00386": {
+    "score": 0.4324902223531674,
+    "core_support": 0.820034921169281,
+    "requirement_supports": [
+      0.516502320766449,
+      0.5385370850563049
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5274046399590925,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00033",
+        "text": "ARTICLE: Simulating diffusion properties of solid-state electrolytes via a neural network potential: Performance and training scheme"
+      },
+      {
+        "field": "identity",
+        "node_id": "meth_00386",
+        "text": "NAME: Grimme-D2\nTYPE: method"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  },
+  "meth_00433": {
+    "score": 0.42282900424937214,
+    "core_support": 0.7674226760864258,
+    "requirement_supports": [
+      0.5741351842880249,
+      0.5287448167800903
+    ],
+    "exclusion_supports": [],
+    "geometric_mean": 0.5509727786591413,
+    "exclusion_penalty": 1.0,
+    "type_prior": 1.0,
+    "supporting_blocks": [
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00048",
+        "text": "ARTICLE: Machine-learning based interatomic potential for amorphous carbon"
+      }
+    ],
+    "components": [
+      "predicting ionic conductivity",
+      "full ab initio MD is too expensive",
+      "accuracy must be maintained"
+    ]
+  }
+}

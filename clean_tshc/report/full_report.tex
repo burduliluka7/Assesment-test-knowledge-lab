@@ -79,6 +79,42 @@
 \algrenewcommand\algorithmicensure{\textbf{Output:}}
 
 % ------------------------------------------------------------------
+% Interview study layer (added). Nothing above this block was changed.
+% ------------------------------------------------------------------
+\newtcolorbox{studybox}[1][]{enhanced,breakable,colback=soft,colframe=accent,boxrule=0.6pt,arc=2pt,
+  left=6pt,right=6pt,top=4pt,bottom=4pt,fonttitle=\bfseries\small,fontupper=\small,title={#1}}
+\newtcolorbox{trapbox}[1][]{enhanced,breakable,colback=warnsoft,colframe=warnline,boxrule=0.6pt,arc=2pt,
+  left=6pt,right=6pt,top=4pt,bottom=4pt,fonttitle=\bfseries\small,fontupper=\small,title={#1}}
+\newtcolorbox{qabox}{enhanced,breakable,colback=white,frame hidden,boxrule=0pt,arc=0pt,
+  borderline west={1.6pt}{0pt}{accent},left=9pt,right=0pt,top=1pt,bottom=1pt,
+  before skip=8pt,after skip=8pt,fontupper=\small}
+\newcommand{\sclab}[1]{\textbf{\textcolor{accent}{#1}}}
+\newcommand{\sctrap}[1]{\textbf{\textcolor{warnline}{#1}}}
+\newcommand{\scq}[1]{\par\smallskip\noindent\sclab{#1}\ }
+\newcommand{\us}{\_\allowbreak}
+\newcommand{\tcode}[1]{\texttt{#1}}
+\newcommand{\nest}{\textbf{Not established by this implementation.}}
+\newcounter{qanum}
+% \QA{question}{30-second answer}{push-further items}{common trap (may be empty)}{where}
+\newcommand{\QA}[5]{%
+  \stepcounter{qanum}%
+  \begin{qabox}
+  {\bfseries\color{accent}Q\theqanum.\ #1}\par\vspace{2pt}
+  \sclab{30-second answer.}\ #2\par\vspace{1pt}
+  \sclab{If they push further.}
+  \begin{itemize}[leftmargin=1.3em,itemsep=0pt,topsep=1pt,parsep=0pt]#3\end{itemize}
+  \if\relax\detokenize{#4}\relax\else\vspace{1pt}\sctrap{Common trap.}\ #4\par\fi
+  \vspace{1pt}{\footnotesize\textcolor{black!65}{\textbf{Where:} #5}}
+  \end{qabox}}
+\tikzset{
+  scbox/.style={draw=accent,fill=soft,rounded corners=3pt,align=center,font=\small,inner sep=4pt},
+  scwarn/.style={draw=warnline,fill=warnsoft,rounded corners=3pt,align=center,font=\small,inner sep=4pt},
+  scplain/.style={draw=gray,fill=white,rounded corners=3pt,align=center,font=\small,inner sep=4pt},
+  scarr/.style={-{Stealth},thick,gray!80!black},
+  scnode/.style={circle,draw=accent,fill=white,minimum size=5.5mm,inner sep=0pt,font=\scriptsize},
+  scdot/.style={circle,draw=accent,fill=white,minimum size=3.6mm,inner sep=0pt}}
+
+% ------------------------------------------------------------------
 \begin{document}
 % ------------------------------------------------------------------
 
@@ -145,6 +181,21 @@ hierarchy nor the flat baseline recovered any complete gold method identity in t
 top 10 or 25. Positive controls show that this is a ranking failure, not an evaluator
 error. These negative results are reported and analysed rather than tuned away.
 \end{abstract}
+
+\vspace{0.6cm}
+\begin{studybox}[Interview study layer (added to the unchanged report)]
+The technical report that follows is unchanged. A study layer was added around it:
+\begin{itemize}[leftmargin=1.4em,itemsep=1pt,topsep=2pt]
+  \item \textbf{Blue ``Interview intuition'' boxes} next to the main formulas in
+        Sections~\ref{sec:background}, \ref{sec:method} and~\ref{sec:impl}.
+  \item \textbf{Appendix~\ref{app:companion}} (page~\pageref{app:companion}): thirteen diagrams,
+        the mathematics-to-code map, the design-choice defence and the numbers to recall.
+  \item \textbf{Appendix~\ref{app:qa}} (page~\pageref{app:qa}): 100 interview questions with
+        30-second answers.
+  \item \textbf{Appendix~\ref{app:emergency}} (page~\pageref{app:emergency}): the one-page
+        Interview Emergency Sheet.
+\end{itemize}
+\end{studybox}
 
 \clearpage
 \tableofcontents
@@ -388,6 +439,28 @@ Only the cluster sizes and the \emph{sum} of the member vectors are needed, so e
 candidate merge costs $O(d)$ to evaluate. TSHC uses \cref{eq:ward} as its semantic
 term.
 
+\begin{studybox}[Interview intuition: Ward merge cost (Equation~\ref*{eq:ward})]
+\scq{In one sentence.} The price of merging $A$ and $B$ is ``how far apart their centres
+are'' (squared) times ``how many points have to move'' (the size factor).
+\scq{What changes it.} It grows with the squared centroid distance $\|\mu_A-\mu_B\|^2$ and
+with the factor $\frac{|A||B|}{|A|+|B|}$. That factor is about the size of the \emph{smaller}
+cluster when the sizes are very unequal ($1$ and $100$ give $0.99$) and a quarter of the total
+when they are equal ($50$ and $50$ give $25$).
+\scq{High / low.} Low: the two clusters say nearly the same thing, so the merge is cheap.
+High: the merge would mix different meanings. It is never negative, because merging cannot
+make clusters tighter.
+\scq{Normalisation.} \Cref{eq:ward} itself is not normalised. TSHC divides it by $4|V_t|$
+later (the $\Delta S$ formula in \cref{sec:deltas}), so that it sits on a bounded scale next to
+the other two terms of the objective.
+\scq{Toy check (not data).} In one dimension, $A=\{0,2\}$ and $B=\{5\}$: the sum of squares
+goes from $2+0$ to $\tfrac{114}{9}\approx12.67$, an increase of $10.67$, and the formula gives
+$\frac{2\cdot1}{3}\,(1-5)^2=10.67$.
+\scq{Likely misconception.} ``Ward merges the two closest centroids.'' Not quite: the size
+factor matters, so absorbing a far-away singleton can be cheaper than joining two large,
+moderately close clusters. No distances between individual members are needed, only the two
+sizes and the two vector sums.
+\end{studybox}
+
 \paragraph{Graph coarsening.}
 In scientific computing and graph learning, \emph{coarsening} means building a
 smaller graph whose nodes are aggregates of the original nodes, recursively, to obtain
@@ -421,6 +494,24 @@ multi-node relations as units instead of immediately reducing them to pairs. The
 this with a normalised spectral hypergraph cut. TSHC keeps the principle (penalise
 cutting a hyperedge, with the edge as the unit) but uses entropy fragmentation, which
 has an exact, cheap merge update (\cref{sec:deltas}).
+
+\begin{studybox}[Interview intuition: hyperedge entropy fragmentation]
+\scq{In one sentence.} Pick one endpoint of the relation at random: $H_e$ is how uncertain you
+are about which cluster it sits in.
+\scq{What changes it.} Only the way the endpoints of $e$ are spread over clusters. A merge of
+two clusters that both touch $e$ lowers it. A merge elsewhere leaves it unchanged.
+\scq{High / low.} $0$: the whole relation lies in one super-node (intact). $1$ after
+normalisation: every endpoint is in a different cluster (shattered).
+\scq{Why normalised.} The maximum is $\log r_e$. Without the division, an arity-65 edge could
+contribute up to $\log65\approx4.2$ and a pair at most $\log2\approx0.69$, so large relations
+would dominate. Dividing by $\log r_e$ puts every relation on the same $[0,1]$ scale.
+\scq{Toy check (not data).} Arity 4: a $2{+}2$ split gives $\log2/\log4=0.50$, a $3{+}1$ split
+gives $0.41$, and $1{+}1{+}1{+}1$ gives $1$. A relation that is ``mostly intact'' scores better
+than one cut in half.
+\scq{Likely misconception.} ``It is a cut count.'' A cut indicator would give $1$ to all three
+splits above. Entropy sees \emph{how} the edge is cut. The two coincide only for arity 2, which
+is exactly the pairwise baseline.
+\end{studybox}
 
 \subsection{Comparing partitions: ARI and variation of information}
 \label{sec:bg-compare}
@@ -456,6 +547,45 @@ clusters. The normalised form $\VI/(2\log n)$ is used below. A useful property f
 optimisation is that $\VI$ depends only on sums of $x\log x$ terms over the contingency
 table, so merging two clusters of $P$ changes it by an amount that can be computed
 from those two clusters' rows alone.
+
+\begin{studybox}[Interview intuition: variation of information (Equation~\ref*{eq:vi})]
+\scq{In one sentence.} $\VI$ is the information you lose plus the information you gain when you
+swap one clustering for the other: $H(P\mid Q)$ is what $Q$ does not tell you about $P$, and
+$H(Q\mid P)$ is the reverse.
+\scq{What changes it.} Any node whose cluster-mates differ between $P$ and $Q$. If $P$ only
+splits clusters of $Q$, then $H(Q\mid P)=0$ and the whole distance is $H(P\mid Q)$.
+\scq{High / low.} $0$ means identical partitions (cluster names do not matter). Larger means
+more different. It is a distance, so \emph{lower is more stable}.
+\scq{Why normalised.} Raw $\VI$ grows with $\log n$, so snapshots with different numbers of
+shared nodes would not be comparable. The report divides by $2\log n$. Since $\VI\le\log n$, that
+is a safe bound and not a tight one: the normalised value cannot exceed $0.5$. The constant only
+rescales $\lambda$.
+\scq{Likely misconception.} ``A normalised VI of $0.02$ is so small that nothing changed.'' The
+scale is compressed by $\log n$. Compare variants with each other (static $0.045$ against
+temporal $0.021$ at L2 in 2024$\to$2026, \cref{tab:vi-lineage}), not against $1$.
+\end{studybox}
+
+\begin{studybox}[Interview intuition: ARI versus VI]
+\begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+ & \textbf{ARI} & \textbf{VI}\\
+\midrule
+Counts & pairs of nodes (together or apart in both partitions) & information (entropy) in the contingency table\\
+Direction & higher is better: $1$ identical, $\approx0$ chance, can be negative & lower is better: $0$ identical\\
+Chance-corrected & yes & no\\
+Sensitive to & large clusters, which own most of the pairs & changes in small clusters as well\\
+Role in TSHC & evaluation only & objective ($T$) and evaluation\\
+\bottomrule
+\end{tabularx}
+\scq{Why VI inside the objective.} The report gives one reason: $\VI$ is a sum of $x\log x$
+terms, so a merge changes it by an amount computable from two rows of the contingency table.
+Whether ARI could serve as the regulariser is not established by this implementation.
+\scq{Arithmetic illustration.} A cluster holding 65\% of the nodes holds about
+$0.65^2\approx42\%$ of all node pairs, so ARI is to a large extent a statement about that cluster.
+\scq{Likely misconception.} ``The two must agree.'' In 2024$\to$2026 they do not: ARI favours
+static at all three levels, while VI and lineage retention favour temporal
+(\cref{tab:temporal-ari} and \cref{tab:vi-lineage}).
+\end{studybox}
 
 \subsection{Evolutionary clustering}
 
@@ -541,6 +671,21 @@ empirical $p$-value is
 which is never zero. Its smallest possible value is $1/(R+1)$, which is
 $1/101\approx0.0099$ for $R=100$.
 
+\begin{studybox}[Interview intuition: empirical $p$-value with 100 nulls]
+\scq{In one sentence.} Count how many of the $R$ random partitions did at least as well as the
+real one, then add one to the numerator and to the denominator.
+\scq{What changes it.} Only that count and $R$. It does not use \emph{how far} the observed
+value lies from the nulls.
+\scq{High / low.} Small: chance rarely matches the observation. The smallest value it can take
+is $1/(R+1)$, here $1/101\approx0.0099$, reached when no null replicate gets there.
+\scq{Why the ``$+1$''.} The observed partition is itself one of the $R+1$ arrangements, so the
+estimate is never zero. A finite simulation could not justify a zero.
+\scq{Likely misconception.} ``$p=0.0099$ in all twelve comparisons means a very strong effect.''
+It is the resolution floor of a 100-replicate test. The size of the effect is a separate number
+(an absolute effect of $0.003$ to $0.011$ cosine for the temporal variant, \cref{tab:coherence}),
+and the twelve tests are descriptive, with no multiple-comparison correction.
+\end{studybox}
+
 \paragraph{Effect sizes.}
 The absolute effect is the observed value minus the null mean. The standardised effect
 divides it by the null standard deviation. A large standardised effect can arise
@@ -552,6 +697,22 @@ For $n$ repeated measurements with mean $\bar x$ and sample standard deviation $
 the Student-$t$ 95\% interval is $\bar x\pm t_{0.975,n-1}\,s/\sqrt n$. With $n=5$,
 $t_{0.975,4}\approx2.776$, so intervals are wide. They describe variation across
 deletion seeds, not across corpora.
+
+\begin{studybox}[Interview intuition: Student-$t$ interval with five seeds]
+\scq{In one sentence.} Mean $\pm\,2.776\,s/\sqrt5$, which is mean $\pm\,1.24\,s$: with five
+seeds the half-width is about one and a quarter standard deviations.
+\scq{What changes it.} The spread $s$ across seeds and the number of seeds $n$. More seeds
+shrink both $1/\sqrt n$ and the multiplier (towards $1.96$).
+\scq{Wide / narrow.} Narrow: the five deletion seeds give nearly the same hierarchy. Wide: the
+result depends on which edges were deleted. Example from \cref{tab:perturb}: temporal L0 has
+$s=0.115$, so the half-width is $1.24\times0.115\approx0.14$ around $0.781$.
+\scq{Why $t$ and not $1.96$.} $s$ is itself estimated from five values. The $t$ distribution
+with four degrees of freedom has heavier tails to pay for that.
+\scq{Likely misconception.} ``The interval says how the method behaves on other corpora.'' It
+describes deletion-seed variability on this corpus with a fixed 2024 history. Overlapping
+intervals (temporal and static) mean that no advantage can be claimed. The intervals are not
+clipped to the ARI range.
+\end{studybox}
 
 % ==================================================================
 \section{Data and Temporal Snapshots}
@@ -797,6 +958,25 @@ J_t(P)={}&\alpha\,\underbrace{\frac{\sum_C\sum_{v\in C}\|x_v-\mu_C\|^2}{4|V_t|}}
 \noindent with $\alpha=0.5$ and $\lambda=0.2$. $T$ is set to $0$ when fewer than two
 nodes are shared, and always in the first snapshot (2020).
 
+\begin{studybox}[Interview intuition: the full objective $J_t$ (Equation~\ref*{eq:objective})]
+\scq{In one sentence.} One score with three parts: scatter of meaning, broken relations, and
+change since the last snapshot. Lower is better.
+\scq{What changes it.} Every merge moves all three parts: $S$ goes up, $F$ goes down or stays,
+and $T$ can go either way. The optimiser always takes the candidate merge with the smallest
+total change.
+\scq{High / low.} $J$ is used to \emph{choose merges}, not as a quality score. The loop stops
+when the budget ($120$, $40$, $12$) is reached, not when $J$ stops improving, because the budget
+is a hard constraint.
+\scq{Why each term is normalised.} So that $\alpha$ and $\lambda$ weigh bounded quantities:
+$S\in[0,0.25]$, $F\in[0,1]$, and $T\in[0,0.5]$ because $\VI\le\log|U_t|$. Equal nominal weight
+is still not equal realised influence, as the trade-off paragraph below explains.
+\scq{Likely misconceptions.} (i) ``TSHC minimises $J$.'' Only greedily: each step is the best
+current candidate, with no global guarantee. (ii) ``$\alpha=0.5$ means structure and meaning
+count equally.'' (iii) ``$\lambda T$ keeps the clusters fixed.'' It is a soft penalty.
+\scq{Sketches.} \Cref{fig:sc-objective} (three-way tension) and \cref{fig:sc-toymerge} (one
+worked merge) in the study companion.
+\end{studybox}
+
 \paragraph{Semantic dispersion $S$.}
 $S$ is the Ward within-cluster sum of squares divided by $4|V_t|$. For unit vectors,
 the average squared deviation from the centroid equals $1-\|\mu_C\|^2\le1$, so
@@ -842,6 +1022,20 @@ $\Delta J(A,B)=J(P_{A\cup B})-J(P)$. All three terms have closed forms that depe
 \end{equation}
 which needs only the sizes $n_A,n_B$ and the vector sums of each cluster.
 
+\begin{studybox}[Interview intuition: $\Delta S$]
+\scq{In one sentence.} Ward's merge price from \cref{eq:ward}, divided by $4|V_t|$.
+\scq{What changes it.} The centroid distance and the size factor $\frac{n_An_B}{n_A+n_B}$.
+Nothing else: no hyperedges and no history.
+\scq{Sign.} Always $\ge0$. Every merge makes meaning a little more mixed, so $S$ is the term
+that \emph{resists} merging.
+\scq{Why $4|V_t|$.} The squared distance between unit vectors is at most $4$, and dividing by
+the number of nodes turns a sum into a per-node average.
+\scq{Code.} \code{ds = na*nb/(na+nb) * (diff @ diff) / (4*self.n)}, where \code{diff} is the
+difference of the two centroids (\code{sums/count}).
+\scq{Likely misconception.} ``All members must be revisited after a merge.'' Sizes and vector
+sums add, so the cost is $O(d)$ per candidate.
+\end{studybox}
+
 \paragraph{Fragmentation term.}
 For hyperedge $e$ with arity $r$ and $m_{e,C}=|e\cap C|$ endpoints in cluster $C$,
 \[
@@ -856,6 +1050,23 @@ and total weight $W$,
 Only hyperedges that touch \emph{both} clusters contribute, and the incidence map of the
 smaller cluster suffices.
 
+\begin{studybox}[Interview intuition: $\Delta F$ (Equation~\ref*{eq:dF})]
+\scq{In one sentence.} For every relation that touches both clusters, the merge puts
+$m_{e,A}+m_{e,B}$ of its endpoints together, and the relation becomes less fragmented.
+\scq{What changes it.} The number of hyperedges shared by $A$ and $B$ and how many endpoints
+each side holds. Larger shared counts give a larger reward.
+\scq{Sign.} Always $\le0$, because $\phi(a+b)\ge\phi(a)+\phi(b)$. It is exactly $0$ when no
+hyperedge touches both clusters. $F$ is the term that \emph{pulls towards} merging.
+\scq{Why the coefficient.} $1/(r_e\log r_e)$ comes from the normalised entropy, and $w_e/W$
+from averaging over hyperedges ($W=|E_t|$ for native edges of weight 1). It is precomputed once
+per edge (\code{Merger.coeff}).
+\scq{Toy check (not data).} Arity 5 with $3$ endpoints in $A$, $1$ in $B$ and $1$ in $C$.
+Merging $A$ and $B$ lowers the normalised fragmentation of that edge from $0.59$ to $0.31$, a
+change of $-0.28$ (times $w_e/W$).
+\scq{Likely misconception.} ``The co-membership pairs are the structural objective.'' They only
+\emph{propose} candidates. The cost always uses the native multiplicities $m_{e,C}$.
+\end{studybox}
+
 \paragraph{Temporal term.}
 Let $N=|U_t|$, let $s_A$ be the number of shared nodes in $A$, and let $c_{A,k}$ be
 the number of shared nodes of $A$ that were in previous cluster $k$. Writing
@@ -867,6 +1078,26 @@ $H(P)=\log N-\frac1N\sum_C\phi(s_C)$ and similarly for the joint entropy, and us
 \Delta T&=\frac{2\,\Delta H(P,P_{t-1})-\Delta H(P)}{2\log N}.
 \end{align}
 Only previous clusters that both $A$ and $B$ overlap contribute to the joint term.
+
+\begin{studybox}[Interview intuition: $\Delta T$]
+\scq{In one sentence.} Merging two clusters that used to be together is rewarded, merging two
+that used to be apart is penalised, and new nodes are free.
+\scq{What changes it.} Only the shared nodes of $A$ and $B$ and the previous clusters they came
+from. With $x=\phi(s_A+s_B)-\phi(s_A)-\phi(s_B)\ge0$:
+\begin{itemize}[leftmargin=1.4em,itemsep=0pt,topsep=2pt]
+  \item all shared nodes of $A$ and of $B$ came from \emph{one} previous cluster:
+        $\Delta T=-x/(2N\log N)<0$;
+  \item $A$ and $B$ have \emph{no} previous cluster in common: $\Delta T=+x/(2N\log N)>0$;
+  \item one of them holds only new nodes ($s=0$): $x=0$, so $\Delta T=0$.
+\end{itemize}
+\scq{Why $2\log N$.} It is the normaliser of $T$ in \cref{eq:objective}, so that $\lambda$
+multiplies a bounded quantity.
+\scq{Code.} \code{dh} is $\Delta H(P)$, \code{dj} is $\Delta H(P,P_{t-1})$, and
+\code{dt = (2*dj - dh) / self.temporal\_den}. It is evaluated only when $\lambda>0$ and at
+least two nodes are shared.
+\scq{Likely misconception.} ``$T$ forces the new clusters to equal the old ones.'' It is a soft
+cost with $\lambda=0.2$ and can be outweighed by $S$ and $F$. Hungarian matching is not part of it.
+\end{studybox}
 
 \paragraph{Total.}
 \[\Delta J(A,B)=\alpha\,\Delta S+(1-\alpha)\,\Delta F+\lambda\,\Delta T.\]
@@ -1585,6 +1816,23 @@ which is the length of the mean vector. Coherence is therefore
 \]
 Singletons (coherence 1) are included in both the observation and the null, in the same way.
 A test verifies that the sparse computation equals a naive indexed sum exactly.
+
+\begin{studybox}[Interview intuition: coherence as the length of the mean vector]
+\scq{In one sentence.} Average the unit vectors of a cluster. If they all point the same way,
+the average is long (near $1$). If they point in different directions, they cancel and the
+average is short.
+\scq{Why the formula holds.} With $s=\sum_{v\in C}y_v$, the mean cosine to the normalised
+centroid is $\frac1{|C|}\sum_{v\in C}\langle y_v,\,s/\|s\|\rangle=\|s\|/|C|$.
+\scq{What changes it.} The angular spread of the members under BGE. Smaller clusters tend to
+be more homogeneous, and a singleton scores exactly $1$.
+\scq{High / low.} In this corpus even \emph{random} type-preserving partitions score about
+$0.80$, because all texts come from one domain. A raw value means nothing without the null.
+\scq{Normalisation.} None is needed: unit vectors give a value in $[0,1]$. The size-weighted
+form lets large clusters count more, and the macro form counts every cluster once.
+\scq{Likely misconception.} ``$0.80$ is high coherence.'' The chance level is about $0.80$.
+The evidence is the difference to the null ($0.003$ to $0.011$ for the temporal variant),
+measured with an encoder that did not build the clusters.
+\end{studybox}
 
 \paragraph{Null model.}
 \code{coherence} draws 100 null partitions with a fixed-seed generator (seed 42). Each is
@@ -2629,5 +2877,2137 @@ Path & Content\\
   \item[VI] Variation of information; information-theoretic distance between partitions (0 = identical).
   \item[Ward criterion] Merge cost equal to the increase in within-cluster sum of squares.
 \end{description}
+
+% ==================================================================
+% ==================================================================
+%  INTERVIEW STUDY LAYER (added). Everything above is the original report.
+% ==================================================================
+% ==================================================================
+\clearpage
+\section{Interview Study Companion: Intuition, Diagrams, and 100 Questions}
+\sectionmark{Interview Study Companion}
+\label{app:companion}
+
+This appendix was added for interview preparation. It adds no result and changes no result.
+Every number in it is copied from the report above, and every statement about the code refers to
+the \code{clean\_tshc} implementation. Small examples marked \emph{toy} are illustrations with
+made-up inputs, not data. Where the implementation does not support an explanation, the text
+says so in these words: \nest
+
+\subsection{How to use this companion}
+\label{app:sc-howto}
+
+\begin{studybox}[Three colours, three kinds of statement]
+\begin{itemize}[leftmargin=1.4em,itemsep=1pt,topsep=2pt]
+  \item \textbf{Guaranteed by construction} (solid blue in the diagrams): true for every run,
+        proved in \cref{prop:laminar} or asserted in code. Say ``guaranteed''.
+  \item \textbf{Encouraged by design} (dashed blue): the method pushes in this direction but
+        promises no value. Say ``encouraged'' or ``by design''.
+  \item \textbf{Measured empirically} (orange): a number from one corpus, with its control.
+        Say ``on this corpus we measured''.
+\end{itemize}
+\end{studybox}
+
+\begin{studybox}[Memory aids]
+\begin{itemize}[leftmargin=1.4em,itemsep=1pt,topsep=2pt]
+  \item \textbf{``$S$ up, $F$ down, $T$ either way.''} What each term does at every merge.
+  \item \textbf{``Times three.''} $12\to40\to120$: each level is about three times finer.
+  \item \textbf{``MiniLM builds, BGE judges, DeBERTa checks the words.''} The three models and
+        their roles.
+  \item \textbf{``Regularise is the cause, matching is the name tag.''} $\lambda T$ changes the
+        clusters; Hungarian matching only names them.
+  \item \textbf{``Propose with pairs, pay with hyperedges.''} Candidate pairs come from
+        co-membership; the cost uses native multiplicities.
+  \item \textbf{``Floor, not force.''} $p=1/101$ is the smallest value 100 nulls can give.
+  \item \textbf{``Blind, not robust.''} Semantic-only perturbation ARI of $1$ means it never
+        looks at edges.
+  \item \textbf{``Evidence hit is not identity hit.''} Why retrieval scores $0/63$.
+  \item \textbf{``Budget met is not balanced.''} One L0 super-node holds 65\% of the nodes.
+\end{itemize}
+\end{studybox}
+
+\begin{studybox}[Drawing the whole model on paper in one minute]
+\begin{enumerate}[leftmargin=1.6em,itemsep=1pt,topsep=2pt]
+  \item \textbf{Timeline.} Four boxes: 2020, 2022, 2024, 2026. Between neighbours write
+        ``$\lambda T$'' above the arrow and ``match ids'' below it (\cref{fig:sc-temporal}).
+  \item \textbf{Funnel.} Under one box: $|V_t|\to120\to40\to12$ with an upward arrow labelled
+        ``merges only'' (\cref{fig:sc-cascade}).
+  \item \textbf{Triangle.} $S$, $F$, $T$ at the corners, $J$ in the middle, and $\alpha$,
+        $1-\alpha$, $\lambda$ on the spokes (\cref{fig:sc-objective}).
+  \item \textbf{One blob.} Five dots in a dashed outline, an arrow, and
+        $\{A{:}3,B{:}1,C{:}1\}$ (\cref{fig:sc-collapse}).
+  \item \textbf{One dashed vertical line.} Left: MiniLM, 70\% of members, predictions. Right:
+        BGE with nulls, 30\% with NLI, gold (\cref{fig:sc-barrier}).
+\end{enumerate}
+\end{studybox}
+
+% ------------------------------------------------------------------
+\subsection{Thirteen diagrams}
+\label{app:sc-diagrams}
+% ------------------------------------------------------------------
+
+Each diagram is followed by the sentences to say while drawing it.
+
+% ---------------- 1. P1-P6 map
+\subsubsection*{Diagram 1: the P1--P6 map}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,
+  pl/.style={font=\small\bfseries,anchor=west,text=accent},
+  g/.style={draw=accent,fill=soft,rounded corners=2pt,font=\scriptsize,align=left,
+            text width=5.1cm,inner sep=3pt,minimum height=1.0cm,anchor=west},
+  gd/.style={g,dashed,fill=white},
+  e/.style={draw=warnline,fill=warnsoft,rounded corners=2pt,font=\scriptsize,align=left,
+            text width=5.1cm,inner sep=3pt,minimum height=1.0cm,anchor=west},
+  no/.style={font=\scriptsize,text=gray,anchor=west}]
+  \node[font=\small\bfseries,anchor=west] at (0,0.95) {Property};
+  \node[font=\small\bfseries,anchor=west,text=accent] at (4.55,0.95) {By construction};
+  \node[font=\small\bfseries,anchor=west,text=warnline] at (10.3,0.95) {Measured empirically};
+  \draw[gray] (0,0.65) -- (15.8,0.65);
+  % P1
+  \node[pl] at (0,0) {P1\ \ Laminar refinement};
+  \node[g] at (4.55,0) {Only merges, so every level is a coarsening of the one below.
+       \texttt{validate}: one parent per child.};
+  \node[no] at (10.3,0) {nothing to measure};
+  % P2
+  \node[pl] at (0,-1.45) {P2\ \ Size budget};
+  \node[g] at (4.55,-1.45) {One merge removes exactly one cluster. Each stage stops at
+       $120$, $40$, $12$.};
+  \node[no] at (10.3,-1.45) {nothing to measure};
+  % P3
+  \node[pl] at (0,-2.9) {P3\ \ Semantic coherence};
+  \node[no] at (4.55,-2.9) {no guarantee};
+  \node[e] at (10.3,-2.9) {BGE coherence (not MiniLM) against 100 type- and
+       size-preserving null partitions.};
+  % P4
+  \node[pl] at (0,-4.35) {P4\ \ Hyperedge fidelity};
+  \node[g] at (4.55,-4.35) {Edge identity, arity, multiplicity and provenance survive
+       collapse. $\Delta F$ uses those multiplicities.};
+  \node[e] at (10.3,-4.35) {Whether native edges give better partitions: native compared
+       with pairwise.};
+  % P5
+  \node[pl] at (0,-5.8) {P5\ \ Temporal stability};
+  \node[gd] at (4.55,-5.8) {Encouraged only: $\lambda T$ penalises drift from the previous
+       snapshot. No ARI or VI value is promised.};
+  \node[e] at (10.3,-5.8) {Cross-snapshot ARI, VI, lineage retention. Perturbation ARI
+       with $t$-intervals.};
+  % P6
+  \node[pl] at (0,-7.25) {P6\ \ Faithful labels};
+  \node[gd] at (4.55,-7.25) {By design: weakest informative template; inputs are
+       snapshot-visible only (asserted). Faithfulness is not promised.};
+  \node[e] at (10.3,-7.25) {NLI overclaim proxy on the held-out 30\% of members. Lexical
+       support.};
+  % legend
+  \draw[gray] (0,-8.1) -- (15.8,-8.1);
+  \node[draw=accent,fill=soft,rounded corners=2pt,minimum width=6mm,minimum height=3mm] at (0.35,-8.5) {};
+  \node[font=\scriptsize,anchor=west] at (0.75,-8.5) {guaranteed (proved or asserted)};
+  \node[draw=accent,dashed,rounded corners=2pt,minimum width=6mm,minimum height=3mm] at (5.95,-8.5) {};
+  \node[font=\scriptsize,anchor=west] at (6.35,-8.5) {encouraged / by design};
+  \node[draw=warnline,fill=warnsoft,rounded corners=2pt,minimum width=6mm,minimum height=3mm] at (10.65,-8.5) {};
+  \node[font=\scriptsize,anchor=west] at (11.05,-8.5) {measured on this corpus};
+\end{tikzpicture}
+\caption{Study companion: the six required properties, split into what holds by construction
+and what is measured. It restates \cref{tab:properties}.}
+\label{fig:sc-pmap}
+\end{figure}
+
+\noindent\sclab{Say it.} ``P1 and P2 are free, because bottom-up merging can only coarsen and
+removes one cluster per step. P4 has two halves: the collapse keeps every edge's identity, arity
+and multiplicity, which is a guarantee, while the benefit for the partition is an empirical
+question. P5 is encouraged by a penalty and then measured. P3 and P6 are measured only.''
+
+% ---------------- 2. cascade
+\subsubsection*{Diagram 2: the hierarchy cascade}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,
+  leaf/.style={circle,draw=accent,fill=white,minimum size=3mm,inner sep=0pt},
+  cl/.style={draw=accent,fill=soft,rounded corners=2pt,minimum height=5mm,inner sep=0pt},
+  lv/.style={anchor=west,align=left,font=\small,text width=3.7cm}]
+  \foreach \i in {0,...,11} \node[leaf] (l\i) at ({4.2+0.72*\i},0) {};
+  \foreach \j/\x in {0/4.56,1/6.00,2/7.44,3/8.88,4/10.32,5/11.76}
+     \node[cl,minimum width=12mm] (a\j) at (\x,1.5) {};
+  \foreach \j/\p/\q in {0/0/1,1/2/3,2/4/5,3/6/7,4/8/9,5/10/11}
+     { \draw[gray] (l\p.north) -- (a\j.south); \draw[gray] (l\q.north) -- (a\j.south); }
+  \foreach \j/\x in {0/5.28,1/8.16,2/11.04}
+     \node[cl,minimum width=27mm] (b\j) at (\x,3.0) {};
+  \foreach \j/\p/\q in {0/0/1,1/2/3,2/4/5}
+     { \draw[gray] (a\p.north) -- (b\j.south); \draw[gray] (a\q.north) -- (b\j.south); }
+  \node[cl,minimum width=56mm] (c0) at (6.72,4.5) {};
+  \node[cl,minimum width=27mm] (c1) at (11.04,4.5) {};
+  \draw[gray] (b0.north) -- (c0.south); \draw[gray] (b1.north) -- (c0.south);
+  \draw[gray] (b2.north) -- (c1.south);
+  % level labels
+  \node[lv] at (0,4.5) {$\bm{P_0}$: at most \textbf{12}\\[-1pt]{\scriptsize coarsest; label and gloss}};
+  \node[lv] at (0,3.0) {$\bm{P_1}$: at most \textbf{40}\\[-1pt]{\scriptsize label and gloss}};
+  \node[lv] at (0,1.5) {$\bm{P_2}$: at most \textbf{120}};
+  \node[lv] at (0,0)   {$\bm{P_3}$: singletons\\[-1pt]{\scriptsize one cluster per node}};
+  % merge direction
+  \draw[-{Stealth},very thick,accent] (12.95,-0.1) -- (12.95,4.7);
+  \node[anchor=west,align=left,font=\scriptsize,text width=2.5cm] at (13.15,0.75) {merge until 120 clusters remain; record $P_2$};
+  \node[anchor=west,align=left,font=\scriptsize,text width=2.5cm] at (13.15,2.25) {keep merging until 40; record $P_1$};
+  \node[anchor=west,align=left,font=\scriptsize,text width=2.5cm] at (13.15,3.75) {keep merging until 12; record $P_0$};
+\end{tikzpicture}
+\caption{Study companion: one continuous bottom-up merge sequence. The tree is a toy with twelve
+leaves; the budgets on the left are the real ones. Every child has exactly one parent, which is
+laminarity.}
+\label{fig:sc-cascade}
+\end{figure}
+
+\noindent\sclab{Say it.} ``It is one merge sequence, not three clusterings. I start from
+singletons and take a snapshot of the partition when 120, 40 and 12 clusters remain. In 2026 that
+is $5{,}798-120=5{,}678$ merges, then $80$ more, then $28$ more. Between stages the hyperedges
+are re-collapsed onto the current clusters and the history switches to the same level of the
+previous snapshot. Nothing is ever split again, which is the price of a greedy method.''
+
+% ---------------- 3. objective
+\subsubsection*{Diagram 3: the three-way tension in the objective}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[scbox,text width=3.3cm] (S) at (1.8,3.5)
+     {\textbf{$S$: semantic dispersion}\\[1pt]{\scriptsize pulls nodes with similar meaning
+      together\\\textbf{rises} with every merge}};
+  \node[scbox,text width=3.3cm] (F) at (8.6,3.5)
+     {\textbf{$F$: hyperedge fragmentation}\\[1pt]{\scriptsize keeps native relations in one
+      piece\\\textbf{falls} or stays with every merge}};
+  \node[scbox,text width=4.3cm] (T) at (5.2,-1.0)
+     {\textbf{$T$: temporal drift}\\[1pt]{\scriptsize resists unnecessary change from the
+      previous snapshot\\\textbf{up or down} with each merge}};
+  \node[draw=accent,very thick,fill=white,rounded corners=3pt,font=\small,inner sep=6pt]
+     (J) at (5.2,1.45) {$J=\alpha S+(1-\alpha)F+\lambda T$};
+  \draw[scarr] (J) -- node[fill=white,inner sep=1.5pt,font=\scriptsize]{$\alpha=0.5$} (S);
+  \draw[scarr] (J) -- node[fill=white,inner sep=1.5pt,font=\scriptsize]{$1-\alpha=0.5$} (F);
+  \draw[scarr] (J) -- node[fill=white,inner sep=1.5pt,font=\scriptsize]{$\lambda=0.2$} (T);
+  \draw[{Stealth}-{Stealth},thick,warnline] (S.east) --
+     node[above,font=\scriptsize,align=center,text=black]{genuine tension} (F.west);
+  % inset
+  \node[font=\scriptsize\bfseries,anchor=west] at (11.5,4.05) {As clusters merge};
+  \draw[gray,-{Stealth}] (11.6,0.2) -- (15.75,0.2);
+  \draw[gray,-{Stealth}] (11.6,0.2) -- (11.6,3.75);
+  \node[font=\scriptsize,anchor=east] at (15.75,-0.05) {merges};
+  \draw[accent,very thick] (11.7,0.45) .. controls (13.2,0.6) and (14.6,1.3) .. (15.4,2.7);
+  \draw[warnline,very thick] (11.7,3.5) .. controls (12.4,1.7) and (13.8,0.9) .. (15.4,0.6);
+  \node[font=\scriptsize,anchor=west] at (14.5,3.0) {$S$};
+  \node[font=\scriptsize,anchor=west] at (12.15,3.2) {$F$};
+  \node[font=\scriptsize,text=gray] at (13.65,-0.55) {schematic, not data};
+\end{tikzpicture}
+\caption{Study companion: the three terms of \cref{eq:objective}. $S$ and $F$ move in opposite
+directions at every merge, and $T$ adds a pull towards the previous snapshot. The curves on the
+right are a schematic.}
+\label{fig:sc-objective}
+\end{figure}
+
+\noindent\sclab{Say it.} ``$S$ wants small, pure clusters. $F$ wants whole relations inside one
+cluster, which means bigger clusters. Since the budget forces merges, the question at each step
+is which merge buys the most relation-keeping for the least meaning-mixing, and $\alpha$ is the
+exchange rate. $T$ then tilts the choice towards groupings that existed last time.''
+
+\begin{trapbox}[Interview warning: nominal weight is not realised influence]
+$S$ is capped at $0.25$ and $F$ ranges over $[0,1]$. With $\alpha=0.5$ the fragmentation term
+has more pull than its coefficient suggests. The report says this and links it to the dominant
+cluster. Do not say ``structure and meaning are weighted equally''.
+\end{trapbox}
+
+% ---------------- 4. worked merge
+\subsubsection*{Diagram 4: one worked merge (toy)}
+
+\begin{figure}[H]
+\centering
+\begin{minipage}[c]{0.36\linewidth}\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[scnode] (a1) at (0,0.55) {$a_1$};
+  \node[scnode] (a2) at (0.85,0) {$a_2$};
+  \node[scnode] (b1) at (2.8,0.3) {$b_1$};
+  \node[scnode] (c1) at (4.25,0.3) {$c_1$};
+  \begin{scope}[on background layer]
+    \node[draw=accent,fill=soft,rounded corners=6pt,fit=(a1)(a2),inner sep=5pt,label=above:{\small $A$}] (A) {};
+    \node[draw=accent,fill=soft,rounded corners=6pt,fit=(b1),inner sep=5pt,label=above:{\small $B$}] (B) {};
+    \node[draw=accent,fill=soft,rounded corners=6pt,fit=(c1),inner sep=5pt,label=above:{\small $C$}] (C) {};
+  \end{scope}
+  \draw[dashed,orange!80!black,thick,rounded corners=10pt] (-0.6,-0.65) rectangle (4.9,1.75);
+  \node[font=\scriptsize,orange!80!black] at (2.15,-0.95) {hyperedge $e$, arity 4};
+  \draw[{Stealth}-{Stealth},thick,accent] (A.east) -- node[above=1.5pt,font=\scriptsize,text=black]{merge?} (B.west);
+\end{tikzpicture}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.62\linewidth}\footnotesize
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\linewidth}{@{}lc>{\raggedright\arraybackslash}Xr@{}}
+\toprule
+Term & Sign & Why & Toy value\\
+\midrule
+$\Delta S$ & $+$ & the centroids of $A$ and $B$ differ, so meaning gets more mixed & $+0.0104$\\
+$\Delta F$ & $-$ & $e$ touches both: $2$ and $1$ endpoints become $3$ together & $-0.0861$\\
+$\Delta T$ (case 1) & $-$ & $a_1,a_2,b_1$ were in one previous cluster: the merge restores it & $-0.0888$\\
+$\Delta T$ (case 2) & $+$ & $b_1$ was in a different previous cluster: the merge creates a new grouping & $+0.0888$\\
+\midrule
+$\Delta J$ (case 1) & & $0.5\,\Delta S+0.5\,\Delta F+0.2\,\Delta T$ & $-0.0556$\\
+$\Delta J$ (case 2) & & same formula & $-0.0201$\\
+\bottomrule
+\end{tabularx}
+\end{minipage}
+\caption{Study companion: a toy merge of $A=\{a_1,a_2\}$ and $B=\{b_1\}$. Toy inputs, not data:
+$|V|=8$, $\|\mu_A-\mu_B\|^2=0.5$, four unit-weight hyperedges of which only $e$ touches both
+clusters, and $N=6$ shared nodes.}
+\label{fig:sc-toymerge}
+\end{figure}
+
+\noindent\sclab{Read it.} The same pair of clusters is a cheaper merge in case 1 than in case 2,
+only because of history. In the heap, case 1 would be popped earlier. If no hyperedge touched
+both clusters, $\Delta F$ would be $0$ and the merge would have to be justified by small
+$\Delta S$ alone. The arithmetic: $\Delta S=\frac{1}{4\cdot8}\cdot\frac{2\cdot1}{3}\cdot0.5$,
+$\Delta F=\frac{1}{4\cdot4\log4}\,[\phi(2)+\phi(1)-\phi(3)]$ and
+$\Delta T=\mp\frac{\phi(3)-\phi(2)-\phi(1)}{2\cdot6\log6}$.
+
+% ---------------- 5. projection
+\subsubsection*{Diagram 5: native hyperedge versus clique projection}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+  % native
+  \foreach \n/\ang/\lab in {m/90/m,da/162/d_1,db/234/d_2,qa/306/q_1,qb/18/q_2}
+     \node[scnode] (L\n) at ({2.0+1.15*cos(\ang)},{1.45+1.15*sin(\ang)}) {$\lab$};
+  \begin{scope}[on background layer]
+    \draw[fill=accent!15,draw=accent,rounded corners=16pt] (0.25,-0.15) rectangle (3.75,3.2);
+  \end{scope}
+  \node[font=\scriptsize,align=center] at (2.0,-0.75) {one native hyperedge, arity 5\\identity, arity and grouping known};
+  % projected
+  \foreach \n/\ang/\lab in {m/90/m,da/162/d_1,db/234/d_2,qa/306/q_1,qb/18/q_2}
+     \node[scnode] (R\n) at ({7.7+1.15*cos(\ang)},{1.45+1.15*sin(\ang)}) {$\lab$};
+  \foreach \u/\v in {m/da,m/db,m/qa,m/qb,da/db,da/qa,da/qb,db/qa,db/qb,qa/qb}
+     \draw[gray,thick] (R\u) -- (R\v);
+  \node[font=\scriptsize,align=center] at (7.7,-0.75) {$\binom52=10$ pairs,\\each with weight $1/10$};
+  \draw[scarr] (4.1,1.45) -- node[above,font=\scriptsize]{clique} node[below,font=\scriptsize]{projection} (5.9,1.45);
+  % lost
+  \node[scwarn,text width=4.8cm,align=left,font=\scriptsize] at (12.95,1.45)
+    {\textbf{No longer recoverable once pair weights are summed}\\[2pt]
+     \textbullet\ which hyperedge(s) a pair came from\\
+     \textbullet\ the arity (5)\\
+     \textbullet\ that the five were stated \emph{together}\\[2pt]
+     \textbf{On the real data}\\[1pt]
+     $1{,}429$ hyperedges $\to$ $72{,}701$ pair instances $\to$ $70{,}022$ unique pairs;
+     $1{,}510$ pairs get weight from more than one hyperedge};
+\end{tikzpicture}
+\caption{Study companion: one arity-5 relation (for example one \texttt{evaluated\_on} relation
+linking a method $m$, two datasets $d_1,d_2$ and two metrics $q_1,q_2$) and its clique projection.
+Compare \cref{fig:projection}.}
+\label{fig:sc-projection}
+\end{figure}
+
+\noindent\sclab{Say it.} ``The projection keeps who is connected to whom but forgets which
+connections belonged to the same statement. Ten independent pairwise facts and one five-way
+relation look the same up to weights. I kept the projection as a baseline with weights
+$1/\binom r2$, and I quantified the loss on the data.''
+
+% ---------------- 6. collapse
+\subsubsection*{Diagram 6: hyperedge collapse, the three cases}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,sn/.style={draw=accent,rounded corners=5pt,fill=soft},
+  rec/.style={draw=accent,fill=soft,rounded corners=3pt,align=left,font=\scriptsize,text width=4.25cm,inner sep=4pt}]
+  % (a)
+  \begin{scope}[shift={(0,0)}]
+    \node[scdot] (p1) at (0.7,0.3) {}; \node[scdot] (p2) at (1.5,0.8) {};
+    \node[scdot] (p3) at (2.3,0.3) {}; \node[scdot] (p4) at (3.1,0.8) {};
+    \node[scdot] (p5) at (3.9,0.3) {};
+    \begin{scope}[on background layer]
+      \node[sn,fit=(p1)(p2)(p3)(p4)(p5),inner sep=4pt,label=above:{\small $A$}] {};
+    \end{scope}
+    \draw[dashed,orange!80!black,thick,rounded corners=10pt] (0.05,-0.35) rectangle (4.55,1.85);
+    \draw[scarr] (2.3,-0.45) -- (2.3,-1.0);
+    \node[rec] at (2.3,-1.85) {\texttt{multiplicity}: $\{A{:}5\}$\\\texttt{internal}: true\\
+       \textbf{kept}: evidence that $A$ is cohesive};
+    \node[font=\small\bfseries,text=accent] at (2.3,2.3) {(a) all endpoints in one};
+  \end{scope}
+  % (b)
+  \begin{scope}[shift={(5.5,0)}]
+    \node[scdot] (p1) at (0.6,0.3) {}; \node[scdot] (p2) at (1.2,0.8) {};
+    \node[scdot] (p3) at (1.8,0.3) {}; \node[scdot] (p4) at (3.2,0.8) {};
+    \node[scdot] (p5) at (3.8,0.3) {};
+    \begin{scope}[on background layer]
+      \node[sn,fit=(p1)(p2)(p3),inner sep=4pt,label=above:{\small $A$}] {};
+      \node[sn,fit=(p4)(p5),inner sep=4pt,label=above:{\small $B$}] {};
+    \end{scope}
+    \draw[dashed,orange!80!black,thick,rounded corners=10pt] (0.05,-0.35) rectangle (4.55,1.85);
+    \draw[scarr] (2.3,-0.45) -- (2.3,-1.0);
+    \node[rec] at (2.3,-1.85) {\texttt{multiplicity}: $\{A{:}3,\,B{:}2\}$\\\texttt{internal}: false\\
+       a coarse relation $A$--$B$ that remembers the weights};
+    \node[font=\small\bfseries,text=accent] at (2.3,2.3) {(b) partly internal};
+  \end{scope}
+  % (c)
+  \begin{scope}[shift={(11.0,0)}]
+    \node[scdot] (p1) at (0.5,0.3) {}; \node[scdot] (p2) at (1.1,0.8) {};
+    \node[scdot] (p3) at (1.7,0.3) {}; \node[scdot] (p4) at (2.85,0.55) {};
+    \node[scdot] (p5) at (3.95,0.55) {};
+    \begin{scope}[on background layer]
+      \node[sn,fit=(p1)(p2)(p3),inner sep=4pt,label=above:{\small $A$}] {};
+      \node[sn,fit=(p4),inner sep=4pt,label=above:{\small $B$}] {};
+      \node[sn,fit=(p5),inner sep=4pt,label=above:{\small $C$}] {};
+    \end{scope}
+    \draw[dashed,orange!80!black,thick,rounded corners=10pt] (0.05,-0.35) rectangle (4.55,1.85);
+    \draw[scarr] (2.3,-0.45) -- (2.3,-1.0);
+    \node[rec] at (2.3,-1.85) {\texttt{multiplicity}: $\{A{:}3,\,B{:}1,\,C{:}1\}$\\\texttt{internal}: false\\
+       still higher-order; \textbf{never split into pairs}};
+    \node[font=\small\bfseries,text=accent] at (2.3,2.3) {(c) three or more};
+  \end{scope}
+\end{tikzpicture}
+\caption{Study companion: one rule, three cases. Fine endpoints mapping to $A,A,A,B,C$ become
+the coarse record $\{A{:}3,B{:}1,C{:}1\}$. In every case the multiplicities sum to the original
+arity (5), and the id, relation type and provenance are kept. Compare \cref{fig:collapse}.}
+\label{fig:sc-collapse}
+\end{figure}
+
+\noindent\sclab{Say it.} ``A hyperedge becomes a multiset of super-nodes. I count how many of
+its endpoints land in each super-node and keep that count. The counts are not only an output
+format: they are the $m_{e,C}$ that $\Delta F$ uses, so the optimiser works on the same
+representation it writes out. What I lose is \emph{which} fine nodes inside $A$ took part; that
+needs the member lists.''
+
+% ---------------- 7. temporal mechanism
+\subsubsection*{Diagram 7: the temporal mechanism}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm]
+  \node[scplain,text width=3.3cm,minimum height=2.1cm] (old) at (1.8,0)
+     {\textbf{Snapshot $t-1$}\\[2pt]{\scriptsize partition at the \emph{same level} and the
+      member sets of its super-nodes}};
+  \node[scbox,very thick,text width=4.1cm,minimum height=2.1cm] (build) at (7.55,0)
+     {\textbf{Build snapshot $t$}\\[2pt]{\scriptsize greedy merges; every merge cost includes
+      $\lambda\,\Delta T$, the change in VI on shared nodes}};
+  \node[scplain,text width=4.0cm,minimum height=2.1cm] (match) at (13.6,0)
+     {\textbf{After the build}\\[2pt]{\scriptsize Hungarian matching on Jaccard overlap gives
+      persistent ids; the overlap table gives the event log}};
+  \draw[scarr] (old) -- node[above,font=\scriptsize]{history} node[below,font=\scriptsize]{counts} (build);
+  \draw[scarr] (build) -- node[above,font=\scriptsize]{finished} node[below,font=\scriptsize]{partition} (match);
+  \draw[scarr] (old.south) -- ++(0,-0.75) -| node[pos=0.25,below,font=\scriptsize]{old member sets and persistent ids} (match.south);
+  \node[font=\scriptsize\bfseries,text=accent,align=center] at (7.55,1.9) {CAUSES STABILITY\\changes\\the clusters};
+  \node[font=\scriptsize\bfseries,text=warnline,align=center] at (13.6,1.9) {BOOKKEEPING ONLY\\names clusters,\\never changes them};
+\end{tikzpicture}
+\caption{Study companion: two separate temporal mechanisms. VI regularisation acts
+\emph{during} construction and is the only one that changes clusters. Hungarian matching acts
+\emph{after} construction and only assigns names.}
+\label{fig:sc-temporal}
+\end{figure}
+
+\noindent\sclab{Say it.} ``Stability is caused by the penalty inside the objective. Matching is
+bookkeeping: it decides which new cluster inherits which id. The static variant gets matched ids
+too and is still much less stable (mean ARI $0.725$ against $0.892$), which shows matching alone
+cannot stabilise anything. New nodes have no history, so they add nothing to $T$, and in 2020
+there is no previous snapshot, so $T=0$ and static equals temporal.''
+
+% ---------------- 8. events
+\subsubsection*{Diagram 8: the event taxonomy}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,
+  oc/.style={draw=gray,fill=white,rounded corners=3pt,font=\scriptsize,inner sep=3pt},
+  nc/.style={draw=accent,fill=soft,rounded corners=3pt,font=\scriptsize,inner sep=3pt},
+  ttl/.style={font=\small\bfseries,text=accent,anchor=west},
+  dsc/.style={font=\scriptsize,anchor=north west,align=left,text width=4.5cm}]
+  \foreach \px/\py in {0/0,5.4/0,10.8/0,0/-3.3,5.4/-3.3,10.8/-3.3}
+     \draw[gray!50,rounded corners=4pt] (\px,\py) rectangle ++(5.0,2.95);
+  % birth
+  \begin{scope}[shift={(0,0)}]
+    \node[ttl] at (0.15,2.65) {birth};
+    \node[font=\scriptsize,text=gray] at (1.1,1.75) {no old cluster};
+    \node[nc] at (3.7,1.75) {$\circ\,\circ\,\circ$};
+    \node[dsc] at (0.15,1.2) {a new cluster overlaps no old cluster};
+  \end{scope}
+  % continuation
+  \begin{scope}[shift={(5.4,0)}]
+    \node[ttl] at (0.15,2.65) {continuation};
+    \node[oc] (o) at (1.1,1.75) {$\bullet\bullet\bullet$};
+    \node[nc] (n) at (3.7,1.75) {$\bullet\bullet\bullet$};
+    \draw[scarr] (o) -- (n);
+    \node[dsc] at (0.15,1.2) {inherits the id and acquired no new members};
+  \end{scope}
+  % growth
+  \begin{scope}[shift={(10.8,0)}]
+    \node[ttl] at (0.15,2.65) {growth};
+    \node[oc] (o) at (1.1,1.75) {$\bullet\bullet\bullet$};
+    \node[nc] (n) at (3.7,1.75) {$\bullet\bullet\bullet\,\circ\,\circ$};
+    \draw[scarr] (o) -- (n);
+    \node[dsc] at (0.15,1.2) {inherits the id and acquired at least one member};
+  \end{scope}
+  % merge
+  \begin{scope}[shift={(0,-3.3)}]
+    \node[ttl] at (0.15,2.65) {merge};
+    \node[oc] (o1) at (1.1,2.1) {$\bullet\bullet\bullet$};
+    \node[oc] (o2) at (1.1,1.45) {$\bullet\bullet$};
+    \node[nc] (n) at (3.7,1.75) {$\bullet\bullet\bullet\bullet\bullet$};
+    \draw[scarr] (o1.east) -- (n.west); \draw[scarr] (o2.east) -- (n.west);
+    \node[dsc] at (0.15,1.05) {a new cluster has strong overlaps with two or more old clusters};
+  \end{scope}
+  % split
+  \begin{scope}[shift={(5.4,-3.3)}]
+    \node[ttl] at (0.15,2.65) {split};
+    \node[oc] (o) at (1.2,1.75) {$\bullet\bullet\bullet\bullet\bullet$};
+    \node[nc] (n1) at (3.8,2.1) {$\bullet\bullet\bullet$};
+    \node[nc] (n2) at (3.8,1.45) {$\bullet\bullet$};
+    \draw[scarr] (o.east) -- (n1.west); \draw[scarr] (o.east) -- (n2.west);
+    \node[dsc] at (0.15,1.05) {an old cluster has strong overlaps with two or more new clusters};
+  \end{scope}
+  % death
+  \begin{scope}[shift={(10.8,-3.3)}]
+    \node[ttl] at (0.15,2.65) {death};
+    \node[oc] at (1.1,1.75) {$\bullet\bullet\bullet$};
+    \node[font=\scriptsize,text=gray] at (3.7,1.75) {no new cluster};
+    \node[dsc] at (0.15,1.2) {an old cluster overlaps no new cluster; \textbf{never observed}
+       (snapshots are cumulative)};
+  \end{scope}
+\end{tikzpicture}
+\caption{Study companion: the six membership events of \cref{tab:events}. In each panel the old
+clusters (grey) are on the left and the new clusters (blue) on the right; $\bullet$ is a node
+that was already there, $\circ$ a node the cluster acquired. A \emph{strong} overlap needs at
+least 2 shared nodes and at least 10\% of the relevant cluster's shared membership.}
+\label{fig:sc-events}
+\end{figure}
+
+\noindent\sclab{Events can overlap.} Identity (continuation or growth) comes from the one-to-one
+Hungarian match. Merge and split come from the full many-to-many overlap table. So one new
+cluster can be a \emph{growth} (it inherits the id of its best match) and at the same time the
+target of a \emph{merge} (it strongly overlaps two old clusters). That is why the event counts of
+a transition can exceed 172, the number of super-nodes per snapshot. The events describe
+membership changes, not scientific history.
+
+% ---------------- 9. barrier
+\subsubsection*{Diagram 9: the evaluation circularity barrier}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,
+  cb/.style={draw=accent,fill=soft,rounded corners=3pt,align=center,font=\scriptsize,text width=5.2cm,inner sep=4pt,minimum height=1.25cm},
+  eb/.style={draw=warnline,fill=warnsoft,rounded corners=3pt,align=center,font=\scriptsize,text width=5.2cm,inner sep=4pt,minimum height=1.25cm},
+  ln/.style={font=\scriptsize\bfseries,anchor=west}]
+  \node[font=\small\bfseries,text=accent] at (2.9,1.55) {Construction side};
+  \node[font=\small\bfseries,text=warnline] at (12.9,1.55) {Evaluation side};
+  % lane 1
+  \node[ln] at (0.15,0.95) {Coherence};
+  \node[cb] (c1) at (2.9,0) {\textbf{MiniLM} (all-MiniLM-L6-v2)\\builds the clusters and the labels};
+  \node[eb] (e1) at (12.9,0) {\textbf{BGE} (bge-small-en-v1.5)\\measures coherence against 100 type- and size-preserving nulls};
+  \draw[scarr] (c1) -- node[above,font=\scriptsize,pos=0.28]{clusters} (e1);
+  % lane 2
+  \node[ln] at (0.15,-1.35) {Labels};
+  \node[cb] (c2) at (2.9,-2.3) {\textbf{70\% generation members}\\write the label and the gloss};
+  \node[eb] (e2) at (12.9,-2.3) {\textbf{30\% held-out members}\\are the NLI premise; DeBERTa checks the gloss};
+  \draw[scarr] (c2) -- node[above,font=\scriptsize,pos=0.28]{gloss} (e2);
+  % lane 3
+  \node[ln] at (0.15,-3.65) {Benchmark};
+  \node[cb] (c3) at (2.9,-4.6) {\textbf{Retrieval predictions}\\written and hashed (SHA-256, Gate J)};
+  \node[eb] (e3) at (12.9,-4.6) {\textbf{Gold}: \texttt{benchmark.py} imported, ground truth read, hash re-checked after scoring};
+  \draw[scarr] (c3) -- node[above,font=\scriptsize,pos=0.28]{frozen file} (e3);
+  % barrier
+  \draw[dashed,very thick,red!60!black] (7.9,1.8) -- (7.9,-5.9);
+  \node[font=\scriptsize,red!60!black,align=center] at (7.9,-6.25) {information barrier: arrows cross left to right only};
+\end{tikzpicture}
+\caption{Study companion: the three circularity hazards and how each is cut. Nothing on the
+evaluation side can influence construction. The code asserts that the construction and evaluation
+model names differ. Compare \cref{fig:pipeline}.}
+\label{fig:sc-barrier}
+\end{figure}
+
+\noindent\sclab{Say it.} ``If the same embedding builds the clusters and grades them, a high
+score is guaranteed, so I grade with a different model family and against a null. If the
+labeller's input is also its evidence, faithfulness is circular, so 30\% of each cluster is held
+out. If I could see gold before fixing predictions, I could tune, so predictions are hashed
+first.'' \sctrap{Honest limits.} BGE is an independent ruler, not an expert. The held-out
+members still come from the same cluster. The benchmark was inspected repeatedly during
+development, so it is not a held-out test set.
+
+% ---------------- 10. labels
+\subsubsection*{Diagram 10: label generation and its check}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,
+  gb/.style={draw=accent,fill=soft,rounded corners=3pt,align=center,font=\scriptsize,inner sep=4pt,minimum height=1.55cm},
+  hb/.style={draw=warnline,fill=warnsoft,rounded corners=3pt,align=center,font=\scriptsize,inner sep=4pt,minimum height=1.55cm}]
+  \node[scplain,font=\scriptsize,text width=2.2cm,minimum height=4.3cm] (sp) at (1.25,-1.25)
+     {\textbf{Cluster members}\\snapshot-visible only\\[5pt]split per node type, ordered by
+      SHA-256(seed:id)};
+  \node[gb,text width=3.5cm] (g1) at (4.9,0)
+     {\textbf{$\approx$70\% generation set}\\TF-IDF over 1--3-grams: best phrase, at most 6 words};
+  \node[gb,text width=3.5cm] (g2) at (9.1,0)
+     {\textbf{Representatives}\\top two names nearest the generation-only MiniLM centroid};
+  \node[gb,text width=3.9cm] (g3) at (13.65,0)
+     {\textbf{Gloss}\\``This cluster groups evidence concerning $\langle$label$\rangle$,
+      including $\langle$rep$_1\rangle$; $\langle$rep$_2\rangle$.''};
+  \node[hb,text width=3.5cm] (h1) at (4.9,-2.5)
+     {\textbf{$\approx$30\% held-out set}\\never shown to the labeller; ``type: surface form''
+      lines, at most 1{,}800 characters};
+  \node[hb,text width=3.5cm] (h2) at (9.1,-2.5)
+     {\textbf{DeBERTa-v3 NLI}\\premise: held-out text\\hypothesis: gloss};
+  \node[hb,text width=3.9cm] (h3) at (13.65,-2.5)
+     {\textbf{Overclaim proxy}\\entailment $\to0$\\neutral or contradiction $\to1$};
+  \draw[scarr] (sp.east |- g1.west) -- (g1.west);
+  \draw[scarr] (sp.east |- h1.west) -- (h1.west);
+  \draw[scarr] (g1) -- (g2); \draw[scarr] (g2) -- (g3);
+  \draw[scarr] (h1) -- node[above,font=\scriptsize]{} (h2); \draw[scarr] (h2) -- (h3);
+  \draw[scarr] (g3.south) -- ++(0,-0.42) -| node[pos=0.25,above,font=\scriptsize]{gloss as hypothesis} (h2.north);
+\end{tikzpicture}
+\caption{Study companion: labels are written from one part of the cluster and checked against
+the other. A label is evaluable only if it has at least two held-out non-author members;
+otherwise the result is \texttt{null} and is not counted as a success.}
+\label{fig:sc-labels}
+\end{figure}
+
+\noindent\sclab{Say it.} ``No LLM: the label is the best TF-IDF phrase of the generation
+members, and the gloss is a fixed template that only claims the cluster \emph{contains} evidence
+about that phrase. The check asks an NLI model whether the unseen 30\% entails the gloss.''
+\sctrap{Trap.} The proxy rewards vague glosses. ``Evidence concerning materials'' is easy to
+entail and useless for navigation.
+
+% ---------------- 11. flat vs beam
+\subsubsection*{Diagram 11: flat versus beam retrieval}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,
+  kept/.style={draw=accent,fill=accent!25,rounded corners=2pt,minimum width=7mm,minimum height=4.5mm,inner sep=0pt},
+  pruned/.style={draw=gray,dashed,fill=white,rounded corners=2pt,minimum width=7mm,minimum height=4.5mm,inner sep=0pt},
+  doc/.style={circle,draw=accent,fill=accent!25,minimum size=2.4mm,inner sep=0pt},
+  lvl/.style={font=\scriptsize,anchor=west,text=gray}]
+  % flat
+  \node[font=\small\bfseries,text=accent] at (2.3,4.65) {Flat baseline};
+  \node[scplain,font=\scriptsize] (qf) at (2.3,3.75) {question $q$ (BGE)};
+  \foreach \r in {0,...,3} \foreach \c in {0,...,8}
+     \node[doc] at ({0.5+0.45*\c},{2.45-0.45*\r}) {};
+  \draw[scarr] (qf) -- (2.3,2.8);
+  \node[font=\scriptsize,align=center] at (2.3,0.35) {every document is scored\\work $=5{,}480$ comparisons};
+  \draw[gray!50] (5.0,-1.3) -- (5.0,4.9);
+  % beam
+  \node[font=\small\bfseries,text=accent] at (10.5,4.65) {Coarse-to-fine beam (toy drawn with $b=2$)};
+  \node[lvl] at (5.25,3.75) {L0};
+  \node[lvl] at (5.25,2.65) {L1};
+  \node[lvl] at (5.25,1.55) {L2};
+  \node[lvl] at (5.25,0.5) {leaves};
+  \node[kept] (c1) at (7.3,3.75) {};  \node[pruned] (c2) at (9.6,3.75) {};
+  \node[kept] (c3) at (11.9,3.75) {}; \node[pruned] (c4) at (14.2,3.75) {};
+  \node[pruned] (d1) at (6.8,2.65) {}; \node[kept] (d2) at (7.8,2.65) {};
+  \node[kept] (d3) at (11.4,2.65) {};  \node[pruned] (d4) at (12.4,2.65) {};
+  \node[pruned] (e1) at (7.3,1.55) {}; \node[kept] (e2) at (8.3,1.55) {};
+  \node[kept] (e3) at (10.9,1.55) {};  \node[pruned] (e4) at (11.9,1.55) {};
+  \foreach \u/\v in {c1/d1,c1/d2,c3/d3,c3/d4,d2/e1,d2/e2,d3/e3,d3/e4}
+     \draw[gray] (\u.south) -- (\v.north);
+  \foreach \x in {8.0,8.3,8.6} { \node[doc] (lf) at (\x,0.5) {}; \draw[gray] (e2.south) -- (lf.north); }
+  \foreach \x in {10.6,10.9,11.2} { \node[doc] (lg) at (\x,0.5) {}; \draw[gray] (e3.south) -- (lg.north); }
+  \node[star,star points=5,star point ratio=2.2,draw=warnline,fill=warnsoft,minimum size=4.2mm,inner sep=0pt] (st) at (14.2,2.65) {};
+  \draw[gray,dashed] (c4.south) -- (st.north);
+  \node[font=\scriptsize,align=center,text width=2.6cm] at (14.3,1.75) {relevant leaf inside a pruned cluster: never scored};
+  \node[font=\scriptsize,align=center] at (10.5,-0.4) {score centroids, keep the $b$ best, open only their children;\\mean work $1{,}711.7$ at beam 3 ($-68.8\%$)};
+  % legend
+  \node[kept,minimum width=5mm,minimum height=3mm] at (7.4,-1.15) {};
+  \node[font=\scriptsize,anchor=west] at (7.75,-1.15) {scored and kept};
+  \node[pruned,minimum width=5mm,minimum height=3mm] at (10.9,-1.15) {};
+  \node[font=\scriptsize,anchor=west] at (11.25,-1.15) {scored, then pruned};
+\end{tikzpicture}
+\caption{Study companion: both systems use the same documents and the same BGE cosine scorer.
+Flat scores all 5{,}480 documents. The beam scores cluster centroids level by level and then only
+the leaves of the surviving level-2 clusters. Pruning is where a relevant leaf can be lost.}
+\label{fig:sc-beam}
+\end{figure}
+
+\noindent\sclab{Say it.} ``At level 0 all twelve centroids are scored and the best $b$ kept;
+only their children are scored at level 1, and again at level 2; then every leaf inside the
+surviving level-2 clusters is scored and sorted. A beam wide enough to keep everything reproduces
+the flat ranking exactly, and a test checks that.'' \sctrap{Trap.} Work is a count of cosine
+comparisons, not latency.
+
+% ---------------- 12. why retrieval failed
+\subsubsection*{Diagram 12: why retrieval failed}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,
+  row/.style={draw=gray!70,fill=white,font=\scriptsize,align=left,text width=6.2cm,inner sep=3pt,anchor=west,minimum height=0.62cm},
+  ann/.style={font=\scriptsize,align=left,text width=3.5cm,anchor=west}]
+  \node[scplain,text width=3.3cm,align=left,font=\scriptsize] (q) at (1.8,2.2)
+     {\textbf{Question (Type A)}\\a long description of a \emph{problem}: ``Which methods, by
+      Feb 2026, are best suited for \dots\ when \dots?''};
+  \node[font=\scriptsize\bfseries,anchor=west] at (5.0,4.55) {Flat ranking for Q3};
+  \node[row,draw=warnline,fill=warnsoft] (r1) at (5.0,3.85)
+     {ranks 1--3: \texttt{[problem]} and \texttt{[task]} nodes that paraphrase the question; their
+      context \emph{mentions} DeepH-E3};
+  \node[row,draw=none] at (5.0,3.0) {\dots};
+  \draw[dashed,gray] (5.0,2.6) -- (11.55,2.6);
+  \node[font=\scriptsize,text=gray,anchor=east] at (11.55,2.78) {top-10 cut-off};
+  \node[row,draw=none] at (5.0,2.2) {\dots};
+  \draw[dashed,gray] (5.0,1.8) -- (11.55,1.8);
+  \node[font=\scriptsize,text=gray,anchor=east] at (11.55,1.98) {top-25 cut-off};
+  \node[row,draw=none] at (5.0,1.4) {\dots};
+  \node[row,draw=accent,fill=soft] (r57) at (5.0,0.65) {rank 57: \texttt{[method]} DeepH-E3};
+  \draw[scarr] (q.east) -- node[above,font=\scriptsize]{BGE} node[below,font=\scriptsize]{cosine} (4.95,2.2);
+  \node[ann] (a1) at (12.2,3.85) {\textbf{evidence hit}\\relevant, but does \emph{not} count};
+  \node[ann] (a2) at (12.2,0.65) {\textbf{target-identity hit}\\what the rule requires, but outside the top 25};
+  \draw[scarr] (a1.west) -- (r1.east);
+  \draw[scarr] (a2.west) -- (r57.east);
+  \node[font=\scriptsize,align=left,anchor=west,text width=15.3cm] at (0.1,-0.45)
+    {\textbf{Best flat ranks of other gold nodes:} MatterSim 31 \textbullet\ xDeepH 106 \textbullet\
+     GNN stress fields 287 \textbullet\ M3GNet 880 \textbullet\ CHGNet 1{,}340 \textbullet\
+     NequIP 1{,}536 \textbullet\ MACE 5{,}437 (of 5{,}480)};
+\end{tikzpicture}
+\caption{Study companion: a long question resembles long problem, task and claim text. A method
+document starts with a short name and scores lower. The declared rule counts only the method node
+itself, so finding evidence \emph{about} the method is not a recovery.}
+\label{fig:sc-whyfail}
+\end{figure}
+
+\noindent\sclab{Say it.} ``The retriever finds the right neighbourhood and ranks the wrong kind
+of node. That is true for the flat baseline too, so the hierarchy has no recall to preserve. A
+positive control (forcing each of the 49 EXACT or ALIAS targets to rank 1) scores 49 out of 49,
+so the scorer works; the ranking is what fails.'' \sctrap{Do not rescue it in the interview.}
+Restricting to method nodes, alias expansion or re-ranking were not applied, because applying
+them after seeing the result would tune on the benchmark.
+
+% ---------------- 13. dashboard
+\subsubsection*{Diagram 13: the result dashboard}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,
+  tt/.style={font=\scriptsize\bfseries,anchor=west},
+  lb/.style={font=\scriptsize,anchor=west},
+  sb/.style={font=\scriptsize,anchor=west,text=gray},
+  vl/.style={font=\scriptsize,anchor=west},
+  cv/.style={font=\scriptsize,anchor=south west,align=left,text width=4.55cm},
+  bs/.style={fill=gray!55,rounded corners=1pt},
+  bt/.style={fill=accent,rounded corners=1pt}]
+  \foreach \px/\py in {0/0,5.4/0,10.8/0,0/-4.2,5.4/-4.2,10.8/-4.2}
+    { \draw[gray!60,rounded corners=4pt] (\px,\py) rectangle ++(5.1,3.9);
+      \fill[warnline] (\px+0.15,\py+0.18) rectangle ++(0.06,0.78); }
+  % A: continuity
+  \begin{scope}[shift={(0,0)}]
+    \node[tt] at (0.1,3.6) {Continuity}; \node[sb] at (0.1,3.25) {mean cross-snapshot ARI};
+    \node[lb] at (0.1,2.6) {static};   \fill[bs] (1.6,2.47) rectangle ++(1.885,0.26); \node[vl] at (3.55,2.6) {0.725};
+    \node[lb] at (0.1,2.1) {temporal}; \fill[bt] (1.6,1.97) rectangle ++(2.319,0.26); \node[vl] at (3.98,2.1) {0.892};
+    \node[lb,text=gray] at (0.1,1.5) {semantic 0.467 \textbullet\ pairwise 0.690};
+    \node[cv] at (0.3,0.1) {2024$\to$2026: static ARI is higher at all three levels.};
+  \end{scope}
+  % B: coherence cost
+  \begin{scope}[shift={(5.4,0)}]
+    \node[tt] at (0.1,3.6) {Coherence cost}; \node[sb] at (0.1,3.25) {mean 2026 BGE coherence};
+    \node[lb] at (0.1,2.6) {static};   \fill[bs] (1.6,2.47) rectangle ++(2.115,0.26); \node[vl] at (3.78,2.6) {0.8134};
+    \node[lb] at (0.1,2.1) {temporal}; \fill[bt] (1.6,1.97) rectangle ++(2.110,0.26); \node[vl] at (3.78,2.1) {0.8114};
+    \node[lb,text=gray] at (0.1,1.5) {difference: 0.002 cosine};
+    \node[cv] at (0.3,0.1) {Semantic-only is more coherent (0.824 to 0.861) and the least stable.};
+  \end{scope}
+  % C: null effect
+  \begin{scope}[shift={(10.8,0)}]
+    \node[tt] at (0.1,3.6) {Beyond chance}; \node[sb] at (0.1,3.25) {effect over null, temporal, 2026};
+    \node[lb] at (0.1,2.8) {L0}; \fill[bt] (0.75,2.69) rectangle ++(0.715,0.22); \node[vl] at (1.52,2.8) {0.0033};
+    \node[lb] at (0.1,2.4)  {L1}; \fill[bt] (0.75,2.29) rectangle ++(1.343,0.22); \node[vl] at (2.15,2.4) {0.0062};
+    \node[lb] at (0.1,2.0) {L2}; \fill[bt] (0.75,1.89) rectangle ++(2.448,0.22); \node[vl] at (3.25,2.0) {0.0113};
+    \node[lb,text=gray] at (0.1,1.5) {all $p=1/101=0.0099$ (the floor)};
+    \node[cv] at (0.3,0.1) {Small absolute effects. Null SD $\approx0.00015$ inflates standardised effects.};
+  \end{scope}
+  % D: retrieval
+  \begin{scope}[shift={(0,-4.2)}]
+    \node[tt] at (0.1,3.6) {Retrieval}; \node[sb] at (0.1,3.25) {complete targets recovered};
+    \node[font=\Large\bfseries,anchor=west] at (0.1,2.65) {0 / 63};
+    \node[lb,text=gray,align=left,text width=2.75cm] at (2.2,2.65) {flat and every beam, top 10 and top 25};
+    \node[lb] at (0.1,2.0) {flat};   \fill[bs] (1.35,1.89) rectangle ++(2.6,0.22);   \node[vl] at (4.0,2.0) {5{,}480};
+    \node[lb] at (0.1,1.6)  {beam 3}; \fill[bt] (1.35,1.49) rectangle ++(0.812,0.22); \node[vl] at (2.22,1.6) {1{,}711.7 comparisons};
+    \node[cv] at (0.3,0.1) {Positive control 49/49: a ranking failure, not a scoring bug. Work is not latency.};
+  \end{scope}
+  % E: dominant cluster
+  \begin{scope}[shift={(5.4,-4.2)}]
+    \node[tt] at (0.1,3.6) {Dominant cluster}; \node[sb] at (0.1,3.25) {2026, level 0};
+    \node[font=\Large\bfseries,anchor=west] at (0.1,2.7) {65\%};
+    \node[lb,text=gray,align=left,text width=3.0cm] at (1.65,2.7) {3{,}765 of 5{,}798 nodes in one super-node};
+    \fill[bt] (0.2,1.9) rectangle ++(3.02,0.26);
+    \fill[gray!25,rounded corners=1pt] (3.27,1.9) rectangle ++(1.58,0.26);
+    \node[lb,text=gray] at (0.1,1.45) {941 $\to$ 1{,}353 $\to$ 2{,}429 $\to$ 3{,}765};
+    \node[cv] at (0.3,0.1) {Budget met does not mean balanced or equally useful.};
+  \end{scope}
+  % F: labels
+  \begin{scope}[shift={(10.8,-4.2)}]
+    \node[tt] at (0.1,3.6) {Label overclaim proxy}; \node[sb] at (0.1,3.25) {temporal variant, lower is better};
+    \node[lb] at (0.1,2.6) {L0}; \fill[bt] (0.75,2.47) rectangle ++(0.954,0.26); \node[vl] at (1.76,2.6) {0.318};
+    \node[lb] at (0.1,2.1) {L1}; \fill[bt] (0.75,1.97) rectangle ++(0.924,0.26); \node[vl] at (1.73,2.1) {0.308};
+    \node[lb,text=gray] at (0.1,1.5) {overall $54/174=0.310$};
+    \node[cv] at (0.3,0.1) {An NLI proxy. Vague glosses are easy to entail. No human check.};
+  \end{scope}
+\end{tikzpicture}
+\caption{Study companion: six headline results, each with the caveat that must be said with it
+(orange bar). All numbers are copied from \cref{sec:results}. Bars start at zero; in the first
+two tiles the scale runs from 0 to 1.}
+\label{fig:sc-dashboard}
+\end{figure}
+
+\noindent\sclab{Read it in one breath.} ``Temporal regularisation buys a lot of continuity
+($0.725\to0.892$) for almost no coherence ($0.002$). Coherence beats chance, by little. Retrieval
+is a negative result for every system. One cluster dominates. Labels are mixed.''
+
+
+% ------------------------------------------------------------------
+\subsection{From the mathematics to the code}
+\label{app:sc-code}
+% ------------------------------------------------------------------
+
+The merge cost $\Delta J(A,B)$ of \cref{sec:deltas} is one short method, \code{Merger.delta},
+in the module \code{hierarchy.py}. It is reproduced here so that every symbol can be pointed at.
+
+\begin{tcolorbox}[colback=white,colframe=gray!60,boxrule=0.4pt,arc=1pt]
+\footnotesize
+\begin{verbatim}
+def delta(self, a, b):
+    na, nb = self.count[a], self.count[b]
+    diff = self.sums[a] / na - self.sums[b] / nb
+    ds = na * nb / (na + nb) * float(diff @ diff) / (4 * self.n)
+    ia, ib = self.inc[a], self.inc[b]
+    if len(ia) > len(ib):
+        ia, ib = ib, ia
+    df = sum(
+        self.coeff[e] * (xlog(m) + xlog(ib[e]) - xlog(m + ib[e]))
+        for e, m in ia.items()
+        if e in ib
+    )
+    dt = 0.0
+    if self.lam and self.shared > 1:
+        ca, cb = self.previous[a], self.previous[b]
+        sa, sb = sum(ca.values()), sum(cb.values())
+        dh = -(xlog(sa + sb) - xlog(sa) - xlog(sb)) / self.shared
+        if len(ca) > len(cb):
+            ca, cb = cb, ca
+        dj = (
+            -sum(
+                xlog(m + cb[k]) - xlog(m) - xlog(cb[k])
+                for k, m in ca.items()
+                if k in cb
+            )
+            / self.shared
+        )
+        dt = (2 * dj - dh) / self.temporal_den
+    return self.alpha * ds + (1 - self.alpha) * df + self.lam * dt
+\end{verbatim}
+\end{tcolorbox}
+
+\begin{table}[H]
+\centering
+\caption{Study companion: symbols of \cref{sec:deltas} and where they live in \code{Merger}.}
+\label{tab:sc-symbols}
+\small
+\begin{tabularx}{\linewidth}{l>{\raggedright\arraybackslash}p{5.7cm}>{\raggedright\arraybackslash}X}
+\toprule
+Mathematics & Code & Meaning\\
+\midrule
+$n_A,\ n_B$ & \tcode{self.count[a]}, \tcode{self.count[b]} & cluster sizes\\
+$\mu_A$ & \tcode{self.sums[a] / na} & centroid, from the stored vector sum\\
+$4|V_t|$ & \tcode{4 * self.n} & normaliser of $S$\\
+$m_{e,A}$ & \tcode{self.inc[a][e]} & endpoints of hyperedge $e$ inside cluster $A$ (from \tcode{collapse})\\
+$w_e/(W\,r_e\log r_e)$ & \tcode{self.coeff[e]} & precomputed once per hyperedge\\
+$\phi(x)=x\log x$ & \tcode{xlog(x)} & with $\phi(0)=0$\\
+$c_{A,k}$ & \tcode{self.previous[a][k]} & shared nodes of $A$ that were in previous cluster $k$\\
+$s_A$ & \tcode{sum(self.previous[a].values())} & shared nodes inside $A$\\
+$N=|U_t|$ & \tcode{self.shared} & nodes present in both snapshots\\
+$2\log N$ & \tcode{self.temporal\us den} & normaliser of $T$\\
+$\Delta H(P)$, $\Delta H(P,P_{t-1})$ & \tcode{dh}, \tcode{dj} & entropy changes of the temporal term\\
+$\alpha$, $\lambda$ & \tcode{self.alpha}, \tcode{self.lam} & $\lambda=0$ unless the variant is temporal and a previous hierarchy exists\\
+$\Delta J(A,B)$ & return value & pushed on the heap by \tcode{push(a, b)}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{studybox}[Why a merge is cheap: every statistic is additive]
+After merging $A$ and $B$ into $C$, \code{Merger.run} does four additions and nothing else:
+\code{count[c] = count[a] + count[b]}, \code{sums[c] = sums[a] + sums[b]},
+\code{inc[c] = inc[a] + inc[b]} (edge multiplicities) and
+\code{previous[c] = previous[a] + previous[b]} (history counts). No member is revisited. The new
+cluster's neighbours are the union of the parents' neighbours, and one fresh $\Delta J$ is
+pushed for each of them.
+\end{studybox}
+
+\begin{table}[H]
+\centering
+\caption{Study companion: concept, function and the test that protects it.}
+\label{tab:sc-codemap}
+\footnotesize
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{4.7cm}>{\raggedright\arraybackslash}X}
+\toprule
+Concept & Function & Test\\
+\midrule
+Strict visibility & \tcode{snapshots.snapshot}, \tcode{snapshots.anomalies} & \tcode{test\us snapshot\us defers\us article}\\
+Candidate graph & \tcode{hierarchy.semantic\us links}; co-membership pairs in \tcode{hierarchy.build} & covered through the build tests\\
+Exact $\Delta J$ & \tcode{Merger.delta} & \tcode{test\us delta\us matches\us full\us objective} (native and pairwise)\\
+Lazy heap & \tcode{Merger.push}, \tcode{Merger.run} & \tcode{test\us heap\us matches\us exact\us current\us candidate\us minimum}\\
+Fallback & \tcode{else} branch of \tcode{Merger.run} & \tcode{test\us disconnected\us candidate\us fallback\us and\us edge\us mass}\\
+Cascade, P1, P2 & \tcode{hierarchy.build}, \tcode{hierarchy.validate} & \tcode{test\us temporal\us and\us laminar\us reproduction}\\
+Collapse (T4) & \tcode{hypergraph.collapse} & \tcode{test\us collapse} (parametrised)\\
+Projection baseline & \tcode{hypergraph.project} & pairwise case of the delta test\\
+Reference $F$ & \tcode{hypergraph.fragmentation} & used as the reference in the delta test\\
+VI & \tcode{temporal.vi} & \tcode{test\us vi\us empty\us singleton\us and\us label\us invariance}\\
+Identity and events & \tcode{temporal.track} & \tcode{test\us birth\us death\us and\us primary\us id\us references}, \tcode{test\us split\us merge\us ignore\us one\us node\us contamination}\\
+ARI, VI, lineage & \tcode{temporal.transition} & ---\\
+Label split and gloss & \tcode{labels.split\us members}, \tcode{labels.generate} & \tcode{test\us labels\us reproducible\us disjoint\us and\us visible}\\
+Overclaim proxy & \tcode{labels.evaluate\us labels}, \tcode{embeddings.NLI} & \tcode{test\us nli\us proxy\us preserves\us unevaluable\us and\us neutral}\\
+Coherence and nulls & \tcode{evaluation.coherence\us value}, \tcode{evaluation.coherence} & \tcode{test\us sparse\us coherence\us matches\us original\us indexed\us sum\us exactly}, \tcode{test\us coherence\us null\us reproducible\us and\us all\us clusters}\\
+$t$-intervals & \tcode{evaluation.stats} & ---\\
+Documents, flat, beam & \tcode{retrieval.documents}, \tcode{retrieval.search} & \tcode{test\us all\us leaf\us beam\us equals\us flat\us and\us work\us trace}\\
+Scoring & \tcode{benchmark.support\us audit}, \tcode{align\us claims}, \tcode{evaluate\us predictions} & \tcode{test\us partial\us not\us promoted\us to\us complete\us composite}, \tcode{test\us identity\us recovery\us positive\us control\us and\us context\us exclusion}\\
+Isolation & order of imports in \tcode{evaluation.execute\us evaluation} & \tcode{test\us benchmark\us isolation\us source}, \tcode{test\us benchmark\us mutation\us does\us not\us change\us predictions}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ------------------------------------------------------------------
+\subsection{Design choices and how to defend them}
+\label{app:sc-defence}
+% ------------------------------------------------------------------
+
+Each row gives the reason stated in the report, the price that should be named in the same
+breath, and the alternative that was rejected. A cell that says ``not established'' means the
+implementation contains no experiment on that point.
+
+{\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{4.3cm}>{\raggedright\arraybackslash}p{4.1cm}>{\raggedright\arraybackslash}p{3.5cm}}
+\caption{Study companion: design choices, their justification, their cost and the rejected
+alternative.}\label{tab:sc-defence}\\
+\toprule
+Choice & Why (as argued in the report) & What it costs & Rejected alternative\\
+\midrule
+\endfirsthead
+\toprule
+Choice & Why (as argued in the report) & What it costs & Rejected alternative\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Native hyperedges in the objective &
+The task requires it (P4). The projection is measurably lossy: 72{,}701 pair instances collapse
+to 70{,}022 pairs and 1{,}510 pairs mix several hyperedges. &
+Incidence maps per cluster. It does not show that hyperedges are irreducible to pairs. &
+Clique projection plus graph clustering, kept as the pairwise baseline.\\
+One joint objective &
+The exchange between meaning and structure is visible in one number, $\alpha$. &
+Equal nominal weight is not equal realised influence ($S\le0.25$, $F\le1$). &
+Two-stage: cluster by meaning, then repair by structure.\\
+Bottom-up greedy merging &
+Laminarity and budgets are free. All three terms have exact local merge costs. &
+No global optimum, no backtracking, dependence on the candidate graph. &
+Spectral hypergraph partitioning: no nested hard budgets; the temporal term would need
+relaxing. Empirical comparison: not established.\\
+Ward-type $S$ on unit MiniLM vectors &
+Closed-form cost from sizes and vector sums, $O(d)$ per candidate. &
+$S$ is capped at $0.25$, so it pulls less than $F$. &
+Other semantic criteria: not established.\\
+Entropy fragmentation $F$ &
+The hyperedge is the unit; comparable across arities; exact cheap update. &
+Merging along hub nodes lowers $F$ a lot, which feeds the dominant cluster. &
+Normalised spectral cut of Zhou et al.\ (the principle is kept).\\
+VI as $T$, level by level &
+A true metric with a merge update from two contingency rows. &
+Non-monotone in $\lambda$; guarantees no ARI or VI value. &
+Stabilising by matching only: names clusters, cannot stabilise them.\\
+$\alpha=0.5$, $\lambda=0.2$, $k=10$ fixed in advance &
+No parameter was tuned on the benchmark. &
+The sensitivity table flatters $\alpha=0.75$ and $\lambda=0.1$ or $0.4$ on a single-snapshot
+diagnostic. They were not adopted. &
+Choosing parameters after seeing results.\\
+Budgets 12 / 40 / 120 &
+$N_0$ lies in the requested 10--15 range; each level is about three times finer. &
+Display budgets, not natural community counts. One cluster holds 65\% of nodes at L0. &
+Estimating a natural number of communities: not established.\\
+Candidates: 10-NN plus co-membership &
+Avoids all $\binom n2$ pairs. $k$ hardly matters (ARI $\ge0.93$ against the primary). &
+Results are proposal-dependent. Brute-force $k$NN is $O(n^2d)$. &
+All pairs at every step.\\
+Strict visibility by \tcode{first\us seen\us year} &
+Temporal honesty: 170 and 134 inconsistent edges are deferred, not included early. &
+Fewer edges than the task guide's illustrative counts. Annual resolution only. &
+Slicing by edge \tcode{year} alone.\\
+Template labels, no LLM &
+Deterministic. Generation and held-out evidence are disjoint. The template is the weakest
+informative claim. &
+Generic, duplicated and citation-like labels (``materials'', two ``carbon'', ``al''). &
+An LLM labeller: listed as future work, constrained to generation evidence.\\
+BGE and a type- and size-preserving null &
+A different ruler than the one used to build, and a strict chance reference. &
+Small absolute effects. BGE is not an expert. &
+Same-encoder coherence. Unconstrained random labels.\\
+Direct-identity retrieval rule, frozen predictions &
+Separates evidence about a method from the method itself. No leakage inside a run. &
+$0/63$ for every system. &
+Post-hoc fixes (method-only candidates, alias expansion, re-ranking): rejected as benchmark
+tuning.\\
+\end{longtable}}
+
+% ------------------------------------------------------------------
+\subsection{Numbers to recall}
+\label{app:sc-numbers}
+% ------------------------------------------------------------------
+
+\begin{table}[H]
+\centering
+\caption{Study companion: the numbers most likely to be asked for. All are copied from the
+report.}
+\label{tab:sc-numbers}
+\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4.4cm}>{\raggedright\arraybackslash}X}
+\toprule
+\multicolumn{2}{l}{\textbf{Data and set-up}}\\
+\midrule
+Graph & 5{,}798 nodes, 1{,}429 hyperedges, 52 papers; 12 node types, 11 relation types\\
+Arity & 2 to 65, median 3; 80.5\% above 2 in 2026\\
+Snapshots (nodes / edges) & 2020: 1{,}505 / 374 \textbullet\ 2022: 2{,}164 / 526 \textbullet\ 2024: 4{,}164 / 983 \textbullet\ 2026: 5{,}798 / 1{,}429\\
+Inconsistent edges & 170 dated before an endpoint was first seen; 134 dated before their article\\
+Projection & 72{,}701 pair instances, 70{,}022 unique pairs, 1{,}510 collision pairs (2.16\%)\\
+Parameters & $\alpha=0.5$, $\lambda=0.2$, $k=10$; budgets 12 / 40 / 120\\
+Controls & 100 nulls (seed 42); 10\% deletion = 143 edges, five seeds; 70/30 label split\\
+Retrieval & 5{,}480 documents (318 authors excluded); context cap 12; beams 1, 3, 5, 10; top 10 and 25\\
+Benchmark & 18 questions (14 Type A, 4 Type B); 63 target occurrences: 48 EXACT, 1 ALIAS, 11 PARTIAL, 1 COMPOSITE, 2 ABSENT; 224 claims, 1 aligned\\
+Engineering & 24 tests; largest build 133 s; full workflow 3{,}040 s; two fresh runs identical\\
+\midrule
+\multicolumn{2}{l}{\textbf{Results}}\\
+\midrule
+Mean cross-snapshot ARI & semantic 0.467, pairwise 0.690, static 0.725, temporal 0.892\\
+2024$\to$2026 ARI (L0 / L1 / L2) & temporal 0.760 / 0.782 / 0.772; static 0.765 / 0.789 / 0.853\\
+2026 coherence (L0 / L1 / L2) & semantic 0.8240 / 0.8407 / 0.8608; pairwise 0.7978 / 0.8008 / 0.8073; static 0.8075 / 0.8120 / 0.8208; temporal 0.8029 / 0.8108 / 0.8205\\
+Mean 2026 coherence & static 0.8134, temporal 0.8114\\
+Effect over null (temporal, 2026) & 0.0033 / 0.0062 / 0.0113; every $p=1/101=0.0099$; null SD about 0.00015\\
+Perturbation ARI (L0 / L1 / L2) & temporal 0.781 / 0.818 / 0.869; static 0.780 / 0.753 / 0.765; pairwise 0.679 / 0.637 / 0.565; semantic 1.000 (edge-blind)\\
+Lineage retention (temporal) & 0.97 to 0.985 in the first two transitions; about 0.89 to 0.90 in the last\\
+Overclaim proxy & temporal 0.318 (L0), 0.308 (L1), overall $54/174=0.310$; static 0.136 at L0\\
+Retrieval & 0 / 63 for flat and all beams; work 5{,}480 against 1{,}711.7 at beam 3 ($-68.8\%$); positive control 49 / 49\\
+Largest L0 cluster & semantic 1{,}601; pairwise 5{,}157; static 3{,}535; temporal 3{,}765 (65\%)\\
+Internal hyperedges (primary) & 88.8\% at L2, 90.5\% at L1, 92.2\% at L0; 111 between super-nodes at L0, 24 of them spanning three or more\\
+Sensitivity (last-transition L0 ARI) & $\lambda=0$: 0.391; $0.1$: 0.881; $0.2$: 0.760; $0.4$: 0.985; $\alpha=0.75$: 0.964\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+
+% ------------------------------------------------------------------
+\clearpage
+\subsection{One hundred interview questions}
+\label{app:qa}
+% ------------------------------------------------------------------
+
+Each entry has a 30-second answer, one to three points for a follow-up, a common trap where
+there is one, and a pointer into the report or the code. Section numbers refer to this report;
+module names refer to \code{clean\_tshc/src/tkh\_abstraction/}.
+
+\subsubsection{Task, data and problem formulation (Q1--Q10)}
+
+\QA{What problem is TSHC trying to solve?}
+{TSHC builds a multi-resolution, human-navigable abstraction of an evolving scientific knowledge
+\emph{hypergraph}. Instead of 5{,}798 fine nodes at once, it produces nested super-nodes at three
+display scales (at most 12, 40 and 120) for four snapshots. The hard part is not compression but
+compression that keeps meaning, native hyperedge structure and continuity over time.}
+{\item Input: 5{,}798 nodes, 1{,}429 hyperedges, 52 papers. Output: one laminar hierarchy per
+snapshot plus an event log.
+\item Three things make it harder than clustering: higher-order relations, evolution, and names
+and numbers that can be trusted.}
+{Calling it ``a clustering method''. The deliverable is a nested, budgeted, labelled, tracked
+hierarchy \emph{and} an evaluation that can be trusted.}
+{\S1.1, \S1.2; abstract.}
+
+\QA{What are P1--P6?}
+{P1 laminar refinement, P2 hard size budgets, P3 semantic coherence, P4 hyperedge fidelity, P5
+temporal stability with trackable identities, P6 faithful and temporally honest labels. P1 and P2
+are structural constraints. P3 to P6 are quality requirements about meaning, higher-order
+structure, evolution and interpretation.}
+{\item Guaranteed: P1, P2 and the structure-preservation half of P4.
+\item Empirical: P3, the degree of P5, and P6 (by a proxy).}
+{Saying ``all six are satisfied''. Only P1, P2 and P4's preservation are guarantees.}
+{\S1.2; \cref{tab:properties}; \cref{fig:sc-pmap}.}
+
+\QA{Why is this not just ordinary clustering?}
+{Ordinary clustering gives one partition. The task needs a nested hierarchy at several
+resolutions with hard cluster-count budgets, persistence across snapshots, labels, and preserved
+hyperedges. It also demands controls against circular evaluation and an extrinsic retrieval task.}
+{\item An algorithm can always output a hierarchy. That is different from showing that the data
+has hierarchical community structure.
+\item The task weights evaluation validity (30\%) above method design (25\%).}
+{}
+{\S1.1, \S2.3 (``Displayed versus natural hierarchy''); assessment text, section 7.}
+
+\QA{Why are hypergraphs necessary here?}
+{One extracted relation can involve many entities at once: a single \code{evaluated\_on} relation
+can connect a method, several datasets and several metrics. A graph edge joins exactly two nodes,
+so it cannot state that all of them took part in \emph{one} relation. In this data 80.5\% of
+hyperedges have arity above 2 and the largest has 65 endpoints.}
+{\item Median arity is 3 in every snapshot; the mean rises from 5.57 (2020) to 6.25 (2026).
+\item An ordinary graph is the special case in which every arity is 2.}
+{Claiming hyperedges are provably irreducible. The report only guarantees that identity, arity
+and grouping are kept.}
+{\S2.1, \S3.4; \cref{tab:snapshots}.}
+
+\QA{Why is sampling or degree-thresholding not enough?}
+{They make the view smaller, not more meaningful. They can drop important low-degree concepts and
+give no guarantee that what remains is a coherent idea. TSHC aggregates instead of discarding:
+every original node stays represented in exactly one super-node at each level.}
+{\item ``Every node exactly once per level'' is checked by \code{hierarchy.validate}.
+\item The task text itself names sampling and thresholding as the naive solution.}
+{}
+{Assessment text, section 1; \S5.7 (\code{validate}).}
+
+\QA{Why are the display budgets 12, 40 and 120?}
+{They are display budgets for human navigation, not estimates of a true number of communities.
+12 lies inside the 10--15 range the task asks for at the coarsest level, and each level is roughly
+a factor of three finer than the one above.}
+{\item The task calls the budget a hard display constraint, not a soft objective.
+\item That these are \emph{useful} granularities is listed as assumed, not verified.}
+{Saying ``the data has 12 communities''.}
+{\S4.1; \cref{tab:verified}.}
+
+\QA{Which snapshots are used?}
+{Four cumulative snapshots: 2020, 2022, 2024 and 2026. Each contains only the nodes and
+hyperedges that pass the strict visibility rule by that year. Sizes in nodes/edges:
+1{,}505/374, 2{,}164/526, 4{,}164/983 and 5{,}798/1{,}429.}
+{\item The largest jump is 2022$\to$2024, with $+92.4\%$ nodes.
+\item Cumulative snapshots mean nodes never disappear, hence no death events.}
+{}
+{\S3.3; \cref{tab:snapshots}; \tcode{snapshots.py}.}
+
+\QA{What is the difference between \tcode{origin\us year} and \tcode{first\us seen\us year}?}
+{\code{origin\_year} is when the thing was introduced in the world. \code{first\_seen\_year} is
+the earliest corpus paper that mentions it. TSHC uses \code{first\_seen\_year} for visibility,
+because a snapshot at year $t$ may only assert what the corpus had seen by $t$.}
+{\item This distinction is the hook for P6 temporal honesty named in the task.
+\item Surface forms and pretrained language models are not historically versioned (a stated
+limitation).}
+{Using \code{origin\_year} would let a 2020 snapshot contain an entity the corpus first mentions
+in 2024.}
+{\S3.2; \tcode{snapshots.snapshot}.}
+
+\QA{What is the strict visibility rule?}
+{A node is visible at $t$ iff its \code{first\_seen\_year} is at most $t$. A hyperedge is visible
+iff its own year is at most $t$, the asserting article's year is at most $t$ when known, and
+every endpoint is visible. The whole edge is deferred until all three hold.}
+{\item The endpoint condition prevents dangling edges: \code{h\_00351} to \code{h\_00355} have
+year 2021 but endpoints first seen in 2024.
+\item Consequence: strict edge counts (374, 526, 983) are below the task guide's illustrative
+405, 589, 1063, which used the edge year alone.}
+{}
+{\S3.2 (definition); \tcode{test\us snapshot\us defers\us article}.}
+
+\QA{What data-quality problems did the audit find?}
+{170 hyperedges are dated before the first-seen year of at least one endpoint, and 134 are dated
+before the publication year of the article that asserts them. They are deferred, not silently
+accepted. The benchmark has 18 questions, not 17 as the supplied README says, and dates are
+annual, so the ``by February 2026'' cut-off cannot be enforced.}
+{\item Deferred edges per snapshot: 31, 63, 80 and 0.
+\item Inputs are hashed with SHA-256 and never modified.}
+{}
+{\S3.1, \S3.2; \cref{tab:audit}; \tcode{snapshots.anomalies}, \tcode{scripts/audit\us data.py}.}
+
+\subsubsection{Hypergraphs and projection (Q11--Q19)}
+
+\QA{What information does clique projection lose?}
+{It replaces one arity-$r$ hyperedge by all $\binom r2$ pairs. Once pair weights from
+overlapping hyperedges are summed, you cannot tell which hyperedges produced a pair, what their
+arities were, or how the endpoints were grouped. One ternary relation and three separate pairwise
+relations give the same projected graph.}
+{\item Measured: 1{,}429 hyperedges give 72{,}701 pair instances and 70{,}022 unique pairs;
+1{,}510 pairs (2.16\%) receive weight from more than one hyperedge.
+\item Example: the pair (\code{task\_00001}, \code{task\_00003}) is shared by seven hyperedges.}
+{``Only 2.16\% of pairs collide, so the loss is negligible.'' Arity and grouping are lost for
+every projected hyperedge, not only for the colliding pairs.}
+{\S2.1, \S3.5; \cref{fig:projection}, \cref{fig:sc-projection}; \tcode{hypergraph.project}.}
+
+\QA{How is the pairwise baseline weighted?}
+{An arity-$r$ hyperedge becomes $\binom r2$ pairs, each with weight $1/\binom r2$, so every
+original hyperedge contributes total weight one. For an arity-2 edge the normalised entropy is 1
+if cut and 0 otherwise, so $F$ becomes a normalised weighted cut.}
+{\item Same optimiser, budgets, embeddings and $\alpha=0.5$; $\lambda=0$. That makes it a clean
+ablation of native against projected.
+\item It is a baseline, not the primary representation.}
+{}
+{\S4.9; \cref{tab:variants}; \tcode{hypergraph.project}.}
+
+\QA{What is hyperedge arity?}
+{The number of endpoints of a hyperedge. Here it ranges from 2 to 65 with median 3, and 80.5\% of
+hyperedges have arity above 2 in 2026.}
+{\item Arity enters $F$ through the normaliser $\log r_e$ and the coefficient $1/(r_e\log r_e)$.
+\item Collapse keeps \code{original\_arity} at every level, and the multiplicities always sum to it.}
+{}
+{\S2.1, \S3.4; \cref{fig:arity}.}
+
+\QA{How does TSHC measure hyperedge fragmentation, and why divide by $\log r$?}
+{For each hyperedge it takes the fraction of endpoints in each cluster and computes the Shannon
+entropy of that distribution. The maximum, reached when every endpoint is in a different cluster,
+is $\log r$, so dividing by $\log r$ gives a value in $[0,1]$ that is comparable across arities.
+$F$ is the average over hyperedges.}
+{\item $0$: the whole relation is in one cluster. $1$: fully shattered.
+\item Toy arithmetic: arity 4 split $2{+}2$ gives $0.50$, split $3{+}1$ gives $0.41$.
+\item Without the normaliser an arity-65 edge could contribute up to $\log65\approx4.2$, a pair
+at most $\log2\approx0.69$.}
+{Describing $F$ as a cut count. A cut indicator cannot tell $3{+}1$ from $1{+}1{+}1{+}1$.}
+{\S2.4, \S4.2; \tcode{hypergraph.fragmentation} (reference), \tcode{Merger.delta}.}
+
+\QA{What happens to fragmentation as clusters merge?}
+{At the singleton partition every hyperedge is maximally fragmented, so $F=1$. Merging can only
+bring endpoints together, so $F$ decreases or stays the same, and it reaches 0 when everything is
+one cluster. $S$ moves the other way, which is why the trade-off is real.}
+{\item $\Delta F\le0$ for every merge; it is 0 when no hyperedge touches both clusters.
+\item In the primary 2026 hierarchy 88.8\%, 90.5\% and 92.2\% of hyperedges are fully internal at
+L2, L1 and L0.}
+{}
+{\S4.2, \S4.3; \cref{tab:sizes}.}
+
+\QA{What are the three required T4 collapse cases?}
+{One rule covers all three: map each hyperedge to a multiset of super-nodes. If all $n$ endpoints
+fall in one super-node, the edge becomes an internal edge $\{A{:}n\}$ and is kept. If $1<m<n$ fall
+together, it becomes for example $\{A{:}m,B{:}n-m\}$. If the endpoints span three or more
+super-nodes, it stays a higher-order coarse hyperedge such as $\{A{:}3,B{:}1,C{:}1\}$ and is never
+split into pairs.}
+{\item The multiplicities always sum to the original arity, which the code asserts.
+\item Identifier, relation type, provenance and original arity are kept.}
+{}
+{\S4.5; \cref{fig:collapse}, \cref{fig:sc-collapse}; \tcode{hypergraph.collapse}; \tcode{test\us collapse}.}
+
+\QA{Why keep fully internal hyperedges?}
+{An internal edge is evidence for why the members of that super-node belong together, and the
+label packets use such internal edges. Deleting it would discard provenance and make the coarse
+representation unfaithful to the original relation inventory.}
+{\item They are flagged \code{internal=true}, so a consumer can filter them.
+\item At L0, 1{,}318 of 1{,}429 edges are internal; 111 remain between super-nodes, 24 of them
+spanning three or more.}
+{}
+{\S4.5, \S7.8.}
+
+\QA{What exactly is lost during collapse?}
+{A coarse record says how many endpoints landed in each super-node, but not \emph{which} fine
+nodes inside a super-node took part. That can be recovered from the saved member lists and the
+original input. Parallel edges with identical multisets are kept separately, so the coarse graph
+is larger than a minimal quotient.}
+{\item Kept: identity, arity, multiplicity, relation type, provenance.
+\item Not claimed: that hyperedges carry information no pairwise statistic could encode.}
+{}
+{\S4.5 (``What the rule loses'').}
+
+\QA{Does using native hyperedges prove irreducible higher-order expressivity?}
+{No. The guarantee is narrower: edge identity, grouping, arity and multiplicity are retained and
+used by the objective, whereas the chosen clique projection loses them. The empirical finding is
+that native variants beat this projection on the intrinsic metrics on this corpus.}
+{\item Evidence: pairwise has the lowest coherence, the lowest perturbation ARI, the largest
+giant cluster (5{,}157 nodes at L0) and the most unevaluable labels.
+\item A different pairwise encoding: \nest}
+{Presenting an ablation result as a theorem.}
+{\S4.5, \S8.1.}
+
+\subsubsection{The formal objective (Q20--Q33)}
+
+\QA{What objective does TSHC optimise?}
+{At every snapshot and level it greedily minimises $J=\alpha S+(1-\alpha)F+\lambda T$. $S$ is the
+semantic dispersion of MiniLM embeddings, $F$ is native hyperedge fragmentation, and $T$ is the
+variation of information to the previous snapshot's partition at the same level. The primary
+values are $\alpha=0.5$ and $\lambda=0.2$.}
+{\item $T=0$ in 2020 and whenever fewer than two nodes are shared.
+\item The stopping point is the budget, not a sign change of $\Delta J$.}
+{``Minimises'' means greedy local minimisation under a hard count constraint, not a global
+optimum.}
+{\cref{eq:objective}; \S4.2; \cref{fig:sc-objective}.}
+
+\QA{What is the semantic term $S$, and why divide by $4|V|$?}
+{$S$ is the Ward within-cluster sum of squares of unit MiniLM vectors, divided by $4|V_t|$. The
+squared distance between two unit vectors is at most 4, so the division gives a bounded per-node
+scale. For unit vectors the mean squared deviation from the centroid is $1-\|\mu_C\|^2\le1$, so
+in fact $0\le S\le0.25$.}
+{\item $S$ is small when clusters hold texts of similar meaning, and it increases with every merge.
+\item The embedded text is ``type: surface form'', so identical strings in different roles get
+different vectors.}
+{Assuming $S$ and $F$ span the same range. $S$ is capped at $0.25$; $F$ ranges over $[0,1]$.}
+{\S4.1 (node representation), \S4.2.}
+
+\QA{What is the structural term $F$?}
+{$F$ is the average, over native hyperedges, of the normalised entropy of each edge's endpoint
+distribution across clusters. It rewards keeping all endpoints of a relation in one super-node and
+treats each hyperedge as a unit, not as $\binom r2$ pairs.}
+{\item Range $[0,1]$: 1 at singletons, 0 for a single cluster.
+\item This is where P4 enters the optimiser: the multiplicities $m_{e,C}$ are the collapse output.}
+{}
+{\S4.2; \cref{eq:dF}.}
+
+\QA{What is the temporal term $T$?}
+{$T$ is the VI between the current partition and the previous snapshot's partition at the same
+level, restricted to nodes present in both snapshots and divided by $2\log|U_t|$. New nodes
+contribute nothing, because they have no history to be faithful to.}
+{\item It is level-specific: the $40\to12$ stage is regularised towards the previous level-0
+partition.
+\item Only the temporal variant uses it.
+\item Since $\VI\le\log n$ (\S2.5), $T$ is in fact at most $0.5$; the constant only rescales
+$\lambda$.}
+{}
+{\S4.2, \S4.4 (``The cascade''); \tcode{Merger.previous}, \tcode{temporal\us den}.}
+
+\QA{Why choose $\alpha=0.5$?}
+{To give the two normalised terms equal \emph{nominal} weight without fitting anything to the
+benchmark. The report states that this does not equalise realised influence: $S$ is bounded by
+$0.25$ while $F$ ranges over $[0,1]$, so the structural term pulls harder than its coefficient
+suggests.}
+{\item Sensitivity: $\alpha=0.75$ gives higher L0 coherence ($0.8101$ against $0.8029$) and a
+higher last-transition L0 ARI ($0.964$ against $0.760$).
+\item It was not adopted: that would be outcome-driven tuning on a single-snapshot diagnostic.}
+{``$0.5$ means meaning and structure matter equally.''}
+{\S4.2, \S7.7; \cref{tab:sens}.}
+
+\QA{Why choose $\lambda=0.2$?}
+{It makes history a regulariser and not the dominant force, and it was fixed before any results
+were seen. It is a design choice, not a tuned optimum.}
+{\item The dependence is non-monotone: last-transition L0 ARI is $0.391$ ($\lambda=0$), $0.881$
+($0.1$), $0.760$ ($0.2$) and $0.985$ ($0.4$).
+\item The report's reading: the greedy path interacts with the regulariser in ways a single
+$\lambda$ does not fully control.}
+{Claiming that $0.2$ is optimal.}
+{\S4.2, \S7.7, \S8.2.}
+
+\QA{Why is the structure/semantics trade-off real?}
+{$S$ can only grow as clusters merge, because clusters become less homogeneous, and $F$ can only
+shrink, because more endpoints end up together. The two terms pull in opposite directions at every
+merge, so $\alpha$ sets a real exchange rate.}
+{\item Visible in the results: every structure-aware variant is less coherent than semantic-only
+(2026 L0: $0.798$ to $0.808$ against $0.824$).
+\item And semantic-only is the least stable over time (mean ARI $0.467$).}
+{}
+{\S4.2, \S8.1; \cref{tab:headline}.}
+
+\QA{What is the semantic merge cost?}
+{$\Delta S=\frac{1}{4|V_t|}\cdot\frac{n_An_B}{n_A+n_B}\,\|\mu_A-\mu_B\|^2\ge0$: Ward's increase
+in the within-cluster sum of squares, rescaled. It needs only the two sizes and the two vector
+sums, so it costs $O(d)$.}
+{\item The size factor is about the size of the smaller cluster when the sizes are very unequal.
+\item Code: \code{ds = na*nb/(na+nb) * (diff @ diff) / (4*self.n)}.}
+{}
+{\cref{eq:ward}; \S4.3; \tcode{Merger.delta}.}
+
+\QA{What is the fragmentation merge cost?}
+{Only hyperedges that touch both $A$ and $B$ change. For each such edge the change is the
+coefficient $w_e/(W\,r_e\log r_e)$ times $\phi(m_{e,A})+\phi(m_{e,B})-\phi(m_{e,A}+m_{e,B})$, with
+$\phi(x)=x\log x$. The update is local: the code iterates over the incidence map of the smaller
+cluster.}
+{\item The coefficients are computed once per edge (\code{Merger.coeff}).
+\item Incidence maps add under a merge.}
+{}
+{\cref{eq:dF}; \tcode{Merger.delta}, \tcode{Merger.inc}.}
+
+\QA{Why is $\Delta F\le0$?}
+{Because $\phi(x)=x\log x$ satisfies $\phi(a+b)\ge\phi(a)+\phi(b)$, every bracket in the sum is
+non-positive. In words: combining two categories of a distribution cannot increase its entropy.}
+{\item $\Delta F=0$ exactly when no hyperedge touches both clusters.
+\item This is why hub nodes attract merges: many shared edges mean a large reward.}
+{}
+{\S4.3, \S8.1.}
+
+\QA{How is the temporal merge delta computed?}
+{The engine keeps, for each cluster, the counts of its shared nodes per previous cluster. Merging
+$A$ and $B$ changes only their two rows of the contingency table: $\Delta H(P)$ uses the shared
+totals $s_A,s_B$, and $\Delta H(P,P_{t-1})$ uses the counts $c_{A,k},c_{B,k}$. Then
+$\Delta T=(2\Delta H(P,P_{t-1})-\Delta H(P))/(2\log N)$.}
+{\item If all shared nodes of $A$ and $B$ came from one previous cluster, $\Delta T<0$. If they
+have no previous cluster in common, $\Delta T>0$. A cluster of new nodes only gives $\Delta T=0$.
+\item $H(P_{t-1})$ is constant, so it drops out.}
+{}
+{\S4.3; \tcode{Merger.delta} (\tcode{dh}, \tcode{dj}, \tcode{dt}); \cref{fig:sc-toymerge}.}
+
+\QA{Does the method find the global minimum of $J$?}
+{No. It is deterministic greedy agglomeration over a restricted candidate set. Each step takes
+the exact minimum-cost merge among the \emph{current candidates}, but the merge sequence as a
+whole carries no optimality guarantee.}
+{\item ``That the greedy optimum is close to a global one'' is listed under assumed.
+\item What is verified: the incremental $\Delta J$ equals the full objective difference to
+$10^{-12}$, and the heap returns the true current minimum.}
+{``Exact'' describes the merge costs and the heap, not the solution.}
+{\S4.4 (last paragraph); \cref{tab:verified}.}
+
+\QA{Were $\alpha$, $\lambda$ or $k$ tuned, and what does the sensitivity study show?}
+{Nothing was tuned: the primary values were fixed before benchmark results were seen. The
+one-at-a-time study at 2026 is a dependence diagnostic. $\alpha$ and $\lambda$ change the
+memberships substantially, and $k$ hardly matters (ARI at least $0.93$ against the primary).}
+{\item $\alpha$: ARI against the primary at L0 is $0.698$ ($\alpha=0.25$) and $0.617$ ($0.75$).
+\item $\lambda$: $0.376$ ($\lambda=0$), $0.760$ ($0.1$) and $0.749$ ($0.4$) at L0.
+\item Two results flatter alternatives to the primary setting and are reported anyway.}
+{Presenting the sensitivity table as parameter selection.}
+{\S6.4, \S7.7; \cref{tab:sens}.}
+
+\QA{Which P1--P6 properties are guaranteed and which are empirical?}
+{P1 and P2 are guaranteed by construction and tested. P4's structural preservation is guaranteed;
+whether it gives better partitions is empirical. P3, the degree of P5, and P6 are empirical: the
+VI term encourages stability but guarantees no ARI or VI value, and label faithfulness is measured
+only by a proxy.}
+{\item Proof sketch: only merges, so nested; one merge removes one cluster, so the budget is met.
+\item \code{hierarchy.validate} re-checks every hierarchy before it is written.}
+{}
+{\cref{prop:laminar}; \cref{tab:properties}; \cref{fig:sc-pmap}.}
+
+\subsubsection{Construction algorithm and implementation (Q34--Q48)}
+
+\QA{Why use bottom-up agglomerative clustering?}
+{Every operation merges two existing clusters, so later partitions are coarsenings of earlier
+ones: laminarity is free. The cluster count falls by exactly one per merge, so stopping at 120,
+40 and 12 gives the budgets for free.}
+{\item It also gives closed-form, local merge costs for all three terms.
+\item The price: greedy and without backtracking. An early merge is never undone.}
+{}
+{\S2.3, \S4.4.}
+
+\QA{What is the actual hierarchy cascade?}
+{$P_3$ is all singletons. One continuous merge sequence runs $|V_t|\to120\to40\to12$, and the
+partition is recorded when each budget is reached: $P_2$, $P_1$, $P_0$. Nothing is re-clustered
+between levels.}
+{\item Between stages the hyperedges are re-collapsed onto the current clusters, and the history
+switches to the same level of the previous snapshot.
+\item The candidate graph carries over, re-indexed, with no new proposal search.}
+{Describing it as three independent clusterings.}
+{\cref{alg:tshc}; \S4.4 (``The cascade''); \tcode{hierarchy.build}; \cref{fig:sc-cascade}.}
+
+\QA{Which pairs are allowed as merge candidates?}
+{The union of semantic proposals (each node's 10 nearest MiniLM neighbours, symmetrised) and
+structural proposals (every pair of nodes that co-occur in a hyperedge). The semantic-only variant
+uses only the nearest-neighbour proposals. After a merge, the new cluster's neighbours are the
+union of its parents' neighbours.}
+{\item Structural proposals: 72{,}701 pair instances in the full graph.
+\item If candidates run out, a nearest-centroid fallback exists. It was never triggered.}
+{}
+{\S4.4; \tcode{hierarchy.semantic\us links}, \tcode{hierarchy.build}.}
+
+\QA{Are the structural proposal pairs a pairwise approximation of the objective?}
+{No. Proposals only decide \emph{which} pairs are considered. The cost of every candidate is
+computed with the native objective, from the original hyperedge endpoint multiplicities.}
+{\item Candidate generation and cost evaluation are separate in the code: the \code{links} set
+against \code{Merger.delta}.
+\item Honest caveat: results are proposal-dependent (a listed limitation), although $k$ barely
+matters.}
+{Confusing ``pairs used to propose'' with ``pairs used to score''.}
+{\S4.4.}
+
+\QA{Why use $k=10$ nearest semantic neighbours?}
+{It keeps the candidate graph far smaller than all $n(n-1)/2$ pairs while still proposing
+semantically plausible merges. It was fixed in advance. The sensitivity runs at $k=5$ and $k=20$
+give hierarchies very close to $k=10$: ARI at least $0.93$ at L0 and at least $0.99$ at L1 and L2.}
+{\item A stable sort makes tie-breaking identical on every run.
+\item That $k=10$ is the best value: \nest}
+{}
+{\S4.4; \cref{tab:sens}.}
+
+\QA{What is the lazy heap?}
+{All candidate merge costs sit in a min-heap. After a merge the two parent ids are dead. Entries
+that mention a dead id are stale and are skipped when popped. Entries for the new cluster and each
+of its neighbours are pushed with fresh costs.}
+{\item No decrease-key operation is needed.
+\item Ties are broken by cluster ids, which makes the run deterministic.}
+{}
+{\cref{alg:tshc}; \tcode{Merger.push}, \tcode{Merger.run}.}
+
+\QA{Why can the lazy heap still return the exact current best candidate?}
+{$\Delta J(A,B)$ depends only on the sufficient statistics of $A$ and $B$ and on global
+constants. It changes only if $A$ or $B$ takes part in a merge, and then that cluster disappears
+and gets a new id. So every entry whose two ids are alive carries its current cost, and the
+smallest live entry is the true minimum among current candidates.}
+{\item Verified by \tcode{test\us heap\us matches\us exact\us current\us candidate\us minimum}.
+\item The global constants are $|V_t|$, $W$, $N=|U_t|$, $\alpha$ and $\lambda$.}
+{``Exact'' means exact among current candidates, not globally optimal.}
+{\S4.4 (``Why the lazy heap is exact'').}
+
+\QA{What happens if the candidate graph becomes disconnected?}
+{A deterministic fallback merges the two clusters with the nearest centroids. In all executed
+runs (all variants, snapshots, perturbations and sensitivity runs) it was never triggered.}
+{\item A test covers the fallback and checks that edge mass is preserved.
+\item The stage log records the number of fallbacks per level.}
+{}
+{\S4.4 (``Fallback''); \tcode{Merger.run}; \tcode{test\us disconnected\us candidate\us fallback\us and\us edge\us mass}.}
+
+\QA{What is the main computational bottleneck?}
+{The brute-force nearest-neighbour search, $O(n^2d)$ with $d=384$ (about $3.4\times10^7$
+similarities for $n=5{,}798$), followed by heap work $O((M+Q)\log(M+Q))$. Each $\Delta J$ costs
+$O(d)$ plus the shared incident edges and shared previous clusters. The largest build (temporal,
+2026) took 133 s on a laptop CPU.}
+{\item Hungarian matching is $O(K^3)$ with $K\le120$: negligible.
+\item The full workflow takes 3{,}040 s, dominated by 20 perturbation and 7 sensitivity rebuilds,
+NLI over 832 labels, and the nulls.}
+{}
+{\S4.11, \S5.13, \S7.9.}
+
+\QA{Why is there no scalability claim?}
+{The corpus has 5{,}798 nodes, where brute force is acceptable, and the task excludes scaling
+beyond the sample. Dense candidate sets and many updates can approach quadratic behaviour, so the
+report makes no claim beyond this corpus.}
+{\item Approximate nearest neighbours is the last item of the four-week plan, and only if
+profiling on a larger corpus shows a need.}
+{Quoting 133 s as evidence that the method scales.}
+{\S4.11, \S9.2; assessment text, section 8.}
+
+\QA{How reproducible is the implementation?}
+{Model revisions and package versions are pinned, seeds are fixed (null seed 42; perturbation
+seeds 11, 23, 37, 53, 71), sorting is stable with explicit tie-breakers, and label splits are
+hash-based. Two complete fresh-output runs produced identical scientific metrics, memberships,
+label probabilities and predictions.}
+{\item The embedding cache is keyed by SHA-256 of model, revision and text. A separate-cache
+regeneration of all 18{,}008 embeddings reproduced the cached ones.
+\item Source files are hashed at the start and the end; the run is rejected if any changed.}
+{Reproducibility shows repeatability, not scientific validity.}
+{\S5.5, \S5.13; Appendix~\ref{app:repro}.}
+
+\QA{What do the tests actually protect against?}
+{The 24 tests fall into four groups: optimiser correctness (delta equals the full objective, heap
+minimum, fallback, laminar reproduction), data semantics (collapse multiplicities, edge deferral),
+temporal bookkeeping (birth and death, merge and split thresholds, VI edge cases) and evaluation
+validity (label split, NLI nulls, all-leaf beam equals flat, null reproducibility, sparse
+coherence, partial targets, positive controls, benchmark mutation, source isolation).}
+{\item They target scientific invariants, not line coverage.
+\item \code{verify\_submission.py} re-checks the delivered outputs structurally.}
+{}
+{\S5.13; \cref{tab:sc-codemap}; \tcode{tests/}.}
+
+\QA{Why was spectral hypergraph clustering rejected as the main method?}
+{It does not naturally give nested, hard-budgeted levels, and the temporal term would have to be
+relaxed. TSHC keeps the principle of Zhou et al.\ (penalise cutting a hyperedge, with the edge as
+the unit) but uses entropy fragmentation, which has an exact and cheap merge update.}
+{\item An empirical comparison with a spectral method: \nest\ None was run.}
+{Saying spectral methods are ``worse''. The argument is about fit to the constraints, not measured
+quality.}
+{\S2.4, \S4.12.}
+
+\QA{Why reject a two-stage ``semantic first, structural repair later'' approach?}
+{Two-stage schemes hide the trade-off inside two separate procedures. A single objective with an
+explicit $\alpha$ keeps the exchange between meaning and structure visible and measurable.}
+{\item The task allows a principled two-stage scheme if it is argued, so this is a design choice,
+not a requirement.
+\item That a two-stage scheme would score worse: \nest}
+{}
+{\S4.12; assessment text, task T2.}
+
+\QA{Why reject a learned or neural clustering method?}
+{It would add training assumptions and tuning without any supervision signal, and the task does
+not ask for it (model fine-tuning is out of scope). A small explicit objective is easier to verify
+and to defend.}
+{\item The only learned components are frozen, pinned encoders: MiniLM, BGE and DeBERTa.}
+{}
+{\S4.12; assessment text, section 8.}
+
+\subsubsection{Variants and temporal treatment (Q49--Q57)}
+
+\QA{What are the four compared variants?}
+{\emph{semantic}: $\alpha=1$, $\lambda=0$, nearest-neighbour proposals and Ward cost only.
+\emph{pairwise}: $\alpha=0.5$, $\lambda=0$, clique projection with weights $1/\binom r2$.
+\emph{static}: $\alpha=0.5$, $\lambda=0$, native hyperedges. \emph{temporal}: $\alpha=0.5$,
+$\lambda=0.2$, native hyperedges plus VI to the previous snapshot. Temporal is the primary variant.}
+{\item Same optimiser, budgets and embeddings; only the objective and the candidate set differ.
+\item Each comparison isolates one factor: structure, native against projected, history.}
+{}
+{\cref{tab:variants}; \tcode{hierarchy.build}.}
+
+\QA{Why are static and temporal identical in 2020?}
+{There is no previous snapshot in 2020, so $T$ is set to 0 and $\lambda$ has nothing to act on.
+The two objectives are the same for the first snapshot.}
+{\item In code: \code{lam = cfg["lambda"] if variant == "temporal" and previous else 0.0}.}
+{}
+{\S4.2, \S4.9.}
+
+\QA{What is the difference between temporal regularisation and identity matching?}
+{Regularisation changes the clustering: the $\lambda T$ term makes merges that agree with the
+previous grouping cheaper. Matching happens \emph{after} construction and only decides which new
+super-node inherits which persistent id. Matching is bookkeeping and cannot make an unstable
+clustering stable.}
+{\item Evidence: the static variant also gets matched ids, yet its mean ARI is $0.725$ against
+$0.892$ for temporal.
+\item ``Stabilising by matching only'' is one of the rejected alternatives.}
+{``Hungarian matching stabilises the clusters.''}
+{\S4.6, \S4.12; \cref{fig:sc-temporal}.}
+
+\QA{How does Hungarian matching work here, and why Jaccard?}
+{At each level, compute the Jaccard similarity $|A\cap B|/|A\cup B|$ between every old and every
+new cluster, and solve the one-to-one assignment that maximises total similarity. A new cluster
+matched with non-zero overlap inherits the old persistent id; otherwise it gets a fresh id.
+Jaccard is based on membership, rewards overlap and accounts for size differences.}
+{\item Implementation: \code{scipy.optimize.linear\_sum\_assignment} on the negated matrix, $O(K^3)$
+with $K\le120$.
+\item Fresh ids look like \code{L\{level\}\_\{year\}\_\{index\}}; leaves keep \code{leaf\_<node id>}.
+\item A comparison with other similarity measures: \nest}
+{}
+{\S2.7, \S4.6; \tcode{temporal.track}.}
+
+\QA{What are birth, continuation, growth, merge, split and death?}
+{Birth: a new cluster overlaps no old cluster. Continuation: it inherits an id and acquired no new
+members. Growth: it inherits an id and acquired at least one member. Merge: a new cluster has
+strong overlaps with two or more old clusters. Split: an old cluster has strong overlaps with two
+or more new clusters. Death: an old cluster overlaps no new cluster.}
+{\item Deaths are 0 everywhere, because snapshots are cumulative.
+\item Temporal variant, 2024$\to$2026: 7 births, 84 continuations, 77 growths, 9 merges, 8 splits.}
+{Events describe membership changes, not scientific history.}
+{\cref{tab:events}, \cref{tab:event-counts}; \cref{fig:sc-events}.}
+
+\QA{What counts as a ``strong'' overlap for merge and split events?}
+{At least 2 shared nodes and at least 10\% of the relevant cluster's shared membership: the new
+cluster for a merge, the old cluster for a split. This ignores one-node contamination.}
+{\item Configuration: \code{event\_contribution: 0.1}.
+\item Test: \tcode{test\us split\us merge\us ignore\us one\us node\us contamination}.}
+{}
+{\cref{tab:events}; \tcode{temporal.track}.}
+
+\QA{Are temporal events mutually exclusive?}
+{No. Identity inheritance comes from the one-to-one Hungarian match, while merge and split come
+from the full many-to-many overlap table. A cluster can both inherit an id (growth) and be the
+target of a merge.}
+{\item That is why the event counts of a transition can exceed 172, the number of super-nodes per
+snapshot ($12+40+120$).}
+{}
+{\S4.6.}
+
+\QA{What is lineage retention?}
+{The fraction of nodes shared by two snapshots whose persistent super-node id is unchanged. It is
+a node-level continuity measure that complements the partition-level ARI and VI.}
+{\item Temporal: $0.969$ to $0.985$ in the first two transitions, $0.893$ to $0.897$ in the last.
+\item Static: $0.754$ to $0.901$.
+\item Unlike ARI and VI, it depends on the id assignment made by the matching.}
+{}
+{\cref{tab:vi-lineage}; \tcode{temporal.transition}.}
+
+\QA{Why report both ARI and VI?}
+{ARI counts node pairs and is dominated by very large clusters. VI is information-based and
+responds differently to changes in small clusters. In 2024$\to$2026 they disagree: static has the
+higher ARI at all three levels (L2: $0.853$ against $0.772$), while temporal has the lower
+normalised VI ($0.021$ against $0.045$) and the higher lineage retention.}
+{\item So ``temporal is more stable'' holds on average and by VI and lineage, not at every
+transition by every metric.
+\item The nine ARI values are not independent replications; their mean is descriptive.}
+{``Temporal wins every stability metric.''}
+{\S2.5, \S7.3, \S8.2.}
+
+\subsubsection{Labels and evaluation validity (Q58--Q72)}
+
+\QA{How are label generation and label evaluation separated?}
+{Each cluster is split about 70/30, separately for each node type. The 70\% generation set
+produces the label and the gloss. The 30\% held-out set is the only evidence used for the
+faithfulness check. The code asserts that the two sets are disjoint and together cover the cluster.}
+{\item A type with a single member goes to generation.
+\item A label is evaluable only with at least two held-out non-author members.}
+{The held-out members still come from the same cluster. The split removes text reuse; it does not
+make the check independent of the clustering.}
+{\S4.7; \tcode{labels.split\us members}; \cref{fig:sc-labels}.}
+
+\QA{Why use a hash-based split instead of random sampling?}
+{Ordering the members by SHA-256 of ``seed:id'' is deterministic across runs and needs no mutable
+random state. Stratifying by node type keeps both sets representative of the cluster's
+composition.}
+{\item Seed 42; fraction $0.7$ (\code{label\_generation\_fraction}).}
+{}
+{\S4.7; \tcode{labels.split\us members}.}
+
+\QA{How is the label phrase chosen?}
+{A TF-IDF model over 1--3-grams (English stop words removed) is fitted on the generation members
+of all clusters at that snapshot and level, with authors excluded. The label is the $n$-gram with
+the highest mean TF-IDF weight over the cluster's own generation members, ignoring $n$-grams
+without letters or made only of stop words, and truncated to 6 words.}
+{\item Ties go to the phrase that occurs in the most central representative, then alphabetically.
+\item The fallback label is ``Scientific evidence''.}
+{It often picks generic unigrams: ``materials'', ``feature'', ``layer''.}
+{\S4.7; \tcode{labels.generate}; \cref{tab:l0labels}.}
+
+\QA{How are representative examples chosen?}
+{Non-author generation members are ranked by cosine similarity to the generation-only MiniLM
+centroid. The top two names are quoted in the gloss if they have at most 100 characters.}
+{\item The centroid uses generation members only, so held-out members cannot influence the label.
+\item If neither name is short enough, no name is quoted (the ``---'' rows of \cref{tab:l0labels}).}
+{}
+{\S4.7; \tcode{labels.generate}.}
+
+\QA{What does the gloss claim?}
+{The template is ``This cluster groups evidence concerning $\langle$label$\rangle$, including
+$\langle$rep$_1\rangle$; $\langle$rep$_2\rangle$.'' It claims only that the cluster \emph{contains}
+evidence about the phrase, which is the weakest claim that is still informative.}
+{\item No LLM is used; generation is deterministic.
+\item The price: conservative glosses can be too generic to navigate by.}
+{}
+{\S4.7.}
+
+\QA{What is the overclaim proxy?}
+{The held-out member text (``type: surface form'' lines, capped at 1{,}800 characters) is the NLI
+premise, and the gloss is the hypothesis. An evaluable label scores 1 if the DeBERTa prediction is
+not entailment (neutral or contradiction) and 0 otherwise. The overclaim rate is the mean over
+evaluable labels.}
+{\item Temporal: $0.318$ at L0, $0.308$ at L1, and $54/174=0.310$ overall.
+\item Unevaluable labels stay \code{null}; they are not counted as successes.
+\item Truncation at 512 tokens cuts the premise only, never the gloss.}
+{}
+{\S4.7, \S5.5; \cref{tab:labels}; \tcode{labels.evaluate\us labels}.}
+
+\QA{Why is the NLI score only a proxy?}
+{The DeBERTa model is general-domain, not trained on materials science, and it was never checked
+against human judgement. Vague glosses are easy to entail, so a low rate can reward vagueness, and
+truncation can hide evidence.}
+{\item A high value can also come from generation-only names that are absent from the held-out
+text (\code{notes/statistical\_interpretation.md}).
+\item Replacing the proxy with blinded expert audits is the first item of the four-week plan.}
+{Calling $0.31$ ``the label error rate''.}
+{\S2.9, \S7.5, \S9.1.}
+
+\QA{How is temporal honesty enforced for labels?}
+{Label generation only receives nodes and hyperedges that are visible in the snapshot, and the
+code asserts this before generating. A 2020 label therefore cannot use evidence first seen in 2024.}
+{\item Limit: dates are annual, so material after February 2026 cannot be excluded.
+\item Limit: pretrained encoders and surface forms are not historically versioned.}
+{}
+{\S3.2, \S4.7; assertions in \tcode{labels.generate}.}
+
+\QA{What is the main evaluation circularity hazard?}
+{If MiniLM both builds the clusters and measures their coherence, the method is graded with its
+own ruler and a high score is guaranteed by construction. The same leak applies to labels if the
+faithfulness check uses the text the labeller already saw.}
+{\item A third leak: tuning retrieval on the benchmark that scores it.
+\item The task says this part carries the most weight.}
+{}
+{\S1.2, \S6.1; assessment text, task T6; \cref{fig:sc-barrier}.}
+
+\QA{How is coherence circularity neutralised?}
+{Construction uses MiniLM. Coherence is measured with BGE, a separately trained model family, and
+the code asserts that the two model names differ. Every value is then compared with 100 null
+partitions.}
+{\item Semantic-only stays the most coherent under BGE as well, so that gap is a real property,
+not self-grading.
+\item Assumed, not verified: that BGE similarity reflects an expert's notion of ``same idea''.}
+{``Independent'' means a different model family, not a ground-truth judge.}
+{\S6.1, \S8.3; \tcode{evaluation.execute\us evaluation} (gate H).}
+
+\QA{What does the coherence null model preserve?}
+{Cluster labels are permuted within each node type. Every cluster keeps its size and its exact
+type composition, and only which nodes of a given type sit where is randomised. The code asserts
+both properties.}
+{\item 100 replicates with a fixed seed (42); singletons are treated identically in the
+observation and in the null.
+\item It is a conditional test: conditional on the observed sizes and type counts.}
+{}
+{\S5.11; \tcode{evaluation.coherence}.}
+
+\QA{Why is a type-preserving null stricter than random labels?}
+{Node types already carry semantic signal: a cluster of datasets only looks coherent under any
+encoder. A fully random permutation would create mixed-type clusters and make the method look
+artificially strong. The type-preserving null asks whether the clustering adds coherence
+\emph{beyond} size and type composition.}
+{\item Consequence: small absolute effects ($0.003$ to $0.011$ for temporal) and a very narrow
+null (SD about $0.00015$).
+\item The task's other suggested null (an arity-preserving hypergraph shuffle) was not run: \nest}
+{}
+{\S5.11, \S8.3.}
+
+\QA{Why are all empirical $p$-values $0.0099$?}
+{With 100 null replicates and no replicate reaching the observed coherence, the formula
+$(1+\text{exceedances})/(R+1)$ gives its minimum, $1/101\approx0.0099$. It is a resolution floor,
+not a measured strength of evidence.}
+{\item More replicates would lower the floor; they would not change the effect size.
+\item Twelve comparisons without multiple-comparison correction: descriptive.}
+{``$p=0.0099$ means a huge effect.''}
+{\S2.11; \cref{tab:coherence}.}
+
+\QA{How is perturbation stability evaluated?}
+{At 2026, for each variant, 10\% of the hyperedges (143) are deleted with each of five seeds. The
+hierarchy is rebuilt with the unperturbed 2024 hierarchy as history, and the ARI to the
+unperturbed 2026 hierarchy is computed at levels 0 to 2. Mean, SD and Student-$t$ 95\% intervals
+($n=5$) are reported.}
+{\item Means at L0, L1, L2: temporal $0.781$, $0.818$, $0.869$; static $0.780$, $0.753$, $0.765$;
+pairwise $0.679$, $0.637$, $0.565$.
+\item It measures sensitivity to \emph{current} evidence, not propagated historical damage.
+\item The temporal intervals are wide (SD about $0.1$) and overlap the static ones, so no
+robustness advantage of temporal over static can be claimed.}
+{}
+{\S6.2, \S7.4; \cref{tab:perturb}.}
+
+\QA{Why is the semantic-only perturbation ARI of 1 not impressive?}
+{That variant ignores hyperedges entirely, so deleting hyperedges cannot change its input and the
+hierarchy is identical. The value measures blindness to edges, not robustness.}
+{\item The same variant is the least stable over real time (mean ARI $0.467$).}
+{Reading the top row of the perturbation table as the best result.}
+{\S7.1, \S7.4.}
+
+\subsubsection{Retrieval and benchmark methodology (Q73--Q88)}
+
+\QA{How is benchmark leakage prevented?}
+{Retrieval predictions are written and their SHA-256 is recorded (Gate J) before
+\code{benchmark.py} is imported and the ground truth is read. After scoring, the hash is
+recomputed and asserted equal. Tests check that the construction modules contain no reference to
+the benchmark and that mutating the benchmark does not change the predictions.}
+{\item Annotations for non-exact targets are evaluation-only and are loaded after the freeze.
+\item Honest limit: the benchmark was inspected repeatedly during development, so it is not a
+held-out test set.}
+{A frozen hash prevents leakage inside a run. It does not make the benchmark unseen.}
+{\S5.11 (``Freeze, then score''); \cref{fig:pipeline}; \tcode{test\us benchmark\us isolation\us source}.}
+
+\QA{What are EXACT, ALIAS, PARTIAL, COMPOSITE and ABSENT targets?}
+{EXACT: a node's normalised surface form equals the target. ALIAS: inspected evidence shows that
+another node is the same entity. PARTIAL: only part of the target's identity is present.
+COMPOSITE: the target is a bundle of components. ABSENT: no defensible mapping in the graph. Over
+the 63 occurrences the counts are 48, 1, 11, 1 and 2.}
+{\item Normalisation: NFKC, casefolding, unified typographic hyphens.
+\item Only 28 targets match as \code{method}-type nodes, so any node type is accepted for exact
+identity.
+\item PARTIAL never counts as recovered but stays in the denominator.}
+{}
+{\S5.12, \S6.3; \tcode{benchmark.support\us audit}.}
+
+\QA{What is the difference between direct identity and contextual evidence?}
+{For EXACT and ALIAS targets the target node itself must appear in the top-$k$ ranking. A claim or
+problem document whose context mentions the method does not count. The rule deliberately separates
+``found evidence about X'' from ``returned X as the answer''.}
+{\item A COMPOSITE target counts if all its components appear among the returned documents or
+their context.
+\item This strictness is one of the diagnosed reasons for the $0/63$ result.}
+{}
+{\S5.12, \S8.4; \tcode{benchmark.evaluate\us predictions}; \cref{fig:sc-whyfail}.}
+
+\QA{Why are most expected claims marked unevaluable?}
+{Automatic alignment is strict: only exact claim text plus a resolved matching source article is
+accepted. Semantic nearest neighbours are saved as proposals, not accepted. The graph phrases
+claims differently from the benchmark, so only 1 of 224 expected claims (188 Type A, 36 Type B)
+could be aligned.}
+{\item The others are marked \code{NOT\_EVALUABLE\_ALIGNMENT} instead of being guessed.
+\item The one alignment (Q18.C16) was annotated post hoc, so it is not independent validation.}
+{}
+{\S6.3; \tcode{benchmark.align\us claims}.}
+
+\QA{What does source recovery measure?}
+{The fraction of expected source articles that appear among the source articles of the returned
+documents. It is a coarse topical signal: at $k=10$, flat and beam 3 both reach 75\% on the four
+Type-B questions, and beam 3 reaches 83\% at $k=25$.}
+{\item It does not show that the required claim was retrieved or is entailed.}
+{Presenting 75--83\% as retrieval success.}
+{\S6.3, \S7.6.}
+
+\QA{How is a retrieval document constructed?}
+{Every non-author node becomes a document: its own ``[type] surface form'' line plus at most 12
+deduplicated direct neighbours through content relations, claims first. \code{authored\_by} and
+the broad \code{cites} are excluded. There is no recursive traversal, alias expansion, diffusion
+or re-ranking.}
+{\item The same documents and the same BGE cosine scorer serve both the flat and the beam search.
+\item \code{context\_cap: 12} in the configuration.}
+{}
+{\S4.8; \tcode{retrieval.documents}.}
+
+\QA{What does the flat baseline do, and why are there 5{,}480 documents?}
+{The 2026 snapshot has 5{,}798 nodes, of which 318 are authors; excluding them leaves 5{,}480
+documents. The flat baseline embeds the question with BGE, takes the cosine with every document
+and sorts, so its work is exactly 5{,}480 comparisons per question.}
+{\item A beam wide enough to keep everything reproduces the flat ranking exactly
+(\tcode{test\us all\us leaf\us beam\us equals\us flat\us and\us work\us trace}).}
+{}
+{\S4.8; \tcode{retrieval.search} with \tcode{beam=None}.}
+
+\QA{How does hierarchical beam retrieval work?}
+{Score all level-0 cluster centroids and keep the $b$ best. Score only their children at level 1
+and keep $b$, repeat at level 2, then score every leaf inside the surviving level-2 clusters and
+sort. Documents and scorer are the same as for flat.}
+{\item Work is cluster comparisons plus leaf comparisons.
+\item With $b=3$ the search still scores about 1{,}660 leaves on average, many of them in the
+giant L0 super-node.}
+{}
+{\cref{alg:beam}; \tcode{retrieval.search}; \cref{fig:sc-beam}.}
+
+\QA{Why use normalised cluster centroids?}
+{A cluster is represented by the mean of its members' document vectors, normalised to unit
+length, so its score against the question is a cosine that is comparable across clusters. The risk
+is that a relevant leaf sits in a cluster whose average direction does not look relevant, and is
+pruned.}
+{\item The beam width trades recall against work.
+\item Other cluster representations: \nest\ None was tried.}
+{}
+{\S2.10, \S4.8.}
+
+\QA{What does ``work'' mean in retrieval?}
+{The number of cosine comparisons, cluster plus leaf. It is a deterministic cost proxy. The report
+does not claim that a 69\% reduction in comparisons is a 69\% reduction in latency.}
+{\item Mean work per question: flat 5{,}480; beam 1: 476.9; beam 3: 1{,}711.7; beam 5: 2{,}508.2;
+beam 10: 3{,}030.9.}
+{``The hierarchy makes retrieval three times faster.''}
+{\S4.8, \S9.1; \cref{tab:retrieval}.}
+
+\QA{Why is beam 3 the primary setting?}
+{It was fixed in advance as a moderate setting between work and coverage. Beams 1, 5 and 10 are
+diagnostics. The benchmark result was not used to choose a different beam afterwards.}
+{\item With zero recall for every system, no beam could have been chosen on recall anyway.}
+{}
+{\S4.8; \code{retrieval\_beam: 3} in the configuration.}
+
+\QA{What was the top-10 and top-25 retrieval result?}
+{Every system recovered 0 of 63 Type-A target occurrences at $k=10$ and at $k=25$. Flat used
+5{,}480 comparisons per question and beam 3 used 1{,}711.7, a reduction of 68.8\%. Because flat
+recall is zero, the hierarchy cannot be said to preserve useful recall.}
+{\item Conditional recall over the 61 supported targets is also 0.
+\item Type B: the single aligned claim was recovered in 0 of 10 system and cut-off evaluations.}
+{Leading with ``69\% less work'' and leaving out the zero recall.}
+{\cref{tab:retrieval}; \S7.6.}
+
+\QA{How do you know the evaluator is not simply broken?}
+{A positive control forced each of the 49 EXACT or ALIAS target instances into rank 1 of an
+otherwise unchanged ranking, and the evaluator recovered 49 of 49. Rank inspection shows that the
+gold nodes exist at finite but poor ranks: MatterSim 31, DeepH-E3 57, xDeepH 106, MACE 5{,}437 of
+5{,}480.}
+{\item So the zero is a ranking failure, not a scoring bug.
+\item Test: \tcode{test\us identity\us recovery\us positive\us control\us and\us context\us exclusion}.}
+{}
+{\S7.6 (``Is the evaluator broken?'').}
+
+\QA{Why does flat retrieval fail so badly?}
+{The questions are long descriptions of a problem (``best suited for \dots\ when \dots''). Problem,
+task and claim documents paraphrase such text and win the cosine ranking, while a method document
+is dominated by a short name such as ``MACE''. The representation finds the topical region but
+does not rank the answer entity.}
+{\item Q3: the top three are problem and task nodes whose context mentions DeepH-E3; DeepH-E3
+itself is at rank 57.
+\item Q1: M3GNet 880, CHGNet 1{,}340, NequIP 1{,}536, MACE 5{,}437.}
+{}
+{\S7.6, \S8.4; \cref{fig:sc-whyfail}.}
+
+\QA{Why not fix retrieval after seeing zero recall?}
+{Obvious rescues existed: restrict candidates to method nodes, expand aliases, re-rank. Applying
+them after seeing the result would tune the method on the benchmark that evaluates it. The
+negative result is kept, and the fixes are proposed as pre-registered experiments on a held-out
+question set.}
+{\item The task says honest negative results are valued and unsupported claims cost points.}
+{}
+{\S8.4, \S9.2.}
+
+\QA{What does the retrieval experiment establish?}
+{That the hierarchy reduces comparison work by 45\% to 91\% depending on the beam, and that this
+retrieval design does not rank gold method identities in the top 25, with or without the
+hierarchy. It does not establish downstream utility, because there is no flat recall to preserve.}
+{\item Diagnosed cause: the document and scoring design, plus the dominant cluster for the beam.
+\item That a better document design would make the hierarchy helpful: \nest}
+{}
+{\S7.6 (negative-result box), \S8.4.}
+
+\subsubsection{Results, interpretation and defence (Q89--Q100)}
+
+\QA{What is the key temporal-versus-static result?}
+{Mean cross-snapshot ARI rises from $0.725$ (static) to $0.892$ (temporal), while mean 2026
+coherence across levels falls only from $0.8134$ to $0.8114$. Normalised VI is lower for temporal
+in every transition and level, and lineage retention reaches 97--98\% in the first two transitions.}
+{\item Caveat: in 2024$\to$2026 static has the higher ARI at all three levels.
+\item The mean is over nine dependent values (three transitions, three levels): descriptive.}
+{``Temporal wins everywhere.''}
+{\cref{tab:temporal-ari}, \cref{tab:vi-lineage}; \S8.2; \cref{fig:sc-dashboard}.}
+
+\QA{How should the coherence improvements over the null be interpreted?}
+{They are clear within the 100-replicate test and small in absolute terms. For the temporal
+variant in 2026 the effects are $0.0033$, $0.0062$ and $0.0113$ cosine at L0, L1 and L2.
+Standardised effects of 22 to 70 look large only because the conditional null is very narrow (SD
+about $0.00015$).}
+{\item Once type composition is fixed, much of the apparent coherence is the domain similarity of
+all the texts.
+\item For the temporal variant the effect holds at every level of every snapshot.}
+{}
+{\cref{tab:coherence}, \cref{tab:coh-years}; \S8.3.}
+
+\QA{What does the pairwise baseline show?}
+{Against native hyperedges, the projection gives the lowest coherence, the lowest perturbation
+robustness (its intervals lie entirely below the static ones at all levels), the most extreme
+giant cluster (5{,}157 nodes at L0) and the most unevaluable labels (114 of 160 at L1).}
+{\item It supports keeping native edge identity and multiplicities.
+\item It is evidence about this projection on this corpus, not a theorem about all pairwise
+methods.}
+{}
+{\S8.1; \cref{tab:headline}, \cref{tab:perturb}, \cref{tab:sizes}.}
+
+\QA{What is the dominant-cluster problem?}
+{In the primary 2026 hierarchy one L0 super-node holds 3{,}765 of 5{,}798 nodes (65\%). It grew
+from 941 nodes in 2020 through 1{,}353 and 2{,}429. All structure-aware variants show it. The
+report's reading: hub nodes connect many hyperedges, merging along them lowers $F$ a lot, and $F$
+has more realised influence than $S$.}
+{\item Largest L0 cluster: semantic 1{,}601, static 3{,}535, pairwise 5{,}157.
+\item A size or balance penalty was deliberately not added after seeing the outputs.
+\item The giant cluster also hurts beam retrieval and dominates ARI.}
+{``The budgets are met'' does not mean ``the levels are balanced or equally useful''.}
+{\S7.8, \S8.1; \cref{tab:sizes}.}
+
+\QA{Are the labels good?}
+{Mixed. The temporal overclaim proxy is $0.318$ at L0 and $0.308$ at L1 ($54/174$ overall).
+Several L0 labels are too generic (``materials'', ``feature'', ``layer''), two clusters share
+``carbon'', one is the fallback, and one (``al'') comes from citation-style names typed
+\code{cited\_work}, which escape the author filter.}
+{\item Static is best at L0 ($0.136$); temporal is best at L1 ($0.308$).
+\item Lexical support for temporal: $0.87$ at L0 and $0.71$ at L1.}
+{A low overclaim rate can reward vagueness.}
+{\S7.5; \cref{tab:labels}, \cref{tab:l0labels}.}
+
+\QA{Which variant would you ship, and why?}
+{The temporal native variant, for a hierarchy that must stay navigable while the corpus grows. It
+has much better continuity, coherence close to static and above chance, perturbation robustness at
+least as good as static, and the best L1 label proxy. The recommendation is about continuity.}
+{\item It does not rest on a demonstrated retrieval benefit or on superior label quality.
+\item The dominant cluster must be addressed before any production use.}
+{}
+{\S8.5.}
+
+\QA{What are the biggest limitations?}
+{Greedy, proposal-dependent optimisation. A dominant cluster. A small corpus (52 papers) with
+annual dates. Generic labels checked only by a general-domain NLI proxy. A heterogeneous,
+incomplete and repeatedly inspected benchmark with 1 of 224 claims aligned. Limited statistical
+power (five seeds, three transitions, no multiple-comparison correction). Work counts that are not
+latency.}
+{\item The results are evidence about this implementation on this corpus.}
+{}
+{\S9.1.}
+
+\QA{What claims can you \emph{not} make?}
+{That $J$ is globally minimised. That 12, 40 and 120 are natural community counts. That temporal
+wins every stability metric. That the coherence effects are large. That the labels are verified as
+faithful. That the hierarchy improves retrieval or latency. That the results transfer to other
+corpora or to larger graphs.}
+{\item Also not claimable: that hyperedges are irreducible to pairs; that material after February
+2026 is excluded; that temporal is more perturbation-robust than static.
+\item Each of these is stated as a limitation or an assumption in the report.}
+{}
+{\cref{tab:verified}; \S9.1; Appendix~\ref{app:emergency}.}
+
+\QA{Why should we trust these results?}
+{Because each number has a control behind it: a different encoder for coherence, type- and
+size-preserving nulls, $t$-intervals over five seeds, held-out label evidence, predictions hashed
+before gold was read, and a 49/49 positive control for the scorer. The merge costs are tested
+against the full objective to $10^{-12}$, and two fresh runs reproduced all scientific outputs.}
+{\item Unflattering results are reported: $0/63$, $\alpha=0.75$ looking better, static beating
+temporal on last-transition ARI.
+\item What that trust does not cover: expert validity of the labels, completeness of the gold
+lists, and generalisation.}
+{Controlled and reproducible is not the same as externally validated.}
+{\S6.1; \cref{tab:verified}.}
+
+\QA{What would you change if you did it again?}
+{The things the report itself diagnoses: the dominant cluster (a size-balance or hub-aware term),
+the retrieval formulation (separate ``find the region'' from ``identify the method node''), and
+the labeller (generic unigrams and citation-like names). Each change would be pre-registered and
+tested on held-out questions, not tuned on this benchmark.}
+{\item Evaluation first: blinded expert audits and a genuinely held-out question set.
+\item The report also flags that $S$ ($\le0.25$) and $F$ ($\le1$) have unequal realised
+influence. Revisiting that scaling is a candidate; the report neither proposes nor tests it.
+\item Whether any of these changes helps: \nest}
+{}
+{\S8.1, \S8.4, \S9.2.}
+
+\QA{What would you do with four more weeks?}
+{In priority order: (1) blinded expert audits of labels, gold targets and claim alignments; (2)
+precise publication dates, for month-level cut-offs; (3) a genuinely held-out question set; (4)
+pre-registered fixes for the diagnosed failures (a balance or hub-aware term, method-typed
+candidate sets inside the selected clusters, an LLM labeller constrained to generation evidence);
+(5) approximate nearest neighbours, only if profiling on a larger corpus requires it.}
+{\item The order follows the task's weighting: evaluation validity before method changes.}
+{}
+{\S9.2.}
+
+\QA{What is your one-minute summary?}
+{``I built a deterministic, hypergraph-native, temporally regularised agglomerative hierarchy with
+hard 12/40/120 display budgets. One objective balances MiniLM semantic dispersion, native
+hyperedge fragmentation and VI to the previous snapshot, and the collapse keeps edge identity,
+arity, multiplicity and provenance. I evaluated it with an independent BGE encoder, type- and
+size-preserving nulls, perturbation intervals, held-out label evidence and frozen retrieval
+predictions. Temporal regularisation raises mean ARI from $0.725$ to $0.892$ for $0.002$ of
+coherence, but one cluster holds 65\% of the nodes, the labels are mixed, and retrieval recovers
+$0/63$ even for the flat baseline.''}
+{\item Next steps: blinded expert audits and a held-out question set, then pre-registered fixes
+for balance and answer-entity retrieval.
+\item In one sentence: a modest, explicit method, honestly evaluated; the continuity result is
+solid and the retrieval result is negative.}
+{}
+{Abstract; \S10; Appendix~\ref{app:emergency}.}
+
+\typeout{STUDYLAYER QA COUNT = \theqanum}
+
+
+% ==================================================================
+\clearpage
+\section{Interview Emergency Sheet}
+\label{app:emergency}
+% ==================================================================
+{\footnotesize
+\setlength{\parindent}{0pt}
+\begin{tcolorbox}[colback=soft,colframe=accent,boxrule=0.6pt,arc=2pt,left=3pt,right=3pt,top=0pt,bottom=2pt,
+  before skip=0pt,after skip=5pt]
+\[
+J_t(P)=\alpha\underbrace{\frac{\sum_C\sum_{v\in C}\|x_v-\mu_C\|^2}{4|V_t|}}_{S\text{: meaning scatter, rises per merge}}
++(1-\alpha)\underbrace{\frac{1}{|E_t|}\sum_{e}\frac{H_e(P)}{\log|e|}}_{F\text{: broken relations, falls per merge}}
++\lambda\underbrace{\frac{\VI(P|_{U_t},P_{t-1}|_{U_t})}{2\log|U_t|}}_{T\text{: drift from last snapshot}}
+\]
+\centering $\alpha=0.5$ \textbullet\ $\lambda=0.2$ \textbullet\ $k=10$ \textbullet\ greedy merges
+with exact $\Delta J$ and a lazy heap \textbullet\ one cascade $|V_t|\to120\to40\to12$
+\end{tcolorbox}
+
+\begin{minipage}[t]{0.49\linewidth}
+\sclab{Set-up}\par\vspace{1pt}
+\begin{itemize}[leftmargin=1.1em,itemsep=1.5pt,topsep=0pt,parsep=0pt]
+  \item \textbf{Data:} 5{,}798 nodes, 1{,}429 hyperedges, 52 papers; arity 2--65, 80.5\% above 2.
+  \item \textbf{Snapshots} (nodes/edges): 2020: 1{,}505/374; 2022: 2{,}164/526; 2024: 4{,}164/983;
+        2026: 5{,}798/1{,}429.
+  \item \textbf{Visibility:} \tcode{first\us seen\us year} $\le t$; an edge needs its year, its
+        article and all endpoints.
+  \item \textbf{Hierarchy:} $P_3$ singletons, $P_2\le120$, $P_1\le40$, $P_0\le12$ (display
+        budgets).
+  \item \textbf{Models:} MiniLM builds; BGE judges coherence and retrieves; DeBERTa NLI checks
+        glosses.
+  \item \textbf{Variants:} semantic ($\alpha=1$), pairwise (projection), static ($\lambda=0$),
+        temporal (primary).
+  \item \textbf{Controls:} 100 type/size-preserving nulls; 10\% deletion, 5 seeds; 70/30 label
+        split; predictions hashed before gold.
+\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\linewidth}
+\sclab{P1--P6: guaranteed or measured}\par\vspace{2pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.35cm}@{}}
+\toprule
+ & By construction & Measured\\
+\midrule
+P1 laminar & yes: merges only & nothing to measure\\
+P2 budgets & yes: stop at 120/40/12 & nothing to measure\\
+P3 coherence & no & BGE against nulls\\
+P4 fidelity & edge id, arity, multiplicity kept & partition quality\\
+P5 stability & encouraged by $\lambda T$ & ARI, VI, lineage\\
+P6 labels & conservative template & NLI proxy\\
+\bottomrule
+\end{tabularx}
+\end{minipage}
+
+\vspace{8pt}
+\sclab{Numbers}\par\vspace{1pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{4.3cm}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Mean cross-snapshot ARI & static 0.725 $\to$ temporal 0.892 (semantic 0.467, pairwise 0.690)\\
+Last transition ARI, L0/L1/L2 & temporal 0.760/0.782/0.772; static 0.765/0.789/0.853 (VI and lineage still favour temporal)\\
+Mean 2026 coherence & static 0.8134, temporal 0.8114 (cost 0.002)\\
+Effect over null (temporal) & 0.0033 / 0.0062 / 0.0113; every $p=1/101=0.0099$\\
+Perturbation ARI, L0/L1/L2 & temporal 0.781/0.818/0.869; static 0.780/0.753/0.765; pairwise 0.679/0.637/0.565\\
+Overclaim proxy (temporal) & L0 0.318, L1 0.308; overall $54/174=0.310$\\
+Retrieval & 0/63 for flat and every beam; work 5{,}480 against 1{,}711.7 at beam 3 ($-68.8\%$); control 49/49\\
+Dominant cluster & 3{,}765 of 5{,}798 nodes (65\%) in one L0 super-node; 92.2\% of edges internal at L0\\
+Benchmark & 48 EXACT, 1 ALIAS, 11 PARTIAL, 1 COMPOSITE, 2 ABSENT; 1 of 224 claims aligned\\
+Engineering & 24 tests; 133 s largest build; 3{,}040 s full run; two fresh runs identical\\
+\bottomrule
+\end{tabularx}
+
+\vspace{8pt}
+\begin{minipage}[t]{0.47\linewidth}
+\sctrap{Eight things not to overclaim}\par\vspace{1pt}
+\begin{enumerate}[leftmargin=1.3em,itemsep=1.5pt,topsep=0pt,parsep=0pt]
+  \item A greedy heuristic, not a global optimum.
+  \item 12/40/120 are display budgets, not natural community counts.
+  \item Temporal does not win every metric at every transition.
+  \item Null effects are small in absolute terms; $p=1/101$ is a floor.
+  \item NLI is a proxy, not expert validation.
+  \item Flat and hierarchy both have zero complete top-10 and top-25 target recall.
+  \item Comparison count is not latency.
+  \item Benchmark and claim alignment are limited; the benchmark was inspected.
+\end{enumerate}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\linewidth}
+\sclab{Eight one-line answers}\par\vspace{1pt}
+\begin{enumerate}[leftmargin=1.3em,itemsep=1.5pt,topsep=0pt,parsep=0pt]
+  \item \textbf{Global optimum?} No: each step is the best current candidate.
+  \item \textbf{Why hypergraph-native?} Projection loses edge identity, arity and grouping.
+  \item \textbf{What causes stability?} $\lambda T$ in the objective; matching only names.
+  \item \textbf{Circularity?} MiniLM builds, BGE judges, nulls; held-out labels; hashed predictions.
+  \item \textbf{Why $p=0.0099$ everywhere?} The floor of 100 nulls; effects are 0.003--0.011.
+  \item \textbf{Does it help retrieval?} Not shown: 0/63 for every system.
+  \item \textbf{Semantic ARI of 1?} Edge-blind, not robust.
+  \item \textbf{Next?} Expert audits, held-out questions, then pre-registered fixes.
+\end{enumerate}
+\end{minipage}
+}
 
 \end{document}

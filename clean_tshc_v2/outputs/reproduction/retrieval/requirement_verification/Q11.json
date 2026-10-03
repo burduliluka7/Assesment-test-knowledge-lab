@@ -1,0 +1,721 @@
+{
+  "entity:cite_00049": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "clai_00186",
+        "evidence_text": "Using higher-order E(3)-equivariant representations (increasing rotation order from l=0 to l=1 and up to l=3) consistently reduces prediction error and improves accuracy across all evaluated tasks.",
+        "evidence_link": {
+          "evidence_id": "clai_00186",
+          "field": "claims",
+          "support_kind": "explicit_method_claim",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00792",
+                "relation": "claims",
+                "year": 2021,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5388,
+                  "article_year": 2021
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7055572271347046,
+        "hypothesis": "NequIP supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: NequIP. Relation: explicit_method_claim. Evidence: Using higher-order E(3)-equivariant representations (increasing rotation order from l=0 to l=1 and up to l=3) consistently reduces prediction error and improves accuracy across all evaluated tasks.",
+        "probabilities": {
+          "contradiction": 0.0023853557649999857,
+          "entailment": 0.5722728371620178,
+          "neutral": 0.42534175515174866
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 80,
+        "full_tokens": 80,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00299": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "tech_00109",
+        "evidence_text": "Hierarchical Body‑Order Expansion",
+        "evidence_link": {
+          "evidence_id": "tech_00109",
+          "field": "techniques",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00020",
+                "relation": "uses_technique",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5380,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7406822443008423,
+        "hypothesis": "MACE-MP-0 supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: MACE-MP-0. Relation: validated_method_target. Evidence: Hierarchical Body‑Order Expansion",
+        "probabilities": {
+          "contradiction": 0.0006705260020680726,
+          "entailment": 0.0009528996888548136,
+          "neutral": 0.9983766078948975
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 48,
+        "full_tokens": 48,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00062": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "clai_00644",
+        "evidence_text": "A single universal M3GNet model trained simultaneously on six elements attains error metrics comparable to element‑specific M3GNet models.",
+        "evidence_link": {
+          "evidence_id": "clai_00644",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7212415933609009,
+        "hypothesis": "M3GNet supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: M3GNet. Relation: safe_literal_mention. Evidence: A single universal M3GNet model trained simultaneously on six elements attains error metrics comparable to element‑specific M3GNet models.",
+        "probabilities": {
+          "contradiction": 0.009129307232797146,
+          "entailment": 0.12669247388839722,
+          "neutral": 0.8641781806945801
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 67,
+        "full_tokens": 67,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00335": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "clai_00301",
+        "evidence_text": "MACE-MP0 emerged as the best model for vibrational properties, while ALIGNN-FF demonstrated significant qualitative errors in reproducing phonon band structures.",
+        "evidence_link": {
+          "evidence_id": "clai_00301",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.5146071314811707,
+        "hypothesis": "ALIGNN supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: ALIGNN. Relation: safe_literal_mention. Evidence: MACE-MP0 emerged as the best model for vibrational properties, while ALIGNN-FF demonstrated significant qualitative errors in reproducing phonon band structures.",
+        "probabilities": {
+          "contradiction": 0.0006196057074703276,
+          "entailment": 0.0013414521235972643,
+          "neutral": 0.9980389475822449
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 67,
+        "full_tokens": 67,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00144": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "tech_00183",
+        "evidence_text": "Symmetry‑invariant feature construction",
+        "evidence_link": {
+          "evidence_id": "tech_00183",
+          "field": "techniques",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00053",
+                "relation": "uses_technique",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5386,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7822985649108887,
+        "hypothesis": "Integrable Deep Neural Network (IDNN) for learning high‑dimensional free‑energy density and chemical potential functions supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: Integrable Deep Neural Network (IDNN) for learning high‑dimensional free‑energy density and chemical potential functions. Relation: validated_method_target. Evidence: Symmetry‑invariant feature construction",
+        "probabilities": {
+          "contradiction": 0.003762433072552085,
+          "entailment": 0.0016859618481248617,
+          "neutral": 0.9945515990257263
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 81,
+        "full_tokens": 81,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00010": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "clai_00495",
+        "evidence_text": "Graph networks constitute a universal machine‑learning framework that can accurately predict properties for both molecules and crystals.",
+        "evidence_link": {
+          "evidence_id": "clai_00495",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.6608254909515381,
+        "hypothesis": "Graph Networks supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: Graph Networks. Relation: safe_literal_mention. Evidence: Graph networks constitute a universal machine‑learning framework that can accurately predict properties for both molecules and crystals.",
+        "probabilities": {
+          "contradiction": 0.0004128613509237766,
+          "entailment": 0.004838788881897926,
+          "neutral": 0.9947482943534851
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 55,
+        "full_tokens": 55,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00217": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "tech_00276",
+        "evidence_text": "Linear‑scaling via atomic decomposition",
+        "evidence_link": {
+          "evidence_id": "tech_00276",
+          "field": "techniques",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00087",
+                "relation": "uses_technique",
+                "year": 2017,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5392,
+                  "article_year": 2017
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7602306604385376,
+        "hypothesis": "Deep Potential Molecular Dynamics supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: Deep Potential Molecular Dynamics. Relation: validated_method_target. Evidence: Linear‑scaling via atomic decomposition",
+        "probabilities": {
+          "contradiction": 0.0009191412245854735,
+          "entailment": 0.0006674983305856586,
+          "neutral": 0.9984133243560791
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 45,
+        "full_tokens": 45,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:comp_00273": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "comp_00270",
+        "evidence_text": "Neural local scaling transformation",
+        "evidence_link": {
+          "evidence_id": "comp_00270",
+          "field": "components",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00104",
+                "relation": "uses_component",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5395,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7792717218399048,
+        "hypothesis": "D4FT supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: D4FT. Relation: validated_method_target. Evidence: Neural local scaling transformation",
+        "probabilities": {
+          "contradiction": 0.0006910423398949206,
+          "entailment": 0.0007812469848431647,
+          "neutral": 0.9985276460647583
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 41,
+        "full_tokens": 41,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00128": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "tech_00145",
+        "evidence_text": "RMS normalization of variance features",
+        "evidence_link": {
+          "evidence_id": "tech_00145",
+          "field": "techniques",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00037",
+                "relation": "uses_technique",
+                "year": 2023,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5383,
+                  "article_year": 2023
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7623707056045532,
+        "hypothesis": "E(3)-equivariant Graph Neural Network for phase‑space integration supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: E(3)-equivariant Graph Neural Network for phase‑space integration. Relation: validated_method_target. Evidence: RMS normalization of variance features",
+        "probabilities": {
+          "contradiction": 0.000522890652064234,
+          "entailment": 0.0005419771769084036,
+          "neutral": 0.9989351630210876
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 66,
+        "full_tokens": 66,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00048": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "clai_00606",
+        "evidence_text": "The computational cost of MACE scales O(1) with the number of chemical elements because species embeddings are continuous and not included in the tensor‑product contraction, and higher‑order features are implemented via an efficient single‑loop tensor‑contraction algorithm.",
+        "evidence_link": {
+          "evidence_id": "clai_00606",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7574106454849243,
+        "hypothesis": "MACE supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: MACE. Relation: safe_literal_mention. Evidence: The computational cost of MACE scales O(1) with the number of chemical elements because species embeddings are continuous and not included in the tensor‑product contraction, and higher‑order features are implemented via an efficient single‑loop tensor‑contraction algorithm.",
+        "probabilities": {
+          "contradiction": 0.007824753411114216,
+          "entailment": 0.021313030272722244,
+          "neutral": 0.9708622694015503
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 87,
+        "full_tokens": 87,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00393": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "clai_00606",
+        "evidence_text": "The computational cost of MACE scales O(1) with the number of chemical elements because species embeddings are continuous and not included in the tensor‑product contraction, and higher‑order features are implemented via an efficient single‑loop tensor‑contraction algorithm.",
+        "evidence_link": {
+          "evidence_id": "clai_00606",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7574106454849243,
+        "hypothesis": "ACE with message passing supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: ACE with message passing. Relation: safe_literal_mention. Evidence: The computational cost of MACE scales O(1) with the number of chemical elements because species embeddings are continuous and not included in the tensor‑product contraction, and higher‑order features are implemented via an efficient single‑loop tensor‑contraction algorithm.",
+        "probabilities": {
+          "contradiction": 0.006117979530245066,
+          "entailment": 0.011698187328875065,
+          "neutral": 0.9821838140487671
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 91,
+        "full_tokens": 91,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00153": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Dimer method supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00401": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "clai_00151",
+        "evidence_text": "Incorporating E(3)‑equivariance into the GNN architecture provides a significant performance boost over standard multilayer perceptrons for phase‑space integration tasks.",
+        "evidence_link": {
+          "evidence_id": "clai_00151",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7281812429428101,
+        "hypothesis": "graph-based neural network supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: graph-based neural network. Relation: safe_literal_mention. Evidence: Incorporating E(3)‑equivariance into the GNN architecture provides a significant performance boost over standard multilayer perceptrons for phase‑space integration tasks.",
+        "probabilities": {
+          "contradiction": 0.0015366796869784594,
+          "entailment": 0.005647578276693821,
+          "neutral": 0.9928157329559326
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 72,
+        "full_tokens": 72,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00388": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "comp_00645",
+        "evidence_text": "High body order local features",
+        "evidence_link": {
+          "evidence_id": "comp_00645",
+          "field": "components",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00276",
+                "relation": "uses_component",
+                "year": 2025,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5453,
+                  "article_year": 2025
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7637419700622559,
+        "hypothesis": "MLIP_framework_analysis supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: MLIP_framework_analysis. Relation: validated_method_target. Evidence: High body order local features",
+        "probabilities": {
+          "contradiction": 0.0011550409253686666,
+          "entailment": 0.0008001512615010142,
+          "neutral": 0.9980448484420776
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 48,
+        "full_tokens": 48,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00414": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "tech_00780",
+        "evidence_text": "Node feature and gradient exchange",
+        "evidence_link": {
+          "evidence_id": "tech_00780",
+          "field": "techniques",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00196",
+                "relation": "uses_technique",
+                "year": 2024,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5439,
+                  "article_year": 2024
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.7524359822273254,
+        "hypothesis": "Scalable EquiVariance-Enabled Neural NETwork supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: Scalable EquiVariance-Enabled Neural NETwork. Relation: validated_method_target. Evidence: Node feature and gradient exchange",
+        "probabilities": {
+          "contradiction": 0.0009529806557111442,
+          "entailment": 0.0006336669321171939,
+          "neutral": 0.9984133243560791
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 56,
+        "full_tokens": 56,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00395": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "clai_00644",
+        "evidence_text": "A single universal M3GNet model trained simultaneously on six elements attains error metrics comparable to element‑specific M3GNet models.",
+        "evidence_link": {
+          "evidence_id": "clai_00644",
+          "field": "explicit_mentions",
+          "support_kind": "safe_literal_mention",
+          "candidate_specific": true,
+          "paths": [
+            []
+          ]
+        },
+        "similarity": 0.7212415933609009,
+        "hypothesis": "Three-body Materials Graph Network supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: Three-body Materials Graph Network. Relation: safe_literal_mention. Evidence: A single universal M3GNet model trained simultaneously on six elements attains error metrics comparable to element‑specific M3GNet models.",
+        "probabilities": {
+          "contradiction": 0.004199581686407328,
+          "entailment": 0.05501265451312065,
+          "neutral": 0.9407878518104553
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 71,
+        "full_tokens": 71,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00156": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Harmonic Networks supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00063": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "CHGNet supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:cite_00152": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": null,
+        "evidence_text": null,
+        "evidence_link": null,
+        "similarity": null,
+        "hypothesis": "Nudged Elastic Band supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": null,
+        "probabilities": null,
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication"
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  },
+  "entity:meth_00188": {
+    "components": [
+      {
+        "kind": "core_task",
+        "text": "integrating features from three or more distinct scales simultaneously within a unified framework",
+        "evidence_id": "data_00039",
+        "evidence_text": "Single-element dataset",
+        "evidence_link": {
+          "evidence_id": "data_00039",
+          "field": "datasets",
+          "support_kind": "validated_method_target",
+          "candidate_specific": true,
+          "paths": [
+            [
+              {
+                "hyperedge_id": "h_00072",
+                "relation": "evaluated_on",
+                "year": 2022,
+                "provenance": {
+                  "source": "mvkg",
+                  "article_id": 5390,
+                  "article_year": 2022
+                }
+              }
+            ]
+          ]
+        },
+        "similarity": 0.748117983341217,
+        "hypothesis": "graph neural networks with three-body interactions supports integrating features from three or more distinct scales simultaneously within a unified framework.",
+        "premise": "Candidate: graph neural networks with three-body interactions. Relation: validated_method_target. Evidence: Single-element dataset",
+        "probabilities": {
+          "contradiction": 0.00417880155146122,
+          "entailment": 0.0010811581742018461,
+          "neutral": 0.9947400689125061
+        },
+        "status": "NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE",
+        "interpretation": "NLI proxy over available evidence, not scientific adjudication",
+        "input_tokens": 51,
+        "full_tokens": 51,
+        "proxy_only": true
+      }
+    ],
+    "missing_evidence_is_not_contradiction": true,
+    "tier": 1
+  }
+}

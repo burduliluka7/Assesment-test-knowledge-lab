@@ -1,0 +1,2272 @@
+{
+  "comp_00105": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00105",
+        "text": "NAME: High‑throughput screening pipeline\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": 1.574509620666504,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "meth_00141": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00141",
+        "text": "NAME: quasi-harmonic approximation\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 59,
+    "query_truncated": false,
+    "relevance_score": 0.06961888819932938,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "tech_00166": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00166",
+        "text": "NAME: Free‑energy equality criterion\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -0.6154454946517944,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "tech_00163": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00163",
+        "text": "NAME: Message passing in GCNN\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -1.3919541835784912,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "meth_00140": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00140",
+        "text": "NAME: Uncertainty-aware graph convolutional neural network for vibrational free‑energy prediction\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00509",
+        "text": "DIRECT_CLAIMS: A graph convolutional neural network predicts vibrational free energies with root‑mean‑square errors of 8.23 meV/atom (training), 11.34 meV/atom (validation) and 12.31 meV/atom (test), and its predictions for MgS and NaH polymorphs match DFT‑computed values across the 200–700 K range."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00510",
+        "text": "DIRECT_CLAIMS: Screening of approximately 50 000 inorganic crystals with the machine‑learning model identified over 2 000 temperature‑induced solid‑solid polymorphic transitions between 300 K and 600 K, including 130 stable transitions within the technologically relevant 300 K–350 K interval."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00511",
+        "text": "DIRECT_CLAIMS: Twenty‑one stable polar‑nonpolar transitions are predicted to exhibit relative lattice‑thermal‑conductivity changes of at least 20 % (0.20), ranging up to a 73 % increase for ZrSeO with a conductivity ratio of 1.73."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00512",
+        "text": "DIRECT_CLAIMS: Several predicted solid‑solid transitions show large entropy changes exceeding 300 J K⁻¹ kg⁻¹ (e.g., Li₃MnF₇: 342.3 J K⁻¹ kg⁻¹, PnCl₂: 338.3 J K⁻¹ kg⁻¹, Fe₄OF₇: 252.1 J K⁻¹ kg⁻¹), while the highest entropy changes (> 400 J K⁻¹ kg⁻¹) are limited to transitions above 450 K and occur exclusively in nonpolar‑nonpolar categories, reducing their relevance for room‑temperature applications."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 396,
+    "query_truncated": false,
+    "relevance_score": 1.935797929763794,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "tech_00162": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00162",
+        "text": "NAME: Graph representation of crystal structures\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -2.001725673675537,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "comp_00106": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00106",
+        "text": "NAME: Free‑energy equality transition detector\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -1.1695679426193237,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "comp_00103": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00103",
+        "text": "NAME: Polynomial smoothing of free-energy curve\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -2.6056785583496094,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "comp_00102": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00102",
+        "text": "NAME: ML vibrational free-energy model\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -2.9296088218688965,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "tech_00165": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00165",
+        "text": "NAME: Polynomial fitting of free‑energy vs temperature\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -1.7426426410675049,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "tech_00164": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00164",
+        "text": "NAME: Latent‑space distance based UQ\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -0.9962181448936462,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "comp_00104": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00104",
+        "text": "NAME: Latent‑space distance uncertainty quantification\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -2.463590145111084,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "meth_00142": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00142",
+        "text": "NAME: Graph convolutional neural networks\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -1.142568588256836,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "meth_00151": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00151",
+        "text": "NAME: deal.II library\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 73,
+    "query_truncated": false,
+    "relevance_score": -4.98138427734375,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "meth_00439": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00439",
+        "text": "NAME: CALculation of PHAse Diagram\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -1.9827191829681396,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "meth_00440": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00440",
+        "text": "NAME: variable-selection assisted sure independence screening and sparsifying operator\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 68,
+    "query_truncated": false,
+    "relevance_score": -2.442279577255249,
+    "batch_runtime_seconds": 1.0787440000131028,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.06742150000081892
+  },
+  "cite_00400": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00400",
+        "text": "NAME: CASM\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 73,
+    "query_truncated": false,
+    "relevance_score": -6.608423233032227,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "meth_00378": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00378",
+        "text": "NAME: Inorganic Crystal Structures Database\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 48,
+    "query_truncated": false,
+    "relevance_score": -6.57248067855835,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "comp_00122": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00122",
+        "text": "NAME: Exploitation sampling\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 71,
+    "query_truncated": false,
+    "relevance_score": -5.859158992767334,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "tech_00103": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00103",
+        "text": "NAME: High‑throughput screening\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00077",
+        "text": "DIRECT_CLAIMS: After fine‑tuning, CHGNet serves as a data‑efficient model for high‑precision simulations across diverse chemistries, supporting high‑throughput screening efforts."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00196",
+        "text": "DIRECT_CLAIMS: High‑throughput screening of 188,722 GeNOME crystals with the universal model identifies 21,973 insulators (3,940 direct‑gap) and 5,109 flat‑band materials, nearly doubling the entries in the Materials Flatband Database."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00654",
+        "text": "DIRECT_CLAIMS: High‑throughput screening identified TiP, LiSiNi₂, and CoSi₂ as the most promising Li‑ion battery anode conversion reactions, offering high capacity, moderate voltage, and low volume expansion."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 197,
+    "query_truncated": false,
+    "relevance_score": -0.5482164621353149,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "meth_00062": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00062",
+        "text": "NAME: Umbrella sampling\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 71,
+    "query_truncated": false,
+    "relevance_score": -3.784745693206787,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "meth_00154": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00154",
+        "text": "NAME: Monte Carlo simulation\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 72,
+    "query_truncated": false,
+    "relevance_score": -4.2698283195495605,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "comp_00121": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00121",
+        "text": "NAME: Exploration sampling\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 71,
+    "query_truncated": false,
+    "relevance_score": -5.839568614959717,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "comp_00119": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00119",
+        "text": "NAME: Phase‑field simulation framework\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -5.473807334899902,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "meth_00007": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00007",
+        "text": "NAME: Genetic Algorithms\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 71,
+    "query_truncated": false,
+    "relevance_score": -4.666971206665039,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "tech_00170": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00170",
+        "text": "NAME: Active‑learning‑guided data acquisition\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 76,
+    "query_truncated": false,
+    "relevance_score": -5.427371025085449,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "comp_00112": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00112",
+        "text": "NAME: Large‑scale DFT calculation of anti‑phase‑boundary energy\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 82,
+    "query_truncated": false,
+    "relevance_score": -6.530686378479004,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "meth_00139": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00139",
+        "text": "NAME: Scikit-learn\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 56,
+    "query_truncated": false,
+    "relevance_score": -6.9599690437316895,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "tech_00171": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00171",
+        "text": "NAME: Training of IDNN on chemical‑potential derivative data\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 79,
+    "query_truncated": false,
+    "relevance_score": -6.099625110626221,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "meth_00158": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00158",
+        "text": "NAME: Allen–Cahn phase field model\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 76,
+    "query_truncated": false,
+    "relevance_score": -4.2990217208862305,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "meth_00146": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00146",
+        "text": "NAME: Semi-Grand Canonical Monte Carlo\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 75,
+    "query_truncated": false,
+    "relevance_score": -4.348750591278076,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "cite_00389": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00389",
+        "text": "NAME: deal.II library\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 75,
+    "query_truncated": false,
+    "relevance_score": -7.010503768920898,
+    "batch_runtime_seconds": 0.5057440000091447,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03160900000057154
+  },
+  "meth_00134": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00134",
+        "text": "NAME: Frozen-framework potential energy surface (PES) descriptor screening\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00324",
+        "text": "DIRECT_CLAIMS: The frozen-framework PES descriptor screening ranks lithium-containing Materials Project compounds such that eight of the ten highest‑ranked materials are confirmed to be room‑temperature superionic conductors by first‑principles calculations."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00325",
+        "text": "DIRECT_CLAIMS: The proposed screening method is approximately 50 × faster than molecular dynamics driven by a machine‑learning interatomic potential and at least 3 000 × faster than first‑principles molecular dynamics."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00326",
+        "text": "DIRECT_CLAIMS: The combined descriptor Ξ, defined as the product of sigmoid‑transformed connected and disconnected free‑volume descriptors at a 0.5 eV threshold, achieves higher ranking scores than each individual descriptor and far exceeds random‑guess performance."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00327",
+        "text": "DIRECT_CLAIMS: Free‑volume (FV) descriptors evaluated at energy thresholds between 0.3 eV and 0.5 eV consistently outperform or match the minimal percolation energy (MPE) descriptor across all three evaluation scores."
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00013",
+        "text": "DATASET_METRIC: Matbench Discovery"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00014",
+        "text": "DATASET_METRIC: Kahle2020"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 284,
+    "query_truncated": false,
+    "relevance_score": -3.0814201831817627,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "comp_00111": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00111",
+        "text": "NAME: Coupling of IDNN free‑energy with phase‑field equations\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 81,
+    "query_truncated": false,
+    "relevance_score": -6.466904640197754,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "meth_00143": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00143",
+        "text": "NAME: Materials Project\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00008",
+        "text": "DIRECT_CLAIMS: The Materials Project database contains computed structural, electronic, and energetic data for over 33,000 inorganic compounds, generated using more than 15 million CPU‑hours of computation."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00009",
+        "text": "DIRECT_CLAIMS: The Materials Project provides an open RESTful API and a high‑level Python library (pymatgen) that enable programmatic querying and analysis of the full dataset."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00011",
+        "text": "DIRECT_CLAIMS: Visual warnings are displayed on the Materials Project website for compounds whose calculated oxidation states, cell volumes, or bond lengths deviate significantly from experimental norms, helping users assess data reliability."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00013",
+        "text": "DIRECT_CLAIMS: Using Materials Project tools, researchers designed a new class of sodium‑based carbonophosphate compounds, predicted them to be thermodynamically stable, synthesized them hydrothermally, and experimentally confirmed their Li‑ion battery performance after ion exchange."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00009",
+        "text": "ARTICLE: Machine Learning-Guided Discovery of Temperature-Induced Solid-Solid Phase Transitions in Inorganic Materials"
+      }
+    ],
+    "omitted": [],
+    "token_count": 229,
+    "query_truncated": false,
+    "relevance_score": -3.551758289337158,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "meth_00153": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00153",
+        "text": "NAME: van der Waals density functional\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 75,
+    "query_truncated": false,
+    "relevance_score": -4.805549144744873,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "cite_00405": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00405",
+        "text": "NAME: Allen-Cahn\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 75,
+    "query_truncated": false,
+    "relevance_score": -6.630633354187012,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "cite_00406": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00406",
+        "text": "NAME: deal.II\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -6.8067145347595215,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "meth_00437": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00437",
+        "text": "NAME: two-step supervised-unsupervised melting temperature prediction with symbolic regression\nTYPE: method"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00052",
+        "text": "DIRECT_CLAIMS: A curated dataset of 476 binary ionic compound melting temperatures spanning 0-4,000°C was compiled for machine learning model development."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00053",
+        "text": "DIRECT_CLAIMS: The best one-step gradient-boosted tree regression model achieves 165±4 K MAE and 0.89 R² on the test set for melting temperature prediction."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00054",
+        "text": "DIRECT_CLAIMS: A two-step approach combining unsupervised clustering with supervised regression achieves 156±4 K MAE and 0.92 R², outperforming direct one-step supervised learning."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00055",
+        "text": "DIRECT_CLAIMS: Cluster 1 (198 compounds, mostly ionic halides and oxides) achieves 136±5 K MAE and 0.92 R², while Cluster 2 (222 compounds, mostly covalent carbides and nitrides) achieves 189±7 K MAE and 0.90 R²."
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00216",
+        "text": "DATASET_METRIC: Binary Ionic Compounds Melting Temperature Dataset"
+      },
+      {
+        "field": "dataset_metric",
+        "node_id": "data_00217",
+        "text": "DATASET_METRIC: Inorganic non-metallic compounds melting temperature dataset"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 276,
+    "query_truncated": false,
+    "relevance_score": -4.349506378173828,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "meth_00157": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00157",
+        "text": "NAME: Cahn–Hilliard phase field model\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 77,
+    "query_truncated": false,
+    "relevance_score": -4.144920825958252,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "cite_00396": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00396",
+        "text": "NAME: DFT-FE\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 75,
+    "query_truncated": false,
+    "relevance_score": -6.5869140625,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "comp_00136": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00136",
+        "text": "NAME: Active‑learning sampling workflow\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 75,
+    "query_truncated": false,
+    "relevance_score": -6.452353477478027,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "tech_00149": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00149",
+        "text": "NAME: Breadth‑first search for percolation paths\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -7.376130104064941,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "meth_00137": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00137",
+        "text": "NAME: bond‑valence technique\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 57,
+    "query_truncated": false,
+    "relevance_score": -6.099565029144287,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "comp_00108": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00108",
+        "text": "NAME: Active learning workflow for sampling free‑energy derivative data\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 80,
+    "query_truncated": false,
+    "relevance_score": -6.538764953613281,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "cite_00033": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00033",
+        "text": "NAME: DFT-based simulations\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -5.862768173217773,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "meth_00093": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00093",
+        "text": "NAME: Allen-Cahn equation\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -4.741320610046387,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "cite_00363": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00363",
+        "text": "NAME: Behler‑Parrinello NN\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -8.65887451171875,
+    "batch_runtime_seconds": 0.726213000001735,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.04538831250010844
+  },
+  "comp_00318": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00318",
+        "text": "NAME: Brute‑force screening module\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00023",
+        "text": "ARTICLE: Linking atomic structural defects to mesoscale properties in crystalline solids using graph neural networks"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -8.526264190673828,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "meth_00150": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00150",
+        "text": "NAME: mixed finite element method\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 73,
+    "query_truncated": false,
+    "relevance_score": -3.718702793121338,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "comp_00131": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00131",
+        "text": "NAME: Large‑scale interface‑energy DFT calculations\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 78,
+    "query_truncated": false,
+    "relevance_score": -6.476132869720459,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "tech_00196": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00196",
+        "text": "NAME: Active learning data acquisition\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 73,
+    "query_truncated": false,
+    "relevance_score": -5.800845146179199,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "cite_00398": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00398",
+        "text": "NAME: Pseudodojo\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -6.7089128494262695,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "meth_00155": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00155",
+        "text": "NAME: Finite-element DFT\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -4.325223922729492,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "comp_00084": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00084",
+        "text": "NAME: Breadth‑first search for minimum‑percolation‑energy\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -8.578512191772461,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "tech_00180": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00180",
+        "text": "NAME: Mixed finite‑element method\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -3.6130619049072266,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "comp_00556": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00556",
+        "text": "NAME: DCGAT-2\nTYPE: component"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00501",
+        "text": "DIRECT_CLAIMS: DCGAT-2 dataset contains approximately 780,000 more compounds than DCGAT-1, with 3 to 20 times more compounds containing undersampled chemical elements."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00046",
+        "text": "ARTICLE: Large-scale machine-learning-assisted exploration of the whole materials space"
+      }
+    ],
+    "omitted": [],
+    "token_count": 93,
+    "query_truncated": false,
+    "relevance_score": -9.38390827178955,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "tech_00667": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00667",
+        "text": "NAME: High-throughput screening with MLIPs\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 53,
+    "query_truncated": false,
+    "relevance_score": -3.5853919982910156,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "cite_00401": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00401",
+        "text": "NAME: Umbrella sampling\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 73,
+    "query_truncated": false,
+    "relevance_score": -6.010015487670898,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "tech_00173": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00173",
+        "text": "NAME: Phase‑field simulation using Cahn‑Hilliard and Allen‑Cahn equations\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 85,
+    "query_truncated": false,
+    "relevance_score": -4.455333709716797,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "cite_00407": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00407",
+        "text": "NAME: Phase field\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 73,
+    "query_truncated": false,
+    "relevance_score": -6.440145492553711,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "meth_00152": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00152",
+        "text": "NAME: classical nucleation theory\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -4.883438587188721,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "cite_00035": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00035",
+        "text": "NAME: XGBoost\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -6.312905311584473,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "meth_00147": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00147",
+        "text": "NAME: Cahn-Hilliard equation\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 75,
+    "query_truncated": false,
+    "relevance_score": -4.453488349914551,
+    "batch_runtime_seconds": 0.18048650000127964,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.011280406250079977
+  },
+  "meth_00374": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00374",
+        "text": "NAME: ab initio random structure searching\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 51,
+    "query_truncated": false,
+    "relevance_score": -8.794255256652832,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "tech_00939": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00939",
+        "text": "NAME: Min-max scaling\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -4.748022556304932,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "tech_00191": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00191",
+        "text": "NAME: Genetic algorithm‑driven sparse regression\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 75,
+    "query_truncated": false,
+    "relevance_score": -5.068470478057861,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "meth_00156": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00156",
+        "text": "NAME: Quantum Espresso\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 73,
+    "query_truncated": false,
+    "relevance_score": -4.396888732910156,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "tech_00321": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00321",
+        "text": "NAME: High‑throughput DFT\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00010",
+        "text": "DIRECT_CLAIMS: The workflow software FireWorks together with the custodian job‑management tool automatically manages high‑throughput DFT calculations, self‑heals failed runs, and applies material‑type‑specific workflows."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00032",
+        "text": "ARTICLE: Commentary: The Materials Project: A materials genome approach to accelerating materials innovation"
+      }
+    ],
+    "omitted": [],
+    "token_count": 105,
+    "query_truncated": false,
+    "relevance_score": -7.493247032165527,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "meth_00231": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00231",
+        "text": "NAME: Materials Project high‑throughput computational workflow and open data platform\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00032",
+        "text": "ARTICLE: Commentary: The Materials Project: A materials genome approach to accelerating materials innovation"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00074",
+        "text": "OTHER: density functional theory"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00084",
+        "text": "OTHER: Vienna Ab Initio simulation Package"
+      }
+    ],
+    "omitted": [],
+    "token_count": 79,
+    "query_truncated": false,
+    "relevance_score": -6.698122024536133,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "tech_00729": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00729",
+        "text": "NAME: Initial materials screening\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00050",
+        "text": "ARTICLE: Machine Learning Interatomic Potentials: A Review and Framework for Understanding MLIPs"
+      }
+    ],
+    "omitted": [],
+    "token_count": 58,
+    "query_truncated": false,
+    "relevance_score": -7.865311622619629,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "tech_00361": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00361",
+        "text": "NAME: High‑throughput DFT calculations\nTYPE: technique"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00010",
+        "text": "DIRECT_CLAIMS: The workflow software FireWorks together with the custodian job‑management tool automatically manages high‑throughput DFT calculations, self‑heals failed runs, and applies material‑type‑specific workflows."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00024",
+        "text": "ARTICLE: The Joint Automated Repository for Various Integrated Simulations (JARVIS) for data-driven materials design"
+      }
+    ],
+    "omitted": [],
+    "token_count": 109,
+    "query_truncated": false,
+    "relevance_score": -7.682466983795166,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "tech_00665": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00665",
+        "text": "NAME: Phase-separation energy calculation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00052",
+        "text": "ARTICLE: Scaling deep learning for materials discovery"
+      }
+    ],
+    "omitted": [],
+    "token_count": 49,
+    "query_truncated": false,
+    "relevance_score": -5.950351715087891,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "meth_00084": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00084",
+        "text": "NAME: Vienna Ab Initio simulation Package\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00026",
+        "text": "ARTICLE: Materials Design and Discovery with High-Throughput Density Functional Theory: The Open Quantum Materials Database (OQMD)"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00074",
+        "text": "OTHER: density functional theory"
+      },
+      {
+        "field": "other",
+        "node_id": "meth_00231",
+        "text": "OTHER: Materials Project high‑throughput computational workflow and open data platform"
+      }
+    ],
+    "omitted": [],
+    "token_count": 88,
+    "query_truncated": false,
+    "relevance_score": -6.1717095375061035,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "cite_00281": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00281",
+        "text": "NAME: GGA+U\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 75,
+    "query_truncated": false,
+    "relevance_score": -6.600666522979736,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "tech_00188": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00188",
+        "text": "NAME: Hubbard U calibration\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -5.515227317810059,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "cite_00018": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00018",
+        "text": "NAME: Materials Project\nTYPE: cited_work"
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00008",
+        "text": "DIRECT_CLAIMS: The Materials Project database contains computed structural, electronic, and energetic data for over 33,000 inorganic compounds, generated using more than 15 million CPU‑hours of computation."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00009",
+        "text": "DIRECT_CLAIMS: The Materials Project provides an open RESTful API and a high‑level Python library (pymatgen) that enable programmatic querying and analysis of the full dataset."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00011",
+        "text": "DIRECT_CLAIMS: Visual warnings are displayed on the Materials Project website for compounds whose calculated oxidation states, cell volumes, or bond lengths deviate significantly from experimental norms, helping users assess data reliability."
+      },
+      {
+        "field": "direct_claims",
+        "node_id": "clai_00013",
+        "text": "DIRECT_CLAIMS: Using Materials Project tools, researchers designed a new class of sodium‑based carbonophosphate compounds, predicted them to be thermodynamically stable, synthesized them hydrothermally, and experimentally confirmed their Li‑ion battery performance after ion exchange."
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 228,
+    "query_truncated": false,
+    "relevance_score": -5.171713829040527,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "cite_00394": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00394",
+        "text": "NAME: vdW-DF\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 77,
+    "query_truncated": false,
+    "relevance_score": -6.483304977416992,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "cite_00037": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00037",
+        "text": "NAME: Projector Augmented-Wave Method\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -3.866853952407837,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "cite_00013": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00013",
+        "text": "NAME: CALPHAD\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 61,
+    "query_truncated": false,
+    "relevance_score": -6.407166481018066,
+    "batch_runtime_seconds": 0.5793088000064017,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.03620680000040011
+  },
+  "tech_00960": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00960",
+        "text": "NAME: Random search hyper-parameter optimization\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -3.9687142372131348,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "comp_00850": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00850",
+        "text": "NAME: Hand-picked bond-ionicity features\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -7.086602210998535,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "tech_00152": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00152",
+        "text": "NAME: Sigmoid‑based thresholding and descriptor fusion\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 64,
+    "query_truncated": false,
+    "relevance_score": -6.801241874694824,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "cite_00280": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00280",
+        "text": "NAME: LDA+U\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 75,
+    "query_truncated": false,
+    "relevance_score": -6.679508209228516,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "cite_00022": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00022",
+        "text": "NAME: Calinski-Harabasz score\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -6.5288801193237305,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "meth_00149": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00149",
+        "text": "NAME: Billiard Walk\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 72,
+    "query_truncated": false,
+    "relevance_score": -4.38260555267334,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "tech_00168": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00168",
+        "text": "NAME: Genetic‑algorithm selection of cluster‑expansion basis functions\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 79,
+    "query_truncated": false,
+    "relevance_score": -6.249168872833252,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "meth_00442": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00442",
+        "text": "NAME: PAW method\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 58,
+    "query_truncated": false,
+    "relevance_score": -3.7092342376708984,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "comp_00081": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00081",
+        "text": "NAME: Frozen framework approximation\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 55,
+    "query_truncated": false,
+    "relevance_score": -7.866150379180908,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "tech_00938": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00938",
+        "text": "NAME: Random search\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 58,
+    "query_truncated": false,
+    "relevance_score": -4.667693138122559,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "cite_00402": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00402",
+        "text": "NAME: Parallel Monte Carlo\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -6.7192816734313965,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "meth_00445": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00445",
+        "text": "NAME: Voigt-Reuss-Hill averaging\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 65,
+    "query_truncated": false,
+    "relevance_score": -3.8548665046691895,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "tech_00936": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00936",
+        "text": "NAME: Five-fold cross-validation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 62,
+    "query_truncated": false,
+    "relevance_score": -4.179637908935547,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "tech_00183": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00183",
+        "text": "NAME: Symmetry‑invariant feature construction\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -6.332108497619629,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "meth_00444": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "meth_00444",
+        "text": "NAME: Calinski-Harabasz score\nTYPE: method"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 63,
+    "query_truncated": false,
+    "relevance_score": -4.360953330993652,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "tech_00157": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00157",
+        "text": "NAME: Frozen framework approximation\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00008",
+        "text": "ARTICLE: Predicting ionic conductivity in solids from the machine-learned potential energy landscape"
+      }
+    ],
+    "omitted": [],
+    "token_count": 55,
+    "query_truncated": false,
+    "relevance_score": -6.645576477050781,
+    "batch_runtime_seconds": 0.162829300010344,
+    "batch_size": 16,
+    "runtime_seconds_amortized": 0.0101768312506465
+  },
+  "cite_00021": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "cite_00021",
+        "text": "NAME: Silhouette score\nTYPE: cited_work"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00051",
+        "text": "ARTICLE: Discovering Melting Temperature Prediction Models of Inorganic Solids by Combining Supervised and Unsupervised Learning"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -6.5505170822143555,
+    "batch_runtime_seconds": 0.04552259999036323,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.011380649997590808
+  },
+  "tech_00507": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00507",
+        "text": "NAME: High-throughput screening workflow\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00044",
+        "text": "ARTICLE: Evaluation of Foundational Machine Learned Interatomic Potentials for Migration Barrier Predictions"
+      }
+    ],
+    "omitted": [],
+    "token_count": 60,
+    "query_truncated": false,
+    "relevance_score": -2.3634588718414307,
+    "batch_runtime_seconds": 0.04552259999036323,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.011380649997590808
+  },
+  "tech_00186": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "tech_00186",
+        "text": "NAME: Grid search for gradient parameters\nTYPE: technique"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 74,
+    "query_truncated": false,
+    "relevance_score": -5.462372779846191,
+    "batch_runtime_seconds": 0.04552259999036323,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.011380649997590808
+  },
+  "comp_00133": {
+    "included": [
+      {
+        "field": "identity",
+        "node_id": "comp_00133",
+        "text": "NAME: Symmetry‑adapted order‑parameter generation\nTYPE: component"
+      },
+      {
+        "field": "article",
+        "node_id": "arti_00010",
+        "text": "ARTICLE: Bridging scales with Machine Learning: From first principles statistical mechanics to continuum phase field computations to study order-disorder transitions in LixCoO2"
+      }
+    ],
+    "omitted": [],
+    "token_count": 76,
+    "query_truncated": false,
+    "relevance_score": -6.818924903869629,
+    "batch_runtime_seconds": 0.04552259999036323,
+    "batch_size": 4,
+    "runtime_seconds_amortized": 0.011380649997590808
+  }
+}

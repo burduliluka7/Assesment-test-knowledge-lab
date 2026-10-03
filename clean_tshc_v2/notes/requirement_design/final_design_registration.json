@@ -1,0 +1,55 @@
+{
+  "primary": "A7",
+  "candidate_pool": 500,
+  "evidence_k": 3,
+  "positive_tier1": true,
+  "NLI_threshold": 0.7,
+  "epsilon": 1e-12,
+  "candidate_generation_unchanged_modules": [
+    "entity_index.py",
+    "entity_retrieval.py",
+    "intent.py",
+    "extractive.py"
+  ],
+  "no_training": true,
+  "no_fitted_weights": true,
+  "no_parameter_search": true,
+  "tier_clarification_before_current_evaluation": true,
+  "current_evaluation_has_run": false,
+  "assessment_scope": "V2 flat-retrieval companion; immutable V1 remains temporal hierarchy assessment",
+  "consultations": [
+    {
+      "role": "planner",
+      "model": "claude-opus-5"
+    },
+    {
+      "role": "reviewer",
+      "model": "claude-sonnet-5"
+    },
+    {
+      "role": "assessment_planner",
+      "model": "claude-opus-5"
+    }
+  ],
+  "predictive_policy_sha256": {
+    "config.json": "6b74e607b79a10fe69cdfc538acd7459c1f33561c4f75db4e05823633f302d11",
+    "scripts/predict.py": "a59f621b016b509f71cd60af96c30f53cfc62dc366fb468d3e3e860cb8a96d00",
+    "src/tkh_abstraction_v2/__init__.py": "fa8e06037aa3af2398a2e9f23a52301b717318735d79c38ef4c5b0d0d957ddc5",
+    "src/tkh_abstraction_v2/entity_experiment.py": "ef5cba9656f78e68f60ab282690454510cfd70db4e977555c5126f3287e2aefb",
+    "src/tkh_abstraction_v2/entity_index.py": "40f129796d3d24257c4b6a73d49435501d4c28d346fa24626a6043fa05263460",
+    "src/tkh_abstraction_v2/entity_retrieval.py": "6e54ca30b1e816d4f4f7f333ae929a4ffd36741c79a5cf9d04e1296131c711eb",
+    "src/tkh_abstraction_v2/extractive.py": "4fd0db89ec911d4442b0a1cbf037c6b72902cec3e2de3349fa8a401144dcdc51",
+    "src/tkh_abstraction_v2/freeze.py": "760f7767c11c3ff87d8bfe97f78c5c135c38e4ad64903bf57b5d3b5674208e33",
+    "src/tkh_abstraction_v2/intent.py": "9308a45d0f0d916b98169004fe45a2118a5dc049849ab38042379251db35d410",
+    "src/tkh_abstraction_v2/io.py": "0355d4c6485d35b6b7c533ab59c0169463c2133d617a3ea6e5587d16f57dee29",
+    "src/tkh_abstraction_v2/isolation.py": "25e004112f281e7a5b521bd54d56aa4d1c2c9fcb614fa134d36fdc8a5c9a5635",
+    "src/tkh_abstraction_v2/models.py": "a23e7fc05d422949bc4edbc70b3a161e4d814b4d66f004b2dcd27f647d8a0719",
+    "src/tkh_abstraction_v2/question_understanding.py": "c3f7038d06ee9fa78f4ea4e41dd1175d65992b1f54b86f257b1a71c7fce92bcc",
+    "src/tkh_abstraction_v2/ranking.py": "711d28accd64646576f220269baddd7646388bf0e79b24164d61cd3fbc268ce8",
+    "src/tkh_abstraction_v2/requirement_ranking.py": "0c8dc327b314a1eb58102ac5a0fb1983c50f435c4a1f5a645cc2dc3227e64601",
+    "src/tkh_abstraction_v2/snapshots.py": "a1307f0ec6955e854ce7ae8d902a6417428976154f6431108a2fd147f9785787",
+    "src/tkh_abstraction_v2/v1_documents.py": "338824b75f0d19b07b8ac318e0dd53cfe4b28d25a33b09f8abd45bff700ea749",
+    "src/tkh_abstraction_v2/verification.py": "5eb60286d81a4016ce46cdbf4f7c349bae301d9628e50542494437c14e6b0a2f"
+  },
+  "numeric_comma_fix_before_evaluation": true
+}

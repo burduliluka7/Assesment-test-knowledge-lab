@@ -1,0 +1,326 @@
+You are editing my local assessment report for interview preparation.
+
+## Scope and non-negotiable constraints
+
+Work ONLY with the `clean_tshc` implementation. Completely ignore `rest_of_work/`: do not read it, cite it, import from it, compare to it, or copy any result from it.
+
+Primary file:
+- `clean_tshc/report/full_report.tex`
+
+Output to regenerate:
+- `clean_tshc/report/full_report.pdf`
+
+Supporting sources you MAY use:
+- the supplied assessment text / `ASSESSMENT.md`
+- `clean_tshc/report/full_report.tex`
+- `clean_tshc/report.md`
+- `clean_tshc/README.md`
+- `clean_tshc/references.md`
+- `clean_tshc/AI_USAGE.md`
+- `clean_tshc/configs/default.yaml`
+- `clean_tshc/src/`
+- `clean_tshc/tests/`
+- `clean_tshc/outputs/`
+- `clean_tshc/notes/`
+
+Do NOT use web research unless absolutely necessary to resolve a citation already present in the report. Do NOT introduce facts from outside the clean submission.
+
+Do NOT update GitHub:
+- no commit
+- no push
+- no pull request
+- no staging
+- no remote write
+- do not modify any GitHub issue or branch
+This is a local working-tree edit only.
+
+## Preservation rule: extremely important
+
+Do NOT delete, rewrite, shorten, paraphrase, “improve,” or silently correct any existing sentence, equation, table, figure, result, citation, limitation, or conclusion in `full_report.tex`.
+
+Treat the existing report text as immutable.
+
+You may ONLY ADD new material:
+- explanatory paragraphs
+- intuition boxes
+- worked examples
+- sketches / TikZ diagrams
+- comparison tables
+- memory aids
+- interview warnings
+- an interview Q&A appendix
+
+All original content must remain present, in the same order, with the same meaning and wording. If a compile fix is absolutely necessary, first prove it is a technical compile issue and make the smallest possible technical change; otherwise do not alter existing lines.
+
+Before editing, make a temporary backup OUTSIDE the repository, for example:
+`/tmp/full_report_before_interview.tex`
+
+## Goal
+
+I will be allowed to bring ONE PDF to an interview. I want `full_report.pdf` to become a self-contained interview study document that lets me quickly answer likely technical questions about the model and the assessment.
+
+The current report is technically complete, but I want it to become much easier to understand under interview pressure.
+
+The new material should help me:
+1. explain every important formula intuitively;
+2. draw the model on paper from memory;
+3. defend every design choice;
+4. explain what is guaranteed vs empirical;
+5. explain negative results without overclaiming;
+6. answer skeptical follow-up questions;
+7. recall important numbers quickly;
+8. understand exactly how the code corresponds to the mathematics.
+
+## Source of truth
+
+Use the existing `clean_tshc/report/full_report.tex` and the supplied assessment as the factual source of truth.
+
+If a requested explanation is not supported by the clean implementation or its outputs, write explicitly:
+“Not established by this implementation.”
+Do not invent a justification.
+
+Preserve the report’s existing caution:
+- this is a greedy heuristic, not a global optimum;
+- 12/40/120 are display budgets, not natural community counts;
+- temporal does not win every metric at every transition;
+- null effects are small in absolute terms;
+- NLI is a proxy, not expert validation;
+- flat and hierarchy both have zero complete top-10/top-25 target recall under the declared rule;
+- comparison count is not latency;
+- benchmark and claim alignment are limited.
+
+## Add a new interview-study layer
+
+Prefer ADDING a large appendix near the end, after the existing appendices and before `\end{document}`, so the original report remains intact as a report.
+
+Title it something like:
+
+`Interview Study Companion: Intuition, Diagrams, and 100 Questions`
+
+Also add small explanatory boxes next to difficult existing sections when useful, but only by insertion. Never replace the existing explanation.
+
+### Add these visual explanations
+
+Use the TikZ/tcolorbox packages that are already loaded where possible. Avoid new package dependencies unless essential.
+
+Create clear sketches for at least:
+
+1. **P1-P6 map**
+   - show each property
+   - mark “guaranteed by construction” vs “empirically measured”
+
+2. **Hierarchy cascade**
+   - singleton leaves P3
+   - P2 = 120
+   - P1 = 40
+   - P0 = 12
+   - emphasize one continuous bottom-up merge sequence
+
+3. **Objective intuition**
+   - `J = alpha S + (1-alpha) F + lambda T`
+   - S pulls semantically similar nodes together
+   - F tries to keep native hyperedges unfragmented
+   - T resists unnecessary changes from the previous snapshot
+   - show the three-way tension visually
+
+4. **One worked merge example**
+   - two tiny clusters A and B
+   - explain qualitatively what makes Delta S positive, Delta F negative, and Delta T positive/negative
+   - do NOT invent dataset-specific numbers; use a clearly labeled toy example
+
+5. **Native hyperedge vs clique projection**
+   - one 4- or 5-node relation
+   - show why pairwise projection loses original grouping identity
+
+6. **Hyperedge collapse**
+   - fine edge endpoints mapping to `A,A,A,B,C`
+   - coarse record `{A:3,B:1,C:1}`
+   - show all-internal, partly internal, and >=3-supernode cases
+
+7. **Temporal mechanism**
+   - previous snapshot clusters
+   - VI regularization during construction
+   - Hungarian/Jaccard matching after construction
+   - clearly label “causes stability” vs “bookkeeping only”
+
+8. **Event taxonomy**
+   - birth, continuation, growth, merge, split, death
+   - show that events can overlap
+
+9. **Evaluation circularity barrier**
+   - construction MiniLM on one side
+   - independent BGE coherence on the other
+   - held-out label evidence
+   - predictions frozen/hashed before gold
+   - make the information barrier visually obvious
+
+10. **Label generation**
+    - 70% generation / 30% held-out
+    - TF-IDF phrase -> representatives -> conservative gloss
+    - NLI held-out check
+
+11. **Flat vs beam retrieval**
+    - flat scores all 5,480 documents
+    - beam scores cluster centroids then surviving leaves
+    - show where pruning can lose a relevant leaf
+
+12. **Why retrieval failed**
+    - question resembles claim/problem/task text strongly
+    - exact method identity can rank poorly
+    - distinguish “evidence hit” from “target-identity hit”
+
+13. **Result dashboard**
+    - temporal vs static mean ARI
+    - coherence cost
+    - null-effect caveat
+    - retrieval 0/63
+    - dominant cluster 3,765/5,798
+    - label overclaim proxy
+    - use exact numbers already in the report only
+
+### Add intuition boxes for formulas
+
+For every important formula, add a short `Why this formula?` or `Interview intuition` box without modifying the formula itself:
+
+- Ward merge cost
+- hyperedge entropy fragmentation
+- VI
+- full objective J
+- Delta S
+- Delta F
+- Delta T
+- ARI vs VI
+- empirical p-value with 100 nulls
+- Student-t confidence interval with five seeds
+- coherence as norm of the cluster mean vector
+
+Each box should explain:
+- what changes the quantity;
+- what high/low means;
+- why it is normalized;
+- one likely interviewer misconception.
+
+## Add a 100-question interview appendix
+
+Use the attached/provided file `clean_tshc_interview_100_QA.md` if it is available in the working directory. If not, recreate the 100 questions from the content below or from the clean report.
+
+For EACH question use a compact interview-friendly format:
+
+- **Question**
+- **30-second answer**: 2-4 sentences
+- **If they push further**: 1-3 concise bullets
+- **Common trap**: one sentence when relevant
+- **Where in the report/code**: section name and/or clean_tshc module
+
+Do not make the answers longer just to fill space. Prefer accurate, defensible answers.
+
+The 100 questions must cover:
+- task and P1-P6
+- data and temporal slicing
+- hypergraphs and clique projection
+- objective S/F/T
+- exact merge deltas
+- greedy algorithm and candidate graph
+- collapse rule
+- temporal regularization
+- Hungarian identity matching
+- events
+- label generation
+- held-out faithfulness
+- MiniLM vs BGE independence
+- null model and p-value floor
+- perturbation and CIs
+- flat and beam retrieval
+- benchmark statuses EXACT/ALIAS/PARTIAL/COMPOSITE/ABSENT
+- positive control
+- zero retrieval result
+- variant comparisons
+- dominant cluster
+- sensitivity
+- complexity
+- tests and reproducibility
+- limitations
+- four-more-weeks plan
+- “why should we trust this?”
+- “what would you change?”
+- “what claims can you NOT make?”
+
+## Add a one-page emergency cheat sheet
+
+At the very end, add a single dense but readable page titled:
+
+`Interview Emergency Sheet`
+
+It should contain:
+- the full objective;
+- primary parameters;
+- 12/40/120 hierarchy;
+- 2020/2022/2024/2026 snapshots;
+- MiniLM vs BGE vs DeBERTa roles;
+- P1-P6 guarantee/measurement matrix;
+- the most important result numbers;
+- 8 “do not overclaim” warnings;
+- 8 likely one-line questions with one-line answers.
+
+This page should be readable at normal zoom and not overflow.
+
+## Style
+
+Keep the current visual language:
+- blue `accent`
+- `keybox` for intuition
+- `cautionbox` for traps/limitations
+- existing typography
+- existing TikZ style
+
+The added material should feel like part of the same report, not a separate pasted document.
+
+Use simple language beside the technical version. Whenever a concept is difficult, prefer:
+1. definition,
+2. intuition,
+3. toy example,
+4. implementation mapping,
+5. limitation.
+
+## Verification before finishing
+
+1. Confirm no original report content was removed.
+   - Compare the original backup and edited file in a way that verifies the original text appears in order.
+2. Do not alter scientific JSON, code, metrics, configurations, or outputs.
+3. Compile from `clean_tshc/report/`.
+4. Prefer:
+   `latexmk -pdf -interaction=nonstopmode -halt-on-error full_report.tex`
+   If `latexmk` is unavailable, run `pdflatex -interaction=nonstopmode -halt-on-error full_report.tex` enough times to resolve references/TOC.
+5. Inspect the compile log:
+   - no fatal errors
+   - no undefined references introduced by the new material
+   - minimize overfull boxes
+6. Render the resulting PDF to images and inspect pages with new diagrams/tables.
+7. Check that:
+   - no text is clipped
+   - no TikZ drawing overlaps text
+   - long Q&A boxes break across pages safely
+   - formulas are legible
+   - the emergency sheet fits on one page
+8. Report:
+   - original page count
+   - new page count
+   - sections/appendices added
+   - whether any original line had to be technically changed
+   - compile command used
+   - warnings remaining
+9. Do NOT commit or push anything.
+
+## Final deliverables
+
+Leave locally:
+- updated `clean_tshc/report/full_report.tex`
+- recompiled `clean_tshc/report/full_report.pdf`
+
+Optionally create:
+- `clean_tshc/report/interview_additions_notes.md`
+containing a map of the new appendix and diagrams.
+
+Do not modify anything else unless required for compilation.
+
+The goal is not to make the report sound more impressive. The goal is to make every design choice, formula, result, and limitation easy for me to explain accurately in an interview.

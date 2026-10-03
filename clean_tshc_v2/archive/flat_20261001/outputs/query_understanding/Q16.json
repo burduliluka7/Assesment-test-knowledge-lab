@@ -1,0 +1,54 @@
+{
+  "original_question": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy and data efficiency in comparison with vanilla GNN?",
+  "answer_type": null,
+  "core_task": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy and data efficiency in comparison",
+  "requirements": [
+    "vanilla GNN"
+  ],
+  "exclusions": [],
+  "temporal_condition": null,
+  "source_spans": {
+    "temporal_condition": [],
+    "core_task": {
+      "text": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy and data efficiency in comparison",
+      "source_span": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy and data efficiency in comparison",
+      "start": 0,
+      "end": 113
+    },
+    "requirements": [
+      {
+        "text": "vanilla GNN",
+        "source_span": "vanilla GNN",
+        "start": 119,
+        "end": 130
+      }
+    ]
+  },
+  "components": [
+    {
+      "text": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy and data efficiency in comparison",
+      "source_span": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy and data efficiency in comparison",
+      "start": 0,
+      "end": 113,
+      "kind": "core_task",
+      "connector": "",
+      "id": "component_0"
+    },
+    {
+      "text": "vanilla GNN",
+      "source_span": "vanilla GNN",
+      "start": 119,
+      "end": 130,
+      "kind": "requirement",
+      "connector": "with",
+      "id": "component_1"
+    }
+  ],
+  "fallback": false,
+  "warnings": [
+    "Unrecognized answer family; use all non-author entities"
+  ],
+  "parser": "deterministic_extractive",
+  "search_query": "How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy and data efficiency in comparison; vanilla GNN",
+  "structured_query": "answer type: scientific entity\ntask: How does E(3)-equivariance improve GNN-based interatomic potentials in accuracy and data efficiency in comparison\nrequirement: vanilla GNN"
+}

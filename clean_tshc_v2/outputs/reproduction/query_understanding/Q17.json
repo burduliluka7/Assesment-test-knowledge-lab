@@ -1,0 +1,100 @@
+{
+  "original_question": "Give evidences that ML-based coarse-grained molecular dynamics is effective for studying ionic transport and phase transitions in solid-state systems (by Feb 2026).",
+  "answer_type": null,
+  "core_task": "Give evidences",
+  "requirements": [
+    "ML-based coarse-grained molecular dynamics is effective",
+    "studying ionic transport",
+    "phase transitions in solid-state systems ("
+  ],
+  "exclusions": [],
+  "temporal_condition": "by Feb 2026",
+  "source_spans": {
+    "temporal_condition": [
+      {
+        "text": "by Feb 2026",
+        "source_span": "by Feb 2026",
+        "start": 151,
+        "end": 162
+      }
+    ],
+    "core_task": {
+      "text": "Give evidences",
+      "source_span": "Give evidences",
+      "start": 0,
+      "end": 14
+    },
+    "requirements": [
+      {
+        "text": "ML-based coarse-grained molecular dynamics is effective",
+        "source_span": "ML-based coarse-grained molecular dynamics is effective",
+        "start": 20,
+        "end": 75
+      },
+      {
+        "text": "studying ionic transport",
+        "source_span": "studying ionic transport",
+        "start": 80,
+        "end": 104
+      },
+      {
+        "text": "phase transitions in solid-state systems (",
+        "source_span": "phase transitions in solid-state systems (",
+        "start": 109,
+        "end": 151
+      }
+    ]
+  },
+  "components": [
+    {
+      "text": "Give evidences",
+      "source_span": "Give evidences",
+      "start": 0,
+      "end": 14,
+      "kind": "core_task",
+      "connector": "",
+      "id": "component_0"
+    },
+    {
+      "text": "ML-based coarse-grained molecular dynamics is effective",
+      "source_span": "ML-based coarse-grained molecular dynamics is effective",
+      "start": 20,
+      "end": 75,
+      "kind": "requirement",
+      "connector": "that",
+      "id": "component_1"
+    },
+    {
+      "text": "studying ionic transport",
+      "source_span": "studying ionic transport",
+      "start": 80,
+      "end": 104,
+      "kind": "requirement",
+      "connector": "that",
+      "id": "component_2"
+    },
+    {
+      "text": "phase transitions in solid-state systems (",
+      "source_span": "phase transitions in solid-state systems (",
+      "start": 109,
+      "end": 151,
+      "kind": "requirement",
+      "connector": "that",
+      "id": "component_3"
+    }
+  ],
+  "fallback": false,
+  "warnings": [
+    "Unrecognized answer family; use all non-author entities",
+    "Temporal phrase recorded; primary snapshot remains publication-visible year 2026, no month precision",
+    "Only publication-year visibility can be enforced; dates within a year are not resolved by the source data"
+  ],
+  "parser": "deterministic_extractive",
+  "search_query": "Give evidences; ML-based coarse-grained molecular dynamics is effective; studying ionic transport; phase transitions in solid-state systems (",
+  "structured_query": "answer families: \nscientific modifiers: \nanswer type: scientific entity\ntask: Give evidences\nrequirement: ML-based coarse-grained molecular dynamics is effective\nrequirement: studying ionic transport\nrequirement: phase transitions in solid-state systems (\ntime: by Feb 2026",
+  "answer_types": [],
+  "preserved_modifiers": "",
+  "parsed_only_query": "Give evidences; ML-based coarse-grained molecular dynamics is effective; studying ionic transport; phase transitions in solid-state systems (",
+  "combined_query": "Original question: Give evidences that ML-based coarse-grained molecular dynamics is effective for studying ionic transport and phase transitions in solid-state systems (by Feb 2026).\nStructured intent:\nanswer families: \nscientific modifiers: \nanswer type: scientific entity\ntask: Give evidences\nrequirement: ML-based coarse-grained molecular dynamics is effective\nrequirement: studying ionic transport\nrequirement: phase transitions in solid-state systems (\ntime: by Feb 2026",
+  "temporal_cutoff": 2026
+}

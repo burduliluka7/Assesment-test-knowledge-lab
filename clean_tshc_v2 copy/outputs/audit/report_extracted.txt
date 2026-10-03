@@ -1,1650 +1,0 @@
-    Entity-Centric High-Recall Retrieval for Scientic Which
-
-                                   Methods Questions:
-
-         A Development-Only Redesign (V2, Second Iteration)
-
-
-                   Experiment: entity_centric_high_recall_v2
-   Working tree: clean_tshc_v2 Primary system: A7 Label: DEVELOPMENT
-
-                                            2 October 2026
-
-
-                                                Abstract
-         This report documents a frozen, development-only redesign of an entity retrieval pipeline
-     over a materials-informatics knowledge graph snapshot. The prior V1 system and a rst V2
-     attempt both failed at the candidate-admission stage: the correct answer entities were usually
-     absent from the top of the candidate list, so no reranking strategy could repair the outcome.
-     The redesign therefore targets admission rst: canonical entity grouping with graph-provided
-     aliases and type families, a separately indexed evidence store derived from inferred schema
-     roles, six retrieval lists (dense over the raw question, dense over a structured view, BM25,
-     safe name matching, evidence-dense, and bounded graph expansion  ve channel families if
-     the two dense views are counted as one), a deterministic union, and reciprocal rank fusion. A
-     genuine MS MARCO relevance cross-encoder reranks a xed prex, and a pinned local natural-
-     language-inference model is used as an explicitly uncalibrated requirement-verication proxy
-     with four-status semantics over a stable top-20 tiering. Every entity channel applies the same
-     hard answer-family type lter; there is no soft type prior in this pipeline. The predeclared
-     hypothesis is partly supported. Candidate recall rose decisively: the A5 fusion arm admits
-     37/49 directly mapped target occurrences by depth 100, 44/49 by depth 500, and 46/49 in the
-     full union, against 3/49 at depth 100 for the previous V2 high-recall arms. Final ranking did
-     not follow proportionally. The declared primary system A7 recovers 10 of 63 target occurrences
-     at top-10 (15.87 %), against 3/63 for the previous V2's dense baseline and 2/63 for its relevance
-     arm, but a predeclared smaller-pool control, A6_100, reaches 12/63; mean reciprocal rank is
-     higher for the simple round-robin union A4 (0.2013) than for A5 (0.1554), A6 (0.1480) or
-     A7 (0.1516). Among the 44 target occurrences admitted to the 500-deep reranking pool, 18
-     moved up and 26 moved down, with the conditional median rank moving from 39 to 50.5.
-     High recall did not deliver proportional ranking quality, and the larger reranking pools were
-     worse on top-10 recovery here. All numbers are development diagnostics from frozen artifacts
-     of a single seeded run; no held-out, variance or inferential-superiority claim is made.
-
-
-Contents
-1 Motivation                                                                                             3
-   1.1   What V1 and the rst V2 established . . . . . . . . . . . . . . . . . . . . . . . . . .         3
-
-   1.2   Development-only status . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       3
-
-   1.3   Predeclared hypothesis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      3
-
-
-2 Data and time semantics                                                                                4
-3 Canonical entities, aliases and type families                                                          5
-   3.1   Hard answer-family ltering . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       5
-
-
-
-                                                    1
-4 Query representation                                                                                   6
-5 Indexed evidence and role inference                                                                    6
-  5.1   Separate evidence encoding      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    6
-
-  5.2   Safe mention attachment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        7
-
-
-6 Bounded graph expansion                                                                                7
-7 Retrieval channels and fusion                                                                         7
-  7.1   Dense channels    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    7
-
-  7.2   Lexical and name channels . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        8
-
-  7.3   Evidence-dense and graph channels . . . . . . . . . . . . . . . . . . . . . . . . . . .          8
-
-  7.4   Deterministic union and reciprocal rank fusion        . . . . . . . . . . . . . . . . . . . .    8
-
-
-8 Query-dependent cross-encoder input                                                                    9
-9 Requirement verication                                                                                9
-10 Experimental arms                                                                                    10
-11 Anti-leakage order and evaluation protocol                                                           11
-  11.1 Metrics and denominators . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         11
-
-
-12 Results                                                                                              12
-  12.1 Candidate recall: hypothesis H1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        12
-
-  12.2 Final ranking metrics: hypothesis H2 . . . . . . . . . . . . . . . . . . . . . . . . . .         14
-
-  12.3 Conditional reranking analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       16
-
-  12.4 Selected strongest movements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         17
-
-  12.5 Per-question summary       . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   17
-
-  12.6 Failure analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     18
-
-  12.7 Missing evidence versus contradiction . . . . . . . . . . . . . . . . . . . . . . . . . .        19
-
-  12.8 Eciency     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   20
-
-
-13 Limitations                                                                                          21
-14 Future work                                                                                          22
-15 Reproducibility                                                                                      22
-  15.1 Two distinct determinism checks        . . . . . . . . . . . . . . . . . . . . . . . . . . . .   23
-
-  15.2 Scope of the change      . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   23
-
-  15.3 Verication and test tallies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     24
-
-
-16 AI contribution disclosure                                                                           24
-A Full question texts                                                                                   24
-B Per-occurrence target ranks                                                                           25
-
-
-                                                   2
-C Fixed conguration constants                                                                   27
-
-1 Motivation
-1.1 What V1 and the rst V2 established
-The task is a small set of expert-authored scientic questions of the form Which methods (by Feb
-2026) are best suited for . . .  and What are the leading . . . , each annotated with one or more
-target answer entities. The retrieval corpus is a knowledge graph snapshot containing typed nodes
-(method, technique, component, cited_work, dataset, metric, article) and typed relations.
-
-   V1 used a single dense bi-encoder over a bounded textual rendering of each graph node. Its fail-
-ure mode was not subtle ranking error but outright absence: in the current matched re-run, the V1-
-like control A0 admits only 6 of 49 directly mapped target occurrences anywhere in a 500-candidate
-list, and recovers 0 at top-10. The rst V2 iteration, archived under archive/flat_20261001,
-attempted richer scoring without xing admission; its high-recall arms (V2-B, V2-C) admitted
-only 3 of 49 mapped occurrences at depth 100 and recovered 1 and 2 occurrences respectively at
-top-10, with MRR 0.0168 and 0.0566, while its own dense baseline arm recovered 3.
-
-   Two lessons drive this redesign.    First,   admission constrains everything downstream : each
-later component is conditioned on a pool it cannot extend, so recall at realistic depths must be
-                                                       rank statistics must be explicit about
-measured and reported before any reranking claim. Second,
-misses. The archived arms' rank means were computed over the full corpus, where every target
-necessarily has some rank and the miss count is zero by construction. Those gures are valid under
-that protocol; they are simply a dierent quantity from the conditional means over a truncated
-candidate list reported here, and the two are not comparable without also reporting misses.
-
-
-
-1.2 Development-only status
-The benchmark questions and their gold annotations were already inspected by the author during
-V1 development, and that exposure motivated this redesign. Separating prediction from evaluation
-at execution time (Section 11) removes    execution-time leakage: the predictor cannot read gold
-les, historical outputs, reports, notes, or the evaluator. It does not and cannot remove the fact
-that the benchmark had already inuenced the design and the request. No claim is made here
-about the precise extent of any design-time exposure beyond that. Consequently:
-
-
-    every number in this report is a development diagnostic;
-    no claim of inferential or statistical superiority over V1, prior V2, or any external system is
-     made or justied;
-
-    with 14 scored questions and 63 target occurrences, dierences of one or two occurrences
-     are at the resolution of the measurement and are reported as observations, not as eects.
-
-
-
-1.3 Predeclared hypothesis
-Hypothesis. Replacing single-channel dense node retrieval with entity-centric canonical group-
-ing, a separately indexed evidence store, multi-channel deterministic union and rank fusion will
-(H1) raise candidate recall of directly mapped target occurrences at operationally useful depths
-by a large margin, and (H2) that this improved admission, combined with a genuine relevance
-cross-encoder and a requirement-verication reranking stage, will translate into materially better
-top-10 identity recovery.
-
-   Verdict: partly supported. H1 is supported by the observed development evidence on
-candidate recall (Section 12.1); the measurement is a single run on a design-exposed question set,
-
-
-
-                                                  3
-so the support is for the recall claim as measured, not an unqualied general result. H2 is mixed.
-Top-10 recovery rose from 3/63 (previous V2 dense baseline) and 2/63 (previous V2 relevance
-arm) to 10/63 for A7, but that overall comparison involves a redesigned index, new channels
-and new fusion, and therefore does not isolate the contribution of the cross-encoder. Within the
-matched new run the incremental reranking picture is mixed: top-10 hits move 6 (A5) → 9 (A6)
-→ 10 (A7) while MRR moves 0.1554 → 0.1480 → 0.1516, and a predeclared smaller-pool control
-beats the declared primary on top-10.
-
-
-
-
-2 Data and time semantics
-All current questions are evaluated against the frozen    2026 snapshot. The index built for that
-snapshot contains 2978 canonical entities, 4274 evidence items, 10241 entityevidence links and
-6368 inferred role arcs, with 0 rejected edges and 2508 entities possessing    no candidate-specic
-evidence (Table 1). These are      index object counts  entities, evidence items, links, arcs 
-and must not be read as target-occurrence counts; the occurrence-based counts used for scoring
-are dened in Section 11.1.
-
-   The 2508 gure (84.2 % of entities) bounds what the evidence-dependent machinery can do:
-for those entities the evidence-dense channel has no seed to map, the graph channel has no
-candidate-specic evidence of its own, the cross-encoder card carries only the identity block, and
-requirement verication has no eligible premise. They remain retrievable through the two dense
-channels, which score bounded renderings of their member nodes, and through BM25, whose
-per-entity lexical document always contains the entity's names and graph aliases (Section 7.2).
-
-
-
- Table 1: Frozen 2026 index statistics. These are index object counts, not scored occurrences.
-
-                        Quantity                                       Value
-
-                        Canonical entities                              2978
-                        Evidence items                                  4274
-                        Entityevidence links                          10241
-                        Inferred role arcs                              6368
-                        Rejected edges                                     0
-                        Entities without candidate-specic evidence     2508
-
-
-   Time semantics are deliberately conservative:
-
-
-    first_seen_year denes publication visibility within this graph : an entity is visible to a
-     query with cuto y only if first_seen_year ≤ y . It is the rst year the graph records the
-     entity, which is not a guarantee of the actual date of discovery or rst use.
-
-    last_seen_year is not an expiry date.          An entity last observed in 2021 is not removed
-     from a 2026 query. Only its      undated aliases are aected: because alias annotations carry
-     no individual dates, aliases contributed by a member node are suppressed when that node's
-     last observation   exceeds the snapshot cuto being constructed. The rule therefore only
-     bites when the parser derives a cuto earlier than the node's last observation; for a 2026
-     query over the 2026 snapshot nothing is suppressed by it.
-
-    When the parser derives an earlier year cuto, an edge must pass both the edge-year check
-     and the asserting-article-year check; an edge whose own year is admissible but whose assert-
-     ing article postdates the cuto is rejected.
-
-    Month precision cannot be recovered from year-only evidence. Questions phrased by Feb
-     2026 are therefore answered with year granularity. This is an unavoidable approximation,
-     not a modelled constraint.
-
-
-
-                                                  4
-3 Canonical entities, aliases and type families
-Surface normalization applies, in order: Unicode NFKC, casefolding, whitespace collapse, and
-typographic-hyphen normalization to ASCII hyphen. All other punctuation is             preserved. Writing
-ν(·) for this normalizer, two member nodes mi , mj merge into one canonical entity only if
-
-                  ν(name(mi )) = ν(name(mj ))    ∧        F(type(mi )) = F(type(mj )),                 (1)
-
-
-   where F maps a node type to its family. The approach family is {method, technique, component, cited_work}
-dataset, metric and article each form their own singleton family. Equation (1) requires iden-
-tical normalized strings: no fuzzy, embedding-based or abbreviation-based merging is performed,
-because an inferred merge would assert an identity the graph does not.
-
-   The canonical identier of an entity is derived from the        lowest member node ID, never a
-gold label and never a human-chosen preferred name, which keeps the identier space independent
-of the annotation used later for evaluation.
-
-   Aliases are taken from the graph only. Actual graph aliases are used as             retrieval strings 
-they enter the name channel and the BM25 lexical document  but they never induce a merge
-under Equation (1). An alias relation in the graph is evidence that a string refers to an entity;
-string similarity between two entity names is not.
-
-
-
-3.1 Hard answer-family ltering
-Answer type families map a question's extracted answer head(s) to admissible entity types:
-method, model, architecture, algorithm, tool and system map to the approach family;
-technique maps to (technique, method, component); benchmark maps to (dataset, metric);
-dataset and metric map to themselves; and article/paper map to (article, cited_work).
-   This ltering is   hard, and it is applied identically by every entity channel. A single
-eligible set is computed once per question as
-
-                                                     S
-                        A(q) =       E : types(E) ∩       t∈heads(q) Fam(t) ̸= ∅   ,                   (2)
-
-
-   with the convention that an empty or unmapped head set admits everything. The two dense
-channels, BM25, the name channel, the evidence channel and the graph expansion all restrict their
-output to A(q).   There is no soft type prior anywhere in this pipeline. The conguration le
-retains a legacy key soft_type_prior = 0.8; it is     unused by this implementation and is reported
-here only so that a reader inspecting config.json is not misled. Consequently TypedRaw is not
-A1 plus hard ltering: both arms are hard ltered, and TypedRaw isolates the         raw-question dense
-view alone under that lter, while A1 takes the maximum over the raw and structured dense views
-under the same lter. The only unltered arm is A0, which is the V1-like dense control over graph
-nodes.
-
-   The hard lter has a measured cost: three EXACT target occurrences in Q14 (JARVIS-DFT,
-AFLOW, Alexandria) are excluded (Section 12.6). Q14 asks for datasets and benchmarks, whose
-families are {dataset, metric}; the graph nodes bearing those three names carry node types
-outside that set, so Equation (2) removes them before any channel runs. The honest description
-is therefore that these are scientic targets the question requests      as datasets/benchmarks whose
-graph typing diers from the requested families; no claim is made here about what the graph does
-type them as, because that was not inspected for this report.
-
-
-
-
-                                                  5
-4 Query representation
-The   original question is retained verbatim, including every modier, and it is the string used
-as the relevance query for the cross-encoder. Extractive structure is strictly supplementary. A
-deterministic extractive parser produces:
-
-
-    the answer head(s) and the corresponding type families;
-
-    preserved pre-head scientic modiers  e.g. universal in universal MLIPs, twisted van
-       der Waals in Q3  kept attached rather than stripped as stopword-like qualiers, since in
-       this domain the modier usually carries the discriminating content;
-
-
-    coordinated answer families, so that datasets and benchmarks in Q14 yields a union of
-       admissible families rather than an arbitrary single choice;
-
-
-    core requirements, additional requirements and exclusions, used only by the verication
-       stage.
-
-
-     Two query views are scored independently: the original question qo and a structured rendering
-qs . A third, parsed-only view qp is encoded solely to drive the ParsedOnly control and never enters
-the union. ParsedOnly is markedly worse than the original-question arms (MRR 0.0843 versus
-0.1666 for A1). The supportable reading is narrow: on these 14 questions, with this encoder and
-this rendering, replacing the raw question by the structured rendering lost ranking quality, which is
-why the raw question is retained. It does not establish that extractive parsing destroys information
-in general, and indeed the structured dense view recovers slightly   more mapped occurrences than
-the original-question view (21 versus 19, Table 5).
-
-
-
-
-5 Indexed evidence and role inference
-5.1 Separate evidence encoding
-Every evidence node is encoded    separately by type: claim, task, problem, technique, component,
-dataset, metric, article.        Each entity links to its evidence with source IDs, relation paths,
-provenance and candidate-specic ags. Encoding per node rather than concatenating an entity's
-evidence into one document is a deliberate design choice: a question typically matches one specic
-claim or task, and concatenation would average that signal into the rest of the entity's text.
-
-   Methodobject roles are inferred from    unique member type signatures, never from member
-order in the underlying tuple. The supported patterns are:
-
-
-  1. one method plus typed task/problem/technique/ component/dataset/metric members;
-
-
-  2. one article plus one claim, optionally plus one method;
-
-
-  3. one article presenting one method;
-
-
-  4. one article citing cited_work targets.
-
-
-   Anything ambiguous  in particular        extends relations with an unresolvable direction, or
-relations whose member types do not match a supported signature  is omitted and recorded
-as a rejected edge.   This is   schema inference, not annotated linguistic role labelling and not
-entailment. A role arc states that the graph's typed structure is consistent with a reading, not
-that the reading is semantically veried.
-
-
-
-
-                                                  6
-5.2 Safe mention attachment
-Claims are attached to entities by exact, bounded mentions of entity names or graph aliases. Short
-generic words are excluded: a string is admissible as a mention anchor only if it is at least three
-characters and either contains digits, is CamelCase, is all-caps of length ≥ 3, or is a multiword
-name of at least ten characters. This blocks the pathological case in which a generic token used in
-ordinary prose attaches unrelated claims. Article titles supply provenance context for an entity;
-they do   not license attaching all claims from the same article to that entity.
-   The evidence index itself is    uncapped  its purpose is recall. Per-family caps apply only
-when selecting text for the cross-encoder card (Section 8).
-
-
-
-
-6 Bounded graph expansion
-Graph generation admits exactly two path shapes:
-
-
-
-
-               evidence −→ method                                                    (1 hop),            (3)
-
-               evidence −→ article −→ presented/cited entity                         (2 hops).           (4)
-
-
-   Only     article nodes may be intermediate.             There is no author traversal, no unrestricted
-spreading activation, no recursion and no hierarchy beam. Parameters are xed: top-200 evidence
-seeds, article degree cap 80, fanout cap 64, maximum 2 hops, path decay γ = 0.8. A path p of
-edge length ℓ(p) from seed sp with seed score σ(sp ) contributes
-
-
-
-                       g(E) =      max       γ ℓ(p)−1 σ(sp ),       γ = 0.8, ℓ(p) ≤ 2,                   (5)
-                                 p: sp −→E
-
-   and only destinations in A(q) are kept, so the hard type lter applies to graph expansion as
-well. Each surviving entity exports up to eight scored path traces.
-
-   Two limits must be stated explicitly. First,      direction inference is limited: where the graph
-does not unambiguously assert which of two entities extends or specializes the other, the arc is
-dropped rather than guessed, so some legitimate paths are simply unavailable. Second,              citation
-paths are not entailment. That article A cites work W places W in A's structural context;
-it says nothing about whether W satises the question's requirements.                 Accordingly, citation-
-derived evidence is admitted as structural context for           retrieval but is categorically ineligible as
-a premise for requirement verication (Section 9).
-
-7 Retrieval channels and fusion
-7.1 Dense channels
-The dense encoder is BAAI/bge-small-en-v1.5 at revision 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a,
-used with   no query instruction prex, exactly as in V1, so that the comparison isolates archi-
-tecture rather than prompting. The document representation retains the old bounded V1 node
-rendering for the same reason.
-
-   Each eligible canonical entity E is scored by the            maximum over its member nodes, for each
-query view independently:
-
-
-                                                         v(q) · v(m)
-                                sdense (E, q) = max                   .                                  (6)
-                                                    m∈E ∥v(q)∥ ∥v(m)∥
-
-
-
-
-                                                       7
-       Max-pooling rather than mean-pooling was chosen so that a canonical entity with many weakly
-related member nodes is not penalized relative to a singleton. That is the design motivation; this
-study did not run a mean-pooling variant, so the motivation is not an empirically demonstrated
-mechanism here. Arm A1 combines the two views by maximum:
-
-                                                                                
-                                  sA1 (E) = max sdense (E, qo ), sdense (E, qs ) .                                (7)
-
-
-       A0 is the V1-like control: raw-question dense retrieval over all non-author graph nodes, dedu-
-plicated to an answer entity when one exists, with no canonical grouping and no type lter.
-
-
-
-7.2 Lexical and name channels
-BM25 uses k1 = 1.5, b = 0.75. Each entity has one lexical document, formed by concatenating
-its names, its graph aliases, and the text of each unique indexed evidence item once.
-                                                                                                        1 For query
-
-term set Q and document d of length |d| with average length L:
-
-
-                                               X                     f (t, d) (k1 + 1)
-                            BM25(q, d)     =         IDF(t)                              .                      (8)
-                                               t∈Q            f (t, d) + k1 1 − b + b |d|
-                                                                                       L
-
-       The query string is qo concatenated with qs . Only eligible rows with               positive term overlap may
-enter the BM25 top-500; admitting zero-overlap rows would let arbitrary tie-broken entities cast
-rank votes in the fusion step.
-
-       Safe name matching is a       separate channel from BM25, so that exact-identity opportunity is
-measurable on its own. Its measured contribution here is zero (Table 5), which is itself a nding:
-the questions almost never contain the target's surface name, and 46 of 63 target occurrences
-carry the secondary observation NO_NAME_MATCH.
-
-
-
-7.3 Evidence-dense and graph channels
-The evidence channel takes the maximum cosine across the two query views for each evidence
-item, selects the top 500 evidence seeds, maps each seed to the eligible answer entities it supports
-through the inferred role arcs, and max-pools per entity:
-
-                                                                                              
-                            sev (E) =           max               max cos(qo , i), cos(qs , i) .                  (9)
-                                         i∈Ev(E) ∩ Seeds500
-
-       The graph channel consumes the same ranked seed list but is kept as a separate list so that
-its contribution is separately attributable and separately ablatable.
-
-
-
-7.4 Deterministic union and reciprocal rank fusion
-Six ranked lists are available for fusion: dense_original, dense_structured, bm25, name,
-evidence and graph.           Counting the two dense views as one family gives ve channel families.
-Every list contributes      at most 500 entity IDs. Arm A2 round-robins the rst four lists; A3 adds
-evidence; A4 adds graph. Round-robin interleaving is a                     union construction with a deterministic
-order ; it uses no score calibration at all, which is why it is a useful baseline against fusion.
-       A5 uses the   identical A4 union and changes only the ordering, to reciprocal rank fusion:
-   1
-       The frozen specication phrases this as scoring names, aliases and evidence independently; the implementation
-realizes all three string sources inside a single concatenated per-entity document, which is what is described and
-measured here.
-
-
-
-
-                                                              8
-                                             X         1
-                               RRF(E) =                       ,   k = 60,                        (10)
-                                                   k + rc (E)
-                                             c∈C
-
-      where rc (E) is E 's rank in list c and lists that did not retrieve E contribute nothing. Equa-
-tion (10) uses   only rank contributions ; raw channel scores are never mixed, because dense cosines,
-BM25 scores and decayed path weights are not on a common scale. Ties are broken by canonical
-entity ID, making the output a deterministic function of the union. Because A4 and A5 share
-their union exactly, every dierence between them is attributable to ordering alone  and that
-dierence is   not uniformly favourable (Section 12.2).
-      Each exported candidate carries all of its contributing channel ranks plus the selected evidence
-and path reasons, so that every position in the nal list is auditable.
-
-
-
-
-8 Query-dependent cross-encoder input
-The reranker is cross-encoder/ms-marco-MiniLM-L6-v2 at revision 233902d25c440f23af6f
-7d6e94d2946bac0bee0a  a genuine relevance cross-encoder, trained for querypassage
-relevance, not an entailment model repurposed as a relevance scorer.
-
-      Card construction, within each evidence family: sort by maximum original/structured cosine
-with deterministic tie-breaks, deduplicate normalized text, apply the family caps (claims 4, explicit
-mentions 3, tasks 2, problems 2, techniques 2, components 2, datasets 1, metrics 1, articles 1,
-graph evidence 2), and    preserve candidate identity rst. The block order is xed: identity,
-then claims, explicit mentions, tasks, problems, techniques, components, datasets, metrics, article
-titles, structural path evidence.
-
-      Token packing retains the identity block, then the strict    prex of remaining blocks that ts
-within 512 tokens  a prex, not a greedy best-t selection, so that packing is a deterministic
-function of the xed block order. The query is the full original question; only an overlong query
-would be truncated, and identity is preserved if so. Included blocks, omitted blocks and token
-counts are exported for every pair.
-
-                                                     not probabilities and are never interpreted
-      Two properties are enforced. Relevance logits are
-as calibrated condences. And the    frozen pool cannot change during reranking: the reranker
-reorders its prex and the untouched RRF tail is appended unchanged, so reranking can never
-add or remove a candidate.
-
-
-
-
-9 Requirement verication
-For each of the top 20 candidates, and for each core requirement, additional requirement and exclu-
-sion, the maximum-cosine item is retrieved from the         full candidate-specic evidence index,
-not merely from the token-truncated cross-encoder card. Article-level and structural-path evidence
-are   ineligible as premises. The pinned local model cross-encoder/nli-deberta-v3-small at re-
-vision fa2804872c3b4bd748f38c0185cc85775361e735 scores the selected premise against a literal
-candidate-specic hypothesis, and the entailment/neutral/contradiction probabilities are recorded
-as   uncalibrated proxies.
-      With threshold τ   = 0.7, let (pe , pc ) be the entailment and contradiction probabilities for a
-positive component, and let them be     swapped for an exclusion. Then
-
-
-
-
-                                                     9
-         
-         
-         
-         SUPPORTED                                       if pe ≥ τ and pc < 1 − τ,
-         
-         CONTRADICTED
-         
-                                                          if pc ≥ τ and pe < 1 − τ,
-status =
-         
-         
-         NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE             otherwise, including no eligible premise,
-         
-         NOT_EVALUABLE
-         
-                                                          if a premise exists but the model is unavailable.
-
-                                                                                                   (11)
-
-                                                     exclusion, high entailment of the excluded
-   The swap is load-bearing for interpretation: for an
-property counts against the candidate and high contradiction counts in its favour. A SUPPORTED
-status on an exclusion component is therefore backed by a high contradiction probability, so the
-aggregate SUPPORTED count in Section 12.7 cannot be read as all of these had P (entail) ≥ 0.7
-unless exclusion components are known to be absent.
-
-                              Missing evidence receives the same unsupported status
-   Two further semantics matter.
-as neutral evidence, never contradiction: the absence of a premise is not a refutation. And
-NOT_EVALUABLE exists specically so that an unavailable model yields an explicit non-result where
-evidence does exist, rather than a silent zero indistinguishable from a negative nding.
-
-   A7 applies a   stable three-tier reordering within the top 20: all requested components
-proxy-supported rst (tier 0); unresolved with no contradiction next (tier 1); any proxy contradic-
-tion last (tier 2); the original cross-encoder order breaks ties inside each tier. Every entity outside
-the top 20 is left unchanged. This is a heuristic reranking experiment, not scientic entailment
-and not calibrated truth. Unsupported evidence alone is never treated as false. The NLI model
-can and does misread conditions and negation, so Section 12.3 reports harms alongside gains.
-
-
-
-
-10 Experimental arms
-
-Table 2: Arms and controls. Union = candidate set construction; Order = nal ordering rule.
-All arms except A0 apply the hard answer-family lter of Equation (2).
-
-   Arm                     Order                Construction
-   A0                      dense                V1-like: raw-question dense over all non-author
-                                                nodes, no canonical grouping, no type lter.
-   A1                      dense                Canonical entities, max over original and structured
-                                                dense views.
-   TypedRaw                dense                Raw-question dense view alone, same hard lter; iso-
-                                                lates the raw view.
-   ParsedOnly              dense                Parsed-only query view alone; isolates loss from re-
-                                                structuring.
-   A2                      round-robin          Union of original-dense, structured-dense, BM25,
-                                                name.
-   A3                      round-robin          A2 + evidence channel.
-   A4                      round-robin          A3 + graph channel.
-   A5                      RRF (k = 60)         Identical union to A4; ordering changed only. Pri-
-                                                mary rst stage.
-   WithoutEvidenceRRF      RRF                  A5 ablation: evidence list removed from fusion.
-   WithoutGraphRRF         RRF                  A5 ablation: graph list removed from fusion.
-   A6 (=A6_500)            CE prex 500         Relevance CE over rst 500 of A5; unchanged RRF
-                                                tail appended.
-   A6_100, A6_200          CE prex 100/200     Predeclared pool-size controls; reuse identical pair
-                                                scores from the 500 run ; unchanged tail appended.
-   A7                      CE + tiers           Declared primary: requirement verication over
-                                                A6's top 20 only.
-
-
-
-                                                  10
-   The pool-size controls A6_100 and A6_200 were predeclared before results were seen.         They
-reuse the    same pair scores computed in the 500 run; their recorded prex timings (Table 15)
-are therefore   amortized estimates, not independently benchmarked experiments. No
-diusion arm was run.
-
-   The declared primary system remains A7. As shown below, A6_100 is the best observed
-arm on top-10 recovery. It is a control, it was predeclared as a control, and it is reported as such.
-Promoting the best-observed control to primary after the fact would convert a diagnostic into a
-selected result.
-
-
-
-
-11 Anti-leakage order and evaluation protocol
-The execution order is xed and one-directional:
-
-
-   1. All predictions are produced and written to disk.
-
-
-   2. Prediction artifacts are frozen under SHA256. The frozen prediction digest is
-      5bc46c27e260572cc33630ff59b3dd142cc37ca5ef66d13eb77f29b1a2ad0eda.
-   3. A   separate entry point veries every frozen digest, and only then imports the evaluator and
-      reads gold and target annotations.
-
-
-   During step 1, prediction audit hooks deny reads of gold lenames, historical outputs, reports
-and notes, protected project source, and any evaluator import; permitted third-party packages
-are read-only. These hooks are a procedural discipline for ordinary Python execution; they are
-explicitly   not hostile native-code containment. All local models carry xed revisions and
-per-le hashes (Table 16), and model downloads require an explicit download ag. The run uses
-the pre-existing interpreter's third-party installation with -B and no runtime project imports from
-rest_of_work.
-
-11.1 Metrics and denominators
-The   strict direct denominator is 63: all target occurrences across the 14 Type-A questions.
-Of these, 49 are directly mappable (48 EXACT + 1 ALIAS), 1 is COMPOSITE, 11 are PARTIAL and
-2 are ABSENT. All 18 questions in the set have predictions; the 4 non-Type-A questions are not
-scored for direct identity.
-
-
-
-                    Table 3: Denominators and target-occurrence status counts.
-
-                      Quantity                                            Value
-
-                      All questions (predictions produced)                   18
-                      Type-A questions (scored)                              14
-                      Target occurrences (strict denominator)                63
-                      Directly mappable occurrences (EXACT + ALIAS)          49
-                        EXACT                                                48
-                        ALIAS                                                 1
-                      PARTIAL                                                11
-                      ABSENT                                                  2
-                      COMPOSITE                                               1
-
-
-
-   Denitions, applied without exception:
-
-
-
-
-                                                  11
-                           |{directly mapped target occurrences at rank ≤ k}|
-                    R@k =                                                     ,                 (12)
-                                                   63
-                           |{directly mapped target occurrences at rank ≤ k}|
-                Rcond @k =                                                    ,                 (13)
-                                                   49
-                                 14
-                          1 X 1                1
-                    MRR =        ,                := 0 if question j has no direct hit,         (14)
-                          14  rj               rj
-                                 j=1
-
-
-                            rst directly mapped identity for Type-A question j . The MRR
-   where rj is the rank of the
-denominator is 14  all Type-A questions, including Q5 and Q11 which contain no directly
-mappable target and therefore contribute structural zeros.
-
-   Direct PARTIAL, ABSENT and COMPOSITE occurrences receive no identity credit under
-any arm. They remain in the denominator of 63 because removing them would atter the system
-by discarding exactly the cases it cannot represent. Composite completion is tracked separately
-and is zero for every arm reported here:        the single COMPOSITE target, Q11's CE→MC→NN→PF
-pipeline, is never assembled.
-
-   Target-recovery counts are occurrence counts. MACE appears as a target occurrence in
-Q1, Q12 and Q13; each occurrence is a separate scored item with its own rank, because the same
-entity can be correct-and-well-ranked for one question and correct-but-buried for another. This
-convention applies to the recovery, recall, failure-class and reranking-movement counts. It does
-not apply to the index statistics of Table 1, which count distinct entities, evidence items, links
-and arcs, nor to eciency counters, which count units of logical work.
-
-   Candidate recall uses mapped EXACT/ALIAS occurrences, reported alongside raw-denominator
-gures, at depths 50/100/200/500/1000, plus union recall and candidate set size. For reranked
-arms, pool membership is measured         before reranking.
-   Rank statistics are conditional on       observed direct ranks, with the missing count stated ex-
-plicitly. A xed missing-rank penalty is also saved; it is the same constant for every arm and is
-recoverable from the reported conditional mean, observed count and penalized mean (its value is
-                                      P
-5799, and the identity r pen · 49 =    obs r + nmiss · 5799 holds for all reported arms).
-   Positive controls and empty-rank controls are isolated under evaluation_only.            They are
-gold-informed evaluation instruments and never real predictions; no reported system
-metric derives from them.
-
-
-
-
-12 Results
-12.1 Candidate recall: hypothesis H1
-Candidate set size ranges are 349500 for A1/TypedRaw/ParsedOnly/A6/A7, 3491090 for A2,
-3491324 for A3 and WithoutGraphRRF, 3491503 for A4/A5, 3491362 for WithoutEvidenceRRF,
-and exactly 500, 100, 200 for A0, A6_100, A6_200.
-
-   On the recall question the observed development evidence is clear. A5 admits 37/49 at depth
-100, 44/49 at depth 500, and 46/49 in the full union, against 3/49 at depth 100 for
-the previous V2 high-recall arms and 2/49 for the previous V2 A0. The progression A1 → A2
-→ A3 → A4 shows that most of the gain comes from channel addition rather than from fusion:
-depth-100 hits move 10 → 20 → 31 → 35 under pure round-robin union. RRF then lifts depth-50
-hits from 17 (A4) to 29 (A5) on the identical union, which is the one place where ordering alone
-is demonstrably the operative mechanism.
-
-
-
-
-                                                    12
-                                                            Candidate recovery at500                                                                       Final direct Recall@10
-                                            100                                                                                         100
-Percent of mapped EXACT/ALIAS occurrences
-
-
-
-
-                                            80                                                                                          80
-
-
-
-
-                                                                                                    Percent of all target occurrences
-                                            60                                                                                          60
-
-
-                                            40                                                                                          40
-
-
-                                            20                                                                                          20
-
-
-                                             0                                                                                           0
-                                                  A0   A1    A2    A3     A4    A5     A6     A7                                                 A0   A1   A2    A3      A4     A5    A6     A7
-
-         Figure 1: Two panels for the main stage sequence A0A7.                                                                                      Left: candidate recovery at depth
-         500, as a percentage of the 49 mapped                                               EXACT/ALIAS occurrences. Right:                                              nal direct       R@10,
-         as a percentage of all 63 target occurrences.                                             The gure shows these two quantities only  no
-         rank distributions and no additional cut-os  and the controls are not plotted. All values are
-         development diagnostics from the frozen artifacts.
-
-
-
-
-         Table 4: Candidate pool recall.                                         Hits are directly mapped target occurrences out of 49;                                                      Rcond
-         is the /49 fraction and R
-                                   raw the /63 fraction, both at depth 500. Union is the full candidate
-
-         pool regardless of depth. For the reranked arms the candidate pool is the                                                                                    actual reranking prex :
-         A6_100 and A6_200 cap their pools at 100 and 200 and are saturated at greater depths, and A6/A7
-                                                                                                No
-         cap at 500 (mean size 489.2 because some questions yield fewer than 500 eligible candidates).
-         RRF tail is included in any candidate gure in this table; the nal rankings of those arms
-         do append the unchanged tail, which is why their observed-rank statistics in Table 7 cover 46
-         occurrences while their candidate pools contain 3744.
-
-                                                                           Hits at pool depth (/49)                                                    Depth 500                     Union
-                                   Arm                                   50     100         200    500                                        1000    Rcond      Rraw         hits    avg. size
-                                   A0                                     1       2           3     6                                           6     0.122     0.095           6           500.0
-                                   A1                                     5      10          16    19                                          19     0.388     0.302          19           489.2
-                                   TypedRaw                               5      10          16    19                                          19     0.388     0.302          19           489.2
-                                   ParsedOnly                             4       6          12    19                                          19     0.388     0.302          19           489.2
-                                   A2                                    11      20          24    33                                          43     0.673     0.524          43           913.6
-                                   A3                                    16      31          35    43                                          44     0.878     0.683          45          1108.9
-                                   A4                                    17      35          42    43                                          46     0.878     0.683          46          1295.6
-                                   A5                                    29      37         43     44                                          46     0.898     0.698          46          1295.6
-                                   WithoutEvidenceRRF                    17      29          40    45                                          46     0.918     0.714          46          1149.5
-                                   WithoutGraphRRF                       18      26          35    44                                          44     0.898     0.698          45          1108.9
-                                   A6_100                                29      37          37    37                                          37     0.755     0.587          37           100.0
-                                   A6_200                                29      37          43    43                                          43     0.878     0.683          43           200.0
-                                   A6 (=A6_500)                          29      37          43    44                                          44     0.898     0.698          44           489.2
-                                   A7                                    29      37          43    44                                          44     0.898     0.698          44           489.2
-
-
-
-
-                                                                                                   13
-Channel ablations
-Removing the evidence list from fusion drops A5's depth-50 hits from 29 to 17 and depth-100
-from 37 to 29. Removing the graph list drops the same gures to 18 and 26. Both lists matter at
-shallow depth and   neither is categorically more important: the evidence list is worth more
-at depth 50 (12 versus 11 occurrences) and the graph list is worth more at depth 100 (11 versus
-8). Note also that WithoutEvidenceRRF has the     highest depth-500 recall of any arm (45/49) while
-sharing A5's union recall of 46/49, so that dierence is a reordering eect inside the 500-prex,
-not a loss of coverage.
-
-
-
-Table 5: Per-list diagnostics on the A4/A5 union. Unique = mapped occurrences recovered by
-that list and no other.
-          Ranked list                   Mapped occurrences recovered   Rcond (/49)   Unique
-          Dense (original question)                              19          0.388        0
-          Dense (structured question)                            21          0.429        0
-          BM25                                                   41          0.837        0
-          Name                                                    0          0.000        0
-          Evidence                                               44          0.898        0
-          Graph                                                  37          0.755        1
-
-   Table 5 is the most informative single diagnostic in the study. The name list recovers   nothing:
-these questions describe capabilities, not names, so exact-identity matching has no opportunity.
-BM25 over the concatenated lexical document recovers 41/49  more than either dense view
- so on this corpus the dense encoder, used without an instruction prex and over bounded
-node renderings, is weaker than term matching. The evidence list is the single strongest list at
-44/49. Only the graph list contributes anything     uniquely (one occurrence), so in terms of pure
-membership the lists are largely redundant     collectively : nearly every occurrence found by the
-evidence list is also found by some other list.   That redundancy is about the union, not about
-ordering, and it is not the same as being useless at a given depth: adding the evidence list to
-the round-robin union (A2 → A3, before graph was added) raised depth-100 hits from 20 to
-31. Membership redundancy with rank-level contribution is exactly the regime Equation (10) is
-designed for.
-
-
-
-12.2 Final ranking metrics: hypothesis H2
-As fractions of 63, the declared primary A7 achieves R@1 = 1.59 %, R@5 = 7.94 %, R@10 =
-15.87 %, R@25 = 22.22 %, R@50 = 34.92 %, R@100 = 52.38 %. On the conditional /49 denomi-
-nator the corresponding gures are 2.04 %, 10.20 %, 20.41 %, 28.57 %, 44.90 %, 67.35 %.
-
-   Four observations:
-
-
-  1.   Top-10 recovery is higher than in the prior iterations. A7 recovers 10/63 (15.87 %),
-       against 3/63 for the previous V2's dense baseline arm, 2/63 for its relevance arm V2-C, 1/63
-       for V2-B, and 0/63 for A0 in the matched re-run. This is the main evidence bearing on H2,
-       and it compares whole systems, not the cross-encoder in isolation.
-
-
-  2.   The best observed arm is a control. A6_100 reaches 12/63 at top-10 and 18/63 at
-       top-25, above both A6 (9/63, 14/63) and A7 (10/63, 14/63), and it has the best conditional
-       mean rank (77.70) of the reranked arms. It does     not sweep every statistic: A6_200 has a
-       marginally better all-observed median (39.5 versus 40.0). The declared primary remains A7.
-
-
-  3.   No single ordering of the arms holds across metrics. A4's round-robin union has the
-       highest MRR of any arm at 0.2013; RRF reordering lowers it to 0.1554 (A5), cross-encoder
-
-
-
-
-                                                  14
-Table 6: Final direct identity recovery. Hits are target occurrences out of 63; R@k fractions use
-the strict denominator 63. MRR denominator is 14.
-                                                 Hits at rank ≤ k (/63)
-                     Arm                     1    5     10   25        50     100      MRR
-                     A0                      0    0      0    0         1       2     0.0044
-                     A1                      2    3      3    3         5      10     0.1666
-                     TypedRaw                2    3      3    3         5      10     0.1667
-                     ParsedOnly              0    2      3    3         4       6     0.0843
-                     A2                      2    3      5    6        11      20     0.1872
-                     A3                      2    4      5   10        16      31     0.1979
-                     A4                      2    4      5   10        17      35     0.2013
-                     A5                      0    4      6   11        29      37     0.1554
-                     WithoutEvidenceRRF      0    3      3    8        17      29     0.1278
-                     WithoutGraphRRF         0    4      4    8        18      26     0.1374
-                     A6_100                  1    6     12   18        25      37     0.1669
-                     A6_200                  1    5      9   16        26      34     0.1523
-                     A6 (=A6_500)            1    5      9   14        22      33     0.1480
-                     A7 (primary)            1    5     10   14        22      33     0.1516
-
-
-       reranking to 0.1480 (A6), and verication tiering recovers part of it at 0.1516 (A7), so MRR
-       along the pipeline is non-monotonic.      Meanwhile A5 raises top-50 hits from 17 to 29 and
-       loses both of A4's rank-1 hits (R@1: 2/63 → 0/63). Whether A5 or A4 is better depends
-       entirely on the operating depth, and no arm here is better on every reported metric.
-
-
-  4.   Larger reranking pools were worse on top-10 in this run. Top-10 hits fall 12 (pool
-       100), 9 (200), 9 (500), and the conditional median after reranking rises 27 → 38 → 50.5. The
-       straightforward reading is precision dilution: a bigger prex gives the cross-encoder more
-       opportunities to promote a plausible-looking non-target above a target. This is an observed
-       pattern over three pool sizes in one run, not an established scaling law.
-
-
-
-
-Table 7: Observed-rank statistics over the nal rankings. Mean and median are conditional on
-observed direct ranks; the penalized mean assigns the xed missing-rank penalty (5799) to each
-missing occurrence and divides by 49.
-
-            Arm                    median        mean    observed           missing    penalized mean
-            A0                       208.0    220.00               6            43             5115.86
-            A1                        97.0    118.68              19            30             3596.43
-            TypedRaw                  97.0    121.58              19            30             3597.55
-            ParsedOnly               161.0    169.37              19            30             3616.08
-            A2                       128.0    257.95              43             6              936.45
-            A3                        70.0    159.18              45             4              619.57
-            A4                        60.5     97.80              46             3              446.86
-            A5                        39.5     80.85              46             3              430.94
-            WithoutEvidenceRRF        86.0    109.57              46             3              457.90
-            WithoutGraphRRF           76.0    139.51              45             4              601.51
-            A6_100                    40.0     77.70              46             3              427.98
-            A6_200                    39.5     82.22              46             3              432.22
-            A6 (=A6_500)              51.5    106.54              46             3              455.06
-            A7                        51.5    106.24              46             3              454.78
-
-   Table 7 shows why conditional statistics must be paired with miss counts. A0's conditional
-mean rank of 220 looks respectable until one reads that it is computed over 6 observed occurrences
-with 43 missing; its penalized mean of 5115.86 is the honest summary. Conversely A2's conditional
-
-
-
-                                                   15
-mean (257.95) is   worse than A1's (118.68) while A2 observes 43 occurrences to A1's 19, and those
-extra 24 occurrences sit deep in the list. The penalized means  936.45 for A2 against 3596.43
-for A1  order the two the way the recall gures do. Note that the reranked arms observe 46
-occurrences here while their candidate pools in Table 4 contain 3744: the extra occurrences live
-in the appended, unreranked RRF tail.
-
-
-
-Table 8: Previous V2 (archived) arms, same occurrence denominators. Candidate hits are out of
-49. Rank statistics there were computed over the full corpus, so misses are zero by construction.
-
-    Arm          R@10 hits    R@100 hits        MRR      median direct rank    cand. @100     cand. @200
-    prev. A0              0               2    0.0047                 3122               2            3
-    prev. A1              3               6    0.1645                 1293               6            8
-    V2-B                  1               3    0.0168                 1192               3            6
-    V2-C                  2               3    0.0566                 1192               3            6
-
-   These historical comparisons are       descriptive. The hit counts and MRRs share the denomi-
-nators used here and are directly readable. The rank medians are not comparable to Table 7: the
-archived arms ranked the whole corpus, so every target had a rank and the miss count was zero,
-whereas the new arms truncate candidates and report conditional means with explicit misses.
-Both are internally valid; they measure dierent things, and comparing them without the miss
-counts would be meaningless rather than merely imprecise. The primary contrasts in this report
-are the   matched new-run ablations of Tables 4 and 6, computed under identical denominators and
-identical candidate caps.
-
-
-
-12.3 Conditional reranking analysis
-Conditional reranking statistics are computed only over target occurrences actually admitted to
-the reranker's prex; occurrences in the untouched tail cannot be moved and would dilute the
-measurement.
-
-
-Table 9: Conditional reranking eects, restricted to target occurrences admitted to each prex.
-New top-10 counts occurrences that were outside top-10 before reranking and inside after.
-
-    Arm         pool   seen   up   down       median before    median after    top-10 after   new top-10
-    A6_100      100     37    17     20                 36.0          27.0              12             7
-    A6_200      200     43    19     24                 39.0           38.0              9             5
-    A6          500     44    18     26                 39.0          50.5               9             5
-    A7          500     44    18     26                 39.0          50.5              10             6
-
-
-   At pool size 500,   of the 44 target occurrences seen by the reranker, 18 moved up and
-26 moved down, and the conditional median moved from 39 to 50.5. Conditional top-10 recall
-is 0.2273 for A7 and 0.2045 for A6, against 0.3243 for A6_100. So at pool 500 the cross-encoder
-lowered more target occurrences than it raised while still placing more of them in the top 10 than
-fusion alone did: it concentrates a handful of occurrences near the top and pushes the majority
-down. Both facts are measured and must be reported together.
-
-   The verication tier (A7 versus A6) changes one occurrence's top-10 status and one question's
-rst direct rank in the frozen artifacts: in Q12, DeePMD moves from rank 20 to rank 7 and GAP
-from rank 5 to rank 4, so Q12's rst direct rank improves from 5 to 4 and A7 gains one top-10
-occurrence (6 new top-10 against 5 for A6). Every other per-question            rst direct rank is identical
-between A6 and A7. That is not the same as saying only one occurrence moved: tier reordering
-is applied to the whole top 20, so other candidates  including non-target entities and target
-occurrences that stayed outside the top 10  may have changed position inside that window
-without changing any reported rst-rank statistic. The measured               gain attributable to the stage
-
-                                                        16
-on this data is one top-10 occurrence, with MRR moving 0.1480 → 0.1516. The robustness of that
-gain is unmeasured: this is a single seeded run, no variance estimate exists, and no hypothesis test
-was performed, so nothing here either establishes or excludes that a rerun or a dierent question
-set would reproduce it.
-
-
-
-12.4 Selected strongest movements
-The following tables reproduce exact before/after ranks from the frozen hando. They are pre-
-sented as   movements, not explanations: the artifacts record ranks, not causes, and no causal
-attribution to evidence similarity, card content or token truncation is inferred here. Rank move-
-ment also does not adjudicate scientic relevance:           an entity promoted above a target is not
-thereby shown to be a worse answer, and a non-gold entity ranked highly is not thereby shown to
-be scientically wrong.
-
-
-
-Table 10: Strongest rank improvements and degradations under cross-encoder reranking at pool
-500 (identical for A6 and A7). Ranks are exact hando values.
-
-                        Improvements                                 Degradations
-             Q       Target      before   after    Q        Target                  before      after
-             Q9      NequIP        256      60     Q12      MACE                          42        302
-             Q13     CGCNN         118      17     Q12      PET                           61        317
-             Q13     MACE          136      50     Q7       symbolic regression           48        276
-             Q13     CHGNet        113      35     Q1       ACE                          159        370
-             Q10     SchNet        156      87     Q4       Hessian training              44        229
-
-
-
-Table 11: Strongest rank improvements and degradations under cross-encoder reranking at pool
-100 (A6_100). Ranks are exact hando values.
-
-                              Improvements                             Degradations
-                 Q      Target            before   after     Q       Target   before       after
-                 Q12    CHGNet                94       20    Q12     MACE           42         86
-                 Q1     CHGNet                72       15    Q12     eSEN           12         53
-                 Q12    DeePMD                62        8    Q14     WBM            29         68
-                 Q12    GAP                   50        4    Q1      MACE           39         74
-                 Q12    EquiformerV2          57       19    Q12     PET            61         89
-
-   Two patterns are worth recording.MACE is degraded in both Q1 and Q12 at every pool size
-(Q12:  42 → 86 at pool 100, 42 → 157 at pool 200, 42 → 302 at pool 500), while MACE in
-Q13 is improved at pools 200 and 500 (136 → 40 and 136 → 50). The same entity moves in
-opposite directions for dierent questions, which is consistent with question-conditional scoring
-rather than a per-entity bias.     Separately, degradation magnitude grows with pool size for the
-same occurrence  Q12 PET at 61 → 89 → 161 → 317 for pools 100/200/500  which is the
-occurrence-level counterpart of the pool-size pattern in Table 9.
-
-
-
-12.5 Per-question summary
-Q5 and Q11 have      no directly mappable target and are structurally unanswerable under the
-direct identity metric: Q5's targets are Bead-mapping (ABSENT) and GNN+GPP (PARTIAL); Q11's
-are the COMPOSITE pipeline and hybrid        frameworks (PARTIAL). They contribute two guaranteed
-zeros to every arm's MRR, capping attainable MRR at 12/14 = 0.857 even with perfect rank-1
-performance elsewhere.
-
-
-
-
-                                                     17
-Table 12:    Per-question rst directly mapped rank.             T = target occurrences; D = directly
-mappable (EXACT/ALIAS) occurrences.  = no direct hit anywhere in the list.
-
-                            Q        T   D      A0         A1     A5      A6   A7
-                            Q1       7    7           193         23     3      3
-                            Q2       3    2     369     85          6    10     10
-                            Q3       2    1      57      1          2     7      7
-                            Q4       3    2            37         33    69     69
-                            Q5       2    0                                  
-                            Q6       3    1     199      4          2    42     42
-                            Q7       2    1                      48   276    276
-                            Q8       2    1                       7     6      6
-                            Q9       3    1                     256    60     60
-                            Q10      2    1                     156    87     87
-                            Q11      2    0                                  
-                            Q12     13   13      31      1          2     5      4
-                            Q13      8    8                      89    17     17
-                            Q14     11   11     217     26          4     1      1
-                            Total   63   49
-
-
-   At the rst-hit level, reranking helps and hurts in comparable measure. Relative to A5, A6/A7
-improve Q1 (23 → 3), Q8 (7 → 6), Q9 (256 → 60), Q10 (156 → 87), Q13 (89 → 17) and Q14
-(4 → 1), and degrade Q2 (6 → 10), Q3 (2 → 7), Q4 (33 → 69), Q6 (2 → 42), Q7 (48 → 276) and
-Q12 (2 → 4, or 2 → 4 for A7 after tiering). The Q6 case is the sharpest:               LiFlow sits at rank 2
-after fusion and falls to 42 after reranking.
-
-
-
-12.6 Failure analysis
-Every target occurrence receives one documented            primary failure class at top-10, plus optional
-secondary observations. The primary classes partition all 63 occurrences exactly.
-
-
-
-Table 13: Primary failure classication at top-10 over all 63 target occurrences, and secondary
-observations (non-exclusive). Codes are used in Appendix B.
-
- Code    Class                                   Count          Meaning
- CE      IN_POOL_CROSS_ENCODER_FAILED                  34       Occurrence was inside the 500-deep reranking
-                                                                prex and is not in the nal top 10.
- R10     RECOVERED_AT_10                               10       Recovered at top-10 by the primary system.
- GT      GROUND_TRUTH_MAPPING_UNCERTAIN                14       Non-direct            annotation       status
-                                                                (PARTIAL/ABSENT/COMPOSITE);       no    iden-
-                                                                tity credit possible.
- RRF     IN_POOL_RRF_FAILED                                2    In the union but ranked outside the 500-deep
-                                                                prex by RRF, so never reranked.
- TF      WRONG_TYPE_FILTER                                 3    Excluded by the hard answer-family lter.
-         Total                                         63
- NN      NO_NAME_MATCH (secondary)                     46       No lexical opportunity: the question contains
-                                                                no surface form of the target.
- NE      NO_RELEVANT_EVIDENCE (secondary)                  8    No indexed candidate-specic evidence ex-
-                                                                isted.
-
-   The largest class,   IN_POOL_CROSS_ENCODER_FAILED at 34 of 63 occurrences, must be read
-exactly as dened: these occurrences were       inside the prex and are not in the nal top 10. The
-class does   not mean 34 occurrences were actively demoted or lost by the cross-encoder; most of
-
-                                                      18
-them were far from the top 10 before reranking as well. The measured movement attributable to
-the reranker is the conditional analysis of Table 9: of the 44 admitted occurrences, 18 moved up
-and 26 moved down. Nor does the small size of the fusion (2) and type-lter (3) classes license
-the conclusion that admission has ceased to be a constraint  ve occurrences never reached the
-reranker at all, three mapped occurrences are outside the union entirely at the operative depths,
-and 14 occurrences cannot be credited by any system. What the distribution supports is narrower
-and still useful: at these depths, with this pool, most remaining error is located after admission,
-in the ordering stages.
-
-   Concrete named traces, all from the frozen hando:
-
-
-    Q13 MEGNet and Q13 EquiformerV2 are the two IN_POOL_RRF_FAILED cases, at ranks 733
-     and 551 respectively in A5, A6 and A7 alike. They are in the union but beyond the 500-deep
-     prex, so their ranks are identical across all three arms by construction: the tail is never
-     touched.
-
-    Q14 JARVIS-DFT, Q14 AFLOW and Q14 Alexandria are the three WRONG_TYPE_FILTER
-     cases,   with null ranks under every arm.        Q14 requests datasets and benchmarks
-     ({dataset, metric}), and the graph nodes bearing these names are typed outside those
-     families, so Equation (2) removes them before retrieval. Three of Q14's eleven occurrences
-     are lost this way.
-
-    Q12 MACE is the largest single downward movement: rank 42 in A5, 302 in A6 and A7. Q12
-     PET follows the same trajectory, 61 → 317; Q7 symbolic regression 48 → 276; Q1 ACE
-     159 → 370.
-
-    Q1 GAP is a clean recovery: null in A0 and A1, rank 31 in A5, rank 3 in A6/A7. Q14
-     Matbench Discovery moves 447 (A0) → 97 (A1) → 4 (A5) → 1 (A6/A7), and Q14
-     Matbench 157 → 39 → 3. Q8 ConvLSTM is null in A0 and A1, rank 7 in A5 and 6 in
-     A6/A7  an occurrence the dense-only arms could not reach at all.
-
-    Q12 DeePMD is the occurrence whose top-10 status is attributable to the verication stage:
-     rank 62 in A5, 20 in A6, 7 in A7.
-
-    Q2 HamGNN (PARTIAL), Q3 xDeepH (PARTIAL), Q4 MACE-F (ABSENT) and Q11 CE→MC→NN→PF
-     (COMPOSITE) illustrate the 14 GROUND_TRUTH_MAPPING_UNCERTAIN occurrences: null under
-     every arm by annotation status rather than by retrieval behaviour.
-
-
-    Two terminological commitments.         NO_RELEVANT_EVIDENCE means no indexed candidate-
-specic evidence existed  an index coverage statement, not an adjudication that the entity is
-scientically irrelevant to the question. NO_NAME_MATCH means the absence of a lexical opportunity
- the question never names the target  not that name matching was attempted and failed.
-
-
-
-12.7 Missing evidence versus contradiction
-Of 800 requirement components, only 376 had an eligible premise;          the remaining 424 are
-NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE purely because the candidate-specic index,               with
-article-level and structural-path evidence excluded, contained nothing to score. Adding the 270
-neutral NLI outcomes gives the reported total of 694.
-
-   The status counts aggregate positive and exclusion components, whose polarities are opposite
-under Equation (11).      The 71 SUPPORTED statuses therefore comprise positive components with
-P (entail) ≥ 0.7 and P (contra) < 0.3 together with exclusion components with P (contra) ≥ 0.7
-and P (entail) < 0.3; symmetrically for the 35 CONTRADICTED statuses. Reading the aggregate as
-a single entailment-probability condition would be wrong unless exclusion components happen to
-be absent, which the hando does not report.
-
-
-
-                                                19
-Table 14: Requirement verication outcomes over the A7 top-20 candidates across all 18 questions.
-
-                  Quantity                                                     Value
-
-                  Verication candidates (18 × 20)                               360
-                  Requirement components evaluated                               800
-                  NLI inference pairs actually run                               376
-                    of which SUPPORTED                                             71
-                    of which CONTRADICTED                                          35
-                    neutral / no clear result                                    270
-                  Components with no eligible premise (inference skipped)        424
-                  NOT_SUPPORTED_BY_AVAILABLE_EVIDENCE (total)                    694
-
-
-
-
-   With that caveat, one distinction is substantive. 53 % of all components (424/800) are
-unsupported for lack of a premise, not because anything contradicts them. Only 35
-components  4.4 % of the total, 9.3 % of actually inferred pairs  show high proxy contradiction.
-A design that treated missing evidence as contradiction would demote the majority of top-20
-candidates on the basis of index sparsity rather than evidence, and given that 2508 of 2978
-entities have no candidate-specic evidence at all, that error would systematically favour the
-well-documented entities.
-
-      Limitations of the NLI proxy:
-
-
-       The probabilities are uncalibrated. The threshold τ = 0.7 is a xed design constant, not
-        a tuned or validated operating point, and no reliability diagram supports it.
-
-
-       nli-deberta-v3-small is a small general-domain model applied to materials-science claims
-        far outside its training distribution.   It can misread quantitative conditions (millions of
-        atoms,  > 10
-                      3 atoms,  ∼50,000 compounds) and it can misread negation and scope.
-
-
-       A premise is a single max-cosine evidence item, so verication is single-premise: a require-
-        ment supported jointly by two pieces of evidence will not be recognised.
-
-
-       This is not scientic entailment.          A   SUPPORTED status means a small proxy model
-        assigned a high probability to one retrieved sentence under the polarity of Equation (11); it
-        is not an adjudication that the method satises the requirement.
-
-
-       The measured gain of the whole stage on this data is one top-10 occurrence, with other
-        movements inside the top 20 not separately reported. Its robustness is unmeasured.
-
-
-
-12.8 Eciency
-All counters describe    logical work, not production latency, and all timings are descriptive CPU
-wall times on a single machine with 4 threads, batch size 32, seed 42.
-
-   Three caveats are material. First, the BM25 counter embedded in the predictor is a token-
-count estimate ; the 1,637,900 gure is the documentterm loop count implied by the frozen query
-intent and the frozen tokenizer (entities × unique query terms, summed over questions), and it
-is the gure that should be cited.      Second, the prex timing estimates for pools 100 and 200
-are   amortized reuses of the 500-run pair scores: those controls never executed their own
-inference, so 170.12 s and 325.14 s are reconstructions of what the measured 500-pool pairs imply,
-not observations. Third, cross-encoder pairs equal actual inference pairs (8,849), conrming that
-no caching shortcut reduced the measured reranking workload in the 500 run.
-
-      On these two axes together, A6_100 was both the best observed arm on top-10 recovery and
-the cheapest reranking conguration, by roughly a factor of four in prex time.
-
-
-
-                                                    20
-Table 15: Eciency counters and descriptive timings.        Counters are units of logical work, not
-target occurrences. Timings are single-run CPU wall times.
-
-                      Quantity                                             Value
-                      Prediction phase wall time (s)                       865.24
-                      Query wall time (s)                                  745.26
-                      Dense dot products                                  295,920
-                      Evidence generation comparisons                     153,864
-                      BM25 documentterm lookups (exact loop count)     1,637,900
-                      Cross-encoder pairs                                   8,849
-                      Cross-encoder actual inference pairs                  8,849
-                      Requirement evidence comparisons                    170,960
-                      Verication candidates                                  360
-                      Verication components                                  800
-                      NLI pairs                                               376
-                      Prex timing estimate, pool 100 (s)                 170.12
-                      Prex timing estimate, pool 200 (s)                 325.14
-                      Prex timing estimate, pool 500 (s)                 675.01
-
-
-13 Limitations
-  1.   Development-only, design-exposed.            The questions and gold annotations were seen
-       during V1 development, and that exposure motivated this work. Execution-time separation
-       does not make this a held-out result.      Nothing here supports a publication claim or an
-       inferential comparison.
-
-
-  2.   Scale. 14 scored questions, 63 target occurrences, 49 directly mappable. One occurrence is
-       1.6 percentage points of R@k . The A7-versus-A6_100 top-10 gap is two occurrences.
-
-
-  3.   Annotation ceiling. 14 of 63 occurrences (22 %) cannot receive identity credit under any
-       system, and two of 14 questions have no creditable target at all. Maximum attainable R@k
-       is 49/63 = 77.8 %; maximum attainable MRR is 12/14 = 0.857.
-
-
-  4.   Index sparsity (schema coverage). 2508 of 2978 entities have no candidate-specic
-       evidence.   The evidence channel, the graph channel's evidence seeding, the cross-encoder
-       card and the verication stage are all structurally weaker for those entities.      This is a
-       coverage property of the graph. Those entities remain reachable by the dense channels and
-       by BM25 over names and aliases.
-
-
-  5.   Schema inference is structural. Role arcs come from unique typed member signatures;
-       ambiguous extends arcs and signature mismatches are dropped rather than resolved, so
-       some legitimate paths are unavailable, and citation paths provide structural context and are
-       never treated as entailment.
-
-
-  6.   Year-granular time ltering. By Feb 2026 is enforced at year granularity; month
-       precision is unrecoverable from year-only evidence.   first_seen_year records publication
-       visibility in this graph, not an actual discovery date, and the undated-alias suppression rule
-       only applies at cutos earlier than a node's last observation.
-
-
-  7.   No calibration and no tuning. Cross-encoder logits are not probabilities; NLI proba-
-       bilities are uncalibrated. Path decay (0.8), RRF k (60), evidence/graph depths (500/200),
-       family caps, the 512-token budget and the NLI threshold (0.7) are xed design constants; no
-       hyperparameter search was performed, so none is claimed optimal. The soft_type_prior
-       key in config.json is legacy and unused.
-
-
-
-
-                                                   21
-   8.   Controls beyond their prex. For A6_100 and A6_200, nal ranks beyond the pool size
-        come from the unchanged RRF tail, not from reranked entities, and their candidate gures
-        in Table 4 are capped at the pool. Comparing R@100 across pool sizes compares dierent
-        objects below the prex boundary.
-
-
-   9.   Single run, no variance. Every number is one seeded execution. No variance estimate and
-        no hypothesis test exists, so dierences of one or two occurrences are reported as observations
-        only.
-
-
- 10.    Ranks are not scientic adjudication. The metrics score agreement with a small an-
-        notation set.    A high-ranked non-gold entity is not shown to be a wrong answer, and a
-        low-ranked gold entity is not shown to be irrelevant.
-
-
- 11.    Historical comparisons are descriptive. Prior V1 and V2 gures were computed un-
-        der dierent candidate truncation and grouping conventions; their rank statistics are not
-        commensurate with the conditional statistics here.
-
-
-
-
-14 Future work
-Two questions are open, and neither can be settled by rerunning arms that already exist in this
-study.   A6_100 is such an arm: it is reported above as a predeclared control, so a cascade that
-reranks only the top 100 is a conguration already measured here, not a new experiment, and
-quoting its 12/63 as a prediction would be reporting a known result.
-
-
-   1.   Pool choice needs independent data. The pool-size pattern (top-10 hits 12/9/9; condi-
-        tional median 27/38/50.5) comes from the same 14 design-exposed questions used to build
-        the system. The appropriate next step is to assemble an        independent question and target
-        set  new questions, annotated without reference to this system's outputs  and to regis-
-        ter the pool-size comparison on that set before running it. Until then the pool choice is a
-        development observation.
-
-
-   2.   Evidence packing is a hypothesis, not a nding. The large downward movements
-        (Q12 MACE 42 → 302, Q12 PET 61 → 317) have exported card contents: included blocks,
-        omitted blocks and token counts are already in the frozen artifacts. The honest sequence is
-        to   inspect those existing traces rst, descriptively, and only then preregister a comparison of
-        alternative evidence-packing policies  dierent family caps, dierent block order, best-t
-        instead of prex packing  on new data.           No such comparison is predeclared here, and
-        no tuning of packing on the present benchmark should be presented as a held-out result
-        afterwards.
-
-
-   Nothing in the present data justies extending the verication stage; its measured gain is
-one occurrence and should be held xed while the questions above are addressed.               The three
-WRONG_TYPE_FILTER occurrences are a separate, concrete item: widening Q14-style coordinated
-answer families would be a design change whose cost in admitted noise is currently unmeasured.
-
-
-
-
-15 Reproducibility
-The following links identify the pinned local artifacts only; no external source was consulted for
-this          https://huggingface.co/BAAI/bge-small-en-v1.5, https://huggingface.
-        report:
-co/cross-encoder/ms-marco-MiniLM-L6-v2,      https://huggingface.co/cross-encoder/
-nli-deberta-v3-small.
-
-
-                                                     22
-Table 16: Pinned model versions. All models are loaded locally from hashed caches; downloads
-require an explicit download ag. Revisions wrap across lines and concatenate to the exact literal
-value.
-         Role            Model                      Revision                           Status
-         Dense           BAAI/bge-small-en-v1.5 5c38ec7c405ec4b44b94                   available
-                                                cc5a9bb96e735b38267a
-         Relevance       cross-encoder/         233902d25c440f23af6f                   available
-                         ms-marco-MiniLM-L6-v2 7d6e94d2946bac0bee0a
-         NLI (verica-   cross-encoder/         fa2804872c3b4bd748f3                   available
-         tion only)      nli-deberta-v3-small   8c0185cc85775361e735
-
-
-   Environment:        Python 3.11.2 (MSC v.1934,      64-bit),   CPU device,   seed 42,   4 threads,
-batch size 32;numpy 2.3.5, torch 2.4.1, transformers 4.57.6, sentence-transformers 5.1.0,
-huggingface-hub 0.36.2. No model load failures were recorded. All per-le SHA256 digests for
-the three model caches are recorded in outputs/audit/model_version_manifest.json.
-
-
-
-15.1 Two distinct determinism checks
-These are dierent checks with dierent scopes and are not interchangeable:
-
-
-  1.   Replay check. The replay reuses cached model outputs and veries that the full prediction
-       byte stream reproduces identically against the frozen digest
-       5bc46c27e260572cc33630ff59b3dd142cc37ca5ef66d13eb77f29b1a2ad0eda.
-       This establishes byte-identical replay of the deterministic pipeline logic  grouping, ltering,
-       union construction, RRF ordering, tie-breaking, card packing, tier assignment, serialization
-          given the cached model outputs. It does not re-execute the neural models and therefore
-       says nothing about reproducibility of an uncached full-model run.
-
-
-  2.   Fixed-input model determinism tests. Separate synthetic tests feed xed inputs to the
-       pinned    dense encoder and the pinned relevance cross-encoder and check that the inference
-       output is bit-stable, with deterministic algorithms enabled, when those models are available.
-       The   NLI verication model is not covered by this check; the NLI model is covered only
-       by the status-semantics and policy tests, which assert that it is never used as a relevance
-       scorer.
-
-
-   Together they establish deterministic pipeline logic given cached outputs, and bit-stable infer-
-ence for two of the three models given identical inputs. Neither establishes  nor is claimed to
-establish  stability across hardware, library versions, uncached reruns, or re-trained checkpoints.
-
-
-
-15.2 Scope of the change
-The active implementation is clean_tshc_v2.         The previous V2 source, cong, report and re-
-sults are archived under archive/flat_20261001. The experiment does            not route through the
-hierarchy component and does not place it on any critical path.
-
-   Regarding V1: at the start of this work, V1 already contained two pre-existing uncommitted
-                                                                                  pre-
-tracked report changes and four untracked report les, and the user explicitly approved
-serving that starting state. The commitment made and kept is therefore that this work
-introduces zero additional changes to V1  not that git diff in V1 is empty. V1 hashes
-and di should be compared against that approved starting state, not against HEAD. No GitHub
-operations of any kind were performed.
-
-
-
-
-                                                  23
-15.3 Verication and test tallies
-Digest verication and the automated test suite are executed by Codex; the audited tallies are
-reproduced here. The test run observed at the time of writing was 42 tests passing in 16.35 s.
-
-
-
-Final verication by Codex
-The complete V2 suite passed:    42 tests passed in 16.35 seconds, including existing regression
-tests and the new entity-pipeline and frozen-artifact checks. Prediction/source/input hashes verify,
-and the full cached replay has the same prediction SHA256.        The positive and empty-ranking
-evaluation controls pass.   V1 has   zero new modications: all 1,056 le hashes, the binary
-git di, and V1 git-status entries match the user-approved starting state.      Existing V1 report
-changes were preserved.     No GitHub changes were made.       The machine-readable verication,
-changed/added-le inventory, and nal artifact hashes are under outputs/audit/. These checks
-do not turn development diagnostics into held-out evidence.
-
-
-
-
-16 AI contribution disclosure
-    Codex implemented the pipeline, integrated all components, executed the experiment, pro-
-       duced every measurement, supplied the factual corrections incorporated into this revision,
-       and performs the numerical verication, digest checks, test runs and compilation of this
-       report.
-
-
-    Claude Opus 5 supplied a methodology consultation  on metric denominators, failure
-       classication, leakage ordering and the separation of the two determinism checks  au-
-       thored this report from the frozen measured artifacts (notes/entity_redesign/method_
-       specification.md,   notes/entity_redesign/report_handoff.json,     config.json,
-       outputs/audit/model_version_manifest.json and the pipeline source), and revised
-       it against Codex's corrections.   Claude did not run the experiment, did not produce any
-       measurement, and did not select which arm is primary.
-
-
-   This report is not human expert adjudication and not a held-out publication result.
-It is a development diagnostic produced by AI agents from frozen artifacts, over a question set
-that was visible during earlier design iterations, at a scale (14 questions, 63 target occurrences)
-where single-occurrence dierences dominate the reported margins. The declared primary system
-is A7, as predeclared, and is reported as such even though a predeclared control performs better
-on the headline metric.
-
-
-
-
-A Full question texts
-
-  ID      Question (verbatim)
-
-  Q1      Which methods (by Feb 2026) are best suited for predicting interatomic potentials
-          when balancing accuracy close to DFT with computational eciency for systems of
-          millions of atoms?
-  Q2      Which methods (by Feb 2026) are best suited for accelerating electronic structure
-          calculations when self-consistent eld iterations become prohibitively expensive for
-          large systems (> 10
-                                3 atoms)?
-
-
-
-
-                                                 24
-  ID     Question (verbatim)
-
-  Q3     Which methods (by Feb 2026) are best suited for learning DFT Hamiltonians when
-         dealing with twisted van der Waals heterostructures containing thousands of magnetic
-         atoms?
-  Q4     Which methods (by Feb 2026) are best suited for phonon property prediction when
-         universal MLIPs show inaccuracies despite good energy/force performance?
-  Q5     Which methods (by Feb 2026) are best suited for coarse-graining molecular dynamics
-         when crystalline symmetries and long-range elastic interactions must be preserved?
-  Q6     Which methods (by Feb 2026) are best suited for predicting ionic conductivity when
-         full ab initio MD is too expensive but accuracy must be maintained?
-  Q7     Which methods (by Feb 2026) are best suited for predicting phase transitions when
-         screening ∼50,000 inorganic compounds at high throughput?
-  Q8     Which methods (by Feb 2026) are best suited for predicting fracture patterns when
-         generalizing from atomistic MD data to unseen bicrystalline structures?
-  Q9     Which methods (by Feb 2026) are best suited for ensuring physical consistency when
-         transferring information between scales without violating thermodynamic principles?
-  Q10    Which methods (by Feb 2026) are best suited for representing atomic environments
-         when the system exhibits signicant compositional diversity, defects, and disorder?
-  Q11    Which methods (by Feb 2026) are best suited for integrating features from three or
-         more distinct scales simultaneously within a unied framework?
-  Q12    What are the leading (by Feb 2026) ML-based interatomic potential methods for
-         large-scale atomistic simulation?
-  Q13    What are the leading (by Feb 2026) GNN architectures for predicting properties of
-         solid-state crystalline materials?
-  Q14    What datasets and benchmarks are commonly used (by Feb 2026) to evaluate MLIPs
-         and property prediction models for materials discovery?
-
-
-
-
-B Per-occurrence target ranks
-Annotation statuses: E = EXACT, A = ALIAS, P = PARTIAL, X = ABSENT, C = COMPOSITE. Failure
-codes are those of Table 13: CE, R10, GT, RRF, TF.  = not retrieved by that arm.
-
-
-           Q       Target                     St        A0    A1    A5    A6    A7    Fail
-
-           Q1      MACE                       E                    39   174   174   CE
-           Q1      M3GNet                     E              193    35    51    51   CE
-           Q1      CHGNet                     E              309    72    31    31   CE
-           Q1      GAP                        E                    31     3     3   R10
-           Q1      NequIP                     E              354   24     56    56   CE
-           Q1      ACE                        E                   159   370   370   CE
-           Q1      EquiformerV2               E                   23     54    54   CE
-           Q2      DeepH                      E                    40    15    15   CE
-           Q2      D4FT                       E         369    85     6    10    10   R10
-           Q2      HamGNN                     P                                  GT
-           Q3      xDeepH                     P                                  GT
-           Q3      DeepH-E3                   E         57      1    2      7     7   R10
-           Q4      Hessian training           A               37    44   229   229   CE
-           Q4      VGNN                       E                    33    69    69   CE
-           Q4      MACE-F                     X                                  GT
-           Q5      Bead-mapping               X                                  GT
-
-
-
-
-                                                   25
-Q     Target                  St        A0    A1    A5    A6    A7    Fail
-
-Q5    GNN+GPP                 P                                  GT
-Q6    DeePMD+AL               P                                  GT
-Q6    LiFlow                  E         199     4     2    42    42   CE
-Q6    MLIP descriptors        P                                  GT
-Q7    GNN free energies       P                                  GT
-Q7    symbolic regression     E                    48   276   276   CE
-Q8    ConvLSTM                E                     7     6     6   R10
-Q8    GNN stress elds        P                                  GT
-Q9    E(3)-equivariant GNNs   P                                  GT
-Q9    physics-informed        P                                  GT
-Q9    NequIP                  E                   256   60    60    CE
-Q10   GNNs + ACE descrip-     P                                  GT
-      tors
-Q10   SchNet                  E                   156    87   87    CE
-Q11   CE→MC→NN→PF             C                                  GT
-Q11   hybrid frameworks       P                                  GT
-Q12   MACE                    E                    42   302   302   CE
-Q12   NequIP                  E                    39   65    65    CE
-Q12   CHGNet                  E              252    94    38   38    CE
-Q12   M3GNet                  E              141    36   108   108   CE
-Q12   SevenNet                E                    40    50    50   CE
-Q12   GAP                     E                   50      5     4   R10
-Q12   DeePMD                  E                    62    20     7   R10
-Q12   MatterSim               E         31      1     2    24    24   CE
-Q12   Orb                     E                    26    52    52   CE
-Q12   eSEN                    E               97    12    99    99   CE
-Q12   PET                     E                    61   317   317   CE
-Q12   UMA                     E                    67   161   161   CE
-Q12   EquiformerV2            E                    57    37    37   CE
-Q13   CGCNN                   E                   118   17    17    CE
-Q13   SchNet                  E                   115   198   198   CE
-Q13   MEGNet                  E                   733   733   733   RRF
-Q13   M3GNet                  E                    95   142   142   CE
-Q13   NequIP                  E                    89   121   121   CE
-Q13   MACE                    E                   136    50   50    CE
-Q13   CHGNet                  E                   113    35    35   CE
-Q13   EquiformerV2            E                   551   551   551   RRF
-Q14   Matbench Discovery      E         447   97      4     1     1   R10
-Q14   Matbench                E              157    39     3    3    R10
-Q14   JARVIS-DFT              E                                  TF
-Q14   Materials Project       E               75    15    49    49   CE
-Q14   MPtrj                   E              108    37    16    16   CE
-Q14   OQMD                    E              120    33    67    67   CE
-Q14   AFLOW                   E                                  TF
-Q14   Alexandria              E                                  TF
-Q14   GNoME                   E               69    26    10    10   R10
-Q14   WBM                     E         217   26     29    86    86   CE
-Q14   OMat24                  E              129    21    4      4   R10
-
-
-
-
-                                   26
-C Fixed conguration constants
-Snapshot   2026;   seed   42;   4   threads;    batch   size   32.   Channel   depth   500   per   list;   RRF
-k = 60; BM25 k1 = 1.5, b = 0.75; evidence seed depth 500; graph seed depth 200, ar-
-ticle degree cap 80,      fanout cap 64,       max 2 hops,      path decay 0.8;   rerank prex 500 with
-controls at 100 and 200;        cross-encoder token budget 512;         card family caps claims 4,          ex-
-plicit mentions 3,   tasks 2,       problems 2,   techniques 2,      components 2,     datasets 1,     metrics
-1, articles 1, graph evidence 2;            k = 20; NLI threshold 0.7; verication policy
-                                       verication
-stable_top20_tiers_all_supported_then_unresolved_then_contradicted; diusion arm not
-run. The key soft_type_prior = 0.8 is present in config.json but unused by this pipeline.
-
-
-
-
-                                                        27
-
